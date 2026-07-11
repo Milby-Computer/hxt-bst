@@ -1,0 +1,73 @@
+<p><font color="#980517">on</font> selectionChanged</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p><font color="#68228B">  # This chunk of code has nothing to do with SQLite</font></p>
+<p><font color="#68228B">  # it only helps to figure out what table cell you just clicked on</font></p>
+<p>  if the lockText of me is false then exit to top</p>
+<p>  put word 2 of the clickLine into tLineNum</p>
+<p>  <font color="#0000FF">put</font> item 1 of the <font color="#F88017">clickLoc</font> into tXLoc</p>
+<p>  </p>
+<p>  <font color="#0000FF">subtract</font><font color="#68228B"> </font>the<font color="#68228B"> </font><font color="#FF0000">left</font><font color="#68228B"> </font>of<font color="#68228B"> </font><font color="#F88017">me</font><font color="#68228B"> </font>from<font color="#68228B"> </font>tXLoc</p>
+<p>  put the tabStops of me into tTabStops</p>
+<p>  </p>
+<p><font color="#68228B">  # Make sure the last item in tabstops is &gt; TXLoc</font></p>
+<p><font color="#68228B">  # just in case the tabstops have only 1 item</font></p>
+<p><font color="#68228B">  # Create tTabstops items</font></p>
+<p>  repeat until last item of tTabStops &gt; tXLoc</p>
+<p>    <font color="#0000FF">put</font> last item of tTabStops - item -<font color="#000000">2</font> of tTabStops into tIncrement</p>
+<p>    put &quot;,&quot; &amp; last item of tTabStops + tIncrement after tTabStops</p>
+<p>  end repeat</p>
+<p>  put 1 into x</p>
+<p>   </p>
+<p>  repeat while item x of tTabStops &lt; tXLoc</p>
+<p>    add 1 to x</p>
+<p><font color="#980517">  end</font> <font color="#980517">repeat</font> </p>
+<p>  </p>
+<p>  set itemDel to tab</p>
+<p>  <font color="#0000FF">put</font> item x of line tLineNum of <font color="#F88017">me</font> into<font color="#68228B"> </font>tClickedText</p>
+<p>  <font color="#0000FF">put </font>item 1 of line tLineNum of <font color="#F88017">me</font> into tUserID</p>
+<p>  </p>
+<p>  switch x</p>
+<p>  <font color="#980517">case</font> &quot;1&quot; <font color="#68228B">--&gt; userID</font></p>
+<p>    <font color="#0000FF">answer </font>warning &quot;You may not change a Primary Key!&quot;</p>
+<p>    <font color="#0000FF">exit </font>to <font color="#FF0000">top</font></p>
+<p><font color="#FF0000">    </font><font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case</font> &quot;2&quot; <font color="#68228B">--&gt; name</font></p>
+<p>    <font color="#0000FF">put </font>&quot;name&quot; into tColumnToUpdate</p>
+<p>    break</p>
+<p>  <font color="#980517">case</font> &quot;3&quot; <font color="#68228B">--&gt; email</font></p>
+<p><font color="#68228B">    </font><font color="#0000FF">put </font>&quot;email&quot; into tColumnToUpdate</p>
+<p>    break</p>
+<p><font color="#0000FF">  </font><font color="#980517">case </font>&quot;4&quot; <font color="#68228B">--&gt; emailList</font></p>
+<p><font color="#68228B">    </font><font color="#0000FF">put </font>&quot;emailList&quot; into tColumnToUpdate</p>
+<p><font color="#0000FF">    break</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">switch</font></p>
+<p><font color="#980517">  </font></p>
+<p>  <font color="#0000FF">ask </font>&quot;New value for &quot; &amp; tColumnToUpdate &amp;&quot;<font color="#000000">:</font>&quot; <font color="#980517">with </font>tClickedText</p>
+<p><font color="#980517">  if </font>it is empty or the <font color="#F88017">result </font>is &quot;Cancel&quot; <font color="#980517">then</font> <font color="#0000FF">exit </font>to <font color="#FF0000">top</font></p>
+<p><font color="#FF0000">  </font><font color="#0000FF">put </font>&quot;'&quot; &amp; cleanSQL<font color="#000000">(it)</font> &amp; &quot;'&quot; into tNewValue</p>
+<p><font color="#FF0000">  </font></p>
+<p><font color="#FF0000">  </font><font color="#0000FF">put</font> &quot;UPDATE users SET &quot; &amp; tColumnToUpdate &amp; &quot;=&quot; &amp; tNewValue &amp; &quot; WHERE userID=&quot; &amp; tUserID into tSQL</p>
+<p>  <font color="#0000FF">put</font> revdb_execute<font color="#000000">(gConID,tSQL)</font> into tTmp</p>
+<p>  </p>
+<p>  handleRevDBerror tTmp</p>
+<p><font color="#980517">  if </font>the <font color="#F88017">result </font>is not empty <font color="#980517">then </font></p>
+<p><font color="#0000FF">    answer </font>warning the <font color="#F88017">result</font></p>
+<p><font color="#0000FF">    exit </font>selectionChanged</p>
+<p><font color="#980517">  end if</font></p>
+<p><font color="#0000FF">  </font></p>
+<p><font color="#0000FF">  answer </font>information &quot;Number of rows changed: &quot; &amp; tTmp</p>
+<p><font color="#980517">  </font><font color="#0000FF">send </font>mouseUp to btn &quot;View Data&quot;</p>
+<p>  </p>
+<p><font color="#980517">end</font> selectionChanged</p>
+<p></p>
+<p><font color="#0000FF">function</font> cleanSQL pSQL</p>
+<p><font color="#68228B"> # Escape quotes</font></p>
+<p>  <font color="#0000FF">replace</font> &quot;'&quot; <font color="#980517">with</font> &quot;''&quot; in pSQL</p>
+<p>  <font color="#0000FF">replace</font> quote <font color="#980517">with</font> quote &amp; quote in pSQL</p>
+<p>  <font color="#68228B"> # Escape tab and return characters</font></p>
+<p>  <font color="#0000FF">replace</font> return <font color="#980517">with</font> &quot;*RETURN*&quot; in pSQL</p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> &quot;*TAB*&quot; in pSQL</p>
+<p>  <font color="#0000FF">return</font> pSQL</p>
+<p><font color="#980517">end</font> cleanSQL</p>
+<p></p>

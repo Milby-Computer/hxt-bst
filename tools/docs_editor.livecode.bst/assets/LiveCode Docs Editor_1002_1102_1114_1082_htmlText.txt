@@ -1,0 +1,4 @@
+<p>The <b>mobileAllowedOrientations</b> function returns a comma delimited list of the orientations the application supports.</p>
+<p></p>
+<p></p>
+<p><b>Note: </b>Due to the limitation of the Android operating system, <i>landscape left</i> and <i>portrait upside-down</i> are only supported on Android 2.3 and later.</p>

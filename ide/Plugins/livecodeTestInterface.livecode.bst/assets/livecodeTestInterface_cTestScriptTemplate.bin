@@ -1,0 +1,62 @@
+	// Meta Data
+// The first part of the meta data specifies information used by the test system.
+// If nothing is set here the default values are used.
+group arrays
+
+
+// The second part of the meta data allows you to set up the standalone settings for a test. 
+// The standalone settings of the test are set to the values given in the meta data.
+// If nothing is set the default standalone settings are used.
+"ios,build type" "true"
+"android,icon" "something"
+
+
+// Test Data
+// Test code is added between setup and teardown tags. 
+// Multiple setup/teardown pairs can be included
+// Each setup/teardown pair can consists of multiple test lines to be run
+
+// After the setup declaration an optional description can be included
+// e.g. setup " get the style / set the style of button to rectangle"
+
+// Lines of code that are to be run begin with one of
+// test 
+//	expects a result of true 
+// test-error 
+//	expects an error eg a + 1 should return an error
+// test-no-error 
+//	expects no error eg 1 + 1 should not return an error
+// each test will return pass or fail
+
+
+setup this test
+
+local tVar, tExtents
+test the extents of tVar is empty
+
+put 1 into tVar[0,1,2,3,"string"]
+test the extents of tVar is empty
+
+put empty into tVar
+put 1 into tVar[0,0]
+put 1 into tVar[0]
+test the extents of tVar is empty
+
+put empty into tVar
+put 1 into tVar[0,1,2,3]
+put the extents of tVar into tExtents
+test the number of lines in tExtents is 4
+repeat with i = 0 to 3
+	test (i,i) is among the lines of tExtents
+end repeat
+
+put empty into tVar
+put 1 into tVar[0,1,2,3]
+put 2 into tVar[10,11,12,13]
+put the extents of tVar into tExtents
+test the number of lines in tExtents is 4
+repeat with i = 0 to 3
+	test (i,i+10) is among the lines of tExtents
+end repeat
+
+teardown

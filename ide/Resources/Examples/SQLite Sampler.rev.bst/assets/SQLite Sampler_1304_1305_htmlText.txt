@@ -1,0 +1,83 @@
+<p><font face="Verdana" size="18">Creating a Table to Store Binary Data</font></p>
+<p></p>
+<p>SQLite allows you to place binary data into a database, providing that the data type of the column storing the binary data is "BLOB". The following SQL shows how to create a database table with a BLOB column.</p>
+<p></p>
+<p>CREATE TABLE Example</p>
+<p>(</p>
+<p>  Id INTEGER PRIMARY KEY AUTOINCREMENT,</p>
+<p>  firstname TEXT NULL,</p>
+<p>  lastname TEXT NULL,</p>
+<p>  email TEXT NULL,</p>
+<p>  icon BLOB NULL</p>
+<p>)</p>
+<p></p>
+<p><font face="Tahoma" size="18">Putting binary data into a table</font></p>
+<p></p>
+<p>The next thing to do is to copy your binary data into the table. This is done in Revolution by executing an INSERT statement as usual, except with one small difference, the name of the variable that stores the binary data should be prefixed with "*b". This tells Revolution to handle this variable as a container of binary data, which must be treated slightly differently when inserting into a database. The SQL follows.</p>
+<p></p>
+<p>INSERT INTO Example</p>
+<p>(</p>
+<p>  firstname, lastname, email, icon</p>
+<p>)</p>
+<p>VALUES</p>
+<p>(</p>
+<p>  :1, :2, :3, :4</p>
+<p>)</p>
+<p></p>
+<p>Revolution will replace the ":1", ":2" etc with the values of the variables given to the <b><font face="Tahoma" size="11">revExecuteSQL</font></b> function. The following code inserts some binary data into the table.</p>
+<p></p>
+<p><font color="#68228B">-- Create the SQL query</font></p>
+<p><font color="#0000FF">local</font> tSQL</p>
+<p><font color="#0000FF">put</font> "INSERT INTO Example(" &amp; <font color="#0000FF">return</font> &amp; \</p>
+<p>    "firstname, lastname, email, icon)" &amp; \</p>
+<p>    "VALUES(" &amp; <font color="#0000FF">return</font> &amp; \</p>
+<p>    ":1, :2, :3, :4)" into tSQL</p>
+<p></p>
+<p><font color="#68228B">-- Create variables to hold the data we want to insert</font></p>
+<p><font color="#0000FF">local</font> tFirstname</p>
+<p><font color="#0000FF">put</font> "Fred" into tFirstname</p>
+<p></p>
+<p><font color="#0000FF">local</font> tLastname</p>
+<p><font color="#0000FF">put</font> "Blogs" into tLastname</p>
+<p></p>
+<p><font color="#0000FF">local</font> tEmail</p>
+<p><font color="#0000FF">put</font> "fredblogs@runrev.com" into tEmail</p>
+<p></p>
+<p><font color="#68228B">-- The text of an image in Revolution is the binary data that makes up the pixels on the screen.</font></p>
+<p><font color="#0000FF">local</font> tIcon</p>
+<p><font color="#0000FF">put</font> the <font color="#FF0000">text</font> of image "Icon" into tIcon</p>
+<p></p>
+<p><font color="#68228B">-- Insert the data into the table</font></p>
+<p><font color="#0000FF">local</font> tResult</p>
+<p>revExecuteSQL sDatabaseId, tSQL, "tFirstname", "tLastname", "tEmail", "*btIcon"</p>
+<p><font color="#0000FF">put</font> the <font color="#F88017">result</font> into tResult</p>
+<p></p>
+<p><font color="#980517">if</font> tResult is not empty <font color="#980517">then</font></p>
+<p>  <font color="#68228B">-- Insert error handling here</font></p>
+<p><font color="#980517">end</font> <font color="#980517">if</font></p>
+<p></p>
+<p></p>
+<p><font face="Tahoma" size="18">Getting binary data from a table</font></p>
+<p></p>
+<p>Retrieving the binary data from the table again is similar to inserting it. A simple SELECT statement can be used, and the "*b" identifier is <b><font face="Tahoma" size="11">not needed</font></b> because Revolution automatically interprets the data appropriately based on the data type of the column. This is the query to return the icon column we just inserted into the database:</p>
+<p></p>
+<p>SELECT icon FROM Example where 1</p>
+<p></p>
+<p>In Revolution, we normally use the <b><font face="Tahoma" size="11">revQueryDatabase </font></b>function to return data from a database, this is the same for binary data.</p>
+<p></p>
+<p><font color="#68228B">-- Create the SQL Query</font></p>
+<p><font color="#0000FF">local</font> tSQL</p>
+<p><font color="#0000FF">put</font> "SELECT icon FROM Example where 1" into tSQL</p>
+<p></p>
+<p><font color="#68228B">-- Execute the query using revQueryDatabaseBLOB. A record set id is returned.</font></p>
+<p><font color="#0000FF">local</font> tRecordSet</p>
+<p><font color="#0000FF">put</font> revQueryDatabase(sDatabaseId, tSQL) into tRecordSet</p>
+<p></p>
+<p><font color="#68228B">-- Retrieve the binary data from the record set.</font></p>
+<p><font color="#0000FF">local</font> tIcon</p>
+<p><font color="#0000FF">put</font> revDatabaseColumnNamed(tRecordSet, "icon") into tIcon</p>
+<p></p>
+<p><font color="#68228B">-- Use the binary data in the program</font></p>
+<p><font color="#0000FF">set</font> the <font color="#FF0000">text</font> of image "Icon" to tIcon</p>
+<p></p>
+<p></p>

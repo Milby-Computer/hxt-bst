@@ -1,0 +1,20 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#68228B">-- These handlers goes in the swatch script:</font></p>
+<p><font color="#980517">on</font> mouseDown</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">dragData</font>["text"] to the <font color="#FF0000">short</font> <font color="#FF0000">name</font> of the <font color="#F88017">target</font></p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">borderWidth</font> of the <font color="#F88017">target</font> to 3</p>
+<p><font color="#980517">end</font> mouseDown</p>
+<p></p>
+<p><font color="#980517">on</font> dragEnd</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">borderWidth</font> of the <font color="#F88017">target</font> to 1</p>
+<p><font color="#980517">end</font> dragEnd</p>
+<p></p>
+<p><font color="#68228B">-- These handlers go in the script of the object whose</font></p>
+<p><font color="#68228B">-- color is to be changed:</font></p>
+<p><font color="#980517">on</font> dragEnter</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">acceptDrop</font> to true</p>
+<p><font color="#980517">end</font> dragEnter</p>
+<p></p>
+<p><font color="#980517">on</font> dragDrop</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">backgroundColor</font> of the <font color="#F88017">target</font> to the <font color="#FF0000">dragData</font>["text"]</p>
+<p><font color="#980517">end</font> dragDrop</p>

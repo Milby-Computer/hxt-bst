@@ -1,0 +1,97 @@
+{
+   "#mainstack": "Bouncy",
+   "Bouncy": {
+      "#name": "stack \"Bouncy\"",
+      "#substacks": "splash",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1014": {
+                  "#name": "image \"rloog2.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1014",
+                     "layer": "1",
+                     "name": "rloog2.png",
+                     "opaque": false,
+                     "rect": "0,0,126,75",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Bouncy_1002_1014_text.png"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "1"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1014"
+         }
+      },
+      "longID": "stack \"Bouncy\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": null,
+         "fileName": "Bouncy.rev",
+         "id": "1014",
+         "liveResizing": false,
+         "name": "Bouncy",
+         "rect": "183,363,309,438",
+         "windowShape": "1014"
+      },
+      "sharedGroupIDs": null
+   },
+   "splash": {
+      "#name": "stack \"splash\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"Field 1\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/splash_1002_1004_htmlText.txt",
+                     "id": "1004",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "Field 1",
+                     "rect": "29,10,332,267",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "opaque",
+                     "textAlign": "center"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"splash\" of stack \"Bouncy\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": null,
+         "id": "1006",
+         "liveResizing": false,
+         "name": "splash",
+         "rect": "332,246,692,523",
+         "resizable": false
+      },
+      "sharedGroupIDs": null
+   }
+}

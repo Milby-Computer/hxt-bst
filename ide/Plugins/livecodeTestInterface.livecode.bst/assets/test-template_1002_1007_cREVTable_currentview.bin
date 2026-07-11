@@ -1,0 +1,5 @@
+<p><b>Standalone Settings</b></p>
+<p>The meta data for a test allow you to set up the standalone settings for a test. The meta data is set in the card script of the "meta-data" card of the test. Open the <a>card script</a> to see the possible options.</p>
+<p></p>
+<p><b>Tests</b></p>
+<p>Any command in the stack script that starts with "test_" is considered a test to be run and is executed in the test framework. Test success or failure is reported using "log". Open the <a>stack script</a> to see some examples.</p>

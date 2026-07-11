@@ -1,0 +1,3881 @@
+{
+   "#mainstack": "revNewScriptEditor",
+   "revNewScriptEditor": {
+      "#name": "stack \"revNewScriptEditor\"",
+      "#substacks": "revSEFind\nrevSEUnappliedDialog\nrevSETemplate\nrevSEGoDialog\nrevSEEditBreakpoint\nrevSEDebugEntryDialog\nrevSEDisambiguator\nrevSEModifiedExternallyDialog",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"Open Template\"",
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "name": "Open Template",
+                     "rect": "8,8,118,31",
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "field \"Print Template\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "id": "1012",
+                     "layer": "2",
+                     "name": "Print Template",
+                     "rect": "14,50,264,106",
+                     "scrollbarWidth": "13",
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "9",
+                     "textSize": "7",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1016": {
+                  "#name": "group \"Behaviors\"",
+                  "properties": {
+                     "id": "1016",
+                     "layer": "3",
+                     "name": "Behaviors",
+                     "rect": "12,152,20,170",
+                     "showName": true
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         },
+         "cREVGeneral[scripteditorselection]": {
+            "scripteditorselection": "24558"
+         },
+         "cREVGeneral[scripteditorvscroll]": {
+            "scripteditorvscroll": "190"
+         }
+      },
+      "longID": "stack \"revNewScriptEditor\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "behavior": "stack \"revseutilities\"",
+         "decorations": "default",
+         "fileName": "revscripteditor.8.rev",
+         "id": "1021",
+         "liveResizing": false,
+         "name": "revNewScriptEditor",
+         "rect": "682,386,1082,786"
+      },
+      "sharedGroupIDs": null
+   },
+   "revSEDebugEntryDialog": {
+      "#name": "stack \"revSEDebugEntryDialog\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Please choose the handler that Revolution should invoke to start debugging this script. "
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "<p>Please choose the handler that LiveCode should invoke to start debugging this script. </p>",
+                     "id": "1003",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "16,12,430,64",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1005": {
+                  "#name": "button \"Handler\"",
+                  "customproperties": {
+                     "cHandlers": "M,mouseUp"
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1005",
+                     "label": "mouseUp",
+                     "layer": "2",
+                     "menuMode": "option",
+                     "name": "Handler",
+                     "rect": "26,62,322,84",
+                     "style": "menu",
+                     "text": "mouseUp",
+                     "traversalOn": false
+                  }
+               },
+               "1007": {
+                  "#name": "button \"OK\"",
+                  "properties": {
+                     "id": "1007",
+                     "layer": "3",
+                     "name": "OK",
+                     "rect": "247,236,329,259",
+                     "traversalOn": false
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1010",
+                     "layer": "4",
+                     "name": "Cancel",
+                     "rect": "337,236,419,259",
+                     "traversalOn": false
+                  }
+               },
+               "1018": {
+                  "#name": "group \"Parameter Template\"",
+                  "childcontrols": {
+                     "1015": {
+                        "#name": "field \"Name\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Label:</p>",
+                           "id": "1015",
+                           "layer": "6",
+                           "lockText": true,
+                           "name": "Name",
+                           "opaque": false,
+                           "rect": "410,261,510,284",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1017": {
+                        "#name": "field \"Value\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1017",
+                           "layer": "7",
+                           "name": "Value",
+                           "rect": "516,261,750,284"
+                        }
+                     },
+                     "1195": {
+                        "#name": "field \"Overlay\"",
+                        "properties": {
+                           "borderWidth": "0",
+                           "dontWrap": true,
+                           "id": "1195",
+                           "layer": "8",
+                           "lockText": true,
+                           "name": "Overlay",
+                           "opaque": false,
+                           "rect": "186,331,286,352",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "transparent",
+                           "textAlign": "center",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1018",
+                     "layer": "5",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "Parameter Template",
+                     "rect": "406,257,754,288"
+                  }
+               },
+               "1037": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Parameters to pass:"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Parameters to pass:</p>",
+                     "id": "1037",
+                     "layer": "9",
+                     "lockText": true,
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "16,96,304,118",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1875": {
+                  "#name": "group \"Parameter List\"",
+                  "customproperties": {
+                     "cItemTemplate": "group id 1018 of card id 1002 of stack \"revSEDebugEntryDialog\" of stack \"C:/Workspace/Projects/Revolution/ide/Toolset/revscripteditor.rev\""
+                  },
+                  "properties": {
+                     "backColor": "255,255,255",
+                     "id": "1875",
+                     "layer": "10",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "Parameter List",
+                     "rect": "24,125,372,230"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "10"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cCaller": "stack \"revNewScriptEditor 1\" of stack \"C:/Workspace/Projects/Revolution/ide/Toolset/revscripteditor.rev\"",
+         "cResult": "cancelled"
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1875"
+         }
+      },
+      "longID": "stack \"revSEDebugEntryDialog\" of stack \"revNewScriptEditor\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "id": "1875",
+         "liveResizing": false,
+         "name": "revSEDebugEntryDialog",
+         "rect": "-361,511,62,777",
+         "resizable": false,
+         "title": "Default Entry Point"
+      },
+      "sharedGroupIDs": null
+   },
+   "revSEDisambiguator": {
+      "#name": "stack \"revSEDisambiguator\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "group \"Disambiguator\"",
+                  "properties": {
+                     "cantDelete": true,
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Disambiguator",
+                     "rect": "60,4,68,12"
+                  }
+               },
+               "1008": {
+                  "#name": "button \"OK\"",
+                  "properties": {
+                     "id": "1008",
+                     "layer": "2",
+                     "name": "OK",
+                     "rect": "388,154,470,177",
+                     "traversalOn": false
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1010",
+                     "layer": "3",
+                     "name": "Cancel",
+                     "rect": "476,154,558,177",
+                     "traversalOn": false
+                  }
+               },
+               "1011": {
+                  "#name": "field \"Symbols\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "asdfasdfs"
+                     }
+                  },
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>  group \"Variables\" of group \"Panes\" of card \"Main\" of stack \"revSETemplate\" of stack \"revNewScriptEditor\" / resize</p>\n<p>  group \"Panes\" of card \"Main\" of stack \"revSETemplate\" of stack \"revNewScriptEditor\" / resize</p>",
+                     "id": "1011",
+                     "layer": "4",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "Symbols",
+                     "rect": "12,24,562,140"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "4"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cResult": "handler,Message,resize,76,group id 57964 of group id 1050 of card id 1002 of stack \"revSETemplate\" of stack \"C:/Workspace/Projects/Revolution/ide/Toolset/revscripteditor.rev\"",
+         "cSymbols": "%file%: assets/revSEDisambiguator_cSymbols.bin",
+         "resizeable": false
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1012"
+         }
+      },
+      "longID": "stack \"revSEDisambiguator\" of stack \"revNewScriptEditor\"",
+      "properties": {
+         "decorations": "default",
+         "id": "1012",
+         "liveResizing": false,
+         "name": "revSEDisambiguator",
+         "rect": "983,509,1555,693",
+         "resizable": false,
+         "title": "Resolve Ambiguity"
+      },
+      "sharedGroupIDs": null
+   },
+   "revSEEditBreakpoint": {
+      "#name": "stack \"revSEEditBreakpoint\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1007": {
+                  "#name": "group id 1007",
+                  "childcontrols": {
+                     "1004": {
+                        "#name": "button \"Breakpoint\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1004",
+                           "layer": "2",
+                           "name": "Breakpoint",
+                           "opaque": false,
+                           "rect": "8,6,106,29",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1006": {
+                        "#name": "button \"Watch\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1006",
+                           "layer": "3",
+                           "name": "Watch",
+                           "opaque": false,
+                           "rect": "110,6,192,29",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "1",
+                     "id": "1007",
+                     "layer": "1",
+                     "rect": "4,2,196,33"
+                  }
+               },
+               "1020": {
+                  "#name": "button \"Ok\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1020",
+                     "layer": "4",
+                     "name": "Ok",
+                     "rect": "183,123,265,146",
+                     "traversalOn": false
+                  }
+               },
+               "1023": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1023",
+                     "layer": "5",
+                     "name": "Cancel",
+                     "rect": "271,123,353,146",
+                     "traversalOn": false
+                  }
+               },
+               "1024": {
+                  "#name": "group \"Breakpoint\"",
+                  "childcontrols": {
+                     "1012": {
+                        "#name": "field \"Line Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "bottomfieldloc": "57",
+                              "cellxspacing": "75",
+                              "cellyspacing": "14",
+                              "currenthscroll": "0",
+                              "currentview": "Line:",
+                              "currentvscroll": "0",
+                              "currentxmouseloc": "78",
+                              "currentymouseloc": "69",
+                              "leftfieldloc": "8",
+                              "numbertabstops": "1",
+                              "rightfieldloc": "58",
+                              "scrollbarwidth": "20",
+                              "topfieldloc": "36",
+                              "viewablecolumns": "1",
+                              "viewablerows": "2"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Line (1 - 7):</p>",
+                           "id": "1012",
+                           "layer": "7",
+                           "lockText": true,
+                           "name": "Line Label",
+                           "opaque": false,
+                           "rect": "16,38,109,59",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "tabStops": "75",
+                           "textAlign": "right",
+                           "textFont": "Tahoma",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1014": {
+                        "#name": "field \"Line\"",
+                        "properties": {
+                           "htmlText": "<p>3</p>",
+                           "id": "1014",
+                           "layer": "8",
+                           "name": "Line",
+                           "rect": "115,39,198,60"
+                        }
+                     },
+                     "1018": {
+                        "#name": "field \"Condition\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1018",
+                           "layer": "9",
+                           "name": "Condition",
+                           "rect": "115,64,347,85"
+                        }
+                     },
+                     "1025": {
+                        "#name": "field \"Condition Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "bottomfieldloc": "57",
+                              "cellxspacing": "75",
+                              "cellyspacing": "14",
+                              "currenthscroll": "0",
+                              "currentview": "Condition:",
+                              "currentvscroll": "0",
+                              "currentxmouseloc": "78",
+                              "currentymouseloc": "69",
+                              "leftfieldloc": "8",
+                              "numbertabstops": "1",
+                              "rightfieldloc": "58",
+                              "scrollbarwidth": "20",
+                              "topfieldloc": "36",
+                              "viewablecolumns": "1",
+                              "viewablerows": "2"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Condition:</p>",
+                           "id": "1025",
+                           "layer": "10",
+                           "lockText": true,
+                           "name": "Condition Label",
+                           "opaque": false,
+                           "rect": "18,60,109,81",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "tabStops": "75",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1024",
+                     "layer": "6",
+                     "name": "Breakpoint",
+                     "rect": "10,32,353,91",
+                     "showBorder": true
+                  }
+               },
+               "1026": {
+                  "#name": "group \"Watch\"",
+                  "childcontrols": {
+                     "1027": {
+                        "#name": "field \"Variable Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "bottomfieldloc": "57",
+                              "cellxspacing": "75",
+                              "cellyspacing": "14",
+                              "currenthscroll": "0",
+                              "currentview": "Variable:",
+                              "currentvscroll": "0",
+                              "currentxmouseloc": "78",
+                              "currentymouseloc": "69",
+                              "leftfieldloc": "8",
+                              "numbertabstops": "1",
+                              "rightfieldloc": "58",
+                              "scrollbarwidth": "20",
+                              "topfieldloc": "36",
+                              "viewablecolumns": "1",
+                              "viewablerows": "2"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Variable:</p>",
+                           "id": "1027",
+                           "layer": "12",
+                           "lockText": true,
+                           "name": "Variable Label",
+                           "opaque": false,
+                           "rect": "-818,63,-746,84",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "tabStops": "75",
+                           "textAlign": "right",
+                           "textFont": "Tahoma",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1029": {
+                        "#name": "field \"Condition\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1029",
+                           "layer": "13",
+                           "name": "Condition",
+                           "rect": "-742,89,-510,110"
+                        }
+                     },
+                     "1030": {
+                        "#name": "field \"Condition Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "bottomfieldloc": "57",
+                              "cellxspacing": "75",
+                              "cellyspacing": "14",
+                              "currenthscroll": "0",
+                              "currentview": "Condition:",
+                              "currentvscroll": "0",
+                              "currentxmouseloc": "78",
+                              "currentymouseloc": "69",
+                              "leftfieldloc": "8",
+                              "numbertabstops": "1",
+                              "rightfieldloc": "58",
+                              "scrollbarwidth": "20",
+                              "topfieldloc": "36",
+                              "viewablecolumns": "1",
+                              "viewablerows": "2"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Condition:</p>",
+                           "id": "1030",
+                           "layer": "14",
+                           "lockText": true,
+                           "name": "Condition Label",
+                           "opaque": false,
+                           "rect": "-818,88,-746,109",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "tabStops": "75",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1031": {
+                        "#name": "field \"Handler Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "bottomfieldloc": "57",
+                              "cellxspacing": "75",
+                              "cellyspacing": "14",
+                              "currenthscroll": "0",
+                              "currentview": "Handler:",
+                              "currentvscroll": "0",
+                              "currentxmouseloc": "78",
+                              "currentymouseloc": "69",
+                              "leftfieldloc": "8",
+                              "numbertabstops": "1",
+                              "rightfieldloc": "58",
+                              "scrollbarwidth": "20",
+                              "topfieldloc": "36",
+                              "viewablecolumns": "1",
+                              "viewablerows": "2"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Handler:</p>",
+                           "id": "1031",
+                           "layer": "15",
+                           "lockText": true,
+                           "name": "Handler Label",
+                           "opaque": false,
+                           "rect": "-818,38,-746,59",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "tabStops": "75",
+                           "textAlign": "right",
+                           "textFont": "Tahoma",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1033": {
+                        "#name": "button \"Handler\"",
+                        "customproperties": {
+                           "cHandlers": "\nM mouseUp 4 7 button id 1004 of card id 1002 of stack \"Untitled 1\""
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1033",
+                           "label": "mouseUp",
+                           "layer": "16",
+                           "menuHistory": "2",
+                           "menuMode": "option",
+                           "name": "Handler",
+                           "rect": "-742,38,-586,60",
+                           "style": "menu",
+                           "text": "Global Scope\nmouseUp"
+                        }
+                     },
+                     "1036": {
+                        "#name": "button \"Variable\"",
+                        "customproperties": {
+                           "cVariables": "Local,tLocal\nScript Local,sScriptLocal\nGlobal,gHandlerGlobal\nGlobal,gScriptGlobal"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1036",
+                           "label": "gHandlerGlobal",
+                           "layer": "17",
+                           "menuHistory": "3",
+                           "menuMode": "option",
+                           "name": "Variable",
+                           "rect": "-742,64,-586,86",
+                           "style": "menu",
+                           "text": "tLocal\nsScriptLocal\ngHandlerGlobal\ngScriptGlobal"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1026",
+                     "layer": "11",
+                     "lockLoc": true,
+                     "name": "Watch",
+                     "rect": "-822,32,-500,116",
+                     "showBorder": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "17"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cBreakpointCondition": null,
+         "cCaller": "stack \"revNewScriptEditor 1\" of stack \"/Users/montegoulding/livecode-private/livecode/ide/Toolset/palettes/script editor/revscripteditor.8.rev\"",
+         "cHandler": "mouseUp",
+         "cLine": "3",
+         "cMode": "edit",
+         "cObject": "control id 1013 of stack \"mergJSON\"",
+         "cType": "breakpoint",
+         "cVariable": "gHandlerGlobal",
+         "cVariableScope": null,
+         "cWatchCondition": null
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1036"
+         }
+      },
+      "longID": "stack \"revSEEditBreakpoint\" of stack \"revNewScriptEditor\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "behavior": "stack \"revSEEditBreakpointStackBehavior\"",
+         "decorations": "default",
+         "id": "1036",
+         "liveResizing": false,
+         "name": "revSEEditBreakpoint",
+         "rect": "864,671,1220,821",
+         "resizable": false,
+         "title": "Edit Breakpoint"
+      },
+      "sharedGroupIDs": null
+   },
+   "revSEFind": {
+      "#name": "stack \"revSEFind\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Main\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Find what:"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Find what:</p>",
+                     "id": "1004",
+                     "layer": "1",
+                     "lockText": true,
+                     "margins": "4",
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "5,3,160,26",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "button \"Find\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1012",
+                     "label": "preOpenCard",
+                     "layer": "2",
+                     "menuMode": "combobox",
+                     "name": "Find",
+                     "rect": "5,20,342,44",
+                     "style": "menu",
+                     "text": "%file%: assets/revSEFind_1002_1012_text.txt"
+                  }
+               },
+               "1014": {
+                  "#name": "button \"Regular Expression Builder\"",
+                  "properties": {
+                     "id": "1014",
+                     "label": "..",
+                     "layer": "3",
+                     "name": "Regular Expression Builder",
+                     "rect": "828,20,854,44",
+                     "toolTip": "Regular expression builder",
+                     "traversalOn": false
+                  }
+               },
+               "1017": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Look in:"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Look in:</p>",
+                     "id": "1017",
+                     "layer": "4",
+                     "lockText": true,
+                     "margins": "4",
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "7,112,81,135",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1019": {
+                  "#name": "button \"Location\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1019",
+                     "label": "Current Tab",
+                     "layer": "5",
+                     "menuMode": "option",
+                     "name": "Location",
+                     "rect": "7,128,174,152",
+                     "style": "menu",
+                     "text": "Current Tab\nAll Tabs\nCard\nStack\nStack File\nStack File and its stackFiles\nAll Stack Files\nAll available stacks",
+                     "traversalOn": false
+                  }
+               },
+               "1022": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Replace with:"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Replace with:</p>",
+                     "id": "1022",
+                     "layer": "6",
+                     "lockText": true,
+                     "margins": "4",
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "5,49,167,72",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1023": {
+                  "#name": "button \"Replace\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1023",
+                     "label": " tLine)",
+                     "layer": "7",
+                     "menuMode": "combobox",
+                     "name": "Replace",
+                     "rect": "5,64,342,88",
+                     "style": "menu",
+                     "text": " tLine)\n"
+                  }
+               },
+               "1025": {
+                  "#name": "button \"Toggle Options\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "icon": "205223",
+                     "id": "1025",
+                     "label": "-",
+                     "layer": "8",
+                     "name": "Toggle Options",
+                     "opaque": false,
+                     "rect": "6,157,29,180",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1026": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Find options"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Find options</p>",
+                     "id": "1026",
+                     "layer": "9",
+                     "lockText": true,
+                     "margins": "4",
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "31,161,172,184",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1028": {
+                  "#name": "button \"Find Next\"",
+                  "properties": {
+                     "id": "1028",
+                     "layer": "10",
+                     "name": "Find Next",
+                     "rect": "181,130,263,153",
+                     "traversalOn": false
+                  }
+               },
+               "1030": {
+                  "#name": "button \"Replace one\"",
+                  "properties": {
+                     "id": "1030",
+                     "label": "Replace",
+                     "layer": "11",
+                     "name": "Replace one",
+                     "rect": "265,130,347,153",
+                     "traversalOn": false
+                  }
+               },
+               "1032": {
+                  "#name": "button \"Replace all\"",
+                  "properties": {
+                     "id": "1032",
+                     "layer": "12",
+                     "name": "Replace all",
+                     "rect": "265,156,347,179",
+                     "traversalOn": false
+                  }
+               },
+               "1040": {
+                  "#name": "button \"Find all\"",
+                  "properties": {
+                     "id": "1040",
+                     "layer": "13",
+                     "name": "Find all",
+                     "rect": "181,156,263,179",
+                     "traversalOn": false
+                  }
+               },
+               "1041": {
+                  "#name": "group \"Options\"",
+                  "childcontrols": {
+                     "1034": {
+                        "#name": "button \"Match whole words\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1034",
+                           "layer": "15",
+                           "name": "Match whole words",
+                           "opaque": false,
+                           "rect": "12,207,202,230",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1036": {
+                        "#name": "button \"Case sensitive search\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1036",
+                           "layer": "16",
+                           "name": "Case sensitive search",
+                           "opaque": false,
+                           "rect": "12,182,197,205",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1047": {
+                        "#name": "group \"searchType\"",
+                        "childcontrols": {
+                           "1044": {
+                              "#name": "button \"regEx\"",
+                              "properties": {
+                                 "borderWidth": "0",
+                                 "hiliteBorder": false,
+                                 "id": "1044",
+                                 "label": "Regular expressions",
+                                 "layer": "18",
+                                 "name": "regEx",
+                                 "opaque": false,
+                                 "rect": "12,250,167,282",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left",
+                                 "threeD": false
+                              }
+                           },
+                           "1045": {
+                              "#name": "button \"wildcards\"",
+                              "properties": {
+                                 "borderWidth": "0",
+                                 "hiliteBorder": false,
+                                 "id": "1045",
+                                 "label": "Wildcards",
+                                 "layer": "19",
+                                 "name": "wildcards",
+                                 "opaque": false,
+                                 "rect": "170,250,262,282",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left",
+                                 "threeD": false
+                              }
+                           },
+                           "1046": {
+                              "#name": "button \"plaintext\"",
+                              "properties": {
+                                 "borderWidth": "0",
+                                 "hiliteBorder": false,
+                                 "hilited": true,
+                                 "id": "1046",
+                                 "label": "Plain text",
+                                 "layer": "20",
+                                 "name": "plaintext",
+                                 "opaque": false,
+                                 "rect": "265,250,375,282",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left",
+                                 "threeD": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "hilitedButton": "3",
+                           "id": "1047",
+                           "layer": "17",
+                           "name": "searchType",
+                           "rect": "8,246,379,286"
+                        }
+                     },
+                     "1048": {
+                        "#name": "field \"searchTypeLabel\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Search method:"
+                           }
+                        },
+                        "properties": {
+                           "borderWidth": "0",
+                           "htmlText": "<p>Search method:</p>",
+                           "id": "1048",
+                           "layer": "21",
+                           "lockText": true,
+                           "name": "searchTypeLabel",
+                           "opaque": false,
+                           "rect": "9,236,137,260",
+                           "showFocusBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1041",
+                     "layer": "14",
+                     "lockLoc": true,
+                     "name": "Options",
+                     "rect": "8,178,346,282"
+                  }
+               },
+               "1043": {
+                  "#name": "field \"Status\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "35 occurrences replaced"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "id": "1043",
+                     "layer": "22",
+                     "lockText": true,
+                     "name": "Status",
+                     "opaque": false,
+                     "rect": "4,92,340,113",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "21"
+               }
+            },
+            "properties": {
+               "behavior": "stack \"revSEFindMainCardBehavior\"",
+               "id": "1002",
+               "name": "Main"
+            }
+         }
+      },
+      "customproperties": {
+         "cCaller": "stack \"revNewScriptEditor 1\" of stack \"/Users/montegoulding/livecode-private/livecode/ide/Toolset/palettes/script editor/revscripteditor.8.rev\""
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1048"
+         }
+      },
+      "longID": "stack \"revSEFind\" of stack \"revNewScriptEditor\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "id": "1048",
+         "liveResizing": false,
+         "name": "revSEFind",
+         "rect": "530,336,883,623",
+         "resizable": false,
+         "stackFiles": "revSEFindMainCardBehavior,behaviors/revsefindmaincardbehavior.livecodescript",
+         "title": "Find and Replace"
+      },
+      "sharedGroupIDs": null
+   },
+   "revSEGoDialog": {
+      "#name": "stack \"revSEGoDialog\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"Label\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Line number (1 - 5149):</p>",
+                     "id": "1004",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "Label",
+                     "opaque": false,
+                     "rect": "2,6,176,27",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Number\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "id": "1006",
+                     "layer": "2",
+                     "name": "Number",
+                     "rect": "8,28,230,49"
+                  }
+               },
+               "1010": {
+                  "#name": "button \"OK\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1010",
+                     "layer": "3",
+                     "name": "OK",
+                     "rect": "61,60,143,83"
+                  }
+               },
+               "1013": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1013",
+                     "layer": "4",
+                     "name": "Cancel",
+                     "rect": "147,60,229,83",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cChoice": null,
+         "cMaxLineNumber": "5149"
+      },
+      "longID": "stack \"revSEGoDialog\" of stack \"revNewScriptEditor\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "id": "1013",
+         "liveResizing": false,
+         "name": "revSEGoDialog",
+         "rect": "1002,674,1242,761",
+         "resizable": false,
+         "title": "Go to Line"
+      },
+      "sharedGroupIDs": null
+   },
+   "revSEModifiedExternallyDialog": {
+      "#name": "stack \"revSEModifiedExternallyDialog\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1005": {
+                  "#name": "button \"Reload\"",
+                  "customproperties": {
+                     "cAction": "Reload"
+                  },
+                  "properties": {
+                     "default": true,
+                     "id": "1005",
+                     "layer": "1",
+                     "name": "Reload",
+                     "rect": "144,191,226,214"
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Cancel\"",
+                  "customproperties": {
+                     "cAction": "Cancel"
+                  },
+                  "properties": {
+                     "id": "1010",
+                     "layer": "2",
+                     "name": "Cancel",
+                     "rect": "231,191,313,214",
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "The following objects were modified outside the script editor, would you like to reload them?\n\nNote that reloading will lose any unsaved changes."
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "<p>The following objects were modified outside the script editor, would you like to reload them?</p>\n<p></p>\n<p>Note that reloading will lose any unsaved changes.</p>",
+                     "id": "1012",
+                     "layer": "3",
+                     "lockText": true,
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "6,2,304,78",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1014": {
+                  "#name": "field \"Field\"",
+                  "properties": {
+                     "htmlText": "<p>button \"Button\"</p>\n<p>button \"Template Stack\"</p>\n<p>button \"Template Editor\"</p>",
+                     "id": "1014",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "Field",
+                     "rect": "8,86,312,186",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "traversalOn": false,
+                     "vScrollbar": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "4"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cChoice": "Reload",
+         "cObjects": "control id 1004 of stack \"Untitled 1\"\ncontrol id 1021 of stack \"revNewScriptEditor\"\ncontrol id 1017 of stack \"revNewScriptEditor\"\n"
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1016"
+         }
+      },
+      "longID": "stack \"revSEModifiedExternallyDialog\" of stack \"revNewScriptEditor\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "id": "1016",
+         "liveResizing": false,
+         "name": "revSEModifiedExternallyDialog",
+         "rect": "1121,611,1439,829",
+         "resizable": false,
+         "title": "Scripts externally modified"
+      },
+      "sharedGroupIDs": null
+   },
+   "revSETemplate": {
+      "#name": "stack \"revSETemplate\"",
+      "backgroundIDs": "1003",
+      "cardIDs": "1002\n2609",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Main\"",
+            "childcontrols": {
+               "1003": "#shared group",
+               "1021": {
+                  "#name": "group \"Toolbar\"",
+                  "childcontrols": {
+                     "1014": {
+                        "#name": "graphic \"Divider\"",
+                        "properties": {
+                           "antialiased": false,
+                           "foreColor": "192,192,192",
+                           "id": "1014",
+                           "layer": "9",
+                           "name": "Divider",
+                           "points": "1,27\n1139,27",
+                           "rect": "0,26,1140,28",
+                           "style": "line"
+                        }
+                     },
+                     "1018": {
+                        "#name": "button \"Undo\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "disabled": true,
+                           "disabledIcon": "205150",
+                           "hiliteBorder": false,
+                           "icon": "205006",
+                           "id": "1018",
+                           "label": "<-",
+                           "layer": "10",
+                           "name": "Undo",
+                           "opaque": false,
+                           "rect": "75,29,99,53",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "toolTip": "Undo last change (Cmd+z)",
+                           "traversalOn": false
+                        }
+                     },
+                     "1019": {
+                        "#name": "button \"Redo\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "disabled": true,
+                           "disabledIcon": "205132",
+                           "hiliteBorder": false,
+                           "icon": "205007",
+                           "id": "1019",
+                           "label": "->",
+                           "layer": "11",
+                           "name": "Redo",
+                           "opaque": false,
+                           "rect": "100,29,124,53",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "toolTip": "Redo last undone change (Cmd+Shift+z)",
+                           "traversalOn": false
+                        }
+                     },
+                     "1022": {
+                        "#name": "button \"Compile\"",
+                        "properties": {
+                           "disabled": true,
+                           "id": "1022",
+                           "label": "Apply",
+                           "layer": "12",
+                           "name": "Compile",
+                           "rect": "9,29,74,53",
+                           "toolTip": "Compile and apply the current script (Enter, Cmd+Return)",
+                           "traversalOn": false
+                        }
+                     },
+                     "1024": {
+                        "#name": "button \"Show Next\"",
+                        "customproperties": {
+                           "cDebugControl": true
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "disabled": true,
+                           "disabledIcon": "205129",
+                           "hiliteBorder": false,
+                           "icon": "205003",
+                           "id": "1024",
+                           "layer": "13",
+                           "name": "Show Next",
+                           "opaque": false,
+                           "rect": "-524,29,-500,53",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "toolTip": "Show next statement",
+                           "traversalOn": false
+                        }
+                     },
+                     "1025": {
+                        "#name": "button \"Run\"",
+                        "customproperties": {
+                           "cDebugControl": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "disabledIcon": "205135",
+                           "hiliteBorder": false,
+                           "icon": "205004",
+                           "id": "1025",
+                           "layer": "14",
+                           "name": "Run",
+                           "opaque": false,
+                           "rect": "125,29,149,53",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "toolTip": "Continue (Cmd+Shift+>)",
+                           "traversalOn": false
+                        }
+                     },
+                     "1026": {
+                        "#name": "button \"Step Into\"",
+                        "customproperties": {
+                           "cDebugControl": true
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "disabled": true,
+                           "disabledIcon": "205138",
+                           "hiliteBorder": false,
+                           "icon": "205002",
+                           "id": "1026",
+                           "layer": "15",
+                           "name": "Step Into",
+                           "opaque": false,
+                           "rect": "-524,29,-500,53",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "toolTip": "Step into next statement (Cmd+i)",
+                           "traversalOn": false
+                        }
+                     },
+                     "1027": {
+                        "#name": "button \"Step Over\"",
+                        "customproperties": {
+                           "cDebugControl": true
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "disabled": true,
+                           "disabledIcon": "205144",
+                           "hiliteBorder": false,
+                           "icon": "205001",
+                           "id": "1027",
+                           "layer": "16",
+                           "margins": "4,8,4,4",
+                           "name": "Step Over",
+                           "opaque": false,
+                           "rect": "-524,29,-500,52",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "toolTip": "Step over next statement (Cmd+o)",
+                           "traversalOn": false
+                        }
+                     },
+                     "1028": {
+                        "#name": "button \"Step Out\"",
+                        "customproperties": {
+                           "cDebugControl": true
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "disabled": true,
+                           "disabledIcon": "205141",
+                           "hiliteBorder": false,
+                           "icon": "205000",
+                           "id": "1028",
+                           "layer": "17",
+                           "name": "Step Out",
+                           "opaque": false,
+                           "rect": "-524,29,-500,53",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "toolTip": "Step out of current handler (Cmd+t)",
+                           "traversalOn": false
+                        }
+                     },
+                     "1035": {
+                        "#name": "button \"Handlers\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "0,0,0",
+                           "hiliteBorder": false,
+                           "id": "1035",
+                           "ink": "blendDstOver",
+                           "layer": "19",
+                           "name": "Handlers",
+                           "rect": "150,29,470,53",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "opaque",
+                           "threeD": false,
+                           "toolTip": "Handler List",
+                           "traversalOn": false
+                        }
+                     },
+                     "1153": {
+                        "#name": "button \"Debug Context\"",
+                        "customproperties": {
+                           "cContexts": null,
+                           "cDebugControl": true
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "disabled": true,
+                           "id": "1153",
+                           "layer": "20",
+                           "menuMode": "option",
+                           "name": "Debug Context",
+                           "rect": "-695,29,-500,53",
+                           "style": "menu",
+                           "toolTip": "Execution contexts",
+                           "traversalOn": false
+                        }
+                     },
+                     "13081": {
+                        "#name": "button \"Stop\"",
+                        "customproperties": {
+                           "cDebugControl": true
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "disabled": true,
+                           "disabledIcon": "205147",
+                           "hiliteBorder": false,
+                           "icon": "205005",
+                           "id": "13081",
+                           "layer": "21",
+                           "name": "Stop",
+                           "opaque": false,
+                           "rect": "-524,29,-500,53",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "toolTip": "Stop debugging (Cmd+y)",
+                           "traversalOn": false
+                        }
+                     },
+                     "45893": {
+                        "#name": "button \"Fake Handler Menu\"",
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "45893",
+                           "label": "Handler list",
+                           "layer": "18",
+                           "menuLines": "0",
+                           "menuMode": "option",
+                           "name": "Fake Handler Menu",
+                           "rect": "150,29,470,53",
+                           "style": "menu",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "stack \"revSEToolbarBehavior\"",
+                     "id": "1021",
+                     "layer": "8",
+                     "lockLoc": true,
+                     "name": "Toolbar",
+                     "rect": "0,26,1140,54"
+                  }
+               },
+               "1038": {
+                  "#name": "group \"Script Tabs\"",
+                  "childcontrols": {
+                     "45364": {
+                        "#name": "button \"Close\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "hiliteBorder": false,
+                           "icon": "205011",
+                           "id": "45364",
+                           "layer": "23",
+                           "name": "Close",
+                           "rect": "1206,54,1228,76",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "opaque",
+                           "threeD": false,
+                           "toolTip": "Close the current tab",
+                           "traversalOn": false
+                        }
+                     },
+                     "51875": {
+                        "#name": "button \"Tab Context Menu\"",
+                        "customproperties": {
+                           "cTabNumber": "1"
+                        },
+                        "properties": {
+                           "id": "51875",
+                           "layer": "24",
+                           "menuMode": "popup",
+                           "name": "Tab Context Menu",
+                           "rect": "627,360,729,382",
+                           "style": "menu",
+                           "text": "Close tab\n(Close other tabs",
+                           "traversalOn": false
+                        }
+                     },
+                     "53672": {
+                        "#name": "button \"History\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "hiliteBorder": false,
+                           "hoverIcon": "205076",
+                           "icon": "205075",
+                           "id": "53672",
+                           "layer": "25",
+                           "name": "History",
+                           "rect": "1184,54,1206,76",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "opaque",
+                           "threeD": false,
+                           "toolTip": "Recent scripts",
+                           "traversalOn": false
+                        }
+                     },
+                     "53686": {
+                        "#name": "button \"History Menu\"",
+                        "customproperties": {
+                           "cTabNumber": "1"
+                        },
+                        "properties": {
+                           "id": "53686",
+                           "layer": "26",
+                           "menuMode": "popup",
+                           "name": "History Menu",
+                           "rect": "627,390,729,412",
+                           "style": "menu"
+                        }
+                     },
+                     "53727": {
+                        "#name": "button \"Active Tabs\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "hiliteBorder": false,
+                           "hoverIcon": "205072",
+                           "icon": "205071",
+                           "id": "53727",
+                           "layer": "27",
+                           "name": "Active Tabs",
+                           "rect": "1162,54,1184,76",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "opaque",
+                           "threeD": false,
+                           "toolTip": "Active tabs",
+                           "traversalOn": false
+                        }
+                     },
+                     "53741": {
+                        "#name": "button \"Active Tabs Menu\"",
+                        "customproperties": {
+                           "cTabNumber": "1"
+                        },
+                        "properties": {
+                           "id": "53741",
+                           "layer": "28",
+                           "menuMode": "popup",
+                           "name": "Active Tabs Menu",
+                           "rect": "627,430,729,452",
+                           "style": "menu"
+                        }
+                     },
+                     "53951": {
+                        "#name": "group \"Template Tab\"",
+                        "childcontrols": {
+                           "47572": {
+                              "#name": "button \"Tab\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "borderColor": "192,192,192",
+                                 "borderWidth": "1",
+                                 "id": "47572",
+                                 "layer": "30",
+                                 "name": "Tab",
+                                 "rect": "477,364,537,385",
+                                 "sharedHilite": false,
+                                 "style": "rectangle",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "54054": {
+                              "#name": "button \"Tab Icon\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "hiliteBorder": false,
+                                 "id": "54054",
+                                 "layer": "31",
+                                 "name": "Tab Icon",
+                                 "opaque": false,
+                                 "rect": "451,420,466,435",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "showName": false,
+                                 "style": "transparent",
+                                 "threeD": false,
+                                 "toolTip": "Close",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "53951",
+                           "layer": "29",
+                           "lockLoc": true,
+                           "margins": "0",
+                           "name": "Template Tab",
+                           "rect": "473,360,533,381"
+                        }
+                     },
+                     "56965": {
+                        "#name": "button \"Toggle Toolbars\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "hiliteBorder": false,
+                           "hiliteIcon": "200951",
+                           "hoverIcon": "205224",
+                           "icon": "205223",
+                           "id": "56965",
+                           "layer": "32",
+                           "name": "Toggle Toolbars",
+                           "rect": "1141,55,1163,77",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "opaque",
+                           "threeD": false,
+                           "toolTip": "Toggle the script editor toolbars",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "stack \"revSEScriptTabsBehavior\"",
+                     "borderColor": "192,192,192",
+                     "borderWidth": "1",
+                     "cantDelete": true,
+                     "id": "1038",
+                     "layer": "22",
+                     "lockLoc": true,
+                     "name": "Script Tabs",
+                     "rect": "235,54,1140,77",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "1046": {
+                  "#name": "group \"Editor\"",
+                  "childcontrols": {
+                     "1040": {
+                        "#name": "field \"Script\"",
+                        "properties": {
+                           "backColor": "255,255,255",
+                           "dontWrap": true,
+                           "hScrollbar": true,
+                           "id": "1040",
+                           "layer": "34",
+                           "name": "Script",
+                           "rect": "272,77,1140,754",
+                           "scrollbarWidth": "13",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "textStyle": "plain",
+                           "vScrollbar": true
+                        }
+                     },
+                     "14913": {
+                        "#name": "group \"Interactive Find\"",
+                        "childcontrols": {
+                           "14914": {
+                              "#name": "field \"Label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Find:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Find:</p>",
+                                 "id": "14914",
+                                 "layer": "42",
+                                 "lockText": true,
+                                 "name": "Label",
+                                 "opaque": false,
+                                 "rect": "294,754,342,777",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "14915": {
+                              "#name": "button \"Close\"",
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "icon": "205011",
+                                 "id": "14915",
+                                 "layer": "43",
+                                 "name": "Close",
+                                 "rect": "276,754,300,777",
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "opaque",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "14916": {
+                              "#name": "field \"Find\"",
+                              "properties": {
+                                 "dontWrap": true,
+                                 "id": "14916",
+                                 "layer": "44",
+                                 "name": "Find",
+                                 "rect": "336,754,482,777"
+                              }
+                           },
+                           "14917": {
+                              "#name": "button \"Next\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "hiliteBorder": false,
+                                 "icon": "205014",
+                                 "id": "14917",
+                                 "layer": "45",
+                                 "margins": "8",
+                                 "name": "Next",
+                                 "rect": "483,754,543,777",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "style": "opaque",
+                                 "textAlign": "left",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "14918": {
+                              "#name": "button \"Previous\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "hiliteBorder": false,
+                                 "icon": "205013",
+                                 "id": "14918",
+                                 "layer": "46",
+                                 "margins": "8",
+                                 "name": "Previous",
+                                 "rect": "541,754,625,777",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "style": "opaque",
+                                 "textAlign": "left",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "14919": {
+                              "#name": "button \"Case\"",
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "id": "14919",
+                                 "label": "Match Case",
+                                 "layer": "47",
+                                 "name": "Case",
+                                 "opaque": false,
+                                 "rect": "626,754,740,777",
+                                 "showBorder": false,
+                                 "style": "checkbox",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "61174": {
+                              "#name": "button \"More\"",
+                              "properties": {
+                                 "id": "61174",
+                                 "label": "More..",
+                                 "layer": "48",
+                                 "name": "More",
+                                 "rect": "726,754,808,777",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"revSEInteractiveFindBehavior\"",
+                           "id": "14913",
+                           "layer": "41",
+                           "lockLoc": true,
+                           "name": "Interactive Find",
+                           "opaque": true,
+                           "rect": "272,754,1140,777"
+                        }
+                     },
+                     "3333": {
+                        "#name": "group \"Gutter\"",
+                        "childcontrols": {
+                           "3335": {
+                              "#name": "field \"Overlay\"",
+                              "customproperties": {
+                                 "cGutterId": "1784",
+                                 "cPaneId": "1783"
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "backColor": "217,217,217",
+                                 "dontWrap": true,
+                                 "foreColor": "128,128,128",
+                                 "htmlText": "<p> </p>",
+                                 "id": "3335",
+                                 "layer": "36",
+                                 "lockText": true,
+                                 "margins": "8,8,1,8",
+                                 "name": "Overlay",
+                                 "opaque": false,
+                                 "rect": "235,77,272,741",
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "threeD": false
+                              }
+                           },
+                           "51607": {
+                              "#name": "button \"Breakpoint Context Menu\"",
+                              "customproperties": {
+                                 "cContext": "992\nactive\ntrue\nimage id 52909 of group id 3333 of group id 1046 of card id 1002 of stack \"E:/Work/Pegasus/revScriptEditor.rev\"",
+                                 "cTarget": "image id 52909 of group id 3333 of group id 1046 of card id 1002 of stack \"E:/Work/Pegasus/revScriptEditor.rev\""
+                              },
+                              "properties": {
+                                 "id": "51607",
+                                 "layer": "37",
+                                 "menuMode": "popup",
+                                 "name": "Breakpoint Context Menu",
+                                 "rect": "-265,342,-163,364",
+                                 "style": "menu",
+                                 "text": "(Breakpoint (line 992)\n-\nDisable\nRemove\n-\nManage Breakpoints"
+                              }
+                           },
+                           "52167": {
+                              "#name": "field \"Numbers Template\"",
+                              "customproperties": {
+                                 "cGutterId": "1784",
+                                 "cPaneId": "1783"
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "backColor": "217,217,217",
+                                 "dontWrap": true,
+                                 "foreColor": "128,128,128",
+                                 "htmlText": "%file%: assets/revSETemplate_1002_1046_3333_52167_htmlText.txt",
+                                 "id": "52167",
+                                 "layer": "38",
+                                 "lockText": true,
+                                 "margins": "8,8,2,8",
+                                 "name": "Numbers Template",
+                                 "rect": "343,90,373,347",
+                                 "showBorder": false,
+                                 "style": "opaque",
+                                 "textAlign": "right",
+                                 "threeD": false
+                              }
+                           },
+                           "63378": {
+                              "#name": "field \"Numbers\"",
+                              "customproperties": {
+                                 "cGutterId": "1784",
+                                 "cPaneId": "1783"
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "backColor": "217,217,217",
+                                 "dontWrap": true,
+                                 "foreColor": "128,128,128",
+                                 "htmlText": "%file%: assets/revSETemplate_1002_1046_3333_63378_htmlText.txt",
+                                 "id": "63378",
+                                 "layer": "39",
+                                 "lockText": true,
+                                 "margins": "8,8,2,8",
+                                 "name": "Numbers",
+                                 "rect": "235,77,272,741",
+                                 "showBorder": false,
+                                 "style": "opaque",
+                                 "textAlign": "right",
+                                 "threeD": false
+                              }
+                           },
+                           "63379": {
+                              "#name": "group \"Mutables\"",
+                              "properties": {
+                                 "id": "63379",
+                                 "layer": "40",
+                                 "lockLoc": true,
+                                 "name": "Mutables",
+                                 "rect": "235,77,272,741"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "cFrameId": "1",
+                           "cPaneId": "1783",
+                           "cTypeId": "gutter"
+                        },
+                        "properties": {
+                           "behavior": "stack \"revSEGutterBehavior\"",
+                           "id": "3333",
+                           "layer": "35",
+                           "lockLoc": true,
+                           "margins": "0",
+                           "name": "Gutter",
+                           "rect": "235,77,272,741",
+                           "textFont": "Tahoma",
+                           "textSize": "12",
+                           "textStyle": "plain"
+                        }
+                     },
+                     "54230": {
+                        "#name": "button \"Context Menu\"",
+                        "properties": {
+                           "id": "54230",
+                           "layer": "49",
+                           "menuMode": "popup",
+                           "name": "Context Menu",
+                           "rect": "-367,554,-265,576",
+                           "style": "menu",
+                           "text": "Choice 1\nChoice 2\nChoice 3",
+                           "traversalOn": false
+                        }
+                     },
+                     "54422": {
+                        "#name": "group \"Enter Password\"",
+                        "childcontrols": {
+                           "54423": {
+                              "#name": "field \"Password\"",
+                              "properties": {
+                                 "dontWrap": true,
+                                 "id": "54423",
+                                 "layer": "51",
+                                 "name": "Password",
+                                 "rect": "-53,443,114,464"
+                              }
+                           },
+                           "54424": {
+                              "#name": "field \"Label Field\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "The script of this object is password protected, please enter the password to continue."
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "htmlText": "<p>The script of this object is password protected, please enter the password to continue.</p>",
+                                 "id": "54424",
+                                 "layer": "52",
+                                 "lockText": true,
+                                 "name": "Label Field",
+                                 "opaque": false,
+                                 "rect": "-54,402,237,442",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           },
+                           "54425": {
+                              "#name": "button \"Button\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "borderWidth": "0",
+                                 "hiliteBorder": false,
+                                 "icon": "203768",
+                                 "id": "54425",
+                                 "layer": "53",
+                                 "name": "Button",
+                                 "opaque": false,
+                                 "rect": "-74,409,-56,433",
+                                 "shadowOffset": "0",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "transparent",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "54426": {
+                              "#name": "button \"Unlock\"",
+                              "properties": {
+                                 "id": "54426",
+                                 "layer": "54",
+                                 "name": "Unlock",
+                                 "rect": "121,442,203,465",
+                                 "traversalOn": false
+                              }
+                           },
+                           "54427": {
+                              "#name": "field \"Error\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": null
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "backColor": "236,112,89",
+                                 "dontWrap": true,
+                                 "id": "54427",
+                                 "layer": "55",
+                                 "lockText": true,
+                                 "name": "Error",
+                                 "opaque": false,
+                                 "rect": "-57,468,169,489",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "54422",
+                           "layer": "50",
+                           "lockLoc": true,
+                           "name": "Enter Password",
+                           "rect": "-78,398,215,496"
+                        }
+                     },
+                     "56803": {
+                        "#name": "button \"revCompileObject\"",
+                        "properties": {
+                           "id": "56803",
+                           "layer": "56",
+                           "name": "revCompileObject",
+                           "rect": "-393,430,-265,462"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "stack \"revSEEditorBehavior\"",
+                     "cantDelete": true,
+                     "id": "1046",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "Editor",
+                     "rect": "235,77,1140,777"
+                  }
+               },
+               "1049": {
+                  "#name": "group \"Pane Tabs\"",
+                  "childcontrols": {
+                     "47741": {
+                        "#name": "button \"Errors\"",
+                        "customproperties": {
+                           "cTab": true
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "borderColor": "192,192,192",
+                           "borderWidth": "1",
+                           "id": "47741",
+                           "layer": "58",
+                           "margins": "4,6,4,4",
+                           "name": "Errors",
+                           "rect": "-1,789,54,810",
+                           "sharedHilite": false,
+                           "style": "rectangle",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "47742": {
+                        "#name": "button \"Variables\"",
+                        "customproperties": {
+                           "cTab": true
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "255,255,255",
+                           "borderColor": "192,192,192",
+                           "borderWidth": "1",
+                           "id": "47742",
+                           "layer": "59",
+                           "margins": "4,6,4,4",
+                           "name": "Variables",
+                           "rect": "54,787,128,810",
+                           "sharedHilite": false,
+                           "style": "rectangle",
+                           "textStyle": "bold",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "47743": {
+                        "#name": "button \"Documentation\"",
+                        "customproperties": {
+                           "cTab": true
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "borderColor": "192,192,192",
+                           "borderWidth": "1",
+                           "id": "47743",
+                           "layer": "60",
+                           "margins": "4,6,4,4",
+                           "name": "Documentation",
+                           "rect": "128,789,240,810",
+                           "sharedHilite": false,
+                           "style": "rectangle",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "53755": {
+                        "#name": "button \"Search Results\"",
+                        "customproperties": {
+                           "cTab": true
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "borderColor": "192,192,192",
+                           "borderWidth": "1",
+                           "id": "53755",
+                           "layer": "61",
+                           "margins": "4,6,4,4",
+                           "name": "Search Results",
+                           "rect": "332,789,443,810",
+                           "sharedHilite": false,
+                           "style": "rectangle",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "55151": {
+                        "#name": "button \"Breakpoints\"",
+                        "customproperties": {
+                           "cTab": true
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "borderColor": "192,192,192",
+                           "borderWidth": "1",
+                           "id": "55151",
+                           "layer": "62",
+                           "margins": "4,6,4,4",
+                           "name": "Breakpoints",
+                           "rect": "240,789,332,810",
+                           "sharedHilite": false,
+                           "style": "rectangle",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "cantDelete": true,
+                     "id": "1049",
+                     "layer": "57",
+                     "lockLoc": true,
+                     "name": "Pane Tabs",
+                     "rect": "0,787,1140,810"
+                  }
+               },
+               "1050": {
+                  "#name": "group \"Panes\"",
+                  "childcontrols": {
+                     "1051": {
+                        "#name": "group \"Documentation\"",
+                        "childcontrols": {
+                           "63382": {
+                              "#name": "field \"View\"",
+                              "customproperties": {
+                                 "cDocPaneObject": true
+                              },
+                              "properties": {
+                                 "backColor": "255,255,255",
+                                 "id": "63382",
+                                 "layer": "65",
+                                 "lockLoc": true,
+                                 "lockText": true,
+                                 "margins": "8,20,110,8",
+                                 "name": "View",
+                                 "rect": "-2482,885,-1000,966",
+                                 "showBorder": false,
+                                 "style": "opaque"
+                              }
+                           },
+                           "63383": {
+                              "#name": "button \"FullMode\"",
+                              "customproperties": {
+                                 "cDocPaneObject": true
+                              },
+                              "properties": {
+                                 "borderWidth": "0",
+                                 "id": "63383",
+                                 "label": "Full Document",
+                                 "layer": "66",
+                                 "lockLoc": true,
+                                 "name": "FullMode",
+                                 "opaque": false,
+                                 "rect": "-1126,968,-1030,992",
+                                 "showBorder": false,
+                                 "showFocusBorder": false,
+                                 "style": "checkbox",
+                                 "textAlign": "left",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "63384": {
+                              "#name": "button \"LaunchDocs\"",
+                              "customproperties": {
+                                 "cDocPaneObject": true
+                              },
+                              "properties": {
+                                 "id": "63384",
+                                 "label": "Launch Documentation",
+                                 "layer": "67",
+                                 "lockLoc": true,
+                                 "name": "LaunchDocs",
+                                 "rect": "-2481,967,-2357,991"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"revSEDocumentationPaneBehavior\"",
+                           "borderWidth": "1",
+                           "id": "1051",
+                           "layer": "64",
+                           "lockLoc": true,
+                           "name": "Documentation",
+                           "rect": "-2482,885,-1000,992",
+                           "textFont": "Tahoma",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "threeD": false
+                        }
+                     },
+                     "1069": {
+                        "#name": "group \"Errors\"",
+                        "childcontrols": {
+                           "4719": {
+                              "#name": "scrollbar \"Scrollbar\"",
+                              "properties": {
+                                 "endValue": "25",
+                                 "id": "4719",
+                                 "layer": "69",
+                                 "lineInc": "0",
+                                 "name": "Scrollbar",
+                                 "pageInc": "7.999161",
+                                 "rect": "-1032,883,-1016,941",
+                                 "startValue": "0",
+                                 "thumbSize": "0.999847",
+                                 "visible": false
+                              }
+                           },
+                           "59999": {
+                              "#name": "group \"List\"",
+                              "customproperties": {
+                                 "cItemTemplate": "group id 4713 of card id 2609 of stack \"revSETemplate\" of stack \"/Users/alilloyd/Documents/GitHub/refactor/ide/Toolset/palettes/script editor/revscripteditor.8.rev\"",
+                                 "cMutable": true
+                              },
+                              "properties": {
+                                 "backColor": "255,255,255",
+                                 "id": "59999",
+                                 "layer": "70",
+                                 "lockLoc": true,
+                                 "margins": "0",
+                                 "name": "List",
+                                 "opaque": true,
+                                 "rect": "-2140,883,-1016,941"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "cData": null,
+                           "cFrameId": "12",
+                           "cPaneId": "1808",
+                           "cTypeId": "gutter"
+                        },
+                        "properties": {
+                           "backColor": "255,255,255",
+                           "behavior": "stack \"revSEErrorsPaneBehavior\"",
+                           "id": "1069",
+                           "layer": "68",
+                           "lockLoc": true,
+                           "margins": "0",
+                           "name": "Errors",
+                           "opaque": true,
+                           "rect": "-2140,883,-1000,941"
+                        }
+                     },
+                     "53759": {
+                        "#name": "group \"Search Results\"",
+                        "childcontrols": {
+                           "53757": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "backColor": "255,255,255",
+                                 "dontWrap": true,
+                                 "id": "53757",
+                                 "layer": "72",
+                                 "listBehavior": true,
+                                 "lockText": true,
+                                 "name": "Field",
+                                 "rect": "-2306,1256,-1000,1539",
+                                 "scrollbarWidth": "13",
+                                 "showBorder": false,
+                                 "style": "scrolling",
+                                 "vScrollbar": true
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "53759",
+                           "layer": "71",
+                           "lockLoc": true,
+                           "name": "Search Results",
+                           "rect": "-2306,1256,-1000,1539"
+                        }
+                     },
+                     "54992": {
+                        "#name": "group \"Breakpoints\"",
+                        "childcontrols": {
+                           "55114": {
+                              "#name": "button \"Update\"",
+                              "properties": {
+                                 "id": "55114",
+                                 "layer": "75",
+                                 "name": "Update",
+                                 "rect": "-2082,1127,-2000,1150",
+                                 "traversalOn": false
+                              }
+                           },
+                           "55121": {
+                              "#name": "scrollbar \"Scrollbar\"",
+                              "properties": {
+                                 "endValue": "32",
+                                 "id": "55121",
+                                 "layer": "76",
+                                 "lineInc": "1.999542",
+                                 "name": "Scrollbar",
+                                 "pageInc": "32",
+                                 "rect": "-1020,1247,-1004,1293",
+                                 "startValue": "0",
+                                 "thumbSize": "32",
+                                 "visible": false
+                              }
+                           },
+                           "55300": {
+                              "#name": "group \"List\"",
+                              "childcontrols": {
+                                 "60529": {
+                                    "#name": "group id 60529",
+                                    "childcontrols": {
+                                       "60530": {
+                                          "#name": "button \"Icon\"",
+                                          "properties": {
+                                             "autoHilite": false,
+                                             "borderWidth": "1",
+                                             "hiliteBorder": false,
+                                             "icon": "205021",
+                                             "id": "60530",
+                                             "layer": "79",
+                                             "name": "Icon",
+                                             "rect": "-2100,1259,-2072,1282",
+                                             "sharedHilite": false,
+                                             "showBorder": false,
+                                             "showIcon": true,
+                                             "showName": false,
+                                             "style": "opaque",
+                                             "threeD": false,
+                                             "traversalOn": false
+                                          }
+                                       },
+                                       "60531": {
+                                          "#name": "field \"Details\"",
+                                          "properties": {
+                                             "dontWrap": true,
+                                             "htmlText": "<p>group \"revLibraries\": line 500 (no condition)</p>",
+                                             "id": "60531",
+                                             "layer": "80",
+                                             "lockText": true,
+                                             "name": "Details",
+                                             "rect": "-2072,1259,-1848,1282",
+                                             "showBorder": false,
+                                             "style": "opaque",
+                                             "traversalOn": false
+                                          }
+                                       },
+                                       "60532": {
+                                          "#name": "button \"Enabled\"",
+                                          "properties": {
+                                             "hiliteBorder": false,
+                                             "hilited": true,
+                                             "id": "60532",
+                                             "layer": "81",
+                                             "name": "Enabled",
+                                             "opaque": false,
+                                             "rect": "-2119,1261,-2100,1281",
+                                             "showBorder": false,
+                                             "showName": false,
+                                             "style": "checkbox",
+                                             "textAlign": "left"
+                                          }
+                                       },
+                                       "60533": {
+                                          "#name": "button \"Edit\"",
+                                          "properties": {
+                                             "autoHilite": false,
+                                             "hiliteBorder": false,
+                                             "icon": "205322",
+                                             "id": "60533",
+                                             "layer": "82",
+                                             "name": "Edit",
+                                             "rect": "-1848,1260,-1822,1280",
+                                             "sharedHilite": false,
+                                             "showBorder": false,
+                                             "showIcon": true,
+                                             "showName": false,
+                                             "style": "opaque",
+                                             "threeD": false,
+                                             "toolTip": "Edit",
+                                             "traversalOn": false
+                                          }
+                                       }
+                                    },
+                                    "customproperties": {
+                                       "cCondition": null,
+                                       "cHandler": null,
+                                       "cLine": "500",
+                                       "cListItem": true,
+                                       "cObject": "control id 1016 of stack \"revLibrary\"",
+                                       "cType": "breakpoint",
+                                       "cVariable": null
+                                    },
+                                    "properties": {
+                                       "backColor": "255,255,255",
+                                       "borderColor": "128,128,128",
+                                       "borderWidth": "1",
+                                       "hilitedButton": "2",
+                                       "id": "60529",
+                                       "layer": "78",
+                                       "lockLoc": true,
+                                       "margins": "0",
+                                       "opaque": true,
+                                       "rect": "-2119,1257,-1015,1284",
+                                       "threeD": false
+                                    }
+                                 }
+                              },
+                              "customproperties": {
+                                 "cItemTemplate": "control id 55230 of stack \"revSETemplate\" of stack \"revNewScriptEditor\"",
+                                 "cMutable": true
+                              },
+                              "properties": {
+                                 "backColor": "255,255,255",
+                                 "cantDelete": true,
+                                 "id": "55300",
+                                 "layer": "77",
+                                 "lockLoc": true,
+                                 "margins": "0",
+                                 "name": "List",
+                                 "opaque": true,
+                                 "rect": "-2124,1247,-1020,1293",
+                                 "showBorder": true
+                              }
+                           },
+                           "55487": {
+                              "#name": "button \"Breakpoint Context Menu\"",
+                              "properties": {
+                                 "id": "55487",
+                                 "layer": "83",
+                                 "menuMode": "popup",
+                                 "name": "Breakpoint Context Menu",
+                                 "rect": "-1692,677,-1590,699",
+                                 "style": "menu",
+                                 "text": "Choice 1\nChoice 2\nChoice 3"
+                              }
+                           },
+                           "57007": {
+                              "#name": "field \"Message Blocker\"",
+                              "properties": {
+                                 "backColor": "255,255,255",
+                                 "id": "57007",
+                                 "layer": "74",
+                                 "lockText": true,
+                                 "name": "Message Blocker",
+                                 "rect": "-2124,1247,-1000,1293",
+                                 "showBorder": false,
+                                 "showFocusBorder": false,
+                                 "style": "opaque",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"revSEBreakpointPaneBehavior\"",
+                           "id": "54992",
+                           "layer": "73",
+                           "lockLoc": true,
+                           "name": "Breakpoints",
+                           "rect": "-2124,1247,-1000,1293"
+                        }
+                     },
+                     "57964": {
+                        "#name": "group \"Variables\"",
+                        "childcontrols": {
+                           "63372": {
+                              "#name": "widget \"tree\"",
+                              "$kind": "com.livecode.widget.treeView",
+                              "$state": {
+                                 "array": null,
+                                 "array style": false,
+                                 "read only": true,
+                                 "separator ratio": "0.5",
+                                 "show separator": true,
+                                 "sort ascending": true,
+                                 "sort numeric": false
+                              },
+                              "properties": {
+                                 "id": "63372",
+                                 "name": "tree",
+                                 "rect": "0,810,1140,941"
+                              }
+                           },
+                           "63385": {
+                              "#name": "field \"Filter\"",
+                              "properties": {
+                                 "behavior": "stack \"revSEFilterFieldBehavior\"",
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Search variables...</p>",
+                                 "id": "63385",
+                                 "layer": "86",
+                                 "name": "Filter",
+                                 "rect": "-1,810,717,832",
+                                 "textHeight": "16",
+                                 "textStyle": "italic"
+                              }
+                           },
+                           "63386": {
+                              "#name": "button \"Show Globals\"",
+                              "customproperties": {
+                                 "acceleratorModifier": null
+                              },
+                              "properties": {
+                                 "behavior": "stack \"revSEVariablesCheckboxBehavior\"",
+                                 "hiliteBorder": false,
+                                 "id": "63386",
+                                 "layer": "87",
+                                 "margins": "4,8,8,8",
+                                 "name": "Show Globals",
+                                 "opaque": false,
+                                 "rect": "740,812,900,835",
+                                 "showBorder": false,
+                                 "style": "checkbox",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "63387": {
+                              "#name": "button \"Show Environment Vars\"",
+                              "customproperties": {
+                                 "acceleratorModifier": null
+                              },
+                              "properties": {
+                                 "behavior": "stack \"revSEVariablesCheckboxBehavior\"",
+                                 "hiliteBorder": false,
+                                 "id": "63387",
+                                 "layer": "88",
+                                 "margins": "4,8,8,8",
+                                 "name": "Show Environment Vars",
+                                 "opaque": false,
+                                 "rect": "928,812,1088,835",
+                                 "showBorder": false,
+                                 "style": "checkbox",
+                                 "textAlign": "left"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "cEditNode": null,
+                           "cVisualizerStackScript": "on resizeStack\n  set the rect of group 1 of me to the rect of this card of me\n  send \"resize\" to group 1 of me\nend resizeStack\n\non commandKeyDown pKey\n  if pKey is \"w\" then\n    close me\n  end if\n  pass commandKeyDown\nend commandKeyDown"
+                        },
+                        "properties": {
+                           "backColor": "255,255,255",
+                           "behavior": "stack \"revSEVariablesPaneBehavior\"",
+                           "id": "57964",
+                           "layer": "84",
+                           "lockLoc": true,
+                           "name": "Variables",
+                           "opaque": true,
+                           "rect": "0,810,1140,941"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "cFrameId": "24",
+                     "cPaneId": "1851",
+                     "cTypeId": "gutter"
+                  },
+                  "properties": {
+                     "cantDelete": true,
+                     "id": "1050",
+                     "layer": "63",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "Panes",
+                     "rect": "0,810,1140,941"
+                  }
+               },
+               "1094": {
+                  "#name": "button \"Resizer\"",
+                  "customproperties": {
+                     "cTab": true
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "backColor": "255,255,255",
+                     "hiliteBorder": false,
+                     "icon": "205232",
+                     "id": "1094",
+                     "label": "=",
+                     "layer": "89",
+                     "name": "Resizer",
+                     "opaque": false,
+                     "rect": "0,777,1140,787",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "54695": {
+                  "#name": "button \"Html\"",
+                  "properties": {
+                     "id": "54695",
+                     "layer": "90",
+                     "name": "Html",
+                     "rect": "898,4,980,27",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "54949": {
+                  "#name": "group \"Handler List\"",
+                  "childcontrols": {
+                     "54950": {
+                        "#name": "field \"Handlers\"",
+                        "customproperties": {
+                           "cHandlers": "M handlerSelected 22 34\nM mouseUp 3 17"
+                        },
+                        "properties": {
+                           "dontWrap": true,
+                           "htmlText": "<p><img src=\"2927\" char=\" \">  handlerSelected</p>\n<p><img src=\"2927\" char=\" \">  mouseUp</p>",
+                           "id": "54950",
+                           "layer": "92",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "Handlers",
+                           "rect": "-346,60,-24,104",
+                           "textFont": "Tahoma",
+                           "textHeight": "15",
+                           "textSize": "11",
+                           "textStyle": "plain"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "cMaxHeight": "450",
+                     "cMinHeight": "28"
+                  },
+                  "properties": {
+                     "behavior": "stack \"revSEHandlerListBehavior\"",
+                     "id": "54949",
+                     "layer": "91",
+                     "lockLoc": true,
+                     "name": "Handler List",
+                     "rect": "-350,56,-20,108"
+                  }
+               },
+               "56896": {
+                  "#name": "group \"Left Bar\"",
+                  "childcontrols": {
+                     "63377": {
+                        "#name": "field \"Filter\"",
+                        "customproperties": {
+                           "cCallback": "filterChanged",
+                           "cCallbackTarget": "group id 63380 of group id 56896 of card id 1002 of stack \"revSETemplate\" of stack \"/Users/alilloyd/Documents/GitHub/refactor/ide/Toolset/palettes/script editor/revscripteditor.8.rev\"",
+                           "cFilterText": null
+                        },
+                        "properties": {
+                           "behavior": "stack \"revSEFilterFieldBehavior\"",
+                           "htmlText": "<p>Filter...</p>",
+                           "id": "63377",
+                           "layer": "94",
+                           "name": "Filter",
+                           "rect": "0,753,225,777",
+                           "textStyle": "italic"
+                        }
+                     },
+                     "63380": {
+                        "#name": "group \"Left Handler List\"",
+                        "childcontrols": {
+                           "63381": {
+                              "#name": "field \"Handlers\"",
+                              "customproperties": {
+                                 "cHandlers": null
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "id": "63381",
+                                 "layer": "96",
+                                 "listBehavior": true,
+                                 "lockText": true,
+                                 "name": "Handlers",
+                                 "rect": "0,54,225,753",
+                                 "textSize": "12",
+                                 "textStyle": "plain"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "cCallback": "handlerSelected",
+                           "cCallbackTarget": "group id 56896 of card id 1002 of stack \"revSETemplate\" of stack \"/Users/alilloyd/Documents/GitHub/refactor/ide/Toolset/palettes/script editor/revscripteditor.8.rev\"",
+                           "cCaller": "stack \"revSETemplate\" of stack \"/Users/alilloyd/Documents/GitHub/refactor/ide/Toolset/palettes/script editor/revscripteditor.8.rev\"",
+                           "cMaxHeight": "699",
+                           "cMaxWidth": "225",
+                           "cMinHeight": "699",
+                           "cMinWidth": "225",
+                           "cObject": null
+                        },
+                        "properties": {
+                           "behavior": "stack \"revSEHandlerListBehavior\"",
+                           "id": "63380",
+                           "layer": "95",
+                           "lockLoc": true,
+                           "name": "Left Handler List",
+                           "rect": "0,54,225,753"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "stack \"revSELeftBarBehavior\"",
+                     "id": "56896",
+                     "layer": "93",
+                     "lockLoc": true,
+                     "name": "Left Bar",
+                     "rect": "0,54,225,777"
+                  }
+               },
+               "56897": {
+                  "#name": "button \"Left Resizer\"",
+                  "customproperties": {
+                     "cTab": true
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "backColor": "255,255,255",
+                     "hiliteBorder": false,
+                     "icon": "205233",
+                     "id": "56897",
+                     "label": "=",
+                     "layer": "97",
+                     "name": "Left Resizer",
+                     "opaque": false,
+                     "rect": "225,77,235,777",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "58997": {
+                  "#name": "group \"Disambiguator\"",
+                  "childcontrols": {
+                     "58998": {
+                        "#name": "field \"Field\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "58998",
+                           "layer": "99",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "Field",
+                           "rect": "-1176,28,-824,204",
+                           "scrollbarWidth": "13",
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "cantDelete": true,
+                     "id": "58997",
+                     "layer": "98",
+                     "lockLoc": true,
+                     "name": "Disambiguator",
+                     "rect": "-1180,24,-820,208"
+                  }
+               },
+               "59311": {
+                  "#name": "group \"Disambiguator\"",
+                  "childcontrols": {
+                     "59312": {
+                        "#name": "field \"Field\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "59312",
+                           "layer": "101",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "Field",
+                           "rect": "-1176,28,-824,204",
+                           "scrollbarWidth": "13",
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "59311",
+                     "layer": "100",
+                     "name": "Disambiguator",
+                     "rect": "-1180,24,-820,208"
+                  }
+               }
+            },
+            "customproperties": {
+               "cFindResult": null
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "101"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Main"
+            }
+         },
+         "1003": {
+            "#name": "group \"Menubar\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"File\"",
+                  "properties": {
+                     "id": "1004",
+                     "label": "File",
+                     "layer": "2",
+                     "lockLoc": true,
+                     "menuMode": "pulldown",
+                     "mnemonic": "1",
+                     "name": "File",
+                     "rect": "4,4,32,22",
+                     "showBorder": false,
+                     "style": "menu",
+                     "text": "Apply/^Return|Compile\n-\nSave/S\nClose/W\nPrint/P\n-\nQuit\n",
+                     "traversalOn": false
+                  }
+               },
+               "1005": {
+                  "#name": "button \"Edit\"",
+                  "properties": {
+                     "id": "1005",
+                     "label": "Edit",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "menuMode": "pulldown",
+                     "mnemonic": "1",
+                     "name": "Edit",
+                     "rect": "32,4,62,22",
+                     "showBorder": false,
+                     "style": "menu",
+                     "text": "Undo/Z\n(Redo/^@Z\n(Cut/X\n(Copy/C\nPaste/V\nSelect All/A\nRevert\n-\nComment/-\nUncomment/_\n-\nQuick Find/F\nFind and Replace.../^@F\nFind Selection/^#F\nGo.../L\n!nVariable Checking\n-\nPreferences\n",
+                     "traversalOn": false
+                  }
+               },
+               "1009": {
+                  "#name": "button \"Debug\"",
+                  "properties": {
+                     "id": "1009",
+                     "label": "Debug",
+                     "layer": "4",
+                     "lockLoc": true,
+                     "menuMode": "pulldown",
+                     "name": "Debug",
+                     "rect": "62,4,105,22",
+                     "showBorder": false,
+                     "style": "menu",
+                     "text": "(Show next\n-\n(Step into/I\n(Step over/O\n(Step out/T\n(Stop/Y\n(Run/^@>\n-\nToggle Breakpoint/\\\nClear all Breakpoints\nAdd Variable Watch\n-\nVariables\nBreakpoints\nEntry Point...\n-\n!cScript Debug Mode\n",
+                     "traversalOn": false
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Window\"",
+                  "customproperties": {
+                     "cWindows": "stack \"Untitled 1\"\n"
+                  },
+                  "properties": {
+                     "id": "1010",
+                     "label": "Window",
+                     "layer": "6",
+                     "lockLoc": true,
+                     "menuMode": "pulldown",
+                     "name": "Window",
+                     "rect": "154,4,204,22",
+                     "showBorder": false,
+                     "style": "menu",
+                     "text": "(No Windows Open\n",
+                     "traversalOn": false
+                  }
+               },
+               "1011": {
+                  "#name": "button \"Help\"",
+                  "properties": {
+                     "id": "1011",
+                     "label": "Help",
+                     "layer": "7",
+                     "lockLoc": true,
+                     "menuMode": "pulldown",
+                     "name": "Help",
+                     "rect": "204,4,237,22",
+                     "showBorder": false,
+                     "style": "menu",
+                     "text": "Documentation Pane\n-\nDictionary\nResource Center\n-\nStart Center\nUser Guide\nAbout LiveCode\n",
+                     "traversalOn": false
+                  }
+               },
+               "56945": {
+                  "#name": "button \"Handler\"",
+                  "properties": {
+                     "id": "56945",
+                     "label": "Handler",
+                     "layer": "5",
+                     "lockLoc": true,
+                     "menuMode": "pulldown",
+                     "name": "Handler",
+                     "rect": "105,4,154,22",
+                     "showBorder": false,
+                     "style": "menu",
+                     "text": "(No Handlers\n",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cHandlers": null
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "0"
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "behavior": "stack \"revSEMenubarBehavior\"",
+               "id": "1003",
+               "layer": "1",
+               "lockLoc": true,
+               "name": "Menubar",
+               "rect": "0,0,1140,26",
+               "textStyle": "plain",
+               "traversalOn": false
+            }
+         },
+         "2609": {
+            "#name": "card \"Templates\"",
+            "childcontrols": {
+               "1003": "#shared group",
+               "2610": {
+                  "#name": "image \"BackgroundPattern\"",
+                  "properties": {
+                     "id": "2610",
+                     "layer": "8",
+                     "name": "BackgroundPattern",
+                     "rect": "44,238,60,270",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAABGdBTUEAALGPC/xhBQAAAC5J\nREFUSInt1CEBAEAMw8Ds/Yutg76IkYGU52AnSVnsbWIBAYFLwLT1DwQEBAA+GO4ICr8SqxcA\nAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "4713": {
+                  "#name": "group \"Error Template\"",
+                  "childcontrols": {
+                     "4714": {
+                        "#name": "button \"Button\"",
+                        "properties": {
+                           "borderWidth": "0",
+                           "hiliteBorder": false,
+                           "icon": "205010",
+                           "id": "4714",
+                           "layer": "10",
+                           "name": "Button",
+                           "rect": "24,184,45,204",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "opaque",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "4715": {
+                        "#name": "field \"Field\"",
+                        "properties": {
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "htmlText": "<p></p>\n<p></p>",
+                           "id": "4715",
+                           "layer": "11",
+                           "lockText": true,
+                           "name": "Field",
+                           "rect": "45,184,511,204",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "backColor": "255,255,255",
+                     "behavior": "stack \"revSEErrorTemplateBehavior\"",
+                     "borderColor": "128,128,128",
+                     "borderWidth": "1",
+                     "id": "4713",
+                     "layer": "9",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "Error Template",
+                     "opaque": true,
+                     "rect": "24,182,511,206",
+                     "threeD": false
+                  }
+               },
+               "54794": {
+                  "#name": "group \"List Template\"",
+                  "properties": {
+                     "backColor": "255,255,255",
+                     "cantDelete": true,
+                     "id": "54794",
+                     "layer": "12",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "List Template",
+                     "opaque": true,
+                     "rect": "194,276,572,474",
+                     "showBorder": true
+                  }
+               },
+               "55230": {
+                  "#name": "group \"Breakpoint Template\"",
+                  "childcontrols": {
+                     "55231": {
+                        "#name": "button \"Icon\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "borderWidth": "1",
+                           "hiliteBorder": false,
+                           "id": "55231",
+                           "layer": "14",
+                           "name": "Icon",
+                           "rect": "40,214,68,237",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "opaque",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "55232": {
+                        "#name": "field \"Details\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "htmlText": "<p></p>\n<p></p>",
+                           "id": "55232",
+                           "layer": "15",
+                           "lockText": true,
+                           "name": "Details",
+                           "rect": "64,214,396,237",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "55233": {
+                        "#name": "button \"Enabled\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "55233",
+                           "layer": "16",
+                           "name": "Enabled",
+                           "opaque": false,
+                           "rect": "26,216,45,236",
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "59621": {
+                        "#name": "button \"Edit\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "hiliteBorder": false,
+                           "icon": "205322",
+                           "id": "59621",
+                           "layer": "17",
+                           "name": "Edit",
+                           "rect": "302,215,328,235",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "opaque",
+                           "threeD": false,
+                           "toolTip": "Edit",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "backColor": "255,255,255",
+                     "borderColor": "128,128,128",
+                     "borderWidth": "1",
+                     "id": "55230",
+                     "layer": "13",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "Breakpoint Template",
+                     "opaque": true,
+                     "rect": "26,212,398,239",
+                     "threeD": false
+                  }
+               },
+               "57769": {
+                  "#name": "group \"Visualizer Template\"",
+                  "childcontrols": {
+                     "57770": {
+                        "#name": "field \"Value\"",
+                        "properties": {
+                           "id": "57770",
+                           "layer": "19",
+                           "name": "Value",
+                           "rect": "702,132,962,320",
+                           "scrollbarWidth": "16",
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "57772": {
+                        "#name": "field \"Name\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "57772",
+                           "layer": "20",
+                           "lockText": true,
+                           "name": "Name",
+                           "rect": "702,107,958,128"
+                        }
+                     },
+                     "57773": {
+                        "#name": "button \"Apply\"",
+                        "properties": {
+                           "id": "57773",
+                           "layer": "21",
+                           "name": "Apply",
+                           "rect": "882,322,964,345",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "cantDelete": true,
+                     "id": "57769",
+                     "layer": "18",
+                     "lockLoc": true,
+                     "name": "Visualizer Template",
+                     "rect": "698,103,968,349"
+                  }
+               },
+               "57774": {
+                  "#name": "group \"Tree Template\"",
+                  "childcontrols": {
+                     "58801": {
+                        "#name": "button \"Vertical Splitter\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "224,226,235",
+                           "hiliteBorder": false,
+                           "icon": "205233",
+                           "id": "58801",
+                           "label": "=",
+                           "layer": "23",
+                           "name": "Vertical Splitter",
+                           "rect": "43,496,51,852",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "opaque",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "cantDelete": true,
+                     "id": "57774",
+                     "layer": "22",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "Tree Template",
+                     "rect": "600,352,750,652",
+                     "threeD": false
+                  }
+               },
+               "57956": {
+                  "#name": "group \"Variable Template\"",
+                  "childcontrols": {
+                     "57957": {
+                        "#name": "button \"Icon\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "57957",
+                           "layer": "26",
+                           "name": "Icon",
+                           "opaque": false,
+                           "rect": "106,671,122,687",
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "57958": {
+                        "#name": "button \"Expander\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "borderWidth": "0",
+                           "hiliteBorder": false,
+                           "id": "57958",
+                           "layer": "27",
+                           "name": "Expander",
+                           "opaque": false,
+                           "rect": "104,669,124,689",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "57959": {
+                        "#name": "image \"highlightBranch\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "57959",
+                           "layer": "28",
+                           "lockLoc": true,
+                           "name": "highlightBranch",
+                           "rect": "-2,619,148,639",
+                           "repeatCount": "-1",
+                           "text": {
+                              "%base64%": "iVBORw0KGgoAAAANSUhEUgAAALAAAAAUCAIAAACiWCDxAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAGdJREFUeNrs2bENgEAIQFE17r8ka8BpZeQKE5vr3huB/EDB\nHhEbPA4joDvHGKZAC6LKFHiDKEEgCATBvyAy0xSwIbAhsCGwIbAhEATLToYg6EH4ZTCfDN9O\nehCXIJhOhiAQBF9uAQYAj+U4WhdBYcMAAAAASUVORK5CYII="
+                           }
+                        }
+                     },
+                     "57960": {
+                        "#name": "field \"Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Label"
+                           }
+                        },
+                        "properties": {
+                           "backColor": "255,255,255",
+                           "dontWrap": true,
+                           "htmlText": "<p>Label</p>",
+                           "id": "57960",
+                           "layer": "29",
+                           "lockLoc": true,
+                           "lockText": true,
+                           "margins": "6",
+                           "name": "Label",
+                           "opaque": false,
+                           "rect": "123,668,244,687",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "57961": {
+                        "#name": "field \"Value\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Value"
+                           }
+                        },
+                        "properties": {
+                           "backColor": "255,255,255",
+                           "dontWrap": true,
+                           "htmlText": "<p>Value</p>",
+                           "id": "57961",
+                           "layer": "30",
+                           "lockLoc": true,
+                           "lockText": true,
+                           "margins": "6",
+                           "name": "Value",
+                           "opaque": false,
+                           "rect": "249,668,498,687",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "57962": {
+                        "#name": "button \"Visualize\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "borderWidth": "1",
+                           "hiliteBorder": false,
+                           "icon": "205127",
+                           "id": "57962",
+                           "layer": "31",
+                           "name": "Visualize",
+                           "opaque": false,
+                           "rect": "294,644,316,664",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "57963": {
+                        "#name": "button \"Apply\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "borderWidth": "1",
+                           "hiliteBorder": false,
+                           "icon": "205009",
+                           "id": "57963",
+                           "layer": "32",
+                           "name": "Apply",
+                           "opaque": false,
+                           "rect": "334,644,356,664",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "58799": {
+                        "#name": "graphic \"Background\"",
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "241,245,250",
+                           "filled": true,
+                           "id": "58799",
+                           "layer": "25",
+                           "lineSize": "0",
+                           "name": "Background",
+                           "opaque": true,
+                           "rect": "204,702,346,730"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "57956",
+                     "layer": "24",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "Variable Template",
+                     "rect": "94,666,498,685"
+                  }
+               },
+               "58802": {
+                  "#name": "button \"Vertical Splitter\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "backColor": "224,226,235",
+                     "hiliteBorder": false,
+                     "icon": "205233",
+                     "id": "58802",
+                     "label": "=",
+                     "layer": "33",
+                     "name": "Vertical Splitter",
+                     "rect": "1270,466,1278,628",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "opaque",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "60747": {
+                  "#name": "field \"revColourizationObject\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "id": "60747",
+                     "layer": "34",
+                     "name": "revColourizationObject",
+                     "rect": "514,365,642,397",
+                     "sharedText": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "33"
+               }
+            },
+            "properties": {
+               "id": "2609",
+               "layer": "2",
+               "name": "Templates"
+            }
+         }
+      },
+      "customproperties": 
+   },
+   "custompropertysets": {
+      "cREVGeneral[breakpointconditions]": {
+         "breakpointconditions": null
+      },
+      "cREVGeneral[breakpoints]": {
+         "breakpoints": null
+      },
+      "cREVGeneral[breakpointstates]": {
+         "breakpointstates": null
+      },
+      "cREVGeneral[scripteditorselection]": {
+         "scripteditorselection": "0"
+      },
+      "cREVGeneral[scripteditorvscroll]": {
+         "scripteditorvscroll": "0"
+      },
+      "cREVGeometryCache": {
+         "stackID": "63387"
+      },
+      "uIconMap": {
+         "breakpointsActiveWatch": "205045",
+         "breakpointsInactiveWatch": "205127",
+         "errorsCompilation": "205048",
+         "errorsExecution": "205047",
+         "errorsNoError": "205009",
+         "gutterActiveBreakpoint": "205021",
+         "gutterCurrentLine": "205044",
+         "gutterError": "205008",
+         "gutterInactiveBreakpoint": "205022",
+         "handlerAfter": "205498",
+         "handlerBefore": "205497",
+         "handlerCommand": "205025",
+         "handlerFunction": "205023",
+         "handlerGetprop": "205026",
+         "handlerMessage": "205025",
+         "handlerPrivateCommand": "205159",
+         "handlerPrivateFunction": "205155",
+         "handlerPrivateMessage": "205159",
+         "handlerSetprop": "205024",
+         "tabActive": "205071",
+         "tabActiveOver": "205072",
+         "tabAppliedNormal": "205017",
+         "tabAppliedNormalOver": "205059",
+         "tabAppliedSelected": "205018",
+         "tabAppliedSelectedOver": "205065",
+         "tabClose": "205011",
+         "tabEditedNormal": "205015",
+         "tabEditedNormalOver": "205057",
+         "tabEditedSelected": "205020",
+         "tabEditedSelectedOver": "205063",
+         "tabErrorNormal": "205016",
+         "tabErrorNormalOver": "205068",
+         "tabErrorSelected": "205019",
+         "tabErrorSelectedOver": "205061",
+         "tabHistory": "205075",
+         "tabHistoryOver": "205076",
+         "tabToggleDownNormal": "205222",
+         "tabToggleDownOver": "205225",
+         "tabToggleUpNormal": "205223",
+         "tabToggleUpOver": "205224",
+         "variablesBackground": "205027"
+      }
+   },
+   "longID": "stack \"revSETemplate\" of stack \"revNewScriptEditor\"",
+   "properties": {
+      "alwaysBuffer": true,
+      "behavior": "stack \"revSEStackBehavior\"",
+      "destroyWindow": true,
+      "id": "63387",
+      "linkColor": "58,64,43",
+      "linkHiliteColor": "255,0,0",
+      "linkVisitedColor": "gray",
+      "menubar": "Menubar",
+      "minHeight": "250",
+      "minWidth": "500",
+      "name": "revSETemplate",
+      "rect": "770,119,1910,1060",
+      "underlineLinks": false
+   },
+   "sharedGroupIDs": "1003"
+},
+"revSEUnappliedDialog": {
+   "#name": "stack \"revSEUnappliedDialog\"",
+   "backgroundIDs": null,
+   "cardIDs": "1002",
+   "childcontrols": {
+      "1002": {
+         "#name": "card id 1002",
+         "childcontrols": {
+            "1005": {
+               "#name": "button \"Yes\"",
+               "customproperties": {
+                  "cAction": "Yes"
+               },
+               "properties": {
+                  "default": true,
+                  "id": "1005",
+                  "layer": "1",
+                  "name": "Yes",
+                  "rect": "57,191,139,214"
+               }
+            },
+            "1007": {
+               "#name": "button \"No\"",
+               "customproperties": {
+                  "cAction": "No"
+               },
+               "properties": {
+                  "id": "1007",
+                  "layer": "2",
+                  "name": "No",
+                  "rect": "144,191,226,214",
+                  "traversalOn": false
+               }
+            },
+            "1010": {
+               "#name": "button \"Cancel\"",
+               "customproperties": {
+                  "cAction": "Cancel"
+               },
+               "properties": {
+                  "id": "1010",
+                  "layer": "3",
+                  "name": "Cancel",
+                  "rect": "231,191,313,214",
+                  "traversalOn": false
+               }
+            },
+            "1012": {
+               "#name": "field \"Label Field\"",
+               "custompropertysets": {
+                  "cREVTable": {
+                     "currentview": "Save changes to the following objects?"
+                  }
+               },
+               "properties": {
+                  "autoHilite": false,
+                  "dontWrap": true,
+                  "htmlText": "<p>Save changes to the following objects?</p>",
+                  "id": "1012",
+                  "layer": "4",
+                  "lockText": true,
+                  "name": "Label Field",
+                  "opaque": false,
+                  "rect": "6,2,234,23",
+                  "sharedText": true,
+                  "showBorder": false,
+                  "style": "transparent",
+                  "traversalOn": false
+               }
+            },
+            "1014": {
+               "#name": "field \"Field\"",
+               "properties": {
+                  "htmlText": "<p>widget \"Switch Button\"</p>",
+                  "id": "1014",
+                  "layer": "5",
+                  "lockText": true,
+                  "name": "Field",
+                  "rect": "8,24,312,186",
+                  "scrollbarWidth": "16",
+                  "style": "scrolling",
+                  "traversalOn": false,
+                  "vScrollbar": true
+               }
+            }
+         },
+         "custompropertysets": {
+            "cREVGeometrycache": {
+               "order": "\n",
+               "total": "5"
+            }
+         },
+         "properties": {
+            "id": "1002"
+         }
+      }
+   },
+   "customproperties": {
+      "cChoice": "No",
+      "cObjects": "control id 1003 of stack \"Untitled 1\""
+   },
+   "custompropertysets": {
+      "cREVGeometryCache": {
+         "stackID": "1015"
+      }
+   },
+   "longID": "stack \"revSEUnappliedDialog\" of stack \"revNewScriptEditor\"",
+   "properties": {
+      "alwaysBuffer": true,
+      "decorations": "default",
+      "id": "1015",
+      "liveResizing": false,
+      "name": "revSEUnappliedDialog",
+      "rect": "1121,611,1439,829",
+      "resizable": false,
+      "title": "Save Changes"
+   },
+   "sharedGroupIDs": null
+}
+}

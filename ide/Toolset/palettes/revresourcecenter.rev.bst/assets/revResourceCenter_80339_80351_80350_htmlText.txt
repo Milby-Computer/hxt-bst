@@ -1,0 +1,22 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> imageFileDimensions theFilePath</p>
+<p>  <font color="#0000FF">lock</font> screen <font color="#68228B">-- so user doesn't see the following shenanigans</font></p>
+<p>  <font color="#0000FF">lock</font> error dialogs <font color="#68228B">-- prevent error window if import fails and debug mode is on</font></p>
+<p>  <font color="#0000FF">import</font> paint from file theFilePath <font color="#68228B">-- creates a new image</font></p>
+<p>  <font color="#0000FF">unlock</font> error dialogs</p>
+<p>  <font color="#0000FF">put</font> the <font color="#FF0000">width</font> of last image into myWidth</p>
+<p>  <font color="#0000FF">put</font> the <font color="#FF0000">height</font> of last image into myHeight</p>
+<p>  <font color="#0000FF">delete</font> last image <font color="#68228B">-- get rid of image we created</font></p>
+<p>  <font color="#0000FF">unlock</font> screen</p>
+<p>  <font color="#0000FF">return</font> myWidth,myHeight</p>
+<p><font color="#980517">end</font> imageFileDimensions</p>
+<p></p>
+<p><font color="#980517">on</font> errorDialog theDetails-- executed <font color="#980517">if</font> the <font color="#0000FF">import</font> causes a <font color="#FF0000">script</font> error</p>
+<p>  <font color="#0000FF">answer</font> theDetails</p>
+<p>  <font color="#0000FF">beep</font></p>
+<p>  <font color="#0000FF">answer</font> "There was a problem accessing the file data."\</p>
+<p>      &amp; <font color="#0000FF">return</font> &amp; <font color="#0000FF">return</font> &amp; \</p>
+<p>      "Picture files must be in one of the following formats:" &amp; \</p>
+<p><font color="#0000FF">      return</font> &amp; "PNG, JPEG, GIF, PICT, BMP, XWD/XBM/XPM, or PBM/PGM/PPM."</p>
+<p><font color="#980517">end</font> errorDialog</p>
+<p></p>

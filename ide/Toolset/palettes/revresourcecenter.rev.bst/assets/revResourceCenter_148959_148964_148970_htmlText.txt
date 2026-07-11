@@ -1,0 +1,16 @@
+<p><font face="Lucida Grande" size="12" color="#000000">Some pitfalls one should be aware of:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Microsoft intends to do away with virtualization in future versions of the Windows operation system, and it recommends programs store data in a per-user basis instead of relying on virtualization.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; If a programs priviliges change (or User Access Controls are disabled by the user), it may lose track of certain files it depends on. If a program's write to Program Files was at one point virtualized, its files would have been written to the virtual store. However, if its permissions change, and it can now write to Program Files, it will no longer have access to the virtual store, but instead has direct access to Program Files.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; If the user account is of limited nature, Explorer will provide a virtualized view of Program Files (so the address C:\Program Files may show, but you are not seeing the real Program Files).</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; There is no way of telling (using Revolution) that a file is located in a virtual store or not. For example, if a Revolution program loads a stack from the virtual Program Files, put the filename of this stack will return "C:/Program Files/mystack.rev". In most cases this should not be a problem, but is best to avoid problems by writing to per-user locations.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">   specialFolderPath(0x0026) (and others) will not return paths to virtual stores, as these are handled by Vista at a lower level instead of by Revolution itself.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Registry Virtulization</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Analogous to file virtualization, Vista also provides registry virtualization. When writing to the Registry, to HKEY_LOCAL_MACHINE\SOFTWARE, any writes that are not allowed due to inadequate permissions are redirected to HKEY_CLASSES_ROOT\VirtualStore\MACHINE\SOFTWARE.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To illustrate this let's try and set a registry key in Revolution (again, we are using an adiminstrator account, but Revolution runs with default permissions).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#2000FB">get</font><font face="Lucida Grande" size="12" color="#000000"> </font><font face="Lucida Grande" size="12" color="#E5001A">setRegistry</font><font face="Lucida Grande" size="12" color="#000000">("HKEY_LOCAL_MACHINE\SOFTWARE\RevTest\testkey", "foobar");</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">We can use "regedit" to inspect the registry. Indeed, we can find no such value HKEY_LOCAL_MACHINE\SOFTWARE\RevTest\testkey in the registry. Instead, we can find the registry key virtualized:</font></p>
+<p></p>

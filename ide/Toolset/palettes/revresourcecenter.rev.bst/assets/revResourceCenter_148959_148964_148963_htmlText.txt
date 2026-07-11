@@ -1,0 +1,20 @@
+<p><font face="Lucida Grande" size="12" color="#000000">This article discusses file and registry virtualization in Vista and how this may affect Revolution developers.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">One of the design goals of Windows Vista was security, and for this reason an array of new technologies is built into the operating system. Virtualization is one of these technologies, and we consider here file and registry virtualization.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">File Virtualization</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">File virtualization is a technology that is intended to provide application compatibility accross Windows Vista. In Windows Vista even administrator accounts do not have default write access to certain system-wide areas such as Program Files. This means that most programs will not have access to Program Files even though some require it to function. For this Vista provides file virtualization, which is a completely opaque method of allowing a write to Program Files but instead of writing to the actual Program Files it writes to a Virtual Store, which is nothing more than a different (user-based) location in the file system.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To see this in action, we can try the following code in Revolution:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#2000FB">local</font><font face="Lucida Grande" size="12" color="#000000"> tFile</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#2000FB">put</font><font face="Lucida Grande" size="12" color="#000000"> </font><font face="Lucida Grande" size="12" color="#E5001A">merge</font><font face="Lucida Grande" size="12" color="#000000">("[[specialFolderPath(0x0026)]]/test.txt") into tFile</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#2000FB">open</font><font face="Lucida Grande" size="12" color="#000000"> file tFile </font><font face="Lucida Grande" size="12" color="#990017">for</font><font face="Lucida Grande" size="12" color="#000000"> </font><font face="Lucida Grande" size="12" color="#DF000C">text</font><font face="Lucida Grande" size="12" color="#000000"> </font><font face="Lucida Grande" size="12" color="#2000FB">write</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#2000FB">write</font><font face="Lucida Grande" size="12" color="#000000"> "foobar" to file tFile</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#2000FB">close</font><font face="Lucida Grande" size="12" color="#000000"> file tFile</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">On this particular Vista machine, the specialFolderPath returns "C:/Program Files" for the 0x0026 argument, so we expect a file "test.txt" to be located there. However, this is not the case. Revolution does not have default write permission to Program Files, and thus Vista has (invisibly) redirected the file operations to the virtual store. The test.txt file can actually be found in C:\Users\\AppData\Local\VirtualStore (notice that AppData is a hidden folder).</font></p>

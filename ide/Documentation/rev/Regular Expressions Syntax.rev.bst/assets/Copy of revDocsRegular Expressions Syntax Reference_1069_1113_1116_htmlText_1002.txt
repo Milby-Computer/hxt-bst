@@ -1,0 +1,3 @@
+<p><font face="Courier New" size="12">ZA*B </font>matches &ldquo;ZB&rdquo; or &ldquo;ZAB&rdquo; or &ldquo;ZAAB&rdquo;, but not &ldquo;ZXA&rdquo; or &ldquo;AB&rdquo;</p>
+<p></p>
+<p><font face="Courier New" size="12">[A-D]*G </font>matches &ldquo;AG&rdquo; or &ldquo;G&rdquo; or &ldquo;CAGZ&rdquo;, but not &ldquo;AB&rdquo;</p>

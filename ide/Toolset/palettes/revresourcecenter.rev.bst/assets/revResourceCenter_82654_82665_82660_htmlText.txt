@@ -1,0 +1,35 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom command is used with a statement such as the following:</p>
+<p></p>
+<p><font face="Courier" size="12"> populateTextMenu</font></p>
+<p><font face="Courier" size="12"> populateTextMenu "9,10,12,18"</font></p>
+<p><font face="Courier" size="12"> populateTextMenu mySizeList,"black,red,green"</font></p>
+<p><font face="Courier" size="12"> populateTextMenu empty,field "Color Names"</font></p>
+<p></p>
+<p>It assumes that there is already a button called "Text". Usually this button will be part of a group of buttons that makes up a menu bar. (Remember that in Revolution, menus are implemented as buttons, and a menu bar is a group of menu buttons.) The list of fonts, sizes, colors, and styles is placed in the button. Each line of the button contents becomes a separate menu item when the menu is displayed. Because each of the the fonts, sizes, and colors is preceded with a tab character, they become submenu items. The menu's items are:</p>
+<p></p>
+<p>&#9;<b><font face="Lucida Grande" size="11">Font</font></b><font face="helvetica" size="12"> (submenu)</font></p>
+<p>&#9;<b><font face="Lucida Grande" size="11">Size</font></b><font face="helvetica" size="12"> (submenu)</font></p>
+<p>&#9;<b><font face="Lucida Grande" size="11">Color</font></b><font face="helvetica" size="12"> (submenu)</font></p>
+<p>&#9;(separator line)</p>
+<p>&#9;Plain</p>
+<p>&#9;Bold</p>
+<p>&#9;Italic</p>
+<p>&#9;Underline</p>
+<p></p>
+<p>This command takes two parameters: the list of font sizes and the list of text colors. You can use this command with both parameters, with one, or with neither parameter. It's possible to do this because the first thing the handler does is to check whether the parameters have anything in them. If not, the handler assigns default values. In other words, if you don't specify theSizes when you use the handler, it assumes you want the Size submenu to include 9, 10, 12, 14, 18, 20, 24, and 36 point sizes. If you don't specify theColors, it assumes you want a standard list of colors: black, yellow, red, blue, and green.</p>
+<p></p>
+<p>You can use this method with any handler to assign a default value to one or more of the parameters. Just check whether the parameter is empty. If it is, then no value has been passed, and you can simply put the desired default into the parameter.</p>
+<p></p>
+<p>After checking the parameters, the handler sets up the three cascading menus. First, it uses <font face="Courier" size="11">the fontNames</font><font face="helvetica" size="12"> function to obtain a list of installed fonts. Since the list is not necessarily returned in alphabetical order, the handler sorts the font names. Then it puts the line "Font" into the Text menu button: this is the first menu item in the Text menu, the title of the cascading menu. Next, the handler adds a </font><font face="Courier" size="11">tab</font><font face="helvetica" size="12"> character to the start of each line in the font list, and places the list after the "Font" line in the Text menu button.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="11">Note:</font></b><font face="helvetica" size="12"> If a line in a menu starts with a </font><font face="Courier" size="11">tab</font><font face="helvetica" size="12">, it is made into a cascading menu item. Therefore, adding the tabs makes the list of fonts into a Font submenu.</font></p>
+<p></p>
+<p>The handler follows a similar procedure to set up the Size and Color cascading menus, using the lists of sizes and colors that were passed as the theSizes and theColors parameters.</p>
+<p></p>
+<p>Finally, the handler places the separator line and the style menu items at the end of the menu. The style items (Plain, Bold, Italic, and Underline) are plain menu items, not cascading menus, so no tab characters are needed here.</p>
+<p></p>
+<p><b><font face="Lucida Grande" size="11">A note on efficiency:</font></b></p>
+<p>This handler builds the menu by putting text directly into the button contents. However, this is not the fastest way to put text into a button. Putting lines into a variable is faster than putting them into a button, so it would be more efficient to build the menu's contents in a variable, then put the variable into the button at the end of the handler. The same rule of thumb applies to putting text into fields: if you're repeatedly putting text into a field, it's faster to build the text in a variable and then put the completed variable into the field than to put text into the field bit by bit.</p>
+<p></p>
+<p>In cases like this, where we're only putting text into the button a few times, this change doesn't speed up the handler enough to matter. But it's a good idea to keep in mind, when you need to improve performance, that repeatedly putting text into a button or field is slower than putting text into a variable.</p>

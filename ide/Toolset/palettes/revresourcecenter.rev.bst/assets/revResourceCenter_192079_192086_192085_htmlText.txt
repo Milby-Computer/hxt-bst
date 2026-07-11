@@ -1,0 +1,9 @@
+<p><b><font face="helvetica" size="12">Description:</font></b></p>
+<p>Bouncy is a simple application which can display an image file that you drag and drop onto it, even a transparent image, and bounce it across your desktop.  The program simulates gravity and will &ldquo;bounce&rdquo; of the bottom and sides of the screen.</p>
+<p></p>
+<p><b><font face="helvetica" size="12">Topics:</font></b></p>
+<p>The key topics covered in this Project are:</p>
+<p>   - How to create an irregularly shaped window</p>
+<p>   - How to handle a file being drag dropped onto a window</p>
+<p>   - How to move a window by script</p>
+<p>   - How to simulate gravity and play sounds on collision with the edge of the screen</p>

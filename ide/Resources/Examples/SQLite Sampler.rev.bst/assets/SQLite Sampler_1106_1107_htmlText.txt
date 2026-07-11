@@ -1,0 +1,11 @@
+<p><font face="Verdana" size="18">Add Data</font></p>
+<p></p>
+<p>We can use the INSERT INTO statement to add data to our database. In order to 'auto-increment' our primary key for our users table, we will insert <b><font face="Tahoma" size="11">null</font></b> into it.</p>
+<p></p>
+<p><font face="Courier New" size="12">put "INSERT INTO &lt;table&gt;(&lt;col1&gt;,&lt;col2&gt;...)" &amp; \</font></p>
+<p><font face="Courier New" size="12">   " VALUES(&lt;col1 value&gt;,&lt;col 2 value&gt;...)" into tSQL</font></p>
+<p><font face="Courier New" size="12">put revdb_execute(&lt;connectionID&gt;,tSQL) into tTmp</font></p>
+<p><font face="Courier New" size="12">--&gt; tTmp will return the number of rows you've added</font></p>
+<p></p>
+<p>Let's try it. Press the <b><font face="Tahoma" size="11">Add Data to users </font></b>button and you will be prompted to add data to the <b><font face="Tahoma" size="11">users</font></b> table. You may add as many rows of data as you like. (Please note the <b><font face="Tahoma" size="11">cleanSQL</font></b> function which escapes any single quotation marks in your SQL string so the SQL processor will do the right thing.)</p>
+<p></p>

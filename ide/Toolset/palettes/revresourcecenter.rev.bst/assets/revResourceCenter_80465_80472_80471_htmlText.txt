@@ -1,0 +1,23 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> menuPick theItem</p>
+<p>  <font color="#980517">switch</font> theItem</p>
+<p>  <font color="#980517">case</font> "Previous Student"</p>
+<p>    <font color="#0000FF">go</font> previous card</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case</font> "Next Student"</p>
+<p>    <font color="#0000FF">go</font> <font color="#0000FF">next</font> card</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case</font> "New Student"</p>
+<p>    <font color="#68228B">-- create a new card and put its name in the menu:</font></p>
+<p>    <font color="#0000FF">ask</font> "Please enter the student's name:"</p>
+<p>    <font color="#980517">if</font> it is empty <font color="#980517">then</font> <font color="#0000FF">exit</font> menuPick <font color="#68228B">-- canceled or no name</font></p>
+<p>    <font color="#0000FF">lock</font> screen</p>
+<p>    <font color="#0000FF">go</font> last card <font color="#68228B">-- so the new student is placed at the end</font></p>
+<p>    <font color="#0000FF">create</font> card it <font color="#68228B">-- card's name is student name entered above</font></p>
+<p>    <font color="#0000FF">put</font> <font color="#0000FF">return</font> &amp; it after <font color="#F88017">me</font> <font color="#68228B">-- add name to bottom of menu</font></p>
+<p>    <font color="#0000FF">unlock</font> screen</p>
+<p>  <font color="#FF0000">default</font> <font color="#68228B">-- if none of the previous cases apply, it's a card:</font></p>
+<p>    <font color="#980517">if</font> there is a card theItem <font color="#980517">then</font> <font color="#0000FF">go</font> card theItem</p>
+<p>    <font color="#980517">else</font> <font color="#0000FF">beep</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">switch</font></p>
+<p><font color="#980517">end</font> menuPick</p>

@@ -1,0 +1,347 @@
+<p><b><font face="Lucida Grande" size="14" color="#000000">Introduction</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">One of the most important parts of the upcoming 2.9 release is that it contains an updated Linux engine full to the brim with features that were previously only available on Windows and Mac OS X. In particular, the old UNIX external mechanism has been replaced by one using shared libraries - thus gaining the same performance and implementation ease as the other platforms.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In this article, we will introduce an updated version of the External Creator and show how to use it to produce a simple external that can be used on Linux.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#000000">Before we begin</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Before going any further you will need:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">At least Revolution 2.9-dp-1 (Beta 8) up and running on a recent Linux distribution</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">GCC and related tools installed on your Linux system (many distributions install these as standard, but if they are not there, install them using your distribution's package management system)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Version 3 of the Revolution externals build environment: </font><font face="Lucida Grande" size="12" color="#990006"> <a href="http://developer.runrev.com/externals/ExternalsEnvironmentV3.zip">http://developer.runrev.com/externals/ExternalsEnvironmentV3.zip</a></font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Supporting files for this article </font><font face="Lucida Grande" size="12" color="#990006"> <a href="http://developer.runrev.com/externals/NewsletterArticle3.zip">http://developer.runrev.com/externals/NewsletterArticle3.zip</a></font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#000000">Setting up the environment</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">As with the other platforms, before doing anything in a lower-level language on Linux you need to set up your build environment appropriately. On Windows and Mac OS X there are obvious choices for an IDE to build your external in, however on Linux there is no clear winner in this regard and so we have opted for a simple Makefile system. </font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To help with this, the new version of the Externals Environment and External Creator is able to generate Makefiles in a simple structure for use on Linux, and with a few simple terminal commands you can be up and running with Linux external development in no time.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">So, before continuing take some time to unpack the ExternalsEnvironmentV3.zip file into a suitable place on your hard-drive and take a quick look through its contents. Also feel free to rename the unpacked folder ExternalsEnvironmentV3 to something more to your liking - but make a note of its location as this will be needed later when compiling and running your externals. (In future, we will refer to this folder as the environment folder).</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#000000">A simple external - wrapping iconv</font></b></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Setting up the project</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">As an introduction to external development for Linux, we are going to wrap a simple system library call (iconv) that is used for text conversions allowing access to its features inside Revolution.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Having unpacked the environment and put it in a suitable place, we now need to generate the skeleton files for our external. So, without further ado, load up your copy of Revolution on Linux and open the 'External Creator V3.rev' stack inside your environment folder.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">With this stack loaded, do the following:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">fill in the <b>Name</b> field with rnaiconv (as in other external articles, we using the three-letter prefix rna to stand for Revolution Newsletter Article)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; choose Linux as the target platform</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; choose C++ (no exceptions, no rtti) as the language</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; ensure that the Linux installation path is correct&#0;&#0;&#0;&#0;&#0;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Once you are happy with your settings, just click <b>Generate</b> and the creator will chug away for a moment producing the necessary files.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Exploring our new project</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Having generated the project, you should now find an <b>rnaiconv</b> folder within the environment, as well as two files in the root of the environment folder - Makefile and run (more on these later).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Taking a look in the rnaiconv folder should reveal a number of files and folders:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; rnaiconvtest.rev - an empty stack that will load the external (used for testing and debugging)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Makefile - the external's Makefile which will be read by the make command to build the external</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; src/rnaiconv.cpp - the outline of the main C++ file that will contain the implementation of our functions</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now we have this basic structure we can go onto actually implementing some functionality...</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">All about iconv</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The iconv command is ubiquitous on Linux systems. This flexible tool allows you to convert text files between different encodings on the command line (to find out more about this type man iconv at a terminal prompt).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">As it turns out, this tool simply wraps a system library call that provides this ability - and our external will give us direct access to this ability without need to resort to the shell or open process Revolution syntax.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The iconv library consists of three functions:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; conv_open - create an iconv_t converter object between the source and target encodings</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; iconv_close - destroy a previously created iconv_t converter object</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; iconv - the function that actually does the conversions</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To use it is simple, you first open the converter with the appropriate source and target encodings, do your conversion, then close the converter. We will wrap this sequence of calls using an external command with the following prototype:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">command rnaIconv pSrcEncoding, pDstEncoding, pInTextVar, pOutTextVar</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Something to note here is that we have to pass a variable names to the function for both input and output - this is because we cannot pass arbitrary binary data to external commands. To get around this, we pass variable names and then use the GetVariableEx and SetVariableEx calls to get and set their values (for more details on these two calls see the previous external writing article: </font><font face="Lucida Grande" size="12" color="#990006"> <a href="http://www.runrev.com/newsletter/november/issue14/newsletter3.php">External Writing for the Unititiated - Part 2</a></font><font face="Lucida Grande" size="12" color="#000000">)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Before going any further, make sure you have your favourite linux text editor loaded (I tend to use gedit) and open the rnaiconv.cpp file.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Sorting out the declarations</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Before actually implementing our function, we first need to sort out a couple of declarations - we need to import the declarations of the system functions we wish to use, as well as declare to Revolution that we are implementing an external function.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To do the former, we just need to include the relevent header files. To do this we use #include directives. The one to use to gain access to iconv is . So, add the following lines just on the line after the BEGIN USER DEFINITIONS comment:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To actually declare our external function to Revolution we need to add a line to the externals export table. In our environment this is easy, there are a number of macros we use to do this declared in . In this case, we use the EXTERNAL_DECLARE_COMMAND one. Place the following line on the line after the BEGIN USER DECLARATIONS comment:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">EXTERNAL_DECLARE_COMMAND("rnaiconv", rnaIconv)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now we have the declarations sorted out, we can actually implement something!</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Implementing the function</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Although the method used to build externals differs between platforms, the actual Externals API is identical - a Linux external function or command is defined in exactly the same was as on the other two platforms, and such functions and commands have access to the same set of engine calls. As these details have been covered in previous articles, we'll instead go straight onto the function implementation.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Add the following function to the rnaiconv.cpp file after the #include directive we've already added:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Function:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// rnaIconv pSrcEncoding, pDstEncoding, pNameOfInTextVar, pNameOfOutTextVar</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Parameters:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// pSrcEncoding - the name of the source encoding</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// pDstEncoding - the name of the destination encoding</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// pNameOfInTextVar - the name of the variable containing the text we want</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// to convert</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// pNameOfOutTextVar - the name of the variable containing the text we want</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// to place the converted text into</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void rnaIconv(char *p_arguments[], int p_argument_count, </font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">char **r_result, Bool *r_pass, Bool *r_err)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">int t_success;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// First check we have been passed 4 arguments and throw a (Revolution)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// exception if not.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (p_argument_count != 4)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_result = strdup("wrong number of parameters");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_err = True;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_pass = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">return;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Next we attempt to fetch the source text data we wish to use.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// To do this we use the 'GetVariableEx' call from the Externals API</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">ExternalString t_src_text;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">GetVariableEx(p_arguments[2], "", &amp;t_src_text, &amp;t_success);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_success == EXTERNAL_FAILURE)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_result = strdup("unknown input variable");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_err = True;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_pass = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">return;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Next attempt to create an iconv converter object using the given</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// source and destination encodings.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// If creation fails, we throw a (Revolution) exception.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">iconv_t t_converter;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_converter = iconv_open(p_arguments[1], p_arguments[0]);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_converter == NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_result = strdup("unable to create converter");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_err = True;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_pass = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">return;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// We now convert the source text we have into an output buffer</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// that we extend as appropriate.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// iconv works by attempting to convert as much input as possible</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// into an output buffer of a given size, therefore we loop,</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// extending the buffer on each iteration until no input remains.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// At each iteration, we allocate twice the remaining input size</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// which should be fine for most encoding conversions.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// If the variable is unknown, throw an error.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// As the iconv call modifies the input buffer and length parameters</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// we make copies here.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">char *t_in_text_ptr;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">size_t t_in_text_left;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_in_text_ptr = (char *)t_src_text . buffer;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_in_text_left = t_src_text . length;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Setup initial values for the out text buffer. These initial values</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// are 0/NULL since the first thing we do in the loop is allocate</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// memory for that iteration.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">char *t_out_text_base;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">size_t t_out_text_frontier;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">size_t t_out_text_limit;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_text_base = NULL;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_text_frontier = 0;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_text_limit = 0;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Flags that indicate what error occured (if any)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">bool t_memory_error;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_memory_error = false;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">bool t_conversion_error;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_conversion_error = false;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">while(t_in_text_left != 0)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Extend our output buffer.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">char *t_new_out_text_base;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_new_out_text_base = (char *)realloc(t_out_text_base, t_out_text_limit + t_in_text_left * 2);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_new_out_text_base == NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_memory_error = true;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">break;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_text_limit += t_in_text_left * 2;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_text_base = t_new_out_text_base;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Compute start pointer and bytes remaining for the out text buffer</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">char *t_out_text_ptr;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_text_ptr = t_out_text_base + t_out_text_frontier;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">size_t t_out_text_left;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_text_left = t_out_text_limit - t_out_text_frontier;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Attempt the conversion</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">size_t t_iconv_result;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_iconv_result = iconv(t_converter, &amp;t_in_text_ptr, &amp;t_in_text_left, &amp;t_out_text_ptr, &amp;t_out_text_left);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_iconv_result == (size_t)(-1) &amp;&amp; errno != E2BIG)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_conversion_error = true;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">break;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Update the output buffer's frontier (i.e. increase by the number</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// of bytes newly converte).</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_text_frontier += (t_out_text_limit - t_out_text_frontier) - t_out_text_left;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_memory_error)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// If a memory error occured, throw an error.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_result = strdup("out of memory");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_pass = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_err = True;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">else if (t_conversion_error)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// If a conversion error occured, throw an error.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_result = strdup("conversion error");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_pass = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_err = True;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">else</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// No errors occured during conversion so attempt to write out result</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// into the output variable</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">ExternalString t_out_text;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_text . buffer = t_out_text_base;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_text . length = t_out_text_frontier;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">SetVariableEx(p_arguments[3], "", &amp;t_out_text, &amp;t_success);</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// If the variable is unknown, throw an error.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_success == EXTERNAL_FAILURE)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_result = strdup("unknown output variable");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_pass = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_err = True;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">else</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_result = strdup("");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_pass = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_err = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Deallocate our out text buffer</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">free(t_out_text_base);</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Close the iconv converter</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">iconv_close(t_converter);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This function is basically an implementation of what we have outlined above - it opens an iconv converter, processes all the input, then closes the converter.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Building our external</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now that we've coded our function, we need to build and test it. As already mentioned, the External Creator sets up a simple Makefiles for building on Linux. A Makefile is simply a text file that describes the commands required to convert the source files of a project into an actual executable or shared library.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The ones the External Creator generates are predefined to make it easy for you to get started with external writing. Two Makefiles will have been generated, one in the environment and one in the rnaiconv folder. If you take a look at the latter, you should see the following:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">NAME=rnaiconv</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">TYPE=library</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">SOURCES=rnaiconv.cpp</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000"># To add your own source files put them into this list.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000"># Note that source files are searched for in src/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">CUSTOM_DEFINES=</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000"># Add any custom include directions needed by your</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000"># external to this list</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">CUSTOM_INCLUDES=./src</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000"># Add any custom static libraries needed by your external</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000"># to this list</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">CUSTOM_STATIC_LIBS=external </font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000"># Add any custom dynamic libraries needed by your external</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000"># to this list</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">CUSTOM_DYNAMIC_LIBS=</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000"># Add any specific compiler options you need here</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">CUSTOM_CCFLAGS=-fno-exceptions -fno-rtti</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000"># Add any specific link options you need here</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">CUSTOM_LDFLAGS=</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">include ../configurations/library.linux.makefile</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">As you can see from the comments, this file is ready to be added to as your project grows. The most important line here is the 'SOURCES' definition. To add more source files to your external, simply append the name of the file to this line (making sure they are separated by spaces). (Note that due to the design of the system, you need to make sure that your source files are all located in the src sub-folder).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The project Makefile is not designed to be invoked directly, instead it is called by the Makefile in the environment folder when all the project's dependencies are also built - this allows more complicated projects to be built up by decomposing them into smaller sub-projects present in separate folders with their own Makefiles. In this case, your external project will currently depend on libexternal - the standard glue-code required for a Revolution external.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Additionally, the environment Makefile offers three targets for each project - one to build in a debug configuration, one to build in a release configuration and one to clean the intermediate files thus enabling a full rebuild. To use these targets you would use the commands:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; make rnaiconv.debug</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; make rnaiconv.release</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; make rnaiconv.clean&#8;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To actually go ahead and build your project is simple:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Open up a terminal window</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Execute cd (where is the full path to the unpacked ExternalsEnvironmentV3 folder)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Execute make rnaiconv.debug</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">After a few moments, control should return to you without any error messages having been reported.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">(If you do have problems and things don't seem to compile correctly, the NewsletterArticle3.zip archive you will have downloaded contains a pre-prepared set of files that should work straight out of the box. Simply unpack this archive, and copy the folder and other files into your environment folder. Compiling as above should then result in everything working as expected.)</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Testing our external</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now that we've built our external, we need to test it. The External Creator will have already set up an empty test stack for us to use. To make it even easier, it will also have created a simple run script in the environment folder.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This run script combines both building and launching into a single command. To use it just type the comand ./run rnaiconv debug at your terminal and you should find Revolution popping up in due course with a blank stack.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">With this on the screen, its easy to see our external in action:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Create a button called "Convert"</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Create one field called "Input"</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Create another field called "Output"</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Edit the script of the button and put in this mouseUp handler:</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#990017">on</font><font face="Courier" size="11" color="#000000"> mouseUp</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">local</font><font face="Courier" size="11" color="#000000"> tInput, tOutput</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> field "Input" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tInput</font></p>
+<p><font face="Courier" size="11" color="#000000">   rnaIconv "ISO_8859-1", "UTF-16LE", "tInput", "tOutput"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> tOutput </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> field "Output"</font></p>
+<p><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> mouseUp</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Once this is done, put some text in the input field (I always find "Hello World!" a useful phrase) and just click the button. What you should see is "Hello World!" in the output field, except spaced out - this is because the output encoding we've chosen has two bytes per character, which for Roman script text will have one NUL byte per character.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To see something more interesting, try entering some input text with accented characters and use "ISO_8859-1" for the source encoding and "MACINTOSH" for the output encoding. In this case you should changes which comes from the fact that accented characters are in different places for these encodings.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To get a full list of the encodings that iconv supports you can use the command iconv --list at the terminal prompt.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Moving forward</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This article has hopefully demonstrated how straightforward it can be to produce an external for Linux. You can use the External Creator as many times as you want inside a given environment folder to create additional externals, all of which can be built and run using the run script in a similar manner to that described above the rnaiconv project.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">When you are happy with your external and want to install it permanently in your distribution, you just copy the shared library into the appropriate place inside your My Revolution folder. Full details of this can be found in a previous article </font><font face="Lucida Grande" size="12" color="#990006"> <a href="http://www.runrev.com/newsletter/november/issue13/newsletter5.php">External Writing for the Uninitiated - Part 1</a></font><font face="Lucida Grande" size="12" color="#000000">. You can find the actual shared library file you need for this inside the _build/release/ or _build/debug/ folders in your environment folder.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Happy external writing! </font></p>

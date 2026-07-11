@@ -1,0 +1,93 @@
+{
+   "#mainstack": "com.livecode.pi.number",
+   "com.livecode.pi.number": {
+      "#name": "stack \"com.livecode.pi.number\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1003": {
+                        "#name": "field \"Field\"",
+                        "properties": {
+                           "id": "1003",
+                           "layer": "3",
+                           "name": "Field",
+                           "rect": "92,66,192,87"
+                        }
+                     },
+                     "1006": {
+                        "#name": "scrollbar \"slider\"",
+                        "customproperties": {
+                           "focusBorder": null
+                        },
+                        "properties": {
+                           "endValue": "100",
+                           "id": "1006",
+                           "layer": "2",
+                           "lineInc": "16.991714",
+                           "name": "slider",
+                           "pageInc": "0.998535",
+                           "rect": "194,68,294,88",
+                           "startValue": "1",
+                           "style": "scale",
+                           "thumbPosition": "1",
+                           "thumbSize": "99",
+                           "traversalOn": false
+                        }
+                     },
+                     "1007": {
+                        "#name": "scrollbar \"twiddle\"",
+                        "customproperties": {
+                           "focusBorder": "horizontal"
+                        },
+                        "properties": {
+                           "id": "1007",
+                           "layer": "4",
+                           "name": "twiddle",
+                           "pageInc": "512",
+                           "rect": "192,66,207,89",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "92,66,294,89"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "5"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1007"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.number\"",
+      "properties": {
+         "fileName": "com.livecode.pi.number.livecode",
+         "id": "1007",
+         "name": "com.livecode.pi.number",
+         "rect": "1747,567,2147,967"
+      },
+      "sharedGroupIDs": null
+   }
+}

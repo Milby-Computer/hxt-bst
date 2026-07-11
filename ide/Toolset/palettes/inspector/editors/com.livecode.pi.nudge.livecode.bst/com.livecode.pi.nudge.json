@@ -1,0 +1,177 @@
+{
+   "#mainstack": "com.livecode.pi.nudge",
+   "com.livecode.pi.nudge": {
+      "#name": "stack \"com.livecode.pi.nudge\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1039": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1045": {
+                        "#name": "group \"controls\"",
+                        "childcontrols": {
+                           "1040": {
+                              "#name": "button \"down\"",
+                              "customproperties": {
+                                 "Tabs": false
+                              },
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "hiliteFill": false,
+                                 "hiliteIcon": "202736",
+                                 "icon": "202732",
+                                 "id": "1040",
+                                 "layer": "6",
+                                 "name": "down",
+                                 "opaque": false,
+                                 "rect": "164,112,184,134",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "transparent",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "1041": {
+                              "#name": "button \"up\"",
+                              "customproperties": {
+                                 "Tabs": false
+                              },
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "hiliteFill": false,
+                                 "hiliteIcon": "202735",
+                                 "icon": "202731",
+                                 "id": "1041",
+                                 "layer": "3",
+                                 "name": "up",
+                                 "opaque": false,
+                                 "rect": "164,65,184,87",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "transparent",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "1042": {
+                              "#name": "button \"right\"",
+                              "customproperties": {
+                                 "Tabs": false
+                              },
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "hiliteFill": false,
+                                 "hiliteIcon": "202738",
+                                 "icon": "202734",
+                                 "id": "1042",
+                                 "layer": "7",
+                                 "name": "right",
+                                 "opaque": false,
+                                 "rect": "187,88,210,111",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "transparent",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "1043": {
+                              "#name": "button \"Increment\"",
+                              "customproperties": {
+                                 "Tabs": false
+                              },
+                              "properties": {
+                                 "foreColor": "64,64,64",
+                                 "id": "1043",
+                                 "label": "1",
+                                 "layer": "4",
+                                 "menuMode": "popup",
+                                 "name": "Increment",
+                                 "opaque": false,
+                                 "rect": "161,90,187,109",
+                                 "showBorder": false,
+                                 "showFocusBorder": false,
+                                 "style": "menu",
+                                 "text": "1\n2\n5\n10\n20",
+                                 "threeD": false
+                              }
+                           },
+                           "1044": {
+                              "#name": "button \"left\"",
+                              "customproperties": {
+                                 "Tabs": false
+                              },
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "hiliteFill": false,
+                                 "hiliteIcon": "202737",
+                                 "icon": "202733",
+                                 "id": "1044",
+                                 "layer": "5",
+                                 "name": "left",
+                                 "opaque": false,
+                                 "rect": "141,88,161,110",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "transparent",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1045",
+                           "layer": "2",
+                           "name": "controls",
+                           "rect": "137,61,214,138"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1039",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "133,57,218,142"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "6"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1044"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.nudge\"",
+      "properties": {
+         "fileName": "com.livecode.pi.nudge.livecode",
+         "id": "1045",
+         "name": "com.livecode.pi.nudge",
+         "rect": "109,293,392,492"
+      },
+      "sharedGroupIDs": null
+   }
+}

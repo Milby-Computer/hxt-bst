@@ -1,0 +1,13 @@
+<p><font face="Lucida Grande" size="24">Bouncy</font></p>
+<p></p>
+<p>created with</p>
+<p></p>
+<p><font face="Lucida Grande" size="18">Revolution</font></p>
+<p><font face="Lucida Grande" size="14">http://www.runrev.com</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="11">by</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="18">Geoff Canyon</font></p>
+<p><font face="Lucida Grande" size="14">http://www.inspiredlogic.com</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="14">copyright 2003</font></p>

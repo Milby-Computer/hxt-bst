@@ -1,0 +1,161 @@
+{
+   "#mainstack": "SyntaxCaravanAssistant",
+   "SyntaxCaravanAssistant": {
+      "#name": "stack \"SyntaxCaravanAssistant\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"Left Folder\"",
+                  "properties": {
+                     "htmlText": "<p>/Users/mark/Workspace/livecode/caravan/caravan-syntax/engine/src</p>",
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Left Folder",
+                     "rect": "8,8,796,29"
+                  }
+               },
+               "1004": {
+                  "#name": "button \"button id 1041\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1004",
+                     "label": "Select Folder 1",
+                     "layer": "2",
+                     "name": "button id 1041",
+                     "rect": "1099,3,1191,27",
+                     "sharedHilite": false
+                  }
+               },
+               "1005": {
+                  "#name": "button id 1005",
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1005",
+                     "label": "Select Folder 2",
+                     "layer": "3",
+                     "rect": "1099,29,1191,52",
+                     "sharedHilite": false
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Right Folder\"",
+                  "properties": {
+                     "htmlText": "<p>/Users/mark/Workspace/livecode/caravan/caravan-develop/engine/src</p>",
+                     "id": "1006",
+                     "layer": "4",
+                     "name": "Right Folder",
+                     "rect": "8,32,796,53"
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Extract Blocks\"",
+                  "properties": {
+                     "id": "1010",
+                     "layer": "5",
+                     "name": "Extract Blocks",
+                     "rect": "1193,4,1275,27",
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "button \"Process\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "6",
+                     "name": "Process",
+                     "rect": "1194,30,1276,53",
+                     "traversalOn": false
+                  }
+               },
+               "1014": {
+                  "#name": "field \"Log\"",
+                  "properties": {
+                     "htmlText": "%file%: assets/SyntaxCaravanAssistant_1002_1014_htmlText.txt",
+                     "id": "1014",
+                     "layer": "7",
+                     "name": "Log",
+                     "rect": "6,852,1274,1016",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1017": {
+                  "#name": "field \"Left Block\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/SyntaxCaravanAssistant_1002_1017_htmlText.txt",
+                     "id": "1017",
+                     "layer": "8",
+                     "name": "Left Block",
+                     "rect": "6,64,518,848",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1019": {
+                  "#name": "field \"Right Block\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/SyntaxCaravanAssistant_1002_1019_htmlText.txt",
+                     "id": "1019",
+                     "layer": "9",
+                     "name": "Right Block",
+                     "rect": "524,64,1036,848",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1024": {
+                  "#name": "field \"Differences\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/SyntaxCaravanAssistant_1002_1024_htmlText.txt",
+                     "id": "1024",
+                     "layer": "10",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "Differences",
+                     "rect": "1042,64,1274,848",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "10"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1025"
+         }
+      },
+      "longID": "stack \"SyntaxCaravanAssistant\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "legacyexec_compare.livecode",
+         "id": "1025",
+         "liveResizing": false,
+         "name": "SyntaxCaravanAssistant",
+         "rect": "152,121,1432,1145"
+      },
+      "sharedGroupIDs": null
+   }
+}

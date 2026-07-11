@@ -1,0 +1,50 @@
+{
+   "#mainstack": "com.livecode.pi.color",
+   "com.livecode.pi.color": {
+      "#name": "stack \"com.livecode.pi.color\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1009": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1008": {
+                        "#name": "widget id 1008",
+                        "$kind": "com.livecode.widget.colorSwatch",
+                        "properties": {
+                           "id": "1008",
+                           "name": "widget id 1008",
+                           "rect": "152,108,168,124"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1009",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "148,104,172,128"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "visitedColor": "168,1,255"
+      },
+      "longID": "stack \"com.livecode.pi.color\"",
+      "properties": {
+         "fileName": "com.livecode.pi.color.livecode",
+         "id": "1009",
+         "name": "com.livecode.pi.color",
+         "rect": "972,341,1327,728"
+      },
+      "sharedGroupIDs": null
+   }
+}

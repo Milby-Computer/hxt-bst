@@ -1,0 +1,24 @@
+Build Tree from
+	File System
+	Text File
+	Open Stacks
+	Older rTree Format
+Delete All Node Data
+Delete All Tree Data
+Refresh From Node Template
+New Node
+-
+Themes
+	Win
+	Mac
+	Mini
+-
+!cUse Connection Lines
+!nUse First Badge
+-
+!nShow Invisible Nodes
+-
+Refresh
+-
+Restore
+	Default Controls

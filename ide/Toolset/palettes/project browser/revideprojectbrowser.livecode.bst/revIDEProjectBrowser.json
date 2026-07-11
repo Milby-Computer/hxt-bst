@@ -1,0 +1,1720 @@
+{
+   "#mainstack": "revIDEProjectBrowser",
+   "revIDEProjectBrowser": {
+      "#name": "stack \"revIDEProjectBrowser\"",
+      "#substacks": null,
+      "backgroundIDs": "953320\n955887",
+      "cardIDs": "1002\n5773",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"list\"",
+            "childcontrols": {
+               "155594": {
+                  "#name": "group \"content\"",
+                  "childcontrols": {
+                     "5765": {
+                        "#name": "group \"objectList\"",
+                        "childcontrols": "#data view group",
+                        "customproperties": {
+                           null: null,
+                           null: null,
+                           "card id 1002 of stack \"C:/Users/Elanor/Desktop/SVN_8/widgets/AllControls.livecode\"": null,
+                           "cOwners": "stack \"Untitled 1\"\ncard id 1002 of stack \"Untitled 1\"\n",
+                           "dvHiliitedROws": null,
+                           "dvSelectedRows": "156",
+                           "stack \"C:/Users/Elanor/Desktop/SVN_8/widgets/AllControls.livecode\"": null,
+                           "viewProp": "ef625c4f-44e4-41b9-8a89-b665b0cd3d43"
+                        },
+                        "custompropertysets": {
+                           "uVersion": {
+                              "ID": "624012",
+                              "UUID": "eac8ebb6-00d4-477b-8982-93e9023ee59b"
+                           },
+                           "viewProp": {
+                              "alternate row color": "238,238,238",
+                              "animate selections": false,
+                              "autohide scrollbars": true,
+                              "cache": "none",
+                              "content height": "1917",
+                              "dim on focusout": false,
+                              "dimmed hilite color": "80,94,100",
+                              "drop indicator template": "group id 656485 of card id 5773 of stack \"revIDEProjectBrowser\"",
+                              "first working row": "1",
+                              "fixed row height": true,
+                              "hilite color": "48,160,209",
+                              "hilited rows": "4",
+                              "last working row": "22",
+                              "multiple lines": true,
+                              "resize controls": false,
+                              "row color": "255,255,255",
+                              "row height": "27",
+                              "row style templates": {
+                                 "container": "group id 1044 of card id 1002 of stack \"revideprojectbrowsercontainerrowtemplate\"",
+                                 "control": "group id 1003 of card id 1002 of stack \"revideprojectbrowsercontrolrowtemplate\"",
+                                 "group": "group id 1044 of card id 1002 of stack \"revideprojectbrowsergrouprowtemplate\"",
+                                 "library": "group id 1044 of card id 1002 of stack \"revideprojectbrowserlibraryrowtemplate\"",
+                                 "section": "group id 1044 of card id 1002 of stack \"revideprojectbrowsersectionrowtemplate\""
+                              },
+                              "scroll selections into view": true,
+                              "scrollbar corner offset": "0",
+                              "vscroll": "0"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "button id 1003 of stack \"revDataViewControl\"",
+                           "borderWidth": "0",
+                           "id": "5765",
+                           "layer": "2",
+                           "margins": "0",
+                           "name": "objectList",
+                           "opaque": true,
+                           "rect": "0,21,564,566",
+                           "selectGroupedControls": false,
+                           "showBorder": true,
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "155594",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "content",
+                     "opaque": true,
+                     "rect": "0,21,564,566",
+                     "threeD": false
+                  }
+               },
+               "953320": "#shared group",
+               "955603": {
+                  "#name": "group \"selections\"",
+                  "childcontrols": {
+                     "955908": {
+                        "#name": "graphic \"selection 1\"",
+                        "properties": {
+                           "dashes": "4",
+                           "foreColor": "black",
+                           "id": "955908",
+                           "layer": "410",
+                           "name": "selection 1",
+                           "rect": "0,21,465,47",
+                           "visible": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "955603",
+                     "layer": "409",
+                     "name": "selections",
+                     "rect": "-4,17,4,25"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "0"
+               },
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "410"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "list"
+            }
+         },
+         "5773": {
+            "#name": "card \"templates\"",
+            "childcontrols": {
+               "137867": {
+                  "#name": "image \"trash-up.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "trash-up.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137867",
+                     "layer": "1",
+                     "name": "trash-up.png",
+                     "opaque": false,
+                     "rect": "32,297,41,310"
+                  }
+               },
+               "137868": {
+                  "#name": "image \"trash-off.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "trash-off.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137868",
+                     "layer": "2",
+                     "name": "trash-off.png",
+                     "opaque": false,
+                     "rect": "42,297,51,310"
+                  }
+               },
+               "137869": {
+                  "#name": "image \"new-off.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "new-off.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137869",
+                     "layer": "3",
+                     "name": "new-off.png",
+                     "opaque": false,
+                     "rect": "25,522,36,535"
+                  }
+               },
+               "137870": {
+                  "#name": "image \"new_on.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "new_on.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137870",
+                     "layer": "4",
+                     "name": "new_on.png",
+                     "opaque": false,
+                     "rect": "10,522,21,535"
+                  }
+               },
+               "137871": {
+                  "#name": "image \"clone.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "clone.png.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137871",
+                     "layer": "5",
+                     "name": "clone.png",
+                     "opaque": false,
+                     "rect": "21,502,33,515"
+                  }
+               },
+               "137872": {
+                  "#name": "image \"clone-off.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "clone-off.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137872",
+                     "layer": "6",
+                     "name": "clone-off.png",
+                     "opaque": false,
+                     "rect": "7,502,19,515"
+                  }
+               },
+               "137873": {
+                  "#name": "image \"group-off.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "group-off.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137873",
+                     "layer": "7",
+                     "name": "group-off.png",
+                     "opaque": false,
+                     "rect": "10,484,20,497"
+                  }
+               },
+               "137874": {
+                  "#name": "image \"group-up.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "group-up.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137874",
+                     "layer": "8",
+                     "name": "group-up.png",
+                     "opaque": false,
+                     "rect": "22,484,32,497"
+                  }
+               },
+               "137875": {
+                  "#name": "image \"cantSelect_off\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "cantSelect_off.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137875",
+                     "layer": "9",
+                     "name": "cantSelect_off",
+                     "opaque": false,
+                     "rect": "22,465,29,476"
+                  }
+               },
+               "137876": {
+                  "#name": "image \"cantSelect_on\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "cantSelect_on.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137876",
+                     "layer": "10",
+                     "name": "cantSelect_on",
+                     "opaque": false,
+                     "rect": "11,465,18,476"
+                  }
+               },
+               "137877": {
+                  "#name": "image \"visible_off\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "visible_off.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137877",
+                     "layer": "11",
+                     "name": "visible_off",
+                     "opaque": false,
+                     "rect": "28,253,41,260"
+                  }
+               },
+               "137878": {
+                  "#name": "image \"visible_on\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "visible_on.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137878",
+                     "layer": "12",
+                     "name": "visible_on",
+                     "opaque": false,
+                     "rect": "8,253,21,260"
+                  }
+               },
+               "137879": {
+                  "#name": "image \"space-vertical.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "space-vertical.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137879",
+                     "layer": "13",
+                     "name": "space-vertical.png",
+                     "rect": "33,273,36,284"
+                  }
+               },
+               "137880": {
+                  "#name": "image \"space-horizontal.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "space-horizontal.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137880",
+                     "layer": "14",
+                     "name": "space-horizontal.png",
+                     "rect": "12,282,23,285"
+                  }
+               },
+               "137881": {
+                  "#name": "image \"equalize-width.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "equalize-width.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137881",
+                     "layer": "15",
+                     "name": "equalize-width.png",
+                     "rect": "11,296,23,307"
+                  }
+               },
+               "137882": {
+                  "#name": "image \"equalize-rect.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "equalize-rect.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137882",
+                     "layer": "16",
+                     "name": "equalize-rect.png",
+                     "rect": "10,314,23,325"
+                  }
+               },
+               "137883": {
+                  "#name": "image \"equalize-height.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "equalize-height.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137883",
+                     "layer": "17",
+                     "name": "equalize-height.png",
+                     "rect": "11,332,22,344"
+                  }
+               },
+               "137884": {
+                  "#name": "image \"align-top.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "align-top.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137884",
+                     "layer": "18",
+                     "name": "align-top.png",
+                     "rect": "11,353,22,364"
+                  }
+               },
+               "137885": {
+                  "#name": "image \"align-middle.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "align-middle.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137885",
+                     "layer": "19",
+                     "name": "align-middle.png",
+                     "rect": "10,373,23,384"
+                  }
+               },
+               "137886": {
+                  "#name": "image \"align-center.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "align-center.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137886",
+                     "layer": "20",
+                     "name": "align-center.png",
+                     "rect": "11,391,22,403"
+                  }
+               },
+               "137887": {
+                  "#name": "image \"align-bottom.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "align-bottom.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137887",
+                     "layer": "21",
+                     "name": "align-bottom.png",
+                     "rect": "11,409,22,420"
+                  }
+               },
+               "137888": {
+                  "#name": "image \"align-right.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "137888",
+                     "layer": "22",
+                     "name": "align-right.png",
+                     "rect": "12,428,23,439",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAJtJREFUeNqEkIEOwyAIREHQ/p///yUacR7qltUtJTmN6TuO\nwjlneipmxtX1CeBZ/tY7MDSAQCFAMPDboGfHwCJCMSqJqIMe0fvZGd1UZSji5v3NzEhHnMdu\nEPHz/R2IQ2dkROQCPyYI8RB4wJzSRSnBIMdGWmsOm62ZEYktAOZb/vo5hklxlFJXfKB/Bp8Z\ncK0FgK9sz/2rXgIMALwWMBDtmG/XAAAAAElFTkSuQmCC"
+                     }
+                  }
+               },
+               "137889": {
+                  "#name": "image \"align-left.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "align-left.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "137889",
+                     "layer": "23",
+                     "name": "align-left.png",
+                     "rect": "11,446,22,457"
+                  }
+               },
+               "137890": {
+                  "#name": "graphic \"expanded\"",
+                  "properties": {
+                     "antialiased": false,
+                     "backColor": "148,148,148",
+                     "filled": true,
+                     "id": "137890",
+                     "layer": "24",
+                     "lineSize": "0",
+                     "name": "expanded",
+                     "opaque": true,
+                     "points": "61,475",
+                     "rect": "1,415,121,535",
+                     "style": "polygon",
+                     "toolTip": "Contract"
+                  }
+               },
+               "500001": {
+                  "#name": "image \"vertical\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "vertical.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "500001",
+                     "layer": "30",
+                     "name": "vertical",
+                     "rect": "306,241,326,265",
+                     "threeD": false
+                  }
+               },
+               "656485": {
+                  "#name": "group \"pbDragIndicator\"",
+                  "childcontrols": {
+                     "656486": {
+                        "#name": "graphic \"indicator\"",
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "100,100,100",
+                           "filled": true,
+                           "foreColor": "173,208,54",
+                           "id": "656486",
+                           "layer": "26",
+                           "lineSize": "0",
+                           "name": "indicator",
+                           "opaque": true,
+                           "rect": "53,310,269,314"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 930549 of stack \"revIDEProjectBrowser\"",
+                     "id": "656485",
+                     "layer": "25",
+                     "margins": "0",
+                     "name": "pbDragIndicator",
+                     "rect": "53,310,269,314"
+                  }
+               },
+               "751172": {
+                  "#name": "image \"group.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "group.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "751172",
+                     "layer": "27",
+                     "name": "group.png",
+                     "rect": "113,346,129,362",
+                     "toolTip": "201060"
+                  }
+               },
+               "751173": {
+                  "#name": "image \"card.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "card.png.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "751173",
+                     "layer": "28",
+                     "name": "card.png",
+                     "rect": "93,346,109,362",
+                     "toolTip": "201458"
+                  }
+               },
+               "751174": {
+                  "#name": "image \"stack.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "stack.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "751174",
+                     "layer": "29",
+                     "name": "stack.png",
+                     "rect": "74,346,90,362",
+                     "toolTip": "200083"
+                  }
+               },
+               "772479": {
+                  "#name": "image \"childContracted\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "childContracted.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "772479",
+                     "layer": "31",
+                     "name": "childContracted",
+                     "rect": "119,241,139,265",
+                     "threeD": false
+                  }
+               },
+               "772480": {
+                  "#name": "image \"childExpanded\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "childExpanded.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "772480",
+                     "layer": "32",
+                     "name": "childExpanded",
+                     "rect": "143,241,163,265",
+                     "threeD": false
+                  }
+               },
+               "772481": {
+                  "#name": "image \"corner\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "corner.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "772481",
+                     "layer": "33",
+                     "name": "corner",
+                     "rect": "172,241,192,265",
+                     "threeD": false
+                  }
+               },
+               "772482": {
+                  "#name": "image \"branch\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "branch.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "772482",
+                     "layer": "34",
+                     "name": "branch",
+                     "rect": "201,241,221,265",
+                     "threeD": false
+                  }
+               },
+               "772483": {
+                  "#name": "image \"cantExpand\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "cantExpand.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "772483",
+                     "layer": "35",
+                     "name": "cantExpand",
+                     "rect": "227,243,247,267",
+                     "threeD": false
+                  }
+               },
+               "772484": {
+                  "#name": "image \"stackContracted\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "stackContracted.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "772484",
+                     "layer": "36",
+                     "name": "stackContracted",
+                     "rect": "259,241,279,265",
+                     "threeD": false
+                  }
+               },
+               "772506": {
+                  "#name": "image \"stackExpanded\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "stackExpanded.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "772506",
+                     "layer": "37",
+                     "lockLoc": true,
+                     "name": "stackExpanded",
+                     "rect": "279,241,299,265",
+                     "threeD": false
+                  }
+               },
+               "780821": {
+                  "#name": "image \"graphic.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "graphic.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "780821",
+                     "layer": "38",
+                     "name": "graphic.png",
+                     "rect": "134,345,150,361",
+                     "toolTip": "201059"
+                  }
+               },
+               "793006": {
+                  "#name": "image \"horizontal\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "horizontal.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "793006",
+                     "layer": "39",
+                     "name": "horizontal",
+                     "rect": "171,289,191,313"
+                  }
+               },
+               "814994": {
+                  "#name": "image \"back scripts\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "back scripts.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "814994",
+                     "layer": "40",
+                     "name": "back scripts",
+                     "rect": "74,368,88,383",
+                     "toolTip": "203266"
+                  }
+               },
+               "814995": {
+                  "#name": "image \"front scripts\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "front scripts.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "814995",
+                     "layer": "41",
+                     "name": "front scripts",
+                     "rect": "93,370,107,385",
+                     "toolTip": "203267"
+                  }
+               },
+               "814996": {
+                  "#name": "image \"Stacks in use\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "Stacks in use.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "814996",
+                     "layer": "42",
+                     "name": "Stacks in use",
+                     "rect": "136,368,152,382",
+                     "toolTip": "203272"
+                  }
+               },
+               "826147": {
+                  "#name": "image \"field.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "field.png.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "826147",
+                     "layer": "43",
+                     "name": "field.png",
+                     "rect": "154,345,170,361",
+                     "toolTip": "201058"
+                  }
+               },
+               "826148": {
+                  "#name": "image \"scrollbar.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "scrollbar.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "826148",
+                     "layer": "44",
+                     "name": "scrollbar.png",
+                     "rect": "174,344,190,360",
+                     "toolTip": "201063"
+                  }
+               },
+               "826149": {
+                  "#name": "image \"player.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "player.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "826149",
+                     "layer": "45",
+                     "name": "player.png",
+                     "rect": "190,345,206,361",
+                     "toolTip": "205504"
+                  }
+               },
+               "826150": {
+                  "#name": "image \"image.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "image.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "826150",
+                     "layer": "46",
+                     "name": "image.png",
+                     "rect": "209,345,225,361",
+                     "toolTip": "201061"
+                  }
+               },
+               "826151": {
+                  "#name": "image \"button.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "button.png.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "826151",
+                     "layer": "47",
+                     "name": "button.png",
+                     "rect": "226,345,242,361",
+                     "toolTip": "201057"
+                  }
+               },
+               "826152": {
+                  "#name": "image \"group.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "group.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "826152",
+                     "layer": "48",
+                     "name": "group.png",
+                     "rect": "246,345,262,361",
+                     "toolTip": "201060"
+                  }
+               },
+               "854519": {
+                  "#name": "image \"substack.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "substack.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "854519",
+                     "layer": "49",
+                     "name": "substack.png",
+                     "rect": "265,344,281,360",
+                     "toolTip": "200082"
+                  }
+               },
+               "877632": {
+                  "#name": "image \"audioclip.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "audioclip.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "877632",
+                     "layer": "50",
+                     "name": "audioclip.png",
+                     "rect": "256,366,272,382",
+                     "toolTip": "200188"
+                  }
+               },
+               "877633": {
+                  "#name": "image \"videoclip.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "videoclip.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "877633",
+                     "layer": "51",
+                     "name": "videoclip.png",
+                     "rect": "174,364,190,380",
+                     "toolTip": "200085"
+                  }
+               },
+               "877805": {
+                  "#name": "image \"videoclips\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "videoclips.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "877805",
+                     "layer": "52",
+                     "name": "videoclips",
+                     "rect": "174,384,190,400",
+                     "toolTip": "200085"
+                  }
+               },
+               "877806": {
+                  "#name": "image \"audioclips\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "audioclips.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "877806",
+                     "layer": "53",
+                     "name": "audioclips",
+                     "rect": "256,386,272,402",
+                     "toolTip": "200188"
+                  }
+               },
+               "884997": {
+                  "#name": "image \"back script\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "back script.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "884997",
+                     "layer": "54",
+                     "name": "back script",
+                     "rect": "74,388,88,403",
+                     "toolTip": "203266"
+                  }
+               },
+               "884998": {
+                  "#name": "image \"front script\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "front script.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "884998",
+                     "layer": "55",
+                     "name": "front script",
+                     "rect": "93,390,107,405",
+                     "toolTip": "203267"
+                  }
+               },
+               "884999": {
+                  "#name": "image \"Library stack\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "Library stack.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "884999",
+                     "layer": "56",
+                     "name": "Library stack",
+                     "rect": "136,388,152,402",
+                     "toolTip": "203272"
+                  }
+               },
+               "930549": {
+                  "#name": "button \"pbDragIndicatorBehavior\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "id": "930549",
+                     "layer": "57",
+                     "margins": "8",
+                     "name": "pbDragIndicatorBehavior",
+                     "rect": "283,300,444,323",
+                     "showFocusBorder": false,
+                     "traversalOn": false
+                  }
+               },
+               "944653": {
+                  "#name": "image \"widget.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "widget.png",
+                     "filepath": "panos/Develop-8.0/livecode/ide/Toolset/resources/supporting_files/images",
+                     "id": "944653",
+                     "layer": "58",
+                     "name": "widget.png",
+                     "rect": "282,344,298,360"
+                  }
+               },
+               "955887": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "61"
+               }
+            },
+            "properties": {
+               "id": "5773",
+               "layer": "2",
+               "name": "templates"
+            }
+         },
+         "953320": {
+            "#name": "group \"background\"",
+            "childcontrols": {
+               "953321": {
+                  "#name": "widget \"header_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "cog",
+                           "label": "Preferences",
+                           "menu": [
+                              {
+                                 "label": "Object type indicator",
+                                 "menu": [
+                                    {
+                                       "checked": false,
+                                       "label": "Text",
+                                       "name": "Text"
+                                    },
+                                    {
+                                       "checked": true,
+                                       "label": "Icon",
+                                       "name": "Icon"
+                                    }
+                                 ],
+                                 "name": "pb_indicator"
+                              },
+                              {
+                                 "label": "Show Sections",
+                                 "menu": [
+                                    {
+                                       "checked": false,
+                                       "label": "Front Scripts",
+                                       "name": "Front Scripts"
+                                    },
+                                    {
+                                       "checked": true,
+                                       "label": "Stacks",
+                                       "name": "Stacks"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Back Scripts",
+                                       "name": "Back Scripts"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Stacks in use",
+                                       "name": "Stacks in use"
+                                    }
+                                 ],
+                                 "name": "pb_sections"
+                              },
+                              {
+                                 "label": "Order stacks by",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "Name - ascending",
+                                       "name": "Name - ascending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Name - descending",
+                                       "name": "Name - descending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Number - ascending",
+                                       "name": "Number - ascending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Number - descending",
+                                       "name": "Number - descending"
+                                    }
+                                 ],
+                                 "name": "pb_stackSort"
+                              },
+                              {
+                                 "label": "Order cards by",
+                                 "menu": [
+                                    {
+                                       "checked": false,
+                                       "label": "Name - ascending",
+                                       "name": "Name - ascending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Name - descending",
+                                       "name": "Name - descending"
+                                    },
+                                    {
+                                       "checked": true,
+                                       "label": "Number - ascending",
+                                       "name": "Number - ascending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Number - descending",
+                                       "name": "Number - descending"
+                                    }
+                                 ],
+                                 "name": "pb_cardSort"
+                              },
+                              {
+                                 "label": "Order controls by",
+                                 "menu": [
+                                    {
+                                       "checked": false,
+                                       "label": "Name - ascending",
+                                       "name": "Name - ascending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Name - descending",
+                                       "name": "Name - descending"
+                                    },
+                                    {
+                                       "checked": true,
+                                       "label": "Number - ascending",
+                                       "name": "Number - ascending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Number - descending",
+                                       "name": "Number - descending"
+                                    }
+                                 ],
+                                 "name": "pb_controlSort"
+                              },
+                              {
+                                 "label": "Text size",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "default",
+                                       "name": "default"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "8",
+                                       "name": "8"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "10",
+                                       "name": "10"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "12",
+                                       "name": "12"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "14",
+                                       "name": "14"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "18",
+                                       "name": "18"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "24",
+                                       "name": "24"
+                                    }
+                                 ],
+                                 "name": "pb_textSize"
+                              },
+                              {
+                                 "label": "Header // Footer Size",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "small",
+                                       "name": "small"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "medium",
+                                       "name": "medium"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "large",
+                                       "name": "large"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "largest",
+                                       "name": "largest"
+                                    }
+                                 ],
+                                 "name": "revPaletteFrameSize"
+                              },
+                              {
+                                 "label": "Tab Display Style",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "Icons",
+                                       "name": "icons"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Labels",
+                                       "name": "names"
+                                    }
+                                 ],
+                                 "name": "revIDEProjectBrowser_displayStyle"
+                              }
+                           ],
+                           "name": "preferences"
+                        }
+                     ],
+                     "is header": true,
+                     "nav data": null
+                  },
+                  "properties": {
+                     "id": "953321",
+                     "name": "header_background",
+                     "rect": "0,0,564,21"
+                  }
+               },
+               "953322": {
+                  "#name": "widget \"footer_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "object align left",
+                           "label": "Align left",
+                           "menu": null,
+                           "name": "alignLeft"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object align top",
+                           "label": "Align top",
+                           "menu": null,
+                           "name": "alignTop"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object align right",
+                           "label": "Align right",
+                           "menu": null,
+                           "name": "alignRight"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object align bottom",
+                           "label": "Align bottom",
+                           "menu": null,
+                           "name": "alignBottom"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object align horizontal center",
+                           "label": "Center horizontally",
+                           "menu": null,
+                           "name": "centerX"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object align vertical center",
+                           "label": "Center vertically",
+                           "menu": null,
+                           "name": "centerY"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object justify horizontal",
+                           "label": "Equalize width",
+                           "menu": null,
+                           "name": "equalizeWidth"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object justify vertical",
+                           "label": "Equalize height",
+                           "menu": null,
+                           "name": "equalizeHeight"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object justify both",
+                           "label": "Equalize rect",
+                           "menu": null,
+                           "name": "equalizeRect"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "resize vertical",
+                           "label": "Layout vertically",
+                           "menu": null,
+                           "name": "distributeVertically"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "resize horizontal",
+                           "label": "Layout horizontally",
+                           "menu": null,
+                           "name": "distributeHorizontally"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "file alt",
+                           "label": "New control",
+                           "menu": null,
+                           "name": "newControl"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "folder open alt",
+                           "label": "Group controls",
+                           "menu": null,
+                           "name": "groupControl"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "files alt",
+                           "label": "Clone control",
+                           "menu": null,
+                           "name": "cloneControl"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "trash",
+                           "label": "Delete control",
+                           "menu": null,
+                           "name": "deleteControl"
+                        }
+                     ],
+                     "is header": false,
+                     "nav data": null
+                  },
+                  "properties": {
+                     "id": "953322",
+                     "name": "footer_background",
+                     "rect": "0,566,564,587"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "953320",
+               "layer": "406",
+               "name": "background",
+               "rect": "-4,-4,568,591"
+            }
+         },
+         "955887": {
+            "#name": "group \"background\"",
+            "childcontrols": {
+               "955888": {
+                  "#name": "widget \"header_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "cog",
+                           "label": "Preferences",
+                           "menu": [
+                              {
+                                 "label": "Object type indicator",
+                                 "menu": [
+                                    {
+                                       "checked": false,
+                                       "label": "Text",
+                                       "name": "Text"
+                                    },
+                                    {
+                                       "checked": true,
+                                       "label": "Icon",
+                                       "name": "Icon"
+                                    }
+                                 ],
+                                 "name": "pb_indicator"
+                              },
+                              {
+                                 "label": "Show Sections",
+                                 "menu": [
+                                    {
+                                       "checked": false,
+                                       "label": "Front Scripts",
+                                       "name": "Front Scripts"
+                                    },
+                                    {
+                                       "checked": true,
+                                       "label": "Stacks",
+                                       "name": "Stacks"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Back Scripts",
+                                       "name": "Back Scripts"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Stacks in use",
+                                       "name": "Stacks in use"
+                                    }
+                                 ],
+                                 "name": "pb_sections"
+                              },
+                              {
+                                 "label": "Order stacks by",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "Name - ascending",
+                                       "name": "Name - ascending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Name - descending",
+                                       "name": "Name - descending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Number - ascending",
+                                       "name": "Number - ascending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Number - descending",
+                                       "name": "Number - descending"
+                                    }
+                                 ],
+                                 "name": "pb_stackSort"
+                              },
+                              {
+                                 "label": "Order cards by",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "Name - ascending",
+                                       "name": "Name - ascending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Name - descending",
+                                       "name": "Name - descending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Number - ascending",
+                                       "name": "Number - ascending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Number - descending",
+                                       "name": "Number - descending"
+                                    }
+                                 ],
+                                 "name": "pb_cardSort"
+                              },
+                              {
+                                 "label": "Order controls by",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "Name - ascending",
+                                       "name": "Name - ascending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Name - descending",
+                                       "name": "Name - descending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Number - ascending",
+                                       "name": "Number - ascending"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Number - descending",
+                                       "name": "Number - descending"
+                                    }
+                                 ],
+                                 "name": "pb_controlSort"
+                              },
+                              {
+                                 "label": "Text size",
+                                 "menu": [
+                                    {
+                                       "checked": false,
+                                       "label": "default",
+                                       "name": "default"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "8",
+                                       "name": "8"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "10",
+                                       "name": "10"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "12",
+                                       "name": "12"
+                                    },
+                                    {
+                                       "checked": true,
+                                       "label": "14",
+                                       "name": "14"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "18",
+                                       "name": "18"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "24",
+                                       "name": "24"
+                                    }
+                                 ],
+                                 "name": "pb_textSize"
+                              },
+                              {
+                                 "label": "Header // Footer Size",
+                                 "menu": [
+                                    {
+                                       "checked": false,
+                                       "label": "small",
+                                       "name": "small"
+                                    },
+                                    {
+                                       "checked": true,
+                                       "label": "medium",
+                                       "name": "medium"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "large",
+                                       "name": "large"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "largest",
+                                       "name": "largest"
+                                    }
+                                 ],
+                                 "name": "revPaletteFrameSize"
+                              },
+                              {
+                                 "label": "Tab Display Style",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "Icons",
+                                       "name": "icons"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Labels",
+                                       "name": "names"
+                                    }
+                                 ],
+                                 "name": "revIDEProjectBrowser_displayStyle"
+                              }
+                           ],
+                           "name": "preferences"
+                        }
+                     ],
+                     "is header": true,
+                     "nav data": null
+                  },
+                  "properties": {
+                     "id": "955888",
+                     "name": "header_background",
+                     "rect": "0,0,543,25"
+                  }
+               },
+               "955889": {
+                  "#name": "widget \"footer_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "object align left",
+                           "label": "Align left",
+                           "menu": null,
+                           "name": "alignLeft"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object align top",
+                           "label": "Align top",
+                           "menu": null,
+                           "name": "alignTop"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object align right",
+                           "label": "Align right",
+                           "menu": null,
+                           "name": "alignRight"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object align bottom",
+                           "label": "Align bottom",
+                           "menu": null,
+                           "name": "alignBottom"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object align horizontal center",
+                           "label": "Center vertically",
+                           "menu": null,
+                           "name": "centerX"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object align vertical center",
+                           "label": "Center horizontally",
+                           "menu": null,
+                           "name": "centerY"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object justify horizontal",
+                           "label": "Equalize width",
+                           "menu": null,
+                           "name": "equalizeWidth"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object justify vertical",
+                           "label": "Equalize height",
+                           "menu": null,
+                           "name": "equalizeHeight"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "object justify both",
+                           "label": "Equalize rect",
+                           "menu": null,
+                           "name": "equalizeRect"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "resize vertical",
+                           "label": "Layout vertically",
+                           "menu": null,
+                           "name": "distributeVertically"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "resize horizontal",
+                           "label": "Layout horizontally",
+                           "menu": null,
+                           "name": "distributeHorizontally"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "file alt",
+                           "label": "New control",
+                           "menu": null,
+                           "name": "newControl"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "folder open alt",
+                           "label": "Group controls",
+                           "menu": null,
+                           "name": "groupControl"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "files alt",
+                           "label": "Clone control",
+                           "menu": null,
+                           "name": "cloneControl"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "trash",
+                           "label": "Delete control",
+                           "menu": null,
+                           "name": "deleteControl"
+                        }
+                     ],
+                     "is header": false,
+                     "nav data": null
+                  },
+                  "properties": {
+                     "id": "955889",
+                     "name": "footer_background",
+                     "rect": "0,562,543,587"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "955887",
+               "layer": "410",
+               "name": "background",
+               "rect": "-4,-4,547,591"
+            }
+         }
+      },
+      "customproperties": {
+         "cExpandedControls": "card id 1002 of stack \"Untitled 1\"\nstacks_in_use_title\nstack \"Untitled 1\"\n",
+         "cStoreArray": {
+            "objects": [
+               {
+                  "behavior": null,
+                  "behavior scriptlines": null,
+                  "children": "2",
+                  "expanded": false,
+                  "indent": "0",
+                  "long id": "stack \"Untitled 1\"",
+                  "name": "Untitled 1",
+                  "scriptlines": "0",
+                  "style": "container",
+                  "type": "Mainstack"
+               },
+               {
+                  "behavior": null,
+                  "behavior scriptlines": null,
+                  "children": "3",
+                  "expanded": false,
+                  "indent": "1",
+                  "long id": "card id 1002 of stack \"Untitled 1\"",
+                  "name": "card id 1002",
+                  "parent": "1",
+                  "scriptlines": "0",
+                  "style": "container",
+                  "type": "Card"
+               },
+               {
+                  "behavior": null,
+                  "behavior scriptlines": null,
+                  "cantSelect": false,
+                  "expanded": false,
+                  "indent": "2",
+                  "long id": "button id 1004 of card id 1002 of stack \"Untitled 1\"",
+                  "name": "Button",
+                  "parent": "2",
+                  "scriptlines": "0",
+                  "style": "control",
+                  "type": "button",
+                  "visible": true
+               }
+            ],
+            "visible object keys": "1,"
+         }
+      },
+      "custompropertysets": {
+         "cREVGeneral[AlreadyHidden]": {
+            "AlreadyHidden": false
+         },
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         },
+         "cREVGeneral[scripteditorselection]": {
+            "scripteditorselection": "1011"
+         },
+         "cREVGeneral[scripteditorvscroll]": {
+            "scripteditorvscroll": "98"
+         },
+         "cREVGeometryCache": {
+            "stackID": "956529"
+         }
+      },
+      "longID": "stack \"revIDEProjectBrowser\"",
+      "properties": {
+         "behavior": "stack \"revProjectBrowserBehavior\"",
+         "decorations": "title,menu,minimize,close",
+         "fileName": "revideprojectbrowser.livecode",
+         "id": "956529",
+         "minWidth": "326",
+         "name": "revIDEProjectBrowser",
+         "rect": "1367,121,1931,708",
+         "title": "Project Browser"
+      },
+      "sharedGroupIDs": "953320\n955887"
+   }
+}

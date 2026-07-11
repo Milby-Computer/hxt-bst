@@ -1,0 +1,716 @@
+{
+   "#mainstack": "RegExBuilder",
+   "RegExBuilder": {
+      "#name": "stack \"RegExBuilder\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1007": {
+                  "#name": "field \"Filter\"",
+                  "customproperties": 
+               },
+               "custompropertysets": {
+                  "cREVGeometry": {
+                     "Master": true,
+                     "Master,cardRanking": "3",
+                     "Master,expectedRect": "61,70,240,87",
+                     "Master,movehDistance": false,
+                     "Master,movevDistance": false,
+                     "Master,scaleBottom": true,
+                     "Master,scaleBottomAbsolute": true,
+                     "Master,scalebottomDistance": "-61",
+                     "Master,scaleBottomObjectRef": "card",
+                     "Master,scaleBottomObjectSide": "Bottom",
+                     "Master,scaleleftDistance": null,
+                     "Master,scaleRight": true,
+                     "Master,scaleRightAbsolute": true,
+                     "Master,scalerightDistance": "-5",
+                     "Master,scaleRightObjectRef": "card",
+                     "Master,scaleRightObjectSide": "Right",
+                     "Master,scaleTop": true,
+                     "Master,scaleTopAbsolute": true,
+                     "Master,scaletopDistance": "-78",
+                     "Master,scaleTopObjectRef": "card",
+                     "Master,scaleTopObjectSide": "bottom"
+                  }
+               },
+               "properties": {
+                  "autoTab": true,
+                  "dontWrap": true,
+                  "id": "1007",
+                  "layer": "5",
+                  "lockLoc": true,
+                  "name": "Filter",
+                  "opaque": false,
+                  "rect": "61,70,240,87",
+                  "style": "transparent",
+                  "textFont": "Geneva",
+                  "textHeight": "12",
+                  "textSize": "10",
+                  "textStyle": "plain",
+                  "toolTip": "Regular expression filter"
+               }
+            },
+            "1011": {
+               "#name": "button \"Pattern:\"",
+               "customproperties": {
+                  "cRegExList": ".,0,0\n\n_*,2,1\n_?,2,1\n_+,2,1\n\n[_],2,1\n[^_],2,1\n[_-_],4,3\n\n^_,1,0\n_$,2,1\n\n_|_,3,2\n\n\\_,1,0",
+                  "Selection Description": false
+               },
+               "custompropertysets": {
+                  "cREVGeometry": {
+                     "Master": true,
+                     "Master,cardRanking": "1",
+                     "Master,expectedRect": "61,464,127,481",
+                     "Master,moveH": false,
+                     "Master,moveHAbsolute": false,
+                     "Master,movehDistance": "-0.177843",
+                     "Master,moveHObjectRef": null,
+                     "Master,moveHObjectSide": "center",
+                     "Master,moveV": true,
+                     "Master,moveVAbsolute": true,
+                     "Master,movevDistance": "-89",
+                     "Master,moveVObjectRef": "card",
+                     "Master,moveVObjectSide": "bottom",
+                     "Master,scalebottomDistance": null,
+                     "Master,scaleleftDistance": null,
+                     "Master,scalerightDistance": null,
+                     "Master,scaletopDistance": null
+                  }
+               },
+               "properties": {
+                  "accelMods": "command",
+                  "autoHilite": false,
+                  "id": "1011",
+                  "layer": "2",
+                  "lockLoc": true,
+                  "menuMode": "cascade",
+                  "name": "Pattern:",
+                  "rect": "61,51,127,68",
+                  "showFocusBorder": false,
+                  "style": "menu",
+                  "text": "Any single char\n(-\nZero or more char|set\nZero or one char|set\nOne or more char|set\n(-\nIncluded char set\nExcluded char set\nChar range\n(-\nChar at beginning\nChar at end\n(-\nOptional char\n(-\nLitteral char",
+                  "textFont": "Lucida Grande",
+                  "textSize": "11",
+                  "textStyle": "bold",
+                  "threeD": false,
+                  "toolTip": "Click to add a pattern to filter",
+                  "traversalOn": false
+               }
+            },
+            "1025": {
+               "#name": "field \"TT\"",
+               "properties": {
+                  "autoHilite": false,
+                  "dontWrap": true,
+                  "htmlText": "<p>Input:</p>",
+                  "id": "1025",
+                  "layer": "1",
+                  "lockLoc": true,
+                  "lockText": true,
+                  "margins": "0",
+                  "name": "TT",
+                  "opaque": false,
+                  "rect": "14,9,62,25",
+                  "sharedText": true,
+                  "showBorder": false,
+                  "style": "transparent",
+                  "textFont": "Lucida Grande",
+                  "textHeight": "18",
+                  "textSize": "11",
+                  "textStyle": "bold",
+                  "traversalOn": false
+               }
+            },
+            "1026": {
+               "#name": "field \"Input\"",
+               "custompropertysets": {
+                  "cREVGeometry": {
+                     "Master": true,
+                     "Master,cardRanking": "2",
+                     "Master,expectedRect": "61,8,240,25",
+                     "Master,movehDistance": false,
+                     "Master,movevDistance": false,
+                     "Master,scale": true,
+                     "Master,scaleAbsolute": false,
+                     "Master,scaleBottom": true,
+                     "Master,scaleBottomAbsolute": true,
+                     "Master,scalebottomDistance": "-49",
+                     "Master,scaleBottomObjectRef": "card",
+                     "Master,scaleBottomObjectSide": "center",
+                     "Master,scaleBottomscaleBottom": true,
+                     "Master,scaleLeft": false,
+                     "Master,scaleLeftAbsolute": false,
+                     "Master,scaleleftDistance": "0",
+                     "Master,scaleLeftObjectRef": null,
+                     "Master,scaleLeftObjectSide": "center",
+                     "Master,scaleRight": true,
+                     "Master,scaleRightAbsolute": true,
+                     "Master,scalerightDistance": "-5",
+                     "Master,scaleRightObjectRef": "card",
+                     "Master,scaleRightObjectSide": "Right",
+                     "Master,scaleTop": false,
+                     "Master,scaleTopAbsolute": false,
+                     "Master,scaletopDistance": "0",
+                     "Master,scaletopObjectRef": null,
+                     "Master,scaleTopObjectSide": "center",
+                     "Master,showVScroll": false
+                  }
+               },
+               "properties": {
+                  "autoTab": true,
+                  "dontWrap": true,
+                  "id": "1026",
+                  "layer": "3",
+                  "lockLoc": true,
+                  "name": "Input",
+                  "opaque": false,
+                  "rect": "61,8,240,25",
+                  "style": "transparent",
+                  "textFont": "Geneva",
+                  "textHeight": "13",
+                  "textSize": "10",
+                  "textStyle": "plain",
+                  "toolTip": "Input string"
+               }
+            },
+            "1027": {
+               "#name": "field \"Result\"",
+               "custompropertysets": {
+                  "cREVGeometry": {
+                     "Master": true,
+                     "Master,cardRanking": "3",
+                     "Master,expectedRect": "61,33,240,50",
+                     "Master,movehDistance": false,
+                     "Master,movevDistance": false,
+                     "Master,scaleAbsolute": false,
+                     "Master,scaleBottom": true,
+                     "Master,scaleBottomAbsolute": true,
+                     "Master,scalebottomDistance": "-98",
+                     "Master,scaleBottomObjectRef": "card",
+                     "Master,scaleBottomObjectSide": "Bottom",
+                     "Master,scaleBottomscaleBottom": true,
+                     "Master,scaleLeft": false,
+                     "Master,scaleLeftAbsolute": false,
+                     "Master,scaleleftDistance": "0",
+                     "Master,scaleLeftObjectRef": null,
+                     "Master,scaleLeftObjectSide": "center",
+                     "Master,scaleRight": true,
+                     "Master,scaleRightAbsolute": true,
+                     "Master,scalerightDistance": "-5",
+                     "Master,scaleRightObjectRef": "card",
+                     "Master,scaleRightObjectSide": "Right",
+                     "Master,scaleTop": true,
+                     "Master,scaleTopAbsolute": true,
+                     "Master,scaletopDistance": "-41",
+                     "Master,scaletopObjectRef": "card",
+                     "Master,scaleTopObjectSide": "center",
+                     "Master,showVScroll": false
+                  }
+               },
+               "properties": {
+                  "autoHilite": false,
+                  "dontWrap": true,
+                  "htmlText": "<p>       </p>",
+                  "id": "1027",
+                  "layer": "4",
+                  "lockLoc": true,
+                  "lockText": true,
+                  "name": "Result",
+                  "opaque": false,
+                  "rect": "61,33,240,50",
+                  "style": "transparent",
+                  "textFont": "Geneva",
+                  "textHeight": "12",
+                  "textSize": "10",
+                  "textStyle": "plain",
+                  "toolTip": "Filtered string",
+                  "traversalOn": false
+               }
+            },
+            "1029": {
+               "#name": "field \"TT\"",
+               "custompropertysets": {
+                  "cREVGeometry": {
+                     "Master": true,
+                     "Master,cardRanking": "1",
+                     "Master,expectedRect": "14,34,62,50",
+                     "Master,moveH": false,
+                     "Master,moveHAbsolute": false,
+                     "Master,movehDistance": "-0.34",
+                     "Master,moveHObjectRef": null,
+                     "Master,moveHObjectSide": "center",
+                     "Master,moveV": true,
+                     "Master,moveVAbsolute": true,
+                     "Master,movevDistance": "-32",
+                     "Master,moveVObjectRef": "card",
+                     "Master,moveVObjectSide": "Center",
+                     "Master,scalebottomDistance": null,
+                     "Master,scaleleftDistance": null,
+                     "Master,scalerightDistance": null,
+                     "Master,scaletopDistance": null
+                  }
+               },
+               "properties": {
+                  "autoHilite": false,
+                  "dontWrap": true,
+                  "htmlText": "<p>Result:</p>",
+                  "id": "1029",
+                  "layer": "6",
+                  "lockLoc": true,
+                  "lockText": true,
+                  "margins": "0",
+                  "name": "TT",
+                  "opaque": false,
+                  "rect": "14,34,62,50",
+                  "sharedText": true,
+                  "showBorder": false,
+                  "style": "transparent",
+                  "textFont": "Lucida Grande",
+                  "textHeight": "18",
+                  "textSize": "11",
+                  "textStyle": "bold",
+                  "traversalOn": false
+               }
+            },
+            "1031": {
+               "#name": "field \"TT\"",
+               "custompropertysets": {
+                  "cREVGeometry": {
+                     "Master": true,
+                     "Master,cardRanking": "1",
+                     "Master,expectedRect": "14,454,62,470",
+                     "Master,moveH": false,
+                     "Master,moveHAbsolute": false,
+                     "Master,movehDistance": "-0.34",
+                     "Master,moveHObjectRef": null,
+                     "Master,moveHObjectSide": "center",
+                     "Master,moveV": true,
+                     "Master,moveVAbsolute": true,
+                     "Master,movevDistance": "-69",
+                     "Master,moveVObjectRef": "card",
+                     "Master,moveVObjectSide": "bottom",
+                     "Master,scalebottomDistance": null,
+                     "Master,scaleleftDistance": null,
+                     "Master,scalerightDistance": null,
+                     "Master,scaletopDistance": null
+                  }
+               },
+               "properties": {
+                  "autoHilite": false,
+                  "dontWrap": true,
+                  "htmlText": "<p>Filter:</p>",
+                  "id": "1031",
+                  "layer": "7",
+                  "lockLoc": true,
+                  "lockText": true,
+                  "margins": "0",
+                  "name": "TT",
+                  "opaque": false,
+                  "rect": "14,71,62,87",
+                  "sharedText": true,
+                  "showBorder": false,
+                  "style": "transparent",
+                  "textFont": "Lucida Grande",
+                  "textHeight": "18",
+                  "textSize": "11",
+                  "textStyle": "bold",
+                  "traversalOn": false
+               }
+            },
+            "1116": {
+               "#name": "field \"Hidden\"",
+               "custompropertysets": {
+                  "cREVGeometry": {
+                     "Master": true,
+                     "Master,cardRanking": "2",
+                     "Master,expectedRect": "4,196,220,213",
+                     "Master,moveH": true,
+                     "Master,moveHAbsolute": false,
+                     "Master,movehDistance": "7.395918",
+                     "Master,moveHObjectRef": "card",
+                     "Master,moveHObjectSide": "center",
+                     "Master,moveV": true,
+                     "Master,moveVAbsolute": true,
+                     "Master,movevDistance": "57",
+                     "Master,moveVObjectRef": "card",
+                     "Master,moveVObjectSide": "Bottom",
+                     "Master,scalebottomDistance": null,
+                     "Master,scaleleftDistance": null,
+                     "Master,scalerightDistance": null,
+                     "Master,scaletopDistance": null
+                  }
+               },
+               "properties": {
+                  "autoHilite": false,
+                  "dontWrap": true,
+                  "htmlText": "<p>set the caseSensitive to false</p>\n<p>Filter \u2026lt;container\u2026gt; with \"(=\\?ISO-8859-1\\?Q\\?)([^\\?]*)(\\?=)\"</p>",
+                  "id": "1116",
+                  "layer": "8",
+                  "lockLoc": true,
+                  "name": "Hidden",
+                  "rect": "1949,197,2165,214",
+                  "textFont": "Geneva",
+                  "textHeight": "11",
+                  "textSize": "10",
+                  "textStyle": "plain",
+                  "traversalOn": false
+               }
+            },
+            "1120": {
+               "#name": "button \"Copy syntax:\"",
+               "custompropertysets": {
+                  "cREVGeometry": {
+                     "Master": true,
+                     "Master,cardRanking": "2",
+                     "Master,expectedRect": "430,464,520,481",
+                     "Master,moveH": true,
+                     "Master,moveHAbsolute": true,
+                     "Master,movehDistance": "-50",
+                     "Master,moveHObjectRef": "Card",
+                     "Master,moveHObjectSide": "Right",
+                     "Master,moveV": true,
+                     "Master,moveVAbsolute": true,
+                     "Master,movevDistance": "-89",
+                     "Master,moveVObjectRef": "card",
+                     "Master,moveVObjectSide": "bottom",
+                     "Master,scalebottomDistance": null,
+                     "Master,scaleleftDistance": null,
+                     "Master,scalerightDistance": null,
+                     "Master,scaletopDistance": null
+                  }
+               },
+               "properties": {
+                  "accelKey": "\u0080\u0085",
+                  "accelMods": "command",
+                  "autoHilite": false,
+                  "id": "1120",
+                  "layer": "9",
+                  "lockLoc": true,
+                  "menuMode": "cascade",
+                  "name": "Copy syntax:",
+                  "rect": "150,51,240,68",
+                  "style": "menu",
+                  "text": "(Filter with\nMatchText\nMatchChunk",
+                  "textFont": "Lucida Grande",
+                  "textSize": "11",
+                  "textStyle": "bold",
+                  "toolTip": "Move selected syntax to clipboard"
+               }
+            },
+            "1131": {
+               "#name": "group id 1131",
+               "childcontrols": {
+                  "1028": {
+                     "#name": "field \"About\"",
+                     "customproperties": {
+                        "Selection Description": false
+                     },
+                     "properties": {
+                        "autoHilite": false,
+                        "fixedLineHeight": false,
+                        "htmlText": "<p>Version 1.6, \u2026copy; Frederic Rinaldi 2003-2005</p>",
+                        "id": "1028",
+                        "layer": "11",
+                        "lockLoc": true,
+                        "lockText": true,
+                        "name": "About",
+                        "opaque": false,
+                        "rect": "-193,130,437,150",
+                        "showBorder": false,
+                        "showFocusBorder": false,
+                        "style": "transparent",
+                        "textAlign": "center",
+                        "textFont": "Arial",
+                        "textHeight": "13",
+                        "textSize": "10",
+                        "textStyle": "plain",
+                        "threeD": false,
+                        "toolTip": "Any problem or suggestion? Click to eMail me!",
+                        "traversalOn": false
+                     }
+                  },
+                  "1032": {
+                     "#name": "button \"CaseSensitive\"",
+                     "custompropertysets": {
+                        "cREVGeometry": {
+                           "Master": true,
+                           "Master,cardRanking": "0",
+                           "Master,expectedRect": "117,111,223,131",
+                           "Master,moveH": false,
+                           "Master,moveHAbsolute": null,
+                           "Master,movehDistance": false,
+                           "Master,moveHObjectRef": null,
+                           "Master,moveHObjectSide": "center",
+                           "Master,moveV": false,
+                           "Master,moveVAbsolute": null,
+                           "Master,movevDistance": false,
+                           "Master,moveVObjectRef": null,
+                           "Master,moveVObjectSide": "Bottom",
+                           "Master,scalebottomDistance": null,
+                           "Master,scaleleftDistance": null,
+                           "Master,scalerightDistance": null,
+                           "Master,scaletopDistance": null
+                        }
+                     },
+                     "properties": {
+                        "accelMods": "command",
+                        "hiliteBorder": false,
+                        "id": "1032",
+                        "layer": "18",
+                        "lockLoc": true,
+                        "name": "CaseSensitive",
+                        "opaque": false,
+                        "rect": "145,86,244,106",
+                        "showBorder": false,
+                        "style": "checkbox",
+                        "textAlign": "left",
+                        "textFont": "Lucida Grande",
+                        "textSize": "11",
+                        "textStyle": "plain",
+                        "toolTip": "Switches filtering case sensitivity"
+                     }
+                  },
+                  "1044": {
+                     "#name": "group \"Filtering\"",
+                     "childcontrols": {
+                        "1042": {
+                           "#name": "button \"Match\"",
+                           "properties": {
+                              "accelMods": "command",
+                              "hiliteBorder": false,
+                              "hilited": true,
+                              "id": "1042",
+                              "layer": "13",
+                              "lockLoc": true,
+                              "name": "Match",
+                              "opaque": false,
+                              "rect": "10,111,67,131",
+                              "sharedHilite": false,
+                              "showBorder": false,
+                              "style": "radiobutton",
+                              "textAlign": "left",
+                              "textFont": "Lucida Grande",
+                              "textSize": "11",
+                              "textStyle": "plain",
+                              "toolTip": "Use line filtering"
+                           }
+                        },
+                        "1043": {
+                           "#name": "button \"Filter\"",
+                           "properties": {
+                              "accelMods": "command",
+                              "hiliteBorder": false,
+                              "id": "1043",
+                              "layer": "14",
+                              "lockLoc": true,
+                              "name": "Filter",
+                              "opaque": false,
+                              "rect": "67,111,119,131",
+                              "sharedHilite": false,
+                              "showBorder": false,
+                              "style": "radiobutton",
+                              "textAlign": "left",
+                              "textFont": "Lucida Grande",
+                              "textSize": "11",
+                              "textStyle": "plain",
+                              "toolTip": "Use pattern matching"
+                           }
+                        },
+                        "1123": {
+                           "#name": "group \"FilterGroup\"",
+                           "childcontrols": {
+                              "1121": {
+                                 "#name": "button \"with\"",
+                                 "properties": {
+                                    "accelMods": "command",
+                                    "disabled": true,
+                                    "hiliteBorder": false,
+                                    "hilited": true,
+                                    "id": "1121",
+                                    "layer": "16",
+                                    "lockLoc": true,
+                                    "name": "with",
+                                    "opaque": false,
+                                    "rect": "123,112,170,131",
+                                    "sharedHilite": false,
+                                    "showBorder": false,
+                                    "style": "radiobutton",
+                                    "textAlign": "left",
+                                    "textFont": "Lucida Grande",
+                                    "textSize": "11",
+                                    "textStyle": "plain",
+                                    "toolTip": "Use pattern matching"
+                                 }
+                              },
+                              "1122": {
+                                 "#name": "button \"without\"",
+                                 "properties": {
+                                    "accelMods": "command",
+                                    "disabled": true,
+                                    "hiliteBorder": false,
+                                    "id": "1122",
+                                    "layer": "17",
+                                    "lockLoc": true,
+                                    "name": "without",
+                                    "opaque": false,
+                                    "rect": "170,112,235,132",
+                                    "sharedHilite": false,
+                                    "showBorder": false,
+                                    "style": "radiobutton",
+                                    "textAlign": "left",
+                                    "textFont": "Lucida Grande",
+                                    "textSize": "11",
+                                    "textStyle": "plain",
+                                    "toolTip": "Use pattern matching"
+                                 }
+                              }
+                           },
+                           "properties": {
+                              "disabled": true,
+                              "hilitedButton": "1",
+                              "id": "1123",
+                              "layer": "15",
+                              "lockLoc": true,
+                              "name": "FilterGroup",
+                              "rect": "120,110,238,132",
+                              "showBorder": true
+                           }
+                        }
+                     },
+                     "customproperties": 
+                  },
+                  "properties": {
+                     "hilitedButton": "1",
+                     "id": "1044",
+                     "layer": "12",
+                     "lockLoc": true,
+                     "name": "Filtering",
+                     "rect": "4,105,241,136",
+                     "showBorder": true,
+                     "textFont": "Lucida Grande",
+                     "textSize": "11",
+                     "textStyle": "bold"
+                  }
+               },
+               "1130": {
+                  "#name": "field \"TT\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "14,454,62,470",
+                        "Master,moveH": false,
+                        "Master,moveHAbsolute": false,
+                        "Master,movehDistance": "-0.34",
+                        "Master,moveHObjectRef": null,
+                        "Master,moveHObjectSide": "center",
+                        "Master,moveV": true,
+                        "Master,moveVAbsolute": true,
+                        "Master,movevDistance": "-51",
+                        "Master,moveVObjectRef": "card",
+                        "Master,moveVObjectSide": "bottom",
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Filtering:</p>",
+                     "id": "1130",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "margins": "0",
+                     "name": "TT",
+                     "opaque": false,
+                     "rect": "7,89,61,105",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Lucida Grande",
+                     "textHeight": "18",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": 
+         },
+         "custompropertysets": {
+            "cREVGeometry": {
+               "Master": true,
+               "Master,cardRanking": "2",
+               "Master,expectedRect": "-3,87,247,154",
+               "Master,moveH": true,
+               "Master,moveHAbsolute": true,
+               "Master,movehDistance": "0",
+               "Master,moveHObjectRef": "card",
+               "Master,moveHObjectSide": "center",
+               "Master,moveV": true,
+               "Master,moveVAbsolute": true,
+               "Master,movevDistance": "-28",
+               "Master,moveVObjectRef": "card",
+               "Master,moveVObjectSide": "bottom",
+               "Master,scalebottomDistance": null,
+               "Master,scaleleftDistance": null,
+               "Master,scalerightDistance": null,
+               "Master,scaletopDistance": null
+            }
+         },
+         "properties": {
+            "id": "1131",
+            "layer": "10",
+            "lockLoc": true,
+            "rect": "-3,87,247,154"
+         }
+      }
+   },
+   "custompropertysets": {
+      "cREVGeometryCache": {
+         "order": null,
+         "total": "19"
+      }
+   },
+   "properties": {
+      "id": "1002"
+   }
+}
+},
+"customproperties": {
+   "revstack": false
+},
+"custompropertysets": {
+   "cREVGeometryCache": {
+      "stackID": "1154"
+   },
+   "cREVOnline": {
+      "fingerprint": "QbgFqYWWshN-9yUQ3gixbA"
+   }
+},
+"longID": "stack \"RegExBuilder\"",
+"properties": {
+   "alwaysBuffer": true,
+   "decorations": "default",
+   "destroyStack": true,
+   "destroyWindow": true,
+   "fileName": "RegExBuilder 1.6.rev",
+   "id": "1154",
+   "liveResizing": false,
+   "minHeight": "148",
+   "minWidth": "245",
+   "name": "RegExBuilder",
+   "rect": "100,94,345,242",
+   "title": "RegEx Builder"
+},
+"sharedGroupIDs": null
+}
+}

@@ -1,0 +1,3234 @@
+{
+   "#mainstack": "Core Image Visual Effects",
+   "Core Image Visual Effects": {
+      "#name": "stack \"Core Image Visual Effects\"",
+      "#substacks": null,
+      "backgroundIDs": "1031",
+      "cardIDs": "1043\n1044\n1045\n1046\n1047\n1048\n1049\n1050\n1034",
+      "childcontrols": {
+         "1031": {
+            "#name": "group \"Background\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"Title\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>CoreImage Visual Effects</p>",
+                     "id": "1004",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "Title",
+                     "opaque": false,
+                     "rect": "0,-2,346,50",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Palatino",
+                     "textHeight": "37",
+                     "textSize": "28",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1015": {
+                  "#name": "group id 1015",
+                  "childcontrols": {
+                     "1008": {
+                        "#name": "field \"Label Field\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "borderWidth": "1",
+                           "htmlText": "%file%: assets/Core Image Visual Effects_1031_1015_1008_htmlText.txt",
+                           "id": "1008",
+                           "layer": "4",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "10,50,788,158",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "center",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1015",
+                     "layer": "3",
+                     "rect": "4,44,794,164",
+                     "showBorder": true
+                  }
+               },
+               "1022": {
+                  "#name": "group \"Source Drop Zone\"",
+                  "childcontrols": {
+                     "1017": {
+                        "#name": "image \"Source Thumbnail\"",
+                        "properties": {
+                           "borderWidth": "1",
+                           "id": "1017",
+                           "layer": "6",
+                           "lockLoc": true,
+                           "name": "Source Thumbnail",
+                           "rect": "394,207,474,267",
+                           "repeatCount": "-1",
+                           "showBorder": true,
+                           "text": "%file%: assets/Core Image Visual Effects_1031_1022_1017_text.png",
+                           "threeD": false
+                        }
+                     },
+                     "1019": {
+                        "#name": "field \"Source Label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Source:</p>",
+                           "id": "1019",
+                           "layer": "7",
+                           "lockText": true,
+                           "name": "Source Label",
+                           "opaque": false,
+                           "rect": "388,184,446,205",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1021": {
+                        "#name": "button \"Source File\"",
+                        "properties": {
+                           "id": "1021",
+                           "label": "...",
+                           "layer": "8",
+                           "name": "Source File",
+                           "rect": "452,182,475,205",
+                           "style": "rectangle"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1022",
+                     "layer": "5",
+                     "lockLoc": true,
+                     "name": "Source Drop Zone",
+                     "rect": "382,176,582,273",
+                     "showBorder": true
+                  }
+               },
+               "1023": {
+                  "#name": "group \"Destination Drop Zone\"",
+                  "childcontrols": {
+                     "1024": {
+                        "#name": "image \"Target Thumbnail\"",
+                        "properties": {
+                           "borderWidth": "1",
+                           "id": "1024",
+                           "layer": "10",
+                           "lockLoc": true,
+                           "name": "Target Thumbnail",
+                           "rect": "602,207,682,267",
+                           "repeatCount": "-1",
+                           "showBorder": true,
+                           "text": "%file%: assets/Core Image Visual Effects_1031_1023_1024_text.png",
+                           "threeD": false
+                        }
+                     },
+                     "1025": {
+                        "#name": "field \"Destination Label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Target:</p>",
+                           "id": "1025",
+                           "layer": "11",
+                           "lockText": true,
+                           "name": "Destination Label",
+                           "opaque": false,
+                           "rect": "596,184,654,205",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1026": {
+                        "#name": "button \"Source File\"",
+                        "properties": {
+                           "id": "1026",
+                           "label": "...",
+                           "layer": "12",
+                           "name": "Source File",
+                           "rect": "660,182,683,205",
+                           "style": "rectangle"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1023",
+                     "layer": "9",
+                     "lockLoc": true,
+                     "name": "Destination Drop Zone",
+                     "rect": "590,176,792,273",
+                     "showBorder": true
+                  }
+               },
+               "1028": {
+                  "#name": "button \"Effect Name\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1028",
+                     "label": "CIPageCurlTransition",
+                     "layer": "13",
+                     "menuLines": "8",
+                     "menuMode": "option",
+                     "name": "Effect Name",
+                     "rect": "53,175,374,197",
+                     "style": "menu",
+                     "text": "CIPageCurlTransition\nCICopyMachineTransition\nCIDissolveTransition\nCIFlashTransition\nCIModTransition\nCIRippleTransition\nCISwipeTransition\nCIDisintegrateWithMaskTransition",
+                     "traversalOn": false
+                  }
+               },
+               "1030": {
+                  "#name": "field \"Effect\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Effect:</p>",
+                     "id": "1030",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "Effect",
+                     "opaque": false,
+                     "rect": "0,175,56,196",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textFont": "Lucida Grande",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1033": {
+                  "#name": "button \"Go\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1033",
+                     "layer": "15",
+                     "name": "Go",
+                     "rect": "290,562,372,585"
+                  }
+               },
+               "1430": {
+                  "#name": "group \"Transition Area\"",
+                  "childcontrols": {
+                     "1006": {
+                        "#name": "image \"Source Image\"",
+                        "properties": {
+                           "borderWidth": "1",
+                           "id": "1006",
+                           "layer": "17",
+                           "lockLoc": true,
+                           "name": "Source Image",
+                           "rect": "387,286,787,586",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Core Image Visual Effects_1031_1430_1006_text.png",
+                           "threeD": false
+                        }
+                     },
+                     "1009": {
+                        "#name": "image \"Target Image\"",
+                        "properties": {
+                           "borderWidth": "1",
+                           "id": "1009",
+                           "layer": "18",
+                           "lockLoc": true,
+                           "name": "Target Image",
+                           "rect": "387,286,787,586",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Core Image Visual Effects_1031_1430_1009_text.png",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1430",
+                     "layer": "16",
+                     "lockLoc": true,
+                     "name": "Transition Area",
+                     "rect": "381,280,793,592",
+                     "showBorder": true
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1031",
+               "layer": "1",
+               "name": "Background",
+               "rect": "-4,-6,798,596"
+            }
+         },
+         "1034": {
+            "#name": "card \"Control Haven\"",
+            "childcontrols": {
+               "1042": {
+                  "#name": "group \"RECTANGLE\"",
+                  "childcontrols": {
+                     "1038": {
+                        "#name": "field \"Field\"",
+                        "properties": {
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>100</p>",
+                           "id": "1038",
+                           "layer": "2",
+                           "name": "Field",
+                           "rect": "60,62,108,83"
+                        }
+                     },
+                     "1039": {
+                        "#name": "field \"Field\"",
+                        "properties": {
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>100</p>",
+                           "id": "1039",
+                           "layer": "5",
+                           "name": "Field",
+                           "rect": "216,62,264,83"
+                        }
+                     },
+                     "1040": {
+                        "#name": "field \"Field\"",
+                        "properties": {
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>100</p>",
+                           "id": "1040",
+                           "layer": "4",
+                           "name": "Field",
+                           "rect": "164,62,212,83"
+                        }
+                     },
+                     "1041": {
+                        "#name": "field \"Field\"",
+                        "properties": {
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>100</p>",
+                           "id": "1041",
+                           "layer": "3",
+                           "name": "Field",
+                           "rect": "112,62,160,83"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1042",
+                     "layer": "1",
+                     "name": "RECTANGLE",
+                     "rect": "56,58,268,87"
+                  }
+               },
+               "1053": {
+                  "#name": "group \"POINT\"",
+                  "childcontrols": {
+                     "1054": {
+                        "#name": "field \"Field\"",
+                        "properties": {
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>100</p>",
+                           "id": "1054",
+                           "layer": "7",
+                           "name": "Field",
+                           "rect": "60,88,108,109"
+                        }
+                     },
+                     "1055": {
+                        "#name": "field \"Field\"",
+                        "properties": {
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>100</p>",
+                           "id": "1055",
+                           "layer": "8",
+                           "name": "Field",
+                           "rect": "112,88,160,109"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1053",
+                     "layer": "6",
+                     "name": "POINT",
+                     "rect": "56,84,164,113"
+                  }
+               },
+               "1062": {
+                  "#name": "group \"SCALAR\"",
+                  "childcontrols": {
+                     "1059": {
+                        "#name": "scrollbar \"Value\"",
+                        "properties": {
+                           "endValue": "100",
+                           "id": "1059",
+                           "layer": "10",
+                           "lineInc": "0.061936",
+                           "name": "Value",
+                           "pageInc": "0.998535",
+                           "rect": "58,132,226,150",
+                           "startValue": "1",
+                           "style": "scale",
+                           "thumbPosition": "1",
+                           "thumbSize": "0.998535"
+                        }
+                     },
+                     "1061": {
+                        "#name": "field \"Value Display\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>1.00</p>",
+                           "id": "1061",
+                           "layer": "11",
+                           "lockText": true,
+                           "name": "Value Display",
+                           "opaque": false,
+                           "rect": "223,129,282,151",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1062",
+                     "layer": "9",
+                     "name": "SCALAR",
+                     "rect": "54,125,286,155"
+                  }
+               },
+               "1063": {
+                  "#name": "group \"ANGLE\"",
+                  "childcontrols": {
+                     "1064": {
+                        "#name": "scrollbar \"Value\"",
+                        "properties": {
+                           "endValue": "360",
+                           "id": "1064",
+                           "layer": "13",
+                           "lineInc": "0.060426",
+                           "name": "Value",
+                           "pageInc": "0.994278",
+                           "rect": "58,167,226,185",
+                           "startValue": "0",
+                           "style": "scale",
+                           "thumbPosition": "360",
+                           "thumbSize": "0.994278"
+                        }
+                     },
+                     "1065": {
+                        "#name": "field \"Value Display\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>180.00</p>",
+                           "id": "1065",
+                           "layer": "14",
+                           "lockText": true,
+                           "name": "Value Display",
+                           "opaque": false,
+                           "rect": "223,164,274,186",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1063",
+                     "layer": "12",
+                     "name": "ANGLE",
+                     "rect": "54,160,278,190"
+                  }
+               },
+               "1068": {
+                  "#name": "group \"IMAGE\"",
+                  "childcontrols": {
+                     "1067": {
+                        "#name": "image \"Thumbnail\"",
+                        "properties": {
+                           "borderWidth": "1",
+                           "id": "1067",
+                           "layer": "16",
+                           "lockLoc": true,
+                           "name": "Thumbnail",
+                           "rect": "78,208,122,254",
+                           "showBorder": true,
+                           "threeD": false
+                        }
+                     },
+                     "1197": {
+                        "#name": "image \"Image\"",
+                        "properties": {
+                           "borderWidth": "1",
+                           "id": "1197",
+                           "layer": "17",
+                           "lockLoc": true,
+                           "name": "Image",
+                           "rect": "68,86,468,386",
+                           "showBorder": true,
+                           "threeD": false,
+                           "visible": false
+                        }
+                     },
+                     "1199": {
+                        "#name": "button \"Choose\"",
+                        "properties": {
+                           "id": "1199",
+                           "label": "...",
+                           "layer": "18",
+                           "name": "Choose",
+                           "rect": "127,232,150,255",
+                           "style": "rectangle"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1068",
+                     "layer": "15",
+                     "name": "IMAGE",
+                     "rect": "72,202,156,261",
+                     "showBorder": true
+                  }
+               },
+               "1091": {
+                  "#name": "field \"LABEL\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Label:</p>",
+                     "id": "1091",
+                     "layer": "19",
+                     "lockText": true,
+                     "name": "LABEL",
+                     "opaque": false,
+                     "rect": "84,270,216,291",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textFont": "Lucida Grande",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1483": {
+                  "#name": "group \"COLOR\"",
+                  "childcontrols": {
+                     "1481": {
+                        "#name": "graphic \"Graphic 1\"",
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "45,87,205",
+                           "filled": true,
+                           "id": "1481",
+                           "layer": "21",
+                           "name": "Graphic 1",
+                           "opaque": true,
+                           "rect": "76,322,120,368"
+                        }
+                     },
+                     "1482": {
+                        "#name": "button \"Choose\"",
+                        "properties": {
+                           "id": "1482",
+                           "label": "...",
+                           "layer": "22",
+                           "name": "Choose",
+                           "rect": "125,345,148,368",
+                           "style": "rectangle"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1483",
+                     "layer": "20",
+                     "name": "COLOR",
+                     "rect": "70,316,154,374",
+                     "showBorder": true
+                  }
+               }
+            },
+            "properties": {
+               "id": "1034",
+               "layer": "9",
+               "name": "Control Haven"
+            }
+         },
+         "1043": {
+            "#name": "card \"CIPageCurlTransition\"",
+            "childcontrols": {
+               "1031": "#shared group",
+               "1051": {
+                  "#name": "group \"ciControls\"",
+                  "childcontrols": {
+                     "5240": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>backsideImage:</p>",
+                           "id": "5240",
+                           "layer": "20",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,216,140,237",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5241": {
+                        "#name": "group \"IMAGE\"",
+                        "childcontrols": {
+                           "5242": {
+                              "#name": "image \"Thumbnail\"",
+                              "properties": {
+                                 "borderWidth": "1",
+                                 "id": "5242",
+                                 "layer": "22",
+                                 "lockLoc": true,
+                                 "name": "Thumbnail",
+                                 "rect": "146,222,190,268",
+                                 "showBorder": true,
+                                 "threeD": false
+                              }
+                           },
+                           "5243": {
+                              "#name": "image \"Image\"",
+                              "properties": {
+                                 "borderWidth": "1",
+                                 "id": "5243",
+                                 "layer": "23",
+                                 "lockLoc": true,
+                                 "name": "Image",
+                                 "rect": "136,100,536,400",
+                                 "showBorder": true,
+                                 "threeD": false,
+                                 "visible": false
+                              }
+                           },
+                           "5244": {
+                              "#name": "button \"Choose\"",
+                              "properties": {
+                                 "id": "5244",
+                                 "label": "...",
+                                 "layer": "24",
+                                 "name": "Choose",
+                                 "rect": "195,246,218,269",
+                                 "style": "rectangle"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "backsideImage",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5241",
+                           "layer": "21",
+                           "name": "IMAGE",
+                           "rect": "140,216,224,275",
+                           "showBorder": true
+                        }
+                     },
+                     "5245": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>shadingImage:</p>",
+                           "id": "5245",
+                           "layer": "25",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,275,140,296",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5246": {
+                        "#name": "group \"IMAGE\"",
+                        "childcontrols": {
+                           "5247": {
+                              "#name": "image \"Thumbnail\"",
+                              "properties": {
+                                 "borderWidth": "1",
+                                 "id": "5247",
+                                 "layer": "27",
+                                 "lockLoc": true,
+                                 "name": "Thumbnail",
+                                 "rect": "146,281,190,327",
+                                 "showBorder": true,
+                                 "threeD": false
+                              }
+                           },
+                           "5248": {
+                              "#name": "image \"Image\"",
+                              "properties": {
+                                 "borderWidth": "1",
+                                 "id": "5248",
+                                 "layer": "28",
+                                 "lockLoc": true,
+                                 "name": "Image",
+                                 "rect": "136,159,536,459",
+                                 "showBorder": true,
+                                 "threeD": false,
+                                 "visible": false
+                              }
+                           },
+                           "5249": {
+                              "#name": "button \"Choose\"",
+                              "properties": {
+                                 "id": "5249",
+                                 "label": "...",
+                                 "layer": "29",
+                                 "name": "Choose",
+                                 "rect": "195,305,218,328",
+                                 "style": "rectangle"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "shadingImage",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5246",
+                           "layer": "26",
+                           "name": "IMAGE",
+                           "rect": "140,275,224,334",
+                           "showBorder": true
+                        }
+                     },
+                     "5250": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>angle:</p>",
+                           "id": "5250",
+                           "layer": "30",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,334,140,355",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5251": {
+                        "#name": "group \"ANGLE\"",
+                        "childcontrols": {
+                           "5252": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "360",
+                                 "id": "5252",
+                                 "layer": "32",
+                                 "lineInc": "0.060426",
+                                 "name": "Value",
+                                 "pageInc": "0.994278",
+                                 "rect": "144,341,312,359",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbPosition": "180",
+                                 "thumbSize": "0.994278"
+                              }
+                           },
+                           "5253": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0.00</p>",
+                                 "id": "5253",
+                                 "layer": "33",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,338,360,360",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "angle"
+                        },
+                        "properties": {
+                           "id": "5251",
+                           "layer": "31",
+                           "name": "ANGLE",
+                           "rect": "140,334,364,364"
+                        }
+                     },
+                     "5254": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>extent:</p>",
+                           "id": "5254",
+                           "layer": "34",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,364,140,385",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5255": {
+                        "#name": "group \"RECTANGLE\"",
+                        "childcontrols": {
+                           "5256": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0</p>",
+                                 "id": "5256",
+                                 "layer": "36",
+                                 "name": "Field",
+                                 "rect": "144,368,192,389"
+                              }
+                           },
+                           "5257": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0</p>",
+                                 "id": "5257",
+                                 "layer": "37",
+                                 "name": "Field",
+                                 "rect": "196,368,244,389"
+                              }
+                           },
+                           "5258": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>400</p>",
+                                 "id": "5258",
+                                 "layer": "38",
+                                 "name": "Field",
+                                 "rect": "248,368,296,389"
+                              }
+                           },
+                           "5259": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>300</p>",
+                                 "id": "5259",
+                                 "layer": "39",
+                                 "name": "Field",
+                                 "rect": "300,368,348,389"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "extent",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5255",
+                           "layer": "35",
+                           "name": "RECTANGLE",
+                           "rect": "140,364,352,393"
+                        }
+                     },
+                     "5260": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>radius:</p>",
+                           "id": "5260",
+                           "layer": "40",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,393,140,414",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5261": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5262": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "1000",
+                                 "id": "5262",
+                                 "layer": "42",
+                                 "lineInc": "0.061036",
+                                 "name": "Value",
+                                 "pageInc": "0.991836",
+                                 "rect": "144,400,312,418",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbPosition": "200",
+                                 "thumbSize": "0.991836"
+                              }
+                           },
+                           "5263": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>200.00</p>",
+                                 "id": "5263",
+                                 "layer": "43",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,397,368,419",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "radius"
+                        },
+                        "properties": {
+                           "id": "5261",
+                           "layer": "41",
+                           "name": "SCALAR",
+                           "rect": "140,393,372,423"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1051",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "ciControls",
+                     "rect": "8,208,374,552",
+                     "showBorder": true
+                  }
+               }
+            },
+            "customproperties": {
+               "ciParameters": "backsideImage\tIMAGE\nshadingImage\tIMAGE\nangle\tANGLE\t-180,180\t0\nextent\tRECTANGLE\t\t0,0,400,300\nradius\tSCALAR\t0,1000\t200\n"
+            },
+            "properties": {
+               "id": "1043",
+               "name": "CIPageCurlTransition"
+            }
+         },
+         "1044": {
+            "#name": "card \"CICopyMachineTransition\"",
+            "childcontrols": {
+               "1031": "#shared group",
+               "1455": {
+                  "#name": "group \"ciControls\"",
+                  "childcontrols": {
+                     "5218": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>color:</p>",
+                           "id": "5218",
+                           "layer": "20",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,216,140,237",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5219": {
+                        "#name": "group \"COLOR\"",
+                        "childcontrols": {
+                           "5220": {
+                              "#name": "graphic \"Graphic 1\"",
+                              "properties": {
+                                 "antialiased": false,
+                                 "backColor": "45,87,205",
+                                 "filled": true,
+                                 "id": "5220",
+                                 "layer": "22",
+                                 "name": "Graphic 1",
+                                 "opaque": true,
+                                 "rect": "146,222,190,268"
+                              }
+                           },
+                           "5221": {
+                              "#name": "button \"Choose\"",
+                              "properties": {
+                                 "id": "5221",
+                                 "label": "...",
+                                 "layer": "23",
+                                 "name": "Choose",
+                                 "rect": "195,245,218,268",
+                                 "style": "rectangle"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "color",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5219",
+                           "layer": "21",
+                           "name": "COLOR",
+                           "rect": "140,216,224,274",
+                           "showBorder": true
+                        }
+                     },
+                     "5222": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>extent:</p>",
+                           "id": "5222",
+                           "layer": "24",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,274,140,295",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5223": {
+                        "#name": "group \"RECTANGLE\"",
+                        "childcontrols": {
+                           "5224": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0</p>",
+                                 "id": "5224",
+                                 "layer": "26",
+                                 "name": "Field",
+                                 "rect": "144,278,192,299"
+                              }
+                           },
+                           "5225": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0</p>",
+                                 "id": "5225",
+                                 "layer": "27",
+                                 "name": "Field",
+                                 "rect": "196,278,244,299"
+                              }
+                           },
+                           "5226": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>400</p>",
+                                 "id": "5226",
+                                 "layer": "28",
+                                 "name": "Field",
+                                 "rect": "248,278,296,299"
+                              }
+                           },
+                           "5227": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>300</p>",
+                                 "id": "5227",
+                                 "layer": "29",
+                                 "name": "Field",
+                                 "rect": "300,278,348,299"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "extent",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5223",
+                           "layer": "25",
+                           "name": "RECTANGLE",
+                           "rect": "140,274,352,303"
+                        }
+                     },
+                     "5228": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>angle:</p>",
+                           "id": "5228",
+                           "layer": "30",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,303,140,324",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5229": {
+                        "#name": "group \"ANGLE\"",
+                        "childcontrols": {
+                           "5230": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "360",
+                                 "id": "5230",
+                                 "layer": "32",
+                                 "lineInc": "0.060426",
+                                 "name": "Value",
+                                 "pageInc": "0.994278",
+                                 "rect": "144,310,312,328",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbSize": "0.994278"
+                              }
+                           },
+                           "5231": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0.00</p>",
+                                 "id": "5231",
+                                 "layer": "33",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,307,360,329",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "angle"
+                        },
+                        "properties": {
+                           "id": "5229",
+                           "layer": "31",
+                           "name": "ANGLE",
+                           "rect": "140,303,364,333"
+                        }
+                     },
+                     "5232": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>width:</p>",
+                           "id": "5232",
+                           "layer": "34",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,333,140,354",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5233": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5234": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "1000",
+                                 "id": "5234",
+                                 "layer": "36",
+                                 "lineInc": "0.06103",
+                                 "name": "Value",
+                                 "pageInc": "0.991737",
+                                 "rect": "144,340,312,358",
+                                 "startValue": "0.1",
+                                 "style": "scale",
+                                 "thumbPosition": "200",
+                                 "thumbSize": "0.991737"
+                              }
+                           },
+                           "5235": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>200.00</p>",
+                                 "id": "5235",
+                                 "layer": "37",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,337,368,359",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "width"
+                        },
+                        "properties": {
+                           "id": "5233",
+                           "layer": "35",
+                           "name": "SCALAR",
+                           "rect": "140,333,372,363"
+                        }
+                     },
+                     "5236": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>opacity:</p>",
+                           "id": "5236",
+                           "layer": "38",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,363,140,384",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5237": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5238": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "3",
+                                 "id": "5238",
+                                 "layer": "40",
+                                 "lineInc": "0.061936",
+                                 "name": "Value",
+                                 "pageInc": "0.998535",
+                                 "rect": "144,370,312,388",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbPosition": "1",
+                                 "thumbSize": "0.998535"
+                              }
+                           },
+                           "5239": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>1.30</p>",
+                                 "id": "5239",
+                                 "layer": "41",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,367,368,389",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "opacity"
+                        },
+                        "properties": {
+                           "id": "5237",
+                           "layer": "39",
+                           "name": "SCALAR",
+                           "rect": "140,363,372,393"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1455",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "ciControls",
+                     "rect": "8,208,374,552",
+                     "showBorder": true
+                  }
+               }
+            },
+            "customproperties": {
+               "ciParameters": "color\tCOLOR\nextent\tRECTANGLE\t\t0,0,400,300\nangle\tANGLE\t0,360\t0\nwidth\tSCALAR\t0.1,1000\t200\nopacity\tSCALAR\t0,3\t1.3\n"
+            },
+            "properties": {
+               "id": "1044",
+               "layer": "2",
+               "name": "CICopyMachineTransition"
+            }
+         },
+         "1045": {
+            "#name": "card \"CIDissolveTransition\"",
+            "childcontrols": {
+               "1031": "#shared group",
+               "1558": {
+                  "#name": "group \"ciControls\"",
+                  "properties": {
+                     "id": "1558",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "ciControls",
+                     "rect": "8,208,374,552",
+                     "showBorder": true
+                  }
+               }
+            },
+            "customproperties": {
+               "ciParameters": null
+            },
+            "properties": {
+               "id": "1045",
+               "layer": "3",
+               "name": "CIDissolveTransition"
+            }
+         },
+         "1046": {
+            "#name": "card \"CIFlashTransition\"",
+            "childcontrols": {
+               "1031": "#shared group",
+               "1581": {
+                  "#name": "group \"ciControls\"",
+                  "childcontrols": {
+                     "5130": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>center:</p>",
+                           "id": "5130",
+                           "layer": "20",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,216,140,237",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5131": {
+                        "#name": "group \"POINT\"",
+                        "childcontrols": {
+                           "5132": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>200</p>",
+                                 "id": "5132",
+                                 "layer": "22",
+                                 "name": "Field",
+                                 "rect": "144,220,192,241"
+                              }
+                           },
+                           "5133": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>150</p>",
+                                 "id": "5133",
+                                 "layer": "23",
+                                 "name": "Field",
+                                 "rect": "196,220,244,241"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "center",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5131",
+                           "layer": "21",
+                           "name": "POINT",
+                           "rect": "140,216,248,245"
+                        }
+                     },
+                     "5134": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>color:</p>",
+                           "id": "5134",
+                           "layer": "24",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,245,140,266",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5135": {
+                        "#name": "group \"COLOR\"",
+                        "childcontrols": {
+                           "5136": {
+                              "#name": "graphic \"Graphic 1\"",
+                              "properties": {
+                                 "antialiased": false,
+                                 "backColor": "255,255,255",
+                                 "filled": true,
+                                 "id": "5136",
+                                 "layer": "26",
+                                 "name": "Graphic 1",
+                                 "opaque": true,
+                                 "rect": "146,251,190,297"
+                              }
+                           },
+                           "5137": {
+                              "#name": "button \"Choose\"",
+                              "properties": {
+                                 "id": "5137",
+                                 "label": "...",
+                                 "layer": "27",
+                                 "name": "Choose",
+                                 "rect": "195,274,218,297",
+                                 "style": "rectangle"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "color",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5135",
+                           "layer": "25",
+                           "name": "COLOR",
+                           "rect": "140,245,224,303",
+                           "showBorder": true
+                        }
+                     },
+                     "5138": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>extent:</p>",
+                           "id": "5138",
+                           "layer": "28",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,303,140,324",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5139": {
+                        "#name": "group \"RECTANGLE\"",
+                        "childcontrols": {
+                           "5140": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0</p>",
+                                 "id": "5140",
+                                 "layer": "30",
+                                 "name": "Field",
+                                 "rect": "144,307,192,328"
+                              }
+                           },
+                           "5141": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0</p>",
+                                 "id": "5141",
+                                 "layer": "31",
+                                 "name": "Field",
+                                 "rect": "196,307,244,328"
+                              }
+                           },
+                           "5142": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>400</p>",
+                                 "id": "5142",
+                                 "layer": "32",
+                                 "name": "Field",
+                                 "rect": "248,307,296,328"
+                              }
+                           },
+                           "5143": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>300</p>",
+                                 "id": "5143",
+                                 "layer": "33",
+                                 "name": "Field",
+                                 "rect": "300,307,348,328"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "extent",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5139",
+                           "layer": "29",
+                           "name": "RECTANGLE",
+                           "rect": "140,303,352,332"
+                        }
+                     },
+                     "5144": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>maxStriationRadius:</p>",
+                           "id": "5144",
+                           "layer": "34",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,332,140,353",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5145": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5146": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "10",
+                                 "id": "5146",
+                                 "layer": "36",
+                                 "lineInc": "0.061799",
+                                 "name": "Value",
+                                 "pageInc": "0.998398",
+                                 "rect": "144,339,312,357",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbPosition": "3",
+                                 "thumbSize": "0.998398"
+                              }
+                           },
+                           "5147": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>2.58</p>",
+                                 "id": "5147",
+                                 "layer": "37",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,336,368,358",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "maxStriationRadius"
+                        },
+                        "properties": {
+                           "id": "5145",
+                           "layer": "35",
+                           "name": "SCALAR",
+                           "rect": "140,332,372,362"
+                        }
+                     },
+                     "5148": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>striationStrength:</p>",
+                           "id": "5148",
+                           "layer": "38",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,362,140,383",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5149": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5150": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "3",
+                                 "id": "5150",
+                                 "layer": "40",
+                                 "lineInc": "0.061936",
+                                 "name": "Value",
+                                 "pageInc": "0.998535",
+                                 "rect": "144,369,312,387",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbSize": "0.998535"
+                              }
+                           },
+                           "5151": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0.50</p>",
+                                 "id": "5151",
+                                 "layer": "41",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,366,368,388",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "striationStrength"
+                        },
+                        "properties": {
+                           "id": "5149",
+                           "layer": "39",
+                           "name": "SCALAR",
+                           "rect": "140,362,372,392"
+                        }
+                     },
+                     "5152": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>striationContrast:</p>",
+                           "id": "5152",
+                           "layer": "42",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,392,140,413",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5153": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5154": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "3",
+                                 "id": "5154",
+                                 "layer": "44",
+                                 "lineInc": "0.061936",
+                                 "name": "Value",
+                                 "pageInc": "0.998535",
+                                 "rect": "144,399,312,417",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbPosition": "1",
+                                 "thumbSize": "0.998535"
+                              }
+                           },
+                           "5155": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>1.38</p>",
+                                 "id": "5155",
+                                 "layer": "45",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,396,368,418",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "striationContrast"
+                        },
+                        "properties": {
+                           "id": "5153",
+                           "layer": "43",
+                           "name": "SCALAR",
+                           "rect": "140,392,372,422"
+                        }
+                     },
+                     "5156": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>fadeThreshold:</p>",
+                           "id": "5156",
+                           "layer": "46",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,422,140,443",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5157": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5158": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "1",
+                                 "id": "5158",
+                                 "layer": "48",
+                                 "lineInc": "0.061936",
+                                 "name": "Value",
+                                 "pageInc": "0.998535",
+                                 "rect": "144,429,312,447",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbPosition": "1",
+                                 "thumbSize": "0.998535"
+                              }
+                           },
+                           "5159": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0.85</p>",
+                                 "id": "5159",
+                                 "layer": "49",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,426,368,448",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "fadeThreshold"
+                        },
+                        "properties": {
+                           "id": "5157",
+                           "layer": "47",
+                           "name": "SCALAR",
+                           "rect": "140,422,372,452"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1581",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "ciControls",
+                     "rect": "8,208,374,552",
+                     "showBorder": true
+                  }
+               }
+            },
+            "customproperties": {
+               "ciParameters": "center\tPOINT\t\t200,150\ncolor\tCOLOR\t\t255,255,255\nextent\tRECTANGLE\t\t0,0,400,300\nmaxStriationRadius\tSCALAR\t0,10\t2.58\nstriationStrength\tSCALAR\t0,3\t0.5\nstriationContrast\tSCALAR\t0,3\t1.375\nfadeThreshold\tSCALAR\t0,1\t0.85"
+            },
+            "properties": {
+               "id": "1046",
+               "layer": "4",
+               "name": "CIFlashTransition"
+            }
+         },
+         "1047": {
+            "#name": "card \"CIModTransition\"",
+            "childcontrols": {
+               "1031": "#shared group",
+               "1672": {
+                  "#name": "group \"ciControls\"",
+                  "childcontrols": {
+                     "5114": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>center:</p>",
+                           "id": "5114",
+                           "layer": "20",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,216,140,237",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5115": {
+                        "#name": "group \"POINT\"",
+                        "childcontrols": {
+                           "5116": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>300</p>",
+                                 "id": "5116",
+                                 "layer": "22",
+                                 "name": "Field",
+                                 "rect": "144,220,192,241"
+                              }
+                           },
+                           "5117": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>200</p>",
+                                 "id": "5117",
+                                 "layer": "23",
+                                 "name": "Field",
+                                 "rect": "196,220,244,241"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "center",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5115",
+                           "layer": "21",
+                           "name": "POINT",
+                           "rect": "140,216,248,245"
+                        }
+                     },
+                     "5118": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>radius:</p>",
+                           "id": "5118",
+                           "layer": "24",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,245,140,266",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5119": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5120": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "500",
+                                 "id": "5120",
+                                 "layer": "26",
+                                 "lineInc": "0.061036",
+                                 "name": "Value",
+                                 "pageInc": "0.991836",
+                                 "rect": "144,252,312,270",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbPosition": "100",
+                                 "thumbSize": "0.991836"
+                              }
+                           },
+                           "5121": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>100.00</p>",
+                                 "id": "5121",
+                                 "layer": "27",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,249,368,271",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "radius"
+                        },
+                        "properties": {
+                           "id": "5119",
+                           "layer": "25",
+                           "name": "SCALAR",
+                           "rect": "140,245,372,275"
+                        }
+                     },
+                     "5122": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>angle:</p>",
+                           "id": "5122",
+                           "layer": "28",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,275,140,296",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5123": {
+                        "#name": "group \"ANGLE\"",
+                        "childcontrols": {
+                           "5124": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "720",
+                                 "id": "5124",
+                                 "layer": "30",
+                                 "lineInc": "0.054932",
+                                 "name": "Value",
+                                 "pageInc": "0.988785",
+                                 "rect": "144,282,312,300",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbPosition": "475",
+                                 "thumbSize": "0.988785"
+                              }
+                           },
+                           "5125": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>114.59</p>",
+                                 "id": "5125",
+                                 "layer": "31",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,279,360,301",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "angle"
+                        },
+                        "properties": {
+                           "id": "5123",
+                           "layer": "29",
+                           "name": "ANGLE",
+                           "rect": "140,275,364,305"
+                        }
+                     },
+                     "5126": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>compression:</p>",
+                           "id": "5126",
+                           "layer": "32",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,305,140,326",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5127": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5128": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "800",
+                                 "id": "5128",
+                                 "layer": "34",
+                                 "lineInc": "0.06096",
+                                 "name": "Value",
+                                 "pageInc": "0.987549",
+                                 "rect": "144,312,312,330",
+                                 "startValue": "1",
+                                 "style": "scale",
+                                 "thumbPosition": "300",
+                                 "thumbSize": "0.987549"
+                              }
+                           },
+                           "5129": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>300.00</p>",
+                                 "id": "5129",
+                                 "layer": "35",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,309,368,331",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "compression"
+                        },
+                        "properties": {
+                           "id": "5127",
+                           "layer": "33",
+                           "name": "SCALAR",
+                           "rect": "140,305,372,335"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1672",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "ciControls",
+                     "rect": "8,208,374,552",
+                     "showBorder": true
+                  }
+               }
+            },
+            "customproperties": {
+               "ciParameters": "center\tPOINT\t\t300,200\nradius\tSCALAR\t0,500\t100\nangle\tANGLE\t-360,360\t2\ncompression\tSCALAR\t1,800\t300\n"
+            },
+            "properties": {
+               "id": "1047",
+               "layer": "5",
+               "name": "CIModTransition"
+            }
+         },
+         "1048": {
+            "#name": "card \"CIRippleTransition\"",
+            "childcontrols": {
+               "1031": "#shared group",
+               "1735": {
+                  "#name": "group \"ciControls\"",
+                  "childcontrols": {
+                     "5160": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>shadingImage:</p>",
+                           "id": "5160",
+                           "layer": "20",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,216,140,237",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5161": {
+                        "#name": "group \"IMAGE\"",
+                        "childcontrols": {
+                           "5162": {
+                              "#name": "image \"Thumbnail\"",
+                              "properties": {
+                                 "borderWidth": "1",
+                                 "id": "5162",
+                                 "layer": "22",
+                                 "lockLoc": true,
+                                 "name": "Thumbnail",
+                                 "rect": "146,222,190,268",
+                                 "showBorder": true,
+                                 "threeD": false
+                              }
+                           },
+                           "5163": {
+                              "#name": "image \"Image\"",
+                              "properties": {
+                                 "borderWidth": "1",
+                                 "id": "5163",
+                                 "layer": "23",
+                                 "lockLoc": true,
+                                 "name": "Image",
+                                 "rect": "136,100,536,400",
+                                 "showBorder": true,
+                                 "threeD": false,
+                                 "visible": false
+                              }
+                           },
+                           "5164": {
+                              "#name": "button \"Choose\"",
+                              "properties": {
+                                 "id": "5164",
+                                 "label": "...",
+                                 "layer": "24",
+                                 "name": "Choose",
+                                 "rect": "195,246,218,269",
+                                 "style": "rectangle"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "shadingImage",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5161",
+                           "layer": "21",
+                           "name": "IMAGE",
+                           "rect": "140,216,224,275",
+                           "showBorder": true
+                        }
+                     },
+                     "5165": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>extent:</p>",
+                           "id": "5165",
+                           "layer": "25",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,275,140,296",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5166": {
+                        "#name": "group \"RECTANGLE\"",
+                        "childcontrols": {
+                           "5167": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0</p>",
+                                 "id": "5167",
+                                 "layer": "27",
+                                 "name": "Field",
+                                 "rect": "144,279,192,300"
+                              }
+                           },
+                           "5168": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0</p>",
+                                 "id": "5168",
+                                 "layer": "28",
+                                 "name": "Field",
+                                 "rect": "196,279,244,300"
+                              }
+                           },
+                           "5169": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>400</p>",
+                                 "id": "5169",
+                                 "layer": "29",
+                                 "name": "Field",
+                                 "rect": "248,279,296,300"
+                              }
+                           },
+                           "5170": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>300</p>",
+                                 "id": "5170",
+                                 "layer": "30",
+                                 "name": "Field",
+                                 "rect": "300,279,348,300"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "extent",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5166",
+                           "layer": "26",
+                           "name": "RECTANGLE",
+                           "rect": "140,275,352,304"
+                        }
+                     },
+                     "5171": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>center:</p>",
+                           "id": "5171",
+                           "layer": "31",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,304,140,325",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5172": {
+                        "#name": "group \"POINT\"",
+                        "childcontrols": {
+                           "5173": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>200</p>",
+                                 "id": "5173",
+                                 "layer": "33",
+                                 "name": "Field",
+                                 "rect": "144,308,192,329"
+                              }
+                           },
+                           "5174": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>150</p>",
+                                 "id": "5174",
+                                 "layer": "34",
+                                 "name": "Field",
+                                 "rect": "196,308,244,329"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "center",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5172",
+                           "layer": "32",
+                           "name": "POINT",
+                           "rect": "140,304,248,333"
+                        }
+                     },
+                     "5175": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>width:</p>",
+                           "id": "5175",
+                           "layer": "35",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,333,140,354",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5176": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5177": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "1000",
+                                 "id": "5177",
+                                 "layer": "37",
+                                 "lineInc": "0.060975",
+                                 "name": "Value",
+                                 "pageInc": "0.990845",
+                                 "rect": "144,340,312,358",
+                                 "startValue": "1",
+                                 "style": "scale",
+                                 "thumbPosition": "30",
+                                 "thumbSize": "0.990845"
+                              }
+                           },
+                           "5178": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>30.00</p>",
+                                 "id": "5178",
+                                 "layer": "38",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,337,368,359",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "width"
+                        },
+                        "properties": {
+                           "id": "5176",
+                           "layer": "36",
+                           "name": "SCALAR",
+                           "rect": "140,333,372,363"
+                        }
+                     },
+                     "5179": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>scale:</p>",
+                           "id": "5179",
+                           "layer": "39",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,363,140,384",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5180": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5181": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "50",
+                                 "id": "5181",
+                                 "layer": "41",
+                                 "lineInc": "0.061036",
+                                 "name": "Value",
+                                 "pageInc": "0.99794",
+                                 "rect": "144,370,312,388",
+                                 "startValue": "-50",
+                                 "style": "scale",
+                                 "thumbPosition": "50",
+                                 "thumbSize": "0.99794"
+                              }
+                           },
+                           "5182": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>50.00</p>",
+                                 "id": "5182",
+                                 "layer": "42",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,367,368,389",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "scale"
+                        },
+                        "properties": {
+                           "id": "5180",
+                           "layer": "40",
+                           "name": "SCALAR",
+                           "rect": "140,363,372,393"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1735",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "ciControls",
+                     "rect": "8,208,374,552",
+                     "showBorder": true
+                  }
+               }
+            },
+            "customproperties": {
+               "ciParameters": "shadingImage\tIMAGE\nextent\tRECTANGLE\t\t0,0,400,300\ncenter\tPOINT\t\t200,150\nwidth\tSCALAR\t1,1000\t30\nscale\tSCALAR\t-50,50\t50"
+            },
+            "properties": {
+               "id": "1048",
+               "layer": "6",
+               "name": "CIRippleTransition"
+            }
+         },
+         "1049": {
+            "#name": "card \"CISwipeTransition\"",
+            "childcontrols": {
+               "1031": "#shared group",
+               "1787": {
+                  "#name": "group \"ciControls\"",
+                  "childcontrols": {
+                     "5183": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>color:</p>",
+                           "id": "5183",
+                           "layer": "20",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,216,140,237",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5184": {
+                        "#name": "group \"COLOR\"",
+                        "childcontrols": {
+                           "5185": {
+                              "#name": "graphic \"Graphic 1\"",
+                              "properties": {
+                                 "antialiased": false,
+                                 "backColor": "45,87,205",
+                                 "filled": true,
+                                 "id": "5185",
+                                 "layer": "22",
+                                 "name": "Graphic 1",
+                                 "opaque": true,
+                                 "rect": "146,222,190,268"
+                              }
+                           },
+                           "5186": {
+                              "#name": "button \"Choose\"",
+                              "properties": {
+                                 "id": "5186",
+                                 "label": "...",
+                                 "layer": "23",
+                                 "name": "Choose",
+                                 "rect": "195,245,218,268",
+                                 "style": "rectangle"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "color",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5184",
+                           "layer": "21",
+                           "name": "COLOR",
+                           "rect": "140,216,224,274",
+                           "showBorder": true
+                        }
+                     },
+                     "5187": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>extent:</p>",
+                           "id": "5187",
+                           "layer": "24",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,274,140,295",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5188": {
+                        "#name": "group \"RECTANGLE\"",
+                        "childcontrols": {
+                           "5189": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0</p>",
+                                 "id": "5189",
+                                 "layer": "26",
+                                 "name": "Field",
+                                 "rect": "144,278,192,299"
+                              }
+                           },
+                           "5190": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0</p>",
+                                 "id": "5190",
+                                 "layer": "27",
+                                 "name": "Field",
+                                 "rect": "196,278,244,299"
+                              }
+                           },
+                           "5191": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>400</p>",
+                                 "id": "5191",
+                                 "layer": "28",
+                                 "name": "Field",
+                                 "rect": "248,278,296,299"
+                              }
+                           },
+                           "5192": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>300</p>",
+                                 "id": "5192",
+                                 "layer": "29",
+                                 "name": "Field",
+                                 "rect": "300,278,348,299"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "extent",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5188",
+                           "layer": "25",
+                           "name": "RECTANGLE",
+                           "rect": "140,274,352,303"
+                        }
+                     },
+                     "5193": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>width:</p>",
+                           "id": "5193",
+                           "layer": "30",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,303,140,324",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5194": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5195": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "1000",
+                                 "id": "5195",
+                                 "layer": "32",
+                                 "lineInc": "0.06103",
+                                 "name": "Value",
+                                 "pageInc": "0.991737",
+                                 "rect": "144,310,312,328",
+                                 "startValue": "0.1",
+                                 "style": "scale",
+                                 "thumbPosition": "600",
+                                 "thumbSize": "0.991737"
+                              }
+                           },
+                           "5196": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>600.00</p>",
+                                 "id": "5196",
+                                 "layer": "33",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,307,368,329",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "width"
+                        },
+                        "properties": {
+                           "id": "5194",
+                           "layer": "31",
+                           "name": "SCALAR",
+                           "rect": "140,303,372,333"
+                        }
+                     },
+                     "5197": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>opacity:</p>",
+                           "id": "5197",
+                           "layer": "34",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,333,140,354",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5198": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5199": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "1",
+                                 "id": "5199",
+                                 "layer": "36",
+                                 "lineInc": "0.061936",
+                                 "name": "Value",
+                                 "pageInc": "0.998535",
+                                 "rect": "144,340,312,358",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbSize": "0.998535"
+                              }
+                           },
+                           "5200": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0.00</p>",
+                                 "id": "5200",
+                                 "layer": "37",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,337,368,359",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "opacity"
+                        },
+                        "properties": {
+                           "id": "5198",
+                           "layer": "35",
+                           "name": "SCALAR",
+                           "rect": "140,333,372,363"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1787",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "ciControls",
+                     "rect": "8,208,374,552",
+                     "showBorder": true
+                  }
+               }
+            },
+            "customproperties": {
+               "ciParameters": "color\tCOLOR\nextent\tRECTANGLE\t\t0,0,400,300\nwidth\tSCALAR\t0.1,1000\t600\nopacity\tSCALAR\t0,1\t0\n"
+            },
+            "properties": {
+               "id": "1049",
+               "layer": "7",
+               "name": "CISwipeTransition"
+            }
+         },
+         "1050": {
+            "#name": "card \"CIDisintegrateWithMaskTransition\"",
+            "childcontrols": {
+               "1031": "#shared group",
+               "1829": {
+                  "#name": "group \"ciControls\"",
+                  "childcontrols": {
+                     "5201": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>maskImage:</p>",
+                           "id": "5201",
+                           "layer": "20",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,216,140,237",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5202": {
+                        "#name": "group \"IMAGE\"",
+                        "childcontrols": {
+                           "5203": {
+                              "#name": "image \"Thumbnail\"",
+                              "properties": {
+                                 "borderWidth": "1",
+                                 "id": "5203",
+                                 "layer": "22",
+                                 "lockLoc": true,
+                                 "name": "Thumbnail",
+                                 "rect": "146,222,190,268",
+                                 "showBorder": true,
+                                 "threeD": false
+                              }
+                           },
+                           "5204": {
+                              "#name": "image \"Image\"",
+                              "properties": {
+                                 "borderWidth": "1",
+                                 "id": "5204",
+                                 "layer": "23",
+                                 "lockLoc": true,
+                                 "name": "Image",
+                                 "rect": "136,100,536,400",
+                                 "showBorder": true,
+                                 "threeD": false,
+                                 "visible": false
+                              }
+                           },
+                           "5205": {
+                              "#name": "button \"Choose\"",
+                              "properties": {
+                                 "id": "5205",
+                                 "label": "...",
+                                 "layer": "24",
+                                 "name": "Choose",
+                                 "rect": "195,246,218,269",
+                                 "style": "rectangle"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "maskImage",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5202",
+                           "layer": "21",
+                           "name": "IMAGE",
+                           "rect": "140,216,224,275",
+                           "showBorder": true
+                        }
+                     },
+                     "5206": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>shadowRadius:</p>",
+                           "id": "5206",
+                           "layer": "25",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,275,140,296",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5207": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5208": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "1000",
+                                 "id": "5208",
+                                 "layer": "27",
+                                 "lineInc": "0.061036",
+                                 "name": "Value",
+                                 "pageInc": "0.991836",
+                                 "rect": "144,282,312,300",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbPosition": "8",
+                                 "thumbSize": "0.991836"
+                              }
+                           },
+                           "5209": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>8.00</p>",
+                                 "id": "5209",
+                                 "layer": "28",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,279,368,301",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "shadowRadius"
+                        },
+                        "properties": {
+                           "id": "5207",
+                           "layer": "26",
+                           "name": "SCALAR",
+                           "rect": "140,275,372,305"
+                        }
+                     },
+                     "5210": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>shadowOffset:</p>",
+                           "id": "5210",
+                           "layer": "29",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,305,140,326",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5211": {
+                        "#name": "group \"POINT\"",
+                        "childcontrols": {
+                           "5212": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0</p>",
+                                 "id": "5212",
+                                 "layer": "31",
+                                 "name": "Field",
+                                 "rect": "144,309,192,330"
+                              }
+                           },
+                           "5213": {
+                              "#name": "field \"Field\"",
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>-10</p>",
+                                 "id": "5213",
+                                 "layer": "32",
+                                 "name": "Field",
+                                 "rect": "196,309,244,330"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "shadowOffset",
+                           "ciRange": null
+                        },
+                        "properties": {
+                           "id": "5211",
+                           "layer": "30",
+                           "name": "POINT",
+                           "rect": "140,305,248,334"
+                        }
+                     },
+                     "5214": {
+                        "#name": "field \"LABEL\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>shadowDensity:</p>",
+                           "id": "5214",
+                           "layer": "33",
+                           "lockText": true,
+                           "name": "LABEL",
+                           "opaque": false,
+                           "rect": "8,334,140,355",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "5215": {
+                        "#name": "group \"SCALAR\"",
+                        "childcontrols": {
+                           "5216": {
+                              "#name": "scrollbar \"Value\"",
+                              "properties": {
+                                 "endValue": "1",
+                                 "id": "5216",
+                                 "layer": "35",
+                                 "lineInc": "0.061936",
+                                 "name": "Value",
+                                 "pageInc": "0.998535",
+                                 "rect": "144,341,312,359",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbPosition": "1",
+                                 "thumbSize": "0.998535"
+                              }
+                           },
+                           "5217": {
+                              "#name": "field \"Value Display\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>0.65</p>",
+                                 "id": "5217",
+                                 "layer": "36",
+                                 "lockText": true,
+                                 "name": "Value Display",
+                                 "opaque": false,
+                                 "rect": "309,338,368,360",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "ciName": "shadowDensity"
+                        },
+                        "properties": {
+                           "id": "5215",
+                           "layer": "34",
+                           "name": "SCALAR",
+                           "rect": "140,334,372,364"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1829",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "ciControls",
+                     "rect": "8,208,374,552",
+                     "showBorder": true
+                  }
+               }
+            },
+            "customproperties": {
+               "ciParameters": "maskImage\tIMAGE\nshadowRadius\tSCALAR\t0,1000\t8\nshadowOffset\tPOINT\t\t0,-10\nshadowDensity\tSCALAR\t0,1\t0.65\n"
+            },
+            "properties": {
+               "id": "1050",
+               "layer": "8",
+               "name": "CIDisintegrateWithMaskTransition"
+            }
+         }
+      },
+      "customproperties": {
+         "ciParameters": null
+      },
+      "longID": "stack \"Core Image Visual Effects\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "title,menu,minimize,maximize,close,metal",
+         "fileName": "Core Image Sampler.rev",
+         "id": "5263",
+         "liveResizing": false,
+         "metal": true,
+         "name": "Core Image Visual Effects",
+         "rect": "140,217,940,817",
+         "resizable": false
+      },
+      "sharedGroupIDs": "1031"
+   }
+}

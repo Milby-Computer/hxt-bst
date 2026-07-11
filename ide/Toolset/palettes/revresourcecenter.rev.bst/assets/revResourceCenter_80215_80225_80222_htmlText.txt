@@ -1,0 +1,48 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This script uses three handlers to display the endless verses of the song "99 Bottles of Beer on the Wall". In case you're not familiar with the song, it goes like this:</p>
+<p></p>
+<p><i><font face="Lucida Grande" size="11">&#9;99 bottles of beer on the wall, 99 bottles of beer</font></i></p>
+<p><i><font face="Lucida Grande" size="11">&#9;You take one down and pass it around, 98 bottles of beer on the wall.</font></i></p>
+<p></p>
+<p><i><font face="Lucida Grande" size="11">&#9;98 bottles of beer on the wall, 98 bottles of beer</font></i></p>
+<p><i><font face="Lucida Grande" size="11">&#9;You take one down and pass it around, 97 bottles of beer on the wall.</font></i></p>
+<p></p>
+<p>...and so on. The song continues, decreasing the number of bottles by one with each verse, until there's just one bottle left:</p>
+<p></p>
+<p><i><font face="Lucida Grande" size="11">&#9;One more bottle of beer on the wall, one more bottle of beer</font></i></p>
+<p><i><font face="Lucida Grande" size="11">&#9;You take one down and pass it around, no more bottles of beer on the wall.</font></i></p>
+<p></p>
+<p><i><font face="Lucida Grande" size="11">&#9;No more bottles of beer on the wall, no more bottles of beer</font></i></p>
+<p><i><font face="Lucida Grande" size="11">&#9;You go to the store and buy some more, 99 bottles of beer on the wall.</font></i></p>
+<p></p>
+<p><i><font face="Lucida Grande" size="11">&#9;99 bottles of beer on the wall...</font></i></p>
+<p></p>
+<p>...and the song starts over from the beginning.</p>
+<p></p>
+<p>The <font face="Courier" size="11">mouseUp</font><font face="helvetica" size="12"> message is sent when the user clicks an object--in this case, a button. It's possible to include this code in a different handler; putting it in a button's </font><font face="Courier" size="11">mouseUp</font><font face="helvetica" size="12"> handler is just convenient for this example. This handler assumes there is a field named "Song" to display successive verses.</font></p>
+<p></p>
+<p>The example displays the song interactively, one verse at a time. When the user clicks, if the song is already going, the mouseUp handler stops it. Otherwise, it starts up the song from the beginning by sending a message called "displayBottleVerse" that shows the first verse of the song. The "displayBottleVerse" handler calls itself, after a one-second delay (to give the user time to read the verse). After the delay, the "displayBottleVerse" handler displays the next verse. The cycle continues for all the verses, then starts over again, until the user clicks the button and stops the song.</p>
+<p></p>
+<p>The <font face="Courier" size="11">constant</font><font face="helvetica" size="12"> declaration at the top of the script declares a constant value called "startBottles" which is equal to 99. This constant is declared for convenience. We could simply write "99" instead of "startBottles" in the two places where this constant is used, and the script would work the same way, but the use of a constant makes it easier to see how many bottles the song starts with when you're reading the script. It also makes it easier to change the starting verse, in case we ever decide to make this song "215 Bottles of Beer on the Wall" instead.</font></p>
+<p></p>
+<p>Next, the script declares a script local variable called "bottlesLeft". This is the current number of bottles, and starts off at 99. Because this variable is declared outside any handler, it retains its value for the entire session. If you declare a local variable inside a handler--or just use it without a local declaration--then the variable's value is lost when the handler finishes executing. This is important, because the "displayCurrentVerse" handler is executed once for each verse. The "bottlesLeft" variable keeps track of which verse is next between executions.</p>
+<p></p>
+<p>The second local declaration creates a variable called "currentVerseMessage". Because it is a script local variable, it retains its value for the current session, and it's available to all handlers in this script. We'll see in a moment how this variable is used to stop the song.</p>
+<p></p>
+<p>The mouseUp handler checks the "currentVerseMessage" variable to see whether there's anything in it. We didn't specify a value when declaring this variable, so it starts out empty. If it's still empty, the handler sends the "displayCurrentVerse" message to show the first verse of the song. This handler, "displayCurrentVerse", uses the "bottlePhrase" function handler to construct the text of the first verse of the song, and puts it in the field named "Song". It subtracts 1 from the "bottlesLeft" variable. Then it sends a "displayCurrentVerse" message again after a one-second delay. You can change the delay time, depending on how long you think it will take to read one verse and how long you want the song to take.</p>
+<p></p>
+<p>The <i><font face="Lucida Grande" size="11">send...in time form</font></i><font face="helvetica" size="12"> of the send command that's used here puts information about the message into a queue called the </font><font face="Courier" size="11">pendingMessages</font><font face="helvetica" size="12"> and assigns a unique number to the pending message. This number is returned in the </font><font face="Courier" size="11">result</font><font face="helvetica" size="12"> function, so our handler can retrieve it. A message waiting in the queue can be canceled later with the </font><font face="Courier" size="11">cancel</font><font face="helvetica" size="12"> command. Since we want to cancel the pending message if the user clicks the button, we need to store the message's number for later use. The next line of the handler stores the message's number in the script local variable "currentVerseMessage", which we declared at the top of the script.  For more details on timer based messaging, see the section on </font><i><font face="Lucida Grande" size="11">Timer Based Messaging</font></i><font face="helvetica" size="12"> in the User's Guide.</font></p>
+<p></p>
+<p>One second later, that pending message executes, instructing Revolution to execute the "displayCurrentVerse" handler again. The "displayCurrentVerse" handler shows the second verse, subtracts another bottle, and sends the message again after a one-second delay, and the process continues through all the verses of the song.</p>
+<p></p>
+<p>When the song reaches its end and the "bottlesLeft" is zero, the "displayCurrentVerse" handler sets the "bottlesLeft" variable back to the value of the "startBottles" constant we declared at the top of the script. The next time the "displayCurrentVerse" handler is executed, the song's first verse is displayed again.</p>
+<p></p>
+<p>When the user clicks the button, the <font face="Courier" size="11">mouseUp</font><font face="helvetica" size="12"> handler again checks the "currentVerseMessage" variable to see whether it's empty.  If it's not, the song is currently playing and should be stopped. All we need to do to stop the verses is to cancel the pending "displayCurrentVerse" message that's waiting to be sent. To cancel a pending message, the mouseUp handler uses the </font><font face="Courier" size="11">cancel</font><font face="helvetica" size="12"> command:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">cancel</font><font face="Courier" size="11"> theMessageID</font></p>
+<p></p>
+<p>Here is where we use the script local variable "currentVerseMessage". This variable was declared at the top of the script, and in the "displayCurrentVerse" handler, we stored the message number of the pending message in the variable. The <font face="Courier" size="11">cancel</font><font face="helvetica" size="12"> command needs this number in order to figure out which pending message to cancel.</font></p>
+<p></p>
+<p>After canceling the pending message to break the cycle of verses, the mouseUp handler sets the "currentVerseMessage" back to empty (since the message is no longer pending). It also sets the "bottlesLeft" back to the "startBottles" number so that the next time the user clicks to start the song, it will start at the beginning.</p>
+<p></p>
+<p><font color="#404040">Note:</font>  This example was inspired by a discussion on the Revolution mailing list with David Vaughan. The topic was in turn inspired by the "99 Bottles of Beer" site at <font color="#0000FF">/</font><a href="http://99-bottles-of-beer.ls-la.net"><font face="helvetica" size="12" color="#0000FF">http://99-bottles-of-beer.ls-la.net</font></a><font face="helvetica" size="12">, featuring 99 Bottles of Beer code in 454 programming languages (and counting).</font></p>

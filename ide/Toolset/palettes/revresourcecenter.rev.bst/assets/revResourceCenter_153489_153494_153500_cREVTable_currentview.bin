@@ -1,0 +1,96 @@
+<p><font size="12" color="#000000">This GUI is made up of</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; Background image including the border, gallows and pumpkin</font></p>
+<p><font size="12" color="#000000">&#149; Six graphics making up the skeleton, grouped together</font></p>
+<p><font size="12" color="#000000">&#149; Buttons to start a new game and quit</font></p>
+<p><font size="12" color="#000000">&#149; Images to show if it is a film, book etc</font></p>
+<p><font size="12" color="#000000">&#149; The puzzle/ answer areas - a set of buttons and lines to represent the puzzle which are grouped together</font></p>
+<p><font size="12" color="#000000">&#149; 26 buttons each representing a letter of the alphabet again grouped together.rouped together.</font></p>
+<p></p>
+<p><font size="12" color="#000000">We ensure that we name all our controls sensibly. The buttons and lines in the answer group are named for their position in the group eg button &quot;letter11&quot; is the button in the first column of the first line. It is always good practice to name controls well but in this case it is particularly important as we need to use the names of the controls to set up our games.</font></p>
+<p></p>
+<p><font size="14" color="#990006"><b>Coding the application</b></font></p>
+<p><font size="12" color="#000000">Now that we have our GUI in place we can start writing code to make our game playable. Earlier we decided what the game needed to do. Now we will plan this further to make the game as easy to code as possible. There are things to consider, such as are there any actions that we might want to do in more than one place? If there are it is best to write a handler to do these actions which we can then call whenever it is needed without rewriting code. We also want to consider how best to write the code to make it simple and readable.</font></p>
+<p></p>
+<p><font size="12" color="#000000">A good example of this is clearing the board. There are a number of actions we need to do to clear the board and reset the game state so we would include these in a handler which we can call whenever this needs done. Here is some pseudocode for clearing the board</font></p>
+<p></p>
+<p><font size="12" color="#000000">on resetBoard</font></p>
+<p><font size="12" color="#000000">hide all graphics in group &quot;skeleton&quot;</font></p>
+<p><font size="12" color="#000000">set all the button in group &quot;alphabet&quot; to show as unused</font></p>
+<p><font size="12" color="#000000">clear the puzzle/answer area</font></p>
+<p><font size="12" color="#000000">reset properties storing the game state</font></p>
+<p><font size="12" color="#000000">end resetBoard</font></p>
+<p></p>
+<p><font size="12" color="#000000">Other things to consider before starting to code are</font></p>
+<p></p>
+<p><font size="12" color="#000000"><b>&#149; Where do the answers come from?</b></font></p>
+<p><font size="12" color="#000000">   I have stored a list of answers as a custom property of the stack. The application can pick a random line from this custom property to be the answer.</font></p>
+<p><font size="12" color="#000000"><b>&#149; How do we check letters?</b></font></p>
+<p><font size="12" color="#000000">   When setting up an answer I set a custom property on each button in group &quot;answer&quot; to store what letter is in that position in the answer. When the user chooses an answer these custom properties are checked. If the chosen letter appears in the answer those buttons are shown, if not the next part of the skeleton is shown.</font></p>
+<p><font size="12" color="#000000"><b>&#149; How do we keep track of the game start?</b></font></p>
+<p><font size="12" color="#000000"><b>   </b>We use script local variables on the card script to store how many correct and incorrect letters the user has chosen. These variables are available to all the handlers on the card script so we can check if all the letters in the answer have been found or if all the parts of the skeleton have been shown.</font></p>
+<p><font size="12" color="#000000"><b>&#149; Can we avoid duplicating code on our Letter buttons in the Alphabet Group?</b></font></p>
+<p><font size="12" color="#000000"><b>   </b>Yes.  As all these buttons do the same thing there is no need to repeat code on each button. We can put the code into the script of group &quot;Alphabet&quot; and use the target function to identify which letter was clicked. We also need to ensure all our answers will fit within the answer area so none of the ones I have used have more than 4 words and no words have more than 7 letters. than 7 letters.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Here is the handler which sets up an answer.</font></p>
+<p></p>
+<p><font size="12" color="#000000">First we display the relevant image for the hint. Then we use repeat loops to step through each word in the answer and each character of that word. Due to the naming of the buttons and underlines in group &quot;answer&quot; we can set the custom property, icon and visibility of the necessary controls. Each word in the answer is represented by a line in the group.</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">on</font><font face="Courier" color="#000000"> setUpAnswer pAnswer</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">local</font><font face="Courier" color="#000000"> tAnswer, tHint, tButtonName, tUnderlineName, \</font></p>
+<p><font face="Courier" color="#000000">   tCharacter, tImageName</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># Show the Hint image</font></p>
+<p><font face="Courier" color="#000000">   </font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> empty </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> sAnswerCharacters</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#DF000C">itemDelimiter</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> tab</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> item 1 </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> pAnswer </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> tAnswer</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> item 2 </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> pAnswer </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> tHint</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">show</font><font face="Courier" color="#000000"> image tHint</font></p>
+<p><font size="12" color="#000000">     </font></p>
+<p><font size="12" color="#000000">     </font><font face="Courier" color="#68008B"># Set a custom property on each necessary button of group</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># &quot;Answer&quot; stating what letter is represents</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># Show the relevant underlines to display the puzzle</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># This is why naming of the buttons and underlines was</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># important,</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># they are named relative to their positions in the answer</font></p>
+<p><font face="Courier" color="#000000">   </font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># Set the icon of the button to the ID of the relevant</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># letter image</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># When the player chooses that letter the button is made</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># visible and the letter is displayed</font></p>
+<p><font face="Courier" color="#000000">   </font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># sAnswerCharacters stores the number of characters in the</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># answer</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># This is checked against to identify when the puzzle is</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#68008B"># complete</font></p>
+<p></p>
+<p><font face="Courier" color="#68008B">   </font><font face="Courier" color="#990017">repeat</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">with</font><font face="Courier" color="#000000"> x = 1 </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#DF000C">number</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> words </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> tAnswer</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#2000FB">add</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#DF000C">number</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> chars </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> word x </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> tAnswer </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> \</font></p>
+<p><font face="Courier" color="#000000">      sAnswerCharacters</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#990017">repeat</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">with</font><font face="Courier" color="#000000"> y = 1 </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#DF000C">number</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> characters </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> word x \</font></p>
+<p><font face="Courier" color="#000000">         </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> tAnswer</font></p>
+<p><font face="Courier" color="#000000">         </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> &quot;letter&quot; &amp; x &amp; y </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> tButtonName</font></p>
+<p><font face="Courier" color="#000000">         </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> &quot;underline&quot; &amp; x &amp; y </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> tUnderlineName</font></p>
+<p><font face="Courier" color="#000000">         </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> character y </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> word x </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> tAnswer </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> tCharacter</font></p>
+<p><font face="Courier" color="#000000">         </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> tCharacter &amp; &quot;Icon&quot; </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> tImageName</font></p>
+<p><font face="Courier" color="#000000">         </font></p>
+<p><font face="Courier" color="#000000">         </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cLetter </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> button tButtonName </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#2000FB">group</font><font face="Courier" color="#000000"> \</font></p>
+<p><font face="Courier" color="#000000">         &quot;Answer&quot; </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> tCharacter</font></p>
+<p><font face="Courier" color="#000000">         </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#DF000C">icon</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> button tButtonName </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#DF000C">id</font><font face="Courier" color="#000000"> </font></p>
+<p><font face="Courier" color="#000000">         </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> image tImageName </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> card &quot;Image Store&quot;</font></p>
+<p><font face="Courier" color="#000000">         </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#DF000C">visible</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> graphic tUnderlineName </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#2000FB">group</font><font face="Courier" color="#000000"> \</font></p>
+<p><font face="Courier" color="#000000">         &quot;Answer&quot; </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> true</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">repeat</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">repeat</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> setUpAnswer</font></p>
+<p></p>
+<p><font size="14" color="#990006"><b>Skinning the stack</b></font></p>
+<p><font size="12" color="#000000">Once you have written all your code and tested your game and are happy with it you can add more images to make it look even better. We have used images for the letter buttons and to display the answer, for the hints and for the New Game and Quit buttons.</font></p>
+<p></p>
+<p><font size="12" color="#000000">To use images on buttons we store the images out of sight on a second card. Here we import all the images we want using the Import as Controls option in the file menu. We then set the icon of the button to the ID of the image we want to appear on it. In Revolution Media buttons can have normal icons, disabled icons, hover icons (shown when the mouse is over the button), Hilite icons (show when the mouse is down on the button) and others but these are the icons we will use.</font></p>
+<p></p>
+<p><font size="12" color="#000000">To ensure our icons display correctly we turn off a number of properties of the buttons including Show Name, Opaque, Three D, Border and Hilite Border.</font></p>
+<p></p>
+<p><font size="12" color="#000000">The background image can be imported directly onto the card as an image. Don't forget to set it to be the bottom layer so all your other controls appear on top of it.</font></p>
+<p></p>
+<p><font size="12" color="#000000">And there you have it. A fun and great looking game. This game could be extended in a number of ways, more answers could be added under more categories. The game could be modified into a 2 player game or a game that allows you to choose the number of player. With Revolution Media the properties are endless.</font></p>

@@ -1,0 +1,115 @@
+<p><font color="#68228B">-- Script of button Inner Join 1</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;This will return a list of all users and corresponding apps they've purchased&quot;</p>
+<p>  </p>
+<p>  <font color="#0000FF">local</font> tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;SELECT users.Name, apps.appName FROM users,apps WHERE users.userID=apps.appUserID&quot; into tSQL</p>
+<p>  </p>
+<p><font color="#0000FF">  local </font>tList</p>
+<p>  <font color="#0000FF">put</font> revDataFromQuery(,,gConID,tSQL) into tList</p>
+<p>  </p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> comma in tList</p>
+<p></p>
+<p>  handleRevDBerror tList</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;Records returned: &quot; &amp; return &amp; tList</p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#68228B">-- Script of button Inner Join 2</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;This will return a list of the applications purchased by Fred Flintstone.&quot;</p>
+<p>  </p>
+<p>  <font color="#0000FF">local</font> tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;SELECT users.Name, apps.appName FROM users,apps WHERE users.userID=apps.appUserID AND users.name='Fred Flintstone'&quot; into tSQL</p>
+<p></p>
+<p><font color="#68228B">  </font><font color="#0000FF">local </font>tList</p>
+<p>  <font color="#0000FF">put</font> revDataFromQuery(,,gConID,tSQL) into tList</p>
+<p>  </p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> comma in tList</p>
+<p> </p>
+<p>  handleRevDBerror tList</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;Records returned: &quot; &amp; return &amp; tList</p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#68228B">-- Script of button Inner Join 3</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;This will return a list of all the people who purchased Revolution Enterprise.&quot;</p>
+<p>  </p>
+<p><font color="#68228B">  </font><font color="#0000FF">local</font> tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;SELECT users.Name, apps.appName FROM users,apps WHERE users.userID=apps.appUserID AND apps.appName=Revolution Enterprise&quot; into tSQL</p>
+<p></p>
+<p><font color="#68228B">  </font><font color="#0000FF">local </font>tList</p>
+<p>  <font color="#0000FF">put</font> revDataFromQuery(,,gConID,tSQL) into tList</p>
+<p>  </p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> comma in tList</p>
+<p>  </p>
+<p>  handleRevDBerror tList</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;Records returned: &quot; &amp; return &amp; tList</p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#68228B">-- Script of button Outer Join 1</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;This will return a list of all the users and the application(s) purchased (if any).&quot;</p>
+<p>  </p>
+<p>  <font color="#0000FF">local</font> tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;SELECT users.name, apps.appName FROM users LEFT JOIN apps ON users.userID=apps.appUserID&quot; into tSQL</p>
+<p></p>
+<p><font color="#68228B">  </font><font color="#0000FF">local </font>tList</p>
+<p>  <font color="#0000FF">put</font> revDataFromQuery(,,gConID,tSQL) into tList</p>
+<p>  </p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> comma in tList</p>
+<p></p>
+<p>  handleRevDBerror tList</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;Records returned: &quot; &amp; return &amp; tList</p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#68228B">-- Script of button Outer Join 2</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;This will return a list of all the users and then number of application(s) purchased (if any).&quot;</p>
+<p>  </p>
+<p>  <font color="#0000FF">local</font> tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;SELECT users.name, COUNT(apps.appID) FROM users LEFT JOIN apps ON users.userID=apps.appUserID GROUP BY name ORDER BY name&quot; into tSQL</p>
+<p></p>
+<p><font color="#68228B">  </font><font color="#0000FF">local </font>tList</p>
+<p>  <font color="#0000FF">put</font> revDataFromQuery(,,gConID,tSQL) into tList</p>
+<p>  </p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> comma in tList</p>
+<p>  </p>
+<p>  handleRevDBerror tList</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;Records returned: &quot; &amp; return &amp; tList</p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>

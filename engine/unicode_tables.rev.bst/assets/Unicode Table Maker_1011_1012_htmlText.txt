@@ -1,0 +1,43 @@
+<p>The Revolution line breaking algorithm uses the standard Unicode character properties to implement a lookup to determine whether there is a line-break opportunity between two characters.</p>
+<p></p>
+<p>We classify characters as either:</p>
+<p>  SP - space</p>
+<p>  ID - ideographic</p>
+<p>  XA - can't break after</p>
+<p>  XB - can't break before</p>
+<p></p>
+<p>A break is only allowed in the middle of the sequence (x y) if:</p>
+<p>  x is SP or y is SP</p>
+<p>  x is ID and y is ID</p>
+<p>  x is ID and y is not XB</p>
+<p>  x is not XB and y is ID</p>
+<p></p>
+<p>In English this means:</p>
+<p>  there is a break opportunity before and after a SP character</p>
+<p>  there is a break opportunity in between two ID characters</p>
+<p>  there is a break opportunity after an ID character if the next character allows breaks before</p>
+<p>  there is a break opporunity before an ID character if the previous character allows breaks after</p>
+<p></p>
+<p>We map the standard Unicode line breaking properties to our classes as follows:</p>
+<p>  ID - ID, H2, H3, JL, JV, JT, SA</p>
+<p>  XA - WJ, GL, OP, QU</p>
+<p>  XB - CM, WJ, GL, CL, EX</p>
+<p>  SP - ctype isspace</p>
+<p></p>
+<p>To implement the algortihm we generate two tables.</p>
+<p></p>
+<p>The first is a list of ranges that encompass the ID characters. These are encoded as 32-bit quantities:</p>
+<p>  most significant 16-bits - start of range (inclusive)</p>
+<p>  least significant bits  - end of range (inclusive)</p>
+<p></p>
+<p>The second is a mapping from codepoint to break class:</p>
+<p>  0 - break before and break after</p>
+<p>  1 - can't break before</p>
+<p>  2 - can't break after</p>
+<p>  3 - can't break neither before nor after</p>
+<p>This mapping is encoded as 32-bit quantities:</p>
+<p>  most significant 16-bits - base codepoint</p>
+<p>  next significant 14-bit - count</p>
+<p>  least significant 2-bits - class</p>
+<p></p>
+<p>The unicode line breaking properties are stored in the uUnicodeLineBreaks custom property of this card using compress.</p>

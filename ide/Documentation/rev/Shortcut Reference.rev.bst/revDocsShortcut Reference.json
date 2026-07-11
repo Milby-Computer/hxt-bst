@@ -1,0 +1,174 @@
+{
+   "#mainstack": "revDocsShortcut Reference",
+   "revDocsShortcut Reference": {
+      "#name": "stack \"revDocsShortcut Reference\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"doc\"",
+                  "customproperties": {
+                     "htmlText": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/revDocsShortcut Reference_1002_1003_htmlText.txt",
+                     "id": "1003",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "doc",
+                     "rect": "-2,-1,408,421",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "tabStops": "180",
+                     "vScrollbar": true
+                  }
+               },
+               "1008": {
+                  "#name": "button \"Print Shortcut Reference\"",
+                  "properties": {
+                     "icon": "1113",
+                     "id": "1008",
+                     "layer": "3",
+                     "name": "Print Shortcut Reference",
+                     "rect": "414,4,596,36",
+                     "showIcon": true,
+                     "textAlign": "left",
+                     "toolTip": "Print"
+                  }
+               },
+               "1009": {
+                  "#name": "field \"description\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>start up Revolution and open a stack without loading the development environment.</p>",
+                     "id": "1009",
+                     "layer": "4",
+                     "name": "description",
+                     "rect": "410,66,598,420",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textFont": "Verdana",
+                     "textHeight": "16",
+                     "textSize": "12",
+                     "textStyle": "plain"
+                  }
+               },
+               "1010": {
+                  "#name": "field \"czxc\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>Description</p>",
+                     "id": "1010",
+                     "layer": "5",
+                     "name": "czxc",
+                     "rect": "408,40,598,68",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textFont": "Verdana",
+                     "textHeight": "24",
+                     "textSize": "18",
+                     "textStyle": "bold"
+                  }
+               },
+               "1030": {
+                  "#name": "image \"command.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1030",
+                     "layer": "2",
+                     "name": "command.png",
+                     "opaque": false,
+                     "rect": "365,254,377,266",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revDocsShortcut Reference_1002_1030_text.png",
+                     "visible": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         null: null,
+         "storedHilitedChunk": null
+      },
+      "custompropertysets": {
+         "uDescription": {
+            "align control edges": "move the selected controls so the edges corresponding to the arrow key align with that edge of the control you selected first.\n\n(For example, to align the left edges of the selected controls, press the left arrow key.)",
+            "apply changes and close the script editor": "apply changes to the open script and close it immediately, bypassing the confirmation dialog box.",
+            "change a control's properties": "open the property inspector of the selected control.\n\nYou can also double-click a control with the Pointer tool to open its property inspector.",
+            "change message box mode": "move through the modes of the message box.\n\nHold down the Shift key to move backwards through the modes.\n\nTo use this shortcut, the insertion point must be in the message box.",
+            "clear the message box": "remove the contents of the message box.\n\nTo use this shortcut, the insertion point must be in the message box.",
+            "close the Error window": "close the Error window that appears when Revolution reports a script error.",
+            "close the script editor": "apply changes to the open script.\n\nPress Enter or Control-Return again to close the script editor.\n\n(If no changes have been made to the script, or if you've already applied the changes, the first Enter keypress closes the script editor.)",
+            "complete words in scripts": "%file%: assets/revDocsShortcut Reference_uDescription_complete words in scripts.bin",
+            "display a contextual menu": "pop up a contextual menu to change properties and edit the script for the control under the mouse pointer, the current card, and the current stack.",
+            "display a contextual menu (Pointer tool)": "%file%: assets/revDocsShortcut Reference_uDescription_display a contextual menu (Pointer tool).bin",
+            "display a control's property inspector": "open the property inspector for the control under the mouse pointer.\n\nTo use this shortcut, the box labeled \"Command-Option or Control-Alt edits scripts\" in the General section of the Preferences dialog box must be checked.",
+            "duplicate a control": "make a copy of a control you drag using the Pointer tool.\n\nThe newly created control is selected automatically.",
+            "edit a control's script": "open the script of the control under the mouse pointer.\n\nTo use this shortcut, the box labeled \"Command-Option or Control-Alt edits scripts\" in the General section of the Preferences dialog box must be checked.",
+            "edit the card script": "open the script of the current card.",
+            "edit the selected control's script": "open the script of the selected control.",
+            "edit the stack script": "open the script of the topStack.",
+            "equalize height and width of a control": "make the width of a control you are creating or resizing equal to its height.",
+            "equalize heights of selected controls": "change the height of each selected control to match the height of the control you selected first.",
+            "equalize widths of selected controls": "change the width of each selected control to match the width of the control you selected first.",
+            "find the selection in scripts": "search the script editor for the next occurrence of the selected text.\n\nTo use this shortcut, the script editor must be in Find mode.",
+            "format the current handler": "indent the lines of the handler the insertion point is in, in order to show its structure.\n\nTo use this shortcut, the script editor must be open and its window must be frontmost.",
+            "go to the next card": "%file%: assets/revDocsShortcut Reference_uDescription_go to the next card.bin",
+            "go to the previous card": "go to the previous card in the current stack.\n\nHold down the Command key or Control key to go to the first card.\n\nThis shortcut is not available if there is a selection or the insertion point is in a field.",
+            "go to the top or bottom of a field": "move the insertion point to the top or bottom of the field.\n\nTo select text starting from the insertion point, hold down the Shift key.",
+            "hide Revolution palettes": "hide all of Revolution's palettes at once.\n\nRepeat the key combination to show the palettes again.",
+            "look up Transcript term": "open the Transcript Dictionary entry for the Transcript reserved word that you clicked.\n\nThis shortcut is available only in the script editor window.",
+            "magnify an image": "display a Magnify palette for the image you click.\n\nTo use this shortcut, one of the paint tools must be chosen from the Paint palette.",
+            "make an image transparent": "make the clicked color in an image transparent.\n\nTo use this shortcut, the Bucket tool must be chosen from the Paint palette.",
+            "move Revolution windows": "move the entire Revolution development environment at once.",
+            "navigate in a field": "move the insertion point in the indicated direction.\n\nTo move one word forward or back, hold down the Command key or Control key. To select text starting from the insertion point, hold down the Shift key.",
+            "nudge the selected control": "nudge the selected control or controls one pixel in the indicated direction.\n\nTo nudge the selection 10 pixels at a time, hold down the Shift key.",
+            "open a stack without the development environment": "start up Revolution and open a stack without loading the development environment.",
+            "open Revolution documentation": "open the Revolution Documentation window.",
+            "remove font changes from text": "remove any font, size, style, and color information from the selected text, reverting to the default font settings for the field the text is in.",
+            "reverse Select Grouped Controls": "%file%: assets/revDocsShortcut Reference_uDescription_reverse Select Grouped Controls.bin",
+            "review message box history": "%file%: assets/revDocsShortcut Reference_uDescription_review message box history.bin",
+            "review the recent cards list": "%file%: assets/revDocsShortcut Reference_uDescription_review the recent cards list.bin",
+            "save all open stacks": "save changes to all stacks in memory.\n\nStacks that are in memory but whose windows are not open will also be saved.",
+            "select controls without moving them": "select a control without moving it, even if you move the mouse pointer while selecting.\n\nTo use this shortcut, the Pointer tool must be in use.",
+            "select multiple controls": "select a control without deselecting any other selected controls.\n\nTo use this shortcut, the Pointer tool must be in use.",
+            "step into the next line of a handler": "execute the next line of a handler that's being debugged, stepping into called handlers.\n\nTo use this shortcut, the debugger must be running.",
+            "step over the next line of a handler": "execute the next line of a handler that's being debugged, skipping over called handlers.\n\nTo use this shortcut, the debugger must be running.",
+            "stop a running handler": "stop the currently-running handler.",
+            "switch between Browse and Pointer tool": "choose the Browse tool (if the Pointer tool is in use) or vice versa."
+         }
+      },
+      "longID": "stack \"revDocsShortcut Reference\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "backColor": "255,255,255",
+         "decorations": "default",
+         "fileName": "Shortcut Reference.rev",
+         "id": "1010",
+         "linkColor": "0,0,0",
+         "linkHiliteColor": "0,0,0",
+         "linkVisitedColor": "0,0,0",
+         "liveResizing": false,
+         "name": "revDocsShortcut Reference",
+         "rect": "241,315,841,735",
+         "resizable": false,
+         "style": "palette",
+         "textFont": "Verdana",
+         "textSize": "10",
+         "textStyle": "plain",
+         "title": "Shortcut Reference",
+         "underlineLinks": false
+      },
+      "sharedGroupIDs": null
+   }
+}

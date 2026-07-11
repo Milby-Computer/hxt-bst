@@ -1,0 +1,1387 @@
+{
+   "#mainstack": "revImageLibrary",
+   "revImageLibrary": {
+      "#name": "stack \"revImageLibrary\"",
+      "#substacks": null,
+      "backgroundIDs": "1063\n1158",
+      "cardIDs": "1150\n1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Images\"",
+            "childcontrols": {
+               "1063": "#shared group",
+               "1064": {
+                  "#name": "button \"library chooser\"",
+                  "properties": {
+                     "accelMods": "command",
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1064",
+                     "label": "Standard Images",
+                     "layer": "36",
+                     "menuMode": "option",
+                     "name": "library chooser",
+                     "rect": "37,70,267,93",
+                     "style": "menu",
+                     "text": "Standard Images\nMetaCard Compatible Icons\nCursors\n(This Stack",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "1117": {
+                  "#name": "button \"New...\"",
+                  "properties": {
+                     "id": "1117",
+                     "label": "New Library...",
+                     "layer": "37",
+                     "name": "New...",
+                     "rect": "390,70,500,93"
+                  }
+               },
+               "1118": {
+                  "#name": "button \"Delete...\"",
+                  "properties": {
+                     "disabled": true,
+                     "id": "1118",
+                     "label": "Delete Library",
+                     "layer": "38",
+                     "name": "Delete...",
+                     "rect": "274,70,384,93"
+                  }
+               },
+               "1129": {
+                  "#name": "graphic \"marquee\"",
+                  "customproperties": {
+                     "cObject": "button id 1090 of group id 1063 of card id 1002 of stack \"/Users/panos/Desktop/github/livecode/ide/Toolset/palettes/revimagelibrary.rev\""
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "foreColor": "0,0,128",
+                     "id": "1129",
+                     "layer": "39",
+                     "lineSize": "2",
+                     "name": "marquee",
+                     "rect": "173,284,216,373"
+                  }
+               },
+               "1158": "#shared group",
+               "1161": {
+                  "#name": "graphic \"New Graphic 1\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "2",
+                        "Master,expectedRect": "40,100,686,408",
+                        "Master,moveh": false,
+                        "Master,movehAbsolute": null,
+                        "Master,movehDistance": false,
+                        "Master,movehObjectRef": null,
+                        "Master,movev": false,
+                        "Master,movevAbsolute": null,
+                        "Master,movevDistance": false,
+                        "Master,movevObjectRef": null,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scaleBottomDistance": "-107",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleLeft": false,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleRight": true,
+                        "Master,scaleRightAbsolute": true,
+                        "Master,scalerightDistance": "-40",
+                        "Master,scaleRightObjectRef": "card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaleTop": false,
+                        "Master,scaletopDistance": null,
+                        "Master,scaleTopObjectRef": null
+                     }
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "filled": true,
+                     "foreColor": "128,128,128",
+                     "id": "1161",
+                     "layer": "3",
+                     "name": "New Graphic 1",
+                     "opaque": true,
+                     "rect": "40,100,500,376"
+                  }
+               },
+               "1165": {
+                  "#name": "group \"Buttons\"",
+                  "childcontrols": {
+                     "1122": {
+                        "#name": "button \"Import Selected\"",
+                        "properties": {
+                           "disabled": true,
+                           "id": "1122",
+                           "layer": "41",
+                           "name": "Import Selected",
+                           "rect": "145,388,268,411"
+                        }
+                     },
+                     "1125": {
+                        "#name": "button \"Insert Image into Stack\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "1",
+                              "Master,expectedRect": "380,317,502,340",
+                              "Master,moveH": true,
+                              "Master,moveHAbsolute": true,
+                              "Master,movehDistance": "-99",
+                              "Master,moveHObjectRef": "card",
+                              "Master,moveHObjectSide": "right",
+                              "Master,movevDistance": false,
+                              "Master,scalebottomDistance": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scalerightDistance": null,
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "id": "1125",
+                           "label": "Place Image",
+                           "layer": "42",
+                           "name": "Insert Image into Stack",
+                           "rect": "380,388,502,411"
+                        }
+                     },
+                     "1126": {
+                        "#name": "button \"Insert Reference into Stack\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "1",
+                              "Master,expectedRect": "380,350,502,373",
+                              "Master,moveH": true,
+                              "Master,moveHAbsolute": true,
+                              "Master,movehDistance": "-99",
+                              "Master,moveHObjectRef": "card",
+                              "Master,moveHObjectSide": "right",
+                              "Master,movevDistance": false,
+                              "Master,scalebottomDistance": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scalerightDistance": null,
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "id": "1126",
+                           "label": "Place Reference",
+                           "layer": "43",
+                           "name": "Insert Reference into Stack",
+                           "rect": "380,421,502,444"
+                        }
+                     },
+                     "1127": {
+                        "#name": "button \"Delete...1\"",
+                        "properties": {
+                           "disabled": true,
+                           "id": "1127",
+                           "label": "Delete Entry",
+                           "layer": "44",
+                           "name": "Delete...1",
+                           "rect": "37,388,138,411"
+                        }
+                     },
+                     "1162": {
+                        "#name": "button \"Import File...\"",
+                        "properties": {
+                           "disabled": true,
+                           "id": "1162",
+                           "layer": "45",
+                           "name": "Import File...",
+                           "rect": "145,421,268,444"
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "2",
+                        "Master,expectedRect": "33,313,506,377",
+                        "Master,moveH": false,
+                        "Master,movehDistance": false,
+                        "Master,moveHObjectRef": null,
+                        "Master,moveV": true,
+                        "Master,moveVAbsolute": true,
+                        "Master,moveVDistance": "-67",
+                        "Master,moveVObjectRef": "Card",
+                        "Master,moveVObjectSide": "Bottom",
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleRight": true,
+                        "Master,scaleRightAbsolute": true,
+                        "Master,scalerightDistance": "-34",
+                        "Master,scaleRightObjectRef": "card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "id": "1165",
+                     "layer": "40",
+                     "name": "Buttons",
+                     "rect": "33,384,506,448"
+                  }
+               },
+               "1201": {
+                  "#name": "field \"image id\"",
+                  "properties": {
+                     "htmlText": "<p>200936</p>",
+                     "id": "1201",
+                     "layer": "46",
+                     "name": "image id",
+                     "rect": "512,-124,761,-94"
+                  }
+               }
+            },
+            "customproperties": {
+               "cIconsList": "%file%: assets/revImageLibrary_1002_cIconsList.bin",
+               "cSavedWidth": "540",
+               "revScript": false
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "1035503559171\n1035508368439\n1089905978151\n971295390494\n971295435899\n",
+                  "total": "46"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "layer": "2",
+               "name": "Images"
+            }
+         },
+         "1063": {
+            "#name": "group \"Images In Library\"",
+            "childcontrols": {
+               "1066": {
+                  "#name": "scrollbar id 1066",
+                  "customproperties": {
+                     "revbasic": false,
+                     "revscrollbar": false
+                  },
+                  "properties": {
+                     "endValue": "61",
+                     "id": "1066",
+                     "layer": "15",
+                     "lineInc": "9.999542",
+                     "pageInc": "9.999542",
+                     "rect": "480,106,500,371",
+                     "startValue": "1",
+                     "thumbPosition": "1",
+                     "thumbSize": "9.999542"
+                  }
+               },
+               "1067": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210001",
+                     "id": "1067",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "44,106,87,195",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 210001"
+                  }
+               },
+               "1068": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210002",
+                     "id": "1068",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "87,106,130,195",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 210002"
+                  }
+               },
+               "1069": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210012",
+                     "id": "1069",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "130,106,173,195",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 210012"
+                  }
+               },
+               "1070": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210009",
+                     "id": "1070",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "173,106,216,195",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 210009"
+                  }
+               },
+               "1071": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210008",
+                     "id": "1071",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "216,106,259,195",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 210008"
+                  }
+               },
+               "1072": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210010",
+                     "id": "1072",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "259,106,302,195",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 210010"
+                  }
+               },
+               "1073": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210006",
+                     "id": "1073",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "302,106,345,195",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 210006"
+                  }
+               },
+               "1074": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210007",
+                     "id": "1074",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "345,106,388,195",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 210007"
+                  }
+               },
+               "1075": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "202249",
+                     "id": "1075",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "388,106,431,195",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 202249"
+                  }
+               },
+               "1076": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200946",
+                     "id": "1076",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "431,106,474,195",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200946"
+                  }
+               },
+               "1077": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200947",
+                     "id": "1077",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "44,195,87,284",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200947"
+                  }
+               },
+               "1078": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210076",
+                     "id": "1078",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "87,195,130,284",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 210076"
+                  }
+               },
+               "1079": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200949",
+                     "id": "1079",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "130,195,173,284",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200949"
+                  }
+               },
+               "1080": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201065",
+                     "id": "1080",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "173,195,216,284",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 201065"
+                  }
+               },
+               "1081": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201066",
+                     "id": "1081",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "216,195,259,284",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 201066"
+                  }
+               },
+               "1082": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201067",
+                     "id": "1082",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "259,195,302,284",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 201067"
+                  }
+               },
+               "1083": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200948",
+                     "id": "1083",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "302,195,345,284",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200948"
+                  }
+               },
+               "1084": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200950",
+                     "id": "1084",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "345,195,388,284",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200950"
+                  }
+               },
+               "1085": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200952",
+                     "id": "1085",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "388,195,431,284",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200952"
+                  }
+               },
+               "1086": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201068",
+                     "id": "1086",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "431,195,474,284",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 201068"
+                  }
+               },
+               "1087": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201069",
+                     "id": "1087",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "44,284,87,373",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 201069"
+                  }
+               },
+               "1088": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200951",
+                     "id": "1088",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "87,284,130,373",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200951"
+                  }
+               },
+               "1089": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201186",
+                     "id": "1089",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "130,284,173,373",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 201186"
+                  }
+               },
+               "1090": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200936",
+                     "id": "1090",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "173,284,216,373",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200936"
+                  }
+               },
+               "1091": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200938",
+                     "id": "1091",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "216,284,259,373",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200938"
+                  }
+               },
+               "1092": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200935",
+                     "id": "1092",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "259,284,302,373",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200935"
+                  }
+               },
+               "1093": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200941",
+                     "id": "1093",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "302,284,345,373",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200941"
+                  }
+               },
+               "1094": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200937",
+                     "id": "1094",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "345,284,388,373",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200937"
+                  }
+               },
+               "1095": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200940",
+                     "id": "1095",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "388,284,431,373",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200940"
+                  }
+               },
+               "1096": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200939",
+                     "id": "1096",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "431,284,474,373",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Image ID 200939"
+                  }
+               }
+            },
+            "customproperties": {
+               "Tabs": false
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1063",
+               "layer": "15",
+               "lockLoc": true,
+               "name": "Images In Library",
+               "rect": "42,106,500,393"
+            }
+         },
+         "1150": {
+            "#name": "card \"Objects\"",
+            "childcontrols": {
+               "1137": {
+                  "#name": "field \"objects list\"",
+                  "customproperties": {
+                     "cStackName": "/Users/panos/Desktop/github/livecode/ide/Resources/Object Libraries/revObjectLibrary.rev"
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "40,103,265,326",
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scaleBottomDistance": "-74",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleLeft": false,
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleRight": false,
+                        "Master,scaleRightObjectRef": null,
+                        "Master,scaleTop": false,
+                        "Master,scaleTopObjectRef": null
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "%file%: assets/revImageLibrary_1150_1137_htmlText.txt",
+                     "id": "1137",
+                     "layer": "3",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "objects list",
+                     "rect": "40,103,265,409",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1138": {
+                  "#name": "button \"library chooser\"",
+                  "customproperties": {
+                     "cStackName": null,
+                     "cStackPaths": "/Users/panos/Desktop/github/livecode/ide/Resources/Object Libraries/revObjectLibrary.rev\n"
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1138",
+                     "label": "Standard Objects",
+                     "layer": "4",
+                     "menuMode": "option",
+                     "name": "library chooser",
+                     "rect": "37,70,267,93",
+                     "style": "menu",
+                     "text": "Standard Objects",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "1141": {
+                  "#name": "button \"New\"",
+                  "properties": {
+                     "id": "1141",
+                     "label": "New Library...",
+                     "layer": "5",
+                     "name": "New",
+                     "rect": "390,70,500,93"
+                  }
+               },
+               "1142": {
+                  "#name": "button \"Delete\"",
+                  "properties": {
+                     "id": "1142",
+                     "label": "Delete Library",
+                     "layer": "6",
+                     "name": "Delete",
+                     "rect": "274,70,384,93"
+                  }
+               },
+               "1144": {
+                  "#name": "field \"description\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "277,215,499,326",
+                        "Master,scalebottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scaleBottomDistance": "-74",
+                        "Master,scalebottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleleft": false,
+                        "Master,scaleleftAbsolute": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleleftObjectRef": null,
+                        "Master,scaleleftObjectSide": null,
+                        "Master,scaleright": false,
+                        "Master,scalerightAbsolute": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scalerightObjectRef": null,
+                        "Master,scalerightObjectSide": null,
+                        "Master,scaletop": false,
+                        "Master,scaletopAbsolute": null,
+                        "Master,scaletopDistance": null,
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaletopObjectSide": null
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "%file%: assets/revImageLibrary_1150_1144_htmlText.txt",
+                     "id": "1144",
+                     "layer": "7",
+                     "name": "description",
+                     "rect": "277,302,499,409",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "toolTip": "Description of object",
+                     "vScrollbar": true
+                  }
+               },
+               "1149": {
+                  "#name": "button \"Shield\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1149",
+                     "layer": "14",
+                     "name": "Shield",
+                     "opaque": false,
+                     "rect": "278,104,500,295",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1158": "#shared group",
+               "1167": {
+                  "#name": "group \"Buttons\"",
+                  "childcontrols": {
+                     "1154": {
+                        "#name": "button \"Add Selected\"",
+                        "properties": {
+                           "disabled": true,
+                           "id": "1154",
+                           "label": "Import Selected",
+                           "layer": "9",
+                           "name": "Add Selected",
+                           "rect": "145,421,268,444",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "plain"
+                        }
+                     },
+                     "1155": {
+                        "#name": "button \"Insert Into Stack\"",
+                        "properties": {
+                           "id": "1155",
+                           "label": "Place Object",
+                           "layer": "10",
+                           "name": "Insert Into Stack",
+                           "rect": "380,421,502,444"
+                        }
+                     },
+                     "1156": {
+                        "#name": "button \"Delete1\"",
+                        "properties": {
+                           "id": "1156",
+                           "label": "Delete Entry",
+                           "layer": "11",
+                           "name": "Delete1",
+                           "rect": "37,421,138,444"
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "33,334,506,365",
+                        "Master,moveH": false,
+                        "Master,moveHObjectRef": null,
+                        "Master,moveV": true,
+                        "Master,moveVAbsolute": true,
+                        "Master,moveVDistance": "-51",
+                        "Master,moveVObjectRef": "Card",
+                        "Master,moveVObjectSide": "Bottom"
+                     }
+                  },
+                  "properties": {
+                     "id": "1167",
+                     "layer": "8",
+                     "lockLoc": true,
+                     "name": "Buttons",
+                     "rect": "33,417,506,448"
+                  }
+               },
+               "1170": {
+                  "#name": "graphic \"New Graphic 1\"",
+                  "properties": {
+                     "antialiased": false,
+                     "foreColor": "128,128,128",
+                     "id": "1170",
+                     "layer": "15",
+                     "name": "New Graphic 1",
+                     "rect": "277,103,499,294"
+                  }
+               },
+               "1180": {
+                  "#name": "group \"object preview\"",
+                  "childcontrols": {
+                     "1566": {
+                        "#name": "image id 1566",
+                        "properties": {
+                           "id": "1566",
+                           "layer": "13",
+                           "rect": "382,192,394,204",
+                           "repeatCount": "-1",
+                           "text": {
+                              "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAABGdBTUEAALGPC/xhBQAAABJQ\nTFRF4+Pj////3NzciIiI6OjouLi4p1hNdAAAADRJREFUCJlNy0EKADAIA0FN9f9frhVjIwhz\nyJrtuYtx1FBDzKY9zRhqfMdr1tVw003Wln8BJmwAvTivVFEAAAAASUVORK5CYII="
+                           }
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1180",
+                     "layer": "12",
+                     "lockLoc": true,
+                     "name": "object preview",
+                     "rect": "277,103,499,294"
+                  }
+               }
+            },
+            "customproperties": {
+               "revcard": false
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "1035503559171\n964487407132\n964487407140\n1036424424934\n",
+                  "total": "15"
+               }
+            },
+            "properties": {
+               "id": "1150",
+               "name": "Objects"
+            }
+         },
+         "1158": {
+            "#name": "group \"Tabs\"",
+            "childcontrols": {
+               "1157": {
+                  "#name": "button \"Tabs\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "2",
+                        "Master,expectedRect": "21,20,518,472",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scaleBottomDistance": "-21",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleLeft": false,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleRight": true,
+                        "Master,scaleRightAbsolute": true,
+                        "Master,scalerightDistance": "-22",
+                        "Master,scaleRightObjectRef": "card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaleTop": false,
+                        "Master,scaletopDistance": null,
+                        "Master,scaleTopObjectRef": null
+                     }
+                  },
+                  "properties": {
+                     "id": "1157",
+                     "layer": "2",
+                     "menuMode": "tabbed",
+                     "name": "Tabs",
+                     "rect": "21,20,518,462",
+                     "showName": false,
+                     "style": "menu",
+                     "text": "Objects\nImages",
+                     "textSize": "13",
+                     "textStyle": "plain"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1158",
+               "layer": "1",
+               "name": "Tabs",
+               "rect": "17,16,522,466",
+               "sharedBehavior": true
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cIconsList": null,
+         "cReturnValue": "210002",
+         "cREVGetsUpdate": true,
+         "cVersionNo": "2.6.1",
+         "resizeable": false,
+         "revstack": false,
+         "Tabs": false
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1566"
+         }
+      },
+      "longID": "stack \"revImageLibrary\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "revimagelibrary.rev",
+         "id": "1566",
+         "liveResizing": false,
+         "maxWidth": "540",
+         "minHeight": "412",
+         "minWidth": "540",
+         "name": "revImageLibrary",
+         "rect": "637,125,1177,608",
+         "title": "Library"
+      },
+      "sharedGroupIDs": "1063\n1158"
+   }
+}

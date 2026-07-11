@@ -1,0 +1,26 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>The <font face="Courier" size="11">mouseUp</font><font face="helvetica" size="12"> message is sent when the user clicks an object. When the </font><font face="Courier" size="11">mouseUp</font><font face="helvetica" size="12"> message is sent to the field, it triggers this </font><font face="Courier" size="11">mouseUp</font><font face="helvetica" size="12"> handler.</font></p>
+<p></p>
+<p>The first and last lines mark the start and end of the <font face="Courier" size="11">mouseUp</font><font face="helvetica" size="12"> handler. All message handlers begin with the word </font><font face="Courier" size="11">on</font><font face="helvetica" size="12"> and the name of the message (which is also the handler's name), and all handlers end with the word </font><font face="Courier" size="11">end</font><font face="helvetica" size="12"> and the name of the handler.</font></p>
+<p></p>
+<p>The handler contains only one statement:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">answer</font><font face="Courier" size="11"> "Hello world!"</font></p>
+<p></p>
+<p>The <font face="Courier" size="11">answer</font><font face="helvetica" size="12"> command displays a dialog box with the text you specify. When you click the button, Revolution sends a </font><font face="Courier" size="11">mouseUp</font><font face="helvetica" size="12"> message to it. The message triggers the </font><font face="Courier" size="11">mouseUp</font><font face="helvetica" size="12"> handler, which displays a dialog box that says "Hello world!". Click the "Demo" button to try it out.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="11">Hello World variations:</font></b></p>
+<p>You can display a message in a variety of ways. For example, in the Revolution development environment, you can use the M<i><font face="Lucida Grande" size="11">essage Box</font></i><font face="helvetica" size="12"> to show a message. For more details on the </font><i><font face="Lucida Grande" size="11">Message Box,</font></i><font face="helvetica" size="12"> see the section of the same name in the </font><i><font face="Lucida Grande" size="11">User's Guide</font></i><font face="helvetica" size="12">. Use the following statement:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> "Hello world!"</font></p>
+<p></p>
+<p>You can also use the <font face="Courier" size="11">put</font><font face="helvetica" size="12"> command to put text into any field object:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> "Hello world!" into field "Message"</font></p>
+<p></p>
+<p>To display the message automatically when the stack opens, then close the stack when the user dismisses the dialog box, create a stack and put this handler in its script:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">on</font><font face="Courier" size="11"> openStack</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#0000FF">answer</font><font face="Courier" size="11"> "Hello world!"</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#0000FF">close</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#F88017">me</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> openStack</font></p>

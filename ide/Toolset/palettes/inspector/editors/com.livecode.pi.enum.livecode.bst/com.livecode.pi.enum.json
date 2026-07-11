@@ -1,0 +1,57 @@
+{
+   "#mainstack": "com.livecode.pi.enum",
+   "com.livecode.pi.enum": {
+      "#name": "stack \"com.livecode.pi.enum\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1012": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1013": {
+                        "#name": "button \"pulldown\"",
+                        "properties": {
+                           "id": "1013",
+                           "label": "Choice 1",
+                           "layer": "2",
+                           "margins": "8",
+                           "menuMode": "option",
+                           "name": "pulldown",
+                           "rect": "110,72,212,94",
+                           "style": "menu",
+                           "text": "Choice 1\nChoice 2\nChoice 3",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1012",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "110,72,212,94"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cRevStandaloneSettings": null
+      },
+      "longID": "stack \"com.livecode.pi.enum\"",
+      "properties": {
+         "fileName": "com.livecode.pi.enum.livecode",
+         "id": "1013",
+         "name": "com.livecode.pi.enum",
+         "rect": "1451,495,1851,895"
+      },
+      "sharedGroupIDs": null
+   }
+}

@@ -1,0 +1,70 @@
+<p><font face="Verdana" size="18">Adding and Deleting Columns from Tables</font></p>
+<p></p>
+<p>With SQLite, you cannot edit a table schema after you've created it. So, to do this, you must copy the schema  of the table you wish to change,  and copy the data, then delete the table. You can then create a new table with the same name, modify it's schema to your liking, and paste the data back into it. This sounds complicated, but isn't really. </p>
+<p></p>
+<p>We can of course do this in Revolution, but it's easier to do it inside the database itself. </p>
+<p></p>
+<p>SQLite does not yet support the &quot;ALTER TABLE&quot; SQL command. If you want to change the structure of a table, you have to recreate the table. You can save existing data to a temporary table, drop the old table, create the new table, then copy the data back in from the temporary table.</p>
+<p></p>
+<p>For example, suppose you have a table named &quot;t1&quot; with columns names &quot;a&quot;, &quot;b&quot;, and &quot;c&quot; and that you want to delete column &quot;c&quot; from this table. The following steps illustrate how this could be done (SQL):</p>
+<p></p>
+<p>BEGIN TRANSACTION;</p>
+<p>CREATE TEMPORARY TABLE t1_backup(a,b);</p>
+<p>INSERT INTO t1_backup SELECT a,b FROM t1;</p>
+<p>DROP TABLE t1;</p>
+<p>CREATE TABLE t1(a,b);</p>
+<p>INSERT INTO t1 SELECT a,b FROM t1_backup;</p>
+<p>DROP TABLE t1_backup;</p>
+<p>COMMIT;</p>
+<p></p>
+<p>This is the first time we will execute multiple lines of SQL at once. Notice the ';' between lines. They are 'separators' for the SQL statements.</p>
+<p></p>
+<p><font size="18">Delete Columns</font></p>
+<p></p>
+<p>Say we want to delete the columns <b>email</b> and <b>emailList</b> from the table <b>users</b>. And we want to change the column <b>name</b> to <b>full_name</b>.</p>
+<p></p>
+<p>Here's the code to do this:</p>
+<p></p>
+<p><font face="Courier New" size="12">--&gt; CONSTRUCT SQL</font></p>
+<p><font face="Courier New" size="12">put &quot;BEGIN TRANSACTION;&quot; into tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;CREATE TEMPORARY TABLE users_backup(userID,name);&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;INSERT INTO users_backup SELECT userID,name FROM users;&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;DROP TABLE users;&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;CREATE TABLE users(userID integer primary key, full_name text);&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;INSERT INTO users SELECT userID,name FROM users_backup;&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;DROP TABLE users_backup;&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;COMMIT;&quot; after tSQL</font></p>
+<p></p>
+<p><font face="Courier New" size="12">--&gt; EXECUTE SQL</font></p>
+<p><font face="Courier New" size="12">put revdb_execute(gConID,tSQL) into tTmp</font></p>
+<p></p>
+<p>Try it. Press the Delete Columns Example button below. </p>
+<p></p>
+<p><font size="18">Add Columns</font></p>
+<p></p>
+<p>Say we want to add the columns <b>city</b> and <b>state</b> to the table <b>users</b>.</p>
+<p></p>
+<p>Here's the code to do this:</p>
+<p></p>
+<p><font face="Courier New" size="12">--&gt; CONSTRUCT SQL</font></p>
+<p><font face="Courier New" size="12">put &quot;BEGIN TRANSACTION;&quot; into tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;CREATE TEMPORARY TABLE users_backup(userID,name,email,emailList);&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;INSERT INTO users_backup SELECT userID,name,email,emailList FROM users;&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;DROP TABLE users;&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;CREATE TABLE users(userID integer primary key, name text,email text,emailList boolean,city text,state text);&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;INSERT INTO users(userID,name,email,emailList) SELECT userID,name,email,emailList FROM users_backup;&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;DROP TABLE users_backup;&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">put &quot;COMMIT;&quot; after tSQL</font></p>
+<p><font face="Courier New" size="12">  </font></p>
+<p><font face="Courier New" size="12">--&gt; EXECUTE SQL</font></p>
+<p><font face="Courier New" size="12">put revdb_execute(gConID,tSQL) into tTmp</font></p>
+<p></p>
+<p></p>
+<p>Notice the line: </p>
+<p>put &quot;INSERT INTO users(userID,name,email,emailList) SELECT userID,name,email,emailList FROM users_backup;&quot; after tSQL</p>
+<p></p>
+<p>You must specify the columns where you want the data to go when adding a column.</p>
+<p></p>
+<p>Try it. First, press the <b>Default Data</b> button to reset the database, then press the <b>Add Columns Example</b> button below. </p>
+<p></p>
+<p></p>

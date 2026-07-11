@@ -1,0 +1,3 @@
+The row template is a group which can contain any other Revolution control. It allows you to create fully customized row layouts for the data you are wanting to display with the Data Grid. 
+
+The Data Grid loops through the data it has been given to display and replicates this template for each row of data it encounters. Data is inserted into each control in this group by the 'behaviour script' which is covered on the next slide.

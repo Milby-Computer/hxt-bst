@@ -1,0 +1,1 @@
+<p>&lt;p&gt;This is &lt;b&gt;some bold text&lt;/b&gt;, whereas this is &lt;i&gt;italic&lt;/i&gt;, and this is &lt;b&gt;&lt;i&gt;bold italic&lt;/i&gt;&lt;/b&gt;, and here we see some &lt;font size="18"&gt;large&lt;/font&gt; and &lt;font size="18"&gt;&lt;b&gt;large bold&lt;/b&gt;&lt;/font&gt; text.&lt;/p&gt;</p>

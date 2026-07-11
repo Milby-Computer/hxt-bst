@@ -1,0 +1,1 @@
+<p><a><font face="verdana" size="11">Operations</font></a> that compare two <a><font face="verdana" size="11">values</font></a> are done next. These are <a><font face="verdana" size="11">logical</font></a> operators and result in eith<font face="verdana" size="11">er true or false.</font></p>

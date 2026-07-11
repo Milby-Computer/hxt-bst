@@ -1,0 +1,4 @@
+description=<p>This section deals with the environment outside Revolution.  Examples include how to check the current OS version or whether a directory is writeable.</p>
+entries=Centering a window on the screen\nCheck whether a directory or drive is write-protected\nCheck whether the screen resolution is high enough\nEditing the clipboard\nConverting a relative path to an absolute path\nConverting an absolute path to a relative path\nPlacing a font list into a menu\nFind out the current platform and system version\nGetting the dimensions of a picture file\nStoring a modification timestamp
+name=The Outside World
+title=The Outside World

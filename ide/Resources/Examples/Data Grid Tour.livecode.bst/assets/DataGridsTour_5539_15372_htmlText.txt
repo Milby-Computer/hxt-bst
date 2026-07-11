@@ -1,0 +1,3 @@
+<p>The form style tells the Data Grid to lay the data out in rows rather than columns. It is also possible to script additional behaviour such as row 'expansion' as shown in the webinar (linked to at the end of this guide).</p>
+<p></p>
+<p>The Data Grid provides you with more freedon when sent to form style. The core functionality such as row hiliting is still handled by the Data Grid, but layout and user interaction is left under the control of the developer.</p>

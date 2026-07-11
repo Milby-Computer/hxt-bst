@@ -1,0 +1,42 @@
+<p><font face="Verdana" size="18">Understanding the Database Schema</font></p>
+<p></p>
+<p>The <b><font face="Tahoma" size="11">schema</font></b><font face="Tahoma" size="11"> for a database is the structure of it, including all tables and columns. It does not include any data. Understanding the schema is important if you wish to later add or delete columns.</font></p>
+<p></p>
+<p>What does a schema look like? It's pretty simple. It's a collection of CREATE TABLE SQL commands- the very same commands used to create the database in the first place. So, our <b><font face="Tahoma" size="11">apps</font></b><font face="Tahoma" size="11"> table schema looks like this:</font></p>
+<p></p>
+<p><b><font face="Tahoma" size="11">CREATE TABLE apps (</font></b></p>
+<p><b><font face="Tahoma" size="11">   appID integer primary key, </font></b></p>
+<p><b><font face="Tahoma" size="11">   appName text,</font></b></p>
+<p><b><font face="Tahoma" size="11">   appRegCode text,</font></b></p>
+<p><b><font face="Tahoma" size="11">   appUserID integer</font></b></p>
+<p><b><font face="Tahoma" size="11">)</font></b></p>
+<p></p>
+<p>Note, we've formatted it so it's easier to see what columns and their datatypes are. So, how do you create a list of the schemas for an entire database?</p>
+<p></p>
+<p>We  use a very handy feature of SQLite to list the schema of a database. You can get access to table and index names by doing a SELECT on a special table named "SQLITE_MASTER". Every SQLite database has a SQLITE_MASTER table that defines the schema for the database. This database is read-only.</p>
+<p></p>
+<p>Here's the schema for the SQLITE_MASTER database.</p>
+<p></p>
+<p><b><font face="Tahoma" size="11">CREATE TABLE sqlite_master (</font></b></p>
+<p><b><font face="Tahoma" size="11">  type TEXT,</font></b></p>
+<p><b><font face="Tahoma" size="11">  name TEXT,</font></b></p>
+<p><b><font face="Tahoma" size="11">  tbl_name TEXT,</font></b></p>
+<p><b><font face="Tahoma" size="11">  rootpage INTEGER,</font></b></p>
+<p><b><font face="Tahoma" size="11">  sql TEXT</font></b></p>
+<p><b><font face="Tahoma" size="11">)</font></b></p>
+<p></p>
+<p>So, in the SQLITE_MASTER database, there are 5 tables: <b><font face="Tahoma" size="11">type</font></b><font face="Tahoma" size="11">, <b>name</b>, <b>tbl</b>_<b>name</b>, <b>rootpage</b>, and <b>sql</b>. We're only concerned with the <b>sql</b> table.</font></p>
+<p></p>
+<p>Here's the SQL which returns the existing Schema of our database.</p>
+<p></p>
+<p>SELECT name FROM sqlite_master</p>
+<p>WHERE type='table'</p>
+<p>ORDER BY name;</p>
+<p></p>
+<p>Here's the code to return the database schema:</p>
+<p></p>
+<p><font face="Courier New" size="14">put "SELECT sql FROM sqlite_master" into tSQL</font></p>
+<p><font face="Courier New" size="12">put revExecuteSQL(&lt;connectionID&gt;,tSQL) into tList</font></p>
+<p><font face="Courier New" size="12">--&gt; tList RETURNS THE SQL USED TO CREATE THE TABLES</font></p>
+<p></p>
+<p><font face="Courier New" size="12">Try it. Press the Show SQLITE_MASTER Schema button below.</font></p>

@@ -1,0 +1,92 @@
+{
+   "#mainstack": "revRestore",
+   "revRestore": {
+      "#name": "stack \"revRestore\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Restore Revolution UI\"",
+                  "customproperties": 
+               },
+               "properties": {
+                  "id": "1003",
+                  "label": "Restore Development Tools",
+                  "layer": "1",
+                  "name": "Restore Revolution UI",
+                  "rect": "9,8,179,32"
+               }
+            },
+            "1004": {
+               "#name": "group \"Restore Development Tools\"",
+               "childcontrols": {
+                  "1005": {
+                     "#name": "button \"File\"",
+                     "properties": {
+                        "id": "1005",
+                        "layer": "3",
+                        "lockLoc": true,
+                        "menuMode": "pulldown",
+                        "mnemonic": "1",
+                        "name": "File",
+                        "rect": "-149,-109,-119,-90",
+                        "showBorder": false,
+                        "style": "menu",
+                        "text": "Restore Development Tools\n-\nQuit\n",
+                        "traversalOn": false
+                     }
+                  },
+                  "1006": {
+                     "#name": "button \"Help\"",
+                     "properties": {
+                        "id": "1006",
+                        "layer": "4",
+                        "lockLoc": true,
+                        "menuMode": "pulldown",
+                        "mnemonic": "1",
+                        "name": "Help",
+                        "rect": "-87,-109,-51,-90",
+                        "showBorder": false,
+                        "style": "menu",
+                        "text": "\u2026Help\n-\n\u2026About",
+                        "traversalOn": false
+                     }
+                  }
+               },
+               "properties": {
+                  "id": "1004",
+                  "layer": "2",
+                  "name": "Restore Development Tools",
+                  "rect": "-153,-113,-47,-86",
+                  "traversalOn": false
+               }
+            }
+         },
+         "properties": {
+            "id": "1002"
+         }
+      }
+   },
+   "customproperties": {
+      "resizeable": false,
+      "resizeble": false
+   },
+   "longID": "stack \"revRestore\"",
+   "properties": {
+      "alwaysBuffer": true,
+      "decorations": "title",
+      "fileName": "revrestore.livecode",
+      "id": "1006",
+      "liveResizing": false,
+      "name": "revRestore",
+      "rect": "597,186,784,227",
+      "resizable": false,
+      "title": " "
+   },
+   "sharedGroupIDs": null
+}
+}

@@ -1,0 +1,48 @@
+{
+   "#mainstack": "com.livecode.pi.editorList",
+   "com.livecode.pi.editorList": {
+      "#name": "stack \"com.livecode.pi.editorList\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1012": {
+                  "#name": "group \"template\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "86,80,86,80"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "1"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1012"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.editorList\"",
+      "properties": {
+         "fileName": "com.livecode.pi.editorlist.livecode",
+         "id": "1012",
+         "name": "com.livecode.pi.editorList",
+         "rect": "365,175,955,478"
+      },
+      "sharedGroupIDs": null
+   }
+}

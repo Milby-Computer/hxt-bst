@@ -1,0 +1,903 @@
+{
+   "#mainstack": "revObjectLibrary",
+   "revObjectLibrary": {
+      "#name": "stack \"revObjectLibrary\"",
+      "#substacks": null,
+      "backgroundIDs": "1082\n1084\n1096\n1100\n1102",
+      "cardIDs": "1002\n1089\n1091\n1093\n1095\n1057\n1047\n1061\n1049\n1051\n1067\n1069\n1107\n1053\n1075\n1077\n1079\n1081\n1019\n1021\n1027",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "properties": {
+               "id": "1002"
+            }
+         },
+         "1019": {
+            "#name": "card \"MacOS Standard Disclosure Triangle\"",
+            "childcontrols": {
+               "1020": {
+                  "#name": "button \"Mac Disclosure Triangle\"",
+                  "customproperties": {
+                     "cDisabledIcon": "200952",
+                     "cDisclosed": false,
+                     "cDisclosedDisabledIcon": "200948",
+                     "cDisclosedHilitedIcon": "200950",
+                     "cDisclosedIcon": "200951",
+                     "cDisclosedStackHeight": "400",
+                     "cHilitedIcon": "200947",
+                     "cIcon": "200946",
+                     "cIntermediateIcon": "200949",
+                     "cREVdisclosed": false,
+                     "cUndisclosedStackHeight": "300"
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200946",
+                     "id": "1020",
+                     "layer": "1",
+                     "name": "Mac Disclosure Triangle",
+                     "opaque": false,
+                     "rect": "40,201,57,217",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1019_cDescription.bin"
+            },
+            "properties": {
+               "id": "1019",
+               "layer": "19",
+               "name": "MacOS Standard Disclosure Triangle"
+            }
+         },
+         "1021": {
+            "#name": "card \"Grey Disclosure Triangle\"",
+            "childcontrols": {
+               "1022": {
+                  "#name": "button \"Grey Disclosure Triangle\"",
+                  "customproperties": {
+                     "cDisabledIcon": "200952",
+                     "cDisclosed": false,
+                     "cDisclosedDisabledIcon": "200948",
+                     "cDisclosedHilitedIcon": "201068",
+                     "cDisclosedIcon": "201069",
+                     "cDisclosedStackHeight": "400",
+                     "cHilitedIcon": "201066",
+                     "cIcon": "201065",
+                     "cIntermediateIcon": "201067",
+                     "cREVdisclosed": false,
+                     "cUndisclosedStackHeight": "300"
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201065",
+                     "id": "1022",
+                     "layer": "1",
+                     "name": "Grey Disclosure Triangle",
+                     "opaque": false,
+                     "rect": "39,230,56,246",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1021_cDescription.bin"
+            },
+            "properties": {
+               "id": "1021",
+               "layer": "20",
+               "name": "Grey Disclosure Triangle"
+            }
+         },
+         "1027": {
+            "#name": "card \"Little Arrows Generic\"",
+            "childcontrols": {
+               "1028": {
+                  "#name": "button \"Little Arrows\"",
+                  "customproperties": {
+                     "cDownIcon": "201318",
+                     "cIcon": "201317",
+                     "cTargetField": null,
+                     "cUpIcon": "201319",
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201317",
+                     "id": "1028",
+                     "layer": "1",
+                     "name": "Little Arrows",
+                     "opaque": false,
+                     "rect": "249,154,265,174",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1027_cDescription.bin"
+            },
+            "properties": {
+               "id": "1027",
+               "layer": "21",
+               "name": "Little Arrows Generic"
+            }
+         },
+         "1047": {
+            "#name": "card \"Grey Stack Height Flipper\"",
+            "childcontrols": {
+               "1048": {
+                  "#name": "button \"Grey Stack Height Flipper\"",
+                  "customproperties": {
+                     "cContractedStackHeight": "400",
+                     "cExpandedStackHeight": "500"
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "hiliteFill": false,
+                     "hiliteIcon": "200275",
+                     "icon": "200276",
+                     "id": "1048",
+                     "layer": "1",
+                     "name": "Grey Stack Height Flipper",
+                     "opaque": false,
+                     "rect": "59,338,75,356",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1047_cDescription.bin"
+            },
+            "properties": {
+               "id": "1047",
+               "layer": "7",
+               "name": "Grey Stack Height Flipper"
+            }
+         },
+         "1049": {
+            "#name": "card \"MacOS Style Stack Height Flipper\"",
+            "childcontrols": {
+               "1050": {
+                  "#name": "button \"Mac Stack Height Flipper\"",
+                  "customproperties": {
+                     "cContractedStackHeight": "400",
+                     "cExpandedStackHeight": "500"
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "hiliteFill": false,
+                     "hiliteIcon": "200951",
+                     "icon": "201186",
+                     "id": "1050",
+                     "layer": "1",
+                     "name": "Mac Stack Height Flipper",
+                     "opaque": false,
+                     "rect": "31,336,47,354",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1049_cDescription.bin"
+            },
+            "properties": {
+               "id": "1049",
+               "layer": "9",
+               "name": "MacOS Style Stack Height Flipper"
+            }
+         },
+         "1051": {
+            "#name": "card \"Grey Stack Width Flipper\"",
+            "childcontrols": {
+               "1052": {
+                  "#name": "button \"Grey Stack Width Flipper\"",
+                  "customproperties": {
+                     "cContractedStackWidth": "300",
+                     "cExpandedStackWidth": "400"
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "hiliteIcon": "200270",
+                     "icon": "200887",
+                     "id": "1052",
+                     "layer": "1",
+                     "name": "Grey Stack Width Flipper",
+                     "opaque": false,
+                     "rect": "37,265,53,283",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1051_cDescription.bin"
+            },
+            "properties": {
+               "id": "1051",
+               "layer": "10",
+               "name": "Grey Stack Width Flipper"
+            }
+         },
+         "1053": {
+            "#name": "card \"MacOS Style Stack Width Flipper\"",
+            "childcontrols": {
+               "1054": {
+                  "#name": "button \"Mac Stack Width Flipper\"",
+                  "customproperties": {
+                     "cContractedStackWidth": "300",
+                     "cExpandedStackWidth": "400"
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "hiliteIcon": "200946",
+                     "icon": "202249",
+                     "id": "1054",
+                     "layer": "1",
+                     "name": "Mac Stack Width Flipper",
+                     "opaque": false,
+                     "rect": "37,289,53,307",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1053_cDescription.bin"
+            },
+            "properties": {
+               "id": "1053",
+               "layer": "14",
+               "name": "MacOS Style Stack Width Flipper"
+            }
+         },
+         "1057": {
+            "#name": "card \"Auto Scrolling Field\"",
+            "childcontrols": {
+               "1058": {
+                  "#name": "field \"Auto Scrolling Field\"",
+                  "customproperties": {
+                     "cScrollInterval": "10"
+                  },
+                  "properties": {
+                     "htmlText": "%file%: assets/revObjectLibrary_1057_1058_htmlText.txt",
+                     "id": "1058",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "Auto Scrolling Field",
+                     "rect": "163,303,386,400",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1057_cDescription.bin"
+            },
+            "properties": {
+               "id": "1057",
+               "layer": "6",
+               "name": "Auto Scrolling Field"
+            }
+         },
+         "1061": {
+            "#name": "card \"Scrolling Scrollbar\"",
+            "childcontrols": {
+               "1062": {
+                  "#name": "scrollbar \"Scrollbar for Fields and Groups\"",
+                  "customproperties": {
+                     "cTargetName": "My Field",
+                     "cTargetType": "field",
+                     "revscrollbar": false
+                  },
+                  "properties": {
+                     "endValue": "100",
+                     "id": "1062",
+                     "layer": "1",
+                     "lineInc": "0.061036",
+                     "name": "Scrollbar for Fields and Groups",
+                     "pageInc": "0.999466",
+                     "rect": "398,221,414,321",
+                     "thumbSize": "0.999466"
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1061_cDescription.bin"
+            },
+            "properties": {
+               "id": "1061",
+               "layer": "8",
+               "name": "Scrolling Scrollbar"
+            }
+         },
+         "1067": {
+            "#name": "card \"Message Intercepting Field\"",
+            "childcontrols": {
+               "1068": {
+                  "#name": "field \"Message Intercepting Field\"",
+                  "properties": {
+                     "autoTab": true,
+                     "id": "1068",
+                     "layer": "1",
+                     "name": "Message Intercepting Field",
+                     "rect": "238,351,394,437"
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1067_cDescription.bin"
+            },
+            "properties": {
+               "id": "1067",
+               "layer": "11",
+               "name": "Message Intercepting Field"
+            }
+         },
+         "1069": {
+            "#name": "card \"Horizontal Divider\"",
+            "childcontrols": {
+               "1109": {
+                  "#name": "graphic \"Horizontal Divider\"",
+                  "properties": {
+                     "antialiased": false,
+                     "borderWidth": "1",
+                     "bottomColor": "255,255,255",
+                     "filled": true,
+                     "id": "1109",
+                     "layer": "1",
+                     "name": "Horizontal Divider",
+                     "opaque": true,
+                     "rect": "127,262,377,264",
+                     "showBorder": true,
+                     "topColor": "128,128,128"
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "Rectangle graphic with a width of 2 pixels, and borderWidth set to 1 pixel.  Used for separating a stack into areas of related controls and information."
+            },
+            "properties": {
+               "id": "1069",
+               "layer": "12",
+               "name": "Horizontal Divider"
+            }
+         },
+         "1075": {
+            "#name": "card \"MacOS Standard Disclosure Triangle with Label\"",
+            "childcontrols": {
+               "1076": {
+                  "#name": "button \"Mac Disclosure Triangle with Label\"",
+                  "customproperties": {
+                     "cDisabledIcon": "200952",
+                     "cDisclosed": false,
+                     "cDisclosedDisabledIcon": "200948",
+                     "cDisclosedHilitedIcon": "200950",
+                     "cDisclosedIcon": "200951",
+                     "cDisclosedStackHeight": "400",
+                     "cHilitedIcon": "200947",
+                     "cIcon": "200946",
+                     "cIntermediateIcon": "200949",
+                     "cREVdisclosed": false,
+                     "cUndisclosedStackHeight": "300"
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200946",
+                     "id": "1076",
+                     "label": "Show Details",
+                     "layer": "1",
+                     "name": "Mac Disclosure Triangle with Label",
+                     "opaque": false,
+                     "rect": "267,186,362,202",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1075_cDescription.bin"
+            },
+            "properties": {
+               "id": "1075",
+               "layer": "15",
+               "name": "MacOS Standard Disclosure Triangle with Label"
+            }
+         },
+         "1077": {
+            "#name": "card \"Grey Disclosure Triangle with Label\"",
+            "childcontrols": {
+               "1078": {
+                  "#name": "button \"Grey Disclosure Triangle with Label\"",
+                  "customproperties": {
+                     "cDisabledIcon": "200952",
+                     "cDisclosed": false,
+                     "cDisclosedDisabledIcon": "200948",
+                     "cDisclosedHilitedIcon": "201068",
+                     "cDisclosedIcon": "201069",
+                     "cDisclosedStackHeight": "400",
+                     "cHilitedIcon": "201066",
+                     "cIcon": "201065",
+                     "cIntermediateIcon": "201067",
+                     "cREVdisclosed": false,
+                     "cUndisclosedStackHeight": "300"
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201065",
+                     "id": "1078",
+                     "label": "Show Details",
+                     "layer": "1",
+                     "name": "Grey Disclosure Triangle with Label",
+                     "opaque": false,
+                     "rect": "267,208,362,224",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1077_cDescription.bin"
+            },
+            "properties": {
+               "id": "1077",
+               "layer": "16",
+               "name": "Grey Disclosure Triangle with Label"
+            }
+         },
+         "1079": {
+            "#name": "card \"Windows Standard Hierarchical Field Widget\"",
+            "childcontrols": {
+               "1080": {
+                  "#name": "button \"Windows Hierarchical Field Widget\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "hiliteIcon": "200087",
+                     "icon": "200086",
+                     "id": "1080",
+                     "layer": "1",
+                     "name": "Windows Hierarchical Field Widget",
+                     "rect": "156,333,165,342",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "opaque",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1079_cDescription.bin"
+            },
+            "properties": {
+               "id": "1079",
+               "layer": "17",
+               "name": "Windows Standard Hierarchical Field Widget"
+            }
+         },
+         "1081": {
+            "#name": "card \"Object Move Widget Vertical\"",
+            "childcontrols": {
+               "1082": "#shared group"
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1081_cDescription.bin"
+            },
+            "properties": {
+               "id": "1081",
+               "layer": "18",
+               "name": "Object Move Widget Vertical"
+            }
+         },
+         "1082": {
+            "#name": "group \"Object Move Widget Vertical\"",
+            "childcontrols": [
+               {
+                  "#name": "button \"Object Move Widget Vertical\"",
+                  "customproperties": {
+                     "cMoveDownHiliteIcon": "200940",
+                     "cMoveDownIcon": "200936",
+                     "cMoveUpHiliteIcon": "200938",
+                     "cMoveUpIcon": "200937"
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200936",
+                     "name": "Object Move Widget Vertical",
+                     "rect": "226,426,244,442",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "opaque",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            ],
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1082",
+               "lockLoc": true,
+               "name": "Object Move Widget Vertical",
+               "rect": "141,338,347,486"
+            }
+         },
+         "1084": {
+            "#name": "group \"Object Move Widget Horizontal\"",
+            "childcontrols": [
+               {
+                  "#name": "button \"Object Move Widget Horizontal\"",
+                  "customproperties": {
+                     "cMoveLeftHiliteIcon": "200941",
+                     "cMoveLeftIcon": "200939",
+                     "cMoveRightHiliteIcon": "200942",
+                     "cMoveRightIcon": "200935"
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200939",
+                     "name": "Object Move Widget Horizontal",
+                     "rect": "152,425,170,441",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "opaque",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            ],
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1084",
+               "lockLoc": true,
+               "name": "Object Move Widget Horizontal",
+               "rect": "41,371,355,478"
+            }
+         },
+         "1089": {
+            "#name": "card \"Mac Style Stack Resizer\"",
+            "childcontrols": {
+               "1090": {
+                  "#name": "button \"Mac Style Stack Resizer\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200943",
+                     "id": "1090",
+                     "layer": "1",
+                     "name": "Mac Style Stack Resizer",
+                     "rect": "191,347,203,359",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "opaque",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1089_cDescription.bin"
+            },
+            "properties": {
+               "id": "1089",
+               "layer": "2",
+               "name": "Mac Style Stack Resizer"
+            }
+         },
+         "1091": {
+            "#name": "card \"Win Style Stack Resizer\"",
+            "childcontrols": {
+               "1092": {
+                  "#name": "button \"Win Style Stack Resizer\"",
+                  "customproperties": {
+                     "cWinCursor": "200308"
+                  },
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200304",
+                     "id": "1092",
+                     "layer": "1",
+                     "name": "Win Style Stack Resizer",
+                     "rect": "231,344,244,357",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "opaque",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1091_cDescription.bin"
+            },
+            "properties": {
+               "id": "1091",
+               "layer": "3",
+               "name": "Win Style Stack Resizer"
+            }
+         },
+         "1093": {
+            "#name": "card \"Little Arrows MacOS Standard\"",
+            "childcontrols": {
+               "1094": {
+                  "#name": "button \"Little Arrows\"",
+                  "customproperties": {
+                     "cDisabledIcon": "210059",
+                     "cDownIcon": "210060",
+                     "cIcon": "210058",
+                     "cTargetField": "My Field",
+                     "cUpIcon": "210061",
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "210058",
+                     "id": "1094",
+                     "layer": "1",
+                     "name": "Little Arrows",
+                     "opaque": false,
+                     "rect": "125,116,138,139",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1093_cDescription.bin"
+            },
+            "properties": {
+               "id": "1093",
+               "layer": "4",
+               "name": "Little Arrows MacOS Standard"
+            }
+         },
+         "1095": {
+            "#name": "card \"Object Move Widget Horizontal\"",
+            "childcontrols": {
+               "1096": "#shared group"
+            },
+            "customproperties": {
+               "cDescription": "%file%: assets/revObjectLibrary_1095_cDescription.bin"
+            },
+            "properties": {
+               "id": "1095",
+               "layer": "5",
+               "name": "Object Move Widget Horizontal"
+            }
+         },
+         "1096": {
+            "#name": "group \"Object Move Widget Horizontal\"",
+            "childcontrols": [
+               {
+                  "#name": "button \"Object Move Widget Horizontal\"",
+                  "customproperties": {
+                     "cMoveLeftHiliteIcon": "200941",
+                     "cMoveLeftIcon": "200939",
+                     "cMoveRightHiliteIcon": "200942",
+                     "cMoveRightIcon": "200935"
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200939",
+                     "name": "Object Move Widget Horizontal",
+                     "rect": "152,425,170,441",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "opaque",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            ],
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1096",
+               "lockLoc": true,
+               "name": "Object Move Widget Horizontal",
+               "rect": "41,371,355,478"
+            }
+         },
+         "1100": {
+            "#name": "group id 1100",
+            "childcontrols": [
+               {
+                  "#name": "button \"New Button 2\"",
+                  "properties": {
+                     "name": "New Button 2",
+                     "rect": "38,78,138,98"
+                  }
+               }
+            ],
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1100",
+               "rect": "34,74,142,102"
+            }
+         },
+         "1102": {
+            "#name": "group \"Object Move Widget Horizontal\"",
+            "childcontrols": [
+               {
+                  "#name": "button \"Object Move Widget Horizontal\"",
+                  "customproperties": {
+                     "cMoveLeftHiliteIcon": "200941",
+                     "cMoveLeftIcon": "200939",
+                     "cMoveRightHiliteIcon": "200942",
+                     "cMoveRightIcon": "200935"
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200939",
+                     "name": "Object Move Widget Horizontal",
+                     "rect": "82,129,100,145",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "opaque",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            ],
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1102",
+               "lockLoc": true,
+               "name": "Object Move Widget Horizontal",
+               "rect": "-29,75,285,182"
+            }
+         },
+         "1107": {
+            "#name": "card \"Vertical Divider\"",
+            "childcontrols": {
+               "1108": {
+                  "#name": "graphic \"Vertical Divider\"",
+                  "properties": {
+                     "antialiased": false,
+                     "borderWidth": "1",
+                     "bottomColor": "255,255,255",
+                     "filled": true,
+                     "id": "1108",
+                     "layer": "1",
+                     "name": "Vertical Divider",
+                     "opaque": true,
+                     "rect": "53,7,55,246",
+                     "showBorder": true,
+                     "topColor": "128,128,128"
+                  }
+               }
+            },
+            "customproperties": {
+               "cDescription": "Rectangle graphic with a width of 2 pixels, and borderWidth set to 1 pixel.  Used for separating a stack into areas of related controls and information."
+            },
+            "properties": {
+               "id": "1107",
+               "layer": "13",
+               "name": "Vertical Divider"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cDisplayName": "Standard Objects",
+         "cVersionNo": "2.6.1"
+      },
+      "longID": "stack \"revObjectLibrary\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "revObjectLibrary.rev",
+         "id": "1111",
+         "liveResizing": false,
+         "name": "revObjectLibrary",
+         "rect": "213,426,466,689"
+      },
+      "sharedGroupIDs": "1082\n1084\n1096\n1100\n1102"
+   }
+}

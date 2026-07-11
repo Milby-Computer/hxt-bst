@@ -1,0 +1,1 @@
+Each Data Grid has a 'behavior script'. This is designed to give the user additional scripting control above that already provided by the grid itself. This behaviour script is referenced by each row in the grid, so changing an item in the script will automatically update the behaviour of every row.

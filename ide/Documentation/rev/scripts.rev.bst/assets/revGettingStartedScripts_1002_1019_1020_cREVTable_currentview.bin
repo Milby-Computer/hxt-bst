@@ -1,0 +1,5 @@
+<p>To see the <font face="Geneva" size="10"><a>highlight effect</a></font><font face="ms sans serif" size="10">, move the mouse over the linked text in this field.</font></p>
+<p></p>
+<p>This is some <font face="Geneva" size="10"><a>linked text</a></font><font face="ms sans serif" size="10">. The next word is a </font><font face="Geneva" size="10"><a>link</a></font><font face="ms sans serif" size="10">. </font><font face="Geneva" size="10"><a>So is this entire sentence.</a></font><font face="ms sans serif" size="10"> </font></p>
+<p></p>
+<p>You can make any <font face="Geneva" size="10"><a>text into a link</a></font><font face="ms sans serif" size="10"> by selecting it and choosing </font><font face="Geneva" size="10" color="#404040"><b>Text -&gt; Link</b></font><font face="ms sans serif" size="10">, or by setting its </font><font face="Geneva" size="10"><b>textStyle</b></font><font face="ms sans serif" size="10"> property to &quot;link&quot;.</font></p>

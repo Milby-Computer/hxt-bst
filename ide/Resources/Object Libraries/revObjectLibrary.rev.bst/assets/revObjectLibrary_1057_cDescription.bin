@@ -1,0 +1,1 @@
+Scripted Field. Scrolls asynchronously on mouseUp using the send command. The time interval in milliseconds taken before the scoll of the field is incremented by 1 is governed by the cScrollInterval, a custom property set on the field. Set the cScrollInterval to a higher value for slower scrolling and a lower value for faster scrolling.

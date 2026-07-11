@@ -1,0 +1,36 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom function is called with a statement such as one of the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">get</font><font face="Courier" size="11"> relativePath("/Disk/Folder/File","/Disk/Folder")</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> relativePath(it,myFolder) into pathToUse</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">set</font><font face="Courier" size="11"> the fileLoc of </font><font face="Courier" size="11" color="#F88017">me</font><font face="Courier" size="11"> to relativePath(thisPath)</font></p>
+<p></p>
+<p>This function takes an absolute file path--that is, a file path that starts at the top of the folder structure and names each enclosing folder on the way to the file--and converts it to the equivalent relative path. Optionally, you can specify the folder where the relative path should start; if you don't specify one, the function uses the current folder as the starting point.</p>
+<p></p>
+<p>The "relativePath" function works by comparing the absolute path and the starting folder side by side, and removing the parts of the structure that are common to both paths. Then it figures out how many levels up the relative path needs to move to get to the starting folder, and prepends the appropriate number of "../" to the start of the relative path. Finally, it returns the new path.</p>
+<p></p>
+<p>The first thing the function does is make sure the absolutePath is, in fact, an absolute path. The rule for determining whether a path is an absolute path is as follows:</p>
+<p></p>
+<p>* On Windows systems, absolute paths begin with a drive letter followed by a colon character.</p>
+<p></p>
+<p>* On all other operating systems, absolute paths begin with a slash.</p>
+<p></p>
+<p>To figure out whether the absolutePath meets these conditions, the function uses a complex expression with the and and or operators. If the function is running on Windows, and either the first character isn't a letter or the second character isn't a colon, this isn't an absolute path. If the function is running on another platform and the first character isn't a slash, this isn't an absolute path. These two conditions are each enclosed in parentheses and are joined by the or operator, so if either of them is true, the condition itself is true and Transcript executes the contents of the if statement.</p>
+<p></p>
+<p>If the absolutePath is not actually an absolute path, the handler uses the <font face="Courier" size="11">return</font><font face="helvetica" size="12"> control structure to pass an error message back to the calling handler.</font></p>
+<p></p>
+<p>Next, the handler checks the startingPath. If nothing was passed in the startingPath, the handler uses the current folder as the default for this parameter. You can use this method with any handler to assign a default value to one or more of the parameters. Just check whether the parameter is empty. If it is, then no value has been passed, and you can simply put the desired default into the parameter.</p>
+<p></p>
+<p>The relative path to the current folder is ".", so if the absolutePath and the startingFolder are the same, the function returns ".".</p>
+<p></p>
+<p>Now the handler begins comparing the two absolute paths--the absolutePath and the startingFolder--to see what parts of the folder structure they have in common. Let's look at two paths to see how this comparison works.</p>
+<p></p>
+<p>Suppose the startingFolder is "/Disk/Applications/Spreadsheets/" and the absolutePath is "/Disk/Applications/Graphics/ImageEdit". The first two parts--the first two items, with the itemDelimiter set to "/"--are the same, so they won't be needed to create a relative path that starts from one and moves to the other.</p>
+<p></p>
+<p>The <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> control structure moves through the two paths, item by item, and deletes the items they have in common. When the loop comes to an item that they don't have in common, it uses the </font><font face="Courier" size="11">exit repeat</font><font face="helvetica" size="12"> control structure to stop the loop. (Because we're using the simple repeat form of the repeat control structure--which can also be written repeat forever--we need to execute an exit repeat at some point. Otherwise, the repeat loop would just keep going.)</font></p>
+<p></p>
+<p>The startingFolder now is "Spreadsheets/", and the absolutePath now is "Graphics/ImageEdit". This is the part of the absolutePath that isn't in common with the startingFolder, so it's the part that's essential to finding the "ImageEdit" file from the startingFolder.</p>
+<p></p>
+<p>We need to do one more thing: figure out how many levels from the startingFolder to move up before we can find the "Graphics" folder. We can find this out by looking at what's left of the startingFolder. The number of items remaining in the startingFolder is the number of levels we will have to move up. The string "../" in a relative path means "go up one level", so we prepend this string the necessary number of times to the absolutePath.</p>
+<p></p>
+<p>In our example, there's one item left in the startingFolder, so the final relative path is "../Graphics/ImageEdit". This means "Starting at the Spreadsheets folder, go up one level to Applications. Then go down to the Graphics folder, and down once more to the ImageEdit file." You can read the relative path as a list of directions for how to start from the original startingFolder and get to the destination.</p>

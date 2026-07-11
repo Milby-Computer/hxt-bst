@@ -1,0 +1,23 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom command is used with the following statement:</p>
+<p></p>
+<p>  <font face="Courier" size="11">checkForScreenSize</font></p>
+<p></p>
+<p>You might call it in a stack's startup or <font face="Courier" size="11">preOpenStack</font><font face="helvetica" size="12"> handler.:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">on</font><font face="Courier" size="11"> openStack</font></p>
+<p><font face="Courier" size="11">    checkForScreenSize</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> openStack</font></p>
+<p></p>
+<p>This handler is simple, taking no parameters. It checks the last two items of <font face="Courier" size="11">the </font><font face="Courier" size="11" color="#F88017">screenRect</font><font face="helvetica" size="12"> function--the width and height of the main screen. If the main screen is smaller than 1024x768 pixels, in either dimension, it quits the application after displaying a dialog box with an explanation.</font></p>
+<p></p>
+<p>This example quits the application if the specified condition isn't met. Of course, you should use such a handler only if your application actually requires a screen of this size. If the application does not actually require this screen size, but does work better with a large screen, it's better to display a dialog box but not quit the program, in case the user prefers to continue with the lower resolution (or has a screen that can't be used at high resolution).</p>
+<p></p>
+<p>You can write a similar handler to check for any condition that your application requires. For example, here is a variation to use if your application requires QuickTime 3.0 to be installed:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">on</font><font face="Courier" size="11"> checkForQuickTime</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#980517">if</font><font face="Courier" size="11"> the </font><font face="Courier" size="11" color="#F88017">QTVersion</font><font face="Courier" size="11"> &lt; 3.0 </font><font face="Courier" size="11" color="#980517">then</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">answer</font><font face="Courier" size="11"> "SuperApp requires QuickTime 3.0." </font><font face="Courier" size="11" color="#980517">with</font><font face="Courier" size="11"> "Sorry"</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">quit</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">if</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> checkForQuickTime</font></p>

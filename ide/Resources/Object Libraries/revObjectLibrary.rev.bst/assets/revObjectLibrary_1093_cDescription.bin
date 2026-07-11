@@ -1,0 +1,20 @@
+Scripted button. Increments a number in a specified field between specified maximum and minimum values.
+
+Set the cTargetField of the button to the short name of the field on which it is to act.
+
+The following custom properties should be set on the field on which the button is to act:
+
+cMinValue - minimum value the field should be set to.
+cMaxValue - maximum value the field should be set to.
+
+Note: A closeField message is sent to the field after the button is used. To avoid a script error, handle the closeField message in the field or comment the relevant line in the button.
+
+The button references 3 images. The ids for these images are stored in the following custom properties set on the button:
+
+cIcon
+cUpIcon
+cDownIcon
+
+The icon of the button can be set to the cDisabledIcon of the button for a disabled appearance.
+
+Note that this control requires the "Revolution Icons" image library to be tranferred to your stack using Distribution Builder when you are preparing your stack for distribution.

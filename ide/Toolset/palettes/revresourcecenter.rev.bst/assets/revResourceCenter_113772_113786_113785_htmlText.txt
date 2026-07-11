@@ -1,0 +1,9 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> withoutLeadingArticle theTitle</p>
+<p>  <font color="#0000FF">get</font> word 1 of theTitle</p>
+<p>  <font color="#980517">if</font> it is "The" or it is "An" or it is "A" <font color="#980517">then</font></p>
+<p>    <font color="#68228B">-- we don't want to use it for the sort:</font></p>
+<p>    <font color="#0000FF">delete</font> word 1 of theTitle</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#0000FF">return</font> theTitle</p>
+<p><font color="#980517">end</font> withoutLeadingArticle</p>

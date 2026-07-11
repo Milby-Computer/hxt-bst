@@ -1,0 +1,16 @@
+<p>revCloseStack</p>
+<p>revEditScript</p>
+<p>revIDChanged</p>
+<p>revMouseMove</p>
+<p>revMoveControl</p>
+<p>revNameChanged</p>
+<p>revNewTool</p>
+<p>revPreOpenCard</p>
+<p>revPreOpenStack</p>
+<p>revResizeControl</p>
+<p>revResizeStack</p>
+<p>revResumeStack</p>
+<p>revSaveStackRequest</p>
+<p>revSelectedObjectChanged</p>
+<p>revSelectionChanged</p>
+<p>revShutdown</p>

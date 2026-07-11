@@ -1,0 +1,11 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> rawKeyDown</p>
+<p>  <font color="#980517">if</font> the <font color="#FF0000">formattedHeight</font> of <font color="#F88017">me</font> &gt; the <font color="#FF0000">height</font> of <font color="#F88017">me</font> <font color="#980517">then</font></p>
+<p>    <font color="#68228B">-- there's too much text to fit, so show a scrollbar:</font></p>
+<p>    <font color="#0000FF">set</font> the <font color="#FF0000">vScrollbar</font> of <font color="#F88017">me</font> to true</p>
+<p>  <font color="#980517">else</font> <font color="#68228B">-- text will fit without scrolling</font></p>
+<p>    <font color="#68228B">-- get rid of the scrollbar</font></p>
+<p>    <font color="#0000FF">set</font> the <font color="#FF0000">vScrollbar</font> of <font color="#F88017">me</font> to false</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#0000FF">pass</font> rawKeyDown <font color="#68228B">-- let the keystroke be processed normally</font></p>
+<p><font color="#980517">end</font> rawKeyDown </p>

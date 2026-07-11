@@ -1,0 +1,6 @@
+<p><font size="12" color="#000000">First we need to start by creating a UI element template. We can then clone this template to create a list of elements making up our blind.</font></p>
+<p></p>
+<p><font size="12" color="#000000">We start off by creating two rectangular graphics, that will form the backgrounds of our element. We place these underneath each other so that we can see what the blind element would look like in its extended form. We then group both rectangles seperately naming the top group &quot;Main&quot; and the lower one &quot;Slider&quot;, say, as it will be the group that &quot;slides&quot; out. We group both of these groups together in an umbrella group we shall call &quot;Element Template&quot;.</font></p>
+<p><font size="12" color="#000000">We do not wish our groups to have any visible margins, so we set the margins of all our groups to 0. (You can do this by going to the &quot;Text Formatting&quot; pane of the property inspector, or issuing the command directly in the message box).</font></p>
+<p></p>
+<p><font size="12" color="#000000">We now have something that looks like this:</font></p>

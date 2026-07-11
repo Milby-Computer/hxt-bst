@@ -1,0 +1,35 @@
+Custom Urls
+Notifications
+Graphic rendering
+Browser Control
+PDF Printing
+Compose Mail
+Gradient Bug
+Visual Effects
+Controls
+Text Field
+Multiline Text Field
+iPhone Tests
+URL functions
+In-App Purchase
+Touch Screen
+Scroller Control
+Play Movie
+Status Bar Configuration
+Keyboard
+Pick Wheel
+Pick Wheel (Unicode)
+DatePicker
+Media Picker
+Question Answer Password
+idle timer
+Externals
+System
+Take Photo
+Native Controls
+Clear Touches
+Snapshot
+Heading and Location
+Rotation Rate
+Activity Indicator
+Vibrate

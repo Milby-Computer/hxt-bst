@@ -1,0 +1,15 @@
+<p>move to start of line</p>
+<p>previous character</p>
+<p>delete next character</p>
+<p>end of line</p>
+<p>next character</p>
+<p>delete previous character</p>
+<p>cut to end of line</p>
+<p>?</p>
+<p>down one line</p>
+<p>up one line</p>
+<p>page down</p>
+<p>paste</p>
+<p>focus first control</p>
+<p>focus last control</p>
+<p>delete previous word</p>

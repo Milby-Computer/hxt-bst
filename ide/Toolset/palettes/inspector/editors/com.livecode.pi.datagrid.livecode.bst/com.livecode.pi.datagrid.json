@@ -1,0 +1,103 @@
+{
+   "#mainstack": "com.livecode.pi.datagrid",
+   "com.livecode.pi.datagrid": {
+      "#name": "stack \"com.livecode.pi.datagrid\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1012": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1053": {
+                        "#name": "group \"row template\"",
+                        "childcontrols": {
+                           "1059": {
+                              "#name": "button \"row template\"",
+                              "properties": {
+                                 "id": "1059",
+                                 "label": "Row Template...",
+                                 "layer": "3",
+                                 "margins": "8",
+                                 "name": "row template",
+                                 "rect": "147,296,229,319",
+                                 "showFocusBorder": false,
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1053",
+                           "layer": "2",
+                           "margins": "0",
+                           "name": "row template",
+                           "rect": "147,296,229,319"
+                        }
+                     },
+                     "1061": {
+                        "#name": "group \"refresh data grid\"",
+                        "childcontrols": {
+                           "1063": {
+                              "#name": "button \"refresh data grid\"",
+                              "properties": {
+                                 "id": "1063",
+                                 "label": "Refresh Data Grid",
+                                 "layer": "5",
+                                 "margins": "8",
+                                 "name": "refresh data grid",
+                                 "rect": "148,341,230,364",
+                                 "showFocusBorder": false,
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1061",
+                           "layer": "4",
+                           "margins": "0",
+                           "name": "refresh data grid",
+                           "rect": "148,341,230,364"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "editorValue": {
+                        "allow column resizing": false,
+                        "allow editing": false,
+                        "alternate row colors": false,
+                        "auto hilite": false,
+                        "cache controls": false,
+                        "multiple lines": false,
+                        "persistent data": false,
+                        "row height": null,
+                        "style": "table"
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1009 of stack \"com.livecode.pi.datagrid\"",
+                     "id": "1012",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "147,296,230,364"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"com.livecode.pi.datagrid\"",
+      "properties": {
+         "fileName": "com.livecode.pi.datagrid.livecode",
+         "id": "1064",
+         "name": "com.livecode.pi.datagrid",
+         "rect": "664,173,1010,603"
+      },
+      "sharedGroupIDs": null
+   }
+}

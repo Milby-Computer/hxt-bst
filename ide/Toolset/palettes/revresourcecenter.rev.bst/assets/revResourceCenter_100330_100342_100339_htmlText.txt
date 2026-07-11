@@ -1,0 +1,10 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom command is used with the following statement:</p>
+<p></p>
+<p><font face="Courier" size="11">  createFontMenu</font></p>
+<p></p>
+<p>It assumes that there is already a button called "Font". Usually this button will be part of a group of buttons that makes up a menu bar. Remember that in Revolution, menus are implemented as buttons, and a menu bar is a group of menu buttons. The list of fonts is placed in the button, and each line of the button contents becomes a separate menu item when the menu is displayed.</p>
+<p></p>
+<p>The handler first uses <font face="Courier" size="11">the fontNames</font><font face="helvetica" size="12"> function to obtain a list of installed fonts. Since the list may not be returned in alphabetical order, the handler next sorts the list. Finally, it puts the list into the button's contents.</font></p>
+<p></p>
+<p>You would probably use the "createFontMenu" custom command in your application's startup handler, as part of setting up and initializing the application.</p>

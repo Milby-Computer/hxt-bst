@@ -1,0 +1,106 @@
+{
+   "#mainstack": "com.livecode.pi.script",
+   "com.livecode.pi.script": {
+      "#name": "stack \"com.livecode.pi.script\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1007": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1008": {
+                        "#name": "field \"Field\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1008",
+                           "layer": "2",
+                           "name": "Field",
+                           "rect": "58,65,198,86",
+                           "textSize": "12"
+                        }
+                     },
+                     "1009": {
+                        "#name": "button \"Edit Script\"",
+                        "properties": {
+                           "id": "1009",
+                           "label": "Edit Script",
+                           "layer": "3",
+                           "margins": "8",
+                           "name": "Edit Script",
+                           "rect": "56,92,138,115",
+                           "showFocusBorder": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1010": {
+                        "#name": "widget \"Select\"",
+                        "$kind": "com.livecode.widget.svgpath",
+                        "$state": {
+                           "angle": "0",
+                           "fillRule": "non-zero",
+                           "flip vertically": false,
+                           "hilited": false,
+                           "iconPresetName": "Star",
+                           "maintain aspect ratio": true,
+                           "svg path": "%file%: assets/com.livecode.pi.script_1002_1007_1010_svg path.txt"
+                        },
+                        "properties": {
+                           "id": "1010",
+                           "name": "Select",
+                           "rect": "202,68,224,84"
+                        }
+                     },
+                     "1011": {
+                        "#name": "button \"Inspect object\"",
+                        "properties": {
+                           "id": "1011",
+                           "layer": "5",
+                           "margins": "8",
+                           "name": "Inspect object",
+                           "rect": "144,92,258,114",
+                           "showFocusBorder": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1012": {
+                        "#name": "button \"Menu\"",
+                        "properties": {
+                           "id": "1012",
+                           "layer": "6",
+                           "menuMode": "popup",
+                           "name": "Menu",
+                           "rect": "96,137,178,160",
+                           "style": "menu",
+                           "traversalOn": false,
+                           "visible": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1007",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "56,65,258,115"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"com.livecode.pi.script\"",
+      "properties": {
+         "fileName": "com.livecode.pi.script.livecode",
+         "id": "1012",
+         "name": "com.livecode.pi.script",
+         "rect": "728,681,1128,1081"
+      },
+      "sharedGroupIDs": null
+   }
+}

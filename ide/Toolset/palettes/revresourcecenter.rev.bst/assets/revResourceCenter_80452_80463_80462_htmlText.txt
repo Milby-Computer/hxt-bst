@@ -1,0 +1,18 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> RGBFromColorName theColor</p>
+<p>  <font color="#980517">if</font> theColor is not a color <font color="#980517">then</font> <font color="#0000FF">return</font> "Error: not a color"</p>
+<p>  <font color="#68228B">-- create a temporary object for the color transformation:</font></p>
+<p>  <font color="#0000FF">create</font> <font color="#FF0000">invisible</font> button</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> <font color="#0000FF">return</font> "Error"</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">backgroundColor</font> of last button to theColor</p>
+<p>  <font color="#68228B">-- transform the color using the backgroundPixel trick:</font></p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">backgroundPixel</font> of last button to \</p>
+<p>      the <font color="#FF0000">backgroundPixel</font> of last button</p>
+<p>  <font color="#68228B">-- the button's backgroundColor is now RGB:</font></p>
+<p>  <font color="#0000FF">get</font> the <font color="#FF0000">backgroundColor</font> of last button</p>
+<p>  <font color="#0000FF">delete</font> last button <font color="#68228B">-- don't need the temp object any more</font></p>
+<p>  <font color="#68228B">-- the create command automatically chose the pointer</font></p>
+<p>  <font color="#68228B">-- tool, so change it back:</font></p>
+<p>  <font color="#0000FF">send</font> "choose browse tool" to <font color="#F88017">me</font> in 10 <font color="#F88017">milliseconds</font></p>
+<p>  <font color="#0000FF">return</font> it</p>
+<p><font color="#980517">end</font> RGBFromColorName</p>

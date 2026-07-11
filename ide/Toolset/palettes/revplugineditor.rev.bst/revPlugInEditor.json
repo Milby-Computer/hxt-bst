@@ -1,0 +1,421 @@
+{
+   "#mainstack": "revPlugInEditor",
+   "revPlugInEditor": {
+      "#name": "stack \"revPlugInEditor\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"list\"",
+                  "customproperties": {
+                     "cMenuList": "%file%: assets/revPlugInEditor_1002_1004_cMenuList.bin",
+                     "cStacksList": "/Users/gheizhwinder/Programming/livecode/ide/Plugins/revSmartProperties 1.2.rev"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1004",
+                     "label": "RegExBuilder",
+                     "layer": "14",
+                     "menuHistory": "3",
+                     "menuLines": "7",
+                     "menuMode": "option",
+                     "name": "list",
+                     "rect": "144,18,359,41",
+                     "style": "menu",
+                     "text": "GoRevNet\nlivecodeTestInterface\nRegExBuilder\nrevApplicationOverview\nrevExample\nrevNavigator\nrevSmartSave\nrevTabRuler\nrGridEngine\nSmartProperties",
+                     "textAlign": "left",
+                     "toolTip": "The settings will be applied to this stack in the Plugins folder",
+                     "traversalOn": false
+                  }
+               },
+               "1039": {
+                  "#name": "field \"Messages label\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>Send messages to plugin:</p>",
+                     "id": "1039",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "Messages label",
+                     "opaque": false,
+                     "rect": "314,70,502,94",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1074": {
+                  "#name": "field \"Message List\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVDatabase": {
+                        "databasename": null,
+                        "host": null,
+                        "pass": null,
+                        "user": null
+                     }
+                  },
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/revPlugInEditor_1002_1074_htmlText.txt",
+                     "id": "1074",
+                     "layer": "3",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "multipleHilites": true,
+                     "name": "Message List",
+                     "noncontiguousHilites": true,
+                     "rect": "332,96,520,332",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "toggleHilites": true,
+                     "toolTip": "Click a message name to send it to the plugin whenever Revolution receives the corresponding system message",
+                     "vScrollbar": true
+                  }
+               },
+               "1076": {
+                  "#name": "group \"Open plugin:\"",
+                  "childcontrols": {
+                     "1010": {
+                        "#name": "group \"Open as:\"",
+                        "childcontrols": {
+                           "1053": {
+                              "#name": "button \"Modeless\"",
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "id": "1053",
+                                 "label": "Modeless dialog box",
+                                 "layer": "10",
+                                 "name": "Modeless",
+                                 "opaque": false,
+                                 "rect": "140,189,285,207",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "1054": {
+                              "#name": "button \"Palette\"",
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "hilited": true,
+                                 "id": "1054",
+                                 "layer": "11",
+                                 "name": "Palette",
+                                 "opaque": false,
+                                 "rect": "140,212,210,230",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "1055": {
+                              "#name": "button \"Modal\"",
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "id": "1055",
+                                 "label": "Modal dialog box",
+                                 "layer": "12",
+                                 "name": "Modal",
+                                 "opaque": false,
+                                 "rect": "140,235,267,253",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "1078": {
+                              "#name": "button \"Invisible\"",
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "id": "1078",
+                                 "layer": "13",
+                                 "name": "Invisible",
+                                 "opaque": false,
+                                 "rect": "140,258,219,276",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "hilitedButton": "2",
+                           "id": "1010",
+                           "label": "Open plugin as:",
+                           "layer": "9",
+                           "lockLoc": true,
+                           "margins": "4,2,4,500",
+                           "name": "Open as:",
+                           "rect": "135,157,306,277"
+                        }
+                     },
+                     "1027": {
+                        "#name": "group \"Load:\"",
+                        "childcontrols": {
+                           "1056": {
+                              "#name": "button \"chosen\"",
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "hilited": true,
+                                 "id": "1056",
+                                 "label": "Chosen from Plugins menu",
+                                 "layer": "6",
+                                 "name": "chosen",
+                                 "opaque": false,
+                                 "rect": "140,98,320,116",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left",
+                                 "toolTip": "The plugin window will not open until you choose it from the menu"
+                              }
+                           },
+                           "1057": {
+                              "#name": "button \"startup\"",
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "id": "1057",
+                                 "label": "LiveCode starts up",
+                                 "layer": "7",
+                                 "name": "startup",
+                                 "opaque": false,
+                                 "rect": "140,75,283,93",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left",
+                                 "toolTip": "The plugin window will open automatically when LiveCode\n opens"
+                              }
+                           },
+                           "1058": {
+                              "#name": "button \"shutdown\"",
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "id": "1058",
+                                 "label": "LiveCode quits",
+                                 "layer": "8",
+                                 "name": "shutdown",
+                                 "opaque": false,
+                                 "rect": "140,121,262,139",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left",
+                                 "toolTip": "The plugin window will open automatically when you quit"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "hilitedButton": "1",
+                           "id": "1027",
+                           "label": "Open plugin when:",
+                           "layer": "5",
+                           "lockLoc": true,
+                           "name": "Load:",
+                           "rect": "134,60,323,149"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1076",
+                     "layer": "4",
+                     "margins": "10",
+                     "name": "Open plugin:",
+                     "rect": "124,50,333,287"
+                  }
+               },
+               "1080": {
+                  "#name": "field \"Plugins label\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Plugin:</p>",
+                     "id": "1080",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "Plugins label",
+                     "opaque": false,
+                     "rect": "66,16,145,40",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1082": {
+                  "#name": "field \"New Field 1\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Open plugin when:</p>",
+                     "id": "1082",
+                     "layer": "15",
+                     "lockText": true,
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "2,70,145,94",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1083": {
+                  "#name": "field \"New Field 1\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVDatabase": {
+                        "databasename": null,
+                        "host": null,
+                        "pass": null,
+                        "user": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Open as:</p>",
+                     "id": "1083",
+                     "layer": "16",
+                     "lockText": true,
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "43,164,145,188",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1084": {
+                  "#name": "graphic \"New Graphic 1\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "filled": true,
+                     "foreColor": "128,128,128",
+                     "id": "1084",
+                     "layer": "17",
+                     "name": "New Graphic 1",
+                     "opaque": true,
+                     "points": "144,183\n304,183",
+                     "rect": "143,182,305,184",
+                     "style": "line"
+                  }
+               },
+               "1090": {
+                  "#name": "graphic \"New Graphic 1\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "filled": true,
+                     "foreColor": "128,128,128",
+                     "id": "1090",
+                     "layer": "18",
+                     "name": "New Graphic 1",
+                     "opaque": true,
+                     "points": "145,59\n519,59",
+                     "rect": "144,58,520,60",
+                     "style": "line"
+                  }
+               },
+               "1098": {
+                  "#name": "button \"Include in Plug-ins menu\"",
+                  "properties": {
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1098",
+                     "layer": "19",
+                     "name": "Include in Plug-ins menu",
+                     "opaque": false,
+                     "rect": "164,145,332,168",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               }
+            },
+            "customproperties": {
+               "revcard": false
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "166"
+               },
+               "cREVGeometryCache": {
+                  "order": null,
+                  "total": "19"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "changedStacksList": null,
+         "cVersionNo": "2.6.1",
+         "revstack": false,
+         "Tabs": false
+      },
+      "custompropertysets": {
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         },
+         "cREVGeometryCache": {
+            "stackID": "1098"
+         }
+      },
+      "longID": "stack \"revPlugInEditor\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "title,menu,minimize,close",
+         "fileName": "revplugineditor.rev",
+         "id": "1098",
+         "liveResizing": false,
+         "name": "revPlugInEditor",
+         "rect": "269,81,809,433",
+         "resizable": false,
+         "title": "Plugin Settings"
+      },
+      "sharedGroupIDs": null
+   }
+}

@@ -1,0 +1,114 @@
+{
+   "#mainstack": "com.livecode.pi.textstyle",
+   "com.livecode.pi.textstyle": {
+      "#name": "stack \"com.livecode.pi.textstyle\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1012": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1011": {
+                        "#name": "widget id 1011",
+                        "$kind": "com.livecode.widget.segmented",
+                        "$state": {
+                           "multiSelect": true,
+                           "segmentDisplay": "icons",
+                           "segmentIcons": [
+                              "bold",
+                              "italic",
+                              "underline",
+                              "square alt",
+                              "cube",
+                              "link",
+                              "strikethrough"
+                           ],
+                           "segmentLabels": [
+                              "bold",
+                              "italic",
+                              "underline",
+                              "box",
+                              "threedbox",
+                              "link",
+                              "strikeout"
+                           ],
+                           "segmentMinWidth": [
+                              "30",
+                              "30",
+                              "30",
+                              "30",
+                              "30",
+                              "30",
+                              "30"
+                           ],
+                           "segmentNames": [
+                              "bold",
+                              "italic",
+                              "underline",
+                              "box",
+                              "threedbox",
+                              "link",
+                              "strikeout"
+                           ],
+                           "selectedIcons": [
+                              "bold",
+                              "italic",
+                              "underline",
+                              "square alt",
+                              "cube",
+                              "link",
+                              "strikethrough"
+                           ],
+                           "selectedLabelColor": "255,255,255",
+                           "selectedSegment": null,
+                           "showFrameBorder": true
+                        },
+                        "customproperties": {
+                           "textalign": null
+                        },
+                        "properties": {
+                           "id": "1011",
+                           "name": "widget id 1011",
+                           "rect": "86,80,300,104"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1012",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "86,80,300,104"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "2"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1012"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.textstyle\"",
+      "properties": {
+         "fileName": "com.livecode.pi.textstyle.livecode",
+         "id": "1012",
+         "name": "com.livecode.pi.textstyle",
+         "rect": "1320,105,1910,408"
+      },
+      "sharedGroupIDs": null
+   }
+}

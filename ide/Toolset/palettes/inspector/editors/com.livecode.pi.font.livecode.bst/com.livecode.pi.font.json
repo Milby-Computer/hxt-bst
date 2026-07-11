@@ -1,0 +1,57 @@
+{
+   "#mainstack": "com.livecode.pi.font",
+   "com.livecode.pi.font": {
+      "#name": "stack \"com.livecode.pi.font\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1012": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1014": {
+                        "#name": "button \"ComboBox Menu\"",
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1014",
+                           "label": "Choice 1",
+                           "layer": "2",
+                           "menuMode": "combobox",
+                           "name": "ComboBox Menu",
+                           "rect": "104,88,206,110",
+                           "style": "menu",
+                           "text": "Choice 1\nChoice 2\nChoice 3"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1012",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "104,88,206,110"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cRevStandaloneSettings": null
+      },
+      "longID": "stack \"com.livecode.pi.font\"",
+      "properties": {
+         "fileName": "com.livecode.pi.font.livecode",
+         "id": "1016",
+         "name": "com.livecode.pi.font",
+         "rect": "207,215,607,615"
+      },
+      "sharedGroupIDs": null
+   }
+}

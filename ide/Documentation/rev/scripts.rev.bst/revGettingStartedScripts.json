@@ -1,0 +1,3710 @@
+{
+   "#mainstack": "revGettingStartedScripts",
+   "revGettingStartedScripts": {
+      "#name": "stack \"revGettingStartedScripts\"",
+      "#substacks": null,
+      "backgroundIDs": "1121\n1156\n1186\n1235\n1244\n1259\n1265",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "group \"Displaying a count down (blocking) Example\"",
+                  "childcontrols": {
+                     "1004": {
+                        "#name": "button \"Example\"",
+                        "properties": {
+                           "id": "1004",
+                           "label": "99 Bottles of Beer",
+                           "layer": "2",
+                           "name": "Example",
+                           "rect": "143,438,262,464"
+                        }
+                     },
+                     "1005": {
+                        "#name": "field \"Song\"",
+                        "properties": {
+                           "id": "1005",
+                           "layer": "3",
+                           "lockText": true,
+                           "name": "Song",
+                           "opaque": false,
+                           "rect": "8,469,381,516",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "center",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1003",
+                     "layer": "1",
+                     "lockLoc": true,
+                     "name": "Displaying a count down (blocking) Example",
+                     "rect": "4,434,385,520"
+                  }
+               },
+               "1006": {
+                  "#name": "group \"Displaying a count down (non-blocking) Example\"",
+                  "childcontrols": {
+                     "1007": {
+                        "#name": "button \"Example\"",
+                        "properties": {
+                           "id": "1007",
+                           "label": "99 Bottles of Beer",
+                           "layer": "5",
+                           "name": "Example",
+                           "rect": "143,438,262,464"
+                        }
+                     },
+                     "1008": {
+                        "#name": "field \"Song\"",
+                        "properties": {
+                           "id": "1008",
+                           "layer": "6",
+                           "lockText": true,
+                           "name": "Song",
+                           "opaque": false,
+                           "rect": "8,469,381,516",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "center",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1006",
+                     "layer": "4",
+                     "lockLoc": true,
+                     "name": "Displaying a count down (non-blocking) Example",
+                     "rect": "4,434,385,520"
+                  }
+               },
+               "1009": {
+                  "#name": "group \"Text search box Example\"",
+                  "childcontrols": {
+                     "1010": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Enter text in the field below and press Return to search for it:</p>",
+                           "id": "1010",
+                           "layer": "8",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "rect": "8,438,180,473",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1011": {
+                        "#name": "field \"Find Example\"",
+                        "properties": {
+                           "dontSearch": true,
+                           "id": "1011",
+                           "layer": "9",
+                           "name": "Find Example",
+                           "rect": "9,472,199,493",
+                           "sharedText": true
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1009",
+                     "layer": "7",
+                     "lockLoc": true,
+                     "name": "Text search box Example",
+                     "rect": "4,434,203,497",
+                     "tabGroupBehavior": true
+                  }
+               },
+               "1012": {
+                  "#name": "group \"Scrolling text banner Example\"",
+                  "childcontrols": {
+                     "1013": {
+                        "#name": "field \"Label\"",
+                        "properties": {
+                           "htmlText": "<p>Click below to start the banner:</p>",
+                           "id": "1013",
+                           "layer": "11",
+                           "lockText": true,
+                           "name": "Label",
+                           "opaque": false,
+                           "rect": "8,438,210,462",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "transparent",
+                           "threeD": false
+                        }
+                     },
+                     "1014": {
+                        "#name": "field \"Animation\"",
+                        "properties": {
+                           "borderWidth": "1",
+                           "bottomColor": "88,88,88",
+                           "dontWrap": true,
+                           "foreColor": "0,8,216",
+                           "id": "1014",
+                           "layer": "12",
+                           "lockText": true,
+                           "margins": "0",
+                           "name": "Animation",
+                           "rect": "10,459,212,491",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "textFont": "Arial Black",
+                           "textHeight": "32",
+                           "textSize": "18",
+                           "textStyle": "plain",
+                           "topColor": "192,192,192"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1012",
+                     "layer": "10",
+                     "lockLoc": true,
+                     "name": "Scrolling text banner Example",
+                     "rect": "4,434,216,495",
+                     "tabGroupBehavior": true
+                  }
+               },
+               "1015": {
+                  "#name": "group \"Responding to a choice in a Window menu Example\"",
+                  "childcontrols": {
+                     "1016": {
+                        "#name": "field \"Caption\"",
+                        "properties": {
+                           "htmlText": "<p>Choose an open stack from the Window menu. (Option-click or Alt-click to include palette and dialog box windows.)</p>",
+                           "id": "1016",
+                           "layer": "14",
+                           "lockText": true,
+                           "name": "Caption",
+                           "rect": "8,473,227,532",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1017": {
+                        "#name": "group \"Menubar\"",
+                        "childcontrols": {
+                           "1018": {
+                              "#name": "button \"Window\"",
+                              "customproperties": {
+                                 "currentStacksList": "LearningCenterScripts\n"
+                              },
+                              "properties": {
+                                 "accelMods": "command",
+                                 "id": "1018",
+                                 "layer": "16",
+                                 "menuMode": "option",
+                                 "name": "Window",
+                                 "rect": "18,444,164,466",
+                                 "showBorder": false,
+                                 "style": "menu",
+                                 "text": " Learning Center Script Resources\n",
+                                 "textAlign": "left",
+                                 "textFont": " ",
+                                 "textSize": "12",
+                                 "textStyle": "plain",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1017",
+                           "layer": "15",
+                           "name": "Menubar",
+                           "rect": "14,440,168,470"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1015",
+                     "layer": "13",
+                     "lockLoc": true,
+                     "name": "Responding to a choice in a Window menu Example",
+                     "rect": "4,434,231,536",
+                     "tabGroupBehavior": true
+                  }
+               },
+               "1019": {
+                  "#name": "group \"Link text roll over effect Example\"",
+                  "childcontrols": {
+                     "1020": {
+                        "#name": "field \"Highlighted Text Sample\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "%file%: assets/revGettingStartedScripts_1002_1019_1020_cREVTable_currentview.bin"
+                           }
+                        },
+                        "properties": {
+                           "borderColor": "160,160,160",
+                           "borderWidth": "1",
+                           "bottomColor": "148,148,148",
+                           "htmlText": "%file%: assets/revGettingStartedScripts_1002_1019_1020_htmlText.txt",
+                           "id": "1020",
+                           "layer": "18",
+                           "lockText": true,
+                           "margins": "12",
+                           "name": "Highlighted Text Sample",
+                           "rect": "8,438,229,588",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "threeD": false,
+                           "topColor": "232,232,232",
+                           "traversalOn": false
+                        }
+                     },
+                     "1021": {
+                        "#name": "button \"Underline Links\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1021",
+                           "layer": "19",
+                           "name": "Underline Links",
+                           "opaque": false,
+                           "rect": "57,588,175,608",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1019",
+                     "layer": "17",
+                     "lockLoc": true,
+                     "name": "Link text roll over effect Example",
+                     "rect": "4,434,233,610"
+                  }
+               },
+               "1022": {
+                  "#name": "group \"Inserting some text before each line in a field Example\"",
+                  "childcontrols": {
+                     "1023": {
+                        "#name": "field \"List\"",
+                        "properties": {
+                           "id": "1023",
+                           "layer": "21",
+                           "name": "List",
+                           "rect": "9,482,259,624",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1025": {
+                        "#name": "button \"Add prefix:\"",
+                        "properties": {
+                           "id": "1025",
+                           "layer": "22",
+                           "name": "Add prefix:",
+                           "rect": "9,439,110,464"
+                        }
+                     },
+                     "1026": {
+                        "#name": "field \"Prefix\"",
+                        "properties": {
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "id": "1026",
+                           "layer": "23",
+                           "name": "Prefix",
+                           "rect": "113,438,259,464",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1027": {
+                        "#name": "field \"New Field 1\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>to each line in:</p>",
+                           "id": "1027",
+                           "layer": "24",
+                           "lockText": true,
+                           "name": "New Field 1",
+                           "opaque": false,
+                           "rect": "8,462,122,484",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1022",
+                     "layer": "20",
+                     "lockLoc": true,
+                     "name": "Inserting some text before each line in a field Example",
+                     "rect": "4,434,263,628"
+                  }
+               },
+               "1028": {
+                  "#name": "group \"Show or hide a scrollbar automatically as text is entered in a field Example\"",
+                  "childcontrols": {
+                     "1029": {
+                        "#name": "field \"Example\"",
+                        "customproperties": {
+                           "originalText": "Type some text into this field. When the text overflows the field, the field acquires a scrollbar. Deleting text removes the scrollbar.\n\nAdd some text to see:\n"
+                        },
+                        "properties": {
+                           "htmlText": "<p>Type some text into this field. When the text overflows the field, the field acquires a scrollbar. Deleting text removes the scrollbar.</p>\n<p></p>\n<p>Add some text to see:</p>",
+                           "id": "1029",
+                           "layer": "26",
+                           "name": "Example",
+                           "rect": "8,438,221,548",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1028",
+                     "layer": "25",
+                     "lockLoc": true,
+                     "name": "Show or hide a scrollbar automatically as text is entered in a field Example",
+                     "rect": "4,434,225,552"
+                  }
+               },
+               "1031": {
+                  "#name": "group \"Compare numbers approximately Example\"",
+                  "childcontrols": {
+                     "1032": {
+                        "#name": "field \"First Number\"",
+                        "properties": {
+                           "htmlText": "<p>3.48</p>",
+                           "id": "1032",
+                           "layer": "28",
+                           "name": "First Number",
+                           "rect": "32,438,86,458",
+                           "sharedText": true,
+                           "textAlign": "right"
+                        }
+                     },
+                     "1033": {
+                        "#name": "field \"Tolerance\"",
+                        "properties": {
+                           "htmlText": "<p>0.1</p>",
+                           "id": "1033",
+                           "layer": "29",
+                           "name": "Tolerance",
+                           "rect": "132,438,190,458",
+                           "sharedText": true,
+                           "textAlign": "right"
+                        }
+                     },
+                     "1034": {
+                        "#name": "field \"Second Number\"",
+                        "properties": {
+                           "htmlText": "<p>3.52</p>",
+                           "id": "1034",
+                           "layer": "30",
+                           "name": "Second Number",
+                           "rect": "209,438,267,458",
+                           "sharedText": true,
+                           "textAlign": "right"
+                        }
+                     },
+                     "1035": {
+                        "#name": "button \"Compare\"",
+                        "properties": {
+                           "id": "1035",
+                           "layer": "31",
+                           "name": "Compare",
+                           "rect": "113,474,192,498"
+                        }
+                     },
+                     "1036": {
+                        "#name": "field \"Is Label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Is</p>",
+                           "id": "1036",
+                           "layer": "32",
+                           "lockText": true,
+                           "name": "Is Label",
+                           "opaque": false,
+                           "rect": "8,438,34,458",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1037": {
+                        "#name": "field \"Within Label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>within</p>",
+                           "id": "1037",
+                           "layer": "33",
+                           "lockText": true,
+                           "name": "Within Label",
+                           "opaque": false,
+                           "rect": "80,438,140,458",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "center",
+                           "traversalOn": false
+                        }
+                     },
+                     "1038": {
+                        "#name": "field \"of Label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>of</p>",
+                           "id": "1038",
+                           "layer": "34",
+                           "lockText": true,
+                           "name": "of Label",
+                           "opaque": false,
+                           "rect": "187,438,213,458",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "center",
+                           "traversalOn": false
+                        }
+                     },
+                     "1039": {
+                        "#name": "field \"question Label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>?</p>",
+                           "id": "1039",
+                           "layer": "35",
+                           "lockText": true,
+                           "name": "question Label",
+                           "opaque": false,
+                           "rect": "262,438,288,458",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "button id 39836": false
+                  },
+                  "properties": {
+                     "id": "1031",
+                     "layer": "27",
+                     "lockLoc": true,
+                     "name": "Compare numbers approximately Example",
+                     "rect": "4,434,292,498"
+                  }
+               },
+               "1040": {
+                  "#name": "group \"Combine random text strings Example\"",
+                  "childcontrols": {
+                     "1041": {
+                        "#name": "field \"firstAdjectiveList\"",
+                        "properties": {
+                           "htmlText": "%file%: assets/revGettingStartedScripts_1002_1040_1041_htmlText.txt",
+                           "id": "1041",
+                           "layer": "37",
+                           "name": "firstAdjectiveList",
+                           "rect": "234,456,425,515",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1043": {
+                        "#name": "field \"secondAdjectiveList\"",
+                        "properties": {
+                           "htmlText": "%file%: assets/revGettingStartedScripts_1002_1040_1043_htmlText.txt",
+                           "id": "1043",
+                           "layer": "38",
+                           "name": "secondAdjectiveList",
+                           "rect": "234,535,425,594",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1045": {
+                        "#name": "field \"nounsList\"",
+                        "properties": {
+                           "htmlText": "%file%: assets/revGettingStartedScripts_1002_1040_1045_htmlText.txt",
+                           "id": "1045",
+                           "layer": "39",
+                           "name": "nounsList",
+                           "rect": "234,614,425,673",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1047": {
+                        "#name": "button \"Generate Insult\"",
+                        "customproperties": {
+                           "firstAdjectiveList": "%file%: assets/revGettingStartedScripts_1002_1040_1047_firstAdjectiveList.bin",
+                           "nounsList": "%file%: assets/revGettingStartedScripts_1002_1040_1047_nounsList.bin",
+                           "secondAdjectiveList": "%file%: assets/revGettingStartedScripts_1002_1040_1047_secondAdjectiveList.bin"
+                        },
+                        "properties": {
+                           "id": "1047",
+                           "layer": "40",
+                           "name": "Generate Insult",
+                           "rect": "48,582,172,608"
+                        }
+                     },
+                     "1048": {
+                        "#name": "field \"First adjective label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Adjectives:</p>",
+                           "id": "1048",
+                           "layer": "41",
+                           "lockText": true,
+                           "name": "First adjective label",
+                           "opaque": false,
+                           "rect": "230,438,361,457",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1049": {
+                        "#name": "field \"Second adjective label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Compound adjectives:</p>",
+                           "id": "1049",
+                           "layer": "42",
+                           "lockText": true,
+                           "name": "Second adjective label",
+                           "opaque": false,
+                           "rect": "230,517,361,536",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1050": {
+                        "#name": "field \"Nouns label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Nouns:</p>",
+                           "id": "1050",
+                           "layer": "43",
+                           "lockText": true,
+                           "name": "Nouns label",
+                           "opaque": false,
+                           "rect": "230,596,361,615",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1051": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Click the button below to see an insult.</p>\n<p></p>\n<p>To change the words used for the insult, edit the three fields at the right.</p>",
+                           "id": "1051",
+                           "layer": "44",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "opaque": false,
+                           "rect": "8,498,229,574",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1040",
+                     "layer": "36",
+                     "lockLoc": true,
+                     "name": "Combine random text strings Example",
+                     "rect": "4,434,429,677"
+                  }
+               },
+               "1052": {
+                  "#name": "group \"Text Menu: updating check marks Example\"",
+                  "childcontrols": {
+                     "1053": {
+                        "#name": "field \"Example Text\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "id": "1053",
+                           "layer": "46",
+                           "lockText": true,
+                           "name": "Example Text",
+                           "rect": "8,472,209,610",
+                           "sharedText": true,
+                           "textFont": "ANSIT",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1054": {
+                        "#name": "button \"Text\"",
+                        "customproperties": {
+                           "currentStacksList": "revExample: automatically updating a Window menu\nrevDocsCookbook\nrevDocsHow\nrevDocsAbout\nrevDocsLanguageReference\nrevDocsWhy\nUntitled 1\nrevDocsMenuReference\nrevDocsGlossary\nrevDocsTips\n"
+                        },
+                        "properties": {
+                           "accelMods": "command",
+                           "backColor": "200,197,194",
+                           "id": "1054",
+                           "layer": "47",
+                           "menuMode": "popup",
+                           "name": "Text",
+                           "rect": "16,439,128,460",
+                           "style": "menu",
+                           "text": "%file%: assets/revGettingStartedScripts_1002_1052_1054_text.txt",
+                           "textAlign": "left",
+                           "textFont": " ",
+                           "textSize": "12",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1052",
+                     "layer": "45",
+                     "lockLoc": true,
+                     "name": "Text Menu: updating check marks Example",
+                     "rect": "4,434,213,614"
+                  }
+               },
+               "1055": {
+                  "#name": "group \"Updating a menu with a list of open Windows Example\"",
+                  "childcontrols": {
+                     "1056": {
+                        "#name": "field \"Caption\"",
+                        "properties": {
+                           "htmlText": "<p>Click the Window menu to show a list of open windows. (Option-click or Alt-click to include palette and dialog box windows.)</p>",
+                           "id": "1056",
+                           "layer": "49",
+                           "lockText": true,
+                           "name": "Caption",
+                           "rect": "8,473,227,535",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1057": {
+                        "#name": "group \"Menubar\"",
+                        "childcontrols": {
+                           "1058": {
+                              "#name": "button \"Window\"",
+                              "customproperties": {
+                                 "currentStacksList": "LearningCenterScripts\n"
+                              },
+                              "properties": {
+                                 "accelMods": "command",
+                                 "id": "1058",
+                                 "label": " Learning Center Script Resources",
+                                 "layer": "51",
+                                 "menuMode": "option",
+                                 "name": "Window",
+                                 "rect": "14,446,224,468",
+                                 "showBorder": false,
+                                 "style": "menu",
+                                 "text": " Learning Center Script Resources\n",
+                                 "textAlign": "left",
+                                 "textFont": " ",
+                                 "textSize": "12",
+                                 "textStyle": "plain",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1057",
+                           "layer": "50",
+                           "name": "Menubar",
+                           "rect": "10,442,228,472"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1055",
+                     "layer": "48",
+                     "lockLoc": true,
+                     "name": "Updating a menu with a list of open Windows Example",
+                     "rect": "4,434,231,539",
+                     "tabGroupBehavior": true
+                  }
+               },
+               "1059": {
+                  "#name": "group \"Repeating a string of text Example\"",
+                  "childcontrols": {
+                     "1060": {
+                        "#name": "button \"Generate String\"",
+                        "properties": {
+                           "id": "1060",
+                           "layer": "53",
+                           "name": "Generate String",
+                           "rect": "66,484,172,510"
+                        }
+                     },
+                     "1061": {
+                        "#name": "field \"String\"",
+                        "properties": {
+                           "id": "1061",
+                           "layer": "54",
+                           "name": "String",
+                           "rect": "14,456,132,479",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1062": {
+                        "#name": "field \"Number\"",
+                        "properties": {
+                           "id": "1062",
+                           "layer": "55",
+                           "name": "Number",
+                           "rect": "143,456,186,479",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1063": {
+                        "#name": "field \"New Field 1\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>times</p>",
+                           "id": "1063",
+                           "layer": "56",
+                           "lockText": true,
+                           "name": "New Field 1",
+                           "opaque": false,
+                           "rect": "184,458,233,478",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1064": {
+                        "#name": "field \"New Field 1\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Repeat the string:</p>",
+                           "id": "1064",
+                           "layer": "57",
+                           "lockText": true,
+                           "name": "New Field 1",
+                           "opaque": false,
+                           "rect": "8,435,114,455",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1065": {
+                        "#name": "field \"New Field 1\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>for</p>",
+                           "id": "1065",
+                           "layer": "58",
+                           "lockText": true,
+                           "name": "New Field 1",
+                           "opaque": false,
+                           "rect": "139,435,173,455",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1066": {
+                        "#name": "field \"Result\"",
+                        "properties": {
+                           "id": "1066",
+                           "layer": "59",
+                           "name": "Result",
+                           "rect": "14,517,220,608",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1059",
+                     "layer": "52",
+                     "lockLoc": true,
+                     "name": "Repeating a string of text Example",
+                     "rect": "4,434,237,612"
+                  }
+               },
+               "1068": {
+                  "#name": "group \"Centering a window on the screen Example\"",
+                  "childcontrols": {
+                     "1069": {
+                        "#name": "button \"Center Me!\"",
+                        "properties": {
+                           "id": "1069",
+                           "layer": "61",
+                           "name": "Center Me!",
+                           "rect": "63,465,166,490"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1068",
+                     "layer": "60",
+                     "lockLoc": true,
+                     "name": "Centering a window on the screen Example",
+                     "rect": "4,434,216,508"
+                  }
+               },
+               "1070": {
+                  "#name": "group \"Replacing a text style in a field Example\"",
+                  "childcontrols": {
+                     "1071": {
+                        "#name": "field \"Example Text\"",
+                        "customproperties": {
+                           "savedHTMLText": "<p>This is <u>some underlined text</u>, and this is <u><b>bold underlined</b></u>, and here we see some <font size=\"18\">large</font> and <font size=\"18\"><u>large underlined</u></font> text.</p>"
+                        },
+                        "properties": {
+                           "fixedLineHeight": false,
+                           "htmlText": "%file%: assets/revGettingStartedScripts_1002_1070_1071_htmlText.txt",
+                           "id": "1071",
+                           "layer": "63",
+                           "lockText": true,
+                           "name": "Example Text",
+                           "rect": "58,438,294,522",
+                           "sharedText": true,
+                           "traversalOn": false
+                        }
+                     },
+                     "1072": {
+                        "#name": "field \"Example HTML\"",
+                        "properties": {
+                           "htmlText": "%file%: assets/revGettingStartedScripts_1002_1070_1072_htmlText.txt",
+                           "id": "1072",
+                           "layer": "64",
+                           "lockText": true,
+                           "name": "Example HTML",
+                           "rect": "58,524,294,614",
+                           "sharedText": true,
+                           "traversalOn": false
+                        }
+                     },
+                     "1073": {
+                        "#name": "button \"Change underline to italic\"",
+                        "properties": {
+                           "id": "1073",
+                           "layer": "65",
+                           "name": "Change underline to italic",
+                           "rect": "60,621,224,646"
+                        }
+                     },
+                     "1074": {
+                        "#name": "button \"Reset\"",
+                        "properties": {
+                           "id": "1074",
+                           "layer": "66",
+                           "name": "Reset",
+                           "rect": "228,621,298,646"
+                        }
+                     },
+                     "1075": {
+                        "#name": "field \"Text Label\"",
+                        "properties": {
+                           "htmlText": "<p>Text:</p>",
+                           "id": "1075",
+                           "layer": "67",
+                           "lockText": true,
+                           "name": "Text Label",
+                           "opaque": false,
+                           "rect": "8,438,60,460",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1076": {
+                        "#name": "field \"HTML Label\"",
+                        "properties": {
+                           "htmlText": "<p>HTML:</p>",
+                           "id": "1076",
+                           "layer": "68",
+                           "lockText": true,
+                           "name": "HTML Label",
+                           "opaque": false,
+                           "rect": "8,525,60,547",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1070",
+                     "layer": "62",
+                     "lockLoc": true,
+                     "name": "Replacing a text style in a field Example",
+                     "rect": "4,434,298,645"
+                  }
+               },
+               "1077": {
+                  "#name": "group \"Check whether a directory or drive is write-protected Example\"",
+                  "childcontrols": {
+                     "1078": {
+                        "#name": "button \"Check a directory...\"",
+                        "properties": {
+                           "id": "1078",
+                           "layer": "70",
+                           "name": "Check a directory...",
+                           "rect": "36,479,158,504"
+                        }
+                     },
+                     "1079": {
+                        "#name": "field \"New Field 1\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Find out whether a directory is write-protected:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "htmlText": "<p>Find out whether a directory is write-protected:</p>",
+                           "id": "1079",
+                           "layer": "71",
+                           "lockText": true,
+                           "name": "New Field 1",
+                           "opaque": false,
+                           "rect": "8,438,184,473",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1077",
+                     "layer": "69",
+                     "lockLoc": true,
+                     "name": "Check whether a directory or drive is write-protected Example",
+                     "rect": "4,434,171,503"
+                  }
+               },
+               "1080": {
+                  "#name": "group \"Check whether the screen resolution is high enough Example\"",
+                  "childcontrols": {
+                     "1081": {
+                        "#name": "button \"Check Screen Size\"",
+                        "properties": {
+                           "id": "1081",
+                           "layer": "73",
+                           "name": "Check Screen Size",
+                           "rect": "41,514,174,538"
+                        }
+                     },
+                     "1082": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Click the button below to check whether your screen size is more or less than 1024x768 pixels:</p>",
+                           "id": "1082",
+                           "layer": "74",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "opaque": false,
+                           "rect": "10,450,208,510",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1080",
+                     "layer": "72",
+                     "lockLoc": true,
+                     "name": "Check whether the screen resolution is high enough Example",
+                     "rect": "4,434,214,550"
+                  }
+               },
+               "1083": {
+                  "#name": "group \"Placing a check next to a menu item Example\"",
+                  "childcontrols": {
+                     "1084": {
+                        "#name": "button \"Sample\"",
+                        "properties": {
+                           "accelMods": "command",
+                           "backColor": "213,214,217",
+                           "id": "1084",
+                           "label": "This",
+                           "layer": "76",
+                           "menuMode": "popup",
+                           "name": "Sample",
+                           "rect": "24,436,146,458",
+                           "showBorder": false,
+                           "style": "menu",
+                           "text": "This\nThat\nThe Other Thing",
+                           "textAlign": "left",
+                           "textFont": " ",
+                           "textSize": "12",
+                           "textStyle": "plain",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1085": {
+                        "#name": "field \"Caption\"",
+                        "properties": {
+                           "htmlText": "<p>Choose an item from the Sample menu to check it. (Choose it again to uncheck it.)</p>",
+                           "id": "1085",
+                           "layer": "77",
+                           "lockText": true,
+                           "name": "Caption",
+                           "rect": "6,458,230,510",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1083",
+                     "layer": "75",
+                     "lockLoc": true,
+                     "name": "Placing a check next to a menu item Example",
+                     "rect": "4,434,231,508",
+                     "tabGroupBehavior": true
+                  }
+               },
+               "1086": {
+                  "#name": "group \"Editing the clipboard Example\"",
+                  "childcontrols": {
+                     "1087": {
+                        "#name": "field \"Text\"",
+                        "properties": {
+                           "htmlText": "%file%: assets/revGettingStartedScripts_1002_1086_1087_htmlText.txt",
+                           "id": "1087",
+                           "layer": "79",
+                           "name": "Text",
+                           "rect": "8,508,249,640",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1089": {
+                        "#name": "button \"Append Selected Text\"",
+                        "customproperties": {
+                           "Tabs": false
+                        },
+                        "properties": {
+                           "id": "1089",
+                           "layer": "80",
+                           "name": "Append Selected Text",
+                           "rect": "58,646,196,670",
+                           "traversalOn": false
+                        }
+                     },
+                     "1090": {
+                        "#name": "field \"Clipboard Chars\"",
+                        "properties": {
+                           "htmlText": "<p>268 characters in clipboard</p>",
+                           "id": "1090",
+                           "layer": "81",
+                           "lockText": true,
+                           "name": "Clipboard Chars",
+                           "opaque": false,
+                           "rect": "50,672,210,694",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "center",
+                           "traversalOn": false
+                        }
+                     },
+                     "1091": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Select some text in the field below, then click \"Append to Clipboard\" to add that text to the end of the clipboard (without replacing any text already copied).</p>",
+                           "id": "1091",
+                           "layer": "82",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "opaque": false,
+                           "rect": "9,438,248,506",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1086",
+                     "layer": "78",
+                     "lockLoc": true,
+                     "name": "Editing the clipboard Example",
+                     "rect": "4,434,253,701"
+                  }
+               },
+               "1092": {
+                  "#name": "group \"Converting a relative path to an absolute path Example\"",
+                  "childcontrols": {
+                     "1093": {
+                        "#name": "field \"Starting Folder\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "htmlText": "<p>/</p>",
+                           "id": "1093",
+                           "layer": "84",
+                           "name": "Starting Folder",
+                           "rect": "10,576,299,598",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1094": {
+                        "#name": "button \"Convert Path\"",
+                        "properties": {
+                           "id": "1094",
+                           "layer": "85",
+                           "name": "Convert Path",
+                           "rect": "148,620,252,645"
+                        }
+                     },
+                     "1095": {
+                        "#name": "button \"Browse...\"",
+                        "properties": {
+                           "id": "1095",
+                           "layer": "86",
+                           "name": "Browse...",
+                           "rect": "301,576,396,600"
+                        }
+                     },
+                     "1096": {
+                        "#name": "field \"Starting Folder Label\"",
+                        "properties": {
+                           "htmlText": "<p>Starting folder:</p>",
+                           "id": "1096",
+                           "layer": "87",
+                           "lockText": true,
+                           "name": "Starting Folder Label",
+                           "rect": "8,557,121,576",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1097": {
+                        "#name": "field \"Path Label\"",
+                        "properties": {
+                           "htmlText": "<p>Relative path to convert:</p>",
+                           "id": "1097",
+                           "layer": "88",
+                           "lockText": true,
+                           "name": "Path Label",
+                           "rect": "9,506,153,525",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1098": {
+                        "#name": "field \"Path\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1098",
+                           "layer": "89",
+                           "name": "Path",
+                           "rect": "10,525,299,548",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1099": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Enter the relative path you want to convert. If you want to change the folder where your relative path starts, click Browse. Then click Convert Path to see the absolute path.</p>",
+                           "id": "1099",
+                           "layer": "90",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "rect": "30,438,369,482",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1100": {
+                        "#name": "button \"Browse...\"",
+                        "properties": {
+                           "id": "1100",
+                           "layer": "91",
+                           "name": "Browse...",
+                           "rect": "302,524,395,548"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1092",
+                     "layer": "83",
+                     "lockLoc": true,
+                     "name": "Converting a relative path to an absolute path Example",
+                     "rect": "4,434,398,649"
+                  }
+               },
+               "1101": {
+                  "#name": "group \"Converting an absolute path to a relative path Example\"",
+                  "childcontrols": {
+                     "1102": {
+                        "#name": "field \"Starting Folder\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "htmlText": "<p>/</p>",
+                           "id": "1102",
+                           "layer": "93",
+                           "name": "Starting Folder",
+                           "rect": "10,576,299,597",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1103": {
+                        "#name": "button \"Convert Path\"",
+                        "properties": {
+                           "id": "1103",
+                           "layer": "94",
+                           "name": "Convert Path",
+                           "rect": "148,620,252,645"
+                        }
+                     },
+                     "1104": {
+                        "#name": "button \"Browse...\"",
+                        "properties": {
+                           "id": "1104",
+                           "layer": "95",
+                           "name": "Browse...",
+                           "rect": "301,576,396,600"
+                        }
+                     },
+                     "1105": {
+                        "#name": "field \"Starting Folder Label\"",
+                        "properties": {
+                           "htmlText": "<p>Starting folder:</p>",
+                           "id": "1105",
+                           "layer": "96",
+                           "lockText": true,
+                           "name": "Starting Folder Label",
+                           "rect": "8,557,121,576",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1106": {
+                        "#name": "field \"Path Label\"",
+                        "properties": {
+                           "htmlText": "<p>Absolute path to convert:</p>",
+                           "id": "1106",
+                           "layer": "97",
+                           "lockText": true,
+                           "name": "Path Label",
+                           "rect": "9,506,153,525",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1107": {
+                        "#name": "field \"Path\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1107",
+                           "layer": "98",
+                           "name": "Path",
+                           "rect": "10,525,299,546",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1108": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Enter the absolute path you want to convert. If you want to change the folder to start the relative path from, click Browse. Then click Convert Path to see the relative path.</p>",
+                           "id": "1108",
+                           "layer": "99",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "rect": "30,438,369,482",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1109": {
+                        "#name": "button \"Browse...\"",
+                        "properties": {
+                           "id": "1109",
+                           "layer": "100",
+                           "name": "Browse...",
+                           "rect": "302,524,394,548"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1101",
+                     "layer": "92",
+                     "lockLoc": true,
+                     "name": "Converting an absolute path to a relative path Example",
+                     "rect": "4,434,398,649"
+                  }
+               },
+               "1110": {
+                  "#name": "group \"Converting between characters and numerical (ASCII) values Example\"",
+                  "childcontrols": {
+                     "1111": {
+                        "#name": "button \"Convert\"",
+                        "customproperties": {
+                           "asciiChart": "%file%: assets/revGettingStartedScripts_1002_1110_1111_asciiChart.bin"
+                        },
+                        "properties": {
+                           "id": "1111",
+                           "label": "<- Convert ->",
+                           "layer": "102",
+                           "name": "Convert",
+                           "rect": "97,506,197,528"
+                        }
+                     },
+                     "1112": {
+                        "#name": "field \"Character\"",
+                        "properties": {
+                           "id": "1112",
+                           "layer": "103",
+                           "name": "Character",
+                           "rect": "18,507,92,527",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "textAlign": "right"
+                        }
+                     },
+                     "1113": {
+                        "#name": "field \"ASCII\"",
+                        "properties": {
+                           "id": "1113",
+                           "layer": "104",
+                           "name": "ASCII",
+                           "rect": "202,506,248,526",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1114": {
+                        "#name": "field \"Character Label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Character:</p>",
+                           "id": "1114",
+                           "layer": "105",
+                           "lockText": true,
+                           "name": "Character Label",
+                           "opaque": false,
+                           "rect": "26,485,95,505",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1115": {
+                        "#name": "field \"ASCII Label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>ASCII:</p>",
+                           "id": "1115",
+                           "layer": "106",
+                           "lockText": true,
+                           "name": "ASCII Label",
+                           "opaque": false,
+                           "rect": "198,485,253,505",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1116": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Enter either a character or an ASCII value (a number between zero and 255) and press Convert to see the equivalent:</p>",
+                           "id": "1116",
+                           "layer": "107",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "rect": "8,438,250,492",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1110",
+                     "layer": "101",
+                     "lockLoc": true,
+                     "name": "Converting between characters and numerical (ASCII) values Example",
+                     "rect": "4,434,253,530"
+                  }
+               },
+               "1117": {
+                  "#name": "group \"Placing a font list into a menu Example\"",
+                  "childcontrols": {
+                     "1118": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Click the button to update the Font menu, then click the Font menu above to see the list of fonts.</p>",
+                           "id": "1118",
+                           "layer": "109",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "rect": "8,470,227,529",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1119": {
+                        "#name": "button \"Font\"",
+                        "customproperties": {
+                           "currentStacksList": "Copy of revExample: a Window menu\nrevDocsCookbook\nrevDocsLanguageReference\nrevDocsHow\nrevDocsGlossary\nUntitled 1\nrevDocsAbout\nrevDocsMenuReference\nrevDocsWhy\nrevDocs\nrevDocsTips\n"
+                        },
+                        "properties": {
+                           "accelMods": "command",
+                           "id": "1119",
+                           "label": "Arial",
+                           "layer": "110",
+                           "menuHistory": "22",
+                           "menuMode": "option",
+                           "name": "Font",
+                           "rect": "61,441,175,464",
+                           "showBorder": false,
+                           "style": "menu",
+                           "text": "%file%: assets/revGettingStartedScripts_1002_1117_1119_text.txt",
+                           "textAlign": "left",
+                           "textFont": " ",
+                           "textSize": "12",
+                           "textStyle": "plain",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1120": {
+                        "#name": "button \"Update Font Menu\"",
+                        "properties": {
+                           "id": "1120",
+                           "layer": "111",
+                           "name": "Update Font Menu",
+                           "rect": "56,525,177,550"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1117",
+                     "layer": "108",
+                     "lockLoc": true,
+                     "name": "Placing a font list into a menu Example",
+                     "rect": "4,434,231,553",
+                     "tabGroupBehavior": true
+                  }
+               },
+               "1121": "#shared group",
+               "1134": {
+                  "#name": "group \"Finding common lines in two containers Example\"",
+                  "childcontrols": {
+                     "1135": {
+                        "#name": "field \"List 1\"",
+                        "properties": {
+                           "htmlText": "<p>This is a test.</p>\n<p>This is only a test.</p>\n<p>Had this been an actual life, you would have received instructions on where to go and what to do.</p>",
+                           "id": "1135",
+                           "layer": "126",
+                           "name": "List 1",
+                           "rect": "8,470,182,549",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1137": {
+                        "#name": "field \"List 2\"",
+                        "properties": {
+                           "htmlText": "<p>This is only a test.</p>\n<p>Please remain calm.</p>\n<p>This is a test.</p>",
+                           "id": "1137",
+                           "layer": "127",
+                           "name": "List 2",
+                           "rect": "188,470,362,549",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1139": {
+                        "#name": "button \"Common Lines\"",
+                        "properties": {
+                           "id": "1139",
+                           "layer": "128",
+                           "name": "Common Lines",
+                           "rect": "133,555,236,578"
+                        }
+                     },
+                     "1140": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Click the \"Common Lines\" button to see the lines that the two fields below have in common:</p>",
+                           "id": "1140",
+                           "layer": "129",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "rect": "10,438,360,469",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1134",
+                     "layer": "125",
+                     "lockLoc": true,
+                     "name": "Finding common lines in two containers Example",
+                     "rect": "4,434,366,579"
+                  }
+               },
+               "1141": {
+                  "#name": "group \"Finding lines that are not common to two containers Example\"",
+                  "childcontrols": {
+                     "1142": {
+                        "#name": "field \"List 1\"",
+                        "customproperties": {
+                           "initialText": "This is a test.\nThis is only a test.\nHad this been an actual life,\nyou would have\nreceived instructions\non where to go\nand what to do."
+                        },
+                        "properties": {
+                           "htmlText": "<p>This is a test.</p>\n<p>This is only a test.</p>\n<p>Had this been an actual life,</p>\n<p>you would have</p>\n<p>received instructions</p>\n<p>on where to go</p>\n<p>and what to do.</p>",
+                           "id": "1142",
+                           "layer": "131",
+                           "name": "List 1",
+                           "rect": "8,510,182,589",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1144": {
+                        "#name": "field \"List 2\"",
+                        "customproperties": {
+                           "initialText": "This is only a test.\nPlease remain calm.\nThis is a test."
+                        },
+                        "properties": {
+                           "htmlText": "<p>This is only a test.</p>\n<p>Please remain calm.</p>\n<p>This is a test.</p>",
+                           "id": "1144",
+                           "layer": "132",
+                           "name": "List 2",
+                           "rect": "188,510,362,589",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1146": {
+                        "#name": "button \"Uncommon Lines\"",
+                        "properties": {
+                           "id": "1146",
+                           "layer": "133",
+                           "name": "Uncommon Lines",
+                           "rect": "131,595,242,620"
+                        }
+                     },
+                     "1147": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Click the \"Uncommon Lines\" button to see the lines that the two fields don't have in common. Lines that are in the first field but not the second start with a \"-\", and lines that are not in the first field but are in the second start with a \"+\".</p>",
+                           "id": "1147",
+                           "layer": "134",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "rect": "10,438,360,509",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1141",
+                     "layer": "130",
+                     "lockLoc": true,
+                     "name": "Finding lines that are not common to two containers Example",
+                     "rect": "4,434,366,619"
+                  }
+               },
+               "1148": {
+                  "#name": "group \"Searching for an open window by title Example\"",
+                  "childcontrols": {
+                     "1149": {
+                        "#name": "button \"Find the stack labeled...\"",
+                        "properties": {
+                           "id": "1149",
+                           "layer": "136",
+                           "name": "Find the stack labeled...",
+                           "rect": "8,438,178,462"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1148",
+                     "layer": "135",
+                     "lockLoc": true,
+                     "name": "Searching for an open window by title Example",
+                     "rect": "4,434,182,462"
+                  }
+               },
+               "1150": {
+                  "#name": "group \"Find out the current platform and system version Example\"",
+                  "childcontrols": {
+                     "1151": {
+                        "#name": "button \"Is OS X?\"",
+                        "properties": {
+                           "id": "1151",
+                           "layer": "138",
+                           "name": "Is OS X?",
+                           "rect": "44,444,146,468"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1150",
+                     "layer": "137",
+                     "lockLoc": true,
+                     "margins": "40,10,40,10",
+                     "name": "Find out the current platform and system version Example",
+                     "rect": "4,434,184,474"
+                  }
+               },
+               "1152": {
+                  "#name": "group \"Fitting a printout to the page Example\"",
+                  "childcontrols": {
+                     "1153": {
+                        "#name": "button \"Print Card\"",
+                        "properties": {
+                           "id": "1153",
+                           "layer": "140",
+                           "name": "Print Card",
+                           "rect": "22,448,124,472"
+                        }
+                     },
+                     "1154": {
+                        "#name": "field \"Margins Label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Margin in inches:</p>",
+                           "id": "1154",
+                           "layer": "141",
+                           "lockText": true,
+                           "name": "Margins Label",
+                           "opaque": false,
+                           "rect": "125,450,231,470",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1155": {
+                        "#name": "field \"Margin\"",
+                        "properties": {
+                           "id": "1155",
+                           "layer": "142",
+                           "name": "Margin",
+                           "rect": "228,450,267,470",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1152",
+                     "layer": "139",
+                     "lockLoc": true,
+                     "name": "Fitting a printout to the page Example",
+                     "rect": "4,434,273,476"
+                  }
+               },
+               "1156": "#shared group",
+               "1161": {
+                  "#name": "group \"Text menu: handling choices Example\"",
+                  "childcontrols": {
+                     "1162": {
+                        "#name": "field \"Example Text\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "htmlText": "<p>This is some test text to demonstrate font, size, and style changes. Click the Text menu above to choose a new font, size, or style for this text.</p>",
+                           "id": "1162",
+                           "layer": "149",
+                           "lockText": true,
+                           "name": "Example Text",
+                           "rect": "8,472,209,610",
+                           "sharedText": true,
+                           "textFont": "ANSIT",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1163": {
+                        "#name": "button \"Text\"",
+                        "customproperties": {
+                           "currentStacksList": "revExample: automatically updating a Window menu\nrevDocsCookbook\nrevDocsHow\nrevDocsAbout\nrevDocsLanguageReference\nrevDocsWhy\nUntitled 1\nrevDocsMenuReference\nrevDocsGlossary\nrevDocsTips\n"
+                        },
+                        "properties": {
+                           "accelMods": "command",
+                           "backColor": "211,206,203",
+                           "id": "1163",
+                           "layer": "150",
+                           "menuMode": "popup",
+                           "name": "Text",
+                           "rect": "16,439,132,460",
+                           "showBorder": false,
+                           "style": "menu",
+                           "text": "%file%: assets/revGettingStartedScripts_1002_1161_1163_text.txt",
+                           "textAlign": "left",
+                           "textFont": " ",
+                           "textSize": "12",
+                           "textStyle": "plain",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1161",
+                     "layer": "148",
+                     "lockLoc": true,
+                     "name": "Text menu: handling choices Example",
+                     "rect": "4,434,213,614"
+                  }
+               },
+               "1164": {
+                  "#name": "group \"Display Hello World Example\"",
+                  "childcontrols": {
+                     "1165": {
+                        "#name": "button \"Say Hello\"",
+                        "properties": {
+                           "id": "1165",
+                           "layer": "152",
+                           "name": "Say Hello",
+                           "rect": "30,446,130,468"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1164",
+                     "layer": "151",
+                     "lockLoc": true,
+                     "name": "Display Hello World Example",
+                     "rect": "4,434,154,534"
+                  }
+               },
+               "1166": {
+                  "#name": "group \"Limiting the number of characters during data entry Example\"",
+                  "childcontrols": {
+                     "1167": {
+                        "#name": "field \"Example\"",
+                        "properties": {
+                           "id": "1167",
+                           "layer": "154",
+                           "name": "Example",
+                           "rect": "44,474,128,496",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1168": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>The field below allows you to type a maximum of five characters:</p>",
+                           "id": "1168",
+                           "layer": "155",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "rect": "8,438,216,473",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1166",
+                     "layer": "153",
+                     "lockLoc": true,
+                     "name": "Limiting the number of characters during data entry Example",
+                     "rect": "4,434,220,497"
+                  }
+               },
+               "1169": {
+                  "#name": "group \"Listing all the handlers in a script Example\"",
+                  "childcontrols": {
+                     "1170": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "htmlText": "<p>Enter a script in the field, select the handler types (if any) that you want to list separately, and click \"List the Handlers\" below to see a list of handler names:</p>",
+                           "id": "1170",
+                           "layer": "157",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "opaque": false,
+                           "rect": "9,440,432,490",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1171": {
+                        "#name": "button \"List the handlers\"",
+                        "properties": {
+                           "id": "1171",
+                           "layer": "158",
+                           "name": "List the handlers",
+                           "rect": "308,610,412,636"
+                        }
+                     },
+                     "1172": {
+                        "#name": "field \"Script\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "hScrollbar": true,
+                           "htmlText": "%file%: assets/revGettingStartedScripts_1002_1169_1172_htmlText.txt",
+                           "id": "1172",
+                           "layer": "159",
+                           "name": "Script",
+                           "rect": "8,492,284,664",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "plain",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1175": {
+                        "#name": "group \"Handler Types\"",
+                        "childcontrols": {
+                           "1176": {
+                              "#name": "button \"Message handlers\"",
+                              "properties": {
+                                 "accelMods": "command",
+                                 "hiliteBorder": false,
+                                 "id": "1176",
+                                 "layer": "161",
+                                 "name": "Message handlers",
+                                 "opaque": false,
+                                 "rect": "295,494,428,514",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "checkbox",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "1177": {
+                              "#name": "button \"Function handlers\"",
+                              "properties": {
+                                 "accelMods": "command",
+                                 "hiliteBorder": false,
+                                 "id": "1177",
+                                 "layer": "162",
+                                 "name": "Function handlers",
+                                 "opaque": false,
+                                 "rect": "295,514,428,534",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "checkbox",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "1178": {
+                              "#name": "button \"setProp handlers\"",
+                              "properties": {
+                                 "accelMods": "command",
+                                 "hiliteBorder": false,
+                                 "id": "1178",
+                                 "layer": "163",
+                                 "name": "setProp handlers",
+                                 "opaque": false,
+                                 "rect": "295,533,428,553",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "checkbox",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "1179": {
+                              "#name": "button \"getProp handlers\"",
+                              "properties": {
+                                 "accelMods": "command",
+                                 "hiliteBorder": false,
+                                 "id": "1179",
+                                 "layer": "164",
+                                 "name": "getProp handlers",
+                                 "opaque": false,
+                                 "rect": "295,553,428,573",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "checkbox",
+                                 "textAlign": "left"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1175",
+                           "layer": "160",
+                           "name": "Handler Types",
+                           "rect": "289,478,434,579",
+                           "showBorder": true,
+                           "showName": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1169",
+                     "layer": "156",
+                     "lockLoc": true,
+                     "name": "Listing all the handlers in a script Example",
+                     "rect": "4,436,438,672"
+                  }
+               },
+               "1180": {
+                  "#name": "group \"Listing all the unique words in a piece of text Example\"",
+                  "childcontrols": {
+                     "1181": {
+                        "#name": "button \"Choose...\"",
+                        "properties": {
+                           "id": "1181",
+                           "layer": "166",
+                           "name": "Choose...",
+                           "rect": "48,477,129,500"
+                        }
+                     },
+                     "1182": {
+                        "#name": "field \"Filename\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "File: "
+                           }
+                        },
+                        "properties": {
+                           "htmlText": "<p>File: </p>",
+                           "id": "1182",
+                           "layer": "167",
+                           "lockText": true,
+                           "name": "Filename",
+                           "rect": "8,502,142,523",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1183": {
+                        "#name": "field \"Caption\"",
+                        "properties": {
+                           "htmlText": "<p>Choose a text file to get a list of words in the file:</p>",
+                           "id": "1183",
+                           "layer": "168",
+                           "lockText": true,
+                           "name": "Caption",
+                           "rect": "8,438,185,473",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1184": {
+                        "#name": "field \"Unique Words\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": null
+                           }
+                        },
+                        "properties": {
+                           "id": "1184",
+                           "layer": "169",
+                           "lockText": true,
+                           "name": "Unique Words",
+                           "rect": "9,522,184,621",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "style": "scrolling",
+                           "traversalOn": false,
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1180",
+                     "layer": "165",
+                     "lockLoc": true,
+                     "name": "Listing all the unique words in a piece of text Example",
+                     "rect": "4,434,189,625"
+                  }
+               },
+               "1186": "#shared group",
+               "1191": {
+                  "#name": "group \"Text menu: populating with content Example\"",
+                  "childcontrols": {
+                     "1192": {
+                        "#name": "button \"Populate Menu...\"",
+                        "properties": {
+                           "id": "1192",
+                           "layer": "176",
+                           "name": "Populate Menu...",
+                           "rect": "38,520,146,544"
+                        }
+                     },
+                     "1193": {
+                        "#name": "button \"Text\"",
+                        "customproperties": {
+                           "currentStacksList": "revExample: automatically updating a Window menu\nrevDocsCookbook\nrevDocsWhy\nrevDocsHow\nrevDocsGlossary\nrevDocsAbout\nrevDocsLanguageReference\n"
+                        },
+                        "properties": {
+                           "accelMods": "command",
+                           "backColor": "211,208,206",
+                           "id": "1193",
+                           "layer": "177",
+                           "menuMode": "popup",
+                           "name": "Text",
+                           "rect": "15,439,76,462",
+                           "showBorder": false,
+                           "style": "menu",
+                           "text": "(Click the Populate Menu button first",
+                           "textAlign": "left",
+                           "textFont": " ",
+                           "textSize": "12",
+                           "textStyle": "plain",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1194": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Click the button below to set up the Text menu, then pull down the menu above to see the contents.</p>",
+                           "id": "1194",
+                           "layer": "178",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "opaque": false,
+                           "rect": "6,466,203,514",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1191",
+                     "layer": "175",
+                     "lockLoc": true,
+                     "name": "Text menu: populating with content Example",
+                     "rect": "4,434,211,553"
+                  }
+               },
+               "1195": {
+                  "#name": "group \"Printing all cards that contain a word Example\"",
+                  "childcontrols": {
+                     "1196": {
+                        "#name": "button \"Print cards with\"",
+                        "properties": {
+                           "id": "1196",
+                           "label": "Print cards with",
+                           "layer": "180",
+                           "name": "Print cards with",
+                           "rect": "8,438,124,462"
+                        }
+                     },
+                     "1197": {
+                        "#name": "field \"String\"",
+                        "properties": {
+                           "autoTab": true,
+                           "dontSearch": true,
+                           "id": "1197",
+                           "layer": "181",
+                           "name": "String",
+                           "rect": "127,438,254,461",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1195",
+                     "layer": "179",
+                     "lockLoc": true,
+                     "name": "Printing all cards that contain a word Example",
+                     "rect": "4,434,258,465"
+                  }
+               },
+               "1198": {
+                  "#name": "group \"Printing all the fields on a card Example\"",
+                  "childcontrols": {
+                     "1199": {
+                        "#name": "button \"Print This Card\"",
+                        "properties": {
+                           "id": "1199",
+                           "layer": "183",
+                           "name": "Print This Card",
+                           "rect": "94,438,198,464"
+                        }
+                     },
+                     "1200": {
+                        "#name": "field \"Name\"",
+                        "properties": {
+                           "htmlText": "<p>Jane E. Doe</p>",
+                           "id": "1200",
+                           "layer": "184",
+                           "name": "Name",
+                           "rect": "12,468,132,490",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1201": {
+                        "#name": "field \"Address\"",
+                        "properties": {
+                           "htmlText": "<p>Edinburgh, Scotland</p>",
+                           "id": "1201",
+                           "layer": "185",
+                           "name": "Address",
+                           "rect": "12,494,132,516",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1202": {
+                        "#name": "field \"Email\"",
+                        "properties": {
+                           "htmlText": "<p>jane@example.org</p>",
+                           "id": "1202",
+                           "layer": "186",
+                           "name": "Email",
+                           "rect": "12,520,132,542",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1203": {
+                        "#name": "field \"Comments\"",
+                        "properties": {
+                           "htmlText": "<p>These are some comments about Jane.</p>",
+                           "id": "1203",
+                           "layer": "187",
+                           "name": "Comments",
+                           "rect": "137,467,319,542",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1198",
+                     "layer": "182",
+                     "lockLoc": true,
+                     "margins": "8",
+                     "name": "Printing all the fields on a card Example",
+                     "rect": "4,434,327,542"
+                  }
+               },
+               "1205": {
+                  "#name": "group \"Accepting only digit characters during data entry Example\"",
+                  "childcontrols": {
+                     "1206": {
+                        "#name": "field \"Digits Only\"",
+                        "properties": {
+                           "id": "1206",
+                           "layer": "189",
+                           "name": "Digits Only",
+                           "rect": "8,474,202,496",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1207": {
+                        "#name": "field \"Field explanation\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "dontSearch": true,
+                           "htmlText": "<p>The field below allows you to type only digits:</p>",
+                           "id": "1207",
+                           "layer": "190",
+                           "lockText": true,
+                           "name": "Field explanation",
+                           "opaque": false,
+                           "rect": "8,438,202,475",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1205",
+                     "layer": "188",
+                     "lockLoc": true,
+                     "name": "Accepting only digit characters during data entry Example",
+                     "rect": "4,434,206,496"
+                  }
+               },
+               "1208": {
+                  "#name": "group \"Removing bold text styles from a field Example\"",
+                  "childcontrols": {
+                     "1209": {
+                        "#name": "field \"Example Text\"",
+                        "customproperties": {
+                           "savedHTMLText": "<p>This is <b>some bold text</b>, whereas this is <i>italic</i>, and this is <b><i>bold italic</i></b>, and here we see some <font size=\"18\">large</font> and <font size=\"18\"><b>large bold</b></font> text.</p>"
+                        },
+                        "properties": {
+                           "fixedLineHeight": false,
+                           "htmlText": "%file%: assets/revGettingStartedScripts_1002_1208_1209_htmlText.txt",
+                           "id": "1209",
+                           "layer": "192",
+                           "lockText": true,
+                           "name": "Example Text",
+                           "rect": "58,438,294,522",
+                           "sharedText": true,
+                           "traversalOn": false
+                        }
+                     },
+                     "1210": {
+                        "#name": "field \"Example HTML\"",
+                        "properties": {
+                           "htmlText": "%file%: assets/revGettingStartedScripts_1002_1208_1210_htmlText.txt",
+                           "id": "1210",
+                           "layer": "193",
+                           "lockText": true,
+                           "name": "Example HTML",
+                           "rect": "58,524,294,614",
+                           "sharedText": true,
+                           "traversalOn": false
+                        }
+                     },
+                     "1211": {
+                        "#name": "button \"Remove Bold\"",
+                        "properties": {
+                           "id": "1211",
+                           "layer": "194",
+                           "name": "Remove Bold",
+                           "rect": "60,621,162,644"
+                        }
+                     },
+                     "1212": {
+                        "#name": "button \"Reset\"",
+                        "properties": {
+                           "id": "1212",
+                           "layer": "195",
+                           "name": "Reset",
+                           "rect": "182,621,282,644"
+                        }
+                     },
+                     "1213": {
+                        "#name": "field \"Text Label\"",
+                        "properties": {
+                           "htmlText": "<p>Text:</p>",
+                           "id": "1213",
+                           "layer": "196",
+                           "lockText": true,
+                           "name": "Text Label",
+                           "opaque": false,
+                           "rect": "8,438,60,460",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1214": {
+                        "#name": "field \"HTML Label\"",
+                        "properties": {
+                           "htmlText": "<p>HTML:</p>",
+                           "id": "1214",
+                           "layer": "197",
+                           "lockText": true,
+                           "name": "HTML Label",
+                           "opaque": false,
+                           "rect": "8,525,60,547",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1208",
+                     "layer": "191",
+                     "lockLoc": true,
+                     "name": "Removing bold text styles from a field Example",
+                     "rect": "4,434,298,645"
+                  }
+               },
+               "1215": {
+                  "#name": "group \"Reversing text Example\"",
+                  "childcontrols": {
+                     "1216": {
+                        "#name": "field \"Example Text\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1216",
+                           "layer": "199",
+                           "name": "Example Text",
+                           "rect": "11,459,246,482",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1217": {
+                        "#name": "button \"Reverse It!\"",
+                        "properties": {
+                           "id": "1217",
+                           "layer": "200",
+                           "name": "Reverse It!",
+                           "rect": "77,488,180,511"
+                        }
+                     },
+                     "1218": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Enter some text to reverse:</p>",
+                           "id": "1218",
+                           "layer": "201",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "rect": "8,438,209,455",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1215",
+                     "layer": "198",
+                     "lockLoc": true,
+                     "name": "Reversing text Example",
+                     "rect": "4,434,248,511"
+                  }
+               },
+               "1219": {
+                  "#name": "group \"Rounding a number up to a ceiling Example\"",
+                  "childcontrols": {
+                     "1220": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Enter a number in the box, then press the button to see the ceiling:</p>",
+                           "id": "1220",
+                           "layer": "203",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "rect": "8,438,155,495",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1221": {
+                        "#name": "field \"Example Number\"",
+                        "properties": {
+                           "dontSearch": true,
+                           "htmlText": "<p>1.4</p>",
+                           "id": "1221",
+                           "layer": "204",
+                           "name": "Example Number",
+                           "rect": "155,445,220,468",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1222": {
+                        "#name": "button \"Ceiling\"",
+                        "properties": {
+                           "accelMods": "command",
+                           "id": "1222",
+                           "layer": "205",
+                           "name": "Ceiling",
+                           "rect": "153,474,224,498"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1219",
+                     "layer": "202",
+                     "lockLoc": true,
+                     "name": "Rounding a number up to a ceiling Example",
+                     "rect": "4,434,225,499",
+                     "tabGroupBehavior": true
+                  }
+               },
+               "1223": {
+                  "#name": "group \"Setting an RGB color channel of an object Example\"",
+                  "childcontrols": {
+                     "1224": {
+                        "#name": "field id 1224",
+                        "properties": {
+                           "htmlText": "<p>Blue</p>",
+                           "id": "1224",
+                           "layer": "207",
+                           "lockText": true,
+                           "opaque": false,
+                           "rect": "107,442,145,469",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1225": {
+                        "#name": "field id 1225",
+                        "properties": {
+                           "htmlText": "<p>Green</p>",
+                           "id": "1225",
+                           "layer": "208",
+                           "lockText": true,
+                           "opaque": false,
+                           "rect": "53,442,97,469",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1226": {
+                        "#name": "field id 1226",
+                        "properties": {
+                           "htmlText": "<p>Red</p>",
+                           "id": "1226",
+                           "layer": "209",
+                           "lockText": true,
+                           "opaque": false,
+                           "rect": "12,442,45,469",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1227": {
+                        "#name": "graphic \"Color Swatch\"",
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "255,255,255",
+                           "filled": true,
+                           "id": "1227",
+                           "layer": "210",
+                           "name": "Color Swatch",
+                           "opaque": true,
+                           "polySides": "6",
+                           "rect": "172,454,276,554",
+                           "style": "regular"
+                        }
+                     },
+                     "1228": {
+                        "#name": "scrollbar \"Green\"",
+                        "properties": {
+                           "endValue": "0",
+                           "id": "1228",
+                           "layer": "211",
+                           "lineInc": "-253.003891",
+                           "name": "Green",
+                           "pageInc": "-223.003891",
+                           "rect": "68,462,98,554",
+                           "startValue": "255",
+                           "style": "scale",
+                           "thumbPosition": "255",
+                           "thumbSize": "-223.003891"
+                        }
+                     },
+                     "1229": {
+                        "#name": "scrollbar \"Blue\"",
+                        "properties": {
+                           "endValue": "0",
+                           "id": "1229",
+                           "layer": "212",
+                           "lineInc": "-253.003891",
+                           "name": "Blue",
+                           "pageInc": "-223.003891",
+                           "rect": "118,462,148,554",
+                           "startValue": "255",
+                           "style": "scale",
+                           "thumbPosition": "255",
+                           "thumbSize": "-223.003891"
+                        }
+                     },
+                     "1230": {
+                        "#name": "scrollbar \"Red\"",
+                        "properties": {
+                           "endValue": "0",
+                           "id": "1230",
+                           "layer": "213",
+                           "lineInc": "-253.011673",
+                           "name": "Red",
+                           "pageInc": "-223.128405",
+                           "rect": "18,462,48,554",
+                           "startValue": "255",
+                           "style": "scale",
+                           "thumbPosition": "255",
+                           "thumbSize": "0"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1223",
+                     "layer": "206",
+                     "lockLoc": true,
+                     "margins": "8",
+                     "name": "Setting an RGB color channel of an object Example",
+                     "rect": "4,434,284,562"
+                  }
+               },
+               "1231": {
+                  "#name": "group \"Shifting selected text to the right or left Example\"",
+                  "childcontrols": {
+                     "1232": {
+                        "#name": "field \"Example Text\"",
+                        "properties": {
+                           "htmlText": "%file%: assets/revGettingStartedScripts_1002_1231_1232_htmlText.txt",
+                           "id": "1232",
+                           "layer": "215",
+                           "name": "Example Text",
+                           "rect": "14,476,264,636",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "tabStops": "20",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1234": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Select some of the text and press Tab to shift right or Shift-Tab to shift left:</p>",
+                           "id": "1234",
+                           "layer": "216",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "opaque": false,
+                           "rect": "9,438,258,487",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1231",
+                     "layer": "214",
+                     "lockLoc": true,
+                     "name": "Shifting selected text to the right or left Example",
+                     "rect": "4,434,262,661"
+                  }
+               },
+               "1235": "#shared group",
+               "1240": {
+                  "#name": "group \"Speaking an alert message Example\"",
+                  "childcontrols": {
+                     "1241": {
+                        "#name": "button \"Speak!\"",
+                        "properties": {
+                           "id": "1241",
+                           "layer": "222",
+                           "name": "Speak!",
+                           "rect": "58,491,158,514"
+                        }
+                     },
+                     "1242": {
+                        "#name": "field \"Speech\"",
+                        "customproperties": {
+                           "defaultAlert": "This is a test."
+                        },
+                        "properties": {
+                           "htmlText": "<p>This is a test.</p>",
+                           "id": "1242",
+                           "layer": "223",
+                           "name": "Speech",
+                           "rect": "15,519,201,568",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1243": {
+                        "#name": "field \"Speech\"",
+                        "customproperties": {
+                           "defaultAlert": "This is a test."
+                        },
+                        "properties": {
+                           "htmlText": "<p>Enter some text into the field, then click \"Speak\" to hear the text spoken:</p>",
+                           "id": "1243",
+                           "layer": "224",
+                           "lockText": true,
+                           "name": "Speech",
+                           "opaque": false,
+                           "rect": "8,438,209,487",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1240",
+                     "layer": "221",
+                     "lockLoc": true,
+                     "name": "Speaking an alert message Example",
+                     "rect": "4,434,213,572"
+                  }
+               },
+               "1244": "#shared group",
+               "1250": {
+                  "#name": "group \"Switching between styled text and HTML source Example\"",
+                  "childcontrols": {
+                     "1251": {
+                        "#name": "field \"Display\"",
+                        "properties": {
+                           "htmlText": "%file%: assets/revGettingStartedScripts_1002_1250_1251_htmlText.txt",
+                           "id": "1251",
+                           "layer": "231",
+                           "name": "Display",
+                           "rect": "8,497,277,597",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1253": {
+                        "#name": "button \"Switch\"",
+                        "properties": {
+                           "id": "1253",
+                           "label": "Switch to HTML",
+                           "layer": "232",
+                           "name": "Switch",
+                           "rect": "66,608,200,632"
+                        }
+                     },
+                     "1254": {
+                        "#name": "field \"Explanation\"",
+                        "properties": {
+                           "htmlText": "<p>Click the button below to switch between displaying HTML and styled text. (You can edit the contents of the field in either mode.)</p>\n<p></p>",
+                           "id": "1254",
+                           "layer": "233",
+                           "lockText": true,
+                           "name": "Explanation",
+                           "opaque": false,
+                           "rect": "8,438,276,494",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1250",
+                     "layer": "230",
+                     "lockLoc": true,
+                     "name": "Switching between styled text and HTML source Example",
+                     "rect": "4,434,281,631"
+                  }
+               },
+               "1255": {
+                  "#name": "group \"Translating a color name to an RGB numeric triplet Example\"",
+                  "childcontrols": {
+                     "1256": {
+                        "#name": "button \"Color Name\"",
+                        "properties": {
+                           "accelMods": "command",
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1256",
+                           "label": "Black",
+                           "layer": "235",
+                           "menuLines": "20",
+                           "menuMode": "combobox",
+                           "name": "Color Name",
+                           "rect": "34,460,192,482",
+                           "style": "menu",
+                           "text": "%file%: assets/revGettingStartedScripts_1002_1255_1256_text.txt"
+                        }
+                     },
+                     "1257": {
+                        "#name": "field \"Color Name Label\"",
+                        "properties": {
+                           "htmlText": "<p>Choose a color name:</p>",
+                           "id": "1257",
+                           "layer": "236",
+                           "lockText": true,
+                           "name": "Color Name Label",
+                           "opaque": false,
+                           "rect": "28,438,185,459",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1258": {
+                        "#name": "field \"Color Result\"",
+                        "properties": {
+                           "htmlText": "<p>The color \"Black\" is \"0,0,0\".</p>",
+                           "id": "1258",
+                           "layer": "237",
+                           "lockText": true,
+                           "name": "Color Result",
+                           "opaque": false,
+                           "rect": "8,487,218,524",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "backgroundBehaviour": true
+                  },
+                  "properties": {
+                     "id": "1255",
+                     "layer": "234",
+                     "lockLoc": true,
+                     "name": "Translating a color name to an RGB numeric triplet Example",
+                     "rect": "4,434,222,528"
+                  }
+               },
+               "1259": "#shared group",
+               "1265": "#shared group"
+            },
+            "properties": {
+               "id": "1002"
+            }
+         },
+         "1121": {
+            "#name": "group \"Drag drop a background color onto an object Example\"",
+            "childcontrols": {
+               "1122": {
+                  "#name": "group \"Colors\"",
+                  "childcontrols": {
+                     "1123": {
+                        "#name": "graphic \"White\"",
+                        "customproperties": {
+                           "numericColor": "239,247,255",
+                           "Tabs": false
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "white",
+                           "borderWidth": "1",
+                           "filled": true,
+                           "id": "1123",
+                           "layer": "114",
+                           "lineSize": "0",
+                           "name": "White",
+                           "opaque": true,
+                           "rect": "18,444,34,459",
+                           "showBorder": true,
+                           "threeD": false,
+                           "toolTip": "white"
+                        }
+                     },
+                     "1124": {
+                        "#name": "graphic \"Gray\"",
+                        "customproperties": {
+                           "numericColor": "239,247,255"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "gray",
+                           "borderWidth": "1",
+                           "filled": true,
+                           "id": "1124",
+                           "layer": "115",
+                           "lineSize": "0",
+                           "name": "Gray",
+                           "opaque": true,
+                           "rect": "35,444,51,459",
+                           "showBorder": true,
+                           "threeD": false,
+                           "toolTip": "gray"
+                        }
+                     },
+                     "1125": {
+                        "#name": "graphic \"Black\"",
+                        "customproperties": {
+                           "numericColor": "239,247,255"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "black",
+                           "borderWidth": "1",
+                           "filled": true,
+                           "id": "1125",
+                           "layer": "116",
+                           "lineSize": "0",
+                           "name": "Black",
+                           "opaque": true,
+                           "rect": "52,444,68,459",
+                           "showBorder": true,
+                           "threeD": false,
+                           "toolTip": "black"
+                        }
+                     },
+                     "1126": {
+                        "#name": "graphic \"Red\"",
+                        "customproperties": {
+                           "numericColor": "239,247,255"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "red",
+                           "borderWidth": "1",
+                           "filled": true,
+                           "id": "1126",
+                           "layer": "117",
+                           "lineSize": "0",
+                           "name": "Red",
+                           "opaque": true,
+                           "rect": "69,444,85,459",
+                           "showBorder": true,
+                           "threeD": false,
+                           "toolTip": "red"
+                        }
+                     },
+                     "1127": {
+                        "#name": "graphic \"Orange\"",
+                        "customproperties": {
+                           "numericColor": "239,247,255",
+                           "Tabs": false
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "orange",
+                           "borderWidth": "1",
+                           "filled": true,
+                           "id": "1127",
+                           "layer": "118",
+                           "lineSize": "0",
+                           "name": "Orange",
+                           "opaque": true,
+                           "rect": "86,444,102,459",
+                           "showBorder": true,
+                           "threeD": false,
+                           "toolTip": "orange"
+                        }
+                     },
+                     "1128": {
+                        "#name": "graphic \"Yellow\"",
+                        "customproperties": {
+                           "numericColor": "239,247,255",
+                           "Tabs": false
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "yellow",
+                           "borderWidth": "1",
+                           "filled": true,
+                           "id": "1128",
+                           "layer": "119",
+                           "lineSize": "0",
+                           "name": "Yellow",
+                           "opaque": true,
+                           "rect": "103,444,119,459",
+                           "showBorder": true,
+                           "threeD": false,
+                           "toolTip": "yellow"
+                        }
+                     },
+                     "1129": {
+                        "#name": "graphic \"Green\"",
+                        "customproperties": {
+                           "numericColor": "239,247,255"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "green",
+                           "borderWidth": "1",
+                           "filled": true,
+                           "id": "1129",
+                           "layer": "120",
+                           "lineSize": "0",
+                           "name": "Green",
+                           "opaque": true,
+                           "rect": "120,444,136,459",
+                           "showBorder": true,
+                           "threeD": false,
+                           "toolTip": "green"
+                        }
+                     },
+                     "1130": {
+                        "#name": "graphic \"Blue\"",
+                        "customproperties": {
+                           "numericColor": "239,247,255"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "blue",
+                           "borderWidth": "1",
+                           "filled": true,
+                           "id": "1130",
+                           "layer": "121",
+                           "lineSize": "0",
+                           "name": "Blue",
+                           "opaque": true,
+                           "rect": "137,444,153,459",
+                           "showBorder": true,
+                           "threeD": false,
+                           "toolTip": "blue"
+                        }
+                     },
+                     "1131": {
+                        "#name": "graphic \"Purple\"",
+                        "customproperties": {
+                           "numericColor": "239,247,255",
+                           "Tabs": false
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "purple",
+                           "borderWidth": "1",
+                           "filled": true,
+                           "id": "1131",
+                           "layer": "122",
+                           "lineSize": "0",
+                           "name": "Purple",
+                           "opaque": true,
+                           "rect": "154,444,170,459",
+                           "showBorder": true,
+                           "threeD": false,
+                           "toolTip": "purple"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1122",
+                     "layer": "113",
+                     "name": "Colors",
+                     "rect": "12,438,176,465",
+                     "showBorder": true
+                  }
+               },
+               "1132": {
+                  "#name": "field \"Explanation\"",
+                  "properties": {
+                     "htmlText": "<p>Drag one of the color swatches above to the ball to change the color.</p>",
+                     "id": "1132",
+                     "layer": "123",
+                     "lockText": true,
+                     "name": "Explanation",
+                     "opaque": false,
+                     "rect": "8,475,176,532",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1133": {
+                  "#name": "graphic \"Ball\"",
+                  "properties": {
+                     "antialiased": false,
+                     "filled": true,
+                     "id": "1133",
+                     "layer": "124",
+                     "name": "Ball",
+                     "opaque": true,
+                     "rect": "191,440,273,522",
+                     "showName": true,
+                     "style": "oval"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1121",
+               "layer": "112",
+               "lockLoc": true,
+               "name": "Drag drop a background color onto an object Example",
+               "rect": "4,434,277,536"
+            }
+         },
+         "1156": {
+            "#name": "group \"Getting the dimensions of a picture file Example\"",
+            "childcontrols": {
+               "1157": {
+                  "#name": "button \"Choose a picture file...\"",
+                  "properties": {
+                     "id": "1157",
+                     "layer": "144",
+                     "name": "Choose a picture file...",
+                     "rect": "31,438,164,464"
+                  }
+               },
+               "1158": {
+                  "#name": "field \"Width\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>Width ?? pixels</p>",
+                     "id": "1158",
+                     "layer": "145",
+                     "lockText": true,
+                     "name": "Width",
+                     "rect": "17,496,180,516",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "opaque",
+                     "textAlign": "center",
+                     "traversalOn": false
+                  }
+               },
+               "1159": {
+                  "#name": "field \"Height\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>Height ?? pixels</p>",
+                     "id": "1159",
+                     "layer": "146",
+                     "lockText": true,
+                     "name": "Height",
+                     "rect": "17,514,180,534",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "opaque",
+                     "textAlign": "center",
+                     "traversalOn": false
+                  }
+               },
+               "1160": {
+                  "#name": "field \"Filename\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "id": "1160",
+                     "layer": "147",
+                     "lockText": true,
+                     "name": "Filename",
+                     "opaque": false,
+                     "rect": "8,469,185,489",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1156",
+               "layer": "143",
+               "lockLoc": true,
+               "name": "Getting the dimensions of a picture file Example",
+               "rect": "4,434,189,538"
+            }
+         },
+         "1186": {
+            "#name": "group \"Popping up a menu after a delay timer Example\"",
+            "childcontrols": {
+               "1187": {
+                  "#name": "button \"Colors\"",
+                  "properties": {
+                     "accelMods": "command",
+                     "id": "1187",
+                     "layer": "171",
+                     "menuMode": "popup",
+                     "name": "Colors",
+                     "rect": "108,470,184,490",
+                     "style": "menu",
+                     "text": "Red\nGreen\nBlue\nBlack",
+                     "visible": false
+                  }
+               },
+               "1188": {
+                  "#name": "button \"Color\"",
+                  "properties": {
+                     "accelMods": "command",
+                     "id": "1188",
+                     "label": "Change color to green",
+                     "layer": "172",
+                     "name": "Color",
+                     "rect": "47,499,210,524",
+                     "traversalOn": false
+                  }
+               },
+               "1189": {
+                  "#name": "field \"Example Text\"",
+                  "properties": {
+                     "htmlText": "<p>This is a test. This is only a test. Had this been an actual life, you would have received instructions on where to go and what to do.</p>",
+                     "id": "1189",
+                     "layer": "173",
+                     "lockText": true,
+                     "name": "Example Text",
+                     "rect": "24,530,237,593",
+                     "sharedText": true,
+                     "showFocusBorder": false
+                  }
+               },
+               "1190": {
+                  "#name": "field \"Example Label\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "<p>Select some text and click the button to change the text color. To change the color, hold down the mouse on the button and choose a new color from the popup menu.</p>",
+                     "id": "1190",
+                     "layer": "174",
+                     "lockText": true,
+                     "name": "Example Label",
+                     "opaque": false,
+                     "rect": "10,432,254,493",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "backgroundBehaviour": true
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1186",
+               "layer": "170",
+               "lockLoc": true,
+               "name": "Popping up a menu after a delay timer Example",
+               "rect": "4,434,256,595"
+            }
+         },
+         "1235": {
+            "#name": "group \"Sorting a list Example\"",
+            "childcontrols": {
+               "1236": {
+                  "#name": "button \"Sort Titles\"",
+                  "properties": {
+                     "accelMods": "command",
+                     "id": "1236",
+                     "layer": "218",
+                     "name": "Sort Titles",
+                     "rect": "46,608,135,631"
+                  }
+               },
+               "1237": {
+                  "#name": "field \"Example Titles\"",
+                  "customproperties": {
+                     "defaultTitlesList": "A Portrait of Egypt\nAcorns Grow\nAfter Long Silence\nAn Open Book\nAnabasis\nGreen Mansions\nRiders of the Purple Sage\nThe Devil and the Deep Blue Sea\nThe Green Mile\nThen And Now"
+                  },
+                  "properties": {
+                     "htmlText": "<p>A Portrait of Egypt</p>\n<p>Acorns Grow</p>\n<p>After Long Silence</p>\n<p>An Open Book</p>\n<p>Anabasis</p>\n<p>Green Mansions</p>\n<p>Riders of the Purple Sage</p>\n<p>The Devil and the Deep Blue Sea</p>\n<p>The Green Mile</p>\n<p>Then And Now</p>",
+                     "id": "1237",
+                     "layer": "219",
+                     "name": "Example Titles",
+                     "rect": "11,485,196,602",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1239": {
+                  "#name": "field \"Explanation\"",
+                  "properties": {
+                     "htmlText": "<p>Press the Sort button below to sort the list of titles while disregarding leading \"The\", \"A\", and \"An\":</p>\n<p></p>",
+                     "id": "1239",
+                     "layer": "220",
+                     "lockText": true,
+                     "name": "Explanation",
+                     "rect": "8,438,201,484",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "opaque",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1235",
+               "layer": "217",
+               "lockLoc": true,
+               "name": "Sorting a list Example",
+               "rect": "4,434,205,633"
+            }
+         },
+         "1244": {
+            "#name": "group \"Storing a modification timestamp Example\"",
+            "childcontrols": {
+               "1245": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "htmlText": "<p>Some text to change</p>",
+                     "id": "1245",
+                     "layer": "226",
+                     "name": "New Field 1",
+                     "rect": "8,436,142,458",
+                     "sharedText": true,
+                     "showFocusBorder": false
+                  }
+               },
+               "1246": {
+                  "#name": "field \"New Field 2\"",
+                  "properties": {
+                     "htmlText": "<p>A different text field, with more text in it. Change this text and re-open the stack to see the new date reflected to the left.</p>",
+                     "id": "1246",
+                     "layer": "227",
+                     "name": "New Field 2",
+                     "rect": "8,460,141,556",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1248": {
+                  "#name": "field \"Explanation\"",
+                  "properties": {
+                     "htmlText": "<p>The text in these fields was last changed:</p>\n<p>11/15/05 10:39 AM</p>\n<p></p>\n<p>This example stack's changes are not saved, so if you haven't changed the text in this window during the current session, the above date may not be accurate.)</p>",
+                     "id": "1248",
+                     "layer": "228",
+                     "lockText": true,
+                     "name": "Explanation",
+                     "opaque": false,
+                     "rect": "144,432,365,564",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1249": {
+                  "#name": "field \"New Field 3\"",
+                  "properties": {
+                     "htmlText": "<p>Still more text to modify. None of these fields has a script of its own.</p>",
+                     "id": "1249",
+                     "layer": "229",
+                     "name": "New Field 3",
+                     "rect": "8,565,220,599",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "opaque"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1244",
+               "layer": "225",
+               "lockLoc": true,
+               "name": "Storing a modification timestamp Example",
+               "rect": "4,434,369,603"
+            }
+         },
+         "1259": {
+            "#name": "group \"Truncating text to a specific pixel width Example\"",
+            "childcontrols": {
+               "1260": {
+                  "#name": "field \"Width label\"",
+                  "properties": {
+                     "htmlText": "<p>pixels</p>",
+                     "id": "1260",
+                     "layer": "239",
+                     "lockText": true,
+                     "name": "Width label",
+                     "rect": "178,556,226,576",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "opaque",
+                     "traversalOn": false
+                  }
+               },
+               "1261": {
+                  "#name": "field \"Text\"",
+                  "properties": {
+                     "htmlText": "<p>This is a test.</p>",
+                     "id": "1261",
+                     "layer": "240",
+                     "name": "Text",
+                     "rect": "12,498,209,544",
+                     "sharedText": true,
+                     "showFocusBorder": false
+                  }
+               },
+               "1262": {
+                  "#name": "button \"Truncate to fit in:\"",
+                  "properties": {
+                     "id": "1262",
+                     "layer": "241",
+                     "name": "Truncate to fit in:",
+                     "rect": "13,556,130,579"
+                  }
+               },
+               "1263": {
+                  "#name": "field \"Width\"",
+                  "properties": {
+                     "htmlText": "<p>80</p>",
+                     "id": "1263",
+                     "layer": "242",
+                     "name": "Width",
+                     "rect": "133,556,184,577",
+                     "sharedText": true
+                  }
+               },
+               "1264": {
+                  "#name": "field \"Explanation\"",
+                  "properties": {
+                     "htmlText": "<p>Enter some text, fill in a pixel width, and click the button to see how much of the text will fit into the specified width:</p>",
+                     "id": "1264",
+                     "layer": "243",
+                     "lockText": true,
+                     "name": "Explanation",
+                     "rect": "8,434,209,493",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "opaque",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1259",
+               "layer": "238",
+               "lockLoc": true,
+               "name": "Truncating text to a specific pixel width Example",
+               "rect": "4,434,230,579"
+            }
+         },
+         "1265": {
+            "#name": "group \"Inserting line breaks to hard wrap text Example\"",
+            "childcontrols": {
+               "1266": {
+                  "#name": "field \"Line Length label\"",
+                  "properties": {
+                     "htmlText": "<p>characters</p>",
+                     "id": "1266",
+                     "layer": "245",
+                     "lockText": true,
+                     "name": "Line Length label",
+                     "rect": "135,439,219,458",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "opaque",
+                     "traversalOn": false
+                  }
+               },
+               "1267": {
+                  "#name": "field \"Example Text\"",
+                  "customproperties": {
+                     "originalText": "\u0080\u009CI don't like spinach, and I'm glad I don't, because if I liked it I'd eat it, and I just hate it.\u0080\u009D\n\n\u0080\u0094 Clarence Darrow"
+                  },
+                  "properties": {
+                     "htmlText": "<p>\u2026ldquo;I don't like spinach, and I'm glad I don't, because if I liked it I'd eat it, and I just hate it.\u2026rdquo;</p>\n<p></p>\n<p>\u2026mdash; Clarence Darrow</p>",
+                     "id": "1267",
+                     "layer": "246",
+                     "name": "Example Text",
+                     "rect": "8,468,258,620",
+                     "sharedText": true,
+                     "showFocusBorder": false
+                  }
+               },
+               "1268": {
+                  "#name": "field \"Line Length\"",
+                  "properties": {
+                     "htmlText": "<p>30</p>",
+                     "id": "1268",
+                     "layer": "247",
+                     "name": "Line Length",
+                     "rect": "98,439,137,462",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "textAlign": "right"
+                  }
+               },
+               "1269": {
+                  "#name": "button \"Wrap to:\"",
+                  "properties": {
+                     "id": "1269",
+                     "layer": "248",
+                     "name": "Wrap to:",
+                     "rect": "8,438,94,462"
+                  }
+               }
+            },
+            "customproperties": {
+               "backgroundBehaviour": true
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1265",
+               "layer": "244",
+               "lockLoc": true,
+               "name": "Inserting line breaks to hard wrap text Example",
+               "rect": "4,434,262,624"
+            }
+         }
+      },
+      "customproperties": {
+         "cDescription": "%file%: assets/revGettingStartedScripts_cDescription.bin",
+         "cPrevCard": null
+      },
+      "custompropertysets": {
+         "cEntries": {
+            "Accepting only digit characters during data entry": "%file%: assets/revGettingStartedScripts_cEntries_Accepting only digit characters during data entry.bin",
+            "Centering a window on the screen": "%file%: assets/revGettingStartedScripts_cEntries_Centering a window on the screen.bin",
+            "Check whether a directory or drive is write-protected": "%file%: assets/revGettingStartedScripts_cEntries_Check whether a directory or drive is write-protected.bin",
+            "Check whether the screen resolution is high enough": "%file%: assets/revGettingStartedScripts_cEntries_Check whether the screen resolution is high enough.bin",
+            "Combine random text strings": "%file%: assets/revGettingStartedScripts_cEntries_Combine random text strings.bin",
+            "Compare numbers approximately": "%file%: assets/revGettingStartedScripts_cEntries_Compare numbers approximately.bin",
+            "Converting a relative path to an absolute path": "%file%: assets/revGettingStartedScripts_cEntries_Converting a relative path to an absolute path.bin",
+            "Converting an absolute path to a relative path": "%file%: assets/revGettingStartedScripts_cEntries_Converting an absolute path to a relative path.bin",
+            "Converting between characters and numerical (ASCII) values": "%file%: assets/revGettingStartedScripts_cEntries_Converting between characters and numerical (ASCII) values.bin",
+            "Display Hello World": "%file%: assets/revGettingStartedScripts_cEntries_Display Hello World.bin",
+            "Displaying a count down (blocking)": "%file%: assets/revGettingStartedScripts_cEntries_Displaying a count down (blocking).bin",
+            "Displaying a count down (non-blocking)": "%file%: assets/revGettingStartedScripts_cEntries_Displaying a count down (non-blocking).bin",
+            "Drag drop a background color onto an object": "%file%: assets/revGettingStartedScripts_cEntries_Drag drop a background color onto an object.bin",
+            "Dynamic card creation and navigation menu": "%file%: assets/revGettingStartedScripts_cEntries_Dynamic card creation and navigation menu.bin",
+            "Editing the clipboard": "%file%: assets/revGettingStartedScripts_cEntries_Editing the clipboard.bin",
+            "Find out the current platform and system version": "%file%: assets/revGettingStartedScripts_cEntries_Find out the current platform and system version.bin",
+            "Finding common lines in two containers": "%file%: assets/revGettingStartedScripts_cEntries_Finding common lines in two containers.bin",
+            "Finding lines that are not common to two containers": "%file%: assets/revGettingStartedScripts_cEntries_Finding lines that are not common to two containers.bin",
+            "Fitting a printout to the page": "%file%: assets/revGettingStartedScripts_cEntries_Fitting a printout to the page.bin",
+            "Getting the dimensions of a picture file": "%file%: assets/revGettingStartedScripts_cEntries_Getting the dimensions of a picture file.bin",
+            "Inserting line breaks to hard wrap text": "%file%: assets/revGettingStartedScripts_cEntries_Inserting line breaks to hard wrap text.bin",
+            "Inserting some text before each line in a field": "%file%: assets/revGettingStartedScripts_cEntries_Inserting some text before each line in a field.bin",
+            "Limiting the number of characters during data entry": "%file%: assets/revGettingStartedScripts_cEntries_Limiting the number of characters during data entry.bin",
+            "Link text roll over effect": "%file%: assets/revGettingStartedScripts_cEntries_Link text roll over effect.bin",
+            "Listing all the handlers in a script": "%file%: assets/revGettingStartedScripts_cEntries_Listing all the handlers in a script.bin",
+            "Listing all the unique words in a piece of text": "%file%: assets/revGettingStartedScripts_cEntries_Listing all the unique words in a piece of text.bin",
+            "Placing a check next to a menu item": "%file%: assets/revGettingStartedScripts_cEntries_Placing a check next to a menu item.bin",
+            "Placing a font list into a menu": "%file%: assets/revGettingStartedScripts_cEntries_Placing a font list into a menu.bin",
+            "Popping up a menu after a delay timer": "%file%: assets/revGettingStartedScripts_cEntries_Popping up a menu after a delay timer.bin",
+            "Printing all cards that contain a word": "%file%: assets/revGettingStartedScripts_cEntries_Printing all cards that contain a word.bin",
+            "Printing all the fields on a card": "%file%: assets/revGettingStartedScripts_cEntries_Printing all the fields on a card.bin",
+            "Removing bold text styles from a field": "%file%: assets/revGettingStartedScripts_cEntries_Removing bold text styles from a field.bin",
+            "Repeating a string of text": "%file%: assets/revGettingStartedScripts_cEntries_Repeating a string of text.bin",
+            "Replacing a text style in a field": "%file%: assets/revGettingStartedScripts_cEntries_Replacing a text style in a field.bin",
+            "Responding to a choice in a Window menu": "%file%: assets/revGettingStartedScripts_cEntries_Responding to a choice in a Window menu.bin",
+            "Reversing text": "%file%: assets/revGettingStartedScripts_cEntries_Reversing text.bin",
+            "Rounding a number up to a ceiling": "%file%: assets/revGettingStartedScripts_cEntries_Rounding a number up to a ceiling.bin",
+            "Scrolling text banner": "%file%: assets/revGettingStartedScripts_cEntries_Scrolling text banner.bin",
+            "Searching for an open window by title": "%file%: assets/revGettingStartedScripts_cEntries_Searching for an open window by title.bin",
+            "Setting an RGB color channel of an object": "%file%: assets/revGettingStartedScripts_cEntries_Setting an RGB color channel of an object.bin",
+            "Shifting selected text to the right or left": "%file%: assets/revGettingStartedScripts_cEntries_Shifting selected text to the right or left.bin",
+            "Show or hide a scrollbar automatically as text is entered in a field": "%file%: assets/revGettingStartedScripts_cEntries_Show or hide a scrollbar automatically as text is entered in a field.bin",
+            "Simple slide show": "%file%: assets/revGettingStartedScripts_cEntries_Simple slide show.bin",
+            "Sorting a list": "%file%: assets/revGettingStartedScripts_cEntries_Sorting a list.bin",
+            "Speaking an alert message": "%file%: assets/revGettingStartedScripts_cEntries_Speaking an alert message.bin",
+            "Storing a modification timestamp": "%file%: assets/revGettingStartedScripts_cEntries_Storing a modification timestamp.bin",
+            "Switching between styled text and HTML source": "%file%: assets/revGettingStartedScripts_cEntries_Switching between styled text and HTML source.bin",
+            "Text menu: handling choices": "%file%: assets/revGettingStartedScripts_cEntries_Text menu: handling choices.bin",
+            "Text menu: populating with content": "%file%: assets/revGettingStartedScripts_cEntries_Text menu: populating with content.bin",
+            "Text Menu: updating check marks": "%file%: assets/revGettingStartedScripts_cEntries_Text Menu: updating check marks.bin",
+            "Text search box": "%file%: assets/revGettingStartedScripts_cEntries_Text search box.bin",
+            "Translating a color name to an RGB numeric triplet": "%file%: assets/revGettingStartedScripts_cEntries_Translating a color name to an RGB numeric triplet.bin",
+            "Truncating text to a specific pixel width": "%file%: assets/revGettingStartedScripts_cEntries_Truncating text to a specific pixel width.bin",
+            "Updating a menu with a list of open Windows": "%file%: assets/revGettingStartedScripts_cEntries_Updating a menu with a list of open Windows.bin"
+         },
+         "cSections": {
+            "All": "%file%: assets/revGettingStartedScripts_cSections_All.bin",
+            "Menus and the Menu Bar": "%file%: assets/revGettingStartedScripts_cSections_Menus and the Menu Bar.bin",
+            "Printing": "%file%: assets/revGettingStartedScripts_cSections_Printing.bin",
+            "Processing Text and Data": "%file%: assets/revGettingStartedScripts_cSections_Processing Text and Data.bin",
+            "Scripting a User Interface": "%file%: assets/revGettingStartedScripts_cSections_Scripting a User Interface.bin",
+            "The Outside World": "%file%: assets/revGettingStartedScripts_cSections_The Outside World.bin"
+         }
+      },
+      "longID": "stack \"revGettingStartedScripts\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "scripts.rev",
+         "id": "1271",
+         "linkColor": "0,0,0",
+         "linkHiliteColor": "255,0,0",
+         "linkVisitedColor": "0,0,0",
+         "liveResizing": false,
+         "name": "revGettingStartedScripts",
+         "rect": "493,136,749,392",
+         "underlineLinks": true
+      },
+      "sharedGroupIDs": "1121\n1156\n1186\n1235\n1244\n1259\n1265"
+   }
+}

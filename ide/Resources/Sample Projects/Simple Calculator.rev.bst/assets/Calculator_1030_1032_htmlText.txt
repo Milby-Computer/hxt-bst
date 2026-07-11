@@ -1,0 +1,8 @@
+<p><b><font face="Geneva" size="10">Calculator</font></b></p>
+<p>A simple demo that will float above applications</p>
+<p>Click the "keys" or use the keyboard to calculate.</p>
+<p></p>
+<p>The basic calculator code is in the "C" and "=" buttons and the the "Digits" and "Operators" groups. The keystroke code is in the first card.</p>
+<p></p>
+<p>Copyright &copy; 2003</p>
+<p>Runtime Revolution Ltd.</p>

@@ -1,0 +1,25 @@
+<p><font face="Lucida Grande" size="12" color="#000000">Hangman is a fun and simple game that everyone knows how to play. This tutorial will show how easy it is to create a Hangman game in Revolution.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Creating a game is a great way of starting out with Revolution as it covers many features</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Using basic controls; buttons, fields and groups</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Custom properties</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Basic coding structures such as if statements, for loops and switch</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">   statements</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Skinning a stack with images</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">And at the end you have a great looking game that is fun to play and can be extended in any number of ways.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Design and Planning</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Once we have decided that we are going to create a Hangman game the first step in building our application is planning and design. We need to decide how we want our game to look, and think about exactly what it needs to do.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">We will start with the design of our user interface - so what do we need to include:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Gallows</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Hanged man</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Letters for the player to choose from</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Puzzle (the lines representing characters in the answer that get filled in)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Hint, to let the player know if they are guessing a film, book etc</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Button to start a new game and quit&#0;&#0;&#0;&#0;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">That's a good start, so now we will draw a few sketches of how our game might look. We have also decided to go for a Halloween theme so we will include this in our sketch. So a design might look something like this:</font></p>

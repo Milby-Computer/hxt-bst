@@ -1,0 +1,297 @@
+{
+   "#mainstack": "revgettingstartscripts2",
+   "revgettingstartscripts2": {
+      "#name": "stack \"revgettingstartscripts2\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "299801": {
+                  "#name": "image \"Thumbnail Bouncy\"",
+                  "properties": {
+                     "id": "299801",
+                     "layer": "1",
+                     "name": "Thumbnail Bouncy",
+                     "rect": "601,527,687,587",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299801_text.png"
+                  }
+               },
+               "299802": {
+                  "#name": "image \"Screenshot Bouncy\"",
+                  "properties": {
+                     "id": "299802",
+                     "layer": "20",
+                     "name": "Screenshot Bouncy",
+                     "rect": "790,596,890,658",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299802_text.png"
+                  }
+               },
+               "299803": {
+                  "#name": "image \"Thumbnail Internet Image Importer\"",
+                  "properties": {
+                     "id": "299803",
+                     "layer": "2",
+                     "name": "Thumbnail Internet Image Importer",
+                     "rect": "396,784,482,845",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299803_text.png"
+                  }
+               },
+               "299804": {
+                  "#name": "image \"Screenshot Internet Image Importer\"",
+                  "properties": {
+                     "id": "299804",
+                     "layer": "3",
+                     "name": "Screenshot Internet Image Importer",
+                     "rect": "20,278,723,779",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299804_text.png"
+                  }
+               },
+               "299805": {
+                  "#name": "image \"Thumbnail Video Capture\"",
+                  "properties": {
+                     "id": "299805",
+                     "layer": "4",
+                     "name": "Thumbnail Video Capture",
+                     "rect": "766,368,852,442",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299805_text.png"
+                  }
+               },
+               "299806": {
+                  "#name": "image \"Screenshot Video Capture\"",
+                  "properties": {
+                     "id": "299806",
+                     "layer": "5",
+                     "name": "Screenshot Video Capture",
+                     "rect": "60,64,690,606",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299806_text.png"
+                  }
+               },
+               "299807": {
+                  "#name": "image \"Thumbnail Multiple Choice Questionnaire\"",
+                  "properties": {
+                     "id": "299807",
+                     "layer": "6",
+                     "name": "Thumbnail Multiple Choice Questionnaire",
+                     "rect": "388,629,474,684",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299807_text.png"
+                  }
+               },
+               "299808": {
+                  "#name": "image \"Screenshot Multiple Choice Questionnaire\"",
+                  "properties": {
+                     "id": "299808",
+                     "layer": "7",
+                     "name": "Screenshot Multiple Choice Questionnaire",
+                     "rect": "252,58,954,504",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299808_text.png"
+                  }
+               },
+               "299809": {
+                  "#name": "image \"Thumbnail Simple Calculator\"",
+                  "properties": {
+                     "id": "299809",
+                     "layer": "8",
+                     "name": "Thumbnail Simple Calculator",
+                     "rect": "505,344,591,481",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299809_text.png"
+                  }
+               },
+               "299810": {
+                  "#name": "image \"Screenshot Simple Calculator\"",
+                  "properties": {
+                     "id": "299810",
+                     "layer": "9",
+                     "name": "Screenshot Simple Calculator",
+                     "rect": "462,275,635,551",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299810_text.png"
+                  }
+               },
+               "299811": {
+                  "#name": "image \"Thumbnail Internet Chat\"",
+                  "properties": {
+                     "id": "299811",
+                     "layer": "10",
+                     "name": "Thumbnail Internet Chat",
+                     "rect": "810,82,896,145",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299811_text.png"
+                  }
+               },
+               "299812": {
+                  "#name": "image \"Screenshot Internet Chat\"",
+                  "properties": {
+                     "id": "299812",
+                     "layer": "11",
+                     "name": "Screenshot Internet Chat",
+                     "rect": "34,16,726,523",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299812_text.png"
+                  }
+               },
+               "299813": {
+                  "#name": "image \"Thumbnail Kiosk\"",
+                  "properties": {
+                     "id": "299813",
+                     "layer": "12",
+                     "name": "Thumbnail Kiosk",
+                     "rect": "523,434,609,504",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299813_text.png"
+                  }
+               },
+               "299814": {
+                  "#name": "image \"Screenshot Kiosk\"",
+                  "properties": {
+                     "id": "299814",
+                     "layer": "13",
+                     "name": "Screenshot Kiosk",
+                     "rect": "432,363,700,574",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299814_text.png"
+                  }
+               },
+               "299815": {
+                  "#name": "image \"Thumbnail Open Anything\"",
+                  "properties": {
+                     "id": "299815",
+                     "layer": "14",
+                     "name": "Thumbnail Open Anything",
+                     "rect": "810,132,896,204",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299815_text.png"
+                  }
+               },
+               "299816": {
+                  "#name": "image \"Screenshot Open Anything\"",
+                  "properties": {
+                     "id": "299816",
+                     "layer": "15",
+                     "name": "Screenshot Open Anything",
+                     "rect": "416,-2,986,473",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299816_text.png"
+                  }
+               },
+               "299817": {
+                  "#name": "image \"Thumbnail Contact manager\"",
+                  "properties": {
+                     "id": "299817",
+                     "layer": "16",
+                     "name": "Thumbnail Contact manager",
+                     "rect": "814,90,900,186",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299817_text.png"
+                  }
+               },
+               "299818": {
+                  "#name": "image \"Screenshot Contact manager\"",
+                  "properties": {
+                     "id": "299818",
+                     "layer": "17",
+                     "name": "Screenshot Contact manager",
+                     "rect": "606,32,1019,495",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299818_text.png"
+                  }
+               },
+               "299819": {
+                  "#name": "image \"Thumbnail Preferences pane\"",
+                  "properties": {
+                     "id": "299819",
+                     "layer": "18",
+                     "name": "Thumbnail Preferences pane",
+                     "rect": "474,363,560,443",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299819_text.png"
+                  }
+               },
+               "299820": {
+                  "#name": "image \"Screenshot Preferences pane\"",
+                  "properties": {
+                     "id": "299820",
+                     "layer": "19",
+                     "name": "Screenshot Preferences pane",
+                     "rect": "254,114,527,369",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299820_text.png"
+                  }
+               },
+               "299822": {
+                  "#name": "image \"Screenshot U3 Example\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "299822",
+                     "layer": "21",
+                     "name": "Screenshot U3 Example",
+                     "opaque": false,
+                     "rect": "504,778,974,940",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revgettingstartscripts2_1002_299822_text.png"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "21"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cDescription": "%file%: assets/revgettingstartscripts2_cDescription.bin",
+         "cPrevCard": null
+      },
+      "custompropertysets": {
+         "cEntries": {
+            "Bouncy": "%file%: assets/revgettingstartscripts2_cEntries_Bouncy.bin",
+            "Contact manager": "%file%: assets/revgettingstartscripts2_cEntries_Contact manager.bin",
+            "Internet Chat": "%file%: assets/revgettingstartscripts2_cEntries_Internet Chat.bin",
+            "Internet Image Importer": "%file%: assets/revgettingstartscripts2_cEntries_Internet Image Importer.bin",
+            "Kiosk": "%file%: assets/revgettingstartscripts2_cEntries_Kiosk.bin",
+            "Multiple Choice Questionnaire": "%file%: assets/revgettingstartscripts2_cEntries_Multiple Choice Questionnaire.bin",
+            "Open Anything": "%file%: assets/revgettingstartscripts2_cEntries_Open Anything.bin",
+            "Preferences pane": "%file%: assets/revgettingstartscripts2_cEntries_Preferences pane.bin",
+            "Simple Calculator": "%file%: assets/revgettingstartscripts2_cEntries_Simple Calculator.bin",
+            "U3 Example": "%file%: assets/revgettingstartscripts2_cEntries_U3 Example.bin",
+            "Video Capture": "%file%: assets/revgettingstartscripts2_cEntries_Video Capture.bin"
+         },
+         "cREVGeometryCache": {
+            "stackID": "299824"
+         },
+         "cSections": {
+            "All": "%file%: assets/revgettingstartscripts2_cSections_All.bin"
+         }
+      },
+      "longID": "stack \"revgettingstartscripts2\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "projects.rev",
+         "id": "299824",
+         "linkColor": "0,0,0",
+         "linkHiliteColor": "255,0,0",
+         "linkVisitedColor": "0,0,0",
+         "liveResizing": false,
+         "name": "revgettingstartscripts2",
+         "rect": "408,161,1465,1131",
+         "underlineLinks": true
+      },
+      "sharedGroupIDs": null
+   }
+}

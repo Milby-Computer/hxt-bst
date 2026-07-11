@@ -1,0 +1,897 @@
+{
+   "#mainstack": "Print Dialog",
+   "Print Dialog": {
+      "#name": "stack \"Print Dialog\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"Tab Menu\"",
+                  "properties": {
+                     "bottomColor": "128,128,128",
+                     "id": "1004",
+                     "layer": "1",
+                     "lockLoc": true,
+                     "menuMode": "tabbed",
+                     "name": "Tab Menu",
+                     "rect": "10,8,437,434",
+                     "showName": false,
+                     "style": "menu",
+                     "text": "General"
+                  }
+               },
+               "1031": {
+                  "#name": "button \"Print\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1031",
+                     "layer": "2",
+                     "name": "Print",
+                     "rect": "185,442,263,465"
+                  }
+               },
+               "1035": {
+                  "#name": "button \"Apply\"",
+                  "properties": {
+                     "id": "1035",
+                     "layer": "3",
+                     "name": "Apply",
+                     "rect": "356,442,438,465",
+                     "traversalOn": false
+                  }
+               },
+               "1038": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1038",
+                     "layer": "4",
+                     "name": "Cancel",
+                     "rect": "268,442,350,465",
+                     "traversalOn": false
+                  }
+               },
+               "1080": {
+                  "#name": "group \"Range\"",
+                  "childcontrols": {
+                     "1020": {
+                        "#name": "button \"All\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1020",
+                           "layer": "6",
+                           "name": "All",
+                           "opaque": false,
+                           "rect": "27,207,109,230",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1022": {
+                        "#name": "button \"Selection\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1022",
+                           "layer": "7",
+                           "name": "Selection",
+                           "opaque": false,
+                           "rect": "27,230,125,253",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1026": {
+                        "#name": "button \"Page range select\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1026",
+                           "label": "Pages :",
+                           "layer": "8",
+                           "name": "Page range select",
+                           "opaque": false,
+                           "rect": "27,253,96,276",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1028": {
+                        "#name": "field \"Pages\"",
+                        "properties": {
+                           "backColor": "255,255,255",
+                           "borderColor": "64,128,128",
+                           "disabled": true,
+                           "dontWrap": true,
+                           "id": "1028",
+                           "layer": "9",
+                           "name": "Pages",
+                           "rect": "48,276,206,297"
+                        }
+                     },
+                     "9274": {
+                        "#name": "button \"Current\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "9274",
+                           "label": "Current Page",
+                           "layer": "10",
+                           "name": "Current",
+                           "opaque": false,
+                           "rect": "107,230,205,253",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "borderColor": "192,192,192",
+                     "hilitedButton": "1",
+                     "id": "1080",
+                     "label": "Print Range",
+                     "layer": "5",
+                     "lockLoc": true,
+                     "name": "Range",
+                     "rect": "21,191,216,308",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "1099": {
+                  "#name": "group \"Template Printer\"",
+                  "childcontrols": {
+                     "1095": {
+                        "#name": "image \"Printer\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1095",
+                           "layer": "12",
+                           "name": "Printer",
+                           "rect": "496,44,532,85",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Print Dialog_1002_1099_1095_text.png"
+                        }
+                     },
+                     "1098": {
+                        "#name": "field \"Name\"",
+                        "properties": {
+                           "id": "1098",
+                           "layer": "13",
+                           "lockText": true,
+                           "name": "Name",
+                           "opaque": false,
+                           "rect": "476,84,554,118",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "center",
+                           "traversalOn": false
+                        }
+                     },
+                     "2341": {
+                        "#name": "graphic \"Overlay\"",
+                        "properties": {
+                           "backColor": "49,106,197",
+                           "filled": true,
+                           "id": "2341",
+                           "ink": "blendOverlay",
+                           "layer": "14",
+                           "lineSize": "0",
+                           "name": "Overlay",
+                           "opaque": true,
+                           "rect": "496,44,532,85",
+                           "visible": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "cantDelete": true,
+                     "id": "1099",
+                     "layer": "11",
+                     "lockLoc": true,
+                     "name": "Template Printer",
+                     "rect": "477,40,562,119"
+                  }
+               },
+               "1417": {
+                  "#name": "group \"Copies\"",
+                  "childcontrols": {
+                     "1052": {
+                        "#name": "field \"Number of copies\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Number of copies:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Number of copies:</p>",
+                           "id": "1052",
+                           "layer": "16",
+                           "lockText": true,
+                           "name": "Number of copies",
+                           "opaque": false,
+                           "rect": "230,210,346,231",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1054": {
+                        "#name": "button \"Collate\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1054",
+                           "layer": "17",
+                           "name": "Collate",
+                           "opaque": false,
+                           "rect": "239,240,309,260",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "2403": {
+                        "#name": "image \"collateTrue.PNG\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "2403",
+                           "layer": "19",
+                           "name": "collateTrue.PNG",
+                           "rect": "302,243,403,294",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Print Dialog_1002_1417_2403_text.png"
+                        }
+                     },
+                     "2404": {
+                        "#name": "image \"collateFalse.PNG\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "2404",
+                           "layer": "18",
+                           "name": "collateFalse.PNG",
+                           "rect": "302,249,408,292",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Print Dialog_1002_1417_2404_text.png",
+                           "visible": false
+                        }
+                     },
+                     "5712": {
+                        "#name": "group id 5712",
+                        "childcontrols": {
+                           "5737": {
+                              "#name": "field \"No of Copies\"",
+                              "properties": {
+                                 "dontWrap": true,
+                                 "htmlText": "<p>1</p>",
+                                 "id": "5737",
+                                 "layer": "21",
+                                 "margins": "8,8,80,8",
+                                 "name": "No of Copies",
+                                 "rect": "348,211,409,233"
+                              }
+                           },
+                           "5738": {
+                              "#name": "scrollbar \"Copy scroll\"",
+                              "properties": {
+                                 "endValue": "500",
+                                 "id": "5738",
+                                 "layer": "22",
+                                 "lineInc": "0.959396",
+                                 "name": "Copy scroll",
+                                 "pageInc": "207.853849",
+                                 "rect": "393,212,408,233",
+                                 "startValue": "1",
+                                 "thumbPosition": "1",
+                                 "thumbSize": "0"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "5712",
+                           "layer": "20",
+                           "rect": "344,207,413,237"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "1",
+                     "id": "1417",
+                     "layer": "15",
+                     "lockLoc": true,
+                     "name": "Copies",
+                     "rect": "225,191,421,308",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "1442": {
+                  "#name": "group \"Print Target\"",
+                  "childcontrols": {
+                     "1010": {
+                        "#name": "button \"Print to file\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1010",
+                           "label": "Print to file :",
+                           "layer": "24",
+                           "name": "Print to file",
+                           "opaque": false,
+                           "rect": "28,145,126,183",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1012": {
+                        "#name": "field \"Filename\"",
+                        "properties": {
+                           "backColor": "255,255,255",
+                           "disabled": true,
+                           "dontWrap": true,
+                           "id": "1012",
+                           "layer": "25",
+                           "lockText": true,
+                           "name": "Filename",
+                           "rect": "122,154,382,175"
+                        }
+                     },
+                     "1076": {
+                        "#name": "button \"Browse\"",
+                        "properties": {
+                           "disabled": true,
+                           "id": "1076",
+                           "label": "..",
+                           "layer": "26",
+                           "name": "Browse",
+                           "rect": "386,153,416,176",
+                           "traversalOn": false
+                        }
+                     },
+                     "1431": {
+                        "#name": "group \"Printer List\"",
+                        "childcontrols": {
+                           "9376": {
+                              "#name": "group \"KONICA MINOLTA 40P PS PPD\"",
+                              "childcontrols": {
+                                 "9377": {
+                                    "#name": "image \"Printer\"",
+                                    "properties": {
+                                       "alwaysBuffer": true,
+                                       "id": "9377",
+                                       "layer": "29",
+                                       "name": "Printer",
+                                       "rect": "50,63,86,104",
+                                       "repeatCount": "-1",
+                                       "text": "%file%: assets/Print Dialog_1002_1442_1431_9376_9377_text.png"
+                                    }
+                                 },
+                                 "9378": {
+                                    "#name": "field \"Name\"",
+                                    "properties": {
+                                       "htmlText": "<p>KONICA MINOLTA 40P PS PPD</p>",
+                                       "id": "9378",
+                                       "layer": "30",
+                                       "lockText": true,
+                                       "name": "Name",
+                                       "opaque": false,
+                                       "rect": "35,104,111,166",
+                                       "showBorder": false,
+                                       "style": "transparent",
+                                       "textAlign": "center",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "9379": {
+                                    "#name": "graphic \"Overlay\"",
+                                    "properties": {
+                                       "backColor": "49,106,197",
+                                       "filled": true,
+                                       "id": "9379",
+                                       "ink": "blendOverlay",
+                                       "layer": "31",
+                                       "lineSize": "0",
+                                       "name": "Overlay",
+                                       "opaque": true,
+                                       "rect": "50,63,86,104",
+                                       "visible": false
+                                    }
+                                 }
+                              },
+                              "customproperties": {
+                                 "cActualValue": "KONICA MINOLTA 40P PS PPD",
+                                 "cPrinter": true
+                              },
+                              "properties": {
+                                 "id": "9376",
+                                 "layer": "28",
+                                 "lockLoc": true,
+                                 "name": "KONICA MINOLTA 40P PS PPD",
+                                 "rect": "31,59,116,138"
+                              }
+                           },
+                           "9380": {
+                              "#name": "group \"Microsoft XPS Document Writer\"",
+                              "childcontrols": {
+                                 "9381": {
+                                    "#name": "image \"Printer\"",
+                                    "properties": {
+                                       "alwaysBuffer": true,
+                                       "id": "9381",
+                                       "layer": "33",
+                                       "name": "Printer",
+                                       "rect": "135,63,171,104",
+                                       "repeatCount": "-1",
+                                       "text": "%file%: assets/Print Dialog_1002_1442_1431_9380_9381_text.png"
+                                    }
+                                 },
+                                 "9382": {
+                                    "#name": "field \"Name\"",
+                                    "properties": {
+                                       "htmlText": "<p>Microsoft XPS Document Writer</p>",
+                                       "id": "9382",
+                                       "layer": "34",
+                                       "lockText": true,
+                                       "name": "Name",
+                                       "opaque": false,
+                                       "rect": "121,104,196,182",
+                                       "showBorder": false,
+                                       "style": "transparent",
+                                       "textAlign": "center",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "9383": {
+                                    "#name": "graphic \"Overlay\"",
+                                    "properties": {
+                                       "backColor": "49,106,197",
+                                       "filled": true,
+                                       "id": "9383",
+                                       "ink": "blendOverlay",
+                                       "layer": "35",
+                                       "lineSize": "0",
+                                       "name": "Overlay",
+                                       "opaque": true,
+                                       "rect": "135,63,171,104",
+                                       "visible": false
+                                    }
+                                 }
+                              },
+                              "customproperties": {
+                                 "cActualValue": "Microsoft XPS Document Writer",
+                                 "cPrinter": true
+                              },
+                              "properties": {
+                                 "id": "9380",
+                                 "layer": "32",
+                                 "lockLoc": true,
+                                 "name": "Microsoft XPS Document Writer",
+                                 "rect": "116,59,201,138"
+                              }
+                           },
+                           "9384": {
+                              "#name": "group \"Metafile to EPS Converter\"",
+                              "childcontrols": {
+                                 "9385": {
+                                    "#name": "image \"Printer\"",
+                                    "properties": {
+                                       "alwaysBuffer": true,
+                                       "id": "9385",
+                                       "layer": "37",
+                                       "name": "Printer",
+                                       "rect": "220,63,256,104",
+                                       "repeatCount": "-1",
+                                       "text": "%file%: assets/Print Dialog_1002_1442_1431_9384_9385_text.png"
+                                    }
+                                 },
+                                 "9386": {
+                                    "#name": "field \"Name\"",
+                                    "properties": {
+                                       "htmlText": "<p>Metafile to EPS Converter</p>",
+                                       "id": "9386",
+                                       "layer": "38",
+                                       "lockText": true,
+                                       "name": "Name",
+                                       "opaque": false,
+                                       "rect": "205,104,281,166",
+                                       "showBorder": false,
+                                       "style": "transparent",
+                                       "textAlign": "center",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "9387": {
+                                    "#name": "graphic \"Overlay\"",
+                                    "properties": {
+                                       "backColor": "49,106,197",
+                                       "filled": true,
+                                       "id": "9387",
+                                       "ink": "blendOverlay",
+                                       "layer": "39",
+                                       "lineSize": "0",
+                                       "name": "Overlay",
+                                       "opaque": true,
+                                       "rect": "220,63,256,104",
+                                       "visible": false
+                                    }
+                                 }
+                              },
+                              "customproperties": {
+                                 "cActualValue": "Metafile to EPS Converter",
+                                 "cPrinter": true
+                              },
+                              "properties": {
+                                 "id": "9384",
+                                 "layer": "36",
+                                 "lockLoc": true,
+                                 "name": "Metafile to EPS Converter",
+                                 "rect": "201,59,286,138"
+                              }
+                           },
+                           "9388": {
+                              "#name": "group \"Lexmark C532 PS (MS)\"",
+                              "childcontrols": {
+                                 "9389": {
+                                    "#name": "image \"Printer\"",
+                                    "properties": {
+                                       "alwaysBuffer": true,
+                                       "id": "9389",
+                                       "layer": "41",
+                                       "name": "Printer",
+                                       "rect": "305,63,341,104",
+                                       "repeatCount": "-1",
+                                       "text": "%file%: assets/Print Dialog_1002_1442_1431_9388_9389_text.png"
+                                    }
+                                 },
+                                 "9390": {
+                                    "#name": "field \"Name\"",
+                                    "properties": {
+                                       "backColor": "49,106,197",
+                                       "foreColor": "white",
+                                       "htmlText": "<p>Lexmark C532 PS (MS)</p>",
+                                       "id": "9390",
+                                       "layer": "42",
+                                       "lockText": true,
+                                       "name": "Name",
+                                       "rect": "297,104,360,166",
+                                       "showBorder": false,
+                                       "style": "opaque",
+                                       "textAlign": "center",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "9391": {
+                                    "#name": "graphic \"Overlay\"",
+                                    "properties": {
+                                       "backColor": "49,106,197",
+                                       "filled": true,
+                                       "id": "9391",
+                                       "ink": "blendOverlay",
+                                       "layer": "43",
+                                       "lineSize": "0",
+                                       "name": "Overlay",
+                                       "opaque": true,
+                                       "rect": "305,63,341,104"
+                                    }
+                                 }
+                              },
+                              "customproperties": {
+                                 "cActualValue": "Lexmark C532 PS (MS)",
+                                 "cPrinter": true
+                              },
+                              "properties": {
+                                 "id": "9388",
+                                 "layer": "40",
+                                 "lockLoc": true,
+                                 "name": "Lexmark C532 PS (MS)",
+                                 "rect": "286,59,371,138"
+                              }
+                           },
+                           "9392": {
+                              "#name": "group \"Fax\"",
+                              "childcontrols": {
+                                 "9393": {
+                                    "#name": "image \"Printer\"",
+                                    "properties": {
+                                       "alwaysBuffer": true,
+                                       "id": "9393",
+                                       "layer": "45",
+                                       "name": "Printer",
+                                       "rect": "50,142,86,183",
+                                       "repeatCount": "-1",
+                                       "text": "%file%: assets/Print Dialog_1002_1442_1431_9392_9393_text.png"
+                                    }
+                                 },
+                                 "9394": {
+                                    "#name": "field \"Name\"",
+                                    "properties": {
+                                       "htmlText": "<p>Fax</p>",
+                                       "id": "9394",
+                                       "layer": "46",
+                                       "lockText": true,
+                                       "name": "Name",
+                                       "opaque": false,
+                                       "rect": "57,183,90,213",
+                                       "showBorder": false,
+                                       "style": "transparent",
+                                       "textAlign": "center",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "9395": {
+                                    "#name": "graphic \"Overlay\"",
+                                    "properties": {
+                                       "backColor": "49,106,197",
+                                       "filled": true,
+                                       "id": "9395",
+                                       "ink": "blendOverlay",
+                                       "layer": "47",
+                                       "lineSize": "0",
+                                       "name": "Overlay",
+                                       "opaque": true,
+                                       "rect": "50,142,86,183",
+                                       "visible": false
+                                    }
+                                 }
+                              },
+                              "customproperties": {
+                                 "cActualValue": "Fax",
+                                 "cPrinter": true
+                              },
+                              "properties": {
+                                 "id": "9392",
+                                 "layer": "44",
+                                 "lockLoc": true,
+                                 "name": "Fax",
+                                 "rect": "31,138,116,217"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "backColor": "255,255,255",
+                           "borderColor": "128,128,128",
+                           "borderWidth": "1",
+                           "cantDelete": true,
+                           "id": "1431",
+                           "layer": "27",
+                           "lockLoc": true,
+                           "margins": "0",
+                           "name": "Printer List",
+                           "opaque": true,
+                           "rect": "31,58,413,145",
+                           "scrollbarWidth": "18",
+                           "showBorder": true,
+                           "threeD": false,
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1442",
+                     "layer": "23",
+                     "lockLoc": true,
+                     "name": "Print Target",
+                     "rect": "22,41,422,185",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "6589": {
+                  "#name": "group \"Additional Options\"",
+                  "childcontrols": {
+                     "1060": {
+                        "#name": "button \"Duplex\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1060",
+                           "layer": "49",
+                           "name": "Duplex",
+                           "opaque": false,
+                           "rect": "171,332,236,356",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1085": {
+                        "#name": "button \"Black and white\"",
+                        "properties": {
+                           "disabled": true,
+                           "hiliteBorder": false,
+                           "id": "1085",
+                           "layer": "53",
+                           "name": "Black and white",
+                           "opaque": false,
+                           "rect": "34,327,144,361",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1094": {
+                        "#name": "group \"Duplex settings\"",
+                        "childcontrols": {
+                           "5739": {
+                              "#name": "button \"Long edge\"",
+                              "properties": {
+                                 "disabled": true,
+                                 "hiliteBorder": false,
+                                 "id": "5739",
+                                 "layer": "51",
+                                 "name": "Long edge",
+                                 "opaque": false,
+                                 "rect": "242,331,324,354",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "5740": {
+                              "#name": "button \"Short edge\"",
+                              "properties": {
+                                 "disabled": true,
+                                 "hiliteBorder": false,
+                                 "hilited": true,
+                                 "id": "5740",
+                                 "layer": "52",
+                                 "name": "Short edge",
+                                 "opaque": false,
+                                 "rect": "243,357,325,380",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "disabled": true,
+                           "hilitedButton": "2",
+                           "id": "1094",
+                           "layer": "50",
+                           "name": "Duplex settings",
+                           "rect": "238,327,329,384"
+                        }
+                     },
+                     "4696": {
+                        "#name": "graphic \"Duplex overlay\"",
+                        "properties": {
+                           "backColor": "229,229,229",
+                           "blendLevel": "16",
+                           "filled": true,
+                           "id": "4696",
+                           "ink": "blendLighten",
+                           "layer": "58",
+                           "name": "Duplex overlay",
+                           "opaque": true,
+                           "rect": "326,321,436,401"
+                        }
+                     },
+                     "5770": {
+                        "#name": "image \"long edge portrait.PNG\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "5770",
+                           "layer": "54",
+                           "name": "long edge portrait.PNG",
+                           "rect": "351,331,393,388",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Print Dialog_1002_6589_5770_text.png",
+                           "visible": false
+                        }
+                     },
+                     "5771": {
+                        "#name": "image \"short edge landscape.PNG\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "5771",
+                           "layer": "56",
+                           "name": "short edge landscape.PNG",
+                           "rect": "337,335,396,375",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Print Dialog_1002_6589_5771_text.png",
+                           "visible": false
+                        }
+                     },
+                     "5772": {
+                        "#name": "image \"short edge portrait.PNG\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "5772",
+                           "layer": "55",
+                           "name": "short edge portrait.PNG",
+                           "rect": "353,329,394,388",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Print Dialog_1002_6589_5772_text.png"
+                        }
+                     },
+                     "6905": {
+                        "#name": "image \"long edge landscape.PNG\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "6905",
+                           "layer": "57",
+                           "name": "long edge landscape.PNG",
+                           "rect": "340,333,397,375",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Print Dialog_1002_6589_6905_text.png",
+                           "visible": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "6589",
+                     "layer": "48",
+                     "lockLoc": true,
+                     "name": "Additional Options",
+                     "rect": "21,311,422,402",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "7099": {
+                  "#name": "field \"Error\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "foreColor": "255,0,0",
+                     "id": "7099",
+                     "layer": "59",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "name": "Error",
+                     "opaque": false,
+                     "rect": "22,407,424,428",
+                     "showBorder": false,
+                     "style": "transparent"
+                  }
+               }
+            },
+            "customproperties": {
+               null: "all",
+               "cPrintRange": null,
+               "cPrintRanges": "all"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "59"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "9375"
+         }
+      },
+      "longID": "stack \"Print Dialog\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "revprintdialog.rev",
+         "id": "9395",
+         "liveResizing": false,
+         "name": "Print Dialog",
+         "rect": "737,365,1184,835",
+         "resizable": false
+      },
+      "sharedGroupIDs": null
+   }
+}

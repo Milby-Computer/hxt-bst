@@ -1,0 +1,89 @@
+<p><font size="12" color="#000000">The state of the custom control is the first thing to set up. The state will consist of a number of local variables, and a number of getProps and setProps to allow the rest of the program to manipulate them. We need to consider what properties the control should have. With the scrollbar this is easy, because we can just drag a Revolution scrollbar control from the tools palette into the stack and examine its properties in the inspector. The essential properties are these:</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; Orientation, whether the scrollbar is vertical or horizontal</font></p>
+<p><font size="12" color="#000000">&#149; Start value, the number that the scrollbar runs from</font></p>
+<p><font size="12" color="#000000">&#149; End value, the number that the scrollbar runs to</font></p>
+<p><font size="12" color="#000000">&#149; Thumb size, the size of the scrollbar's slider</font></p>
+<p><font size="12" color="#000000">&#149; Thumb position, the position of the scrollbar's sliderrollbar's slider</font></p>
+<p></p>
+<p><font size="12" color="#000000">There are also some other properties that will help make the scrollbar more customizable:</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; Line increment, how much to scroll when the user clicks on the scroll buttons</font></p>
+<p><font size="12" color="#000000">&#149; Page increment, how much to scroll when the user clicks on the back of the scrollbar</font></p>
+<p></p>
+<p><font size="12" color="#000000">So we use the variables sOrientation, sStartValue, sEndValue, sThumbSize, sThumbPosition, sLineInc and sPageInc. These are declared at the top of the group script, outside any handler.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Next we write setProp handlers for each variable. It is a good idea to comment these handlers explaining what the format of each variable should be. It is sensible also to check the input is correct to help find errors and keep the state of the scrollbar valid. Below is the setProp and getProp for the scrollbar's orientation.</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">setProp</font><font face="Courier" color="#000000"> cOrientation pValue</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">if</font><font face="Courier" color="#000000"> pValue is not among </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> items </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> &quot;horizontal,vertical&quot; </font><font face="Courier" color="#990017">then</font></p>
+<p><font face="Courier" color="#000000">      error &quot;invalid orientation, expected x or y, got &quot; &amp; pValue</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">if</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> pValue </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> sOrientation</font></p>
+<p><font face="Courier" color="#000000">   update</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> cOrientation</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">getProp</font><font face="Courier" color="#000000"> cOrientation</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">return</font><font face="Courier" color="#000000"> sOrientation</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> cOrientation</font></p>
+<p></p>
+<p><font size="12" color="#000000">Please see the </font><font size="12" color="#990006">example stack</font><font size="12" color="#000000"> provided with this tutorial for the rest of the setProps.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Once all the properties of the control are set up in this manner, we can write the &quot;update&quot; function, which simply needs to take all the variables and set the scrollbar up correctly. This function should consist of the following steps:</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; Verify all the parameters are valid</font></p>
+<p><font size="12" color="#000000">&#149; Layout the scrollbar's controls</font></p>
+<p></p>
+<p><font size="12" color="#000000">Also it is very useful here to add an update lock to the control. This enables multiple changes to be made to the control's state without needing to update many times, because the update handler may become quite large in more complex custom controls. The update lock requires another variable &quot;sUpdateLock&quot; and a setProp as follows:</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">setProp</font><font face="Courier" color="#000000"> cUpdateLock pValue</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">if</font><font face="Courier" color="#000000"> pValue is not among </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> items </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> &quot;,false&quot; </font><font face="Courier" color="#990017">then</font></p>
+<p><font face="Courier" color="#000000">      error &quot;invalid value, expected Boolean, got &quot; &amp; pValue</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">if</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">if</font><font face="Courier" color="#000000"> pValue </font><font face="Courier" color="#990017">then</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#2000FB">add</font><font face="Courier" color="#000000"> 1 </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> sUpdateLock</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">else</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">if</font><font face="Courier" color="#000000"> sUpdateLock is 0 </font><font face="Courier" color="#990017">then</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#2000FB">subtract</font><font face="Courier" color="#000000"> 1 from sUpdateLock</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">if</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> cUpdateLock</font></p>
+<p></p>
+<p><font size="12" color="#000000">If we add an if statement to the top of the update handler that exits the handler immediately if sUpdateLock is not zero, then this effectively means we can set all the properties and then only call update once when we are done.</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">on</font><font face="Courier" color="#000000"> update</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">local</font><font face="Courier" color="#000000"> tResult</font></p>
+<p><font face="Courier" color="#000000">   </font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">if</font><font face="Courier" color="#000000"> sUpdateLock is 0 </font><font face="Courier" color="#990017">then</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#2000FB">exit</font><font face="Courier" color="#000000"> update</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">if</font></p>
+<p><font face="Courier" color="#000000">   </font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> updateCheckParams() </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> tResult</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">if</font><font face="Courier" color="#000000"> tResult is not empty </font><font face="Courier" color="#990017">then</font></p>
+<p><font face="Courier" color="#000000">      error tResult</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">if</font></p>
+<p><font face="Courier" color="#000000">   </font></p>
+<p><font face="Courier" color="#000000">   updateLayout </font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> update</font></p>
+<p></p>
+<p><font size="12" color="#000000">Once the update handler has been written, all that remains is to handle the scrollbar's user interaction. This requires writing mouseDown, mouseUp and mouseMove handlers, plus a few more to fine tune the interaction. These handlers should set the properties of the scrollbar, thus causing it to update, rather than manipulate the controls directly.</font></p>
+<p></p>
+<p><font size="12" color="#000000">It is relatively straightforward to write the remaining code, and if done correctly, the scrollbar can now be configured using a handler similar to this, in the script of the card that you wish to use the scrollbar on.</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">on</font><font face="Courier" color="#000000"> scrollbarSetup pBar</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cUpdateLock </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> pBar </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> true</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cOrientation </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> pBar </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> &quot;vertical&quot;</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cStartValue </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> pBar </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> 0</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cEndValue </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> pBar </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> 20000</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cThumbSize </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> pBar </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> 2000</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cThumbPosition </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> pBar </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> 5000</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cLineInc </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> pBar </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> 512</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cPageInc </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> pBar </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> 8192</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cUpdateLock </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> pBar </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> false</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> scrollbarSetup</font></p>
+<p></p>
+<p><font size="12" color="#000000">(pBar is a reference to a scrollbar group, for example the long id of group &quot;Scrollbar&quot;)</font></p>
+<p></p>
+<p><font size="12" color="#000000">When the scrollbar is used, its cThumbPosition will be set to the same value as if it was a standard scrollbar in Revolution, so that if you are already using a standard scrollbar in your program, it will be very easy to change your code to use a custom scrollbar group.</font></p>
+<p></p>
+<p><font size="12" color="#000000">The key to this design is the fact that the custom control has a minimal interaction with the rest of the program. Its state can be changed, but no other messages need to be passed, and no shared variables are used. You can easily use the place command to duplicate the control across your whole stack, and can with equal ease use the scrollbar in many different stacks.</font></p>
+<p></p>
+<p><font size="12" color="#000000">There are many ways to extend this custom control, if you download the stack available free with this tutorial you can experiment. A very easy and useful extension is to give the scrollbar group default values for all its properties, which are stored as constants in the script. These default values can then be used if any of the scrollbar's properties are not set, allowing a scrollbar to be created without any initialisation.</font></p>

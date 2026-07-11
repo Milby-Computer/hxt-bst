@@ -1,0 +1,9 @@
+<p>  <font face="Verdana" size="18">About this Demo stack </font></p>
+<p></p>
+<p><b><font face="Tahoma" size="14">Navigation</font></b></p>
+<p></p>
+<p>Use the Left and Right Arrows at the bottom of this card to move to the Previous and Next Card.</p>
+<p></p>
+<p>OR</p>
+<p></p>
+<p>To move ahead quicker, you can use the slider at the bottom to navigate to a card you wish to explore.</p>

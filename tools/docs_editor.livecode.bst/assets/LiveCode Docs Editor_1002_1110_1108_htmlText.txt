@@ -1,0 +1,66 @@
+<p>&lt;doc&gt;</p>
+<p>&#9;&lt;legacy_id&gt;&lt;/legacy_id&gt;</p>
+<p>&#9;&lt;name&gt;mobileAllowedOrientations&lt;/name&gt;</p>
+<p>&#9;&lt;type&gt;function&lt;/type&gt;</p>
+<p></p>
+<p>&#9;&lt;syntax&gt;</p>
+<p>&#9;&#9;&lt;example&gt;mobileAllowedOrientations()&lt;/example&gt;</p>
+<p>&#9;&lt;/syntax&gt;</p>
+<p></p>
+<p>&#9;&lt;synonyms&gt;</p>
+<p>&#9;&#9;&lt;synonym&gt;iphoneAllowedOrientations&lt;/synonym&gt;</p>
+<p>&#9;&lt;/synonyms&gt;</p>
+<p></p>
+<p>&#9;&lt;summary&gt;Returns a list of the currently allowed orientations.&lt;/summary&gt;</p>
+<p></p>
+<p>&#9;&lt;examples&gt;</p>
+<p>&lt;example&gt;put mobileAllowedOrientations() into theAllowedOrientations&lt;/example&gt;</p>
+<p>&#9;&lt;/examples&gt;</p>
+<p></p>
+<p>&#9;&lt;history&gt;</p>
+<p>&#9;&#9;&lt;introduced version="4.5.3"&gt;Added.&lt;/introduced&gt;</p>
+<p>&#9;&#9;&lt;deprecated version=""&gt;&lt;/deprecated&gt;</p>
+<p>&#9;&#9;&lt;removed version=""&gt;&lt;/removed&gt;</p>
+<p>&#9;&#9;&lt;changed version="4.6.1"&gt;4.6.1&lt;/changed&gt;</p>
+<p>    &lt;experimental version="6.0.0"&gt;6.0.0&lt;/experimental&gt;</p>
+<p>    &lt;nonexperimental version="6.0.1"&gt;6.0.1&lt;/nonexperimental&gt;</p>
+<p>&#9;&lt;/history&gt;</p>
+<p></p>
+<p>&#9;&lt;objects&gt;</p>
+<p>&#9;&lt;/objects&gt;</p>
+<p></p>
+<p>&#9;&lt;platforms&gt;</p>
+<p>&#9;&#9;&lt;ios/&gt;</p>
+<p>&#9;&#9;&lt;android/&gt;</p>
+<p>&#9;&lt;/platforms&gt;</p>
+<p></p>
+<p>&#9;&lt;classes&gt;</p>
+<p>&#9;&#9;&lt;mobile/&gt;</p>
+<p>&#9;&lt;/classes&gt;</p>
+<p></p>
+<p>&#9;&lt;security&gt;</p>
+<p>&#9;&lt;/security&gt;</p>
+<p></p>
+<p></p>
+<p>&#9;&lt;classification&gt;</p>
+<p>&#9;&lt;/classification&gt;</p>
+<p></p>
+<p>&#9;&lt;references&gt;</p>
+<p>&#9;&#9;&lt;function tag="mobileDeviceOrientation"&gt;mobileDeviceOrientation Function&lt;/function&gt;</p>
+<p>&#9;&#9;&lt;function tag="mobileOrientation"&gt;mobileOrientation Function&lt;/function&gt;</p>
+<p>&#9;&#9;&lt;command tag="mobileSetAllowedOrientations"&gt;mobileSetAllowedOrientations Command&lt;/command&gt;</p>
+<p>&#9;&#9;&lt;command tag="mobileLockOrientation"&gt;mobileLockOrientation Command&lt;/command&gt;</p>
+<p>&#9;&#9;&lt;command tag="mobileUnlockOrientation"&gt;mobileUnlockOrientation Command&lt;/command&gt;</p>
+<p>&#9;&#9;&lt;message tag="orientationChanged"&gt;orientationChanged Message&lt;/message&gt;</p>
+<p>&#9;&lt;/references&gt;</p>
+<p></p>
+<p>&#9;&lt;description&gt;</p>
+<p>&#9;&lt;overview&gt;Use the &lt;b&gt;mobileAllowedOrientations&lt;/b&gt; function to find a list of the currently allowed orientations.&lt;/overview&gt;</p>
+<p></p>
+<p>&#9;&#9;&lt;parameters&gt;</p>
+<p>&#9;&#9;&lt;/parameters&gt;</p>
+<p></p>
+<p>&#9;&lt;value&gt;The &lt;b&gt;mobileAllowedOrientations&lt;/b&gt; function returns a comma delimited list including at least one of:&lt;p&gt;&amp;#9;* &lt;i&gt;portrait&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&amp;#9;* &lt;i&gt;portrait upside down&lt;/i&gt; &lt;/p&gt;&lt;p&gt;&amp;#9;* &lt;i&gt;landscape left&lt;/i&gt; &lt;/p&gt;&lt;p&gt;&amp;#9;* &lt;i&gt;landscape right&lt;/i&gt; &lt;/p&gt;&lt;/value&gt;</p>
+<p>&#9;&lt;comments&gt;The &lt;b&gt;mobileAllowedOrientations&lt;/b&gt; function returns a comma delimited list of the orientations the application supports.&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;note&gt;Due to the limitation of the Android operating system, &lt;i&gt;landscape left&lt;/i&gt; and &lt;i&gt;portrait upside-down&lt;/i&gt; are only supported on Android 2.3 and later.&lt;/note&gt;&lt;/comments&gt;</p>
+<p>&#9;&lt;/description&gt;</p>
+<p>&lt;/doc&gt;</p>

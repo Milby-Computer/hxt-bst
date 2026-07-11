@@ -1,0 +1,424 @@
+{
+   "#mainstack": "chat server",
+   "chat client": {
+      "#name": "stack \"chat client\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1007": {
+                  "#name": "button \"Connect\"",
+                  "properties": {
+                     "id": "1007",
+                     "label": "Connect",
+                     "layer": "1",
+                     "name": "Connect",
+                     "rect": "8,6,90,29"
+                  }
+               },
+               "1008": {
+                  "#name": "field \"username\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "193,6,304,30",
+                        "Master,moveH": true,
+                        "Master,moveHAbsolute": true,
+                        "Master,movehDistance": "-252",
+                        "Master,moveHObjectRef": "card",
+                        "Master,moveHObjectSide": "right",
+                        "Master,movevDistance": false,
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleRight": false,
+                        "Master,scaleRightAbsolute": false,
+                        "Master,scalerightDistance": "-0.388889",
+                        "Master,scaleRightObjectRef": "card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaleRightscaleBottom": true,
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "<p>joebloggs</p>",
+                     "id": "1008",
+                     "layer": "2",
+                     "name": "username",
+                     "rect": "214,6,325,30"
+                  }
+               },
+               "1009": {
+                  "#name": "field id 1009",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "117,7,194,34",
+                        "Master,moveH": true,
+                        "Master,moveHAbsolute": true,
+                        "Master,movehDistance": "-345",
+                        "Master,moveHObjectRef": "card",
+                        "Master,moveHObjectSide": "right",
+                        "Master,movevDistance": false,
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleRight": false,
+                        "Master,scaleRightAbsolute": false,
+                        "Master,scalerightDistance": "-0.607143",
+                        "Master,scaleRightObjectRef": "card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaleRightscaleBottom": true,
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>username:</p>",
+                     "id": "1009",
+                     "layer": "3",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "138,7,215,34",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1010": {
+                  "#name": "group id 1010",
+                  "childcontrols": {
+                     "1003": {
+                        "#name": "field \"responses\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "2",
+                              "Master,expectedRect": "5,38,494,383",
+                              "Master,movehDistance": false,
+                              "Master,movevDistance": false,
+                              "Master,scaleBottom": true,
+                              "Master,scaleBottomAbsolute": true,
+                              "Master,scalebottomDistance": "-38",
+                              "Master,scaleBottomObjectRef": "card",
+                              "Master,scaleBottomObjectSide": "Bottom",
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleRight": true,
+                              "Master,scaleRightAbsolute": true,
+                              "Master,scalerightDistance": "-6",
+                              "Master,scaleRightObjectRef": "card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "disabled": true,
+                           "id": "1003",
+                           "layer": "5",
+                           "name": "responses",
+                           "rect": "5,38,515,417",
+                           "scrollbarWidth": "15",
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1004": {
+                        "#name": "field \"chatmessage\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "2",
+                              "Master,expectedRect": "5,390,378,414",
+                              "Master,movehDistance": false,
+                              "Master,moveV": true,
+                              "Master,moveVAbsolute": true,
+                              "Master,movevDistance": "-19",
+                              "Master,moveVObjectRef": "card",
+                              "Master,moveVObjectSide": "bottom",
+                              "Master,scalebottomDistance": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleRight": true,
+                              "Master,scaleRightAbsolute": true,
+                              "Master,scalerightDistance": "-122",
+                              "Master,scaleRightObjectRef": "card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "disabled": true,
+                           "id": "1004",
+                           "layer": "6",
+                           "name": "chatmessage",
+                           "rect": "5,424,399,448"
+                        }
+                     },
+                     "1005": {
+                        "#name": "button \"Send\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "2",
+                              "Master,expectedRect": "395,392,477,415",
+                              "Master,moveH": true,
+                              "Master,moveHAbsolute": true,
+                              "Master,movehDistance": "-64",
+                              "Master,moveHObjectRef": "card",
+                              "Master,moveHObjectSide": "right",
+                              "Master,moveV": true,
+                              "Master,moveVAbsolute": true,
+                              "Master,movevDistance": "-18",
+                              "Master,moveVObjectRef": "card",
+                              "Master,moveVObjectSide": "bottom",
+                              "Master,scalebottomDistance": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scalerightDistance": null,
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "disabled": true,
+                           "id": "1005",
+                           "layer": "7",
+                           "name": "Send",
+                           "rect": "416,426,498,449"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "id": "1010",
+                     "layer": "4",
+                     "rect": "1,34,519,453"
+                  }
+               },
+               "1011": {
+                  "#name": "field id 1011",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "311,7,360,34",
+                        "Master,moveH": true,
+                        "Master,moveHAbsolute": true,
+                        "Master,movehDistance": "-165",
+                        "Master,moveHObjectRef": "card",
+                        "Master,moveHObjectSide": "right",
+                        "Master,movevDistance": false,
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleRight": false,
+                        "Master,scaleRightAbsolute": false,
+                        "Master,scalerightDistance": "-0.277778",
+                        "Master,scaleRightObjectRef": "card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaleRightscaleBottom": true,
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>host:</p>",
+                     "id": "1011",
+                     "layer": "8",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "332,7,381,34",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "field \"host\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "357,6,488,30",
+                        "Master,moveH": true,
+                        "Master,moveHAbsolute": true,
+                        "Master,movehDistance": "-78",
+                        "Master,moveHObjectRef": "card",
+                        "Master,moveHObjectSide": "right",
+                        "Master,movevDistance": false,
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleRight": false,
+                        "Master,scaleRightAbsolute": false,
+                        "Master,scalerightDistance": "-0.02381",
+                        "Master,scaleRightObjectRef": "card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaleRightscaleBottom": true,
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "<p>localhost</p>",
+                     "id": "1012",
+                     "layer": "9",
+                     "name": "host",
+                     "rect": "378,6,509,30"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "1092510838057\n1092510838058\n1092510838059\n1092510838054\n1092510838055\n1092510838060\n1092510838061\n",
+                  "total": "9"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1015"
+         }
+      },
+      "longID": "stack \"chat client\" of stack \"chat server\"",
+      "properties": {
+         "bottomColor": "128,128,128",
+         "decorations": "default",
+         "foreColor": "0,0,0",
+         "hiliteColor": "160,160,160",
+         "id": "1015",
+         "liveResizing": false,
+         "name": "chat client",
+         "rect": "699,128,1220,583",
+         "shadowColor": "172,172,172",
+         "title": "Chat Client",
+         "topColor": "white"
+      },
+      "sharedGroupIDs": null
+   },
+   "chat server": {
+      "#name": "stack \"chat server\"",
+      "#substacks": "chat client",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Start server\"",
+                  "properties": {
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Start server",
+                     "rect": "12,8,94,31"
+                  }
+               },
+               "1004": {
+                  "#name": "button \"Stop server\"",
+                  "properties": {
+                     "disabled": true,
+                     "id": "1004",
+                     "layer": "2",
+                     "name": "Stop server",
+                     "rect": "102,8,184,31"
+                  }
+               },
+               "1005": {
+                  "#name": "field \"serverstatus\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "2",
+                        "Master,expectedRect": "12,38,480,402",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scalebottomDistance": "-13",
+                        "Master,scaleBottomObjectRef": "card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleRight": true,
+                        "Master,scaleRightAbsolute": true,
+                        "Master,scalerightDistance": "-9",
+                        "Master,scaleRightObjectRef": "card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "id": "1005",
+                     "layer": "3",
+                     "name": "serverstatus",
+                     "rect": "12,38,480,402",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1007": {
+                  "#name": "button \"Clear\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "382,8,464,31",
+                        "Master,moveH": true,
+                        "Master,moveHAbsolute": true,
+                        "Master,movehDistance": "-66",
+                        "Master,moveHObjectRef": "card",
+                        "Master,moveHObjectSide": "right",
+                        "Master,movevDistance": false,
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "id": "1007",
+                     "layer": "4",
+                     "name": "Clear",
+                     "rect": "382,8,464,31"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "1092510918479\n1092510918480\n",
+                  "total": "4"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1009"
+         }
+      },
+      "longID": "stack \"chat server\"",
+      "properties": {
+         "bottomColor": "128,128,128",
+         "decorations": "default",
+         "fileName": "Internet Chat.rev",
+         "foreColor": "0,0,0",
+         "hiliteColor": "160,160,160",
+         "id": "1009",
+         "liveResizing": false,
+         "name": "chat server",
+         "rect": "170,140,659,555",
+         "shadowColor": "172,172,172",
+         "title": "Chat Server",
+         "topColor": "white"
+      },
+      "sharedGroupIDs": null
+   }
+}

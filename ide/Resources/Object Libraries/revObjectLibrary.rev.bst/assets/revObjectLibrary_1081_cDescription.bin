@@ -1,0 +1,12 @@
+Scripted button. Custom widget intended for movement or repositioning of other controls within a stack.
+
+The button is grouped with 2 fields for demonstration. Movement/repositioning of the controls is done in the mouseUp handler. Edit this handler to move your own controls.
+
+The button references 4 images. The ids for these images are stored in the following custom properties set on the button:
+
+cMoveUpIcon
+cMoveUpHiliteIcon
+cMoveDownHiliteIcon
+cMoveDownIcon
+
+Note that this control requires the "Revolution Icons" image library to be tranferred to your stack using Distribution Builder when you are preparing your stack for distribution.

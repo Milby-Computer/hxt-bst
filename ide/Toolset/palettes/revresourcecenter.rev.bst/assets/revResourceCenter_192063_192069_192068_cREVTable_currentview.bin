@@ -1,0 +1,10 @@
+<p><font face="helvetica"><b>Description:</b></font></p>
+<p>The Video Capture application captures video from a camera plugged into the computer.  It can capture using either QuickTime or Video For Windows.  (Please note that video capture is not currently supported on Linux and Unix systems.) </p>
+<p></p>
+<p><font face="helvetica"><b>Topics:</b></font></p>
+<p>The key topics covered in this Project are:</p>
+<p>   - How to capture video</p>
+<p>   - How to change video capture settings</p>
+<p>   - How to record video to a file</p>
+<p>   - How to display still images from a video</p>
+<p>   - How to save still images from a video to a file</p>

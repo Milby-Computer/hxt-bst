@@ -1,0 +1,5 @@
+<p>This stack demonstrates basic use of the 'relaunch' feature on Windows to enable the creation of single-instance applications.</p>
+<p></p>
+<p>To use it, build the stack as a standalone and try and launch more than one instance.</p>
+<p></p>
+<p>See the stack script for more details.</p>

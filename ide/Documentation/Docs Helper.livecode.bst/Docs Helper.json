@@ -1,0 +1,302 @@
+{
+   "#mainstack": "Docs Helper",
+   "Docs Helper": {
+      "#name": "stack \"Docs Helper\"",
+      "#substacks": "LibrarySubstack",
+      "backgroundIDs": "1009",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"Test \u2026 Preview\"",
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "name": "Test \u2026 Preview",
+                     "rect": "77,642,188,665",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Text\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1006",
+                        "UUID": "41143952-ea0a-433c-a9a2-10e5c9e7438b"
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "%file%: assets/Docs Helper_1002_1006_htmlText.txt",
+                     "id": "1006",
+                     "layer": "2",
+                     "name": "Text",
+                     "rect": "31,54,614,630",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1009": "#shared group",
+               "1011": {
+                  "#name": "field \"Corrections\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     },
+                     "uVersion": {
+                        "ID": "1011",
+                        "UUID": "1f187ff7-e41c-4a05-9c60-a767c0c50ac9"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "id": "1011",
+                     "layer": "5",
+                     "name": "Corrections",
+                     "rect": "625,54,896,628"
+                  }
+               },
+               "1012": {
+                  "#name": "button \"Test\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1012",
+                        "UUID": "0fbc5105-9fae-4d09-86c3-3cc6d4cb42e4"
+                     }
+                  },
+                  "properties": {
+                     "id": "1012",
+                     "layer": "6",
+                     "name": "Test",
+                     "rect": "193,642,275,665",
+                     "traversalOn": false
+                  }
+               },
+               "1013": {
+                  "#name": "button \"Preview\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1013",
+                        "UUID": "c58daef3-24a6-46cd-a276-d89dc5bfa2e9"
+                     }
+                  },
+                  "properties": {
+                     "id": "1013",
+                     "layer": "7",
+                     "name": "Preview",
+                     "rect": "278,642,360,665",
+                     "traversalOn": false
+                  }
+               },
+               "1015": {
+                  "#name": "button \"Save\"",
+                  "properties": {
+                     "id": "1015",
+                     "layer": "8",
+                     "name": "Save",
+                     "rect": "364,642,446,665",
+                     "traversalOn": false
+                  }
+               },
+               "1016": {
+                  "#name": "field \"loaded\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>/Users/gheizhwinder/Programming/livecode/docs/dictionary/command/ask-password.lcdoc</p>",
+                     "id": "1016",
+                     "layer": "9",
+                     "lockText": true,
+                     "name": "loaded",
+                     "opaque": false,
+                     "rect": "33,29,791,50",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1017": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>Errors</p>",
+                     "id": "1017",
+                     "layer": "10",
+                     "lockText": true,
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "792,29,892,50",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "uVersion": {
+                  "ID": "1002",
+                  "UUID": "4812def3-ee13-4b34-9f24-496af1a07b1c"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         },
+         "1009": {
+            "#name": "group \"background\"",
+            "childcontrols": {
+               "1010": {
+                  "#name": "widget \"header_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "cog",
+                           "label": "Preferences",
+                           "menu": [
+                              {
+                                 "label": "Header // Footer Size",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "small",
+                                       "name": "small"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "medium",
+                                       "name": "medium"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "large",
+                                       "name": "large"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "largest",
+                                       "name": "largest"
+                                    }
+                                 ],
+                                 "name": "revPaletteFrameSize"
+                              },
+                              {
+                                 "label": "Tab Display Style",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "Icons",
+                                       "name": "icons"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Labels",
+                                       "name": "names"
+                                    }
+                                 ],
+                                 "name": "Docs_Helper_displayStyle"
+                              }
+                           ],
+                           "name": "preferences"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "folder open",
+                           "label": "Open a text file",
+                           "menu": null,
+                           "name": "open"
+                        }
+                     ],
+                     "is header": true,
+                     "nav data": null
+                  },
+                  "properties": {
+                     "id": "1010",
+                     "name": "header_background",
+                     "rect": "0,0,907,21"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1009",
+               "layer": "3",
+               "name": "background",
+               "rect": "-4,-4,911,25"
+            }
+         }
+      },
+      "custompropertysets": {
+         "uVersion": {
+            "ID": "1008",
+            "UUID": "b27974e9-889a-415d-b937-f2f988cea172"
+         }
+      },
+      "longID": "stack \"Docs Helper\"",
+      "properties": {
+         "behavior": "stack \"revPaletteBehavior\"",
+         "fileName": "Docs Helper.livecode",
+         "id": "1017",
+         "minWidth": "53",
+         "name": "Docs Helper",
+         "rect": "145,87,1052,773"
+      },
+      "sharedGroupIDs": "1009"
+   },
+   "LibrarySubstack": {
+      "#name": "stack \"LibrarySubstack\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "uVersion": {
+            "ID": "1002",
+            "UUID": "694e4e8d-cce2-4008-b9d0-1320bc74d6ff"
+         }
+      },
+      "longID": "stack \"LibrarySubstack\" of stack \"Docs Helper\"",
+      "properties": {
+         "id": "1002",
+         "name": "LibrarySubstack",
+         "rect": "955,117,1355,517"
+      },
+      "sharedGroupIDs": null
+   }
+}

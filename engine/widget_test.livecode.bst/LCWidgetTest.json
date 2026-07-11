@@ -1,0 +1,109 @@
+{
+   "#mainstack": "LCWidgetTest",
+   "LCWidgetTest": {
+      "#name": "stack \"LCWidgetTest\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"Button\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1004",
+                        "UUID": "95a283e2-1a41-44bd-822b-8f1dc8691a7c"
+                     }
+                  },
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "name": "Button",
+                     "rect": "8,8,90,31",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Field\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1006",
+                        "UUID": "988a65d5-3916-4409-adf1-64144198b214"
+                     }
+                  },
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/LCWidgetTest_1002_1006_htmlText.txt",
+                     "id": "1006",
+                     "layer": "2",
+                     "name": "Field",
+                     "rect": "8,36,392,280",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1009": {
+                  "#name": "field \"Field\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1009",
+                        "UUID": "9fb29145-5f6c-47dd-9974-a708dacfc50c"
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "%file%: assets/LCWidgetTest_1002_1009_htmlText.txt",
+                     "id": "1009",
+                     "layer": "3",
+                     "name": "Field",
+                     "rect": "8,288,392,684",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1013": {
+                  "#name": "graphic \"Rectangle\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1013",
+                        "UUID": "e499df1f-8381-4aa8-8168-4cdfdff9d148"
+                     }
+                  },
+                  "properties": {
+                     "id": "1013",
+                     "layer": "4",
+                     "name": "Rectangle",
+                     "rect": "400,36,796,392"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "uVersion": {
+                  "ID": "1002",
+                  "UUID": "2da8aa28-1985-45eb-80e7-0549b8ce942e"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "uVersion": {
+            "ID": "1012",
+            "UUID": "6dc682de-d5c3-4e3e-9cc2-4abc49634e7b"
+         }
+      },
+      "longID": "stack \"LCWidgetTest\"",
+      "properties": {
+         "fileName": "widget_test.livecode",
+         "id": "1022",
+         "name": "LCWidgetTest",
+         "rect": "103,102,908,794"
+      },
+      "sharedGroupIDs": null
+   }
+}

@@ -1,0 +1,4 @@
+<p><b><font face="Geneva" size="10">This is a test.</font></b><font face="Geneva" size="10"> </font><font face="Geneva" size="9">This is <i>only</i> a test.</font><font face="Geneva" size="10"> Had this been an </font><font face="Geneva" size="10" color="#FF0000">actual</font><font face="Geneva" size="10"> life, you would have received instructions on </font><box><font face="Geneva" size="10" color="#00FF00">where to go</font></box><font face="Geneva" size="10"> and <box>what to do</box>.</font></p>
+<p></p>
+<p>Here's some test code:</p>
+<p><font face="Courier New" size="12">  answer "This is a test."</font></p>

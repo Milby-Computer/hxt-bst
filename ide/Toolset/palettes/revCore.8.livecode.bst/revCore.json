@@ -1,0 +1,378 @@
+{
+   "#mainstack": "revCore",
+   "revCore": {
+      "#name": "stack \"revCore\"",
+      "#substacks": "revDataViewControl",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "group \"tip_display_template\"",
+                  "childcontrols": {
+                     "1004": {
+                        "#name": "graphic \"tip_background\"",
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "173,208,54",
+                           "filled": true,
+                           "id": "1004",
+                           "layer": "2",
+                           "lineSize": "0",
+                           "name": "tip_background",
+                           "opaque": true,
+                           "rect": "7,10,811,256"
+                        }
+                     },
+                     "1005": {
+                        "#name": "field \"tip_close\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "[ Close ]"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "foreColor": "255,255,255",
+                           "htmlText": "<p>[ Close ]</p>",
+                           "id": "1005",
+                           "layer": "3",
+                           "lockText": true,
+                           "name": "tip_close",
+                           "opaque": false,
+                           "rect": "723,110,795,134",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "center",
+                           "textSize": "14",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1007": {
+                        "#name": "field \"tip_message\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "foreColor": "255,255,255",
+                           "htmlText": "<p>Label:</p>",
+                           "id": "1007",
+                           "layer": "4",
+                           "lockText": true,
+                           "margins": "8,2,8,0",
+                           "name": "tip_message",
+                           "opaque": false,
+                           "rect": "85,30,705,234",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textSize": "14",
+                           "traversalOn": false
+                        }
+                     },
+                     "1009": {
+                        "#name": "image \"tip_icon\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1009",
+                           "layer": "5",
+                           "name": "tip_icon",
+                           "rect": "17,112,58,153",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/revCore_1002_1003_1009_text.png"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1003",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "tip_display_template",
+                     "rect": "7,10,811,256"
+                  }
+               },
+               "1008": {
+                  "#name": "button \"tip_display_behavior\"",
+                  "properties": {
+                     "backColor": "28,154,206",
+                     "id": "1008",
+                     "layer": "6",
+                     "name": "tip_display_behavior",
+                     "rect": "8,266,172,289",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cIDEProperties": {
+            "browsable": false
+         }
+      },
+      "longID": "stack \"revCore\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "revCore.8.livecode",
+         "id": "1022",
+         "liveResizing": false,
+         "name": "revCore",
+         "rect": "547,250,1366,553"
+      },
+      "sharedGroupIDs": null
+   },
+   "revDataViewControl": {
+      "#name": "stack \"revDataViewControl\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"DataView Behavior\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1003",
+                        "UUID": "a5bd803f-3ea4-4e72-b657-7617481f7cce"
+                     }
+                  },
+                  "properties": {
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "DataView Behavior",
+                     "rect": "16,24,138,47",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1005": {
+                  "#name": "button \"VScrollbar Behavior\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1005",
+                        "UUID": "dd668fca-ae39-47fa-aa32-eaf9d8c03dad"
+                     }
+                  },
+                  "properties": {
+                     "id": "1005",
+                     "layer": "2",
+                     "name": "VScrollbar Behavior",
+                     "rect": "18,60,140,83",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "button \"Template\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1006",
+                        "UUID": "210ad569-e943-4e56-ac13-6149f11a08fb"
+                     }
+                  },
+                  "properties": {
+                     "id": "1006",
+                     "layer": "3",
+                     "name": "Template",
+                     "rect": "272,164,354,187",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1007": {
+                  "#name": "field \"Template 2\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1007",
+                        "UUID": "34567c3c-4f2b-44e6-9bc1-3ee51da92f84"
+                     }
+                  },
+                  "properties": {
+                     "id": "1007",
+                     "layer": "4",
+                     "name": "Template 2",
+                     "rect": "266,200,366,221"
+                  }
+               },
+               "1008": {
+                  "#name": "button \"Test\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1008",
+                        "UUID": "e93b852d-08bf-487d-a58e-731a107a3411"
+                     }
+                  },
+                  "properties": {
+                     "id": "1008",
+                     "layer": "5",
+                     "name": "Test",
+                     "rect": "270,128,352,151",
+                     "traversalOn": false
+                  }
+               },
+               "1010": {
+                  "#name": "button \"dvTrackDragDrop Behavior\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1010",
+                        "UUID": "5bef03aa-eedb-42d6-b1bd-d9347fcc0f13"
+                     }
+                  },
+                  "properties": {
+                     "id": "1010",
+                     "layer": "6",
+                     "name": "dvTrackDragDrop Behavior",
+                     "rect": "18,100,196,123",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1011": {
+                  "#name": "group \"Default Drop Indicator\"",
+                  "childcontrols": {
+                     "1012": {
+                        "#name": "graphic \"Oval\"",
+                        "custompropertysets": {
+                           "uVersion": {
+                              "ID": "1012",
+                              "UUID": "789b62f0-42ca-4250-a271-269ba956263e"
+                           }
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "153,153,153",
+                           "disabled": true,
+                           "filled": true,
+                           "id": "1012",
+                           "layer": "8",
+                           "lineSize": "0",
+                           "name": "Oval",
+                           "opaque": true,
+                           "rect": "12,260,23,271",
+                           "style": "oval"
+                        }
+                     },
+                     "1013": {
+                        "#name": "graphic \"Line\"",
+                        "custompropertysets": {
+                           "uVersion": {
+                              "ID": "1013",
+                              "UUID": "759609e1-2182-4c22-856a-ea0b8a2b3d3e"
+                           }
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "disabled": true,
+                           "foreColor": "153,153,153",
+                           "id": "1013",
+                           "layer": "9",
+                           "lineSize": "2",
+                           "name": "Line",
+                           "points": "21,266\n313,266",
+                           "rect": "19,264,315,268",
+                           "style": "line"
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1011",
+                        "UUID": "d2fbb123-8af4-4d7e-b0bf-84291e4434af"
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1019 of stack \"revDataViewControl\"",
+                     "disabled": true,
+                     "id": "1011",
+                     "layer": "7",
+                     "margins": "0",
+                     "name": "Default Drop Indicator",
+                     "rect": "12,260,315,271"
+                  }
+               },
+               "1015": {
+                  "#name": "button \"Field Editor Behavior\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1015",
+                        "UUID": "e386a444-1fda-45c1-a8da-3e873f3c8873"
+                     }
+                  },
+                  "properties": {
+                     "id": "1015",
+                     "layer": "10",
+                     "name": "Field Editor Behavior",
+                     "rect": "30,142,180,165",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1018": {
+                  "#name": "button \"Field Editor Front Script\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1018",
+                        "UUID": "95ce73a8-9baa-44aa-8f9d-34a01df96476"
+                     }
+                  },
+                  "properties": {
+                     "id": "1018",
+                     "layer": "11",
+                     "name": "Field Editor Front Script",
+                     "rect": "24,176,188,199",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1019": {
+                  "#name": "button \"Drop Indicator Behavior\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1019",
+                        "UUID": "41b04e41-70e0-4dfd-8221-020feb0e9a2c"
+                     }
+                  },
+                  "properties": {
+                     "id": "1019",
+                     "layer": "12",
+                     "name": "Drop Indicator Behavior",
+                     "rect": "32,216,182,239",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "uVersion": {
+                  "ID": "1002",
+                  "UUID": "b5401820-83f6-4668-bc36-1e239d7e4747"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "uVersion": {
+            "ID": "1002",
+            "UUID": "714476a6-a2b7-4af1-888b-ac3c8e64c1cd"
+         }
+      },
+      "longID": "stack \"revDataViewControl\" of stack \"revCore\"",
+      "properties": {
+         "id": "1019",
+         "liveResizing": false,
+         "name": "revDataViewControl",
+         "rect": "1055,549,1636,1002"
+      },
+      "sharedGroupIDs": null
+   }
+}

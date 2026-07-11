@@ -1,0 +1,48 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom command is used with a statement such as the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  printCardsWith "Hello"</font></p>
+<p><font face="Courier" size="11">  printCardsWith "Smith","Last </font><font face="Courier" size="11" color="#FF0000">Name</font><font face="Courier" size="11">"</font></p>
+<p></p>
+<p>Typically, you will call it in a button's mouseUp handler: clicking the button prints the cards.</p>
+<p></p>
+<p>The heart of this handler is the <font face="Courier" size="11">mark</font><font face="helvetica" size="12"> command. To print cards containing a string, we first need to somehow </font><i><font face="Lucida Grande" size="11">select</font></i><font face="helvetica" size="12"> those cards, then print that selected set. The </font><font face="Courier" size="11">mark</font><font face="helvetica" size="12"> command selects a subset of the cards in a stack, based on whatever criteria you choose, and sets the </font><font face="Courier" size="11">mark</font><font face="helvetica" size="12"> property of those cards to true. Once the cards we want are marked, we can use the </font><font face="Courier" size="11">print</font><font face="helvetica" size="12"> command to print just those cards whose </font><font face="Courier" size="11">mark</font><font face="helvetica" size="12"> property is </font><font face="Courier" size="11">true</font><font face="helvetica" size="12">.</font></p>
+<p></p>
+<p>In this case, first we use the <font face="Courier" size="11">unmark</font><font face="helvetica" size="12"> command to get rid of any marks that may have been set previously. You should always use the statement </font><font face="Courier" size="11">unmark all cards</font><font face="helvetica" size="12"> before using the </font><font face="Courier" size="11">mark</font><font face="helvetica" size="12"> command, unless you know which cards have already been marked. Otherwise, cards you haven't specified end up as part of the set of marked cards, if they were marked before.</font></p>
+<p></p>
+<p>Next, we check whether a field name was provided. The "printCardsWith" handler takes two parameters--the string to look for and the name of a field. You'll notice that you can call the handler with just one parameter (the string to find). It's possible to do this because we've used an if structure to check whether there's a second parameter. You can use this trick in any handler to make a parameter optional:  just check whether the parameter is <font face="Courier" size="11">empty</font><font face="helvetica" size="12">. If it is, then no value has been passed for it. In this case, the handler simply checks all the fields for a match.</font></p>
+<p></p>
+<p>This example handler uses the <font face="Courier" size="11">mark cards by finding</font><font face="helvetica" size="12"> form of the mark command. The command works the same way (and has the same options) as the </font><font face="Courier" size="11">find</font><font face="helvetica" size="12"> command, but instead of taking you to the first found card, it marks all the found cards. Once the cards we want are marked, we can print just the marked cards using the print marked cards form of the print command. The </font><font face="Courier" size="11">sort</font><font face="helvetica" size="12"> and </font><font face="Courier" size="11">go</font><font face="helvetica" size="12"> commands also have forms that work only on the marked cards.</font></p>
+<p></p>
+<p>Several variations on this technique are available:</p>
+<p></p>
+<p>* A different <font face="Courier" size="11">find</font><font face="helvetica" size="12"> form would change the way the search is done. For example, if a string containing more than one word is specified, the "printCardsWith" handler will find all the cards that contain each of the words (either as an entire word, or as the beginning of a word on the card). To mark only cards that contain the exact phrase, you change the find form to find string:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#FF0000">mark</font><font face="Courier" size="11"> cards by finding string stringToFind in field fieldName</font></p>
+<p></p>
+<p>* The <font face="Courier" size="11">mark</font><font face="helvetica" size="12"> command can be used with any attribute of a card--not just with the </font><font face="Courier" size="11">mark cards by finding</font><font face="helvetica" size="12"> form. Finding is convenient if you want to mark cards based on the text in their fields, but you can also mark cards based on the highlight state of radio buttons, the name of the card, custom properties of the card, or anything else:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#FF0000">mark</font><font face="Courier" size="11"> cards where the </font><font face="Courier" size="11" color="#FF0000">hilite</font><font face="Courier" size="11"> of button "Student" is true</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#FF0000">mark</font><font face="Courier" size="11"> cards where "Help" is in the </font><font face="Courier" size="11" color="#FF0000">name</font><font face="Courier" size="11"> of this card</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#FF0000">mark</font><font face="Courier" size="11"> cards where the storedStatus of this card is "On Duty"</font></p>
+<p></p>
+<p>* This example handler prints one card per page. But what if your cards are small and you want to print several on a page? Use the open printing command:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">open</font><font face="Courier" size="11"> printing</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">print</font><font face="Courier" size="11"> marked cards</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">close</font><font face="Courier" size="11"> printing</font></p>
+<p>  </p>
+<p>Every <font face="Courier" size="11">print</font><font face="helvetica" size="12"> command between the </font><font face="Courier" size="11">open printing command</font><font face="helvetica" size="12"> and the </font><font face="Courier" size="11">close printing command</font><font face="helvetica" size="12"> is placed in a single print job.</font></p>
+<p></p>
+<p>* The <font face="Courier" size="11">print</font><font face="helvetica" size="12">, </font><font face="Courier" size="11">sort</font><font face="helvetica" size="12">, and </font><font face="Courier" size="11">go</font><font face="helvetica" size="12"> commands are the only ones with special forms for marked cards, but you can do any action at all on the set of marked cards by using a </font><font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> control structure and performing the operation on each marked card:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">repeat</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">with</font><font face="Courier" size="11"> x = 1 to the </font><font face="Courier" size="11" color="#FF0000">number</font><font face="Courier" size="11"> of marked cards</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#0000FF">go</font><font face="Courier" size="11"> to marked card x</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> field 2 of marked card x after myData</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#68228B">-- or do anything you want on the marked card</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">repeat</font></p>
+<p></p>
+<p><img src="202651" char=" "> <b><font face="Lucida Grande" size="11">Tip: </font></b><font face="helvetica" size="12">To use this handler on a stack that is not the current stack, first set </font><font face="Courier" size="11">the defaultStack</font><font face="helvetica" size="12"> to the name of the stack that has the cards you want to select and print:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">set</font><font face="Courier" size="11"> the </font><font face="Courier" size="11" color="#FF0000">defaultStack</font><font face="Courier" size="11"> to "My Database Stack"</font></p>
+<p><font face="Courier" size="11">  printCardsWith "Jones","Last </font><font face="Courier" size="11" color="#FF0000">Name</font></p>

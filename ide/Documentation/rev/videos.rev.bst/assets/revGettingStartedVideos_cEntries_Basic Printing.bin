@@ -1,0 +1,10 @@
+category=Useful Techniques
+description=<p>This tutorial introduces you to the basics of printing in Revolution, showing you how to print the card area or print the text in a field.</p>
+duration=3:25
+filename=basic_printing.avi
+level=1
+licensed=true
+name=Basic Printing
+scripts=<p><font color="#000000">Scripts Used in this Tutorial:</font></p>\n<p></p>\n<p><font face="Courier New" size="12" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" size="12" color="#000000">  print this card</font></p>\n<p><font face="Courier New" size="12" color="#000000">end mouseUp</font></p>\n<p></p>\n<p><font face="Courier New" size="12" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" size="12" color="#000000">  revPrintField the name of field &#147;Text&#148;</font></p>\n<p><font face="Courier New" size="12" color="#000000">end mouseUp</font></p>
+title=Printing: the basics.
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;How to print a field</p>\n<p>-&#9;How to print a card</p>\n<p></p>

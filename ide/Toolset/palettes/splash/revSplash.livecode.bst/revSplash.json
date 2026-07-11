@@ -1,0 +1,206 @@
+{
+   "#mainstack": "revSplash",
+   "revSplash": {
+      "#name": "stack \"revSplash\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1008",
+      "childcontrols": {
+         "1008": {
+            "#name": "card \"Main\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"License\"",
+                  "customproperties": {
+                     "apkUniqueID": "956844552811",
+                     "unicodeTest": "C\u0000o\u0000m\u0000m\u0000e\u0000r\u0000c\u0000i\u0000a\u0000l\u0000 \u00001\u0000 \u0000P\u0000a\u0000c\u0000k\u0000\n\u0000M\u0000a\u0000r\u0000k\u0000 \u0000W\u0000a\u0000d\u0000d\u0000i\u0000n\u0000g\u0000h\u0000a\u0000m\u0000\n\u0000R\u0000u\u0000n\u0000R\u0000e\u0000v\u0000 \u0000L\u0000t\u0000d\u0000"
+                  },
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "<p>This Indy license is only valid for organizations with annual revenues of $500,000 USD or less</p>"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>This Indy license is only valid for organizations with annual revenues of $500,000 USD or less</p>",
+                     "id": "1004",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "License",
+                     "opaque": false,
+                     "rect": "0,10,591,49",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "12",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1005": {
+                  "#name": "field \"Version\"",
+                  "customproperties": {
+                     "apkUniqueID": "956844552813"
+                  },
+                  "custompropertysets": {
+                     "cAPKGeneral": {
+                        "handlerList": null,
+                        "tempScript": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "<p>Build </p>\n<p><font color=\"#569E54\">Version sLicenseVersion</font></p>",
+                     "id": "1005",
+                     "layer": "3",
+                     "lockText": true,
+                     "name": "Version",
+                     "opaque": false,
+                     "rect": "25,20,295,54",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Lucida Grande",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Status\"",
+                  "customproperties": {
+                     "apkUniqueID": "956844552818"
+                  },
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "id": "1006",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "Status",
+                     "opaque": false,
+                     "rect": "59,270,532,293",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textFont": "Lucida Grande",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1007": {
+                  "#name": "field \"copyright\"",
+                  "customproperties": {
+                     "apkUniqueID": "956844552813",
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cAPKGeneral": {
+                        "handlerList": null,
+                        "tempScript": null
+                     },
+                     "cREVTable": {
+                        "bottomfieldloc": "229",
+                        "cellxspacing": "75",
+                        "cellyspacing": "14",
+                        "currenthscroll": "0",
+                        "currentview": "<p>\u2026copy; 2000-2010, Runtime Revolution Ltd.</p>",
+                        "currentvscroll": "0",
+                        "currentxmouseloc": "70",
+                        "currentymouseloc": "70",
+                        "leftfieldloc": "608",
+                        "numbertabstops": "1",
+                        "rightfieldloc": "829",
+                        "scrollbarwidth": "20",
+                        "topfieldloc": "178",
+                        "viewablecolumns": "3",
+                        "viewablerows": "4"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "fixedLineHeight": false,
+                     "foreColor": "255,255,255",
+                     "htmlText": "<p>\u2026copy; 2000-2015 RunRev Ltd.</p>",
+                     "id": "1007",
+                     "layer": "5",
+                     "lockText": true,
+                     "name": "copyright",
+                     "opaque": false,
+                     "rect": "23,288,236,312",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "tabStops": "75",
+                     "textFont": "Segoe UI",
+                     "textHeight": "16",
+                     "textSize": "12",
+                     "textStyle": "plain",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "225105": {
+                  "#name": "image \"splash\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "splash.png",
+                     "filepath": "montegoulding/livecode-private/livecode/ide/Toolset/resources/professional/ideSkin",
+                     "id": "225105",
+                     "layer": "1",
+                     "name": "splash",
+                     "rect": "0,0,591,306"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "5"
+               }
+            },
+            "properties": {
+               "id": "1008",
+               "name": "Main",
+               "textFont": "Lucida Grande",
+               "textSize": "9",
+               "textStyle": "plain"
+            }
+         }
+      },
+      "customproperties": {
+         "statusMessage": "Loading Menu Bar..."
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "225105"
+         }
+      },
+      "longID": "stack \"revSplash\"",
+      "properties": {
+         "behavior": "stack \"revSplashStackBehavior\"",
+         "decorations": null,
+         "fileName": "revSplash.livecode",
+         "id": "225105",
+         "liveResizing": false,
+         "name": "revSplash",
+         "rect": "665,387,1256,693",
+         "stackFiles": "revSplashStackBehavior,revsplashstackbehavior.livecodescript",
+         "windowShape": "1003"
+      },
+      "sharedGroupIDs": null
+   }
+}

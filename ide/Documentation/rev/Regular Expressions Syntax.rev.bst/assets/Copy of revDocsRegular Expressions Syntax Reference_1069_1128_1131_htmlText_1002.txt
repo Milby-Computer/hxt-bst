@@ -1,0 +1,3 @@
+<p><font face="Courier New" size="12">A|B </font>matches &ldquo;A&rdquo; or &ldquo;B&rdquo;</p>
+<p></p>
+<p><font face="Courier New" size="12">[ABC]|[XYZ] </font>matches &ldquo;AY&rdquo; or &ldquo;CX&rdquo;, but not &ldquo;AA&rdquo; or &ldquo;ZB&rdquo;.</p>

@@ -1,0 +1,30 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom function is called with a statement such as one of the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">get</font><font face="Courier" size="11"> absolutePath("../File","/Disk/Folder")</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> absolutePath(thisFile,myFolder) into pathToUse</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">set</font><font face="Courier" size="11"> the </font><font face="Courier" size="11" color="#FF0000">defaultFolder</font><font face="Courier" size="11"> to absolutePath(thisPath)</font></p>
+<p></p>
+<p>This function takes a relative file path--that is, a file path that starts at the current folder and describes how to get to a file from there--and converts it to the equivalent absolute path. Optionally, you can specify an absolute path to the folder where the relative path starts; if you don't specify one, the function uses the current folder as the starting point.</p>
+<p></p>
+<p>The "absolutePath" function works by beginning at the starting folder and moving up one level for each "../"&nbsp;in the relative path. Then it concatenates the changed starting folder with the relative path to produce the equivalent absolute path.</p>
+<p></p>
+<p>The first thing the function does is make sure the relativePath is, in fact, a relative path. The rule for determining whether a path is a relative path is as follows:</p>
+<p></p>
+<p>* On Windows systems, the second character of a relative path is not a colon character.</p>
+<p></p>
+<p>* On all other operating systems, relative paths are those that do not begin with a slash. (On Windows, neither relative nor absolute paths begin with a slash.)</p>
+<p></p>
+<p>To figure out whether the relativePath meets these conditions, the function uses a complex expression with the and and or operators. If the function is running on Windows, and the second character is a colon, this isn't a relative path. If the first character is a slash, this isn't a relative path. These two conditions are each enclosed in parentheses and are joined by the or operator, so if either of them is true, the condition itself is true and Transcript executes the contents of the if statement.</p>
+<p></p>
+<p>If the relativePath is not actually a relative path, the handler uses the return control structure to pass an error message back to the calling handler.</p>
+<p></p>
+<p>Next, the handler checks the startingPath. If nothing was passed in the startingPath, the handler uses the current folder as the default for this parameter. (You can use this method with any handler to assign a default value to one or more of the parameters. Just check whether the parameter is empty. If it is, then no value has been passed, and you can simply put the desired default into the parameter.)</p>
+<p></p>
+<p>The relative path to the current folder is ".", so if the relativePath starts with ".", the handler deletes it. This simplifies the number of different path configurations the handler must deal with, since the relative path "./Folder/File" is the same as the relative path "Folder/File".</p>
+<p></p>
+<p>Now the handler begins comparing the two paths--the relativePath and the startingFolder--to remove the parts of the folder structure they have in common. Let's look at two paths to see how this comparison works. Suppose the startingFolder is "/Disk/Applications/Spreadsheets/Excel/" and the relativePath is "../../Graphics/ImageEdit".</p>
+<p></p>
+<p>The repeat control structure checks the first item of the relativePath to see whether it's "..", which means "go up one level". If the first item is "..", the handler deletes the first item of the relativePath, and also deletes the last item of the startingFolder to move us up one level in the folder structure. The <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> loop continues doing this as long as the first item in the relativePath is "..".</font></p>
+<p></p>
+<p>In our example, the relativePath starts with "../../", so the loop executes twice and the last two items are deleted from the startingFolder. The startingFolder now is "/Disk/Applications", and the relativePath now is "Graphics/ImageEdit". We have now edited out all redundancies in the two paths, so the only thing left to do is join them together with the &amp; operator. The expression startingFolder &amp; relativePath is the absolute path, and this is what the function returns.</p>

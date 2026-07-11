@@ -1,0 +1,136 @@
+{
+   "#mainstack": "com.livecode.pi.gradientramp",
+   "com.livecode.pi.gradientramp": {
+      "#name": "stack \"com.livecode.pi.gradientramp\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1008": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1009": {
+                        "#name": "widget \"ramp\"",
+                        "$kind": "com.livecode.widget.gradientRampEditor",
+                        "properties": {
+                           "id": "1009",
+                           "name": "ramp",
+                           "rect": "72,162,316,288"
+                        }
+                     },
+                     "1012": {
+                        "#name": "group \"color\"",
+                        "childcontrols": {
+                           "1013": {
+                              "#name": "group id 1013",
+                              "childcontrols": {
+                                 "1014": {
+                                    "#name": "scrollbar \"alpha\"",
+                                    "customproperties": {
+                                       "focusBorder": null
+                                    },
+                                    "properties": {
+                                       "endValue": "255",
+                                       "id": "1014",
+                                       "layer": "6",
+                                       "lineInc": "16.988327",
+                                       "name": "alpha",
+                                       "pageInc": "0.996109",
+                                       "rect": "114,132,222,168",
+                                       "startValue": "0",
+                                       "style": "scale",
+                                       "thumbPosition": "139",
+                                       "thumbSize": "99"
+                                    }
+                                 }
+                              },
+                              "properties": {
+                                 "id": "1013",
+                                 "layer": "5",
+                                 "rect": "110,128,226,172"
+                              }
+                           },
+                           "1015": {
+                              "#name": "widget \"color\"",
+                              "$kind": "com.livecode.widget.colorSwatch",
+                              "properties": {
+                                 "id": "1015",
+                                 "name": "color",
+                                 "rect": "80,132,104,156"
+                              }
+                           },
+                           "1016": {
+                              "#name": "field \"value\"",
+                              "customproperties": {
+                                 "basicTableObject": false,
+                                 "cellFormatting": false,
+                                 "maxEditableColumns": null
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "id": "1016",
+                                 "layer": "4",
+                                 "lockText": true,
+                                 "name": "value",
+                                 "opaque": false,
+                                 "rect": "228,132,338,153",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "editorValue": "100,255,168,139"
+                        },
+                        "properties": {
+                           "behavior": "button id 1005 of stack \"Untitled 2\"",
+                           "id": "1012",
+                           "layer": "3",
+                           "margins": "0",
+                           "name": "color",
+                           "rect": "80,128,338,172"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1008",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "72,128,338,288"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "2"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1016"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.gradientramp\"",
+      "properties": {
+         "fileName": "com.livecode.pi.gradientramp.livecode",
+         "id": "1016",
+         "name": "com.livecode.pi.gradientramp",
+         "rect": "790,649,1190,1049"
+      },
+      "sharedGroupIDs": null
+   }
+}

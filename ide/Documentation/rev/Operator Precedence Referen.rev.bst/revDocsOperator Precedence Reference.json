@@ -1,0 +1,1316 @@
+{
+   "#mainstack": "revDocsOperator Precedence Reference",
+   "revDocsOperator Precedence Reference": {
+      "#name": "stack \"revDocsOperator Precedence Reference\"",
+      "#substacks": null,
+      "backgroundIDs": "1069",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Operator Precedence\"",
+            "childcontrols": {
+               "1069": "#shared group"
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Operator Precedence"
+            }
+         },
+         "1069": {
+            "#name": "group \"Operator Precedence\"",
+            "childcontrols": {
+               "1008": {
+                  "#name": "group \"Grouping\"",
+                  "childcontrols": {
+                     "1005": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Grouping</p>"
+                           },
+                           "id": "1005",
+                           "layer": "3",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,-1,135,69",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1006": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">()</font></b></a> </p>"
+                           },
+                           "id": "1006",
+                           "layer": "4",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,-1,605,69",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1007": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsOperator Precedence Reference_1069_1008_1007_htmlText_1002.txt"
+                           },
+                           "id": "1007",
+                           "layer": "5",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,-1,490,69",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1008",
+                     "layer": "2",
+                     "margins": "0",
+                     "name": "Grouping",
+                     "rect": "22,-1,605,69"
+                  }
+               },
+               "1013": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1014": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Unary</p>"
+                           },
+                           "id": "1014",
+                           "layer": "7",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,73,135,157",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1015": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsOperator Precedence Reference_1069_1013_1015_htmlText_1002.txt"
+                           },
+                           "id": "1015",
+                           "layer": "8",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,73,605,157",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1016": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsOperator Precedence Reference_1069_1013_1016_htmlText_1002.txt"
+                           },
+                           "id": "1016",
+                           "layer": "9",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,73,490,157",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1072": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1072",
+                           "layer": "10",
+                           "name": "Divider",
+                           "points": "29,70\n577,70",
+                           "rect": "28,69,578,71",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1013",
+                     "layer": "6",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "22,69,605,157"
+                  }
+               },
+               "1017": {
+                  "#name": "group \"Exponentiation\"",
+                  "childcontrols": {
+                     "1018": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Exponentiation</p>"
+                           },
+                           "id": "1018",
+                           "layer": "12",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,161,135,203",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1019": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">^</font></b></a> </p>"
+                           },
+                           "id": "1019",
+                           "layer": "13",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,161,605,203",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1020": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Next, exponentiation operations are done.</p>"
+                           },
+                           "id": "1020",
+                           "layer": "14",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,161,490,203",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1073": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1073",
+                           "layer": "15",
+                           "name": "Divider",
+                           "points": "29,158\n577,158",
+                           "rect": "28,157,578,159",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1017",
+                     "layer": "11",
+                     "margins": "0",
+                     "name": "Exponentiation",
+                     "rect": "22,157,605,203"
+                  }
+               },
+               "1021": {
+                  "#name": "group \"Multiplication\"",
+                  "childcontrols": {
+                     "1022": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Multiplication</p>"
+                           },
+                           "id": "1022",
+                           "layer": "17",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,207,135,277",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1023": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">*</font></b></a> </p>\n<p><a><b><font face=\"verdana\" size=\"11\">/</font></b></a> </p>\n<p><a><b><font face=\"verdana\" size=\"11\">div</font></b></a> </p>\n<p><a><b><font face=\"verdana\" size=\"11\">mod</font></b></a> </p>"
+                           },
+                           "id": "1023",
+                           "layer": "18",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,207,605,277",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1024": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Multiplication and division are done next. These are <a><font face=\"verdana\" size=\"11\">numeric</font></a> <a><font face=\"verdana\" size=\"11\">operators</font></a> and result in a number.</p>"
+                           },
+                           "id": "1024",
+                           "layer": "19",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,207,490,277",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1074": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1074",
+                           "layer": "20",
+                           "name": "Divider",
+                           "points": "29,204\n577,204",
+                           "rect": "28,203,578,205",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1021",
+                     "layer": "16",
+                     "margins": "0",
+                     "name": "Multiplication",
+                     "rect": "22,203,605,277"
+                  }
+               },
+               "1025": {
+                  "#name": "group \"Addition\"",
+                  "childcontrols": {
+                     "1026": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Addition</p>"
+                           },
+                           "id": "1026",
+                           "layer": "22",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "21,281,134,337",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1027": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">+</font></b></a> </p>\n<p><a><b><font face=\"verdana\" size=\"11\">-</font></b></a> </p>"
+                           },
+                           "id": "1027",
+                           "layer": "23",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,281,606,337",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1028": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Addition and subtraction are done next. These are <a><font face=\"verdana\" size=\"11\">numeric</font></a> <a><font face=\"verdana\" size=\"11\">operators</font></a> and result in a number.</p>"
+                           },
+                           "id": "1028",
+                           "layer": "24",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,281,490,337",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1075": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1075",
+                           "layer": "25",
+                           "name": "Divider",
+                           "points": "29,278\n577,278",
+                           "rect": "28,277,578,279",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1025",
+                     "layer": "21",
+                     "margins": "0",
+                     "name": "Addition",
+                     "rect": "21,277,606,337"
+                  }
+               },
+               "1029": {
+                  "#name": "group \"Concatenation\"",
+                  "childcontrols": {
+                     "1030": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Concatenation</p>"
+                           },
+                           "id": "1030",
+                           "layer": "27",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,341,135,397",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1031": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">\u2026amp;</font></b></a> </p>\n<p><a><b><font face=\"verdana\" size=\"11\">\u2026amp;\u2026amp;</font></b></a> </p>\n<p><a><b><font face=\"verdana\" size=\"11\">,</font></b></a> </p>"
+                           },
+                           "id": "1031",
+                           "layer": "28",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,341,605,397",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1032": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsOperator Precedence Reference_1069_1029_1032_htmlText_1002.txt"
+                           },
+                           "id": "1032",
+                           "layer": "29",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,341,490,397",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1076": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1076",
+                           "layer": "30",
+                           "name": "Divider",
+                           "points": "29,338\n577,338",
+                           "rect": "28,337,578,339",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1029",
+                     "layer": "26",
+                     "margins": "0",
+                     "name": "Concatenation",
+                     "rect": "22,337,605,397"
+                  }
+               },
+               "1033": {
+                  "#name": "group \"Comparison\"",
+                  "childcontrols": {
+                     "1034": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Comparison</p>"
+                           },
+                           "id": "1034",
+                           "layer": "32",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,401,135,597",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1035": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsOperator Precedence Reference_1069_1033_1035_htmlText_1002.txt"
+                           },
+                           "id": "1035",
+                           "layer": "33",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,401,605,597",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1036": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsOperator Precedence Reference_1069_1033_1036_htmlText_1002.txt"
+                           },
+                           "id": "1036",
+                           "layer": "34",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,401,490,597",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1077": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1077",
+                           "layer": "35",
+                           "name": "Divider",
+                           "points": "29,398\n577,398",
+                           "rect": "28,397,578,399",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1033",
+                     "layer": "31",
+                     "margins": "0",
+                     "name": "Comparison",
+                     "rect": "22,397,605,597"
+                  }
+               },
+               "1037": {
+                  "#name": "group \"Equality\"",
+                  "childcontrols": {
+                     "1038": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Equality</p>"
+                           },
+                           "id": "1038",
+                           "layer": "37",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,601,134,671",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1039": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsOperator Precedence Reference_1069_1037_1039_htmlText_1002.txt"
+                           },
+                           "id": "1039",
+                           "layer": "38",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,601,605,671",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1040": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsOperator Precedence Reference_1069_1037_1040_htmlText_1002.txt"
+                           },
+                           "id": "1040",
+                           "layer": "39",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,601,490,671",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1078": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1078",
+                           "layer": "40",
+                           "name": "Divider",
+                           "points": "29,598\n577,598",
+                           "rect": "28,597,578,599",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1037",
+                     "layer": "36",
+                     "margins": "0",
+                     "name": "Equality",
+                     "rect": "22,597,605,671"
+                  }
+               },
+               "1045": {
+                  "#name": "group \"bitAnd\"",
+                  "childcontrols": {
+                     "1046": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>bitAnd</p>"
+                           },
+                           "id": "1046",
+                           "layer": "42",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,675,134,703",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1047": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">bitAnd</font></b></a></p>"
+                           },
+                           "id": "1047",
+                           "layer": "43",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,675,605,703",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1048": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">bitAnd</font></b></a> operations are done next.</p>"
+                           },
+                           "id": "1048",
+                           "layer": "44",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,675,490,703",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1079": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1079",
+                           "layer": "45",
+                           "name": "Divider",
+                           "points": "29,672\n577,672",
+                           "rect": "28,671,578,673",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1045",
+                     "layer": "41",
+                     "margins": "0",
+                     "name": "bitAnd",
+                     "rect": "22,671,605,703"
+                  }
+               },
+               "1049": {
+                  "#name": "group \"bitXOr\"",
+                  "childcontrols": {
+                     "1050": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>bitXOr</p>"
+                           },
+                           "id": "1050",
+                           "layer": "47",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,707,134,735",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1051": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">bitXOr</font></b></a></p>"
+                           },
+                           "id": "1051",
+                           "layer": "48",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,707,605,735",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1052": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">bitXOr</font></b></a> operations are done next.</p>"
+                           },
+                           "id": "1052",
+                           "layer": "49",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,707,490,735",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1080": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1080",
+                           "layer": "50",
+                           "name": "Divider",
+                           "points": "29,704\n577,704",
+                           "rect": "28,703,578,705",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1049",
+                     "layer": "46",
+                     "margins": "0",
+                     "name": "bitXOr",
+                     "rect": "22,703,605,735"
+                  }
+               },
+               "1053": {
+                  "#name": "group \"bitOr\"",
+                  "childcontrols": {
+                     "1054": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>bitOr</p>"
+                           },
+                           "id": "1054",
+                           "layer": "52",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,739,134,767",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1055": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">bitOr</font></b></a></p>"
+                           },
+                           "id": "1055",
+                           "layer": "53",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,739,605,767",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1056": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">bitOr</font></b></a> operations are done next.</p>"
+                           },
+                           "id": "1056",
+                           "layer": "54",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,739,490,767",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1081": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1081",
+                           "layer": "55",
+                           "name": "Divider",
+                           "points": "29,736\n577,736",
+                           "rect": "28,735,578,737",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1053",
+                     "layer": "51",
+                     "margins": "0",
+                     "name": "bitOr",
+                     "rect": "22,735,605,767"
+                  }
+               },
+               "1061": {
+                  "#name": "group \"and\"",
+                  "childcontrols": {
+                     "1062": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>and</p>"
+                           },
+                           "id": "1062",
+                           "layer": "57",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,771,134,799",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1063": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">and</font></b></a></p>"
+                           },
+                           "id": "1063",
+                           "layer": "58",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,771,605,799",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1064": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">and</font></b></a> operations are done next.</p>"
+                           },
+                           "id": "1064",
+                           "layer": "59",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,771,490,799",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1082": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1082",
+                           "layer": "60",
+                           "name": "Divider",
+                           "points": "29,768\n577,768",
+                           "rect": "28,767,578,769",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1061",
+                     "layer": "56",
+                     "margins": "0",
+                     "name": "and",
+                     "rect": "22,767,605,799"
+                  }
+               },
+               "1065": {
+                  "#name": "group \"or\"",
+                  "childcontrols": {
+                     "1066": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>or</p>"
+                           },
+                           "id": "1066",
+                           "layer": "62",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,803,134,831",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1067": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">or</font></b></a></p>"
+                           },
+                           "id": "1067",
+                           "layer": "63",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,803,605,831",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1068": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><a><b><font face=\"verdana\" size=\"11\">or</font></b></a> operations are done last.</p>"
+                           },
+                           "id": "1068",
+                           "layer": "64",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,803,490,831",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1083": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1083",
+                           "layer": "65",
+                           "name": "Divider",
+                           "points": "29,800\n577,800",
+                           "rect": "28,799,578,801",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1065",
+                     "layer": "61",
+                     "margins": "0",
+                     "name": "or",
+                     "rect": "22,799,605,831"
+                  }
+               },
+               "1089": {
+                  "#name": "group \"or\"",
+                  "childcontrols": {
+                     "1090": {
+                        "#name": "field \"Category\"",
+                        "customproperties": {
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>function calls</p>"
+                           },
+                           "id": "1090",
+                           "layer": "67",
+                           "lockText": true,
+                           "name": "Category",
+                           "rect": "22,835,134,891",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1091": {
+                        "#name": "field \"Operators\"",
+                        "customproperties": {
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p></p>"
+                           },
+                           "id": "1091",
+                           "layer": "68",
+                           "lockText": true,
+                           "name": "Operators",
+                           "rect": "132,835,605,891",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1092": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsOperator Precedence Reference_1069_1089_1092_htmlText_1002.txt"
+                           },
+                           "id": "1092",
+                           "layer": "69",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "246,835,490,891",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1093": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1093",
+                           "layer": "70",
+                           "name": "Divider",
+                           "points": "29,832\n577,832",
+                           "rect": "28,831,578,833",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1089",
+                     "layer": "66",
+                     "margins": "0",
+                     "name": "or",
+                     "rect": "22,831,605,891"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1069",
+               "layer": "1",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "Operator Precedence",
+               "rect": "21,-1,509,219",
+               "tabGroupBehavior": true,
+               "traversalOn": false,
+               "vScrollbar": true
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.5B2",
+         "hilitedLinkColor": "black",
+         "revDocsCategory": "Variables \u2026 Properties\nMath, Logic, \u2026 Dates",
+         "revIsDocsStack": true,
+         "revstack": false,
+         "storedHilitedChunk": null,
+         "visitedLinkColor": "black"
+      },
+      "longID": "stack \"revDocsOperator Precedence Reference\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "backColor": "white",
+         "decorations": "default",
+         "destroyStack": true,
+         "destroyWindow": true,
+         "fileName": "Operator Precedence Referen.rev",
+         "id": "1093",
+         "linkColor": "black",
+         "linkHiliteColor": "Black",
+         "linkVisitedColor": "Black",
+         "liveResizing": false,
+         "maxWidth": "508",
+         "minHeight": "80",
+         "minWidth": "508",
+         "name": "revDocsOperator Precedence Reference",
+         "rect": "90,186,598,419",
+         "style": "modeless",
+         "textFont": "verdana",
+         "textSize": "11",
+         "textStyle": "plain",
+         "title": "Operator Precedence",
+         "underlineLinks": false
+      },
+      "sharedGroupIDs": "1069"
+   }
+}

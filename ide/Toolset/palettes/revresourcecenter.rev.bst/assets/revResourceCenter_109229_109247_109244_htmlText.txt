@@ -1,0 +1,30 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom function is called with a statement such as one of the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">get</font><font face="Courier" size="11"> repeatedString(space,20) </font><font face="Courier" size="11" color="#68228B">-- returns 20 spaces</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> repeatedString("abc",2) into myString </font><font face="Courier" size="11" color="#68228B">-- returns "abcabc"</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">set</font><font face="Courier" size="11"> the setupString of </font><font face="Courier" size="11" color="#F88017">me</font><font face="Courier" size="11"> to repeatedString(it,1000)</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">get</font><font face="Courier" size="11"> repeatedString("A") </font><font face="Courier" size="11" color="#68228B">-- returns "A"</font></p>
+<p></p>
+<p>The "repeatedString" function concatenates a string parameter as many times as specified to build a long repeated string. It does this by using a <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> loop to build the string, appending the string to the </font><font face="Courier" size="11">return</font><font face="helvetica" size="12"> value as many times as needed.</font></p>
+<p></p>
+<p>You'll notice that you can call the function with just one parameter (the string to repeat), without specifying the number of times the string is repeated. It's possible to do this because the first thing the handler does is to check the numberOfTimes parameter. If no parameter was passed, the numberOfTimes is <font face="Courier" size="11">empty</font><font face="helvetica" size="12">. If this is the case, or if the parameter is in the wrong form, the handler assigns the value of 1 to the numberOfTimes. In other words, if you don't specify a numberOfTimes or if you provide a non-integer, the handler assumes you want it to repeat the string only once.</font></p>
+<p></p>
+<p>You can use this method with any handler to assign a default value to one or more of the parameters. Just check whether the parameter is <font face="Courier" size="11">empty</font><font face="helvetica" size="12">. If it is, then no value has been passed, and you set the default value by simply putting the desired default into the parameter.</font></p>
+<p></p>
+<p>You can also use this method to check the parameters of any handler. If a wrong parameter is passed--for example, if a non-numeric value was passed for a parameter that needs to be a number--the handler can either return an error message, or substitute a sensible default value. Doing this avoids execution errors if the handler is called with incorrect parameter values.</p>
+<p></p>
+<p>It's easy to modify this handler to create new variations. For example, suppose you want the base string to be repeated on every line, instead of just concatenated. You can do this by changing the line inside the repeat loop as follows:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> baseString &amp; </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> after finalString</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="11">A note on efficiency:</font></b></p>
+<p>This example uses the put...after form of the put command to build the string. In general, the put...after form is faster than the put...before form:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> baseString before finalString </font><font face="Courier" size="11" color="#68228B">-- not as fast</font></p>
+<p></p>
+<p>It is also faster than using the <font face="Courier" size="11">&amp;</font><font face="helvetica" size="12"> operator to concatenate the new piece to the repeated string:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> baseString &amp; theString into finalString </font><font face="Courier" size="11" color="#68228B">-- even slower</font></p>
+<p></p>
+<p>If you are dealing with fairly short strings and a fairly low number of repetitions--under a hundred--the time savings may not be significant, but when building a repeated string with thousands or tens of thousands of repetitions, using the put...after form may save as much as several seconds. The time difference becomes even more pronounced the longer the string becomes.</p>

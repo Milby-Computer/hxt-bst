@@ -1,0 +1,43 @@
+<p><font color="#68228B"># Script of Refresh Table button</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p>  <font color="#68228B"># Construct SQL</font></p>
+<p>  <font color="#0000FF">put</font> "SELECT * FROM users" into tSQL</p>
+<p>  <font color="#68228B">#  Execute SQL</font></p>
+<p>  <font color="#0000FF">put</font> revdb_querylist(,,gConID,tSQL) into tList</p>
+<p></p>
+<p>  handleRevDBerror tList</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">put</font> tList into fld "Users"</p>
+<p>  </p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p></p>
+<p><font color="#68228B"># Script of Delete Row button</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p>  <font color="#0000FF">put </font>the <font color="#FF0000">hilitedline </font>of fld "users" into tNum</p>
+<p>  <font color="#980517">if </font>tNum is "" <font color="#980517">then </font><font color="#0000FF">exit </font>mouseUp</p>
+<p>  <font color="#0000FF">set </font>the <font color="#FF0000">itemDel </font>to tab</p>
+<p>  <font color="#0000FF">put </font>item 1 of line tNum of fld "users" into tUserID</p>
+<p>  </p>
+<p>  <font color="#68228B"># Construct SQL</font></p>
+<p>  <font color="#0000FF">put </font>"DELETE FROM users WHERE userID=" &amp; tUserID into tSQL</p>
+<p>  <font color="#68228B"># Execute SQL</font></p>
+<p>  <font color="#0000FF">put</font> revdb_execute<font color="#000000">(gConID,tSQL)</font> into tTmp</p>
+<p></p>
+<p>  handleRevDBerror tTmp</p>
+<p><font color="#980517">  if </font>the <font color="#F88017">result </font>is not empty <font color="#980517">then </font></p>
+<p><font color="#0000FF">    answer </font>warning the <font color="#F88017">result</font></p>
+<p><font color="#0000FF">    exit </font>mouseUp</p>
+<p><font color="#980517">  end if</font></p>
+<p><font color="#0000FF">  </font></p>
+<p><font color="#0000FF">  answer </font>information "Number of rows deleted: " &amp; tTmp</p>
+<p><font color="#980517">  </font><font color="#0000FF">send </font>mouseUp to btn "View Data"</p>
+<p><font color="#980517">end</font> mouseUp</p>

@@ -1,0 +1,27 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> absolutePath relativePath,startingFolder</p>
+<p>  <font color="#68228B">-- make sure this is a relative path:</font></p>
+<p>  <font color="#980517">if</font> (the <font color="#F88017">platform</font> is "Win32" \</p>
+<p>     and char 2 of relativePath is ":") \</p>
+<p>     or (char 1 of relativePath is "/") <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">return</font> "Error: path is not a relative path"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#68228B">-- use the current folder as the starting folder by default:</font></p>
+<p>  <font color="#980517">if</font> startingFolder is empty</p>
+<p>  <font color="#980517">then</font> <font color="#0000FF">put</font> the <font color="#FF0000">defaultFolder</font> into startingFolder</p>
+<p>  <font color="#980517">if</font> last char of startingFolder is "/"</p>
+<p>  <font color="#980517">then</font> <font color="#0000FF">delete</font> last char of startingFolder</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">itemDelimiter</font> to "/"</p>
+<p>  <font color="#980517">if</font> first item of relativePath is "."</p>
+<p>  <font color="#980517">then</font> <font color="#0000FF">delete</font> first item of relativePath</p>
+<p>  <font color="#68228B">-- move up one folder for each ".." in the relative path:</font></p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">while</font> first item of relativePath is ".."</p>
+<p>    <font color="#0000FF">delete</font> first item of relativePath <font color="#68228B">-- done with it</font></p>
+<p>    <font color="#0000FF">delete</font> last item of startingFolder <font color="#68228B">-- go up one folder</font></p>
+<p>    <font color="#980517">if</font> startingFolder is empty <font color="#980517">then</font></p>
+<p>      <font color="#68228B">-- there were too many ".." in the relative path</font></p>
+<p>      <font color="#0000FF">return</font> "Error: relative path has too many components"</p>
+<p>    <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#0000FF">return</font> startingFolder &amp; "/" &amp; relativePath</p>
+<p><font color="#980517">end</font> absolutePath</p>

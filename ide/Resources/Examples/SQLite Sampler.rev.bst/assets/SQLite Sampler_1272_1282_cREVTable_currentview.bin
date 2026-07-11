@@ -1,0 +1,107 @@
+<p><font color="#68228B">-- Script of button Delete Columns Example</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;This will delete the columns 'email' and 'emailList' from table 'users' and rename column 'name' to 'full_name'.&quot;</p>
+<p>  </p>
+<p><font color="#68228B">  </font><font color="#0000FF">local </font>tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;BEGIN TRANSACTION;&quot; into tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;CREATE TEMPORARY TABLE users_backup(userID,name);&quot; after tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;INSERT INTO users_backup SELECT userID,name FROM users;&quot; after tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;DROP TABLE users;&quot; after tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;CREATE TABLE users(userID,full_name);&quot; after tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;INSERT INTO users SELECT userID,name FROM users_backup;&quot; after tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;DROP TABLE users_backup;&quot; after tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;COMMIT;&quot; after tSQL</p>
+<p>  </p>
+<p>  <font color="#0000FF">local </font>tResult</p>
+<p>  <font color="#0000FF">put</font> revExecuteSQL(gConID,tSQL) into tResult</p>
+<p>  </p>
+<p>  handleRevDBerror tResult</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">put</font> &quot;SELECT sql FROM sqlite_master&quot; into tSQL</p>
+<p>  </p>
+<p>  <font color="#0000FF">local </font>tList</p>
+<p>  <font color="#0000FF">put</font> revDataFromQuery(,,gConID,tSQL) into tList</p>
+<p>  </p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> comma in tList</p>
+<p>  </p>
+<p>  handleRevDBerror tList</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;New schema created: &quot; &amp; return &amp; tList</p>
+<p>  </p>
+<p>  <font color="#0000FF">put</font> &quot;SELECT * FROM users&quot; into tSQL</p>
+<p>  <font color="#0000FF">put</font> revDataFromQuery(,,gConID,tSQL) into tList</p>
+<p>  </p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> comma in tList</p>
+<p>  </p>
+<p>  handleRevDBerror tList</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;Data for new table 'users': &quot; &amp;cr&amp; tList</p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#68228B">-- Script of button Add Columns Example</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;This will add the columns 'city' and 'state' to table 'users'.&quot;</p>
+<p>  </p>
+<p> <font color="#68228B"> </font><font color="#0000FF">local </font>tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;BEGIN TRANSACTION;&quot; into tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;CREATE TEMPORARY TABLE users_backup(userID,name,email,emailList);&quot; after tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;INSERT INTO users_backup SELECT userID,name,email,emailList FROM users;&quot; after tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;DROP TABLE users;&quot; after tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;CREATE TABLE users(userID integer primary key, name text,email text,emailList boolean,city text,state text);&quot; after tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;INSERT INTO users(userID,name,email,emailList) SELECT userID,name,email,emailList FROM users_backup;&quot; after tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;DROP TABLE users_backup;&quot; after tSQL</p>
+<p>  <font color="#0000FF">put</font> &quot;COMMIT;&quot; after tSQL</p>
+<p>  </p>
+<p>  <font color="#0000FF">local </font>tResult</p>
+<p>  <font color="#0000FF">put</font> revExecuteSQL(gConID,tSQL) into tResult</p>
+<p>  </p>
+<p>  handleRevDBerror tResult</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">put</font> &quot;SELECT sql FROM sqlite_master&quot; into tSQL</p>
+<p></p>
+<p>  <font color="#0000FF">local </font>tList</p>
+<p>  <font color="#0000FF">put</font> revdb_querylist(,,gConID,tSQL) into tList</p>
+<p>  </p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> comma in tList</p>
+<p>  </p>
+<p>  handleRevDBerror tList</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;New schema created: &quot; &amp;cr&amp; tList</p>
+<p>  </p>
+<p>  <font color="#0000FF">put</font> &quot;SELECT * FROM users&quot; into tSQL</p>
+<p>  <font color="#0000FF">put</font> revDataFromQuery(,,gConID,tSQL) into tList</p>
+<p>  </p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> comma in tList</p>
+<p>  </p>
+<p>  handleRevDBerror tList</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information &quot;Data for new table 'users': &quot; &amp; return &amp; tList</p>
+<p><font color="#980517">end</font> mouseUp</p>

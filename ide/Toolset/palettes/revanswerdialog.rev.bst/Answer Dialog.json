@@ -1,0 +1,253 @@
+{
+   "#mainstack": "Answer Dialog",
+   "Answer Dialog": {
+      "#name": "stack \"Answer Dialog\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"card id 1002\"",
+            "childcontrols": {
+               "1006": {
+                  "#name": "field id 1006",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>something</p>",
+                     "id": "1006",
+                     "layer": "3",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "8,12,388,37",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textSize": "13",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1146": {
+                  "#name": "button \"icon\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "icon": "210096",
+                     "id": "1146",
+                     "layer": "1",
+                     "menuMode": "pulldown",
+                     "name": "icon",
+                     "opaque": false,
+                     "rect": "-132,-11,-68,53",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1147": {
+                  "#name": "button \"icon 2\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "borderWidth": "0",
+                     "icon": "210095",
+                     "id": "1147",
+                     "layer": "2",
+                     "menuMode": "pulldown",
+                     "name": "icon 2",
+                     "opaque": false,
+                     "rect": "-147,-138,-100,-100",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1240": {
+                  "#name": "button \"OK\"",
+                  "customproperties": {
+                     "cPrevLoc": "347,60"
+                  },
+                  "properties": {
+                     "default": true,
+                     "id": "1240",
+                     "layer": "4",
+                     "menuMode": "pulldown",
+                     "name": "OK",
+                     "rect": "-141,-111,-59,-89",
+                     "sharedHilite": false
+                  }
+               },
+               "1241": {
+                  "#name": "button id 1241",
+                  "customproperties": {
+                     "cPrevLoc": "-100,-100"
+                  },
+                  "properties": {
+                     "id": "1241",
+                     "layer": "5",
+                     "menuMode": "pulldown",
+                     "rect": "-141,-111,-59,-89",
+                     "sharedHilite": false,
+                     "traversalOn": false
+                  }
+               },
+               "1242": {
+                  "#name": "button id 1242",
+                  "customproperties": {
+                     "cPrevLoc": "-100,-100"
+                  },
+                  "properties": {
+                     "id": "1242",
+                     "layer": "6",
+                     "menuMode": "pulldown",
+                     "rect": "-141,-111,-59,-89",
+                     "sharedHilite": false,
+                     "traversalOn": false
+                  }
+               },
+               "1245": {
+                  "#name": "button id 1245",
+                  "customproperties": {
+                     "cPrevLoc": "-100,-100"
+                  },
+                  "properties": {
+                     "id": "1245",
+                     "layer": "7",
+                     "menuMode": "pulldown",
+                     "rect": "-141,-111,-59,-89",
+                     "sharedHilite": false,
+                     "traversalOn": false
+                  }
+               },
+               "1246": {
+                  "#name": "button \"4\"",
+                  "customproperties": {
+                     "cPrevLoc": "-100,-100"
+                  },
+                  "properties": {
+                     "id": "1246",
+                     "layer": "8",
+                     "menuMode": "pulldown",
+                     "name": "4",
+                     "rect": "-141,-111,-59,-89",
+                     "sharedHilite": false,
+                     "traversalOn": false
+                  }
+               },
+               "1247": {
+                  "#name": "button \"3\"",
+                  "customproperties": {
+                     "cPrevLoc": "-100,-100"
+                  },
+                  "properties": {
+                     "id": "1247",
+                     "layer": "9",
+                     "menuMode": "pulldown",
+                     "name": "3",
+                     "rect": "-141,-111,-59,-89",
+                     "sharedHilite": false,
+                     "traversalOn": false
+                  }
+               },
+               "1248": {
+                  "#name": "button id 1248",
+                  "customproperties": {
+                     "cPrevLoc": "-100,-100"
+                  },
+                  "properties": {
+                     "id": "1248",
+                     "layer": "10",
+                     "menuMode": "pulldown",
+                     "rect": "-141,-111,-59,-89",
+                     "sharedHilite": false,
+                     "traversalOn": false
+                  }
+               },
+               "1343": {
+                  "#name": "button id 1343",
+                  "customproperties": {
+                     "cPrevLoc": "-100,-100"
+                  },
+                  "properties": {
+                     "id": "1343",
+                     "layer": "11",
+                     "menuMode": "pulldown",
+                     "rect": "-141,-111,-59,-89",
+                     "sharedHilite": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cAPKGeneral": {
+                  "bookmarks": null,
+                  "handlerList": "preOpenStack\ncommandKeyDown\nescapeKey\ncloseStack\nmouseUp",
+                  "prevHandler": "preOpenStack",
+                  "script": null,
+                  "scriptChecksum": "\u0007\u001C\u0011\u0080\u009E\u0080\u0088\u0086Q\u0080\u0093é¢\u0088\u009C%J\u0083e\u0092",
+                  "scriptSelection": "char 1687 to 1686",
+                  "tempScript": null
+               },
+               "cREVGeneral[scripteditorselection]": {
+                  "scripteditorselection": "3704"
+               },
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "1072"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "card id 1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         }
+      },
+      "longID": "stack \"Answer Dialog\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "bottomColor": "128,128,128",
+         "decorations": "default",
+         "destroyWindow": true,
+         "fileName": "revanswerdialog.rev",
+         "foreColor": "Black",
+         "hiliteColor": "102,102,102",
+         "id": "1438",
+         "liveResizing": false,
+         "name": "Answer Dialog",
+         "rect": "761,107,1161,190",
+         "resizable": false,
+         "shadowColor": "darkgray",
+         "textFont": "Helvetica",
+         "textSize": "12",
+         "textStyle": "plain",
+         "title": " ",
+         "topColor": "white"
+      },
+      "sharedGroupIDs": null
+   }
+}

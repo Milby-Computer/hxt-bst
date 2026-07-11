@@ -1,0 +1,37 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom function is called with a statement such as one of the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> uniqueWordsOf(field "Text") into myWordsList</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> uniqueWordsOf(myVariable) into field "Words"</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> uniqueWordsOf(URL "file:List.txt") into theWords</font></p>
+<p></p>
+<p>The <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> control structure checks each word in turn, creating an </font><i><font face="Lucida Grande" size="11">array</font></i><font face="helvetica" size="12"> variable named "wordsList". Each element of "wordsList" is associated with a different word; the element's key is the word, and the element's contents is a number. For example, if the first word of the string is "Cans", then after the first word is processed, the array "wordsList" contains one element, named "Cans", which contains the number 1.</font></p>
+<p></p>
+<p>When a word is processed, the handler adds 1 to the element corresponding to that word. If there is no array element with that name already, one is created automatically by the <font face="Courier" size="11">add</font><font face="helvetica" size="12"> command. In general, changing a variable, a chunk in a variable, or an element in an array variable creates the variable, chunk, or element automatically, if it doesn't already exist. If there is already an element with that name--that is, if the word already exists in the array--1 is added to that existing element.</font></p>
+<p></p>
+<p>After all the words have been processed, the function exits the <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> loop. At this point, the array variable "wordsList" contains an element for each unique word, whose name is the word itself. The keys of "wordsList", therefore, is a list of all the unique words in the string.</font></p>
+<p></p>
+<p>This form of word-by-word processing is possible because Transcript uses chunk expressions to manage text. A chunk expression is a way of describing a specific portion of a container. Transcript can directly address individual words, characters, lines, and items (delimited by any character). For more details on chunk expressions, see the section on <i><font face="Lucida Grande" size="11">Using Chunk Expressions</font></i><font face="helvetica" size="12"> in the </font><i><font face="Lucida Grande" size="11">User's Guide</font></i><font face="helvetica" size="12">. In this example, we use the </font><font face="Courier" size="11">repeat for each</font><font face="helvetica" size="12"> chunk form of the </font><font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> control structure:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">repeat</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">for</font><font face="Courier" size="11"> each word thisWord in theString</font></p>
+<p></p>
+<p>This <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> structure loops through each word in the parameter "theString", putting the current word into a variable called "thisWord". You can also loop through other chunk types in a </font><font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> structure, processing each </font><font face="Courier" size="11">character</font><font face="helvetica" size="12">, </font><font face="Courier" size="11">line</font><font face="helvetica" size="12">, or </font><font face="Courier" size="11">item</font><font face="helvetica" size="12">.</font></p>
+<p></p>
+<p>You may have noticed that there's potential additional functionality in this function. The "wordsList" array contains all the information needed to create a frequency list of words, since each element's content is equal to the number of times that word occurs in the string. You can use the <font face="Courier" size="11">combine</font><font face="helvetica" size="12"> command to turn the array into a text list:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">combine</font><font face="Courier" size="11"> wordsList using </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> and tab</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">sort</font><font face="Courier" size="11"> the lines of wordsList</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> wordsList</font></p>
+<p></p>
+<p>With the addition of the above three statements, the function returns a frequency count, rather than just the list of words. Each line of the returned value starts with a word, followed by a tab character and the number of times that word occurs. The <font face="Courier" size="11">sort</font><font face="helvetica" size="12"> command is not strictly necessary here--we didn't sort the list returned from the original version of this function--but it puts the list in neat alphabetical order.</font></p>
+<p></p>
+<p>We can also return the list in frequency order instead of word order, simply by changing the <font face="Courier" size="11">sort</font><font face="helvetica" size="12"> command above to the following:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">sort</font><font face="Courier" size="11"> the lines of wordsList numeric by last word of each</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="11">A note on efficiency:</font></b></p>
+<p>This example uses the <font face="Courier" size="11">repeat for each</font><font face="helvetica" size="12"> word form of the repeat control structure. When looping over chunk types in a string, this form is the fastest. The following repeat structure is functionally equivalent to the one in this example, but is much slower:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">repeat</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">with</font><font face="Courier" size="11"> x = 1 to the </font><font face="Courier" size="11" color="#FF0000">number</font><font face="Courier" size="11"> of words in theString</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#0000FF">add</font><font face="Courier" size="11"> 1 to wordsList[word x of theString]</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">repeat</font></p>

@@ -1,0 +1,103 @@
+{
+   "#mainstack": "Unicode Table Maker",
+   "Unicode Table Maker": {
+      "#name": "stack \"Unicode Table Maker\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002\n1011",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Word Break Property Table\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"WordBreakProperties\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/Unicode Table Maker_1002_1004_htmlText.txt",
+                     "id": "1004",
+                     "layer": "1",
+                     "name": "WordBreakProperties",
+                     "rect": "8,408,512,472",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1007": {
+                  "#name": "field \"Field\"",
+                  "properties": {
+                     "htmlText": "%file%: assets/Unicode Table Maker_1002_1007_htmlText.txt",
+                     "id": "1007",
+                     "layer": "2",
+                     "name": "Field",
+                     "rect": "8,8,512,400",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Generate\"",
+                  "properties": {
+                     "id": "1010",
+                     "layer": "3",
+                     "name": "Generate",
+                     "rect": "8,494,90,517",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Word Break Property Table"
+            }
+         },
+         "1011": {
+            "#name": "card \"Line Break Property Table\"",
+            "childcontrols": {
+               "1012": {
+                  "#name": "field \"Field\"",
+                  "properties": {
+                     "htmlText": "%file%: assets/Unicode Table Maker_1011_1012_htmlText.txt",
+                     "id": "1012",
+                     "layer": "1",
+                     "name": "Field",
+                     "rect": "8,8,512,486",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1015": {
+                  "#name": "button \"Generate\"",
+                  "properties": {
+                     "id": "1015",
+                     "layer": "2",
+                     "name": "Generate",
+                     "rect": "6,494,88,517",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "uUnicodeLineBreaks": "%file%: assets/Unicode Table Maker_1011_uUnicodeLineBreaks.bin"
+            },
+            "properties": {
+               "id": "1011",
+               "layer": "2",
+               "name": "Line Break Property Table"
+            }
+         }
+      },
+      "longID": "stack \"Unicode Table Maker\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "unicode_tables.rev",
+         "id": "1015",
+         "liveResizing": false,
+         "name": "Unicode Table Maker",
+         "rect": "125,138,646,661"
+      },
+      "sharedGroupIDs": null
+   }
+}

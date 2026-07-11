@@ -1,0 +1,7 @@
+Scripted button. Allows resizing of palette mode stacks on which setting the resizable property has no effect.
+
+The resizer will resize the stack horizontally and vertically within the minWidth, maxWidth, minHeight and maxHeight properties set on the stack.
+
+On mouseEnter, the cursor is set to the the windows resize cursor. The ID for this cursor is stored in the cWinCursor, a custom property set on the button.
+
+Note that this control requires the "Revolution Icons" image library and the "Revolution Cursors" image library to be tranferred to your stack using Distribution Builder when you are preparing your stack for distribution.

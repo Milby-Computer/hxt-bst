@@ -1,0 +1,10 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> repeatedString baseString,numberOfTimes</p>
+<p>  <font color="#980517">if</font> numberOfTimes is empty \</p>
+<p>      or numberOfTimes is not an integer \</p>
+<p>      <font color="#980517">then</font> <font color="#0000FF">put</font> 1 into numberOfTimes <font color="#68228B">-- default value</font></p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> numberOfTimes</p>
+<p>    <font color="#0000FF">put</font> baseString after finalString</p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#0000FF">return</font> finalString</p>
+<p><font color="#980517">end</font> repeatedString</p>

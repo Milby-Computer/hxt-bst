@@ -1,0 +1,378 @@
+{
+   "#mainstack": "revMessageWatcher",
+   "revMessageWatcher": {
+      "#name": "stack \"revMessageWatcher\"",
+      "#substacks": "revSuppressMessages",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"Messages\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "id": "1003",
+                     "layer": "2",
+                     "listBehavior": true,
+                     "lockLoc": true,
+                     "lockText": true,
+                     "name": "Messages",
+                     "rect": "4,4,392,149",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1008": {
+                  "#name": "button \"Suppress...\"",
+                  "properties": {
+                     "id": "1008",
+                     "layer": "3",
+                     "name": "Suppress...",
+                     "rect": "148,220,244,244"
+                  }
+               },
+               "1009": {
+                  "#name": "field \"Object Label\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Object:</p>",
+                     "id": "1009",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "Object Label",
+                     "opaque": false,
+                     "rect": "0,157,62,181",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1010": {
+                  "#name": "field \"Type Label\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Message Type:</p>",
+                     "id": "1010",
+                     "layer": "5",
+                     "lockText": true,
+                     "name": "Type Label",
+                     "opaque": false,
+                     "rect": "0,189,110,214",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1011": {
+                  "#name": "field \"Object Name\"",
+                  "properties": {
+                     "id": "1011",
+                     "layer": "6",
+                     "lockText": true,
+                     "name": "Object Name",
+                     "rect": "62,157,388,180"
+                  }
+               },
+               "1012": {
+                  "#name": "field \"Message Type\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "7",
+                     "lockText": true,
+                     "name": "Message Type",
+                     "rect": "110,189,388,212"
+                  }
+               },
+               "1013": {
+                  "#name": "button \"Clear\"",
+                  "properties": {
+                     "id": "1013",
+                     "layer": "8",
+                     "name": "Clear",
+                     "rect": "84,220,140,244"
+                  }
+               },
+               "1016": {
+                  "#name": "button \"Active\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1016",
+                     "layer": "1",
+                     "name": "Active",
+                     "opaque": false,
+                     "rect": "8,220,76,243",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               }
+            },
+            "customproperties": {
+               "suppressedActions": false,
+               "suppressedMessages": "mouseMove",
+               "suppressedResolutions": "not handled",
+               "suppressedTypes": "getProp\nsetProp",
+               "suppressIDE": true
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "8"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1016"
+         }
+      },
+      "longID": "stack \"revMessageWatcher\"",
+      "properties": {
+         "bottomColor": "128,128,128",
+         "decorations": "default",
+         "fileName": "revmessagewatcher.rev",
+         "id": "1016",
+         "liveResizing": false,
+         "minHeight": "165",
+         "minWidth": "250",
+         "name": "revMessageWatcher",
+         "rect": "440,318,836,568",
+         "shadowColor": "172,172,172",
+         "title": "Message Watcher"
+      },
+      "sharedGroupIDs": null
+   },
+   "revSuppressMessages": {
+      "#name": "stack \"revSuppressMessages\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1009": {
+                  "#name": "field \"Suppressed Messages\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>mouseMove</p>",
+                     "id": "1009",
+                     "layer": "10",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "Suppressed Messages",
+                     "rect": "146,46,314,189",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Add...\"",
+                  "properties": {
+                     "id": "1010",
+                     "layer": "11",
+                     "name": "Add...",
+                     "rect": "154,195,214,219"
+                  }
+               },
+               "1011": {
+                  "#name": "button \"Delete\"",
+                  "properties": {
+                     "id": "1011",
+                     "layer": "12",
+                     "name": "Delete",
+                     "rect": "244,196,304,219"
+                  }
+               },
+               "1012": {
+                  "#name": "button \"OK\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1012",
+                     "layer": "13",
+                     "name": "OK",
+                     "rect": "234,240,299,263"
+                  }
+               },
+               "1013": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1013",
+                     "layer": "14",
+                     "name": "Cancel",
+                     "rect": "159,240,224,263"
+                  }
+               },
+               "1014": {
+                  "#name": "group \"Action\"",
+                  "childcontrols": {
+                     "1003": {
+                        "#name": "button \"true\"",
+                        "properties": {
+                           "armBorder": false,
+                           "hiliteBorder": false,
+                           "id": "1003",
+                           "label": "Handled",
+                           "layer": "2",
+                           "name": true,
+                           "opaque": false,
+                           "rect": "20,31,128,51",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1004": {
+                        "#name": "button \"false\"",
+                        "properties": {
+                           "armBorder": false,
+                           "hiliteBorder": false,
+                           "id": "1004",
+                           "label": "Not Handled",
+                           "layer": "3",
+                           "name": false,
+                           "opaque": false,
+                           "rect": "20,55,128,75",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1014",
+                     "layer": "1",
+                     "name": "Action",
+                     "rect": "14,15,134,81",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "1015": {
+                  "#name": "group \"Handler Type\"",
+                  "childcontrols": {
+                     "1005": {
+                        "#name": "button \"message\"",
+                        "properties": {
+                           "armBorder": false,
+                           "hiliteBorder": false,
+                           "id": "1005",
+                           "label": "Messages",
+                           "layer": "5",
+                           "name": "message",
+                           "opaque": false,
+                           "rect": "26,112,126,132",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1006": {
+                        "#name": "button \"function\"",
+                        "properties": {
+                           "armBorder": false,
+                           "hiliteBorder": false,
+                           "id": "1006",
+                           "label": "Functions",
+                           "layer": "6",
+                           "name": "function",
+                           "opaque": false,
+                           "rect": "26,140,126,160",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1007": {
+                        "#name": "button \"getProp\"",
+                        "properties": {
+                           "armBorder": false,
+                           "hiliteBorder": false,
+                           "id": "1007",
+                           "label": "GetProps",
+                           "layer": "7",
+                           "name": "getProp",
+                           "opaque": false,
+                           "rect": "26,168,126,188",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1008": {
+                        "#name": "button \"setProp\"",
+                        "properties": {
+                           "armBorder": false,
+                           "hiliteBorder": false,
+                           "id": "1008",
+                           "label": "SetProps",
+                           "layer": "8",
+                           "name": "setProp",
+                           "opaque": false,
+                           "rect": "26,196,126,216",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1015",
+                     "layer": "4",
+                     "name": "Handler Type",
+                     "rect": "20,96,132,222",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "1017": {
+                  "#name": "button \"IDE Messages\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1017",
+                     "layer": "9",
+                     "name": "IDE Messages",
+                     "opaque": false,
+                     "rect": "152,16,296,36",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"revSuppressMessages\" of stack \"revMessageWatcher\"",
+      "properties": {
+         "bottomColor": "128,128,128",
+         "decorations": "default",
+         "id": "1017",
+         "liveResizing": false,
+         "name": "revSuppressMessages",
+         "rect": "817,270,1139,547",
+         "resizable": false,
+         "shadowColor": "172,172,172",
+         "title": "Suppress Messages"
+      },
+      "sharedGroupIDs": null
+   }
+}

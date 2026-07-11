@@ -1,0 +1,13 @@
+<p><font face="Verdana" size="18">Creating Tables</font></p>
+<p></p>
+<p>We are connected to the appreg database but it doesn't yet contain any tables. You'll have noticed that there is no revDB command for creating a new table. Instead, we'll use the general-purpose technique of writing an SQL statement that does what we want and then using it with the revExecuteSQL command. </p>
+<p></p>
+<p>The format for creating Tables in SQL is:</p>
+<p></p>
+<p><font face="Courier New" size="12">put &quot;CREATE TABLE &lt;table name&gt;(&lt;column1 column1type&gt;,&lt;column2 column2type&gt;...)&quot;</font></p>
+<p><font face="Courier New" size="12">     into tSQL</font></p>
+<p><font face="Courier New" size="12">put revExecuteSQL(gConID, tSQL) into tTmp</font></p>
+<p><font face="Courier New" size="12">-- tTmp will contain the number of tables you've added</font></p>
+<p></p>
+<p></p>
+<p>Check out the scripts for the <b>CREATE TABLE</b> buttons, then click each one once. Notice, we've added at the end of the script a &quot;handleRevDBerror&quot; handler. You should use some way of managing any errors you receive back from revDB.</p>

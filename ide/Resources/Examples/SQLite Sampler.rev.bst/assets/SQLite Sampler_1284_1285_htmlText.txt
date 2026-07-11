@@ -1,0 +1,13 @@
+<p><font face="Verdana" size="18">Start Programming with SQLite</font></p>
+<p></p>
+<p>You are now ready to start programming professional database applications using SQLite. You know how to create databases with tables, add, edit and delete records, and modify the schema. That covers about 99% of what you need to do to work successfully with databases. </p>
+<p></p>
+<p>One of the great things about SQLite, is it's 100% SQL compliant, so you should be able to program your application using dbSQLite, then at a later time, switch over to a hosted MySQL server solution, with only changes made to your connection string!</p>
+<p></p>
+<p>This is one of the many reasons, SQLite is preferred for database programmers.</p>
+<p></p>
+<p>If you have a question or comment, please contact Runtime Revolution at: support@runrev.com</p>
+<p></p>
+<p></p>
+<p></p>
+<p><font face="Tahoma" size="18">Thanks for taking the time to view this demonstration and tutorial. </font></p>

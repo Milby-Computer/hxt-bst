@@ -1,0 +1,32 @@
+<p>ARRAY</p>
+<p>.&#9;[1] =&gt; ARRAY</p>
+<p>.&#9;.&#9;[13] =&gt; ARRAY</p>
+<p>.&#9;.&#9;.&#9;[PlatformID] =&gt; Android emulator-5554</p>
+<p>.&#9;.&#9;.&#9;[TestResults] =&gt; ARRAY</p>
+<p>.&#9;.&#9;.&#9;.&#9;[test_ba,test3] =&gt; ARRAY</p>
+<p>.&#9;.&#9;.&#9;.&#9;.&#9;[Status] =&gt; passed</p>
+<p>.&#9;.&#9;.&#9;.&#9;.&#9;[Report] =&gt; --index test_ba,test3</p>
+<p>--maxduration 10</p>
+<p>--filename /Users/johnsmith/OldHdd/Hanson/MY-STUFF-PC/test-framework-UI_1/test-stacks/test3.livecode</p>
+<p>--execution-line /Users/johnsmith/OldHdd/Hanson/MY-STUFF-PC/test-framework-UI_1/_cache/standalones/exec-tests_Android_1_11.apk</p>
+<p>--execution-file /Users/johnsmith/OldHdd/Hanson/MY-STUFF-PC/test-framework-UI_1/_cache/devicedatacache/testDataAndroid.txt</p>
+<p>--test-start Thu, 10 Oct 2013 13:16:23 +0100</p>
+<p>--seconds-start 1381407383</p>
+<p>log "test-begin" "10/10/13" "1:16:24 PM"</p>
+<p>log "  fail - test3,test_ba,11" "10/10/13" "1:16:24 PM"</p>
+<p>log "test-end" "10/10/13" "1:16:24 PM"</p>
+<p></p>
+<p>--seconds-end 1381407385</p>
+<p>--test-end Thu, 10 Oct 2013 13:16:25 +0100</p>
+<p></p>
+<p>.&#9;.&#9;.&#9;.&#9;[test_foo,test3] =&gt; ARRAY</p>
+<p>.&#9;.&#9;.&#9;.&#9;.&#9;[Status] =&gt; failed,expired</p>
+<p>.&#9;.&#9;.&#9;.&#9;.&#9;[Report] =&gt; --index test_foo,test3</p>
+<p>--maxduration 10</p>
+<p>--filename /Users/johnsmith/OldHdd/Hanson/MY-STUFF-PC/test-framework-UI_1/test-stacks/test3.livecode</p>
+<p>--execution-line /Users/johnsmith/OldHdd/Hanson/MY-STUFF-PC/test-framework-UI_1/_cache/standalones/exec-tests_Android_1_11.apk</p>
+<p>--execution-file /Users/johnsmith/OldHdd/Hanson/MY-STUFF-PC/test-framework-UI_1/_cache/devicedatacache/testDataAndroid.txt</p>
+<p>--test-start Thu, 10 Oct 2013 13:16:26 +0100</p>
+<p>--seconds-start 1381407386</p>
+<p></p>
+<p>.&#9;.&#9;.&#9;[VersionID] =&gt; /Applications/LiveCode 6.1.app/Contents/Tools/Runtime/</p>

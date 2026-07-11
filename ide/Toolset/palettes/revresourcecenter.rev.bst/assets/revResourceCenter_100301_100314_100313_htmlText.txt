@@ -1,0 +1,10 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> menuPick <font color="#68228B">-- goes in the menu button script</font></p>
+<p>  <font color="#68228B">-- This handler assumes the button has a custom property</font></p>
+<p>  <font color="#68228B">-- named "stackNamesList" that contains the names of</font></p>
+<p>  <font color="#68228B">-- the stacks listed in the menu</font></p>
+<p>  <font color="#0000FF">put</font> line (the <font color="#FF0000">menuHistory</font> of <font color="#F88017">me</font>) \</p>
+<p>     of the currentStacksList of <font color="#F88017">me</font> into chosenStackName</p>
+<p>  <font color="#0000FF">go</font> stack chosenStackName</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> <font color="#0000FF">beep</font> <font color="#68228B">-- couldn't find stack</font></p>
+<p><font color="#980517">end</font> menuPick </p>

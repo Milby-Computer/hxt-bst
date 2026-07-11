@@ -1,0 +1,26 @@
+<p><b><font face="Lucida Grande" size="14" color="#990006">Glossary</font></b></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">Custom Property</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Definition: An object property you define. A custom property can hold any data you want to associate with the object.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">If statement</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Type: control structure</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Syntax:<b> if condition then statement [else elseStatement</b>]</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Summary: Executes a list of statements if a condition is true.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">Repeat Loop</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Type: control structure</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Syntax<b>: repeat loopForm statementList end repe</b>at</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Summary: Executes a set of statements repeatedly<b>.</b></font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">Switch statement</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Type: control structure</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Synta<b>x: switch [switchExpression] case {caseValue | caseCondition} [statementList] [default defaultStatementList] end swi</b>tch</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Summary: Chooses among several possible values for an expression, and executes a set of statements that depends on the value.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">Icon</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Type: property</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Syntax: <b>set the icon to {imageID | imageName} set the icon of {button | stack} to {imageID | imageName}</b></font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Objects (or Types): global, button, stack</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Summary: Specifies an image that is displayed in a button, or used as the desktop icon of a stack file or application.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">For more information see the Revolution dictionary.</font></p>

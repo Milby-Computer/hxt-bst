@@ -1,0 +1,6 @@
+category=Getting Started
+description=<p>The U3 Example is a simple media player that runs on a U3 Drive. It can play music files that you drag and drop onto it and store them on the U3 Drive for future use.</p><p></p>\n<p>This project demonstrates how to write an application for U3, using the U3 environment variables and U3 actions <i>install</i>, <i>uninstall</i>, <i>start</i>, <i>cleanup</i> and <i>configure</i>.</p><p></p>\n<p><a href="video:U3 Example">Click here to go the PDF that accompanies this project.</a></p><p></p>\n<p>We recommend you to have explored the introductory video tutorials so you have a basic understanding of how Revolution works before you start on the Sample Projects</p>
+level=3
+name=U3 Example
+title=U3 Example - A simple music player for U3 smart drives.
+topics=<p>The key topics covered in this Project are:</p>\n<p>   - How to write an application for U3</p>\n<p>   - How to handle a file being drag dropped onto a window</p>\n<p>   - How to create a window with an irregular shape</p>\n<p>   - How to set and get Windows registry values</p>

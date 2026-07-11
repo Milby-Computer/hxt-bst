@@ -1,0 +1,29 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> relativePath absolutePath,startingFolder</p>
+<p>  <font color="#68228B">-- make sure this is an absolute path:</font></p>
+<p>  <font color="#980517">if</font> (the <font color="#F88017">platform</font> is "Win32" and \</p>
+<p>      (char 1 of absolutePath is not in \</p>
+<p>      "ABCDEFGHIJKLMNOPQRSTUVWXYZ" \</p>
+<p>      or char 2 of absolutePath is not ":")) \</p>
+<p>      or (the <font color="#F88017">platform</font> is not "Win32" and \</p>
+<p>      char 1 of absolutePath is not "/") <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">return</font> "Error: path is not an absolute path"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#68228B">-- use the current folder as the starting folder by default:</font></p>
+<p>  <font color="#980517">if</font> startingFolder is empty</p>
+<p>  <font color="#980517">then</font> <font color="#0000FF">put</font> the <font color="#FF0000">defaultFolder</font> into startingFolder</p>
+<p>  <font color="#980517">if</font> absolutePath is startingFolder <font color="#980517">then</font> <font color="#0000FF">return</font> "."</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">itemDelimiter</font> to "/"</p>
+<p>  <font color="#980517">repeat</font></p>
+<p>    <font color="#980517">if</font> item 1 of startingFolder is item 1 of absolutePath</p>
+<p>    <font color="#980517">then</font> <font color="#68228B">-- they're in the same disk or folder</font></p>
+<p>      <font color="#0000FF">delete</font> item 1 of absolutePath</p>
+<p>      <font color="#0000FF">delete</font> item 1 of startingFolder</p>
+<p>    <font color="#980517">else</font> <font color="#0000FF">exit</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> (the <font color="#FF0000">number</font> of items in startingFolder) times</p>
+<p>    <font color="#0000FF">put</font> "../" before absolutePath</p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#0000FF">return</font> absolutePath <font color="#68228B">-- now changed to a relative path</font></p>
+<p><font color="#980517">end</font> relativePath</p>
+<p></p>

@@ -1,0 +1,311 @@
+{
+   "#mainstack": "Calculator",
+   "Calculator": {
+      "#name": "stack \"Calculator\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002\n1030",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Calculator\"",
+            "childcontrols": {
+               "1019": {
+                  "#name": "button \"About\"",
+                  "properties": {
+                     "icon": "210095",
+                     "id": "1019",
+                     "layer": "1",
+                     "name": "About",
+                     "rect": "9,53,43,87",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "rectangle"
+                  }
+               },
+               "1020": {
+                  "#name": "button \"Clear\"",
+                  "properties": {
+                     "id": "1020",
+                     "label": "C",
+                     "layer": "2",
+                     "name": "Clear",
+                     "rect": "49,53,83,87",
+                     "style": "rectangle"
+                  }
+               },
+               "1025": {
+                  "#name": "button \"=\"",
+                  "properties": {
+                     "id": "1025",
+                     "label": "=",
+                     "layer": "3",
+                     "margins": "4,50,4,4",
+                     "name": "=",
+                     "rect": "129,173,163,247",
+                     "style": "rectangle"
+                  }
+               },
+               "1026": {
+                  "#name": "field \"Result\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>0</p>",
+                     "id": "1026",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "Result",
+                     "rect": "8,6,163,46",
+                     "showFocusBorder": false
+                  }
+               },
+               "1028": {
+                  "#name": "group \"Digits\"",
+                  "childcontrols": {
+                     "1004": {
+                        "#name": "button \"Number 7\"",
+                        "properties": {
+                           "id": "1004",
+                           "label": "7",
+                           "layer": "7",
+                           "name": "Number 7",
+                           "rect": "9,93,43,127",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1005": {
+                        "#name": "button \"Number 8\"",
+                        "properties": {
+                           "id": "1005",
+                           "label": "8",
+                           "layer": "8",
+                           "name": "Number 8",
+                           "rect": "49,93,83,127",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1006": {
+                        "#name": "button \"Number 9\"",
+                        "properties": {
+                           "id": "1006",
+                           "label": "9",
+                           "layer": "9",
+                           "name": "Number 9",
+                           "rect": "89,93,123,127",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1010": {
+                        "#name": "button \"Number 4\"",
+                        "properties": {
+                           "id": "1010",
+                           "label": "4",
+                           "layer": "10",
+                           "name": "Number 4",
+                           "rect": "9,133,43,167",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1011": {
+                        "#name": "button \"Number 5\"",
+                        "properties": {
+                           "id": "1011",
+                           "label": "5",
+                           "layer": "11",
+                           "name": "Number 5",
+                           "rect": "49,133,83,167",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1012": {
+                        "#name": "button \"Number 6\"",
+                        "properties": {
+                           "id": "1012",
+                           "label": "6",
+                           "layer": "12",
+                           "name": "Number 6",
+                           "rect": "89,133,123,167",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1013": {
+                        "#name": "button \"Number 1\"",
+                        "properties": {
+                           "id": "1013",
+                           "label": "1",
+                           "layer": "13",
+                           "name": "Number 1",
+                           "rect": "9,173,43,207",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1014": {
+                        "#name": "button \"Number 2\"",
+                        "properties": {
+                           "id": "1014",
+                           "label": "2",
+                           "layer": "14",
+                           "name": "Number 2",
+                           "rect": "49,173,83,207",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1015": {
+                        "#name": "button \"Number 3\"",
+                        "properties": {
+                           "id": "1015",
+                           "label": "3",
+                           "layer": "15",
+                           "name": "Number 3",
+                           "rect": "89,173,123,207",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1016": {
+                        "#name": "button \"Decimal\"",
+                        "properties": {
+                           "id": "1016",
+                           "label": ".",
+                           "layer": "6",
+                           "name": "Decimal",
+                           "rect": "89,213,123,247",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1018": {
+                        "#name": "button \"Number 0\"",
+                        "properties": {
+                           "id": "1018",
+                           "label": "0",
+                           "layer": "16",
+                           "name": "Number 0",
+                           "rect": "9,213,83,247",
+                           "style": "rectangle"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1028",
+                     "layer": "5",
+                     "name": "Digits",
+                     "rect": "5,89,127,251"
+                  }
+               },
+               "1029": {
+                  "#name": "group \"Operators\"",
+                  "childcontrols": {
+                     "1021": {
+                        "#name": "button \"/\"",
+                        "properties": {
+                           "id": "1021",
+                           "label": "/",
+                           "layer": "18",
+                           "name": "/",
+                           "rect": "89,53,123,87",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1022": {
+                        "#name": "button \"*\"",
+                        "properties": {
+                           "id": "1022",
+                           "label": "*",
+                           "layer": "19",
+                           "name": "*",
+                           "rect": "129,53,163,87",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1023": {
+                        "#name": "button \"-\"",
+                        "properties": {
+                           "id": "1023",
+                           "label": "-",
+                           "layer": "20",
+                           "name": "-",
+                           "rect": "129,93,163,127",
+                           "style": "rectangle"
+                        }
+                     },
+                     "1024": {
+                        "#name": "button \"+\"",
+                        "properties": {
+                           "id": "1024",
+                           "label": "+",
+                           "layer": "21",
+                           "name": "+",
+                           "rect": "129,133,163,167",
+                           "style": "rectangle"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1029",
+                     "layer": "17",
+                     "name": "Operators",
+                     "rect": "85,49,167,171"
+                  }
+               }
+            },
+            "customproperties": {
+               "runningTotal": null
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Calculator",
+               "textFont": "Arial Black",
+               "textSize": "24",
+               "textStyle": "plain"
+            }
+         },
+         "1030": {
+            "#name": "card \"About\"",
+            "childcontrols": {
+               "1031": {
+                  "#name": "button \"OK\"",
+                  "properties": {
+                     "id": "1031",
+                     "layer": "2",
+                     "name": "OK",
+                     "rect": "45,221,127,244",
+                     "textFont": "System3492",
+                     "textSize": "13",
+                     "textStyle": "plain"
+                  }
+               },
+               "1032": {
+                  "#name": "field \"About\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Calculator_1030_1032_htmlText.txt",
+                     "id": "1032",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "About",
+                     "rect": "8,3,163,250",
+                     "showFocusBorder": false,
+                     "textAlign": "center",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1030",
+               "layer": "2",
+               "name": "About"
+            }
+         }
+      },
+      "longID": "stack \"Calculator\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "fileName": "Simple Calculator.rev",
+         "id": "1032",
+         "liveResizing": false,
+         "name": "Calculator",
+         "rect": "160,142,328,396",
+         "resizable": false,
+         "title": "Calculator"
+      },
+      "sharedGroupIDs": null
+   }
+}

@@ -1,0 +1,6 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> createFontMenu</p>
+<p>  <font color="#0000FF">get</font> the <font color="#F88017">fontNames</font> <font color="#68228B">-- list of installed fonts</font></p>
+<p>  <font color="#0000FF">sort</font> lines of it</p>
+<p>  <font color="#0000FF">put</font> it into button "Font"</p>
+<p><font color="#980517">end</font> createFontMenu</p>

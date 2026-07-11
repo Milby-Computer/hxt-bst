@@ -1,0 +1,70 @@
+{
+   "#mainstack": "com.livecode.pi.gradient",
+   "com.livecode.pi.gradient": {
+      "#name": "stack \"com.livecode.pi.gradient\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1007": {
+                        "#name": "graphic \"Round Rectangle\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "backColor": "255,255,255",
+                           "filled": true,
+                           "foreColor": "191,194,194",
+                           "id": "1007",
+                           "layer": "2",
+                           "margins": "8",
+                           "name": "Round Rectangle",
+                           "opaque": true,
+                           "rect": "190,132,246,156",
+                           "roundRadius": "0",
+                           "style": "roundrect"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1005 of stack \"Untitled 2\"",
+                     "id": "1004",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "190,132,246,156"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "2"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1008"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.gradient\"",
+      "properties": {
+         "fileName": "com.livecode.pi.gradient.livecode",
+         "id": "1008",
+         "name": "com.livecode.pi.gradient",
+         "rect": "615,454,1015,854"
+      },
+      "sharedGroupIDs": null
+   }
+}

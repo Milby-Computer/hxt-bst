@@ -1,0 +1,30 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">local</font> storedHilitedChunk</p>
+<p></p>
+<p><font color="#980517">on</font> mouseMove</p>
+<p>  <font color="#68228B">-- first unhighlight the "old" phrase if necessary:</font></p>
+<p>  <font color="#980517">if</font> storedHilitedChunk is not empty \</p>
+<p>      and storedHilitedChunk is not the <font color="#F88017">mouseChunk</font> <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">do</font> "set the backgroundColor of" &amp;&amp; \</p>
+<p>        storedHilitedChunk &amp;&amp; "to empty"</p>
+<p>    <font color="#0000FF">put</font> empty into storedHilitedChunk</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#68228B">-- highlight if the text under the mouse is linked:</font></p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">mouseChunk</font> is not empty \</p>
+<p>      and "link" is in the <font color="#FF0000">textStyle</font> of the <font color="#F88017">mouseChunk</font> <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">set</font> the <font color="#FF0000">backgroundColor</font> of the <font color="#F88017">mouseChunk</font> to "yellow"</p>
+<p>    <font color="#68228B">-- saved for later unhighlighting</font></p>
+<p>    <font color="#0000FF">put</font> the <font color="#F88017">mouseChunk</font> into storedHilitedChunk</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#0000FF">pass</font> mouseMove </p>
+<p><font color="#980517">end</font> mouseMove</p>
+<p></p>
+<p><font color="#980517">on</font> mouseLeave</p>
+<p>  <font color="#68228B">-- unhighlight any currently highlighted text:</font></p>
+<p>  <font color="#980517">if</font> storedHilitedChunk is not empty <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">do</font> "set the backgroundColor of" &amp;&amp; \</p>
+<p>       storedHilitedChunk &amp;&amp; "to empty"</p>
+<p>    <font color="#0000FF">put</font> empty into storedHilitedChunk</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#0000FF">pass</font> mouseLeave</p>
+<p><font color="#980517">end</font> mouseLeave</p>

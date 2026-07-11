@@ -1,0 +1,15 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">setProp</font> redChannel newValue</p>
+<p>  <font color="#68228B">-- make sure newValue is between zero and 255:</font></p>
+<p>  <font color="#0000FF">put</font> <font color="#F88017">max</font>(min(newValue,255),zero) into newValue</p>
+<p>  <font color="#0000FF">get</font> the <font color="#FF0000">backgroundColor</font> of the <font color="#F88017">target</font></p>
+<p>  <font color="#980517">if</font> the <font color="#FF0000">number</font> of items of it is not 3 <font color="#980517">then</font></p>
+<p>    <font color="#68228B">-- use trick to convert to RGB triplet:</font></p>
+<p>    <font color="#0000FF">set</font> the <font color="#FF0000">backgroundPixel</font> of the <font color="#F88017">target</font> \</p>
+<p>      to the <font color="#FF0000">effective</font> <font color="#FF0000">backgroundPixel</font> of the <font color="#F88017">target</font></p>
+<p>    <font color="#0000FF">get</font> the <font color="#FF0000">backgroundColor</font> of the <font color="#F88017">target</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#68228B">-- change the first item - red - to new value:</font></p>
+<p>  <font color="#0000FF">put</font> newValue into item 1 of it</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">backgroundColor</font> of the <font color="#F88017">target</font> to it</p>
+<p><font color="#980517">end</font> redChannel</p>

@@ -1,0 +1,73 @@
+{
+   "#mainstack": "revIDESnippetViewer",
+   "revIDESnippetViewer": {
+      "#name": "stack \"revIDESnippetViewer\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"Snippet\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "hScrollbar": true,
+                     "htmlText": "%file%: assets/revIDESnippetViewer_1002_1003_htmlText.txt",
+                     "id": "1003",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "Snippet",
+                     "rect": "5,5,491,503",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "traversalOn": false,
+                     "vScrollbar": true
+                  }
+               },
+               "1004": {
+                  "#name": "button \"Copy to clipboard\"",
+                  "properties": {
+                     "id": "1004",
+                     "layer": "2",
+                     "name": "Copy to clipboard",
+                     "rect": "5,508,246,531",
+                     "traversalOn": false
+                  }
+               },
+               "1005": {
+                  "#name": "button \"Copy to Script Editor\"",
+                  "properties": {
+                     "id": "1005",
+                     "layer": "3",
+                     "name": "Copy to Script Editor",
+                     "rect": "250,508,491,531",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"revIDESnippetViewer\"",
+      "properties": {
+         "behavior": "stack \"revIDESnippetViewerBehavior\"",
+         "fileName": "revidesnippetviewer.livecode",
+         "id": "1007",
+         "name": "revIDESnippetViewer",
+         "rect": "158,80,654,616"
+      },
+      "sharedGroupIDs": null
+   }
+}

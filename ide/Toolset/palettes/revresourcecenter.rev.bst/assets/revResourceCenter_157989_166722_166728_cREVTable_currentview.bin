@@ -1,0 +1,5 @@
+<p><font size="12" color="#000000">Next we need to choose two images, a standard state and a rollover state for each button. To associate them to a button, we have to import them as controls to the stack. A standard way to do this is to create another card, in this case a second card called images, onto which we import the images.</font></p>
+<p></p>
+<p><font size="12" color="#000000">The images in this tutorial were produced in Photoshop, but there are many places where great icon sets can be purchased and even applications that let you build your own icons. Note: You must use images that have transparent edges for this tutorial to work, .png and .gif files are ideal.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Go to File &gt; Import as control &gt; Image File</font></p>

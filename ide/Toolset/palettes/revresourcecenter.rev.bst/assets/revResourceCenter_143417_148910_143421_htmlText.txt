@@ -1,0 +1,85 @@
+<p><font face="Lucida Grande" size="12" color="#000000">I have an old laptop at home, which over the years has taken quite a beating and has everything (including the kitchen sink) installed on it. As a result, it now takes the best part of 30 minutes just to boot up. I don't want to re-format the drive and re-install windows as there is a bunch of files and applications that I may need in the future and as I only really use it now for web-browsing and looking at photo's, I decided to use Puppy Linux &ndash; a small, live CD linux distro &ndash; to breath new life into the machine.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">However, there is no simple image browser installed in puppy &ndash; you know the kind of thing &ndash; file tree at one side, thumbnails the other and a big image view in the middle. Now here is a good 20 minute project for Revolution I thought, so I set about writing such an application.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">What I wanted to create was a simple way to browse my photo collection &ndash; something that supported thumbnails (with a thumbnail cache for speed), folder navigation and was so simple to use my computer illiterate girlfriend could use it.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">And this is what I came up with.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The code is very heavily commented, so that you can take it apart for yourself and see how each part works. Just open it in Revolution, bring up the Application Browser, and study the scripts for each part of the Image Browser.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Rather than dissecting this application bit by bit I want to draw your attention to some of the concepts that are used.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The use of templateImage.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The creation of self-contained re-useable object groups</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Creating a thumbnail using import snapshot</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Using a "send " loop to allow responsiveness throughout the application.&#0;&#0;</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">1. The use of templateImage</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Sometimes it is very useful to set up a set of default values that you wish any newly created object to inherit &ndash; for example to set some default width or heights. Revolution allows you to do this by the use of the template objects.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Setting up the defaults on the templateImage (or any of the template Revolution objects) allows you to specify default properties and behaviours for any newly created images.</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">width</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">templateImage</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> 100</font></p>
+<p><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">height</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">templateImage</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> 100</font></p>
+<p><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> border </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">templateImage</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> true</font></p>
+<p><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">threeD</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">templateImage</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> false</font></p>
+<p><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">borderwidth</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">templateImage</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> 1</font></p>
+<p><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">locklocation</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">templateImage</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> true</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">For more information about using template objects in Revolution, see the Dictionary entries for templateImage, templateCard, templateGroup, and a number of other objects that have this property. You will find the Dictionary under the Help/Documentation menu inside Revolution.</font></p>
+<p></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">2. Creation of self-contained object groups</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">One of the most powerful aspects of Revolution is the way that you can code self contained objects or groups of objects. In this application the thumbnail group on the right hand side is a good example.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The group itself contains all the scripting you need to manage thumbnails and provides a simple interface of two calls:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; resetImages</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">   Clears all the images from the thumbnails view</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; reloadThumbnails </font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">   Generates thumbnail images for any JPG, GIF or PNG image files it finds in the current folder, using any cached thumbnails if available.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Designing an application in this manner means you can copy the thumbnail group onto a fresh stack and simply call those two methods and the group will manage everything else for you. You will also need to copy the "status" group which provides the status bar etc. To look at the entire script for this group, click on the group called "thumbnailView" in the Application Browser, and bring up the script by clicking on "Script" in the toolbar.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">3. Creating a thumbnail using Import Snapshot</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">As you know, it is very easy to load images and resize them &ndash; and you would be forgiven for thinking that this is all that is required to create a thumbnail view of an image file. However, when you resize an image in Revolution you still retain all the data that was in the original file. Although this will work, you will very quickly run out of memory if you try and load in thumbnails of a folder containing several hundred large images.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">What we actually want to achieve is to create a thumbnail that just contains that actual data of the smaller, resized image. This file can then be written out to disk to create a thumbnail cache.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The easiest way to achieve this is to use the import snapshot command. Below you will find the main steps to achieve this.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Create the new empty thumbnail image</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">   create image in group "thumbnailView"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Create a temporary blank image of the correct size for the thumbnail</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">   create invisible image "Foo"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Set the filename of the temporary image to the image on disk</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">   set the filename of image "Foo" to tFile</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The image will be automatically resized to fit the new temporary image</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Create a snapshot of the temporary (resized) image</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">   import snapshot from rect (the rect of image "Foo") of image "Foo"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Put the data of the snapshot into our thumbnail</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">   set the text of image id tID to the text of the last image</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Clean up after ourselves</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">   delete the last image</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">   delete image "Foo"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Optionally, save the thumbnail image to disk cachege to disk cache&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">You can see exactly how I used this in the Image Browser, the script is at the bottom of the "thumbnailView" group script, in the function called "processImage". Again, you can look up import snapshot in the Dictionary for more information on how to use this versatile command.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">4. Send message loops</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">When it came to processing the list of image files into thumbnails I did it first using a simple "repeat with line tFile in tFileList" loop. However, doing things this way means that the application is locked up and unresponsive until all images have been processed &ndash; there is no-way to change folder, view an image or even cancel the listing until all files have been processed.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Luckily, Revolution provides a simple way to loop through the list while still allowing responsiveness to other events &ndash; the "Send" message loop.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Firstly, the reloadThumbnails function starts the processing loop up by sending itself the "processImage" message right away &ndash; tFiles contains the list of image files.</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#2000FB">send</font><font face="Courier" size="11" color="#000000"> "processImage tFiles" </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">me</font><font face="Courier" size="11" color="#000000"> in 0 </font><font face="Courier" size="11" color="#E5001A">millisecs</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The "processImage" handler processes a single image file into a thumbnail (as outlined in the section above). The last thing the "processImage" handler does is call itself using the "send" command but with a small delay. This delay allows Revolution to process any other events that may have occurred &ndash; mouse clicks on the folder tree for example.</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#990017">if</font><font face="Courier" size="11" color="#000000"> pImageList is not empty </font><font face="Courier" size="11" color="#990017">then</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">send</font><font face="Courier" size="11" color="#000000"> "processImage pImageList" </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">me</font><font face="Courier" size="11" color="#000000"> in 25 </font><font face="Courier" size="11" color="#E5001A">millisecs</font></p>
+<p><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">if</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">I hope you find this information useful. My girlfriend is now happily browsing photos of me as a baby so I guess the application is fulfilling its destiny, but I really should have checked the contents of that laptop before installing...</font></p>

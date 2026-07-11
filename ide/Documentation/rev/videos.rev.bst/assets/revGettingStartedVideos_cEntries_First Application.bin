@@ -1,0 +1,10 @@
+category=Getting Started
+description=<p>If you are new to Revolution, this is a good place to start.  This video introduces you to some basics.  You will learn how to create a simple application, display your own messages in dialog boxes and even control your web browser.</p>
+duration=5:49
+filename=free_first_application.avi
+level=1
+licensed=false
+name=First Application
+scripts=<p><font color="#000000">Scripts Used in this Tutorial:</font></p>\n<p></p>\n<p><font face="Courier New" size="12" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" size="12" color="#000000">  beep</font></p>\n<p><font face="Courier New" size="12" color="#000000">end mouseUp</font></p>\n<p></p>\n<p><font face="Courier New" size="12" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" size="12" color="#000000">  answer &quot;Hello World&quot;</font></p>\n<p><font face="Courier New" size="12" color="#000000">end mouseUp</font></p>\n<p></p>\n<p><font face="Courier New" size="12" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" size="12" color="#000000">  answer field &quot;Dialog Text&quot;</font></p>\n<p><font face="Courier New" size="12" color="#000000">end mouseUp</font></p>\n<p></p>\n<p><font face="Courier New" size="12" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" size="12" color="#000000">  revGoURL field &quot;Dialog Text&quot;</font></p>\n<p><font face="Courier New" size="12" color="#000000">end mouseUp</font></p>
+title=Make your first application.
+topics=<p>Key topics covered in this tutorial:</p>\n<p>-&#9;Getting started</p>\n<p>-&#9;Understand about moving between the Run and Edit pointer tools</p>\n<p>-&#9;Create an application  using a card and button</p>\n<p>-&#9;Make your computer beep</p>\n<p>-&#9;Display a simple message</p>\n<p>-&#9;Display a dialog with any message</p>\n<p>-&#9;Control your web browser</p>

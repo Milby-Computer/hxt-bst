@@ -1,0 +1,1 @@
+<p>These database implementations are supported by Revolution&rsquo;s <a><font face="verdana" size="11">Database library</font></a> commands and functions: MySQL, Oracle, PostgreSQL, and Valentina. Support is also provided via <a><font face="verdana" size="11">ODBC</font></a>.</p>

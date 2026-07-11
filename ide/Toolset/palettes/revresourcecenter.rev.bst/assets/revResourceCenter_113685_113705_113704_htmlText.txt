@@ -1,0 +1,26 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> handlerNames theScript,handlerType</p>
+<p>  <font color="#980517">switch</font> handlerType</p>
+<p>  <font color="#980517">case</font> "message" <font color="#68228B">-- list the message handlers</font></p>
+<p>    <font color="#0000FF">filter</font> theScript <font color="#980517">with</font> "on*"</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case</font> "function" <font color="#68228B">-- list the function handlers</font></p>
+<p>    <font color="#0000FF">filter</font> theScript <font color="#980517">with</font> "function*"</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case</font> "setProp" <font color="#68228B">-- list the setProp handlers</font></p>
+<p>    <font color="#0000FF">filter</font> theScript <font color="#980517">with</font> "setProp*"</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case</font> "getProp" <font color="#68228B">-- list the getProp handlers</font></p>
+<p>    <font color="#0000FF">filter</font> theScript <font color="#980517">with</font> "getProp*"</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#FF0000">default</font> <font color="#68228B">-- list all the handlers, if no type specified</font></p>
+<p>    <font color="#0000FF">filter</font> theScript <font color="#980517">with</font> "end*"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">switch</font></p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">with</font> x = 1 to the <font color="#FF0000">number</font> of lines of theScript</p>
+<p>    <font color="#68228B">-- word 2 of the first or last line of a handler</font></p>
+<p>    <font color="#68228B">-- is the handler name:</font></p>
+<p>    <font color="#0000FF">put</font> word 2 of line x of theScript into line x of theScript</p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#980517">if</font> theScript is empty <font color="#980517">then</font> <font color="#0000FF">return</font> "(None found)"</p>
+<p>  <font color="#980517">else</font> <font color="#0000FF">return</font> theScript</p>
+<p><font color="#980517">end</font> handlerNames</p>

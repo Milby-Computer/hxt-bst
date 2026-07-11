@@ -1,0 +1,27 @@
+<p>For Revolution we use a simplified form of the word-breaking algorithm.</p>
+<p>In this we treat the Unicode word breaking classes as follows:</p>
+<p>  CR =&gt; None</p>
+<p>  LF =&gt; None</p>
+<p>  Newline =&gt; None</p>
+<p>  Extend =&gt; ALetter</p>
+<p>  Format =&gt; ALetter</p>
+<p>  &lt;Private Use Area&gt; =&gt; ALetter</p>
+<p>  &lt;Surrogate Ranges&gt; =&gt; ALetter</p>
+<p>This simplified view means word-breaking is correct for any text in the BMP not using combining characters.</p>
+<p></p>
+<p>This simplification leaves us with the following classes:</p>
+<p>  0: None</p>
+<p>  1: Katakana</p>
+<p>  2: ALetter</p>
+<p>  3: MidLetter</p>
+<p>  4: MidNum</p>
+<p>  5: MidNumLet</p>
+<p>  6: Numeric</p>
+<p>  7: ExtendNumLet</p>
+<p></p>
+<p>The table generated is a sequence of 32-bit words split up as:</p>
+<p>  16-bits - base codepoint</p>
+<p>  13-bits - codepoint range</p>
+<p>  3-bits - class</p>
+<p></p>
+<p>Note that all non-BMP characters are ignored as Revolution currently does not do surrogate processing for word-breaking.</p>

@@ -1,0 +1,210 @@
+{
+   "#mainstack": "com.livecode.pi.aligncenter",
+   "com.livecode.pi.aligncenter": {
+      "#name": "stack \"com.livecode.pi.aligncenter\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1005": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1006": {
+                        "#name": "group \"controls\"",
+                        "childcontrols": {
+                           "1003": {
+                              "#name": "button \"vertical\"",
+                              "custompropertysets": {
+                                 "cREVDivergedrevLarge": {
+                                    "rect": "31,93,65,122"
+                                 },
+                                 "cREVDivergedrevsmall": null,
+                                 "cREVMaster": {
+                                    "rect": "27,78,54,101"
+                                 },
+                                 "cREVTempMaster": {
+                                    "accelKey": null,
+                                    "accelMods": null,
+                                    "accelText": null,
+                                    "altId": "0",
+                                    "arm": false,
+                                    "armBorder": false,
+                                    "armFill": false,
+                                    "autoArm": false,
+                                    "autoHilite": true,
+                                    "borderWidth": "2",
+                                    "colors": "\n\n\n\n\n\n\n",
+                                    "default": false,
+                                    "disabled": false,
+                                    "family": "0",
+                                    "hilite": false,
+                                    "hiliteBorder": false,
+                                    "hiliteFill": true,
+                                    "hiliteIcon": "200474",
+                                    "icon": "200473",
+                                    "id": "2220",
+                                    "ink": "srcCopy",
+                                    "label": null,
+                                    "labelWidth": "0",
+                                    "layer": "3",
+                                    "lockLoc": false,
+                                    "margins": "4",
+                                    "menuHistory": "1",
+                                    "menuLines": "5",
+                                    "menuMode": null,
+                                    "menuMouseButton": "1",
+                                    "menuName": null,
+                                    "mnemonic": "0",
+                                    "name": "button id 2220",
+                                    "number": "2",
+                                    "opaque": false,
+                                    "patterns": "\n\n\n\n\n\n\n\n",
+                                    "rect": "27,78,54,101",
+                                    "shadow": false,
+                                    "shadowOffset": "4",
+                                    "sharedHilite": true,
+                                    "showBorder": false,
+                                    "showHilite": true,
+                                    "showIcon": true,
+                                    "showName": false,
+                                    "style": "transparent",
+                                    "textAlign": "center",
+                                    "textFont": null,
+                                    "textSize": null,
+                                    "textStyle": null,
+                                    "threeD": false,
+                                    "toolTip": null,
+                                    "traversalOn": false,
+                                    "visible": true
+                                 }
+                              },
+                              "properties": {
+                                 "icon": "202719",
+                                 "id": "1003",
+                                 "layer": "4",
+                                 "name": "vertical",
+                                 "rect": "84,60,109,82",
+                                 "showHilite": true,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "rectangle",
+                                 "toolTip": "Align Objects Centre",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1004": {
+                              "#name": "button \"horizontal\"",
+                              "custompropertysets": {
+                                 "cREVDivergedrevLarge": {
+                                    "rect": "69,93,103,122"
+                                 },
+                                 "cREVDivergedrevsmall": null,
+                                 "cREVMaster": {
+                                    "rect": "56,78,83,101"
+                                 },
+                                 "cREVTempMaster": {
+                                    "accelKey": null,
+                                    "accelMods": null,
+                                    "accelText": null,
+                                    "altId": "0",
+                                    "arm": false,
+                                    "armBorder": false,
+                                    "armFill": false,
+                                    "autoArm": false,
+                                    "autoHilite": true,
+                                    "borderWidth": "2",
+                                    "colors": "\n\n\n\n\n\n\n",
+                                    "default": false,
+                                    "disabled": false,
+                                    "family": "0",
+                                    "hilite": false,
+                                    "hiliteBorder": false,
+                                    "hiliteFill": true,
+                                    "hiliteIcon": "200496",
+                                    "icon": "200495",
+                                    "id": "2222",
+                                    "ink": "srcCopy",
+                                    "label": null,
+                                    "labelWidth": "0",
+                                    "layer": "5",
+                                    "lockLoc": false,
+                                    "margins": "4",
+                                    "menuHistory": "1",
+                                    "menuLines": "5",
+                                    "menuMode": null,
+                                    "menuMouseButton": "1",
+                                    "menuName": null,
+                                    "mnemonic": "0",
+                                    "name": "button id 2222",
+                                    "number": "4",
+                                    "opaque": false,
+                                    "patterns": "\n\n\n\n\n\n\n\n",
+                                    "rect": "56,78,83,101",
+                                    "shadow": false,
+                                    "shadowOffset": "4",
+                                    "sharedHilite": true,
+                                    "showBorder": false,
+                                    "showHilite": true,
+                                    "showIcon": true,
+                                    "showName": false,
+                                    "style": "transparent",
+                                    "textAlign": "center",
+                                    "textFont": null,
+                                    "textSize": null,
+                                    "textStyle": null,
+                                    "threeD": false,
+                                    "toolTip": null,
+                                    "traversalOn": false,
+                                    "visible": true
+                                 }
+                              },
+                              "properties": {
+                                 "icon": "202715",
+                                 "id": "1004",
+                                 "layer": "3",
+                                 "name": "horizontal",
+                                 "rect": "84,89,109,111",
+                                 "showHilite": true,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "rectangle",
+                                 "toolTip": "Align Objects Middle",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1006",
+                           "layer": "2",
+                           "lockLoc": true,
+                           "name": "controls",
+                           "rect": "80,50,113,115"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1005",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "76,46,117,119"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"com.livecode.pi.aligncenter\"",
+      "properties": {
+         "fileName": "com.livecode.pi.aligncenter.livecode",
+         "id": "1006",
+         "name": "com.livecode.pi.aligncenter",
+         "rect": "158,371,424,592"
+      },
+      "sharedGroupIDs": null
+   }
+}

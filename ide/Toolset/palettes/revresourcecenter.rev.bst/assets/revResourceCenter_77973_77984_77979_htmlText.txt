@@ -1,0 +1,15 @@
+<p><b><u><font face="helvetica" size="12">Solution:</font></u></b></p>
+<p><font color="#980517">on</font> printThisCard thePaperSize,theMargin</p>
+<p>  <font color="#68228B">-- set up defaults if no size and margin provided:</font></p>
+<p>  <font color="#980517">if</font> thePaperSize is empty <font color="#980517">then</font> <font color="#0000FF">put</font> the <font color="#FF0000">printPaperSize</font> into thePaperSize</p>
+<p>  <font color="#980517">if</font> theMargin is empty <font color="#980517">then</font> <font color="#0000FF">put</font> 72 into theMargin</p>
+<p>  <font color="#68228B">-- get the page area:</font></p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">printMargins</font> to \</p>
+<p>     theMargin,theMargin,theMargin,theMargin</p>
+<p>  <font color="#0000FF">put</font> theMargin,theMargin, \</p>
+<p>     item 1 of thePaperSize - theMargin, \</p>
+<p>     item 2 of thePaperSize - theMargin \</p>
+<p>     into destinationRect</p>
+<p>  <font color="#68228B">-- print into that rectangle:</font></p>
+<p>  <font color="#0000FF">print</font> this card into destinationRect</p>
+<p><font color="#980517">end</font> printThisCard</p>

@@ -1,0 +1,35 @@
+<p><b>Template Documentation</b></p>
+<p>The controls above provide a way of trying out the customisation options of this template. All of the code to power this theme are in the stack script and the group scripts of the header and navigation.</p>
+<p></p>
+<p>This implementation relies heavily on getprop and setprop handlers. This allows for the following line to set the theme for example:</p>
+<p></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> theme </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">this</font><font color="#000000"> </font><font color="#7F007F">stack</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#00007F">"green"</font></p>
+<p></p>
+<p>This triggers a handler in the stack script:</p>
+<p></p>
+<p><b><font color="#000000">setProp</font></b><font color="#000000"> theme pTheme</font></p>
+<p><font color="#000000">   </font><b><font color="#007F00">// Script the change the interface the the color pTheme</font></b></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> theme</font></p>
+<p></p>
+<p><b>Theme</b></p>
+<p>Changes the background color of the header and selected navigation item.</p>
+<p></p>
+<p><b>Nav Items</b></p>
+<p>A list of navigation items in the following format "card name,icon name".</p>
+<p></p>
+<p>Adding a new line to the list will cause an extra navigation element to the nav.</p>
+<p></p>
+<p>This template includes more that 120 icon images. To use one, simply look in the images/icons/ folder and enter its name as the second item.</p>
+<p></p>
+<p>The navigation items can be set in script using the following line of code where tNavigation is a list of card names and icons as shown above.</p>
+<p></p>
+<p><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> navigationItems </font><font color="#7F007F">of</font><font color="#000000"> </font><b><font color="#7F7F00">group</font></b><font color="#000000"> </font><font color="#00007F">"nav"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> tNavigation</font></p>
+<p></p>
+<p><b>Header Buttons</b></p>
+<p>The header contains a number of buttons which can be shown and hidden allowing people to navigate around your stack.</p>
+<p></p>
+<p>The visibility can be set in script using:</p>
+<p></p>
+<p><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> headerButtonBackVisible </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">this</font><font color="#000000"> </font><font color="#7F007F">stack</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">false|true</font></p>
+<p><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> headerButtonDeleteVisible </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">this</font><font color="#000000"> </font><font color="#7F007F">stack</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">false|true</font></p>
+<p><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> headerButtonAddVisible </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">this</font><font color="#000000"> </font><font color="#7F007F">stack</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">false|true</font></p>

@@ -1,0 +1,7 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> underlineToItalic theFieldName</p>
+<p>  <font color="#0000FF">put</font> the <font color="#FF0000">htmlText</font> of field theFieldName into myHTML</p>
+<p>  <font color="#0000FF">replace</font> "&lt;u&gt;" <font color="#980517">with</font> "&lt;i&gt;" in myHTML</p>
+<p>  <font color="#0000FF">replace</font> "&lt;/u&gt;" <font color="#980517">with</font> "&lt;/i&gt;" in myHTML</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">htmlText</font> of field theFieldName to myHTML</p>
+<p><font color="#980517">end</font> underlineToItalic</p>

@@ -1,0 +1,10 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> truncatedToFit theString,thePixelWidth</p>
+<p>  <font color="#0000FF">create</font> <font color="#FF0000">invisible</font> field <font color="#68228B">-- a temporary field</font></p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">width</font> of last field to thePixelWidth</p>
+<p>  <font color="#0000FF">put</font> theString into last field</p>
+<p>  <font color="#0000FF">put</font> line 1 of the <font color="#FF0000">formattedText</font> of last field into myLine</p>
+<p>  <font color="#0000FF">delete</font> last field <font color="#68228B">-- the temporary field we created earlier</font></p>
+<p>  <font color="#0000FF">send</font> "choose browse tool" to <font color="#F88017">me</font> in 1 <font color="#F88017">millisecond</font></p>
+<p>  <font color="#0000FF">return</font> myLine</p>
+<p><font color="#980517">end</font> truncatedToFit</p>

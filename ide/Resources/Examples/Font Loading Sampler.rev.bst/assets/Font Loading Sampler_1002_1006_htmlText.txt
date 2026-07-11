@@ -1,0 +1,224 @@
+<p>#PC&prod;&Igrave;&iexcl;&part;</p>
+<p>#&plusmn;&radic;&ordm;&ne;&radic;&ordm;</p>
+<p>#&laquo;&nbsp;&plusmn;&sbquo;&radic;&ordm;</p>
+<p>#&laquo;&Iuml;&micro;&Acirc;&part;&Ucirc;&iquest;&OElig;A</p>
+<p>Abadi MT Condensed Extra Bold</p>
+<p>Abadi MT Condensed Light</p>
+<p>Academy Engraved LET</p>
+<p>American Typewriter</p>
+<p>American Typewriter Condensed</p>
+<p>American Typewriter Condensed Light</p>
+<p>American Typewriter Light</p>
+<p>Andale Mono</p>
+<p>Apple Chancery</p>
+<p>Apple LiGothic Medium</p>
+<p>Apple LiSung Light</p>
+<p>AppleGothic</p>
+<p>AppleMyungjo</p>
+<p>Arial</p>
+<p>Arial Black</p>
+<p>Arial Narrow</p>
+<p>Arial Rounded MT Bold</p>
+<p>Ayuthaya</p>
+<p>Bank Gothic</p>
+<p>Baskerville</p>
+<p>Baskerville Old Face</p>
+<p>Baskerville Semibold</p>
+<p>Bauhaus 93</p>
+<p>BD Renaissance</p>
+<p>Bell MT</p>
+<p>Bernard MT Condensed</p>
+<p>BiauKai</p>
+<p>Big Caslon</p>
+<p>Bitstream Vera Sans</p>
+<p>Bitstream Vera Sans Bold</p>
+<p>Bitstream Vera Sans Bold Oblique</p>
+<p>Bitstream Vera Sans Mono</p>
+<p>Bitstream Vera Sans Mono Bold</p>
+<p>Bitstream Vera Sans Mono Bold Oblique</p>
+<p>Bitstream Vera Sans Mono Oblique</p>
+<p>Bitstream Vera Sans Oblique</p>
+<p>Bitstream Vera Serif</p>
+<p>Bitstream Vera Serif Bold</p>
+<p>Blackmoor LET</p>
+<p>BlairMdITC TT-Medium</p>
+<p>Bodoni Ornaments ITC TT</p>
+<p>Bodoni SvtyTwo ITC TT-Bold</p>
+<p>Bodoni SvtyTwo ITC TT-Book</p>
+<p>Bodoni SvtyTwo ITC TT-BookIta</p>
+<p>Bodoni SvtyTwo OS ITC TT-Bold</p>
+<p>Bodoni SvtyTwo OS ITC TT-Book</p>
+<p>Bodoni SvtyTwo OS ITC TT-BookIt</p>
+<p>Bodoni SvtyTwo SC ITC TT-Book</p>
+<p>Book Antiqua</p>
+<p>Bookman Old Style</p>
+<p>Bordeaux Roman Bold LET</p>
+<p>Bradley Hand ITC TT-Bold</p>
+<p>Braggadocio</p>
+<p>Britannic Bold</p>
+<p>Brush Script MT</p>
+<p>Calisto MT</p>
+<p>Century</p>
+<p>Century Gothic</p>
+<p>Century Schoolbook</p>
+<p>Chalkboard</p>
+<p>Chalkboard Bold</p>
+<p>Charcoal CY</p>
+<p>Cochin</p>
+<p>Colonna MT</p>
+<p>Comic Sans MS</p>
+<p>Cooper Black</p>
+<p>Copperplate</p>
+<p>Copperplate Gothic Bold</p>
+<p>Copperplate Gothic Light</p>
+<p>Copperplate Light</p>
+<p>Courier</p>
+<p>Courier CE</p>
+<p>Courier New</p>
+<p>Cracked</p>
+<p>Curlz MT</p>
+<p>Desdemona</p>
+<p>Didot</p>
+<p>Edwardian Script ITC</p>
+<p>Engravers MT</p>
+<p>Euphemia UCAS</p>
+<p>Euphemia UCAS Bold</p>
+<p>Euphemia UCAS Italic</p>
+<p>Eurostile</p>
+<p>Footlight MT Light</p>
+<p>Futura</p>
+<p>Futura Condensed</p>
+<p>Garamond</p>
+<p>GB18030 Bitmap</p>
+<p>Geeza Pro</p>
+<p>Geeza Pro Bold</p>
+<p>Geneva</p>
+<p>Geneva CE</p>
+<p>Geneva CY</p>
+<p>Georgia</p>
+<p>Gill Sans</p>
+<p>Gill Sans Light</p>
+<p>Gill Sans Ultra Bold</p>
+<p>Gloucester MT Extra Condensed</p>
+<p>Goudy Old Style</p>
+<p>Haettenschweiler</p>
+<p>Handwriting - Dakota</p>
+<p>Harrington</p>
+<p>Hei</p>
+<p>Helvetica</p>
+<p>Helvetica CE</p>
+<p>Helvetica CY</p>
+<p>Helvetica Neue</p>
+<p>Helvetica Neue Black Condensed</p>
+<p>Helvetica Neue Bold Condensed</p>
+<p>Helvetica Neue Light</p>
+<p>Helvetica Neue UltraLight</p>
+<p>Herculanum</p>
+<p>Hoefler Text</p>
+<p>Hoefler Text Ornaments</p>
+<p>Impact</p>
+<p>Imprint MT Shadow</p>
+<p>InaiMathi</p>
+<p>Jazz LET</p>
+<p>Kai</p>
+<p>Kino MT</p>
+<p>Krungthep</p>
+<p>Lucida Blackletter</p>
+<p>Lucida Bright</p>
+<p>Lucida Calligraphy</p>
+<p>Lucida Fax</p>
+<p>Lucida Grande</p>
+<p>Lucida Grande CE</p>
+<p>Lucida Grande CY</p>
+<p>Lucida Handwriting</p>
+<p>Lucida Sans</p>
+<p>Lucida Sans Typewriter</p>
+<p>Marker Felt</p>
+<p>Matura MT Script Capitals</p>
+<p>Mistral</p>
+<p>Modern No. 20</p>
+<p>Mona Lisa Solid ITC TT</p>
+<p>Monaco</p>
+<p>Monaco CE</p>
+<p>Monaco CY</p>
+<p>Monotype Corsiva</p>
+<p>Monotype Sorts</p>
+<p>MT Extra</p>
+<p>News Gothic MT</p>
+<p>Onyx</p>
+<p>OpenSymbol</p>
+<p>Optima</p>
+<p>Optima ExtraBlack</p>
+<p>Osaka</p>
+<p>Osaka&Aring;|&igrave;&ocirc;&iuml;&ugrave;</p>
+<p>Palatino</p>
+<p>Papyrus</p>
+<p>Party LET</p>
+<p>Perpetua Titling MT</p>
+<p>Plantagenet Cherokee</p>
+<p>Playbill</p>
+<p>PortagoITC TT</p>
+<p>Princetown LET</p>
+<p>Rockwell</p>
+<p>Rockwell Extra Bold</p>
+<p>Santa Fe LET</p>
+<p>Sathu</p>
+<p>Savoye LET</p>
+<p>SchoolHouse Cursive B</p>
+<p>SchoolHouse Printed A</p>
+<p>Silom</p>
+<p>Skia</p>
+<p>Snell Roundhand</p>
+<p>Snell Roundhand Black</p>
+<p>Snell Roundhand Bold</p>
+<p>Stencil</p>
+<p>Stone Sans ITC TT-Bold</p>
+<p>Stone Sans ITC TT-Semi</p>
+<p>Stone Sans ITC TT-SemiIta</p>
+<p>Symbol</p>
+<p>Synchro LET</p>
+<p>Tahoma</p>
+<p>Thonburi</p>
+<p>Times</p>
+<p>Times CE</p>
+<p>Times CY</p>
+<p>Times New Roman</p>
+<p>Trebuchet MS</p>
+<p>Type Embellishments One LET</p>
+<p>Verdana</p>
+<p>Webdings</p>
+<p>Wide Latin</p>
+<p>Wingdings</p>
+<p>Wingdings 2</p>
+<p>Wingdings 3</p>
+<p>Zapf Dingbats</p>
+<p>Zapfino</p>
+<p>&Ccedil;c&Ccedil;e&Ccedil;o&auml;&reg;&iacute;&Dagger;&oacute;&uml;</p>
+<p>&Ccedil;c&Ccedil;e&Ccedil;o&atilde;&ge;&acirc;&raquo;&egrave;&euml;&euml;&Atilde;W3</p>
+<p>&Ccedil;c&Ccedil;e&Ccedil;o&ccedil;s&egrave;&euml;&euml;&Atilde;</p>
+<p>&Ccedil;c&Ccedil;e&Ccedil;o&egrave;&Agrave;&igrave;&Iuml;&ccedil;s&egrave;&euml;&euml;&Atilde;W5</p>
+<p>&Ccedil;c&Ccedil;e&Ccedil;o&euml;&acirc;&atilde;&Dagger;&euml;&Atilde;W3</p>
+<p>&Ccedil;c&Ccedil;e&Ccedil;o&euml;&aelig;&auml;&euro;&Eacute;S&Eacute;V&Eacute;b&Eacute;N&euml;&Atilde;</p>
+<p>&Ccedil;c&Ccedil;e&Ccedil;o&iacute;&Uuml;&ucirc;&le;&egrave;&euml;&euml;&Atilde;</p>
+<p>&Ccedil;c&Ccedil;e&Ccedil;o&oacute;&Iacute;&egrave;&euml;&euml;&Atilde;</p>
+<p>&Ccedil;l&Ccedil;r &Ccedil;o&Eacute;S&Eacute;V&Eacute;b&Eacute;N</p>
+<p>&Ccedil;l&Ccedil;r &Ccedil;o&ntilde;&aelig;&iacute;&copy;</p>
+<p>&Ccedil;l&Ccedil;r &Eacute;S&Eacute;V&Eacute;b&Eacute;N</p>
+<p>&Ccedil;l&Ccedil;r &ntilde;&aelig;&iacute;&copy;</p>
+<p>&Eacute;q&Eacute;&acirc;&Eacute;M&Eacute;m&auml;p&Eacute;S Pro W3</p>
+<p>&Eacute;q&Eacute;&acirc;&Eacute;M&Eacute;m&auml;p&Eacute;S Pro W6</p>
+<p>&Eacute;q&Eacute;&acirc;&Eacute;M&Eacute;m&auml;p&Eacute;S Std W8</p>
+<p>&Eacute;q&Eacute;&acirc;&Eacute;M&Eacute;m&auml;&euro;&Eacute;S Pro W4</p>
+<p>&Eacute;q&Eacute;&acirc;&Eacute;M&Eacute;m&ntilde;&aelig;&iacute;&copy; Pro W3</p>
+<p>&Eacute;q&Eacute;&acirc;&Eacute;M&Eacute;m&ntilde;&aelig;&iacute;&copy; Pro W6</p>
+<p>&plusmn;&ordm;&prod;&le;</p>
+<p>&sum;s&le;&rdquo;&copy;&#729;&asymp;&Egrave;</p>
+<p>&pi;&Yuml;&asymp;&iexcl;</p>
+<p>&ordf;&trade;&OElig;&fnof;&sum;&not;&Agrave;&OElig;</p>
+<p>&ordf;&trade;&OElig;&fnof;&int;&frasl;&Atilde;&Acirc;</p>
+<p>&ordf;&trade;&OElig;&fnof;&oslash;&uml;&Atilde;&Acirc;</p>
+<p>&ordf;&trade;&OElig;&fnof;&Agrave;&OElig;&Atilde;&Acirc;</p>
+<p>&ordf;&trade;&OElig;&fnof;&oelig;&prod;&int;&frasl;</p>
+<p>&fnof;&loz;&szlig;&int; Pro</p>
+<p>&fnof;&loz;&part;&not; Pro</p>
+<p>&Agrave;&OElig;&Atilde;&Acirc;</p>

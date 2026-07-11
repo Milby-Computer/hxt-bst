@@ -1,0 +1,8 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> appendSelectionToClipboard</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">selectedText</font> is empty <font color="#68228B">-- there's no selection, so...</font></p>
+<p>  <font color="#980517">then</font> <font color="#0000FF">return</font> "Error: no text is selected" <font color="#68228B">-- ...never mind</font></p>
+<p>  <font color="#68228B">-- put the selected text at the end of the clipboard:</font></p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">clipboardData</font>["text"] \</p>
+<p>     to the <font color="#FF0000">clipboardData</font>["text"] &amp; <font color="#0000FF">return</font> &amp; the <font color="#F88017">selectedText</font></p>
+<p><font color="#980517">end</font> appendSelectionToClipboard</p>

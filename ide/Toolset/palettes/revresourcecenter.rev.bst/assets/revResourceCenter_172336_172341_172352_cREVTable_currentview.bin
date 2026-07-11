@@ -1,0 +1,17 @@
+<p><font size="12" color="#000000">Here we have the following:</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; rnahello.vsproj &#150; the Visual Studio project file (present if you checked Windows)</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; rnahello.xcodeproj &#150; the XCode project folder (present if you checks Mac OS X)</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; test_rnahello.rev &#150; an empty stack that will load the external (used for testing and debugging)</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; src/rnahello.cpp &#150; the outline of our main C++ file that will contain the implementation of our commands and functions</font></p>
+<p></p>
+<p><font size="12" color="#000000">So, now we have the structure in place we can actually add some functionality...</font></p>
+<p></p>
+<p><font size="12" color="#000000"><b>Getting started with the IDEs</b></font></p>
+<p><font size="12" color="#000000">Open up Visual C++ or XCode depending on the platform, and load either externals.sln (into Visual Studio), or rnahello.xcodeproj into XCode. In both cases you should be presented with (what will, at least, become) a familiar interface.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Both IDEs use a hierarchical approach to manage projects &#150; in the case of XCode, the project itself will be the root node, whereas in Visual Studio the root node will be the solution:</font></p>
+<p></p>

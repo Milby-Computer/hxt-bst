@@ -1,0 +1,5 @@
+<p><font face="Lucida Grande" size="12" color="#000000">We can now return to the 'player' card and associate all of the images to the buttons. Open the properties palette of the first button and select 'Icon &amp; borders'.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Click on the wand to the right of the Icon field which will open the image chooser.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">From the pull down menu, select 'This Stack' which will display all images located anywhere within this stack, including our 'images' card.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Then choose the image you want as the standard state for the button.</font></p>

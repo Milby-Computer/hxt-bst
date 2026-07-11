@@ -1,0 +1,9 @@
+<p><b><font face="Lucida Grande" size="14" color="#990006">Skinning Stacks</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Like buttons, it is possible to associate an image with a stack. We do this in a similar way to the skinning of buttons but the stack will take on the shape and transparency properties of the image.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Import the image as a control, this time to the main card.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Bring up the images property inspector and select 'size and position' from the menu.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Set the layer of the image to 1</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now open the stack inspector. Select 'basic properties'. You will notice a property called Shape which has a wand button just like the 'icon and borders' of the buttons. Use it to select the image you have just imported.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Your stack should now be the same shape as the image. You may need to line up both the background image and your buttons to the new window shape but you should end up with something that looks like this:</font></p>

@@ -1,0 +1,8 @@
+<p><b><font face="Arial Black" size="36">Data Grids</font></b></p>
+<p>Introducing the LiveCode Data Grid. Create fantastic tables in LiveCode with automatic column resizing, independent formatting, highlighting, editing and much more!</p>
+<p></p>
+<p><font face="Arial Black" size="16">60 Properties</font></p>
+<p>Control the entire object direcly from your LiveCode scripts. With over 60 properties to control, your Data Grid can be customized to fit any application design.</p>
+<p></p>
+<p><font face="Arial Black" size="16">Fully Extendable</font></p>
+<p>Add your own scripts to supplement the Data Grid's functionality and create even richer interfaces for your stacks!</p>

@@ -1,0 +1,7 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> uniqueWordsOf theString</p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> each word thisWord in theString</p>
+<p>    <font color="#0000FF">add</font> 1 to wordsList[thisWord] <font color="#68228B">-- array variable</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#0000FF">return</font> the <font color="#F88017">keys</font> of wordsList <font color="#68228B">-- the list of words</font></p>
+<p><font color="#980517">end</font> uniqueWordsOf</p>

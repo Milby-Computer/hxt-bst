@@ -1,0 +1,4 @@
+<p><font face="Lucida Grande" size="12" color="#000000">You can try out this effect using normal revolution object or you can download the sample stack and follow along with the actual images.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">STAGE 1</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Create the basic Revolution stack, add your blank controls and import your images. All components that make up the structure of your stack should be placed along with your background image into a single group.</font></p>

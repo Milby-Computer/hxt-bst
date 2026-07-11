@@ -1,0 +1,36 @@
+<p><font color="#68228B"># Connect button script</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  <font color="#0000FF">put</font> revOpenDatabase("sqlite","AppReg3.db",,,,,,) into tConID</p>
+<p>  <font color="#980517">if</font> tConID is "" <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning "Problem creating or accessing database!"</p>
+<p>  <font color="#980517">else</font></p>
+<p>    <font color="#0000FF">answer</font> information "AppReg Connected! Your connection ID is: " &amp; tConID</p>
+<p>    <font color="#0000FF">put</font> tConID into gConID</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#68228B"># Disconnect button script</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  <font color="#0000FF">local </font>tError</p>
+<p>  revCloseDatase gConID</p>
+<p>  put the result into tError</p>
+<p>  handleRevDBerror tError</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#0000FF">answer</font> information "Connection Terminated "</p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#980517">on</font> handleRevDBerror pError</p>
+<p>  <font color="#980517">switch</font></p>
+<p>  <font color="#980517">case </font>item 1 of pError is "revdberr"</p>
+<p>    <font color="#0000FF">return </font>"revDB Error: " &amp; pError</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case </font>"syntax error" is in pError</p>
+<p>    <font color="#0000FF">return </font>"Database Error: " &amp; pError</p>
+<p>    <font color="#0000FF">break</font></p>
+<p><font color="#980517">  end</font> <font color="#980517">switch</font></p>
+<p>end handleRevDBerror</p>

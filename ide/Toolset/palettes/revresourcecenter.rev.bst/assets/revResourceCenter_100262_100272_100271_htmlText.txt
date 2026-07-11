@@ -1,0 +1,38 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> mouseDown <font color="#68228B">-- goes in the menu button's script</font></p>
+<p>  <font color="#68228B">-- remove old checkmarks:</font></p>
+<p>  <font color="#0000FF">replace</font> "!c" <font color="#980517">with</font> empty in button "Text"</p>
+<p>  <font color="#68228B">-- put a checkmark next to the current font:</font></p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">wholeMatches</font> to true</p>
+<p>  <font color="#0000FF">put</font> <font color="#F88017">lineOffset</font>(tab &amp; the <font color="#FF0000">effective</font> <font color="#FF0000">textFont</font> of \</p>
+<p>     field "Example Text",button "Text") into currentFontLine</p>
+<p>  <font color="#980517">if</font> currentFontLine is not zero <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">put</font> "!c" before line currentFontLine of button "Text"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#68228B">-- put a checkmark next to the current size:</font></p>
+<p>  <font color="#0000FF">put</font> <font color="#F88017">lineOffset</font>(tab &amp; the <font color="#FF0000">effective</font> <font color="#FF0000">textSize</font> of \</p>
+<p>     field "Example Text",button "Text") into currentSizeLine</p>
+<p>  <font color="#980517">if</font> currentSizeLine is not zero <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">put</font> "!c" before line currentSizeLine of button "Text"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#68228B">-- put a checkmark next to the current color:</font></p>
+<p>  <font color="#0000FF">put</font> <font color="#F88017">lineOffset</font>(tab &amp; the <font color="#FF0000">effective</font> <font color="#FF0000">textColor</font> of \</p>
+<p>     field "Example Text",button "Text") into currentColorLine</p>
+<p>  <font color="#980517">if</font> currentColorLine is not zero <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">put</font> "!c" before line currentColorLine of button "Text"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#68228B">-- put checkmarks next to current style(s):</font></p>
+<p>  <font color="#0000FF">put</font> the <font color="#FF0000">effective</font> <font color="#FF0000">textStyle</font> of field "Example Text" \</p>
+<p>     into myStyleList</p>
+<p>  <font color="#980517">if</font> myStyleList is "plain"</p>
+<p>  <font color="#980517">then</font> <font color="#0000FF">put</font> "!c" before line -4 of button "Text"</p>
+<p>  <font color="#68228B">-- (4th-from-last line in the menu)</font></p>
+<p>  <font color="#980517">else</font> <font color="#68228B">-- may have more than one style checked:</font></p>
+<p>    <font color="#980517">if</font> "bold" is among the items of myStyleList <font color="#980517">then</font> \</p>
+<p>       <font color="#0000FF">put</font> "!c" before line -3 of button "Text"</p>
+<p>    <font color="#980517">if</font> "italic" is among the items of myStyleList <font color="#980517">then</font> \</p>
+<p>       <font color="#0000FF">put</font> "!c" before line -2 of button "Text"</p>
+<p>    <font color="#980517">if</font> "underline" is among the items of myStyleList <font color="#980517">then</font> \</p>
+<p>       <font color="#0000FF">put</font> "!c" before line -1 of button "Text"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p><font color="#980517">end</font> mouseDown</p>

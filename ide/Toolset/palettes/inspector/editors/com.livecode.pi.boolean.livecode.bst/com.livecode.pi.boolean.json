@@ -1,0 +1,58 @@
+{
+   "#mainstack": "com.livecode.pi.boolean",
+   "com.livecode.pi.boolean": {
+      "#name": "stack \"com.livecode.pi.boolean\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1012": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1011": {
+                        "#name": "button \"checkbox\"",
+                        "properties": {
+                           "borderWidth": "0",
+                           "id": "1011",
+                           "layer": "2",
+                           "margins": "8,0,0,0",
+                           "name": "checkbox",
+                           "opaque": false,
+                           "rect": "112,68,130,84",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1012",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "112,68,130,84"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cRevStandaloneSettings": null
+      },
+      "longID": "stack \"com.livecode.pi.boolean\"",
+      "properties": {
+         "fileName": "com.livecode.pi.boolean.livecode",
+         "id": "1012",
+         "name": "com.livecode.pi.boolean",
+         "rect": "1316,420,1716,820"
+      },
+      "sharedGroupIDs": null
+   }
+}

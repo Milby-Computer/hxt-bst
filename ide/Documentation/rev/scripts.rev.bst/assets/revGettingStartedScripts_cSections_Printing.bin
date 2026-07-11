@@ -1,0 +1,4 @@
+description=<p>The examples in this section demonstrate some techniques you can use for printing.  Examples include printing fields and scaling prints to fit onto the currently selected paper size.</p>
+entries=Fitting a printout to the page\nPrinting all cards that contain a word\nPrinting all the fields on a card
+name=Printing
+title=Printing

@@ -1,0 +1,2483 @@
+{
+   "#mainstack": "revMenuManager",
+   "revMenuDialog": {
+      "#name": "stack \"revMenuDialog\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1006": {
+                  "#name": "field \"Menus\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>group \"Menubar 1\"</p>\n<p>group \"Menubar 2\"</p>",
+                     "id": "1006",
+                     "layer": "2",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "Menus",
+                     "rect": "6,44,279,165",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1008": {
+                  "#name": "button \"OK\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1008",
+                     "layer": "3",
+                     "menuMode": "pulldown",
+                     "name": "OK",
+                     "rect": "204,173,274,191",
+                     "sharedHilite": false
+                  }
+               },
+               "1009": {
+                  "#name": "field \"New Field 2\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "<p>Select an existing menu bar:</p>",
+                     "id": "1009",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "New Field 2",
+                     "opaque": false,
+                     "rect": "6,1,277,32",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Open Stacks\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1010",
+                     "label": "Untitled 1",
+                     "layer": "5",
+                     "margins": "6,4,4,4",
+                     "menuHistory": "6",
+                     "menuMode": "option",
+                     "name": "Open Stacks",
+                     "rect": "67,22,279,39",
+                     "style": "menu",
+                     "text": "revMenuDialog\nrevTools\nMessage Box\nrevMenuManager\nrevMenubar\nUntitled 1",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "1011": {
+                  "#name": "field id 1011",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Stack:</p>",
+                     "id": "1011",
+                     "layer": "6",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "6,21,54,41",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "7",
+                     "name": "Cancel",
+                     "rect": "124,172,194,192"
+                  }
+               },
+               "1017": {
+                  "#name": "field \"Dummy\"",
+                  "properties": {
+                     "id": "1017",
+                     "layer": "1",
+                     "name": "Dummy",
+                     "rect": "0,-260,250,-100"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cREVMenuIDs": "1003\n1007",
+         "cREVResult": "OK",
+         "cREVSelectedStack": "Untitled 1",
+         "revstack": false
+      },
+      "longID": "stack \"revMenuDialog\" of stack \"revMenuManager\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "destroyStack": true,
+         "destroyWindow": true,
+         "id": "1018",
+         "liveResizing": false,
+         "name": "revMenuDialog",
+         "rect": "718,277,1002,474",
+         "resizable": false,
+         "title": "Edit Existing Menu Bar"
+      },
+      "sharedGroupIDs": null
+   },
+   "revMenuItemStylePopup": {
+      "#name": "stack \"revMenuItemStylePopup\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1011": {
+                  "#name": "button \"Diamond\"",
+                  "properties": {
+                     "autoArm": true,
+                     "autoHilite": false,
+                     "foreColor": "black",
+                     "id": "1011",
+                     "layer": "2",
+                     "margins": "31,4,4,3",
+                     "name": "Diamond",
+                     "rect": "2,48,96,71",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textAlign": "left"
+                  }
+               },
+               "1043": {
+                  "#name": "button \"New Button\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201521",
+                     "id": "1043",
+                     "layer": "3",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "3,26,28,47",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1044": {
+                  "#name": "button \"New Button\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201522",
+                     "id": "1044",
+                     "layer": "4",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "3,49,28,70",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1050": {
+                  "#name": "button \"Checked\"",
+                  "properties": {
+                     "autoArm": true,
+                     "autoHilite": false,
+                     "foreColor": "black",
+                     "id": "1050",
+                     "layer": "1",
+                     "margins": "31,4,4,3",
+                     "name": "Checked",
+                     "rect": "2,25,96,48",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textAlign": "left"
+                  }
+               },
+               "1054": {
+                  "#name": "button \"None\"",
+                  "properties": {
+                     "autoArm": true,
+                     "autoHilite": false,
+                     "foreColor": "black",
+                     "id": "1054",
+                     "layer": "5",
+                     "margins": "31,4,4,3",
+                     "name": "None",
+                     "rect": "2,2,96,25",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textAlign": "left"
+                  }
+               },
+               "1055": {
+                  "#name": "button \"New Button\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201501",
+                     "id": "1055",
+                     "layer": "6",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "3,3,28,24",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": null,
+                  "total": "7"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "showBorder": true
+            }
+         }
+      },
+      "customproperties": {
+         "revstack": false
+      },
+      "longID": "stack \"revMenuItemStylePopup\" of stack \"revMenuManager\"",
+      "properties": {
+         "decorations": "default",
+         "id": "1057",
+         "liveResizing": false,
+         "maxHeight": "75",
+         "maxWidth": "129",
+         "minHeight": "75",
+         "name": "revMenuItemStylePopup",
+         "rect": "904,569,1001,644"
+      },
+      "sharedGroupIDs": null
+   },
+   "revMenuManager": {
+      "#name": "stack \"revMenuManager\"",
+      "#substacks": "revMenuStylePopup\nrevMenuItemStylePopup\nrevNewMenu\nrevMenuDialog",
+      "backgroundIDs": "1059\n1067\n1199\n1200\n3226\n3265\n3260\n3224\n5351",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Menu Manager\"",
+            "childcontrols": {
+               "1199": "#shared group",
+               "1200": "#shared group",
+               "2771": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "disabled": true,
+                     "id": "2771",
+                     "layer": "22",
+                     "name": "New Field 1",
+                     "rect": "7,475,164,491",
+                     "showBorder": false,
+                     "style": "opaque"
+                  }
+               },
+               "3224": "#shared group",
+               "3226": "#shared group",
+               "3260": "#shared group",
+               "3265": "#shared group",
+               "3984": {
+                  "#name": "button \"Cascade\"",
+                  "properties": {
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "id": "3984",
+                     "layer": "61",
+                     "name": "Cascade",
+                     "opaque": false,
+                     "rect": "97,-992,197,-972",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "5319": {
+                  "#name": "button \"MacOS Preview\"",
+                  "customproperties": {
+                     "cTopLeft": "308,5"
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "id": "5319",
+                     "label": "Preview in Menu Bar",
+                     "layer": "1",
+                     "name": "MacOS Preview",
+                     "opaque": false,
+                     "rect": "308,5,455,25",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Display the menu bar you\u0080\u0099re working on as the actual menu bar",
+                     "traversalOn": false
+                  }
+               },
+               "5320": {
+                  "#name": "button \"MacOS Menu Bar\"",
+                  "properties": {
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "id": "5320",
+                     "label": "Set as stack Menu bar",
+                     "layer": "71",
+                     "name": "MacOS Menu Bar",
+                     "opaque": false,
+                     "rect": "218,48,428,68",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Set the stack's menubar property to the current menu bar"
+                  }
+               },
+               "5351": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorselection]": {
+                  "scripteditorselection": null
+               },
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "11789"
+               },
+               "cREVGeometryCache": {
+                  "order": null,
+                  "total": "71"
+               },
+               "uVersion": {
+                  "ID": "1002",
+                  "UUID": "ca39b198-513e-4db7-bcf6-fefb888c56f1"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Menu Manager"
+            }
+         },
+         "1059": {
+            "#name": "group \"Backdrop\"",
+            "childcontrols": {
+               "5319": {
+                  "#name": "button 5319",
+                  "properties": "%no properties%"
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1059",
+               "layer": "71",
+               "name": "Backdrop",
+               "rect": "38,0,746,47"
+            }
+         },
+         "1067": {
+            "#name": "group \"Menu Type\"",
+            "childcontrols": {
+               "5319": {
+                  "#name": "button 5319",
+                  "properties": "%no properties%"
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1067",
+               "layer": "71",
+               "name": "Menu Type",
+               "rect": "9,53,144,269"
+            }
+         },
+         "1199": {
+            "#name": "group \"Item Insert\"",
+            "childcontrols": {
+               "4869": {
+                  "#name": "graphic id 4869",
+                  "customproperties": {
+                     "cREVDontDisable": true
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "foreColor": "248,152,96",
+                     "id": "4869",
+                     "layer": "58",
+                     "lineSize": "3",
+                     "points": "265,-1011\n457,-1011",
+                     "rect": "263,-1017,459,-1005",
+                     "style": "line"
+                  }
+               },
+               "4870": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "cREVDontDisable": true
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "202460",
+                     "id": "4870",
+                     "layer": "59",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "451,-1017,462,-1004",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "4871": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "cREVDontDisable": true
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "202459",
+                     "id": "4871",
+                     "layer": "60",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "261,-1017,272,-1004",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVDontDisable": true,
+               "cREVHideLoc": "70,500",
+               "cREVLine": null,
+               "cREVMemLoc": "247,-21"
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1199",
+               "layer": "57",
+               "lockLoc": true,
+               "name": "Item Insert",
+               "rect": "257,-1021,466,-1000"
+            }
+         },
+         "1200": {
+            "#name": "group \"Menu Insert\"",
+            "childcontrols": {
+               "4888": {
+                  "#name": "graphic id 4888",
+                  "customproperties": {
+                     "cREVDontDisable": true
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "foreColor": "248,152,96",
+                     "id": "4888",
+                     "layer": "63",
+                     "lineSize": "3",
+                     "points": "23,-1011\n170,-1011",
+                     "rect": "21,-1013,172,-1009",
+                     "style": "line"
+                  }
+               },
+               "4889": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "cREVDontDisable": true
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "202459",
+                     "id": "4889",
+                     "layer": "64",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "17,-1017,28,-1004",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "4890": {
+                  "#name": "button \"Menu Insertion Arrow\"",
+                  "customproperties": {
+                     "cREVDontDisable": true
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "202460",
+                     "id": "4890",
+                     "layer": "65",
+                     "name": "Menu Insertion Arrow",
+                     "opaque": false,
+                     "rect": "171,-1017,182,-1004",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVDontDisable": true,
+               "cREVLastWidgetLine": null,
+               "cREVLine": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1200",
+               "layer": "62",
+               "lockLoc": true,
+               "name": "Menu Insert",
+               "rect": "13,-1021,178,-1000"
+            }
+         },
+         "3224": {
+            "#name": "group \"Button Menus:\"",
+            "childcontrols": {
+               "4872": {
+                  "#name": "field \"Menu Buttons\"",
+                  "customproperties": {
+                     "revbasic": false
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "12,155,158,355",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scalebottomDistance": "-150",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleLeft": false,
+                        "Master,scaleLeftAbsolute": false,
+                        "Master,scaleleftDistance": "0",
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleLeftObjectSide": "center",
+                        "Master,scaleRight": false,
+                        "Master,scaleRightAbsolute": false,
+                        "Master,scalerightDistance": "0",
+                        "Master,scaleRightObjectRef": null,
+                        "Master,scaleRightObjectSide": "center",
+                        "Master,scaleTop": false,
+                        "Master,scaleTopAbsolute": false,
+                        "Master,scaletopDistance": "0",
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaleTopObjectSide": "center"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "disabled": true,
+                     "dontWrap": true,
+                     "foreColor": "black",
+                     "id": "4872",
+                     "layer": "14",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "Menu Buttons",
+                     "rect": "15,183,185,297",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "textHeight": "16",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "toolTip": "Select a menu name to change it or edit its menu items",
+                     "vScrollbar": true
+                  }
+               },
+               "4874": {
+                  "#name": "button \"New Menu\"",
+                  "properties": {
+                     "disabled": true,
+                     "id": "4874",
+                     "layer": "9",
+                     "name": "New Menu",
+                     "rect": "15,134,95,154",
+                     "toolTip": "Create a new menu at the horizontal bar"
+                  }
+               },
+               "4875": {
+                  "#name": "button \"Move Menu Up\"",
+                  "customproperties": {
+                     "cREVDisabled": false,
+                     "cREVDisabledIcon": "202448",
+                     "cREVEnabled": true,
+                     "cREVIcon": "201497"
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "disabled": true,
+                     "disabledIcon": "203287",
+                     "icon": "203282",
+                     "id": "4875",
+                     "layer": "12",
+                     "name": "Move Menu Up",
+                     "opaque": false,
+                     "rect": "134,157,161,180",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "textFont": "Helvetica",
+                     "textSize": "10",
+                     "textStyle": "italic",
+                     "threeD": false,
+                     "toolTip": "Move the selected menu up",
+                     "traversalOn": false
+                  }
+               },
+               "4876": {
+                  "#name": "button \"Move Menu Down\"",
+                  "customproperties": {
+                     "cREVDisabled": false,
+                     "cREVDisabledIcon": "202449",
+                     "cREVIcon": "201495"
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "disabled": true,
+                     "disabledIcon": "203289",
+                     "icon": "203284",
+                     "id": "4876",
+                     "layer": "13",
+                     "name": "Move Menu Down",
+                     "opaque": false,
+                     "rect": "161,157,188,180",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Move the selected menu down",
+                     "traversalOn": false
+                  }
+               },
+               "4877": {
+                  "#name": "field \"Menu Name\"",
+                  "customproperties": {
+                     "cAnswerDialog": false,
+                     "cBroughtUpAnswerDialog": false
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "dontWrap": true,
+                     "htmlText": {
+                        "1002": "<p></p>"
+                     },
+                     "id": "4877",
+                     "layer": "11",
+                     "name": "Menu Name",
+                     "rect": "15,158,131,178",
+                     "toolTip": "Enter a menu name and press Return to change the name of the selected menu"
+                  }
+               },
+               "4878": {
+                  "#name": "button \"Delete Menu\"",
+                  "properties": {
+                     "disabled": true,
+                     "id": "4878",
+                     "layer": "10",
+                     "name": "Delete Menu",
+                     "rect": "105,134,194,154",
+                     "toolTip": "Remove the selected menu from the current menu bar"
+                  }
+               },
+               "4879": {
+                  "#name": "group \"Menu Button Controls\"",
+                  "childcontrols": {
+                     "4880": {
+                        "#name": "button \"Menu Mnemonic Letter\"",
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "disabled": true,
+                           "id": "4880",
+                           "label": " ",
+                           "layer": "18",
+                           "menuHistory": "6",
+                           "menuMode": "option",
+                           "name": "Menu Mnemonic Letter",
+                           "rect": "112,324,157,341",
+                           "style": "menu",
+                           "text": "M\ne\nn\nu\n \n7\n2",
+                           "toolTip": "Choose a letter in the menu name to use as an Alt-key shortcut",
+                           "traversalOn": false
+                        }
+                     },
+                     "4881": {
+                        "#name": "button \"Edit Script\"",
+                        "properties": {
+                           "disabled": true,
+                           "id": "4881",
+                           "layer": "19",
+                           "name": "Edit Script",
+                           "rect": "15,381,95,401",
+                           "toolTip": "Open the script editor to change the menu's script"
+                        }
+                     },
+                     "4882": {
+                        "#name": "button \"Auto Script\"",
+                        "properties": {
+                           "disabled": true,
+                           "id": "4882",
+                           "layer": "20",
+                           "name": "Auto Script",
+                           "rect": "105,381,185,401",
+                           "textStyle": "plain",
+                           "toolTip": "Insert a framework script to handle menu items in the selected menu"
+                        }
+                     },
+                     "4883": {
+                        "#name": "button \"Disable Menu\"",
+                        "properties": {
+                           "disabled": true,
+                           "hiliteBorder": false,
+                           "id": "4883",
+                           "label": "Disabled",
+                           "layer": "16",
+                           "name": "Disable Menu",
+                           "opaque": false,
+                           "rect": "15,300,96,320",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "toolTip": "Make the selected menu disabled (grayed out)"
+                        }
+                     },
+                     "4884": {
+                        "#name": "button \"Menu Mnemonic\"",
+                        "properties": {
+                           "disabled": true,
+                           "hiliteBorder": false,
+                           "id": "4884",
+                           "label": "Mnemonic",
+                           "layer": "17",
+                           "name": "Menu Mnemonic",
+                           "opaque": false,
+                           "rect": "15,322,104,342",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "toolTip": "Assign an Alt-key shortcut to the selected menu"
+                        }
+                     },
+                     "4886": {
+                        "#name": "button id 4886",
+                        "properties": {
+                           "disabled": true,
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "icon": "200606",
+                           "id": "4886",
+                           "layer": "21",
+                           "rect": "161,327,179,337",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "opaque",
+                           "threeD": false,
+                           "toolTip": "Unix and Windows systems only",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "8,313,229,372",
+                        "Master,moveH": false,
+                        "Master,moveHAbsolute": false,
+                        "Master,movehDistance": "-0.247863",
+                        "Master,moveHObjectRef": null,
+                        "Master,moveHObjectSide": "center",
+                        "Master,moveV": true,
+                        "Master,moveVAbsolute": true,
+                        "Master,movevDistance": "-97",
+                        "Master,moveVObjectRef": "Card",
+                        "Master,moveVObjectSide": "Bottom",
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "id": "4879",
+                     "layer": "15",
+                     "lockLoc": true,
+                     "name": "Menu Button Controls",
+                     "rect": "11,295,187,405"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometry": {
+                  "Master": true,
+                  "Master,cardRanking": "1",
+                  "Master,expectedRect": "6,127,232,376",
+                  "Master,movehDistance": false,
+                  "Master,movevDistance": false,
+                  "Master,scaleBottom": true,
+                  "Master,scaleBottomAbsolute": true,
+                  "Master,scalebottomDistance": "-20",
+                  "Master,scaleBottomObjectRef": "Card",
+                  "Master,scaleBottomObjectSide": "Bottom",
+                  "Master,scaleLeft": false,
+                  "Master,scaleLeftAbsolute": false,
+                  "Master,scaleleftDistance": "0",
+                  "Master,scaleLeftObjectRef": null,
+                  "Master,scaleLeftObjectSide": "center",
+                  "Master,scaleRight": false,
+                  "Master,scaleRightAbsolute": false,
+                  "Master,scalerightDistance": "0",
+                  "Master,scaleRightObjectRef": null,
+                  "Master,scaleRightObjectSide": "center",
+                  "Master,scaleTop": false,
+                  "Master,scaleTopAbsolute": false,
+                  "Master,scaletopDistance": "0",
+                  "Master,scaletopObjectRef": null,
+                  "Master,scaleTopObjectSide": "center"
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "disabled": true,
+               "id": "3224",
+               "label": "Menus:",
+               "layer": "8",
+               "lockLoc": true,
+               "name": "Button Menus:",
+               "rect": "7,110,246,427",
+               "sharedBehavior": true,
+               "showBorder": true,
+               "showName": true
+            }
+         },
+         "3226": {
+            "#name": "group \"Menu Items:\"",
+            "childcontrols": {
+               "4837": {
+                  "#name": "field \"Menu Items\"",
+                  "customproperties": {
+                     "HLines": true,
+                     "revMenuItemRect": "133,97,336,404"
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "176,155,352,250",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scalebottomDistance": "-150",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleLeft": false,
+                        "Master,scaleLeftAbsolute": false,
+                        "Master,scaleleftDistance": "0",
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleLeftObjectSide": "center",
+                        "Master,scaleRight": false,
+                        "Master,scaleRightAbsolute": false,
+                        "Master,scalerightDistance": "0",
+                        "Master,scaleRightObjectRef": null,
+                        "Master,scaleRightObjectSide": "center",
+                        "Master,scaleTop": false,
+                        "Master,scaleTopAbsolute": false,
+                        "Master,scaletopDistance": "0",
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaleTopObjectSide": "center"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "disabled": true,
+                     "dontWrap": true,
+                     "foreColor": "black",
+                     "id": "4837",
+                     "layer": "33",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "Menu Items",
+                     "rect": "263,183,462,297",
+                     "sharedText": true,
+                     "tabStops": "18",
+                     "textHeight": "16",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "toolTip": "Select a menu item to change it"
+                  }
+               },
+               "4838": {
+                  "#name": "scrollbar \"Menu Items\"",
+                  "customproperties": {
+                     "Increment": "1"
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "350,156,366,280",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scalebottomDistance": "-151",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleLeft": false,
+                        "Master,scaleLeftAbsolute": false,
+                        "Master,scaleleftDistance": "0",
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleLeftObjectSide": "center",
+                        "Master,scaleRight": false,
+                        "Master,scaleRightAbsolute": false,
+                        "Master,scalerightDistance": "0",
+                        "Master,scaleRightObjectRef": null,
+                        "Master,scaleRightObjectSide": "center",
+                        "Master,scaleTop": false,
+                        "Master,scaleTopAbsolute": false,
+                        "Master,scaletopDistance": "0",
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaleTopObjectSide": "center"
+                     }
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "endValue": "102",
+                     "id": "4838",
+                     "layer": "34",
+                     "lineInc": "16",
+                     "name": "Menu Items",
+                     "pageInc": "11.998444",
+                     "rect": "460,184,476,296",
+                     "thumbSize": "102",
+                     "traversalOn": false
+                  }
+               },
+               "4839": {
+                  "#name": "group \"Foldout Triangles\"",
+                  "childcontrols": {
+                     "4840": {
+                        "#name": "button \"Fold Out Triangle\"",
+                        "customproperties": {
+                           "cREVIcon": "200946",
+                           "cREVLineNo": "6"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "hiliteIcon": "200951",
+                           "icon": "200946",
+                           "id": "4840",
+                           "layer": "36",
+                           "name": "Fold Out Triangle",
+                           "opaque": false,
+                           "rect": "267,188,287,203",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showHilite": true,
+                           "showName": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "7990": {
+                        "#name": "button \"Fold Out Triangle\"",
+                        "customproperties": {
+                           "cREVIcon": "200946",
+                           "cREVLineNo": "6"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "disabled": true,
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "hiliteIcon": "200951",
+                           "icon": "200946",
+                           "id": "7990",
+                           "layer": "37",
+                           "name": "Fold Out Triangle",
+                           "opaque": false,
+                           "rect": "267,204,287,219",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showHilite": true,
+                           "showName": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "7991": {
+                        "#name": "button \"Fold Out Triangle\"",
+                        "customproperties": {
+                           "cREVIcon": "200946",
+                           "cREVLineNo": "6"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "disabled": true,
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "hiliteIcon": "200951",
+                           "icon": "200946",
+                           "id": "7991",
+                           "layer": "38",
+                           "name": "Fold Out Triangle",
+                           "opaque": false,
+                           "rect": "267,220,287,235",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showHilite": true,
+                           "showName": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "7992": {
+                        "#name": "button \"Fold Out Triangle\"",
+                        "customproperties": {
+                           "cREVIcon": "200946",
+                           "cREVLineNo": "6"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "disabled": true,
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "hiliteIcon": "200951",
+                           "icon": "200946",
+                           "id": "7992",
+                           "layer": "39",
+                           "name": "Fold Out Triangle",
+                           "opaque": false,
+                           "rect": "267,236,287,251",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showHilite": true,
+                           "showName": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "7993": {
+                        "#name": "button \"Fold Out Triangle\"",
+                        "customproperties": {
+                           "cREVIcon": "200946",
+                           "cREVLineNo": "6"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "disabled": true,
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "hiliteIcon": "200951",
+                           "icon": "200946",
+                           "id": "7993",
+                           "layer": "40",
+                           "name": "Fold Out Triangle",
+                           "opaque": false,
+                           "rect": "267,252,287,267",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showHilite": true,
+                           "showName": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "7994": {
+                        "#name": "button \"Fold Out Triangle\"",
+                        "customproperties": {
+                           "cREVIcon": "200946",
+                           "cREVLineNo": "6"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "disabled": true,
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "hiliteIcon": "200951",
+                           "icon": "200946",
+                           "id": "7994",
+                           "layer": "41",
+                           "name": "Fold Out Triangle",
+                           "opaque": false,
+                           "rect": "267,268,287,283",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showHilite": true,
+                           "showName": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "7995": {
+                        "#name": "button \"Fold Out Triangle\"",
+                        "customproperties": {
+                           "cREVIcon": "200946",
+                           "cREVLineNo": "6"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "disabled": true,
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "hiliteIcon": "200951",
+                           "icon": "200946",
+                           "id": "7995",
+                           "layer": "42",
+                           "name": "Fold Out Triangle",
+                           "opaque": false,
+                           "rect": "267,284,287,299",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showHilite": true,
+                           "showName": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "cREVDontDisable": true
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "id": "4839",
+                     "layer": "35",
+                     "name": "Foldout Triangles",
+                     "rect": "263,184,291,303",
+                     "traversalOn": false
+                  }
+               },
+               "4847": {
+                  "#name": "field \"Item Name\"",
+                  "customproperties": {
+                     "cAnswerDialog": false,
+                     "cBroughtUpAnswerDialog": false,
+                     "cREVCommandKeyShortcut": "/W",
+                     "cREVMnemonic": "C",
+                     "cREVTabCount": null
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "dontWrap": true,
+                     "htmlText": {
+                        "1002": "<p></p>"
+                     },
+                     "id": "4847",
+                     "layer": "27",
+                     "name": "Item Name",
+                     "rect": "263,158,367,178",
+                     "toolTip": "Enter a menu item name and press Return to change the name of the selected menu item"
+                  }
+               },
+               "4848": {
+                  "#name": "button \"Move Item Down\"",
+                  "customproperties": {
+                     "cREVDisabled": true,
+                     "cREVDisabledIcon": "202449",
+                     "cREVIcon": "201495"
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "disabled": true,
+                     "disabledIcon": "203289",
+                     "icon": "203284",
+                     "id": "4848",
+                     "layer": "32",
+                     "name": "Move Item Down",
+                     "opaque": false,
+                     "rect": "450,157,477,180",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Move the selected menu item down",
+                     "traversalOn": false
+                  }
+               },
+               "4849": {
+                  "#name": "button \"Move Item Up\"",
+                  "customproperties": {
+                     "cREVDisabled": true,
+                     "cREVDisabledIcon": "202448",
+                     "cREVIcon": "201497"
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "disabled": true,
+                     "disabledIcon": "203287",
+                     "icon": "203282",
+                     "id": "4849",
+                     "layer": "31",
+                     "name": "Move Item Up",
+                     "opaque": false,
+                     "rect": "423,157,450,180",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Move the selected menu item up",
+                     "traversalOn": false
+                  }
+               },
+               "4850": {
+                  "#name": "button \"New Item\"",
+                  "properties": {
+                     "disabled": true,
+                     "id": "4850",
+                     "layer": "24",
+                     "name": "New Item",
+                     "rect": "263,134,343,154",
+                     "toolTip": "Create a new menu item in the current menu, at the horizontal bar"
+                  }
+               },
+               "4851": {
+                  "#name": "button \"Delete Item\"",
+                  "properties": {
+                     "disabled": true,
+                     "id": "4851",
+                     "layer": "25",
+                     "name": "Delete Item",
+                     "rect": "352,134,432,154",
+                     "toolTip": "Remove the selected menu item from the menu"
+                  }
+               },
+               "4852": {
+                  "#name": "button \"Item Style\"",
+                  "customproperties": {
+                     "revButton": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "id": "4852",
+                     "label": "None",
+                     "layer": "28",
+                     "menuHistory": "5",
+                     "menuMode": "option",
+                     "menuName": "revMenuItemStylePopup",
+                     "name": "Item Style",
+                     "rect": "350,350,468,367",
+                     "style": "menu",
+                     "text": "Standard\n!cCheckbox\n!rRadio Button\nCascade Menu Item",
+                     "textAlign": "left",
+                     "toolTip": "Place a check or diamond next to the selected menu item",
+                     "traversalOn": false
+                  }
+               },
+               "4853": {
+                  "#name": "button \"Reduce Item Nesting\"",
+                  "customproperties": {
+                     "cREVDisabled": true,
+                     "cREVDisabledIcon": "202451",
+                     "cREVIcon": "202458",
+                     "revButton": false
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "disabledIcon": "203288",
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "203283",
+                     "id": "4853",
+                     "layer": "29",
+                     "name": "Reduce Item Nesting",
+                     "opaque": false,
+                     "rect": "369,157,396,180",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Make the selected submenu item into a menu item",
+                     "traversalOn": false
+                  }
+               },
+               "4854": {
+                  "#name": "button \"Increase Item Nesting\"",
+                  "customproperties": {
+                     "cREVDisabled": true,
+                     "cREVDisabledIcon": "202450",
+                     "cREVIcon": "202457"
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "disabledIcon": "203286",
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "203281",
+                     "id": "4854",
+                     "layer": "30",
+                     "name": "Increase Item Nesting",
+                     "opaque": false,
+                     "rect": "396,157,423,180",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Make the selected menu item into a submenu item",
+                     "traversalOn": false
+                  }
+               },
+               "4855": {
+                  "#name": "button \"Insert Divider\"",
+                  "customproperties": {
+                     "cREVDisabled": false,
+                     "cREVDisabledIcon": "202454",
+                     "cREVIcon": "202455"
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "disabled": true,
+                     "disabledIcon": "203290",
+                     "icon": "203285",
+                     "id": "4855",
+                     "layer": "26",
+                     "name": "Insert Divider",
+                     "opaque": false,
+                     "rect": "450,131,477,153",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Insert a divider line at the horizontal bar",
+                     "traversalOn": false
+                  }
+               },
+               "5868": {
+                  "#name": "field \"Mark Label\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "disabled": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Mark:</p>",
+                     "id": "5868",
+                     "layer": "43",
+                     "lockText": true,
+                     "name": "Mark Label",
+                     "opaque": false,
+                     "rect": "277,348,333,368",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometry": {
+                  "Master": true,
+                  "Master,cardRanking": "1",
+                  "Master,expectedRect": "237,23,463,376",
+                  "Master,movehDistance": false,
+                  "Master,movevDistance": false,
+                  "Master,scaleBottom": true,
+                  "Master,scaleBottomAbsolute": true,
+                  "Master,scalebottomDistance": "-20",
+                  "Master,scaleBottomObjectRef": "Card",
+                  "Master,scaleBottomObjectSide": "Bottom",
+                  "Master,scaleLeft": false,
+                  "Master,scaleLeftAbsolute": false,
+                  "Master,scaleleftDistance": "0",
+                  "Master,scaleLeftObjectRef": null,
+                  "Master,scaleLeftObjectSide": "center",
+                  "Master,scaleRight": false,
+                  "Master,scaleRightAbsolute": false,
+                  "Master,scalerightDistance": "0",
+                  "Master,scaleRightObjectRef": null,
+                  "Master,scaleRightObjectSide": "center",
+                  "Master,scaleTop": false,
+                  "Master,scaleTopAbsolute": false,
+                  "Master,scaletopDistance": "0",
+                  "Master,scaletopObjectRef": null,
+                  "Master,scaleTopObjectSide": "center"
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "disabled": true,
+               "id": "3226",
+               "label": "Menu Items:",
+               "layer": "23",
+               "lockLoc": true,
+               "name": "Menu Items:",
+               "rect": "252,110,491,427",
+               "sharedBehavior": true,
+               "showBorder": true,
+               "showName": true
+            }
+         },
+         "3260": {
+            "#name": "group \"Menubar\"",
+            "childcontrols": {
+               "4856": {
+                  "#name": "field \"Menubar\"",
+                  "properties": {
+                     "autoTab": true,
+                     "disabled": true,
+                     "dontWrap": true,
+                     "htmlText": {
+                        "1002": "<p></p>"
+                     },
+                     "id": "4856",
+                     "layer": "3",
+                     "name": "Menubar",
+                     "rect": "38,48,208,68",
+                     "toolTip": "Name of the menu bar you're working on"
+                  }
+               },
+               "4857": {
+                  "#name": "button \"New Main Menu\"",
+                  "customproperties": {
+                     "cREVDontDisable": true
+                  },
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorselection]": {
+                        "scripteditorselection": "4563"
+                     },
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "2326"
+                     }
+                  },
+                  "properties": {
+                     "id": "4857",
+                     "label": "New...",
+                     "layer": "4",
+                     "name": "New Main Menu",
+                     "rect": "38,77,118,97",
+                     "text": "M\u0000e\u0000n\u0000u\u0000b\u0000a\u0000r\u0000 \u00001\u0000",
+                     "toolTip": "Create a new menu bar"
+                  }
+               },
+               "4858": {
+                  "#name": "button \"Edit...\"",
+                  "customproperties": {
+                     "cREVDontDisable": true
+                  },
+                  "properties": {
+                     "id": "4858",
+                     "layer": "5",
+                     "name": "Edit...",
+                     "rect": "218,77,298,97",
+                     "toolTip": "Choose an existing menu bar to make changes to"
+                  }
+               },
+               "4898": {
+                  "#name": "button \"Delete\"",
+                  "customproperties": {
+                     "cREVDontDisable": false
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "id": "4898",
+                     "layer": "6",
+                     "name": "Delete",
+                     "rect": "128,77,208,97",
+                     "toolTip": "Permanently remove the current menu bar from the stack"
+                  }
+               },
+               "5610": {
+                  "#name": "button \"Edit Menu Bar Script\"",
+                  "customproperties": {
+                     "cREVDontDisable": false
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "id": "5610",
+                     "label": "Edit Menu Bar Script",
+                     "layer": "7",
+                     "name": "Edit Menu Bar Script",
+                     "rect": "321,77,461,97",
+                     "toolTip": "Open the script editor to change the menu group's script"
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVDontDisable": true
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "3260",
+               "label": "Menu Bar:",
+               "layer": "2",
+               "lockLoc": true,
+               "name": "Menubar",
+               "rect": "30,23,469,105",
+               "sharedBehavior": true,
+               "showBorder": true,
+               "showName": true
+            }
+         },
+         "3265": {
+            "#name": "group \"Menu Item Controls\"",
+            "childcontrols": {
+               "4861": {
+                  "#name": "button \"Item Disable\"",
+                  "properties": {
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "id": "4861",
+                     "label": "Disabled",
+                     "layer": "45",
+                     "name": "Item Disable",
+                     "opaque": false,
+                     "rect": "255,302,334,322",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Make the selected menu item disabled (grayed out)"
+                  }
+               },
+               "4862": {
+                  "#name": "button \"Item Mnemonic Letter\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "id": "4862",
+                     "label": " ",
+                     "layer": "49",
+                     "menuMode": "option",
+                     "name": "Item Mnemonic Letter",
+                     "rect": "354,326,399,343",
+                     "style": "menu",
+                     "text": "I\nt\ne\nm\n \n6\n/\n^\n@\nu",
+                     "toolTip": "Choose a letter in the menu item name to use as an Alt-key shortcut",
+                     "traversalOn": false
+                  }
+               },
+               "4863": {
+                  "#name": "field \"plus label\"",
+                  "customproperties": {
+                     "cREVDontDisable": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "disabled": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>+</p>",
+                     "id": "4863",
+                     "layer": "50",
+                     "lockText": true,
+                     "name": "plus label",
+                     "opaque": false,
+                     "rect": "426,376,449,396",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "4864": {
+                  "#name": "field \"Shortcut\"",
+                  "properties": {
+                     "autoTab": true,
+                     "disabled": true,
+                     "dontWrap": true,
+                     "htmlText": {
+                        "1002": "<p></p>"
+                     },
+                     "id": "4864",
+                     "layer": "48",
+                     "name": "Shortcut",
+                     "rect": "450,376,482,396",
+                     "toolTip": "Enter a character to use as the shortcut key"
+                  }
+               },
+               "4865": {
+                  "#name": "button \"Shortcut\"",
+                  "customproperties": {
+                     "cREVEnabled": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "borderWidth": "0",
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "hiliteFill": false,
+                     "id": "4865",
+                     "layer": "51",
+                     "name": "Shortcut",
+                     "rect": "506,376,602,396",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showHilite": true,
+                     "style": "opaque",
+                     "textFont": "Lucida Grande",
+                     "textSize": "9",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "4866": {
+                  "#name": "button \"Item Mnemonic\"",
+                  "properties": {
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "id": "4866",
+                     "label": "Mnemonic",
+                     "layer": "46",
+                     "name": "Item Mnemonic",
+                     "opaque": false,
+                     "rect": "255,324,339,344",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Assign an Alt-key shortcut to the selected menu item"
+                  }
+               },
+               "4867": {
+                  "#name": "button \"Shortcut Checkbox\"",
+                  "properties": {
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "id": "4867",
+                     "label": "Shortcut",
+                     "layer": "47",
+                     "name": "Shortcut Checkbox",
+                     "opaque": false,
+                     "rect": "255,376,340,396",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Assign a Command-key/Control-key shortcut to the selected menu item"
+                  }
+               },
+               "4868": {
+                  "#name": "button id 4868",
+                  "properties": {
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200606",
+                     "id": "4868",
+                     "layer": "52",
+                     "rect": "408,329,426,339",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "opaque",
+                     "threeD": false,
+                     "toolTip": "Unix and Windows systems only",
+                     "traversalOn": false
+                  }
+               },
+               "7532": {
+                  "#name": "button \"Option_Alt\"",
+                  "customproperties": {
+                     "cREVDisabled": true
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "id": "7532",
+                     "label": "Alt",
+                     "layer": "53",
+                     "name": "Option_Alt",
+                     "opaque": false,
+                     "rect": "421,399,473,422",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "textStyle": "plain"
+                  }
+               },
+               "7534": {
+                  "#name": "button \"Command\"",
+                  "customproperties": {
+                     "cREVDisabled": true
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "id": "7534",
+                     "label": "Cmd",
+                     "layer": "54",
+                     "name": "Command",
+                     "opaque": false,
+                     "rect": "312,399,364,422",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "textStyle": "plain"
+                  }
+               },
+               "7536": {
+                  "#name": "button \"Control\"",
+                  "customproperties": {
+                     "cREVDisabled": true
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "id": "7536",
+                     "label": "Ctrl",
+                     "layer": "55",
+                     "name": "Control",
+                     "opaque": false,
+                     "rect": "263,399,315,422",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "textStyle": "plain"
+                  }
+               },
+               "7538": {
+                  "#name": "button \"Shift\"",
+                  "customproperties": {
+                     "cREVDisabled": true
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "id": "7538",
+                     "label": "Shift",
+                     "layer": "56",
+                     "name": "Shift",
+                     "opaque": false,
+                     "rect": "367,399,419,422",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometry": {
+                  "Master": true,
+                  "Master,cardRanking": "1",
+                  "Master,expectedRect": "240,290,464,373",
+                  "Master,moveH": false,
+                  "Master,moveHAbsolute": false,
+                  "Master,movehDistance": "0.252137",
+                  "Master,moveHObjectRef": null,
+                  "Master,moveHObjectSide": "center",
+                  "Master,moveV": true,
+                  "Master,moveVAbsolute": true,
+                  "Master,movevDistance": "-84",
+                  "Master,moveVObjectRef": "Card",
+                  "Master,moveVObjectSide": "Bottom",
+                  "Master,scalebottomDistance": null,
+                  "Master,scaleleftDistance": null,
+                  "Master,scalerightDistance": null,
+                  "Master,scaletopDistance": null
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "disabled": true,
+               "hilitedButton": "5",
+               "id": "3265",
+               "layer": "44",
+               "lockLoc": true,
+               "name": "Menu Item Controls",
+               "rect": "251,300,483,427",
+               "sharedBehavior": true
+            }
+         },
+         "5351": {
+            "#name": "group \"Windows Preview\"",
+            "childcontrols": {
+               "1075": {
+                  "#name": "button \"top menu bar\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "-1,43,456,61",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scaleBottom": false,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scaleBottomDistance": null,
+                        "Master,scaleBottomObjectRef": null,
+                        "Master,scaleBottomObjectSide": "Center",
+                        "Master,scaleLeft": false,
+                        "Master,scaleLeftAbsolute": false,
+                        "Master,scaleleftDistance": "0",
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleLeftObjectSide": "center",
+                        "Master,scaleRight": true,
+                        "Master,scaleRightAbsolute": true,
+                        "Master,scaleRightDistance": "-6",
+                        "Master,scaleRightObjectRef": "Card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaleTop": false,
+                        "Master,scaleTopAbsolute": false,
+                        "Master,scaletopDistance": "0",
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaleTopObjectSide": "center"
+                     },
+                     "cREVTempMaster": {
+                        "accelKey": null,
+                        "accelMods": null,
+                        "accelText": null,
+                        "altId": "0",
+                        "arm": false,
+                        "armBorder": false,
+                        "armFill": false,
+                        "autoArm": false,
+                        "autoHilite": false,
+                        "borderWidth": "2",
+                        "colors": "\n\n\n\n\n\n\n",
+                        "default": false,
+                        "disabled": false,
+                        "family": "0",
+                        "hilite": false,
+                        "hiliteBorder": false,
+                        "hiliteFill": false,
+                        "hiliteIcon": "0",
+                        "icon": "0",
+                        "id": "1172",
+                        "ink": "srcCopy",
+                        "label": null,
+                        "labelWidth": "0",
+                        "layer": "8",
+                        "lockLoc": false,
+                        "margins": "4",
+                        "menuHistory": "1",
+                        "menuLines": "5",
+                        "menuMode": null,
+                        "menuMouseButton": "1",
+                        "menuName": null,
+                        "mnemonic": "0",
+                        "name": "button id 1172",
+                        "number": "4",
+                        "opaque": true,
+                        "patterns": "\n\n\n\n\n\n\n\n",
+                        "rect": "-1,43,456,61",
+                        "shadow": false,
+                        "shadowOffset": "4",
+                        "sharedHilite": false,
+                        "showBorder": true,
+                        "showHilite": false,
+                        "showIcon": false,
+                        "showName": true,
+                        "style": "rectangle",
+                        "textAlign": "center",
+                        "textFont": null,
+                        "textSize": null,
+                        "textStyle": null,
+                        "threeD": true,
+                        "toolTip": null,
+                        "traversalOn": false,
+                        "visible": true
+                     }
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1075",
+                     "layer": "67",
+                     "name": "top menu bar",
+                     "rect": "-1,-124,490,-104",
+                     "sharedHilite": false,
+                     "showName": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1089": {
+                  "#name": "button \"Preview\"",
+                  "customproperties": {
+                     "revbasic": false,
+                     "revButton": false,
+                     "revUniqueID": "955900557782"
+                  },
+                  "custompropertysets": {
+                     "cREVScript": null,
+                     "cREVTempMaster": {
+                        "accelKey": null,
+                        "accelMods": null,
+                        "accelText": null,
+                        "altId": "0",
+                        "arm": false,
+                        "armBorder": false,
+                        "armFill": false,
+                        "autoArm": false,
+                        "autoHilite": false,
+                        "borderWidth": "2",
+                        "colors": "\n\n\n\n\n\n\n",
+                        "default": false,
+                        "disabled": false,
+                        "family": "0",
+                        "hilite": false,
+                        "hiliteBorder": true,
+                        "hiliteFill": true,
+                        "hiliteIcon": "0",
+                        "icon": "0",
+                        "id": "1063",
+                        "ink": "srcCopy",
+                        "label": null,
+                        "labelWidth": "0",
+                        "layer": "14",
+                        "lockLoc": false,
+                        "margins": "4",
+                        "menuHistory": "1",
+                        "menuLines": "5",
+                        "menuMode": "pulldown",
+                        "menuMouseButton": "1",
+                        "menuName": null,
+                        "mnemonic": "0",
+                        "name": "Script",
+                        "number": "7",
+                        "opaque": false,
+                        "patterns": "\n\n\n\n\n\n\n\n",
+                        "rect": "253,43,298,61",
+                        "shadow": false,
+                        "shadowOffset": "4",
+                        "sharedHilite": true,
+                        "showBorder": false,
+                        "showHilite": true,
+                        "showIcon": false,
+                        "showName": true,
+                        "style": "menu",
+                        "textAlign": "center",
+                        "textFont": "Geneva",
+                        "textSize": "10",
+                        "textStyle": "plain",
+                        "threeD": false,
+                        "toolTip": null,
+                        "traversalOn": false,
+                        "visible": true
+                     }
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "id": "1089",
+                     "layer": "68",
+                     "menuMode": "pulldown",
+                     "name": "Preview",
+                     "opaque": false,
+                     "rect": "1,-122,57,-107",
+                     "showBorder": false,
+                     "showHilite": true,
+                     "style": "menu",
+                     "text": "\u2026New\n\u2026Open/O\n\u2026Clos/W\n-\n\u2026Quit/Q",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "3280": {
+                  "#name": "graphic \"Preview Border 1\"",
+                  "properties": {
+                     "antialiased": false,
+                     "disabled": true,
+                     "filled": true,
+                     "foreColor": "172,172,172",
+                     "id": "3280",
+                     "layer": "69",
+                     "name": "Preview Border 1",
+                     "opaque": true,
+                     "points": "60,-124\n60,-107",
+                     "rect": "59,-125,61,-106",
+                     "style": "line"
+                  }
+               },
+               "3281": {
+                  "#name": "graphic \"Preview Border 2\"",
+                  "properties": {
+                     "antialiased": false,
+                     "disabled": true,
+                     "filled": true,
+                     "foreColor": "white",
+                     "id": "3281",
+                     "layer": "70",
+                     "name": "Preview Border 2",
+                     "opaque": true,
+                     "points": "61,-124\n61,-107",
+                     "rect": "60,-125,62,-106",
+                     "style": "line"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "disabled": true,
+               "id": "5351",
+               "layer": "66",
+               "lockLoc": true,
+               "name": "Windows Preview",
+               "rect": "-5,-129,494,-100"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cREVClosing": false,
+         "cREVDefaultStack": null,
+         "cREVFirstSelectedStack": null,
+         "cREVItemsDisabled": null,
+         "cREVMenubar": null,
+         "cREVMenubarNumber": "0",
+         "cREVMenuButtonCardID": null,
+         "cREVMenuButtonIds": null,
+         "cREVMenuID": null,
+         "cREVMenuObject": "group",
+         "cVersionNo": "2.6.1",
+         "revstack": false
+      },
+      "custompropertysets": {
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         },
+         "cREVGeometryCache": {
+            "stackID": "7995"
+         }
+      },
+      "longID": "stack \"revMenuManager\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "title,menu,minimize,close",
+         "fileName": "revmenumanager.rev",
+         "id": "7995",
+         "liveResizing": false,
+         "name": "revMenuManager",
+         "rect": "905,332,1401,779",
+         "resizable": false,
+         "title": "Menu Builder"
+      },
+      "sharedGroupIDs": "1059\n1067\n1199\n1200\n3226\n3265\n3260\n3224\n5351"
+   },
+   "revMenuStylePopup": {
+      "#name": "stack \"revMenuStylePopup\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1005": {
+                  "#name": "button \"Pulldown\"",
+                  "properties": {
+                     "autoArm": true,
+                     "autoHilite": false,
+                     "id": "1005",
+                     "layer": "3",
+                     "margins": "31,4,4,4",
+                     "name": "Pulldown",
+                     "rect": "2,2,92,25",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textAlign": "left"
+                  }
+               },
+               "1008": {
+                  "#name": "button \"New Button\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "hiliteIcon": "200048",
+                     "icon": "200012",
+                     "id": "1008",
+                     "layer": "4",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "3,26,28,47",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1009": {
+                  "#name": "button \"New Button\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200011",
+                     "id": "1009",
+                     "layer": "5",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "3,3,28,24",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1011": {
+                  "#name": "button \"New Button\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200511",
+                     "id": "1011",
+                     "layer": "6",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "3,49,28,70",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1013": {
+                  "#name": "button \"Popup\"",
+                  "properties": {
+                     "autoArm": true,
+                     "autoHilite": false,
+                     "id": "1013",
+                     "layer": "2",
+                     "margins": "31,4,4,4",
+                     "name": "Popup",
+                     "rect": "2,25,92,48",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textAlign": "left"
+                  }
+               },
+               "1014": {
+                  "#name": "button \"Option\"",
+                  "properties": {
+                     "autoArm": true,
+                     "autoHilite": false,
+                     "id": "1014",
+                     "layer": "1",
+                     "margins": "31,4,4,4",
+                     "name": "Option",
+                     "rect": "2,48,92,71",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textAlign": "left"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "showBorder": true
+            }
+         }
+      },
+      "longID": "stack \"revMenuStylePopup\" of stack \"revMenuManager\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "bottomColor": "128,128,128",
+         "decorations": "default",
+         "foreColor": "Black",
+         "hiliteColor": "102,102,102",
+         "id": "1018",
+         "liveResizing": false,
+         "maxHeight": "150",
+         "maxWidth": "150",
+         "name": "revMenuStylePopup",
+         "rect": "365,311,460,384",
+         "shadowColor": "darkgray",
+         "topColor": "white"
+      },
+      "sharedGroupIDs": null
+   },
+   "revNewMenu": {
+      "#name": "stack \"revNewMenu\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Open Stacks\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1003",
+                     "label": "Untitled 1",
+                     "layer": "1",
+                     "margins": "6,4,4,4",
+                     "menuMode": "option",
+                     "name": "Open Stacks",
+                     "rect": "110,7,280,24",
+                     "style": "menu",
+                     "text": "Untitled 1",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "1005": {
+                  "#name": "field \"Menus\"",
+                  "properties": {
+                     "htmlText": "<p>File</p>\n<p>Edit</p>\n<p>Help</p>",
+                     "id": "1005",
+                     "layer": "2",
+                     "name": "Menus",
+                     "rect": "7,73,280,194",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1009": {
+                  "#name": "button \"OK\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1009",
+                     "layer": "3",
+                     "menuMode": "pulldown",
+                     "name": "OK",
+                     "rect": "209,244,279,262",
+                     "sharedHilite": false
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1010",
+                     "layer": "4",
+                     "name": "Cancel",
+                     "rect": "129,243,199,263"
+                  }
+               },
+               "1012": {
+                  "#name": "field id 1012",
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "<p>Menus:</p>",
+                     "id": "1012",
+                     "layer": "5",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "7,53,56,71",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1015": {
+                  "#name": "field id 1015",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Menu Bar Name:</p>",
+                     "id": "1015",
+                     "layer": "6",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "7,28,108,48",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1016": {
+                  "#name": "field \"Name\"",
+                  "properties": {
+                     "htmlText": "<p>Menubar 1</p>",
+                     "id": "1016",
+                     "layer": "7",
+                     "name": "Name",
+                     "rect": "110,29,280,49"
+                  }
+               },
+               "1019": {
+                  "#name": "field id 1019",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>In stack:</p>",
+                     "id": "1019",
+                     "layer": "8",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "7,5,108,25",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1025": {
+                  "#name": "button \"Move Objects\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1025",
+                     "label": "Move objects down to accommodate menu bar",
+                     "layer": "9",
+                     "name": "Move Objects",
+                     "opaque": false,
+                     "rect": "7,199,286,222",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "9"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cREVMenubarNumber": null,
+         "cREVMenuButtonCardID": null,
+         "cREVMenusToBuild": "File\nEdit\nHelp",
+         "cREVResult": "OK",
+         "cREVSelectedStack": "revObjectBrowser",
+         "revstack": false
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1025"
+         }
+      },
+      "longID": "stack \"revNewMenu\" of stack \"revMenuManager\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "id": "1025",
+         "liveResizing": false,
+         "name": "revNewMenu",
+         "rect": "816,265,1104,536",
+         "resizable": false,
+         "title": "Create a New Menu Bar"
+      },
+      "sharedGroupIDs": null
+   }
+}

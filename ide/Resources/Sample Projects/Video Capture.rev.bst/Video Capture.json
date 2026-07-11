@@ -1,0 +1,220 @@
+{
+   "#mainstack": "Video Capture",
+   "Video Capture": {
+      "#name": "stack \"Video Capture\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1005": {
+                  "#name": "button \"Stop Preview\"",
+                  "properties": {
+                     "id": "1005",
+                     "layer": "1",
+                     "name": "Stop Preview",
+                     "rect": "132,266,234,289"
+                  }
+               },
+               "1008": {
+                  "#name": "image \"video\"",
+                  "properties": {
+                     "id": "1008",
+                     "layer": "2",
+                     "name": "video",
+                     "rect": "32,18,313,257",
+                     "showBorder": true
+                  }
+               },
+               "1009": {
+                  "#name": "button \"Start Preview\"",
+                  "properties": {
+                     "id": "1009",
+                     "layer": "3",
+                     "name": "Start Preview",
+                     "rect": "22,266,124,289"
+                  }
+               },
+               "1011": {
+                  "#name": "button \"Start Recording...\"",
+                  "properties": {
+                     "id": "1011",
+                     "layer": "4",
+                     "name": "Start Recording...",
+                     "rect": "22,298,124,321"
+                  }
+               },
+               "1012": {
+                  "#name": "button \"Stop Recording\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "5",
+                     "name": "Stop Recording",
+                     "rect": "134,298,236,321"
+                  }
+               },
+               "1017": {
+                  "#name": "button \"Grab image\"",
+                  "properties": {
+                     "id": "1017",
+                     "layer": "6",
+                     "name": "Grab image",
+                     "rect": "330,266,432,289"
+                  }
+               },
+               "1019": {
+                  "#name": "image \"videoimage\"",
+                  "properties": {
+                     "id": "1019",
+                     "layer": "7",
+                     "lockLoc": true,
+                     "name": "videoimage",
+                     "rect": "324,17,605,256",
+                     "showBorder": true
+                  }
+               },
+               "1029": {
+                  "#name": "group \"preferences\"",
+                  "childcontrols": {
+                     "1024": {
+                        "#name": "button \"QuickTime radio\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1024",
+                           "label": "QuickTime",
+                           "layer": "9",
+                           "name": "QuickTime radio",
+                           "opaque": false,
+                           "rect": "28,363,120,386",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1025": {
+                        "#name": "button \"Video For Windows radio\"",
+                        "properties": {
+                           "disabled": true,
+                           "hiliteBorder": false,
+                           "id": "1025",
+                           "label": "Video For Windows",
+                           "layer": "10",
+                           "name": "Video For Windows radio",
+                           "opaque": false,
+                           "rect": "28,391,164,414",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1031": {
+                        "#name": "button \"quicktime\"",
+                        "properties": {
+                           "id": "1031",
+                           "label": "Video Settings...",
+                           "layer": "16",
+                           "name": "quicktime",
+                           "rect": "27,424,177,447"
+                        }
+                     },
+                     "1032": {
+                        "#name": "group \"video for windows\"",
+                        "childcontrols": {
+                           "1033": {
+                              "#name": "button \"Video source...\"",
+                              "properties": {
+                                 "id": "1033",
+                                 "layer": "12",
+                                 "name": "Video source...",
+                                 "rect": "29,504,179,527"
+                              }
+                           },
+                           "1034": {
+                              "#name": "button \"Video display...\"",
+                              "properties": {
+                                 "id": "1034",
+                                 "layer": "13",
+                                 "name": "Video display...",
+                                 "rect": "29,476,179,499"
+                              }
+                           },
+                           "1035": {
+                              "#name": "button \"Video format...\"",
+                              "properties": {
+                                 "id": "1035",
+                                 "layer": "14",
+                                 "name": "Video format...",
+                                 "rect": "27,448,177,471"
+                              }
+                           },
+                           "1036": {
+                              "#name": "button \"Video Compression...\"",
+                              "properties": {
+                                 "id": "1036",
+                                 "layer": "15",
+                                 "name": "Video Compression...",
+                                 "rect": "27,420,177,443"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1032",
+                           "layer": "11",
+                           "name": "video for windows",
+                           "rect": "23,416,183,531",
+                           "visible": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "1",
+                     "id": "1029",
+                     "label": "Capture Settings",
+                     "layer": "8",
+                     "lockLoc": true,
+                     "name": "preferences",
+                     "rect": "22,335,190,456",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "1037": {
+                  "#name": "button \"Save image...\"",
+                  "properties": {
+                     "id": "1037",
+                     "layer": "17",
+                     "name": "Save image...",
+                     "rect": "444,266,546,289"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "videosettings": "%file%: assets/Video Capture_videosettings.bin"
+      },
+      "longID": "stack \"Video Capture\"",
+      "properties": {
+         "backColor": "232,232,232",
+         "bottomColor": "172,172,172",
+         "decorations": "title,close",
+         "destroyWindow": true,
+         "fileName": "Video Capture.rev",
+         "id": "1037",
+         "liveResizing": false,
+         "name": "Video Capture",
+         "rect": "145,135,769,650",
+         "resizable": false,
+         "shadowColor": "172,172,172"
+      },
+      "sharedGroupIDs": null
+   }
+}

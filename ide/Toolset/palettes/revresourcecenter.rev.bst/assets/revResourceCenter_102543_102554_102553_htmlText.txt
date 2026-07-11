@@ -1,0 +1,12 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> canWriteFileTo theLocation</p>
+<p>  <font color="#0000FF">put</font> theLocation &amp; "/temp" &amp; <font color="#F88017">random</font>(9999) into randomFileName</p>
+<p>  <font color="#0000FF">open</font> file randomFileName <font color="#980517">for</font> <font color="#0000FF">write</font> <font color="#68228B">-- try creating a file</font></p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is empty <font color="#980517">then</font> <font color="#68228B">-- success!</font></p>
+<p>    <font color="#0000FF">close</font> file randomFileName</p>
+<p>    <font color="#0000FF">delete</font> file randomFileName <font color="#68228B">-- get rid of the test file</font></p>
+<p>    <font color="#0000FF">return</font> true</p>
+<p>  <font color="#980517">else</font> <font color="#68228B">-- failed - couldn't create a file there</font></p>
+<p>    <font color="#0000FF">return</font> false</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p><font color="#980517">end</font> canWriteFileTo</p>

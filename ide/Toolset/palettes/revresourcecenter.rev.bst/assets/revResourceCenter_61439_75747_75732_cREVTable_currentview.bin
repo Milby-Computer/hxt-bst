@@ -1,0 +1,4 @@
+Once an object has been created and assigned properties it's behaviour can be specified by giving it a script.  
+
+Scripts in Revolution send and handle messages which control action.  Some messages, such as mouseUp, are sent automatically by the system while other, user messages, are sent by making what is equivalent to a method call.  The messages an object sends and how it handles them specify how it reacts to events and generally behaves.  
+Within Revolution all scripts are written in the script editor.  The easiest way to view this is to ensure the object whose script you want to edit is in focus and then click the script button on the menubar.  Alternatively the object can be right-clicked and the 'edit script' option can be chosen from the menu which appears.

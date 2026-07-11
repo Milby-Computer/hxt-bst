@@ -1,0 +1,18 @@
+<p>library foo.test</p>
+<p></p>
+<p>foreign handler MCGContextCreate(in pWidth as uint, in pHeight as uint, in pAlpha as bool, out rContext as pointer) as bool binds to "&lt;builtin&gt;"</p>
+<p>foreign handler MCCanvasCreate(in pContext as pointer, out rCanvas) as bool binds to "&lt;builtin&gt;"</p>
+<p></p>
+<p>public handler myTest(in pVar as number) as number</p>
+<p>  variable tContext as pointer</p>
+<p>  MCGContextCreate(200, 200, true, tContext)</p>
+<p></p>
+<p>  variable tCanvas</p>
+<p>  MCCanvasCreate(tContext, tCanvas)</p>
+<p></p>
+<p>  put 0.5 into the opacity of tCanvas</p>
+<p>  return the opacity of tCanvas</p>
+<p>end handler</p>
+<p></p>
+<p>end library</p>
+<p></p>

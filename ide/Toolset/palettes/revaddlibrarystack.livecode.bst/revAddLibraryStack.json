@@ -1,0 +1,97 @@
+{
+   "#mainstack": "revAddLibraryStack",
+   "revAddLibraryStack": {
+      "#name": "stack \"revAddLibraryStack\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p><font face=\"ms sans serif\" size=\"10\">Select a stack to place in the message path:</font></p>",
+                     "id": "1004",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "0,10,226,30",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1005": {
+                  "#name": "button \"Stack\"",
+                  "properties": {
+                     "accelMods": "command",
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1005",
+                     "label": "revAddLibraryStack",
+                     "layer": "2",
+                     "menuHistory": "83",
+                     "menuMode": "option",
+                     "name": "Stack",
+                     "rect": "224,10,368,30",
+                     "style": "menu",
+                     "text": "%file%: assets/revAddLibraryStack_1002_1005_text.txt",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "1008": {
+                  "#name": "button \"OK\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1008",
+                     "layer": "3",
+                     "menuMode": "pulldown",
+                     "name": "OK",
+                     "rect": "305,60,367,78",
+                     "sharedHilite": false
+                  }
+               },
+               "1009": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1009",
+                     "layer": "4",
+                     "name": "Cancel",
+                     "rect": "227,59,291,79"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cREVDebugMode": false,
+         "cREVProfile": "val",
+         "cREVResult": null,
+         "cREVStack": "revText",
+         "cREVTargetStack": "Untitled 1",
+         "revstack": false
+      },
+      "longID": "stack \"revAddLibraryStack\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "revaddlibrarystack.livecode",
+         "id": "1009",
+         "liveResizing": false,
+         "name": "revAddLibraryStack",
+         "rect": "837,236,1213,326",
+         "title": "Add Stack:"
+      },
+      "sharedGroupIDs": null
+   }
+}

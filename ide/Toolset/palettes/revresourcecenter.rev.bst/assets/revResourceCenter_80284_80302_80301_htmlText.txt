@@ -1,0 +1,9 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> checkForScreenSize</p>
+<p>  <font color="#980517">if</font> item 3 of the <font color="#F88017">screenRect</font> &lt; 1024 \</p>
+<p>     or item 4 of the <font color="#F88017">screenRect</font> &lt; 768 <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">answer</font> error "MyApp requires a 1024x768 or larger screen." \</p>
+<p>       <font color="#980517">with</font> "Sorry"</p>
+<p>    <font color="#0000FF">quit</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p><font color="#980517">end</font> checkForScreenSize</p>

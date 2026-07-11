@@ -1,0 +1,682 @@
+<p><b><font face="Courier" size="12">-- ABOUT NAVIGATOR --</font></b></p>
+<p><b><font face="Courier" size="12">---------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">It started as a simple little project. I wanted a way to store a script-in-progress that has compile errors, so I could get the script window out of the way. (This was in 1.1.1) So I built a little palette to store a list of the scripts. Then I got frustrated with editing the scripts of the buttons in a menubar on a Mac, where the buttons don't show. So I added a feature to show a list of the controls on the current card.</font></p>
+<p></p>
+<p><font face="Courier" size="12">Then the madness set in...</font></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- NAVIGATOR OVERVIEW --</font></b></p>
+<p><b><font face="Courier" size="12">------------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12"> -- Navigator displays lists of Revolution objects: stacks, cards, groups, and controls. </font></p>
+<p></p>
+<p><font face="Courier" size="12"> -- The list can be of the controls on the current card of the topStack, or of any card or group of any stack. It can also be a list of cards or backgrounds in a stack.</font></p>
+<p></p>
+<p><font face="Courier" size="12"> -- NEW IN 2.5: The list can now display all the stacks and substacks.</font></p>
+<p></p>
+<p><font face="Courier" size="12"> -- NEW IN 2.5: The list now supports drag and drop to relayer controls, move them from one place to another, place backgrounds, and more.</font></p>
+<p></p>
+<p><font face="Courier" size="12"> -- Navigator allows you to edit scripts, set properties or run code against any list of objects.</font></p>
+<p></p>
+<p><font face="Courier" size="12"> -- NEW IN 2.5: Edit custom properties as well.</font></p>
+<p></p>
+<p><font face="Courier" size="12"> -- You can also save references to objects in any combination.</font></p>
+<p></p>
+<p><font face="Courier" size="12"> -- NEW IN 2.5: Rename bookmarks.</font></p>
+<p></p>
+<p><font face="Courier" size="12" color="#000000"> -- Navigator makes it easy to work with controls that aren't normally accessible: controls in groups, hidden controls, controls on hidden stacks, controls that are in different places.</font></p>
+<p></p>
+<p><font face="Courier" size="12"> -- NEW IN 2.5: Select a stack to work with by pointing at it.</font></p>
+<p></p>
+<p><font face="Courier" size="12" color="#000000"> -- Navigator allows you to do things you wouldn't ordinarily be able to do: align controls that are on different cards, for example.</font></p>
+<p></p>
+<p><font face="Courier" size="12" color="#000000"> -- Navigator makes you a faster developer: edit the scripts of controls on different cards quickly and easily; change any property with a single menu selection rather than using a palette; go to the handler you want to edit in a long script with a single command.</font></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- NAVIGATOR FEATURES IN DETAIL --</font></b></p>
+<p><b><font face="Courier" size="12">----------------------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">-- Small and resizeable.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- List the controls in the current card, or any card or background in any stack. The list can be indented to show group control hierarchy.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- NEW IN 2.5: The list can now show the open stacks.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Quick access to a list of the cards or backgrounds/groups in any stack.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- From any card, group, or stack reference, jump directly to a list of the controls in that card, group, or stack.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- NEW IN 2.5: Drag and drop support:</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Drag controls to set their layer</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Drag controls into and out of groups</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Drag controls into the bookmark list to create bookmarks</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Drag bookmarks to rearrange them</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Drag bookmarks into the list of controls to add them to the current card or group.</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Mix and match: drag bookmarks and controls into the bookmark list to rearrange the bookmarks and create new ones for any controls not already present as bookmarks</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Mix and match: drag bookmarks and controls into the control list to rearrange the controls and add the bookmarked controls</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Drag cards in a card list to rearrange them in a stack</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Drag controls/bookmarks to the desktop or other drag targets to save the long id of the controls.</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Drag long id text into the list from other sources to create bookmarks. NOTE: this does not test the drag data. It will create bookmarks for whatever text you drag in.</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Drag a bookmark of a group into the control list is smart: if the group is in the same stack, it places it. Otherwise it copies it.</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Drag a card bookmark into the control list to copy the card to the display stack.</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Drag a stack bookmark into the control list to set the dragged stack's mainstack to the display stack.</font></p>
+<p></p>
+<p><font face="Courier" size="12">     -- Finally, select any number of cards in a card list, and a bookmark for a group. Click the group bookmark and drag into the card list. Places the group onto all the card references hilited.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Edit scripts.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Edit properties of controls; either individually or in groups.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- NEW IN 2.5: Edit the custom properties of controls; either individually or in groups. Also, create new custom properties.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Go directly to editing any handler in any script.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Call any handler in any script, with a template for the arguments.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- NEW IN 2.5: Contextual menus are smarter. They pop on mouseDown rather than mouseUp. If you pop a contextual menu by clicking on a selected item, the selection is unchanged and the contextual menu applies to all the controls. If you pop a contextual menu by clicking on an unselected item, the selection will change to just the clicked item, and the contextual menu applies to just the clicked item. </font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Count the length in lines of an object's script, or of all objects contained within the object's hierarchy (a group and all of its controls, or even everything in a stack).</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- When viewing "this card" of "the topStack," reflects controls selected in real time.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- When viewing "this card" of "the topStack," selecting controls in the list selects them in the stack in real time.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- NEW IN 2.5: Hold down the option(alt) key while selecting "the topStack" Move the pointer over any stack. Let go of the option(alt) key, and Navigator lists the controls for the stack the mouse is over.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Display controls with scripts in a different color. (actions menu &gt; prefs).</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Filter for named controls (actions menu &gt; prefs).</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Filter for controls with scripts (actions menu &gt; prefs).</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- See short names, long names, short ids or long ids (actions menu &gt; prefs).</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Filter controls for arbitrary text by entering it in the filter box at upper right. Type "fie" to get all fields, for example.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- "Capture" scripts, storing them within Navigator. See issues below.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Save references to controls/cards/groups/stacks permanently by bookmarking them.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- NEW IN 2.5: Rename bookmarks.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Save bookmark sets to quickly switch between projects.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Bookmarks and bookmark sets can contain any controls -- controls from multiple cards, stacks, backgrounds, etc. Also any cards, groups/backgrounds, or stacks.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Color bookmarks any way you like to help organize them.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Copy a list of references to the selected controls; either the long id, or whatever is currently displayed. Also put the list into the Message Box.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Go directly to any card of any stack. Also go to any bookmarked stack, open or not.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- TopLevel any card of any stack.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Save any stack directly.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Purge any stack from memory directly.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Easily change standard boolean properties for all selected controls, cards, backgrounds, or stacks.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Easily change other standard properties for all selected controls, cards, backgrounds, or stacks.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- NEW IN 2.5: Easily change custom properties through the contextual menu, just like the regular properties.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Set any list of properties (standard or custom) for all selected controls, cards, backgrounds, or stacks.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Run any code against all selected controls, cards, backgrounds, or stacks.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Save any code you run as a Navigator plugin for future use on any controls.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Navigator plugins can offer the user a choice on one or two popups, or a listbox.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- CONTROL LIST --</font></b></p>
+<p><b><font face="Courier" size="12">------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">Controls are displayed in a simple list. Bookmarked controls are shown at the top of the list, indented. Below the bookmarked controls is the stack reference in bold. Below the stack reference is either: a single card or background, also in bold, and a list of all the controls on the card/background; or a list of cards or backgrounds in the stack. Alternatively, below the bookmarks is a list of stacks and substacks. If displaying a list of controls, the controls are indented to reflect enclosure within groups on the card. The indent is configurable on the Actions &gt; Prefs menu.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Click</font></b><font face="Courier" size="12"> an object to select it.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Shift-click</font></b><font face="Courier" size="12"> another object to select a range from the one you clicked to the one you shift-clicked. Note there is a slight issue with shift-clicking that manifests if you drag-select upwards through the list, and then try to extend the selection by shift-clicking. The selection can change improperly as a result.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Click and drag</font></b><font face="Courier" size="12"> to select a range of controls.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Command-click</font></b><font face="Courier" size="12"> to toggle the selection of an object.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Control-click</font></b><font face="Courier" size="12"> to pop a contextual menu with various commands. See Contextual Menu (Default) below for details.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Control-Option-click</font></b><font face="Courier" size="12"> to pop a contextual menu of standard properties. You can set them from this menu -- see Contextual Menu (Properties) below.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Control-Option-Command-click</font></b><font face="Courier" size="12"> to pop a contextual menu of custom properties. You can set them from this menu -- see Contextual Menu (Custom Properties) below.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Control-Command-click</font></b><font face="Courier" size="12"> to pop a contextual menu of the handlers in the object's script. You can only do this with a single control hilited. Select any handler in the menu to edit the object's script and go directly to that handler. Option-select any handler to call that handler in the object's script. See Contextual Menu (Handlers) below for details.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- CONTROL LIST DRAG AND DROP --</font></b></p>
+<p><b><font face="Courier" size="12">--------------------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">This is one of the major new features in Navigator: the list now supports drag and drop for a wide variety of commands. All of them involve the simply action of selecting one or more items in the list, clicking on one of the selected items, and dragging to somewhere else. The context, however, allows for many different results. </font></p>
+<p></p>
+<p><font face="Courier" size="12">Listed below are the various drag and drop contexts, and the results. Generally, you can mix and match the contexts and Navigator will do the right thing for each item you drag. An example of this is that if you select bookmarks and controls, and drag to another place on the card, Navigator will copy the bookmarks to the current card and rearrange their layers with the controls you dragged, as appropriate.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Anytime</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">-- Drag bookmarks in the bookmark area to rearrange the bookmark list. This has no effect on the bookmarked objects.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Drag references to objects into the list from elsewhere to create bookmarks to the objects. There is no error checking on this.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">When Displaying the Controls on a Card or Group</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">-- Drag controls in the control list to relayer them.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Drag controls in the control list into a group to move the controls into the group.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Drag controls in a group out of the group to remove the controls from the group.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Drag controls in the control list into the bookmark area of the list to create bookmarks for the selected controls. If bookmarks already exist for a control, no duplicate will be created. This depends on the name of the bookmark, not the underlying ID, so if you have renamed bookmarks, duplicates can be created.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Drag bookmarks of controls (not groups, cards, or stacks; see below for details on them) into the control list to copy the controls to the current card/group. Note that if the bookmarks represent controls on the current card, they will still be copied to the card, duplicating the controls.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Drag bookmarks of cards into the control list to copy the cards to the current stack (no effect if the card is already in the current stack).</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- If a bookmark is of a group in another stack, drag the bookmarks of groups into the control list to copy the group to the current card. </font></p>
+<p></p>
+<p><font face="Courier" size="12">-- If a bookmark is of a group (background) in the current stack, drag the bookmarks of the groups into the control list to place the existing backgrounds onto the current card.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Drag bookmarks of stacks into the control list to set the mainstack of the bookmarked stacks to the current stack. This makes the dragged stacks substacks of the current stack. Note that you can easily undo this by switching the display to a substack and dragging the bookmark into the display again. This will make the substack its own mainstack (making it a mainstack again).</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">When Displaying the Cards in a Stack</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">-- Drag the cards in the list to set their layer in the stack. This changes the order of the cards in the stack.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- Drag cards into the bookmark area to create bookmarks to them.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- This one's a bit tricky and perhaps counterintuitive: select one or more cards, and a single bookmark to a group. Click and drag on the bookmark to the group. Drag it anywhere in the card list. This will place the group onto all of the cards you selected in a single command. If the bookmarked group was in another stack, it will first be copied to the current stack, and then placed on all the cards.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">When Displaying the Groups (Backgrounds) in a Stack, or the Stack List</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">-- Drag groups or stacks into the bookmark area to create bookmarks to them.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- FILTER BOX --</font></b></p>
+<p><b><font face="Courier" size="12">------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">Text typed in the Filter box at the upper right of Navigator acts as a filter on the list. Type "button" to see only buttons, "field" to see only fields, etc. Any text will work, so you can see only objects named "xyz" if you want. The filter acts on whatever is displayed, so you can filter on object names if names are being displayed, or on the ID if IDs are being displayed. Indentation based on groups goes away if the group objects themselves are filtered.</font></p>
+<p></p>
+<p><font face="Courier" size="12">The filter has no effect when displaying the stack list.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- ABOUT/SPLASH SCREEN --</font></b></p>
+<p><b><font face="Courier" size="12">-------------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">When Navigator first opens, it displays the About... screen. If you have checked the "I Paid" checkbox, the About... screen will go away automatically as quickly as it appeared. If you haven't checked the "I Paid" checkbox, Navigator waits for you to dismiss the About...screen.</font></p>
+<p></p>
+<p><font face="Courier" size="12">If you don't see the About... screen when Navigator starts up, try closing Navigator and re-opening it. Navigator shows the About... screen as the last step in its initialization process, so if you don't see it, something went wrong.</font></p>
+<p></p>
+<p><font face="Courier" size="12">You can dismiss the About... screen by clicking the close button at the upper left, or clicking anywhere in the About... screen.</font></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- ACTIONS MENU --</font></b></p>
+<p><b><font face="Courier" size="12">------------------</font></b></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">About Navigator...</font></b><font face="Courier" size="12"> -- Displays this information about Navigator, and help. Click the close button, or anywhere in the about/help display, to make it go away.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Prefs</font></b><font face="Courier" size="12"> -- Submenu with options for Navigator:</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Use Names</font></b><font face="Courier" size="12"> -- If checked, the list shows object names. Otherwise it shows IDs.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Color Scripted Objects</font></b><font face="Courier" size="12"> -- If checked, objects in the list with scripts are shown in a different color (set on the prefs &gt; colors submenu -- see below). Slows list display slightly, so if you are on a slower machine or working with very long lists and want to maximize performance, uncheck this.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Named Objects Only</font></b><font face="Courier" size="12"> -- If checked, the list shows only objects that have been given names. Excellent for filtering out labels, etc.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Scripted Objects Only</font></b><font face="Courier" size="12"> -- If checked, the list shows only objects whose scripts are not empty. Works whether or not scripted objects are colored separately.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Use Long Name or ID</font></b><font face="Courier" size="12"> -- If checked, shows the long name or id. Otherwise, the short name or abbreviated id.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Show Tooltip</font></b><font face="Courier" size="12"> -- If checked, holding the pointer over an item in the list displays a tooltip with the long id of the item. Very annoying. ;-)</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Update List Automatically</font></b><font face="Courier" size="12"> -- If checked, the control list is updated whenever an object is created or deleted, whenever the current card changes, and whenever the selection changes it is checked. If it is unchecked, you must manually update the list -- see Update List Now below. Note that it is possible for the list to be out of sync even if this is checked. The list is updated in response to messages from the development environment, and there are some changes that will not trigger these messages. One example is if you change the name of a control using the Properties Contextual Menu. Many other things trigger a potential list update, so for example switching stacks should cause the list to update.</font></p>
+<p></p>
+<p><font face="Courier" size="12">----------</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Indent String...:</font></b><font face="Courier" size="12"> -- Navigator indents controls in the list based on the groups they are in. You can have Navigator use any string to do this. Use an empty string to prevent any indentation. The default "|  " provides for indentation and vertical lines showing the beginning and ending of groups. Three spaces makes for nice indentation with no vertical lines.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Add Properties...:</font></b><font face="Courier" size="12"> -- Navigator displays a list of properties for the selected objects when you Control-Option click them -- see Contextual Menu (Properties) below. The default list of properties to display does not include every possible property. </font></p>
+<p></p>
+<p><font face="Courier" size="12">You can add property names to the list of properties to display. The properties to add are defined separately for each type of control. The property names to add are stored as custom properties of the Navigator stack. </font></p>
+<p></p>
+<p><font face="Courier" size="12">Selecting this command opens the Command Panel, with the current values of the custom properties displayed. The list will look something like this:</font></p>
+<p></p>
+<p><font face="helvetica" size="12">Card=</font></p>
+<p><font face="helvetica" size="12">Image=loc</font></p>
+<p><font face="helvetica" size="12">left</font></p>
+<p><font face="helvetica" size="12">top</font></p>
+<p><font face="helvetica" size="12">right</font></p>
+<p><font face="helvetica" size="12">bottom</font></p>
+<p><font face="helvetica" size="12">Button=loc</font></p>
+<p><font face="helvetica" size="12">left</font></p>
+<p><font face="helvetica" size="12">top</font></p>
+<p><font face="helvetica" size="12">right</font></p>
+<p><font face="helvetica" size="12">bottom</font></p>
+<p><font face="helvetica" size="12">Group=backgroundBehavior</font></p>
+<p><font face="helvetica" size="12">layer</font></p>
+<p><font face="helvetica" size="12">loc</font></p>
+<p><font face="helvetica" size="12">Graphic=loc</font></p>
+<p><font face="helvetica" size="12">left</font></p>
+<p><font face="helvetica" size="12">top</font></p>
+<p><font face="helvetica" size="12">right</font></p>
+<p><font face="helvetica" size="12">bottom</font></p>
+<p><font face="helvetica" size="12">fillfore</font></p>
+<p><font face="helvetica" size="12">Scrollbar=loc</font></p>
+<p><font face="helvetica" size="12">left</font></p>
+<p><font face="helvetica" size="12">top</font></p>
+<p><font face="helvetica" size="12">right</font></p>
+<p><font face="helvetica" size="12">bottom</font></p>
+<p><font face="helvetica" size="12">Field=loc</font></p>
+<p><font face="helvetica" size="12">left</font></p>
+<p><font face="helvetica" size="12">top</font></p>
+<p><font face="helvetica" size="12">right</font></p>
+<p><font face="helvetica" size="12">bottom</font></p>
+<p><font face="helvetica" size="12">tProp=</font></p>
+<p><font face="helvetica" size="12">Player=loc</font></p>
+<p><font face="helvetica" size="12">left</font></p>
+<p><font face="helvetica" size="12">top</font></p>
+<p><font face="helvetica" size="12">right</font></p>
+<p><font face="helvetica" size="12">bottom</font></p>
+<p><font face="helvetica" size="12">Stack=loc</font></p>
+<p><font face="helvetica" size="12">left</font></p>
+<p><font face="helvetica" size="12">top</font></p>
+<p><font face="helvetica" size="12">right</font></p>
+<p><font face="helvetica" size="12">bottom</font></p>
+<p></p>
+<p><font face="Courier" size="12">Note how for Buttons the properties "loc, left, top, right, and bottom" have been added in the example above. Simply enter the names of any other properties you want to add to the popup, one per line. The properties do not have to be in any particular order -- they'll be alphabetized when the popup is displayed.</font></p>
+<p></p>
+<p><font face="Courier" size="12">When you are done, click the "Set" button to set the properties and save your changes, or "Close" to cancel the process and ignore your changes. Changes you make are immediate.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Colors:</font></b><font face="Courier" size="12"> -- Submenu with color options for Navigator. In each case an ask dialog allows you to enter the color for that text type. You can use color names or triplets. The current value will display as the default. The color options are:</font></p>
+<p></p>
+<p><font face="Courier" size="12">&#9;-- <b>Default...:</b> -- The color objects will display in by default. (blue by default)</font></p>
+<p></p>
+<p><font face="Courier" size="12">&#9;-- <b>Scripted Object...:</b> -- If you check Color Scripted Objects, the color objects will display in if they have a script. (dark green by default)</font></p>
+<p></p>
+<p><font face="Courier" size="12">&#9;-- <b>Object Missing...:</b> -- The color objects will display in if Navigator looks for them (to edit their scripts or properties) and can't find them. (red by default)</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Menu Limit:</font></b><font face="Courier" size="12"> -- Sets the maximum number of items to display in the Stack and Card menus. You might want to use this if you are working with an extremely large number of stacks, or a stack with thousands of cards, or cards or groups with a large number of controls. NOTE: if you cannot display all the cards in a stack because of the menu limit, you can select Card List to put a list of the cards in the stack into the control list. That list is subject to the Object Limit, which might be larger.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Object Limit:</font></b><font face="Courier" size="12"> -- Sets the maximum number of items to display in the control list. You might want to use this is if you are working with a card with an extremely large number of controls.</font></p>
+<p></p>
+<p><font face="Courier" size="12">----------</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- Double-Click:</font></b></p>
+<p><b><font face="Courier" size="12">-- Option-Double-Click:</font></b></p>
+<p><b><font face="Courier" size="12">-- Command-Double-Click:</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">Each of these three determines what is done when an item is double-clicked in the list. The four possible actions are:</font></p>
+<p></p>
+<p><font face="Courier" size="12">&#9;-- <b>Copy ID</b> -- Copies the long id of the double-clicked object to the clipboard. You can then paste it anywhere -- to the message box, for example.</font></p>
+<p></p>
+<p><font face="Courier" size="12">&#9;-- <b>Edit Script</b> -- Edits the script of the double-clicked object.</font></p>
+<p><font face="Courier" size="12">&#9;</font></p>
+<p><font face="Courier" size="12">&#9;-- <b>Edit Properties</b> -- Displays a properties palette for the double-clicked object.</font></p>
+<p></p>
+<p><font face="Courier" size="12">&#9;-- <b>Bookmark-Remove</b> -- If the double-clicked object is a bookmark, removes it; otherwise bookmarks it.</font></p>
+<p></p>
+<p><font face="Courier" size="12">----------</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Get Scripts</font></b><font face="Courier" size="12"> -- If a script window is open, captures the script from it, bookmarks the object the script is for, and stores the script-in-progress. Reverts the script to the last saved, and closes the script window.  Captured script objects are automatically bookmarked. Re-edit to restore the captured script. Hold down the option key to get all open script windows. <b>This feature works only with Revolution 2.0.</b> <b>See the issue below.</b></font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Edit Properties</font></b><font face="Courier" size="12"> -- Opens a new properties window for each of the selected objects. Windows are arranged, and locked to the objects they are opened for. NOTE: this will work even for controls that are not currently displayed. You can examine the properties for a control in any stack by selecting the stack on the stack menu, selecting the control you want, and selecting Edit Properties. <b>This feature works only with Revolution.</b></font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Edit Scripts</font></b><font face="Courier" size="12"> -- Edits the script of each of the selected objects. Windows are arranged. Like Edit Properties, the control does not need to be displayed. You can edit the script of any control in any open stack.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Show Properties</font></b><font face="Courier" size="12"> -- Opens one property window for all the selected objects. In Revolution, only properties all the objects have in common are active. In MetaCard, if more than one control is selected the alignment palette will be displayed.</font></p>
+<p></p>
+<p><font face="Courier" size="12">NOTE: this works on the selected controls <b>in the Revolution/MetaCard environment</b> -- you can only use the Show Properties command for controls in "this card" of the topStack. In Revolution, you can use Edit Properties to edit the properties for controls that are not currently displayed. You can always Navigator's tools: the Properties contextual menu, the Custom Properties contextual menu, and the Set command in the Command Panel, to change any object's properties.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Command...</font></b><font face="Courier" size="12"> -- Displays the Command Panel. See the section on the Command Panel below. Note that this disables the control list until you close the Command Panel.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Update List Now</font></b><font face="Courier" size="12"> -- Forces the control list to update. Useful if you have disabled automatic list updates.</font></p>
+<p></p>
+<p><font face="Courier" size="12">----------</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Bookmark</font></b><font face="Courier" size="12"> -- Bookmark all selected objects -- copies full references to them to the top of the list. Bookmarked objects don't need to be currently displayed, or even in a stack that is opened (you can't work with them if they're not open, but the reference stays intact as long as the stack file isn't moved or renamed). Bookmarked controls don't need to be from the same card, or the same stack. Bookmarked controls can be used much like regular items in the list: edit their scripts or properties, save them (if they are stack references) etc.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Remove</font></b><font face="Courier" size="12"> -- Removes selected bookmarked objects.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Remove All</font></b><font face="Courier" size="12"> -- Removes all bookmarked objects.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Save Control Set...</font></b><font face="Courier" size="12"> -- Saves currently bookmarked objects to a named set. The named set is displayed at the bottom of the Actions menu. This can be very handy if you are working on multiple tasks: save a control set that is relevant to each task you are working on, and open the control sets as you switch tasks. Control sets persist across launches of Navigator; they stay until you delete them.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">ControlSets</font></b><font face="Courier" size="12"> -- this is where Control Sets are listed when they are created. You can have as many as your menu system will allow. <b>Option-select</b> one to delete it.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- CONTEXTUAL MENU (DEFAULT) --</font></b></p>
+<p><b><font face="Courier" size="12">-------------------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">Note that the behavior of the contextual menus has changed. Now, if you open a contextual menu by clicking on an item that isn't currently selected, that item will be selected and the contextual menu will apply only to that item. To apply a contextual menu to a selection of items, open the contextual menu by clicking on one of the selected items. <b>Control-click</b> the list (right click on PCs and Unix) to activate.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Control-Option-click</font></b><font face="Courier" size="12"> to instead pop the Properties contextual menu (<b>see below</b>).</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Control-Option-Command-click</font></b><font face="Courier" size="12"> to instead pop the Custom Properties contextual menu (<b>see below</b>).</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Control-Command-click</font></b><font face="Courier" size="12"> to instead pop the Handlers contextual menu (<b>see below</b>).</font></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">Save</font></b><font face="Courier" size="12"> -- Available for stack references only. Saves the referenced stack to disk. Note this will not save a stack that has not been previously saved -- if you create a new stack and try to save it for the first time using this command, nothing will happen.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Go</font></b><font face="Courier" size="12"> -- Available for stack and card references only. Goes to the card or stack referenced. If the card/stack is not available, turns the reference to the error color.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">TopLevel</font></b><font face="Courier" size="12"> -- Available for stack and card references only. Goes to the stack or card. Uses the TopLevel command, which makes the stack editable, assuming its cantModify is false. If the card/stack is not available, turns the reference to the error color.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Purge Stack...</font></b><font face="Courier" size="12"> -- Available for stack references only. Purges the stack and any associated mainstacks/substacks completely from memory. Any changes since the last save are lost. Offers a confirmation dialog. If the stack is not available, turns the reference to the error color.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Browse Controls</font></b><font face="Courier" size="12"> -- Available for stack, card, and group/background references only. Displays the controls that are part of the referenced stack/card/group. For stacks, displays the controls for the current card of that stack.</font></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">MainStack/SubStacks</font></b><font face="Courier" size="12"> -- Available for stack references only. If the stack is a mainstack, displays the substacks if any of the mainstack. If the stack is a substack, displays the mainstack of the substack. In either case, browses the controls in the stack chosen.</font></p>
+<p></p>
+<p><font face="Courier" size="12">----------</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Copy</font></b><font face="Courier" size="12"> -- Copies the currently selected list items to the clipboard. Copies names if names are displayed, IDs if IDs are displayed. You can then paste anywhere -- to the message box, for example.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Copy IDs</font></b><font face="Courier" size="12"> -- Copies the Long IDs of the selected objects to the clipboard. Long ID references are guaranteed unique, and will therefore always work.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Put</font></b><font face="Courier" size="12"> -- Puts the currently selected list items (into the Message Box).</font></p>
+<p></p>
+<p><font face="Courier" size="12">----------</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Edit Properties</font></b><font face="Courier" size="12"> -- Opens a new properties window for each of the selected object(s). Windows are arranged, and locked to the object they are opened for. NOTE: this will work even for controls that are not currently displayed. You can examine the properties for a control in any stack by selecting the stack on the stack menu, selecting the control you want, and selecting Edit Properties. <b>This feature works only with Revolution.</b></font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Edit Scripts</font></b><font face="Courier" size="12"> -- Edits the scripts of all selected object(s). Windows are arranged. Like Edit Properties, the control does not need to be displayed. You can edit the script of any control in any open stack.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Show Properties</font></b><font face="Courier" size="12"> -- Opens one properties window for all selected object(s). Only properties all the objects have in common are active. NOTE: this works on the selected controls <b>in the Revolution/MetaCard environment</b> -- you can only use the Show Properties command for controls in "this card" of the topStack.</font></p>
+<p></p>
+<p><font face="Courier" size="12">For other controls, you can use Edit Properties, the Properties contextual menu, the Custom Properties contextual menu, or the Set command in the Command Panel.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Count submenu</font></b><font face="Courier" size="12"> -- Counts the number of lines in the scripts of the hilited objects. Note that these commands simply count the number of lines. Comments count the same as regular code. So do blank lines. Also note that it is impossible to overcount -- the command automatically avoids re-counting grouped objects that appear on multiple cards. If you select an object twice (the object itself and a bookmark) it will not be duplicated in the count.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Scripts</font></b><font face="Courier" size="12"> -- Counts the total number of lines in the scripts of the hilited objects.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Enclosed Scripts</font></b><font face="Courier" size="12"> -- Counts the total number of lines in the scripts of the hilited objects, and all the objects they enclose. Using this on a mainstack will count every line of every script of every control in every card or background of every substack as well as the mainstack. </font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Bookmark</font></b><font face="Courier" size="12"> -- Bookmark all selected object(s) -- copies full references to them to the top of the list. Bookmarked objects don't need to be currently displayed, or even in a stack that is opened (you can't work with them if they're not open, but the reference is still intact). Bookmarked controls don't need to be from the same card, or the same stack. Bookmarked controls can be used much like regular items in the list: edit their scripts or properties, save them (if they are stack references) etc.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Remove</font></b><font face="Courier" size="12"> -- Removes selected bookmarked object(s).</font></p>
+<p></p>
+<p><font face="Courier" size="12">----------</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Remove All</font></b><font face="Courier" size="12"> -- Removes all bookmarked objects. Note that this command removes <b>all</b> bookmarks, not just the currently selected bookmarks.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Color...</font></b><font face="Courier" size="12"> -- Displays an ask dialog allowing you to enter any color you like (by name or triplet) and colors the selected bookmarked lines that color.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Bookmark Text...</font></b><font face="Courier" size="12"> -- Displays an ask dialog allowing you to enter any name you like and sets the text of the bookmarked lines that text.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Command...</font></b><font face="Courier" size="12"> -- Displays the Command Panel. See the section on the Command Panel below. Note that this disables the control list until you close the Command Panel.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Command submenu</font></b><font face="Courier" size="12"> -- Lists available saved command plugins. Command plugins are text files in the Navigator Commands folder in the Plugins folder. Any valid code for the Do button in the Command Panel can be saved as a command plugin. NOTE: there is nothing to prevent you from saving property sets as commands, but they won't work. Let me know if this would be particularly valuable to you.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- CONTEXTUAL MENU (PROPERTIES) --</font></b></p>
+<p><b><font face="Courier" size="12">----------------------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">Note that the behavior of the contextual menus has changed. Now, if you open a contextual menu by clicking on an item that isn't currently selected, that item will be selected and the contextual menu will apply only to that item. To apply a contextual menu to a selection of items, open the contextual menu by clicking on one of the selected items. <b>Control-Option-click</b> the list (alt-right click on PCs and Unix) to activate.</font></p>
+<p></p>
+<p><font face="Courier" size="12">Pops up a menu with every standard property that is common to all the selected objects.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">NOTE</font></b><font face="Courier" size="12">: The properties contextual menu will work on <b>all</b> the selected controls. You can select bookmarked controls and regular displayed controls, and set properties for all the controls at once.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Setting Properties Using the Properties Contextual Menu:</font></b></p>
+<p></p>
+<p><b><font face="Courier" size="12">Boolean Properties (True/False)</font></b><font face="Courier" size="12"> -- Each boolean property is an item on the menu, with a submenu for true/false. If all the selected objects have the same value for that property, the value (true or false) is checked. If the property is true for some objects and false for others, neither item is checked.</font></p>
+<p></p>
+<p><font face="Courier" size="12">To set a boolean property, select true or false on the submenu of the property you want to set.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Non-Boolean Properties</font></b><font face="Courier" size="12"> -- All other properties are simple menu items.</font></p>
+<p></p>
+<p><font face="Courier" size="12">To set a non-boolean property, select to the property you want to set. A dialog will ask what value you want to set it to. The default value provided will be the existing value for that property for the object you clicked on to get the contextual menu. <b>NOTE</b>: this means, for example, if you want to set the rect of several controls to the rect of one of them, you would select all the controls in the list, and then control-option-click on the one whose rect you want to set the others to. Select rect from the menu, and the ask dialog will contain the rect of the control you control-clicked. Just click OK, and the controls will get the rect of the control you control-option-clicked.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Example 1:</font></b><font face="Courier" size="12"> to hide a set of controls, select them, control-option-click one of them, and select false on the visible submenu.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Example 2:</font></b><font face="Courier" size="12"> you want to set the location of several controls to the location of one of them. Select all the controls in the list. <b>Control-Option-click</b> on the one whose location you want to set the others to. Select loc from the menu. The ask dialog will contain the loc of the control you control-option-clicked as a default. Just click OK, and the controls will get the loc of the control you control-option-clicked.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Add properties to the menu</font></b><font face="Courier" size="12">: the properties contextual menu includes all the properties in the "propertyNames" of the objects. Not all standard properties are listed in the propertyNames, and some properties are compound -- their component properties can be accessed by name, but aren't in the propertyNames function: the rect of an object is also the left, top, right, and bottom, for example. The colors property is another example.</font></p>
+<p></p>
+<p><font face="Courier" size="12">It is possible to add other property names to this menu in addition to the standard properties: the revNavigator stack has custom properties in the custom property set gSBAddPropsProp as follows:</font></p>
+<p></p>
+<p><font face="helvetica" size="12">Button</font></p>
+<p><font face="helvetica" size="12">Card</font></p>
+<p><font face="helvetica" size="12">Field</font></p>
+<p><font face="helvetica" size="12">Graphic</font></p>
+<p><font face="helvetica" size="12">Group</font></p>
+<p><font face="helvetica" size="12">Image</font></p>
+<p><font face="helvetica" size="12">Player</font></p>
+<p><font face="helvetica" size="12">Scrollbar</font></p>
+<p><font face="helvetica" size="12">Stack</font></p>
+<p></p>
+<p><font face="Courier" size="12">Each of these custom properties contains the list of additional property names to include on the menu for that type of object. For exmaple, "loc" is included in most of the above. Use the Add Properties... command to modify these values. See the Add Properties... entry in the Actions Menu section for details.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- CONTEXTUAL MENU (CUSTOM PROPERTIES) --</font></b></p>
+<p><b><font face="Courier" size="12">-----------------------------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">Note that the behavior of the contextual menus has changed. Now, if you open a contextual menu by clicking on an item that isn't currently selected, that item will be selected and the contextual menu will apply only to that item. To apply a contextual menu to a selection of items, open the contextual menu by clicking on one of the selected items. <b>Control-Option-Command-click</b> the list (control-alt-right click on PCs and Unix) to activate.</font></p>
+<p></p>
+<p><font face="Courier" size="12">Pops up a menu with every custom property that any of the selected objects has. (Let me know whether it would be better to do an intersection the way the standard properties does).</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">NOTE</font></b><font face="Courier" size="12">: The custom properties contextual menu will work on <b>all</b> the selected controls. You can select bookmarked controls and regular displayed controls, and set properties for all the controls at once.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Add New...</font></b><font face="Courier" size="12"> -- Displays the Ask dialog to get the name of the new custom property, then again to get the value for it.</font></p>
+<p></p>
+<p><font face="Courier" size="12">----------</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Setting Custom Properties Using the Properties Contextual Menu:</font></b></p>
+<p></p>
+<p><b><font face="Courier" size="12">Boolean Properties (True/False)</font></b><font face="Courier" size="12"> -- If any of the items on the menu has the custom property set to either true or false, the property will be displayed as a boolean property, with a submenu for true/false. If all the selected objects have the same boolean value for that property, the value (true or false) is checked. If the property is true for some objects and false for others, neither item is checked. Only the objects where the value is boolean will be considered when checkmarking the menu.</font></p>
+<p></p>
+<p><font face="Courier" size="12">To set a boolean property, select true or false on the submenu of the property you want to set. If you want to change a boolean custom property of an item to a non-boolean value, use the Set button on the Command Panel instead.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Non-Boolean Properties</font></b><font face="Courier" size="12"> -- All other properties are simple menu items.</font></p>
+<p></p>
+<p><font face="Courier" size="12">To set a non-boolean property, select to the property you want to set. A dialog will ask what value you want to set it to. The default value provided will be the existing value for that property for the object you clicked on to get the contextual menu.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- CONTEXTUAL MENU (HANDLERS) --</font></b></p>
+<p><b><font face="Courier" size="12">----------------------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">Available only if exactly one control is selected in the list. <b>Control-Command-click</b> the list (Control-right click on PCs and Unix) to activate. Note that the behavior of the contextual menus has changed. Now, if you control-command-click on an item that isn't currently selected, that item will be selected and the handler menu opened for that item.</font></p>
+<p></p>
+<p><font face="Courier" size="12">Displays a list of all the handlers in the object's script. If the object's script is empty, "Edit Script" will display.</font></p>
+<p></p>
+<p><font face="Courier" size="12">Select any handler in the menu to edit the script of the object and display the handler selected. If the object has no script, select "Edit Script" to edit its script and get started.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Call any handler</font></b><font face="Courier" size="12">: you can call any handler in the script by holding down the option (alt) key as you select a handler on the menu. An ask dialog will allow you to replace the parameter names with actual values. You can also cancel at that point -- this is a good way to copy a calling reference to a handler with all the arguments, for pasting into a handler.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- STACK MENU --</font></b></p>
+<p><b><font face="Courier" size="12">----------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">Allows you to select any user stack to examine with Navigator. The length of the menu is limited to the <b>Menu Limit</b> you set on the <b>Actions</b> menu. Use the Stack List to display more stacks.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">the topStack</font></b><font face="Courier" size="12"> -- The default "the topStack" makes it reflect the topStack always. </font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Select a stack by pointing to it</font></b><font face="Courier" size="12">: hold down the Option/Alt key while selecting "the topStack"; continue to hold down the Option/Alt key and place the pointer over the stack you want to browse. Release the Option/Alt key to browse the controls in the stack.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Stack List</font></b><font face="Courier" size="12"> -- Displays a list of your open stacks in the control list. Substacks are grouped with their mainStacks. Hold down the Option/Alt key to display a list of all stacks including development environment stacks.</font></p>
+<p></p>
+<p><font face="Courier" size="12">The menu is alphabetized by default; you can display the menu in the order returned by Revolution/MetaCard by holding down the <b>Shift</b> key while clicking the menu.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Inspect all open stacks</font></b><font face="Courier" size="12"> by holding down the <b>Option</b> key when clicking the menu.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">Go to the stack selected</font></b><font face="Courier" size="12"> (instead of setting it as the stack to examine) by holding down the <b>Command</b> key as you select it.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- CARD MENU --</font></b></p>
+<p><b><font face="Courier" size="12">---------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">Allows you to select any card to examine with Navigator. The length of the menu is limited to the <b>Menu Limit</b> you set on the <b>Actions</b> menu. If you have a large number of cards (or groups), you can display them in the list instead of in the menu by selecting "card list" ("background list"). Then you can use the contextual menu to display controls for the card (or group).</font></p>
+<p></p>
+<p><font face="Courier" size="12">The default "this card" makes it reflect whichever card is showing in the stack.</font></p>
+<p></p>
+<p><font face="Courier" size="12">By default, the cards are presented in their order within the stack. You can alphabetize the card menu by holding down the <b>Shift</b> key while clicking the menu.</font></p>
+<p></p>
+<p><font face="Courier" size="12">The card menu shows backgrounds (groups) instead if you hold down the <b>Option</b> key. Only backgrounds with the backgroundBehavior property set to true are displayed. You can see a list of all the backgrounds/groups in the control list by selecting "background list" on the menu. You can then browse the controls of a particular group by control-clicking it and selecting "Browse Controls."</font></p>
+<p></p>
+<p><font face="Courier" size="12">Go to the card selected (instead of setting it as the card to examine) by holding down the <b>Command</b> key as you select it.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- COMMAND PANEL --</font></b></p>
+<p><b><font face="Courier" size="12">-------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">Select <b>Command...</b> on the <b>Actions</b> menu or the contextual menu to display the <b>Command Panel</b>. At least one line must be hilited. Opening the Command Panel disables the control list. You have four buttons in the Command Panel: <b>Close</b>, <b>Set</b>, <b>Do, </b>and<b> Save</b>.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">CLOSE</font></b><font face="Courier" size="12"> -- closes the Command panel and enables the control list again.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">SET</font></b><font face="Courier" size="12"> -- takes the entries in the Command field and uses them to set properties on the selected objects. Any properties can be set to any values, including custom properties. The format for property/value pairs is this:</font></p>
+<p></p>
+<p><font face="Courier" size="12">propertyName=value</font></p>
+<p></p>
+<p><font face="Courier" size="12">No quotes are required. Multi-line values are allowed as long as they don't include an equals sign. You can set as many properties at a time as you like, so this would be fine:</font></p>
+<p></p>
+<p><font face="Courier" size="12">fillfore=red</font></p>
+<p><font face="Courier" size="12">rect=40,40,90,90</font></p>
+<p><font face="Courier" size="12">zMyCustomProperty=some value I use a lot</font></p>
+<p><font face="Courier" size="12">to keep track of stuff.</font></p>
+<p><font face="Courier" size="12">enabled=false</font></p>
+<p></p>
+<p><font face="Courier" size="12">In this example, note that "some value I use a lot to keep track of stuff" does <b>not</b> need to be quoted. If you quote it, the quotes will be included in the value of the property. Also note that it is multi-line. This command would change all the controls selected to red, make them the same size, disable them, and set a silly custom property on them.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">DO</font></b><font face="Courier" size="12"> -- runs the code in the Command field against each of the selected objects. This is extremely flexible. All looping and references are taken care of for you. This command is only available when using a licensed copy of Revolution -- it won't work in the Starter Kit.</font></p>
+<p></p>
+<p><font face="Courier" size="12">The following variables are available:</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">tCount</font></b><font face="Courier" size="12"> -- the number of selected controls.</font></p>
+<p><b><font face="Courier" size="12">tIndex</font></b><font face="Courier" size="12"> -- the number of the current control as the code executes on one control after another.</font></p>
+<p><b><font face="Courier" size="12">tID</font></b><font face="Courier" size="12"> -- the long id of the current control as the code executes</font></p>
+<p><b><font face="Courier" size="12">tIDList</font></b><font face="Courier" size="12"> -- An array of the long IDs of the selected controls. The index is the numbers 1, 2, 3...tCount.</font></p>
+<p><b><font face="Courier" size="12">tOwnerID</font></b><font face="Courier" size="12"> -- the long id of the owner of tID (the current object).</font></p>
+<p><b><font face="Courier" size="12">tCardID</font></b><font face="Courier" size="12"> -- the long id of the card that contains tID (the current object).</font></p>
+<p><b><font face="Courier" size="12">tStackID</font></b><font face="Courier" size="12"> -- the long id of the stack that contains tID (the current object).</font></p>
+<p><b><font face="Courier" size="12">tLastID</font></b><font face="Courier" size="12"> -- the long id of the previous control the code executed against. For the first control, it references the last.</font></p>
+<p><b><font face="Courier" size="12">tNextID</font></b><font face="Courier" size="12"> -- the long id of the next control the code will execute against. For the last control, it references the first.</font></p>
+<p></p>
+<p><font face="Courier" size="12">Note: tLastID and tNextID wrap. For the first object in the list, tLastID will be the id of the last object in the list. For the last object in the list, tNextID will be the id of the first object in the list.</font></p>
+<p></p>
+<p><font face="Courier" size="12">Also, the defaultStack is set for each object to the stack that contains it, so for a series of cards this will work:</font></p>
+<p></p>
+<p><font face="Courier" size="12">place background "menubar1" onto tID</font></p>
+<p></p>
+<p><font face="Courier" size="12">Your code is wrapped in a try...end try, so an error on one object won't stop the code from working for other controls. That also means that your code can fail without letting you know.</font></p>
+<p></p>
+<p><font face="Courier" size="12">It is very useful to know that a long id in a variable can be used as a complete reference to an object. Here is an example of code you might run against a set of selected controls:</font></p>
+<p></p>
+<p><font face="Courier" size="12">set the loc of tID to 50,(tIndex*30)</font></p>
+<p><font face="Courier" size="12">set the enabled of tID to not the enabled of tID</font></p>
+<p><font face="Courier" size="12">set the name of tID to ("another radio button" &amp;&amp; tIndex)</font></p>
+<p><font face="Courier" size="12">set zSomeCustomProp of tID to gSomeGlobalArray[tIndex]</font></p>
+<p><font face="Courier" size="12">-- etc.</font></p>
+<p></p>
+<p><font face="Courier" size="12">When you are writing code to execute with the Do button, you can display a dialog to offer the user (yourself) a choice. Here's an example of how to do that:</font></p>
+<p></p>
+<p><font face="Courier" size="12">if tIndex is 1 then</font></p>
+<p><font face="Courier" size="12">  setOptionLabel "Backgrounds:"</font></p>
+<p><font face="Courier" size="12">  put the backgroundNames of this stack into tNames</font></p>
+<p><font face="Courier" size="12">  setOptionListItems tNames</font></p>
+<p><font face="Courier" size="12">  showOptions</font></p>
+<p><font face="Courier" size="12">end if</font></p>
+<p></p>
+<p><font face="Courier" size="12">The first thing to notice is that the code is wrapped in an if statement. tIndex is the number of the loop iteration we're on. Putting the prompt code into an if based on "tIndex is 1" means this code will be executed only once no matter how many controls are selected. It will run the first time through, before the other loop code.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">setOptionLabel</font></b><font face="Courier" size="12"> sets a label in the dialog to whatever text you like. Use it as a prompt.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">setOptionListItems</font></b><font face="Courier" size="12"> will cause the prompt to display a list with the choices you give it. The list allows multiple selections.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">setOptionOneItems</font></b><font face="Courier" size="12"> will cause the prompt to display a popup menu with the items you provide.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">setOptionTwoItems</font></b><font face="Courier" size="12"> will cause the prompt to display a second popup menu with the items you provide.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">showOptions</font></b><font face="Courier" size="12"> actually displays the prompt. Execution of your code halts until the user (you) clicks OK or Cancel.</font></p>
+<p></p>
+<p><font face="Courier" size="12">When showOptions finishes, local variables will be set to the values chosen by the user (you) as follows:</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">tOptionList</font></b><font face="Courier" size="12"> will be the items selected in the list, if you displayed the list. Each item is a separate line. You might use it like this:</font></p>
+<p></p>
+<p><font face="Courier" size="12">if word 1 of tID is "card" then </font></p>
+<p><font face="Courier" size="12">  repeat for each line tBGName in tOptionList</font></p>
+<p><font face="Courier" size="12">    place background tBGName onto tID</font></p>
+<p><font face="Courier" size="12">  end repeat</font></p>
+<p><font face="Courier" size="12">end if</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">tOptionOne</font></b><font face="Courier" size="12"> is the choice made in the first popup if you showed it.</font></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">tOptionTwo</font></b><font face="Courier" size="12"> is the choice made in the second popup if you showed it.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">SAVE</font></b><font face="Courier" size="12"> -- saves code in the Command field as a plugin. Navigator supports any number of plugins, which are just text files that store the code to run. Plugin commands are listed at the bottom of the contextual menu.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- ISSUES --</font></b></p>
+<p><b><font face="Courier" size="12">------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">-- <b>KNOWN ISSUE</b> -- Script capture only works in Revolution 2.0, and  only works reliably if you are using the default view of scripts -- not single-handler view. I put in some code to try to switch to the default view, and it doesn't always succeed. In addition, sometimes the script doesn't seem to revert properly, so the current script gets applied as well as bookmarked (I've seen this even when the script contains errors.) Use at your own risk, your mileage may vary, etc. If you need this to work in 1.1.1, let me know. Also if you have any suggestions to make this work more reliably. </font></p>
+<p></p>
+<p><font face="Courier" size="12">-- <b>KNOWN (minor) ISSUE</b> -- Choosing specific cards/backgrounds depends on what the name of the card/background is to determine whether the name is an id or an actual name. In either case I get text, so a card with id 1002 and a card named "card id 1002" would both show with the name "card id 1002" A card named "card id 1002" with an actual id of some other number would cause a problem.</font></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- POSSIBLE ISSUE --</font></b><font face="Courier" size="12"> Show Properties doesn't perform the same checks the Revolution development environment does before sending the command to open a properties palette. This might lead to problems, or maybe it won't...</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- You tell me, it's a beta.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- PLANNED IMPROVEMENTS --</font></b></p>
+<p><b><font face="Courier" size="12">--------------------------</font></b></p>
+<p></p>
+<p></p>
+<p><font face="Courier" size="12">-- DONE, WooHoo! I would like to allow drag and drop re-ordering of the list. In live views, this would change the layering of controls or even cards.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- DONE, Woohoo! I'd like to be able to display a list of stacks with substacks in the list.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- I'd like to allow bookmarking the selected controls when you're _not_ displaying the live view.</font></p>
+<p></p>
+<p><font face="Courier" size="12">-- SORT OF: I'd like to put in a setting to limit the time spent building the list of controls. There are a few other processes that might conceivably need this as well.</font></p>
+<p></p>
+<p><font face="Courier" size="12">Thanks, and let me know if you find any bugs or add any code.</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b><font face="Courier" size="12">-- NAVIGATOR IS SHAREWARE --</font></b></p>
+<p><b><font face="Courier" size="12">----------------------------</font></b></p>
+<p></p>
+<p><font face="Courier" size="12">If it helps you develop in Revolution or MetaCard, please go to <b>www.inspiredlogic.com</b> and purchase this copy.</font></p>
+<p></p>
+<p><font face="Courier" size="12">Regards,</font></p>
+<p></p>
+<p><font face="Courier" size="12">Geoff Canyon</font></p>

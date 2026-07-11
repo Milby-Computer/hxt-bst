@@ -1,0 +1,192 @@
+{
+   "#mainstack": "revDocsEmacs Key Bindings Reference",
+   "revDocsEmacs Key Bindings Reference": {
+      "#name": "stack \"revDocsEmacs Key Bindings Reference\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Key Chart\"",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"Key\"",
+                  "customproperties": {
+                     "lineheight": null
+                  },
+                  "properties": {
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>A</p>\n<p>B</p>\n<p>D</p>\n<p>E</p>\n<p>F</p>\n<p>H</p>\n<p>K</p>\n<p>L</p>\n<p>N</p>\n<p>P</p>\n<p>V</p>\n<p>Y</p>\n<p>Home</p>\n<p>End</p>\n<p>Delete</p>",
+                     "id": "1003",
+                     "layer": "1",
+                     "lockText": true,
+                     "margins": "4",
+                     "name": "Key",
+                     "rect": "-3,24,59,246",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textAlign": "right",
+                     "textFont": "Verdana",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1004": {
+                  "#name": "field \"Option\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "hGrid": true,
+                     "hiliteColor": "172,172,172",
+                     "htmlText": "%file%: assets/revDocsEmacs Key Bindings Reference_1002_1004_htmlText.txt",
+                     "id": "1004",
+                     "layer": "6",
+                     "lockText": true,
+                     "margins": "4",
+                     "name": "Option",
+                     "rect": "218,24,344,238",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "traversalOn": false
+                  }
+               },
+               "1005": {
+                  "#name": "field \"Command\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "hGrid": true,
+                     "hiliteColor": "172,172,172",
+                     "htmlText": "%file%: assets/revDocsEmacs Key Bindings Reference_1002_1005_htmlText.txt",
+                     "id": "1005",
+                     "layer": "5",
+                     "lockText": true,
+                     "margins": "4",
+                     "name": "Command",
+                     "rect": "57,24,230,242",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Command-Option\"",
+                  "properties": {
+                     "borderColor": "0,0,0",
+                     "dontWrap": true,
+                     "hGrid": true,
+                     "hiliteColor": "172,172,172",
+                     "htmlText": "%file%: assets/revDocsEmacs Key Bindings Reference_1002_1006_htmlText.txt",
+                     "id": "1006",
+                     "layer": "7",
+                     "lockText": true,
+                     "margins": "4",
+                     "name": "Command-Option",
+                     "rect": "340,24,500,238",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "traversalOn": false
+                  }
+               },
+               "1010": {
+                  "#name": "field \"Command Key Label\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>Control</p>",
+                     "id": "1010",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "Command Key Label",
+                     "rect": "53,2,216,25",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textFont": "Verdana",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1011": {
+                  "#name": "field \"Option Key Label\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>Alt</p>",
+                     "id": "1011",
+                     "layer": "3",
+                     "lockText": true,
+                     "name": "Option Key Label",
+                     "rect": "215,2,339,25",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textFont": "Verdana",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "field \"Command-Option Key Label\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>Control-Alt</p>",
+                     "id": "1012",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "Command-Option Key Label",
+                     "rect": "336,2,496,25",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textFont": "Verdana",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "lastModDate": "976077429"
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Key Chart"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.5B2",
+         "hilitedLinkColor": "black",
+         "revDocsCategory": "User Interaction",
+         "revIsDocsStack": true,
+         "visitedLinkColor": "black"
+      },
+      "longID": "stack \"revDocsEmacs Key Bindings Reference\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "backColor": "white",
+         "bottomColor": "172,172,172",
+         "decorations": "default",
+         "fileName": "Emacs Key Bindings Referenc.rev",
+         "foreColor": "0,0,0",
+         "hiliteColor": "102,102,102",
+         "id": "1012",
+         "linkColor": "black",
+         "linkHiliteColor": "255,0,0",
+         "linkVisitedColor": "81,24,128",
+         "liveResizing": false,
+         "name": "revDocsEmacs Key Bindings Reference",
+         "rect": "90,186,591,431",
+         "resizable": false,
+         "shadowColor": "169,169,169",
+         "style": "modeless",
+         "textFont": "Verdana",
+         "textSize": "11",
+         "textStyle": "plain",
+         "title": "Emacs Key Bindings",
+         "topColor": "white",
+         "underlineLinks": false
+      },
+      "sharedGroupIDs": null
+   }
+}

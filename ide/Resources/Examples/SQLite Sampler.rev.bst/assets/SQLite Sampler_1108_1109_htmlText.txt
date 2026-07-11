@@ -1,0 +1,17 @@
+<p><font face="Verdana" size="18">Update Data</font></p>
+<p></p>
+<p>You use the UPDATE command to edit existing row data.</p>
+<p></p>
+<p><font face="Courier New" size="14">put "UPDATE &lt;table_name&gt; SET &lt;col1name&gt;=&lt;value1&gt;,&lt;col2name&gt;=&lt;value2&gt;...</font></p>
+<p><font face="Courier New" size="14">WHERE &lt;column_name&gt; = &lt;some_value&gt;" into tSQL</font></p>
+<p></p>
+<p><font face="Courier New" size="12">put revdb_execute(&lt;connectionID&gt;,tSQL) into tTmp</font></p>
+<p><font face="Courier New" size="12">--&gt; tTmp gives you the number of records updated</font></p>
+<p></p>
+<p><b><font face="Tahoma" size="11">Try it</font></b></p>
+<p>Click the <b><font face="Tahoma" size="11">Refresh Table</font></b>  button to view the contents of the <b><font face="Tahoma" size="11">users</font></b> table</p>
+<p>Click on any cell to edit the contents of the data for that row and column.</p>
+<p></p>
+<p><i><b><font face="Tahoma" size="11">Tip:</font></b></i></p>
+<p>Remember to use <b><font face="Tahoma" size="11">revdb_execute</font></b> to run a SQL statement when you expect no records to be returned.</p>
+<p>Use <b><font face="Tahoma" size="11">revdb_querylist</font></b> when you run a SQL query and you expect records to be returned.</p>

@@ -1,0 +1,92 @@
+{
+   "#mainstack": "com.livecode.pi.texalign",
+   "com.livecode.pi.texalign": {
+      "#name": "stack \"com.livecode.pi.texalign\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1012": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1011": {
+                        "#name": "widget id 1011",
+                        "$kind": "com.livecode.widget.segmented",
+                        "$state": {
+                           "multiSelect": false,
+                           "segmentDisplay": "icons",
+                           "segmentIcons": [
+                              "align left",
+                              "align center",
+                              "align right"
+                           ],
+                           "segmentLabels": [
+                              "left",
+                              "center",
+                              "right"
+                           ],
+                           "segmentMinWidth": [
+                              "30",
+                              "30",
+                              "30"
+                           ],
+                           "segmentNames": [
+                              "left",
+                              "center",
+                              "right"
+                           ],
+                           "selectedIcons": [
+                              "align left",
+                              "align center",
+                              "align right"
+                           ],
+                           "selectedLabelColor": "255,255,255",
+                           "selectedSegment": null,
+                           "showFrameBorder": true,
+                           "toggleHilites": false
+                        },
+                        "properties": {
+                           "id": "1011",
+                           "name": "widget id 1011",
+                           "rect": "129,82,218,104"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1012",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "129,82,218,104"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "2"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1012"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.texalign\"",
+      "properties": {
+         "fileName": "com.livecode.pi.textalign.livecode",
+         "id": "1012",
+         "name": "com.livecode.pi.texalign",
+         "rect": "236,163,826,563"
+      },
+      "sharedGroupIDs": null
+   }
+}

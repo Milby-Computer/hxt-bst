@@ -1,0 +1,10 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> printCardsWith stringToFind,fieldName</p>
+<p>  <font color="#0000FF">unmark</font> all cards</p>
+<p>  <font color="#980517">if</font> fieldName is empty <font color="#980517">then</font> <font color="#68228B">-- search all fields:</font></p>
+<p>    <font color="#FF0000">mark</font> cards by finding stringToFind</p>
+<p>  <font color="#980517">else</font> <font color="#68228B">-- search the specified field:</font></p>
+<p>    <font color="#FF0000">mark</font> cards by finding stringToFind in field fieldName</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#0000FF">print</font> marked cards</p>
+<p><font color="#980517">end</font> printCardsWith</p>

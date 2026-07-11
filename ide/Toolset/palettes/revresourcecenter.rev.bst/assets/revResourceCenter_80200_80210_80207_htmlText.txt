@@ -1,0 +1,33 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>The <font face="Courier" size="11">mouseUp</font><font face="helvetica" size="12"> message is sent when the user clicks an object --in this case, a button. It's possible to include this code in a different handler; putting it in a button's </font><font face="Courier" size="11">mouseUp</font><font face="helvetica" size="12"> handler is just convenient for this example. When the </font><font face="Courier" size="11">mouseUp</font><font face="helvetica" size="12"> message is sent to the button, it triggers the mouseUp handler.</font></p>
+<p></p>
+<p>This handler displays the endless verses of the song "99 Bottles of Beer on the Wall". In case you're not familiar with the song, it goes like this:</p>
+<p></p>
+<p><i><font face="Lucida Grande" size="11">&#9;99 bottles of beer on the wall, 99 bottles of beer</font></i></p>
+<p><i><font face="Lucida Grande" size="11">&#9;You take one down and pass it around, 98 bottles of beer on the wall.</font></i></p>
+<p></p>
+<p><i><font face="Lucida Grande" size="11">&#9;98 bottles of beer on the wall, 98 bottles of beer</font></i></p>
+<p><i><font face="Lucida Grande" size="11">&#9;You take one down and pass it around, 97 bottles of beer on the wall.</font></i></p>
+<p></p>
+<p>...and so on. The song continues, decreasing the number of bottles by one with each verse, until there's just one bottle left:</p>
+<p></p>
+<p><i><font face="Lucida Grande" size="11">&#9;One more bottle of beer on the wall, one more bottle of beer</font></i></p>
+<p><i><font face="Lucida Grande" size="11">&#9;You take one down and pass it around, no more bottles of beer on the wall.</font></i></p>
+<p></p>
+<p><i><font face="Lucida Grande" size="11">&#9;No more bottles of beer on the wall, no more bottles of beer</font></i></p>
+<p><i><font face="Lucida Grande" size="11">&#9;You go to the store and buy some more, 99 bottles of beer on the wall.</font></i></p>
+<p></p>
+<p><i><font face="Lucida Grande" size="11">&#9;99 bottles of beer on the wall...</font></i></p>
+<p></p>
+<p>...and the song starts over from the beginning.</p>
+<p></p>
+<p>The example displays the song interactively, one verse at a time. The handler assumes there is a field named "Song" to display successive verses. When the user clicks, the handler starts a repeat loop to display each verse of the song from the beginning. The "bottlesLeft" variable keeps track of which verse is next: it starts out at 99, and each time through the loop, it's decreased by one. After a one-second delay imposed by the <font face="Courier" size="11">wait</font><font face="Lucida Grande" size="11"> command</font><font face="helvetica" size="12">, the handler returns to the top of the loop and displays the next verse. You can change the delay time, depending on how long you think it will take to read one verse and how long you want the song to take.  For more information on using repeat loops, see the section on </font><i><font face="Lucida Grande" size="11">Repeat Loops</font></i><font face="helvetica" size="12"> in the </font><i><font face="Lucida Grande" size="11">User's Guide</font></i><font face="helvetica" size="12">.</font></p>
+<p></p>
+<p>When the song finishes, and the number of bottles left is zero, the handler sets it back to 99 to start the song over from the beginning:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">subtract</font><font face="Courier" size="11"> 1 from bottlesLeft </font><font face="Courier" size="11" color="#68228B">-- for the next verse</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">if</font><font face="Courier" size="11"> bottlesLeft &lt; zero </font><font face="Courier" size="11" color="#980517">then</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> 99 into bottlesLeft</font></p>
+<p></p>
+<p>The loop continues for all the verses, then starts over again, until the user clicks the button and stops the song. The repeat loop ends when the mouseClick function returns true, which happens if the mouse has been clicked.</p>
+<p></p>
+<p><font color="#404040">Note:</font>  This example was inspired by a discussion on the Revolution mailing list with David Vaughan. The topic was in turn inspired by the "99 Bottles of Beer" site at <font color="#0000FF">/</font><a href="http://99-bottles-of-beer.ls-la.net"><font face="helvetica" size="12" color="#0000FF">http://99-bottles-of-beer.ls-la.net</font></a><font face="helvetica" size="12">, featuring 99 Bottles of Beer code in 454 programming languages (and counting).</font></p>

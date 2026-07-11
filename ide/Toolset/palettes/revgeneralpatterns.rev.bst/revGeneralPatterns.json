@@ -1,0 +1,449 @@
+{
+   "#mainstack": "revGeneralPatterns",
+   "revGeneralPatterns": {
+      "#name": "stack \"revGeneralPatterns\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "208001": {
+                  "#name": "image \"1.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208001",
+                     "layer": "1",
+                     "name": "1.gif",
+                     "rect": "5,20,37,52",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208001_text.png"
+                  }
+               },
+               "208002": {
+                  "#name": "image \"10.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208002",
+                     "layer": "2",
+                     "name": "10.gif",
+                     "rect": "39,20,71,52",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208002_text.png"
+                  }
+               },
+               "208003": {
+                  "#name": "image \"11.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208003",
+                     "layer": "3",
+                     "name": "11.gif",
+                     "rect": "73,20,105,52",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208003_text.png"
+                  }
+               },
+               "208004": {
+                  "#name": "image \"12.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208004",
+                     "layer": "4",
+                     "name": "12.gif",
+                     "rect": "107,20,139,52",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208004_text.png"
+                  }
+               },
+               "208005": {
+                  "#name": "image \"13.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208005",
+                     "layer": "5",
+                     "name": "13.gif",
+                     "rect": "141,20,173,52",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208005_text.png"
+                  }
+               },
+               "208006": {
+                  "#name": "image \"14.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208006",
+                     "layer": "6",
+                     "name": "14.gif",
+                     "rect": "175,20,207,52",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208006_text.png"
+                  }
+               },
+               "208007": {
+                  "#name": "image \"15.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208007",
+                     "layer": "7",
+                     "name": "15.gif",
+                     "rect": "209,20,241,52",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208007_text.png"
+                  }
+               },
+               "208008": {
+                  "#name": "image \"16.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208008",
+                     "layer": "8",
+                     "name": "16.gif",
+                     "rect": "184,208,216,240",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208008_text.png"
+                  }
+               },
+               "208009": {
+                  "#name": "image \"17.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208009",
+                     "layer": "9",
+                     "name": "17.gif",
+                     "rect": "220,200,252,232",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208009_text.png"
+                  }
+               },
+               "208010": {
+                  "#name": "image \"18.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208010",
+                     "layer": "10",
+                     "name": "18.gif",
+                     "rect": "8,180,40,212",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208010_text.png"
+                  }
+               },
+               "208011": {
+                  "#name": "image \"19.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208011",
+                     "layer": "11",
+                     "name": "19.gif",
+                     "rect": "60,176,92,208",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208011_text.png"
+                  }
+               },
+               "208012": {
+                  "#name": "image \"2.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208012",
+                     "layer": "12",
+                     "name": "2.gif",
+                     "rect": "100,180,132,212",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208012_text.png"
+                  }
+               },
+               "208013": {
+                  "#name": "image \"20.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208013",
+                     "layer": "13",
+                     "name": "20.gif",
+                     "rect": "140,184,172,216",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208013_text.png"
+                  }
+               },
+               "208014": {
+                  "#name": "image \"21.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208014",
+                     "layer": "14",
+                     "name": "21.gif",
+                     "rect": "180,164,212,196",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208014_text.png"
+                  }
+               },
+               "208015": {
+                  "#name": "image \"22.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208015",
+                     "layer": "15",
+                     "name": "22.gif",
+                     "rect": "220,164,252,196",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208015_text.png"
+                  }
+               },
+               "208016": {
+                  "#name": "image \"23.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208016",
+                     "layer": "16",
+                     "name": "23.gif",
+                     "rect": "84,140,116,172",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208016_text.png"
+                  }
+               },
+               "208017": {
+                  "#name": "image \"24.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208017",
+                     "layer": "17",
+                     "name": "24.gif",
+                     "rect": "52,132,84,164",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208017_text.png"
+                  }
+               },
+               "208018": {
+                  "#name": "image \"25.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208018",
+                     "layer": "18",
+                     "name": "25.gif",
+                     "rect": "12,140,44,172",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208018_text.png"
+                  }
+               },
+               "208019": {
+                  "#name": "image \"26.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208019",
+                     "layer": "19",
+                     "name": "26.gif",
+                     "rect": "140,144,172,176",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208019_text.png"
+                  }
+               },
+               "208020": {
+                  "#name": "image \"27.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208020",
+                     "layer": "20",
+                     "name": "27.gif",
+                     "rect": "180,128,212,160",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208020_text.png"
+                  }
+               },
+               "208021": {
+                  "#name": "image \"28.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208021",
+                     "layer": "21",
+                     "name": "28.gif",
+                     "rect": "5,56,37,88",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208021_text.png"
+                  }
+               },
+               "208022": {
+                  "#name": "image \"29.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208022",
+                     "layer": "22",
+                     "name": "29.gif",
+                     "rect": "39,56,71,88",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208022_text.png"
+                  }
+               },
+               "208023": {
+                  "#name": "image \"3.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208023",
+                     "layer": "23",
+                     "name": "3.gif",
+                     "rect": "73,56,105,88",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208023_text.png"
+                  }
+               },
+               "208024": {
+                  "#name": "image \"30.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208024",
+                     "layer": "24",
+                     "name": "30.gif",
+                     "rect": "107,56,139,88",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208024_text.png"
+                  }
+               },
+               "208025": {
+                  "#name": "image \"31.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208025",
+                     "layer": "25",
+                     "name": "31.gif",
+                     "rect": "141,56,173,88",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208025_text.png"
+                  }
+               },
+               "208026": {
+                  "#name": "image \"32.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208026",
+                     "layer": "26",
+                     "name": "32.gif",
+                     "rect": "175,56,207,88",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208026_text.png"
+                  }
+               },
+               "208027": {
+                  "#name": "image \"33.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208027",
+                     "layer": "27",
+                     "name": "33.gif",
+                     "rect": "209,56,241,88",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208027_text.png"
+                  }
+               },
+               "208028": {
+                  "#name": "image \"34.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208028",
+                     "layer": "28",
+                     "name": "34.gif",
+                     "rect": "224,124,256,156",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208028_text.png"
+                  }
+               },
+               "208029": {
+                  "#name": "image \"4.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208029",
+                     "layer": "29",
+                     "name": "4.gif",
+                     "rect": "84,96,116,128",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208029_text.png"
+                  }
+               },
+               "208030": {
+                  "#name": "image \"5.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208030",
+                     "layer": "30",
+                     "name": "5.gif",
+                     "rect": "136,96,168,128",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208030_text.png"
+                  }
+               },
+               "208031": {
+                  "#name": "image \"6.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208031",
+                     "layer": "31",
+                     "name": "6.gif",
+                     "rect": "52,96,84,128",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208031_text.png"
+                  }
+               },
+               "208032": {
+                  "#name": "image \"7.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208032",
+                     "layer": "32",
+                     "name": "7.gif",
+                     "rect": "12,96,44,128",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208032_text.png"
+                  }
+               },
+               "208033": {
+                  "#name": "image \"8.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208033",
+                     "layer": "33",
+                     "name": "8.gif",
+                     "rect": "172,96,204,128",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208033_text.png"
+                  }
+               },
+               "208034": {
+                  "#name": "image \"9.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "208034",
+                     "layer": "34",
+                     "name": "9.gif",
+                     "rect": "212,88,244,120",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralPatterns_1002_208034_text.png"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": null
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.6.1"
+      },
+      "longID": "stack \"revGeneralPatterns\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "destroyStack": true,
+         "destroyWindow": true,
+         "fileName": "revgeneralpatterns.rev",
+         "id": "208034",
+         "liveResizing": false,
+         "name": "revGeneralPatterns",
+         "rect": "80,258,336,514"
+      },
+      "sharedGroupIDs": null
+   }
+}

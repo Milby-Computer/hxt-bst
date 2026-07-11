@@ -1,0 +1,7 @@
+<p><font face="Verdana" size="18">SQL you should know</font></p>
+<p></p>
+<p>SQL stands for &quot;Structured Query Language&quot; and it's what you use to talk to and control the database. If you're new to databases, there's a <a href="http://www.w3schools.com/sql/default.asp">great SQL tutorial</a> which takes only 15 minutes on the web. A SQL compliant database (which SQLite is) stores data in tables. Each table has a unique name. Each table has records with data. Each record is stored in a row of the table. Each column holds a specific piece of information. Columns are generally named to show the kind of data they contain. For instance:</p>
+<p></p>
+<p></p>
+<p>This table is named &quot;USERS&quot; and has the following fields (columns): User ID, Name, Email Address</p>
+<p>For each field there is a corresponding record entry (rows). There are 4 total records shown here.</p>

@@ -1,0 +1,65 @@
+altId
+alwaysBuffer
+!c	True
+	False
+angle
+blendLevel
+borderWidth
+bottom
+cantSelect
+	True
+!c	False
+colors
+constantMask
+	True
+!c	False
+currentFrame
+disabled
+	True
+!c	False
+dontDither
+	True
+!c	False
+fileName
+frameCount
+height
+hotSpot
+id
+ink
+layer
+left
+loc
+lockLoc
+	True
+!c	False
+name
+opaque
+!c	True
+	False
+palindromeFrames
+	True
+!c	False
+rect
+repeatCount
+right
+showBorder
+	True
+!c	False
+showFocusBorder
+!c	True
+	False
+size
+threeD
+!c	True
+	False
+toolTip
+top
+traversalOn
+	True
+!c	False
+visible
+!c	True
+	False
+width
+xHot
+yHot

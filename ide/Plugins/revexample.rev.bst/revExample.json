@@ -1,0 +1,365 @@
+{
+   "#mainstack": "revExample",
+   "revExample": {
+      "#name": "stack \"revExample\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002\n1023",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Example\"",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field id 1003",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Plugin message</p>",
+                     "id": "1003",
+                     "layer": "3",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "33,108,155,129",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1004": {
+                  "#name": "field \"Plugin Message\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>revSaveStackRequest</p>",
+                     "id": "1004",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "Plugin Message",
+                     "opaque": false,
+                     "rect": "155,108,332,129",
+                     "showFocusBorder": false,
+                     "style": "transparent"
+                  }
+               },
+               "1006": {
+                  "#name": "field id 1006",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Transcript message</p>",
+                     "id": "1006",
+                     "layer": "5",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "33,137,155,158",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1007": {
+                  "#name": "field \"Transcript Message\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>saveStackRequest</p>",
+                     "id": "1007",
+                     "layer": "7",
+                     "lockText": true,
+                     "name": "Transcript Message",
+                     "opaque": false,
+                     "rect": "155,137,332,158",
+                     "showFocusBorder": false,
+                     "style": "transparent"
+                  }
+               },
+               "1008": {
+                  "#name": "field id 1008",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Target</p>",
+                     "id": "1008",
+                     "layer": "6",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "33,166,155,187",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1009": {
+                  "#name": "field \"Target\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>card id 1002 of stack \"/Users/kevinmiller/Desktop/Revolution 2.7 Frontier/Plugins/revexample.rev\"</p>",
+                     "id": "1009",
+                     "layer": "8",
+                     "lockText": true,
+                     "name": "Target",
+                     "opaque": false,
+                     "rect": "155,166,332,187",
+                     "showFocusBorder": false,
+                     "style": "transparent"
+                  }
+               },
+               "1010": {
+                  "#name": "field \"Log\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "41,249,332,339",
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scaleBottomDistance": "-41",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom"
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "%file%: assets/revExample_1002_1010_htmlText.txt",
+                     "id": "1010",
+                     "layer": "9",
+                     "lockText": true,
+                     "name": "Log",
+                     "rect": "41,252,332,343",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1012": {
+                  "#name": "field id 1012",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Message log</p>",
+                     "id": "1012",
+                     "layer": "10",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "41,229,145,252",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1013": {
+                  "#name": "field id 1013",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Time</p>",
+                     "id": "1013",
+                     "layer": "11",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "33,195,155,216",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1014": {
+                  "#name": "field \"Time\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>8:26:09 PM</p>",
+                     "id": "1014",
+                     "layer": "12",
+                     "lockText": true,
+                     "name": "Time",
+                     "opaque": false,
+                     "rect": "155,195,332,216",
+                     "showFocusBorder": false,
+                     "style": "transparent"
+                  }
+               },
+               "1032": "#shared group",
+               "1037": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "1005186955787\n1005179755868\n",
+                  "total": "14"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Example"
+            }
+         },
+         "1023": {
+            "#name": "card \"Help\"",
+            "childcontrols": {
+               "1025": {
+                  "#name": "field \"New Field 1\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "41,105,331,409",
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scaleBottomDistance": "-41",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleRight": false,
+                        "Master,scaleRightObjectRef": null,
+                        "Master,scaleTop": false,
+                        "Master,scaleTopObjectRef": null
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "%file%: assets/revExample_1023_1025_htmlText.txt",
+                     "id": "1025",
+                     "layer": "3",
+                     "lockText": true,
+                     "name": "New Field 1",
+                     "rect": "41,108,331,340"
+                  }
+               },
+               "1032": "#shared group",
+               "1037": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "1005186955787\n1005184650430\n",
+                  "total": "5"
+               }
+            },
+            "properties": {
+               "id": "1023",
+               "layer": "2",
+               "name": "Help"
+            }
+         },
+         "1032": {
+            "#name": "group id 1032",
+            "childcontrols": {
+               "1031": {
+                  "#name": "button \"Tabs\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "21,55,350,380",
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scaleBottomDistance": "-21",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleLeft": false,
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleTop": false,
+                        "Master,scaleTopObjectRef": null
+                     }
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "id": "1031",
+                     "layer": "2",
+                     "menuMode": "tabbed",
+                     "name": "Tabs",
+                     "rect": "21,58,350,363",
+                     "showName": false,
+                     "style": "menu",
+                     "text": "Example\nHelp",
+                     "textFont": "Lucida Grande",
+                     "textSize": "13",
+                     "textStyle": "plain"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1032",
+               "layer": "1",
+               "rect": "9,46,362,375"
+            }
+         },
+         "1037": {
+            "#name": "group \"Title\"",
+            "childcontrols": {
+               "1005": {
+                  "#name": "field \"Title\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "foreColor": "0,0,102",
+                     "htmlText": "<p>Message Received !</p>",
+                     "id": "1005",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "Title",
+                     "opaque": false,
+                     "rect": "15,7,344,43",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textFont": "ms sans serif",
+                     "textHeight": "32",
+                     "textSize": "24",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1037",
+               "layer": "13",
+               "name": "Title",
+               "rect": "11,3,348,47"
+            }
+         }
+      },
+      "customproperties": {
+         "cStartMessage": "This stack demonstrates the Revolution plugins.  Contine work as normal and watch this stack receive various environment messages. For example, whenever you select a different object, a message is sent.\n",
+         "Tabs": false
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1039"
+         }
+      },
+      "longID": "stack \"revExample\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "destroyStack": true,
+         "destroyWindow": true,
+         "fileName": "revexample.rev",
+         "id": "1039",
+         "liveResizing": false,
+         "maxWidth": "372",
+         "minHeight": "381",
+         "minWidth": "372",
+         "name": "revExample",
+         "rect": "403,259,775,643",
+         "title": "Example"
+      },
+      "sharedGroupIDs": "1032\n1037"
+   }
+}

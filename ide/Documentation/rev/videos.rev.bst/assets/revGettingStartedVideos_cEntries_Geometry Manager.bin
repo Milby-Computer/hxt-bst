@@ -1,0 +1,10 @@
+category=Building an Application using Objects
+description=<p>You may want to make your application window resizable.  The Geometry Manager is a point and click tool which enables you to specify how objects should reposition and resize themselves when the stack is resized.  This tutorial shows you how to use it.</p>\n<p></p>
+duration=5:19
+filename=geometry.avi
+level=1
+licensed=true
+name=Geometry Manager
+scripts=<p></p>\n<p></p>
+title=Geometry Manager: Automatically Scaling Objects as the Window Resizes
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;What is the Geometry Manager</p>\n<p>-&#9;When to use the Geometry Manager</p>\n<p>-&#9;Using the Geometry Manager to lay out a dialog</p>\n<p>-&#9;Using the Geometry Manager with multiple cards</p>\n<p></p>

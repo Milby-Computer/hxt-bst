@@ -1,0 +1,22 @@
+Script "stack_revOnline_field_id_261438"
+
+/*
+# Name: field "Submit" of group "tag template" of card "templates" of stack "revOnline"
+# ID: field id 261438 of group id 261435 of card id 157677 of stack "revOnline"
+# Hash: OiV6EIy0pieuWfwT/7mtXA==
+*/
+
+
+constant kColor = "251,213,79"
+
+on mousemove
+   if the mousetext is not empty then
+      set the textColor of me to kColor
+   else
+      set the textColor of me to "white"
+   end if
+end mousemove
+
+on mouseleave
+   set the textColor of me to "white"
+end mouseleave

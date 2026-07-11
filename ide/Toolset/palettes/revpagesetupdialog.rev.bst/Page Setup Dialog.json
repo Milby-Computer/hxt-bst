@@ -1,0 +1,618 @@
+{
+   "#mainstack": "Page Setup Dialog",
+   "Page Setup Dialog": {
+      "#name": "stack \"Page Setup Dialog\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"card id 1002\"",
+            "childcontrols": {
+               "1018": {
+                  "#name": "group \"Paper Size\"",
+                  "childcontrols": {
+                     "1007": {
+                        "#name": "button \"Paper size\"",
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1007",
+                           "label": "A4",
+                           "layer": "2",
+                           "menuMode": "option",
+                           "name": "Paper size",
+                           "rect": "90,186,380,208",
+                           "style": "menu",
+                           "text": "A4\nA5\nLetter\nLegal\nA3\nA6\nExecutive\nLedger\nCustom",
+                           "textAlign": "left",
+                           "toolTip": "Specifies the size of paper, envelope or other print media you want to use",
+                           "traversalOn": false
+                        }
+                     },
+                     "1011": {
+                        "#name": "field \"Paper Width Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Width:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Width:</p>",
+                           "id": "1011",
+                           "layer": "3",
+                           "lockText": true,
+                           "name": "Paper Width Label",
+                           "opaque": false,
+                           "rect": "20,216,68,237",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "toolTip": "Valid units: \n  pt   (points)\n  mm (millimetres)\n  cm  (centimetres)\n  in    (inches)\n  \"     (inches)",
+                           "traversalOn": false
+                        }
+                     },
+                     "1013": {
+                        "#name": "field \"Paper Width\"",
+                        "properties": {
+                           "disabled": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>8.26 in</p>",
+                           "id": "1013",
+                           "layer": "4",
+                           "name": "Paper Width",
+                           "rect": "91,216,191,237",
+                           "toolTip": "Valid units: \n  pt   (points)\n  mm (millimetres)\n  cm  (centimetres)\n  in    (inches)\n  \"     (inches)"
+                        }
+                     },
+                     "1015": {
+                        "#name": "field \"Paper Height Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Height:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Height:</p>",
+                           "id": "1015",
+                           "layer": "5",
+                           "lockText": true,
+                           "name": "Paper Height Label",
+                           "opaque": false,
+                           "rect": "210,215,260,236",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "toolTip": "Valid units: \n  pt   (points)\n  mm (millimetres)\n  cm  (centimetres)\n  in    (inches)\n  \"     (inches)",
+                           "traversalOn": false
+                        }
+                     },
+                     "1017": {
+                        "#name": "field \"Paper Height\"",
+                        "properties": {
+                           "disabled": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>11.69 in</p>",
+                           "id": "1017",
+                           "layer": "6",
+                           "name": "Paper Height",
+                           "rect": "280,215,380,235",
+                           "toolTip": "Valid units: \n  pt   (points)\n  mm (millimetres)\n  cm  (centimetres)\n  in    (inches)\n  \"     (inches)"
+                        }
+                     },
+                     "1096": {
+                        "#name": "group id 1096",
+                        "childcontrols": {
+                           "1005": {
+                              "#name": "field \"Paper size label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Size:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Size:</p>",
+                                 "id": "1005",
+                                 "layer": "8",
+                                 "lockText": true,
+                                 "name": "Paper size label",
+                                 "opaque": false,
+                                 "rect": "20,185,60,206",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "toolTip": "Specifies the size of paper, envelope or other print media you want to use",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1096",
+                           "layer": "7",
+                           "rect": "16,181,64,210"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1018",
+                     "label": "Paper",
+                     "layer": "1",
+                     "lockLoc": true,
+                     "name": "Paper Size",
+                     "rect": "10,170,390,247",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "1024": {
+                  "#name": "button \"Ok\"",
+                  "properties": {
+                     "id": "1024",
+                     "layer": "9",
+                     "name": "Ok",
+                     "rect": "210,418,292,441",
+                     "traversalOn": false
+                  }
+               },
+               "1026": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1026",
+                     "layer": "10",
+                     "name": "Cancel",
+                     "rect": "310,418,392,441",
+                     "traversalOn": false
+                  }
+               },
+               "1043": {
+                  "#name": "group \"Paper Orientation\"",
+                  "childcontrols": {
+                     "1036": {
+                        "#name": "button \"Portrait\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1036",
+                           "layer": "12",
+                           "name": "Portrait",
+                           "opaque": false,
+                           "rect": "20,274,102,297",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left",
+                           "toolTip": "Specifies how the document will appear on the printed page"
+                        }
+                     },
+                     "1040": {
+                        "#name": "button \"Landscape\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1040",
+                           "layer": "13",
+                           "name": "Landscape",
+                           "opaque": false,
+                           "rect": "20,313,102,336",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left",
+                           "toolTip": "Specifies how the document will appear on the printed page"
+                        }
+                     },
+                     "4366": {
+                        "#name": "button \"Reverse\"",
+                        "properties": {
+                           "disabled": true,
+                           "hiliteBorder": false,
+                           "id": "4366",
+                           "layer": "14",
+                           "name": "Reverse",
+                           "opaque": false,
+                           "rect": "20,354,102,377",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "1",
+                     "id": "1043",
+                     "label": "Orientation",
+                     "layer": "11",
+                     "lockLoc": true,
+                     "name": "Paper Orientation",
+                     "rect": "10,250,142,390",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "1057": {
+                  "#name": "group \"Print Margins\"",
+                  "childcontrols": {
+                     "1045": {
+                        "#name": "field \"Left Margin\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "htmlText": "<p>1 in</p>",
+                           "id": "1045",
+                           "layer": "16",
+                           "name": "Left Margin",
+                           "rect": "216,266,266,286",
+                           "toolTip": "Sets the printing area of the page,\nthe printer will only print within these margins"
+                        }
+                     },
+                     "1047": {
+                        "#name": "field \"Top Margin\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "htmlText": "<p>1 in</p>",
+                           "id": "1047",
+                           "layer": "17",
+                           "name": "Top Margin",
+                           "rect": "216,306,266,327",
+                           "toolTip": "Sets the printing area of the page,\nthe printer will only print within these margins"
+                        }
+                     },
+                     "1049": {
+                        "#name": "field \"Bottom Margin\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "htmlText": "<p>1 in</p>",
+                           "id": "1049",
+                           "layer": "18",
+                           "name": "Bottom Margin",
+                           "rect": "326,306,376,327",
+                           "toolTip": "Sets the printing area of the page,\nthe printer will only print within these margins"
+                        }
+                     },
+                     "1051": {
+                        "#name": "field \"Right Margin\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "htmlText": "<p>1 in</p>",
+                           "id": "1051",
+                           "layer": "19",
+                           "name": "Right Margin",
+                           "rect": "326,266,376,287",
+                           "toolTip": "Sets the printing area of the page,\nthe printer will only print within these margins"
+                        }
+                     },
+                     "1053": {
+                        "#name": "field \"LeftMarginLabel\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Left:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Left:</p>",
+                           "id": "1053",
+                           "layer": "20",
+                           "lockText": true,
+                           "name": "LeftMarginLabel",
+                           "opaque": false,
+                           "rect": "156,266,206,287",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "toolTip": "Sets the printing area of the page,\nthe printer will only print within these margins",
+                           "traversalOn": false
+                        }
+                     },
+                     "1054": {
+                        "#name": "field \"Top Margin Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Top:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Top:</p>",
+                           "id": "1054",
+                           "layer": "21",
+                           "lockText": true,
+                           "name": "Top Margin Label",
+                           "opaque": false,
+                           "rect": "156,306,206,327",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "toolTip": "Sets the printing area of the page,\nthe printer will only print within these margins",
+                           "traversalOn": false
+                        }
+                     },
+                     "1055": {
+                        "#name": "field \"Right Margin Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Right:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Right:</p>",
+                           "id": "1055",
+                           "layer": "22",
+                           "lockText": true,
+                           "name": "Right Margin Label",
+                           "opaque": false,
+                           "rect": "276,266,326,287",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "toolTip": "Sets the printing area of the page,\nthe printer will only print within these margins",
+                           "traversalOn": false
+                        }
+                     },
+                     "1056": {
+                        "#name": "field \"Bottom Margin Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Bottom:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Bottom:</p>",
+                           "id": "1056",
+                           "layer": "23",
+                           "lockText": true,
+                           "name": "Bottom Margin Label",
+                           "opaque": false,
+                           "rect": "276,306,326,327",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "toolTip": "Sets the printing area of the page,\nthe printer will only print within these margins",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1057",
+                     "label": "Margins",
+                     "layer": "15",
+                     "lockLoc": true,
+                     "name": "Print Margins",
+                     "rect": "150,250,390,333",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "1063": {
+                  "#name": "group \"Paper Scale\"",
+                  "childcontrols": {
+                     "1060": {
+                        "#name": "button \"Scale\"",
+                        "customproperties": {
+                           "cValue": "100"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1060",
+                           "label": "100",
+                           "layer": "25",
+                           "menuMode": "combobox",
+                           "name": "Scale",
+                           "rect": "236,356,370,378",
+                           "style": "menu",
+                           "text": "100\n200\n300\n75\n50\n25",
+                           "toolTip": "Sets the percentage scale of the document printout"
+                        }
+                     },
+                     "1062": {
+                        "#name": "field \"Scale Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Scale (%):"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Scale (%):</p>",
+                           "id": "1062",
+                           "layer": "26",
+                           "lockText": true,
+                           "name": "Scale Label",
+                           "opaque": false,
+                           "rect": "156,356,236,377",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "toolTip": "Sets the percentage scale of the document printout",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1063",
+                     "label": "Scale",
+                     "layer": "24",
+                     "lockLoc": true,
+                     "name": "Paper Scale",
+                     "rect": "150,340,390,390",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "1065": {
+                  "#name": "field \"Error\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "255,0,0",
+                     "id": "1065",
+                     "layer": "27",
+                     "lockText": true,
+                     "name": "Error",
+                     "opaque": false,
+                     "rect": "12,388,326,409",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1118": {
+                  "#name": "group \"Preview\"",
+                  "properties": {
+                     "id": "1118",
+                     "layer": "29",
+                     "lockLoc": true,
+                     "name": "Preview",
+                     "rect": "10,6,390,168",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "4922": {
+                  "#name": "graphic \"whitePage\"",
+                  "customproperties": {
+                     "cPreviewControl": true
+                  },
+                  "properties": {
+                     "backColor": "white",
+                     "filled": true,
+                     "id": "4922",
+                     "layer": "30",
+                     "lockLoc": true,
+                     "name": "whitePage",
+                     "opaque": true,
+                     "rect": "157,26,243,148"
+                  }
+               },
+               "4923": {
+                  "#name": "group \"Page Contents Container\"",
+                  "childcontrols": {
+                     "4924": {
+                        "#name": "field \"textPage\"",
+                        "customproperties": {
+                           "cPreviewControl": true
+                        },
+                        "properties": {
+                           "foreColor": "Gray40",
+                           "htmlText": "%file%: assets/Page Setup Dialog_1002_4923_4924_htmlText.txt",
+                           "id": "4924",
+                           "layer": "32",
+                           "lockText": true,
+                           "margins": "2,0,0,0",
+                           "name": "textPage",
+                           "opaque": false,
+                           "rect": "167,36,233,138",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "Arial",
+                           "textHeight": "5",
+                           "textSize": "4",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "4926": {
+                        "#name": "graphic \"Page Border\"",
+                        "customproperties": {
+                           "cPreviewControl": true
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "dashes": "3,3",
+                           "foreColor": "gray50",
+                           "id": "4926",
+                           "layer": "33",
+                           "name": "Page Border",
+                           "rect": "167,36,233,138"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "cPreviewControl": true
+                  },
+                  "properties": {
+                     "id": "4923",
+                     "layer": "31",
+                     "lockLoc": true,
+                     "name": "Page Contents Container",
+                     "rect": "157,26,243,148"
+                  }
+               },
+               "4925": {
+                  "#name": "graphic \"shadowPage\"",
+                  "customproperties": {
+                     "cPreviewControl": true
+                  },
+                  "properties": {
+                     "backColor": "gray",
+                     "filled": true,
+                     "foreColor": "gray",
+                     "id": "4925",
+                     "layer": "28",
+                     "lockLoc": true,
+                     "name": "shadowPage",
+                     "opaque": true,
+                     "rect": "162,31,248,153"
+                  }
+               }
+            },
+            "customproperties": {
+               "cSampleText": "%file%: assets/Page Setup Dialog_1002_cSampleText.bin"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "33"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "card id 1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "4921"
+         }
+      },
+      "longID": "stack \"Page Setup Dialog\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "revpagesetupdialog.rev",
+         "id": "4926",
+         "liveResizing": false,
+         "name": "Page Setup Dialog",
+         "rect": "599,375,1002,825",
+         "resizable": false
+      },
+      "sharedGroupIDs": null
+   }
+}

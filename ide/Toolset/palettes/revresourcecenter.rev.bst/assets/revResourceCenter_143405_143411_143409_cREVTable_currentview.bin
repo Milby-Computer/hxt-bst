@@ -1,0 +1,48 @@
+<p><font size="12" color="#000000">Players are a great feature of Revolution, they can play audio or video allowing you to create rich media applications. Players can be stopped, paused, rewound - all the abilities you would expect of any media player - but one of the features that makes Revolution players really powerful is callbacks.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Callbacks are a property of a player and are a list of entries, one per line, which allow you to trigger scripts at specific points during playback.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Each entry has the form:</font></p>
+<p></p>
+<p><font size="12" color="#000000">intervalNumber, messageName</font></p>
+<p></p>
+<p><font size="12" color="#000000">The intervalNumber is a positive integer expressed in the internal player time format, this depends on the timescale of the player where the timescale is the number of intervals per second. In a player with a timescale of 500 interval 1000 would be 2 seconds into the movie or sound.</font></p>
+<p></p>
+<p><font size="12" color="#000000">The message messageName is sent when the currentTime of the player reaches the given interval, allowing the user to synchronize other actions with the playback of a movie or sound file.</font></p>
+<p></p>
+<p><font size="12" color="#000000">One possible application of callbacks would be to create a talking storybook, a fun and educational program for children learning to read or a foreign language teaching tool. Callbacks can be used to change the graphics as the story is being read and show the text along with the voiceover, the</font></p>
+<p></p>
+<p><font size="12" color="#000000">color of individual words can be changed in time with the voice to make it easy to follow.</font></p>
+<p></p>
+<p><font size="12" color="#000000">To use callbacks to display text and graphics, you simply identify the intervals where you want them to change and set the callbacks of the player to send a message when it reaches those intervals.</font></p>
+<p></p>
+<p><font size="12" color="#000000">For example:</font></p>
+<p></p>
+<p><font size="12" color="#000000">On your card place</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; A player called &quot;voiceover&quot;</font></p>
+<p><font size="12" color="#000000">&#149; An image called &quot;picture&quot;</font></p>
+<p><font size="12" color="#000000">&#149; A field called &quot;subtitle&quot;</font></p>
+<p><font size="12" color="#000000">&#149; In your card script, write</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">on</font><font face="Courier" color="#000000"> showPicture pFilename</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#DF000C">filename</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> image &quot;picture&quot; </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> pFilename</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> showPicture</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">on</font><font face="Courier" color="#000000"> displaySubtitle pText</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> pText </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> field &quot;subtitle&quot;</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> displaySubtitle</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">on</font><font face="Courier" color="#000000"> hiliteWord pWordNumber</font></p>
+<p><font face="Courier" color="#000000">   resetWordColors </font><font face="Courier" color="#68008B">-- this would set the colors of all the \</font></p>
+<p><font face="Courier" color="#000000">   words in </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> field </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> unhilited color</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">set</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#DF000C">textColor</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> word pWordNumber </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> field &quot;subtitle&quot; </font><font face="Courier" color="#990017">to</font><font face="Courier" color="#000000"> \</font></p>
+<p><font face="Courier" color="#000000">   &quot;red&quot;</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> hiliteWord</font></p>
+<p></p>
+<p><font size="12" color="#000000">You might have the following callbacks on player &quot;voiceover&quot;:</font></p>
+<p><font size="12" color="#000000">&#149; 1500,showPicture &quot;Storybook.jpg&quot;</font></p>
+<p><font size="12" color="#000000">&#149; 1800,displaySubtitle &quot;Once upon a time&quot;</font></p>
+<p><font size="12" color="#000000">&#149; 2000,hiliteWord</font></p>
+<p></p>
+<p><font size="12" color="#000000">When the currentTime of player &quot;voiceover&quot; reaches 1500 intervals, the showPicture handler is called and the graphic &quot;Storybook.jpg&quot; is shown; 200 intervals later the words &quot;Once upon a time&quot; are displayed in the field &quot;subtitle&quot; and when the currentTime of player &quot;voiceover&quot; reaches 2000 the word &quot;upon&quot; is hilited in red.</font></p>

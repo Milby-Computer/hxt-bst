@@ -1,0 +1,1450 @@
+{
+   "#mainstack": "revIconChooser",
+   "revIconChooser": {
+      "#name": "stack \"revIconChooser\"",
+      "#substacks": null,
+      "backgroundIDs": "1063",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1063": "#shared group",
+               "1064": {
+                  "#name": "button \"library chooser\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1064",
+                     "label": "Standard Icons",
+                     "layer": "56",
+                     "menuMode": "option",
+                     "name": "library chooser",
+                     "rect": "98,20,442,43",
+                     "style": "menu",
+                     "text": "Standard Icons\nDefault Patterns\nMetaCard Compatible Icons\nMetaCard Compatible Patterns\nThis Stack",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "1065": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1065",
+                     "layer": "57",
+                     "name": "Cancel",
+                     "rect": "265,288,347,311"
+                  }
+               },
+               "1067": {
+                  "#name": "field \"New Field 1\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Image library:</p>",
+                     "id": "1067",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "1,19,99,40",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1072": {
+                  "#name": "button \"OK\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "default": true,
+                     "id": "1072",
+                     "layer": "58",
+                     "name": "OK",
+                     "rect": "361,288,443,311"
+                  }
+               },
+               "1073": {
+                  "#name": "graphic \"New Graphic 1\"",
+                  "properties": {
+                     "antialiased": false,
+                     "filled": true,
+                     "foreColor": "128,128,128",
+                     "id": "1073",
+                     "layer": "1",
+                     "name": "New Graphic 1",
+                     "opaque": true,
+                     "rect": "20,61,440,268"
+                  }
+               },
+               "1077": {
+                  "#name": "field \"ID\"",
+                  "properties": {
+                     "htmlText": "<p>210008</p>",
+                     "id": "1077",
+                     "layer": "59",
+                     "name": "ID",
+                     "rect": "54,288,180,308"
+                  }
+               },
+               "1079": {
+                  "#name": "field \"New Field 3\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>ID</p>",
+                     "id": "1079",
+                     "layer": "60",
+                     "lockText": true,
+                     "name": "New Field 3",
+                     "opaque": false,
+                     "rect": "24,287,54,308",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cIconsList": "%file%: assets/revIconChooser_1002_cIconsList.bin"
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": null
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         },
+         "1063": {
+            "#name": "group \"Select an icon\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "scrollbar \"iconchooserscrollbar\"",
+                  "customproperties": {
+                     "revbasic": false,
+                     "revscrollbar": false
+                  },
+                  "properties": {
+                     "endValue": "40",
+                     "id": "1004",
+                     "layer": "5",
+                     "lineInc": "9.999496",
+                     "name": "iconchooserscrollbar",
+                     "pageInc": "19.999588",
+                     "rect": "417,68,433,260",
+                     "startValue": "1",
+                     "thumbPosition": "1",
+                     "thumbSize": "9.999496"
+                  }
+               },
+               "1009": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210001",
+                     "id": "1009",
+                     "layer": "6",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "29,71,63,105",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210001"
+                  }
+               },
+               "1010": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210002",
+                     "id": "1010",
+                     "layer": "7",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "68,71,102,105",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210002"
+                  }
+               },
+               "1011": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210009",
+                     "id": "1011",
+                     "layer": "9",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "146,71,180,105",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210009"
+                  }
+               },
+               "1012": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210012",
+                     "id": "1012",
+                     "layer": "8",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "107,71,141,105",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210012"
+                  }
+               },
+               "1013": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210007",
+                     "id": "1013",
+                     "layer": "13",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "302,71,336,105",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210007"
+                  }
+               },
+               "1014": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210008",
+                     "id": "1014",
+                     "layer": "10",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "185,71,219,105",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210008"
+                  }
+               },
+               "1015": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210010",
+                     "id": "1015",
+                     "layer": "11",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "224,71,258,105",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210010"
+                  }
+               },
+               "1016": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210006",
+                     "id": "1016",
+                     "layer": "12",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "263,71,297,105",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210006"
+                  }
+               },
+               "1017": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200946",
+                     "id": "1017",
+                     "layer": "15",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "380,71,414,105",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200946"
+                  }
+               },
+               "1018": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "202249",
+                     "id": "1018",
+                     "layer": "14",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "341,71,375,105",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "202249"
+                  }
+               },
+               "1019": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200947",
+                     "id": "1019",
+                     "layer": "16",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "29,109,63,143",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200947"
+                  }
+               },
+               "1020": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210076",
+                     "id": "1020",
+                     "layer": "17",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "68,109,102,143",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210076"
+                  }
+               },
+               "1021": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201065",
+                     "id": "1021",
+                     "layer": "19",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "146,109,180,143",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "201065"
+                  }
+               },
+               "1022": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200949",
+                     "id": "1022",
+                     "layer": "18",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "107,109,141,143",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200949"
+                  }
+               },
+               "1023": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200950",
+                     "id": "1023",
+                     "layer": "23",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "302,109,336,143",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200950"
+                  }
+               },
+               "1024": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201066",
+                     "id": "1024",
+                     "layer": "20",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "185,109,219,143",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "201066"
+                  }
+               },
+               "1025": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201067",
+                     "id": "1025",
+                     "layer": "21",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "224,109,258,143",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "201067"
+                  }
+               },
+               "1026": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200948",
+                     "id": "1026",
+                     "layer": "22",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "263,109,297,143",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200948"
+                  }
+               },
+               "1027": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201068",
+                     "id": "1027",
+                     "layer": "25",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "380,109,414,143",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "201068"
+                  }
+               },
+               "1028": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200952",
+                     "id": "1028",
+                     "layer": "24",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "341,109,375,143",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200952"
+                  }
+               },
+               "1029": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201069",
+                     "id": "1029",
+                     "layer": "26",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "29,147,63,181",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "201069"
+                  }
+               },
+               "1030": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200951",
+                     "id": "1030",
+                     "layer": "27",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "68,147,102,181",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200951"
+                  }
+               },
+               "1031": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200936",
+                     "id": "1031",
+                     "layer": "29",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "146,147,180,181",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200936"
+                  }
+               },
+               "1032": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201186",
+                     "id": "1032",
+                     "layer": "28",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "107,147,141,181",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "201186"
+                  }
+               },
+               "1033": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200937",
+                     "id": "1033",
+                     "layer": "33",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "302,147,336,181",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200937"
+                  }
+               },
+               "1034": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200938",
+                     "id": "1034",
+                     "layer": "30",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "185,147,219,181",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200938"
+                  }
+               },
+               "1035": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200935",
+                     "id": "1035",
+                     "layer": "31",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "224,147,258,181",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200935"
+                  }
+               },
+               "1036": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200941",
+                     "id": "1036",
+                     "layer": "32",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "263,147,297,181",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200941"
+                  }
+               },
+               "1037": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200939",
+                     "id": "1037",
+                     "layer": "35",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "380,147,414,181",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200939"
+                  }
+               },
+               "1038": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200940",
+                     "id": "1038",
+                     "layer": "34",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "341,147,375,181",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200940"
+                  }
+               },
+               "1039": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200942",
+                     "id": "1039",
+                     "layer": "36",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "29,185,63,219",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200942"
+                  }
+               },
+               "1040": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200943",
+                     "id": "1040",
+                     "layer": "37",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "68,185,102,219",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200943"
+                  }
+               },
+               "1041": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201318",
+                     "id": "1041",
+                     "layer": "39",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "146,185,180,219",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "201318"
+                  }
+               },
+               "1042": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201319",
+                     "id": "1042",
+                     "layer": "38",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "107,185,141,219",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "201319"
+                  }
+               },
+               "1043": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200275",
+                     "id": "1043",
+                     "layer": "43",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "302,185,336,219",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200275"
+                  }
+               },
+               "1044": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "201317",
+                     "id": "1044",
+                     "layer": "40",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "185,185,219,219",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "201317"
+                  }
+               },
+               "1045": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200304",
+                     "id": "1045",
+                     "layer": "41",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "224,185,258,219",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200304"
+                  }
+               },
+               "1046": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200276",
+                     "id": "1046",
+                     "layer": "42",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "263,185,297,219",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200276"
+                  }
+               },
+               "1047": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200887",
+                     "id": "1047",
+                     "layer": "45",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "380,185,414,219",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200887"
+                  }
+               },
+               "1048": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200270",
+                     "id": "1048",
+                     "layer": "44",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "341,185,375,219",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200270"
+                  }
+               },
+               "1049": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200086",
+                     "id": "1049",
+                     "layer": "46",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "29,223,63,257",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200086"
+                  }
+               },
+               "1050": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200087",
+                     "id": "1050",
+                     "layer": "47",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "68,223,102,257",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200087"
+                  }
+               },
+               "1051": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210059",
+                     "id": "1051",
+                     "layer": "49",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "146,223,180,257",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210059"
+                  }
+               },
+               "1052": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210058",
+                     "id": "1052",
+                     "layer": "48",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "107,223,141,257",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210058"
+                  }
+               },
+               "1053": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "200954",
+                     "id": "1053",
+                     "layer": "53",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "302,223,336,257",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "200954"
+                  }
+               },
+               "1054": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210060",
+                     "id": "1054",
+                     "layer": "50",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "185,223,219,257",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210060"
+                  }
+               },
+               "1055": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210061",
+                     "id": "1055",
+                     "layer": "51",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "224,223,258,257",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210061"
+                  }
+               },
+               "1056": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210063",
+                     "id": "1056",
+                     "layer": "52",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "263,223,297,257",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210063"
+                  }
+               },
+               "1057": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210066",
+                     "id": "1057",
+                     "layer": "55",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "380,223,414,257",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210066"
+                  }
+               },
+               "1058": {
+                  "#name": "button \"New Button\"",
+                  "customproperties": {
+                     "Choose...": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "backColor": "192,192,192",
+                     "borderColor": "102,101,101",
+                     "borderWidth": "1",
+                     "foreColor": "192,192,192",
+                     "hiliteColor": "192,192,192",
+                     "icon": "210065",
+                     "id": "1058",
+                     "layer": "54",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "341,223,375,257",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "210065"
+                  }
+               },
+               "1059": {
+                  "#name": "graphic id 1059",
+                  "properties": {
+                     "antialiased": false,
+                     "backColor": "255,255,255",
+                     "filled": true,
+                     "id": "1059",
+                     "layer": "4",
+                     "lineSize": "0",
+                     "opaque": true,
+                     "rect": "26,68,417,260"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1063",
+               "label": "Select an Image",
+               "layer": "3",
+               "name": "Select an icon",
+               "rect": "22,64,437,264",
+               "tabGroupBehavior": true
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cCurrentIcon": "0",
+         "cIconsList": null,
+         "cReturnValue": null,
+         "cVersionNo": "2.6.1",
+         "resizeable": false,
+         "Tabs": false
+      },
+      "longID": "stack \"revIconChooser\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "reviconchooser.rev",
+         "id": "1079",
+         "liveResizing": false,
+         "name": "revIconChooser",
+         "rect": "119,108,579,437",
+         "resizable": false,
+         "title": "Image Chooser"
+      },
+      "sharedGroupIDs": "1063"
+   }
+}

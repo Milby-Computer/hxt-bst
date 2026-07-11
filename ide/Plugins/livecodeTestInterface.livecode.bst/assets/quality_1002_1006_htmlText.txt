@@ -1,0 +1,6 @@
+<p>StackTestFolder E:/Hanson/RR/test-framework-UI_1/test-stacks/,/Users/johnsmith/OldHdd/Hanson/MY-STUFF-PC/test-framework-UI_1/test-stacks/,/Users/hanson/MY-STUFF-PC/test-framework-UI_1/test-stacks/</p>
+<p>ScriptTestFolder E:/Hanson/RR/test-framework-UI_1/test-files/,/Users/johnsmith/OldHdd/Hanson/MY-STUFF-PC/test-framework-UI_1/test-files/,/Users/hanson/MY-STUFF-PC/test-framework-UI_1/test-files/</p>
+<p>TestFolder /Users/johnsmith/OldHdd/Hanson/MY-STUFF-PC/test-framework-UI_1/all-tests/</p>
+<p><font color="#000000">LiveCodeInstallFolder /Applications/,C:/Program Files/</font></p>
+<p>XCode /</p>
+<p>AndroidSDK /</p>

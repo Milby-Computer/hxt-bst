@@ -1,0 +1,31 @@
+<p><font size="12" color="#000000">Finally, you will also notice that without the title bar, it is not possible to drag the stack around the screen, this has to be implemented manually. The following code placed in the script of the background image will allow you to grab and move the controller around the screen.</font></p>
+<p></p>
+<p><font face="Courier" color="#2000FB">local</font><font face="Courier" color="#000000"> sgLeftOffset</font></p>
+<p><font face="Courier" color="#2000FB">local</font><font face="Courier" color="#000000"> sgTopOffset</font></p>
+<p><font face="Courier" color="#2000FB">local</font><font face="Courier" color="#000000"> sgDragging</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">on</font><font face="Courier" color="#000000"> mouseDown</font></p>
+<p><font face="Courier" color="#000000">  </font><font face="Courier" color="#2000FB"> pu</font><font face="Courier" color="#000000">t item 1</font><font face="Courier" color="#990017"> of the</font><font face="Courier" color="#E5001A"> mouseLoc</font><font face="Courier" color="#990017"> into</font><font face="Courier" color="#000000"> sgLeftOffset</font></p>
+<p><font face="Courier" color="#000000">  </font><font face="Courier" color="#2000FB"> pu</font><font face="Courier" color="#000000">t item 2</font><font face="Courier" color="#990017"> of the</font><font face="Courier" color="#E5001A"> mouseLoc</font><font face="Courier" color="#990017"> into</font><font face="Courier" color="#000000"> sgTopOffset</font></p>
+<p><font face="Courier" color="#000000">  </font><font face="Courier" color="#2000FB"> pu</font><font face="Courier" color="#000000">t true</font><font face="Courier" color="#990017"> into</font><font face="Courier" color="#000000"> sgDragging</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> mouseDown</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">on</font><font face="Courier" color="#000000"> mouseMove</font></p>
+<p><font face="Courier" color="#000000">  </font><font face="Courier" color="#2000FB"> lock</font><font face="Courier" color="#DF000C"> screen</font></p>
+<p><font face="Courier" color="#000000">  </font><font face="Courier" color="#990017"> if</font><font face="Courier" color="#000000"> sgDragging is true</font><font face="Courier" color="#990017"> then</font></p>
+<p><font face="Courier" color="#000000">     </font><font face="Courier" color="#2000FB"> set</font><font face="Courier" color="#990017"> the</font><font face="Courier" color="#DF000C"> left</font><font face="Courier" color="#990017"> of</font><font face="Courier" color="#000000"> this stack</font><font face="Courier" color="#990017"> to</font><font face="Courier" color="#000000"> item 1</font><font face="Courier" color="#990017"> of</font><font face="Courier" color="#000000"> \</font></p>
+<p><font face="Courier" color="#000000">     </font><font face="Courier" color="#E5001A"> globalloc</font><font face="Courier" color="#990017">(the</font><font face="Courier" color="#E5001A"> mouseLoc</font><font face="Courier" color="#000000">) - sgLeftOffset</font></p>
+<p><font face="Courier" color="#000000">     </font><font face="Courier" color="#2000FB"> set</font><font face="Courier" color="#990017"> the</font><font face="Courier" color="#DF000C"> top</font><font face="Courier" color="#990017"> of</font><font face="Courier" color="#000000"> this stack</font><font face="Courier" color="#990017"> to</font><font face="Courier" color="#000000"> item 2</font><font face="Courier" color="#990017"> of</font><font face="Courier" color="#000000">  \</font></p>
+<p><font face="Courier" color="#000000">     </font><font face="Courier" color="#E5001A"> globalloc</font><font face="Courier" color="#990017">(the</font><font face="Courier" color="#E5001A"> mouseLoc)</font><font face="Courier" color="#000000"> - sgTopOffset</font></p>
+<p><font face="Courier" color="#000000">  </font><font face="Courier" color="#990017"> end if</font></p>
+<p><font face="Courier" color="#000000">  </font><font face="Courier" color="#2000FB"> unlock</font><font face="Courier" color="#DF000C"> screen</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> mouseMove</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">on</font><font face="Courier" color="#000000"> mouseRelease</font></p>
+<p><font face="Courier" color="#000000">  </font><font face="Courier" color="#2000FB"> put</font><font face="Courier" color="#000000"> false</font><font face="Courier" color="#990017"> into</font><font face="Courier" color="#000000"> sgDragging</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> mouseRelease</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">on</font><font face="Courier" color="#000000"> mouseUp</font></p>
+<p><font face="Courier" color="#000000">  </font><font face="Courier" color="#2000FB"> put</font><font face="Courier" color="#000000"> false</font><font face="Courier" color="#990017"> into</font><font face="Courier" color="#000000"> sgDragging</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> mouseUp</font></p>
+<p></p>

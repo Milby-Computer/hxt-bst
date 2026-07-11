@@ -1,0 +1,13 @@
+<p><b><font face="Helvetica" size="11">How</font></b></p>
+<p><i><font face="Helvetica" size="11" bgcolor="#FFFF00">About</font></i></p>
+<p><i><b><font face="Helvetica" size="11" bgcolor="#FFFF00">Some</font></b></i></p>
+<p><font bgcolor="#FFFF00">Lines</font></p>
+<p><font face="Verdana" size="11">Of</font></p>
+<p><b><font face="Verdana" size="11">Text</font></b></p>
+<p><i><font face="Verdana" size="11">How</font></i></p>
+<p><i><b><font face="Verdana" size="11">About</font></b></i></p>
+<p>Some</p>
+<p>Lines</p>
+<p>Of</p>
+<p>Text</p>
+<p><font face="Helvetica" size="12" color="#000000">&#1056;&#1091;&#1076;&#1076;&#1097; &#1062;&#1097;&#1082;&#1076;&#1074;</font></p>

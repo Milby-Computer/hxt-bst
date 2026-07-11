@@ -1,0 +1,519 @@
+{
+   "#mainstack": "Book Library",
+   "Book Library": {
+      "#name": "stack \"Book Library\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1048\n1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"book data\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"Search Term\"",
+                  "properties": {
+                     "autoTab": true,
+                     "id": "1004",
+                     "layer": "1",
+                     "name": "Search Term",
+                     "rect": "5,5,249,26"
+                  }
+               },
+               "1006": {
+                  "#name": "button \"Search\"",
+                  "properties": {
+                     "id": "1006",
+                     "layer": "2",
+                     "name": "Search",
+                     "rect": "254,5,336,28",
+                     "toolTip": "Search book database",
+                     "traversalOn": false
+                  }
+               },
+               "1007": {
+                  "#name": "graphic \"verticalDiv\"",
+                  "properties": {
+                     "id": "1007",
+                     "layer": "3",
+                     "name": "verticalDiv",
+                     "points": "342,1\n342,767",
+                     "rect": "341,0,343,768",
+                     "style": "line"
+                  }
+               },
+               "1012": {
+                  "#name": "field \"List Titles\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "bottomfieldloc": "61",
+                        "cellxspacing": "100",
+                        "cellyspacing": "16",
+                        "currenthscroll": "0",
+                        "currentview": "<p>Title\u2026#9;Author\u2026#9;Status</p>",
+                        "currentvscroll": "0",
+                        "currentxmouseloc": "119",
+                        "currentymouseloc": "79",
+                        "leftfieldloc": "10",
+                        "numbertabstops": "1",
+                        "rightfieldloc": "331",
+                        "scrollbarwidth": "20",
+                        "topfieldloc": "40",
+                        "viewablecolumns": "4",
+                        "viewablerows": "2"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Title\u2026#9;Author\u2026#9;Status</p>",
+                     "id": "1012",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "List Titles",
+                     "opaque": false,
+                     "rect": "10,40,331,61",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "tabStops": "130,230",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1015": {
+                  "#name": "button \"Add Book\"",
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorselection]": {
+                        "scripteditorselection": "21"
+                     },
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1015",
+                     "label": "+",
+                     "layer": "5",
+                     "name": "Add Book",
+                     "rect": "10,729,40,759",
+                     "style": "rectangle",
+                     "threeD": false,
+                     "toolTip": "Add a new book to the database",
+                     "traversalOn": false
+                  }
+               },
+               "1016": {
+                  "#name": "button \"Delete Book\"",
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorselection]": {
+                        "scripteditorselection": "0"
+                     },
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1016",
+                     "label": "-",
+                     "layer": "6",
+                     "name": "Delete Book",
+                     "rect": "301,729,331,759",
+                     "style": "rectangle",
+                     "threeD": false,
+                     "toolTip": "Delete the selected book",
+                     "traversalOn": false
+                  }
+               },
+               "1018": {
+                  "#name": "field \"List\"",
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorselection]": {
+                        "scripteditorselection": "59"
+                     },
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "0"
+                     },
+                     "cREVTable": {
+                        "bottomfieldloc": "719",
+                        "cellxspacing": "65",
+                        "cellyspacing": "16",
+                        "currenthscroll": "0",
+                        "currentview": "<p>The Lord of the Rings\u2026#9;JRR Tolkien\u2026#9;On Shelf\u2026#9;\u2026#9;1</p>\n<p>Pride and Prejudice\u2026#9;Jane Austen\u2026#9;On Loan\u2026#9;\u2026#9;2</p>\n<p>His Dark Materials\u2026#9;Philip Pullman\u2026#9;On Shelf\u2026#9;\u2026#9;3</p>",
+                        "currentvscroll": "0",
+                        "currentxmouseloc": "275",
+                        "currentymouseloc": "321",
+                        "leftfieldloc": "10",
+                        "numbertabstops": "1",
+                        "rightfieldloc": "331",
+                        "scrollbarwidth": "16",
+                        "topfieldloc": "71",
+                        "viewablecolumns": "5",
+                        "viewablerows": "41"
+                     }
+                  },
+                  "properties": {
+                     "dontWrap": true,
+                     "hScrollbar": true,
+                     "htmlText": "<p>The Lord of the Rings\u2026#9;JRR Tolkien\u2026#9;On Shelf\u2026#9;\u2026#9;1</p>\n<p>Pride and Prejudice\u2026#9;Jane Austen\u2026#9;On Shelf\u2026#9;\u2026#9;2</p>\n<p>His Dark Materials\u2026#9;Philip Pullman\u2026#9;On Shelf\u2026#9;Note\u2026#9;3</p>",
+                     "id": "1018",
+                     "layer": "7",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "List",
+                     "rect": "10,71,331,719",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "tabStops": "130,230",
+                     "vScrollbar": true
+                  }
+               },
+               "1021": {
+                  "#name": "field \"Title Label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Title:"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Title:</p>",
+                     "id": "1021",
+                     "layer": "8",
+                     "lockText": true,
+                     "name": "Title Label",
+                     "opaque": false,
+                     "rect": "341,10,441,31",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1023": {
+                  "#name": "field \"Title\"",
+                  "properties": {
+                     "htmlText": "<p>His Dark Materials</p>",
+                     "id": "1023",
+                     "layer": "9",
+                     "lockText": true,
+                     "name": "Title",
+                     "rect": "441,10,621,31",
+                     "showBorder": false,
+                     "style": "opaque"
+                  }
+               },
+               "1024": {
+                  "#name": "field \"Author Label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Author:"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Author:</p>",
+                     "id": "1024",
+                     "layer": "10",
+                     "lockText": true,
+                     "name": "Author Label",
+                     "opaque": false,
+                     "rect": "341,37,441,58",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1025": {
+                  "#name": "field \"Author\"",
+                  "properties": {
+                     "htmlText": "<p>Philip Pullman</p>",
+                     "id": "1025",
+                     "layer": "11",
+                     "lockText": true,
+                     "name": "Author",
+                     "rect": "441,37,621,58",
+                     "showBorder": false,
+                     "style": "opaque"
+                  }
+               },
+               "1028": {
+                  "#name": "field \"Status Label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Status:"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Status:</p>",
+                     "id": "1028",
+                     "layer": "12",
+                     "lockText": true,
+                     "name": "Status Label",
+                     "opaque": false,
+                     "rect": "341,70,441,91",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1030": {
+                  "#name": "field \"Comments Label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Comments:"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Comments:</p>",
+                     "id": "1030",
+                     "layer": "13",
+                     "lockText": true,
+                     "name": "Comments Label",
+                     "opaque": false,
+                     "rect": "341,100,441,121",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1033": {
+                  "#name": "button \"Status\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "id": "1033",
+                     "label": "On Shelf",
+                     "layer": "14",
+                     "menuHistory": "2",
+                     "menuMode": "option",
+                     "name": "Status",
+                     "rect": "441,70,621,92",
+                     "style": "menu",
+                     "text": "On Shelf\nOn Loan",
+                     "traversalOn": false
+                  }
+               },
+               "1035": {
+                  "#name": "field \"Comments\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Book Library_1002_1035_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "<p>Note</p>",
+                     "id": "1035",
+                     "layer": "15",
+                     "lockText": true,
+                     "name": "Comments",
+                     "rect": "441,100,1003,718",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1039": {
+                  "#name": "button \"Save\"",
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorselection]": {
+                        "scripteditorselection": "18"
+                     },
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "default": true,
+                     "disabled": true,
+                     "id": "1039",
+                     "layer": "16",
+                     "name": "Save",
+                     "rect": "921,728,1003,751"
+                  }
+               },
+               "1042": {
+                  "#name": "button \"Cancel\"",
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorselection]": {
+                        "scripteditorselection": "84"
+                     },
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "id": "1042",
+                     "layer": "17",
+                     "name": "Cancel",
+                     "rect": "839,728,921,751",
+                     "traversalOn": false
+                  }
+               },
+               "1047": {
+                  "#name": "field \"bookID\"",
+                  "properties": {
+                     "htmlText": "<p>3</p>",
+                     "id": "1047",
+                     "layer": "18",
+                     "lockText": true,
+                     "name": "bookID",
+                     "rect": "630,10,810,32",
+                     "visible": false
+                  }
+               },
+               "1051": {
+                  "#name": "button \"Edit Book\"",
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorselection]": {
+                        "scripteditorselection": "18"
+                     },
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1051",
+                     "label": "Edit",
+                     "layer": "19",
+                     "name": "Edit Book",
+                     "rect": "45,729,121,759",
+                     "style": "rectangle",
+                     "threeD": false,
+                     "toolTip": "Add a new book to the database",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorselection]": {
+                  "scripteditorselection": "486"
+               },
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "0"
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "19"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "layer": "2",
+               "name": "book data"
+            }
+         },
+         "1048": {
+            "#name": "card \"intro\"",
+            "childcontrols": {
+               "1049": {
+                  "#name": "field \"intro\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Book Library_1048_1049_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "%file%: assets/Book Library_1048_1049_htmlText.txt",
+                     "id": "1049",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "intro",
+                     "opaque": false,
+                     "rect": "10,10,1014,698",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textSize": "18",
+                     "traversalOn": false
+                  }
+               },
+               "1050": {
+                  "#name": "button \"Go\"",
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorselection]": {
+                        "scripteditorselection": "0"
+                     },
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "id": "1050",
+                     "layer": "2",
+                     "name": "Go",
+                     "rect": "866,711,1014,758",
+                     "textSize": "18",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "2"
+               }
+            },
+            "properties": {
+               "id": "1048",
+               "name": "intro"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeneral[AlreadyHidden]": {
+            "AlreadyHidden": false
+         },
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         },
+         "cREVGeneral[scripteditorselection]": {
+            "scripteditorselection": "689"
+         },
+         "cREVGeneral[scripteditorvscroll]": {
+            "scripteditorvscroll": "716"
+         },
+         "cREVGeometryCache": {
+            "stackID": "1051"
+         }
+      },
+      "longID": "stack \"Book Library\"",
+      "properties": {
+         "backColor": "255,255,255",
+         "decorations": "default",
+         "fileName": "BookLibrary.livecode",
+         "id": "1051",
+         "liveResizing": false,
+         "minHeight": "200",
+         "minWidth": "450",
+         "name": "Book Library",
+         "rect": "179,186,1203,954"
+      },
+      "sharedGroupIDs": null
+   }
+}

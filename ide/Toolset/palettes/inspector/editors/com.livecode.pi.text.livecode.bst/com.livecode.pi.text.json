@@ -1,0 +1,63 @@
+{
+   "#mainstack": "com.livecode.pi.text",
+   "com.livecode.pi.text": {
+      "#name": "stack \"com.livecode.pi.text\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1008": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1006": {
+                        "#name": "field \"value\"",
+                        "properties": {
+                           "id": "1006",
+                           "layer": "2",
+                           "name": "value",
+                           "rect": "88,36,195,276",
+                           "scrollbarWidth": "16",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1008",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "88,36,195,276"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "3"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1008"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.text\"",
+      "properties": {
+         "fileName": "com.livecode.pi.text.livecode",
+         "id": "1008",
+         "name": "com.livecode.pi.text",
+         "rect": "312,586,712,986"
+      },
+      "sharedGroupIDs": null
+   }
+}

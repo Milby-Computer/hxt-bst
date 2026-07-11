@@ -1,0 +1,28 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> tabKey</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">selectedText</font> is empty <font color="#980517">then</font> <font color="#0000FF">pass</font> tabKey</p>
+<p>  <font color="#68228B">-- there's an insertion point, but no selection,</font></p>
+<p>  <font color="#68228B">-- so let tab key operate normally. Otherwise...</font></p>
+<p>  <font color="#0000FF">put</font> the <font color="#F88017">selectedLines</font> into savedSelectedLines <font color="#68228B">-- save for later</font></p>
+<p>  <font color="#0000FF">put</font> word 2 of the <font color="#F88017">selectedLines</font> into firstLine</p>
+<p>  <font color="#980517">if</font> word 3 of the <font color="#F88017">selectedLines</font> is "to" <font color="#980517">then</font></p>
+<p>    <font color="#68228B">-- multiple lines are selected</font></p>
+<p>    <font color="#0000FF">put</font> word 4 of the <font color="#F88017">selectedLines</font> into lastLine</p>
+<p>  <font color="#980517">else</font> <font color="#68228B">-- single line is selected</font></p>
+<p>    <font color="#0000FF">put</font> firstLine into lastLine</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">shiftKey</font> is down <font color="#980517">then</font> <font color="#68228B">-- shift left - remove a tab:</font></p>
+<p>    <font color="#980517">repeat</font> <font color="#980517">with</font> thisLine = firstLine to lastLine</p>
+<p>      <font color="#980517">if</font> char 1 of line thisLine \</p>
+<p>          of (the <font color="#FF0000">text</font> of the <font color="#F88017">selectedField</font>) is tab</p>
+<p>      <font color="#980517">then</font> <font color="#0000FF">delete</font> char 1 of line thisLine \</p>
+<p>          of the <font color="#F88017">selectedField</font> <font color="#68228B">-- remove leading tab</font></p>
+<p>    <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#980517">else</font> <font color="#68228B">-- shift key not down, so shift right - add a tab:</font></p>
+<p>    <font color="#980517">repeat</font> <font color="#980517">with</font> thisLine = firstLine to lastLine</p>
+<p>      <font color="#68228B">-- add a leading tab to each line in the selection</font></p>
+<p>      <font color="#0000FF">put</font> tab before line thisLine of the <font color="#F88017">selectedField</font></p>
+<p>    <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#0000FF">select</font> savedSelectedLines <font color="#68228B">-- (re)select all affected lines</font></p>
+<p><font color="#980517">end</font> tabKey</p>

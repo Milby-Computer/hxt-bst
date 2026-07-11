@@ -1,0 +1,41 @@
+<p><font color="#8E35EF">#</font><font color="#000000"> </font><font color="#8E35EF">CREATE</font><font color="#000000"> </font><font color="#8E35EF">TABLE</font><font color="#000000"> </font><font color="#8E35EF">users</font><font color="#000000"> </font><font color="#8E35EF">SCRIPT</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  <font color="#980517">if</font> gConID is "" <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">answer</font> information "No Database is Connected to, please go back 1 step and connect to the Database!"</p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#0000FF">put</font> "CREATE TABLE users(userID integer primary key, name text,email text,emailList boolean)" into tSQL</p>
+<p>  <font color="#0000FF">put</font> revExecuteSQL(gConID,tSQL) into tTmp</p>
+<p>  handleRevDBerror tTmp</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#0000FF">answer</font> information "Number of Tables Added: " &amp; tTmp</p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#8E35EF">#</font> <font color="#8E35EF">CREATE</font> <font color="#8E35EF">TABLE</font> <font color="#8E35EF">apps</font> <font color="#8E35EF">SCRIPT</font></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  <font color="#0000FF">put</font> "CREATE TABLE apps(appID integer primary key, appName text,appRegCode text,appUserID integer)" into tSQL</p>
+<p>  <font color="#0000FF">put</font> revExecuteSQL(gConID,tSQL) into tTmp</p>
+<p>  handleRevDBerror tTmp</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#0000FF">answer</font> information "Number of Tables Added: " &amp; tTmp</p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#980517">on</font> handleRevDBerror p</p>
+<p>  <font color="#980517">switch</font></p>
+<p>  <font color="#980517">case</font> item 1 of p is "revdberr"</p>
+<p>    <font color="#0000FF">return</font> "revDB Error: " &amp; p</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case</font> "syntax error" is in p</p>
+<p>    <font color="#0000FF">return</font> "Database Error: " &amp; p</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">switch</font></p>
+<p><font color="#980517">end</font> handleRevDBerror</p>
+<p></p>

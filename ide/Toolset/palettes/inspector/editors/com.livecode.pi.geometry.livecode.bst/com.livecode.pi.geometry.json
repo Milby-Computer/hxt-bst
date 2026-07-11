@@ -1,0 +1,911 @@
+{
+   "#mainstack": "com.livecode.pi.geometry",
+   "com.livecode.pi.geometry": {
+      "#name": "stack \"com.livecode.pi.geometry\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1003",
+      "childcontrols": {
+         "1003": {
+            "#name": "card \"revGeometryScale\"",
+            "childcontrols": {
+               "1065": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1005": {
+                        "#name": "group \"Scaleorpos\"",
+                        "childcontrols": {
+                           "1027": {
+                              "#name": "button \"Scaling\"",
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "hilited": true,
+                                 "id": "1027",
+                                 "label": "Scale selected object",
+                                 "layer": "49",
+                                 "name": "Scaling",
+                                 "opaque": false,
+                                 "rect": "30,50,188,69",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "1028": {
+                              "#name": "button \"Positioning\"",
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "id": "1028",
+                                 "label": "Position selected object",
+                                 "layer": "50",
+                                 "name": "Positioning",
+                                 "opaque": false,
+                                 "rect": "30,70,204,90",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left"
+                              }
+                           }
+                        },
+                        "customproperties": {
+                           "Selection Description": false
+                        },
+                        "properties": {
+                           "hilitedButton": "1",
+                           "id": "1005",
+                           "layer": "48",
+                           "name": "Scaleorpos",
+                           "rect": "26,46,208,94"
+                        }
+                     },
+                     "1010": {
+                        "#name": "group \"Geometry options\"",
+                        "childcontrols": {
+                           "1029": {
+                              "#name": "group \"Clipping\"",
+                              "childcontrols": {
+                                 "1030": {
+                                    "#name": "button \"Horizontal Scrollbar\"",
+                                    "properties": {
+                                       "disabled": true,
+                                       "hiliteBorder": false,
+                                       "id": "1030",
+                                       "layer": "5",
+                                       "name": "Horizontal Scrollbar",
+                                       "opaque": false,
+                                       "rect": "47,300,229,314",
+                                       "showBorder": false,
+                                       "style": "checkbox",
+                                       "textAlign": "left"
+                                    }
+                                 },
+                                 "1031": {
+                                    "#name": "button \"Vertical Scrollbar\"",
+                                    "properties": {
+                                       "disabled": true,
+                                       "hiliteBorder": false,
+                                       "id": "1031",
+                                       "layer": "6",
+                                       "name": "Vertical Scrollbar",
+                                       "opaque": false,
+                                       "rect": "47,320,173,334",
+                                       "showBorder": false,
+                                       "style": "checkbox",
+                                       "textAlign": "left"
+                                    }
+                                 }
+                              },
+                              "properties": {
+                                 "disabled": true,
+                                 "id": "1029",
+                                 "layer": "4",
+                                 "name": "Clipping",
+                                 "rect": "43,296,233,338"
+                              }
+                           },
+                           "1032": {
+                              "#name": "button \"Prevent object clipping text\"",
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "id": "1032",
+                                 "layer": "7",
+                                 "name": "Prevent object clipping text",
+                                 "opaque": false,
+                                 "rect": "26,278,222,292",
+                                 "showBorder": false,
+                                 "style": "checkbox",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "1033": {
+                              "#name": "button \"limitsize\"",
+                              "customproperties": {
+                                 "Selection Description": false,
+                                 "Tabs": false
+                              },
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "id": "1033",
+                                 "label": "Limit object",
+                                 "layer": "8",
+                                 "name": "limitsize",
+                                 "opaque": false,
+                                 "rect": "26,353,156,367",
+                                 "showBorder": false,
+                                 "style": "checkbox",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "1034": {
+                              "#name": "button \"Remove All\"",
+                              "properties": {
+                                 "id": "1034",
+                                 "layer": "9",
+                                 "name": "Remove All",
+                                 "rect": "16,466,116,486"
+                              }
+                           },
+                           "1066": {
+                              "#name": "group \"minmax\"",
+                              "childcontrols": {
+                                 "1067": {
+                                    "#name": "field \"New Field 3\"",
+                                    "customproperties": {
+                                       "Selection Description": false
+                                    },
+                                    "properties": {
+                                       "autoHilite": false,
+                                       "disabled": true,
+                                       "dontWrap": true,
+                                       "htmlText": "<p>Min.</p>",
+                                       "id": "1067",
+                                       "layer": "11",
+                                       "lockText": true,
+                                       "name": "New Field 3",
+                                       "opaque": false,
+                                       "rect": "31,397,81,419",
+                                       "sharedText": true,
+                                       "showBorder": false,
+                                       "style": "transparent",
+                                       "textAlign": "right",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "1068": {
+                                    "#name": "field \"New Field 3\"",
+                                    "customproperties": {
+                                       "Selection Description": false
+                                    },
+                                    "properties": {
+                                       "autoHilite": false,
+                                       "disabled": true,
+                                       "dontWrap": true,
+                                       "htmlText": "<p>Min.</p>",
+                                       "id": "1068",
+                                       "layer": "12",
+                                       "lockText": true,
+                                       "name": "New Field 3",
+                                       "opaque": false,
+                                       "rect": "134,397,184,419",
+                                       "sharedText": true,
+                                       "showBorder": false,
+                                       "style": "transparent",
+                                       "textAlign": "right",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "1069": {
+                                    "#name": "field \"New Field 3\"",
+                                    "properties": {
+                                       "autoHilite": false,
+                                       "disabled": true,
+                                       "dontWrap": true,
+                                       "htmlText": "<p>Max.</p>",
+                                       "id": "1069",
+                                       "layer": "13",
+                                       "lockText": true,
+                                       "name": "New Field 3",
+                                       "opaque": false,
+                                       "rect": "31,427,81,449",
+                                       "sharedText": true,
+                                       "showBorder": false,
+                                       "style": "transparent",
+                                       "textAlign": "right",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "1070": {
+                                    "#name": "field \"New Field 3\"",
+                                    "properties": {
+                                       "autoHilite": false,
+                                       "disabled": true,
+                                       "dontWrap": true,
+                                       "htmlText": "<p>Max.</p>",
+                                       "id": "1070",
+                                       "layer": "14",
+                                       "lockText": true,
+                                       "name": "New Field 3",
+                                       "opaque": false,
+                                       "rect": "134,427,184,449",
+                                       "sharedText": true,
+                                       "showBorder": false,
+                                       "style": "transparent",
+                                       "textAlign": "right",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "1071": {
+                                    "#name": "field \"LimitX\"",
+                                    "customproperties": {
+                                       "Selection Description": false
+                                    },
+                                    "properties": {
+                                       "autoHilite": false,
+                                       "disabled": true,
+                                       "dontWrap": true,
+                                       "htmlText": "<p>Width</p>",
+                                       "id": "1071",
+                                       "layer": "15",
+                                       "lockText": true,
+                                       "name": "LimitX",
+                                       "opaque": false,
+                                       "rect": "31,370,81,392",
+                                       "sharedText": true,
+                                       "showBorder": false,
+                                       "style": "transparent",
+                                       "textAlign": "right",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "1072": {
+                                    "#name": "field \"LimitY\"",
+                                    "customproperties": {
+                                       "Selection Description": false
+                                    },
+                                    "properties": {
+                                       "autoHilite": false,
+                                       "disabled": true,
+                                       "dontWrap": true,
+                                       "htmlText": "<p>Height</p>",
+                                       "id": "1072",
+                                       "layer": "16",
+                                       "lockText": true,
+                                       "name": "LimitY",
+                                       "opaque": false,
+                                       "rect": "133,369,183,391",
+                                       "sharedText": true,
+                                       "showBorder": false,
+                                       "style": "transparent",
+                                       "textAlign": "right",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "1073": {
+                                    "#name": "graphic \"New Graphic 1\"",
+                                    "properties": {
+                                       "antialiased": false,
+                                       "disabled": true,
+                                       "filled": true,
+                                       "foreColor": "128,128,128",
+                                       "id": "1073",
+                                       "layer": "17",
+                                       "name": "New Graphic 1",
+                                       "opaque": true,
+                                       "points": "81,384\n125,384",
+                                       "rect": "80,383,126,385",
+                                       "style": "line"
+                                    }
+                                 },
+                                 "1074": {
+                                    "#name": "graphic \"New Graphic 1\"",
+                                    "properties": {
+                                       "antialiased": false,
+                                       "disabled": true,
+                                       "filled": true,
+                                       "foreColor": "128,128,128",
+                                       "id": "1074",
+                                       "layer": "18",
+                                       "name": "New Graphic 1",
+                                       "opaque": true,
+                                       "points": "185,384\n229,384",
+                                       "rect": "184,383,230,385",
+                                       "style": "line"
+                                    }
+                                 },
+                                 "1075": {
+                                    "#name": "field \"minWidth\"",
+                                    "properties": {
+                                       "disabled": true,
+                                       "id": "1075",
+                                       "layer": "19",
+                                       "name": "minWidth",
+                                       "rect": "80,397,126,419"
+                                    }
+                                 },
+                                 "1076": {
+                                    "#name": "field \"maxWidth\"",
+                                    "properties": {
+                                       "disabled": true,
+                                       "id": "1076",
+                                       "layer": "20",
+                                       "name": "maxWidth",
+                                       "rect": "80,427,126,449"
+                                    }
+                                 },
+                                 "1077": {
+                                    "#name": "field \"minHeight\"",
+                                    "properties": {
+                                       "disabled": true,
+                                       "id": "1077",
+                                       "layer": "21",
+                                       "name": "minHeight",
+                                       "rect": "185,397,231,419"
+                                    }
+                                 },
+                                 "1078": {
+                                    "#name": "field \"maxHeight\"",
+                                    "properties": {
+                                       "disabled": true,
+                                       "id": "1078",
+                                       "layer": "22",
+                                       "name": "maxHeight",
+                                       "rect": "185,427,231,449"
+                                    }
+                                 }
+                              },
+                              "customproperties": {
+                                 "Selection Description": false
+                              },
+                              "properties": {
+                                 "disabled": true,
+                                 "id": "1066",
+                                 "layer": "10",
+                                 "name": "minmax",
+                                 "rect": "27,365,235,453"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1010",
+                           "layer": "3",
+                           "name": "Geometry options",
+                           "rect": "12,274,239,490"
+                        }
+                     },
+                     "1062": {
+                        "#name": "field \"rowLabel\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "id": "1062",
+                           "layer": "51",
+                           "lockText": true,
+                           "name": "rowLabel",
+                           "opaque": false,
+                           "rect": "32,18,236,39",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textHeight": "16",
+                           "traversalOn": false
+                        }
+                     },
+                     "1063": {
+                        "#name": "group \"Diagram\"",
+                        "childcontrols": {
+                           "1015": {
+                              "#name": "button \"Window\"",
+                              "customproperties": {
+                                 "cMacID": "202854",
+                                 "cWinID": "202855"
+                              },
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "hiliteFill": false,
+                                 "icon": "202854",
+                                 "id": "1015",
+                                 "layer": "24",
+                                 "lockLoc": true,
+                                 "name": "Window",
+                                 "rect": "17,96,243,262",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "opaque",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "1080": {
+                              "#name": "group \"content\"",
+                              "childcontrols": {
+                                 "1004": {
+                                    "#name": "group \"Bottom Object\"",
+                                    "childcontrols": {
+                                       "1018": {
+                                          "#name": "field \"Bottom object\"",
+                                          "properties": {
+                                             "autoHilite": false,
+                                             "dontWrap": true,
+                                             "foreColor": "100,100,100",
+                                             "htmlText": "<p>Bottom object</p>",
+                                             "id": "1018",
+                                             "layer": "27",
+                                             "lockText": true,
+                                             "margins": "8,6,8,10",
+                                             "name": "Bottom object",
+                                             "opaque": false,
+                                             "rect": "124,238,210,254",
+                                             "sharedText": true,
+                                             "showBorder": false,
+                                             "style": "transparent",
+                                             "textSize": "11",
+                                             "traversalOn": false
+                                          }
+                                       },
+                                       "1021": {
+                                          "#name": "button \"Bottom object\"",
+                                          "customproperties": {
+                                             "cSelectedObject": null
+                                          },
+                                          "properties": {
+                                             "icon": "200888",
+                                             "id": "1021",
+                                             "layer": "28",
+                                             "margins": "12,4,0,4",
+                                             "name": "Bottom object",
+                                             "rect": "131,222,159,239",
+                                             "showFocusBorder": false,
+                                             "showIcon": true,
+                                             "showName": false,
+                                             "style": "rectangle"
+                                          }
+                                       },
+                                       "1058": {
+                                          "#name": "graphic \"Bottom object\"",
+                                          "customproperties": {
+                                             "cFixed": "202859",
+                                             "cNoSize": "202857",
+                                             "cProportional": "202860"
+                                          },
+                                          "properties": {
+                                             "antialiased": false,
+                                             "backPattern": "202857",
+                                             "borderWidth": "0",
+                                             "filled": true,
+                                             "id": "1058",
+                                             "layer": "29",
+                                             "lineSize": "0",
+                                             "name": "Bottom object",
+                                             "opaque": true,
+                                             "rect": "137,210,153,222"
+                                          }
+                                       }
+                                    },
+                                    "properties": {
+                                       "id": "1004",
+                                       "layer": "26",
+                                       "lockLoc": true,
+                                       "name": "Bottom Object",
+                                       "rect": "120,206,214,258"
+                                    }
+                                 },
+                                 "1014": {
+                                    "#name": "group \"Top Object\"",
+                                    "childcontrols": {
+                                       "1006": {
+                                          "#name": "field \"Top object\"",
+                                          "properties": {
+                                             "autoHilite": false,
+                                             "dontWrap": true,
+                                             "foreColor": "100,100,100",
+                                             "htmlText": "<p>Top object</p>",
+                                             "id": "1006",
+                                             "layer": "45",
+                                             "lockText": true,
+                                             "name": "Top object",
+                                             "opaque": false,
+                                             "rect": "122,114,195,130",
+                                             "sharedText": true,
+                                             "showBorder": false,
+                                             "style": "transparent",
+                                             "textSize": "11",
+                                             "traversalOn": false
+                                          }
+                                       },
+                                       "1009": {
+                                          "#name": "button \"Top object\"",
+                                          "customproperties": {
+                                             "cSelectedObject": null
+                                          },
+                                          "properties": {
+                                             "icon": "200888",
+                                             "id": "1009",
+                                             "layer": "44",
+                                             "margins": "12,4,0,4",
+                                             "name": "Top object",
+                                             "rect": "131,132,159,149",
+                                             "showIcon": true,
+                                             "showName": false,
+                                             "style": "rectangle"
+                                          }
+                                       },
+                                       "1056": {
+                                          "#name": "graphic \"Top object\"",
+                                          "customproperties": {
+                                             "cFixed": "202859",
+                                             "cNoSize": "202857",
+                                             "cProportional": "202860"
+                                          },
+                                          "properties": {
+                                             "antialiased": false,
+                                             "backPattern": "202857",
+                                             "borderWidth": "0",
+                                             "filled": true,
+                                             "id": "1056",
+                                             "layer": "46",
+                                             "lineSize": "0",
+                                             "name": "Top object",
+                                             "opaque": true,
+                                             "rect": "136,149,152,161"
+                                          }
+                                       }
+                                    },
+                                    "properties": {
+                                       "id": "1014",
+                                       "layer": "43",
+                                       "lockLoc": true,
+                                       "name": "Top Object",
+                                       "rect": "118,110,199,165"
+                                    }
+                                 },
+                                 "1016": {
+                                    "#name": "button \"New Button\"",
+                                    "properties": {
+                                       "autoHilite": false,
+                                       "id": "1016",
+                                       "layer": "30",
+                                       "lockLoc": true,
+                                       "name": "New Button",
+                                       "rect": "103,161,160,210",
+                                       "showName": false,
+                                       "style": "rectangle"
+                                    }
+                                 },
+                                 "1019": {
+                                    "#name": "field id 1019",
+                                    "properties": {
+                                       "autoHilite": false,
+                                       "dontWrap": true,
+                                       "htmlText": "<p>Selected</p>\n<p>object</p>",
+                                       "id": "1019",
+                                       "layer": "35",
+                                       "lockLoc": true,
+                                       "lockText": true,
+                                       "margins": "8,6,8,10",
+                                       "opaque": false,
+                                       "rect": "103,171,159,210",
+                                       "sharedText": true,
+                                       "showBorder": false,
+                                       "style": "transparent",
+                                       "textAlign": "center",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "1022": {
+                                    "#name": "group \"Right Object\"",
+                                    "childcontrols": {
+                                       "1017": {
+                                          "#name": "field \"Right object\"",
+                                          "properties": {
+                                             "autoHilite": false,
+                                             "dontWrap": true,
+                                             "foreColor": "100,100,100",
+                                             "htmlText": "<p>Right object</p>",
+                                             "id": "1017",
+                                             "layer": "33",
+                                             "lockText": true,
+                                             "margins": "8,6,8,8",
+                                             "name": "Right object",
+                                             "opaque": false,
+                                             "rect": "156,205,256,223",
+                                             "sharedText": true,
+                                             "showBorder": false,
+                                             "style": "transparent",
+                                             "textSize": "11",
+                                             "traversalOn": false
+                                          }
+                                       },
+                                       "1020": {
+                                          "#name": "button \"Right object\"",
+                                          "customproperties": {
+                                             "cSelectedObject": null
+                                          },
+                                          "properties": {
+                                             "icon": "200888",
+                                             "id": "1020",
+                                             "layer": "32",
+                                             "margins": "12,4,0,4",
+                                             "name": "Right object",
+                                             "rect": "193,189,221,206",
+                                             "showIcon": true,
+                                             "showName": false,
+                                             "style": "rectangle"
+                                          }
+                                       },
+                                       "1059": {
+                                          "#name": "graphic \"Right object\"",
+                                          "customproperties": {
+                                             "cFixed": "202859",
+                                             "cNoSize": "202857",
+                                             "cProportional": "202858"
+                                          },
+                                          "properties": {
+                                             "antialiased": false,
+                                             "backPattern": "202857",
+                                             "borderWidth": "0",
+                                             "filled": true,
+                                             "id": "1059",
+                                             "layer": "34",
+                                             "lineSize": "0",
+                                             "name": "Right object",
+                                             "opaque": true,
+                                             "rect": "160,189,193,205"
+                                          }
+                                       }
+                                    },
+                                    "properties": {
+                                       "id": "1022",
+                                       "layer": "31",
+                                       "lockLoc": true,
+                                       "name": "Right Object",
+                                       "rect": "152,185,260,227"
+                                    }
+                                 },
+                                 "1023": {
+                                    "#name": "graphic \"Left\"",
+                                    "customproperties": {
+                                       "cFixed": "202859",
+                                       "cNoSize": "202857",
+                                       "cProportional": "202858"
+                                    },
+                                    "properties": {
+                                       "antialiased": false,
+                                       "backPattern": "202857",
+                                       "borderWidth": "0",
+                                       "filled": true,
+                                       "id": "1023",
+                                       "layer": "41",
+                                       "lineSize": "0",
+                                       "lockLoc": true,
+                                       "name": "Left",
+                                       "opaque": true,
+                                       "rect": "26,168,103,184"
+                                    }
+                                 },
+                                 "1024": {
+                                    "#name": "graphic \"Right\"",
+                                    "customproperties": {
+                                       "cFixed": "202859",
+                                       "cNoSize": "202857",
+                                       "cProportional": "202858"
+                                    },
+                                    "properties": {
+                                       "antialiased": false,
+                                       "backPattern": "202857",
+                                       "borderWidth": "0",
+                                       "filled": true,
+                                       "id": "1024",
+                                       "layer": "42",
+                                       "lineSize": "0",
+                                       "lockLoc": true,
+                                       "name": "Right",
+                                       "opaque": true,
+                                       "rect": "160,168,237,184"
+                                    }
+                                 },
+                                 "1025": {
+                                    "#name": "graphic \"Bottom\"",
+                                    "customproperties": {
+                                       "cFixed": "202859",
+                                       "cNoSize": "202857",
+                                       "cProportional": "202860"
+                                    },
+                                    "properties": {
+                                       "antialiased": false,
+                                       "backPattern": "202857",
+                                       "borderWidth": "0",
+                                       "filled": true,
+                                       "id": "1025",
+                                       "layer": "36",
+                                       "lineSize": "0",
+                                       "lockLoc": true,
+                                       "name": "Bottom",
+                                       "opaque": true,
+                                       "rect": "111,210,127,254"
+                                    }
+                                 },
+                                 "1026": {
+                                    "#name": "graphic \"Top\"",
+                                    "customproperties": {
+                                       "cFixed": "202859",
+                                       "cNoSize": "202857",
+                                       "cProportional": "202860"
+                                    },
+                                    "properties": {
+                                       "antialiased": false,
+                                       "backPattern": "202857",
+                                       "borderWidth": "0",
+                                       "filled": true,
+                                       "id": "1026",
+                                       "layer": "47",
+                                       "lineSize": "0",
+                                       "lockLoc": true,
+                                       "name": "Top",
+                                       "opaque": true,
+                                       "rect": "111,114,127,161"
+                                    }
+                                 },
+                                 "1060": {
+                                    "#name": "group \"Left Object\"",
+                                    "childcontrols": {
+                                       "1007": {
+                                          "#name": "field \"Left object\"",
+                                          "properties": {
+                                             "autoHilite": false,
+                                             "dontWrap": true,
+                                             "foreColor": "100,100,100",
+                                             "htmlText": "<p>Left object</p>",
+                                             "id": "1007",
+                                             "layer": "39",
+                                             "lockText": true,
+                                             "margins": "8,6,8,8",
+                                             "name": "Left object",
+                                             "opaque": false,
+                                             "rect": "28,205,101,221",
+                                             "sharedText": true,
+                                             "showBorder": false,
+                                             "style": "transparent",
+                                             "textSize": "11",
+                                             "traversalOn": false
+                                          }
+                                       },
+                                       "1008": {
+                                          "#name": "button \"Left object\"",
+                                          "customproperties": {
+                                             "cSelectedObject": null
+                                          },
+                                          "properties": {
+                                             "icon": "200888",
+                                             "id": "1008",
+                                             "layer": "38",
+                                             "margins": "12,4,0,4",
+                                             "name": "Left object",
+                                             "rect": "42,189,70,206",
+                                             "showIcon": true,
+                                             "showName": false,
+                                             "style": "rectangle"
+                                          }
+                                       },
+                                       "1057": {
+                                          "#name": "graphic \"Left object\"",
+                                          "customproperties": {
+                                             "cFixed": "202859",
+                                             "cNoSize": "202857",
+                                             "cProportional": "202858"
+                                          },
+                                          "properties": {
+                                             "antialiased": false,
+                                             "backPattern": "202857",
+                                             "borderWidth": "0",
+                                             "filled": true,
+                                             "id": "1057",
+                                             "layer": "40",
+                                             "lineSize": "0",
+                                             "name": "Left object",
+                                             "opaque": true,
+                                             "rect": "70,190,103,206"
+                                          }
+                                       }
+                                    },
+                                    "properties": {
+                                       "id": "1060",
+                                       "layer": "37",
+                                       "lockLoc": true,
+                                       "name": "Left Object",
+                                       "rect": "24,185,107,225"
+                                    }
+                                 }
+                              },
+                              "properties": {
+                                 "id": "1080",
+                                 "layer": "25",
+                                 "lockLoc": true,
+                                 "margins": "0",
+                                 "name": "content",
+                                 "rect": "26,114,236,264"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1063",
+                           "layer": "23",
+                           "lockLoc": true,
+                           "margins": "0",
+                           "name": "Diagram",
+                           "rect": "13,92,248,276"
+                        }
+                     },
+                     "1064": {
+                        "#name": "button \"Object name\"",
+                        "customproperties": {
+                           "cCurrentButton": "button id 45916 of group id 45899 of card id 45909 of stack \"C:/Workspace/Projects/Revolution/ide/Toolset/revpalette.rev\""
+                        },
+                        "properties": {
+                           "id": "1064",
+                           "layer": "2",
+                           "menuMode": "popup",
+                           "name": "Object name",
+                           "rect": "142,502,239,533",
+                           "style": "menu",
+                           "text": "%file%: assets/com.livecode.pi.geometry_1003_1065_1064_text.txt",
+                           "visible": false
+                        }
+                     },
+                     "1079": {
+                        "#name": "button \"Squiggle type\"",
+                        "properties": {
+                           "id": "1079",
+                           "layer": "52",
+                           "menuMode": "popup",
+                           "name": "Squiggle type",
+                           "rect": "34,502,131,533",
+                           "style": "menu",
+                           "text": "No Scaling\nFixed Scaling\nProportional Scaling",
+                           "visible": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1065",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "8,14,252,494"
+                  }
+               }
+            },
+            "customproperties": {
+               "cLanguageNames": false,
+               "cREVCardHeight": "500",
+               "cSide": "bottom"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "52"
+               }
+            },
+            "properties": {
+               "id": "1003",
+               "name": "revGeometryScale"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1080"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.geometry\"",
+      "properties": {
+         "fileName": "com.livecode.pi.geometry.livecode",
+         "id": "1080",
+         "name": "com.livecode.pi.geometry",
+         "rect": "1160,174,1438,778"
+      },
+      "sharedGroupIDs": null
+   }
+}

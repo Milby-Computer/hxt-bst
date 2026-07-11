@@ -1,0 +1,1150 @@
+{
+   "#mainstack": "revOnlineLibrary",
+   "revOnlineAffiliateSignupDialog": {
+      "#name": "stack \"revOnlineAffiliateSignupDialog\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"email label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Email :"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Email :</p>",
+                     "id": "1003",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "email label",
+                     "opaque": false,
+                     "rect": "7,117,97,138",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1004": {
+                  "#name": "field \"password label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Password :"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Password :</p>",
+                     "id": "1004",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "password label",
+                     "opaque": false,
+                     "rect": "7,147,97,168",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Please enter your revOnline login details to register for the affiliates programme"
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "<p>Please enter your revOnline login details to register for the affiliates programme</p>",
+                     "id": "1006",
+                     "layer": "3",
+                     "lockText": true,
+                     "name": "Field",
+                     "opaque": false,
+                     "rect": "24,72,324,104",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1007": {
+                  "#name": "field \"Email\"",
+                  "properties": {
+                     "id": "1007",
+                     "layer": "4",
+                     "name": "Email",
+                     "rect": "96,117,314,138"
+                  }
+               },
+               "1008": {
+                  "#name": "field \"Password\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": null
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1012 of stack \"revOnlineLibrary\"",
+                     "id": "1008",
+                     "layer": "5",
+                     "name": "Password",
+                     "rect": "96,147,314,168"
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Register\"",
+                  "properties": {
+                     "id": "1010",
+                     "layer": "6",
+                     "name": "Register",
+                     "rect": "96,175,178,198",
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1012",
+                     "label": "Cancel",
+                     "layer": "7",
+                     "name": "Cancel",
+                     "rect": "186,175,268,198",
+                     "traversalOn": false
+                  }
+               },
+               "1014": {
+                  "#name": "field \"Message\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1014",
+                     "layer": "8",
+                     "lockText": true,
+                     "name": "Message",
+                     "opaque": false,
+                     "rect": "22,200,324,236",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1028": {
+                  "#name": "graphic \"Rectangle\"",
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "245,56",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,224,226,233\n1.00000,255,255,255",
+                        "repeat": "1",
+                        "to": "245,0",
+                        "type": "linear",
+                        "via": "345,56",
+                        "wrap": false
+                     },
+                     "id": "1028",
+                     "layer": "9",
+                     "lineSize": "0",
+                     "lockLoc": true,
+                     "name": "Rectangle",
+                     "opaque": true,
+                     "outerGlow": {
+                        "blendmode": "normal",
+                        "color": "0,0,0",
+                        "filter": "box3pass",
+                        "opacity": "191",
+                        "range": "255",
+                        "size": "3",
+                        "spread": "0"
+                     },
+                     "rect": "-10,-4,500,54"
+                  }
+               },
+               "1030": {
+                  "#name": "field \"title\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Register"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p><b><font face=\"Tahoma\" size=\"20\">Register</font></b></p>",
+                     "id": "1030",
+                     "layer": "11",
+                     "lockText": true,
+                     "margins": "0",
+                     "name": "title",
+                     "opaque": false,
+                     "rect": "178,19,341,41",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textHeight": "26",
+                     "textSize": "20",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1031": {
+                  "#name": "image \"affiliates.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1031",
+                     "layer": "10",
+                     "name": "affiliates.png",
+                     "opaque": false,
+                     "rect": "13,16,176,45",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revOnlineAffiliateSignupDialog_1002_1031_text.png"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "11"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cResult": "cancelled"
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1031"
+         }
+      },
+      "longID": "stack \"revOnlineAffiliateSignupDialog\" of stack \"revOnlineLibrary\"",
+      "properties": {
+         "decorations": "default",
+         "id": "1031",
+         "linkColor": "0,0,239",
+         "linkHiliteColor": "255,0,0",
+         "linkVisitedColor": "81,24,128",
+         "liveResizing": false,
+         "name": "revOnlineAffiliateSignupDialog",
+         "rect": "785,479,1135,722",
+         "resizable": false,
+         "title": "Affiliates Programme",
+         "underlineLinks": false
+      },
+      "sharedGroupIDs": null
+   },
+   "revOnlineChangePasswordDialog": {
+      "#name": "stack \"revOnlineChangePasswordDialog\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"email label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Email :"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Email :</p>",
+                     "id": "1003",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "email label",
+                     "opaque": false,
+                     "rect": "22,80,112,101",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1004": {
+                  "#name": "field \"password label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Password :"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Password :</p>",
+                     "id": "1004",
+                     "layer": "3",
+                     "lockText": true,
+                     "name": "password label",
+                     "opaque": false,
+                     "rect": "22,110,112,131",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1007": {
+                  "#name": "field \"Email\"",
+                  "properties": {
+                     "id": "1007",
+                     "layer": "4",
+                     "name": "Email",
+                     "rect": "111,80,358,101"
+                  }
+               },
+               "1008": {
+                  "#name": "field \"Password\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": null
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1012 of stack \"revOnlineLibrary\"",
+                     "id": "1008",
+                     "layer": "5",
+                     "name": "Password",
+                     "rect": "111,110,358,131"
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Change\"",
+                  "properties": {
+                     "id": "1010",
+                     "layer": "6",
+                     "name": "Change",
+                     "rect": "110,209,192,232",
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "7",
+                     "name": "Cancel",
+                     "rect": "200,209,282,232",
+                     "traversalOn": false
+                  }
+               },
+               "1014": {
+                  "#name": "field \"Message\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1014",
+                     "layer": "8",
+                     "lockText": true,
+                     "name": "Message",
+                     "opaque": false,
+                     "rect": "108,238,358,274",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1024": {
+                  "#name": "field \"New Password\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": null
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1012 of stack \"revOnlineLibrary\"",
+                     "id": "1024",
+                     "layer": "9",
+                     "name": "New Password",
+                     "rect": "111,150,358,171"
+                  }
+               },
+               "1025": {
+                  "#name": "field \"New Password Label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "New password :"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>New password :</p>",
+                     "id": "1025",
+                     "layer": "10",
+                     "lockText": true,
+                     "name": "New Password Label",
+                     "opaque": false,
+                     "rect": "22,150,112,171",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1026": {
+                  "#name": "field \"New Password confirmation\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": null
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1012 of stack \"revOnlineLibrary\"",
+                     "id": "1026",
+                     "layer": "11",
+                     "name": "New Password confirmation",
+                     "rect": "111,180,358,201"
+                  }
+               },
+               "1027": {
+                  "#name": "field \"New Password Label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Confirm :"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Confirm :</p>",
+                     "id": "1027",
+                     "layer": "12",
+                     "lockText": true,
+                     "name": "New Password Label",
+                     "opaque": false,
+                     "rect": "22,180,112,201",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1028": {
+                  "#name": "image \"revonline.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1028",
+                     "layer": "13",
+                     "lockLoc": true,
+                     "name": "revonline.png",
+                     "opaque": false,
+                     "rect": "13,16,147,45",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revOnlineChangePasswordDialog_1002_1028_text.png"
+                  }
+               },
+               "1029": {
+                  "#name": "field \"title\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Change Password"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p><b><font face=\"Tahoma\" size=\"20\">Change Password</font></b></p>",
+                     "id": "1029",
+                     "layer": "14",
+                     "lockText": true,
+                     "margins": "0",
+                     "name": "title",
+                     "opaque": false,
+                     "rect": "180,19,379,41",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textHeight": "26",
+                     "textSize": "20",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1030": {
+                  "#name": "graphic \"Rectangle\"",
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "245,56",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,224,226,233\n1.00000,255,255,255",
+                        "repeat": "1",
+                        "to": "245,0",
+                        "type": "linear",
+                        "via": "345,56",
+                        "wrap": false
+                     },
+                     "id": "1030",
+                     "layer": "1",
+                     "lineSize": "0",
+                     "lockLoc": true,
+                     "name": "Rectangle",
+                     "opaque": true,
+                     "outerGlow": {
+                        "blendmode": "normal",
+                        "color": "0,0,0",
+                        "filter": "box3pass",
+                        "opacity": "191",
+                        "range": "255",
+                        "size": "3",
+                        "spread": "0"
+                     },
+                     "rect": "-10,-4,500,54"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "14"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cResult": "cancelled"
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1030"
+         }
+      },
+      "longID": "stack \"revOnlineChangePasswordDialog\" of stack \"revOnlineLibrary\"",
+      "properties": {
+         "decorations": "default",
+         "id": "1030",
+         "linkColor": "0,0,239",
+         "linkHiliteColor": "255,0,0",
+         "linkVisitedColor": "81,24,128",
+         "liveResizing": false,
+         "name": "revOnlineChangePasswordDialog",
+         "rect": "787,430,1172,702",
+         "resizable": false,
+         "title": "revOnline | Change Password",
+         "underlineLinks": false
+      },
+      "sharedGroupIDs": null
+   },
+   "revOnlineCreateAccountDialog": {
+      "#name": "stack \"revOnlineCreateAccountDialog\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Please enter the email address you would like to use for your Revolution account. Your password will be sent to this address."
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "<p>Please enter the email address you would like to use for your Revolution account. Your password will be sent to this address.</p>",
+                     "id": "1004",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "Field",
+                     "opaque": false,
+                     "rect": "26,76,380,126",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1005": {
+                  "#name": "field \"email label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Email :"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Email :</p>",
+                     "id": "1005",
+                     "layer": "5",
+                     "lockText": true,
+                     "name": "email label",
+                     "opaque": false,
+                     "rect": "30,126,77,147",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Email\"",
+                  "properties": {
+                     "id": "1006",
+                     "layer": "6",
+                     "name": "Email",
+                     "rect": "76,126,370,147"
+                  }
+               },
+               "1007": {
+                  "#name": "field \"Message\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1007",
+                     "layer": "7",
+                     "lockText": true,
+                     "name": "Message",
+                     "opaque": false,
+                     "rect": "69,178,375,218",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1008": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1008",
+                     "layer": "8",
+                     "name": "Cancel",
+                     "rect": "166,154,248,177",
+                     "traversalOn": false
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Submit\"",
+                  "properties": {
+                     "id": "1010",
+                     "layer": "9",
+                     "name": "Submit",
+                     "rect": "76,154,158,177",
+                     "traversalOn": false
+                  }
+               },
+               "1011": {
+                  "#name": "field \"title\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Create Account"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p><b><font face=\"Tahoma\" size=\"20\">Create Account</font></b></p>",
+                     "id": "1011",
+                     "layer": "2",
+                     "lockText": true,
+                     "margins": "0",
+                     "name": "title",
+                     "opaque": false,
+                     "rect": "188,19,395,41",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textHeight": "26",
+                     "textSize": "20",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "image \"revonline.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1012",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "name": "revonline.png",
+                     "opaque": false,
+                     "rect": "13,16,147,45",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revOnlineCreateAccountDialog_1002_1012_text.png"
+                  }
+               },
+               "1013": {
+                  "#name": "graphic \"Rectangle\"",
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "245,56",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,224,226,233\n1.00000,255,255,255",
+                        "repeat": "1",
+                        "to": "245,0",
+                        "type": "linear",
+                        "via": "345,56",
+                        "wrap": false
+                     },
+                     "id": "1013",
+                     "layer": "1",
+                     "lineSize": "0",
+                     "lockLoc": true,
+                     "name": "Rectangle",
+                     "opaque": true,
+                     "outerGlow": {
+                        "blendmode": "normal",
+                        "color": "0,0,0",
+                        "filter": "box3pass",
+                        "opacity": "191",
+                        "range": "255",
+                        "size": "3",
+                        "spread": "0"
+                     },
+                     "rect": "-10,-4,500,54"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "9"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cResult": "cancelled"
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1013"
+         }
+      },
+      "longID": "stack \"revOnlineCreateAccountDialog\" of stack \"revOnlineLibrary\"",
+      "properties": {
+         "decorations": "default",
+         "id": "1013",
+         "liveResizing": false,
+         "name": "revOnlineCreateAccountDialog",
+         "rect": "758,493,1162,707",
+         "resizable": false,
+         "title": "revOnline | Create Account"
+      },
+      "sharedGroupIDs": null
+   },
+   "revOnlineLibrary": {
+      "#name": "stack \"revOnlineLibrary\"",
+      "#substacks": "revOnlineLoginDialog\nrevOnlineCreateAccountDialog\nrevOnlineChangePasswordDialog\nrevOnlineAffiliateSignupDialog",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"card id 1002\"",
+            "childcontrols": {
+               "1012": {
+                  "#name": "button \"Password Field\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "1",
+                     "name": "Password Field",
+                     "rect": "12,8,94,31",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "card id 1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "cursors": false,
+            "inclusions": "search",
+            "MacOS,creator": "????",
+            "MacOS,documentType": null,
+            "MacOS,dynamicMemory": true,
+            "MacOS,longVersion": "revOnlineLibrary 1.0.0.0",
+            "MacOS,MinimumSize": "15000",
+            "MacOS,PreferredSize": "15000",
+            "MacOS,Region": "1",
+            "MacOS,Release": "Final",
+            "MacOS,versionnumber1": "1",
+            "MacOS,versionnumber2": "0",
+            "MacOS,versionnumber3": "0",
+            "MacOS68k": false,
+            "MacOSfat": false,
+            "MacOSPPC": false,
+            "MacOSX": true,
+            "MacOSX PowerPC-32": false,
+            "MacOSX x86-32": false,
+            "name": "revOnlineLibrary",
+            "OSX,copyright": "2009  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,identifier": "com..revonlinelibrary",
+            "OSX,info": "revOnlineLibrary Version 1.0.0.0",
+            "OSX,longVersion": "revOnlineLibrary 1.0.0.0",
+            "OSX,name": "revOnlineLibrary",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "scriptLibraries": "Internet\nGeometry\nPrinting",
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Web": true,
+            "Web,AllowOtherPlatforms": true,
+            "Web,CustomBackgroundColor": "237,237,237",
+            "Web,CustomBackgroundColor2": "237,237,237",
+            "Web,CustomLoadIcon": null,
+            "Web,DetectSecurityPermissions": true,
+            "Web,Domain": "0xFF",
+            "Web,ExecutionMode": "Browser",
+            "Web,InstanceId": null,
+            "Web,LinuxSupported": true,
+            "Web,MacOSXSupported": true,
+            "Web,MinEnvironmentVersion": null,
+            "Web,RequestedName": null,
+            "Web,SecurityPermissions": ",,,,,,,,",
+            "Web,UUID": "f10b8228-9afd-45eb-b509-f57d0353757c",
+            "Web,WindowsSupported": true,
+            "Windows": true,
+            "Windows,buildU3": false,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "C:/Workspace/Projects/Revolution/ide/Runtime/Windows/x86-32/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "revOnlineLibrary 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "C:/Workspace/Projects/Revolution/ide/Runtime/Windows/x86-32/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2009  All rights reserved worldwide",
+            "Windows,ProductName": "revOnlineLibrary",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0"
+         }
+      },
+      "longID": "stack \"revOnlineLibrary\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "revonlinelibrary.rev",
+         "id": "1014",
+         "liveResizing": false,
+         "name": "revOnlineLibrary",
+         "rect": "163,142,425,203"
+      },
+      "sharedGroupIDs": null
+   },
+   "revOnlineLoginDialog": {
+      "#name": "stack \"revOnlineLoginDialog\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"email label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Email :"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Email :</p>",
+                     "id": "1003",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "email label",
+                     "opaque": false,
+                     "rect": "13,84,103,105",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1004": {
+                  "#name": "field \"password label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Password :"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Password :</p>",
+                     "id": "1004",
+                     "layer": "3",
+                     "lockText": true,
+                     "name": "password label",
+                     "opaque": false,
+                     "rect": "13,114,103,135",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1007": {
+                  "#name": "field \"Email\"",
+                  "properties": {
+                     "id": "1007",
+                     "layer": "4",
+                     "name": "Email",
+                     "rect": "102,84,320,105"
+                  }
+               },
+               "1008": {
+                  "#name": "field \"Password\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": null
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1012 of stack \"revOnlineLibrary\"",
+                     "id": "1008",
+                     "layer": "5",
+                     "name": "Password",
+                     "rect": "102,114,320,135"
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Log in\"",
+                  "properties": {
+                     "id": "1010",
+                     "layer": "6",
+                     "name": "Log in",
+                     "rect": "100,188,182,211",
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "7",
+                     "name": "Cancel",
+                     "rect": "186,188,268,211",
+                     "traversalOn": false
+                  }
+               },
+               "1014": {
+                  "#name": "field \"Message\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "<p><font face=\"Segoe UI\" size=\"12\"><a href=\"Forgot password\">Forgot your password?</a></font></p>"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1014",
+                     "layer": "8",
+                     "lockText": true,
+                     "name": "Message",
+                     "opaque": false,
+                     "rect": "94,216,326,240",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Lucida Grande",
+                     "textHeight": "13",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1021": {
+                  "#name": "button \"remember email\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1021",
+                     "label": "Remember me",
+                     "layer": "9",
+                     "name": "remember email",
+                     "opaque": false,
+                     "rect": "101,139,253,162",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1023": {
+                  "#name": "button \"remember password\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1023",
+                     "label": "Sign in automatically",
+                     "layer": "10",
+                     "name": "remember password",
+                     "opaque": false,
+                     "rect": "101,160,253,183",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1024": {
+                  "#name": "image \"revonline.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1024",
+                     "layer": "11",
+                     "lockLoc": true,
+                     "name": "revonline.png",
+                     "opaque": false,
+                     "rect": "13,16,147,45",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revOnlineLoginDialog_1002_1024_text.png"
+                  }
+               },
+               "1025": {
+                  "#name": "graphic \"Rectangle\"",
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "245,56",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,224,226,233\n1.00000,255,255,255",
+                        "repeat": "1",
+                        "to": "245,0",
+                        "type": "linear",
+                        "via": "345,56",
+                        "wrap": false
+                     },
+                     "id": "1025",
+                     "layer": "1",
+                     "lineSize": "0",
+                     "lockLoc": true,
+                     "name": "Rectangle",
+                     "opaque": true,
+                     "outerGlow": {
+                        "blendmode": "normal",
+                        "color": "0,0,0",
+                        "filter": "box3pass",
+                        "opacity": "191",
+                        "range": "255",
+                        "size": "3",
+                        "spread": "0"
+                     },
+                     "rect": "-10,-4,500,54"
+                  }
+               },
+               "1027": {
+                  "#name": "field \"title\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Login"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p><b><font face=\"Tahoma\" size=\"20\">Login</font></b></p>",
+                     "id": "1027",
+                     "layer": "12",
+                     "lockText": true,
+                     "margins": "0",
+                     "name": "title",
+                     "opaque": false,
+                     "rect": "169,19,352,41",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textHeight": "26",
+                     "textSize": "20",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "12"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cResult": "success"
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1027"
+         }
+      },
+      "longID": "stack \"revOnlineLoginDialog\" of stack \"revOnlineLibrary\"",
+      "properties": {
+         "decorations": "default",
+         "id": "1027",
+         "linkColor": "0,0,239",
+         "linkHiliteColor": "255,0,0",
+         "linkVisitedColor": "81,24,128",
+         "liveResizing": false,
+         "name": "revOnlineLoginDialog",
+         "rect": "782,474,1139,726",
+         "resizable": false,
+         "title": "revOnline | Login",
+         "underlineLinks": false
+      },
+      "sharedGroupIDs": null
+   }
+}

@@ -1,0 +1,42 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">put</font> 99 into bottlesLeft</p>
+<p>  <font color="#980517">repeat</font> until the <font color="#F88017">mouseClick</font> <font color="#68228B">-- stop song when the user clicks</font></p>
+<p>    <font color="#68228B">-- show a verse, using the bottlePhrase function</font></p>
+<p>    <font color="#68228B">-- do one verse on each iteration of the loop:</font></p>
+<p>    <font color="#980517">switch</font> bottlesLeft</p>
+<p>    <font color="#980517">case</font> zero <font color="#68228B">-- last verse, zero bottles left</font></p>
+<p>      <font color="#0000FF">put</font> bottlePhrase(bottlesLeft) &amp;&amp; "on the wall," \</p>
+<p>         &amp;&amp; <font color="#F88017">toLower</font>(bottlePhrase(bottlesLeft)) &amp; <font color="#0000FF">return</font> \</p>
+<p>         &amp; "Go to the store and buy some more," \</p>
+<p>         &amp;&amp; <font color="#F88017">toLower</font>(bottlePhrase(99)) \</p>
+<p>         &amp;&amp; "on the wall." into field "Song"</p>
+<p>      <font color="#0000FF">break</font></p>
+<p>    <font color="#FF0000">default</font> <font color="#68228B">-- all other verses</font></p>
+<p>      <font color="#0000FF">put</font> bottlePhrase(bottlesLeft) &amp;&amp; "on the wall," \</p>
+<p>         &amp;&amp; <font color="#F88017">toLower</font>(bottlePhrase(bottlesLeft)) &amp; <font color="#0000FF">return</font> \</p>
+<p>         &amp; "Take one down and pass it around," \</p>
+<p>         &amp;&amp; <font color="#F88017">toLower</font>(bottlePhrase(bottlesLeft - 1)) \</p>
+<p>         &amp;&amp; "on the wall." into field "Song"</p>
+<p>    <font color="#980517">end</font> <font color="#980517">switch</font></p>
+<p>    <font color="#0000FF">subtract</font> 1 from bottlesLeft <font color="#68228B">-- for the next verse</font></p>
+<p>    <font color="#980517">if</font> bottlesLeft &lt; zero <font color="#980517">then</font> <font color="#0000FF">put</font> 99 into bottlesLeft</p>
+<p>    <font color="#0000FF">wait</font> <font color="#980517">for</font> 1 second</p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#68228B">-- when the repeat loop ends with a click, the song is over:</font></p>
+<p>  <font color="#0000FF">put</font> empty into field "Song"</p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#0000FF">function</font> bottlePhrase theNumber</p>
+<p>  <font color="#68228B">-- generate the "base phrase" used to make a verse</font></p>
+<p>  <font color="#980517">switch</font> theNumber</p>
+<p>  <font color="#980517">case</font> zero</p>
+<p>    <font color="#0000FF">return</font> "No more bottles of beer"</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case</font> one</p>
+<p>    <font color="#0000FF">return</font> "One last bottle of beer"</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#FF0000">default</font></p>
+<p>    <font color="#0000FF">return</font> theNumber &amp;&amp; "bottles of beer"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">switch</font></p>
+<p><font color="#980517">end</font> bottlePhrase</p>

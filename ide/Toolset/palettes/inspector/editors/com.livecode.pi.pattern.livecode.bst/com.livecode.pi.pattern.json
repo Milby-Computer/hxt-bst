@@ -1,0 +1,60 @@
+{
+   "#mainstack": "com.livecode.pi.pattern",
+   "com.livecode.pi.pattern": {
+      "#name": "stack \"com.livecode.pi.pattern\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1006": {
+                        "#name": "graphic \"color\"",
+                        "customproperties": {
+                           "fill": null
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderColor": "100,100,100",
+                           "filled": true,
+                           "foreColor": "200,200,200",
+                           "id": "1006",
+                           "layer": "2",
+                           "name": "color",
+                           "opaque": true,
+                           "rect": "57,20,78,44"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "opaque": true,
+                     "rect": "57,20,78,44"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "visitedColor": "168,1,255"
+      },
+      "longID": "stack \"com.livecode.pi.pattern\"",
+      "properties": {
+         "fileName": "com.livecode.pi.pattern.livecode",
+         "id": "1006",
+         "name": "com.livecode.pi.pattern",
+         "rect": "706,527,1061,914"
+      },
+      "sharedGroupIDs": null
+   }
+}

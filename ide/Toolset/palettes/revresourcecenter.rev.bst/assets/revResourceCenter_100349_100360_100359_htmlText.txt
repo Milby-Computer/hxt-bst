@@ -1,0 +1,38 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> menuPick theMenuItem</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">itemDelimiter</font> to "|"</p>
+<p>  <font color="#980517">switch</font> item 1 of theMenuItem <font color="#68228B">-- the submenu name</font></p>
+<p>  <font color="#980517">case</font> "Font"</p>
+<p>    <font color="#0000FF">set</font> the <font color="#FF0000">textFont</font> of field "Example Text" \</p>
+<p>        to item 2 of theMenuItem</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case</font> "Size"</p>
+<p>    <font color="#0000FF">set</font> the <font color="#FF0000">textSize</font> of field "Example Text" \</p>
+<p>        to item 2 of theMenuItem</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case</font> "Color"</p>
+<p>    <font color="#0000FF">set</font> the <font color="#FF0000">textColor</font> of field "Example Text" \</p>
+<p>        to item 2 of theMenuItem</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case</font> "Plain"</p>
+<p>    <font color="#68228B">-- plain removes all styles:</font></p>
+<p>    <font color="#0000FF">set</font> the <font color="#FF0000">textStyle</font> of field "Example Text" to empty</p>
+<p>  <font color="#980517">case</font> "Bold"       <font color="#68228B">-- all three remaining menu items</font></p>
+<p>  <font color="#980517">case</font> "Italic"     <font color="#68228B">--   are handled with the same piece</font></p>
+<p>  <font color="#980517">case</font> "Underline"  <font color="#68228B">--   of code:</font></p>
+<p>    <font color="#0000FF">put</font> the <font color="#FF0000">textStyle</font> of field "Example Text" into currentStyle</p>
+<p>    <font color="#0000FF">set</font> the <font color="#FF0000">itemDelimiter</font> to comma</p>
+<p>    <font color="#980517">if</font> theMenuItem is among the items of currentStyle <font color="#980517">then</font></p>
+<p>      <font color="#68228B">-- already has that style, so remove it</font></p>
+<p>      <font color="#0000FF">delete</font> item (itemOffset(theMenuItem,currentStyle)) \</p>
+<p>         of currentStyle</p>
+<p>    <font color="#980517">else</font></p>
+<p>      <font color="#68228B">-- add the style to any existing styles</font></p>
+<p>      <font color="#980517">if</font> currentStyle is "plain"</p>
+<p>      <font color="#980517">then</font> <font color="#0000FF">put</font> theMenuItem into currentStyle</p>
+<p>      <font color="#980517">else</font> <font color="#0000FF">put</font> comma &amp; theMenuItem after currentStyle</p>
+<p>    <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>    <font color="#0000FF">set</font> the <font color="#FF0000">textStyle</font> of field "Example Text" to currentStyle</p>
+<p>  <font color="#980517">end</font> <font color="#980517">switch</font></p>
+<p><font color="#980517">end</font> menuPick</p>
+<p></p>

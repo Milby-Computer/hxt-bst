@@ -1,0 +1,3 @@
+<p><font face="Lucida Grande" size="12" color="#000000">As shown above, each object can have its position adjusted relative to either another object within the same card or the edge of the stack. Firstly let us look at the horizontal adjustment; this is controlled by the two black bars to the right of the "Selected Object" button in the centre of the linking area. The uppermost bar controls positioning relative to the stack edge and the lower of the two bars controls positioning relative to another object. The behaviour of these bars is as follows;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">When in the black state (Fig 1) the geometry manager will do nothing to either position or resize the selected option.</font></p>

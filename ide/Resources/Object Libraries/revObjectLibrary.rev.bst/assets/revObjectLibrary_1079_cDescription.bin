@@ -1,0 +1,5 @@
+Scripted button. Changes icon on mouseDown and tracks the mouse to change icon appropriately while the mouse is down.
+
+The button references 2 images. These are set as the icon and the hiliteIcon of the button.
+
+Note that this control requires the "Revolution Icons" image library to be tranferred to your stack using Distribution Builder when you are preparing your stack for distribution.

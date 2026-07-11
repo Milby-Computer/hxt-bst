@@ -1,0 +1,83 @@
+<p>Name: ask password</p>
+<p></p>
+<p>Type: command</p>
+<p></p>
+<p>Syntax: ask password [clear] &lt;question&gt; [with &lt;defaultResponse&gt;] [titled &lt;windowTitle&gt;] [as sheet]</p>
+<p></p>
+<p>Summary:</p>
+<p>Displays a &lt;dialog box&gt; like the &lt;ask&gt; &lt;command&gt;, but with the</p>
+<p>characters the user types displayed as asterisks (*) for privacy.</p>
+<p></p>
+<p>Introduced: 1.0</p>
+<p></p>
+<p>OS: mac, windows, linux, ios, android</p>
+<p></p>
+<p>Platforms: desktop, mobile</p>
+<p></p>
+<p>Example:</p>
+<p>ask password "Please enter password"</p>
+<p>get mcEncrypt(it)</p>
+<p></p>
+<p>Example:</p>
+<p>ask password "Please log in." titled "Millenium Group Intranet"</p>
+<p></p>
+<p>Example:</p>
+<p>ask password empty with savedPassword as sheet</p>
+<p></p>
+<p>Example:</p>
+<p>ask password "Please log in:" with "PASSWORD" titled "Password Test"</p>
+<p></p>
+<p>Parameters:</p>
+<p>question (string):</p>
+<p>The string to display as a prompt above the password entry box.</p>
+<p></p>
+<p>windowTitle:</p>
+<p>If specified, appears in the title bar of the dialog box. If no</p>
+<p>windowTitle is given, the title bar is blank.</p>
+<p></p>
+<p>defaultResponse:</p>
+<p>Placed in the text box when the dialog box appears. If no</p>
+<p>defaultResponse is specified, the text box is empty when the dialog box</p>
+<p>appears. </p>
+<p></p>
+<p>It:</p>
+<p>The text contents of the text box is placed in the it &lt;variable&gt;. If the</p>
+<p>ask password clear form is used, the text box is not encrypted, and the</p>
+<p>it &lt;variable&gt; contains whatever the user entered (this is the default</p>
+<p>behavior). </p>
+<p></p>
+<p>The result:</p>
+<p>If the user cancels the &lt;dialog box|dialog&gt;, the &lt;it&gt; &lt;variable&gt; is set</p>
+<p>to empty, and the &lt;result&gt; &lt;function&gt; &lt;return|returns&gt; "cancel".</p>
+<p></p>
+<p>Description:</p>
+<p>Use the &lt;ask password&gt; &lt;command&gt; to provide privacy for the information</p>
+<p>the user types. For example, if the user is in a public place, the</p>
+<p>information might be seen by someone looking over his or her shoulder.</p>
+<p>This command does not &lt;encrypt&gt; the text the user types, but you can use</p>
+<p>&lt;ask password&gt; to implement a secret &lt;password with the syntax shown in</p>
+<p>the example section.&gt;.</p>
+<p></p>
+<p>If the ask password...as sheet form is used, the dialog box appears as a</p>
+<p>sheet on OS X systems. On other systems, the as sheet form has no effect</p>
+<p>and the dialog box appears normally. Attempting to open a sheet from</p>
+<p>within another sheet displays the second stack as a &lt;modal dialog box&gt;</p>
+<p>instead. </p>
+<p></p>
+<p>&gt;*Note:* Android and iOS do not support 'as sheet'.</p>
+<p></p>
+<p>Changes:</p>
+<p>'ask password clear' set to the default behavior at version 6.0.0 to</p>
+<p>provide compatibility across all platforms.</p>
+<p></p>
+<p>The 'ask password...as sheet' form was introduced in version 2.0.</p>
+<p></p>
+<p>References: ask (command), function (control structure),</p>
+<p>result (function), mcEncrypt (function), modal dialog box (glossary),</p>
+<p>dialog box (glossary), variable (glossary), command (glossary),</p>
+<p>return (glossary), encrypt (glossary), it (keyword),</p>
+<p>password with the syntax shown in the example section. (property)</p>
+<p></p>
+<p>Tags: windowing</p>
+<p></p>
+<p></p>

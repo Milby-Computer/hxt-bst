@@ -1,0 +1,1 @@
+<p>A very warm welcome to LiveCode. To help you get started we've created an interactive tutorial that will guide you through the process of building a simple application and introduce you to the IDE and documentation. You'll be up to speed in 30 minutes!</p>

@@ -1,0 +1,12 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> speakAlert theText</p>
+<p>  <font color="#980517">if</font> theText is empty <font color="#980517">then</font> <font color="#0000FF">exit</font> speakAlert <font color="#68228B">-- skip the rest</font></p>
+<p>  <font color="#980517">try</font> <font color="#68228B">-- in case revSpeak isn't installed</font></p>
+<p>    revSpeak theText</p>
+<p>  <font color="#980517">catch</font> theError <font color="#68228B">-- if the "revSpeak" command fails</font></p>
+<p>    <font color="#0000FF">put</font> <font color="#0000FF">return</font> &amp; "(Cannot speak text on this system.)" \</p>
+<p>       after theText</p>
+<p>    <font color="#0000FF">beep</font> <font color="#68228B">-- make a sound to get the user's attention</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">try</font></p>
+<p>  <font color="#0000FF">answer</font> theText</p>
+<p><font color="#980517">end</font> speakAlert</p>

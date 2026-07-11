@@ -1,0 +1,20 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom command is used with a statement such as the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  speakAlert "Go home now!"</font></p>
+<p><font face="Courier" size="11">  speakAlert the finishMessage of </font><font face="Courier" size="11" color="#F88017">me</font></p>
+<p><font face="Courier" size="11">  speakAlert field "Info"</font></p>
+<p></p>
+<p>The "speakAlert" command speaks the text out loud, at the same time displaying the text in a dialog box.</p>
+<p></p>
+<p>The first thing this handler does is make sure there is some text in the "theText" parameter. If there is no text, the dialog box will be empty--a bit confusing for the user--so to avoid this, if the "theText" parameter is empty, the handler uses the <font face="Courier" size="11">exit</font><font face="helvetica" size="12"> control structure to skip the rest of the handler.</font></p>
+<p></p>
+<p>The <font face="Courier" size="11">revSpeak</font><font face="helvetica" size="12"> command speaks the text passed to it out loud, using the built-in text-to-speech capability of Mac OS, OS X, and Windows systems. This command is not currently supported on Unix systems.</font></p>
+<p></p>
+<p>Because the <font face="Courier" size="11">revSpeak</font><font face="helvetica" size="12"> command is not supported on all platforms, we'll place it inside a </font><font face="Courier" size="11">try</font><font face="helvetica" size="12"> control structure. The </font><font face="Courier" size="11">try</font><font face="helvetica" size="12"> control structure offers a flexible way of handling errors: if something inside the try block causes an execution error, no error window is displayed. Instead, if there was an error, the statements in the catch block are executed. If there is no error, the catch block is ignored.</font></p>
+<p></p>
+<p>If the <font face="Courier" size="11">revSpeak</font><font face="helvetica" size="12"> command is not supported on the current system, using it normally causes an execution error. In this handler, however, it's inside a </font><font face="Courier" size="11">try</font><font face="helvetica" size="12"> control structure, so Revolution executes the contents of the </font><font face="Courier" size="11">catch</font><font face="helvetica" size="12"> block instead of displaying an error message. The </font><font face="Courier" size="11">catch</font><font face="helvetica" size="12"> block in this handler adds a message to the end of the text to notify the user that speech isn't supported. It also beeps, so that if the current system can't speak, it at least makes a noise. Text to speech is often used in situations where the user may not be looking at the screen. The sound makes sure users are alerted, even if they're doing something else when the dialog box appears.</font></p>
+<p></p>
+<p>Finally, the handler displays the message in an answer dialog box. Because speaking the message takes a few seconds, the effect for the user is that the dialog box appears at more or less the same time that the computer begins speaking.</p>
+<p></p>
+<p><img src="202653" char=" "> <b><font face="Lucida Grande" size="11">Important!</font></b><font face="helvetica" size="12">  If you want speech (or any similar action) to occur at the same time an answer dialog box is displayed, you need to perform the other action before using the </font><font face="Courier" size="11">answer</font><font face="helvetica" size="12"> command. This is because the </font><font face="Courier" size="11">answer</font><font face="helvetica" size="12"> command is blocking--it stops the handler until the user dismisses the dialog box--so if you use the </font><font face="Courier" size="11">revSpeak</font><font face="helvetica" size="12"> command after the </font><font face="Courier" size="11">answer</font><font face="helvetica" size="12"> command, the computer does not start speaking until </font><i><font face="Lucida Grande" size="11">after</font></i><font face="helvetica" size="12"> the user closes the dialog box.</font></p>

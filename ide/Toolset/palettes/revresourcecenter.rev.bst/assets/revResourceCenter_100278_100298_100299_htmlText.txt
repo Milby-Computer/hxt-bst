@@ -1,0 +1,28 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> mouseDown <font color="#68228B">-- goes in the menubar group script</font></p>
+<p>  <font color="#980517">if</font> the <font color="#FF0000">short</font> <font color="#FF0000">name</font> of the <font color="#F88017">target</font> is "Window" <font color="#980517">then</font></p>
+<p>    <font color="#68228B">-- the user clicked the Window menu, not some other menu</font></p>
+<p>    <font color="#980517">repeat</font> <font color="#980517">for</font> each line thisStack in the <font color="#F88017">openStacks</font></p>
+<p>      <font color="#68228B">-- skip palettes and dialog boxes (unless Option or</font> </p>
+<p>      <font color="#68228B">-- Alt key is pressed):</font></p>
+<p>      <font color="#980517">if</font> the <font color="#FF0000">mode</font> of stack thisStack &gt; 2 \</p>
+<p>         and the <font color="#F88017">optionKey</font> is not down <font color="#980517">then</font> <font color="#0000FF">next</font> <font color="#980517">repeat</font></p>
+<p>      <font color="#68228B">-- List the stack names for later:</font></p>
+<p>      <font color="#0000FF">put</font> thisStack &amp; <font color="#0000FF">return</font> after stacksList</p>
+<p>      <font color="#68228B">-- List the stack by its title, if available:</font></p>
+<p>      <font color="#0000FF">put</font> the <font color="#FF0000">title</font> of stack thisStack into thisStacktitle</p>
+<p>      <font color="#980517">if</font> the <font color="#FF0000">number</font> of words in thisStacktitle &lt;&gt; zero <font color="#980517">then</font></p>
+<p>        <font color="#0000FF">put</font> thisStacktitle &amp; <font color="#0000FF">return</font> after windowsList</p>
+<p>      <font color="#980517">else</font> <font color="#68228B">-- no title, so use the stack name instead:</font></p>
+<p>        <font color="#0000FF">put</font> thisStack &amp; <font color="#0000FF">return</font> after windowsList</p>
+<p>      <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>    <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>    <font color="#980517">if</font> windowsList is empty <font color="#980517">then</font> <font color="#68228B">-- no stack windows open</font></p>
+<p>      <font color="#0000FF">put</font> "(No windows open" into windowsList</p>
+<p>    <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>    <font color="#68228B">-- put the list into the menu:</font></p>
+<p>    <font color="#0000FF">put</font> windowsList into button "Window" of <font color="#F88017">me</font></p>
+<p>    <font color="#68228B">-- set a custom property for later use:</font></p>
+<p>    <font color="#0000FF">set</font> the currentStacksList of the <font color="#F88017">target</font> to stacksList</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p><font color="#980517">end</font> mouseDown</p>

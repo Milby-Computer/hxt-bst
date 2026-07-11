@@ -1,0 +1,476 @@
+<p><b><font face="Lucida Grande" size="14" color="#990006">Introduction</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In part 1, we covered the very basics of external development - in particular how to setup, compile and debug an external on Mac OS X and Windows. While we did indeed produce an external it wasn't anything particularly useful or interesting.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This time, we will delve further into external development by introducing more of the Revolution externals API and then use this new knowledge to explore a more substantial example - a basic image effect framework.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Prerequisites</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">These are mostly the same as that required by the first part - if you missed that one you can read it here </font><font face="Lucida Grande" size="12" color="#990006"> <a href="http://www.runrev.com/newsletter/november/issue13/newsletter5.php">http://www.runrev.com/newsletter/november/issue13/newsletter5.php</a></font><font face="Lucida Grande" size="12" color="#000000">. In addition:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Version 2 of the Revolution externals build environment: </font><font face="Lucida Grande" size="12" color="#990006"> <a href="http://developer.runrev.com/externals/ExternalsEnvironmentV2.zip">http://developer.runrev.com/externals/ExternalsEnvironmentV2.zip</a></font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Supporting files for this article </font><font face="Lucida Grande" size="12" color="#990006"> <a href="http:/developer.runrev.com/externals/NewsletterArticle2.ziptterA">http:/developer.runrev.com/externals/NewsletterArticle2.ziptterA</a></font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Note: The only difference between ExternalsEnvironmentV2 and ExternalsEnvironmentV1 is that the former contains an updated external.h header file with the previously promised API documentation there-in.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#000000">*VariableEx calls - the Swiss-army knife of the externals API</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In our rnaHello external we created in part 1, we saw how to use the API calls GetVariable and SetVariable. These calls are fine if you wish to manipulate small amounts of text data, but because they operate using NUL-terminated strings, they are completely useless if you want to work with binary data. Furthermore, they give no way of accessing variables that might be arrays. Therfore, to deal with such cases, it is necessary to become familiar with a related pair of functions GetVariableEx and SetVariableEx.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This pair of functions have three advantages over their simpler cousins:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The value you pass in and out is a pair consisting of a data pointer and a length - i.e. there is no reliance on a NUL-terminator to determine the length of the data.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; You can specify a key, enabling you to access values of individual elements of the array.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The data returned by GetVariableEx is not cop<b>ied</b>, resulting in a performance gain when fetching large blocks of data (and you don't have to worry about free'ing anything).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The syntax of these functions is a natural extension of GetVariable and SetVariable:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void GetVariableEx(const char *p_name, const char *p_key, ExternalString *r_value,</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">int *r_success)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void SetVariableEx(const char *p_name, const char *p_key, const ExternalString *p_value,</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">int *r_success)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Notice here that there is an extra p_key parameter and rather than the value being a char *, it is now an ExternalString *.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#2C0089">Manipulation of binary data</font></b></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">As mentioned above, one of the advantages of this pair of functions is that they allow you to work with arbitrary binary data. This comes about because a value is passed and returned as a pointer to an ExternalString structure. This structure is defined with two members:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">struct ExternalString</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">const char *buffer;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">int length;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Where buffer is a pointer to the data, and length is its length in bytes. For example to get the value of a variable called tBinaryData one would do something like:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">ExternalString t_value;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">GetVariableEx("tBinaryData", "", &amp;t_value, &amp;t_success);</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">And to set the value of a variable called tBinaryData to some pre-existing value, one would do something like:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">ExternalString t_value;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_value . buffer = (const char *)t_my_buffer;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_value . length = t_my_buffer_length;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">SetVariableEx("tBinaryData", "", &amp;t_value, &amp;t_success);</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Here, you will notice we pass the empty string ("") as the second argument - the p_key parameter. This tells the engine to return the value of the given variable as if it were a normal (non-array) variable.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">One thing to be wary of when using these forms is that the data you get back by using GetVariableEx will not (in general) be NUL terminated, even if it is 'text' in some sense. Importantly this means you should take great care when using the standard C string manipulation routines.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#2C0089">Delving into arrays</font></b></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The other main use of VariableEx function pair is to access elements of a Revolution array variable. To do this, simply pass the name of the key you wish to access in the p_key parameter. For example, if you want to get element foo of variable tBar one would do something like:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">ExternalString t_value;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">GetVariableEx("tBar", "foo", &amp;t_value, &amp;t_success);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Or if you want to get element n of variable tBaz, you would need to do something akin to:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">char t_key[16];</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">sprintf(t_key, "%d", n);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">GetVariableEx("tBaz", t_key, &amp;t_value, &amp;t_success);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Here you are seeing a side-effect of Revolution arrays really being hash-tables with string-based keys - even numeric based arrays require you to explicitly convert the index to a string before fetching.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">One question you might be caused to ask is - what happens if I try to get or set an element that doesn't exist? The answer is exactly the same as what happens when you try to do that in Revolution: in the case of setting, the element gets created; in the case of getting you get empty back (in this case empty is a buffer of length 0). In particular, r_success only reports EXTERNAL_FAILURE if the variable itself does not exist.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#2C0089">A word of caution</font></b></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">As the third benefit of the VariableEx calls, we mentioned the increased efficiency gained by the data not being copied when the external fetches it from Revolution. This is all well and good, but does come with a small word of warning: any changes to the variable, or the referenced variable's element will cause the pointer that is returned to become invalid.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">For example, the following code is likely to cause a crash:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">ExternalString t_original_value;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">GetVariableEx("tBar", "", &amp;t_original_value, &amp;t_success);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">SetVariable("tBar", "Hello World!", &amp;t_success);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_original_value . length == 5 &amp;&amp; memcmp(t_original_value . buffer, "hello", 5) == 0</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">printf("It starts with hello");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This is because the engine will free the memory referenced in t_original_value during the course of the SetVariable call, and so when a pointer to it is used in the memcmp call there is no guarantee it will still be valid.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">However, don't get too concerned about this. If you keep to the general principal of fetching input from input variables, doing the necessary processing and then writing back the results to the output variables it is unlikely that you will end up with any dangling pointers.</font></p>
+<p></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Case-Study: an image-effect framework</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">So far this article has been somewhat dry and it is about time we got our hands dirty. Rather than produce a small and essentially useless external just to exhibit the introduced APIs, we will instead explore a slightly more meaty example of an external.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Background</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">What we will be producing in the remainder of this article is a basic image effect framework - an external with a simple API allowing you to apply effects to the image and alpha data of images. While simple, the framework has been designed to be easily extensible, requiring little more than implementing the algorithm that actually implements the effect you want.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The framework exports just two external handlers:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; rnaEffectList - an external function returning a list of all known   effects</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; rnaEffectApply - an external command taking details of an effect and an input image, and outputing a processed image</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The external makes extensive use of both the array and binary manipulation features of the externals API. Indeed, from the point of view of Revolution, effects and images are defined by arrays having certain sets of keys. The external then uses these arrays to dispatch to the appropriate effect and provide it with the correct data.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The framework is written using C++ and makes use of both abstract base classes for extensibility, and exceptions for implicit error-handling.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Getting Started</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Before continuing we need to setup a new external. So, make sure you have an unpacked Externals Environment (the one from the last article will do) and load up the External Creator. Then, generate a new external with the following settings:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Name - rnaEffect</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Platform - as appropriate</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Language - C++&#0;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">When this has been generated, unpack the NewsletterArticle2.zip archive and copy the source files from within the rnaeffect_skeleton/src folder into the rnaEffect/src folder inside your externals environment. The files you have just copied is the framework itself albeit without any implemented effects. (Don't worry about overwriting the 'rnaeffect.cpp' file, you want the one from the archive - it actually does something!).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now load the new project into XCode or Visual C++, depending on your current platform.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The next thing to do is to add the auxillary files to the project. This can be done in one of several ways - the easiest is probably by using drag-drop. Select all the source files (both CPP and H) in the src folder and drag them onto the project.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In Visual C++, you should drag them onto the rnaEffect project node.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In XCode, drag them into the Source node under the rnaEffect node and just choose Add when you get prompted with a dialog asking you which targets to add them to. Be careful you don't get a duplicate rnaeffect.cpp node - if you do, just choose one, select Edit -&gt; Delete, and then Delete References.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">These new files serve the following purposes:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; rnaeffect.cpp - this contains the main implementation of the external, containing two external handler definitions</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; effect.cpp/effect.h - this pair of files define an abstract class Effect which you can inherit from in order to implement an effect</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; variable.cpp/variable.h - this pair of files define an abstraction of a Revolution variable making them easier to work with (see the next section)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; utility.cpp/utility.h - this pair of files declare a number of utility functions and classes making development easiervelopment</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">It is probably now worth taking a brief look through the files in the project. Most source files have been heavily commented to help explain what they are for. In particular have a look through the implementation of the external handlers in rnaeffect.cpp.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Abstracting variable access</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">If you have taken a look through rnaeffect.cpp then you will notice that there is not a single mention of SetVariableEx or GetVariableEx. Indeed, having introduced our friends GetVariableEx and SetVariableEx, they have now been rendered obsolete by wrapping them in an abstraction - the Variable class. At this point take a moment to browse through the Variable.h header file.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The idea of this class is simple - you declare a variable of type Variable and pass a variable name to its constructor. This object is then (notionally) linked to the Revolution variable and you can use a rich collection of methods to manipulate its value.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">For example, to fetch the value of a Revolution variable call tBar as an integer you would do:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Variable t_bar("tBar");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">int t_value;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_value = t_bar . GetInteger();</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Or, to set the value of element foo of variable tBaz to the string "Hello World!" you would do:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Variable t_baz("tBaz");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_baz . SetCStringElement("foo", "Hello World!");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">As you can see, this significantly simplifies fetching and storing variable values particularly as any required type conversions are done for you by the wrapper class.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">One point worth mentioning is that this version of the Variable class relies on exceptions to handle errors. i.e. If a variable doesn't exist, or doesn't contain a string that can be coerced to the requested type an exception will be thrown.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Being just a 'wrapper' class, Variable's implementation is straightforward and those of you interested in the details may want to take a good look through the Variable.cpp class to see how it works. (It really is nothing more than a thin wrapper around the SetVariableEx and GetVariableEx calls).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Introducing effects</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">An effect is a class derived from the abstract class Effect. The Effect class has two pure virtual methods - Calculate and Apply - that must be implemented. In addition, a means by which to create an instance of the effect from a Revolution array must be provided.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The Calculate method is used by the framework to work out how big an output image will be given an input image of a given size. It has signature:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void Calculate(unsigned in p_in_width, unsigned int p_in_height, </font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">unsigned int&amp; r_out_width, unsigned int&amp; r_out_height)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The implementation must use p_in_width and p_in_height together with any parameters passed to the effect when it was created to compute the output size which should then be stored in r_out_width and r_out_height.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The Apply method is the workhorse of any effect, actually performing the effect's operation on an input image and putting the output into an output image. It has signature:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void Apply(const Image&amp; p_input, Image&amp; p_output)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">From the point of view of the framework, an Image is a quadruple:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">struct Image</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">unsigned int width;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">unsigned int height;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">unsigned char *color;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">unsigned char *alpha;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">};</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">A structure containing the images width and height in pixels, together with pointers to memory buffers containing the color (pixel) and alpha (mask) data. These data buffers are in the same format as the imageData and alphaData properties of a Revolution image.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The framework takes care of fetching the input data and allocating the output buffers, so all the Apply method needs to do is take the input and write it to the output after it has applied its magic.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#2C0089">Our first effect</font></b></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Our first effect will be the 'no-op' effect. It will take an input image and map it directly to the output image without changing it in any way. While not actually useful, it is the simplest possible effect we could implement and will illustrate how to add an effect perfectly.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The first thing we need to do is add the definition and implementation of the NopEffect class to our project.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In Visual C++, click the right mouse-button on the rnaeffect node of the project and choose Add -&gt; New Item.... Choose 'C++ file (.cpp)', give it the name nop_effect.cpp, and make sure it is being created in the src folder (check the Location field). Repeat this again but choose 'Header file (.h)' and give it the name nop_effect.h.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In XCode, right click on the Source node in the project, choose New File... and select Empty File in Project. Give it the name nop_effect.cpp and make sure it is created in the src folder. Repeat this again but add a file called nop_effect.h. (In both cases, you do want it added to the rnaeffect target - which will be the default setting).</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Open up the nop_effect.h file and paste in the following:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#ifndef __NOP_EFFECT__</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#define __NOP_EFFECT__</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#ifndef __EFFECT__ </font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include "effect.h"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#endif</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">class NopEffect : public Effect</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">public:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">NopEffect(const char *p_info_variable);</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void Calculate(unsigned int p_in_width, unsigned int p_in_height,</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">unsigned int&amp; p_out_width, unsigned int&amp; p_out_height);</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void Apply(const Image&amp; p_input, Image&amp; p_output);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">};</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#endif</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This is nothing more than the declaration of our new class, derived from Effect.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now in the nop_effect.cpp we need to define three methods - but first we need to ensure we include the relevant definitions. At the top of the file place the following includes:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include </font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include "effect.h"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include "nop_effect.h"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Follow this by the method implementations. First the constructor:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">NopEffect::NopEffect(const char *p_info_variable)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Since our effect does nothing to any given image, it has no parameters and so the constructor need not do anything.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Next, we need the Calculate method:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void NopEffect::Calculate(unsigned int p_in_width, unsigned int p_in_height,</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">unsigned int&amp; p_out_width, unsigned int&amp; p_out_height)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">p_out_width = p_in_width;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">p_out_height = p_in_height;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Again, our effect has no effect, so we just copy the input width and height into the output width and height.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Finally, the main part - the Apply method:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void NopEffect::Apply(const Image&amp; p_input, Image&amp; p_output)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (p_input . color != NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">memcpy(p_output . color, p_input . color, p_input . width * p_input . height * 4);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (p_input . alpha != NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">memcpy(p_output . alpha, p_input . alpha, p_input . width * p_input . height);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Again, our effect does no processing so we just copy the input data to the output data. Here it is worth noting two things. First, if either color or alpha data is not present in the input (indicated by the buffer being NULL), it cannot be present in the output. Second, the size of the buffers are one byte per pixel for alpha, and four bytes per pixel for color - just the same as the corresponding data properties of images in Revolution.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Having implemented the NopEffect class, all that remains is to hook it into the framework. To do this, open up the effect.cpp file and locate the // BEGIN USER EFFECT INCLUDES line. After this line put:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include "nop_effect.h"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This will cause the declaration of our new effect to be imported. Then find the // BEGIN USER EFFECTS line and after it put the entry:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{ "nop", EffectCreate },</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This line adds an entry to an array that tells the framework to create an instance of the NopEffect class whenever an effect with name nop is requested.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Having done all of this, click Run (Visual C++), or Build followed by Debug (XCode) and, all being well, an empty test stack should appear.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In Visual C++, make sure that rnaeffect is selected as your 'Startup project'.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Remember that in XCode, you need to do a release build before a debug build the first time a project is compiled - otherwise when you debug, the paths will be wrong and the external won't get loaded.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Using the framework</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">You should now be looking at a blank stack ready to start testing our effects framework and new effect. First of all, let's check that our effect is recognized.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Switch to the Message Box and ensure that the rnaEffectTest stack is the current target. Then execute put rnaListEffects(). You should see a list consisting of one item nop (if you don't, retrace your steps and ensure that both nop_effect.cpp and nop_effect.h are in the project, and that the s_effects array in effect.cpp has a 'nop' entry).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">As mentioned before, the framework works by using arrays to communicate. The rnaApplyEffect external command takes three parameters:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; pEffectInfoName - the name of an array variable describing the required effect</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; pInputImageName - the name of an array variable describing the input image</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull;&nbsp;pOutputImageName - the name of a variable to receive the output image description&#0;&#0;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The keys required in the effect array will depend on the effect, but at the very least there should be one key call name containing the name of the effect to invoke.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The array describing the input image requires the following keys:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; width - the width of the image in pixels</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; height - the height of the image in pixels</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; color - the imageData of the image (optional)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; alpha - the alphaData of the image (optional)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Similarly, the output image variable will contain an array with similar keys.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">So to try out the nop effect, import a suitable image onto the test stack - any image will do - and call it Input. Then add an additional empty image object (by dragging from the tools palette) and call it Output. Finally, add a button called Nop with the following script:</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#990017">on</font><font face="Courier" size="11" color="#000000"> mouseUp</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">local</font><font face="Courier" size="11" color="#000000"> tEffect</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> "nop" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tEffect["name"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">local</font><font face="Courier" size="11" color="#000000"> tInput</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">width</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Input" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tInput["width"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">height</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Input" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tInput["height"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">alphaData</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Input" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tInput["alpha"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">imageData</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Input" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tInput["color"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">local</font><font face="Courier" size="11" color="#000000"> tOutput</font></p>
+<p><font face="Courier" size="11" color="#000000">   rnaApplyEffect "tEffect", "tInput", "tOutput"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">lock</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">screen</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">width</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Output" </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> tOutput["width"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">height</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Output" </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> tOutput["height"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">alphaData</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Output" </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> tOutput["alpha"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">imageData</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Output" </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> tOutput["color"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">unlock</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">screen</font></p>
+<p><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> mouseUp</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Clicking the button should result in the output image turning out to be identical to the input image! At this point save the test stack and quit Revolution.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">An image adjustment effect</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now having implemented a completely useless effect, let us build something slightly more interesting - a simple implementation of contrast and brightness adjustment. This effect will be called adjust and take two parameters brightness and contrast.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Add a pair of files to the project adjust_effect.cpp and adjust_effect.h.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Next, copy the following into the adjust_effect.h</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#ifndef __ADJUST_EFFECT__</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#define __ADJUST_EFFECT__</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#ifndef __EFFECT__</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include "effect.h"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#endif</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">class AdjustEffect: public Effect</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">public:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">AdjustEffect(const char *p_info_variable);</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void Calculate(unsigned int p_in_width, unsigned int p_in_height,</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">unsigned int&amp; p_out_width, unsigned int&amp; p_out_height);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void Apply(const Image&amp; p_input, Image&amp; p_output);</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">private:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">int m_brightness;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">int m_contrast;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">};</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#endif</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This defines another derivation of Effect. This time, though it has some state - m_brightness and m_contrast. These two integral values will be extracted from the effect array when the an AdjustEffect object is created.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Next open up the adjust_effect.cpp file and start off by adding the following includes:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include </font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include "variable.h"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include "effect.h"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include "adjust_effect.h"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">After this we need our three methods. First the constructor:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">AdjustEffect::AdjustEffect(const char *p_info_variable)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Variable t_info(p_info_variable);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">m_contrast = t_info . GetIntegerElement("contrast");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">m_brightness = t_info . GetIntegerElement("brightness");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Here, we first wrap the info variable name in a Variable object, then fetch two integer values from the keys contrast and brightness. These values are stored in the private state of the AdjustEffect object so the other two methods have access to them.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Next, we need the Calculate method:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void AdjustEffect::Calculate(unsigned int p_in_width, unsigned int p_in_height,</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">unsigned int&amp; p_out_width, unsigned int&amp; p_out_height)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">p_out_width = p_in_width;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">p_out_height = p_in_height;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">As before, this effect does not change the size of the image and so we just copy input size to output size.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Finally, we need the implementation. As previously mentioned, the image data is made available to the Apply method as (up to) two pointers to memory buffers. These buffers contain data in exactly the same format as Revolution image and alpha data properties - that is one byte-per-pixel for alpha data and four bytes-per-pixel for image data (the latter being in sequence pad, red, green, blue for each pixel). Therefore, applying an effect is a simple matter of looping over the input data in an appropriate way, and then writing the processed data to the provided output buffer.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In this case, we will be applying the following function to the red, green and blue components of each pixel:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">new_value = min(0, max(255, ((value - 128) * contrast) / 128 + 128 + brightness))</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This is nothing more than a simple-minded contrast and brightness adjustment - common in many image-processing applications.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Therefore, we can use something like the following to achieve our desired effect:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void AdjustEffect::Apply(const Image&amp; p_input, Image&amp; p_output)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Process the color data</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (p_input . color != NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">const unsigned char *t_in_ptr;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_in_ptr = p_input . color;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">unsigned char *t_out_ptr;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_ptr = p_output . color;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Since this effect is not sensitive to row or column, we just iterate</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// through each pixel without regard for its x or y location.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">for(unsigned int p = 0; p &lt; p_input . width * p_input . height; ++p)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Skip the pad byte in both input and output</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_in_ptr++;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_ptr++;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Since this effect is not sensitive to channel, we just iterate</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// through 3 channels for each pixel - red, green and blue.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">for(unsigned int c = 0; c &lt; 3; ++c)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">int t_in_value;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_in_value = *t_in_ptr++;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">int t_out_value;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_value = ((t_in_value - 128) * m_contrast) / 128 + 128 + m_brightness;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_out_value &lt; 0)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_value = 0;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">else if (t_out_value &gt; 255)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_out_value = 255;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*t_out_ptr++ = t_out_value;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// We have no effect on the alpha data, so we just copy it straight</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// through.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (p_input . alpha != NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">memcpy(p_output . alpha, p_input . alpha, p_input . width * p_input . height);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">With the adjust_effect.cpp file finished, all that remains is to add:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include "adjust_effect.h"</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">to the appropriate place in effect.cpp. Followed by an entry in the effects table in the same file:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{"adjust", EffectCreate },</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now rebuild and run the project.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#2C0089">Using the adjust effect</font></b></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Let us now hook into our new effect.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">First of all, to the test stack add two sliders: one Brightness with range -127 to 127; and one Contrast with range 0 to 255. Then create a new button Adjust and give it the following script:</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#990017">on</font><font face="Courier" size="11" color="#000000"> mouseUp </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">local</font><font face="Courier" size="11" color="#000000"> tEffect</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> "adjust" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tEffect["name"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">thumbPosition</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> scrollbar "Brightness" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> \</font></p>
+<p><font face="Courier" size="11" color="#000000">   tEffect["brightness"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">thumbPosition</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> scrollbar "Contrast" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> \</font></p>
+<p><font face="Courier" size="11" color="#000000">   tEffect["contrast"]</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#2000FB">   local</font><font face="Courier" size="11" color="#000000"> tInput</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">width</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Input" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tInput["width"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">height</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Input" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tInput["height"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">alphaData</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Input" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tInput["alpha"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">imageData</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Input" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tInput["color"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">local</font><font face="Courier" size="11" color="#000000"> tOutput</font></p>
+<p><font face="Courier" size="11" color="#000000">   rnaApplyEffect "tEffect", "tInput", "tOutput"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">lock</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">screen</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">width</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Output" </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> tOutput["width"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">height</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Output" </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> tOutput["height"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">alphaData</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Output" </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> tOutput["alpha"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">imageData</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "Output" </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> tOutput["color"]</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">unlock</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">screen</font></p>
+<p><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> mouseUp</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now try playing around with the sliders and clicking Adjust - you should see a familiar effect!</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#2C0089">Building on the framework</font></b></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The final code for the framework and effects decribed here can be found in the rnaeffect_final folder in the NewsletterArticle2.zip archive.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Next time...</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This time round we have explored two of the most important calls in the externals API and used them to create a basic image effect framework enabling the simple creation of image processing filters - a task ideally suited to native code. In the next part of the series we will start focusing on more platform-specific development - starting by looking at how to use Revolution provided windowId's effectively with OS APIs.</font></p>

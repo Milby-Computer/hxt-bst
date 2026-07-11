@@ -1,0 +1,77 @@
+{
+   "#mainstack": "com.livecode.pi.radiogroup",
+   "com.livecode.pi.radiogroup": {
+      "#name": "stack \"com.livecode.pi.radiogroup\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1012": {
+                  "#name": "group \"template\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "110,72,110,72"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "cursors": false,
+            "inclusions": "search",
+            "Linux": true,
+            "MacOSX x86-32": true,
+            "name": "stack \"/Users/alilloyd/Documents/GitHub/refactor/ide/Toolset/palettes/inspector/editors/com.livecode.pi.radiogroup.livecode\"",
+            "OSX,copyright": "2015  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,identifier": "com..stack\"/users/alilloyd/documents/github/refactor/ide/toolset/palettes/inspector/editors/com.livecode.pi.radiogroup.livecode\"",
+            "OSX,info": "stack \"/Users/alilloyd/Documents/GitHub/refactor/ide/Toolset/palettes/inspector/editors/com.livecode.pi.radiogroup.livecode\" Version 1.0.0.0",
+            "OSX,longVersion": "stack \"/Users/alilloyd/Documents/GitHub/refactor/ide/Toolset/palettes/inspector/editors/com.livecode.pi.radiogroup.livecode\" 1.0.0.0",
+            "OSX,name": "stack \"/Users/alilloyd/Documents/GitHub/refactor/ide/Toolset/palettes/inspector/editors/com.livecode.pi.radiogroup.livecode\"",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "scriptLibraries": "Internet\nGeometry\nPrinting",
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Windows": true,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "/Users/alilloyd/Documents/GitHub/refactor/ide/Runtime/Windows/x86-32/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "stack \"/Users/alilloyd/Documents/GitHub/refactor/ide/Toolset/palettes/inspector/editors/com.livecode.pi.radiogroup.livecode\" 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "/Users/alilloyd/Documents/GitHub/refactor/ide/Runtime/Windows/x86-32/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2015  All rights reserved worldwide",
+            "Windows,ProductName": "stack \"/Users/alilloyd/Documents/GitHub/refactor/ide/Toolset/palettes/inspector/editors/com.livecode.pi.radiogroup.livecode\"",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.radiogroup\"",
+      "properties": {
+         "fileName": "com.livecode.pi.radiogroup.livecode",
+         "id": "1013",
+         "name": "com.livecode.pi.radiogroup",
+         "rect": "579,110,979,510"
+      },
+      "sharedGroupIDs": null
+   }
+}

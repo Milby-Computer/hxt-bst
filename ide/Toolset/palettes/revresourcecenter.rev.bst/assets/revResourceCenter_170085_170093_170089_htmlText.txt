@@ -1,0 +1,3 @@
+<p><font face="Lucida Grande" size="12" color="#000000">Creating a user interface list with blind effect UI control using general groups.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In Revolution the use of groups of controls allows us to write general UI controls that can be easily extended by editing the content of the individual groups, without effecting any overall functionality. This article is about writing a blind effect, where one can click on a blind pane such that the blind opens up pushing the underlying blind panes down in the process.</font></p>

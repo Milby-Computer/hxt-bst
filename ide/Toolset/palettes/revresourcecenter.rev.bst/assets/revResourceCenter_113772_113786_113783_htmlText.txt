@@ -1,0 +1,40 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom function is called with a statement such as the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">sort</font><font face="Courier" size="11"> lines of field "Titles" by withoutLeadingArticle(each)</font></p>
+<p></p>
+<p>The custom function works in tandem with the <font face="Courier" size="11">sort</font><font face="helvetica" size="12"> container command. When you </font><font face="Courier" size="11">sort</font><font face="helvetica" size="12"> the lines of a container, the </font><font face="Courier" size="11">each</font><font face="helvetica" size="12"> keyword serves as a </font><i><font face="Lucida Grande" size="11">placeholder</font></i><font face="helvetica" size="12"> for each line in the container. In the above statement, each line is passed to the "withoutLeadingArticle" function, and the returned value is used as the sort key for that line. The "withoutLeadingArticle" function simply removes any leading articles (the words "A", "An", and "The"), leaving the rest of the title to be used as the sort key.</font></p>
+<p></p>
+<p>The "withoutLeadingArticle" function checks the first word of the title that's passed to it. If this word is an article ("the", "an", or "a"), it deletes the word; otherwise, the title is left alone. The function then returns the (possibly modified) title. This modified title, without any leading articles, is used as the sort key for that title. This means that the sort container command behaves as though it's sorting by the modified titles, instead of the titles themselves. The parameter, "theTitle", is used as a variable in the function; the function changes the parameter directly.</p>
+<p></p>
+<p>Using a custom function with the <font face="Courier" size="11">each</font><font face="helvetica" size="12"> keyword makes the </font><font face="Courier" size="11">sort</font><font face="helvetica" size="12"> container command much more flexible, because you can use the custom function to create any custom sort criteria you want to use. You can eliminate certain parts of the lines being sorted from consideration, as we've done here. Or you can use another custom function to transform lines in other ways.</font></p>
+<p></p>
+<p>For example, you could write a custom function for international sorting, which would change accented characters like &eacute; or &uuml; into their ASCII equivalents (e and u). A sort done with this custom function would sort accented characters as though they were the unaccented equivalents, instead of sorting all accented characters after the end of the unaccented alphabet.</p>
+<p></p>
+<p>Many other such special-purpose sorting functions can be written. Here's another example, which transforms a wordy movie rating into a letter so the movies can be easily sorted by rating, from best to worst:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">function</font><font face="Courier" size="11"> letterGrade theMovieRating</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#980517">switch</font><font face="Courier" size="11"> theMovieRating</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#980517">case</font><font face="Courier" size="11"> "See early, see often!"</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> "A"</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">break</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#980517">case</font><font face="Courier" size="11"> "Worth the ticket price"</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> "B"</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">break</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#980517">case</font><font face="Courier" size="11"> "Wait for the video release"</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> "C"</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">break</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#980517">case</font><font face="Courier" size="11"> "Skip it."</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> "D"</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">break</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#980517">case</font><font face="Courier" size="11"> "Flee! Flee for your lives!"</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> "E"</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">break</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">switch</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> letterGrade</font></p>
+<p></p>
+<p>If a list of movies has the movie rating as the last item of each line, you can sort the movies by their ratings using this statement:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">sort</font><font face="Courier" size="11"> lines of myMovies by letterGrade(last item of each)</font></p>
+<p></p>
+<p><img src="202651" char=" "> <b><font face="Lucida Grande" size="11">Tip:</font></b><font face="helvetica" size="12"> You can also use custom functions with the </font><font face="Courier" size="11">sort</font><font face="helvetica" size="12"> command to sort cards in a stack.</font></p>

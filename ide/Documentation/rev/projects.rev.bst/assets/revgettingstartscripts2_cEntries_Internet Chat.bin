@@ -1,0 +1,6 @@
+category=Getting Started
+description=<p>The Internet Chat application is a simple client and server application that allows you to do live Internet chat.  It comes in two parts.  The Chat Client stack contains the scripts for the client, and would be distributed to each person on the network.  The Chat Server stack contains the scripts for the chat server.</p>\n<p></p>\n<p>The Video Tutorial shows you how to use this Sample Project, and how to take it apart to understand how it works or copy portions of it for use in your own applications.  The PDF contains the same information as the Video, in printable form.</p>\n<p></p>\n<p><font face="Lucida Grande" size="11"><a href="video:Internet Chat">Click here to go the the corresponding video and PDF</a></font></p>\n<p></p>\n<p>We recommend you to have explored the introductory video tutorials so you have a basic understanding of how Revolution works before you start on the Sample Projects.</p>
+level=1
+name=Internet Chat
+title=Internet Chat - creating a custom protocol using sockets
+topics=<p>The key topics covered in this Project are:</p>\n<p>   - Creating a client application using sockets</p>\n<p>   - Creating a server application using sockets</p>\n<p>   - Using the Geometry Manager to resize objects</p>

@@ -1,0 +1,527 @@
+{
+   "#mainstack": "Font Loading Sampler",
+   "Font Loading Sampler": {
+      "#name": "stack \"Font Loading Sampler\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"card id 1002\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"Load Font\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "190"
+                     }
+                  },
+                  "properties": {
+                     "id": "1004",
+                     "layer": "3",
+                     "name": "Load Font",
+                     "rect": "1,50,83,73"
+                  }
+               },
+               "1006": {
+                  "#name": "field \"fontNames\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "SX:-1",
+                        "altRect": "1,71,245,304",
+                        "WinXPaltCmd": "SX:-1",
+                        "WinXPaltRect": "1,71,245,304",
+                        "WinXPaltVis": true
+                     },
+                     "cConsLast": {
+                        "HandlerName": "      mouseUp\t  \ton",
+                        "HandlerScroll": "0"
+                     },
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Font Loading Sampler_1002_1006_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/Font Loading Sampler_1002_1006_htmlText.txt",
+                     "id": "1006",
+                     "layer": "4",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "fontNames",
+                     "rect": "1,92,265,260",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1009": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Installed Fonts"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Installed Fonts</p>",
+                     "id": "1009",
+                     "layer": "5",
+                     "lockText": true,
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "1,72,101,93",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Unload Font\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "id": "1010",
+                     "layer": "6",
+                     "name": "Unload Font",
+                     "rect": "91,50,173,73"
+                  }
+               },
+               "1012": {
+                  "#name": "button \"Show Fonts\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "7",
+                     "name": "Show Fonts",
+                     "rect": "181,50,263,73"
+                  }
+               },
+               "1022": {
+                  "#name": "field \"Sample\"",
+                  "customproperties": {
+                     "cCurrentObject": "stack \"C:/Documents and Settings/Oliver/Desktop/altFontHarness.rev\"",
+                     "cSampleText": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n01234567890!@#$%^\u2026*()_+-=\n\nrevFont (c)2007 by Runtime Revolution Ltd\nwww.runrev.com"
+                  },
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "SX:-1,SY:-5",
+                        "altRect": "1,318,245,400",
+                        "WinXPaltCmd": "SX:-1,SY:-5",
+                        "WinXPaltRect": "1,318,245,400",
+                        "WinXPaltVis": true
+                     },
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "1,224,265,613",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scalebottomDistance": "-16",
+                        "Master,scaleBottomObjectRef": "card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleleftDistance": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scaletopDistance": null
+                     },
+                     "cREVTable": {
+                        "currentview": null
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "htmlText": "<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>\n<p>abcdefghijklmnopqrstuvwxyz</p>\n<p>01234567890!@#$%^\u2026amp;*()_+-=</p>\n<p></p>\n<p>revFont (c)2007 by Runtime Revolution Ltd</p>\n<p>www.runrev.com</p>",
+                     "id": "1022",
+                     "layer": "10",
+                     "name": "Sample",
+                     "rect": "1,274,265,401",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Geneva",
+                     "textHeight": "16",
+                     "textSize": "12",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1024": {
+                  "#name": "field \"sdfads\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": null,
+                        "altRect": "3,300,103,321",
+                        "WinXPaltCmd": null,
+                        "WinXPaltRect": "3,300,103,321",
+                        "WinXPaltVis": true
+                     },
+                     "cREVTable": {
+                        "currentview": "Sample"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Sample</p>",
+                     "id": "1024",
+                     "layer": "11",
+                     "lockText": true,
+                     "name": "sdfads",
+                     "opaque": false,
+                     "rect": "3,256,103,277",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1033": {
+                  "#name": "group \"gFontSize\"",
+                  "childcontrols": {
+                     "1037": {
+                        "#name": "button \"12\"",
+                        "properties": {
+                           "backColor": "0,0,0",
+                           "borderWidth": "0",
+                           "bottomColor": "0,0,0",
+                           "foreColor": "145,152,160",
+                           "hiliteColor": "0,0,0",
+                           "hilited": true,
+                           "hiliteIcon": "92016",
+                           "icon": "92015",
+                           "id": "1037",
+                           "layer": "17",
+                           "name": "12",
+                           "opaque": false,
+                           "rect": "95,259,130,275",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "showIcon": true,
+                           "style": "radiobutton",
+                           "textAlign": "right",
+                           "textFont": "Tahoma",
+                           "textSize": "10",
+                           "textStyle": "plain",
+                           "threeD": false,
+                           "topColor": "128,128,128",
+                           "traversalOn": false
+                        }
+                     },
+                     "1038": {
+                        "#name": "button \"24\"",
+                        "properties": {
+                           "backColor": "0,0,0",
+                           "borderWidth": "0",
+                           "bottomColor": "0,0,0",
+                           "foreColor": "145,152,160",
+                           "hiliteColor": "0,0,0",
+                           "hiliteIcon": "92016",
+                           "icon": "92015",
+                           "id": "1038",
+                           "layer": "18",
+                           "name": "24",
+                           "opaque": false,
+                           "rect": "178,258,213,274",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "showIcon": true,
+                           "style": "radiobutton",
+                           "textAlign": "right",
+                           "textFont": "Tahoma",
+                           "textSize": "10",
+                           "textStyle": "plain",
+                           "threeD": false,
+                           "topColor": "128,128,128",
+                           "traversalOn": false
+                        }
+                     },
+                     "1039": {
+                        "#name": "button \"18\"",
+                        "properties": {
+                           "backColor": "0,0,0",
+                           "borderWidth": "0",
+                           "bottomColor": "0,0,0",
+                           "foreColor": "145,152,160",
+                           "hiliteColor": "0,0,0",
+                           "hiliteIcon": "92016",
+                           "icon": "92015",
+                           "id": "1039",
+                           "layer": "19",
+                           "name": "18",
+                           "opaque": false,
+                           "rect": "135,259,170,275",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "showIcon": true,
+                           "style": "radiobutton",
+                           "textAlign": "right",
+                           "textFont": "Tahoma",
+                           "textSize": "10",
+                           "textStyle": "plain",
+                           "threeD": false,
+                           "topColor": "128,128,128",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": null,
+                        "altRect": "91,298,217,323",
+                        "WinXPaltCmd": null,
+                        "WinXPaltRect": "91,298,217,323",
+                        "WinXPaltVis": true
+                     },
+                     "cConsLast": {
+                        "HandlerName": "all handlers",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "1",
+                     "id": "1033",
+                     "layer": "16",
+                     "name": "gFontSize",
+                     "rect": "91,254,217,279"
+                  }
+               },
+               "1036": {
+                  "#name": "button \"horizDivider1\"",
+                  "customproperties": {
+                     "c_priv_BotObjRects": "1,266,265,450,4",
+                     "c_priv_TopObjRects": "1,92,265,252,3\n3,248,103,269,-14\n91,246,217,271,-16",
+                     "cBotObjects": "fld \"Sample\",S",
+                     "cBotStop": "30",
+                     "cTopObjects": "fld \"fontNames\",S\nfld \"sdfads\",M\ngrp \"gfontsize\",M",
+                     "cTopStop": "100"
+                  },
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": null,
+                        "altRect": "49,307,96,314",
+                        "WinXPaltCmd": null,
+                        "WinXPaltRect": "49,307,96,314",
+                        "WinXPaltVis": true
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "id": "1036",
+                     "label": ". . . . .",
+                     "layer": "15",
+                     "name": "horizDivider1",
+                     "rect": "49,263,96,270",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1050": {
+                  "#name": "image \"font.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1050",
+                     "layer": "20",
+                     "name": "font.png",
+                     "rect": "0,0,266,49",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Font Loading Sampler_1002_1050_text.png"
+                  }
+               },
+               "92015": {
+                  "#name": "image \"icon RadioOff\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "92015",
+                     "layer": "1",
+                     "name": "icon RadioOff",
+                     "opaque": false,
+                     "rect": "10,10,18,18",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Font Loading Sampler_1002_92015_text.png",
+                     "visible": false
+                  }
+               },
+               "92016": {
+                  "#name": "image \"icon RadioOn\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "92016",
+                     "layer": "2",
+                     "name": "icon RadioOn",
+                     "opaque": false,
+                     "rect": "10,10,18,18",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Font Loading Sampler_1002_92016_text.png",
+                     "visible": false
+                  }
+               },
+               "92018": {
+                  "#name": "image \"BG Graphite.png\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "92018",
+                     "layer": "8",
+                     "lockLoc": true,
+                     "name": "BG Graphite.png",
+                     "rect": "322,130,450,258",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Font Loading Sampler_1002_92018_text.png",
+                     "visible": false
+                  }
+               },
+               "92019": {
+                  "#name": "image \"header LN-Hilite-Bot.png\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "SX:0",
+                        "altRect": "0,19,246,24",
+                        "WinXPaltCmd": "SX:0",
+                        "WinXPaltRect": "0,19,246,24",
+                        "WinXPaltVis": true
+                     }
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "92019",
+                     "layer": "9",
+                     "lockLoc": true,
+                     "name": "header LN-Hilite-Bot.png",
+                     "opaque": false,
+                     "rect": "0,19,246,24",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABASURBVHjaYvz//380A37ACMT/\nGYgELED8koGKAGTga6gLkF3CiKbuPxYxnAa+waOYkEEY8iADPxLpG6JcCRBgADuzDhxjEDAZ\nAAAAAElFTkSuQmCC"
+                     }
+                  }
+               },
+               "92020": {
+                  "#name": "image \"colorBar.gif\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "SX:2,MY:0",
+                        "altRect": "-1,403,248,417",
+                        "WinXPaltCmd": "SX:2,MY:0",
+                        "WinXPaltRect": "-1,403,248,417",
+                        "WinXPaltVis": false
+                     }
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "92020",
+                     "layer": "12",
+                     "lockLoc": true,
+                     "name": "colorBar.gif",
+                     "rect": "-1,403,248,417",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Font Loading Sampler_1002_92020_text.png",
+                     "visible": false
+                  }
+               },
+               "92022": {
+                  "#name": "image \"hdividecursor.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "92022",
+                     "layer": "13",
+                     "name": "hdividecursor.gif",
+                     "rect": "34,83,50,99",
+                     "text": {
+                        "%base64%": "AgOAggACBsCCAAIMYIIAAgggggACDuCCAAL//oIAAoACggAC//6CAAL//oIAAoACggAC//6C\nAAIO4IIAAgggggACDGCCAAIGwIIAAgOAggA="
+                     },
+                     "toolTip": "201582",
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "92023": {
+                  "#name": "image \"horbar.jpg\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "92023",
+                     "layer": "14",
+                     "name": "horbar.jpg",
+                     "rect": "53,115,100,122",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Font Loading Sampler_1002_92023_text.png",
+                     "visible": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altMsg1": "<p><b>The external is LOCKED and cannot be deleted.</b></p>\n<p></p>\n<p>This is probably because it is currently in use by RunRev. Please quit and restart RunRev and try again!</p>"
+            },
+            "custompropertysets": {
+               "cConsLast": {
+                  "HandlerName": "preOpenStack\t \tmessage",
+                  "HandlerScroll": "287"
+               },
+               "cREVGeometrycache": {
+                  "order": "1137624994610\n",
+                  "total": "20"
+               }
+            },
+            "properties": {
+               "backColor": "255,255,255",
+               "id": "1002",
+               "name": "card id 1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cConsLast": {
+            "HandlerName": null,
+            "HandlerScroll": "0"
+         },
+         "cREVGeometryCache": {
+            "stackID": "1050"
+         }
+      },
+      "longID": "stack \"Font Loading Sampler\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "destroyStack": true,
+         "destroyWindow": true,
+         "externals": "altFont.dll\naltFont.bundle",
+         "fileName": "Font Loading Sampler.rev",
+         "id": "1050",
+         "liveResizing": false,
+         "maxWidth": "266",
+         "minHeight": "417",
+         "minWidth": "266",
+         "name": "Font Loading Sampler",
+         "rect": "256,265,522,682",
+         "title": "Font Loading Sampler"
+      },
+      "sharedGroupIDs": null
+   }
+}

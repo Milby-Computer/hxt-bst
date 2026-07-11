@@ -1,0 +1,118 @@
+{
+   "#mainstack": "com.livecode.pi.svgiconfilter",
+   "com.livecode.pi.svgiconfilter": {
+      "#name": "stack \"com.livecode.pi.svgiconfilter\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"filterText\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "htmlText": "<p>Search</p>",
+                     "id": "1004",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "name": "filterText",
+                     "opaque": false,
+                     "rect": "10,7,290,32",
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textHeight": "20",
+                     "threeD": false
+                  }
+               },
+               "1008": {
+                  "#name": "graphic \"searchBorder\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "backColor": "255,255,255",
+                     "foreColor": "193,193,193",
+                     "id": "1008",
+                     "layer": "2",
+                     "lockLoc": true,
+                     "margins": "8",
+                     "name": "searchBorder",
+                     "rect": "5,5,296,35",
+                     "style": "roundrect"
+                  }
+               },
+               "1009": {
+                  "#name": "widget \"searchIcon\"",
+                  "$kind": "com.livecode.widget.svgpath",
+                  "$state": {
+                     "angle": "0",
+                     "fillRule": "non-zero",
+                     "flip vertically": false,
+                     "hilited": false,
+                     "iconPresetName": "search",
+                     "maintain aspect ratio": true,
+                     "svg path": "%file%: assets/com.livecode.pi.svgiconfilter_1002_1009_svg path.txt"
+                  },
+                  "properties": {
+                     "id": "1009",
+                     "name": "searchIcon",
+                     "rect": "272,13,287,28"
+                  }
+               },
+               "1011": {
+                  "#name": "field \"focuser\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "id": "1011",
+                     "layer": "1",
+                     "name": "focuser",
+                     "rect": "-110,344,-10,365"
+                  }
+               },
+               "1014": {
+                  "#name": "widget \"iconList\"",
+                  "$kind": "com.livecode.widget.iconpicker",
+                  "$state": {
+                     "iconSize": "45",
+                     "showFrameBorder": true,
+                     "showNames": false
+                  },
+                  "properties": {
+                     "id": "1014",
+                     "name": "iconList",
+                     "rect": "0,40,300,334"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"com.livecode.pi.svgiconfilter\"",
+      "properties": {
+         "fileName": "com.livecode.pi.svgiconfilter.livecode",
+         "id": "1014",
+         "name": "com.livecode.pi.svgiconfilter",
+         "rect": "256,113,556,447",
+         "resizable": false
+      },
+      "sharedGroupIDs": null
+   }
+}

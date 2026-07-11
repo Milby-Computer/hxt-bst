@@ -1,0 +1,267 @@
+{
+   "#mainstack": "revTabRuler",
+   "revTabRuler": {
+      "#name": "stack \"revTabRuler\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1010": {
+                  "#name": "group \"TabRuler\"",
+                  "childcontrols": {
+                     "1011": {
+                        "#name": "button \"RulerBtn\"",
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "borderWidth": "1",
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "icon": "200705",
+                           "id": "1011",
+                           "layer": "2",
+                           "lockLoc": true,
+                           "name": "RulerBtn",
+                           "opaque": false,
+                           "rect": "-19,17,1503,31",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "2,16,1534,34",
+                        "Master,scaleBottom": false,
+                        "Master,scaleBottomAbsolute": false,
+                        "Master,scalebottomDistance": "0",
+                        "Master,scaleBottomObjectRef": null,
+                        "Master,scaleBottomObjectSide": "center",
+                        "Master,scaleLeft": false,
+                        "Master,scaleLeftAbsolute": false,
+                        "Master,scaleleftDistance": "0",
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleLeftObjectSide": "center",
+                        "Master,scaleRight": true,
+                        "Master,scaleRightAbsolute": true,
+                        "Master,scalerightDistance": "-2",
+                        "Master,scaleRightObjectRef": "card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaleTop": false,
+                        "Master,scaleTopAbsolute": false,
+                        "Master,scaletopDistance": "0",
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaleTopObjectSide": "center"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1010",
+                     "layer": "1",
+                     "lockLoc": true,
+                     "name": "TabRuler",
+                     "rect": "2,16,316,34",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "1281": {
+                  "#name": "field \"ValLabel\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "backColor": "yellow",
+                     "borderColor": "black",
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "foreColor": "black",
+                     "htmlText": "<p>151</p>",
+                     "id": "1281",
+                     "layer": "8",
+                     "lockText": true,
+                     "margins": "5",
+                     "name": "ValLabel",
+                     "rect": "137,1,169,15",
+                     "showFocusBorder": false,
+                     "tabStops": "100",
+                     "textAlign": "center",
+                     "textFont": "ms sans serif",
+                     "textHeight": "14",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "traversalOn": false,
+                     "vGrid": true,
+                     "visible": false
+                  }
+               },
+               "2252": {
+                  "#name": "button \"Grid\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "2252",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "menuMode": "cascade",
+                     "name": "Grid",
+                     "rect": "14,0,55,16",
+                     "showBorder": false,
+                     "style": "menu",
+                     "text": "!cNone\n5\n10\n20\n30\n40\n50\nOther...\n",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "2255": {
+                  "#name": "button \"Edit\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "2255",
+                     "layer": "4",
+                     "lockLoc": true,
+                     "menuMode": "cascade",
+                     "name": "Edit",
+                     "rect": "51,0,89,16",
+                     "showBorder": false,
+                     "style": "menu",
+                     "text": "(Undo all changes\n(-\nCopy Ruler\n(Paste Ruler\n(-\n(Clear all Tabs",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "2376": {
+                  "#name": "button \"?\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "165,0,181,16",
+                        "Master,moveH": true,
+                        "Master,moveHAbsolute": true,
+                        "Master,movehDistance": "-7",
+                        "Master,moveHObjectRef": "card",
+                        "Master,moveHObjectSide": "right",
+                        "Master,movevDistance": false,
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "2376",
+                     "layer": "5",
+                     "lockLoc": true,
+                     "name": "?",
+                     "rect": "303,0,319,16",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "style": "rectangle",
+                     "textFont": "Lucida Grande",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "2658": {
+                  "#name": "button \"CloseBtn\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "hiliteIcon": "200087",
+                     "icon": "200086",
+                     "id": "2658",
+                     "layer": "6",
+                     "lockLoc": true,
+                     "name": "CloseBtn",
+                     "rect": "-1,-1,15,15",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "opaque",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "3715": {
+                  "#name": "button \"Auto\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "3715",
+                     "layer": "7",
+                     "name": "Auto",
+                     "opaque": false,
+                     "rect": "86,-1,137,17",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "revcard": false
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "1054269609741\n1054289942242\n",
+                  "total": "8"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cBackColor": "cyan",
+         "cGrid": "None",
+         "cHelp": "%file%: assets/revTabRuler_cHelp.bin"
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "4158"
+         },
+         "cREVOnline": {
+            "fingerprint": "xVYdq_Ygjnq_-t9UBD302g"
+         }
+      },
+      "longID": "stack \"revTabRuler\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "bottomColor": "128,128,128",
+         "decorations": null,
+         "destroyStack": true,
+         "destroyWindow": true,
+         "fileName": "revTabRuler 1.2.rev",
+         "foreColor": "Black",
+         "hiliteColor": "102,102,102",
+         "id": "4158",
+         "liveResizing": false,
+         "name": "revTabRuler",
+         "rect": "136,111,454,145",
+         "resizable": false,
+         "shadowColor": "darkgray",
+         "title": "TabRuler",
+         "topColor": "white"
+      },
+      "sharedGroupIDs": null
+   }
+}

@@ -1,0 +1,52 @@
+Script "stack_Print_Dialog_group_id_9380"
+
+/*
+# Name: group "Microsoft XPS Document Writer" of group "Printer List" of group "Print Target" of card id 1002 of stack "Print Dialog"
+# ID: group id 9380 of group id 1431 of group id 1442 of card id 1002 of stack "Print Dialog"
+# Hash: j9OfFLy3/6nwgyuCJwowoA==
+*/
+
+
+setProp cName pValue
+  set the cActualValue of me to pValue
+  
+  set the itemDelimiter to backslash
+  put item -1 of pValue into field "Name" of me
+  
+  set the height of field "Name" of me to the formattedHeight of field "Name" of me
+  set the width of field "Name" of me to the formattedWidth of field "Name" of me
+  
+  set the top of field "Name" of me to the bottom of image "Printer" of me
+  
+  set the itemDelimiter to comma
+  set the loc of field "Name" of me to item 1 of the loc of me, item 2 of the loc of field "Name" of me
+end cName
+
+getProp cName
+  return the cActualValue of me
+end cName
+
+local sHilite
+
+setProp cHilite pValue
+  if pValue is "true" then
+    put true into sHilite
+    set the backgroundColor of field "Name" of me to fieldHiliteColor()
+    set the foregroundColor of field "Name" of me to "white"
+    set the opaque of field "Name" of me to true
+    set the visible of graphic "Overlay" of me to true
+  else
+    set the backgroundColor of field "Name" of me to empty
+    set the foregroundColor of field "Name" of me to empty
+    set the opaque of field "Name" of me to false
+    set the visible of graphic "Overlay" of me to false
+    put false into sHilite
+  end if
+end cHilite
+
+getProp cHilite
+  return sHilite
+end cHilite
+
+
+

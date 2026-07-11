@@ -1,0 +1,15 @@
+<p></p>
+<p><font face="Arial Black" size="25" color="#FFFFFF">Basic Properties</font></p>
+<p></p>
+<p></p>
+<p><font face="Arial Black" size="15" color="#FFFFFF">Standard Properties</font></p>
+<p><font face="Arial" size="13" color="#FFFFFF">The basic properties found on other LiveCode controls can be set in the 'Basic Properties' pane; including <b>border</b>, <b>border width</b>, <b>visibility</b> and whether the control is <b>enabled</b> or not.</font></p>
+<p></p>
+<p><font face="Arial Black" size="15" color="#FFFFFF">Data Grid Style</font></p>
+<p><font face="Arial" size="13" color="#FFFFFF">There are two data grid styles: <b>form</b> and <b>table</b>. Once a data grid has been dragged onto your stack, use the property inspector to choose which style you wish to use.</font></p>
+<p></p>
+<p><font face="Arial Black" size="15" color="#FFFFFF">Row Template and Behavior</font></p>
+<p><font face="Arial" size="13" color="#FFFFFF">It is through the property inspector that you access the row template and behaviour script. This screenshot shows a 'form' style selection. When the table style is selected you will notice the 'row behaviour' becomes disabled. This is because with tables you have 'column behaviours' which can be accessed via the columns property panel.</font></p>
+<p></p>
+<p><font face="Arial Black" size="15" color="#FFFFFF">General Properties</font></p>
+<p><font face="Arial" size="13" color="#FFFFFF">There are a number of general properties which can be set including the option to <b>disable editing</b>, <b>row colors</b> and <b>row hiltes</b>; as well as fixing <b>row heights</b>.</font></p>

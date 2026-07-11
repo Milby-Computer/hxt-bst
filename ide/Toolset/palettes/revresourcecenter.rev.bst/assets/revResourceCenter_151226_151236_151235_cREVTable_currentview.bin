@@ -1,0 +1,7 @@
+<p><font size="14" color="#990006"><b>RSS and Revolution</b></font></p>
+<p><font size="12" color="#000000">RSS feeds can be used within Revolution using the revXML library. This provides all the functionality required to parse XML files and makes using RSS feeds incredibly easy. The library has functions to create XML trees and retrieve branches and leaves from within it.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Below is a simple explanation of how to create a stack which retrieves and displays RSS feeds.  To find out more about revXML please refer to the XML section of the current User Guide.</font></p>
+<p></p>
+<p><font size="14" color="#990006"><b>The RSS Stack</b></font></p>
+<p><font size="12" color="#000000">When creating an RSS stack the first thing you need to decide is what your subject matter is going to be. Many websites now provide RSS feeds, from BBC News to our very own Revolution User Forums, so there is a wealth of topics to choose from. For the purpose of this tutorial I have decided to use the </font><font size="12" color="#990006">slashdot feed</font><font size="12" color="#000000">.</font></p>

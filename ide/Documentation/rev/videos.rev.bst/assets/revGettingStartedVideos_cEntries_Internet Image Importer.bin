@@ -1,0 +1,10 @@
+category=Sample Projects
+description=<p>Internet Image Importer is a simple script which allows you to load the images from a webpage. This Video Tutorial shows you how to use this Sample Project, and how to take it apart to understand how it works or copy portions of it for use in your own applications.  We recommend that you have explored the introductory video tutorials so you have a basic understanding of how Revolution works before you start on the Sample Projects.</p>
+duration=1:04
+filename=free_image_importer.avi
+level=3
+licensed=false
+name=Internet Image Importer
+scripts=<p></p>
+title=Internet Image Importer: Importing all the images from a web page
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;A walk through the Image Importer sample application</p>\n<p>-&#9;Laying out and editing the Importer interface</p>\n<p>-&#9;A look at the scripts of the importer</p>\n<p></p>

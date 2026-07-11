@@ -1,0 +1,8 @@
+<p><font face="Verdana" size="18">Application Registration Database (cont)</font></p>
+<p></p>
+<p>The relationship of the Users table to the Applications table is 'one to many.' In other words a single user, may have registered many different copies of our applications. And, conversely, the relationship of the [apps] table to the [users] table is many to one. Many rows (or records) may exist for a single user.</p>
+<p></p>
+<p>Below we show the two tables, <b>users</b> and <b>apps</b>. The columns represent the fields. The rows represent records. The users table has fields (columns) for the <b>userID</b> (primary key), <b>name</b>, <b>email</b> and <b>emailList.</b></p>
+<p></p>
+<p>The <b>apps</b> table has a record (row) for each purchased copy of an application. For instance, in the first row, Revolution was purchased by user 4, which if we look in the users table we see it's Jane Shafer. Her registration code is  FX09935FGRA. We also see that Jane Shafer purchased a copy of Media as well (see row 3 of the apps table).</p>
+<p></p>

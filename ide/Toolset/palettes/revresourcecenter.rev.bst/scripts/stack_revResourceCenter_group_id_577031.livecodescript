@@ -1,0 +1,41 @@
+Script "stack_revResourceCenter_group_id_577031"
+
+/*
+# Name: group "Example" of group id 584257 of group "mainContent" of card "TextMenu:UpdatingCheckmarks" of stack "revResourceCenter"
+# ID: group id 577031 of group id 584257 of group id 100272 of card id 100262 of stack "revResourceCenter"
+# Hash: kxSnha6THtpwFvnC5FiDjw==
+*/
+
+
+on preOpenBackground
+  set the textFont of field "Example Text" to empty
+  set the textColor of field "Example Text" to empty
+end preOpenBackground
+ 
+on openBackGround
+  put "9,10,12,14,18,20,24,36" into theSizes
+  put "Black,Yellow,Red,Blue,Green" into theColors
+  -- set up the Font submenu:
+  get the fontNames
+  sort it
+  put "Font" into button "Text"
+  repeat for each line thisFont in it
+    put return & tab & thisFont after button "Text"
+  end repeat
+  -- set up the Size submenu:
+  put return & "Size" after button "Text"
+  repeat for each item thisSize in theSizes
+    put return & tab & thisSize after button "Text"
+  end repeat
+  -- set up the Color submenu:
+  put return & "Color" after button "Text"
+  repeat for each item thisColor in theColors
+    put return & tab & thisColor after button "Text"
+  end repeat
+  -- set up style choices:
+  put return & "(-" & return \
+      & "Plain" & return \
+      & "Bold" & return \
+      & "Italic" & return \
+      & "Underline" after button "Text"
+end openBackGround

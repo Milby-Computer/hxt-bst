@@ -1,0 +1,18 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>The <font face="Courier" size="11">menuPick</font><font face="helvetica" size="12"> message is sent when the user chooses a menu item from the menu. Remember that in Revolution, menus are usually implemented as buttons:  the button's </font><font face="Courier" size="11">style</font><font face="helvetica" size="12"> and </font><font face="Courier" size="11">menuMode</font><font face="helvetica" size="12"> properties control how it is displayed, and the button's </font><font face="Courier" size="11">text</font><font face="helvetica" size="12"> property is used as the list of menu items. When the user chooses an item from the menu, the </font><font face="Courier" size="11">menuPick</font><font face="helvetica" size="12"> message is sent to the button, triggering this handler.</font></p>
+<p></p>
+<p>The menu is initially set up to contain menu items for going to the previous or next cards, and for creating a new card, with appropriate separators. Once you have set up the menu, creating a card automatically adds the new card's name to the menu. In this example, the initial text of the menu button, which you can enter in the button's properties pane, looks like this:</p>
+<p></p>
+<p><b><font face="helvetica" size="12">&#9;Previous Student</font></b></p>
+<p><b><font face="helvetica" size="12">&#9;Next Student</font></b></p>
+<p><b><font face="helvetica" size="12">&#9;(-</font></b></p>
+<p><b><font face="helvetica" size="12">&#9;New Student</font></b></p>
+<p><b><font face="helvetica" size="12">&#9;(-</font></b></p>
+<p></p>
+<p>As new cards are created, the list of students will be placed at the end of the menu, after the last "(-" separator line.  For more details on the menu contents, including an explaination of the "(-" characters in the menu above, see the section on <i><font face="Lucida Grande" size="11">Scripting Menus and the Menu Bar</font></i><font face="Lucida Grande" size="11"> in the <i>User's Guide</i>.</font></p>
+<p></p>
+<p>The <font face="Courier" size="11">menuPick</font><font face="helvetica" size="12"> handler does different things depending on the menu item. If the user chooses "Previous Student" or "Next Student", the handler simply goes to the previous or next card.</font></p>
+<p></p>
+<p>If the user chooses "New Student", the handler requests the student's name, then creates a card with that name, and adds the new card's name to the end of the menu (after the separator line). When a user chooses one of the card names, the handler goes to that card.</p>
+<p></p>
+<p>The <font face="Courier" size="11">default</font><font face="helvetica" size="12"> keyword is useful here because we don't know the wording of all the menu items when writing the handler. Using a </font><font face="Courier" size="11">switch</font><font face="helvetica" size="12"> statement, we can set up a case for each of the menu items we know about--"Previous Student", "Next Student", and "New Student"--and write a default case to handle all other possibilities in a generic way. For more details on using switch statements, see the section on </font><i><font face="Lucida Grande" size="11">Making Decisions</font></i><font face="Lucida Grande" size="11"> in the <i>User's Guide</i>.</font></p>

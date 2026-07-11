@@ -1,0 +1,94 @@
+<p><font color="#980517">--&gt; SCRIPT OF BTN Default Data</font></p>
+<p></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> "This will delete all existing data in this database!" <font color="#980517">with</font> "Cancel" or "OK"</p>
+<p>  <font color="#980517">if</font> it is "cancel" <font color="#980517">then</font> <font color="#0000FF">exit</font> mouseUp</p>
+<p>  </p>
+<p>  <font color="#68228B">--&gt; DELETE EXISTING users AND apps TABLES</font></p>
+<p>  <font color="#68228B">--&gt; DROP users</font></p>
+<p>  <font color="#0000FF">put</font> "DROP TABLE users" into tSQL</p>
+<p>  <font color="#0000FF">put</font> revdb_execute(gConID,tSQL) into tTmp</p>
+<p>  handleRevDBerror tTmp</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">put</font> "DROP TABLE apps" into tSQL</p>
+<p>  <font color="#0000FF">put</font> revdb_execute(gConID,tSQL) into tTmp</p>
+<p>  handleRevDBerror tTmp</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p></p>
+<p>  <font color="#68228B">--&gt; CREATE NEW TABLES</font></p>
+<p>  <font color="#0000FF">put</font> "CREATE TABLE users(userID integer primary key, name text,email text,emailList boolean)" into tSQL</p>
+<p>  <font color="#0000FF">put</font> revdb_execute(gConID,tSQL) into tTmp</p>
+<p>  handleRevDBerror tTmp</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">put</font> "CREATE TABLE apps(appID integer primary key, appName text,appRegCode text,appUserID integer)" into tSQL</p>
+<p>  <font color="#0000FF">put</font> revdb_execute(gConID,tSQL) into tTmp</p>
+<p>  handleRevDBerror tTmp</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information "New tables: users and apps created"</p>
+<p>  </p>
+<p>  <font color="#68228B">--&gt; FILL TABLES WITH DATA</font></p>
+<p>  <font color="#68228B">--&gt; users TABLE</font></p>
+<p>  <font color="#0000FF">put</font> the altDefaultUsersData of <font color="#F88017">me</font> into tList </p>
+<p>  </p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> each line L in tList</p>
+<p>    <font color="#0000FF">put</font> "INSERT INTO users(userID,name,email,emailList)" &amp; \</p>
+<p>        " VALUES(null," &amp; L &amp; ")" into tSQL</p>
+<p>    <font color="#68228B">--&gt; EXECUTE SQL</font></p>
+<p>    <font color="#0000FF">put</font> revdb_execute(gConID,tSQL) into tTmp</p>
+<p>    </p>
+<p>    handleRevDBerror tTmp</p>
+<p>    <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>      <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>      <font color="#0000FF">exit</font> mouseUp</p>
+<p>    <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  </p>
+<p>  <font color="#68228B">--&gt; apps TABLE</font></p>
+<p>  <font color="#0000FF">put</font> the altDefaultAppsData of <font color="#F88017">me</font> into tList</p>
+<p>  </p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> each line M in tList</p>
+<p>    <font color="#0000FF">put</font> "INSERT INTO apps(appID,appName,appRegCode,appUserID)" &amp; \</p>
+<p>        " VALUES(null," &amp; M &amp; ")" into tSQL</p>
+<p>    <font color="#68228B">--&gt; EXECUTE SQL</font></p>
+<p>    <font color="#0000FF">put</font> revdb_execute(gConID,tSQL) into tTmp</p>
+<p>     </p>
+<p>    handleRevDBerror tTmp</p>
+<p>    <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>      <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>      <font color="#0000FF">exit</font> mouseUp</p>
+<p>    <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">send</font> mouseUp to btn "Refresh users"</p>
+<p>  <font color="#0000FF">send</font> mouseUp to btn "Refresh apps"</p>
+<p>  </p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#0000FF">function</font> cleanSQL pSQL</p>
+<p>  <font color="#68228B">--&gt; THIS ESCAPES THE QUOTE PROBLEM IN SQL</font></p>
+<p>  <font color="#0000FF">replace</font> "'" <font color="#980517">with</font> "''" in pSQL</p>
+<p>  <font color="#0000FF">replace</font> quote <font color="#980517">with</font> quote &amp; quote in pSQL</p>
+<p>  <font color="#68228B">--&gt; THIS ESCAPES THE tab AND cr DELIMITERS</font></p>
+<p>  <font color="#68228B">--&gt; IF YOU PLAN ON HAVING USERS ENTER cr AND tab THEN YOU ALSO NEED TO</font></p>
+<p>  <font color="#68228B">--&gt;    replace "*CR*" with cr IN THE RETURNED DATA!</font></p>
+<p>  <font color="#0000FF">replace</font> cr <font color="#980517">with</font> "*CR*" in pSQL</p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> "*TAB*" in pSQL</p>
+<p>  <font color="#0000FF">return</font> pSQL</p>
+<p><font color="#980517">end</font> cleanSQL</p>

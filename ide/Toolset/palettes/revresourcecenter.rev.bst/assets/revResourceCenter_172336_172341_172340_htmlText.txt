@@ -1,0 +1,29 @@
+<p><b><font face="Lucida Grande" size="14" color="#990006">Introduction</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In an ideal world you would be able to solve any computing problem without leaving the confines of Revolution. Unfortunately, though, there will always be things that very-high level programming is not suited for. For example, an implementation of an algorithm in Revolution may be too slow, you may need a specific OS feature that isn&rsquo;t wrapped by a command or function in Revolution, or you may just want to access a pre-existing library in Revolution.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To support such cases, Revolution has what we call the &lsquo;externals interface&rsquo;. An external is simply a shared library (dll on Windows, bundle on Mac OS X) written in a lower-level language that can be loaded (at runtime) into the Revolution environment. Once loaded, your scripting environment is augmented with the commands and functions exported by the external.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In this, the first of a series of articles, I will cover the basics of writing a (cross-platform) external for Windows and Mac OS X in C/C++.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Before we begin, before going any further you will need:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Revolution 2.7.x (any edition should do)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Visual C++ 2005 - any edition including Express (if you want to build externals on Windows)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; XCode 2.4.x (if want to build externals on Mac OS X)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The Revolution externals build environment: </font><a href="http://developer.runrev.com/externals/ExternalsEnvironmentV1.zip"><font face="Lucida Grande" size="12" color="#990006">http://developer.runrev.com/externals/ExternalsEnvironmentV1.zip</font></a></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; A set of pre-constructed environments for each step in the tutorial article:  </font><a href="http://developer.runrev.com/externals/NewsletterArticle1.zip"><font face="Lucida Grande" size="12" color="#990006">http://developer.runrev.com/externals/NewsletterArticle1.zip</font></a></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; A cup of coffee (not strictly required, but I find it helps when coding in lower-level languages...)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Note: The need for Revolution 2.7.x is just because the External Creator assumes the new installation structure is 2.7 when setting up projects &ndash; the externals you build will operate in any Revolution version and edition.&#0;</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Setting up the environment</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Before you can begin doing anything in a lower-level language, it is important that you set up your &lsquo;build environment&rsquo;. Modern IDEs such as Visual C++ and XCode make this straightforward when targetting a single platform &ndash; but it can be trickier if you want to use the same code base to compile on multiple platforms (or even multiple variants of the same platform such as exist with Mac OS X).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To help with this, a skeleton environment similar to the system we use internally is included. This skeleton has the basic structure allowing you to write externals using both Visual C++ 2005 and XCode 2.4.x.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">After unpacking &lsquo;ExternalsEnvironmentV1.zip&rsquo; onto a suitable place on your hard-drive, it is worth spending a few moments familiarising yourself with its contents:</font></p>

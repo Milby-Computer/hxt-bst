@@ -1,0 +1,86 @@
+<p><b><font face="Lucida Grande" size="14" color="#990006">STAGE 2</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The effect is generated using the import snapshot function with the resultant image being set as the new window shape. We are going to set blend level of the background image and then take a snapshot of the entire group. The image produced will contain alpha blended regions as well as solid areas where our controls have been placed.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">STAGE 3</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">We need to write two handlers both of which should be placed in the group script of our background and object. The first will set the transparency or blend level of the background image. 'StackBlendLevel' has a single parameter 'pChange' which is an integer. If pChange is positive, the background transparency will increase, if negative it will decrease.</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#2000FB">local</font><font face="Courier" size="11" color="#000000"> sBlendLevel</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#990017">on</font><font face="Courier" size="11" color="#000000"> stackBlendLevel pChange</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># pChange is an integer value + or -</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># This function takes pChange and modifies the blendLevel </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B">#of the background image</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># in the windowShapeGroup</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">lock</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">screen</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">lock</font><font face="Courier" size="11" color="#000000"> messages</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">if</font><font face="Courier" size="11" color="#000000"> sBlendLevel is empty </font><font face="Courier" size="11" color="#990017">then</font></p>
+<p><font face="Courier" size="11" color="#000000">      </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">blendlevel</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> this stack </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> sBlendLevel</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">if</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">add</font><font face="Courier" size="11" color="#000000"> pChange </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> sBlendLevel</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Ensure that the new blendlevel is valid</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">if</font><font face="Courier" size="11" color="#000000"> sBlendLevel &gt; 60 </font><font face="Courier" size="11" color="#990017">then</font></p>
+<p><font face="Courier" size="11" color="#000000">      </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> 60 </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> sBlendLevel</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">else</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">if</font><font face="Courier" size="11" color="#000000"> sBlendLevel &lt; 0 </font><font face="Courier" size="11" color="#990017">then</font></p>
+<p><font face="Courier" size="11" color="#000000">      </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> 0 </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> sBlendLevel</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">if</font></p>
+<p><font face="Courier" size="11" color="#000000"> </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Set the blendlevel of the background image</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">blendLevel</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image "background" </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> pBlendLevel</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Recreate the window shape based on the new blendlevel </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># of the background image</font></p>
+<p><font face="Courier" size="11" color="#000000">   recreateWindowShape sBlendLevel</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Update the User Interface so that the correct number of</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># pips go red</font></p>
+<p><font face="Courier" size="11" color="#000000">   updateUI sBlendLevel</font></p>
+<p><font face="Courier" size="11" color="#000000">  </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">unlock</font><font face="Courier" size="11" color="#000000"> messages</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">unlock</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">screen</font></p>
+<p><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> stackBlendLevel</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">STAGE 4</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Notice that once the blend level of the background image has been changed we immediately call 'recreateWindowShape'. This function takes a snapshot of our group and sets the windows shape of the stack to the image created.</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#990017">on</font><font face="Courier" size="11" color="#000000"> recreateWindowShape pBlendLevel</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># This handler takes a snapshot of group "windowShape",</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># which contains all our</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># controls and most importantly the background image. It</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># then sets the window</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># shape of the stack to the resultant image </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Delete the window shape image if there is one</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">if</font><font face="Courier" size="11" color="#000000"> there is an image "WindowShape" </font><font face="Courier" size="11" color="#990017">then</font></p>
+<p><font face="Courier" size="11" color="#000000">      </font><font face="Courier" size="11" color="#2000FB">delete</font><font face="Courier" size="11" color="#000000"> image "WindowShape"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">if</font></p>
+<p><font face="Courier" size="11" color="#990017">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Set the properties of the template image which will apply</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># to our new window shape</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># image when we use the command 'snapshot'</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">visible</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">templateImage</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> false</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">alwaysBuffer</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">templateImage</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> true</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Take a snapshot of the whole group, including all the</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># controls</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">import</font><font face="Courier" size="11" color="#000000"> snapshot from </font><font face="Courier" size="11" color="#2000FB">group</font><font face="Courier" size="11" color="#000000"> 1</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">name</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> last image </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> "WindowShape"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Finally, set the window shape of the stack to the new image</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">windowShape</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> this stack </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">id</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image \</font></p>
+<p><font face="Courier" size="11" color="#000000">   "WindowShape"</font></p>
+<p><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> recreateWindowShape</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">STAGE 5</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now all we have to do is call 'stackBlendLevel' from our + and &ndash; buttons. The sample stack uses:</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#000000">stackBlendLevel 10</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">and</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#000000">stackBlendLevel -10</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Alternatively, use a slider instead of the two buttons to make the effect even more dynamic.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">STAGE 6</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The window shape is applied from the top left corner of your stack. To ensure that the windows shape lines up correctly with your controls and background image, ensure your group is in the very top left corner of the stack 0,0.</font></p>

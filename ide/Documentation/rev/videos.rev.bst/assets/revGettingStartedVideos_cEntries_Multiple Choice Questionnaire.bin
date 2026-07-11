@@ -1,0 +1,10 @@
+category=Sample Projects
+description=<p>The Multiple Choice Questionnaire allows you to create your own multiple choice quiz or test.  This application is capable of saving its results to a file or uploading them to an ftp server.  The application comes in two parts, the quiz stacks themselves, and an editor stack.  The editor stack demonstrates how you can easily create one application which modifies another.  It also shows how to create your own custom (or &#147;virtual&#148;) object properties.</p>\n<p></p>\n<p>This Video Tutorial shows you how to use this Sample Project, and how to take it apart to understand how it works or copy portions of it for use in your own applications.  We recommend you have explored the introductory video tutorials so you have a basic understanding of how Revolution works before you start on the Sample Projects.</p>\n<p></p>
+duration=4:04
+filename=free_multiple_choice.avi
+level=3
+licensed=false
+name=Multiple Choice Questionnaire
+scripts=<p></p>\n<p></p>\n<p></p>
+title=Multiple Choice Questionnaire: For Online Learning
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;A walk through the multiple-choice sample application</p>\n<p>-&#9;A walk through the multiple-choice editor</p>\n<p>-&#9;How to take apart and understand the scripts</p>\n<p></p>

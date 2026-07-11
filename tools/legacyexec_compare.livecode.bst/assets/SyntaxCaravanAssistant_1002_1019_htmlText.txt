@@ -1,0 +1,231 @@
+<p bgcolor="#BEBEBE">    uint2 index;</p>
+<p>    IO_handle stream = NULL;</p>
+<p>    IO_stat stat = IO_NORMAL;</p>
+<p>    Boolean textmode = False;</p>
+<p></p>
+<p>    if (arg == OA_STDERR)</p>
+<p>        stream = IO_stderr;</p>
+<p>    else</p>
+<p>        if (arg == OA_STDOUT)</p>
+<p>            stream = IO_stdout;</p>
+<p>        else</p>
+<p>        {</p>
+<p>            if (fname-&gt;eval(ep) != ES_NORMAL)</p>
+<p>            {</p>
+<p>                MCeerror-&gt;add</p>
+<p>                (EE_WRITE_BADEXP, line, pos);</p>
+<p>                return ES_ERROR;</p>
+<p>            }</p>
+<p>            char *name = ep.getsvalue().clone();</p>
+<p>            switch (arg)</p>
+<p>            {</p>
+<p>            case OA_DRIVER:</p>
+<p>            case OA_FILE:</p>
+<p>                if (!IO_findfile(name, index)</p>
+<p>                        || MCfiles[index].mode == OM_NEITHER</p>
+<p>                        || MCfiles[index].mode == OM_READ)</p>
+<p>                {</p>
+<p>                    MCresult-&gt;sets("file is not open for write");</p>
+<p>                    delete name;</p>
+<p>                    return ES_NORMAL;</p>
+<p>                }</p>
+<p>                stream = MCfiles[index].ohandle;</p>
+<p>                textmode = MCfiles[index].textmode;</p>
+<p>                if (at != NULL)</p>
+<p>                {</p>
+<p>                    if (at-&gt;eval(ep) != ES_NORMAL)</p>
+<p>                    {</p>
+<p>                        MCeerror-&gt;add</p>
+<p>                        (EE_WRITE_BADEXP, line, pos);</p>
+<p>                        return ES_ERROR;</p>
+<p>                    }</p>
+<p>                    if (ep.getsvalue().getstring()[0] == '\004'</p>
+<p>                            || ep.getsvalue() == "eof")</p>
+<p>                        stat = MCS_seek_end(stream, 0);</p>
+<p>                    else</p>
+<p>                    {</p>
+<p>                        double n;</p>
+<p>                        if (ep.getreal8(n, line, pos, EE_WRITE_BADEXP) != ES_NORMAL)</p>
+<p>                            stat = IO_ERROR;</p>
+<p>                        else</p>
+<p>                            if (n &lt; 0)</p>
+<p>                                stat = MCS_seek_end(stream, (int64_t)n);</p>
+<p>                            else</p>
+<p>                                stat = MCS_seek_set(stream, (int64_t)n);</p>
+<p>                    }</p>
+<p>                    if (stat != IO_NORMAL)</p>
+<p>                    {</p>
+<p>                        MCresult-&gt;sets("error seeking in file");</p>
+<p>                        return ES_NORMAL;</p>
+<p>                    }</p>
+<p>                }</p>
+<p>                break;</p>
+<p>            case OA_PROCESS:</p>
+<p>                if (!IO_findprocess(name, index)</p>
+<p>                        || MCprocesses[index].mode == OM_NEITHER</p>
+<p>                        || MCprocesses[index].mode == OM_READ)</p>
+<p>                {</p>
+<p>                    MCresult-&gt;sets("process is not open for write");</p>
+<p>                    delete name;</p>
+<p>                    return ES_NORMAL;</p>
+<p>                }</p>
+<p>                stream = MCprocesses[index].ohandle;</p>
+<p>                textmode = MCprocesses[index].textmode;</p>
+<p>                break;</p>
+<p>            case OA_SOCKET:</p>
+<p>                if (IO_findsocket(name, index))</p>
+<p>                {</p>
+<p>                    MCAutoNameRef t_message_name;</p>
+<p>                    if (at != NULL)</p>
+<p>                    {</p>
+<p>                        if (at-&gt;eval(ep) != ES_NORMAL)</p>
+<p>                        {</p>
+<p>                            delete name;</p>
+<p>                            MCeerror-&gt;add(EE_WRITE_BADEXP, line, pos);</p>
+<p>                            return ES_ERROR;</p>
+<p>                        }</p>
+<p>                        /* UNCHECKED */ ep . copyasnameref(t_message_name);</p>
+<p>                    }</p>
+<p>                    if (source-&gt;eval(ep) != ES_NORMAL)</p>
+<p>                    {</p>
+<p>                        delete name;</p>
+<p>                        MCeerror-&gt;add(EE_WRITE_BADEXP, line, pos);</p>
+<p>                        return ES_ERROR;</p>
+<p>                    }</p>
+<p bgcolor="#8D8E8F"></p>
+<p bgcolor="#8D8E8F"></p>
+<p>                    MCresult-&gt;clear(False);</p>
+<p bgcolor="#BEBEBE">                    MCS_write_socket(ep.getsvalue(), MCsockets[index], ep.getobj(), t_message_name);</p>
+<p>                }</p>
+<p>                else</p>
+<p>                    MCresult-&gt;sets("socket is not open");</p>
+<p>                delete name;</p>
+<p>                return ES_NORMAL;</p>
+<p>            default:</p>
+<p>                break;</p>
+<p>            }</p>
+<p>            delete name;</p>
+<p>        }</p>
+<p>    if (source-&gt;eval(ep) != ES_NORMAL)</p>
+<p>    {</p>
+<p>        MCeerror-&gt;add</p>
+<p>        (EE_WRITE_BADEXP, line, pos);</p>
+<p>        return ES_ERROR;</p>
+<p>    }</p>
+<p>    MCresult-&gt;clear(False);</p>
+<p>    if (textmode)</p>
+<p>        ep.binarytotext();</p>
+<p></p>
+<p>    uint4 offset;</p>
+<p>    Boolean haseof = False;</p>
+<p>    // MW-2004-11-17: EOD should only happen when writing to processes in text-mode</p>
+<p>    if (arg == OA_PROCESS &amp;&amp; textmode &amp;&amp; MCU_offset("\004", ep.getsvalue(), offset, True))</p>
+<p>    {</p>
+<p>        ep.substring(0, offset);</p>
+<p>        haseof = True;</p>
+<p>    }</p>
+<p></p>
+<p>    switch (unit)</p>
+<p>    {</p>
+<p>    case FU_CHARACTER:</p>
+<p>    case FU_ITEM:</p>
+<p>    case FU_LINE:</p>
+<p>    case FU_WORD:</p>
+<p>        stat = MCS_write(ep.getsvalue().getstring(), sizeof(char),</p>
+<p>                         ep.getsvalue().getlength(), stream);</p>
+<p>        break;</p>
+<p>    default:</p>
+<p>        {</p>
+<p>            uint4 l = ep.getsvalue().getlength();</p>
+<p>            const char *sptr = ep.getsvalue().getstring();</p>
+<p>            while (l)</p>
+<p>            {</p>
+<p>                const char *startptr = sptr;</p>
+<p>                if (!MCU_strchr(sptr, l, ','))</p>
+<p>                {</p>
+<p>                    sptr += l;</p>
+<p>                    l = 0;</p>
+<p>                }</p>
+<p>                MCString s(startptr, sptr - startptr);</p>
+<p>                real8 n;</p>
+<p>                if (!MCU_stor8(s, n))</p>
+<p>                {</p>
+<p>                    MCeerror-&gt;add</p>
+<p>                    (EE_FUNCTION_NAN, 0, 0, s);</p>
+<p>                    stat = IO_ERROR;</p>
+<p>                    break;</p>
+<p>                }</p>
+<p>                sptr++;</p>
+<p>                switch (unit)</p>
+<p>                {</p>
+<p>                case FU_INT1:</p>
+<p>                    stat = IO_write_int1((int1)n, stream);</p>
+<p>                    break;</p>
+<p>                case FU_INT2:</p>
+<p>                    stat = IO_write_int2((int2)n, stream);</p>
+<p>                    break;</p>
+<p>                case FU_INT4:</p>
+<p>                    stat = IO_write_int4((int4)n, stream);</p>
+<p>                    break;</p>
+<p>                case FU_INT8:</p>
+<p>                    if (n &lt; 0)</p>
+<p>                        stat = IO_write_int4(-1, stream);</p>
+<p>                    else</p>
+<p>                        stat = IO_write_int4(0, stream);</p>
+<p>                    if (stat == IO_NORMAL)</p>
+<p>                        stat = IO_write_int4((int4)n, stream);</p>
+<p>                    break;</p>
+<p>                case FU_REAL4:</p>
+<p>                    stat = IO_write_real4((real4)n, stream);</p>
+<p>                    break;</p>
+<p>                case FU_REAL8:</p>
+<p>                    stat = IO_write_real8(n, stream);</p>
+<p>                    break;</p>
+<p>                case FU_UINT1:</p>
+<p>                    stat = IO_write_uint1((uint1)n, stream);</p>
+<p>                    break;</p>
+<p>                case FU_UINT2:</p>
+<p>                    stat = IO_write_uint2((uint2)n, stream);</p>
+<p>                    break;</p>
+<p>                case FU_UINT4:</p>
+<p>                    stat = IO_write_uint4((uint4)n, stream);</p>
+<p>                    break;</p>
+<p>                case FU_UINT8:</p>
+<p>                    stat = IO_write_uint4(0, stream);</p>
+<p>                    if (stat == IO_NORMAL)</p>
+<p>                        stat = IO_write_uint4((uint4)n, stream);</p>
+<p>                    break;</p>
+<p>                default:</p>
+<p>                    break;</p>
+<p>                }</p>
+<p>            }</p>
+<p>            if (stat != IO_NORMAL)</p>
+<p>                break;</p>
+<p>        }</p>
+<p>        break;</p>
+<p>    }</p>
+<p></p>
+<p>    if (haseof)</p>
+<p>    {</p>
+<p>        MCS_close(MCprocesses[index].ohandle);</p>
+<p>        MCprocesses[index].ohandle = NULL;</p>
+<p>        if (MCprocesses[index].mode == OM_UPDATE)</p>
+<p>            MCprocesses[index].mode = OM_READ;</p>
+<p>        else</p>
+<p>            MCprocesses[index].mode = OM_NEITHER;</p>
+<p>    }</p>
+<p>    if (stat != IO_NORMAL)</p>
+<p>    {</p>
+<p>        MCresult-&gt;sets("error writing file");</p>
+<p>        return ES_NORMAL;</p>
+<p>    }</p>
+<p>    if (arg == OA_DRIVER || arg == OA_FILE)</p>
+<p>        stream-&gt;flags |= IO_WRITTEN;</p>
+<p>#if !defined _WIN32 &amp;&amp; !defined _MACOSX</p>
+<p>    if (!haseof)</p>
+<p>        MCS_flush(stream);</p>
+<p>#endif</p>
+<p></p>
+<p>    MCresult-&gt;clear(False);</p>
+<p>    return ES_NORMAL;</p>
+<p></p>

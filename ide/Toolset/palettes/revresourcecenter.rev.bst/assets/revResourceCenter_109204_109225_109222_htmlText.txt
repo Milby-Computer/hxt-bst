@@ -1,0 +1,20 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom function is called with a statement such as the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> shakespeareanInsult() into field "Insult"</font></p>
+<p></p>
+<p>In one statement, this function handler combines several literal strings with random words chosen from three custom properties to create an insult.</p>
+<p></p>
+<p>The insult chooses three words--two adjectives and a noun--from three custom properties of the object whose script contains the function handler. The any keyword selects a random word from each custom property. We could store the word lists in a field or file, or put them right in the script, instead. But it's convenient to store them in a custom property: we don't have to worry about a field or file being separated from the object that contains the script--thus breaking it--and we don't need to edit the script just to add a new adjective or noun.</p>
+<p></p>
+<p>The keyword <font face="Courier" size="11">me</font><font face="helvetica" size="12"> refers to the object whose script contains the handler that is executing. In this case, me refers to the object whose script contains the function handler. So the expression any word of the firstAdjectiveList of me is a random word taken from the custom property called "firstAdjectiveList", which belongs to that object.</font></p>
+<p></p>
+<p>The &amp;&amp; and &amp; operators are used to combine all the parts of the insult into a single string. For example, suppose the handler randomly chooses "puny" as the first adjective, "half-faced" as the second adjective, and "giglet" as the noun. The insult is constructed like this:</p>
+<p></p>
+<p><font face="Courier" size="11">  "Begone, thou" &amp;&amp; "puny" &amp;&amp; "half-faced" &amp;&amp; "giglet" &amp; "!"</font></p>
+<p></p>
+<p>The <font face="Courier" size="11">&amp;</font><font face="helvetica" size="12"> operator combines what's before and after it, and the </font><font face="Courier" size="11">&amp;&amp;</font><font face="helvetica" size="12"> does the same thing while adding a space in the middle, so the final insult looks like this:</font></p>
+<p></p>
+<p>  Begone, thou puny half-faced giglet!</p>
+<p></p>
+<p><b><font face="Lucida Grande" size="11">Note:</font></b><font face="helvetica" size="12">  The words list for this insult generator has been floating around the Internet for years. The original source is unknown.</font></p>

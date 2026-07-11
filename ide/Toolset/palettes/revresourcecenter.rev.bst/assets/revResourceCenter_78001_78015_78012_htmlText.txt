@@ -1,0 +1,12 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom command is used with the following statement:</p>
+<p></p>
+<p><font face="Courier" size="11">  printAllFields</font></p>
+<p></p>
+<p>When manipulating data in variables, Transcript treats everything as text. This means, among other things, that when you get the contents of a field, any style information, such as boldfacing and fonts, is lost. Only the plain text is retained. To retain the style information in a text field, or to add styles to a variable before printing it, the htmlText property is used to produce HTML-like markup whose style information is understood by Revolution.</p>
+<p></p>
+<p>The repeat control structure in this handler is used to collect the text of all the fields on the current card. First comes the field name followed by a colon, and next the field contents. The field name is surrounded by tags that turn it into a separate paragraph (&lt;p&gt; and &lt;/p&gt;) and make it boldfaced (&lt;b&gt; and &lt;/b&gt;). The handler gets the content of the field by getting its htmlText property, which includes the style information in the form of HTML-like tags.</p>
+<p></p>
+<p>All this information is placed in a single variable called "collectedFields". Because the htmlText of a field always starts with a &lt;p&gt; tag and ends with a &lt;/p&gt; tag, there's no need to separate the parts of the variable with return characters; the htmlText provides the necessary line breaks.</p>
+<p></p>
+<p>Once the data is collected into a variable, the handler prints that variable. (The <font face="Courier" size="11">revPrintText</font><font face="helvetica" size="12"> command looks for HTML tags in the text to be printed: if the text includes tags, </font><font face="Courier" size="11">revPrintText</font><font face="helvetica" size="12"> assumes the text is in HTML and prints it as styled text.)</font></p>

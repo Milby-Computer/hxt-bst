@@ -1,0 +1,41 @@
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p>  #<font color="#68228B"> Collect name and email</font></p>
+<p>  <font color="#0000FF">put </font>"name,email" into tColumnItems</p>
+<p>  <font color="#980517">repeat for</font> each item I in tColumnItems</p>
+<p>    <font color="#0000FF">ask </font>question "New value for column: " &amp; I</p>
+<p>    <font color="#980517">if </font>it is empty or the <font color="#F88017">result </font>is "cancel" <font color="#980517">then </font><font color="#0000FF">exit </font>to <font color="#FF0000">top</font></p>
+<p><font color="#FF0000">    </font><font color="#0000FF">put </font>"'" &amp; cleanSQL<font color="#000000">(it)</font> &amp; "'"<font color="#000000"> </font>&amp; "," after tRowData</p>
+<p><font color="#980517">  end</font> <font color="#980517">repeat</font></p>
+<p><font color="#980517">  </font></p>
+<p><font color="#980517">  </font><font color="#68228B"># Collect email list</font></p>
+<p><font color="#980517">  </font><font color="#0000FF">ask </font>question "New value for column: emailList" <font color="#980517">with </font>"true"</p>
+<p>  <font color="#980517">if </font>it is empty or the <font color="#F88017">result </font>is "cancel" <font color="#980517">then </font><font color="#0000FF">exit </font>to <font color="#FF0000">top</font></p>
+<p><font color="#FF0000">  </font><font color="#0000FF">put </font>"'" &amp; cleanSQL<font color="#000000">(it)</font> &amp; "'" after tRowData</p>
+<p>  </p>
+<p>  <font color="#68228B"># Construct SQL</font></p>
+<p>  <font color="#0000FF">put </font>"INSERT INTO users(userID,name,email,emailList)" &amp; \</p>
+<p>  " VALUES(null," &amp; tRowData &amp; ")" into tSQL</p>
+<p>  <font color="#68228B"># Execute SQL</font></p>
+<p>  <font face="Courier New" size="12" color="#0000FF">put</font><font face="Courier New" size="12"> revdb_execute</font><font face="Courier New" size="12" color="#000000">(gConID,tSQL)</font><font face="Courier New" size="12"> into tTmp</font></p>
+<p></p>
+<p>  handleRevDBerror tTmp</p>
+<p><font color="#980517">  if </font>the <font color="#F88017">result </font>is not empty <font color="#980517">then </font></p>
+<p><font color="#0000FF">    answer </font>warning the <font color="#F88017">result</font></p>
+<p><font color="#0000FF">    exit </font>mouseUp</p>
+<p><font color="#980517">  end if</font></p>
+<p><font color="#0000FF">  answer </font>information "Number of rows added: " &amp;<font color="#000000">cr&amp;</font> tTmp</p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#0000FF">function</font> cleanSQL pSQL</p>
+<p>  <font color="#68228B"># Escape quotes</font></p>
+<p>  <font color="#0000FF">replace</font> "'" <font color="#980517">with</font> "''" in pSQL</p>
+<p>  <font color="#0000FF">replace</font> quote <font color="#980517">with</font> quote &amp; quote in pSQL</p>
+<p>  <font color="#68228B"># Escape tabs and returns</font></p>
+<p><font color="#68228B">  # If you plan on having users enter return and tab then you also need to</font></p>
+<p><font color="#68228B">  # replace "*RETURN*" with return in the data taken out of the database</font></p>
+<p>  <font color="#0000FF">replace</font> return <font color="#980517">with</font> "*RETURN*" in pSQL</p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> "*TAB*" in pSQL</p>
+<p>  <font color="#0000FF">return</font> pSQL</p>
+<p><font color="#980517">end</font> cleanSQL</p>

@@ -1,0 +1,208 @@
+{
+   "#mainstack": "com.livecode.pi.datagridcolumns",
+   "com.livecode.pi.datagridcolumns": {
+      "#name": "stack \"com.livecode.pi.datagridcolumns\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1039": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1040": {
+                        "#name": "field \"columns\"",
+                        "customproperties": {
+                           "uig": null
+                        },
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "1",
+                              "Master,expectedRect": "42,83,220,195",
+                              "Master,movehDistance": false,
+                              "Master,movevDistance": false,
+                              "Master,scalebottomDistance": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleRight": true,
+                              "Master,scaleRightAbsolute": true,
+                              "Master,scalerightDistance": "-260",
+                              "Master,scaleRightObjectRef": "card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaletopDistance": null
+                           },
+                           "cREVTable": {
+                              "currentview": "Col 4\nCol 1\nCol 2"
+                           }
+                        },
+                        "properties": {
+                           "dontWrap": true,
+                           "htmlText": "<p>Col 1</p>\n<p>Col 2</p>",
+                           "id": "1040",
+                           "layer": "2",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "columns",
+                           "rect": "122,52,305,164",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1041": {
+                        "#name": "button \"New Column\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "1",
+                              "Master,expectedRect": "199,62,220,81",
+                              "Master,moveH": true,
+                              "Master,moveHAbsolute": true,
+                              "Master,movehDistance": "-271",
+                              "Master,moveHObjectRef": "card",
+                              "Master,moveHObjectSide": "right",
+                              "Master,movevDistance": false,
+                              "Master,scalebottomDistance": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scalerightDistance": null,
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "hiliteIcon": "202669",
+                           "icon": "202668",
+                           "id": "1041",
+                           "layer": "5",
+                           "name": "New Column",
+                           "rect": "284,31,305,50",
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "toolTip": "Add column"
+                        }
+                     },
+                     "1042": {
+                        "#name": "button \"Delete Column\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "2",
+                              "Master,expectedRect": "179,62,200,81",
+                              "Master,moveH": true,
+                              "Master,moveHAbsolute": true,
+                              "Master,movehDistance": "-291",
+                              "Master,moveHObjectRef": "card",
+                              "Master,moveHObjectSide": "right",
+                              "Master,movevDistance": false,
+                              "Master,scalebottomDistance": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleRight": true,
+                              "Master,scaleRightAbsolute": true,
+                              "Master,scalerightDistance": "-280",
+                              "Master,scaleRightObjectRef": "card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "hiliteIcon": "202667",
+                           "icon": "202663",
+                           "id": "1042",
+                           "layer": "6",
+                           "name": "Delete Column",
+                           "rect": "264,31,285,50",
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "toolTip": "Delete column"
+                        }
+                     },
+                     "1043": {
+                        "#name": "field \"Label Field\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Columns:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Columns:</p>",
+                           "id": "1043",
+                           "layer": "7",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "118,28,218,49",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1044": {
+                        "#name": "button \"Move Down\"",
+                        "properties": {
+                           "icon": "203126",
+                           "id": "1044",
+                           "layer": "3",
+                           "name": "Move Down",
+                           "rect": "97,145,118,164",
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "toolTip": "Move Column Down"
+                        }
+                     },
+                     "1045": {
+                        "#name": "button \"Move up\"",
+                        "properties": {
+                           "icon": "203127",
+                           "id": "1045",
+                           "layer": "4",
+                           "name": "Move up",
+                           "rect": "97,127,118,146",
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "toolTip": "Move Column Up"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1039",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "93,24,309,168"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "1236013249444\n1236013197401\n1236013248136\n",
+                  "total": "9"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1078"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.datagridcolumns\"",
+      "properties": {
+         "fileName": "com.livecode.pi.datagridcolumns.livecode",
+         "id": "1078",
+         "name": "com.livecode.pi.datagridcolumns",
+         "rect": "1432,242,1997,879"
+      },
+      "sharedGroupIDs": null
+   }
+}

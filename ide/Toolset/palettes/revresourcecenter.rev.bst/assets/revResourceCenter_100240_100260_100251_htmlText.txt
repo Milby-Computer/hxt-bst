@@ -1,0 +1,43 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom function is called with a statement such as one of the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">get</font><font face="Courier" size="11"> prefixed(field "List","</font><font face="Courier" size="11" color="#000000">&gt;")</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> prefixed(the filenames of </font><font face="Courier" size="11" color="#F88017">me</font><font face="Courier" size="11">,currentPath) into myFiles</font></p>
+<p></p>
+<p>The "prefixed" function adds a prefix to the beginning of each line in a list of lines. It does this by using a <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> loop to build the new list (with prefixes), then returns that new list.</font></p>
+<p></p>
+<p>Because the new list is built by adding each line followed by a <font face="Courier" size="11">return</font><font face="helvetica" size="12"> character to the end, the final list contains an extra </font><font face="Courier" size="11">return</font><font face="helvetica" size="12"> character. To remove this, the function returns </font><font face="Courier" size="11">char 1 to -2</font><font face="helvetica" size="12"> of the new list.  In other words, it returns the new list from the </font><i><font face="Lucida Grande" size="11">first character</font></i><font face="helvetica" size="12"> to the </font><i><font face="Lucida Grande" size="11">second-to-last character</font></i><font face="helvetica" size="12">, leaving out the final character which is the extra return.</font></p>
+<p></p>
+<p>Of course, many variations on this function are possible. You could create a similar function to add a suffix to each line by changing the statement in the repeat loop to read like this:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> theLine &amp; theSuffix &amp; </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> after newList</font></p>
+<p></p>
+<p>Or you could add prefixes and suffixes to each item or word, instead of each line.</p>
+<p></p>
+<p>One interesting thing about this function is that it doesn't require parameter error-checking: calling it with no parameters or with a single parameter does not cause a script error, and still returns something sensible. This is because if a parameter is missing, Transcript treats it as the empty constant. Let's look at how this happens.</p>
+<p></p>
+<p>Suppose you call this function with a single parameter, like this:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> prefixed</font><font face="Courier" size="11" color="#000000">(someLines)</font><font face="Courier" size="11"> into field "Prefixed Lines"</font></p>
+<p></p>
+<p>When the function is executed, the thePrefix parameter is treated as empty, since you didn't pass a second parameter. That means that the <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> loop simply adds each line in the listOfLines parameter to the new list:</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> thePrefix &amp; theLine &amp; </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> after newList</font></p>
+<p>is equivalent to</p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> theLine &amp; </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> after newList</font></p>
+<p>since thePrefix is empty. The result is that the function simply returns the original list of lines.</p>
+<p></p>
+<p>What happens if you don't provide any parameters at all? In this case, the listOfLines parameter is treated as empty, so the repeat loop never executes:</p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">repeat</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">for</font><font face="Courier" size="11"> each line theLine in listOfLines</font></p>
+<p></p>
+<p>In this case, the new list is never built, and the function simply returns <font face="Courier" size="11">empty</font><font face="helvetica" size="12">.</font></p>
+<p></p>
+<p>It's important to realize that you can't count on functions being "self-healing" like this. This particular function uses simple strings--they aren't required to be in a particular format, and the parameters don't include numbers or dates--and it happens to use them in ways that still work if one or both parameters is empty. But with many custom functions, an empty parameter or one that's in the wrong format can cause an execution error. To prevent this, most functions need to be written to check their parameters, and either substitute an appropriate default value or return an error message if a parameter is missing.</p>
+<p></p>
+<p>A <b><font face="Lucida Grande" size="11">note</font></b><font face="helvetica" size="12"> on efficiency:</font></p>
+<p>The repeat loop in this function can also be written using the repeat with form:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">repeat</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">with</font><font face="Courier" size="11"> x = 1 to the </font><font face="Courier" size="11" color="#FF0000">number</font><font face="Courier" size="11"> of lines of listOfLines</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> thePrefix before line x of listOfLines</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">repeat</font></p>
+<p></p>
+<p>This form has one advantage, which is that it doesn't need to create a new variable to hold the prefixed list. Instead, it adds the prefixes to the parameter variable itself. This saves the memory space needed for the duplicate list. However, this method is much slower than the <font face="Courier" size="11">repeat for each</font><font face="helvetica" size="12"> line form. The longer the list of lines, the more marked the speed difference becomes. In general, the speed difference more than makes up for the extra amount of memory used, particularly since the memory is only in use while the function is actually executing.  For more details, see the section on </font><i><font face="Lucida Grande" size="11">Repeat Loops</font></i><font face="helvetica" size="12"> and </font><i><font face="Lucida Grande" size="11">Processing Text and Data</font></i><font face="helvetica" size="12"> in the </font><i><font face="Lucida Grande" size="11">User's Guide</font></i><font face="helvetica" size="12">.</font></p>

@@ -1,0 +1,29 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom function is called with a statement such as one of the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">get</font><font face="Courier" size="11"> handlerNames(the </font><font face="Courier" size="11" color="#FF0000">script</font><font face="Courier" size="11"> of button "OK","message")</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> handlerNames(myScript) into allHandlerNames</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">if</font><font face="Courier" size="11"> handlerNames(the </font><font face="Courier" size="11" color="#FF0000">script</font><font face="Courier" size="11"> of </font><font face="Courier" size="11" color="#F88017">me</font><font face="Courier" size="11">,it) is "(None)" </font><font face="Courier" size="11" color="#980517">then</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#0000FF">go</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#0000FF">next</font></p>
+<p></p>
+<p>The "handlerNames" function works by looking for text that is common to all handlers (or to all handlers of a certain type). There are four kinds of handlers in Transcript:</p>
+<p></p>
+<p>&#9;* message handlers, which all begin with the word "<i><font face="Lucida Grande" size="11">on</font></i><font face="helvetica" size="12">"</font></p>
+<p>&#9;* function handlers, which all begin with the word "<i><font face="Lucida Grande" size="11">function</font></i><font face="helvetica" size="12">"</font></p>
+<p>&#9;* getProp handlers, which all begin with the word "<i><font face="Lucida Grande" size="11">getProp</font></i><font face="helvetica" size="12">"</font></p>
+<p>&#9;* setProp handlers (you are probably way ahead of me and have already guessed that these all begin with the word "<i><font face="Lucida Grande" size="11">setProp</font></i><font face="helvetica" size="12">")</font></p>
+<p></p>
+<p>The "handlerNames" function takes advantage of this to locate handlers in a script by finding all the lines that begin with one of the words that mark the start of a handler. For each possible handler type, the function uses the <font face="Courier" size="11">filter</font><font face="helvetica" size="12"> command to find only the lines that start with that handler type's characteristic word. For example, to find message handlers, the function gets only the lines in the script that begin with "on". After using the </font><font face="Courier" size="11">filter</font><font face="helvetica" size="12"> command, the theScript parameter variable contains only the lines that matched the filter we used: in this case, only the starting lines of each handler of the type requested.</font></p>
+<p></p>
+<p>The handler's name is always part of the script line that starts a handler. In fact, the name of the handler is always the second word of that line; the first word is the handler type (on, function, getProp, or setProp). So by taking the second word of each line we've found, we can get just the name of each handler. The <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> loop that does this simply substitutes the second word of each line for the entire line. In this way, we obtain a list of handler names, which is returned to the handler that called the function.</font></p>
+<p></p>
+<p>If no handler names were found--that is, if the list is <font face="Courier" size="11">empty</font><font face="helvetica" size="12">--the message "(None found)" is returned. Depending on what this function is intended to do, we might want to return something else. For example, if the return value is going to be used to perform some operation on each handler in turn, we might want to return </font><font face="Courier" size="11">empty</font><font face="helvetica" size="12"> instead.</font></p>
+<p></p>
+<p>The function takes two parameters--the text of the script (theScript), and the type of handler (handlerType). You'll notice that you can call the function with just one parameter (the script). It's possible to do this because the default clause of the switch control structure is executed if the handlerType is empty (or anything but "message", "function", "setProp", or "getProp"):</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">function</font><font face="Courier" size="11"> handlerNames theScript,handlerType</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#980517">switch</font><font face="Courier" size="11"> handlerType</font></p>
+<p><font face="Courier" size="11">    ...</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#FF0000">default</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#68228B">-- list all the handlers, if no type specified</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">filter</font><font face="Courier" size="11"> theScript </font><font face="Courier" size="11" color="#980517">with</font><font face="Courier" size="11"> "end*"</font></p>
+<p></p>
+<p>You can use this method with any handler that uses a <font face="Courier" size="11">switch</font><font face="helvetica" size="12"> control structure, to assign a default value to one or more of the parameters. Just include a default clause to handle all cases other than the ones specified by the case clauses.</font></p>
