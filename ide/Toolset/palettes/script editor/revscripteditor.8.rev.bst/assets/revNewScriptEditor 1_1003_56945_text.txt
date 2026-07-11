@@ -1,15 +1,25 @@
-(Go to handler...
+Go to handler...
+	resize
+	filterUpdate
+	filterChanged
+	filterHandlerNames
+	jumpToHandler
+	closeReject
+	closeAccept
+	hideGroup
+	initializeWithoutGrabbingFocus
+	mouseMove
+	update
+	initialize
+	handlerPicked
+	updateSelectedHandler
+	handlerTypeSortCallback
+	getIcon
 Add default handler...
-	deleteButton
-	dragDrop
-	dragEnd
-	dragEnter
-	dragLeave
-	dragMove
-	dragStart
-	focusIn
-	focusOut
-	menuPick
+	errorDialog
+	libraryStack
+	localNotificationReceived
+	mainStackChanged
 	mouseDoubleDown
 	mouseDoubleUp
 	mouseDown
@@ -21,10 +31,19 @@ Add default handler...
 	mouseUp
 	mouseWithin
 	nameChanged
-	newButton
-	resizeControl
+	pushNotificationReceived
+	pushNotificationRegistered
+	pushNotificationRegistrationError
+	reachabilityChanged
+	relaunch
+	releaseStack
+	reloadStack
+	savingMobileStandalone
+	savingStandalone
 	selectedObjectChanged
 	socketClosed
 	socketError
 	socketTimeout
+	standaloneSaved
+	startup
 !cShow default handlers

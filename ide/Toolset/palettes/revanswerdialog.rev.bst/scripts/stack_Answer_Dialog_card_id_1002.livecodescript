@@ -3,7 +3,7 @@ Script "stack_Answer_Dialog_card_id_1002"
 /*
 # Name: card "card id 1002" of stack "Answer Dialog"
 # ID: card id 1002 of stack "Answer Dialog"
-# Hash: kiRSlmG2kjy/YTF20Mt4YQ==
+# Hash: WKyhliq3Gir64O+Rcmk11Q==
 */
 
 
@@ -14,6 +14,10 @@ on preOpenStack
    local tButtonNames, tNoOfButtons, tTotalBtnWidth, tMnemonicString, tNo
    local tFieldScript, tFieldSubtract, t, tWidth, tNewWidth, oldwidth, tAddition
    local tStartEdge, tHeight
+   
+   // HXT dark mode
+   set the backgroundColor of me to (the systemWindowColor)
+   set the foregroundColor of me to (the systemTextColor)
    
    // AL-2014-05-21: [[ Bug 12074 ]] Tidied up and rearranged to support 
    //  RTL layout, as determined by item 5 of the dialogData
@@ -383,3 +387,7 @@ on debugLog pMsg, pDel
 end debugLog
 
 
+on SystemAppearanceChanged pMode, pWindowColor, pTextColor
+   set the backgroundColor of me to pWindowColor
+   set the foregroundColor of me to pTextColor
+end SystemAppearanceChanged

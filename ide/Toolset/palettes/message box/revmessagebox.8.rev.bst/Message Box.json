@@ -29,7 +29,7 @@
                            "id": "1085",
                            "layer": "6",
                            "name": "auto complete",
-                           "rect": "0,21,1113,45",
+                           "rect": "0,21,539,45",
                            "showBorder": false,
                            "showFocusBorder": false,
                            "style": "opaque",
@@ -44,12 +44,12 @@
                            "profile": null
                         },
                         "properties": {
+                           "borderWidth": "0",
                            "id": "1088",
                            "layer": "5",
                            "name": "results",
-                           "rect": "0,45,1113,315",
+                           "rect": "0,45,539,168",
                            "scrollbarWidth": "16",
-                           "showBorder": false,
                            "showFocusBorder": false,
                            "style": "scrolling",
                            "textSize": "12",
@@ -65,12 +65,12 @@
                            "behavior": "stack \"revMessageBoxSingleLineMessageBehavior\"",
                            "dontWrap": true,
                            "foreColor": "black",
-                           "htmlText": "<p><b><font color=\"#7F7F00\">save</font></b><font color=\"#000000\"> </font><font color=\"#7F007F\">this</font><font color=\"#000000\"> </font><font color=\"#7F007F\">stack</font></p>",
+                           "htmlText": "%file%: assets/Message Box_1002_1090_1128_htmlText.txt",
                            "id": "1128",
                            "layer": "7",
                            "name": "message",
                            "opaque": false,
-                           "rect": "0,21,1113,45",
+                           "rect": "0,21,539,45",
                            "showBorder": false,
                            "showFocusBorder": false,
                            "style": "transparent",
@@ -87,8 +87,8 @@
                            "id": "2697",
                            "layer": "8",
                            "name": "line",
-                           "points": "2,45\n1113,45",
-                           "rect": "1,44,1114,46",
+                           "points": "2,45\n539,45",
+                           "rect": "1,44,540,46",
                            "style": "line"
                         }
                      }
@@ -98,7 +98,7 @@
                      "id": "1090",
                      "layer": "4",
                      "name": "fields",
-                     "rect": "-4,17,1118,319"
+                     "rect": "-4,17,544,172"
                   }
                },
                "1189": {
@@ -136,7 +136,7 @@
             "custompropertysets": {
                "cREVGeometrycache": {
                   "order": "\n",
-                  "total": "15"
+                  "total": "14"
                }
             },
             "properties": {
@@ -161,14 +161,14 @@
                   "animate selections": false,
                   "autohide scrollbars": true,
                   "cache": "none",
-                  "content height": "0",
+                  "content height": "24",
                   "dim on focusout": false,
                   "dimmed hilite color": "80,94,100",
                   "drop indicator template": null,
-                  "first working row": "0",
+                  "first working row": "1",
                   "fixed row height": true,
                   "hilite color": "48,160,209",
-                  "last working row": "0",
+                  "last working row": "1",
                   "multiple lines": true,
                   "resize controls": false,
                   "row color": "255,255,255",
@@ -194,7 +194,7 @@
                "margins": "0",
                "name": "objectList",
                "opaque": true,
-               "rect": "0,21,1087,317",
+               "rect": "0,21,539,168",
                "selectGroupedControls": false,
                "showBorder": true,
                "threeD": false
@@ -760,8 +760,8 @@
                            "id": "10827",
                            "layer": "4",
                            "name": "line",
-                           "points": "1,116\n681,116",
-                           "rect": "0,115,682,117",
+                           "points": "2,75\n539,75",
+                           "rect": "1,74,540,76",
                            "style": "line"
                         }
                      },
@@ -776,11 +776,11 @@
                            "backColor": "255,255,255",
                            "behavior": "stack \"revMessageBoxMultipleLinesMessageBehavior\"",
                            "dontWrap": true,
-                           "htmlText": "%file%: assets/Message Box_1198_1612_1609_htmlText.txt",
+                           "htmlText": "<p></p>\n<p></p>",
                            "id": "1609",
                            "layer": "2",
                            "name": "script",
-                           "rect": "0,21,682,115",
+                           "rect": "0,21,539,74",
                            "scrollbarWidth": "16",
                            "showBorder": false,
                            "showFocusBorder": false,
@@ -798,13 +798,11 @@
                            "profile": null
                         },
                         "properties": {
-                           "htmlText": "<p>1: stack \"revMessageBoxMultipleLinesMessageBehavior\"</p>",
                            "id": "1610",
                            "layer": "3",
                            "name": "results",
-                           "rect": "0,117,682,209",
+                           "rect": "0,76,539,168",
                            "scrollbarWidth": "16",
-                           "showBorder": false,
                            "showFocusBorder": false,
                            "style": "scrolling",
                            "textSize": "12",
@@ -817,7 +815,7 @@
                      "id": "1612",
                      "layer": "1",
                      "name": "fields",
-                     "rect": "-4,17,686,213"
+                     "rect": "-4,17,544,172"
                   }
                },
                "203985": "#shared group"
@@ -825,7 +823,7 @@
             "customproperties": {
                "cREVBottom": "517",
                "cREVHeight": "214",
-               "cREVLineLoc": "341,102",
+               "cREVLineLoc": "270,75",
                "cREVMinHeight": null,
                "cREVRight": "637",
                "cREVWidth": "589"
@@ -855,12 +853,12 @@
                      "hiliteBorder": false,
                      "icon": "172079",
                      "id": "141785",
-                     "label": "Message Box",
+                     "label": "revIDEProjectBrowser",
                      "layer": "11",
                      "menuMode": "popup",
                      "name": "Open Stacks",
                      "opaque": false,
-                     "rect": "178,0,263,21",
+                     "rect": "178,0,304,21",
                      "showIcon": true,
                      "style": "menu",
                      "text": "Message Box\nrevMenuBar\nrevPropertyInspector 1\nfindBrokenBehaviorsIDE\nrevInspector\nUntitled 1\nrevNewScriptEditor 1\nrevTools",
@@ -939,7 +937,7 @@
                "id": "141786",
                "layer": "10",
                "name": "Stacks",
-               "rect": "174,-4,267,25"
+               "rect": "174,-4,308,25"
             }
          },
          "203985": {
@@ -1073,21 +1071,14 @@
                   "properties": {
                      "id": "203986",
                      "name": "header_background",
-                     "rect": "0,0,1113,21"
+                     "rect": "0,0,539,21"
                   }
                },
-               "213319": {
+               "213551": {
                   "#name": "widget \"footer_background\"",
                   "$kind": "com.livecode.widget.paletteActions",
                   "$state": {
                      "action data": [
-                        {
-                           "enabled": true,
-                           "icon": "bullseye",
-                           "label": "Show last output source",
-                           "menu": null,
-                           "name": "outputSource"
-                        },
                         {
                            "enabled": true,
                            "icon": "unlock alt",
@@ -1100,9 +1091,9 @@
                      "nav data": null
                   },
                   "properties": {
-                     "id": "213319",
+                     "id": "213551",
                      "name": "footer_background",
-                     "rect": "0,315,1113,336"
+                     "rect": "0,168,539,189"
                   }
                }
             },
@@ -1111,7 +1102,7 @@
                "id": "203985",
                "layer": "1",
                "name": "background",
-               "rect": "-4,-4,1117,340",
+               "rect": "-4,-4,543,193",
                "sharedBehavior": true
             }
          },
@@ -1180,7 +1171,7 @@
                            "listBehavior": true,
                            "lockText": true,
                            "name": "type",
-                           "rect": "0,51,200,384",
+                           "rect": "0,51,200,168",
                            "scrollbarWidth": "16",
                            "showFocusBorder": false,
                            "style": "scrolling",
@@ -1202,7 +1193,7 @@
                            "lockText": true,
                            "name": "values range",
                            "opaque": false,
-                           "rect": "547,26,742,46",
+                           "rect": "339,26,534,46",
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
@@ -1225,7 +1216,7 @@
                            "listBehavior": true,
                            "lockText": true,
                            "name": "contents",
-                           "rect": "200,51,747,384",
+                           "rect": "200,51,539,168",
                            "scrollbarWidth": "12",
                            "showFocusBorder": false,
                            "style": "scrolling",
@@ -1238,7 +1229,7 @@
                      "id": "2535",
                      "layer": "1",
                      "name": "controls",
-                     "rect": "-4,22,751,388"
+                     "rect": "-4,22,543,172"
                   }
                }
             },
@@ -1478,7 +1469,7 @@
                            "listBehavior": true,
                            "lockText": true,
                            "name": "type",
-                           "rect": "0,51,200,384",
+                           "rect": "0,51,200,168",
                            "scrollbarWidth": "16",
                            "showFocusBorder": false,
                            "style": "scrolling",
@@ -1493,11 +1484,11 @@
                         },
                         "properties": {
                            "borderWidth": "1",
-                           "htmlText": "<p>Destination=file</p>",
+                           "htmlText": "<p>com.hyperxtalk.hyperxtalk</p>",
                            "id": "2703",
                            "layer": "5",
                            "name": "contents",
-                           "rect": "200,51,747,384",
+                           "rect": "200,51,539,168",
                            "scrollbarWidth": "12",
                            "showFocusBorder": false,
                            "style": "scrolling",
@@ -1510,7 +1501,7 @@
                      "id": "2704",
                      "layer": "1",
                      "name": "controls",
-                     "rect": "-4,22,751,388"
+                     "rect": "-4,22,543,172"
                   }
                }
             },
@@ -1548,7 +1539,7 @@
                      "dontWrap": true,
                      "htmlText": "<p>No pending messages to display.</p>",
                      "id": "207210",
-                     "layer": "12",
+                     "layer": "19",
                      "lockText": true,
                      "name": "status",
                      "opaque": false,
@@ -1568,7 +1559,7 @@
             "custompropertysets": {
                "cREVGeometrycache": {
                   "order": "\n",
-                  "total": "12"
+                  "total": "11"
                }
             },
             "properties": {
@@ -1594,7 +1585,7 @@
                      "dontWrap": true,
                      "htmlText": "<p>No front scripts to display.</p>",
                      "id": "207631",
-                     "layer": "12",
+                     "layer": "19",
                      "lockText": true,
                      "name": "status",
                      "opaque": false,
@@ -1641,7 +1632,7 @@
                      "dontWrap": true,
                      "htmlText": "<p>No back scripts to display.</p>",
                      "id": "208993",
-                     "layer": "13",
+                     "layer": "20",
                      "lockText": true,
                      "name": "status",
                      "opaque": false,
@@ -1671,7 +1662,7 @@
             "custompropertysets": {
                "cREVGeometrycache": {
                   "order": "\n",
-                  "total": "27"
+                  "total": "132"
                }
             },
             "properties": {
@@ -1688,7 +1679,7 @@
                   "#name": "group \"contents\"",
                   "properties": {
                      "id": "11286",
-                     "layer": "9",
+                     "layer": "16",
                      "name": "contents",
                      "rect": "211,108,219,116"
                   }
@@ -1706,7 +1697,7 @@
                      "dontWrap": true,
                      "htmlText": "<p>No stacks in use to display.</p>",
                      "id": "209891",
-                     "layer": "13",
+                     "layer": "20",
                      "lockText": true,
                      "name": "status",
                      "opaque": false,
@@ -1738,35 +1729,37 @@
       },
       "customproperties": {
          "cREVActiveStack": "Untitled 1",
-         "cREVBackScripts": "stack \"C:/Users/Elanor/Desktop/sampleLib.livecode\"\n",
+         "cREVBackScripts": "%file%: assets/Message Box_cREVBackScripts.bin",
          "cREVFrontScripts": "%file%: assets/Message Box_cREVFrontScripts.bin",
          "cREVIntelligenceObject": "selectedObject",
-         "cREVLeft": "259",
+         "cREVLeft": "59",
          "cREVLinkedStack": null,
          "cREVPendingMessages": null,
          "cREVStacksInUse": null,
-         "cREVTop": "522",
+         "cREVTop": "708",
          "cREVTopLeft": "868,129",
          "cUserOpen": true
       },
       "custompropertysets": {
          "cREVGeometryCache": {
-            "stackID": "213319"
+            "stackID": "213551"
          }
       },
       "longID": "stack \"Message Box\"",
       "properties": {
+         "backColor": "#ececec",
          "behavior": "stack \"revMessageBoxBehavior\"",
          "decorations": "title,menu,minimize,close",
          "fileName": "revmessagebox.8.rev",
-         "id": "213319",
+         "foreColor": "#000000",
+         "id": "213551",
          "minHeight": "92",
          "minWidth": "110",
          "name": "Message Box",
-         "rect": "247,371,1360,707",
+         "rect": "59,708,598,897",
          "style": "palette",
          "textSize": "11",
-         "title": "Message Box (Single Line)"
+         "title": "Message Box (Multiple Lines)"
       },
       "sharedGroupIDs": "10669\n141786\n203985"
    }

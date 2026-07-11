@@ -1,0 +1,4 @@
+!cstack "\/Users\/emily-elizabethhoward\/Developer\/HyperXTalk\/ide\/Toolset\/palettes\/script editor\/behaviors\/revsehandlerlistbehavior.livecodescript" - Code Editor \(editing)/|stack "revNewScriptEditor 1"
+!nallControls2/|stack "allControls2"
+-
+Send Window to Back/`

@@ -1,0 +1,5 @@
+<p><font face="Lucida Grande" size="11" color="#FF0080">on</font><font face="Lucida Grande" size="11" color="#000000"> mouseUp</font></p>
+<p><font face="Lucida Grande" size="11" color="#0000FF">put</font><font face="Lucida Grande" size="11" color="#000000"> "moo"</font></p>
+<p><font face="Lucida Grande" size="11" color="#980517">end</font><font face="Lucida Grande" size="11" color="#000000"> mouseUp</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="11" color="#0000FF">put</font><font face="Lucida Grande" size="11" color="#000000"> </font><font face="Lucida Grande" size="11" color="#FFFF00">the</font><font face="Lucida Grande" size="11" color="#000000"> </font><font face="Lucida Grande" size="11" color="#800080">commandNames</font></p>

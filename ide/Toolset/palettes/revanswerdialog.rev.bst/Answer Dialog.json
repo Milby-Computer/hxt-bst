@@ -15,12 +15,12 @@
                      "dontSearch": true,
                      "dontWrap": true,
                      "fixedLineHeight": false,
-                     "htmlText": "<p>something</p>",
+                     "htmlText": "<p>moo</p>",
                      "id": "1006",
                      "layer": "3",
                      "lockText": true,
                      "opaque": false,
-                     "rect": "8,12,388,37",
+                     "rect": "95,12,388,54",
                      "sharedText": true,
                      "showBorder": false,
                      "style": "transparent",
@@ -43,7 +43,7 @@
                      "menuMode": "pulldown",
                      "name": "icon",
                      "opaque": false,
-                     "rect": "-132,-11,-68,53",
+                     "rect": "20,18,84,82",
                      "sharedHilite": false,
                      "showBorder": false,
                      "showIcon": true,
@@ -80,7 +80,7 @@
                "1240": {
                   "#name": "button \"OK\"",
                   "customproperties": {
-                     "cPrevLoc": "347,60"
+                     "cPrevLoc": "342,70"
                   },
                   "properties": {
                      "default": true,
@@ -88,20 +88,20 @@
                      "layer": "4",
                      "menuMode": "pulldown",
                      "name": "OK",
-                     "rect": "-141,-111,-59,-89",
+                     "rect": "-141,-111,-59,-88",
                      "sharedHilite": false
                   }
                },
                "1241": {
                   "#name": "button id 1241",
                   "customproperties": {
-                     "cPrevLoc": "-100,-100"
+                     "cPrevLoc": "-100,-101"
                   },
                   "properties": {
                      "id": "1241",
                      "layer": "5",
                      "menuMode": "pulldown",
-                     "rect": "-141,-111,-59,-89",
+                     "rect": "-141,-111,-59,-88",
                      "sharedHilite": false,
                      "traversalOn": false
                   }
@@ -109,13 +109,13 @@
                "1242": {
                   "#name": "button id 1242",
                   "customproperties": {
-                     "cPrevLoc": "-100,-100"
+                     "cPrevLoc": "-100,-101"
                   },
                   "properties": {
                      "id": "1242",
                      "layer": "6",
                      "menuMode": "pulldown",
-                     "rect": "-141,-111,-59,-89",
+                     "rect": "-141,-111,-59,-88",
                      "sharedHilite": false,
                      "traversalOn": false
                   }
@@ -123,13 +123,13 @@
                "1245": {
                   "#name": "button id 1245",
                   "customproperties": {
-                     "cPrevLoc": "-100,-100"
+                     "cPrevLoc": "-100,-101"
                   },
                   "properties": {
                      "id": "1245",
                      "layer": "7",
                      "menuMode": "pulldown",
-                     "rect": "-141,-111,-59,-89",
+                     "rect": "-141,-111,-59,-88",
                      "sharedHilite": false,
                      "traversalOn": false
                   }
@@ -137,14 +137,14 @@
                "1246": {
                   "#name": "button \"4\"",
                   "customproperties": {
-                     "cPrevLoc": "-100,-100"
+                     "cPrevLoc": "-100,-101"
                   },
                   "properties": {
                      "id": "1246",
                      "layer": "8",
                      "menuMode": "pulldown",
                      "name": "4",
-                     "rect": "-141,-111,-59,-89",
+                     "rect": "-141,-111,-59,-88",
                      "sharedHilite": false,
                      "traversalOn": false
                   }
@@ -152,14 +152,14 @@
                "1247": {
                   "#name": "button \"3\"",
                   "customproperties": {
-                     "cPrevLoc": "-100,-100"
+                     "cPrevLoc": "-100,-101"
                   },
                   "properties": {
                      "id": "1247",
                      "layer": "9",
                      "menuMode": "pulldown",
                      "name": "3",
-                     "rect": "-141,-111,-59,-89",
+                     "rect": "-141,-111,-59,-88",
                      "sharedHilite": false,
                      "traversalOn": false
                   }
@@ -167,13 +167,13 @@
                "1248": {
                   "#name": "button id 1248",
                   "customproperties": {
-                     "cPrevLoc": "-100,-100"
+                     "cPrevLoc": "-100,-101"
                   },
                   "properties": {
                      "id": "1248",
                      "layer": "10",
                      "menuMode": "pulldown",
-                     "rect": "-141,-111,-59,-89",
+                     "rect": "-141,-111,-59,-88",
                      "sharedHilite": false,
                      "traversalOn": false
                   }
@@ -181,13 +181,13 @@
                "1343": {
                   "#name": "button id 1343",
                   "customproperties": {
-                     "cPrevLoc": "-100,-100"
+                     "cPrevLoc": "-100,-101"
                   },
                   "properties": {
                      "id": "1343",
                      "layer": "11",
                      "menuMode": "pulldown",
-                     "rect": "-141,-111,-59,-89",
+                     "rect": "-141,-111,-59,-88",
                      "sharedHilite": false,
                      "traversalOn": false
                   }
@@ -211,6 +211,8 @@
                }
             },
             "properties": {
+               "backColor": "#323232",
+               "foreColor": "white",
                "id": "1002",
                "name": "card id 1002"
             }
@@ -239,11 +241,11 @@
          "id": "1438",
          "liveResizing": false,
          "name": "Answer Dialog",
-         "rect": "761,107,1161,190",
+         "rect": "520,180,920,280",
          "resizable": false,
          "shadowColor": "darkgray",
-         "textFont": "Helvetica",
-         "textSize": "12",
+         "textFont": "Lucida Grande",
+         "textSize": "13",
          "textStyle": "plain",
          "title": " ",
          "topColor": "white"

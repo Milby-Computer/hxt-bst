@@ -1,0 +1,4 @@
+<p><font color="#68228B"># OK-2008-06-24 : The IDE periodically sends this message to the current card of the script editor,</font></p>
+<p><font color="#68228B"># so it should be handled to prevent errors.</font></p>
+<p><font color="#980517">command</font><font color="#000000"> revUpdatePalette</font></p>
+<p><font color="#980517">end</font><font color="#000000"> revUpdatePalette</font></p>

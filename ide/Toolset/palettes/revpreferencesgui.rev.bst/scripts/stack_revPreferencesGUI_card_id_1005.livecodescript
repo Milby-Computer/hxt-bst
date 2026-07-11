@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI_card_id_1005"
 /*
 # Name: card "Files" of stack "revPreferencesGUI"
 # ID: card id 1005 of stack "revPreferencesGUI"
-# Hash: VuihWf1Rdzjdjz8EXD9EWw==
+# Hash: qxEKm01QlYvI7ZNtDpKdRw==
 */
 
 
@@ -45,7 +45,8 @@ end preOpenCard
 
 on OpenCard
    updateCustomizationPath
-   hxtSetTheHeightOfThisStackTo 470
+   send "hxtSetTheHeightOfThisStackTo 470" to this stack in 0 milliseconds
+   --   hxtSetTheHeightOfThisStackTo 470
 end OpenCard
 
 

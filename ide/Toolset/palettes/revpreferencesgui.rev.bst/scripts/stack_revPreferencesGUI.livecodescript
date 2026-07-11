@@ -3,14 +3,14 @@ Script "stack_revPreferencesGUI"
 /*
 # Name: stack "revPreferencesGUI"
 # ID: stack "revPreferencesGUI"
-# Hash: Y6HthnZ06c14HsFUUHwIbw==
+# Hash: cI+GwsHswUA0YnjILH3PdQ==
 */
 
 
 local lAlreadyBeenOpened
 
 on preOpenStack
-   --   if the short name of the target is not the short name of me then
+   --   if the short name of the target is not "revPreferencesGUI" then
    --      exit preOpenStack
    --   end if
    
@@ -31,6 +31,7 @@ on preOpenStack
    else
       set the loc of me to tLoc
    end if
+   set the topLeft of me to (revIDEGetPreference("cPreferencesTopLeft"))  // HXT
    
    if not lAlreadyBeenOpened then
       --      set the textFont of fld "Menu" of cd 1 to empty
@@ -49,9 +50,27 @@ on preOpenStack
    ## Last opened pane is shown but item 1 in list selected.
    --   set the hilitedLines of fld "Menu" to lineOffset(the short name of this card,the text of field "menu")
    --   send "mouseUp" to fld "Menu"
+   set the backgroundColor of this stack to (the systemWindowColor)
+   set the foregroundColor of this stack to (the systemTextColor)
    set the menuHistory of button "Tab Menu" to 1  // HXT
    pass preOpenStack
 end preOpenStack
+
+
+on SystemAppearanceChanged pMode, pWindowColor, pTextColor
+   set the backgroundColor of this stack to pWindowColor
+   set the foregroundColor of this stack to pTextColor
+end SystemAppearanceChanged
+
+
+on CommandKeyDown pKey
+   if (pKey = "w") then
+      close this stack
+   else
+      pass CommandKeyDown
+   end if
+end CommandKeyDown
+
 
 on closeStack
    if the short name of the target is not the short name of me then
@@ -64,6 +83,7 @@ end closeStack
 # OK-2008-06-23 : Bug 6604 - Preferences GUI doesn't remember its location
 on moveStack
    revIDESetPreference "cPreferencesLoc", the loc of me
+   revIDESetPreference "cPreferencesTopLeft", the topLeft of me  // HXT
 end moveStack
 
 private command log pMsg

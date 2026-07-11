@@ -19,7 +19,7 @@
                   "properties": {
                      "id": "1003",
                      "name": "Dictionary",
-                     "rect": "0,21,1010,682"
+                     "rect": "0,0,1010,661"
                   }
                },
                "1004": "#shared group"
@@ -30,39 +30,12 @@
          },
          "1004": {
             "#name": "group \"background\"",
-            "childcontrols": {
-               "1006": {
-                  "#name": "widget \"header_background\"",
-                  "$kind": "com.livecode.widget.paletteActions",
-                  "$state": {
-                     "action data": null,
-                     "is header": true,
-                     "nav data": [
-                        {
-                           "icon": "f1b3",
-                           "label": "API",
-                           "name": "show_apis"
-                        },
-                        {
-                           "icon": "f1b3",
-                           "label": "Guide",
-                           "name": "show_guides"
-                        }
-                     ]
-                  },
-                  "properties": {
-                     "id": "1006",
-                     "name": "header_background",
-                     "rect": "0,0,1010,21"
-                  }
-               }
-            },
             "properties": {
                "backgroundBehavior": true,
                "id": "1004",
                "layer": "2",
                "name": "background",
-               "rect": "-4,-4,1014,25"
+               "rect": "-4,-4,4,4"
             }
          }
       },
@@ -75,7 +48,7 @@
          "id": "1006",
          "minWidth": "1010",
          "name": "revDictionary",
-         "rect": "430,130,1440,812",
+         "rect": "416,112,1426,773",
          "title": "Dictionary"
       },
       "sharedGroupIDs": "1004"

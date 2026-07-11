@@ -3,7 +3,7 @@ Script "stack_Ask_Dialog_card_id_1002"
 /*
 # Name: card "card id 1002" of stack "Ask Dialog"
 # ID: card id 1002 of stack "Ask Dialog"
-# Hash: 3iaBzOzDWW697F1ITLx9aQ==
+# Hash: TgQDG74BSMmj+oxKGVLZHA==
 */
 
 
@@ -86,6 +86,10 @@ on star
 end star
 
 on preOpenStack
+   // HXT dark mode
+   set the backgroundColor of me to (the systemWindowColor)
+   set the foregroundColor of me to (the systemTextColor)
+   
    -- PM-2015-07-23: [[ Bug 14224 ]] Remove the (old) focus to allow typing into the input fld
    focus on nothing
    
@@ -421,5 +425,7 @@ command closeReject
 end closeReject
 
 
-
-
+on SystemAppearanceChanged pMode, pWindowColor, pTextColor
+   set the backgroundColor of me to pWindowColor
+   set the foregroundColor of me to pTextColor
+end SystemAppearanceChanged

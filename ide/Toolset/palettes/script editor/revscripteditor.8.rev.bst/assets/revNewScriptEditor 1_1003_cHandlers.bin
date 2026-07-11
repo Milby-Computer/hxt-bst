@@ -1,0 +1,16 @@
+M resize 265 269 button id 56803 of group id 1046 of card id 1002 of stack "revNewScriptEditor 1" of stack "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev"
+M filterUpdate 372 375
+M filterChanged 362 367
+PM filterHandlerNames 379 409
+M jumpToHandler 271 284
+M closeReject 313 322
+M closeAccept 305 311
+PM hideGroup 324 326
+M initializeWithoutGrabbingFocus 27 30
+M mouseMove 328 346
+M update 135 261
+M initialize 1 25
+M handlerPicked 286 303
+M updateSelectedHandler 32 55
+F handlerTypeSortCallback 106 129
+PF getIcon 71 104

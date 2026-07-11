@@ -3,7 +3,7 @@ Script "stack_revSETemplate_field_id_63591"
 /*
 # Name: field "Handlers" of group "Left Handler List" of group "Left Bar" of card "Main" of stack "revSETemplate" of stack "revNewScriptEditor"
 # ID: field id 63591 of group id 63590 of group id 56896 of card id 1002 of stack "revSETemplate" of stack "revNewScriptEditor"
-# Hash: Q3SEPFjUc8GUJQo8R50MiQ==
+# Hash: 7A4vfWAHs8gQJbDczny6LA==
 */
 
 
@@ -56,13 +56,3 @@ private command selectionScroll pDirection
   
   select line tNewSelectedLine of me
 end selectionScroll
-
-
-
-
-
-
-
-
-
-

@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI_card_id_1007"
 /*
 # Name: card "Sizes" of stack "revPreferencesGUI"
 # ID: card id 1007 of stack "revPreferencesGUI"
-# Hash: VXZDB0yVUPOpED09rULirg==
+# Hash: nuXBDoHVPWd2qsDYSYLJNQ==
 */
 
 
@@ -21,7 +21,8 @@ end updateDefaultSizeFields
 
 
 on OpenCard
-   hxtSetTheHeightOfThisStackTo 380
+   send "hxtSetTheHeightOfThisStackTo 380" to this stack in 0 milliseconds
+   --   hxtSetTheHeightOfThisStackTo 380
 end OpenCard
 
 

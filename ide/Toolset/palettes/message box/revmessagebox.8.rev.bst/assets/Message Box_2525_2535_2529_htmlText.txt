@@ -130,8 +130,10 @@
 <p>stacksInUse</p>
 <p>startAngle</p>
 <p>syncRate</p>
+<p>systemAppearance</p>
 <p>systemFileSelector</p>
 <p>systemPixelScale</p>
+<p>systemWindowColor</p>
 <p>textArrows</p>
 <p>thirdColor</p>
 <p>tool</p>
