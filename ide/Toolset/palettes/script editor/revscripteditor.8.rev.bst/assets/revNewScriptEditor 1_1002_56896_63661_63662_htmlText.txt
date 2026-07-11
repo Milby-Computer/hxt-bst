@@ -1,18 +1,54 @@
-<p><sub shift="2"><img src="205025" char=" "></sub> getCurrentTab</p>
-<p><sub shift="2"><img src="205025" char=" "></sub> mouseUp</p>
-<p><sub shift="2"><img src="205025" char=" "></sub> resize</p>
-<p><sub shift="2"><img src="205159" char=" "></sub> selectObject</p>
-<p><sub shift="2"><img src="205025" char=" "></sub> setCurrentTab</p>
-<p><sub shift="2"><img src="205025" char=" "></sub> update</p>
+<p><sub shift="2"><img src="205025" char=" "></sub> MouseUp</p>
 <p></p>
 <p></p>
-<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> closeControl</font></p>
-<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> deleteBackground</font></p>
-<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> deleteGroup</font></p>
-<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> newBackground</font></p>
-<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> newGroup</font></p>
-<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> openBackground</font></p>
-<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> openControl</font></p>
-<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> preOpenBackground</font></p>
-<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> preOpenControl</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> arrowKey</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> backspaceKey</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> closeField</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> commandKeyDown</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> controlKeyDown</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> copyKey</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> cutKey</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> deleteField</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> deleteKey</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> dragDrop</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> dragEnd</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> dragEnter</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> dragLeave</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> dragMove</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> dragStart</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> enterInField</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> enterKey</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> escapeKey</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> exitField</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> focusIn</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> focusOut</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> functionKey</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> keyDown</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> keyUp</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> linkClicked</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> mouseDoubleDown</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> mouseDoubleUp</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> mouseDown</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> mouseEnter</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> mouseLeave</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> mouseMove</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> mouseRelease</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> mouseStillDown</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> mouseWithin</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> nameChanged</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> newField</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> openField</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> optionKeyDown</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> pasteKey</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> rawKeyDown</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> rawKeyUp</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> resizeControl</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> returnInField</font></p>
 <p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> scrollbarDrag</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> selectedObjectChanged</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> selectionChanged</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> socketClosed</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> socketError</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> socketTimeout</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> tabKey</font></p>
+<p><sub shift="2"><img src="205331" char=" "></sub><font color="#777777"> textChanged</font></p>

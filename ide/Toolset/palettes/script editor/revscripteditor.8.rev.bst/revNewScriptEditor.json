@@ -306,7 +306,7 @@
                            "showName": false,
                            "style": "opaque",
                            "threeD": false,
-                           "toolTip": "selectObject",
+                           "toolTip": "MouseUp",
                            "traversalOn": false
                         }
                      },
@@ -361,7 +361,7 @@
                            "armBorder": false,
                            "autoHilite": false,
                            "id": "45893",
-                           "label": "selectObject",
+                           "label": "MouseUp",
                            "layer": "18",
                            "menuLines": "0",
                            "menuMode": "option",
@@ -570,15 +570,15 @@
                                  "borderColor": "192,192,192",
                                  "borderWidth": "1",
                                  "id": "63679",
-                                 "label": "button \"Button\"",
+                                 "label": "field \"Label Field\"",
                                  "layer": "34",
                                  "margins": "15,6,4,4",
                                  "name": "Tab",
-                                 "rect": "739,30,879,51",
+                                 "rect": "367,30,519,51",
                                  "sharedHilite": false,
                                  "style": "rectangle",
                                  "threeD": false,
-                                 "toolTip": "button \"Button\" of card id 1002 of stack \"Untitled 1\"",
+                                 "toolTip": "field \"Label Field\" of card id 1002 of stack \"/Users/emily-elizabethhoward/Developer/HyperXTalk/_test_stacks/throw an error.hyperxtalk\"",
                                  "traversalOn": false
                               }
                            },
@@ -587,13 +587,13 @@
                               "properties": {
                                  "autoHilite": false,
                                  "hiliteBorder": false,
-                                 "hoverIcon": "205059",
-                                 "icon": "205017",
+                                 "hoverIcon": "205057",
+                                 "icon": "205015",
                                  "id": "63680",
                                  "layer": "35",
                                  "name": "Tab Icon",
                                  "opaque": false,
-                                 "rect": "742,33,757,48",
+                                 "rect": "370,33,385,48",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "showIcon": true,
@@ -615,156 +615,40 @@
                            "lockLoc": true,
                            "margins": "0",
                            "name": "Tab 1",
-                           "rect": "739,30,879,51"
+                           "rect": "367,30,519,51"
                         }
                      },
-                     "63724": {
+                     "65396": {
                         "#name": "group \"Tab 2\"",
                         "childcontrols": {
-                           "63725": {
+                           "65397": {
                               "#name": "button \"Tab\"",
                               "properties": {
                                  "autoHilite": false,
                                  "borderColor": "192,192,192",
                                  "borderWidth": "1",
-                                 "id": "63725",
-                                 "label": "group \"Panes\"",
+                                 "id": "65397",
+                                 "label": "field \"Field\"",
                                  "layer": "37",
                                  "margins": "15,6,4,4",
                                  "name": "Tab",
-                                 "rect": "609,30,740,51",
+                                 "rect": "254,28,368,51",
                                  "sharedHilite": false,
                                  "style": "rectangle",
                                  "threeD": false,
-                                 "toolTip": "group \"Panes\" of card \"Main\" of stack \"revSETemplate\" of stack \"/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev\"",
+                                 "toolTip": "field \"Field\" of group \"Error Template\" of card \"Templates\" of stack \"revSETemplate\" of stack \"/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev\"",
                                  "traversalOn": false
                               }
                            },
-                           "63726": {
-                              "#name": "button \"Tab Icon\"",
-                              "properties": {
-                                 "autoHilite": false,
-                                 "hiliteBorder": false,
-                                 "hoverIcon": "205059",
-                                 "icon": "205017",
-                                 "id": "63726",
-                                 "layer": "38",
-                                 "name": "Tab Icon",
-                                 "opaque": false,
-                                 "rect": "612,33,627,48",
-                                 "sharedHilite": false,
-                                 "showBorder": false,
-                                 "showIcon": true,
-                                 "showName": false,
-                                 "style": "transparent",
-                                 "threeD": false,
-                                 "toolTip": "Close",
-                                 "traversalOn": false
-                              }
-                           }
-                        },
-                        "customproperties": {
-                           "cTab": true,
-                           "cVisible": true
-                        },
-                        "properties": {
-                           "id": "63724",
-                           "layer": "36",
-                           "lockLoc": true,
-                           "margins": "0",
-                           "name": "Tab 2",
-                           "rect": "609,30,740,51"
-                        }
-                     },
-                     "63748": {
-                        "#name": "group \"Tab 3\"",
-                        "childcontrols": {
-                           "63749": {
-                              "#name": "button \"Tab\"",
-                              "properties": {
-                                 "autoHilite": false,
-                                 "borderColor": "192,192,192",
-                                 "borderWidth": "1",
-                                 "id": "63749",
-                                 "label": "stack \"revSEErrorsPaneB...",
-                                 "layer": "40",
-                                 "margins": "15,6,4,4",
-                                 "name": "Tab",
-                                 "rect": "410,30,610,51",
-                                 "sharedHilite": false,
-                                 "style": "rectangle",
-                                 "threeD": false,
-                                 "toolTip": "stack \"/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/behaviors/revseerrorspanebehavior.livecodescript\"",
-                                 "traversalOn": false
-                              }
-                           },
-                           "63750": {
-                              "#name": "button \"Tab Icon\"",
-                              "properties": {
-                                 "autoHilite": false,
-                                 "hiliteBorder": false,
-                                 "hoverIcon": "205059",
-                                 "icon": "205017",
-                                 "id": "63750",
-                                 "layer": "41",
-                                 "name": "Tab Icon",
-                                 "opaque": false,
-                                 "rect": "413,33,428,48",
-                                 "sharedHilite": false,
-                                 "showBorder": false,
-                                 "showIcon": true,
-                                 "showName": false,
-                                 "style": "transparent",
-                                 "threeD": false,
-                                 "toolTip": "Close",
-                                 "traversalOn": false
-                              }
-                           }
-                        },
-                        "customproperties": {
-                           "cTab": true,
-                           "cVisible": true
-                        },
-                        "properties": {
-                           "id": "63748",
-                           "layer": "39",
-                           "lockLoc": true,
-                           "margins": "0",
-                           "name": "Tab 3",
-                           "rect": "410,30,610,51"
-                        }
-                     },
-                     "63803": {
-                        "#name": "group \"Tab 4\"",
-                        "childcontrols": {
-                           "63804": {
-                              "#name": "button \"Tab\"",
-                              "properties": {
-                                 "autoHilite": false,
-                                 "borderColor": "192,192,192",
-                                 "borderWidth": "1",
-                                 "id": "63804",
-                                 "label": "group \"Pane Tabs\"",
-                                 "layer": "43",
-                                 "margins": "15,6,4,4",
-                                 "name": "Tab",
-                                 "rect": "254,28,411,51",
-                                 "sharedHilite": false,
-                                 "style": "rectangle",
-                                 "threeD": false,
-                                 "toolTip": "group \"Pane Tabs\" of card \"Main\" of stack \"revSETemplate\" of stack \"/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev\"",
-                                 "traversalOn": false
-                              }
-                           },
-                           "63805": {
+                           "65398": {
                               "#name": "button \"Tab Icon\"",
                               "properties": {
                                  "autoHilite": false,
                                  "hiliteBorder": false,
                                  "hoverIcon": "205065",
                                  "icon": "205018",
-                                 "id": "63805",
-                                 "layer": "44",
+                                 "id": "65398",
+                                 "layer": "38",
                                  "name": "Tab Icon",
                                  "opaque": false,
                                  "rect": "257,32,272,47",
@@ -784,12 +668,12 @@
                            "cVisible": true
                         },
                         "properties": {
-                           "id": "63803",
-                           "layer": "42",
+                           "id": "65396",
+                           "layer": "36",
                            "lockLoc": true,
                            "margins": "0",
-                           "name": "Tab 4",
-                           "rect": "254,28,411,51",
+                           "name": "Tab 2",
+                           "rect": "254,28,368,51",
                            "textStyle": "bold"
                         }
                      }
@@ -820,9 +704,9 @@
                            "hScrollbar": true,
                            "htmlText": "%file%: assets/revNewScriptEditor 1_1002_1046_1040_htmlText.txt",
                            "id": "1040",
-                           "layer": "50",
+                           "layer": "41",
                            "name": "Script",
-                           "rect": "291,51,1247,461",
+                           "rect": "291,51,1247,443",
                            "scrollbarWidth": "17",
                            "showFocusBorder": false,
                            "style": "scrolling",
@@ -847,11 +731,11 @@
                                  "dontWrap": true,
                                  "htmlText": "<p>Find:</p>",
                                  "id": "14914",
-                                 "layer": "58",
+                                 "layer": "49",
                                  "lockText": true,
                                  "name": "Label",
                                  "opaque": false,
-                                 "rect": "313,461,361,484",
+                                 "rect": "313,443,361,466",
                                  "sharedText": true,
                                  "showBorder": false,
                                  "style": "transparent",
@@ -865,9 +749,9 @@
                                  "hiliteBorder": false,
                                  "icon": "205011",
                                  "id": "14915",
-                                 "layer": "59",
+                                 "layer": "50",
                                  "name": "Close",
-                                 "rect": "295,461,319,484",
+                                 "rect": "295,443,319,466",
                                  "showBorder": false,
                                  "showIcon": true,
                                  "showName": false,
@@ -880,11 +764,11 @@
                               "#name": "field \"Find\"",
                               "properties": {
                                  "dontWrap": true,
-                                 "htmlText": "<p>hide</p>",
+                                 "htmlText": "<p>stackFiles</p>",
                                  "id": "14916",
-                                 "layer": "60",
+                                 "layer": "51",
                                  "name": "Find",
-                                 "rect": "355,461,501,484"
+                                 "rect": "355,443,501,466"
                               }
                            },
                            "14917": {
@@ -894,10 +778,10 @@
                                  "hiliteBorder": false,
                                  "icon": "205014",
                                  "id": "14917",
-                                 "layer": "61",
+                                 "layer": "52",
                                  "margins": "8",
                                  "name": "Next",
-                                 "rect": "502,461,562,484",
+                                 "rect": "502,443,562,466",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "showIcon": true,
@@ -914,10 +798,10 @@
                                  "hiliteBorder": false,
                                  "icon": "205013",
                                  "id": "14918",
-                                 "layer": "62",
+                                 "layer": "53",
                                  "margins": "8",
                                  "name": "Previous",
-                                 "rect": "560,461,644,484",
+                                 "rect": "560,443,644,466",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "showIcon": true,
@@ -933,10 +817,10 @@
                                  "hiliteBorder": false,
                                  "id": "14919",
                                  "label": "Match Case",
-                                 "layer": "63",
+                                 "layer": "54",
                                  "name": "Case",
                                  "opaque": false,
-                                 "rect": "645,461,759,484",
+                                 "rect": "645,443,759,466",
                                  "showBorder": false,
                                  "style": "checkbox",
                                  "textAlign": "left"
@@ -947,9 +831,9 @@
                               "properties": {
                                  "id": "61174",
                                  "label": "More..",
-                                 "layer": "64",
+                                 "layer": "55",
                                  "name": "More",
-                                 "rect": "745,461,827,484",
+                                 "rect": "745,443,827,466",
                                  "traversalOn": false
                               }
                            }
@@ -957,11 +841,11 @@
                         "properties": {
                            "behavior": "stack \"revSEInteractiveFindBehavior\"",
                            "id": "14913",
-                           "layer": "57",
+                           "layer": "48",
                            "lockLoc": true,
                            "name": "Interactive Find",
                            "opaque": true,
-                           "rect": "291,461,1159,484"
+                           "rect": "291,443,1159,466"
                         }
                      },
                      "3333": {
@@ -980,12 +864,12 @@
                                  "foreColor": "128,128,128",
                                  "htmlText": "<p> </p>",
                                  "id": "3335",
-                                 "layer": "52",
+                                 "layer": "43",
                                  "lockText": true,
                                  "margins": "8,8,1,8",
                                  "name": "Overlay",
                                  "opaque": false,
-                                 "rect": "254,51,291,444",
+                                 "rect": "254,51,291,426",
                                  "showBorder": false,
                                  "style": "transparent",
                                  "textAlign": "right",
@@ -1000,7 +884,7 @@
                               },
                               "properties": {
                                  "id": "51607",
-                                 "layer": "53",
+                                 "layer": "44",
                                  "menuMode": "popup",
                                  "name": "Breakpoint Context Menu",
                                  "rect": "-246,316,-144,338",
@@ -1021,7 +905,7 @@
                                  "foreColor": "128,128,128",
                                  "htmlText": "%file%: assets/revNewScriptEditor 1_1002_1046_3333_52167_htmlText.txt",
                                  "id": "52167",
-                                 "layer": "54",
+                                 "layer": "45",
                                  "lockText": true,
                                  "margins": "8,8,2,8",
                                  "name": "Numbers Template",
@@ -1045,11 +929,11 @@
                                  "foreColor": "128,128,128",
                                  "htmlText": "%file%: assets/revNewScriptEditor 1_1002_1046_3333_63656_htmlText.txt",
                                  "id": "63656",
-                                 "layer": "55",
+                                 "layer": "46",
                                  "lockText": true,
                                  "margins": "8,8,2,8",
                                  "name": "Numbers",
-                                 "rect": "254,51,291,444",
+                                 "rect": "254,51,291,426",
                                  "showBorder": false,
                                  "style": "opaque",
                                  "textAlign": "right",
@@ -1060,10 +944,10 @@
                               "#name": "group \"Mutables\"",
                               "properties": {
                                  "id": "63657",
-                                 "layer": "56",
+                                 "layer": "47",
                                  "lockLoc": true,
                                  "name": "Mutables",
-                                 "rect": "254,51,291,444"
+                                 "rect": "254,51,291,426"
                               }
                            }
                         },
@@ -1075,11 +959,11 @@
                         "properties": {
                            "behavior": "stack \"revSEGutterBehavior\"",
                            "id": "3333",
-                           "layer": "51",
+                           "layer": "42",
                            "lockLoc": true,
                            "margins": "0",
                            "name": "Gutter",
-                           "rect": "254,51,291,444",
+                           "rect": "254,51,291,426",
                            "textFont": "Tahoma",
                            "textSize": "12",
                            "textStyle": "plain"
@@ -1089,7 +973,7 @@
                         "#name": "button \"Context Menu\"",
                         "properties": {
                            "id": "54230",
-                           "layer": "65",
+                           "layer": "56",
                            "menuMode": "popup",
                            "name": "Context Menu",
                            "rect": "-348,528,-246,550",
@@ -1106,7 +990,7 @@
                               "properties": {
                                  "dontWrap": true,
                                  "id": "54423",
-                                 "layer": "67",
+                                 "layer": "58",
                                  "name": "Password",
                                  "rect": "-34,417,133,438"
                               }
@@ -1122,7 +1006,7 @@
                                  "autoHilite": false,
                                  "htmlText": "<p>The script of this object is password protected, please enter the password to continue.</p>",
                                  "id": "54424",
-                                 "layer": "68",
+                                 "layer": "59",
                                  "lockText": true,
                                  "name": "Label Field",
                                  "opaque": false,
@@ -1141,7 +1025,7 @@
                                  "hiliteBorder": false,
                                  "icon": "203768",
                                  "id": "54425",
-                                 "layer": "69",
+                                 "layer": "60",
                                  "name": "Button",
                                  "opaque": false,
                                  "rect": "-55,383,-37,407",
@@ -1159,7 +1043,7 @@
                               "#name": "button \"Unlock\"",
                               "properties": {
                                  "id": "54426",
-                                 "layer": "70",
+                                 "layer": "61",
                                  "name": "Unlock",
                                  "rect": "140,416,222,439",
                                  "traversalOn": false
@@ -1177,7 +1061,7 @@
                                  "backColor": "236,112,89",
                                  "dontWrap": true,
                                  "id": "54427",
-                                 "layer": "71",
+                                 "layer": "62",
                                  "lockText": true,
                                  "name": "Error",
                                  "opaque": false,
@@ -1191,7 +1075,7 @@
                         },
                         "properties": {
                            "id": "54422",
-                           "layer": "66",
+                           "layer": "57",
                            "lockLoc": true,
                            "name": "Enter Password",
                            "rect": "-59,372,234,470"
@@ -1201,90 +1085,23 @@
                         "#name": "button \"revCompileObject\"",
                         "properties": {
                            "id": "56803",
-                           "layer": "72",
+                           "layer": "63",
                            "name": "revCompileObject",
                            "rect": "-374,404,-246,436"
                         }
                      },
-                     "63714": {
-                        "#name": "field \"Script for card id 1002 of stack \"revSETemplate\" of stack \"revNewScriptEditor\"\"",
+                     "65399": {
+                        "#name": "field \"Script for control id 1004 of stack \"Untitled 1\"\"",
                         "properties": {
                            "backColor": "255,255,255",
                            "borderWidth": "0",
                            "dontWrap": true,
                            "hScrollbar": true,
-                           "htmlText": "%file%: assets/revNewScriptEditor 1_1002_1046_63714_htmlText.txt",
-                           "id": "63714",
-                           "layer": "49",
-                           "name": "Script for card id 1002 of stack \"revSETemplate\" of stack \"revNewScriptEditor\"",
-                           "rect": "291,51,1247,461",
-                           "scrollbarWidth": "17",
-                           "showFocusBorder": false,
-                           "style": "scrolling",
-                           "textFont": "Source Code Pro",
-                           "textSize": "12",
-                           "textStyle": "plain",
-                           "visible": false,
-                           "vScrollbar": true
-                        }
-                     },
-                     "63727": {
-                        "#name": "field \"Script for control id 1003 of stack \"Untitled 1\"\"",
-                        "properties": {
-                           "backColor": "255,247,215",
-                           "borderWidth": "0",
-                           "dontWrap": true,
-                           "hScrollbar": true,
-                           "htmlText": "%file%: assets/revNewScriptEditor 1_1002_1046_63727_htmlText.txt",
-                           "id": "63727",
-                           "layer": "46",
-                           "lockText": true,
-                           "name": "Script for control id 1003 of stack \"Untitled 1\"",
-                           "rect": "323,83,1279,493",
-                           "scrollbarWidth": "17",
-                           "showFocusBorder": false,
-                           "style": "scrolling",
-                           "textFont": "Source Code Pro",
-                           "textSize": "12",
-                           "textStyle": "plain",
-                           "visible": false,
-                           "vScrollbar": true
-                        }
-                     },
-                     "63751": {
-                        "#name": "field \"Script for control id 1050 of stack \"revSETemplate\" of stack \"revNewScriptEditor\"\"",
-                        "properties": {
-                           "backColor": "255,255,255",
-                           "borderWidth": "0",
-                           "dontWrap": true,
-                           "hScrollbar": true,
-                           "htmlText": "%file%: assets/revNewScriptEditor 1_1002_1046_63751_htmlText.txt",
-                           "id": "63751",
-                           "layer": "47",
-                           "name": "Script for control id 1050 of stack \"revSETemplate\" of stack \"revNewScriptEditor\"",
-                           "rect": "291,51,1247,461",
-                           "scrollbarWidth": "17",
-                           "showFocusBorder": false,
-                           "style": "scrolling",
-                           "textFont": "Source Code Pro",
-                           "textSize": "12",
-                           "textStyle": "plain",
-                           "visible": false,
-                           "vScrollbar": true
-                        }
-                     },
-                     "63773": {
-                        "#name": "field \"Script for stack \"revSEErrorsPaneBehavior\"\"",
-                        "properties": {
-                           "backColor": "255,255,255",
-                           "borderWidth": "0",
-                           "dontWrap": true,
-                           "hScrollbar": true,
-                           "htmlText": "%file%: assets/revNewScriptEditor 1_1002_1046_63773_htmlText.txt",
-                           "id": "63773",
-                           "layer": "48",
-                           "name": "Script for stack \"revSEErrorsPaneBehavior\"",
-                           "rect": "291,51,1247,461",
+                           "htmlText": "%file%: assets/revNewScriptEditor 1_1002_1046_65399_htmlText.txt",
+                           "id": "65399",
+                           "layer": "40",
+                           "name": "Script for control id 1004 of stack \"Untitled 1\"",
+                           "rect": "323,83,1279,475",
                            "scrollbarWidth": "17",
                            "showFocusBorder": false,
                            "style": "scrolling",
@@ -1300,10 +1117,10 @@
                      "behavior": "stack \"revSEEditorBehavior\"",
                      "cantDelete": true,
                      "id": "1046",
-                     "layer": "45",
+                     "layer": "39",
                      "lockLoc": true,
                      "name": "Editor",
-                     "rect": "254,51,1247,492"
+                     "rect": "254,51,1247,474"
                   }
                },
                "1049": {
@@ -1319,10 +1136,10 @@
                            "borderColor": "192,192,192",
                            "borderWidth": "1",
                            "id": "47741",
-                           "layer": "74",
+                           "layer": "65",
                            "margins": "4,6,4,4",
                            "name": "Errors",
-                           "rect": "0,502,55,525",
+                           "rect": "0,484,55,507",
                            "sharedHilite": false,
                            "style": "rectangle",
                            "textStyle": "bold",
@@ -1340,10 +1157,10 @@
                            "borderColor": "192,192,192",
                            "borderWidth": "1",
                            "id": "47742",
-                           "layer": "75",
+                           "layer": "66",
                            "margins": "4,6,4,4",
                            "name": "Variables",
-                           "rect": "55,504,129,525",
+                           "rect": "55,486,129,507",
                            "sharedHilite": false,
                            "style": "rectangle",
                            "threeD": false,
@@ -1360,10 +1177,10 @@
                            "borderColor": "192,192,192",
                            "borderWidth": "1",
                            "id": "47743",
-                           "layer": "76",
+                           "layer": "67",
                            "margins": "4,6,4,4",
                            "name": "Documentation",
-                           "rect": "129,504,241,525",
+                           "rect": "129,486,241,507",
                            "sharedHilite": false,
                            "style": "rectangle",
                            "threeD": false,
@@ -1380,10 +1197,10 @@
                            "borderColor": "192,192,192",
                            "borderWidth": "1",
                            "id": "53755",
-                           "layer": "77",
+                           "layer": "68",
                            "margins": "4,6,4,4",
                            "name": "Search Results",
-                           "rect": "333,504,444,525",
+                           "rect": "333,486,444,507",
                            "sharedHilite": false,
                            "style": "rectangle",
                            "threeD": false,
@@ -1400,10 +1217,10 @@
                            "borderColor": "192,192,192",
                            "borderWidth": "1",
                            "id": "55151",
-                           "layer": "78",
+                           "layer": "69",
                            "margins": "4,6,4,4",
                            "name": "Breakpoints",
-                           "rect": "241,504,333,525",
+                           "rect": "241,486,333,507",
                            "sharedHilite": false,
                            "style": "rectangle",
                            "threeD": false,
@@ -1414,10 +1231,10 @@
                   "properties": {
                      "cantDelete": true,
                      "id": "1049",
-                     "layer": "73",
+                     "layer": "64",
                      "lockLoc": true,
                      "name": "Pane Tabs",
-                     "rect": "0,502,1247,525"
+                     "rect": "0,484,1247,507"
                   }
                },
                "1050": {
@@ -1433,12 +1250,12 @@
                               },
                               "properties": {
                                  "id": "63669",
-                                 "layer": "81",
+                                 "layer": "72",
                                  "lockLoc": true,
                                  "lockText": true,
                                  "margins": "8,20,110,8",
                                  "name": "View",
-                                 "rect": "-2140,525,-1000,683",
+                                 "rect": "-2140,507,-1000,665",
                                  "showBorder": false,
                                  "style": "opaque"
                               }
@@ -1452,11 +1269,11 @@
                                  "borderWidth": "0",
                                  "id": "63670",
                                  "label": "Full Document",
-                                 "layer": "82",
+                                 "layer": "73",
                                  "lockLoc": true,
                                  "name": "FullMode",
                                  "opaque": false,
-                                 "rect": "-1126,685,-1030,709",
+                                 "rect": "-1126,667,-1030,691",
                                  "showBorder": false,
                                  "showFocusBorder": false,
                                  "style": "checkbox",
@@ -1473,10 +1290,10 @@
                               "properties": {
                                  "id": "63671",
                                  "label": "Launch Documentation",
-                                 "layer": "83",
+                                 "layer": "74",
                                  "lockLoc": true,
                                  "name": "LaunchDocs",
-                                 "rect": "-2139,684,-2008,708"
+                                 "rect": "-2139,666,-2008,690"
                               }
                            }
                         },
@@ -1484,10 +1301,10 @@
                            "behavior": "stack \"revSEDocumentationPaneBehavior\"",
                            "borderWidth": "1",
                            "id": "1051",
-                           "layer": "80",
+                           "layer": "71",
                            "lockLoc": true,
                            "name": "Documentation",
-                           "rect": "-2140,525,-1000,709",
+                           "rect": "-2140,507,-1000,691",
                            "textFont": "Tahoma",
                            "textSize": "11",
                            "textStyle": "plain",
@@ -1502,11 +1319,11 @@
                               "properties": {
                                  "endValue": "25",
                                  "id": "4719",
-                                 "layer": "85",
+                                 "layer": "76",
                                  "lineInc": "0",
                                  "name": "Scrollbar",
                                  "pageInc": "8.997101",
-                                 "rect": "1215,525,1231,709",
+                                 "rect": "1215,507,1231,691",
                                  "startValue": "0",
                                  "thumbSize": "0.999847",
                                  "visible": false
@@ -1515,19 +1332,19 @@
                            "59999": {
                               "#name": "group \"List\"",
                               "childcontrols": {
-                                 "63887": {
-                                    "#name": "group id 63887",
+                                 "65444": {
+                                    "#name": "group id 65444",
                                     "childcontrols": {
-                                       "63888": {
+                                       "65445": {
                                           "#name": "button \"Button\"",
                                           "properties": {
                                              "borderWidth": "0",
                                              "hiliteBorder": false,
                                              "icon": "205009",
-                                             "id": "63888",
-                                             "layer": "88",
+                                             "id": "65445",
+                                             "layer": "79",
                                              "name": "Button",
-                                             "rect": "5,535,26,555",
+                                             "rect": "5,517,26,537",
                                              "showBorder": false,
                                              "showIcon": true,
                                              "showName": false,
@@ -1536,17 +1353,17 @@
                                              "traversalOn": false
                                           }
                                        },
-                                       "63889": {
+                                       "65446": {
                                           "#name": "field \"Field\"",
                                           "properties": {
                                              "borderWidth": "1",
                                              "dontWrap": true,
                                              "htmlText": "<p>No errors occurred</p>",
-                                             "id": "63889",
-                                             "layer": "89",
+                                             "id": "65446",
+                                             "layer": "80",
                                              "lockText": true,
                                              "name": "Field",
-                                             "rect": "26,535,1236,555",
+                                             "rect": "26,517,1236,537",
                                              "showBorder": false,
                                              "showFocusBorder": false,
                                              "style": "opaque",
@@ -1557,7 +1374,7 @@
                                     "customproperties": {
                                        "cLine": null,
                                        "cListItem": true,
-                                       "cObject": "control id 1049 of stack \"revSETemplate\" of stack \"revNewScriptEditor\"",
+                                       "cObject": "control id 4715 of stack \"revSETemplate\" of stack \"revNewScriptEditor\"",
                                        "cPosition": null,
                                        "cType": "noerror"
                                     },
@@ -1565,12 +1382,12 @@
                                        "behavior": "stack \"revSEErrorTemplateBehavior\"",
                                        "borderColor": "128,128,128",
                                        "borderWidth": "1",
-                                       "id": "63887",
-                                       "layer": "87",
+                                       "id": "65444",
+                                       "layer": "78",
                                        "lockLoc": true,
                                        "margins": "0",
                                        "opaque": true,
-                                       "rect": "5,535,1236,559",
+                                       "rect": "5,517,1236,541",
                                        "threeD": false
                                     }
                                  }
@@ -1581,12 +1398,12 @@
                               },
                               "properties": {
                                  "id": "59999",
-                                 "layer": "86",
+                                 "layer": "77",
                                  "lockLoc": true,
                                  "margins": "0",
                                  "name": "List",
                                  "opaque": true,
-                                 "rect": "0,525,1231,709"
+                                 "rect": "0,507,1231,691"
                               }
                            }
                         },
@@ -1599,12 +1416,12 @@
                         "properties": {
                            "behavior": "stack \"revSEErrorsPaneBehavior\"",
                            "id": "1069",
-                           "layer": "84",
+                           "layer": "75",
                            "lockLoc": true,
                            "margins": "0",
                            "name": "Errors",
                            "opaque": true,
-                           "rect": "0,525,1247,709"
+                           "rect": "0,507,1247,691"
                         }
                      },
                      "53759": {
@@ -1615,11 +1432,11 @@
                               "properties": {
                                  "dontWrap": true,
                                  "id": "53757",
-                                 "layer": "91",
+                                 "layer": "82",
                                  "listBehavior": true,
                                  "lockText": true,
                                  "name": "Field",
-                                 "rect": "-2140,525,-1000,709",
+                                 "rect": "-2140,507,-1000,691",
                                  "scrollbarWidth": "13",
                                  "showBorder": false,
                                  "style": "scrolling",
@@ -1629,10 +1446,10 @@
                         },
                         "properties": {
                            "id": "53759",
-                           "layer": "90",
+                           "layer": "81",
                            "lockLoc": true,
                            "name": "Search Results",
-                           "rect": "-2140,525,-1000,709"
+                           "rect": "-2140,507,-1000,691"
                         }
                      },
                      "54992": {
@@ -1642,9 +1459,9 @@
                               "#name": "button \"Update\"",
                               "properties": {
                                  "id": "55114",
-                                 "layer": "94",
+                                 "layer": "85",
                                  "name": "Update",
-                                 "rect": "-2098,405,-2016,428",
+                                 "rect": "-2098,387,-2016,410",
                                  "traversalOn": false
                               }
                            },
@@ -1653,11 +1470,11 @@
                               "properties": {
                                  "endValue": "160",
                                  "id": "55121",
-                                 "layer": "95",
+                                 "layer": "86",
                                  "lineInc": "9.997711",
                                  "name": "Scrollbar",
                                  "pageInc": "160",
-                                 "rect": "-1016,525,-1000,709",
+                                 "rect": "-1016,507,-1000,691",
                                  "startValue": "0",
                                  "thumbSize": "160",
                                  "visible": false
@@ -1677,9 +1494,9 @@
                                              "hiliteBorder": false,
                                              "icon": "205021",
                                              "id": "63627",
-                                             "layer": "98",
+                                             "layer": "89",
                                              "name": "Icon",
-                                             "rect": "-2116,537,-2088,560",
+                                             "rect": "-2116,519,-2088,542",
                                              "sharedHilite": false,
                                              "showBorder": false,
                                              "showIcon": true,
@@ -1695,10 +1512,10 @@
                                              "dontWrap": true,
                                              "htmlText": "<p>group \"Editor\": line 1782 (no condition)</p>",
                                              "id": "63628",
-                                             "layer": "99",
+                                             "layer": "90",
                                              "lockText": true,
                                              "name": "Details",
-                                             "rect": "-2088,537,-1850,560",
+                                             "rect": "-2088,519,-1850,542",
                                              "showBorder": false,
                                              "style": "opaque",
                                              "traversalOn": false
@@ -1710,10 +1527,10 @@
                                              "hiliteBorder": false,
                                              "hilited": true,
                                              "id": "63629",
-                                             "layer": "100",
+                                             "layer": "91",
                                              "name": "Enabled",
                                              "opaque": false,
-                                             "rect": "-2135,539,-2116,559",
+                                             "rect": "-2135,521,-2116,541",
                                              "showBorder": false,
                                              "showName": false,
                                              "style": "checkbox",
@@ -1727,9 +1544,9 @@
                                              "hiliteBorder": false,
                                              "icon": "205322",
                                              "id": "63630",
-                                             "layer": "101",
+                                             "layer": "92",
                                              "name": "Edit",
-                                             "rect": "-1850,538,-1824,558",
+                                             "rect": "-1850,520,-1824,540",
                                              "sharedHilite": false,
                                              "showBorder": false,
                                              "showIcon": true,
@@ -1755,11 +1572,11 @@
                                        "borderWidth": "1",
                                        "hilitedButton": "2",
                                        "id": "63626",
-                                       "layer": "97",
+                                       "layer": "88",
                                        "lockLoc": true,
                                        "margins": "0",
                                        "opaque": true,
-                                       "rect": "-2135,535,-1011,562",
+                                       "rect": "-2135,517,-1011,544",
                                        "threeD": false
                                     }
                                  },
@@ -1774,9 +1591,9 @@
                                              "hiliteBorder": false,
                                              "icon": "205021",
                                              "id": "63632",
-                                             "layer": "103",
+                                             "layer": "94",
                                              "name": "Icon",
-                                             "rect": "-2116,569,-2088,592",
+                                             "rect": "-2116,551,-2088,574",
                                              "sharedHilite": false,
                                              "showBorder": false,
                                              "showIcon": true,
@@ -1792,10 +1609,10 @@
                                              "dontWrap": true,
                                              "htmlText": "<p>stack \"revdebuggerlibrary\": line 5000 (no condition)</p>",
                                              "id": "63633",
-                                             "layer": "104",
+                                             "layer": "95",
                                              "lockText": true,
                                              "name": "Details",
-                                             "rect": "-2088,569,-1776,592",
+                                             "rect": "-2088,551,-1776,574",
                                              "showBorder": false,
                                              "style": "opaque",
                                              "traversalOn": false
@@ -1807,10 +1624,10 @@
                                              "hiliteBorder": false,
                                              "hilited": true,
                                              "id": "63634",
-                                             "layer": "105",
+                                             "layer": "96",
                                              "name": "Enabled",
                                              "opaque": false,
-                                             "rect": "-2135,571,-2116,591",
+                                             "rect": "-2135,553,-2116,573",
                                              "showBorder": false,
                                              "showName": false,
                                              "style": "checkbox",
@@ -1824,9 +1641,9 @@
                                              "hiliteBorder": false,
                                              "icon": "205322",
                                              "id": "63635",
-                                             "layer": "106",
+                                             "layer": "97",
                                              "name": "Edit",
-                                             "rect": "-1776,570,-1750,590",
+                                             "rect": "-1776,552,-1750,572",
                                              "sharedHilite": false,
                                              "showBorder": false,
                                              "showIcon": true,
@@ -1852,11 +1669,11 @@
                                        "borderWidth": "1",
                                        "hilitedButton": "2",
                                        "id": "63631",
-                                       "layer": "102",
+                                       "layer": "93",
                                        "lockLoc": true,
                                        "margins": "0",
                                        "opaque": true,
-                                       "rect": "-2135,567,-1011,594",
+                                       "rect": "-2135,549,-1011,576",
                                        "threeD": false
                                     }
                                  },
@@ -1871,9 +1688,9 @@
                                              "hiliteBorder": false,
                                              "icon": "205021",
                                              "id": "63637",
-                                             "layer": "108",
+                                             "layer": "99",
                                              "name": "Icon",
-                                             "rect": "-2116,601,-2088,624",
+                                             "rect": "-2116,583,-2088,606",
                                              "sharedHilite": false,
                                              "showBorder": false,
                                              "showIcon": true,
@@ -1889,10 +1706,10 @@
                                              "dontWrap": true,
                                              "htmlText": "<p>stack \"revIDEProjectBrowser\": line 11058 (no condition)</p>",
                                              "id": "63638",
-                                             "layer": "109",
+                                             "layer": "100",
                                              "lockText": true,
                                              "name": "Details",
-                                             "rect": "-2088,601,-1757,624",
+                                             "rect": "-2088,583,-1757,606",
                                              "showBorder": false,
                                              "style": "opaque",
                                              "traversalOn": false
@@ -1904,10 +1721,10 @@
                                              "hiliteBorder": false,
                                              "hilited": true,
                                              "id": "63639",
-                                             "layer": "110",
+                                             "layer": "101",
                                              "name": "Enabled",
                                              "opaque": false,
-                                             "rect": "-2135,603,-2116,623",
+                                             "rect": "-2135,585,-2116,605",
                                              "showBorder": false,
                                              "showName": false,
                                              "style": "checkbox",
@@ -1921,9 +1738,9 @@
                                              "hiliteBorder": false,
                                              "icon": "205322",
                                              "id": "63640",
-                                             "layer": "111",
+                                             "layer": "102",
                                              "name": "Edit",
-                                             "rect": "-1757,602,-1731,622",
+                                             "rect": "-1757,584,-1731,604",
                                              "sharedHilite": false,
                                              "showBorder": false,
                                              "showIcon": true,
@@ -1949,11 +1766,11 @@
                                        "borderWidth": "1",
                                        "hilitedButton": "2",
                                        "id": "63636",
-                                       "layer": "107",
+                                       "layer": "98",
                                        "lockLoc": true,
                                        "margins": "0",
                                        "opaque": true,
-                                       "rect": "-2135,599,-1011,626",
+                                       "rect": "-2135,581,-1011,608",
                                        "threeD": false
                                     }
                                  },
@@ -1968,9 +1785,9 @@
                                              "hiliteBorder": false,
                                              "icon": "205021",
                                              "id": "63642",
-                                             "layer": "113",
+                                             "layer": "104",
                                              "name": "Icon",
-                                             "rect": "-2116,633,-2088,656",
+                                             "rect": "-2116,615,-2088,638",
                                              "sharedHilite": false,
                                              "showBorder": false,
                                              "showIcon": true,
@@ -1986,10 +1803,10 @@
                                              "dontWrap": true,
                                              "htmlText": "<p>stack \"revIDEProjectBrowser\": line 6031 (no condition)</p>",
                                              "id": "63643",
-                                             "layer": "114",
+                                             "layer": "105",
                                              "lockText": true,
                                              "name": "Details",
-                                             "rect": "-2088,633,-1762,656",
+                                             "rect": "-2088,615,-1762,638",
                                              "showBorder": false,
                                              "style": "opaque",
                                              "traversalOn": false
@@ -2001,10 +1818,10 @@
                                              "hiliteBorder": false,
                                              "hilited": true,
                                              "id": "63644",
-                                             "layer": "115",
+                                             "layer": "106",
                                              "name": "Enabled",
                                              "opaque": false,
-                                             "rect": "-2135,635,-2116,655",
+                                             "rect": "-2135,617,-2116,637",
                                              "showBorder": false,
                                              "showName": false,
                                              "style": "checkbox",
@@ -2018,9 +1835,9 @@
                                              "hiliteBorder": false,
                                              "icon": "205322",
                                              "id": "63645",
-                                             "layer": "116",
+                                             "layer": "107",
                                              "name": "Edit",
-                                             "rect": "-1762,634,-1736,654",
+                                             "rect": "-1762,616,-1736,636",
                                              "sharedHilite": false,
                                              "showBorder": false,
                                              "showIcon": true,
@@ -2046,11 +1863,11 @@
                                        "borderWidth": "1",
                                        "hilitedButton": "2",
                                        "id": "63641",
-                                       "layer": "112",
+                                       "layer": "103",
                                        "lockLoc": true,
                                        "margins": "0",
                                        "opaque": true,
-                                       "rect": "-2135,631,-1011,658",
+                                       "rect": "-2135,613,-1011,640",
                                        "threeD": false
                                     }
                                  },
@@ -2065,9 +1882,9 @@
                                              "hiliteBorder": false,
                                              "icon": "205021",
                                              "id": "63647",
-                                             "layer": "118",
+                                             "layer": "109",
                                              "name": "Icon",
-                                             "rect": "-2116,665,-2088,688",
+                                             "rect": "-2116,647,-2088,670",
                                              "sharedHilite": false,
                                              "showBorder": false,
                                              "showIcon": true,
@@ -2083,10 +1900,10 @@
                                              "dontWrap": true,
                                              "htmlText": "<p>stack \"revIDEProjectBrowser\": line 7157 (no condition)</p>",
                                              "id": "63648",
-                                             "layer": "119",
+                                             "layer": "110",
                                              "lockText": true,
                                              "name": "Details",
-                                             "rect": "-2088,665,-1764,688",
+                                             "rect": "-2088,647,-1764,670",
                                              "showBorder": false,
                                              "style": "opaque",
                                              "traversalOn": false
@@ -2098,10 +1915,10 @@
                                              "hiliteBorder": false,
                                              "hilited": true,
                                              "id": "63649",
-                                             "layer": "120",
+                                             "layer": "111",
                                              "name": "Enabled",
                                              "opaque": false,
-                                             "rect": "-2135,667,-2116,687",
+                                             "rect": "-2135,649,-2116,669",
                                              "showBorder": false,
                                              "showName": false,
                                              "style": "checkbox",
@@ -2115,9 +1932,9 @@
                                              "hiliteBorder": false,
                                              "icon": "205322",
                                              "id": "63650",
-                                             "layer": "121",
+                                             "layer": "112",
                                              "name": "Edit",
-                                             "rect": "-1764,666,-1738,686",
+                                             "rect": "-1764,648,-1738,668",
                                              "sharedHilite": false,
                                              "showBorder": false,
                                              "showIcon": true,
@@ -2143,11 +1960,11 @@
                                        "borderWidth": "1",
                                        "hilitedButton": "2",
                                        "id": "63646",
-                                       "layer": "117",
+                                       "layer": "108",
                                        "lockLoc": true,
                                        "margins": "0",
                                        "opaque": true,
-                                       "rect": "-2135,663,-1011,690",
+                                       "rect": "-2135,645,-1011,672",
                                        "threeD": false
                                     }
                                  }
@@ -2159,12 +1976,12 @@
                               "properties": {
                                  "cantDelete": true,
                                  "id": "55300",
-                                 "layer": "96",
+                                 "layer": "87",
                                  "lockLoc": true,
                                  "margins": "0",
                                  "name": "List",
                                  "opaque": true,
-                                 "rect": "-2140,525,-1016,709",
+                                 "rect": "-2140,507,-1016,691",
                                  "showBorder": true
                               }
                            },
@@ -2172,10 +1989,10 @@
                               "#name": "button \"Breakpoint Context Menu\"",
                               "properties": {
                                  "id": "55487",
-                                 "layer": "122",
+                                 "layer": "113",
                                  "menuMode": "popup",
                                  "name": "Breakpoint Context Menu",
-                                 "rect": "-1708,-45,-1606,-23",
+                                 "rect": "-1708,-63,-1606,-41",
                                  "style": "menu",
                                  "text": "Choice 1\nChoice 2\nChoice 3"
                               }
@@ -2184,10 +2001,10 @@
                               "#name": "field \"Message Blocker\"",
                               "properties": {
                                  "id": "57007",
-                                 "layer": "93",
+                                 "layer": "84",
                                  "lockText": true,
                                  "name": "Message Blocker",
-                                 "rect": "-2140,525,-1000,709",
+                                 "rect": "-2140,507,-1000,691",
                                  "showBorder": false,
                                  "showFocusBorder": false,
                                  "style": "opaque",
@@ -2199,10 +2016,10 @@
                         "properties": {
                            "behavior": "stack \"revSEBreakpointPaneBehavior\"",
                            "id": "54992",
-                           "layer": "92",
+                           "layer": "83",
                            "lockLoc": true,
                            "name": "Breakpoints",
-                           "rect": "-2140,525,-1000,709"
+                           "rect": "-2140,507,-1000,691"
                         }
                      },
                      "57964": {
@@ -2236,7 +2053,7 @@
                               "properties": {
                                  "id": "63372",
                                  "name": "tree",
-                                 "rect": "-2247,547,-1000,709"
+                                 "rect": "-2247,529,-1000,691"
                               }
                            },
                            "63385": {
@@ -2250,9 +2067,9 @@
                                  "dontWrap": true,
                                  "htmlText": "<p>Search variables...</p>",
                                  "id": "63385",
-                                 "layer": "125",
+                                 "layer": "116",
                                  "name": "Filter",
-                                 "rect": "-2247,525,-1282,547",
+                                 "rect": "-2247,507,-1282,529",
                                  "textHeight": "16",
                                  "textStyle": "italic"
                               }
@@ -2268,11 +2085,11 @@
                                  "behavior": "stack \"revSEVariablesCheckboxBehavior\"",
                                  "hiliteBorder": false,
                                  "id": "63386",
-                                 "layer": "126",
+                                 "layer": "117",
                                  "margins": "4,8,8,8",
                                  "name": "Show Globals",
                                  "opaque": false,
-                                 "rect": "-1282,525,-1171,547",
+                                 "rect": "-1282,507,-1171,529",
                                  "showBorder": false,
                                  "style": "checkbox",
                                  "textAlign": "left"
@@ -2289,11 +2106,11 @@
                                  "behavior": "stack \"revSEVariablesCheckboxBehavior\"",
                                  "hiliteBorder": false,
                                  "id": "63387",
-                                 "layer": "127",
+                                 "layer": "118",
                                  "margins": "4,8,8,8",
                                  "name": "Show Environment Vars",
                                  "opaque": false,
-                                 "rect": "-1171,525,-1000,547",
+                                 "rect": "-1171,507,-1000,529",
                                  "showBorder": false,
                                  "style": "checkbox",
                                  "textAlign": "left"
@@ -2309,11 +2126,11 @@
                         "properties": {
                            "behavior": "stack \"revSEVariablesPaneBehavior\"",
                            "id": "57964",
-                           "layer": "123",
+                           "layer": "114",
                            "lockLoc": true,
                            "name": "Variables",
                            "opaque": true,
-                           "rect": "-2247,525,-1000,709"
+                           "rect": "-2247,507,-1000,691"
                         }
                      }
                   },
@@ -2325,11 +2142,11 @@
                   "properties": {
                      "cantDelete": true,
                      "id": "1050",
-                     "layer": "79",
+                     "layer": "70",
                      "lockLoc": true,
                      "margins": "0",
                      "name": "Panes",
-                     "rect": "0,525,1247,709"
+                     "rect": "0,507,1247,691"
                   }
                },
                "1094": {
@@ -2344,10 +2161,10 @@
                      "icon": "205232",
                      "id": "1094",
                      "label": "=",
-                     "layer": "128",
+                     "layer": "119",
                      "name": "Resizer",
                      "opaque": false,
-                     "rect": "0,492,1247,502",
+                     "rect": "0,474,1247,484",
                      "sharedHilite": false,
                      "showBorder": false,
                      "showIcon": true,
@@ -2361,7 +2178,7 @@
                   "#name": "button \"Html\"",
                   "properties": {
                      "id": "54695",
-                     "layer": "129",
+                     "layer": "120",
                      "name": "Html",
                      "rect": "898,4,980,27",
                      "traversalOn": false,
@@ -2380,7 +2197,7 @@
                            "dontWrap": true,
                            "htmlText": "<p><img src=\"2927\" char=\" \">  handlerSelected</p>\n<p><img src=\"2927\" char=\" \">  mouseUp</p>",
                            "id": "54950",
-                           "layer": "131",
+                           "layer": "122",
                            "listBehavior": true,
                            "lockText": true,
                            "name": "Handlers",
@@ -2399,7 +2216,7 @@
                   "properties": {
                      "behavior": "stack \"revSEHandlerListBehavior\"",
                      "id": "54949",
-                     "layer": "130",
+                     "layer": "121",
                      "lockLoc": true,
                      "name": "Handler List",
                      "rect": "-350,56,-20,108"
@@ -2420,9 +2237,9 @@
                            "behavior": "stack \"revSEFilterFieldBehavior\"",
                            "htmlText": "<p>Filter...</p>",
                            "id": "63377",
-                           "layer": "133",
+                           "layer": "124",
                            "name": "Filter",
-                           "rect": "0,468,244,492",
+                           "rect": "0,450,244,474",
                            "textStyle": "italic"
                         }
                      },
@@ -2440,14 +2257,17 @@
                                  "foreColor": "black",
                                  "htmlText": "%file%: assets/revNewScriptEditor 1_1002_56896_63661_63662_htmlText.txt",
                                  "id": "63662",
-                                 "layer": "135",
+                                 "layer": "126",
                                  "listBehavior": true,
                                  "lockText": true,
                                  "name": "Handlers",
-                                 "rect": "0,28,244,468",
+                                 "rect": "0,28,244,450",
+                                 "scrollbarWidth": "16",
+                                 "style": "scrolling",
                                  "textFont": "Source Code Pro",
                                  "textSize": "12",
-                                 "textStyle": "plain"
+                                 "textStyle": "plain",
+                                 "vScrollbar": true
                               }
                            }
                         },
@@ -2455,31 +2275,30 @@
                            "cCallback": "handlerSelected",
                            "cCallbackTarget": "group id 56896 of card id 1002 of stack \"revNewScriptEditor 1\" of stack \"/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev\"",
                            "cCaller": "stack \"revNewScriptEditor 1\" of stack \"/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev\"",
-                           "cChoice": "46,setCurrentTab,M",
-                           "cMaxHeight": "440",
+                           "cMaxHeight": "422",
                            "cMaxWidth": "244",
-                           "cMinHeight": "440",
+                           "cMinHeight": "422",
                            "cMinWidth": "244",
-                           "cObject": "control id 1049 of stack \"revSETemplate\" of stack \"revNewScriptEditor\"",
-                           "cSelectedHandler": "selectObject"
+                           "cObject": "control id 4715 of stack \"revSETemplate\" of stack \"revNewScriptEditor\"",
+                           "cSelectedHandler": "MouseUp"
                         },
                         "properties": {
                            "behavior": "stack \"revSEHandlerListBehavior\"",
                            "id": "63661",
-                           "layer": "134",
+                           "layer": "125",
                            "lockLoc": true,
                            "name": "Left Handler List",
-                           "rect": "0,28,244,468"
+                           "rect": "0,28,244,450"
                         }
                      }
                   },
                   "properties": {
                      "behavior": "stack \"revSELeftBarBehavior\"",
                      "id": "56896",
-                     "layer": "132",
+                     "layer": "123",
                      "lockLoc": true,
                      "name": "Left Bar",
-                     "rect": "0,28,244,492"
+                     "rect": "0,28,244,474"
                   }
                },
                "56897": {
@@ -2494,10 +2313,10 @@
                      "icon": "205233",
                      "id": "56897",
                      "label": "=",
-                     "layer": "136",
+                     "layer": "127",
                      "name": "Left Resizer",
                      "opaque": false,
-                     "rect": "244,51,254,492",
+                     "rect": "244,51,254,474",
                      "sharedHilite": false,
                      "showBorder": false,
                      "showIcon": true,
@@ -2515,7 +2334,7 @@
                         "properties": {
                            "dontWrap": true,
                            "id": "58998",
-                           "layer": "138",
+                           "layer": "129",
                            "listBehavior": true,
                            "lockText": true,
                            "name": "Field",
@@ -2529,7 +2348,7 @@
                   "properties": {
                      "cantDelete": true,
                      "id": "58997",
-                     "layer": "137",
+                     "layer": "128",
                      "lockLoc": true,
                      "name": "Disambiguator",
                      "rect": "-1180,24,-820,208"
@@ -2543,7 +2362,7 @@
                         "properties": {
                            "dontWrap": true,
                            "id": "59312",
-                           "layer": "140",
+                           "layer": "131",
                            "listBehavior": true,
                            "lockText": true,
                            "name": "Field",
@@ -2556,7 +2375,7 @@
                   },
                   "properties": {
                      "id": "59311",
-                     "layer": "139",
+                     "layer": "130",
                      "name": "Disambiguator",
                      "rect": "-1180,24,-820,208"
                   }
@@ -2682,7 +2501,7 @@
                }
             },
             "customproperties": {
-               "cHandlers": "%file%: assets/revNewScriptEditor 1_1003_cHandlers.bin"
+               "cHandlers": "M MouseUp 1 3 button id 56803 of group id 1046 of card id 1002 of stack \"revNewScriptEditor 1\" of stack \"/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev\""
             },
             "custompropertysets": {
                "cREVGeneral[scripteditorvscroll]": {
@@ -3244,7 +3063,7 @@
          "behavior": "stack \"revSEStackBehavior\"",
          "destroyStack": true,
          "destroyWindow": true,
-         "id": "63889",
+         "id": "65446",
          "linkColor": "58,64,43",
          "linkHiliteColor": "255,0,0",
          "linkVisitedColor": "190,190,190",
@@ -3252,8 +3071,8 @@
          "minHeight": "250",
          "minWidth": "500",
          "name": "revNewScriptEditor 1",
-         "rect": "190,191,1437,900",
-         "title": "group \"Pane Tabs\" of card \"Main\" of stack \"revSETemplate\" of stack \"/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev\" - Code Editor (editing)",
+         "rect": "190,209,1437,900",
+         "title": "field \"Field\" of group \"Error Template\" of card \"Templates\" of stack \"revSETemplate\" of stack \"/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev\" - Code Editor (editing)",
          "underlineLinks": false
       },
       "sharedGroupIDs": "1003"

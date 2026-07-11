@@ -1,4 +1,5 @@
-!cgroup "Pane Tabs" of card "Main" of stack "revSETemplate" of stack "\/Users\/emily-elizabethhoward\/Developer\/HyperXTalk\/ide\/Toolset\/palettes\/script editor\/revscripteditor.8.rev" - Code Editor \(editing)/|stack "revNewScriptEditor 1"
+!cfield "Label Field" of card id 1002 of stack "\/Users\/emily-elizabethhoward\/Developer\/HyperXTalk\/_test_stacks\/throw an error.hyperxtalk" - Code Editor \(editing)/|stack "revNewScriptEditor 1"
+!nDictionary/|stack "revDictionary"
 !nUntitled 1/|stack "Untitled 1"
 -
 Send Window to Back/`

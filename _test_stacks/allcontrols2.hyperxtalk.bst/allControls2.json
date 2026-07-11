@@ -454,7 +454,7 @@
                      "label": "Answer",
                      "layer": "26",
                      "name": "Button",
-                     "rect": "586,272,668,295",
+                     "rect": "585,272,667,295",
                      "traversalOn": false
                   }
                },

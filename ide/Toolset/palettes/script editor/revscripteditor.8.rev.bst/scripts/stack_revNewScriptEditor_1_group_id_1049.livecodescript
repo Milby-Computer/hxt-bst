@@ -3,7 +3,7 @@ Script "stack_revNewScriptEditor_1_group_id_1049"
 /*
 # Name: group "Pane Tabs" of card "Main" of stack "revNewScriptEditor 1" of stack "revNewScriptEditor"
 # ID: group id 1049 of card id 1002 of stack "revNewScriptEditor 1" of stack "revNewScriptEditor"
-# Hash: zGyc6UkjCuyDBVT2Yn+Rjw==
+# Hash: cYRq8w2vR5At0sI+vXkkwg==
 */
 
 
@@ -108,15 +108,3 @@ private command selectObject pObject
    end repeat
    unlock screen
 end selectObject
-
-
-
-
-
-
-
-
-
-
-
-

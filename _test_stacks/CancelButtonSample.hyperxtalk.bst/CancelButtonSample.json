@@ -1,0 +1,57 @@
+{
+   "#mainstack": "CancelButtonSample",
+   "CancelButtonSample": {
+      "#name": "stack \"CancelButtonSample\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"Field\"",
+                  "customproperties": {
+                     "cancelbutton": true
+                  },
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Field",
+                     "rect": "64,130,240,151"
+                  }
+               },
+               "1004": {
+                  "#name": "button \"cancelbutton\"",
+                  "properties": {
+                     "id": "1004",
+                     "layer": "2",
+                     "name": "cancelbutton",
+                     "rect": "104,171,222,194",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"CancelButtonSample\"",
+      "properties": {
+         "fileName": "CancelButtonSample.hyperxtalk",
+         "id": "1007",
+         "name": "CancelButtonSample",
+         "rect": "219,118,619,518"
+      },
+      "sharedGroupIDs": null
+   }
+}

@@ -1,0 +1,97 @@
+{
+   "#mainstack": "Untitled 1",
+   "Untitled 1": {
+      "#name": "stack \"Untitled 1\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1003",
+                     "label": "Answer File",
+                     "layer": "1",
+                     "name": "Button",
+                     "rect": "162,113,244,136",
+                     "traversalOn": false
+                  }
+               },
+               "1014": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1014",
+                     "label": "testWorkers",
+                     "layer": "2",
+                     "name": "Button",
+                     "rect": "162,180,244,203",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "cursors": false,
+            "defaultBuildFolder": "/Users/emily-elizabethhoward/Downloads",
+            "inclusions": "search",
+            "Linux": false,
+            "Linux ARMv6-HF": false,
+            "Linux x64": false,
+            "MacOSX arm64": true,
+            "name": "Untitled 1",
+            "OSX,copyright": "2026  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,iconFile": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Runtime/Mac OS X/arm64/Support/Sample Icons/GenericApplication.icns",
+            "OSX,identifier": "com..untitled1",
+            "OSX,info": "Untitled 1 Version 1.0.0.0",
+            "OSX,longVersion": "Untitled 1 1.0.0.0",
+            "OSX,name": "Untitled 1",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "scriptLibraries": null,
+            "Solaris Intel": false,
+            "Solaris SPARC": false,
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Windows": false,
+            "Windows x86-64": false,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Runtime/Windows/x86-64/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "Untitled 1 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Runtime/Windows/x86-64/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2026  All rights reserved worldwide",
+            "Windows,ProductName": "Untitled 1",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0",
+            "Windows,UUID": null
+         }
+      },
+      "longID": "stack \"Untitled 1\"",
+      "properties": {
+         "fileName": "workerTestAsStandalone.hyperxtalk",
+         "id": "1034",
+         "name": "Untitled 1",
+         "rect": "219,118,619,518"
+      },
+      "sharedGroupIDs": null
+   }
+}

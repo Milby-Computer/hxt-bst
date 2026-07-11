@@ -1,18 +1,54 @@
-M getCurrentTab 64 66
-M mouseUp 36 40
-M resize 4 18
-PM selectObject 75 101
-M setCurrentTab 46 60
-M update 27 34 button id 56803 of group id 1046 of card id 1002 of stack "revNewScriptEditor 1" of stack "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev"
+M MouseUp 1 3 button id 56803 of group id 1046 of card id 1002 of stack "revNewScriptEditor 1" of stack "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev"
 
 
-closeControl
-deleteBackground
-deleteGroup
-newBackground
-newGroup
-openBackground
-openControl
-preOpenBackground
-preOpenControl
+arrowKey
+backspaceKey
+closeField
+commandKeyDown
+controlKeyDown
+copyKey
+cutKey
+deleteField
+deleteKey
+dragDrop
+dragEnd
+dragEnter
+dragLeave
+dragMove
+dragStart
+enterInField
+enterKey
+escapeKey
+exitField
+focusIn
+focusOut
+functionKey
+keyDown
+keyUp
+linkClicked
+mouseDoubleDown
+mouseDoubleUp
+mouseDown
+mouseEnter
+mouseLeave
+mouseMove
+mouseRelease
+mouseStillDown
+mouseWithin
+nameChanged
+newField
+openField
+optionKeyDown
+pasteKey
+rawKeyDown
+rawKeyUp
+resizeControl
+returnInField
 scrollbarDrag
+selectedObjectChanged
+selectionChanged
+socketClosed
+socketError
+socketTimeout
+tabKey
+textChanged

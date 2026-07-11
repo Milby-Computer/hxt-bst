@@ -1,0 +1,37 @@
+{
+   "#mainstack": "NotificationSample",
+   "NotificationSample": {
+      "#name": "stack \"NotificationSample\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Button",
+                     "rect": "98,175,180,198",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"NotificationSample\"",
+      "properties": {
+         "fileName": "NotificationSample.hyperxtalk",
+         "id": "1003",
+         "name": "NotificationSample",
+         "rect": "219,118,619,518"
+      },
+      "sharedGroupIDs": null
+   }
+}

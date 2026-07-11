@@ -13,8 +13,8 @@
                   "#name": "widget \"Dictionary\"",
                   "$kind": "com.livecode.widget.browser",
                   "$state": {
-                     "javaScriptHandlers": "linkClicked",
-                     "url": "file:///Users/emily-elizabethhoward/Library/Application%20Support/HyperXTalk/Documentation%20Cache/0_9_9_/api.html"
+                     "htmlText": null,
+                     "javaScriptHandlers": "linkClicked\nbrowserNavigateComplete"
                   },
                   "properties": {
                      "id": "1003",
@@ -41,14 +41,14 @@
       },
       "longID": "stack \"revDictionary\"",
       "properties": {
-         "backColor": "white",
+         "backColor": "#ececec",
          "behavior": "stack \"revDictionaryBehavior\"",
          "cantModify": true,
          "fileName": "revdictionary.livecode",
          "id": "1006",
          "minWidth": "1010",
          "name": "revDictionary",
-         "rect": "210,115,1220,776",
+         "rect": "273,110,1283,771",
          "title": "Dictionary"
       },
       "sharedGroupIDs": "1004"

@@ -1,0 +1,37 @@
+{
+   "#mainstack": "Untitled 1",
+   "Untitled 1": {
+      "#name": "stack \"Untitled 1\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Button",
+                     "rect": "159,189,241,212",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"Untitled 1\"",
+      "properties": {
+         "fileName": "throw an error.hyperxtalk",
+         "id": "1003",
+         "name": "Untitled 1",
+         "rect": "217,118,617,518"
+      },
+      "sharedGroupIDs": null
+   }
+}

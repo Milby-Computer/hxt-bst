@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI_button_id_1011"
 /*
 # Name: button "Show Revolution Stacks" of card "General" of stack "revPreferencesGUI"
 # ID: button id 1011 of card id 1002 of stack "revPreferencesGUI"
-# Hash: EOpbcRSYtxXGMbzDM487Ig==
+# Hash: EgAlLceSRTJ1zd525Ck21A==
 */
 
 
@@ -14,17 +14,18 @@ on mouseUp
 end mouseUp
 
 on revToggleShowStacks
-  global gREVShowStacks
-  put the hilite of me into gREVShowStacks
-  set the cShowRevolutionStacks of stack "revPreferences" to the hilite of me
-  revIDEMessageSend "idePreferenceChanged:cShowRevolutionStacks"
-  lock screen
-  if the mode of stack "revSearch" is not 0 
-  then send "revFeedback" to stack "revSearch"
-  revUpdateAB
-  put revPalettesList() into tPalettes
-  repeat for each line l in tPalettes
-    send "revUpdatePalette" to this cd of stack l
-  end repeat
-  unlock screen
+   global gREVShowStacks
+   put the hilite of me into gREVShowStacks
+   set the cShowRevolutionStacks of stack "revPreferences" to the hilite of me
+   revIDEMessageSend "idePreferenceChanged:cShowRevolutionStacks"
+   lock screen
+   if the mode of stack "revSearch" is not 0 
+   then send "revFeedback" to stack "revSearch"
+   revUpdateAB
+   local tPalettes
+   put revPalettesList() into tPalettes
+   repeat for each line l in tPalettes
+      send "revUpdatePalette" to this cd of stack l
+   end repeat
+   unlock screen
 end revToggleShowStacks
