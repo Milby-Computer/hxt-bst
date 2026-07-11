@@ -24,7 +24,6 @@
                      "autoHilite": false,
                      "dontWrap": true,
                      "fixedLineHeight": false,
-                     "htmlText": "<p>This Indy license is only valid for organizations with annual revenues of $500,000 USD or less</p>",
                      "id": "1004",
                      "layer": "2",
                      "lockText": true,
@@ -84,6 +83,7 @@
                   "properties": {
                      "autoHilite": false,
                      "dontWrap": true,
+                     "foreColor": "255,255,255",
                      "id": "1006",
                      "layer": "4",
                      "lockText": true,
@@ -153,16 +153,18 @@
                      "visible": false
                   }
                },
-               "225105": {
-                  "#name": "image \"splash\"",
+               "225106": {
+                  "#name": "image \"HyperXTalkSplash.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "splash.png",
-                     "filepath": "montegoulding/livecode-private/livecode/ide/Toolset/resources/professional/ideSkin",
-                     "id": "225105",
+                     "borderWidth": "0",
+                     "id": "225106",
                      "layer": "1",
-                     "name": "splash",
-                     "rect": "0,0,591,306"
+                     "lockLoc": true,
+                     "name": "HyperXTalkSplash.png",
+                     "rect": "-22,-22,614,338",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revSplash_1008_225106_text.png"
                   }
                }
             },
@@ -173,6 +175,7 @@
                }
             },
             "properties": {
+               "foreColor": "0,0,0",
                "id": "1008",
                "name": "Main",
                "textFont": "Lucida Grande",
@@ -194,10 +197,10 @@
          "behavior": "stack \"revSplashStackBehavior\"",
          "decorations": null,
          "fileName": "revSplash.livecode",
-         "id": "225105",
+         "id": "225106",
          "liveResizing": false,
          "name": "revSplash",
-         "rect": "665,387,1256,693",
+         "rect": "424,297,1016,603",
          "stackFiles": "revSplashStackBehavior,revsplashstackbehavior.livecodescript",
          "windowShape": "1003"
       },

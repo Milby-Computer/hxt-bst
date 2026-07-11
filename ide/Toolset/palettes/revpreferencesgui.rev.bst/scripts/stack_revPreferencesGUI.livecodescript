@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI"
 /*
 # Name: stack "revPreferencesGUI"
 # ID: stack "revPreferencesGUI"
-# Hash: dP1VMESd3KqVo4jC5M0INw==
+# Hash: 47g95oP6IDUIGXdob8se4w==
 */
 
 
@@ -33,8 +33,8 @@ on preOpenStack
    end if
    
    if not lAlreadyBeenOpened then
-      set the textFont of fld "Menu" of cd 1 to empty
-      set the textHeight of fld "Menu" of cd 1 to 20
+      --      set the textFont of fld "Menu" of cd 1 to empty
+      --      set the textHeight of fld "Menu" of cd 1 to 20
       put true into lAlreadyBeenOpened
    end if
    
@@ -47,8 +47,8 @@ on preOpenStack
    
    ## Bug 11173
    ## Last opened pane is shown but item 1 in list selected.
-   set the hilitedLines of fld "Menu" to lineOffset(the short name of this card,the text of field "menu")
-   send "mouseUp" to fld "Menu"
+   --   set the hilitedLines of fld "Menu" to lineOffset(the short name of this card,the text of field "menu")
+   --   send "mouseUp" to fld "Menu"
    pass preOpenStack
 end preOpenStack
 
@@ -133,3 +133,4 @@ end enterInField
 on returnInField
   enterInField
 end returnInField
+

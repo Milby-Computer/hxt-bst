@@ -1,14 +1,25 @@
 Script "stack_revPreferencesGUI_button_id_1022"
 
 /*
-# Name: button "UI edit script" of group "Shortcuts" of group "General" of card "General" of stack "revPreferencesGUI"
-# ID: button id 1022 of group id 1019 of group id 1016 of card id 1002 of stack "revPreferencesGUI"
-# Hash: s24D8Ot1FolhzdpsW4fXgQ==
+# Name: button "Image Editor..." of card "General" of stack "revPreferencesGUI"
+# ID: button id 1022 of card id 1002 of stack "revPreferencesGUI"
+# Hash: haptPIZOeGfJHra41xiKRA==
 */
 
 
 on mouseUp
-  global gREVUIScriptShortcut
-  set the cREVUIScriptShortcut of stack "revPreferences" to the hilite of me
-  put the hilite of me into gREVUIScriptShortcut
+  put the cEditorpath of stack "revPreferences" into tEditorPath
+  set the itemDel to "/"
+  put item 1 to -1 of tEditorPath into tSelector
+  set the itemDel to comma
+  answer file "Select an image editor:" with tSelector
+  lock screen
+  if it is not empty then
+    put it into fld "external editor"
+    set the cEditorpath of stack "revPreferences" to the text of fld "external editor"
+    set the itemDel to "/"
+    put item -1 of fld "external editor" into fld "external editor"
+    set the itemDel to comma
+  end if
+  unlock screen
 end mouseUp

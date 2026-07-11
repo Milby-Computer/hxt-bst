@@ -1,8 +1,8 @@
 Script "stack_revPreferencesGUI_button_id_1147"
 
 /*
-# Name: button "Font Size" of group "Script Editor" of card "Script Editor" of stack "revPreferencesGUI"
-# ID: button id 1147 of group id 1142 of card id 1010 of stack "revPreferencesGUI"
+# Name: button "Print Font Size" of group "Script Editor" of card "Editor" of stack "revPreferencesGUI"
+# ID: button id 1147 of group id 1114 of card id 1008 of stack "revPreferencesGUI"
 # Hash: M2Kvb7jw5SYio6BFEXPvaw==
 */
 

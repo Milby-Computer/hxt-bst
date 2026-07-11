@@ -1,19 +1,12 @@
 Script "stack_revPreferencesGUI_button_id_1038"
 
 /*
-# Name: button "StartCenterPref" of group "General" of card "General" of stack "revPreferencesGUI"
-# ID: button id 1038 of group id 1016 of card id 1002 of stack "revPreferencesGUI"
-# Hash: NQV5UbYIysAaM/+h3crsTg==
+# Name: button "Remove from memory" of group id 1037 of card "Files" of stack "revPreferencesGUI"
+# ID: button id 1038 of group id 1037 of card id 1005 of stack "revPreferencesGUI"
+# Hash: qkqwSB3DmukcAmfc4m1Exw==
 */
 
 
 on mouseUp
-   set the cStartPageShow of stack "revPreferences" to the hilite of me
-   if the hilite of me then
-      enable button "ReloadStartCenter"
-      enable button "startCenterClassicPref"
-   else
-      disable button "ReloadStartCenter"
-      disable button "startCenterClassicPref"
-   end if
+  set the cASKDestroy of stack "revPreferences" to "remove"
 end mouseUp

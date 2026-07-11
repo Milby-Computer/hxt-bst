@@ -1,12 +1,12 @@
 Script "stack_revPreferencesGUI_button_id_1040"
 
 /*
-# Name: button "StartCenterClassicPref" of group "General" of card "General" of stack "revPreferencesGUI"
-# ID: button id 1040 of group id 1016 of card id 1002 of stack "revPreferencesGUI"
-# Hash: QE73jSW993cpcsUSQ7SLQg==
+# Name: button "Don't remove" of group id 1037 of card "Files" of stack "revPreferencesGUI"
+# ID: button id 1040 of group id 1037 of card id 1005 of stack "revPreferencesGUI"
+# Hash: sP2jLOa3zK0ZYB5togUneQ==
 */
 
 
 on mouseUp
-   set the cStartCenterClassic of stack "revPreferences" to the hilite of me
+  set the cASKDestroy of stack "revPreferences" to "don't remove"
 end mouseUp

@@ -1,12 +1,12 @@
 Script "stack_revPreferencesGUI_button_id_1047"
 
 /*
-# Name: button "Remove from memory" of group id 1046 of group "Closing Stacks" of group "Files & Memory" of card "Files & Memory" of stack "revPreferencesGUI"
-# ID: button id 1047 of group id 1046 of group id 1043 of group id 1041 of card id 1007 of stack "revPreferencesGUI"
-# Hash: qkqwSB3DmukcAmfc4m1Exw==
+# Name: button "Preserve Stack Version" of card "Files" of stack "revPreferencesGUI"
+# ID: button id 1047 of card id 1005 of stack "revPreferencesGUI"
+# Hash: 5mYcjWACNY2gAeOVbWBioQ==
 */
 
 
 on mouseUp
-  set the cASKDestroy of stack "revPreferences" to "remove"
+  set the cPreserveStackVersion of stack "revPreferences" to the hilite of me
 end mouseUp

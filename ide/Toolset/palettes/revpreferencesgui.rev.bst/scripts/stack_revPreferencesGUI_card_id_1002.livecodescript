@@ -3,33 +3,11 @@ Script "stack_revPreferencesGUI_card_id_1002"
 /*
 # Name: card "General" of stack "revPreferencesGUI"
 # ID: card id 1002 of stack "revPreferencesGUI"
-# Hash: v2u6as3X09lhILBvZATnRA==
+# Hash: T0MncrHydq1WFboCtQDGXw==
 */
 
 
-on preOpenCard
-   enable button "startCenterPref" of me
-   if the cStartPageShow of stack "revPreferences" is not "false" then
-      set the hilite of button "startcenterpref" of me to true
-      enable button "ReloadStartCenter" of me
-      enable button "StartCenterClassicPref" of me
-   else
-      set the hilite of button "startcenterpref" of me to false
-      disable button "ReloadStartCenter" of me
-      disable button "StartCenterClassicPref" of me
-   end if
-   
-   if the cReloadStartCenter of stack "revPreferences" is not "true" then
-      set the hilite of button "ReloadStartCenter" of me to false
-   else
-      set the hilite of button "ReloadStartCenter" of me to true
-   end if
-   
-   if the cStartCenterClassic of stack "revPreferences" is empty then
-      set the cStartCenterClassic of stack "revPreferences" to false
-   end if
-   set the hilite of button "StartCenterClassicPref" of me to the cStartCenterClassic of stack "revPreferences"
-   
+on preOpenCard   
    set the hilite of button "Descriptions on properties" of me to the cLanguageNames of card 1 of stack "revPreferences" is false
    set the hilite of button "Language names on properties" of me to not the hilite of button "Descriptions on properties" of me
    set the hilite of button "navigation arrows" of me to the cNavigationArrows of stack "revPreferences"
@@ -45,3 +23,28 @@ on preOpenCard
    end if
    set the label of button "Crash Report Style" of me to it
 end preOpenCard
+
+
+on OpenCard
+   /*
+   windowAnimateResize pWindowID, pLeft, pTop, pWidth, pHeight, pDuration
+   
+   Smoothly resizes the window identified by pWindowID (the integer returned
+   by `the windowId of stack <name>` in LiveCode Script).
+   
+   pLeft, pTop   — new position in LiveCode screen coordinates (top-left origin)
+   pWidth        — new width  in pixels
+   pHeight       — new height in pixels
+   pDuration     — animation length in seconds, e.g. 0.3
+   */
+   
+   --   if (the platform = "macOS") then
+   --      windowAnimateResize the windowID of this stack, the left of this stack, the top of this stack, the width of this stack, 362, 0.5
+   --   else
+   lock screen
+   local tTopLeft
+   put the topLeft of this stack into tTopLeft
+   set the height of this stack to 362
+   set the topLeft of this stack to tTopLeft
+   --end if
+end OpenCard
