@@ -153,18 +153,18 @@
                      "visible": false
                   }
                },
-               "225106": {
-                  "#name": "image \"HyperXTalkSplash.png\"",
+               "225108": {
+                  "#name": "image \"logo_transparent.png\"",
                   "properties": {
                      "alwaysBuffer": true,
                      "borderWidth": "0",
-                     "id": "225106",
+                     "id": "225108",
                      "layer": "1",
                      "lockLoc": true,
-                     "name": "HyperXTalkSplash.png",
-                     "rect": "-22,-22,614,338",
+                     "name": "logo_transparent.png",
+                     "rect": "136,-27,456,293",
                      "repeatCount": "-1",
-                     "text": "%file%: assets/revSplash_1008_225106_text.png"
+                     "text": "%file%: assets/revSplash_1008_225108_text.png"
                   }
                }
             },
@@ -189,15 +189,16 @@
       },
       "custompropertysets": {
          "cREVGeometryCache": {
-            "stackID": "225105"
+            "stackID": "225108"
          }
       },
       "longID": "stack \"revSplash\"",
       "properties": {
+         "backColor": "0,0,0",
          "behavior": "stack \"revSplashStackBehavior\"",
          "decorations": null,
          "fileName": "revSplash.livecode",
-         "id": "225106",
+         "id": "225108",
          "liveResizing": false,
          "name": "revSplash",
          "rect": "424,297,1016,603",

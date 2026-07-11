@@ -3,11 +3,12 @@ Script "stack_revStandaloneSettings_group_id_1086"
 /*
 # Name: group "Flavors" of card "OS X" of stack "revStandaloneSettings"
 # ID: group id 1086 of card id 1015 of stack "revStandaloneSettings"
-# Hash: QM28XgDaR9fCbZ5nb32K9g==
+# Hash: L5h0In0UmZiaHPYPK0VNPw==
 */
 
 
 on mouseUp
+   local tEnable
    put false into tEnable
    repeat with x=1 to the number of btns of me
       if the hilite of btn X of me then

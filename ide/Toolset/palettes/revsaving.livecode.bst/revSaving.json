@@ -13,14 +13,14 @@
                   "#name": "field \"field id 1005\"",
                   "properties": {
                      "dontWrap": true,
-                     "htmlText": "%file%: assets/revSaving_1001_1005_htmlText.txt",
+                     "htmlText": "<p>Saving...</p>\n<p></p>\n<p>Stack:\u2026#9;\u2026#9;revSaving</p>\n<p>Main stack:\u2026#9;\u2026#9;revSaving</p>\n<p>Sub stacks:</p>\n<p>File name:\u2026#9;\u2026#9;/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/revsaving.livecode</p>\n<p></p>\n<p>Please wait</p>",
                      "id": "1005",
                      "layer": "1",
                      "lockText": true,
                      "margins": "12",
                      "name": "field id 1005",
                      "opaque": false,
-                     "rect": "0,0,688,134",
+                     "rect": "0,0,714,152",
                      "showBorder": false,
                      "style": "transparent",
                      "tabStops": "31",
@@ -49,7 +49,7 @@
          "id": "1005",
          "liveResizing": false,
          "name": "revSaving",
-         "rect": "0,368,688,502",
+         "rect": "347,414,1061,566",
          "resizable": false
       },
       "sharedGroupIDs": null

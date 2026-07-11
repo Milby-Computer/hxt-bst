@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI"
 /*
 # Name: stack "revPreferencesGUI"
 # ID: stack "revPreferencesGUI"
-# Hash: 47g95oP6IDUIGXdob8se4w==
+# Hash: 41q8TTOIqcbVHOYMLi7HPw==
 */
 
 
@@ -120,17 +120,41 @@ end updateOpenScriptEditors
 -- General fallback handlers
 
 on closeField
-  local tName
-  put the short name of the target into tName
-  set the tName of stack "revPreferences" to the text of the target
+   local tName
+   put the short name of the target into tName
+   set the tName of stack "revPreferences" to the text of the target
 end closeField
 
 on enterInField
-  closeField
-  select the text of the target
+   closeField
+   select the text of the target
 end enterInField
 
 on returnInField
-  enterInField
+   enterInField
 end returnInField
 
+
+on hxtSetTheHeightOfThisStackTo pHeight
+   /*
+   windowAnimateResize pWindowID, pLeft, pTop, pWidth, pHeight, pDuration
+   
+   Smoothly resizes the window identified by pWindowID (the integer returned
+   by `the windowId of stack <name>` in LiveCode Script).
+   
+   pLeft, pTop   — new position in LiveCode screen coordinates (top-left origin)
+   pWidth        — new width  in pixels
+   pHeight       — new height in pixels
+   pDuration     — animation length in seconds, e.g. 0.3
+   */
+   
+   if (the platform = "macOS") then
+      windowAnimateResize the windowID of stack "revPreferencesGUI", the left of this stack, the top of this stack, the width of this stack, pHeight, 0.5
+   else
+      lock screen
+      local tTopLeft
+      put the topLeft of this stack into tTopLeft
+      set the height of this stack to pHeight
+      set the topLeft of this stack to tTopLeft
+   end if
+end hxtSetTheHeightOfThisStackTo

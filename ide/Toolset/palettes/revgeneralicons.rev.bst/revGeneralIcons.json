@@ -1305,10 +1305,11 @@
                   "#name": "image \"lc-32.png\"",
                   "properties": {
                      "alwaysBuffer": true,
+                     "borderWidth": "0",
                      "id": "210095",
-                     "layer": "93",
+                     "layer": "94",
                      "name": "lc-32.png",
-                     "rect": "328,102,360,134",
+                     "rect": "440,110,470,142",
                      "repeatCount": "-1",
                      "text": "%file%: assets/revGeneralIcons_1002_210095_text.png"
                   }
@@ -1317,10 +1318,11 @@
                   "#name": "image \"lc-64.png\"",
                   "properties": {
                      "alwaysBuffer": true,
+                     "borderWidth": "0",
                      "id": "210096",
-                     "layer": "94",
+                     "layer": "93",
                      "name": "lc-64.png",
-                     "rect": "416,20,479,84",
+                     "rect": "426,21,485,85",
                      "repeatCount": "-1",
                      "text": "%file%: assets/revGeneralIcons_1002_210096_text.png"
                   }
@@ -1356,17 +1358,17 @@
       },
       "custompropertysets": {
          "cREVGeometryCache": {
-            "stackID": "210108"
+            "stackID": "210110"
          }
       },
       "longID": "stack \"revGeneralIcons\"",
       "properties": {
          "decorations": "default",
          "fileName": "revgeneralicons.rev",
-         "id": "210110",
+         "id": "210114",
          "liveResizing": false,
          "name": "revGeneralIcons",
-         "rect": "1001,530,1545,1301",
+         "rect": "886,119,1430,890",
          "textFont": "geneva",
          "textSize": "10",
          "textStyle": "plain"

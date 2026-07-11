@@ -13,12 +13,13 @@
                   "#name": "widget \"Dictionary\"",
                   "$kind": "com.livecode.widget.browser",
                   "$state": {
-                     "url": "file:///Applications/LiveCode%20Community%208.0%20(dp%2011).app/Contents/Tools/Documentation/html_viewer/viewer.html"
+                     "javaScriptHandlers": "linkClicked",
+                     "url": "file:///Users/emily-elizabethhoward/Library/Application%20Support/HyperXTalk/Documentation%20Cache/9_7_0_dp_1_/api.html"
                   },
                   "properties": {
                      "id": "1003",
                      "name": "Dictionary",
-                     "rect": "0,21,1000,1054"
+                     "rect": "0,21,1010,682"
                   }
                },
                "1004": "#shared group"
@@ -52,7 +53,7 @@
                   "properties": {
                      "id": "1006",
                      "name": "header_background",
-                     "rect": "0,0,1000,21"
+                     "rect": "0,0,1010,21"
                   }
                }
             },
@@ -61,19 +62,20 @@
                "id": "1004",
                "layer": "2",
                "name": "background",
-               "rect": "-4,-4,1004,25"
+               "rect": "-4,-4,1014,25"
             }
          }
       },
       "longID": "stack \"revDictionary\"",
       "properties": {
+         "backColor": "white",
          "behavior": "stack \"revDictionaryBehavior\"",
          "cantModify": true,
          "fileName": "revdictionary.livecode",
          "id": "1006",
-         "minWidth": "1000",
+         "minWidth": "1010",
          "name": "revDictionary",
-         "rect": "1456,119,2456,1173",
+         "rect": "430,130,1440,812",
          "title": "Dictionary"
       },
       "sharedGroupIDs": "1004"

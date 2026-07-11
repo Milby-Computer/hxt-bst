@@ -3,7 +3,7 @@ Script "stack_revSaving_card_id_1001"
 /*
 # Name: card id 1001 of stack "revSaving"
 # ID: card id 1001 of stack "revSaving"
-# Hash: wIE7ulOy8pICd6GQkbhaSQ==
+# Hash: hyDtlnMGlywoRvkNvuyGfQ==
 */
 
 
@@ -15,11 +15,13 @@ end preOpenStack
 setProp cSavingStack tStackName
    lock messages
    
+   local tMainStack, tSubStacks
    set the defaultStack to "revSaving"
    put revIDELocalise("Saving stack") && tStackName into field 1
    put the mainStack of stack tStackName into tMainStack
    put the substacks of stack tMainStack into tSubStacks
    
+   local tSubTabbed
    repeat for each line l in tSubStacks
       put tab & tab & tab & l & cr after tSubTabbed
    end repeat
@@ -27,6 +29,7 @@ setProp cSavingStack tStackName
    delete last char of tSubTabbed
    put tSubTabbed into tSubStacks
    
+   local tOutput
    put revIDELocalise("Saving...") & cr & cr & "Stack:" & tab & tab & tStackName & cr into tOutput
    put revIDELocalise("Main stack:") & tab & tab & tMainStack & cr after tOutput
    put revIDELocalise("Sub stacks:") & tSubStacks & cr after tOutput
@@ -57,3 +60,8 @@ on revCheckSaveStackRect
   then set the top of this stack to item 2 of the windowBoundingRect
   unlock screen
 end revCheckSaveStackRect
+
+
+on systemAppearanceChanged pMode, pWindowColor
+   set the backgroundColor of this stack to pWindowColor
+end systemAppearanceChanged

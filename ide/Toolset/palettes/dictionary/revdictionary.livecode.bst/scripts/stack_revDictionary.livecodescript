@@ -3,14 +3,14 @@ Script "stack_revDictionary"
 /*
 # Name: stack "revDictionary"
 # ID: stack "revDictionary"
-# Hash: XB5PHcetvzASiFjP9YRyLw==
+# Hash: xvD6/px7hQrsI00otCtk/A==
 */
 
 
 on preOpenStack
-   set the cantModify of me to false	
+   set the cantModify of me to false
    dispatch "setAsBehavior" to stack revIDEPaletteResourcePath("behaviors/revdictionarybehavior.livecodescript") with the long id of me
-   set the showPreferenceAction of me to false	
+   set the showPreferenceAction of me to false
    set the navigationDisplayStyle of me to "names"
    clearFrameData
    addFrameItem "show_apis","header", "navigation", "API", "f1b3", "f1b3","showAPIs", the long id of me

@@ -823,7 +823,7 @@
                      "lineInc": "0.999771",
                      "name": "grid",
                      "pageInc": "0.999771",
-                     "rect": "347,80,362,108",
+                     "rect": "347,85,362,103",
                      "startValue": "0",
                      "thumbPosition": "2",
                      "thumbSize": "0.999771"
@@ -2787,7 +2787,7 @@
          "fileName": "revpreferencesgui.rev",
          "id": "1176",
          "name": "revPreferencesGUI",
-         "rect": "252,127,852,489",
+         "rect": "234,179,834,541",
          "title": "Settings"
       },
       "sharedGroupIDs": "1004"
