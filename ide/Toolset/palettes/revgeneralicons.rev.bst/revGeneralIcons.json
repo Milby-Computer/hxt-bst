@@ -1,0 +1,1376 @@
+{
+   "#mainstack": "revGeneralIcons",
+   "revGeneralIcons": {
+      "#name": "stack \"revGeneralIcons\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "200086": {
+                  "#name": "image id 200086",
+                  "properties": {
+                     "id": "200086",
+                     "layer": "50",
+                     "rect": "14,534,23,543",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhCQAJANMAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwICAgP8AAAD/AP//AAAA//8A\n/wD//////ywAAAAACQAJAEAEGBDJSSt9IOcnnwceh4Sg14XhiaXjx6JpBAA7"
+                     },
+                     "toolTip": "200086"
+                  }
+               },
+               "200087": {
+                  "#name": "image id 200087",
+                  "properties": {
+                     "id": "200087",
+                     "layer": "51",
+                     "rect": "32,534,41,543",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhCQAJANMAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwICAgP8AAAD/AP//AAAA//8A\n/wD//////ywAAAAACQAJAEAEFRDJSSt9IOcnn/8cAn7dGJqnWY5IBAA7"
+                     },
+                     "toolTip": "200087"
+                  }
+               },
+               "200270": {
+                  "#name": "image id 200270",
+                  "custompropertysets": {
+                     "cREVTempMaster": {
+                        "altId": "0",
+                        "alwaysBuffer": false,
+                        "borderWidth": "2",
+                        "colors": "%file%: assets/revGeneralIcons_1002_200270_cREVTempMaster_colors.png",
+                        "currentFrame": "1",
+                        "disabled": false,
+                        "dontDither": false,
+                        "fileName": null,
+                        "formattedHeight": "10",
+                        "formattedWidth": "13",
+                        "frameCount": "1",
+                        "frameRate": "1,1",
+                        "hotSpot": "1,1",
+                        "id": "200270",
+                        "imagePixmapId": null,
+                        "ink": "srcCopy",
+                        "layer": "94",
+                        "lockLoc": false,
+                        "maskPixmapId": null,
+                        "name": "image id 200270",
+                        "number": "94",
+                        "opaque": true,
+                        "owner": "card id 1002",
+                        "palindromeFrames": false,
+                        "patterns": "\n\n\n\n\n\n\n\n",
+                        "rect": "381,206,394,216",
+                        "repeatCount": "-1",
+                        "showBorder": false,
+                        "size": "886",
+                        "threeD": true,
+                        "toolTip": null,
+                        "visible": true,
+                        "xHot": "1",
+                        "yHot": "1"
+                     }
+                  },
+                  "properties": {
+                     "id": "200270",
+                     "layer": "48",
+                     "rect": "143,354,156,364",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200270_text.png",
+                     "toolTip": "200270"
+                  }
+               },
+               "200275": {
+                  "#name": "image id 200275",
+                  "properties": {
+                     "id": "200275",
+                     "layer": "47",
+                     "rect": "150,334,160,343",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200275_text.png",
+                     "toolTip": "200275"
+                  }
+               },
+               "200276": {
+                  "#name": "image id 200276",
+                  "properties": {
+                     "id": "200276",
+                     "layer": "46",
+                     "rect": "132,334,142,343",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200276_text.png",
+                     "toolTip": "200276"
+                  }
+               },
+               "200304": {
+                  "#name": "image \"dragwidget.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200304",
+                     "layer": "45",
+                     "name": "dragwidget.gif",
+                     "rect": "27,498,40,511",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200304_text.png",
+                     "toolTip": "200304"
+                  }
+               },
+               "200887": {
+                  "#name": "image \"leftarrow.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200887",
+                     "layer": "49",
+                     "name": "leftarrow.gif",
+                     "rect": "157,354,170,364",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200887_text.png",
+                     "toolTip": "200887"
+                  }
+               },
+               "200935": {
+                  "#name": "image \"rightpop.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200935",
+                     "layer": "32",
+                     "name": "rightpop.gif",
+                     "rect": "27,391,43,407",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200935_text.png",
+                     "toolTip": "200935"
+                  }
+               },
+               "200936": {
+                  "#name": "image \"deleteme.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200936",
+                     "layer": "30",
+                     "name": "deleteme.gif",
+                     "rect": "11,391,27,407",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200936_text.png",
+                     "toolTip": "200936"
+                  }
+               },
+               "200937": {
+                  "#name": "image \"uppop.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200937",
+                     "layer": "34",
+                     "name": "uppop.gif",
+                     "rect": "43,391,59,407",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200937_text.png",
+                     "toolTip": "200937"
+                  }
+               },
+               "200938": {
+                  "#name": "image \"downpopinv.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200938",
+                     "layer": "31",
+                     "name": "downpopinv.gif",
+                     "rect": "11,407,27,423",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200938_text.png",
+                     "toolTip": "200938"
+                  }
+               },
+               "200939": {
+                  "#name": "image \"leftpop.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200939",
+                     "layer": "36",
+                     "name": "leftpop.gif",
+                     "rect": "59,391,75,407",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200939_text.png",
+                     "toolTip": "200939"
+                  }
+               },
+               "200940": {
+                  "#name": "image \"uppopinv.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200940",
+                     "layer": "35",
+                     "name": "uppopinv.gif",
+                     "rect": "43,407,59,423",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200940_text.png",
+                     "toolTip": "200940"
+                  }
+               },
+               "200941": {
+                  "#name": "image \"rightpopinv.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200941",
+                     "layer": "33",
+                     "name": "rightpopinv.gif",
+                     "rect": "27,407,43,423",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200941_text.png",
+                     "toolTip": "200941"
+                  }
+               },
+               "200942": {
+                  "#name": "image \"leftpopinv.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200942",
+                     "layer": "37",
+                     "name": "leftpopinv.gif",
+                     "rect": "59,407,75,423",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200942_text.png",
+                     "toolTip": "200942"
+                  }
+               },
+               "200943": {
+                  "#name": "image \"resizebox.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200943",
+                     "layer": "38",
+                     "name": "resizebox.gif",
+                     "rect": "9,499,21,511",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200943_text.png",
+                     "toolTip": "200943"
+                  }
+               },
+               "200946": {
+                  "#name": "image \"triangle1.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200946",
+                     "layer": "15",
+                     "name": "triangle1.gif",
+                     "rect": "11,327,27,343",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200946_text.png",
+                     "toolTip": "200946"
+                  }
+               },
+               "200947": {
+                  "#name": "image \"triangle2.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200947",
+                     "layer": "16",
+                     "name": "triangle2.gif",
+                     "rect": "27,327,43,343",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200947_text.png",
+                     "toolTip": "200947"
+                  }
+               },
+               "200948": {
+                  "#name": "image \"triangle3.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200948",
+                     "layer": "22",
+                     "name": "triangle3.gif",
+                     "rect": "91,327,107,343",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200948_text.png",
+                     "toolTip": "200948"
+                  }
+               },
+               "200949": {
+                  "#name": "image \"triangle4.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200949",
+                     "layer": "18",
+                     "name": "triangle4.gif",
+                     "rect": "43,327,59,343",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200949_text.png",
+                     "toolTip": "200949"
+                  }
+               },
+               "200950": {
+                  "#name": "image \"triangle5.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200950",
+                     "layer": "23",
+                     "name": "triangle5.gif",
+                     "rect": "59,327,75,343",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200950_text.png",
+                     "toolTip": "200950"
+                  }
+               },
+               "200951": {
+                  "#name": "image \"triangle6.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200951",
+                     "layer": "27",
+                     "name": "triangle6.gif",
+                     "rect": "107,327,123,343",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200951_text.png",
+                     "toolTip": "200951"
+                  }
+               },
+               "200952": {
+                  "#name": "image \"triangle7.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200952",
+                     "layer": "24",
+                     "name": "triangle7.gif",
+                     "rect": "75,327,91,343",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_200952_text.png",
+                     "toolTip": "200952"
+                  }
+               },
+               "200954": {
+                  "#name": "image \"animatedexclamation1.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200954",
+                     "layer": "59",
+                     "name": "animatedexclamation1.gif",
+                     "rect": "110,285,127,306",
+                     "repeatCount": "2",
+                     "text": "%file%: assets/revGeneralIcons_1002_200954_text.png",
+                     "toolTip": "200954"
+                  }
+               },
+               "201065": {
+                  "#name": "image \"trianglewin1.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "201065",
+                     "layer": "19",
+                     "name": "trianglewin1.gif",
+                     "rect": "10,348,26,364",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_201065_text.png",
+                     "toolTip": "201065"
+                  }
+               },
+               "201066": {
+                  "#name": "image \"trianglewin2.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "201066",
+                     "layer": "20",
+                     "name": "trianglewin2.gif",
+                     "rect": "26,348,42,364",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_201066_text.png",
+                     "toolTip": "201066"
+                  }
+               },
+               "201067": {
+                  "#name": "image \"trianglewin3.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "201067",
+                     "layer": "21",
+                     "name": "trianglewin3.gif",
+                     "rect": "42,348,58,364",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_201067_text.png",
+                     "toolTip": "201067"
+                  }
+               },
+               "201068": {
+                  "#name": "image \"trianglewin4.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "201068",
+                     "layer": "25",
+                     "name": "trianglewin4.gif",
+                     "rect": "58,348,74,364",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_201068_text.png",
+                     "toolTip": "201068"
+                  }
+               },
+               "201069": {
+                  "#name": "image \"trianglewin5.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "201069",
+                     "layer": "26",
+                     "name": "trianglewin5.gif",
+                     "rect": "74,348,90,364",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_201069_text.png",
+                     "toolTip": "201069"
+                  }
+               },
+               "201186": {
+                  "#name": "image \"triangleup.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "201186",
+                     "layer": "28",
+                     "name": "triangleup.gif",
+                     "rect": "107,348,123,364",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_201186_text.png",
+                     "toolTip": "201186"
+                  }
+               },
+               "201317": {
+                  "#name": "image \"widgets.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "201317",
+                     "layer": "41",
+                     "name": "widgets.gif",
+                     "rect": "44,453,61,472",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhEQATAPIAAAAAANzc3P8z/////6ysrAAAAAAAAAAAACH5BAEAAAIALAAAAAARABMA\nAAhpAAkIHEiwIAEBBAAoXMiw4YCEAyJKnBgxAICHFwNo3MgxAESIHQF0/Jhx40KOJAeYZLgx\nZceXJD0aLHgxYcObCzFS3KmyZsmXLX2q1NgwqE6OJ42CRDpSKFCUPmXOHOgTJ84BAnhqHRAQ\nADs="
+                     },
+                     "toolTip": "201317"
+                  }
+               },
+               "201318": {
+                  "#name": "image \"widgets2.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "201318",
+                     "layer": "40",
+                     "name": "widgets2.gif",
+                     "rect": "27,453,44,472",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhEQATAPIAAAAAANzc3P8z/////5SUlKysrNDQ0AAAACH5BAEAAAIALAAAAAARABMA\nAAh1AAsIHEiwYAEBBQAoXMiw4YCEAyJKnBgxAICHFwNo3MgxAESIHQF0/Jhx40KOJAeYZLgx\nZceXJD0aLHgxYcObCzES2Mmz506SBGYSNFATQFCBDQcS1Ulw4dCiRwcCKLg0YVShVaca2Mq1\n69aiOHEOEECxLMWAADs="
+                     },
+                     "toolTip": "201318"
+                  }
+               },
+               "201319": {
+                  "#name": "image \"widgets1.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "201319",
+                     "layer": "39",
+                     "name": "widgets1.gif",
+                     "rect": "10,453,27,472",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhEQATAPIAAAAAANzc3P8z/////5SUlKysrNDQ0AAAACH5BAEAAAIALAAAAAARABMA\nAAh0AAsIHEiwYAEBBQAoXMiw4YCEBCJKnBgx4UMABAwWNADgYkaCADZ2hAhSIUGOHgc2HIiS\npEaWI0MamEmz5syYDXMuvDigp8+fPQPEHBCgqNGjASxaNNrQqNKORxcefUo0KlKqSLM+TfpS\n5UWdOgcIAEoWaEAAOw=="
+                     },
+                     "toolTip": "201319"
+                  }
+               },
+               "202011": {
+                  "#name": "field id 202011",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Info:</p>",
+                     "id": "202011",
+                     "layer": "3",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "8,36,56,64",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "202012": {
+                  "#name": "field id 202012",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "id": "202012",
+                     "layer": "4",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "12,68,60,96",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "202013": {
+                  "#name": "field id 202013",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Warning:</p>",
+                     "id": "202013",
+                     "layer": "5",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "4,108,64,136",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "202014": {
+                  "#name": "field id 202014",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Question:</p>",
+                     "id": "202014",
+                     "layer": "6",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "4,148,68,176",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "202015": {
+                  "#name": "field id 202015",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Error:</p>",
+                     "id": "202015",
+                     "layer": "7",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "4,72,64,100",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "202249": {
+                  "#name": "image \"triangleleft.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "202249",
+                     "layer": "14",
+                     "name": "triangleleft.gif",
+                     "rect": "126,348,142,364",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhEAAQAPIAAAAAAGZmzJmZ/8zM//8z/7i4uAAAAAAAACH5BAEAAAQALAAAAAAQABAA\nAAg8AAkIHEiwoMGDCBMqXFgQAEOBAAAUYAhggMSFFQNcTFhRgMaJCDt63BgywEiQHAN8pLiS\nIkmMKBnGHBhQADs="
+                     },
+                     "toolTip": "202249"
+                  }
+               },
+               "210001": {
+                  "#name": "image \"alerthand.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210001",
+                     "layer": "1",
+                     "name": "alerthand.gif",
+                     "rect": "72,64,105,97",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210001_text.png",
+                     "toolTip": "210001"
+                  }
+               },
+               "210002": {
+                  "#name": "image \"info.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210002",
+                     "layer": "2",
+                     "name": "info.gif",
+                     "rect": "72,28,105,61",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210002_text.png",
+                     "toolTip": "210002"
+                  }
+               },
+               "210003": {
+                  "#name": "image \"Untitled.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210003",
+                     "layer": "89",
+                     "name": "Untitled.png",
+                     "opaque": false,
+                     "rect": "114,102,146,134",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210003_text.png"
+                  }
+               },
+               "210004": {
+                  "#name": "image \"Untitled.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210004",
+                     "layer": "90",
+                     "name": "Untitled.png",
+                     "opaque": false,
+                     "rect": "114,150,146,182",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210004_text.png"
+                  }
+               },
+               "210005": {
+                  "#name": "image \"Untitled.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210005",
+                     "layer": "92",
+                     "name": "Untitled.png",
+                     "opaque": false,
+                     "rect": "114,24,146,56",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210005_text.png"
+                  }
+               },
+               "210006": {
+                  "#name": "image \"warning.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210006",
+                     "layer": "12",
+                     "name": "warning.gif",
+                     "rect": "160,108,192,140",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210006_text.png",
+                     "toolTip": "210006"
+                  }
+               },
+               "210007": {
+                  "#name": "image \"question.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210007",
+                     "layer": "13",
+                     "name": "question.gif",
+                     "rect": "156,148,188,180",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210007_text.png",
+                     "toolTip": "210007"
+                  }
+               },
+               "210008": {
+                  "#name": "image \"info1.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210008",
+                     "layer": "10",
+                     "name": "info1.gif",
+                     "rect": "160,26,192,58",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210008_text.png",
+                     "toolTip": "210008"
+                  }
+               },
+               "210009": {
+                  "#name": "image id 210009",
+                  "properties": {
+                     "id": "210009",
+                     "layer": "9",
+                     "rect": "72,148,104,180",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210009_text.png",
+                     "toolTip": "210009"
+                  }
+               },
+               "210010": {
+                  "#name": "image \"error.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210010",
+                     "layer": "11",
+                     "name": "error.gif",
+                     "rect": "158,64,190,96",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210010_text.png",
+                     "toolTip": "210010"
+                  }
+               },
+               "210011": {
+                  "#name": "image \"Untitled.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210011",
+                     "layer": "91",
+                     "name": "Untitled.png",
+                     "opaque": false,
+                     "rect": "114,60,146,92",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210011_text.png"
+                  }
+               },
+               "210012": {
+                  "#name": "image \"exclamation.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210012",
+                     "layer": "8",
+                     "name": "exclamation.gif",
+                     "rect": "72,104,104,136",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210012_text.png",
+                     "toolTip": "210012"
+                  }
+               },
+               "210033": {
+                  "#name": "field id 210033",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Disclosure Triangles and Flip Widgets:</p>",
+                     "id": "210033",
+                     "layer": "29",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "5,306,240,326",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "210046": {
+                  "#name": "field id 210046",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Object Move Widgets:</p>",
+                     "id": "210046",
+                     "layer": "42",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "6,369,147,389",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "210047": {
+                  "#name": "field id 210047",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Little Arrows Generic:</p>",
+                     "id": "210047",
+                     "layer": "43",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "6,432,147,452",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "210048": {
+                  "#name": "field id 210048",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Resize Widgets:</p>",
+                     "id": "210048",
+                     "layer": "44",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "6,478,147,498",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "210056": {
+                  "#name": "field id 210056",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Win Hierarchical Field Widgets:</p>",
+                     "id": "210056",
+                     "layer": "52",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "6,515,181,535",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "210057": {
+                  "#name": "field id 210057",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Little Arrows Mac:</p>",
+                     "id": "210057",
+                     "layer": "53",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "144,432,285,452",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "210058": {
+                  "#name": "image \"littlearrow.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210058",
+                     "layer": "54",
+                     "name": "littlearrow.gif",
+                     "rect": "149,453,162,476",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhDQAXAPIAAAAAANzc3P8z/////6ysrAAAAAAAAAAAACH5BAEAAAIALAAAAAANABcA\nAAhjAAUAGEiwIACBAxIqXBhg4IAAECNGJOBQokWKAB5GBCARo8aGAydWBEkQokeSBQOctCgy\nI8uWKgnInDnToM2CC3M+HPlyZc+KN1WONGiSZ8miLjd25MnSZ9OQNKNSFHiToICAADs="
+                     },
+                     "toolTip": "210058"
+                  }
+               },
+               "210059": {
+                  "#name": "image \"littlearrowdis.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210059",
+                     "layer": "55",
+                     "name": "littlearrowdis.gif",
+                     "rect": "164,453,177,476",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhDQAXAPEAANzc3P8z/4iIiAAAACH5BAEAAAEALAAAAAANABcAAAhOAAMIGEiwoACB\nABIqXAhgIMOHDh8ujKhQAEOKDTFSNFjRYkaOGSVO9CgyZMmPBlOSFIlRYkuIHlUm3Fiw48iV\nLVeaLPnyok6IAlUSDBAQADs="
+                     },
+                     "toolTip": "210059"
+                  }
+               },
+               "210060": {
+                  "#name": "image \"littlearrowdown.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210060",
+                     "layer": "56",
+                     "name": "littlearrowdown.gif",
+                     "rect": "179,453,192,476",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhDQAXAPMAAAAAANzc3JmZmf8z/////0xMTHBwcKysrAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAACH5BAEAAAMALAAAAAANABcAAAh4AAcAGEiwIACBBBIqXBhgIIEAECNGPOBQokWK\nAB5GBCARo8aGAydWBEkQokeSBQOctCgyI8uWKg/InDnToM2CBXLq3GlgYAEDQIMGFeBTqFGi\nAH4uVGgA6U8DS4E6DcpUalGqQqcaHXp1a9OBTQWIHTv24M2CAwL+ADs="
+                     },
+                     "toolTip": "210060"
+                  }
+               },
+               "210061": {
+                  "#name": "image \"littlearrowup.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210061",
+                     "layer": "57",
+                     "name": "littlearrowup.gif",
+                     "rect": "194,453,207,476",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhDQAXAPMAAAAAANzc3JmZmf8z/////0xMTHBwcKysrAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAACH5BAEAAAMALAAAAAANABcAAAh4AAcAGEiwIACBBRIqXGhgYAEDECNGFOBQokWK\nAB5GJCARo0YDBEJOrAgypEgDHkuaFJnS4siMLl+iFECzZk2DOAuu3EkgwMCeAYIKDXrg59Cj\nRQH0zBkgKVCDRI0GJSjU6VAAQ60erSp1a9OBTQ+IHTv2YM6CAwICADs="
+                     },
+                     "toolTip": "210061"
+                  }
+               },
+               "210063": {
+                  "#name": "image \"widgetsdis.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210063",
+                     "layer": "58",
+                     "name": "widgetsdis.gif",
+                     "rect": "62,453,79,472",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhEQATAPIAAP8z/////3x8fKysrNDQ0Ojo6AAAAAAAACH5BAEAAAAALAAAAAARABMA\nAAhuAAcIHEiw4AAAAwQoXMiwYYCEASJKnBixgICHFwto3MixAIGLEDsK6PgRYwCOCzmWDKmx\n4caVGTuSBDmSgM2bOG3SbMhzoUmKQC2alDlzaEuGL2me3JgyqVGmRVkS1QjTY86rO3vyDAAA\nqFeJAYkAOw=="
+                     },
+                     "toolTip": "210063"
+                  }
+               },
+               "210065": {
+                  "#name": "image \"Indeterminate Prog Bar Default\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210065",
+                     "layer": "60",
+                     "name": "Indeterminate Prog Bar Default",
+                     "rect": "298,329,398,343",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210065_text.png",
+                     "toolTip": "210065"
+                  }
+               },
+               "210066": {
+                  "#name": "image \"Indeterminate Prog Bar 1\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210066",
+                     "layer": "61",
+                     "name": "Indeterminate Prog Bar 1",
+                     "rect": "298,353,398,367",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210066_text.png",
+                     "toolTip": "210066"
+                  }
+               },
+               "210067": {
+                  "#name": "image \"indeterminate.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210067",
+                     "layer": "83",
+                     "name": "indeterminate.gif",
+                     "rect": "298,376,398,390",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210067_text.png"
+                  }
+               },
+               "210068": {
+                  "#name": "image \"Indeterminate Prog Bar 3\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210068",
+                     "layer": "62",
+                     "name": "Indeterminate Prog Bar 3",
+                     "rect": "298,401,398,415",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210068_text.png",
+                     "toolTip": "210068"
+                  }
+               },
+               "210069": {
+                  "#name": "image \"Indeterminate Prog Bar 4\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210069",
+                     "layer": "63",
+                     "name": "Indeterminate Prog Bar 4",
+                     "rect": "298,425,398,439",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210069_text.png",
+                     "toolTip": "210069"
+                  }
+               },
+               "210070": {
+                  "#name": "image \"Indeterminate Prog Bar 5\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210070",
+                     "layer": "64",
+                     "name": "Indeterminate Prog Bar 5",
+                     "rect": "298,449,398,463",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210070_text.png",
+                     "toolTip": "210070"
+                  }
+               },
+               "210071": {
+                  "#name": "image \"Indeterminate Prog Bar 6\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210071",
+                     "layer": "65",
+                     "name": "Indeterminate Prog Bar 6",
+                     "rect": "298,473,398,487",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210071_text.png",
+                     "toolTip": "210071"
+                  }
+               },
+               "210072": {
+                  "#name": "field id 210072",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Indeterminate Progress Bars:</p>",
+                     "id": "210072",
+                     "layer": "66",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "227,306,402,326",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "210073": {
+                  "#name": "image \"chasing arrows.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210073",
+                     "layer": "67",
+                     "name": "chasing arrows.gif",
+                     "rect": "298,518,314,534",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210073_text.png",
+                     "toolTip": "210073"
+                  }
+               },
+               "210074": {
+                  "#name": "field id 210074",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Chasing Arrows:</p>",
+                     "id": "210074",
+                     "layer": "68",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "227,492,402,512",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "210075": {
+                  "#name": "field id 210075",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Alert Triangle:</p>",
+                     "id": "210075",
+                     "layer": "69",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "4,288,102,308",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "210076": {
+                  "#name": "image \"output.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210076",
+                     "layer": "17",
+                     "name": "output.gif",
+                     "rect": "90,346,106,362",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210076_text.png"
+                  }
+               },
+               "210077": {
+                  "#name": "image \"kde.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210077",
+                     "layer": "70",
+                     "name": "kde.gif",
+                     "rect": "14,652,28,668",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210077_text.png"
+                  }
+               },
+               "210078": {
+                  "#name": "image \"os9.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210078",
+                     "layer": "71",
+                     "name": "os9.gif",
+                     "rect": "14,614,30,630",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210078_text.png"
+                  }
+               },
+               "210079": {
+                  "#name": "image \"os9inv.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210079",
+                     "layer": "72",
+                     "name": "os9inv.gif",
+                     "rect": "32,614,48,630",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhEAAQAPMAAMzMzLi4uKysrKCgoP8z/4CAgHBwcGZmZlhYWExMTDMzZigoKBwcHBAQ\nEAAAAAAAACH5BAEAAAQALAAAAAAQABAAAAiMAAkQUKBAgMCDCAUqYKAgAUGDCwMkVHBgYUOC\nCAgykKjwgAGHDBOIzMjgIMUDHkE2BHlwAcqXHy0ubPnyAIKbJGcKdIkS582FC0rutOnzJ4Og\nLYviBCqUwIKGSoE2CACAgICjUJcebXBgQFWrWBMYXdAgwQGDB68+1UgWQYGvCNVKNcAxocCr\nDbhyDAgAOw=="
+                     }
+                  }
+               },
+               "210080": {
+                  "#name": "image \"os9used.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210080",
+                     "layer": "73",
+                     "name": "os9used.gif",
+                     "rect": "50,614,66,630",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhEAAQAPEAAMzM//8z/wAAAAAAACH5BAEAAAEALAAAAAAQABAAAAhXAAMEEEBQoMGD\nAgkKAKBwYMGDCwEwZEiQogCDCyNOlJgRo8SNIC8mDPmx40iOJUt61MiSoUeUMF2ObIlS5MCU\nMRsqxBlS5M6cHCFWzGkT41CLCIUqFBkQADs="
+                     }
+                  }
+               },
+               "210081": {
+                  "#name": "image \"os9usedinv.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210081",
+                     "layer": "74",
+                     "name": "os9usedinv.gif",
+                     "rect": "70,614,86,630",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhEAAQAPEAAP8z/zMzZgAAAAAAACH5BAEAAAAALAAAAAAQABAAAAhXAAEAEEBQoMGD\nAgkKCKBwYMGDCwMwZEiQogCDCyNOlJgRo8SNIC8mDPmx40iOJUt61MiSoUeUMF2ObIlS5MCU\nMRsqxBlS5M6cHCFWzGkT41CLCIUqFBnwADs="
+                     }
+                  }
+               },
+               "210082": {
+                  "#name": "image \"osx.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210082",
+                     "layer": "75",
+                     "name": "osx.gif",
+                     "rect": "14,592,30,608",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210082_text.png"
+                  }
+               },
+               "210083": {
+                  "#name": "image \"osxinv.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210083",
+                     "layer": "76",
+                     "name": "osxinv.gif",
+                     "rect": "34,592,50,608",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210083_text.png"
+                  }
+               },
+               "210084": {
+                  "#name": "image \"win.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210084",
+                     "layer": "77",
+                     "name": "win.gif",
+                     "rect": "14,634,29,647",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhDwANAPMAAP//zP//mfT09P/MmczMZpmZAP8z/wAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAACH5BAEAAAYALAAAAAAPAA0AAAhdAA0YKECQ4AGBCBEWEAAAQIAABQ4mHEigokUC\nBQsObMixY8MABA4UcPiwpMkBIUeaLDkgQMuUJFe6dAlzZcubIEXGZDkTpU6eOAf4HBm0p9CU\nF5NePHigqdOnTwP+ADs="
+                     }
+                  }
+               },
+               "210085": {
+                  "#name": "image \"windis.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210085",
+                     "layer": "78",
+                     "name": "windis.gif",
+                     "rect": "32,634,47,647",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhDwANAPIAAP//zPT09P/MzMDcwMzMZv8z/3x8fAAAACH5BAEAAAUALAAAAAAPAA0A\nAAhZAAsUIECQoAGBCBESCMAQAAACBxMOHECx4oCCBQcy3Mix4QADCx2KHAlAwMeQJEuqPBkg\npUMBJVmShEkTgMyZKk2CbPkyZ0mdC2sKFQDUolGLBw0oXcqUacAAOw=="
+                     }
+                  }
+               },
+               "210086": {
+                  "#name": "image \"wininv.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210086",
+                     "layer": "79",
+                     "name": "wininv.gif",
+                     "rect": "52,634,67,647",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhDwANAPIAAP8z/3x8fGZmzGZmmWZmZkxMTAAAMwAAACH5BAEAAAAALAAAAAAPAA0A\nAAhVAAEAKECQoAGBCBEWEBCgYYACBxMOJECxIoGCBQc63MiRgIECHEMO8AgyZIABJwOQNNkQ\n5ciPIlOiXBnTJc2WMk++BOky54CfJC0KtXjQgNGjSJEG5AA7"
+                     }
+                  }
+               },
+               "210087": {
+                  "#name": "image \"xp.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210087",
+                     "layer": "80",
+                     "name": "xp.gif",
+                     "rect": "34,572,50,585",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhEAANAPMAAP//////mf/Mmf/MZszMZsyZM5mZAP8z/5lmAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAACH5BAEAAAcALAAAAAAQAA0AAAhpAA8cKECwgMCDCAUWAMAQgMGEBxcGmBgAgIGL\nFxFEpEixIUONCgMIwEiy5MABBjyqFGARQQGUHGMOCGDAJcyYFAnQtGlApICfQAMU2Pmy54Cj\nSI8OrVk0QNKkSzWWnIoRJIKrWLNiPRDwADs="
+                     }
+                  }
+               },
+               "210088": {
+                  "#name": "image \"xpopen.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210088",
+                     "layer": "81",
+                     "name": "xpopen.gif",
+                     "rect": "14,572,30,585",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhEAANAPMAAP//////mf/Mmf/MZv/MM8zMZszMM8yZM8yZAP8z/5lmAAAAAAAAAAAA\nAAAAAAAAACH5BAEAAAkALAAAAAAQAA0AAAhqABMkOEDwgMCDCAUeAMAQAIKECBEACEAxgEME\nGDEeRFCxYkOGCBQI5Gggo0mTIhEIQFDg40cBAFIO4Nix44AAKQnW7FigQE4DOykKICAyAcab\nA5IqTXqgKMYAS6M23XjyZNGDCrJq3Yow4AA7"
+                     }
+                  }
+               },
+               "210089": {
+                  "#name": "field id 210089",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Mini OS Folders:</p>",
+                     "id": "210089",
+                     "layer": "82",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "4,550,179,570",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "210091": {
+                  "#name": "image \"pinstripe.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210091",
+                     "layer": "84",
+                     "name": "pinstripe.gif",
+                     "rect": "228,566,290,610",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhPgAsAJEAAP///+np6fr6+gAAACH5BAAAAAAALAAAAAA+ACwAAAJ9hI+py+0ropy0\n2ouzDbz7D4biSIbaiabnw7Yuq8ZyWtb2Xc/6Tr3+7+IJdbii8TZMqoDMZkIJ1Ryn1E/0anFq\nmdiupAqeer3b8mvcDatxaKz5/Whf1/SSPArPQ+7Kut/El6Q3eBCY9IfYYThESLgolJj4yNM4\nOLkTiXipUwAAOw=="
+                     }
+                  }
+               },
+               "210092": {
+                  "#name": "image \"Error.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210092",
+                     "layer": "85",
+                     "name": "Error.png",
+                     "rect": "231,72,285,126",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210092_text.png"
+                  }
+               },
+               "210093": {
+                  "#name": "image \"Info.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210093",
+                     "layer": "86",
+                     "name": "Info.png",
+                     "opaque": false,
+                     "rect": "230,8,287,65",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210093_text.png"
+                  }
+               },
+               "210094": {
+                  "#name": "image \"Warning.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210094",
+                     "layer": "87",
+                     "name": "Warning.png",
+                     "opaque": false,
+                     "rect": "229,135,285,195",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210094_text.png"
+                  }
+               },
+               "210095": {
+                  "#name": "image \"lc-32.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210095",
+                     "layer": "93",
+                     "name": "lc-32.png",
+                     "rect": "328,102,360,134",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210095_text.png"
+                  }
+               },
+               "210096": {
+                  "#name": "image \"lc-64.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210096",
+                     "layer": "94",
+                     "name": "lc-64.png",
+                     "rect": "416,20,479,84",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210096_text.png"
+                  }
+               },
+               "210097": {
+                  "#name": "image \"Answer Info.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "210097",
+                     "layer": "88",
+                     "name": "Answer Info.png",
+                     "rect": "225,201,289,265",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGeneralIcons_1002_210097_text.png"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": null,
+                  "total": "94"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.6.1",
+         "revstack": false
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "210108"
+         }
+      },
+      "longID": "stack \"revGeneralIcons\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "revgeneralicons.rev",
+         "id": "210110",
+         "liveResizing": false,
+         "name": "revGeneralIcons",
+         "rect": "1001,530,1545,1301",
+         "textFont": "geneva",
+         "textSize": "10",
+         "textStyle": "plain"
+      },
+      "sharedGroupIDs": null
+   }
+}

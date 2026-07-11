@@ -1,0 +1,6 @@
+category=Getting Started
+description=<p>Bouncy is a simple application which can display an image file that you drag and drop onto it, even a transparent image, and bounce it across your desktop.  The program simulates gravity and will &#147;bounce&#148; of the bottom and sides of the screen.</p>\n<p></p>\n<p>The Video Tutorial shows you how to use this Sample Project, and how to take it apart to understand how it works or copy portions of it for use in your own applications.  The PDF contains the same information as the Video, in printable form.</p>\n<p></p>\n<p><font face="Lucida Grande" size="11"><a href="video:Bouncy">Click here to go to the corresponding video and PDF</a></font></p>\n<p></p>\n<p>We recommend you to have explored the introductory video tutorials so you have a basic understanding of how Revolution works before you start on the Sample Projects.</p>
+level=3
+name=Bouncy
+title=Bouncy - just for fun, bouncing an image across your desktop
+topics=<p>The key topics covered in this Project are:</p>\n<p>   - How to create an irregularly shaped window</p>\n<p>   - How to handle a file being drag dropped onto a window</p>\n<p>   - How to move a window by script</p>\n<p>   - How to simulate gravity and play sounds on collision with the edge of the screen</p>

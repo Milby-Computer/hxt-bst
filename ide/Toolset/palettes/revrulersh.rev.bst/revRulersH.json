@@ -1,0 +1,146 @@
+{
+   "#mainstack": "revRulersH",
+   "revRulersH": {
+      "#name": "stack \"revRulersH\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"New Button\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200705",
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "-1,0,1521,16",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1004": {
+                  "#name": "graphic \"end marker\"",
+                  "properties": {
+                     "antialiased": false,
+                     "id": "1004",
+                     "layer": "2",
+                     "name": "end marker",
+                     "points": "279,0\n279,16",
+                     "rect": "275,-1,283,17",
+                     "style": "polygon"
+                  }
+               },
+               "1005": {
+                  "#name": "graphic \"mouse marker\"",
+                  "customproperties": {
+                     "lineColor": "red"
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "foreColor": "255,0,0",
+                     "id": "1005",
+                     "layer": "5",
+                     "name": "mouse marker",
+                     "points": "204,0\n204,12",
+                     "rect": "200,-1,208,13",
+                     "style": "polygon"
+                  }
+               },
+               "1006": {
+                  "#name": "graphic \"right marker\"",
+                  "customproperties": {
+                     "lineColor": "red"
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "foreColor": "blue",
+                     "id": "1006",
+                     "layer": "3",
+                     "name": "right marker",
+                     "points": "-104,0\n-104,12",
+                     "rect": "-108,-1,-100,13",
+                     "style": "polygon"
+                  }
+               },
+               "1007": {
+                  "#name": "graphic \"left marker\"",
+                  "customproperties": {
+                     "lineColor": "red"
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "foreColor": "blue",
+                     "id": "1007",
+                     "layer": "4",
+                     "name": "left marker",
+                     "points": "-104,0\n-104,12",
+                     "rect": "-108,-1,-100,13",
+                     "style": "polygon"
+                  }
+               },
+               "1008": {
+                  "#name": "graphic id 1008",
+                  "properties": {
+                     "antialiased": false,
+                     "foreColor": "255,255,255",
+                     "id": "1008",
+                     "layer": "6",
+                     "points": "1,0\n1,13",
+                     "rect": "0,-1,2,14",
+                     "style": "line"
+                  }
+               }
+            },
+            "customproperties": {
+               "revcard": false
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": null
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cREVCurrentStack": "Untitled 3",
+         "cREVHSubtract": "20",
+         "cREVVSubtract": "-259",
+         "cVersionNo": "2.6.1"
+      },
+      "longID": "stack \"revRulersH\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "bottomColor": "128,128,128",
+         "decorations": null,
+         "fileName": "revrulersh.rev",
+         "foreColor": "Black",
+         "hiliteColor": "102,102,102",
+         "id": "1008",
+         "liveResizing": false,
+         "name": "revRulersH",
+         "rect": "133,422,413,438",
+         "resizable": false,
+         "shadowColor": "darkgray",
+         "style": "modeless",
+         "topColor": "white"
+      },
+      "sharedGroupIDs": null
+   }
+}

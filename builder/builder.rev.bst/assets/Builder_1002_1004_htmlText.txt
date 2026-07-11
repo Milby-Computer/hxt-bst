@@ -1,0 +1,71 @@
+<p><b>[ Fri, 24 Jun 2016 15:53:38 +0100 ] : Building guide into /Users/ianmacphail/workspace/livecode/github/bugfix-develop/ide/Documentation/html_viewer/resources/data/Community/guide/distributed_guide.js</b></p>
+<p>[ Fri, 24 Jun 2016 15:53:38 +0100 ] : Folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/_build/docs/guides doesn't exist</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/ide/Documentation/guides/LiveCode Script.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/ide/Documentation/guides/Programming a User Interface.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/ide/Documentation/guides/Error Handling And Debugging.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/guides/Printing In LiveCode.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/guides/Processing Text and Data.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/guides/Transferring Information.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/guides/Working With Databases.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/ide/Documentation/guides/Working with Media.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/ide/Documentation/guides/The LiveCode IDE.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/ide/Documentation/guides/Deploying Your Application.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/guides/HTML5 Deployment.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/guides/Mac Deployment.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/ide/Documentation/guides/Extending LiveCode.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/guides/LiveCode Builder Language Reference.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/guides/LiveCode Builder Style Guide.md</p>
+<p>[ Fri, 24 Jun 2016 15:53:39 +0100 ] : Building guide /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/guides/LiveCode Documentation Format Reference.md</p>
+<p><b>[ Fri, 24 Jun 2016 15:53:40 +0100 ] : Building api into /Users/ianmacphail/workspace/livecode/github/bugfix-develop/ide/Documentation/html_viewer/resources/data/Community/api/distributed_api.js</b></p>
+<p>[ Fri, 24 Jun 2016 15:53:40 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/dictionary/command</p>
+<p>[ Fri, 24 Jun 2016 15:53:43 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/dictionary/constant</p>
+<p>[ Fri, 24 Jun 2016 15:53:43 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/dictionary/control_st</p>
+<p>[ Fri, 24 Jun 2016 15:53:43 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/dictionary/function</p>
+<p>[ Fri, 24 Jun 2016 15:53:44 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/dictionary/keyword</p>
+<p>[ Fri, 24 Jun 2016 15:53:45 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/dictionary/message</p>
+<p>[ Fri, 24 Jun 2016 15:53:46 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/dictionary/object</p>
+<p>[ Fri, 24 Jun 2016 15:53:46 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/dictionary/operator</p>
+<p>[ Fri, 24 Jun 2016 15:53:46 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/dictionary/property</p>
+<p>[ Fri, 24 Jun 2016 15:53:48 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/a</p>
+<p>[ Fri, 24 Jun 2016 15:53:49 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/b</p>
+<p>[ Fri, 24 Jun 2016 15:53:49 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/c</p>
+<p>[ Fri, 24 Jun 2016 15:53:49 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/d</p>
+<p>[ Fri, 24 Jun 2016 15:53:49 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/e</p>
+<p>[ Fri, 24 Jun 2016 15:53:49 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/f</p>
+<p>[ Fri, 24 Jun 2016 15:53:49 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/g</p>
+<p>[ Fri, 24 Jun 2016 15:53:49 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/h</p>
+<p>[ Fri, 24 Jun 2016 15:53:49 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/i</p>
+<p>[ Fri, 24 Jun 2016 15:53:49 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/j</p>
+<p>[ Fri, 24 Jun 2016 15:53:49 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/k</p>
+<p>[ Fri, 24 Jun 2016 15:53:49 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/l</p>
+<p>[ Fri, 24 Jun 2016 15:53:50 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/m</p>
+<p>[ Fri, 24 Jun 2016 15:53:50 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/n</p>
+<p>[ Fri, 24 Jun 2016 15:53:50 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/o</p>
+<p>[ Fri, 24 Jun 2016 15:53:50 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/p</p>
+<p>[ Fri, 24 Jun 2016 15:53:50 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/q</p>
+<p>[ Fri, 24 Jun 2016 15:53:50 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/r</p>
+<p>[ Fri, 24 Jun 2016 15:53:51 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/s</p>
+<p>[ Fri, 24 Jun 2016 15:53:51 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/t</p>
+<p>[ Fri, 24 Jun 2016 15:53:51 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/u</p>
+<p>[ Fri, 24 Jun 2016 15:53:51 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/v</p>
+<p>[ Fri, 24 Jun 2016 15:53:51 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/w</p>
+<p>[ Fri, 24 Jun 2016 15:53:51 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/x</p>
+<p>[ Fri, 24 Jun 2016 15:53:52 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/glossary/z</p>
+<p>[ Fri, 24 Jun 2016 15:53:52 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/MergExt-Unpacked/MergExt/blur-1.1.16</p>
+<p>[ Fri, 24 Jun 2016 15:53:52 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/MergExt-Unpacked/MergExt/mergAnswerColor-1.0.30</p>
+<p>[ Fri, 24 Jun 2016 15:53:52 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/MergExt-Unpacked/MergExt/mergContact-1.0.26</p>
+<p>[ Fri, 24 Jun 2016 15:53:52 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/MergExt-Unpacked/MergExt/mergDevice-1.0.17</p>
+<p>[ Fri, 24 Jun 2016 15:53:52 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/MergExt-Unpacked/MergExt/mergJSON-1.0.32</p>
+<p>[ Fri, 24 Jun 2016 15:53:52 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/MergExt-Unpacked/MergExt/mergMarkdown-1.0.29</p>
+<p>[ Fri, 24 Jun 2016 15:53:52 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/MergExt-Unpacked/MergExt/mergMicrophone-1.0.29</p>
+<p>[ Fri, 24 Jun 2016 15:53:53 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/MergExt-Unpacked/MergExt/mergScreen-1.0.19</p>
+<p>[ Fri, 24 Jun 2016 15:53:53 +0100 ] : Building dictionary from folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/MergExt-Unpacked/MergExt/rrehardcopy-SDK14.28</p>
+<p>[ Fri, 24 Jun 2016 15:53:53 +0100 ] : Adding docs from /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/builder/language.lcdoc</p>
+<p>[ Fri, 24 Jun 2016 15:54:05 +0100 ] : adding library LiveCode Script to docs database</p>
+<p>[ Fri, 24 Jun 2016 15:54:08 +0100 ] : adding library LiveCode Builder to docs database</p>
+<p>[ Fri, 24 Jun 2016 15:54:08 +0100 ] : Folder /Users/ianmacphail/workspace/livecode/github/bugfix-develop/_build/docs/guides doesn't exist</p>
+<p>[ Fri, 24 Jun 2016 15:54:08 +0100 ] : Archiving /Users/ianmacphail/workspace/livecode/github/bugfix-develop/docs/guides</p>
+<p><font color="#FF0000">docsBuilderGenerateZip:2262[ Fri, 24 Jun 2016 15:54:08 +0100 ] : Archiving failed: zip I/O error: No such file or directory</font></p>
+<p><font color="#FF0000">docsBuilderGenerateZip:2262[ Fri, 24 Jun 2016 15:54:08 +0100 ] : zip error: Could not create output file (/Users/ianmacphail/workspace/livecode/github/bugfix-develop/_build/final/output/LiveCodeCommunityDocs-8_0_3_rc_1.zip)</font></p>
+<p><b>[ Fri, 24 Jun 2016 15:54:09 +0100 ] : Built docs</b></p>
+<p></p>

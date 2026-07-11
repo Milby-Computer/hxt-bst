@@ -1,0 +1,1 @@
+<p><a><font face="verdana" size="11">Mac OS</font></a> and <a><font face="verdana" size="11">OS X</font></a> only; converts all <a><font face="verdana" size="11">PICT</font></a> objects to <a><font face="verdana" size="11">bitmaps</font></a> on import</p>

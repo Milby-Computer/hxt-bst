@@ -1,0 +1,1543 @@
+{
+   "#mainstack": "revSearch",
+   "revObjectProperties": {
+      "#name": "stack \"revObjectProperties\"",
+      "backgroundIDs": "1029\n1031",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1022": {
+                  "#name": "button \"OK\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1022",
+                     "layer": "14",
+                     "name": "OK",
+                     "rect": "214,184,274,201"
+                  }
+               },
+               "1029": "#shared group",
+               "1031": "#shared group",
+               "1037": {
+                  "#name": "button \"Name\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1037",
+                     "layer": "15",
+                     "lockLoc": true,
+                     "name": "Name",
+                     "opaque": false,
+                     "rect": "11,21,175,41",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1044": {
+                  "#name": "button \"Script\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1044",
+                     "layer": "16",
+                     "lockLoc": true,
+                     "name": "Script",
+                     "opaque": false,
+                     "rect": "11,75,175,95",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         },
+         "1029": {
+            "#name": "group \"Object Properties to Search In:\"",
+            "childcontrols": {
+               "1008": {
+                  "#name": "button \"Field Text\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1008",
+                     "layer": "7",
+                     "lockLoc": true,
+                     "name": "Field Text",
+                     "opaque": false,
+                     "rect": "11,39,175,59",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1009": {
+                  "#name": "button \"Button Contents\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1009",
+                     "label": "Button Contents (text)",
+                     "layer": "6",
+                     "lockLoc": true,
+                     "name": "Button Contents",
+                     "opaque": false,
+                     "rect": "11,57,175,77",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Custom Properties\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1010",
+                     "layer": "8",
+                     "lockLoc": true,
+                     "name": "Custom Properties",
+                     "opaque": false,
+                     "rect": "11,152,175,172",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1012": {
+                  "#name": "button \"Script\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1012",
+                     "layer": "9",
+                     "lockLoc": true,
+                     "name": "Script",
+                     "opaque": false,
+                     "rect": "11,75,175,95",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1013": {
+                  "#name": "button \"Other Properties\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1013",
+                     "layer": "10",
+                     "name": "Other Properties",
+                     "opaque": false,
+                     "rect": "11,101,32,121",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1014": {
+                  "#name": "button \"Name\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1014",
+                     "layer": "5",
+                     "lockLoc": true,
+                     "name": "Name",
+                     "opaque": false,
+                     "rect": "11,21,175,41",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1027": {
+                  "#name": "button \"Divider\"",
+                  "properties": {
+                     "disabled": true,
+                     "id": "1027",
+                     "layer": "11",
+                     "name": "Divider",
+                     "rect": "15,147,276,149",
+                     "showName": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1033": {
+                  "#name": "button \"Divider\"",
+                  "properties": {
+                     "disabled": true,
+                     "id": "1033",
+                     "layer": "12",
+                     "name": "Divider",
+                     "rect": "15,96,276,98",
+                     "showName": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1035": {
+                  "#name": "button \"specific property selector\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "id": "1035",
+                     "label": "dontRefresh",
+                     "layer": "13",
+                     "menuMode": "option",
+                     "name": "specific property selector",
+                     "rect": "149,123,278,140",
+                     "style": "menu",
+                     "text": "%file%: assets/revObjectProperties_1029_1035_text.txt",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "hilitedButton": "1",
+               "id": "1029",
+               "layer": "4",
+               "lockLoc": true,
+               "name": "Object Properties to Search In:",
+               "rect": "6,5,286,175",
+               "showBorder": true,
+               "showName": true
+            }
+         },
+         "1031": {
+            "#name": "group \"Other Properties\"",
+            "childcontrols": {
+               "1015": {
+                  "#name": "button \"Specific Property\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1015",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "name": "Specific Property",
+                     "opaque": false,
+                     "rect": "29,121,193,141",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1032": {
+                  "#name": "button \"All Other Object Properties\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1032",
+                     "layer": "2",
+                     "name": "All Other Object Properties",
+                     "opaque": false,
+                     "rect": "29,102,193,122",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               }
+            },
+            "customproperties": {
+               "cOffScreenLoc": "359,53",
+               "cOnScreenLoc": "109,53"
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1031",
+               "layer": "1",
+               "lockLoc": true,
+               "name": "Other Properties",
+               "rect": "25,98,197,145",
+               "sharedBehavior": true
+            }
+         }
+      },
+      "customproperties": {
+         "revstack": false
+      },
+      "longID": "stack \"revObjectProperties\" of stack \"revSearch\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "id": "1044",
+         "liveResizing": false,
+         "name": "revObjectProperties",
+         "rect": "645,136,937,346",
+         "resizable": false,
+         "title": "Object Properties"
+      },
+      "sharedGroupIDs": "1029\n1031"
+   },
+   "revSearch": {
+      "#name": "stack \"revSearch\"",
+      "#substacks": "revObjectProperties",
+      "backgroundIDs": "1149\n1160\n1321\n1359\n1364\n1371",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1111": {
+                  "#name": "scrollbar \"Progress\"",
+                  "customproperties": {
+                     "cOffScreenLoc": "563,101",
+                     "cOnScreenLoc": "356,85",
+                     "revscrollbar": false
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "endValue": "100",
+                     "id": "1111",
+                     "layer": "1",
+                     "lineInc": "11.992065",
+                     "name": "Progress",
+                     "pageInc": "91.876097",
+                     "rect": "506,94,620,108",
+                     "startValue": "0",
+                     "style": "progress",
+                     "thumbSize": "98.999008",
+                     "traversalOn": false
+                  }
+               },
+               "1119": {
+                  "#name": "button \"Divider\"",
+                  "properties": {
+                     "id": "1119",
+                     "layer": "2",
+                     "name": "Divider",
+                     "rect": "14,211,506,213",
+                     "showName": false,
+                     "style": "rectangle",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1135": {
+                  "#name": "button \"DefaultStack\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1135",
+                     "label": "stack \"Copy of revSearch\"",
+                     "layer": "3",
+                     "menuMode": "option",
+                     "name": "DefaultStack",
+                     "rect": "564,38,683,57",
+                     "style": "menu",
+                     "text": "stack \"Copy of revSearch\"",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "1139": {
+                  "#name": "field \"Feedback\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1139",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "Feedback",
+                     "opaque": false,
+                     "rect": "280,40,428,66",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1148": {
+                  "#name": "button \"New Button\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "200943",
+                     "id": "1148",
+                     "layer": "5",
+                     "name": "New Button",
+                     "opaque": false,
+                     "rect": "513,438,525,450",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1149": "#shared group",
+               "1160": "#shared group",
+               "1248": {
+                  "#name": "field \"Search Term\"",
+                  "properties": {
+                     "autoTab": true,
+                     "dontWrap": true,
+                     "id": "1248",
+                     "layer": "25",
+                     "name": "Search Term",
+                     "rect": "50,14,252,35",
+                     "toolTip": "Enter the word or phrase you want to find"
+                  }
+               },
+               "1291": {
+                  "#name": "image \"indeterminate\"",
+                  "customproperties": {
+                     "cOffScreenLoc": "493,100",
+                     "cOnScreenLoc": "378,78"
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1291",
+                     "layer": "19",
+                     "name": "indeterminate",
+                     "rect": "485,92,501,108",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revSearch_1002_1291_text.png",
+                     "toolTip": "210073"
+                  }
+               },
+               "1293": {
+                  "#name": "button \"Search In\"",
+                  "customproperties": {
+                     "cMacOSText": "The current selection\n-\nThis card\nThis stack\nThis stack File\nThis stack file and its stack files\n-\nAll open stacks\nAll open stack files\nSpecific open stack file\n-\nAll stack files in a folder\n-\nGlobal variable contents",
+                     "command": false,
+                     "cPCText": "The current selection\n\nThis card\nThis stack\nThis stack File\nThis stack file and its stack files\n\nAll open stacks\nAll open stack files\nSpecific open stack file\n\nAll stack files in a folder\n\nGlobal variable contents"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1293",
+                     "label": "This stack",
+                     "layer": "24",
+                     "menuHistory": "4",
+                     "menuLines": "14",
+                     "menuMode": "option",
+                     "name": "Search In",
+                     "rect": "50,43,252,65",
+                     "style": "menu",
+                     "text": "The current selection\n-\nThis card\nThis stack\nThis stack File\nThis stack file and its stack files\n-\nAll open stacks\nAll open stack files\nSpecific open stack file\n-\nAll stack files in a folder\n-\nGlobal variable contents",
+                     "textAlign": "left",
+                     "toolTip": "Where to search",
+                     "traversalOn": false
+                  }
+               },
+               "1299": {
+                  "#name": "field \"Label\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "disabled": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Stack</p>",
+                     "id": "1299",
+                     "layer": "23",
+                     "lockText": true,
+                     "name": "Label",
+                     "opaque": false,
+                     "rect": "2,72,52,95",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1321": "#shared group",
+               "1348": {
+                  "#name": "field id 1348",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Find</p>",
+                     "id": "1348",
+                     "layer": "26",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "6,14,50,37",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1349": {
+                  "#name": "field id 1349",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>In</p>",
+                     "id": "1349",
+                     "layer": "27",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "6,42,50,65",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1356": {
+                  "#name": "button \"Search\"",
+                  "customproperties": {
+                     "command": false
+                  },
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "8735"
+                     }
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "default": true,
+                     "disabled": true,
+                     "id": "1356",
+                     "label": "Find",
+                     "layer": "28",
+                     "name": "Search",
+                     "rect": "340,15,422,38"
+                  }
+               },
+               "1359": "#shared group",
+               "1364": "#shared group",
+               "1366": {
+                  "#name": "field \"Disabled\"",
+                  "customproperties": {
+                     "cOffScreenLoc": "-104,58",
+                     "cOnScreenLoc": "151,82"
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "id": "1366",
+                     "layer": "39",
+                     "name": "Disabled",
+                     "rect": "50,72,252,93"
+                  }
+               },
+               "1371": "#shared group",
+               "1374": {
+                  "#name": "button \"Type Resize\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1374",
+                     "layer": "52",
+                     "name": "Type Resize",
+                     "opaque": false,
+                     "rect": "105,213,117,233",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1375": {
+                  "#name": "button \"Name Resize\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1375",
+                     "layer": "53",
+                     "name": "Name Resize",
+                     "opaque": false,
+                     "rect": "218,213,230,233",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1376": {
+                  "#name": "button \"Card Resize\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1376",
+                     "layer": "54",
+                     "name": "Card Resize",
+                     "opaque": false,
+                     "rect": "356,208,368,228",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1383": {
+                  "#name": "scrollbar \"Results\"",
+                  "customproperties": {
+                     null: null,
+                     "revscrollbar": false
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "434,233,450,399",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scalebottomDistance": "-133",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleLeft": false,
+                        "Master,scaleLeftAbsolute": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleLeftObjectSide": null,
+                        "Master,scaleRight": false,
+                        "Master,scaleRightAbsolute": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scaleRightObjectRef": null,
+                        "Master,scaleRightObjectSide": null,
+                        "Master,scaleTop": false,
+                        "Master,scaleTopAbsolute": null,
+                        "Master,scaletopDistance": null,
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaleTopObjectSide": null
+                     }
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "endValue": "132",
+                     "id": "1383",
+                     "layer": "51",
+                     "lineInc": "8.248112",
+                     "name": "Results",
+                     "pageInc": "2.995102",
+                     "rect": "434,233,450,499",
+                     "startValue": "0",
+                     "thumbSize": "132"
+                  }
+               },
+               "1384": {
+                  "#name": "group \"group id 1384\"",
+                  "childcontrols": {
+                     "1379": {
+                        "#name": "field \"Type\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "1",
+                              "Master,expectedRect": "-1,232,50,463",
+                              "Master,movehDistance": false,
+                              "Master,movevDistance": false,
+                              "Master,scaleBottom": true,
+                              "Master,scaleBottomAbsolute": true,
+                              "Master,scalebottomDistance": "-133",
+                              "Master,scaleBottomObjectRef": "Card",
+                              "Master,scaleBottomObjectSide": "Bottom",
+                              "Master,scaleLeft": false,
+                              "Master,scaleLeftAbsolute": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleLeftObjectRef": null,
+                              "Master,scaleLeftObjectSide": null,
+                              "Master,scaleRight": false,
+                              "Master,scaleRightAbsolute": null,
+                              "Master,scalerightDistance": null,
+                              "Master,scaleRightObjectRef": null,
+                              "Master,scaleRightObjectSide": null,
+                              "Master,scaleTop": false,
+                              "Master,scaleTopAbsolute": null,
+                              "Master,scaletopDistance": null,
+                              "Master,scaletopObjectRef": null,
+                              "Master,scaleTopObjectSide": null
+                           }
+                        },
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1379",
+                           "layer": "47",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "Type",
+                           "rect": "-1,232,117,499",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1380": {
+                        "#name": "field \"Name\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "1",
+                              "Master,expectedRect": "48,232,176,463",
+                              "Master,movehDistance": false,
+                              "Master,movevDistance": false,
+                              "Master,scaleBottom": true,
+                              "Master,scaleBottomAbsolute": true,
+                              "Master,scalebottomDistance": "-133",
+                              "Master,scaleBottomObjectRef": "Card",
+                              "Master,scaleBottomObjectSide": "Bottom",
+                              "Master,scaleLeft": false,
+                              "Master,scaleLeftAbsolute": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleLeftObjectRef": null,
+                              "Master,scaleLeftObjectSide": null,
+                              "Master,scaleRight": false,
+                              "Master,scaleRightAbsolute": null,
+                              "Master,scalerightDistance": null,
+                              "Master,scaleRightObjectRef": null,
+                              "Master,scaleRightObjectSide": null,
+                              "Master,scaleTop": false,
+                              "Master,scaleTopAbsolute": null,
+                              "Master,scaletopDistance": null,
+                              "Master,scaletopObjectRef": null,
+                              "Master,scaleTopObjectSide": null
+                           }
+                        },
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1380",
+                           "layer": "48",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "Name",
+                           "rect": "115,232,230,499",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1387": {
+                        "#name": "field \"Card\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "1",
+                              "Master,expectedRect": "174,232,264,490",
+                              "Master,movehDistance": false,
+                              "Master,movevDistance": false,
+                              "Master,scalebottom": true,
+                              "Master,scalebottomAbsolute": true,
+                              "Master,scalebottomDistance": "-133",
+                              "Master,scalebottomObjectRef": "Card",
+                              "Master,scalebottomObjectSide": "Bottom",
+                              "Master,scaleleft": false,
+                              "Master,scaleleftAbsolute": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleleftObjectRef": null,
+                              "Master,scaleleftObjectSide": null,
+                              "Master,scaleright": false,
+                              "Master,scalerightAbsolute": null,
+                              "Master,scalerightDistance": null,
+                              "Master,scalerightObjectRef": null,
+                              "Master,scalerightObjectSide": null,
+                              "Master,scaletop": false,
+                              "Master,scaletopAbsolute": null,
+                              "Master,scaletopDistance": null,
+                              "Master,scaletopObjectRef": null,
+                              "Master,scaletopObjectSide": null
+                           }
+                        },
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1387",
+                           "layer": "49",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "Card",
+                           "rect": "228,232,368,499",
+                           "sharedText": true,
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1388": {
+                        "#name": "field \"Stack\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "1",
+                              "Master,expectedRect": "263,232,520,463",
+                              "Master,movehDistance": false,
+                              "Master,movevDistance": false,
+                              "Master,scaleBottom": true,
+                              "Master,scaleBottomAbsolute": true,
+                              "Master,scalebottomDistance": "-133",
+                              "Master,scaleBottomObjectRef": "Card",
+                              "Master,scaleBottomObjectSide": "Bottom",
+                              "Master,scaleLeft": false,
+                              "Master,scaleLeftAbsolute": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleLeftObjectRef": null,
+                              "Master,scaleLeftObjectSide": null,
+                              "Master,scaleRight": false,
+                              "Master,scaleRightAbsolute": null,
+                              "Master,scalerightDistance": null,
+                              "Master,scaleRightObjectRef": null,
+                              "Master,scaleRightObjectSide": null,
+                              "Master,scaleTop": false,
+                              "Master,scaleTopAbsolute": null,
+                              "Master,scaletopDistance": null,
+                              "Master,scaletopObjectRef": null,
+                              "Master,scaleTopObjectSide": null
+                           }
+                        },
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1388",
+                           "layer": "50",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "Stack",
+                           "rect": "366,232,623,499",
+                           "sharedText": true,
+                           "showFocusBorder": false,
+                           "tabStops": "1000"
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "1,161,356,269",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scalebottomDistance": "-84",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleLeft": false,
+                        "Master,scaleLeftAbsolute": false,
+                        "Master,scaleleftDistance": "0",
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleLeftObjectSide": "center",
+                        "Master,scaleRight": false,
+                        "Master,scaleRightAbsolute": false,
+                        "Master,scalerightDistance": "0",
+                        "Master,scaleRightObjectRef": null,
+                        "Master,scaleRightObjectSide": "center",
+                        "Master,scaleTop": false,
+                        "Master,scaleTopAbsolute": false,
+                        "Master,scaletopDistance": "0",
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaleTopObjectSide": "center"
+                     }
+                  },
+                  "properties": {
+                     "id": "1384",
+                     "layer": "46",
+                     "lockLoc": true,
+                     "name": "group id 1384",
+                     "rect": "-5,227,451,548"
+                  }
+               },
+               "1386": {
+                  "#name": "button \"Stack Resize\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1386",
+                     "layer": "55",
+                     "name": "Stack Resize",
+                     "rect": "1047,213,1059,239",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "opaque",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "200943": {
+                  "#name": "image \"resizebox.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "200943",
+                     "layer": "18",
+                     "name": "resizebox.gif",
+                     "rect": "541,476,553,488",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revSearch_1002_200943_text.png"
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVAudioClipPropertyNames": "frameRate\nscale\nsize\ndontRefresh",
+               "cREVButtonPropertyNames": "%file%: assets/revSearch_1002_cREVButtonPropertyNames.bin",
+               "cREVCardPropertyNames": "threeD\ndefaultButton\ncolors\ncantDelete\nid\naltId\nnumber\ntextStyle\nmarked\nborderWidth\nshowBorder\ntextSize\ntextFont",
+               "cREVFieldPropertyNames": "%file%: assets/revSearch_1002_cREVFieldPropertyNames.bin",
+               "cREVGraphicPropertyNames": "%file%: assets/revSearch_1002_cREVGraphicPropertyNames.bin",
+               "cREVGroupPropertyNames": "traversalOn\nthreeD\nrect\npatterns\nshowName\ncolors\ncantDelete\nvScrollbar\ntabGroupBehavior\nhScrollbar\nid\naltId\nradioBehavior\nnumber\ntextStyle\nlockLoc\nlabel\ntoolTip\nvisible\nborderWidth\nmargins\nshowBorder\ntextSize\ntextFont\nhilitedButton",
+               "cREVImagePropertyNames": "palindromeFrames\nink\nthreeD\nrect\nfileName\ncolors\nyHot\nid\naltId\nmaskPixmapId\nnumber\nframeCount\nlockLoc\nrepeatCount\nsize\nhotSpot\ntoolTip\nalwaysBuffer\nlayer\ndontDither\nvisible\nborderWidth\nimagePixmapId\nopaque\ncurrentFrame\nshowBorder\ndisabled\nxHot",
+               "cREVPlayerPropertyNames": "id\nnumber\nlockLoc\nlayer\nopaque",
+               "cREVPropList": "%file%: assets/revSearch_1002_cREVPropList.bin",
+               "cREVScrollbarPropertyNames": "%file%: assets/revSearch_1002_cREVScrollbarPropertyNames.bin",
+               "cREVStackPropertyNames": "%file%: assets/revSearch_1002_cREVStackPropertyNames.bin",
+               "cREVVideoClipPropertyNames": "playLoudness\nplayDestination\nsize",
+               "revcard": false
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": null,
+                  "total": "55"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "threeD": false
+            }
+         },
+         "1149": {
+            "#name": "group \"Controls\"",
+            "childcontrols": {
+               "1237": {
+                  "#name": "button \"Remove from List\"",
+                  "properties": {
+                     "disabled": true,
+                     "id": "1237",
+                     "layer": "8",
+                     "name": "Remove from List",
+                     "rect": "2,599,119,622"
+                  }
+               },
+               "1238": {
+                  "#name": "field \"Replace\"",
+                  "properties": {
+                     "disabled": true,
+                     "htmlText": {
+                        "1002": "<p></p>"
+                     },
+                     "id": "1238",
+                     "layer": "9",
+                     "name": "Replace",
+                     "rect": "205,600,351,621"
+                  }
+               },
+               "1239": {
+                  "#name": "button \"Replace\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1239",
+                        "UUID": "0b938581-5c72-45be-8fe7-326a27db1841"
+                     }
+                  },
+                  "properties": {
+                     "disabled": true,
+                     "id": "1239",
+                     "label": "Replace All",
+                     "layer": "10",
+                     "name": "Replace",
+                     "rect": "355,599,446,622"
+                  }
+               },
+               "1240": {
+                  "#name": "field \"Item Info\"",
+                  "properties": {
+                     "htmlText": {
+                        "1002": "<p></p>"
+                     },
+                     "id": "1240",
+                     "layer": "11",
+                     "lockText": true,
+                     "name": "Item Info",
+                     "rect": "-1,503,452,586",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "traversalOn": false,
+                     "vScrollbar": true
+                  }
+               },
+               "1242": {
+                  "#name": "field \"replace label\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Replace with:</p>",
+                     "id": "1242",
+                     "layer": "7",
+                     "lockText": true,
+                     "name": "replace label",
+                     "opaque": false,
+                     "rect": "112,600,213,619",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometry": {
+                  "Master": true,
+                  "Master,cardRanking": "1",
+                  "Master,expectedRect": "-94,484,455,626",
+                  "Master,moveH": false,
+                  "Master,moveHAbsolute": false,
+                  "Master,movehDistance": "-0.1",
+                  "Master,moveHObjectRef": null,
+                  "Master,moveHObjectSide": "center",
+                  "Master,moveV": true,
+                  "Master,moveVAbsolute": true,
+                  "Master,movevDistance": "-66",
+                  "Master,moveVObjectRef": "Card",
+                  "Master,moveVObjectSide": "Bottom",
+                  "Master,scalebottom": false,
+                  "Master,scalebottomAbsolute": null,
+                  "Master,scalebottomDistance": null,
+                  "Master,scalebottomObjectRef": null,
+                  "Master,scalebottomObjectSide": null,
+                  "Master,scaleleft": false,
+                  "Master,scaleleftAbsolute": null,
+                  "Master,scaleleftDistance": null,
+                  "Master,scaleleftObjectRef": null,
+                  "Master,scaleleftObjectSide": null,
+                  "Master,scaleright": false,
+                  "Master,scalerightAbsolute": null,
+                  "Master,scalerightDistance": null,
+                  "Master,scalerightObjectRef": null,
+                  "Master,scalerightObjectSide": null,
+                  "Master,scaletop": false,
+                  "Master,scaletopAbsolute": null,
+                  "Master,scaletopDistance": null,
+                  "Master,scaletopObjectRef": null,
+                  "Master,scaletopObjectSide": null
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1149",
+               "layer": "6",
+               "lockLoc": true,
+               "name": "Controls",
+               "rect": "-94,495,455,637"
+            }
+         },
+         "1160": {
+            "#name": "group \"Tabs\"",
+            "childcontrols": {
+               "1183": {
+                  "#name": "button id 1183",
+                  "customproperties": {
+                     "cREVDragTab": true,
+                     "cREVLeftObject": "Card",
+                     "cREVMinWidth": "41",
+                     "cREVRightObject": null,
+                     "cREVTabStopLeft": "3"
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "disabled": true,
+                     "icon": "99999",
+                     "id": "1183",
+                     "layer": "17",
+                     "margins": "6,6,4,4",
+                     "rect": "434,213,450,233",
+                     "sharedHilite": false,
+                     "showIcon": true,
+                     "style": "rectangle",
+                     "textFont": "MS Sans Serif",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1244": {
+                  "#name": "button \"Name\"",
+                  "customproperties": {
+                     "cREVDragTab": true,
+                     "cREVLeftObject": "Type",
+                     "cREVMinWidth": "39",
+                     "cREVRightObject": "Card",
+                     "cREVTabStopLeft": "1"
+                  },
+                  "properties": {
+                     "hilited": true,
+                     "icon": "99999",
+                     "id": "1244",
+                     "layer": "13",
+                     "margins": "6,6,4,7",
+                     "name": "Name",
+                     "rect": "117,213,230,233",
+                     "sharedHilite": false,
+                     "showHilite": true,
+                     "showIcon": true,
+                     "style": "rectangle",
+                     "textFont": "MS Sans Serif",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "toolTip": "Click to sort found objects by name",
+                     "traversalOn": false
+                  }
+               },
+               "1245": {
+                  "#name": "button \"Type\"",
+                  "customproperties": {
+                     "cREVDragTab": true,
+                     "cREVLeftObject": null,
+                     "cREVMinWidth": "39",
+                     "cREVRightObject": "Name",
+                     "cREVTabStopLeft": "0",
+                     "revCustom": false
+                  },
+                  "properties": {
+                     "id": "1245",
+                     "layer": "14",
+                     "margins": "6,6,4,7",
+                     "name": "Type",
+                     "rect": "-1,213,117,233",
+                     "sharedHilite": false,
+                     "style": "rectangle",
+                     "textFont": "MS Sans Serif",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "toolTip": "Click to sort found objects by object type",
+                     "traversalOn": false
+                  }
+               },
+               "1246": {
+                  "#name": "button \"Stack\"",
+                  "customproperties": {
+                     "cREVDragTab": true,
+                     "cREVLeftObject": "Card",
+                     "cREVMinWidth": "41",
+                     "cREVRightObject": null,
+                     "cREVTabStopLeft": "3"
+                  },
+                  "properties": {
+                     "icon": "99999",
+                     "id": "1246",
+                     "layer": "15",
+                     "margins": "20,6,4,7",
+                     "name": "Stack",
+                     "rect": "368,213,1163,233",
+                     "sharedHilite": false,
+                     "showIcon": true,
+                     "style": "rectangle",
+                     "textAlign": "left",
+                     "textFont": "MS Sans Serif",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "toolTip": "Click to sort found objects by the name of their stack",
+                     "traversalOn": false
+                  }
+               },
+               "1247": {
+                  "#name": "button \"Card\"",
+                  "customproperties": {
+                     "cREVDragTab": true,
+                     "cREVLeftObject": "Name",
+                     "cREVMinWidth": "39",
+                     "cREVRightObject": "Stack",
+                     "cREVTabStopLeft": "2"
+                  },
+                  "properties": {
+                     "icon": "99999",
+                     "id": "1247",
+                     "layer": "16",
+                     "margins": "6,6,4,7",
+                     "name": "Card",
+                     "rect": "230,213,368,233",
+                     "sharedHilite": false,
+                     "showIcon": true,
+                     "style": "rectangle",
+                     "textFont": "MS Sans Serif",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "toolTip": "Click to sort found objects by the name of their card",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "hilitedButton": "1",
+               "id": "1160",
+               "layer": "12",
+               "lockLoc": true,
+               "name": "Tabs",
+               "rect": "-6,206,458,236"
+            }
+         },
+         "1321": {
+            "#name": "group \"Folder\"",
+            "childcontrols": {
+               "1340": {
+                  "#name": "field \"Folder\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": {
+                        "1002": "<p>Debug</p>"
+                     },
+                     "id": "1340",
+                     "layer": "21",
+                     "lockText": true,
+                     "name": "Folder",
+                     "opaque": false,
+                     "rect": "-236,60,-98,80",
+                     "showBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1342": {
+                  "#name": "button \"Browse...\"",
+                  "properties": {
+                     "id": "1342",
+                     "layer": "22",
+                     "name": "Browse...",
+                     "rect": "-86,60,-26,83"
+                  }
+               }
+            },
+            "customproperties": {
+               "cOffScreenLoc": "-132,58",
+               "cOnScreenLoc": "148,70"
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1321",
+               "layer": "20",
+               "lockLoc": true,
+               "name": "Folder",
+               "rect": "-240,32,-24,84"
+            }
+         },
+         "1359": {
+            "#name": "group \"Properties\"",
+            "childcontrols": {
+               "1317": {
+                  "#name": "button \"Name\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1317",
+                     "layer": "30",
+                     "name": "Name",
+                     "opaque": false,
+                     "rect": "267,112,335,128",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Find objects whose name contains the term to find"
+                  }
+               },
+               "1318": {
+                  "#name": "button \"Field Text\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1318",
+                     "layer": "31",
+                     "name": "Field Text",
+                     "opaque": false,
+                     "rect": "342,112,428,128",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Find fields that contain the term to find"
+                  }
+               },
+               "1319": {
+                  "#name": "button \"Button Contents\"",
+                  "customproperties": {
+                     "command": false
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "hiliteBorder": false,
+                     "id": "1319",
+                     "label": "Button Text",
+                     "layer": "32",
+                     "name": "Button Contents",
+                     "opaque": false,
+                     "rect": "342,134,438,150",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Find button menus whose menus contains the term to find"
+                  }
+               },
+               "1320": {
+                  "#name": "button \"Script\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1320",
+                     "layer": "33",
+                     "name": "Script",
+                     "opaque": false,
+                     "rect": "267,134,335,150",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Find objects whose script contains the term to find"
+                  }
+               },
+               "1322": {
+                  "#name": "button \"All Other Object Properties\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1322",
+                     "label": "All Other",
+                     "layer": "35",
+                     "name": "All Other Object Properties",
+                     "opaque": false,
+                     "rect": "342,156,421,172",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Find objects whose properties contain the term to find"
+                  }
+               },
+               "1325": {
+                  "#name": "button \"Custom Properties\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1325",
+                     "label": "Custom",
+                     "layer": "34",
+                     "name": "Custom Properties",
+                     "opaque": false,
+                     "rect": "267,156,335,172",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Find objects that have a custom property containing the term to find"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "hilitedButton": "1",
+               "id": "1359",
+               "layer": "29",
+               "lockLoc": true,
+               "name": "Properties",
+               "rect": "264,97,454,184"
+            }
+         },
+         "1364": {
+            "#name": "group \"Specific Stack\"",
+            "childcontrols": {
+               "1295": {
+                  "#name": "field \"Specific Stack\"",
+                  "properties": {
+                     "autoTab": true,
+                     "dontWrap": true,
+                     "htmlText": {
+                        "1002": "<p>Untitled 1</p>"
+                     },
+                     "id": "1295",
+                     "layer": "37",
+                     "name": "Specific Stack",
+                     "rect": "-236,49,-50,70"
+                  }
+               },
+               "1296": {
+                  "#name": "button id 1296",
+                  "customproperties": {
+                     "cDisIcon": "202578",
+                     "cIcon": "202577",
+                     "command": false
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "0",
+                     "hiliteFill": false,
+                     "icon": "202662",
+                     "id": "1296",
+                     "label": "Untitled 1",
+                     "layer": "38",
+                     "menuMode": "popup",
+                     "rect": "-47,49,-30,70",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "menu",
+                     "text": "revTools\nMessage Box\nrevSearch\nrevMenubar\nFind",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cOffScreenLoc": "-135,58",
+               "cOnScreenLoc": "151,81"
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1364",
+               "layer": "36",
+               "lockLoc": true,
+               "name": "Specific Stack",
+               "rect": "-240,41,-30,75"
+            }
+         },
+         "1371": {
+            "#name": "group \"Options\"",
+            "childcontrols": {
+               "1232": {
+                  "#name": "button \"Obey dontSearch properties\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1232",
+                     "label": "Obey dontSearch properties",
+                     "layer": "41",
+                     "name": "Obey dontSearch properties",
+                     "opaque": false,
+                     "rect": "21,156,221,172",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Ignore cards, groups and fields whose dontSearch property is true"
+                  }
+               },
+               "1233": {
+                  "#name": "button \"Search Marked Cards Only\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1233",
+                     "label": "Search                                    cards only",
+                     "layer": "42",
+                     "name": "Search Marked Cards Only",
+                     "opaque": false,
+                     "rect": "21,178,314,194",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Limit search to either marked or unmarked cards only"
+                  }
+               },
+               "1235": {
+                  "#name": "button \"Marked or Unmarked\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "disabled": true,
+                     "id": "1235",
+                     "label": "Unmarked",
+                     "layer": "43",
+                     "menuHistory": "2",
+                     "menuMode": "option",
+                     "name": "Marked or Unmarked",
+                     "rect": "96,175,193,197",
+                     "style": "menu",
+                     "text": "Marked\nUnmarked",
+                     "textAlign": "left",
+                     "toolTip": "Limit search to either marked or unmarked cards only",
+                     "traversalOn": false
+                  }
+               },
+               "1249": {
+                  "#name": "button \"Case sensitive searching\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "id": "1249",
+                     "label": "Case Sensitive",
+                     "layer": "44",
+                     "name": "Case sensitive searching",
+                     "opaque": false,
+                     "rect": "21,112,138,128",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Treat uppercase and lowercase letters as different"
+                  }
+               },
+               "1250": {
+                  "#name": "button \"Term is a regular expression\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1250",
+                     "label": "Reg. Expression",
+                     "layer": "45",
+                     "name": "Term is a regular expression",
+                     "opaque": false,
+                     "rect": "21,134,147,150",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Treat the term to find as a regular expression"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1371",
+               "layer": "40",
+               "lockLoc": true,
+               "name": "Options",
+               "rect": "18,97,253,208"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cButtonContents": false,
+         "cCustomProperties": false,
+         "cDirectory": "/Users/gheizhwinder/Programming/livecode/_build/mac/Debug",
+         "cFieldText": false,
+         "cName": true,
+         "cOtherProperties": false,
+         "cOtherPropertiesSearchType": "All Other Object Properties",
+         "cResult": "%file%: assets/revSearch_cResult.bin",
+         "cREVAudioClipPropertyNames": "dontRefresh\nframeRate\nscale\nsize",
+         "cREVButtonPropertyNames": "%file%: assets/revSearch_cREVButtonPropertyNames.bin",
+         "cREVCardPropertyNames": "altId\nborderWidth\ncantDelete\ncolors\ndefaultButton\nid\nmarked\nnumber\nshowBorder\ntextFont\ntextSize\ntextStyle\nthreeD",
+         "cREVFieldPropertyNames": "%file%: assets/revSearch_cREVFieldPropertyNames.bin",
+         "cREVGraphicPropertyNames": "%file%: assets/revSearch_cREVGraphicPropertyNames.bin",
+         "cREVGroupPropertyNames": "altId\nborderWidth\ncantDelete\ncolors\nhilitedButton\nhScrollbar\nid\nlabel\nlockLoc\nmargins\nnumber\npatterns\nradioBehavior\nrect\nshowBorder\nshowName\ntabGroupBehavior\ntextFont\ntextSize\ntextStyle\nthreeD\ntoolTip\ntraversalOn\nvisible\nvScrollbar",
+         "cREVImagePropertyNames": "altId\nalwaysBuffer\nborderWidth\ncolors\ncurrentFrame\ndisabled\ndontDither\nfileName\nframeCount\nhotSpot\nid\nimagePixmapId\nink\nlayer\nlockLoc\nmaskPixmapId\nnumber\nopaque\npalindromeFrames\nrect\nrepeatCount\nshowBorder\nsize\nthreeD\ntoolTip\nvisible\nxHot\nyHot",
+         "cREVPlayerPropertyNames": "id\nlayer\nlockLoc\nnumber\nopaque",
+         "cREVScrollbarPropertyNames": "%file%: assets/revSearch_cREVScrollbarPropertyNames.bin",
+         "cREVStackPropertyNames": "%file%: assets/revSearch_cREVStackPropertyNames.bin",
+         "cREVVideoClipPropertyNames": "playDestination\nplayLoudness\nsize",
+         "cScript": true,
+         "cVersionNo": "2.6.1",
+         "revstack": false
+      },
+      "custompropertysets": {
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         },
+         "cREVGeometryCache": {
+            "stackID": "1397"
+         }
+      },
+      "longID": "stack \"revSearch\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "revsearch.rev",
+         "id": "1397",
+         "liveResizing": false,
+         "maxWidth": "450",
+         "minHeight": "388",
+         "minWidth": "450",
+         "name": "revSearch",
+         "rect": "285,154,735,786",
+         "title": "Find and Replace"
+      },
+      "sharedGroupIDs": "1149\n1160\n1321\n1359\n1364\n1371"
+   }
+}

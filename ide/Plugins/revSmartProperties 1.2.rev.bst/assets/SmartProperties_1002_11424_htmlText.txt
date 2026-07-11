@@ -1,0 +1,38 @@
+<p><b><font face="Lucida Grande" size="18">SmartProperties</font></b></p>
+<p><b><font face="Lucida Grande" size="11">version 1.2 08/16/03</font></b></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="15">What is it:</font></b></p>
+<p>SmartProperties is a plugin that will make viewing, handling and changing objects' properties a real piece of cake. With a global, side-to-side view of the two objects' properties, comparing and duplicating properties can be done in a snap.</p>
+<p></p>
+<p><b><font face="Lucida Grande" size="15">How to install it:</font></b></p>
+<p>Simply drop revSmartProperties stack in Revolution plugin folder, and restart Revolution. Then to use it, call it from the Development/Plugins menu.</p>
+<p></p>
+<p><b><font face="Lucida Grande" size="15">How to use it:</font></b></p>
+<p>When SmartProperties window is shown, you can capture any selected object's properties by clicking on the left or right <b><font face="Lucida Grande" size="11">Get</font></b><font face="Lucida Grande" size="11"> button. To capture the current stack's properties hold down <b>optionKey</b> while clicking, to capture the current card's properties hold down <b>shiftKey</b> while clicking.</font></p>
+<p>Depending on your preferences setting and whether your captured only one or two objects, full or partial list of properties will be displayed (if you're comparing two different types of objects, only shared properties names will be shown, and the object's names at the top of window will appear in <i><b><font face="Lucida Grande" size="11">italic</font></b></i><font face="Lucida Grande" size="11">).</font></p>
+<p>When two objects are shown, non-matching property values are automatically displayed using a different color. Return char in multi-lined property values will be replaced by &para; char.</p>
+<p></p>
+<p>To dissmiss an object, click on the close box near to the object's name ate the top of window.</p>
+<p></p>
+<p>Once properties are shown, you can change any property value by clicking on it (except <i><font face="Lucida Grande" size="11">id</font></i><font face="Lucida Grande" size="11"> and <i>number</i> which are read-only properties). Boolean values will simply be switched, while other values will be changed using a popping dialog box (take care to keep exixting &para; chars if present). As soon as a value is changed, you'll notice that its text color changes to reflect it, and you can apply those changes to the object by clicking on the left or right <b>Apply</b> button.</font></p>
+<p></p>
+<p>Using checkboxes in the middle of the list, you can mark one or more properties in order to copy their values from one object to the other. Once selection is done, click on the left or right <b><font face="Lucida Grande" size="11">Copy</font></b><font face="Lucida Grande" size="11"> button to move values, and you are then ready to apply changes to the updated object.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="15">Preferences:</font></b></p>
+<p>Clicking on the disclosure triangle at the bottom middle of window will show and hide the Preferences panel.</p>
+<p></p>
+<p><b><font face="Lucida Grande" size="11">Properties display:</font></b><font face="Lucida Grande" size="11"> controls the list display.</font></p>
+<p>&bull; All : all properties are shown</p>
+<p>&bull; Only matching : only matching property values are shown</p>
+<p>&bull; Only non-matching : only non-matching property values are shown</p>
+<p></p>
+<p><b><font face="Lucida Grande" size="11">Checkboxes:</font></b><font face="Lucida Grande" size="11"> shortcut to quicly hilite/unhilite a set of checkboxes.</font></p>
+<p>&bull; All : all checkboxes are hilited</p>
+<p>&bull; None : all checkboxes are unhilited</p>
+<p>&bull; Matching : only matching property values checkboxes are hilited</p>
+<p>&bull; Non-matching : only non-matching property values checkboxes are hilited</p>
+<p></p>
+<p><b><font face="Lucida Grande" size="11">Text color:</font></b><font face="Lucida Grande" size="11"> controls the text color.</font></p>
+<p>&bull; Matching : text color of matching property values</p>
+<p>&bull; Mon-matching : text color of  non-matching property values</p>
+<p>&bull; Changed : text color of changed property values</p>

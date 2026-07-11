@@ -1,0 +1,6 @@
+category=Getting Started
+description=<p>The Kiosk application is a very simple front end to a MySQL database.  Unlike the other sample projects, this application did not require any scripting.  Instead, the connection to the database was created using the point and click Database Query Builder. </p>\n<p></p>\n<p>The Video Tutorial shows you how to use this Sample Project, and how to take it apart to understand how it works or copy portions of it for use in your own applications.  The PDF contains the same information as the Video, in printable form.</p>\n<p></p>\n<p><font face="Lucida Grande" size="11"><a href="video:Kiosk">Click here to go to the corresponding video and PDF</a></font></p>\n<p></p>\n<p><font face="Lucida Grande" size="11">We recommend you to have explored the introductory video tutorials so you have a basic understanding of how Revolution works before you start on the Sample Projects.</font></p>
+level=1
+name=Kiosk
+title=Kiosk - simple MySQL front end
+topics=<p>The key topics covered in this Project are:</p>\n<p>   - Using the Database Query Builder to access a database, navigate to records</p>\n<p>        save data back to the database</p>

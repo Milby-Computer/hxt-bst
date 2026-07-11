@@ -1,0 +1,10 @@
+category=Useful Techniques
+description=<p>Revolution includes full support for accessing and working with SQL databases.  This tutorial introduces you to the Database Query Builder, which enables you to set up a point and click connection to any SQL database.</p>
+duration=5:31
+filename=database_builder.avi
+level=1
+licensed=true
+name=Database Query Builder
+scripts=<p></p>
+title=Database Query Builder: Connecting to an SQL Database
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;When to use an SQL database instead of Revolution&#146;s built-in data storage</p>\n<p>-&#9;How to use the point and click Query Builder and some fields to create a simple front end to any popular SQL database</p>\n<p>-&#9;How to save changes to the database</p>\n<p></p>

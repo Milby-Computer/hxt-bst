@@ -1,0 +1,262 @@
+{
+   "#mainstack": "com.livecode.pi.distribute",
+   "com.livecode.pi.distribute": {
+      "#name": "stack \"com.livecode.pi.distribute\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1007": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1008": {
+                        "#name": "group \"controls\"",
+                        "childcontrols": {
+                           "1003": {
+                              "#name": "button \"Distribute Vertical\"",
+                              "customproperties": {
+                                 "revButton": false
+                              },
+                              "properties": {
+                                 "icon": "202724",
+                                 "id": "1003",
+                                 "layer": "3",
+                                 "name": "Distribute Vertical",
+                                 "rect": "188,94,213,116",
+                                 "showHilite": true,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "rectangle",
+                                 "toolTip": "Distribute Vertically",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1004": {
+                              "#name": "button \"vertical\"",
+                              "customproperties": {
+                                 "revButton": false,
+                                 "Tabs": false
+                              },
+                              "custompropertysets": {
+                                 "cREVDivergedrevLarge": {
+                                    "rect": "13,129,182,147"
+                                 },
+                                 "cREVDivergedrevsmall": null,
+                                 "cREVMaster": {
+                                    "rect": "14,127,144,143"
+                                 },
+                                 "cREVTempMaster": {
+                                    "accelKey": null,
+                                    "accelMods": null,
+                                    "accelText": null,
+                                    "altId": "0",
+                                    "arm": false,
+                                    "armBorder": true,
+                                    "armFill": false,
+                                    "autoArm": false,
+                                    "autoHilite": false,
+                                    "borderWidth": "2",
+                                    "colors": "\n\n\n\n\n\n\n",
+                                    "default": false,
+                                    "disabled": false,
+                                    "family": "0",
+                                    "hilite": false,
+                                    "hiliteBorder": false,
+                                    "hiliteFill": false,
+                                    "hiliteIcon": "0",
+                                    "icon": "0",
+                                    "id": "2228",
+                                    "ink": "srcCopy",
+                                    "label": "First to Last Selected",
+                                    "labelWidth": "0",
+                                    "layer": "12",
+                                    "lockLoc": false,
+                                    "margins": "6,4,4,4",
+                                    "menuHistory": "1",
+                                    "menuLines": "5",
+                                    "menuMode": "option",
+                                    "menuMouseButton": "1",
+                                    "menuName": null,
+                                    "mnemonic": "0",
+                                    "name": "Distribution Method",
+                                    "number": "10",
+                                    "opaque": true,
+                                    "patterns": "\n\n\n\n\n\n\n\n",
+                                    "rect": "14,127,144,143",
+                                    "shadow": false,
+                                    "shadowOffset": "4",
+                                    "sharedHilite": true,
+                                    "showBorder": true,
+                                    "showHilite": false,
+                                    "showIcon": false,
+                                    "showName": true,
+                                    "style": "menu",
+                                    "textAlign": "left",
+                                    "textFont": null,
+                                    "textSize": null,
+                                    "textStyle": null,
+                                    "threeD": true,
+                                    "toolTip": null,
+                                    "traversalOn": false,
+                                    "visible": true
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "hiliteBorder": false,
+                                 "hiliteFill": false,
+                                 "id": "1004",
+                                 "label": "First to Last Selected",
+                                 "layer": "4",
+                                 "margins": "2,4,4,4",
+                                 "menuMode": "popup",
+                                 "name": "vertical",
+                                 "opaque": false,
+                                 "rect": "190,94,213,116",
+                                 "showBorder": false,
+                                 "showName": false,
+                                 "style": "menu",
+                                 "text": "First to Last Selected\nEdge to Edge\nAcross Card",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1005": {
+                              "#name": "button \"Distribute Horizontal\"",
+                              "properties": {
+                                 "icon": "202725",
+                                 "id": "1005",
+                                 "layer": "5",
+                                 "name": "Distribute Horizontal",
+                                 "rect": "151,94,176,116",
+                                 "showHilite": true,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "rectangle",
+                                 "toolTip": "Distribute Horizontally",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1006": {
+                              "#name": "button \"horizontal\"",
+                              "customproperties": {
+                                 "revButton": false,
+                                 "Tabs": false
+                              },
+                              "custompropertysets": {
+                                 "cREVDivergedrevLarge": {
+                                    "rect": "13,129,182,147"
+                                 },
+                                 "cREVDivergedrevsmall": null,
+                                 "cREVMaster": {
+                                    "rect": "14,127,144,143"
+                                 },
+                                 "cREVTempMaster": {
+                                    "accelKey": null,
+                                    "accelMods": null,
+                                    "accelText": null,
+                                    "altId": "0",
+                                    "arm": false,
+                                    "armBorder": true,
+                                    "armFill": false,
+                                    "autoArm": false,
+                                    "autoHilite": false,
+                                    "borderWidth": "2",
+                                    "colors": "\n\n\n\n\n\n\n",
+                                    "default": false,
+                                    "disabled": false,
+                                    "family": "0",
+                                    "hilite": false,
+                                    "hiliteBorder": false,
+                                    "hiliteFill": false,
+                                    "hiliteIcon": "0",
+                                    "icon": "0",
+                                    "id": "2228",
+                                    "ink": "srcCopy",
+                                    "label": "First to Last Selected",
+                                    "labelWidth": "0",
+                                    "layer": "12",
+                                    "lockLoc": false,
+                                    "margins": "6,4,4,4",
+                                    "menuHistory": "1",
+                                    "menuLines": "5",
+                                    "menuMode": "option",
+                                    "menuMouseButton": "1",
+                                    "menuName": null,
+                                    "mnemonic": "0",
+                                    "name": "Distribution Method",
+                                    "number": "10",
+                                    "opaque": true,
+                                    "patterns": "\n\n\n\n\n\n\n\n",
+                                    "rect": "14,127,144,143",
+                                    "shadow": false,
+                                    "shadowOffset": "4",
+                                    "sharedHilite": true,
+                                    "showBorder": true,
+                                    "showHilite": false,
+                                    "showIcon": false,
+                                    "showName": true,
+                                    "style": "menu",
+                                    "textAlign": "left",
+                                    "textFont": null,
+                                    "textSize": null,
+                                    "textStyle": null,
+                                    "threeD": true,
+                                    "toolTip": null,
+                                    "traversalOn": false,
+                                    "visible": true
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "hiliteBorder": false,
+                                 "hiliteFill": false,
+                                 "id": "1006",
+                                 "label": "First to Last Selected",
+                                 "layer": "6",
+                                 "margins": "2,4,4,4",
+                                 "menuMode": "popup",
+                                 "name": "horizontal",
+                                 "opaque": false,
+                                 "rect": "151,94,176,116",
+                                 "showBorder": false,
+                                 "showName": false,
+                                 "style": "menu",
+                                 "text": "First to Last Selected\nEdge to Edge\nAcross Card",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1008",
+                           "layer": "2",
+                           "name": "controls",
+                           "rect": "147,90,217,120"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1007",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "143,86,221,124"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"com.livecode.pi.distribute\"",
+      "properties": {
+         "fileName": "com.livecode.pi.distribute.livecode",
+         "id": "1008",
+         "name": "com.livecode.pi.distribute",
+         "rect": "455,181,855,581"
+      },
+      "sharedGroupIDs": null
+   }
+}

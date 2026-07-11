@@ -1,0 +1,78 @@
+<p><font face="Verdana" size="18">Creating Reports</font></p>
+<p></p>
+<p>One of the most powerful features of any SQL database is it's ability to retun sorted data quickly. For instance, let's say we would like to generate a report of all applications bought by Fred Flintstone.</p>
+<p></p>
+<p><b><font face="Tahoma" size="11">Joining Tables</font></b></p>
+<p>A <b><font face="Tahoma" size="11">Join</font></b><font face="Tahoma" size="11"> is a temporary relationship that you can create between two tables in a database query that do not already have an established relationship. Joins are crucial to the successful development of database applications of any useful complexity. There are two basic types of joins: inner joins and outer joins.</font></p>
+<p></p>
+<p><b><font face="Tahoma" size="18">Inner Join 1</font></b></p>
+<p></p>
+<p><b><font face="Tahoma" size="11">Definition:  </font></b><font face="Tahoma" size="11">An inner join is a join that selects only those records from both database tables that have matching values. Records with values in the joined field that do not appear in both of the database tables will be excluded from the query. One or more fields can serve as the join fields.</font></p>
+<p></p>
+<p><img src="innerJoin.gif" char=" "></p>
+<p></p>
+<p></p>
+<p>Let's first get a list of all users and corresponding apps they've purchased.</p>
+<p></p>
+<p>We have 2 tables: <b><font face="Tahoma" size="11">users</font></b><font face="Tahoma" size="11"> and <b>apps</b>. We want to find all the records in <b>apps</b> with the foreign key <b>appUserID</b> equal to the primary key <b>userID</b> in the table <b>users</b>. In other words, we want to <b>join</b> the <b>users</b> table with the <b>apps</b> table where the <b>users.userID</b>=<b>apps.appUserID</b>. This is called an <b>inner join</b>. (The "dot" notation is crucial. The string before the dot identifies the table; the string after the dot defines the column name in that table on which we want to search or match.)</font></p>
+<p></p>
+<p>The <b><font face="Tahoma" size="11">inner join</font></b><font face="Tahoma" size="11"> is the most typical of joins and the one you'll use most often. Because of this, the SQL is very straightforward.</font></p>
+<p></p>
+<p>Here's the SQL to do this:</p>
+<p></p>
+<p>SELECT users.Name, apps.appName</p>
+<p>FROM users, apps</p>
+<p>WHERE users.userID=apps.appUserID</p>
+<p></p>
+<p>This inner join will create a list with the users name and the app they purchased on each line. Users who did not purchase an app will NOT be included.</p>
+<p></p>
+<p>Notice the 'dot' notation, where the text preceeding the dot is the table name, and after the dot is the column name. You can use this anytime you like to refer to a specific table.column.</p>
+<p></p>
+<p>The script to do this is:</p>
+<p></p>
+<p><font face="Courier New" size="12">put "SELECT users.Name, apps.appName FROM users,apps WHERE users.userID=apps.appUserID" into tSQL</font></p>
+<p><font face="Courier New" size="12">put revDataFromQuery(comma,cr,connectionID,tSQL) into tTmp</font></p>
+<p><font face="Courier New" size="12">--&gt; Note we used comma as the column delimeter so it will display properly in the answer dialog</font></p>
+<p></p>
+<p>Press the <b><font face="Tahoma" size="11">Inner Join 1</font></b><font face="Tahoma" size="11"> button to see how this works! (If you see no data, please go back 1 screen and press the <b>Default Data</b> button)</font></p>
+<p></p>
+<p><b><font face="Tahoma" size="18">Inner Join 2</font></b></p>
+<p></p>
+<p>Next, we want to show ONLY those applications purchased by Fred Flintstone. So we need to add to our existing SQL:</p>
+<p></p>
+<p><font face="Courier New" size="12">put "SELECT users.Name, apps.appName FROM users,apps WHERE users.userID=apps.appUserID" AND users.name='Fred Flintstone'" into tSQL</font></p>
+<p></p>
+<p>Press the <b><font face="Tahoma" size="11">Inner Join 2 </font></b><font face="Tahoma" size="11"> button to see how this works!</font></p>
+<p></p>
+<p><b><font face="Tahoma" size="18">Inner Join 3</font></b></p>
+<p></p>
+<p>Now, lets' generate a report of all the people who purchased Revolution Enterprise. Again we'll use an inner join.</p>
+<p></p>
+<p><font face="Courier New" size="12">put "SELECT users.Name, apps.appName FROM users,apps WHERE users.userID=apps.appUserID" AND apps.appName='Revolution Enterprise'" into tSQL</font></p>
+<p></p>
+<p><b><font face="Tahoma" size="18">Left Outer Join 1</font></b></p>
+<p></p>
+<p><b><font face="Tahoma" size="11">Definition:</font></b><font face="Tahoma" size="11"> An outer join selects all of the records from one database table and only those records in the second table that have matching values in the joined field. In a left outer join, the selected records will include all of the records in the first database table. One or more fields can serve as the join field(s).</font></p>
+<p></p>
+<p><img src="outerJoin.gif" char=" "></p>
+<p></p>
+<p>To generate a list of all the users with their associated application(s) whether they have one or not, we'll use an Outer Join. Note: SQLlite doesn't use Right Outer Joins, which shouldn't be a problem because a Left Outer Join can do everthing a Right Outer Join can do.</p>
+<p></p>
+<p>The SQL for an Outer Join is:</p>
+<p></p>
+<p>SELECT users.name, apps.appName</p>
+<p>FROM users</p>
+<p>LEFT JOIN apps</p>
+<p>ON users.userID = apps.appUserID</p>
+<p></p>
+<p>And the corresponding script:</p>
+<p></p>
+<p><font face="Courier New" size="12">put "SELECT users.name, apps.appName FROM users LEFT JOIN apps ON users.userID=apps.appUserID" into tSQL</font></p>
+<p></p>
+<p><b><font face="Tahoma" size="18">Left Outer Join 2</font></b></p>
+<p></p>
+<p>To generate an alphabetized list of all the users with a total of apps owned for each user ordered alphabetically, we'll use an outer join. This one will use much more advanced SQL. You can <a href="http://www.w3schools.com/sql/sql_quickref.asp"><font face="Tahoma" size="11">visit www.w3schools.com to learn more about SQL commands</font></a><font face="Tahoma" size="11"> like COUNT, GROUP, ORDER.</font></p>
+<p></p>
+<p><font face="Courier New" size="12">put "SELECT users.name, COUNT(apps.appID) FROM users LEFT JOIN apps ON users.userID=apps.appUserID GROUP BY name ORDER BY name" into tSQL</font></p>
+<p></p>
+<p></p>

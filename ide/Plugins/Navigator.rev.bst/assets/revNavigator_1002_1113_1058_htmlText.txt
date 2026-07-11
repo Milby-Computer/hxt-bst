@@ -1,0 +1,4 @@
+<p><b><font face="Courier" size="14">Navigator 2.5b2</font></b></p>
+<p><font face="Courier" size="12">by Geoff Canyon</font></p>
+<p><font face="Courier" size="12">www.inspiredlogic.com/navigator</font></p>
+<p><font face="Courier" size="12">Navigator is shareware $20</font></p>

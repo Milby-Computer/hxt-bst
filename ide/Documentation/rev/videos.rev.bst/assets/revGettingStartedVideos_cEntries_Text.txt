@@ -1,0 +1,10 @@
+category=Building an Application using Objects
+description=<p>Revolution makes it very easy to work with text.  Revolution understands text in the same way that you do &#150; referring to it using words, lines, and characters.  This tutorial takes you through the basics of writing scripts to work with text.</p>
+duration=8:13
+filename=free_text.avi
+level=1
+licensed=false
+name=Text
+scripts=<p><font face="Courier New" size="11"></font><font face="Lucida Grande" size="12"></font><font face="Lucida Grande" size="11">Scripts Used in this Tutorial:</font></p>\n<p></p>\n<p></p>
+title=Text: how an application handles characters, words, text and HTML
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p></p>\n<p>-&#9;You can work with text using natural, English-like statements</p>\n<p>-&#9;How to refer to text in a script</p>\n<p>-&#9;How to do a word, line or character count</p>\n<p>-&#9;How to insert text into a paragraph</p>\n<p>-&#9;How to work with the clipboard from a script</p>\n<p>-&#9;Working with styled text using HTML</p>\n<p></p>

@@ -1,0 +1,7 @@
+<p><font face="helvetica"><b>Description:</b></font></p>
+<p>The Calculator application is a simple calculator.  This example uses custom properties and logic to respond to user entries and calculate values.</p>
+<p></p>
+<p><font face="helvetica"><b>Topics:</b></font></p>
+<p>The key topics covered in this Project are:</p>
+<p>   - How to evaluate user entries to calculate a value</p>
+<p>   - How to ignore unwanted keystrokes</p>

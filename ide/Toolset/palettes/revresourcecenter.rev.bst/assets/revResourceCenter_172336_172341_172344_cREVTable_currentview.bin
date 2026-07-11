@@ -1,0 +1,46 @@
+<p><font size="12" color="#000000">The contents you see here serve the following purposes:</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; External Creator V1.rev &#150; a small Revolution utility to help you setup an external project</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; libexternal &#150; this project folder contains the special glue-code that all externals need to be linked with in order to bind to Revolution. (It is a project in its own right that builds as a static library).</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; templates &#150; this folder contains template project files used by the External Creator to setup new external projects.</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; configurations &#150; this folder contains two kinds of file vsprops and xcconfig. These contain settings for different variants of builds on different platforms.</font></p>
+<p></p>
+<p><font size="12" color="#000000">In later sections we will refer to this folder as the environment &#150; in addition to what it currently contains, it will also hold our external projects themselves.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Note: Although the environment folder will unpack to ExternalsEnvironmentV1, you are free to rename it to anything.</font></p>
+<p></p>
+<p><font size="14" color="#990006"><b>An aside on projects</b></font></p>
+<p><font size="12" color="#000000">Both Visual Studio and XCode rely on the idea of projects to organize development. A project defines the type of entity to be built along with all the build parameters and source-files needed to do the build.</font></p>
+<p></p>
+<p><font size="12" color="#000000">In Visual Studio, projects are organized into solutions - a collection of projects that can reference each other to help organize dependancies. In our case, our solution will contain one project for each different external, all which depend on the project libexternal to ensure that the special glue-code that makes an external an external is available.</font></p>
+<p><font size="12" color="#000000">In XCode, on the other hand, there is no need for a solution. Any XCode project can reference another XCode project and depend on what it produces. However, in the end this amounts to the same thing as Visual Studio &#150; although the XCode model is sligthly more flexible.</font></p>
+<p></p>
+<p><font size="14" color="#990006"><b>An aside on build configurations</b></font></p>
+<p><font size="12" color="#000000">One concept that will be new to you if you haven&#146;t built projects in lower-level languages before will be that of build configuration. A build configuration is a collection of settings that define both the type of build and also the variant of the current platform to build for.</font></p>
+<p></p>
+<p><font size="12" color="#000000">For example, lower-level languages typically require you to compile in a different way if you wish to debug your code (this is the Debug configuration in our case) or release your project (this is one of the Release configurations in our case).</font></p>
+<p></p>
+<p><font size="12" color="#000000">Furthermore, the existence of single OSes targetting different architectures means that there are generally a multiplicity of Release builds needed. For example, for Mac OS X, we need ones for both PowerPC and Intel, as well as one for both (i.e. Universal).</font></p>
+<p></p>
+<p><font size="12" color="#000000">However, you needn&#146;t worry about all the details here as the skeleton environment comes with a collection of configurations that are completely compatible with Revolution (i.e. they should just work!).</font></p>
+<p></p>
+<p><font size="14" color="#990006"><b>Our first external &#150; working with text: a take on Hello, World!</b></font></p>
+<p><font size="12" color="#000000"><b>Setting up the project</b></font></p>
+<p><font size="12" color="#000000">The first thing to do is to create a skeleton project for our first external. Included with the skeleton environment is a Revolution stack called External Creator. This little tool helps to start off creating an external by setting up the project (potentially for multiple platforms) including directory structure and build configurations. Furthermore, it creates an empty test stack to load the new external.</font></p>
+<p></p>
+<p><font size="12" color="#000000">So, with the External Creator loaded into Revolution do the following:</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; fill in the <b>Name </b>field with rnahello (we use the three-letter prefix rna to stand for Revolution Newsletter Article)</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; check the appropriate platforms</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; choose C++ (no exceptions, no rtti) as the language</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; ensure the <b>Installation </b>paths are filled in correctly.</font></p>
+<p></p>
+<p><font size="12" color="#000000">You should end up with something like:</font></p>
+<p></p>
+<p></p>

@@ -1,0 +1,94 @@
+{
+   "#mainstack": "LCLibraryTest",
+   "LCLibraryTest": {
+      "#name": "stack \"LCLibraryTest\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"Button\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1004",
+                        "UUID": "eb531c28-e471-4c54-abc3-7d28560a1af3"
+                     }
+                  },
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "name": "Button",
+                     "rect": "8,8,90,31",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Field\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1006",
+                        "UUID": "6bdf3155-f6d0-433c-a5d9-0a7a4075badf"
+                     }
+                  },
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/LCLibraryTest_1002_1006_htmlText.txt",
+                     "id": "1006",
+                     "layer": "2",
+                     "name": "Field",
+                     "rect": "8,36,392,280",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1009": {
+                  "#name": "field \"Field\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1009",
+                        "UUID": "210e5bee-9cf5-4fa2-b06d-7657ecccd3cd"
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "%file%: assets/LCLibraryTest_1002_1009_htmlText.txt",
+                     "id": "1009",
+                     "layer": "3",
+                     "name": "Field",
+                     "rect": "8,288,392,392",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "uVersion": {
+                  "ID": "1002",
+                  "UUID": "3bd1ec94-a8dd-4d48-8fd7-f5c9b7f5dc3c"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "uVersion": {
+            "ID": "1002",
+            "UUID": "8452c6da-34f3-4a95-ad17-fd54548268f3"
+         }
+      },
+      "longID": "stack \"LCLibraryTest\"",
+      "properties": {
+         "fileName": "library_test.livecode",
+         "id": "1010",
+         "name": "LCLibraryTest",
+         "rect": "104,109,504,509"
+      },
+      "sharedGroupIDs": null
+   }
+}

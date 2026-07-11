@@ -1,0 +1,159 @@
+{
+   "#mainstack": "Zip Build Sampler",
+   "Zip Build Sampler": {
+      "#name": "stack \"Zip Build Sampler\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Main\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"Files\"",
+                  "properties": {
+                     "blendLevel": "37",
+                     "dontWrap": true,
+                     "id": "1004",
+                     "layer": "2",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "name": "Files",
+                     "rect": "5,5,335,187",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1007": {
+                  "#name": "button \"Clear\"",
+                  "properties": {
+                     "id": "1007",
+                     "layer": "3",
+                     "name": "Clear",
+                     "rect": "253,190,335,213"
+                  }
+               },
+               "1009": {
+                  "#name": "button \"Create\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1009",
+                     "layer": "4",
+                     "name": "Create",
+                     "rect": "5,191,87,214"
+                  }
+               },
+               "1011": {
+                  "#name": "field \"Label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Drag Files to Add to Archive"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "<p>Drag Files to Add to Archive</p>",
+                     "id": "1011",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "Label",
+                     "opaque": false,
+                     "rect": "27,47,303,147",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textFont": "Tahoma",
+                     "textHeight": "32",
+                     "textSize": "24",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "4"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Main"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1011"
+         },
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "cursors": false,
+            "inclusions": "select",
+            "MacOS,creator": "????",
+            "MacOS,documentType": null,
+            "MacOS,dynamicMemory": true,
+            "MacOS,longVersion": "Zip Build Sampler 1.0.0.0",
+            "MacOS,MinimumSize": "15000",
+            "MacOS,PreferredSize": "15000",
+            "MacOS,Region": "1",
+            "MacOS,Release": "Final",
+            "MacOS,versionnumber1": "1",
+            "MacOS,versionnumber2": "0",
+            "MacOS,versionnumber3": "0",
+            "MacOS68k": false,
+            "MacOSfat": false,
+            "MacOSPPC": false,
+            "MacOSX": true,
+            "MacOSX PowerPC-32": false,
+            "MacOSX x86-32": false,
+            "name": "Zip Build Sampler",
+            "OSX,copyright": "2006  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,identifier": "com..zipbuildsampler",
+            "OSX,info": "Zip Build Sampler Version 1.0.0.0",
+            "OSX,longVersion": "Zip Build Sampler 1.0.0.0",
+            "OSX,name": "Zip Build Sampler",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "scriptLibraries": "Animation\nRevolution Zip\n",
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Windows": true,
+            "Windows,buildU3": false,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "//Marcus-van-houd/marcusvanhoudt/Desktop/Masters/2.7.3-gm-1/Runtime/Windows/x86-32/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "Zip Build Sampler 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "//Marcus-van-houd/marcusvanhoudt/Desktop/Masters/2.7.3-gm-1/Runtime/Windows/x86-32/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2006  All rights reserved worldwide",
+            "Windows,ProductName": "Zip Build Sampler",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0"
+         }
+      },
+      "longID": "stack \"Zip Build Sampler\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "Zip Build Sampler.rev",
+         "id": "1011",
+         "liveResizing": false,
+         "name": "Zip Build Sampler",
+         "rect": "105,145,444,363",
+         "resizable": false
+      },
+      "sharedGroupIDs": null
+   }
+}

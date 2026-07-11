@@ -1,0 +1,28 @@
+<p><font face="Verdana" size="18">Accessing Databases with RevDB </font></p>
+<p></p>
+<p><font size="14"><b>Basics</b></font></p>
+<p></p>
+<p>It's important to understand some basic concepts about how Revolution accesses databases using the built-in 'revDB' libraries.</p>
+<p></p>
+<p>Revolution provides a standard interface for connecting and accessing many different types of databases. Included in the standard interface are a number of 'revDB' function and handlers. We will be using some of them in this demo.</p>
+<p></p>
+<p>In addition to providing a rich set of commands and functions for accessing databases directly, it also provides the 'Database Query Builder' to allow you to more visually connect fields and other controls to database queries. SQLite can be used in this manner easily, just choose 'SQLite' as the database in the Database Query Builder dialog.</p>
+<p></p>
+<p>Also, Revolution allows users to work with Record Sets and Data Lists. We will only be dealing with Data Lists in this Demo. In fact, for basic databases it is typically easier to work with Data Lists rather than Record Sets, especially considering Rev's fine parsing capablities.</p>
+<p></p>
+<p><b>Commands and Functions</b></p>
+<p></p>
+<p>There are only a small number  of revDB calls we'll be using:</p>
+<p></p>
+<p><font face="Courier New" size="12">revOpenDatabase(&quot;sqlite&quot;,[filepath],,,,,,)</font></p>
+<p><font face="Courier New" size="12">revCloseDatabase databaseID</font></p>
+<p><font face="Courier New" size="12">revDataFromQuery([columnDelim],[rowDelim],databaseID,SQLQuery[,varsList])</font></p>
+<p><font face="Courier New" size="12">revExecuteSQL(databaseID,SQLQuery[,variablesList])</font></p>
+<p></p>
+<p><a href="revOpenDatabase">revOpenDatabase</a> is responsible for connecting and/or creating SQLite databases.</p>
+<p><a href="revCloseDatabase">revCloseDatabase</a> disconnects from a connected database</p>
+<p><a href="revDataFromQuery">revDataFromQuery</a> returns the results in a list from a SQL query</p>
+<p><a href="revExecuteSQL">revExecuteSQL</a> executes a SQL query when no results are expected</p>
+<p></p>
+<p></p>
+<p>Using only these functions, we can create some very sophisticated database applications. If you would like to learn more about revDB please check out the documentation and video tutorials.</p>

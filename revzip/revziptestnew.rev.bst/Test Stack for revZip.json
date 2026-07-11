@@ -1,0 +1,149 @@
+{
+   "#mainstack": "Test Stack for revZip",
+   "Test Stack for revZip": {
+      "#name": "stack \"Test Stack for revZip\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"Archive to Open\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>C:/Workspace/Projects/revZip Test/Apps.zip</p>",
+                     "id": "1004",
+                     "layer": "1",
+                     "name": "Archive to Open",
+                     "rect": "18,48,158,69",
+                     "visible": false
+                  }
+               },
+               "1007": {
+                  "#name": "button \"..\"",
+                  "properties": {
+                     "id": "1007",
+                     "layer": "2",
+                     "name": "..",
+                     "rect": "162,47,244,70",
+                     "visible": false
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Extract Files\"",
+                  "properties": {
+                     "id": "1010",
+                     "layer": "3",
+                     "name": "Extract Files",
+                     "rect": "20,80,112,103",
+                     "visible": false
+                  }
+               },
+               "1012": {
+                  "#name": "field \"Field\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "4",
+                     "name": "Field",
+                     "rect": "18,128,296,264",
+                     "scrollbarWidth": "15",
+                     "style": "scrolling",
+                     "visible": false,
+                     "vScrollbar": true
+                  }
+               },
+               "1015": {
+                  "#name": "button \"Build Archive\"",
+                  "properties": {
+                     "id": "1015",
+                     "layer": "5",
+                     "name": "Build Archive",
+                     "rect": "21,273,113,296",
+                     "visible": false
+                  }
+               },
+               "1017": {
+                  "#name": "field \"Temp Folder\"",
+                  "properties": {
+                     "htmlText": "<p>###C:/Workspace/Projects/revZip Test</p>",
+                     "id": "1017",
+                     "layer": "6",
+                     "name": "Temp Folder",
+                     "rect": "22,9,370,30",
+                     "visible": false
+                  }
+               },
+               "1019": {
+                  "#name": "field \"Log\"",
+                  "customproperties": {
+                     "cCurrentObject": "stack \"c:/Workspace/Projects/Engine/revzip/revziptestnew.rev\""
+                  },
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p></p>\n<p><font color=\"#000000\">begin</font>:\"Running All tests\"</p>\n<p><font color=\"#000000\">begin</font>:\"GetAttributes\"</p>",
+                     "id": "1019",
+                     "layer": "7",
+                     "name": "Log",
+                     "rect": "8,0,392,352",
+                     "scrollbarWidth": "15",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1022": {
+                  "#name": "button \"Run Normal Tests\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1022",
+                     "layer": "8",
+                     "name": "Run Normal Tests",
+                     "rect": "255,448,377,471"
+                  }
+               },
+               "1024": {
+                  "#name": "button \"Run Bad Tests\"",
+                  "properties": {
+                     "id": "1024",
+                     "layer": "9",
+                     "name": "Run Bad Tests",
+                     "rect": "142,448,252,471"
+                  }
+               },
+               "1028": {
+                  "#name": "field \"Callback Log\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1028",
+                     "layer": "10",
+                     "lockText": true,
+                     "name": "Callback Log",
+                     "opaque": false,
+                     "rect": "14,360,1122,442",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"Test Stack for revZip\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "externals": "/Users/mark/Desktop/externals/_build/Release/revzip.bundle",
+         "fileName": "revziptestnew.rev",
+         "id": "1028",
+         "liveResizing": false,
+         "name": "Test Stack for revZip",
+         "rect": "329,180,956,729"
+      },
+      "sharedGroupIDs": null
+   }
+}

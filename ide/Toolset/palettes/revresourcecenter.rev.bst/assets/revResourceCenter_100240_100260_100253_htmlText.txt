@@ -1,0 +1,11 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">put</font> prefixed(field "List",field "Prefix") into field "List"</p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#0000FF">function</font> prefixed listOfLines,thePrefix</p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> each line theLine in listOfLines</p>
+<p>    <font color="#0000FF">put</font> thePrefix &amp; theLine &amp; <font color="#0000FF">return</font> after newList</p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#0000FF">return</font> char 1 to -2 of newList <font color="#68228B">-- leave off trailing return</font></p>
+<p><font color="#980517">end</font> prefixed </p>

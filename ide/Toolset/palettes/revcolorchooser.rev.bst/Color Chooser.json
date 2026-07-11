@@ -1,0 +1,778 @@
+{
+   "#mainstack": "Color Chooser",
+   "Color Chooser": {
+      "#name": "stack \"Color Chooser\"",
+      "#substacks": null,
+      "backgroundIDs": "1189\n1190\n1191\n1192\n1199",
+      "cardIDs": "1001",
+      "childcontrols": {
+         "1001": {
+            "#name": "card id 1001",
+            "childcontrols": {
+               "1187": {
+                  "#name": "button \"Chooser Type\"",
+                  "properties": {
+                     "id": "1187",
+                     "layer": "1",
+                     "lockLoc": true,
+                     "menuMode": "tabbed",
+                     "name": "Chooser Type",
+                     "opaque": false,
+                     "rect": "8,8,220,236",
+                     "shadowColor": "191,191,191",
+                     "showName": false,
+                     "style": "menu",
+                     "text": "Palette\nName\nRGB\nHSV",
+                     "textAlign": "left",
+                     "textFont": "helvetica",
+                     "textSize": "10",
+                     "textStyle": "plain"
+                  }
+               },
+               "1189": "#shared group",
+               "1190": "#shared group",
+               "1191": "#shared group",
+               "1192": "#shared group",
+               "1199": "#shared group",
+               "1201": {
+                  "#name": "field id 1201",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>ink:</p>",
+                     "id": "1201",
+                     "layer": "45",
+                     "lockText": true,
+                     "rect": "264,0,304,24",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "opaque",
+                     "traversalOn": false
+                  }
+               },
+               "1202": {
+                  "#name": "button \"ink\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1202",
+                     "label": "srcCopy",
+                     "layer": "46",
+                     "menuHistory": "15",
+                     "menuMode": "option",
+                     "name": "ink",
+                     "rect": "304,4,452,24",
+                     "style": "menu",
+                     "text": "clear\nsrcAnd\nsrcAndReverse\nsrcCopy\nnotSrcAnd\nnoop\nsrcXor\nsrcOr\nnotSrcOrReverse\nnotSrcXor\nreverse\nsrcOrReverse\nnotSrcCopy\nnotSrcOr\nnotSrcOrReverse\nset\n-\nsrcBic\nnotSrcBic\nblend\naddpin\naddOver\nsubPin\ntransparent\naddMax\nsubOver\nadMin",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "1205": {
+                  "#name": "button \"OK\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1205",
+                     "layer": "47",
+                     "menuMode": "pulldown",
+                     "name": "OK",
+                     "rect": "20,248,72,276",
+                     "sharedHilite": false
+                  }
+               },
+               "1206": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1206",
+                     "layer": "48",
+                     "menuMode": "pulldown",
+                     "name": "Cancel",
+                     "rect": "148,248,208,276",
+                     "sharedHilite": false
+                  }
+               },
+               "1207": {
+                  "#name": "group \"Patches\"",
+                  "childcontrols": {
+                     "1146": {
+                        "#name": "button \"Pencolor\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "0,0,0",
+                           "id": "1146",
+                           "layer": "3",
+                           "name": "Pencolor",
+                           "rect": "224,200,244,220",
+                           "showName": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     },
+                     "1147": {
+                        "#name": "button \"Brushcolor\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "black",
+                           "id": "1147",
+                           "layer": "4",
+                           "name": "Brushcolor",
+                           "rect": "352,200,372,220",
+                           "showName": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     },
+                     "1148": {
+                        "#name": "button \"Foregroundcolor\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "216,220,216",
+                           "id": "1148",
+                           "layer": "5",
+                           "name": "Foregroundcolor",
+                           "rect": "224,48,244,68",
+                           "showName": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     },
+                     "1149": {
+                        "#name": "button \"Backgroundcolor\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "216,220,216",
+                           "id": "1149",
+                           "layer": "6",
+                           "name": "Backgroundcolor",
+                           "rect": "224,80,244,100",
+                           "showName": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     },
+                     "1150": {
+                        "#name": "button \"Hilitecolor\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "216,220,216",
+                           "id": "1150",
+                           "layer": "7",
+                           "name": "Hilitecolor",
+                           "rect": "224,112,244,132",
+                           "showName": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     },
+                     "1151": {
+                        "#name": "button \"Bordercolor\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "216,220,216",
+                           "id": "1151",
+                           "layer": "8",
+                           "name": "Bordercolor",
+                           "rect": "224,144,244,164",
+                           "showName": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     },
+                     "1152": {
+                        "#name": "button \"Topcolor\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "id": "1152",
+                           "layer": "9",
+                           "name": "Topcolor",
+                           "rect": "352,48,372,68",
+                           "showName": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     },
+                     "1153": {
+                        "#name": "button \"Bottomcolor\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "id": "1153",
+                           "layer": "10",
+                           "name": "Bottomcolor",
+                           "rect": "352,80,372,100",
+                           "showName": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     },
+                     "1154": {
+                        "#name": "button \"Shadowcolor\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "id": "1154",
+                           "layer": "11",
+                           "name": "Shadowcolor",
+                           "rect": "352,112,372,132",
+                           "showName": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     },
+                     "1155": {
+                        "#name": "button \"Focuscolor\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "id": "1155",
+                           "layer": "12",
+                           "name": "Focuscolor",
+                           "rect": "352,144,372,164",
+                           "showName": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1207",
+                     "layer": "2",
+                     "name": "Patches",
+                     "rect": "220,44,376,224",
+                     "visible": false
+                  }
+               },
+               "1209": {
+                  "#name": "button \"answerColor\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "backColor": "0,0,0",
+                     "id": "1209",
+                     "layer": "49",
+                     "name": "answerColor",
+                     "rect": "100,252,120,272",
+                     "showName": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1001"
+            }
+         },
+         "1189": {
+            "#name": "group \"Palette\"",
+            "childcontrols": {
+               "1037": {
+                  "#name": "colorPalette \"Color map\"",
+                  "properties": "%no properties%"
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1189",
+               "layer": "13",
+               "name": "Palette",
+               "radioBehavior": false,
+               "rect": "12,32,212,232"
+            }
+         },
+         "1190": {
+            "#name": "group \"Name\"",
+            "childcontrols": {
+               "1067": {
+                  "#name": "field \"Color Names\"",
+                  "properties": {
+                     "htmlText": "%file%: assets/Color Chooser_1190_1067_htmlText.txt",
+                     "id": "1067",
+                     "layer": "17",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "margins": "6",
+                     "name": "Color Names",
+                     "rect": "16,76,208,224",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1162": {
+                  "#name": "field \"Color Name\"",
+                  "properties": {
+                     "autoTab": true,
+                     "htmlText": {
+                        "1001": "<p>0,0,0</p>"
+                     },
+                     "id": "1162",
+                     "layer": "16",
+                     "name": "Color Name",
+                     "rect": "16,40,152,68",
+                     "shadowColor": "191,191,191"
+                  }
+               },
+               "1163": {
+                  "#name": "button \"Clear\"",
+                  "properties": {
+                     "id": "1163",
+                     "layer": "18",
+                     "menuMode": "tabbed",
+                     "name": "Clear",
+                     "rect": "160,40,208,68"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1190",
+               "layer": "15",
+               "name": "Name",
+               "radioBehavior": false,
+               "rect": "12,36,212,228",
+               "shadowColor": "191,191,191",
+               "visible": false
+            }
+         },
+         "1191": {
+            "#name": "group \"RGB\"",
+            "childcontrols": {
+               "1074": {
+                  "#name": "scrollbar \"R\"",
+                  "properties": {
+                     "endValue": "255",
+                     "id": "1074",
+                     "layer": "21",
+                     "lineInc": "0",
+                     "name": "R",
+                     "pageInc": "15",
+                     "rect": "36,52,204,88",
+                     "showValue": true,
+                     "startValue": "0",
+                     "style": "scale",
+                     "thumbSize": "40.2607"
+                  }
+               },
+               "1075": {
+                  "#name": "scrollbar \"G\"",
+                  "properties": {
+                     "endValue": "255",
+                     "id": "1075",
+                     "layer": "22",
+                     "lineInc": "0",
+                     "name": "G",
+                     "pageInc": "15",
+                     "rect": "36,104,204,140",
+                     "showValue": true,
+                     "startValue": "0",
+                     "style": "scale",
+                     "thumbSize": "40.2607"
+                  }
+               },
+               "1076": {
+                  "#name": "scrollbar \"B\"",
+                  "properties": {
+                     "endValue": "255",
+                     "id": "1076",
+                     "layer": "23",
+                     "lineInc": "0",
+                     "name": "B",
+                     "pageInc": "15",
+                     "rect": "36,156,204,192",
+                     "showValue": true,
+                     "startValue": "0",
+                     "style": "scale",
+                     "thumbSize": "40.2607"
+                  }
+               },
+               "1166": {
+                  "#name": "field \"LabelR\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>R:</p>",
+                     "id": "1166",
+                     "layer": "20",
+                     "lockText": true,
+                     "name": "LabelR",
+                     "opaque": false,
+                     "rect": "12,66,36,92",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent"
+                  }
+               },
+               "1169": {
+                  "#name": "field \"LabelG\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>G:</p>",
+                     "id": "1169",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "LabelG",
+                     "opaque": false,
+                     "rect": "12,118,36,144",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent"
+                  }
+               },
+               "1170": {
+                  "#name": "field \"LabelB\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>B:</p>",
+                     "id": "1170",
+                     "layer": "25",
+                     "lockText": true,
+                     "name": "LabelB",
+                     "opaque": false,
+                     "rect": "12,172,36,198",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1191",
+               "layer": "19",
+               "name": "RGB",
+               "radioBehavior": false,
+               "rect": "8,48,208,202",
+               "shadowColor": "191,191,191",
+               "visible": false
+            }
+         },
+         "1192": {
+            "#name": "group \"HSV\"",
+            "childcontrols": {
+               "1193": {
+                  "#name": "scrollbar \"H\"",
+                  "properties": {
+                     "endValue": "359",
+                     "id": "1193",
+                     "layer": "27",
+                     "lineInc": "0",
+                     "name": "H",
+                     "pageInc": "34.692103",
+                     "rect": "36,52,204,88",
+                     "showValue": true,
+                     "style": "scale",
+                     "thumbSize": "66.409659"
+                  }
+               },
+               "1194": {
+                  "#name": "scrollbar \"S\"",
+                  "properties": {
+                     "endValue": "100",
+                     "id": "1194",
+                     "layer": "28",
+                     "lineInc": "0",
+                     "name": "S",
+                     "pageInc": "9.999237",
+                     "rect": "36,104,204,140",
+                     "showValue": true,
+                     "style": "scale",
+                     "thumbSize": "18.518349"
+                  }
+               },
+               "1195": {
+                  "#name": "scrollbar \"V\"",
+                  "properties": {
+                     "endValue": "100",
+                     "id": "1195",
+                     "layer": "29",
+                     "lineInc": "0",
+                     "name": "V",
+                     "pageInc": "9.999237",
+                     "rect": "36,156,204,192",
+                     "showValue": true,
+                     "style": "scale",
+                     "thumbSize": "18.518349"
+                  }
+               },
+               "1196": {
+                  "#name": "field \"LabelH\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>H:</p>",
+                     "id": "1196",
+                     "layer": "30",
+                     "lockText": true,
+                     "name": "LabelH",
+                     "opaque": false,
+                     "rect": "12,66,36,92",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent"
+                  }
+               },
+               "1197": {
+                  "#name": "field \"LabelS\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>S:</p>",
+                     "id": "1197",
+                     "layer": "31",
+                     "lockText": true,
+                     "name": "LabelS",
+                     "opaque": false,
+                     "rect": "12,118,36,144",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent"
+                  }
+               },
+               "1198": {
+                  "#name": "field \"LabelV\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>V:</p>",
+                     "id": "1198",
+                     "layer": "32",
+                     "lockText": true,
+                     "name": "LabelV",
+                     "opaque": false,
+                     "rect": "10,170,34,196",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1192",
+               "layer": "26",
+               "name": "HSV",
+               "radioBehavior": false,
+               "rect": "6,48,208,200",
+               "shadowColor": "191,191,191",
+               "visible": false
+            }
+         },
+         "1199": {
+            "#name": "group \"Index\"",
+            "childcontrols": {
+               "1123": {
+                  "#name": "button \"Pen\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1123",
+                     "layer": "42",
+                     "menuMode": "pulldown",
+                     "name": "Pen",
+                     "opaque": false,
+                     "rect": "248,200,348,220",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1124": {
+                  "#name": "button \"Brush\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1124",
+                     "layer": "43",
+                     "menuMode": "pulldown",
+                     "name": "Brush",
+                     "opaque": false,
+                     "rect": "376,200,452,220",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1125": {
+                  "#name": "button \"Foreground\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1125",
+                     "layer": "34",
+                     "menuMode": "pulldown",
+                     "name": "Foreground",
+                     "opaque": false,
+                     "rect": "248,48,348,68",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1126": {
+                  "#name": "button \"Background\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1126",
+                     "layer": "35",
+                     "menuMode": "pulldown",
+                     "name": "Background",
+                     "opaque": false,
+                     "rect": "248,80,348,100",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1127": {
+                  "#name": "button \"Hilite\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1127",
+                     "layer": "36",
+                     "menuMode": "pulldown",
+                     "name": "Hilite",
+                     "opaque": false,
+                     "rect": "248,112,348,132",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1128": {
+                  "#name": "button \"Border\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1128",
+                     "layer": "37",
+                     "menuMode": "pulldown",
+                     "name": "Border",
+                     "opaque": false,
+                     "rect": "248,144,348,164",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1129": {
+                  "#name": "button \"Top\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1129",
+                     "layer": "38",
+                     "menuMode": "pulldown",
+                     "name": "Top",
+                     "opaque": false,
+                     "rect": "376,48,452,68",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1130": {
+                  "#name": "button \"Bottom\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1130",
+                     "layer": "39",
+                     "menuMode": "pulldown",
+                     "name": "Bottom",
+                     "opaque": false,
+                     "rect": "376,80,452,100",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1131": {
+                  "#name": "button \"Shadow\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1131",
+                     "layer": "40",
+                     "menuMode": "pulldown",
+                     "name": "Shadow",
+                     "opaque": false,
+                     "rect": "376,112,452,132",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1132": {
+                  "#name": "button \"Focus\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1132",
+                     "layer": "41",
+                     "menuMode": "pulldown",
+                     "name": "Focus",
+                     "opaque": false,
+                     "rect": "376,144,452,164",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1203": {
+                  "#name": "button \"answer\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "hiliteFill": false,
+                     "id": "1203",
+                     "layer": "44",
+                     "menuMode": "pulldown",
+                     "name": "answer",
+                     "opaque": false,
+                     "rect": "272,176,376,192",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left",
+                     "visible": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "hilitedButton": "11",
+               "id": "1199",
+               "layer": "33",
+               "name": "Index",
+               "rect": "244,44,456,224",
+               "shadowColor": "191,191,191",
+               "tabGroupBehavior": true,
+               "visible": false
+            }
+         }
+      },
+      "custompropertysets": {
+         "uVersion": {
+            "ID": "1209",
+            "UUID": "783cf462-1deb-4779-b2d8-0fc4e537e39b"
+         }
+      },
+      "longID": "stack \"Color Chooser\"",
+      "properties": {
+         "bottomColor": "172,172,172",
+         "decorations": "default",
+         "fileName": "revcolorchooser.rev",
+         "id": "1209",
+         "liveResizing": false,
+         "name": "Color Chooser",
+         "rect": "658,229,882,517",
+         "resizable": false,
+         "shadowColor": "191,191,191"
+      },
+      "sharedGroupIDs": "1189\n1190\n1191\n1192\n1199"
+   }
+}

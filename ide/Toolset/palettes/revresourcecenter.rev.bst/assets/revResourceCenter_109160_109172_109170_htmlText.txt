@@ -1,0 +1,10 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> isOSX</p>
+<p>  <font color="#68228B">-- Mac OS system versions are of the form "x.y.z"</font></p>
+<p>  <font color="#68228B">-- OS X system versions are "10.x.x"</font></p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">itemDelimiter</font> to "."</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">platform</font> is "MacOS" \</p>
+<p>     and item 1 of the <font color="#F88017">systemVersion</font> &gt;= 10 \</p>
+<p>     <font color="#980517">then</font> <font color="#0000FF">return</font> true</p>
+<p>  <font color="#980517">else</font> <font color="#0000FF">return</font> false</p>
+<p><font color="#980517">end</font> isOSX</p>

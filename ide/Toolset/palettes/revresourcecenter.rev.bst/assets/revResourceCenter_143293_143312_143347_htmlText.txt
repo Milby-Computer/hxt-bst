@@ -1,0 +1,9 @@
+<p><font face="Lucida Grande" size="12" color="#000000">General Tips</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull;  If there is a resizeStack handler in your stack, you will need to pass the resizeStack message at the end of the handler in order to make the geometry manager work.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull;  If you intend to make your stack resizable, either with a resize handler or using the geometry manager, it&rsquo;s a good idea to keep on top of things as you go along, this prevents the number of controls you need to deal with from getting out of hand.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull;  To force the geometry to manually update at any time you can use the revUpdateGeometry command.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull;  You can use the Geometry Manager to scale objects with a divider bar. Link the edges of the controls to the divider bar, add a script in the divider to move in response to a mouse action, then call revUpdateGeometry each time it moves to have the objects scale automatically.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull;  Setting a minimum height and width for your stack in the size &amp; position section of the property inspector can prevent overlapping of controls when the stack becomes too small.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">For further information on using this feature see section 4.4 of the user guide.</font></p>

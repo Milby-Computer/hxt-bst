@@ -1,0 +1,21 @@
+preOpenCard
+extensionInitialize
+pMessage
+__FindAllCallback
+revSEGetLastSelectedWord
+getSearchContext
+$LIVECODE_USE_CEF
+set the mainstack
+DataGrid
+Data Grid
+open secure
+https
+revLibraryMapping
+_internal library mapping
+revEnvironmentNonNativeBinariesPath
+external-tmp
+revCopyMobileExternals
+jarFiles
+revStandaloneCopyInclusions
+revCopyExternals
+revSBUpdateForDependencies

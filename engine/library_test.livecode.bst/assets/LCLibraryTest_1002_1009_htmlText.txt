@@ -1,0 +1,137 @@
+<p>[13378] [Emit] BeginLibraryModule(foo.test) -&gt; 0</p>
+<p>[13378] [Emit] DefinitionIndex(-&gt; 0)</p>
+<p>[13378] [Emit] DefinitionIndex(-&gt; 1)</p>
+<p>[13378] [Emit] DefinitionIndex(-&gt; 2)</p>
+<p>[13378] [Emit] BoolType(-&gt; 0)</p>
+<p>[13378] [Emit] BeginRecordType(0)</p>
+<p>[13378] [Emit] UIntType(-&gt; 1)</p>
+<p>[13378] [Emit] HandlerTypeParameter(0, pWidth, 1)</p>
+<p>[13378] [Emit] UIntType(-&gt; 1)</p>
+<p>[13378] [Emit] HandlerTypeParameter(0, pHeight, 1)</p>
+<p>[13378] [Emit] BoolType(-&gt; 0)</p>
+<p>[13378] [Emit] HandlerTypeParameter(0, pAlpha, 0)</p>
+<p>[13378] [Emit] PointerType(-&gt; 2)</p>
+<p>[13378] [Emit] HandlerTypeParameter(1, rContext, 2)</p>
+<p>[13378] [Emit] EndHandlerType(-&gt; 3)</p>
+<p>[13378] [Emit] ForeignHandlerDefinition(0, MCGContextCreate, 3, &lt;builtin&gt;)</p>
+<p>[13378] [Emit] BoolType(-&gt; 0)</p>
+<p>[13378] [Emit] BeginRecordType(0)</p>
+<p>[13378] [Emit] PointerType(-&gt; 2)</p>
+<p>[13378] [Emit] HandlerTypeParameter(0, pContext, 2)</p>
+<p>[13378] [Emit] AnyType(-&gt; 4)</p>
+<p>[13378] [Emit] OptionalType(4 -&gt; 5)</p>
+<p>[13378] [Emit] HandlerTypeParameter(1, rCanvas, 5)</p>
+<p>[13378] [Emit] EndHandlerType(-&gt; 6)</p>
+<p>[13378] [Emit] ForeignHandlerDefinition(1, MCCanvasCreate, 6, &lt;builtin&gt;)</p>
+<p>[13378] [Emit] NumberType(-&gt; 7)</p>
+<p>[13378] [Emit] BeginRecordType(7)</p>
+<p>[13378] [Emit] NumberType(-&gt; 7)</p>
+<p>[13378] [Emit] HandlerTypeParameter(0, pVar, 7)</p>
+<p>[13378] [Emit] EndHandlerType(-&gt; 8)</p>
+<p>[13378] [Emit] BeginHandlerDefinition(2, myTest, 8)</p>
+<p>[13378] [Emit] NumberType(-&gt; 7)</p>
+<p>[13378] [Emit] HandlerParameter(pVar, 7 -&gt; 0)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 0)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 1)</p>
+<p>[13378] [Emit] PointerType(-&gt; 2)</p>
+<p>[13378] [Emit] HandlerVariable(tContext, 2 -&gt; 1)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 2)</p>
+<p>[13378] [Emit] AssignInteger(2, 200)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 3)</p>
+<p>[13378] [Emit] AssignInteger(3, 200)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 4)</p>
+<p>[13378] [Emit] AssignUndefined(4)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 5)</p>
+<p>[13378] [Emit] BeginExecuteInvoke(0, 0, 1)</p>
+<p>[13378] [Emit] ContinueInvoke(2)</p>
+<p>[13378] [Emit] ContinueInvoke(3)</p>
+<p>[13378] [Emit] ContinueInvoke(4)</p>
+<p>[13378] [Emit] ContinueInvoke(5)</p>
+<p>[13378] [Emit] EndInvoke()</p>
+<p>[13378] [Emit] StoreLocal(5, 1)</p>
+<p>[13378] [Emit] DestroyRegister(2)</p>
+<p>[13378] [Emit] DestroyRegister(3)</p>
+<p>[13378] [Emit] DestroyRegister(4)</p>
+<p>[13378] [Emit] DestroyRegister(5)</p>
+<p>[13378] [Emit] AnyType(-&gt; 4)</p>
+<p>[13378] [Emit] OptionalType(4 -&gt; 5)</p>
+<p>[13378] [Emit] HandlerVariable(tCanvas, 5 -&gt; 2)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 2)</p>
+<p>[13378] [Emit] FetchLocal(2, 1)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 3)</p>
+<p>[13378] [Emit] BeginExecuteInvoke(1, 0, 1)</p>
+<p>[13378] [Emit] ContinueInvoke(2)</p>
+<p>[13378] [Emit] ContinueInvoke(3)</p>
+<p>[13378] [Emit] EndInvoke()</p>
+<p>[13378] [Emit] StoreLocal(3, 2)</p>
+<p>[13378] [Emit] DestroyRegister(2)</p>
+<p>[13378] [Emit] DestroyRegister(3)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 2)</p>
+<p>[13378] [Emit] AssignReal(2, 0.500000)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 3)</p>
+<p>[13378] [Emit] BeginDefinitionGroup()</p>
+<p>[13378] [Emit] ModuleDependency(com.livecode.canvas -&gt; 0)</p>
+<p>[13378] [Emit] UndefinedType(-&gt; 9)</p>
+<p>[13378] [Emit] ImportedHandler(1, MCCanvasGraphicEffectSetOpacity, 9 -&gt; 9)</p>
+<p>[13378] [Emit] ContinueDefinitionGroup(9)</p>
+<p>[13378] [Emit] ModuleDependency(com.livecode.canvas -&gt; 0)</p>
+<p>[13378] [Emit] UndefinedType(-&gt; 9)</p>
+<p>[13378] [Emit] ImportedHandler(1, MCCanvasSetOpacity, 9 -&gt; 10)</p>
+<p>[13378] [Emit] ContinueDefinitionGroup(10)</p>
+<p>[13378] [Emit] EndDefinitionGroup(-&gt; 11)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 4)</p>
+<p>[13378] [Emit] FetchLocal(4, 2)</p>
+<p>[13378] [Emit] Assign(3, 2)</p>
+<p>[13378] [Emit] BeginDefinitionGroup()</p>
+<p>[13378] [Emit] ModuleDependency(com.livecode.canvas -&gt; 0)</p>
+<p>[13378] [Emit] UndefinedType(-&gt; 9)</p>
+<p>[13378] [Emit] ImportedHandler(1, MCCanvasGraphicEffectSetOpacity, 9 -&gt; 9)</p>
+<p>[13378] [Emit] ContinueDefinitionGroup(9)</p>
+<p>[13378] [Emit] ModuleDependency(com.livecode.canvas -&gt; 0)</p>
+<p>[13378] [Emit] UndefinedType(-&gt; 9)</p>
+<p>[13378] [Emit] ImportedHandler(1, MCCanvasSetOpacity, 9 -&gt; 10)</p>
+<p>[13378] [Emit] ContinueDefinitionGroup(10)</p>
+<p>[13378] [Emit] EndDefinitionGroup(-&gt; 11)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 5)</p>
+<p>[13378] [Emit] BeginExecuteInvoke(11, 0, 5)</p>
+<p>[13378] [Emit] ContinueInvoke(3)</p>
+<p>[13378] [Emit] ContinueInvoke(4)</p>
+<p>[13378] [Emit] EndInvoke()</p>
+<p>[13378] [Emit] DestroyRegister(5)</p>
+<p>[13378] [Emit] StoreLocal(4, 2)</p>
+<p>[13378] [Emit] DestroyRegister(2)</p>
+<p>[13378] [Emit] DestroyRegister(3)</p>
+<p>[13378] [Emit] DestroyRegister(4)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 2)</p>
+<p>[13378] [Emit] BeginDefinitionGroup()</p>
+<p>[13378] [Emit] ModuleDependency(com.livecode.canvas -&gt; 0)</p>
+<p>[13378] [Emit] UndefinedType(-&gt; 9)</p>
+<p>[13378] [Emit] ImportedHandler(1, MCCanvasGraphicEffectGetOpacity, 9 -&gt; 12)</p>
+<p>[13378] [Emit] ContinueDefinitionGroup(12)</p>
+<p>[13378] [Emit] ModuleDependency(com.livecode.canvas -&gt; 0)</p>
+<p>[13378] [Emit] UndefinedType(-&gt; 9)</p>
+<p>[13378] [Emit] ImportedHandler(1, MCCanvasGetOpacity, 9 -&gt; 13)</p>
+<p>[13378] [Emit] ContinueDefinitionGroup(13)</p>
+<p>[13378] [Emit] EndDefinitionGroup(-&gt; 14)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 3)</p>
+<p>[13378] [Emit] FetchLocal(3, 2)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 4)</p>
+<p>[13378] [Emit] BeginExecuteInvoke(14, 0, 4)</p>
+<p>[13378] [Emit] ContinueInvoke(3)</p>
+<p>[13378] [Emit] ContinueInvoke(2)</p>
+<p>[13378] [Emit] EndInvoke()</p>
+<p>[13378] [Emit] DestroyRegister(4)</p>
+<p>[13378] [Emit] DestroyRegister(3)</p>
+<p>[13378] [Emit] Return(2)</p>
+<p>[13378] [Emit] DestroyRegister(0)</p>
+<p>[13378] [Emit] DestroyRegister(1)</p>
+<p>[13378] [Emit] CreateRegister(-&gt; 0)</p>
+<p>[13378] [Emit] AssignUndefined(0)</p>
+<p>[13378] [Emit] Return(0)</p>
+<p>[13378] [Emit] DestroyRegister(0)</p>
+<p>[13378] [Emit] EndHandlerDefinition()</p>
+<p>[13378] [Emit] ExportedDefinition(2)</p>
+<p>[13378] [Emit] EndModule()</p>
+<p>[13378] Generated module file of size 666</p>
+<p></p>
+<p></p>

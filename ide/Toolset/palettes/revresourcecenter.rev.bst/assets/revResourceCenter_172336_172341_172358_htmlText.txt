@@ -1,0 +1,454 @@
+<p><font face="Lucida Grande" size="12" color="#000000">You may notice in Visual Studio that one of the projects is highlighted in bold. This signifies which is the current Startup Project - the project that is built and run whenever you click the Run button. You can change the startup project by right-clicking on a project node and choosing Set as Startup Project - this will becomed particularly important for you if you add new externals to the environment.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">My personal preference is to use XCode in all-in-one mode where you switch between Edit/Build/Debug by the little tab control in the top-left &ndash; this article reflects this preference. By default, however, XCode is not configured in this mode &ndash; to change this select the General pane in Preferences and choose All-in-one from the Layout option menu.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">You may wish to spend some time looking around the IDEs and the project/solution structure we have created to familiarise yourself with them before going any further.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">Adding functionality &ndash; our first function</font></b></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">At this stage, you should be looking at the rnahello project created with the External Creator. This project has all the appropriate build configurations configured as well as the necessary setup for launching the test stack on run so you can debug and/or see your external running &ndash; basically we have a skeleton external that will work, but not actually provide any functionality to the development environment.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In this section we will add an external function to our external. An external function is exactly the same as a function handler (defined by the <b>function</b> keyword) you will be familiar with in Revolution, except that it&rsquo;s implementation is in native code defined in an external. As with a function handler, an external function takes a number of parameters as input and returns a value as a result.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The External Creator will have created an outline main file rnahello.cpp which you may want to familiarise yourself with before continuing.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">We will now add our first external function to our project &ndash; called rnahellouser. This will take one parameter (a name) and return a friendly message.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">The external declarations block &ndash; describing the functionality the external provides</font></b></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The external glue code provided in libexternal provides a number of C/C++-macros that help in the construction of the external declarations block that tells Revolution what the external exports to it.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">A block starts with:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">EXTERNAL_BEGIN_DECLARATIONS()</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This is followed by a sequence of command or functions declarations:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">EXTERNAL_DECLARE_FUNCTION(, )</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">or</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">EXTERNAL_DECLARE_COMMAND(, )</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Then the block finishes with:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">EXTERNAL_END_DECLARATIONS</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In our case we wish to declare the existence of an external function called rnahellouser. So, scroll to where the (empty) external declarations block is in the <b>rnahello.cpp</b> file and insert the line:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">EXTERNAL_DECLARE_FUNCTION("rnahellouser", rnaHelloUser)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Between the comments '// BEGIN USER DECLARATIONS' and '// END USER DECLARATIONS'. This will cause a call to a function<b> rnahellouse</b>r in Revolution to be mapped to a call to the C++ function<b> rnaHelloUse</b>r which we will implement next.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">The function definition &ndash; implementing an external function</font></b></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now we have declared the existence of our external function, we now need to implement it. For any external handler (command or function), the C/C++ prototype is the same:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void handler(char *p_arguments[], int p_argument_count,</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">             char **r_result, Bool *r_pass, Bool *r_err)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Here:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; p_arguments is an array of C-strings of length p_argument_count &ndash; each element of the array is an argument passed to the external handler.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; r_result is a pointer to a C-string variable that should be set to a pointer to the result of the external handler. (The C-string returned in this way must <b>be </b>allocated using malloc/calloc/realloc and ownership of the memory will pass to Revolution.)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; r_pass is a pointer to a Bool variable that should be set to True if the handler invocation should be <b>passed </b>in the message path.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; r_err is a pointer to a Bool variable that should be set to True if the invocation of this handler should raise a runtime error in Revolution.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Add the following function to the rnahello.cpp file between the // BEGIN USER DEFINITIONS and // END USER DEFINITIONS:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Function:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//   rnaHelloUser(pName)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Parameters:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//   pName &ndash; string</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Result:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//   a string containing a friendly message</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void rnaHelloUser(char *p_arguments[], int p_argument_count,</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">                  char **r_result, Bool *r_pass, Bool *r_err)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// First check we have been passed a single argument &ndash; if not it&rsquo;s an error</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (p_argument_count != 1)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_result = strdup("wrong number of parameters");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_err = True;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_pass = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">return;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Next compute the length of our required string</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// = length of first argument (p_arguments[0]) + length of "Hello, !" + 1</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">unsigned int t_buffer_length;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">char *t_buffer;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_buffer_length = strlen(p_arguments[0]) + 8 + 1;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_buffer = (char *)malloc(t_buffer_length);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_buffer == NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_result = strdup("out of memory");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_err = True;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_pass = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">return;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// We have allocated our buffer &ndash; so now construct our string</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">sprintf(t_buffer, "Hello, %s!", p_arguments[0]);</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// t_buffer now contains a pointer to the result so just return...</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_result = t_buffer;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_err = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_pass = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In this function we have used a number of standard library functions which we will need to include in our environment. In C/C++ this is done via #include directives, so add the following to the <b>rnahello.cpp</b> file before the #include directive.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include </font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include </font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">#include</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This imports memory management (cstdlib), i/o (cstdio) and string manipulation (cstring) functions into our file.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">All being well, you should now be able to compile your external and launch it within Revolution...</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In Visual Studio:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Ensure rnahello is the Startup Project</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Make sure Debug is chosen in the Solution Configurations drop-down list (on the toolbar)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Click the green Run button</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Note: Due to the relaunch feature added to recent versions of Revolution, you need to make sure the version of Revolution you are debugging externals in is not already running when you launch a debug session from Visual Studio</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Note: You will likely get a message saying 'Unable to find debug symbols for Revolution.exe' the first time you run your application - do not worry about this, just click to continue and choose not to show the dialog again.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In XCode:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Choose Build mode (either by choosing Build Results from the Build menu, or by clicking on the Build icon in the Page tab in the in the top-left).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Choose rnaHello from the Target drop-down</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Choose Release from the Configuration drop-down</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Choose Build</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Now choose the Debug configuration and click Build and when it has finished click Debug. (The previous two steps shouldn't be necessary, but there seems to be a glitch in XCode that prevents it picking up the correct settings for launching the debug executable if you have only ever built a Debug variant of a project - from now on you won't need to build a release variant before a debug one in this project).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Assuming the above steps were followed correctly, after a short while an empty stack called rnaHelloTest should pop-up inside the development environment.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Testing our function &ndash; hooking into our external</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">At this point you should be looking at the Revolution IDE with a stack opened up. This stack should have already loaded the external into the Revolution environment &ndash; so now we just need to hook into it.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">So do the following:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; First add a field called Name to the stack.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Add a button called rnaHelloUser to the stack and place the following into its script:&#0;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">on mouseUp</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">answer rnaHelloUser(field "Name")</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">end mouseUp</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now enter any string into the field and click the button &ndash; you should get an answer dialog popping up with a friendly message.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Before continuing, make sure you save your test stack (we will be building on it in the next section) and then quit Revolution.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">Adding functionality &ndash; our first command</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In the previous section, we looked at adding an external function. In this section we will look at adding an external command instead. Just with external functions, external commands are effectively the same as command handlers (defined with the <b>on</b> keyword) in Revolution except that their implementation resides in a external.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In reality, there is very little difference between external commands and functions (just like there is little difference between command and function handlers in Revolution). Indeed, the difference is mainly syntactic, and the fact that you have to use <b>the result</b> to get the return value of a previously executed command. Therefore, we will use this opportunity to introduce how to set and get local variables in an external handler.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The command we will implement will be called rnaHelloUserIndirect and will have syntax:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">rnaHelloUserIndirect pUserVariableName, pOutputVariableName</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Here pUserVariableName will be the<b> nam</b>e of a (handler) local variable from which to fetch the user&rsquo;s name, and pOutputVariableName will be the<b> nam</b>e of a (handler) local variable in which to put the result.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="10" color="#000000">The Revolution externals API &ndash; getting and setting string variables</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In addition to providing the necessary &lsquo;glue&rsquo; to allow a shared library to be loaded as a Revolution external, &lsquo;libexternal&rsquo; also exports a number of functions that allow some access to the internals of the currently running Revolution application.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In this section will make use of two of these functions GetVariable and SetVariable. These functions give you access to the contents of the local variables present in the context that called the external handler &ndash; as long as the value of those variables are text strings (i.e. not binary data).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The prototypes of these functions are:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">char *GetVariable(const char *p_variable_name, int *r_success)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void SetVariable(const char *p_variable, const char *p_value, int *r_success)</font></p>
+<p></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The GetVariable call takes a name of a variable (as a C-string) and a pointer to a return variable. If the call succeeds, *r_success will be EXTERNAL_SUCCESS and a <b>copy</b> of the value of the variable as a C-string will be returned. If the call fails, r_success will contain EXTERNAL_FAILURE and NULL will be returned.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">NB: The ownership of the memory returned passes to you &ndash; i.e. you must free it when you are finished with it.</font></b></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The SetVariable call takes a name of a variable, the value you wish to set the variable to and a return variable. If the call succeeds *r_success will contain EXTERNAL_SUCCESS and the specified variable will be set to the required value. If the call fails *r_success will contain EXTERNAL_FAILURE and no other change will have occured.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">NB: Revolution copies the string you pass to it in p_value so there is no concern about ownership - i.e. if you've allocated memory to store it, you still have to free it.</font></b></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="10" color="#000000">Implementing our new command</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">As before, we first have to declare the existence our new command by adding an appropriate entry in the external declarations block. Therefore, add the following line in the &lsquo;USER DECLARATIONS&rsquo; as before:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">EXTERNAL_DECLARE_COMMAND("rnahellouserindirect", rnaHelloUserIndirect)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Next we have to provide an implementation of this command which we do by adding the following to the 'USER HANDLER DEFINITIONS' section of the file:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Command:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//   rnaHelloUserIndirect pUserVariableName, pOutputVariableName</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Parameters:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//   pUserVariableName &ndash; name of a variable in local context to get the name from</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//   pOutputVariableName &ndash; name of a variable in local context to put the result into</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">void rnaHelloUserIndirect(char *p_arguments[], int p_argument_count,</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">                          char **r_result, Bool *r_pass, Bool *r_err)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// In this command we have to keep track of several (memory) resources. To help with this</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// we use a variable 't_error' that determines whether an error has occured. This is used</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// throughout the function to determine whether to continue processing, and at the end to</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// decide whether to return an error or not.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">const char *t_error;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_error = NULL;</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Check to see if we have been passed two parameters</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_error == NULL &amp;&amp; p_argument_count != 2)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_error = "wrong number of parameters";</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Fetch the value of the 'name' variable (argument 1)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Remember that the return value of 'GetVariable' becomes 'ours' so we have to</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// free it later if the call succeeds.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">char *t_name;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_name = NULL;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_error == NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">int t_success;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_name = GetVariable(p_arguments[0], &amp;t_success);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_success == EXTERNAL_FAILURE)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_error = "unable to get value of name variable";</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Allocate memory for the return message to be put into the output variable</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// (If this step succeeds, we need to free memory pointed to by t_message later)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">char *t_message;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_message = NULL;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_error == NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_message = (char *)malloc(strlen(t_name) + 8 + 1);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_message == NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_error = "out of memory";</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Format our message appropriately</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_error == NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">sprintf(t_message, "Hello, %s!", t_name);</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Set the value of the output variable</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Remember that the &lsquo;SetVariable&rsquo; API call copies the contents of t_message and so we still</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// have to remember to free it ourselves.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_error == NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">int t_success;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">SetVariable(p_arguments[1], t_message, &amp;t_success);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_success == EXTERNAL_FAILURE)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">t_error = "unable to set output variable";</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Free the message memory buffer if it was ever allocated</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_message != NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">free(t_message);</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// Free the name memory buffer if it was ever allocated</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_name != NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">free(t_name);</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// If we succeeded, return an empty result and no error, otherwise return a copy</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// of the error message and flag as an error.</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">// (NB: We return a pointer to an empty string here because pre-2.5 versions of Revolution</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//  would crash if you returned a NULL pointer in r_result)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">//</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">if (t_error == NULL)</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_result = strdup("");</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_pass = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_err = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">else</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">{</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_result = strdup(t_error);</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_pass = False;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">*r_err = True;</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">}</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Again, you should now be able to Run (Visual Studio), or Build and Debug (XCode) your project and after a few moments, the test stack will appear again.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="10" color="#000000">Testing our command</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">You should again find yourself staring at our test stack, loaded into the Revolution IDE. Add a new button to the stack called rnaHelloUserIndirect and place the following in its script:</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#990017">on</font><font face="Courier" size="11" color="#000000"> mouseUp </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">local</font><font face="Courier" size="11" color="#000000"> tName, tOutput</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> field "Name" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tName</font></p>
+<p><font face="Courier" size="11" color="#000000">   rnaHelloUserIndirect "tName", "tOutput"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">answer</font><font face="Courier" size="11" color="#000000"> tOutput</font></p>
+<p><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> mouseUp</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Notice here that we are passing strings to rnaHelloUserIndirect that contain the <b>names</b> of the variables that we wish to access in the external, rather than their values.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Clicking on rnaHelloUserIndirect should now give you exactly the same message as clicking rnaHelloUser - our new command works!</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Integrating an external into the IDE</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The External Creator helpfully builds us a stack that automatically loads our external when it is opened through either XCode or Visual C++. However, when you get to a point when you wish to start testing any externals you create in the context of actual Revolution projects, you will need to be able to integrate them with the IDE.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To do this, you will first want to build Release builds of your externals. In Visual Studio, simply choose the Release configuration from the drop-down list on the toolbar, while in XCode you need to switch to the build pane and choose one of Release, Release x86-32 or Release PowerPC-32.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">When you have done this, all you need to do then is copy them into appropraite places in your Documents folder for Revolution to pick up next time it is launched. This can be done by creating the following hierarchy inside the standard Documents folder:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">My Revolution /</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Externals/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Runtime/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Windows/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">x86-32/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Externals/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Mac OS X/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Universal/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Externals/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">PowerPC-32/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Externals/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">x86-32/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Externals/</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Then inside each Externals folder, put the appropriate build of the external along with a text file called Externals.txt. The externals.txt file is return-delimited list of pairs:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">,</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">For example for rnahello on Windows the file should contains:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Hello External,rnahello.dll</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Whereas on Mac OS X it should contain:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Hello External,rnahello.bundle</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">Note:</font></b><font face="Lucida Grande" size="12" color="#000000"> You only need the Runtime hierarchy for building Standalones containing your externals. Furthermore, you need only create the architecture folders within each platform folder for the architectures that you need.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">Note</font></b><font face="Lucida Grande" size="12" color="#000000">: In general, you should always build a Release (Universal) external on Mac OS X to place in the non-Runtime Externals folder - as this is the folder the IDE uses.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#000000">Next time...</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In this article we have covered the basics of writing externals &ndash; with particular emphasis on doing so cross-platform for both Mac OS X and Windows. Although we have only covered two API calls (GetVariable and SetVariable) there are numerous other ones &ndash; these are all documented in external.h present inside the libexternal/src folder.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In the next part of the series on external writing we will explore using more of these APIs &ndash; in particular ones allowing you to access binary data and arrays from Revolution. We will then put this to good use in producing an external that does something native code is very good at &ndash; image processing...</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">Not</font></b><font face="Lucida Grande" size="12" color="#000000">e: At the time of 'going to press' - the documentation to be included in external.h had not been finalized. We will upload ExternalsEnvironmentV2.zip in a few days with this documentation included.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">FAQ</font></b></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">Where can I get a copy of Visual C++ 2005?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Visual C++ 2005 is available in several editions as part of the Visual Studio 2005 software suite. Microsoft makes Visual C++ 2005 Express Edition available free of charge, and is available from:</font></p>
+<p></p>
+<p><a href="http://msdn.microsoft.com/vstudio/express"><font face="Lucida Grande" size="12" color="#990006">http://msdn.microsoft.com/vstudio/express</font></a><font face="Lucida Grande" size="12" color="#000000">/</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Where can I get a copy of XCode 2.4.x</font></b><font face="Lucida Grande" size="12" color="#000000">?</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The XCode tools are freely available from Apple&rsquo;s developer site after registering for Apple&rsquo;s Developer Connection (also free). The landing page is here:</font></p>
+<p></p>
+<p><a href="http://developer.apple.com/tools/"><font face="Lucida Grande" size="12" color="#660066">http://developer.apple.com/tools/</font></a></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Do I really have to wait for the IDE to load each time I want to test my external?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">No. If you are on a slow machine, you may want to setup your test stack and build it as a standalone. You can then change the debugger parameters in either XCode or Visual Studio to run this executable rather than the IDE.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">For Mac OS X:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Navigate to the Executables branch of the project tree and Get Infoon the Test node.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Change Executable Path to reference your standalone application.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull;&nbsp;Go to the Arguments tab and remove all the arguments.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">For Windows:</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Right-click on the appropriate project in the Solution tree-view and select Properties.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Choose All Configurations from the drop-down list</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Expand Configuration Properties and choose Debugging</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Select Command, choose Browse and select your test standalone executable</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Clear the command arguments and working directory fields</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Can I reuse the source-code provided with this article in my own projects?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Yes. You are free to use all source-code and project files included with this article (or generated by External Creator V1) for the purposes of producing Revolution compatible externals.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">libexternal seems to be different from the old XCmdGlue implementation I have...</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Yes &ndash; this is correct. libexternal is an updated version of the glue-code which is cleaner. It uses exactly the same Revolution interface as the previous implementation and so will continue to produce externals that will be usable in any Revolution version.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">What&rsquo;s the difference between C++ (no exceptions, no rtti) and C++?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Many people use C++ as &lsquo;just a better C&rsquo; - and don&rsquo;t take advantage of exception handling or runtime-type information. Used in this form, there is no need for the external glue-code to do anything special. However, if you wish to use C++ exceptions, it is important the glue code automatically handles any before control is returned to the engine and this option does this automatically for you.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Can I use the standard C++ library?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Yes &ndash; but make sure you choose C++ when creating the skeleton for your external. Most recent implementations of the standard C++ library <b>require</b> exception handling (Visual Studio for example) and are not guaranteed to work correctly if it is disabled. Creating your external with initial support for C++ will ensure that unhandled exceptions in your external code are caught before returning to Revolution.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Can I write externals in other languages?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In theory any language that can build shared libraries and allows you to link with the provided glue code could be used. However, in practice, some languages will require extra glue-code in order to provide an environment in which their code can run. For example, to access Objective-C you will need to ensure you set up its memory/exception environment in C wrapper functions before calling any Objective-C code.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Can I build externals that run on Windows 98SE/ME?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Yes. Any external that does not depend on any OS APIs should run fine on the Windows 98/ME family of OSes. If you do you use any OS APIs you just need to make sure they are available on that platform by checking in the Platform SDK documentation (since you can&rsquo;t explicity target a given Windows version, you won&rsquo;t find out at compile-time if you&rsquo;ve accidentally used an API that isn&rsquo;t available).</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Can I build externals with other versions of Visual C++?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Yes &ndash; but the External Creator only generates project and solution files compatible with the Visual Studio 2005 family.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Can I build externals with other Windows C/C++ development environments?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Yes. Externals are just DLLs which export a specific function and so any compiler should be persuadable to produce externals compatible with Revolution. Of course, you will have to set up your own environment in this case.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="12" color="#000000">Note</font></b><font face="Lucida Grande" size="12" color="#000000">: the only requirement that Revolution puts on a DLL it trys to load as an external is that it exports one symbol whose resulting name is _getXtable. Some compilers don&rsquo;t automatically prepend an &lsquo;_&rsquo; but with appropriate options can be made to do so. (getXtable is defined in libexternal).</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Can I build externals with other versions of XCode?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In theory, yes. In practice, no. With the advent of Universal Binary you really need to be producing externals that compile to both PowerPC and Intel &ndash; this requires a minimum of XCode 2.2 (if I recall correctly). Also, if you wish to support the same range of OS versions that Revolution supports you need to build them in a specific way:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; PowerPC with gcc-3.3 against the 10.2.x SDK</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Intel with gcc-4.0.1 against the 10.4u SDK</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">We use XCode 2.4.1 internally and know these configurations work without problems and so we recommend that you do the same.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Of course, if you are targetting a specific OS version or architecture, then you can choose your version of XCode appropriately, but you may have to setup your environment from scratch.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Can I build externals with other Mac OS X C/C++ development environments?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">This depends on the OS versions and architectures that you are targetting. Any environment that is based on the Apple GNU toolchains should be able to produce compatible shared libraries. However, if they are not based on these toolchains, your mileage will vary.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In all these cases, though, you will have to configure your build environment yourself from scratch.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Can I use the same environment folder to build on both Windows and Mac OS X?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Yes. As long as you checked both platform boxes in the &lsquo;External Creator&rsquo; when you initially setup your external a project will have been created for both platforms. To save constantly moving the folder between the two platforms you could (for example) put the environment on a network share. However, I recommend that you look into setting up a version control system such as Subversion to manage your external projects &ndash; this isn&rsquo;t at all hard to do and numerous tutorials and GUIs exist on the web to help.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000"> </font><b><font face="Lucida Grande" size="14" color="#990006">I&rsquo;ve setup a version control system, what files should I include?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">As a general rule, you should only include &lsquo;source&rsquo; files in the version control system - these are the files that cannot be derived from other files. So, in our case you will need:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The top-level folder</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Each project folder</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The configurations folder and its contents</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The externals.sln file (if you are targetting Windows)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The src folders and their contents within each project folder</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The vcproj file within each project folder</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The vcproj.user file within each project folder</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The xcodeproj folder and the project.pbxproj file within it (Mac OS X build only)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The plist file within each project folder (Mac OS X build only)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The rev test stack within each project folder</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Any other files that you have explicitly addedexplicitly added</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">You should not add the _build or _cache folders, nor any &lsquo;hidden&rsquo; files or .ncb files on Windows. Furthermore, all the files within the xcodeproj folder apart from project.pbxproj should be ignored.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The general principle is this &ndash; if a file or folder was no<b>t c</b>reated by you, or the External Creator it shouldn&rsquo;t go under version control!</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">What about UNIX, Linux and Classic?</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To begin with, we decided to focus on the two main desktop platforms. However, we hope to look at the other platforms in future articles.</font></p>

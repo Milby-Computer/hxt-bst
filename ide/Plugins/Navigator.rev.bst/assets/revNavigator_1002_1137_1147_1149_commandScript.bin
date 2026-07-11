@@ -1,0 +1,36 @@
+on doCommand
+  put the pWorkingLines of group "commandGroup" into tIDList
+  put the number of lines of tIDList into tCount
+ --breakpoint
+  split tIDList using cr
+  repeat with tIndex = 1 to tCount
+  
+    put tIDList[tIndex] into tID
+    if tIndex is 1 then
+   	
+      put tIDList[tCount] into tLastID
+    else
+    --answer tIndex
+    
+      put tIDList[(tIndex-1)] into tLastID
+    end if
+    if tIndex is tCount then
+      put tIDList[1] into tNextID
+    else
+      put tIDList[(tIndex+1)] into tNextID
+    end if
+    put the long id of the owner of tID into tOwnerID
+    put word -2 to -1 of tID into tStackID
+    if word -5 of tID is "card" then
+      put word -5 to -1 of tID into tCardID
+    else
+      put word -6 to -1 of tID into tCardID
+    end if
+    set the defaultStack to the value of word -1 of tID
+    try
+
+    --tCommandCode
+    
+    end try
+  end repeat
+end doCommand

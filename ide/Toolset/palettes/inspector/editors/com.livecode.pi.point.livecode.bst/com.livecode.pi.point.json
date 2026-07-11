@@ -1,0 +1,98 @@
+{
+   "#mainstack": "com.livecode.pi.point",
+   "com.livecode.pi.point": {
+      "#name": "stack \"com.livecode.pi.point\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1003": {
+                        "#name": "field \"x\"",
+                        "properties": {
+                           "id": "1003",
+                           "layer": "2",
+                           "name": "x",
+                           "rect": "92,66,192,87",
+                           "toolTip": "x-coordinate"
+                        }
+                     },
+                     "1007": {
+                        "#name": "scrollbar \"twiddleX\"",
+                        "customproperties": {
+                           "focusBorder": "horizontal"
+                        },
+                        "properties": {
+                           "id": "1007",
+                           "layer": "3",
+                           "name": "twiddleX",
+                           "pageInc": "512",
+                           "rect": "192,66,207,89",
+                           "traversalOn": false
+                        }
+                     },
+                     "1008": {
+                        "#name": "field \"y\"",
+                        "properties": {
+                           "id": "1008",
+                           "layer": "4",
+                           "name": "y",
+                           "rect": "92,98,192,119",
+                           "toolTip": "y-coordinate"
+                        }
+                     },
+                     "1009": {
+                        "#name": "scrollbar \"twiddleY\"",
+                        "customproperties": {
+                           "focusBorder": "horizontal"
+                        },
+                        "properties": {
+                           "id": "1009",
+                           "layer": "5",
+                           "name": "twiddleY",
+                           "pageInc": "512",
+                           "rect": "192,98,207,121",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "92,66,207,121"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "4"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1009"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.point\"",
+      "properties": {
+         "fileName": "com.livecode.pi.point.livecode",
+         "id": "1009",
+         "name": "com.livecode.pi.point",
+         "rect": "442,300,842,700"
+      },
+      "sharedGroupIDs": null
+   }
+}

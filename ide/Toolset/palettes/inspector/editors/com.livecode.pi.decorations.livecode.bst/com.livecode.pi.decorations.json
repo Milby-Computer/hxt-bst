@@ -1,0 +1,626 @@
+{
+   "#mainstack": "com.livecode.pi.decorations",
+   "com.livecode.pi.decorations": {
+      "#name": "stack \"com.livecode.pi.decorations\"",
+      "#substacks": "revTitleBarSelector",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1005": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1003": {
+                        "#name": "field \"value\"",
+                        "customproperties": {
+                           "cEnglishName": "Controls",
+                           "revCustom": false,
+                           "Tabs": false
+                        },
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "1",
+                              "Master,expectedRect": "73,139,201,158",
+                              "Master,movehDistance": false,
+                              "Master,movevDistance": false,
+                              "Master,scaleBottom": false,
+                              "Master,scalebottomDistance": null,
+                              "Master,scaleBottomObjectRef": null,
+                              "Master,scaleLeft": false,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleLeftObjectRef": null,
+                              "Master,scaleRight": true,
+                              "Master,scaleRightAbsolute": true,
+                              "Master,scaleRightDistance": "-39",
+                              "Master,scaleRightObjectRef": "Card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaleTop": false,
+                              "Master,scaletopDistance": null,
+                              "Master,scaleTopObjectRef": null
+                           }
+                        },
+                        "properties": {
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>title,menu,minimize,maximize,close</p>",
+                           "id": "1003",
+                           "layer": "2",
+                           "lockText": true,
+                           "margins": "4,7,8,8",
+                           "name": "value",
+                           "rect": "83,168,206,189",
+                           "toolTip": "decorations"
+                        }
+                     },
+                     "1004": {
+                        "#name": "button \"choose\"",
+                        "customproperties": {
+                           "Tabs": false
+                        },
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "1",
+                              "Master,expectedRect": "200,139,220,158",
+                              "Master,moveH": true,
+                              "Master,moveHAbsolute": true,
+                              "Master,movehDistance": "-30",
+                              "Master,moveHObjectRef": "Card",
+                              "Master,moveHObjectSide": "Right",
+                              "Master,moveV": false,
+                              "Master,moveVAbsolute": false,
+                              "Master,movevDistance": "-0.173626",
+                              "Master,moveVObjectRef": null,
+                              "Master,moveVObjectSide": "center",
+                              "Master,scalebottomDistance": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scalerightDistance": null,
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "hiliteIcon": "202708",
+                           "icon": "202707",
+                           "id": "1004",
+                           "layer": "3",
+                           "margins": "4,4,5,4",
+                           "name": "choose",
+                           "rect": "208,168,229,189",
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1005",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "83,168,229,189"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"com.livecode.pi.decorations\"",
+      "properties": {
+         "fileName": "com.livecode.pi.decorations.livecode",
+         "id": "1005",
+         "name": "com.livecode.pi.decorations",
+         "rect": "245,109,645,509"
+      },
+      "sharedGroupIDs": null
+   },
+   "revTitleBarSelector": {
+      "#name": "stack \"revTitleBarSelector\"",
+      "backgroundIDs": "1011",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1009": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1009",
+                     "layer": "2",
+                     "menuMode": "pulldown",
+                     "name": "Cancel",
+                     "rect": "75,559,157,582",
+                     "sharedHilite": false,
+                     "textFont": "usesystemfont",
+                     "textSize": "13",
+                     "textStyle": "plain"
+                  }
+               },
+               "1010": {
+                  "#name": "button \"OK\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "default": true,
+                     "id": "1010",
+                     "layer": "1",
+                     "menuMode": "pulldown",
+                     "name": "OK",
+                     "rect": "167,559,249,582",
+                     "sharedHilite": false,
+                     "textFont": "usesystemfont",
+                     "textSize": "13",
+                     "textStyle": "plain"
+                  }
+               },
+               "1011": "#shared group",
+               "1012": {
+                  "#name": "field \"New Field 1\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Select a set of title bar controls:</p>",
+                     "id": "1012",
+                     "layer": "13",
+                     "lockText": true,
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "17,13,294,35",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1013": {
+                  "#name": "graphic \"New Graphic 1\"",
+                  "properties": {
+                     "antialiased": false,
+                     "filled": true,
+                     "foreColor": "128,128,128",
+                     "id": "1013",
+                     "layer": "14",
+                     "name": "New Graphic 1",
+                     "opaque": true,
+                     "points": "-34,540\n359,540",
+                     "rect": "-35,539,360,541",
+                     "style": "line"
+                  }
+               },
+               "1014": {
+                  "#name": "field \"Description\"",
+                  "customproperties": {
+                     "font": null,
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Default</p>",
+                     "id": "1014",
+                     "layer": "15",
+                     "lockText": true,
+                     "name": "Description",
+                     "opaque": false,
+                     "rect": "16,516,290,538",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "203465": {
+                  "#name": "image \"All.png\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "All.png",
+                     "filepath": "./com.livecode.pi.decorations",
+                     "id": "203465",
+                     "layer": "16",
+                     "name": "All.png",
+                     "rect": "312,46,584,94",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "203466": {
+                  "#name": "image \"MaxClose.png\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "MaxClose.png",
+                     "filepath": "./com.livecode.pi.decorations",
+                     "id": "203466",
+                     "layer": "20",
+                     "name": "MaxClose.png",
+                     "rect": "312,98,584,146",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "203467": {
+                  "#name": "image \"Max.png\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "Max.png",
+                     "filepath": "./com.livecode.pi.decorations",
+                     "id": "203467",
+                     "layer": "19",
+                     "name": "Max.png",
+                     "rect": "312,148,584,196",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "203468": {
+                  "#name": "image \"MinClose.png\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "MinClose.png",
+                     "filepath": "./com.livecode.pi.decorations",
+                     "id": "203468",
+                     "layer": "22",
+                     "name": "MinClose.png",
+                     "rect": "312,196,584,244",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "203469": {
+                  "#name": "image \"Min.png\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "Min.png",
+                     "filepath": "./com.livecode.pi.decorations",
+                     "id": "203469",
+                     "layer": "21",
+                     "name": "Min.png",
+                     "rect": "314,244,586,292",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "203470": {
+                  "#name": "image \"Close.png\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "Close.png",
+                     "filepath": "./com.livecode.pi.decorations",
+                     "id": "203470",
+                     "layer": "17",
+                     "name": "Close.png",
+                     "rect": "314,294,586,342",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "203471": {
+                  "#name": "image \"TitleMenu.png\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "TitleMenu.png",
+                     "filepath": "./com.livecode.pi.decorations",
+                     "id": "203471",
+                     "layer": "24",
+                     "name": "TitleMenu.png",
+                     "rect": "312,342,584,390",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "203472": {
+                  "#name": "image \"Title.png\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "Title.png",
+                     "filepath": "./com.livecode.pi.decorations",
+                     "id": "203472",
+                     "layer": "23",
+                     "name": "Title.png",
+                     "rect": "312,392,584,440",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "203473": {
+                  "#name": "image \"Empty.png\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "fileName": "Empty.png",
+                     "filepath": "./com.livecode.pi.decorations",
+                     "id": "203473",
+                     "layer": "18",
+                     "name": "Empty.png",
+                     "rect": "314,442,586,490",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "25"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         },
+         "1011": {
+            "#name": "group \"decorations\"",
+            "childcontrols": {
+               "1021": {
+                  "#name": "button \"default\"",
+                  "customproperties": {
+                     "command": false,
+                     "revbasic": false,
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "hiliteColor": "57,115,193",
+                     "icon": "203465",
+                     "id": "1021",
+                     "layer": "4",
+                     "name": "default",
+                     "opaque": false,
+                     "rect": "18,32,295,88",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "radiobutton",
+                     "textAlign": "left",
+                     "threeD": false
+                  }
+               },
+               "1022": {
+                  "#name": "button \"title,menu,maximize,close\"",
+                  "customproperties": {
+                     "command": false,
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "hiliteColor": "57,115,193",
+                     "icon": "203466",
+                     "id": "1022",
+                     "layer": "5",
+                     "margins": "4,4,4,8",
+                     "name": "title,menu,maximize,close",
+                     "opaque": false,
+                     "rect": "18,86,295,142",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "radiobutton",
+                     "textAlign": "left",
+                     "threeD": false
+                  }
+               },
+               "1023": {
+                  "#name": "button \"title,menu,maximize\"",
+                  "customproperties": {
+                     "command": false
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "hiliteColor": "57,115,193",
+                     "icon": "203467",
+                     "id": "1023",
+                     "layer": "6",
+                     "margins": "4,4,4,8",
+                     "name": "title,menu,maximize",
+                     "opaque": false,
+                     "rect": "18,140,295,196",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "radiobutton",
+                     "textAlign": "left",
+                     "threeD": false
+                  }
+               },
+               "1024": {
+                  "#name": "button \"title,menu,minimize,close\"",
+                  "customproperties": {
+                     "command": false,
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "hiliteColor": "57,115,193",
+                     "icon": "203468",
+                     "id": "1024",
+                     "layer": "7",
+                     "margins": "4,4,4,8",
+                     "name": "title,menu,minimize,close",
+                     "opaque": false,
+                     "rect": "18,194,295,250",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "radiobutton",
+                     "textAlign": "left",
+                     "threeD": false
+                  }
+               },
+               "1025": {
+                  "#name": "button \"title,menu,minimize\"",
+                  "customproperties": {
+                     "command": false,
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "hiliteColor": "57,115,193",
+                     "icon": "203469",
+                     "id": "1025",
+                     "layer": "8",
+                     "margins": "4,4,4,8",
+                     "name": "title,menu,minimize",
+                     "opaque": false,
+                     "rect": "18,248,295,304",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "radiobutton",
+                     "textAlign": "left",
+                     "threeD": false
+                  }
+               },
+               "1026": {
+                  "#name": "button \"title,menu,close\"",
+                  "customproperties": {
+                     "command": false,
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "hiliteColor": "57,115,193",
+                     "hilited": true,
+                     "icon": "203470",
+                     "id": "1026",
+                     "layer": "9",
+                     "margins": "4,4,4,8",
+                     "name": "title,menu,close",
+                     "opaque": false,
+                     "rect": "18,302,295,358",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "radiobutton",
+                     "textAlign": "left",
+                     "threeD": false
+                  }
+               },
+               "1027": {
+                  "#name": "button \"title,menu\"",
+                  "customproperties": {
+                     "command": false,
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "hiliteColor": "57,115,193",
+                     "icon": "203471",
+                     "id": "1027",
+                     "layer": "10",
+                     "margins": "4,4,4,8",
+                     "name": "title,menu",
+                     "opaque": false,
+                     "rect": "18,356,295,412",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "radiobutton",
+                     "textAlign": "left",
+                     "threeD": false
+                  }
+               },
+               "1028": {
+                  "#name": "button \"title\"",
+                  "customproperties": {
+                     "command": false,
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "hiliteColor": "57,115,193",
+                     "icon": "203472",
+                     "id": "1028",
+                     "layer": "11",
+                     "margins": "4,4,4,8",
+                     "name": "title",
+                     "opaque": false,
+                     "rect": "18,410,295,466",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "radiobutton",
+                     "textAlign": "left",
+                     "threeD": false
+                  }
+               },
+               "1029": {
+                  "#name": "button \"empty\"",
+                  "customproperties": {
+                     "command": false,
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "hiliteColor": "57,115,193",
+                     "icon": "203473",
+                     "id": "1029",
+                     "layer": "12",
+                     "margins": "4,4,4,8",
+                     "name": "empty",
+                     "opaque": false,
+                     "rect": "18,464,295,520",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "radiobutton",
+                     "textAlign": "left",
+                     "threeD": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "hilitedButton": "6",
+               "id": "1011",
+               "layer": "3",
+               "name": "decorations",
+               "rect": "14,28,299,524"
+            }
+         }
+      },
+      "customproperties": {
+         "cDecorations": "title,menu",
+         "cDisplayValue": "title,menu,minimize,close",
+         "cReturnValue": "empty",
+         "font": null,
+         "resizeable": true,
+         "Tabs": false
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "203474"
+         }
+      },
+      "longID": "stack \"revTitleBarSelector\" of stack \"com.livecode.pi.decorations\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "id": "203474",
+         "liveResizing": false,
+         "name": "revTitleBarSelector",
+         "rect": "615,515,924,1114",
+         "resizable": false,
+         "textSize": "13",
+         "textStyle": "plain",
+         "title": "Title Bar Selector"
+      },
+      "sharedGroupIDs": "1011"
+   }
+}

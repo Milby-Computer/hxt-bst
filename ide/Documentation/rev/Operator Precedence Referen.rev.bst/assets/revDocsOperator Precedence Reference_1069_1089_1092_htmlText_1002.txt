@@ -1,0 +1,1 @@
+<p>Functions are <a><font face="verdana" size="11">evaluated</font></a> after all possible <a><font face="verdana" size="11">operators</font></a> in the <a><font face="verdana" size="11">function&rsquo;s</font></a> <a><font face="verdana" size="11">parameters</font></a> are <a><font face="verdana" size="11">evaluated</font></a>.</p>

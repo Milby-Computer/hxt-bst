@@ -1,0 +1,13 @@
+<p><font face="Verdana" size="18">Data Types for SQLite</font></p>
+<p></p>
+<p>Now that we understand our table structure, we need to make sure and map our data to the correct type. Although not essential, it is always a good idea to correctly type the columns in your table. In particular, to correctly work with binary data using SQLite, you need to ensure columns in which you wish to store such data have the type BLOB.  So, let's setup our data types for our columns (fields).</p>
+<p></p>
+<p>The revDB supported types are: </p>
+<p>boolean, integer, float, char, double, long, blob, varchar, text, date.</p>
+<p></p>
+<p>SQLite version 3 supports the following data types: </p>
+<p></p>
+<p>Integer : A signed integer using up to 8 bytes. The size depends on the magnitude of the number.</p>
+<p>Real : A floating point value, stored using IEEE floating point representation. Uses 8 bytes.</p>
+<p>Text : A text string.</p>
+<p>Blob : A blob of data, stored exactly as it was input. This is typically used for binary data.</p>

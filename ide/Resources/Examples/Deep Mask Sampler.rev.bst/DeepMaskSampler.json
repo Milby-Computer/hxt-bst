@@ -1,0 +1,44 @@
+{
+   "#mainstack": "DeepMaskSampler",
+   "DeepMaskSampler": {
+      "#name": "stack \"DeepMaskSampler\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "image \"Runtime-Variable-Opacity.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Runtime-Variable-Opacity.png",
+                     "opaque": false,
+                     "rect": "-2,70,726,255",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/DeepMaskSampler_1002_1003_text.png"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"DeepMaskSampler\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": null,
+         "fileName": "Deep Mask Sampler.rev",
+         "id": "1003",
+         "liveResizing": false,
+         "name": "DeepMaskSampler",
+         "rect": "198,147,1083,653",
+         "windowShape": "1003"
+      },
+      "sharedGroupIDs": null
+   }
+}

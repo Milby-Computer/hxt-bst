@@ -1,0 +1,1 @@
+<p>The selection menu lets you choose which object's properties you want to view.  When clicked it will bring up a list which contains all the objects in your current application.  When you select one of these the property inspector will update to show that object's properties.</p>

@@ -1,0 +1,16 @@
+<p><font face="Verdana" size="18">Delete Tables</font></p>
+<p></p>
+<p>Deleting Tables in SQL is very easy. It uses the SQL command:</p>
+<p></p>
+<p>DROP TABLE &lt;table_name&gt;</p>
+<p></p>
+<p>Here's the code to delete the <b><font face="Tahoma" size="11">users</font></b><font face="Tahoma" size="11"> table:</font></p>
+<p></p>
+<p><font face="Courier New" size="14">put "DROP TABLE users" into tSQL</font></p>
+<p><font face="Courier New" size="12">put revExecuteSQL(&lt;connectionID&gt;,tSQL) into tTmp</font></p>
+<p><font face="Courier New" size="12">-- tResult contains the number of tables dropped.</font></p>
+<p></p>
+<p>You can press the button <b><font face="Tahoma" size="11">Delete users Table</font></b><font face="Tahoma" size="11"> to test it. Press it again to confirm the table has been deleted.</font></p>
+<p>Press the <b><font face="Tahoma" size="11">Default Data</font></b><font face="Tahoma" size="11"> button to 'reset' the database with the default tables and values.</font></p>
+<p></p>
+<p></p>

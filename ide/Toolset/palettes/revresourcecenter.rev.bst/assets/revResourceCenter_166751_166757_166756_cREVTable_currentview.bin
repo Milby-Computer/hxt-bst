@@ -1,0 +1,7 @@
+<p><font size="12" color="#000000">You can download the sample stack to accompany this article using the button below. You can also download a folder containing all the </font><font size="12" color="#990006">images</font><font size="12" color="#000000"> used in this article.</font></p>
+<p></p>
+<p><font size="12" color="#000000">I love beautiful software! A fully skinned application with perfect rollover buttons, background images and a distinctive window shape is music to my ears (or maybe eyes)! Inks were added in Revolution 2.7 providing a huge amount of flexibility when skinning applications. You can now blend any object in Revolution, including the entire window, allowing the desktop of the host computer to show through. The results can be stunning when all these features are used together in the right measure.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Blending the entire window can however create unwanted effects including loss of clarity, especially where you are displaying text. This tutorial shows you how you can use window shapes and inks to control the transparency of a particular area of your stack.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Our example is very simple. The stack is made up of a background image, our logo in a nice beveled frame, a close button and the controls to alter the transparency of our window. Clicking on the '+' and '-'buttons alters the blend level of the background image without affecting the transparency of the controls or our logo.</font></p>

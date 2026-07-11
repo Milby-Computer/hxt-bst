@@ -1,0 +1,189 @@
+{
+   "#mainstack": "com.livecode.pi.filelist",
+   "com.livecode.pi.filelist": {
+      "#name": "stack \"com.livecode.pi.filelist\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1019": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1013": {
+                        "#name": "field \"files\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "0",
+                              "Master,expectedRect": "19,91,410,262",
+                              "Master,movehDistance": false,
+                              "Master,movevDistance": false,
+                              "Master,scaleBottom": false,
+                              "Master,scaleBottomAbsolute": false,
+                              "Master,scalebottomDistance": "-0.251429",
+                              "Master,scaleBottomObjectRef": "card",
+                              "Master,scaleBottomObjectSide": "Bottom",
+                              "Master,scaleBottomscaleBottom": true,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleRight": false,
+                              "Master,scaleRightAbsolute": false,
+                              "Master,scalerightDistance": "-0.250765",
+                              "Master,scaleRightObjectRef": "card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaleRightscaleBottom": true,
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "dontWrap": true,
+                           "hScrollbar": true,
+                           "id": "1013",
+                           "layer": "2",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "multipleHilites": true,
+                           "name": "files",
+                           "noncontiguousHilites": true,
+                           "rect": "46,14,511,185",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "style": "scrolling",
+                           "toolTip": "Files to include in the distribution",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1016": {
+                        "#name": "button \"add file\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "0",
+                              "Master,expectedRect": "422,91,551,114",
+                              "Master,moveH": false,
+                              "Master,moveHAbsolute": false,
+                              "Master,movehDistance": "-0.125382",
+                              "Master,moveHObjectRef": "card",
+                              "Master,moveHObjectSide": "right",
+                              "Master,movevDistance": false,
+                              "Master,scalebottomDistance": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleRight": false,
+                              "Master,scaleRightAbsolute": false,
+                              "Master,scalerightDistance": "-0.025994",
+                              "Master,scaleRightObjectRef": "card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaleRightscaleBottom": true,
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "id": "1016",
+                           "label": "Add File...",
+                           "layer": "3",
+                           "margins": "0",
+                           "name": "add file",
+                           "rect": "524,14,653,37",
+                           "toolTip": "Choose a file to include"
+                        }
+                     },
+                     "1017": {
+                        "#name": "button \"add folder\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "0",
+                              "Master,expectedRect": "422,91,551,114",
+                              "Master,moveH": false,
+                              "Master,moveHAbsolute": false,
+                              "Master,movehDistance": "-0.125382",
+                              "Master,moveHObjectRef": "card",
+                              "Master,moveHObjectSide": "right",
+                              "Master,movevDistance": false,
+                              "Master,scalebottomDistance": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleRight": false,
+                              "Master,scaleRightAbsolute": false,
+                              "Master,scalerightDistance": "-0.025994",
+                              "Master,scaleRightObjectRef": "card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaleRightscaleBottom": true,
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "id": "1017",
+                           "label": "Add Folder...",
+                           "layer": "4",
+                           "margins": "0",
+                           "name": "add folder",
+                           "rect": "524,40,653,63",
+                           "toolTip": "Choose a folder to include"
+                        }
+                     },
+                     "1018": {
+                        "#name": "button \"remove\"",
+                        "customproperties": {
+                           "enable": false
+                        },
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "0",
+                              "Master,expectedRect": "422,124,551,147",
+                              "Master,moveH": false,
+                              "Master,moveHAbsolute": false,
+                              "Master,movehDistance": "-0.125382",
+                              "Master,moveHObjectRef": "card",
+                              "Master,moveHObjectSide": "right",
+                              "Master,movevDistance": false,
+                              "Master,scalebottomDistance": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleRight": false,
+                              "Master,scaleRightAbsolute": false,
+                              "Master,scalerightDistance": "-0.025994",
+                              "Master,scaleRightObjectRef": "card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaleRightscaleBottom": true,
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "id": "1018",
+                           "label": "Remove Entry",
+                           "layer": "5",
+                           "margins": "0",
+                           "name": "remove",
+                           "rect": "524,66,653,89",
+                           "toolTip": "Delete the selected entry from the list"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1019",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "42,10,657,189"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cRevStandaloneSettings": null
+      },
+      "longID": "stack \"com.livecode.pi.filelist\"",
+      "properties": {
+         "fileName": "com.livecode.pi.filelist.livecode",
+         "id": "1019",
+         "name": "com.livecode.pi.filelist",
+         "rect": "1145,210,2174,643"
+      },
+      "sharedGroupIDs": null
+   }
+}

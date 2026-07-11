@@ -1,0 +1,8 @@
+<p>Saving... (Localised String)</p>
+<p></p>
+<p>Stack:&#9;&#9;revSaving</p>
+<p>Main stack: (Localised String)&#9;&#9;revSaving</p>
+<p>Sub stacks: (Localised String)</p>
+<p>File name: (Localised String)&#9;&#9;/Users/ben/Documents/Work/livecode/source/ide/Toolset/palettes/revsaving.livecode</p>
+<p></p>
+<p>Please wait (Localised String)</p>

@@ -1,0 +1,183 @@
+<p><font face="Lucida Grande" size="12" color="#000000">If all goes well, you should have grabbed the RunRev logo from the top of our website and displayed it on your card. Cool huh?</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">The example application</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">For an example of this I will show you how to create a simple application that will grab weather information (satellite images, cloud cover etc.) from the BBC weather website and display it in your application.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Although this application looks quite complex the key parts of it are very straightforward.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">All we need do is create a URL of the correct format that the BBC uses for its images and then set the filename of the main image to that URL.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">You can try the application out by typing:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">go stack URL "http://www.runrev.com/newsletter/october/issue34/WeatherStation.rev"</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">into your Revolution message box.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">(It should be noted that some images are not available for certain parts of the world, or for certain times. For example, the Visible image is only available for every 3 hour slot for places outside the UK.)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The BBC weather site URL structure</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The BBC weather site uses the following structure for the image files on its web servers.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12">http://www.bbc.co.uk/weather/charts/ </font><font face="Lucida Grande" size="12" color="#000000">/__.jpg</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Where:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">is the main area of the world you are interested in (e.g. UK, World)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">narrows down the area to a more specific location ( e.g. NS (North Scotland), NE (North England)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">is the type of chart you are interested in ( e.g. Rain, Cloud)</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">is a simple string representing the date and hour you want. It is formatted as YYMMDDHH</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Now we know the structure of the URL used to retrieve an image from the BBC web server, we need to write some code to create a correctly formatted URL.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">The URL and image code</font></b></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">We have two selection fields - the image type and the area. Each line of these fields contains information about the image we want to retrieve.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">For the image type each line has a description followed by a bar ("|") and then the text that represents the element of the URL.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">For the area field, each line has three elements separated by a bar ("|"). Firstly there is a description of the area, second we have the text representing the URL element and lastly we have the text representing the element.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The main chunk of code that creates this URL from the fields and loads the image is a function called "loadImage" that is part of the card script. The annotated version is shown below:</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#2000FB">function</font><font face="Courier" size="11" color="#000000"> loadImage </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Put the beginning part of the URL into a variable called</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># preURL</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> "http://www.bbc.co.uk/weather/charts/" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> preURL </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Set the item delimiter to bar for processing the area etc. </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">itemdel</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> "|" </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Get the second item of the image type field as the</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># &lt;chart-type&gt;</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> item 2 </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">selectedText</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> field "imageType" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> \</font></p>
+<p><font face="Courier" size="11" color="#000000">   t_type</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Get the second element of the area (&lt;sub-area&gt;) and the </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># third element (&lt;area&gt;) </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> item 2 </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">selectedText</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> field "fldArea" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> t_area </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> item 3 </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">selectedText</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> field "fldArea" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> \</font></p>
+<p><font face="Courier" size="11" color="#000000">   t_chart</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># We now have most of the URL, all we need to do is decode</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># the hour</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Set the item delimited to "/" used to separate the</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># elements of the time</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">itemdel</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> "/" </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Grab the date elements </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">convert</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">date</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> dateitems </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">format</font><font face="Courier" size="11" color="#000000"> ("%02d", item 3 </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> it) </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> t_day </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">format</font><font face="Courier" size="11" color="#000000"> ("%02d", item 2 </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> it) </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> t_month </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">format</font><font face="Courier" size="11" color="#000000"> ("%02d", item 1 </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> it) </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> t_year </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Now ensure that we only have the last 2 digits of the year </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">if</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">length</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> t_year is 4 </font><font face="Courier" size="11" color="#990017">then</font><font face="Courier" size="11" color="#000000"> </font></p>
+<p><font face="Courier" size="11" color="#000000">      </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> char 3 </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> -1 </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> t_year </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> t_year </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">if</font><font face="Courier" size="11" color="#000000"> </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># We can now construct the full URL, using the value of our</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># last</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># field (fldHour) that holds our 2 digit hour. </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> preURL &amp;t_chart&amp;"/"&amp; t_area &amp; t_type &amp; t_year &amp; t_month \</font></p>
+<p><font face="Courier" size="11" color="#000000">   &amp; t_day &amp; field "fldHour" &amp; ".jpg" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> tURL</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Set the cursor to watch so the user knows we are doing</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># something</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">cursor</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> watch </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># And now to retrieve the image from the internet and</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># display it, in one</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># easy command ! </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">filename</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> image 1 </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> tURL </font></p>
+<p><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> loadImage </font></p>
+<p></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">The time code</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Next, we need code that will adjust the hour field up or down by 1 hour.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Shown below is the annotated code for the "hour up" button. The code for the "hour down" button is similar except we subtract 1 rather than add 1.</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#990017">on</font><font face="Courier" size="11" color="#000000"> mouseUp</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Grab the value of the hour field into a local variable for</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># ease of use</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> field "fldHour" </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> t_hour</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Add one hour.</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> t_hour + 1 </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> t_hour</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># If we have wrapped around midnight, set the time to 0</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">if</font><font face="Courier" size="11" color="#000000"> ( t_hour &gt; 23 ) </font><font face="Courier" size="11" color="#990017">then</font></p>
+<p><font face="Courier" size="11" color="#000000">      </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> 0 </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> t_hour</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">if</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># If our hour is less that 10 then we will add a "0"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># character onto the</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># front as we need the hour as two digits.</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">if</font><font face="Courier" size="11" color="#000000"> t_hour &lt; 10 </font><font face="Courier" size="11" color="#990017">then</font></p>
+<p><font face="Courier" size="11" color="#000000">      </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> "0" &amp; t_hour </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> field "fldHour"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">else</font></p>
+<p><font face="Courier" size="11" color="#000000">      </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> t_hour </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> field "fldHour"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">if</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Now we have set up our hour field correctly we simply call</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># the</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># loadImage command of the card to create the URL and load</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># the image.</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">get</font><font face="Courier" size="11" color="#000000"> loadImage()</font></p>
+<p><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> mouseUp</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">There are two other buttons that relate to the time functions - "Now" and "Start of day". The "Start of day" button sets the hour field to "00".</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">The "Now" button is slightly more complex as it sets the hour field to the current hour minus 3 ( the images on the website appear 3 hours delayed ). This code is shown below:</font></p>
+<p></p>
+<p><font face="Courier" size="11" color="#990017">on</font><font face="Courier" size="11" color="#000000"> mouseUp</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># We need to ensure we are getting 24 hour clock</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">twelveHourTime</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> false</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Set the item delimiter to ":"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">set</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#DF000C">itemdel</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">to</font><font face="Courier" size="11" color="#000000"> ":"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Get the first item from the returned time into t_hour</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> item 1 </font><font face="Courier" size="11" color="#990017">of</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">the</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#E5001A">time</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> t_hour</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Subtract 3 hours from the current time.</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> t_hour - 3 </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> t_hour</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># If our hour is less that 10 then we will add a "0"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># character onto the</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># front as we need the hour as two digits.</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">if</font><font face="Courier" size="11" color="#000000"> t_hour &lt; 10 </font><font face="Courier" size="11" color="#990017">then</font></p>
+<p><font face="Courier" size="11" color="#000000">      </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> "0" &amp; t_hour </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> field "fldHour"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">else</font></p>
+<p><font face="Courier" size="11" color="#000000">      </font><font face="Courier" size="11" color="#2000FB">put</font><font face="Courier" size="11" color="#000000"> t_hour </font><font face="Courier" size="11" color="#990017">into</font><font face="Courier" size="11" color="#000000"> field "fldHour"</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> </font><font face="Courier" size="11" color="#990017">if</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># Now we have set up our hour field correctly we simply call</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># the</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># loadImage command of the card to create the URL and load</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#68008B"># the image.</font></p>
+<p><font face="Courier" size="11" color="#000000">   </font><font face="Courier" size="11" color="#2000FB">get</font><font face="Courier" size="11" color="#000000"> loadImage()</font></p>
+<p><font face="Courier" size="11" color="#990017">end</font><font face="Courier" size="11" color="#000000"> mouseUp</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Putting it all together</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">So, that's pretty much all we need to do. We have a couple of buttons that will put the relevant hour into the hour field (making sure its two digits) and a function that takes the selected parameters and creates a correctly structured URL, then sets the filename of the image to that URL.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">In this application I have also removed all the decorations and border. I have then created a group at the top which contains a red rectangle, the BBC logo and a close button. Look at the code for this group to see how it deals with moving the application around the screen.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">And that's it.....</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">There you go - an application that will grab weather images for various parts of the world that runs on Windows or a Mac or a Linux box in a dozen lines of code....</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">You could use a similar technique to grab webcam images from the net ... for example, try</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">set the filename of image 1 to "http://freespace.virgin.net/kings.house/image.jpg"</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Any one want a nice desktop webcam viewer in 3 lines of code --- maybe that's a tutorial for another time :-)</font></p>
+<p></p>
+<p></p>

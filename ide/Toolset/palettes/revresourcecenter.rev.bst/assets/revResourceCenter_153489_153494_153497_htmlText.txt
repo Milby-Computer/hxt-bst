@@ -1,0 +1,22 @@
+<p><font face="Lucida Grande" size="12" color="#000000">We can use this later as a guide when we create our user interface (GUI).</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">We also need to think about what our application needs to be able to do:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; Start a new game</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; reset the playing area</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; pick an answer</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; set up the puzzle</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; show the correct hint: film, book etc: film, book etc</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Check a letter</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; When a letter is chosen by the user if it is in the answer those spots should be filled in</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; If not another piece of the skeleton should be added</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; The letter should be scored out so it is not chosen again</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Check game status</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; If all parts of the skeleton are showing the player has lost</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">&bull; If all the letters in the answer have been found the player has won</font></p>
+<p><font face="Lucida Grande" size="12" color="#000000">These are the main things that our application needs to do. If we are sure we have thought of everything we can move on to the next stage and start creating the application. First we will create the user interface and then we will start writing our code.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Creating the GUI</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Since we already have a design this is relatively simple. Revolution Media allows you to drag controls from the Tools Palettes straight on to your stack and position them however you want.</font></p>

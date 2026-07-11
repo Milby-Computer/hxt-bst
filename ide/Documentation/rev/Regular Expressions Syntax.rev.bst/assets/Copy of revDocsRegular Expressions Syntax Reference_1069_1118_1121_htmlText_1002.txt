@@ -1,0 +1,3 @@
+<p><font face="Courier New" size="12">ZA+B </font><font face="verdana" size="11">matches &ldquo;ZAB&rdquo; or &ldquo;ZAAB&rdquo;, but not &ldquo;ZB&rdquo;</font></p>
+<p></p>
+<p><font face="Courier New" size="12">[A-D]+G </font><font face="verdana" size="11">matches &ldquo;AG&rdquo; or &ldquo;CAG&rdquo;, but not &ldquo;G&rdquo; or &ldquo;AB&rdquo;</font></p>

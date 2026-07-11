@@ -1,0 +1,4 @@
+<p><b><font face="Arial" size="22" color="#FFFFFF">Data Grids</font></b></p>
+<p></p>
+<p><font face="Arial" size="14" color="#FFFFFF">Data grids are a new feature of Revolution 3.5 that allows for virtually unlimited presentation of not only text but also graphics, buttons, multiple field styles, and images. This is because each row of the data grid is a free-form canvas upon which you can add and arrange items to your preference. Yet, management of the grid is completely handled by Revolution. You don&rsquo;t need to reinvent the wheel, and the data grid operates with lightning performance. </font></p>
+<p></p>

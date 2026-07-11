@@ -1,0 +1,12 @@
+<p><b><u><font face="Geneva" size="9">Do Command Variables</font></u></b></p>
+<p><b><font face="Geneva" size="9">tCount</font></b><font face="Geneva" size="9"> -- the number of objects in the list</font></p>
+<p><b><font face="Geneva" size="9">tIndex</font></b><font face="Geneva" size="9"> -- the count of the object in the list</font></p>
+<p><b><font face="Geneva" size="9">tID</font></b><font face="Geneva" size="9"> -- the long id of the current object</font></p>
+<p><b><font face="Geneva" size="9">tIDList</font></b><font face="Geneva" size="9"> -- an array of the object long ids, 1 to tCount</font></p>
+<p><b><font face="Geneva" size="9">tOwnerID</font></b><font face="Geneva" size="9"> -- the long id of the owner of the current object</font></p>
+<p><b><font face="Geneva" size="9">tCardID</font></b><font face="Geneva" size="9"> -- the long id of the card the current object is on</font></p>
+<p><b><font face="Geneva" size="9">tStackID</font></b><font face="Geneva" size="9"> -- the long id of the stack containing the current object</font></p>
+<p><b><font face="Geneva" size="9">tLastID</font></b><font face="Geneva" size="9"> -- the long id of the previous object in the list</font></p>
+<p><b><font face="Geneva" size="9">tNextID</font></b><font face="Geneva" size="9"> -- the long id of the next object in the list</font></p>
+<p>          tLastID and tNextID wrap</p>
+<p>          The defaultStack is set for each object to the stack that contains it.</p>

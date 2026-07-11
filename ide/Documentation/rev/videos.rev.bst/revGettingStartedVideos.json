@@ -1,0 +1,567 @@
+{
+   "#mainstack": "revGettingStartedVideos",
+   "revGettingStartedVideos": {
+      "#name": "stack \"revGettingStartedVideos\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"card id 1002\"",
+            "childcontrols": {
+               "299901": {
+                  "#name": "image \"Thumbnail Database Query Builder\"",
+                  "properties": {
+                     "id": "299901",
+                     "layer": "1",
+                     "name": "Thumbnail Database Query Builder",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299901_text.png"
+                  }
+               },
+               "299902": {
+                  "#name": "image \"Locked Thumbnail Database Query Builder\"",
+                  "properties": {
+                     "id": "299902",
+                     "layer": "2",
+                     "name": "Locked Thumbnail Database Query Builder",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299902_text.png"
+                  }
+               },
+               "299903": {
+                  "#name": "image \"Thumbnail Custom Properties\"",
+                  "properties": {
+                     "id": "299903",
+                     "layer": "3",
+                     "name": "Thumbnail Custom Properties",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299903_text.png"
+                  }
+               },
+               "299904": {
+                  "#name": "image \"Locked Thumbnail Custom Properties\"",
+                  "properties": {
+                     "id": "299904",
+                     "layer": "4",
+                     "name": "Locked Thumbnail Custom Properties",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299904_text.png"
+                  }
+               },
+               "299905": {
+                  "#name": "image \"Thumbnail Geometry Manager\"",
+                  "properties": {
+                     "id": "299905",
+                     "layer": "5",
+                     "name": "Thumbnail Geometry Manager",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299905_text.png"
+                  }
+               },
+               "299906": {
+                  "#name": "image \"Locked Thumbnail Geometry Manager\"",
+                  "properties": {
+                     "id": "299906",
+                     "layer": "6",
+                     "name": "Locked Thumbnail Geometry Manager",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299906_text.png"
+                  }
+               },
+               "299907": {
+                  "#name": "image \"Thumbnail Video Capture\"",
+                  "properties": {
+                     "id": "299907",
+                     "layer": "7",
+                     "name": "Thumbnail Video Capture",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299907_text.png"
+                  }
+               },
+               "299908": {
+                  "#name": "image \"Thumbnail Tips for Learning Revolution\"",
+                  "properties": {
+                     "id": "299908",
+                     "layer": "8",
+                     "name": "Thumbnail Tips for Learning Revolution",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299908_text.png"
+                  }
+               },
+               "299909": {
+                  "#name": "image \"Thumbnail Sharing your Stack with Others\"",
+                  "properties": {
+                     "id": "299909",
+                     "layer": "9",
+                     "name": "Thumbnail Sharing your Stack with Others",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299909_text.png"
+                  }
+               },
+               "299910": {
+                  "#name": "image \"Thumbnail Text\"",
+                  "properties": {
+                     "id": "299910",
+                     "layer": "10",
+                     "name": "Thumbnail Text",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299910_text.png"
+                  }
+               },
+               "299911": {
+                  "#name": "image \"Thumbnail Local and Global Variables\"",
+                  "properties": {
+                     "id": "299911",
+                     "layer": "11",
+                     "name": "Thumbnail Local and Global Variables",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299911_text.png"
+                  }
+               },
+               "299912": {
+                  "#name": "image \"Thumbnail Window Objects\"",
+                  "properties": {
+                     "id": "299912",
+                     "layer": "12",
+                     "name": "Thumbnail Window Objects",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299912_text.png"
+                  }
+               },
+               "299913": {
+                  "#name": "image \"Thumbnail Properties\"",
+                  "properties": {
+                     "id": "299913",
+                     "layer": "13",
+                     "name": "Thumbnail Properties",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299913_text.png"
+                  }
+               },
+               "299914": {
+                  "#name": "image \"Thumbnail Multiple Choice Questionnaire\"",
+                  "properties": {
+                     "id": "299914",
+                     "layer": "14",
+                     "name": "Thumbnail Multiple Choice Questionnaire",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299914_text.png"
+                  }
+               },
+               "299915": {
+                  "#name": "image \"Thumbnail Contact Manager\"",
+                  "properties": {
+                     "id": "299915",
+                     "layer": "15",
+                     "name": "Thumbnail Contact Manager",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299915_text.png"
+                  }
+               },
+               "299916": {
+                  "#name": "image \"Thumbnail Kiosk\"",
+                  "properties": {
+                     "id": "299916",
+                     "layer": "16",
+                     "name": "Thumbnail Kiosk",
+                     "rect": "722,639,808,706",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299916_text.png"
+                  }
+               },
+               "299917": {
+                  "#name": "image \"Thumbnail Internet Image Importer\"",
+                  "properties": {
+                     "id": "299917",
+                     "layer": "17",
+                     "name": "Thumbnail Internet Image Importer",
+                     "rect": "744,626,830,693",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299917_text.png"
+                  }
+               },
+               "299918": {
+                  "#name": "image \"Thumbnail Internet Chat\"",
+                  "properties": {
+                     "id": "299918",
+                     "layer": "18",
+                     "name": "Thumbnail Internet Chat",
+                     "rect": "744,626,830,693",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299918_text.png"
+                  }
+               },
+               "299919": {
+                  "#name": "image \"Thumbnail Simple Calculator\"",
+                  "properties": {
+                     "id": "299919",
+                     "layer": "19",
+                     "name": "Thumbnail Simple Calculator",
+                     "rect": "744,626,830,693",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299919_text.png"
+                  }
+               },
+               "299920": {
+                  "#name": "image \"Thumbnail Commands and Functions\"",
+                  "properties": {
+                     "id": "299920",
+                     "layer": "20",
+                     "name": "Thumbnail Commands and Functions",
+                     "rect": "744,626,830,693",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299920_text.png"
+                  }
+               },
+               "299921": {
+                  "#name": "image \"Thumbnail Bouncy\"",
+                  "properties": {
+                     "id": "299921",
+                     "layer": "21",
+                     "name": "Thumbnail Bouncy",
+                     "rect": "744,626,830,693",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299921_text.png"
+                  }
+               },
+               "299922": {
+                  "#name": "image \"Thumbnail Preferences Pane\"",
+                  "properties": {
+                     "id": "299922",
+                     "layer": "22",
+                     "name": "Thumbnail Preferences Pane",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299922_text.png"
+                  }
+               },
+               "299923": {
+                  "#name": "image \"Thumbnail Open Anything\"",
+                  "properties": {
+                     "id": "299923",
+                     "layer": "23",
+                     "name": "Thumbnail Open Anything",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299923_text.png"
+                  }
+               },
+               "299924": {
+                  "#name": "image \"Thumbnail Profiles\"",
+                  "properties": {
+                     "id": "299924",
+                     "layer": "24",
+                     "name": "Thumbnail Profiles",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299924_text.png"
+                  }
+               },
+               "299925": {
+                  "#name": "image \"Locked Thumbnail Profiles\"",
+                  "properties": {
+                     "id": "299925",
+                     "layer": "25",
+                     "name": "Locked Thumbnail Profiles",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299925_text.png"
+                  }
+               },
+               "299926": {
+                  "#name": "image \"Thumbnail Menu Bars\"",
+                  "properties": {
+                     "id": "299926",
+                     "layer": "26",
+                     "name": "Thumbnail Menu Bars",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299926_text.png"
+                  }
+               },
+               "299927": {
+                  "#name": "image \"Locked Thumbnail Menu Bars\"",
+                  "properties": {
+                     "id": "299927",
+                     "layer": "27",
+                     "name": "Locked Thumbnail Menu Bars",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299927_text.png"
+                  }
+               },
+               "299928": {
+                  "#name": "image \"Thumbnail Layout Printing\"",
+                  "properties": {
+                     "id": "299928",
+                     "layer": "28",
+                     "name": "Thumbnail Layout Printing",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299928_text.png"
+                  }
+               },
+               "299929": {
+                  "#name": "image \"Locked Thumbnail Layout Printing\"",
+                  "properties": {
+                     "id": "299929",
+                     "layer": "29",
+                     "name": "Locked Thumbnail Layout Printing",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299929_text.png"
+                  }
+               },
+               "299930": {
+                  "#name": "image \"Thumbnail Outside World\"",
+                  "properties": {
+                     "id": "299930",
+                     "layer": "30",
+                     "name": "Thumbnail Outside World",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299930_text.png"
+                  }
+               },
+               "299931": {
+                  "#name": "image \"Locked Thumbnail Outside World\"",
+                  "properties": {
+                     "id": "299931",
+                     "layer": "31",
+                     "name": "Locked Thumbnail Outside World",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299931_text.png"
+                  }
+               },
+               "299932": {
+                  "#name": "image \"Thumbnail Interface Objects\"",
+                  "properties": {
+                     "id": "299932",
+                     "layer": "32",
+                     "name": "Thumbnail Interface Objects",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299932_text.png"
+                  }
+               },
+               "299933": {
+                  "#name": "image \"Thumbnail Basic Printing\"",
+                  "properties": {
+                     "id": "299933",
+                     "layer": "33",
+                     "name": "Thumbnail Basic Printing",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299933_text.png"
+                  }
+               },
+               "299934": {
+                  "#name": "image \"Locked Thumbnail Basic Printing\"",
+                  "properties": {
+                     "id": "299934",
+                     "layer": "34",
+                     "name": "Locked Thumbnail Basic Printing",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299934_text.png"
+                  }
+               },
+               "299935": {
+                  "#name": "image \"Thumbnail Error Messages\"",
+                  "properties": {
+                     "id": "299935",
+                     "layer": "35",
+                     "name": "Thumbnail Error Messages",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299935_text.png"
+                  }
+               },
+               "299936": {
+                  "#name": "image \"Locked Thumbnail Error Messages\"",
+                  "properties": {
+                     "id": "299936",
+                     "layer": "36",
+                     "name": "Locked Thumbnail Error Messages",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299936_text.png"
+                  }
+               },
+               "299937": {
+                  "#name": "image \"Thumbnail If...then...else and Switch\"",
+                  "properties": {
+                     "id": "299937",
+                     "layer": "37",
+                     "name": "Thumbnail If...then...else and Switch",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299937_text.png"
+                  }
+               },
+               "299938": {
+                  "#name": "image \"Thumbnail Variables\"",
+                  "properties": {
+                     "id": "299938",
+                     "layer": "38",
+                     "name": "Thumbnail Variables",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299938_text.png"
+                  }
+               },
+               "299939": {
+                  "#name": "image \"Thumbnail Repeat Loops\"",
+                  "properties": {
+                     "id": "299939",
+                     "layer": "39",
+                     "name": "Thumbnail Repeat Loops",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299939_text.png"
+                  }
+               },
+               "299940": {
+                  "#name": "image \"Thumbnail Messages\"",
+                  "properties": {
+                     "id": "299940",
+                     "layer": "40",
+                     "name": "Thumbnail Messages",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299940_text.png"
+                  }
+               },
+               "299941": {
+                  "#name": "image \"Thumbnail Application Browser\"",
+                  "properties": {
+                     "id": "299941",
+                     "layer": "41",
+                     "name": "Thumbnail Application Browser",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299941_text.png"
+                  }
+               },
+               "299942": {
+                  "#name": "image \"Thumbnail First Application\"",
+                  "properties": {
+                     "id": "299942",
+                     "layer": "42",
+                     "name": "Thumbnail First Application",
+                     "rect": "564,569,650,636",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299942_text.png"
+                  }
+               },
+               "299944": {
+                  "#name": "image \"Thumbnail U3 Example\"",
+                  "properties": {
+                     "id": "299944",
+                     "layer": "43",
+                     "name": "Thumbnail U3 Example",
+                     "rect": "545,396,631,463",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revGettingStartedVideos_1002_299944_text.png"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "43"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "card id 1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cDescription": "%file%: assets/revGettingStartedVideos_cDescription.bin",
+         "cPrevCard": null
+      },
+      "custompropertysets": {
+         "cEntries": {
+            "Application Browser": "%file%: assets/revGettingStartedVideos_cEntries_Application Browser.bin",
+            "Basic Printing": "%file%: assets/revGettingStartedVideos_cEntries_Basic Printing.bin",
+            "Bouncy": "%file%: assets/revGettingStartedVideos_cEntries_Bouncy.bin",
+            "Commands and Functions": "%file%: assets/revGettingStartedVideos_cEntries_Commands and Functions.bin",
+            "Contact Manager": "%file%: assets/revGettingStartedVideos_cEntries_Contact Manager.bin",
+            "Custom Properties": "%file%: assets/revGettingStartedVideos_cEntries_Custom Properties.bin",
+            "Database Query Builder": "%file%: assets/revGettingStartedVideos_cEntries_Database Query Builder.bin",
+            "Error Messages": "%file%: assets/revGettingStartedVideos_cEntries_Error Messages.bin",
+            "First Application": "%file%: assets/revGettingStartedVideos_cEntries_First Application.bin",
+            "Geometry Manager": "%file%: assets/revGettingStartedVideos_cEntries_Geometry Manager.bin",
+            "If...then...else and Switch": "%file%: assets/revGettingStartedVideos_cEntries_If...then...else and Switch.bin",
+            "Interface Objects": "%file%: assets/revGettingStartedVideos_cEntries_Interface Objects.bin",
+            "Internet Chat": "%file%: assets/revGettingStartedVideos_cEntries_Internet Chat.bin",
+            "Internet Image Importer": "%file%: assets/revGettingStartedVideos_cEntries_Internet Image Importer.bin",
+            "Kiosk": "%file%: assets/revGettingStartedVideos_cEntries_Kiosk.bin",
+            "Layout Printing": "%file%: assets/revGettingStartedVideos_cEntries_Layout Printing.bin",
+            "Local and Global Variables": "%file%: assets/revGettingStartedVideos_cEntries_Local and Global Variables.bin",
+            "Menu Bars": "%file%: assets/revGettingStartedVideos_cEntries_Menu Bars.bin",
+            "Messages": "%file%: assets/revGettingStartedVideos_cEntries_Messages.bin",
+            "Multiple Choice Questionnaire": "%file%: assets/revGettingStartedVideos_cEntries_Multiple Choice Questionnaire.bin",
+            "Open Anything": "%file%: assets/revGettingStartedVideos_cEntries_Open Anything.bin",
+            "Outside World": "%file%: assets/revGettingStartedVideos_cEntries_Outside World.bin",
+            "Preferences Pane": "%file%: assets/revGettingStartedVideos_cEntries_Preferences Pane.bin",
+            "Profiles": "%file%: assets/revGettingStartedVideos_cEntries_Profiles.bin",
+            "Properties": "%file%: assets/revGettingStartedVideos_cEntries_Properties.bin",
+            "Repeat Loops": "%file%: assets/revGettingStartedVideos_cEntries_Repeat Loops.bin",
+            "Sharing your Stack with Others": "%file%: assets/revGettingStartedVideos_cEntries_Sharing your Stack with Others.bin",
+            "Simple Calculator": "%file%: assets/revGettingStartedVideos_cEntries_Simple Calculator.bin",
+            "Text": "%file%: assets/revGettingStartedVideos_cEntries_Text.txt",
+            "Tips for Learning Revolution": "%file%: assets/revGettingStartedVideos_cEntries_Tips for Learning Revolution.bin",
+            "U3 Example": "%file%: assets/revGettingStartedVideos_cEntries_U3 Example.bin",
+            "Variables": "%file%: assets/revGettingStartedVideos_cEntries_Variables.bin",
+            "Video Capture": "%file%: assets/revGettingStartedVideos_cEntries_Video Capture.bin",
+            "Window Objects": "%file%: assets/revGettingStartedVideos_cEntries_Window Objects.bin"
+         },
+         "cREVGeometryCache": {
+            "stackID": "299944"
+         },
+         "cSections": {
+            "Advanced": "description=<p></p>\nentries=Outside World\\nLayout Printing\nname=Advanced\ntitle=In-depth tutorials: more advanced concepts",
+            "All": "%file%: assets/revGettingStartedVideos_cSections_All.bin",
+            "Getting Started": "description=<p></p>\nentries=First Application\\nTips for Learning Revolution\nname=Getting Started\ntitle=Getting started",
+            "Objects": "description=<p></p>\nentries=Interface Objects\\nApplication Browser\\nCommands and Functions\\nWindow Objects\\nProperties\nname=Objects\ntitle=Building an application using objects",
+            "Sample Projects": "description=<p></p>\nentries=Open Anything\\nPreferences Pane\\nInternet Image Importer\\nInternet Chat\\nBouncy\\nSimple Calculator\\nContact Manager\\nMultiple Choice Questionnaire\\nKiosk\\nVideo Capture\\nU3 Example\nname=Sample Projects\ntitle=Sample projects",
+            "Scripts": "description=<p></p>\nentries=Messages\\nVariables\\nIf...then...else and Switch\\nRepeat Loops\\nLocal and Global Variables\\nText\\nSharing your Stack with Others\nname=Scripts\ntitle=Making an application work using scripts",
+            "Techniques": "description=<p></p>\nentries=Error Messages\\nBasic Printing\\nMenu Bars\\nProfiles\\nCustom Properties\\nGeometry Manager\\nDatabase Query Builder\nname=Techniques\ntitle=In-depth tutorials: useful techniques"
+         }
+      },
+      "longID": "stack \"revGettingStartedVideos\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "videos.rev",
+         "id": "299944",
+         "linkColor": "0,0,0",
+         "linkHiliteColor": "255,0,0",
+         "linkVisitedColor": "0,0,0",
+         "liveResizing": false,
+         "name": "revGettingStartedVideos",
+         "rect": "315,217,475,339",
+         "underlineLinks": true
+      },
+      "sharedGroupIDs": null
+   }
+}

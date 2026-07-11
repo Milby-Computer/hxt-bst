@@ -1,0 +1,730 @@
+{
+   "#mainstack": "revMacCursors",
+   "revMacCursors": {
+      "#name": "stack \"revMacCursors\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1062\n1002\n1004\n1008\n1010\n1013\n1015\n1017\n1019\n1021\n1023\n1025\n1027\n1032\n1060\n1006\n1035\n1028\n1030\n1039\n1041\n1043\n1045\n1047\n1049\n1051\n1053\n1055",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": [
+               {
+                  "#name": "image \"Finalcursors_03.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1",
+                     "layer": "2",
+                     "name": "Finalcursors_03.gif",
+                     "rect": "95,11,111,27",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAAEpJREFUeJxdzlEOADAEA9By/0MP\nRXTLPrYXCgCXAxh+UEkQKbhCKMGFkE4fsMliaJyqwI6NH28vNn1ZzPBTMeM3YxeSbbrLBfr5\nALljAVaX7yOuAAAAAElFTkSuQmCC"
+                     }
+                  }
+               },
+               {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>ID 1 is pointer</p>",
+                     "id": "1003",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "4,6,88,30",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            ],
+            "properties": {
+               "id": "1002",
+               "layer": "2"
+            }
+         },
+         "1004": {
+            "#name": "card id 1004",
+            "childcontrols": {
+               "5": {
+                  "#name": "image \"paint bucket.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "15,16",
+                     "id": "5",
+                     "layer": "1",
+                     "name": "paint bucket.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AgOAggACAkCCAAICoIIAAgNgggACAiCCAAIEMIIAAggoggACGCSCAAI8JoIAAl5fggACTzuC\nAAIns4IAAhPjggACCcOCAAIFg4IAAgMCggA="
+                     },
+                     "xHot": "15",
+                     "yHot": "16"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1004",
+               "layer": "3"
+            }
+         },
+         "1006": {
+            "#name": "card id 1006",
+            "childcontrols": {
+               "28": {
+                  "#name": "image \"hand.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "7,1",
+                     "id": "28",
+                     "layer": "1",
+                     "name": "hand.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AQKDAAEFgwABBYMAAQWDAAEFgwACBcCCAAIMMIIAAhQIggACFAiCAAIQCIIAAhAIggCCCIIA\nAgQQggACB/CCAAIH8IYA"
+                     },
+                     "xHot": "7"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1006",
+               "layer": "16"
+            }
+         },
+         "1008": {
+            "#name": "card id 1008",
+            "childcontrols": {
+               "11": {
+                  "#name": "image \"pencil.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "1,16",
+                     "id": "11",
+                     "layer": "1",
+                     "name": "pencil.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AQODAAIFgIIAAgSAggABCYMAAQmDAAESgwABEoMAASSDAAEkgwABSIMAAUiDAAGwgwABkIMA\nAeCDAAHAgwABgIMA"
+                     },
+                     "yHot": "16"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1008",
+               "layer": "4"
+            }
+         },
+         "1010": {
+            "#name": "card id 1010",
+            "childcontrols": {
+               "12": {
+                  "#name": "image \"eyedropper.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "1,16",
+                     "id": "12",
+                     "layer": "1",
+                     "name": "eyedropper.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "hQABHIMAAT6DAAE+gwAB/oMAAfyCAAIBMIIAAgIwggACBECCAAIIgIIAARODAAEmgwABTIMA\nAZiDAAGwgwAB4IMA"
+                     },
+                     "yHot": "16"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1010",
+               "layer": "5"
+            }
+         },
+         "1013": {
+            "#name": "card id 1013",
+            "childcontrols": {
+               "16": {
+                  "#name": "image \"c16\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "16",
+                     "layer": "1",
+                     "name": "c16",
+                     "rect": "56,56,72,72",
+                     "text": {
+                        "%base64%": "AgfAggACGfCCAAIh+IIAAkH8ggACQfyCAAKB/oIAAoH+ggAC//6CAAL/AoIAAv8CggACfwSC\nAAJ/BIIAAj8IggACHzCCAAIHwIYA"
+                     },
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1013",
+               "layer": "6"
+            }
+         },
+         "1015": {
+            "#name": "card id 1015",
+            "childcontrols": {
+               "17": {
+                  "#name": "image \"c17\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "17",
+                     "layer": "1",
+                     "name": "c17",
+                     "rect": "56,56,72,72",
+                     "text": {
+                        "%base64%": "AgfAggACGDCCAAIgCIIAAnAcggACeDyCAAL8foIAgv6CAAL//oIAgv6CAAL8foIAAng8ggAC\ncByCAAIgCIIAAhgwggACB8CGAA=="
+                     },
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1015",
+               "layer": "7"
+            }
+         },
+         "1017": {
+            "#name": "card id 1017",
+            "childcontrols": {
+               "18": {
+                  "#name": "image \"c18\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "18",
+                     "layer": "1",
+                     "name": "c18",
+                     "rect": "56,56,72,72",
+                     "text": {
+                        "%base64%": "AgfAggACHzCCAAI/CIIAAn8EggACfwSCAAL/AoIAAv8CggAC//6CAAKB/oIAAoH+ggACQfyC\nAAJB/IIAAiH4ggACGfCCAAIHwIYA"
+                     },
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1017",
+               "layer": "8"
+            }
+         },
+         "1019": {
+            "#name": "card id 1019",
+            "childcontrols": {
+               "19": {
+                  "#name": "image \"c19\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "19",
+                     "layer": "1",
+                     "name": "c19",
+                     "rect": "56,56,72,72",
+                     "text": {
+                        "%base64%": "AgfAggACH/CCAAI/+IIAAl/0ggACT+SCAAKHwoIAAoOCggACgQKCAAKDgoIAAofCggACT+SC\nAAJf9IIAAj/4ggACH/CCAAIHwIYA"
+                     },
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1019",
+               "layer": "9"
+            }
+         },
+         "1021": {
+            "#name": "card id 1021",
+            "childcontrols": {
+               "20": {
+                  "#name": "image \"c20\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "20",
+                     "layer": "1",
+                     "name": "c20",
+                     "rect": "56,56,72,72",
+                     "text": {
+                        "%base64%": "AgfAggACGfCCAAIh+IIAAkH8ggACQfyCAAKB/oIAAoH+ggAC//6CAAL/AoIAAv8CggACfwSC\nAAJ/BIIAAj8IggACHzCCAAIHwIYA"
+                     },
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1021",
+               "layer": "10"
+            }
+         },
+         "1023": {
+            "#name": "card id 1023",
+            "childcontrols": {
+               "21": {
+                  "#name": "image \"c21\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "21",
+                     "layer": "1",
+                     "name": "c21",
+                     "rect": "56,56,72,72",
+                     "text": {
+                        "%base64%": "AgfAggACGDCCAAIgCIIAAnAcggACeDyCAAL8foIAgv6CAAL//oIAgv6CAAL8foIAAng8ggAC\ncByCAAIgCIIAAhgwggACB8CGAA=="
+                     },
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1023",
+               "layer": "11"
+            }
+         },
+         "1025": {
+            "#name": "card id 1025",
+            "childcontrols": {
+               "22": {
+                  "#name": "image \"c22\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "22",
+                     "layer": "1",
+                     "name": "c22",
+                     "rect": "56,56,72,72",
+                     "text": {
+                        "%base64%": "AgfAggACHzCCAAI/CIIAAn8EggACfwSCAAL/AoIAAv8CggAC//6CAAKB/oIAAoH+ggACQfyC\nAAJB/IIAAiH4ggACGfCCAAIHwIYA"
+                     },
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1025",
+               "layer": "12"
+            }
+         },
+         "1027": {
+            "#name": "card id 1027",
+            "childcontrols": {
+               "23": {
+                  "#name": "image \"c23\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "23",
+                     "layer": "1",
+                     "name": "c23",
+                     "rect": "56,56,72,72",
+                     "text": {
+                        "%base64%": "AgfAggACH/CCAAI/+IIAAl/0ggACT+SCAAKHwoIAAoOCggACgQKCAAKDgoIAAofCggACT+SC\nAAJf9IIAAj/4ggACH/CCAAIHwIYA"
+                     },
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1027",
+               "layer": "13"
+            }
+         },
+         "1028": {
+            "#name": "card id 1028",
+            "childcontrols": {
+               "30": {
+                  "#name": "image \"hdividecursor.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "30",
+                     "layer": "1",
+                     "name": "hdividecursor.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AgOAggACBsCCAAIMYIIAAgggggACDuCCAAL//oIAAoACggAC//6CAAL//oIAAoACggAC//6C\nAAIO4IIAAgggggACDGCCAAIGwIIAAgOAggA="
+                     },
+                     "toolTip": "201582",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1028",
+               "layer": "18"
+            }
+         },
+         "1030": {
+            "#name": "card id 1030",
+            "childcontrols": {
+               "31": {
+                  "#name": "image \"vdividecursor.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "31",
+                     "layer": "1",
+                     "name": "vdividecursor.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AgfgggACBaCCAAIFoIIAAgWgggACPbyCAAJttoIAAs2zggAChaGCAALNs4IAAm22ggACPbyC\nAAIFoIIAAgWgggACBaCCAAIH4IYA"
+                     },
+                     "toolTip": "201578",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1030",
+               "layer": "19"
+            }
+         },
+         "1032": {
+            "#name": "card id 1032",
+            "childcontrols": {
+               "24": {
+                  "#name": "image \"textdragmac.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "24",
+                     "layer": "1",
+                     "name": "textdragmac.gif",
+                     "rect": "75,81,91,97",
+                     "text": {
+                        "%base64%": "AcCDAAGggwABkIMAAYiDAAGEgwABgoMAAYGDAIKAggACgECCAAKDwIIAAZKDAAGpgwAByYMA\nAQaLAA=="
+                     }
+                  }
+               }
+            },
+            "properties": {
+               "id": "1032",
+               "layer": "14"
+            }
+         },
+         "1035": {
+            "#name": "card id 1035",
+            "childcontrols": {
+               "29": {
+                  "#name": "image \"copycursormac.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "29",
+                     "layer": "1",
+                     "name": "copycursormac.gif",
+                     "rect": "75,71,91,87",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAAD9JREFUeJxt0EkKADAIQ9Ff73/o\njg6RugjyFhEETAYGHVQ2iByocqHIgxSHkAAX74ACtFIMKV2rwM1y5Q+WT5jKmAF7ND0BnQAA\nAABJRU5ErkJggg=="
+                     },
+                     "toolTip": "201615"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1035",
+               "layer": "17"
+            }
+         },
+         "1039": {
+            "#name": "card id 1039",
+            "childcontrols": {
+               "32": {
+                  "#name": "image \"copycursormac.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "32",
+                     "layer": "1",
+                     "name": "copycursormac.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AcCDAAGggwABkIMAAYiDAAGEgwABgoMAAYGDAIKAggACgHyCAAKD5IIAApLnggACqYGCAALJ\ngYIAAgTnggACBKSCAAIDPIIA"
+                     },
+                     "toolTip": "32"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1039",
+               "layer": "20"
+            }
+         },
+         "1041": {
+            "#name": "card id 1041",
+            "childcontrols": {
+               "33": {
+                  "#name": "image \"eraser mac.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "33",
+                     "layer": "1",
+                     "name": "eraser mac.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AeCDAAHAgwACgP6CAIIBggACAgOCAAIEBYIAAggJggACEBGCAAIgIYIAAn/CggACQESCAAJA\nSIIAAkBQggACQGCCAAI/wIYA"
+                     },
+                     "toolTip": "33"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1041",
+               "layer": "21"
+            }
+         },
+         "1043": {
+            "#name": "card id 1043",
+            "childcontrols": {
+               "34": {
+                  "#name": "image \"spray can.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "13,3",
+                     "id": "34",
+                     "layer": "1",
+                     "name": "spray can.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AgAEgwABEIIAAgdEggACBhCCAAIGBIIAAQmDAAIQgIIAAiBAggACMECCAAIrwIIAAjJAggAC\nKkCCAAIyQIIAAivAggACMECCAAI/wIIA"
+                     },
+                     "toolTip": "34",
+                     "xHot": "13",
+                     "yHot": "3"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1043",
+               "layer": "22"
+            }
+         },
+         "1045": {
+            "#name": "card id 1045",
+            "childcontrols": {
+               "35": {
+                  "#name": "image \"paint brush.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "1,16",
+                     "id": "35",
+                     "layer": "1",
+                     "name": "paint brush.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AgAKgwABC4MAAReDAAEWgwABLoMAASyDAAFcgwABWIMAAbiCAAIBcIIAAgEgggACAyCCAAIH\nwIIAAguAggACd4CCAAH/gwA="
+                     },
+                     "toolTip": "35",
+                     "yHot": "16"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1045",
+               "layer": "23"
+            }
+         },
+         "1047": {
+            "#name": "card id 1047",
+            "childcontrols": {
+               "36": {
+                  "#name": "image \"subtract.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "36",
+                     "layer": "1",
+                     "name": "subtract.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AcCDAAGggwABkIMAAYiDAAGEgwABgoMAAYGDAIKAggACgECCAAKDwIIAApL/ggACqYGCAALJ\ngYIAAgT/ggACBICCAAEDgwA="
+                     },
+                     "toolTip": "36"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1047",
+               "layer": "24"
+            }
+         },
+         "1049": {
+            "#name": "card id 1049",
+            "childcontrols": {
+               "37": {
+                  "#name": "image \"crosshair.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "37",
+                     "layer": "1",
+                     "name": "crosshair.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "hAABAYMAAQGDAAEBgwABAYsAAnk8igABAYMAAQGDAAEBgwABAYsA"
+                     },
+                     "toolTip": "37",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1049",
+               "layer": "25"
+            }
+         },
+         "1051": {
+            "#name": "card id 1051",
+            "childcontrols": {
+               "38": {
+                  "#name": "image \"object eyedropper.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "1,15",
+                     "id": "38",
+                     "layer": "1",
+                     "name": "object eyedropper.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AgAcgwABPoMAAT6DAAH+gwAB/IIAAgEwggACAjCCAAIETIIAAgiSggACEyGCAAImIYIAAkwz\nggACmC+CAAKwJ4IAAuAWgwABDIIA"
+                     },
+                     "toolTip": "38",
+                     "yHot": "15"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1051",
+               "layer": "26"
+            }
+         },
+         "1053": {
+            "#name": "card id 1053",
+            "childcontrols": {
+               "39": {
+                  "#name": "image \"magifier.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "6,6",
+                     "id": "39",
+                     "layer": "1",
+                     "name": "magifier.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AQ+DAAIwwIIAAkAgggACRiCCAAKGEIIAAp+QggACn5CCAAKGEIIAAkYgggACQDCCAAIwyIIA\nAg9kgwABMoMAARmDAAENgwABBoIA"
+                     },
+                     "toolTip": "39",
+                     "xHot": "6",
+                     "yHot": "6"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1053",
+               "layer": "27"
+            }
+         },
+         "1055": {
+            "#name": "card id 1055",
+            "childcontrols": {
+               "40": {
+                  "#name": "image \"unmagnifier.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "6,6",
+                     "id": "40",
+                     "layer": "1",
+                     "name": "unmagnifier.gif",
+                     "rect": "75,71,91,87",
+                     "text": {
+                        "%base64%": "AQ+DAAIwwIIAAkAgggACQCCCAAKAEIIAAp+QggACn5CCAAKAEIIAAkAgggACQDCCAAIwyIIA\nAg9kgwABMoMAARmDAAENgwABBoIA"
+                     },
+                     "toolTip": "40",
+                     "xHot": "6",
+                     "yHot": "6"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1055",
+               "layer": "28"
+            }
+         },
+         "1060": {
+            "#name": "card id 1060",
+            "childcontrols": {
+               "25": {
+                  "#name": "image \"textdragcopymac.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "25",
+                     "layer": "1",
+                     "name": "textdragcopymac.gif",
+                     "rect": "75,41,91,57",
+                     "text": {
+                        "%base64%": "AcCDAAGggwACkDyCAAKIJIIAAoTnggACgoGCAIKBggACgOeCAAKAZIIAAoP8ggABkoMAAamD\nAAHJgwABBosA"
+                     }
+                  }
+               }
+            },
+            "properties": {
+               "id": "1060",
+               "layer": "15"
+            }
+         },
+         "1062": {
+            "#name": "card id 1062",
+            "childcontrols": {
+               "1063": {
+                  "#name": "field \"field id 1132\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/revMacCursors_1062_1063_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "<p>Note:  The cursors in this stack are in the ID range 1-40 and have corresponding 32*32 cursors of the same ID for Windows and UNIX  in stack \"revCursors\".</p>\n<p></p>\n<p>Stack \"revCursors\" is loaded instead of this stack on Windows and UNIX.</p>",
+                     "id": "1063",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "field id 1132",
+                     "opaque": false,
+                     "rect": "-2,6,192,162",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1062"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.6.1"
+      },
+      "longID": "stack \"revMacCursors\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "revmaccursors.rev",
+         "id": "1063",
+         "liveResizing": false,
+         "name": "revMacCursors",
+         "rect": "109,222,299,391",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   }
+}

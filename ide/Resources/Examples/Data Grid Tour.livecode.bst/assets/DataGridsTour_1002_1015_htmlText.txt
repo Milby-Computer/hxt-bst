@@ -1,0 +1,2 @@
+<p>Fields are the workhorse of LiveCode data display. They are used for purposes ranging from text labels to single-line data entry, to large blocks of scrolling text. You can control many aspects of a fields&rsquo;s appearance, such as its colors, margins, alignment, font and style, line spaceing, and indents. Fields can also accommodate simple, in-line graphics.</p>
+<p></p>

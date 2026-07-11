@@ -1,0 +1,23 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">local</font> theMessageID <font color="#68228B">-- stores the message ID so we can cancel</font></p>
+<p></p>
+<p><font color="#980517">on</font> openCard <font color="#68228B">-- executed every time we go to a new card</font></p>
+<p>  <font color="#68228B">-- the slideshow begins when openCard is executed:</font></p>
+<p>  <font color="#0000FF">send</font> "showNextSlide" to <font color="#F88017">me</font> in 2 <font color="#F88017">seconds</font></p>
+<p>  <font color="#68228B">-- delay 2 seconds, then go to the next card</font></p>
+<p>  <font color="#0000FF">put</font> the <font color="#F88017">result</font> into theMessageID</p>
+<p>  <font color="#68228B">-- store the ID of the delayed message you just sent, so</font></p>
+<p>  <font color="#68228B">-- you can cancel it if the user clicks</font></p>
+<p><font color="#980517">end</font> openCard</p>
+<p></p>
+<p><font color="#980517">on</font> mouseUp <font color="#68228B">-- when the user clicks</font></p>
+<p>  <font color="#980517">if</font> "showNextSlide" is among the items of the <font color="#F88017">pendingMessages</font></p>
+<p>  <font color="#980517">then</font> <font color="#0000FF">cancel</font> theMessageID <font color="#68228B">-- stop the slideshow</font></p>
+<p>  <font color="#980517">else</font> showNextSlide <font color="#68228B">-- restart the slideshow</font></p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#980517">on</font> showNextSlide</p>
+<p>  <font color="#0000FF">visual</font> effect dissolve fast</p>
+<p>  <font color="#0000FF">go</font> <font color="#0000FF">next</font> card <font color="#68228B">--...which will trigger the openCard handler</font></p>
+<p><font color="#980517">end</font> showNextSlide</p>
+<p></p>

@@ -1,0 +1,2 @@
+<p><a><b><font face="verdana" size="11">=</font></b></a>, <a><b><font face="verdana" size="11">is</font></b></a> </p>
+<p><a><b><font face="verdana" size="11">&lt;&gt;</font></b></a>, <a><b><font face="verdana" size="11">!=</font></b></a>, <a><b><font face="verdana" size="11">&ne;</font></b></a>, <a><b><font face="verdana" size="11">is not</font></b></a> </p>

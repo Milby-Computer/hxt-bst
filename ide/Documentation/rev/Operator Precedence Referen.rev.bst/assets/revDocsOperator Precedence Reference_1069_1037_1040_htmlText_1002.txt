@@ -1,0 +1,1 @@
+<p><a><font face="verdana" size="11">Operations</font></a> that compare two <a><font face="verdana" size="11">values</font></a> for equality are done next. These are <a><font face="verdana" size="11">logical</font></a> <a><font face="verdana" size="11">operators</font></a> and res<font face="verdana" size="11">ult in either true or false.</font></p>

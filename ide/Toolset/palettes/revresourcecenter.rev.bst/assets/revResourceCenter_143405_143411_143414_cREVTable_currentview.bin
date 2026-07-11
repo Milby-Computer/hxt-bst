@@ -1,0 +1,3 @@
+<p><font size="12" color="#000000">There are a number of ways you could set the callbacks of your player. They could be read in from external text file, stored as a custom property of your stack or set using the object inspector.</font></p>
+<p></p>
+<p><font size="12" color="#000000">For further information check the Revolution Documentation on player objects, the callbacks property and the timescale property</font></p>

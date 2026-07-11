@@ -1,0 +1,4 @@
+description=<p>The examples in this section show what kind of scripts can be used to work with menus and the menu bar.  Examples include how to update menu items dynamically, and how to handle choices from a menu.</p>
+entries=Dynamic card creation and navigation menu\nResponding to a choice in a Window menu\nInserting some text before each line in a field\nText Menu: updating check marks\nUpdating a menu with a list of open Windows\nPlacing a check next to a menu item\nPlacing a font list into a menu\nText menu: handling choices\nPopping up a menu after a delay timer\nText menu: populating with content
+name=Menus and the Menu Bar
+title=Menus and the Menu Bar

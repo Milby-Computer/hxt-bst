@@ -1,0 +1,3931 @@
+{
+   "#mainstack": "SQLite Sampler",
+   "SQLite Sampler": {
+      "#name": "stack \"SQLite Sampler\"",
+      "#substacks": "Viewer",
+      "backgroundIDs": "1050\n1060\n1072\n1081\n1021\n1031\n1122\n1160\n1169\n1186\n1210\n1223",
+      "cardIDs": "1002\n1033\n1116\n1119\n1131\n1034\n1038\n1070\n1091\n1102\n1106\n1153\n1108\n1206\n1110\n1112\n1264\n1272\n1304\n1284\n1289",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Introduction\"",
+            "childcontrols": {
+               "1010": {
+                  "#name": "image \"icon RightArrow2\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1010",
+                     "layer": "1",
+                     "name": "icon RightArrow2",
+                     "opaque": false,
+                     "rect": "10,10,29,28",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/SQLite Sampler_1002_1010_text.png",
+                     "visible": false
+                  }
+               },
+               "1011": {
+                  "#name": "image \"icon LeftArrow2\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1011",
+                     "layer": "2",
+                     "name": "icon LeftArrow2",
+                     "opaque": false,
+                     "rect": "10,10,29,28",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/SQLite Sampler_1002_1011_text.png",
+                     "visible": false
+                  }
+               },
+               "1020": {
+                  "#name": "image \"BG Graphite.png\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1020",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "name": "BG Graphite.png",
+                     "rect": "322,130,450,258",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/SQLite Sampler_1002_1020_text.png",
+                     "visible": false
+                  }
+               },
+               "1021": "#shared group",
+               "1028": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": null,
+                        "HandlerScroll": "0",
+                        "prop": null,
+                        "varChecking": false
+                     },
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1002_1028_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1002_1028_htmlText.txt",
+                     "id": "1028",
+                     "layer": "29",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,593,448",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               },
+               "1031": "#shared group",
+               "1239": {
+                  "#name": "image \"innerjoin.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1239",
+                     "layer": "27",
+                     "name": "innerjoin.gif",
+                     "rect": "100,198,300,408",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/SQLite Sampler_1002_1239_text.png",
+                     "visible": false
+                  }
+               },
+               "1243": {
+                  "#name": "image \"outerJoin.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1243",
+                     "layer": "28",
+                     "name": "outerJoin.gif",
+                     "rect": "220,135,420,345",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/SQLite Sampler_1002_1243_text.png",
+                     "visible": false
+                  }
+               },
+               "1263": {
+                  "#name": "field \"vers\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>v0.9.10</p>",
+                     "id": "1263",
+                     "layer": "30",
+                     "lockText": true,
+                     "name": "vers",
+                     "opaque": false,
+                     "rect": "4,409,54,435",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1288": {
+                  "#name": "button \"Purchase altSQLite3 NOW!\"",
+                  "properties": {
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1288",
+                     "layer": "31",
+                     "name": "Purchase altSQLite3 NOW!",
+                     "rect": "485,379,620,416",
+                     "style": "rectangle",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "topColor": "145,152,160",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1294": {
+                  "#name": "image \"altPlug.png\"",
+                  "customproperties": {
+                     "altOnClickMe": "doIt",
+                     "altOpenMode": "modeless",
+                     "altOpenVisible": true,
+                     "altPlugFileName": "SQLite3Demo.rev",
+                     "altUpdateURL": "http://www.gadgetplugins.com/altsqlite/altsqlite3plugin.txt",
+                     "altVers": "v0.9.10"
+                  },
+                  "properties": {
+                     "id": "1294",
+                     "layer": "32",
+                     "name": "altPlug.png",
+                     "opaque": false,
+                     "rect": "11,68,43,100",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/SQLite Sampler_1002_1294_text.png",
+                     "visible": false
+                  }
+               },
+               "1295": {
+                  "#name": "button \"togglePaletteMode\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1295",
+                     "layer": "33",
+                     "name": "togglePaletteMode",
+                     "opaque": false,
+                     "rect": "0,0,20,17",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cConsLast": {
+                  "HandlerName": "all handlers",
+                  "HandlerScroll": "0",
+                  "prop": null,
+                  "varChecking": false
+               },
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "33"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Introduction"
+            }
+         },
+         "1021": {
+            "#name": "group \"ChapterSlider\"",
+            "childcontrols": {
+               "1145": {
+                  "#name": "image \"altScrollLeft.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "blendLevel": "99",
+                     "id": "1145",
+                     "layer": "22",
+                     "name": "altScrollLeft.png",
+                     "opaque": false,
+                     "rect": "14,453,18,470",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAAQAAAARCAYAAAD66g1WAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABdSURBVHjavE7BDQAhCCuIOoRL\n3P6zqZw14uMGuCYF2lCCtNbczJBS2jSKWityzhQwuhSllN31rF1TF1giDxURhLmJD34y3B1z\nzkuNYYyB3jssBn5JCCMLT9x4BRgAK0kjXjZj7wwAAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "1146": {
+                  "#name": "image \"altScrollMiddle.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "blendLevel": "99",
+                     "id": "1146",
+                     "layer": "23",
+                     "lockLoc": true,
+                     "name": "altScrollMiddle.png",
+                     "opaque": false,
+                     "rect": "18,453,265,470",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABKSURBVHja7MzBCcAwCEDRRAIK\nLuKx+28miLY7/EsOfQO8HRGzoOPuCydmxhNV5cmHJyKCEz78yeXJ6W6eVBVPMhMne2YemrwC\nDACYkw4Ow11cxgAAAABJRU5ErkJggg=="
+                     }
+                  }
+               },
+               "1147": {
+                  "#name": "image \"slider.png\"",
+                  "customproperties": {
+                     "altSliderMaxVal": "21",
+                     "altSliderMinVal": "1"
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1147",
+                     "layer": "26",
+                     "name": "slider.png",
+                     "rect": "16,454,31,469",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAIAAAC0tAIdAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAB1SURBVHja7JJLCsAgDESjeA3v\nfwFv4g1c6E78IwrSlO5TS7fOImTgEQIzLMYIAHNOINVaM8YI7/1aq/dO0yGEmy6lIIqTpnPO\nKSX+GCmlUoreURy+6NB/aaa13szSWiswT+xArfW1VXhUYFecc2OMnU8uAQYAUepTm1PxzAMA\nAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "1148": {
+                  "#name": "image \"altScrollRight.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "blendLevel": "99",
+                     "id": "1148",
+                     "layer": "24",
+                     "name": "altScrollRight.png",
+                     "opaque": false,
+                     "rect": "265,453,269,470",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAAQAAAARCAYAAAD66g1WAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABmSURBVHjavI9dCgAhCIRNhKKL\n9Nr979JBoh9rXIRlD7ADA/opMoZSiu69aa1FrbUgOWcCmHPSVZWUkk2ZGYAkxujTB1xZgS2I\nseo2QB/9BPCH2wBiw55Ueu/WjDEMBFWt7xtHgAEAof43ZMD7xTEAAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "1149": {
+                  "#name": "field \"sliderValue\"",
+                  "customproperties": {
+                     "altRecentNumber": "1"
+                  },
+                  "properties": {
+                     "autoTab": true,
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>1</p>",
+                     "id": "1149",
+                     "layer": "25",
+                     "lockText": true,
+                     "name": "sliderValue",
+                     "rect": "289,453,320,468",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "textFont": "Tahoma",
+                     "textHeight": "12",
+                     "textSize": "9",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1021",
+               "layer": "21",
+               "lockLoc": true,
+               "name": "ChapterSlider",
+               "rect": "0,0,640,480",
+               "sharedBehavior": true
+            }
+         },
+         "1031": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1009": {
+                  "#name": "button \"RightBtn\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1009",
+                     "label": ">",
+                     "layer": "8",
+                     "name": "RightBtn",
+                     "rect": "605,451,629,472",
+                     "showFocusBorder": false,
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "button \"LeftBtn\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1012",
+                     "label": "<",
+                     "layer": "9",
+                     "name": "LeftBtn",
+                     "rect": "577,451,601,472",
+                     "showFocusBorder": false,
+                     "traversalOn": false
+                  }
+               },
+               "1013": {
+                  "#name": "image \"colorBar.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1013",
+                     "layer": "7",
+                     "lockLoc": true,
+                     "name": "colorBar.gif",
+                     "rect": "-1,472,640,480",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/SQLite Sampler_1031_1013_text.png",
+                     "visible": false
+                  }
+               },
+               "1014": {
+                  "#name": "image \"colorBar.gif LN-ShadeBot.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1014",
+                     "layer": "10",
+                     "lockLoc": true,
+                     "name": "colorBar.gif LN-ShadeBot.png",
+                     "opaque": false,
+                     "rect": "0,471,640,476",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABMSURBVHjaYmRgYGhgQAX/gZgR\nC/8/A3bAiKyGBUjcYCAfYFgEMvAODlcwYjHgPxZxFDEQQwxN8D+aNxiQLEIPCkwn////n4Ga\nACDAAGSMFFG9FSUWAAAAAElFTkSuQmCC"
+                     },
+                     "visible": false
+                  }
+               },
+               "1015": {
+                  "#name": "image \"RightBtn LN-Hilite-Bot.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1015",
+                     "layer": "13",
+                     "lockLoc": true,
+                     "name": "RightBtn LN-Hilite-Bot.png",
+                     "opaque": false,
+                     "rect": "0,48,640,53",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABASURBVHjaYvz//380A37ACMT/\nGYgELED8koGKAGTga6gLkF3CiKbuPxYxnAa+waOYkEEY8iADPxLpG6JcCRBgADuzDhxjEDAZ\nAAAAAElFTkSuQmCC"
+                     },
+                     "visible": false
+                  }
+               },
+               "1016": {
+                  "#name": "image \"LeftBtn LN-Hilite-Top.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1016",
+                     "layer": "11",
+                     "lockLoc": true,
+                     "name": "LeftBtn LN-Hilite-Top.png",
+                     "opaque": false,
+                     "rect": "0,434,640,439",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABBSURBVHjaYvz//z8PA2HwH4gZ\niVDHwALEAiRqxif/H2SgMANxAJtB/6E0I0weZKAoAxUByEBxEtQzIrkKKwAIMADvHAtpRZJP\nRgAAAABJRU5ErkJggg=="
+                     },
+                     "visible": false
+                  }
+               },
+               "1019": {
+                  "#name": "graphic \"header\"",
+                  "properties": {
+                     "antialiased": false,
+                     "backPattern": "1020",
+                     "filled": true,
+                     "id": "1019",
+                     "layer": "12",
+                     "lineSize": "0",
+                     "lockLoc": true,
+                     "name": "header",
+                     "opaque": true,
+                     "rect": "0,0,640,48",
+                     "visible": false
+                  }
+               },
+               "1026": {
+                  "#name": "field \"Title\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>Introduction</p>",
+                     "id": "1026",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "Title",
+                     "opaque": false,
+                     "rect": "336,57,634,88",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textHeight": "24",
+                     "textSize": "18",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1030": {
+                  "#name": "field \"chapter\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Introduction</p>",
+                     "id": "1030",
+                     "layer": "15",
+                     "lockText": true,
+                     "name": "chapter",
+                     "opaque": false,
+                     "rect": "328,450,564,471",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1097": {
+                  "#name": "graphic \"footer\"",
+                  "properties": {
+                     "antialiased": false,
+                     "backPattern": "1100",
+                     "filled": true,
+                     "id": "1097",
+                     "layer": "6",
+                     "lineSize": "0",
+                     "lockLoc": true,
+                     "name": "footer",
+                     "opaque": true,
+                     "rect": "-1,439,640,471",
+                     "visible": false
+                  }
+               },
+               "1100": {
+                  "#name": "image \"BG Noise.PNG\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1100",
+                     "layer": "16",
+                     "lockLoc": true,
+                     "name": "BG Noise.PNG",
+                     "rect": "322,130,450,258",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/SQLite Sampler_1031_1100_text.png",
+                     "visible": false
+                  }
+               },
+               "1101": {
+                  "#name": "image \"footer LE HiliteUL.png\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1101",
+                     "layer": "17",
+                     "lockLoc": true,
+                     "name": "footer LE HiliteUL.png",
+                     "opaque": false,
+                     "rect": "-1,439,640,471",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/SQLite Sampler_1031_1101_text.png",
+                     "visible": false
+                  }
+               },
+               "1204": {
+                  "#name": "button \"Show Text\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1204",
+                     "layer": "18",
+                     "name": "Show Text",
+                     "rect": "564,47,636,66",
+                     "showFocusBorder": false,
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1205": {
+                  "#name": "button \"Show Script\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1205",
+                     "layer": "19",
+                     "name": "Show Script",
+                     "rect": "490,47,562,66",
+                     "showFocusBorder": false,
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1303": {
+                  "#name": "image id 1303",
+                  "properties": {
+                     "id": "1303",
+                     "layer": "20",
+                     "rect": "248,16,348,37",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAGQAAAAVCAYAAACwnEswAAAABGdBTUEAALGPC/xhBQAAAH9J\nREFUaIHt1bENgDAUxND7EjsgVkjmyegwAxSwQigYAhcuX2/JNcaYSXLsR1IzrfXo/7zc95Oq\n5LzOZCbruukfXb31SShDf14oZejP5UNY9iEw+xCYfQjMPgRmHwKzD4HZh8DsQ2D2ITD7EJh9\nCMw+BGYfArMPgdmHwOxDYH4B3nJGGxCwgDkAAAAASUVORK5CYII="
+                     },
+                     "visible": false
+                  }
+               },
+               "1310": {
+                  "#name": "image \"sample3.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1310",
+                     "layer": "5",
+                     "name": "sample3.png",
+                     "rect": "0,0,640,480",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/SQLite Sampler_1031_1310_text.png"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1031",
+               "layer": "4",
+               "lockLoc": true,
+               "name": "altFldHeader",
+               "rect": "-5,-4,644,484",
+               "sharedBehavior": true
+            }
+         },
+         "1033": {
+            "#name": "card \"About this Demo\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1035": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1033_1035_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1033_1035_htmlText.txt",
+                     "id": "1035",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,593,435",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "24"
+               }
+            },
+            "properties": {
+               "id": "1033",
+               "layer": "2",
+               "name": "About this Demo"
+            }
+         },
+         "1034": {
+            "#name": "card \"The Task\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1036": {
+                  "#name": "field \"theText\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1034_1036_htmlText.txt",
+                     "id": "1036",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,593,462",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "24"
+               }
+            },
+            "properties": {
+               "id": "1034",
+               "layer": "6",
+               "name": "The Task"
+            }
+         },
+         "1038": {
+            "#name": "card \"Database Schema\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1039": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1038_1039_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1038_1039_htmlText.txt",
+                     "id": "1039",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,627,180",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1043": {
+                  "#name": "field \"Users\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "<p>1\u2026#9;John Smith\u2026#9;john@ibm.com\u2026#9;true</p>\n<p>2\u2026#9;Frank Jones\u2026#9;frank@yahoo.com\u2026#9;false\u2026#9;</p>\n<p>3\u2026#9;Sarah Daniels\u2026#9;sd@google.com\u2026#9;true\u2026#9;</p>\n<p>4\u2026#9;Jane Shafer\u2026#9;jane@hotmail.com\u2026#9;true\u2026#9;</p>",
+                     "id": "1043",
+                     "layer": "25",
+                     "lockText": true,
+                     "name": "Users",
+                     "rect": "25,212,586,278",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "tabStops": "65,214,404,560",
+                     "threeD": false,
+                     "vGrid": true
+                  }
+               },
+               "1050": "#shared group",
+               "1058": {
+                  "#name": "field \"Apps\"",
+                  "customproperties": {
+                     "cCurrentObject": "stack \"C:/Documents and Settings/Oliver/Desktop/SQLite3Demo.rev\""
+                  },
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "<p>1\u2026#9;Revolution\u2026#9;FX09935FGRA\u2026#9;4</p>\n<p>2\u2026#9;revBrowser\u2026#9;DKD8D6DJDKK\u2026#9;1</p>\n<p>3\u2026#9;Media\u2026#9;DKKD3939KDL\u2026#9;4</p>\n<p>4\u2026#9;Revolution\u2026#9;DKDKOO3994\u2026#9;2</p>"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "<p>1\u2026#9;Revolution\u2026#9;FX09935FGRA\u2026#9;4</p>\n<p>2\u2026#9;revBrowser\u2026#9;DKD8D6DJDKK\u2026#9;1</p>\n<p>3\u2026#9;Media\u2026#9;DKKD3939KDL\u2026#9;4</p>\n<p>4\u2026#9;Revolution\u2026#9;DKDKOO3994\u2026#9;2</p>",
+                     "id": "1058",
+                     "layer": "32",
+                     "lockText": true,
+                     "name": "Apps",
+                     "rect": "25,342,586,410",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "tabStops": "75,248,410,560",
+                     "threeD": false,
+                     "vGrid": true
+                  }
+               },
+               "1060": "#shared group",
+               "1067": {
+                  "#name": "field \"Label1\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>Table <b><font face=\"Tahoma\" size=\"11\">users</font></b></p>",
+                     "id": "1067",
+                     "layer": "39",
+                     "lockText": true,
+                     "name": "Label1",
+                     "opaque": false,
+                     "rect": "25,173,108,194",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1068": {
+                  "#name": "field \"Label1\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>Table <b><font face=\"Tahoma\" size=\"11\">apps</font></b></p>",
+                     "id": "1068",
+                     "layer": "40",
+                     "lockText": true,
+                     "name": "Label1",
+                     "opaque": false,
+                     "rect": "21,303,140,324",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "40"
+               }
+            },
+            "properties": {
+               "id": "1038",
+               "layer": "7",
+               "name": "Database Schema"
+            }
+         },
+         "1050": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1051": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1051",
+                     "layer": "33",
+                     "name": "moveColumn",
+                     "rect": "55,325,71,341",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1055": {
+                  "#name": "button \"userID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1055",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "userID",
+                     "rect": "24,194,92,212",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1056": {
+                  "#name": "button \"name\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1056",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "name",
+                     "rect": "92,194,241,212",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1057": {
+                  "#name": "button \"email\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1057",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "email",
+                     "rect": "241,194,431,212",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1234": {
+                  "#name": "button \"emailList\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "hiliteBorder": false,
+                     "id": "1234",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "emailList",
+                     "rect": "431,194,587,212",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "users",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1055,0.12,20,\n1056,0.26,20,\n1057,0.34,20,\n1234,0.28,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "34",
+               "priv_XtraTabs": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1050",
+               "layer": "33",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader",
+               "rect": "24,194,587,212",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1060": {
+            "#name": "group \"altFldHeader2\"",
+            "childcontrols": {
+               "1061": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1061",
+                     "layer": "33",
+                     "name": "moveColumn",
+                     "rect": "58,325,74,341",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1063": {
+                  "#name": "button \"appID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "hiliteBorder": false,
+                     "id": "1063",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "appID",
+                     "rect": "24,324,102,342",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1064": {
+                  "#name": "button \"appName\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1064",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "appName",
+                     "rect": "102,324,275,342",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1065": {
+                  "#name": "button \"appRegCode\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1065",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "appRegCode",
+                     "rect": "275,324,437,342",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1066": {
+                  "#name": "button \"appUserID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1066",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "appUserID",
+                     "rect": "437,324,587,342",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "Apps",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1063,0.14,20,\n1064,0.31,20,\n1065,0.29,20,\n1066,0.26,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "34",
+               "priv_XtraTabs": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1060",
+               "layer": "33",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader2",
+               "rect": "24,324,587,342",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1070": {
+            "#name": "card \"Data types\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1071": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1070_1071_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1070_1071_htmlText.txt",
+                     "id": "1071",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,626,270",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1072": "#shared group",
+               "1079": {
+                  "#name": "field \"Users\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "<p>integer primary key\u2026#9;text\u2026#9;text\u2026#9;boolean\u2026#9;</p>",
+                     "id": "1079",
+                     "layer": "31",
+                     "lockText": true,
+                     "name": "Users",
+                     "rect": "27,323,588,342",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "tabStops": "130,265,389,560,628",
+                     "threeD": false,
+                     "vGrid": true
+                  }
+               },
+               "1081": "#shared group",
+               "1087": {
+                  "#name": "field \"Apps\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "<p>integer primary key\u2026#9;text\u2026#9;text\u2026#9;integer</p>",
+                     "id": "1087",
+                     "layer": "38",
+                     "lockText": true,
+                     "name": "Apps",
+                     "rect": "26,393,588,413",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "tabStops": "134,265,388,560",
+                     "threeD": false,
+                     "vGrid": true
+                  }
+               },
+               "1089": {
+                  "#name": "field \"Label1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "145,152,160",
+                     "htmlText": "<p>Table <b><font face=\"Tahoma\" size=\"11\">users</font></b></p>",
+                     "id": "1089",
+                     "layer": "39",
+                     "lockText": true,
+                     "name": "Label1",
+                     "opaque": false,
+                     "rect": "23,284,106,305",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1090": {
+                  "#name": "field \"Label1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "145,152,160",
+                     "htmlText": "<p>Table <b><font face=\"Tahoma\" size=\"11\">apps</font></b></p>",
+                     "id": "1090",
+                     "layer": "40",
+                     "lockText": true,
+                     "name": "Label1",
+                     "opaque": false,
+                     "rect": "22,354,141,375",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "40"
+               }
+            },
+            "properties": {
+               "id": "1070",
+               "layer": "8",
+               "name": "Data types"
+            }
+         },
+         "1072": {
+            "#name": "group \"altFldHeader3\"",
+            "childcontrols": {
+               "1073": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1073",
+                     "layer": "33",
+                     "name": "moveColumn",
+                     "rect": "71,376,87,392",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1075": {
+                  "#name": "button \"userID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "hiliteBorder": false,
+                     "id": "1075",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "userID",
+                     "rect": "26,305,159,323",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1076": {
+                  "#name": "button \"name\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1076",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "name",
+                     "rect": "159,305,294,323",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1077": {
+                  "#name": "button \"email\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1077",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "email",
+                     "rect": "294,305,418,323",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1078": {
+                  "#name": "button \"emailList\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1078",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "emailList",
+                     "rect": "418,305,589,323",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "users",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1075,0.24,20,\n1076,0.24,20,\n1077,0.22,20,\n1078,0.3,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "34",
+               "priv_XtraTabs": "68"
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1072",
+               "layer": "33",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader3",
+               "rect": "26,305,589,323",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1081": {
+            "#name": "group \"altFldHeader4\"",
+            "childcontrols": {
+               "1082": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1082",
+                     "layer": "33",
+                     "name": "moveColumn",
+                     "rect": "59,376,75,392",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1083": {
+                  "#name": "button \"appID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "hiliteBorder": false,
+                     "id": "1083",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "appID",
+                     "rect": "25,375,162,393",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1084": {
+                  "#name": "button \"appName\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1084",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "appName",
+                     "rect": "162,375,293,393",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1085": {
+                  "#name": "button \"appRegCode\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1085",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "appRegCode",
+                     "rect": "293,375,416,393",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1086": {
+                  "#name": "button \"appUserID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1086",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "appUserID",
+                     "rect": "416,375,588,393",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "Apps",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1083,0.24,20,\n1084,0.23,20,\n1085,0.22,20,\n1086,0.31,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "34",
+               "priv_XtraTabs": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1081",
+               "layer": "33",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader4",
+               "rect": "25,375,588,393",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1091": {
+            "#name": "card \"Connecting to SQLite\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1092": {
+                  "#name": "field \"theText\"",
+                  "customproperties": {
+                     "cCurrentObject": "stack \"C:/Workspace/Projects/Revolution Frontier/Resources/Examples/SQLite Sampler.rev\""
+                  },
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1091_1092_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1091_1092_htmlText.txt",
+                     "id": "1092",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,626,270",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1093": {
+                  "#name": "button \"Connect to AppReg\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1093",
+                     "layer": "25",
+                     "name": "Connect to AppReg",
+                     "rect": "18,288,128,307",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1133": {
+                  "#name": "button \"Disconnect\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1133",
+                     "layer": "26",
+                     "name": "Disconnect",
+                     "rect": "130,288,240,307",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1135": {
+                  "#name": "field \"Sample\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1091_1135_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/SQLite Sampler_1091_1135_htmlText.txt",
+                     "id": "1135",
+                     "layer": "27",
+                     "lockText": true,
+                     "name": "Sample",
+                     "rect": "16,310,624,440",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1200": {
+                  "#name": "button \"Delete Database File\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1200",
+                     "layer": "28",
+                     "name": "Delete Database File",
+                     "rect": "242,288,352,307",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "28"
+               }
+            },
+            "properties": {
+               "id": "1091",
+               "layer": "9",
+               "name": "Connecting to SQLite"
+            }
+         },
+         "1102": {
+            "#name": "card \"Create Tables\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1103": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1102_1103_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1102_1103_htmlText.txt",
+                     "id": "1103",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,626,262",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1138": {
+                  "#name": "button \"CREATE TABLE users\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1138",
+                     "layer": "25",
+                     "name": "CREATE TABLE users",
+                     "rect": "15,277,125,300",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1139": {
+                  "#name": "button \"CREATE TABLE apps\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1139",
+                     "layer": "26",
+                     "name": "CREATE TABLE apps",
+                     "rect": "130,277,240,300",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1141": {
+                  "#name": "field \"Sample\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1102_1141_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "htmlText": "%file%: assets/SQLite Sampler_1102_1141_htmlText.txt",
+                     "id": "1141",
+                     "layer": "27",
+                     "lockText": true,
+                     "name": "Sample",
+                     "rect": "16,302,626,434",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "27"
+               }
+            },
+            "properties": {
+               "id": "1102",
+               "layer": "10",
+               "name": "Create Tables"
+            }
+         },
+         "1106": {
+            "#name": "card \"Add Data\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1107": {
+                  "#name": "field \"theText\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1106_1107_htmlText.txt",
+                     "id": "1107",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,626,275",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1155": {
+                  "#name": "button \"Add Data to users\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1155",
+                     "layer": "25",
+                     "name": "Add Data to users",
+                     "rect": "16,301,126,324",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1156": {
+                  "#name": "field \"Sample\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1106_1156_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/SQLite Sampler_1106_1156_htmlText.txt",
+                     "id": "1156",
+                     "layer": "26",
+                     "lockText": true,
+                     "name": "Sample",
+                     "rect": "16,330,626,442",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "26"
+               }
+            },
+            "properties": {
+               "id": "1106",
+               "layer": "11",
+               "name": "Add Data"
+            }
+         },
+         "1108": {
+            "#name": "card \"Update Data\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1109": {
+                  "#name": "field \"theText\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1108_1109_htmlText.txt",
+                     "id": "1109",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,626,208",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1184": {
+                  "#name": "button \"Refresh Table\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1184",
+                     "layer": "25",
+                     "name": "Refresh Table",
+                     "rect": "20,220,97,238",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1186": "#shared group",
+               "1193": {
+                  "#name": "field \"Users\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "hGrid": true,
+                     "htmlText": "<p>1\u2026#9;marcus3\u2026#9;aoeu@aue.com\u2026#9;true</p>\n<p>2\u2026#9;foo\u2026#9;bar@baz.com\u2026#9;false</p>\n<p>3\u2026#9;nht\u2026#9;aoeunthnth\u2026#9;true</p>\n<p>4\u2026#9;thn\u2026#9;aoeu\u2026#9;aeou</p>",
+                     "id": "1193",
+                     "layer": "28",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "Users",
+                     "rect": "19,242,596,288",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "tabStops": "83,211,366,548,642",
+                     "threeD": false,
+                     "vGrid": true,
+                     "vScrollbar": true
+                  }
+               },
+               "1195": {
+                  "#name": "field \"Sample\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1108_1195_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/SQLite Sampler_1108_1195_htmlText.txt",
+                     "id": "1195",
+                     "layer": "29",
+                     "lockText": true,
+                     "name": "Sample",
+                     "rect": "17,303,625,435",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "29"
+               }
+            },
+            "properties": {
+               "id": "1108",
+               "layer": "13",
+               "name": "Update Data"
+            }
+         },
+         "1110": {
+            "#name": "card \"Reports\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1111": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1110_1111_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1110_1111_htmlText.txt",
+                     "id": "1111",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,626,318",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1240": {
+                  "#name": "button \"Inner Join 1\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1240",
+                     "layer": "25",
+                     "name": "Inner Join 1",
+                     "rect": "18,329,91,347",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1241": {
+                  "#name": "button \"Inner Join 2\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1241",
+                     "layer": "26",
+                     "name": "Inner Join 2",
+                     "rect": "98,329,171,347",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1242": {
+                  "#name": "button \"Inner Join 3\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1242",
+                     "layer": "27",
+                     "name": "Inner Join 3",
+                     "rect": "178,329,251,347",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1244": {
+                  "#name": "button \"Outer Join 1\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1244",
+                     "layer": "28",
+                     "name": "Outer Join 1",
+                     "rect": "258,329,331,347",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1245": {
+                  "#name": "button \"Outer Join 2\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1245",
+                     "layer": "29",
+                     "name": "Outer Join 2",
+                     "rect": "338,329,411,347",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1246": {
+                  "#name": "field \"Sample\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1110_1246_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/SQLite Sampler_1110_1246_htmlText.txt",
+                     "id": "1246",
+                     "layer": "30",
+                     "lockText": true,
+                     "name": "Sample",
+                     "rect": "15,348,625,444",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "30"
+               }
+            },
+            "properties": {
+               "id": "1110",
+               "layer": "15",
+               "name": "Reports"
+            }
+         },
+         "1112": {
+            "#name": "card \"Delete Tables\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1113": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1112_1113_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1112_1113_htmlText.txt",
+                     "id": "1113",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,616,319",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               },
+               "1266": {
+                  "#name": "field \"Sample\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/SQLite Sampler_1112_1266_htmlText.txt",
+                     "id": "1266",
+                     "layer": "25",
+                     "lockText": true,
+                     "name": "Sample",
+                     "rect": "16,328,624,440",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1268": {
+                  "#name": "button \"Delete users Table\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1268",
+                     "layer": "26",
+                     "name": "Delete users Table",
+                     "rect": "16,308,120,326",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1269": {
+                  "#name": "button \"Default Data\"",
+                  "customproperties": {
+                     "altDefaultAppsData": "'Revolution Enterprise','KAIED;844L0',1\n'Revolution Media','KASDIEK6552kadfIDKD',2\n'Revolution Studio','KDIEHOOSK344',1\n'Revolution Dreamcard','KDKAEND3kadj',4\n'revBrowser','KDKeksud333',3\n'revDB','KAIED;844L0',3\n",
+                     "altDefaultUsersData": "%file%: assets/SQLite Sampler_1112_1269_altDefaultUsersData.bin"
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1269",
+                     "layer": "27",
+                     "name": "Default Data",
+                     "rect": "123,308,219,326",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "27"
+               }
+            },
+            "properties": {
+               "id": "1112",
+               "layer": "16",
+               "name": "Delete Tables"
+            }
+         },
+         "1116": {
+            "#name": "card \"About RevDB\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1117": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1116_1117_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1116_1117_htmlText.txt",
+                     "id": "1117",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,626,444",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "24"
+               }
+            },
+            "properties": {
+               "id": "1116",
+               "layer": "3",
+               "name": "About RevDB"
+            }
+         },
+         "1119": {
+            "#name": "card \"SQL Primer\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1120": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1119_1120_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1119_1120_htmlText.txt",
+                     "id": "1120",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,593,303",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               },
+               "1122": "#shared group",
+               "1129": {
+                  "#name": "field \"Users\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "<p>1\u2026#9;John Smith\u2026#9;john@ibm.com</p>\n<p>2\u2026#9;Frank Jones\u2026#9;frank@yahoo.com</p>\n<p>3\u2026#9;Sarah Daniels\u2026#9;sd@google.com</p>\n<p>4\u2026#9;Jane Shafer\u2026#9;jane@hotmail.com</p>",
+                     "id": "1129",
+                     "layer": "30",
+                     "lockText": true,
+                     "name": "Users",
+                     "rect": "23,302,572,370",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "tabStops": "181,284,548,693,762",
+                     "threeD": false,
+                     "vGrid": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "30"
+               }
+            },
+            "properties": {
+               "id": "1119",
+               "layer": "4",
+               "name": "SQL Primer"
+            }
+         },
+         "1122": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1123": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1123",
+                     "layer": "33",
+                     "name": "moveColumn",
+                     "rect": "73,285,89,301",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1126": {
+                  "#name": "button \"User ID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1126",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "User ID",
+                     "rect": "22,284,206,302",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1127": {
+                  "#name": "button \"Name\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1127",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "Name",
+                     "rect": "206,284,309,302",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1128": {
+                  "#name": "button \"Email Address\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1128",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "Email Address",
+                     "rect": "309,284,573,302",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "3",
+               "altRealTimeTrack": true,
+               "altTargetField": "users",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1126,0.33,20,\n1127,0.19,20,\n1128,0.48,20,",
+               "priv_altMinWidth": "60",
+               "priv_altRight": "46",
+               "priv_XtraTabs": "145,69"
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1122",
+               "layer": "33",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader",
+               "rect": "22,284,573,302",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1131": {
+            "#name": "card \"SQL Primer 2\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1132": {
+                  "#name": "field \"theText\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1131_1132_htmlText.txt",
+                     "id": "1132",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,593,451",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "24"
+               }
+            },
+            "properties": {
+               "id": "1131",
+               "layer": "5",
+               "name": "SQL Primer 2"
+            }
+         },
+         "1153": {
+            "#name": "card \"View and Delete Data\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1154": {
+                  "#name": "field \"theText\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1153_1154_htmlText.txt",
+                     "id": "1154",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,626,208",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1169": "#shared group",
+               "1176": {
+                  "#name": "field \"Users\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "hGrid": true,
+                     "htmlText": "<p>1\u2026#9;marcus2\u2026#9;aoeu@aue.com\u2026#9;true</p>\n<p>2\u2026#9;foo\u2026#9;bar@baz.com\u2026#9;false</p>\n<p>3\u2026#9;nht\u2026#9;aoeunthnth\u2026#9;true</p>\n<p>4\u2026#9;thn\u2026#9;aoeu\u2026#9;aeou</p>",
+                     "id": "1176",
+                     "layer": "31",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "Users",
+                     "rect": "18,253,584,306",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "tabStops": "63,183,305,548",
+                     "threeD": false,
+                     "vGrid": true,
+                     "vScrollbar": true
+                  }
+               },
+               "1178": {
+                  "#name": "button \"Refresh Table\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1178",
+                     "layer": "32",
+                     "name": "Refresh Table",
+                     "rect": "18,213,95,232",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1179": {
+                  "#name": "field \"Sample\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1153_1179_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/SQLite Sampler_1153_1179_htmlText.txt",
+                     "id": "1179",
+                     "layer": "33",
+                     "lockText": true,
+                     "name": "Sample",
+                     "rect": "16,311,626,439",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1181": {
+                  "#name": "button \"Delete Row\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1181",
+                     "layer": "34",
+                     "name": "Delete Row",
+                     "rect": "98,213,175,232",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "34"
+               }
+            },
+            "properties": {
+               "id": "1153",
+               "layer": "12",
+               "name": "View and Delete Data"
+            }
+         },
+         "1160": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1161": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1161",
+                     "layer": "33",
+                     "name": "moveColumn",
+                     "rect": "82,295,98,311",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1162": {
+                  "#name": "button \"userID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1162",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "userID",
+                     "rect": "52,294,129,312",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1163": {
+                  "#name": "button \"name\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteBorder": false,
+                     "hiliteColor": "48,48,48",
+                     "id": "1163",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "name",
+                     "rect": "129,294,220,312",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1164": {
+                  "#name": "button \"email\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1164",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "email",
+                     "rect": "220,294,344,312",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1165": {
+                  "#name": "button \"pict\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1165",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "pict",
+                     "rect": "344,294,476,312",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1166": {
+                  "#name": "button \"emailList\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "5"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1166",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "emailList",
+                     "rect": "476,294,551,312",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "5",
+               "altRealTimeTrack": true,
+               "altTargetField": "users",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1162,0.15,20,\n1163,0.18,20,\n1164,0.25,20,\n1165,0.26,20,\n1166,0.16,20,",
+               "priv_altMinWidth": "100",
+               "priv_altRight": "89",
+               "priv_XtraTabs": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1160",
+               "layer": "33",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader",
+               "rect": "52,294,551,312",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1169": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1170": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1170",
+                     "layer": "33",
+                     "name": "moveColumn",
+                     "rect": "108,236,124,252",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1173": {
+                  "#name": "button \"userID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1173",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "userID",
+                     "rect": "17,235,83,253",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1174": {
+                  "#name": "button \"name\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1174",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "name",
+                     "rect": "83,235,203,253",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1175": {
+                  "#name": "button \"email\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1175",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "email",
+                     "rect": "203,235,325,253",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1253": {
+                  "#name": "button \"emailList\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "hiliteBorder": false,
+                     "id": "1253",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "emailList",
+                     "rect": "325,235,568,253",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "users",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1173,0.12,20,\n1174,0.22,20,\n1175,0.22,20,\n1253,0.44,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "46",
+               "priv_XtraTabs": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1169",
+               "layer": "33",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader",
+               "rect": "17,235,568,253",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1186": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1187": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1187",
+                     "layer": "33",
+                     "name": "moveColumn",
+                     "rect": "77,241,93,257",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "users",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1189,0.16,20,\n1190,0.23,20,\n1191,0.28,20,\n1192,0.33,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "46",
+               "priv_XtraTabs": "94"
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1186",
+               "layer": "33",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader",
+               "rect": "42,240,593,258",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1206": {
+            "#name": "card \"Edit Databases\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1207": {
+                  "#name": "field \"theText\"",
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1206_1207_htmlText.txt",
+                     "id": "1207",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,626,178",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1209": {
+                  "#name": "button \"Refresh users\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1209",
+                     "layer": "25",
+                     "name": "Refresh users",
+                     "rect": "95,281,172,300",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1210": "#shared group",
+               "1217": {
+                  "#name": "field \"Users\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "hGrid": true,
+                     "htmlText": "%file%: assets/SQLite Sampler_1206_1217_htmlText.txt",
+                     "id": "1217",
+                     "layer": "32",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "Users",
+                     "rect": "17,318,584,364",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "tabStops": "83,211,453,548,642",
+                     "threeD": false,
+                     "vGrid": true,
+                     "vScrollbar": true
+                  }
+               },
+               "1219": {
+                  "#name": "field \"Sample\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/SQLite Sampler_1206_1219_htmlText.txt",
+                     "id": "1219",
+                     "layer": "33",
+                     "lockText": true,
+                     "name": "Sample",
+                     "rect": "16,368,624,442",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1221": {
+                  "#name": "field \"Label1\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "foreColor": "145,152,160",
+                     "htmlText": "<p>Table <b><font face=\"Tahoma\" size=\"11\">apps</font></b></p>",
+                     "id": "1221",
+                     "layer": "34",
+                     "lockText": true,
+                     "name": "Label1",
+                     "opaque": false,
+                     "rect": "18,187,102,208",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1222": {
+                  "#name": "field \"Label1\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "foreColor": "145,152,160",
+                     "htmlText": "<p>Table <b><font face=\"Tahoma\" size=\"11\">users</font></b></p>",
+                     "id": "1222",
+                     "layer": "35",
+                     "lockText": true,
+                     "name": "Label1",
+                     "opaque": false,
+                     "rect": "15,278,98,299",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1223": "#shared group",
+               "1229": {
+                  "#name": "field \"Apps\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "hGrid": true,
+                     "htmlText": "%file%: assets/SQLite Sampler_1206_1229_htmlText.txt",
+                     "id": "1229",
+                     "layer": "42",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "Apps",
+                     "rect": "17,227,584,273",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "tabStops": "85,210,453,548",
+                     "threeD": false,
+                     "vGrid": true,
+                     "vScrollbar": true
+                  }
+               },
+               "1231": {
+                  "#name": "button \"Refresh apps\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1231",
+                     "layer": "43",
+                     "name": "Refresh apps",
+                     "rect": "93,189,170,208",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1232": {
+                  "#name": "button \"Delete Row\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1232",
+                     "layer": "44",
+                     "name": "Delete Row",
+                     "rect": "174,281,247,300",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1233": {
+                  "#name": "button \"Add Row\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1233",
+                     "layer": "45",
+                     "name": "Add Row",
+                     "rect": "249,281,322,300",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1235": {
+                  "#name": "button \"Delete Row\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1235",
+                     "layer": "46",
+                     "name": "Delete Row",
+                     "rect": "172,189,245,208",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1236": {
+                  "#name": "button \"Add Row\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1236",
+                     "layer": "47",
+                     "name": "Add Row",
+                     "rect": "247,189,320,208",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1237": {
+                  "#name": "button \"Default Data\"",
+                  "customproperties": {
+                     "altDefaultAppsData": "'Revolution Enterprise','KAIED;844L0',1\n'Revolution Media','KASDIEK6552kadfIDKD',2\n'Revolution Studio','KDIEHOOSK344',1\n'Revolution Dreamcard','KDKAEND3kadj',4\n'revBrowser','KDKeksud333',3\n'revDB','KAIED;844L0',3\n",
+                     "altDefaultUsersData": "%file%: assets/SQLite Sampler_1206_1237_altDefaultUsersData.bin"
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1237",
+                     "layer": "48",
+                     "name": "Default Data",
+                     "rect": "466,189,562,208",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "48"
+               }
+            },
+            "properties": {
+               "id": "1206",
+               "layer": "14",
+               "name": "Edit Databases"
+            }
+         },
+         "1210": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1211": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1211",
+                     "layer": "33",
+                     "name": "moveColumn",
+                     "rect": "52,301,68,317",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1213": {
+                  "#name": "button \"userID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "hiliteBorder": false,
+                     "id": "1213",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "userID",
+                     "rect": "17,300,103,318",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1214": {
+                  "#name": "button \"name\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1214",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "name",
+                     "rect": "103,300,231,318",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1215": {
+                  "#name": "button \"email\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1215",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "email",
+                     "rect": "231,300,473,318",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1216": {
+                  "#name": "button \"emailList\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1216",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "emailList",
+                     "rect": "473,300,568,318",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "users",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1213,0.16,20,\n1214,0.23,20,\n1215,0.44,20,\n1216,0.17,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "46",
+               "priv_XtraTabs": "94"
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1210",
+               "layer": "33",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader",
+               "rect": "17,300,568,318",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1223": {
+            "#name": "group \"altFldHeader2\"",
+            "childcontrols": {
+               "1224": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1224",
+                     "layer": "33",
+                     "name": "moveColumn",
+                     "rect": "50,210,66,226",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1225": {
+                  "#name": "button \"appID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "hiliteBorder": false,
+                     "id": "1225",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "appID",
+                     "rect": "16,209,104,227",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1226": {
+                  "#name": "button \"appName\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1226",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "appName",
+                     "rect": "104,209,229,227",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1227": {
+                  "#name": "button \"appRegCode\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1227",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "appRegCode",
+                     "rect": "229,209,472,227",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1228": {
+                  "#name": "button \"appUserID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1228",
+                     "layer": "33",
+                     "lockLoc": true,
+                     "name": "appUserID",
+                     "rect": "472,209,567,227",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "Apps",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1225,0.16,20,\n1226,0.23,20,\n1227,0.44,20,\n1228,0.17,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "46",
+               "priv_XtraTabs": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1223",
+               "layer": "33",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader2",
+               "rect": "16,209,567,227",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1264": {
+            "#name": "card \"Understanding Schema\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1265": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1264_1265_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1264_1265_htmlText.txt",
+                     "id": "1265",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,626,291",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1276": {
+                  "#name": "button \"Show SQLITE_MASTER schema\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1276",
+                     "layer": "25",
+                     "name": "Show SQLITE_MASTER schema",
+                     "rect": "15,289,181,308",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1280": {
+                  "#name": "field \"Sample\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1264_1280_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/SQLite Sampler_1264_1280_htmlText.txt",
+                     "id": "1280",
+                     "layer": "26",
+                     "lockText": true,
+                     "name": "Sample",
+                     "rect": "16,308,626,440",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "26"
+               }
+            },
+            "properties": {
+               "id": "1264",
+               "layer": "17",
+               "name": "Understanding Schema"
+            }
+         },
+         "1272": {
+            "#name": "card \"Adding and Deleting Columns\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1273": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1272_1273_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1272_1273_htmlText.txt",
+                     "id": "1273",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,626,298",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1275": {
+                  "#name": "button \"Delete Columns Example\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1275",
+                     "layer": "25",
+                     "name": "Delete Columns Example",
+                     "rect": "16,310,151,328",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1277": {
+                  "#name": "button \"Add Columns Example\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1277",
+                     "layer": "26",
+                     "name": "Add Columns Example",
+                     "rect": "251,310,386,328",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1278": {
+                  "#name": "button \"Default Data\"",
+                  "customproperties": {
+                     "altDefaultAppsData": "'Revolution Enterprise','KAIED;844L0',1\n'Revolution Media','KASDIEK6552kadfIDKD',2\n'Revolution Studio','KDIEHOOSK344',1\n'Revolution Dreamcard','KDKAEND3kadj',4\n'revBrowser','KDKeksud333',3\n'revDB','KAIED;844L0',3\n",
+                     "altDefaultUsersData": "%file%: assets/SQLite Sampler_1272_1278_altDefaultUsersData.bin"
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1278",
+                     "layer": "27",
+                     "name": "Default Data",
+                     "rect": "153,310,249,328",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1279": {
+                  "#name": "button \"Show SQLITE_MASTER schema\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1279",
+                     "layer": "28",
+                     "name": "Show SQLITE_MASTER schema",
+                     "rect": "413,310,579,328",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1282": {
+                  "#name": "field \"Sample\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1272_1282_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/SQLite Sampler_1272_1282_htmlText.txt",
+                     "id": "1282",
+                     "layer": "29",
+                     "lockText": true,
+                     "name": "Sample",
+                     "rect": "16,330,626,444",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "29"
+               }
+            },
+            "properties": {
+               "id": "1272",
+               "layer": "18",
+               "name": "Adding and Deleting Columns"
+            }
+         },
+         "1284": {
+            "#name": "card \"All Done!\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1285": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1284_1285_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1284_1285_htmlText.txt",
+                     "id": "1285",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,593,426",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               },
+               "1287": {
+                  "#name": "button \"Purchase altSQLite3 NOW!\"",
+                  "properties": {
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1287",
+                     "layer": "25",
+                     "name": "Purchase altSQLite3 NOW!",
+                     "rect": "452,366,587,403",
+                     "style": "rectangle",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "topColor": "145,152,160",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "25"
+               }
+            },
+            "properties": {
+               "id": "1284",
+               "layer": "20",
+               "name": "All Done!"
+            }
+         },
+         "1289": {
+            "#name": "card \"Exploring Further\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1290": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1289_1290_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1289_1290_htmlText.txt",
+                     "id": "1290",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,593,426",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "24"
+               }
+            },
+            "properties": {
+               "id": "1289",
+               "layer": "21",
+               "name": "Exploring Further"
+            }
+         },
+         "1304": {
+            "#name": "card \"Using Binary Data\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1186": "#shared group",
+               "1305": {
+                  "#name": "field \"theText\"",
+                  "customproperties": {
+                     "cCurrentObject": "stack \"C:/Workspace/Projects/Revolution Frontier/Resources/Examples/SQLite Sampler.rev\""
+                  },
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/SQLite Sampler_1304_1305_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/SQLite Sampler_1304_1305_htmlText.txt",
+                     "id": "1305",
+                     "layer": "26",
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "17,89,625,440",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "26"
+               }
+            },
+            "properties": {
+               "id": "1304",
+               "layer": "19",
+               "name": "Using Binary Data"
+            }
+         }
+      },
+      "customproperties": {
+         "altCardNames": "Exploring Further",
+         "altInetConnected": true,
+         "cREVActiveStack": "SQLiteDemo",
+         "cREVLinkedStack": null
+      },
+      "custompropertysets": {
+         "cConsLast": {
+            "HandlerName": "      initMe\t  \ton",
+            "HandlerScroll": "240",
+            "prop": null,
+            "ScriptChunk": "char 245 to 244 of field 93",
+            "varChecking": false
+         },
+         "cREVGeometryCache": {
+            "stackID": "1314"
+         }
+      },
+      "longID": "stack \"SQLite Sampler\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "destroyStack": true,
+         "destroyWindow": true,
+         "fileName": "SQLite Sampler.rev",
+         "id": "1314",
+         "linkColor": "249,156,127",
+         "linkHiliteColor": "255,0,0",
+         "linkVisitedColor": "229,136,107",
+         "liveResizing": false,
+         "name": "SQLite Sampler",
+         "rect": "309,246,949,726",
+         "resizable": false,
+         "title": "SQLite Sampler",
+         "underlineLinks": true
+      },
+      "sharedGroupIDs": "1050\n1060\n1072\n1081\n1021\n1031\n1122\n1160\n1169\n1186\n1210\n1223"
+   },
+   "Viewer": {
+      "#name": "stack \"Viewer\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1006": {
+                  "#name": "field \"viewer\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "SX:-2,SY:-16",
+                        "altRect": "1,34,400,232",
+                        "WinXPaltCmd": "SX:-2,SY:-16",
+                        "WinXPaltRect": "1,34,400,232",
+                        "WinXPaltVis": true
+                     }
+                  },
+                  "properties": {
+                     "autoTab": true,
+                     "borderWidth": "1",
+                     "fixedLineHeight": false,
+                     "id": "1006",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "viewer",
+                     "rect": "1,34,400,388",
+                     "scrollbarWidth": "12",
+                     "style": "scrolling",
+                     "tabStops": "24",
+                     "vScrollbar": true
+                  }
+               },
+               "1009": {
+                  "#name": "image \"BG Noise.PNG\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1009",
+                     "layer": "2",
+                     "lockLoc": true,
+                     "name": "BG Noise.PNG",
+                     "rect": "322,130,450,258",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Viewer_1002_1009_text.png",
+                     "visible": false
+                  }
+               },
+               "1010": {
+                  "#name": "image \"header LE HiliteUL.png\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1010",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "name": "header LE HiliteUL.png",
+                     "opaque": false,
+                     "rect": "1,1,400,34",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Viewer_1002_1010_text.png"
+                  }
+               },
+               "1011": {
+                  "#name": "image \"viewer LN-Hilite-Top.png\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "SX:0",
+                        "altRect": "0,30,402,35",
+                        "WinXPaltCmd": "SX:0",
+                        "WinXPaltRect": "0,30,402,35",
+                        "WinXPaltVis": true
+                     }
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1011",
+                     "layer": "4",
+                     "lockLoc": true,
+                     "name": "viewer LN-Hilite-Top.png",
+                     "opaque": false,
+                     "rect": "0,30,402,35",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABBSURBVHjaYvz//z8PA2HwH4gZ\niVDHwALEAiRqxif/H2SgMANxAJtB/6E0I0weZKAoAxUByEBxEtQzIrkKKwAIMADvHAtpRZJP\nRgAAAABJRU5ErkJggg=="
+                     }
+                  }
+               },
+               "1014": {
+                  "#name": "image \"dragCorner.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1014",
+                     "ink": "blend",
+                     "layer": "5",
+                     "name": "dragCorner.png",
+                     "opaque": false,
+                     "rect": "366,233,382,249",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Viewer_1002_1014_text.png",
+                     "visible": false
+                  }
+               },
+               "1015": {
+                  "#name": "field \"Title\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "id": "1015",
+                     "layer": "6",
+                     "lockText": true,
+                     "name": "Title",
+                     "opaque": false,
+                     "rect": "4,3,370,31",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "24",
+                     "textSize": "18",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1016": {
+                  "#name": "image \"drag.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1016",
+                     "layer": "7",
+                     "name": "drag.gif",
+                     "rect": "274,52,285,63",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhCwALAKIEALi0obi1obi0o////wAAAAAAAAAAAAAAACH5BAEAAAQALAAAAAALAAsA\nAAMdSLoqwFCEAdmgNRPXHpMUCF0KqXXo9ojsRJjwkAAAOw=="
+                     },
+                     "visible": false
+                  }
+               },
+               "1017": {
+                  "#name": "image \"resizeCursor\"",
+                  "properties": {
+                     "hotSpot": "9,9",
+                     "id": "1017",
+                     "layer": "8",
+                     "name": "resizeCursor",
+                     "rect": "254,50,270,66",
+                     "text": {
+                        "%base64%": "hAABf4MAAUGDAAFCgwABRIMAAUqDAAFVgwACYoCCAAIBQIMAAaODAAFVgwABKYMAARGDAAEh\ngwABQYMAAX+CAA=="
+                     },
+                     "toolTip": "200308",
+                     "visible": false,
+                     "xHot": "9",
+                     "yHot": "9"
+                  }
+               },
+               "1020": {
+                  "#name": "field \"Field\"",
+                  "properties": {
+                     "id": "1020",
+                     "layer": "9",
+                     "name": "Field",
+                     "rect": "-245,82,-145,103"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "altMinHeight": "248",
+         "altMinWidth": "402",
+         "altResizeControlList": "%file%: assets/Viewer_altResizeControlList.bin",
+         "altResizeScriptLocation": "card",
+         "MacOSXaltMinHeight": "248",
+         "MacOSXaltMinWidth": "402"
+      },
+      "longID": "stack \"Viewer\" of stack \"SQLite Sampler\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "id": "1020",
+         "liveResizing": false,
+         "minHeight": "248",
+         "minWidth": "402",
+         "name": "Viewer",
+         "rect": "493,293,895,697",
+         "title": "Viewer"
+      },
+      "sharedGroupIDs": null
+   }
+}

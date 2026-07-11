@@ -1,0 +1,37 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> wordWrapped theText,maxLength</p>
+<p>  <font color="#980517">if</font> maxLength is empty or maxLength is not a <font color="#FF0000">number</font> <font color="#980517">then</font></p>
+<p>    <font color="#68228B">-- use a default value if maxLength is not provided:</font></p>
+<p>    <font color="#0000FF">put</font> 75 into maxLength</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#980517">if</font> maxLength is not an integer <font color="#980517">then</font> <font color="#68228B">-- truncate it:</font></p>
+<p>    <font color="#0000FF">put</font> <font color="#F88017">trunc</font>(maxLength) into maxLength</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> each line thisLine in theText</p>
+<p>    <font color="#980517">if</font> <font color="#F88017">length</font>(thisLine) &lt;= maxLength <font color="#980517">then</font></p>
+<p>      <font color="#68228B">-- the line is shorter than the maximum, so</font></p>
+<p>      <font color="#68228B">-- we can leave it as-is:</font></p>
+<p>      <font color="#0000FF">put</font> thisLine &amp; <font color="#0000FF">return</font> after theWrappedText</p>
+<p>    <font color="#980517">else</font> <font color="#68228B">-- thisLine is longer than the maximum</font></p>
+<p>      <font color="#980517">repeat</font> until thisLine is empty</p>
+<p>        <font color="#68228B">-- try to break the line at a space:</font></p>
+<p>        <font color="#980517">repeat</font> <font color="#980517">with</font> x = maxLength down to 1</p>
+<p>          <font color="#980517">if</font> char x of thisLine is space \</p>
+<p>             or <font color="#F88017">length</font>(thisLine) &lt; maxLength <font color="#980517">then</font></p>
+<p>            <font color="#0000FF">put</font> (char 1 to x-1 of thisLine) &amp; <font color="#0000FF">return</font> \</p>
+<p>               after theWrappedText</p>
+<p>            <font color="#0000FF">delete</font> char 1 to x of thisLine</p>
+<p>            <font color="#0000FF">exit</font> <font color="#980517">repeat</font></p>
+<p>          <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>        <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>        <font color="#980517">if</font> x = 1 <font color="#980517">then</font> <font color="#68228B">-- no spaces in the first maxLength chars</font></p>
+<p>          <font color="#68228B">-- so we break it at that number of characters:</font></p>
+<p>          <font color="#0000FF">put</font> char 1 to maxLength of thisLine &amp; <font color="#0000FF">return</font> \</p>
+<p>             after theWrappedText</p>
+<p>          <font color="#0000FF">delete</font> char 1 to maxLength of thisLine</p>
+<p>        <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>      <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>    <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#0000FF">return</font> theWrappedText</p>
+<p><font color="#980517">end</font> wordWrapped</p>

@@ -1,0 +1,15 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> commonLines firstList,secondList</p>
+<p>  <font color="#68228B">-- create an array for each list, whose keys are the</font></p>
+<p>  <font color="#68228B">-- lines in the list:</font></p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> each line thisLine in firstList</p>
+<p>    <font color="#0000FF">put</font> true into firstArray[thisLine]</p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> each line thisLine in secondList</p>
+<p>    <font color="#0000FF">put</font> true into secondArray[thisLine]</p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#68228B">-- retain only elements that are found in both arrays:</font></p>
+<p>  <font color="#F88017">intersect</font> firstArray <font color="#980517">with</font> secondArray</p>
+<p>  <font color="#68228B">-- return the corresponding lines of text:</font></p>
+<p>  <font color="#0000FF">return</font> the <font color="#F88017">keys</font> of firstArray</p>
+<p><font color="#980517">end</font> commonLines</p>

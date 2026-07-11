@@ -1,0 +1,38 @@
+Script "stack_Mobile_Orientation_Example_card_id_1002"
+
+/*
+# Name: card "Main" of stack "Mobile Orientation Example"
+# ID: card id 1002 of stack "Mobile Orientation Example"
+# Hash: v1Y0o9ecmzjfDdyrnoDmzA==
+*/
+
+
+on openCard
+   if the environment is not "mobile" then
+      exit openCard
+   end if
+   
+   updateOrientation
+   
+   repeat with i = 1 to the number of buttons of group "Allowed Orientations"
+      set the hilite of button i of group "Allowed Orientations" to \
+             (the short name of button i of group "Allowed Orientations" is among the items of iphoneAllowedOrientations())
+   end repeat
+end openCard
+
+on orientationChanged
+   send "updateOrientation" to me in 0 millisecs
+end orientationChanged
+
+on updateOrientation
+   local tInfo
+   put "Device orientation is" && iphoneDeviceOrientation() & return after tInfo
+   put "Interface orientation is" && iphoneOrientation() & return after tInfo
+   put "Allowed orientations are" && iphoneAllowedOrientations() & return after tInfo
+   put "Orientation locked is" && iphoneOrientationLocked() & return after tInfo
+   put tInfo into field "Status"
+end updateOrientation
+
+on errorDialog
+   write the params to stderr
+end errorDialog

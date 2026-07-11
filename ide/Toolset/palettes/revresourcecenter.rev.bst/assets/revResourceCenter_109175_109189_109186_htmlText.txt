@@ -1,0 +1,20 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>The <font face="Courier" size="11">closeField</font><font face="helvetica" size="12"> message is sent to a field whenever it loses focus after a change to the field's content. When the </font><font face="Courier" size="11">closeField</font><font face="helvetica" size="12"> message is sent to the field, it triggers this handler.</font></p>
+<p></p>
+<p>In this example, the <font face="Courier" size="11">closeField</font><font face="helvetica" size="12"> handler should be placed in the stack script. This lets every field on every card update the modification date when the field is changed, without needing to put a copy of the handler in each field's script.</font></p>
+<p></p>
+<p>The handler stores the current date and time in a custom property called "lastModDate". Since the handler specifies that the "lastModDate" custom property will be applied to the current card, this example sets, for each card, the date and time any of its fields was last changed.</p>
+<p></p>
+<p>The date and time are stored in the form of <font face="Courier" size="11">the seconds</font><font face="helvetica" size="12"> function--the number of seconds since the start of the eon. We store the date and time this way, rather than as a text date and time, for two reasons: because this format doesn't vary depending on the user's system settings, and because it's easy to do arithmetic on (if we want to use a handler to find out whether one date is before or after another).</font></p>
+<p></p>
+<p>We may want to display the last-modification timestamp to the user. For example, we might put the date and time into a field whenever a card opens. For this purpose, we'll want to <font face="Courier" size="11">convert</font><font face="helvetica" size="12"> the </font><font face="Courier" size="11">seconds</font><font face="helvetica" size="12">--which is simply a number--into something a little more user-friendly. The </font><font face="Courier" size="11">convert</font><font face="helvetica" size="12"> command changes the format of a date:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">on</font><font face="Courier" size="11"> openCard </font><font face="Courier" size="11" color="#68228B">-- when the user goes to a card</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#68228B">-- grab the custom property:</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> the lastModDate of the </font><font face="Courier" size="11" color="#F88017">target</font><font face="Courier" size="11"> into myDate</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#68228B">-- switch to a better format:</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#0000FF">convert</font><font face="Courier" size="11"> myDate from </font><font face="Courier" size="11" color="#F88017">seconds</font><font face="Courier" size="11"> to </font><font face="Courier" size="11" color="#F88017">date</font><font face="Courier" size="11"> and </font><font face="Courier" size="11" color="#F88017">time</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#68228B">-- display the converted date and time in a field:</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> myDate into field "Last Mod Date"</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#0000FF">pass</font><font face="Courier" size="11"> openCard</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> openCard</font></p>

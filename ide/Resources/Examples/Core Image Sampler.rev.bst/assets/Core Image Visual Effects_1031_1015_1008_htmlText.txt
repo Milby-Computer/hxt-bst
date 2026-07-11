@@ -1,0 +1,5 @@
+<p>With Tiger comes Apple's new GPU accerelated image processing framework - <i><font face="Lucida Grande" size="11">Core Image.</font></i><font face="Lucida Grande" size="11"> The engine now has built-in support for the Transition category of effects supplied by this framework. To support this, the <i>visual effect </i>collection of commands have new syntax:</font></p>
+<p></p>
+<p><b><font face="Monaco" size="10">visual</font></b><font face="Monaco" size="10"> <b>effect</b> &lt;name&gt; [&lt;speed&gt;] [<b>to</b> &lt;final image&gt;] [<b>with &lt;param_1&gt; </b>&lt;value_1&gt; <b>and &lt;param_2&gt; </b>&lt;value_2&gt; <b>and</b> ...]</font></p>
+<p></p>
+<p>For more details, see the Transcript Reference page for the visual effect command and for more in depth information on the Core Image transition effects and how to create your own Core Image Units, take a look here: <a><font face="Lucida Grande" size="11">http://developer.apple.com/macosx/coreimage.html</font></a></p>

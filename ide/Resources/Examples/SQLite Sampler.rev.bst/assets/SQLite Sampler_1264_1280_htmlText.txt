@@ -1,0 +1,23 @@
+<p><font color="#68228B">-- Script of button Show SQLITE_MASTER schema</font></p>
+<p></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information "This will return a list of the SQL used to create all tables in the current database."</p>
+<p>  </p>
+<p><font color="#68228B">  </font><font color="#0000FF">local </font>tSQL</p>
+<p>  <font color="#0000FF">put</font> "SELECT sql FROM sqlite_master" into tSQL</p>
+<p></p>
+<p><font color="#68228B">  </font><font color="#0000FF">local </font>tList</p>
+<p>  <font color="#0000FF">put</font> revDataFromQuery(,,gConID,tSQL) into tList</p>
+<p>  </p>
+<p>  <font color="#0000FF">replace</font> tab <font color="#980517">with</font> comma in tList</p>
+<p></p>
+<p>  handleRevDBerror tList</p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information "Records returned: " &amp; return &amp; tList</p>
+<p><font color="#980517">end</font> mouseUp</p>

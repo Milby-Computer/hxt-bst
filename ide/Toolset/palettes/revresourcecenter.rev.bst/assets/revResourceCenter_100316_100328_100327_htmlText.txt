@@ -1,0 +1,13 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> menuPick theItem</p>
+<p>  <font color="#0000FF">put</font> the <font color="#FF0000">menuHistory</font> of <font color="#F88017">me</font> into myItemNumber</p>
+<p>  <font color="#980517">if</font> char 1 to 2 of line myItemNumber of <font color="#F88017">me</font> is "!c"</p>
+<p>  <font color="#980517">then</font> <font color="#0000FF">delete</font> char 1 to 2 of line myItemNumber of <font color="#F88017">me</font></p>
+<p>  <font color="#980517">else</font> <font color="#0000FF">put</font> "!c" before line myItemNumber of <font color="#F88017">me</font></p>
+<p>  <font color="#68228B">-- This handler just handles the checkmarks. If you</font></p>
+<p>  <font color="#68228B">-- want to do other things in response to a menu choice,</font></p>
+<p>  <font color="#68228B">-- you'll do them here, after the checkmark code. Here's</font></p>
+<p>  <font color="#68228B">-- a simple example:</font></p>
+<p>  <font color="#0000FF">answer</font> "You chose" &amp;&amp; quote &amp; theItem &amp; quote &amp; "."</p>
+<p><font color="#980517">end</font> menuPick</p>
+<p></p>

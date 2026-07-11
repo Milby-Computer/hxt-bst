@@ -1,0 +1,6 @@
+Select the file containing the font mapping you want to use.
+Mapping font names allows you to use user friendly font names, but having the engine
+using the PostScript name of the font (using a name different from the PostScript name
+causes a huge slowdown from iOS 8.1).
+The file must contains one mapping per line, following this structure:
+<mapped name>=<PostScript name>

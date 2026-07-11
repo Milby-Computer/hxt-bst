@@ -1,0 +1,21 @@
+Scripted button. When clicked, the triangle rotates downward and the window expands to a specified height. Clicking on the triangle again rotates the triangle back to the right and restores the stack to a specified height.
+
+The button resizes the stack in which it is placed to the sizes contained in two custom properties stored on the button:
+
+cUndisclosedStackHeight
+cDisclosedStackHeight
+
+The button references 5 images. The ids for these images are stored in the following custom properties set on the button:
+
+cIcon
+cHilitedIcon
+cIntermediateIcon
+cDisclosedHilitedIcon
+cDisclosed
+
+The icon of the button can be set to either of the following custom properties for a disabled appearance:
+
+cDisabledIcon
+cDisclosedDisabledIcon
+
+Note that this control requires the "Revolution Icons" image library to be tranferred to your stack using Distribution Builder when you are preparing your stack for distribution.

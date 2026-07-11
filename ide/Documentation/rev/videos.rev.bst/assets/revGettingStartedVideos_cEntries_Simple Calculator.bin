@@ -1,0 +1,10 @@
+category=Sample Projects
+description=<p>The Simple Calculator: this Video Tutorial shows you how to use this Sample Project, and how to take it apart to understand how it works or copy portions of it for use in your own applications.  We recommend that you have explored the introductory video tutorials so you have a basic understanding of how Revolution works before you start on the Sample Projects.</p>
+duration=1:48
+filename=free_calculator.avi
+level=2
+licensed=false
+name=Simple Calculator
+scripts=<p></p>\n<p></p>
+title=Simple Calculator: Using Logic
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;A walk through the Calculator application</p>\n<p>-&#9;How the calculator objects were laid out</p>\n<p>-&#9;Understanding and editing the calculator scripts</p>\n<p></p>

@@ -1,0 +1,799 @@
+{
+   "#mainstack": "Page Setup",
+   "Page Setup": {
+      "#name": "stack \"Page Setup\"",
+      "#substacks": null,
+      "backgroundIDs": "1135\n1151\n1110",
+      "cardIDs": "1001",
+      "childcontrols": {
+         "1001": {
+            "#name": "card \"Print Setup Card\"",
+            "childcontrols": {
+               "1017": {
+                  "#name": "button \"OK\"",
+                  "properties": {
+                     "armBorder": false,
+                     "default": true,
+                     "id": "1017",
+                     "layer": "38",
+                     "menuMode": "pulldown",
+                     "name": "OK",
+                     "rect": "246,289,308,307"
+                  }
+               },
+               "1018": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "armBorder": false,
+                     "id": "1018",
+                     "layer": "39",
+                     "menuMode": "pulldown",
+                     "name": "Cancel",
+                     "rect": "172,288,236,308"
+                  }
+               },
+               "1109": {
+                  "#name": "button \"Page Setup\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1109",
+                     "label": "Page Setup",
+                     "layer": "41",
+                     "margins": "12,4,16,4",
+                     "menuMode": "option",
+                     "menuName": "MC Stack Menu",
+                     "name": "Page Setup",
+                     "rect": "60,6,316,23",
+                     "sharedHilite": false,
+                     "showHilite": true,
+                     "style": "menu",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "1110": "#shared group",
+               "1113": {
+                  "#name": "field id 1113",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Stack:</p>",
+                     "id": "1113",
+                     "layer": "40",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "7,4,63,24",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1135": "#shared group",
+               "1151": "#shared group"
+            },
+            "properties": {
+               "id": "1001",
+               "name": "Print Setup Card"
+            }
+         },
+         "1110": {
+            "#name": "group \"Packing\"",
+            "childcontrols": {
+               "1107": {
+                  "#name": "field \"Scale\"",
+                  "customproperties": {
+                     "cMaxValue": "100",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "autoTab": true,
+                     "htmlText": {
+                        "1001": "<p>1</p>"
+                     },
+                     "id": "1107",
+                     "layer": "2",
+                     "name": "Scale",
+                     "rect": "249,58,293,79"
+                  }
+               },
+               "1111": {
+                  "#name": "button \"Pack Horizontally\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "hiliteFill": false,
+                     "id": "1111",
+                     "layer": "5",
+                     "menuMode": "pulldown",
+                     "name": "Pack Horizontally",
+                     "opaque": false,
+                     "rect": "12,40,134,60",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1112": {
+                  "#name": "button \"Pack Vertically\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1112",
+                     "layer": "6",
+                     "menuMode": "pulldown",
+                     "name": "Pack Vertically",
+                     "opaque": false,
+                     "rect": "12,58,134,78",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1114": {
+                  "#name": "field \"Cards\"",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Cards per row:</p>",
+                     "id": "1114",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "Cards",
+                     "opaque": false,
+                     "rect": "140,58,249,79",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1147": {
+                  "#name": "button \"Print Card Borders\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "id": "1147",
+                     "layer": "3",
+                     "menuMode": "pulldown",
+                     "name": "Print Card Borders",
+                     "opaque": false,
+                     "rect": "12,89,160,109",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1158": {
+                  "#name": "button \"scrollbar widget 3\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "0",
+                     "cTargetField": "scale",
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201317",
+                     "id": "1158",
+                     "layer": "7",
+                     "name": "scrollbar widget 3",
+                     "opaque": false,
+                     "rect": "293,57,309,77",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1172": {
+                  "#name": "button \"New Button 1\"",
+                  "properties": {
+                     "id": "1172",
+                     "layer": "8",
+                     "name": "New Button 1",
+                     "rect": "14,84,301,86",
+                     "showName": false,
+                     "style": "rectangle"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "hilitedButton": "2",
+               "id": "1110",
+               "layer": "1",
+               "lockLoc": true,
+               "name": "Packing",
+               "rect": "6,26,317,112",
+               "sharedBehavior": true,
+               "showBorder": true,
+               "showName": true,
+               "tabGroupBehavior": true
+            }
+         },
+         "1135": {
+            "#name": "group \"Margins\"",
+            "childcontrols": {
+               "1116": {
+                  "#name": "field \"Top\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "0"
+                  },
+                  "properties": {
+                     "autoTab": true,
+                     "htmlText": "<p>1</p>",
+                     "id": "1116",
+                     "layer": "15",
+                     "name": "Top",
+                     "rect": "90,157,134,178",
+                     "sharedText": true
+                  }
+               },
+               "1118": {
+                  "#name": "group \"Units\"",
+                  "childcontrols": {
+                     "1119": {
+                        "#name": "button \"Centimetres\"",
+                        "properties": {
+                           "armBorder": false,
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "1119",
+                           "layer": "12",
+                           "menuMode": "pulldown",
+                           "name": "Centimetres",
+                           "opaque": false,
+                           "rect": "142,128,228,149",
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1120": {
+                        "#name": "button \"Inches\"",
+                        "properties": {
+                           "armBorder": false,
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "hiliteFill": false,
+                           "id": "1120",
+                           "layer": "11",
+                           "menuMode": "pulldown",
+                           "name": "Inches",
+                           "opaque": false,
+                           "rect": "69,128,145,149",
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1121": {
+                        "#name": "button \"Points\"",
+                        "properties": {
+                           "armBorder": false,
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "1121",
+                           "layer": "13",
+                           "menuMode": "pulldown",
+                           "name": "Points",
+                           "opaque": false,
+                           "rect": "235,128,303,149",
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "1",
+                     "id": "1118",
+                     "layer": "10",
+                     "name": "Units",
+                     "rect": "65,124,307,153",
+                     "tabGroupBehavior": true
+                  }
+               },
+               "1122": {
+                  "#name": "field id 1122",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Top:</p>",
+                     "id": "1122",
+                     "layer": "14",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "8,157,89,178",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1123": {
+                  "#name": "field id 1123",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Bottom:</p>",
+                     "id": "1123",
+                     "layer": "16",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "8,181,89,202",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1124": {
+                  "#name": "field id 1124",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Left:</p>",
+                     "id": "1124",
+                     "layer": "20",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "152,157,250,178",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1125": {
+                  "#name": "field id 1125",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Right:</p>",
+                     "id": "1125",
+                     "layer": "22",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "152,181,250,202",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1126": {
+                  "#name": "field \"Bottom\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "0"
+                  },
+                  "properties": {
+                     "autoTab": true,
+                     "htmlText": "<p>1</p>",
+                     "id": "1126",
+                     "layer": "17",
+                     "name": "Bottom",
+                     "rect": "90,181,134,202",
+                     "sharedText": true
+                  }
+               },
+               "1127": {
+                  "#name": "field \"Left\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "0"
+                  },
+                  "properties": {
+                     "autoTab": true,
+                     "htmlText": "<p>1</p>",
+                     "id": "1127",
+                     "layer": "21",
+                     "name": "Left",
+                     "rect": "249,157,293,178",
+                     "sharedText": true
+                  }
+               },
+               "1128": {
+                  "#name": "field \"Right\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "0"
+                  },
+                  "properties": {
+                     "autoTab": true,
+                     "htmlText": "<p>1</p>",
+                     "id": "1128",
+                     "layer": "23",
+                     "name": "Right",
+                     "rect": "249,181,293,202",
+                     "sharedText": true
+                  }
+               },
+               "1141": {
+                  "#name": "field id 1141",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Row Gutter:</p>",
+                     "id": "1141",
+                     "layer": "18",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "8,206,89,227",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1142": {
+                  "#name": "field \"Row\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "0"
+                  },
+                  "properties": {
+                     "autoTab": true,
+                     "htmlText": "<p>0.5</p>",
+                     "id": "1142",
+                     "layer": "19",
+                     "name": "Row",
+                     "rect": "90,205,134,226",
+                     "sharedText": true
+                  }
+               },
+               "1143": {
+                  "#name": "field id 1143",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Column Gutter:</p>",
+                     "id": "1143",
+                     "layer": "24",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "152,206,250,227",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1145": {
+                  "#name": "field \"Column\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "0"
+                  },
+                  "properties": {
+                     "autoTab": true,
+                     "htmlText": "<p>0.5</p>",
+                     "id": "1145",
+                     "layer": "25",
+                     "name": "Column",
+                     "rect": "249,205,293,226",
+                     "sharedText": true
+                  }
+               },
+               "1148": {
+                  "#name": "field id 1148",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Units:</p>",
+                     "id": "1148",
+                     "layer": "26",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "13,128,69,149",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1160": {
+                  "#name": "button \"New Button 1\"",
+                  "properties": {
+                     "id": "1160",
+                     "layer": "27",
+                     "name": "New Button 1",
+                     "rect": "14,149,301,151",
+                     "showName": false,
+                     "style": "rectangle"
+                  }
+               },
+               "1162": {
+                  "#name": "button \"Little Arrows\"",
+                  "customproperties": {
+                     "cDownIcon": "201318",
+                     "cIcon": "201317",
+                     "cTargetField": "top",
+                     "cUpIcon": "201319",
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201317",
+                     "id": "1162",
+                     "layer": "28",
+                     "name": "Little Arrows",
+                     "opaque": false,
+                     "rect": "134,156,150,176",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1164": {
+                  "#name": "button \"Little Arrows\"",
+                  "customproperties": {
+                     "cDownIcon": "201318",
+                     "cIcon": "201317",
+                     "cTargetField": "bottom",
+                     "cUpIcon": "201319",
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201317",
+                     "id": "1164",
+                     "layer": "29",
+                     "name": "Little Arrows",
+                     "opaque": false,
+                     "rect": "134,180,150,200",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1165": {
+                  "#name": "button \"Little Arrows\"",
+                  "customproperties": {
+                     "cDownIcon": "201318",
+                     "cIcon": "201317",
+                     "cTargetField": "row",
+                     "cUpIcon": "201319",
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201317",
+                     "id": "1165",
+                     "layer": "30",
+                     "name": "Little Arrows",
+                     "opaque": false,
+                     "rect": "134,204,150,224",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1166": {
+                  "#name": "button \"Little Arrows\"",
+                  "customproperties": {
+                     "cDownIcon": "201318",
+                     "cIcon": "201317",
+                     "cTargetField": "left",
+                     "cUpIcon": "201319",
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201317",
+                     "id": "1166",
+                     "layer": "31",
+                     "name": "Little Arrows",
+                     "opaque": false,
+                     "rect": "293,156,309,176",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1167": {
+                  "#name": "button \"Little Arrows\"",
+                  "customproperties": {
+                     "cDownIcon": "201318",
+                     "cIcon": "201317",
+                     "cTargetField": "right",
+                     "cUpIcon": "201319",
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201317",
+                     "id": "1167",
+                     "layer": "32",
+                     "name": "Little Arrows",
+                     "opaque": false,
+                     "rect": "293,180,309,200",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1168": {
+                  "#name": "button \"Little Arrows\"",
+                  "customproperties": {
+                     "cDownIcon": "201318",
+                     "cIcon": "201317",
+                     "cTargetField": "column",
+                     "cUpIcon": "201319",
+                     "revbasic": false,
+                     "revButton": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "201317",
+                     "id": "1168",
+                     "layer": "33",
+                     "name": "Little Arrows",
+                     "opaque": false,
+                     "rect": "293,204,309,224",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1135",
+               "layer": "9",
+               "lockLoc": true,
+               "name": "Margins",
+               "radioBehavior": false,
+               "rect": "6,115,317,234",
+               "showBorder": true,
+               "showName": true
+            }
+         },
+         "1151": {
+            "#name": "group \"Output\"",
+            "childcontrols": {
+               "1152": {
+                  "#name": "button \"Color\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "hiliteFill": false,
+                     "id": "1152",
+                     "layer": "35",
+                     "menuMode": "pulldown",
+                     "name": "Color",
+                     "opaque": false,
+                     "rect": "12,251,76,271",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1153": {
+                  "#name": "button \"Black and White\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1153",
+                     "layer": "36",
+                     "menuMode": "pulldown",
+                     "name": "Black and White",
+                     "opaque": false,
+                     "rect": "76,251,208,271",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1156": {
+                  "#name": "button \"Printer...\"",
+                  "properties": {
+                     "armBorder": false,
+                     "id": "1156",
+                     "layer": "37",
+                     "menuMode": "pulldown",
+                     "name": "Printer...",
+                     "rect": "245,251,309,271"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "hilitedButton": "1",
+               "id": "1151",
+               "layer": "34",
+               "lockLoc": true,
+               "name": "Output",
+               "rect": "6,237,317,279",
+               "showBorder": true,
+               "showName": true,
+               "tabGroupBehavior": true
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.6.1"
+      },
+      "longID": "stack \"Page Setup\"",
+      "properties": {
+         "bottomColor": "128,128,128",
+         "decorations": "default",
+         "fileName": "revpagesetup.rev",
+         "foreColor": "0,0,0",
+         "hiliteColor": "160,160,160",
+         "id": "1173",
+         "liveResizing": false,
+         "name": "Page Setup",
+         "rect": "591,156,913,472",
+         "resizable": false,
+         "shadowColor": "172,172,172",
+         "topColor": "white"
+      },
+      "sharedGroupIDs": "1135\n1151\n1110"
+   }
+}

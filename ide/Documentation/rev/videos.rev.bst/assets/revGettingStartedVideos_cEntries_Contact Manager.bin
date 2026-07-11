@@ -1,0 +1,10 @@
+category=Sample Projects
+description=<p>Contact Manager is a very simple application that allows you to enter a note and date to call someone.  It uses cards to store each record, and a script at the start of the stack updates the summary field.  This Video Tutorial shows you how to use this Sample Project, and how to take it apart to understand how it works or copy portions of it for use in your own applications.  We recommend you have explored the introductory video tutorials so you have a basic understanding of how Revolution works before you start on the Sample Projects.</p>
+duration=2:33
+filename=free_contact_manager.avi
+level=1
+licensed=false
+name=Contact Manager
+scripts=<p></p>\n<p></p>
+title=Contact Manager: A Simple Card Based Database
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;A walk through the Contact Manager</p>\n<p>-&#9;How to view the scripts</p>\n<p></p>

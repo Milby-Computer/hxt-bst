@@ -1,0 +1,1 @@
+<p>Any part of the <a><font face="verdana" size="11">expression</font></a> in parentheses is <a><font face="verdana" size="11">evaluated</font></a> first. If parentheses are <a><font face="verdana" size="11">nested</font></a>, the innermost <a><font face="verdana" size="11">values</font></a> are <a><font face="verdana" size="11">evaluated</font></a> first.</p>

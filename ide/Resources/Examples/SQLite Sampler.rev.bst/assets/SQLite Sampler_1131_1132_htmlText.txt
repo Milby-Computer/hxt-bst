@@ -1,0 +1,17 @@
+<p><font face="Verdana" size="18">SQL you should know (part 2)</font></p>
+<p></p>
+<p><font face="Tahoma" size="11">Commands</font></p>
+<p></p>
+<p><font face="Tahoma" size="11">There are a number of SQL commands but only a few you need to know for this demo. They are:</font></p>
+<p></p>
+<p><a href="http://www.w3schools.com/sql/sql_select.asp"><font face="Tahoma" size="11">SELECT</font></a><font face="Tahoma" size="11"> - extracts data from a database table</font></p>
+<p><a href="http://www.w3schools.com/sql/sql_update.asp"><font face="Tahoma" size="11">UPDATE</font></a><font face="Tahoma" size="11"> - updates data in a database table</font></p>
+<p><a href="http://www.w3schools.com/sql/sql_delete.asp"><font face="Tahoma" size="11">DELETE</font></a><font face="Tahoma" size="11"> - deletes data from a database table</font></p>
+<p><a href="http://www.w3schools.com/sql/sql_insert.asp"><font face="Tahoma" size="11">INSERT INTO</font></a><font face="Tahoma" size="11"> - inserts new data into a database table</font></p>
+<p><a href="http://www.w3schools.com/sql/sql_create.asp"><font face="Tahoma" size="11">CREATE TABLE</font></a><font face="Tahoma" size="11"> - creates a new database table</font></p>
+<p><a href="http://www.w3schools.com/sql/sql_drop.asp"><font face="Tahoma" size="11">DROP TABLE</font></a><font face="Tahoma" size="11"> - deletes a database table</font></p>
+<p></p>
+<p><font face="Tahoma" size="11">(clicking on the above links takes you to the website <a href="http://www.w3schools.com/sql/default.asp">www.w3schools.com</a></font><font face="Tahoma" size="11"> for a description of each term.)</font></p>
+<p></p>
+<p></p>
+<p></p>

@@ -1,0 +1,30 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> convertChar conversionType</p>
+<p>  <font color="#980517">if</font> conversionType is empty <font color="#980517">then</font></p>
+<p>    <font color="#68228B">-- figure out which direction to convert:</font></p>
+<p>    <font color="#980517">if</font> field "Character" is not empty</p>
+<p>    <font color="#980517">then</font> <font color="#0000FF">put</font> "character" into conversionType</p>
+<p>    <font color="#980517">else</font> <font color="#0000FF">put</font> "ASCII" into conversionType</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#980517">if</font> field conversionType is empty</p>
+<p>  <font color="#980517">then</font> <font color="#0000FF">return</font> "Error: nothing to convert!"</p>
+<p>  <font color="#68228B">-- do the conversion:</font></p>
+<p>  <font color="#980517">if</font> conversionType is "character" <font color="#980517">then</font></p>
+<p>    <font color="#68228B">-- convert character to ASCII:</font></p>
+<p>    <font color="#0000FF">put</font> <font color="#F88017">charToNum</font>(char 1 of field "Character") into field "ASCII"</p>
+<p>  <font color="#980517">else</font> <font color="#68228B">-- convert ASCII value to character:</font></p>
+<p>    <font color="#0000FF">get</font> field "ASCII"</p>
+<p>    <font color="#980517">if</font> (it is not an integer) or (it &gt; 255) or (it &lt; zero) <font color="#980517">then</font></p>
+<p>      <font color="#68228B">-- invalid character:</font></p>
+<p>      <font color="#0000FF">return</font> "Error: ASCII values are between 0 and 255."</p>
+<p>      <font color="#0000FF">put</font> empty into field "Character"</p>
+<p>      <font color="#0000FF">select</font> <font color="#FF0000">text</font> of field "ASCII"</p>
+<p>    <font color="#980517">else</font> <font color="#980517">if</font> (it &lt;= 32) or (it = 127) <font color="#980517">then</font></p>
+<p>      <font color="#68228B">-- non-printable character:</font></p>
+<p>      <font color="#0000FF">put</font> item 2 of line it + 1 of the asciiChart of <font color="#F88017">me</font> \</p>
+<p>          into field "Character"</p>
+<p>    <font color="#980517">else</font> <font color="#68228B">-- ordinary character:</font></p>
+<p>      <font color="#0000FF">put</font> <font color="#F88017">numToChar</font>(it) into field "Character"</p>
+<p>    <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p><font color="#980517">end</font> convertChar</p>

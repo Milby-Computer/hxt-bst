@@ -1,0 +1,150 @@
+{
+   "#mainstack": "revSmartSave",
+   "revSmartSave": {
+      "#name": "stack \"revSmartSave\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1006": {
+                  "#name": "field \"TimeScale\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>never</p>\n<p>10 s</p>\n<p>20 s</p>\n<p>30 s</p>\n<p>40 s</p>\n<p>50 s</p>\n<p>1 mn</p>\n<p>5 mn</p>\n<p>10 mn</p>",
+                     "id": "1006",
+                     "layer": "2",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "name": "TimeScale",
+                     "opaque": false,
+                     "rect": "27,1,79,149",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Lucida Grande",
+                     "textHeight": "16",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1008": {
+                  "#name": "scrollbar \"Timer\"",
+                  "properties": {
+                     "endValue": "5",
+                     "id": "1008",
+                     "layer": "4",
+                     "lineInc": "0.05951",
+                     "lockLoc": true,
+                     "name": "Timer",
+                     "pageInc": "0.99794",
+                     "rect": "3,154,76,168",
+                     "style": "progress",
+                     "thumbSize": "0",
+                     "toolTip": "Progress timescale",
+                     "traversalOn": false
+                  }
+               },
+               "1011": {
+                  "#name": "button \"Saving\"",
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "icon": "210065",
+                     "id": "1011",
+                     "layer": "5",
+                     "lockLoc": true,
+                     "name": "Saving",
+                     "opaque": false,
+                     "rect": "3,154,76,168",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "rectangle",
+                     "threeD": false,
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1016": {
+                  "#name": "scrollbar \"TimerScroll\"",
+                  "customproperties": {
+                     "revscrollbar": false,
+                     "thumPosition": "5"
+                  },
+                  "properties": {
+                     "endValue": "9",
+                     "id": "1016",
+                     "layer": "1",
+                     "lineInc": "1.999786",
+                     "lockLoc": true,
+                     "name": "TimerScroll",
+                     "pageInc": "1.999786",
+                     "rect": "11,5,155,151",
+                     "showValue": true,
+                     "startValue": "1",
+                     "style": "scale",
+                     "thumbPosition": "1",
+                     "thumbSize": "6.999985",
+                     "toolTip": "Move to adjust saving interval"
+                  }
+               },
+               "1017": {
+                  "#name": "field \"About\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>1.1 \u2026copy; Rinaldi</p>",
+                     "id": "1017",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "name": "About",
+                     "opaque": false,
+                     "rect": "0,165,80,178",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textFont": "Lucida Grande",
+                     "textHeight": "10",
+                     "textSize": "9",
+                     "textStyle": "plain",
+                     "toolTip": "Any problem? Click to eMail me!",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "revstack": false
+      },
+      "custompropertysets": {
+         "cREVOnline": {
+            "fingerprint": "rLZSP6ATj255pSjKvBrmPg"
+         }
+      },
+      "longID": "stack \"revSmartSave\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "revSmartSave 1.1.rev",
+         "id": "1017",
+         "liveResizing": false,
+         "name": "revSmartSave",
+         "rect": "95,528,174,706",
+         "resizable": false,
+         "title": "Saving"
+      },
+      "sharedGroupIDs": null
+   }
+}

@@ -1,0 +1,8 @@
+<p><b><font face="helvetica" size="12">Description:</font></b></p>
+<p>The Internet Chat application is a simple client and server application that allows you to do live Internet chat.  It comes in two parts.  The Chat Client stack contains the scripts for the client, and would be distributed to each person on the network.  The Chat Server stack contains the scripts for the chat server.</p>
+<p></p>
+<p><b><font face="helvetica" size="12">Topics:</font></b></p>
+<p>The key topics covered in this Project are:</p>
+<p>   - Creating a client application using sockets</p>
+<p>   - Creating a server application using sockets</p>
+<p>   - Using the Geometry Manager to resize objects</p>

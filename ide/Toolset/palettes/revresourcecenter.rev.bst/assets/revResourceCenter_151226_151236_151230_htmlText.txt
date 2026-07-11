@@ -1,0 +1,3 @@
+<p><font face="Lucida Grande" size="12" color="#000000">In today's world time is a highly valued commodity. With busy lifestyles and demanding jobs people rarely have time to sit down daily to read their favourite newspaper or website. This has led to a culture in which people demand information immediately and this, in turn, has helped lead to the popularity of RSS feeds.</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">What is RSS?</font></b></p>

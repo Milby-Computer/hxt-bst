@@ -1,0 +1,1773 @@
+{
+   "#mainstack": "Message Box",
+   "Message Box": {
+      "#name": "stack \"Message Box\"",
+      "#substacks": null,
+      "backgroundIDs": "10669\n141786\n203985",
+      "cardIDs": "1002\n9525\n3461\n3462\n2525\n2526\n2960\n1198\n10773",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Single Line\"",
+            "childcontrols": {
+               "1090": {
+                  "#name": "group \"fields\"",
+                  "childcontrols": {
+                     "1085": {
+                        "#name": "field \"auto complete\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": null
+                           }
+                        },
+                        "properties": {
+                           "backColor": "255,255,255",
+                           "dontWrap": true,
+                           "foreColor": "gray70",
+                           "id": "1085",
+                           "layer": "6",
+                           "name": "auto complete",
+                           "rect": "0,21,1113,45",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque",
+                           "textFont": "Source Code Pro",
+                           "textSize": "12",
+                           "traversalOn": false
+                        }
+                     },
+                     "1088": {
+                        "#name": "field \"results\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "id": "1088",
+                           "layer": "5",
+                           "name": "results",
+                           "rect": "0,45,1113,315",
+                           "scrollbarWidth": "16",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1128": {
+                        "#name": "field \"message\"",
+                        "customproperties": {
+                           "cTooltipTag": "Type a command or expression and press Return"
+                        },
+                        "properties": {
+                           "behavior": "stack \"revMessageBoxSingleLineMessageBehavior\"",
+                           "dontWrap": true,
+                           "foreColor": "black",
+                           "htmlText": "<p><b><font color=\"#7F7F00\">save</font></b><font color=\"#000000\"> </font><font color=\"#7F007F\">this</font><font color=\"#000000\"> </font><font color=\"#7F007F\">stack</font></p>",
+                           "id": "1128",
+                           "layer": "7",
+                           "name": "message",
+                           "opaque": false,
+                           "rect": "0,21,1113,45",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "transparent",
+                           "textFont": "Source Code Pro",
+                           "textSize": "12",
+                           "toolTip": "Type a command or expression and press Return"
+                        }
+                     },
+                     "2697": {
+                        "#name": "graphic \"line\"",
+                        "properties": {
+                           "antialiased": false,
+                           "foreColor": "211,211,211",
+                           "id": "2697",
+                           "layer": "8",
+                           "name": "line",
+                           "points": "2,45\n1113,45",
+                           "rect": "1,44,1114,46",
+                           "style": "line"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "cantSelect": true,
+                     "id": "1090",
+                     "layer": "4",
+                     "name": "fields",
+                     "rect": "-4,17,1118,319"
+                  }
+               },
+               "1189": {
+                  "#name": "button \"compile test\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "disabled": true,
+                     "foreColor": "pink",
+                     "id": "1189",
+                     "layer": "9",
+                     "margins": "8",
+                     "name": "compile test",
+                     "opaque": false,
+                     "rect": "-6,304,76,327",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "141786": "#shared group",
+               "203985": "#shared group"
+            },
+            "customproperties": {
+               "cREVBottom": "405",
+               "cREVHeight": "214",
+               "cREVRight": "1316",
+               "cREVWidth": "589"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "15"
+               }
+            },
+            "properties": {
+               "behavior": "stack \"revMessageBoxSingleLineCardBehavior\"",
+               "id": "1002",
+               "name": "Single Line"
+            }
+         },
+         "10669": {
+            "#name": "group \"objectList\"",
+            "childcontrols": "#data view group",
+            "customproperties": {
+               "viewProp": "ef625c4f-44e4-41b9-8a89-b665b0cd3d43"
+            },
+            "custompropertysets": {
+               "uVersion": {
+                  "ID": "624012",
+                  "UUID": "eac8ebb6-00d4-477b-8982-93e9023ee59b"
+               },
+               "viewProp": {
+                  "alternate row color": "238,238,238",
+                  "animate selections": false,
+                  "autohide scrollbars": true,
+                  "cache": "none",
+                  "content height": "0",
+                  "dim on focusout": false,
+                  "dimmed hilite color": "80,94,100",
+                  "drop indicator template": null,
+                  "first working row": "0",
+                  "fixed row height": true,
+                  "hilite color": "48,160,209",
+                  "last working row": "0",
+                  "multiple lines": true,
+                  "resize controls": false,
+                  "row color": "255,255,255",
+                  "row height": "24",
+                  "row style templates": {
+                     "backScripts": "group id 26763 of card id 10773 of stack \"Message Box\"",
+                     "frontScripts": "group id 26763 of card id 10773 of stack \"Message Box\"",
+                     "pendingMessages": "group id 26870 of card id 10773 of stack \"Message Box\"",
+                     "stacksInUse": "group id 10802 of card id 10773 of stack \"Message Box\""
+                  },
+                  "scroll selections into view": true,
+                  "scrollbar corner offset": "0",
+                  "vscroll": "0"
+               }
+            },
+            "properties": {
+               "backColor": "255,255,255",
+               "backgroundBehavior": true,
+               "behavior": "button id 1003 of stack \"revDataViewControl\"",
+               "borderWidth": "0",
+               "id": "10669",
+               "layer": "15",
+               "margins": "0",
+               "name": "objectList",
+               "opaque": true,
+               "rect": "0,21,1087,317",
+               "selectGroupedControls": false,
+               "showBorder": true,
+               "threeD": false
+            }
+         },
+         "10773": {
+            "#name": "card \"templates\"",
+            "childcontrols": {
+               "10802": {
+                  "#name": "group \"stacksRow\"",
+                  "childcontrols": {
+                     "10775": {
+                        "#name": "image \"stack.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "10775",
+                           "layer": "3",
+                           "name": "stack.png",
+                           "rect": "6,80,22,96",
+                           "repeatCount": "-1",
+                           "text": {
+                              "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAFtJREFUeNpiTEtLi2VgYGgBYjkG0sB9IE5hARK9QCzKQDpQ\nBOK9LP///ydHMxyADGCg2IA5c+YwkqM5JSXlPxMlLgDpHQ4GMFAIRsOACmEAyo0MMTExZJsC\nEGAA9zhEDWkjtIYAAAAASUVORK5CYII="
+                           },
+                           "toolTip": "200083"
+                        }
+                     },
+                     "10801": {
+                        "#name": "field \"stack name\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "stack"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>stack</p>",
+                           "id": "10801",
+                           "layer": "4",
+                           "lockText": true,
+                           "name": "stack name",
+                           "opaque": false,
+                           "rect": "48,80,168,100",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textHeight": "16",
+                           "traversalOn": false
+                        }
+                     },
+                     "11321": {
+                        "#name": "graphic \"background\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "filled": true,
+                           "id": "11321",
+                           "layer": "2",
+                           "lineSize": "0",
+                           "name": "background",
+                           "opaque": true,
+                           "rect": "360,82,496,100"
+                        }
+                     },
+                     "11502": {
+                        "#name": "field \"scriptLines\"",
+                        "customproperties": {
+                           "cTooltipTag": "Script lines",
+                           "profile": null
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "bottomfieldloc": "51",
+                              "cellxspacing": "75",
+                              "cellyspacing": "15",
+                              "currenthscroll": "0",
+                              "currentview": "<p>script</p>",
+                              "currentvscroll": "0",
+                              "currentxmouseloc": "139",
+                              "currentymouseloc": "22",
+                              "leftfieldloc": "505",
+                              "numbertabstops": "1",
+                              "rightfieldloc": "557",
+                              "scrollbarwidth": "20",
+                              "topfieldloc": "33",
+                              "viewablecolumns": "1",
+                              "viewablerows": "2"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "htmlText": "<p>script</p>",
+                           "id": "11502",
+                           "layer": "5",
+                           "lockText": true,
+                           "margins": "6,7,6,0",
+                           "name": "scriptLines",
+                           "rect": "505,33,557,51",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "tabStops": "75",
+                           "textAlign": "center",
+                           "textHeight": "15",
+                           "threeD": false,
+                           "toolTip": "Script Lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "11503": {
+                        "#name": "field \"behaviorScriptLines\"",
+                        "customproperties": {
+                           "cTooltipTag": "Script lines",
+                           "profile": null
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "behavior"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "htmlText": "<p>behavior</p>",
+                           "id": "11503",
+                           "layer": "6",
+                           "lockText": true,
+                           "margins": "6,7,6,0",
+                           "name": "behaviorScriptLines",
+                           "rect": "502,32,553,52",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "center",
+                           "textHeight": "15",
+                           "threeD": false,
+                           "toolTip": "Script lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "12664": {
+                        "#name": "button \"remove selected\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "icon": "205263",
+                           "id": "12664",
+                           "label": "-",
+                           "layer": "7",
+                           "margins": "8",
+                           "name": "remove selected",
+                           "opaque": false,
+                           "rect": "523,32,547,52",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 10974 of stack \"Message Box\"",
+                     "id": "10802",
+                     "layer": "1",
+                     "name": "stacksRow",
+                     "rect": "2,28,561,104"
+                  }
+               },
+               "10974": {
+                  "#name": "button \"stacksRow Behavior Script\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "id": "10974",
+                     "layer": "8",
+                     "margins": "8",
+                     "name": "stacksRow Behavior Script",
+                     "rect": "390,80,552,103",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "26750": {
+                  "#name": "button \"frontScriptsRow Behavior\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "id": "26750",
+                     "layer": "15",
+                     "margins": "8",
+                     "name": "frontScriptsRow Behavior",
+                     "rect": "392,157,554,180",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "26763": {
+                  "#name": "group \"frontScriptsRow\"",
+                  "childcontrols": {
+                     "157763": {
+                        "#name": "image \"button.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "157763",
+                           "layer": "24",
+                           "name": "button.png",
+                           "rect": "42,244,58,260",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Message Box_10773_26763_157763_text.png",
+                           "toolTip": "201057"
+                        }
+                     },
+                     "158115": {
+                        "#name": "image \"group.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "158115",
+                           "layer": "25",
+                           "name": "group.png",
+                           "rect": "60,244,76,260",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Message Box_10773_26763_158115_text.png",
+                           "toolTip": "201060"
+                        }
+                     },
+                     "158117": {
+                        "#name": "image \"card.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "158117",
+                           "layer": "26",
+                           "name": "card.png",
+                           "rect": "80,244,96,260",
+                           "repeatCount": "-1",
+                           "text": {
+                              "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAE9JREFUeNpi/P//PwMlgImBQsCYnJxMjhMY58yZQ5kB6F74\nCBUkFmMNA34g/k8qpjgQRw1gYGBBihb+gUnKoMyUkpICc8EHsgwY0EAECDAA4PgfdCdxp6QA\nAAAASUVORK5CYII="
+                           },
+                           "toolTip": "201458"
+                        }
+                     },
+                     "158119": {
+                        "#name": "image \"graphic.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "158119",
+                           "layer": "27",
+                           "name": "graphic.png",
+                           "rect": "100,244,116,260",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Message Box_10773_26763_158119_text.png",
+                           "toolTip": "201059"
+                        }
+                     },
+                     "158121": {
+                        "#name": "image \"image.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "158121",
+                           "layer": "28",
+                           "name": "image.png",
+                           "rect": "120,244,136,260",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Message Box_10773_26763_158121_text.png",
+                           "toolTip": "201061"
+                        }
+                     },
+                     "158123": {
+                        "#name": "image \"field.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "158123",
+                           "layer": "29",
+                           "name": "field.png",
+                           "rect": "22,262,38,278",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Message Box_10773_26763_158123_text.png",
+                           "toolTip": "201058"
+                        }
+                     },
+                     "158125": {
+                        "#name": "image \"substack.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "158125",
+                           "layer": "30",
+                           "name": "substack.png",
+                           "rect": "44,262,60,278",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Message Box_10773_26763_158125_text.png",
+                           "toolTip": "200082"
+                        }
+                     },
+                     "26751": {
+                        "#name": "button \"remove selected\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "icon": "205263",
+                           "id": "26751",
+                           "label": "-",
+                           "layer": "18",
+                           "margins": "8",
+                           "name": "remove selected",
+                           "opaque": false,
+                           "rect": "374,232,398,255",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "26756": {
+                        "#name": "field \"control name\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>Label:</p>",
+                           "id": "26756",
+                           "layer": "19",
+                           "lockText": true,
+                           "name": "control name",
+                           "opaque": false,
+                           "rect": "110,232,210,253",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textHeight": "16",
+                           "traversalOn": false
+                        }
+                     },
+                     "26757": {
+                        "#name": "field \"behaviorScriptLines\"",
+                        "customproperties": {
+                           "cTooltipTag": "Script lines",
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "htmlText": "<p>Label:</p>",
+                           "id": "26757",
+                           "layer": "20",
+                           "lockText": true,
+                           "margins": "6,7,6,0",
+                           "name": "behaviorScriptLines",
+                           "rect": "192,232,292,253",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "center",
+                           "textHeight": "15",
+                           "threeD": false,
+                           "toolTip": "Script lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "26758": {
+                        "#name": "field \"scriptLines\"",
+                        "customproperties": {
+                           "cTooltipTag": "Script lines",
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "htmlText": "<p>Label:</p>",
+                           "id": "26758",
+                           "layer": "21",
+                           "lockText": true,
+                           "margins": "6,7,6,0",
+                           "name": "scriptLines",
+                           "rect": "262,233,362,251",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "center",
+                           "textHeight": "15",
+                           "threeD": false,
+                           "toolTip": "Script lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "26760": {
+                        "#name": "graphic \"background\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "filled": true,
+                           "id": "26760",
+                           "layer": "17",
+                           "lineSize": "0",
+                           "name": "background",
+                           "opaque": true,
+                           "rect": "228,260,388,285"
+                        }
+                     },
+                     "26762": {
+                        "#name": "image \"stack.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "26762",
+                           "layer": "22",
+                           "name": "stack.png",
+                           "rect": "22,244,38,260",
+                           "repeatCount": "-1",
+                           "text": {
+                              "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAFtJREFUeNpiTEtLi2VgYGgBYjkG0sB9IE5hARK9QCzKQDpQ\nBOK9LP///ydHMxyADGCg2IA5c+YwkqM5JSXlPxMlLgDpHQ4GMFAIRsOACmEAyo0MMTExZJsC\nEGAA9zhEDWkjtIYAAAAASUVORK5CYII="
+                           },
+                           "toolTip": "19249"
+                        }
+                     },
+                     "27166": {
+                        "#name": "field \"long id\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>Label:</p>",
+                           "id": "27166",
+                           "layer": "23",
+                           "lockText": true,
+                           "name": "long id",
+                           "opaque": false,
+                           "rect": "167,296,267,317",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textHeight": "16",
+                           "traversalOn": false,
+                           "visible": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 26750 of stack \"Message Box\"",
+                     "id": "26763",
+                     "layer": "16",
+                     "name": "frontScriptsRow",
+                     "rect": "18,228,402,289"
+                  }
+               },
+               "26870": {
+                  "#name": "group \"pendingMessagesRow\"",
+                  "childcontrols": "#data view group",
+                  "customproperties": {
+                     "viewProp": "ef625c4f-44e4-41b9-8a89-b665b0cd3d43"
+                  },
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "624012",
+                        "UUID": "eac8ebb6-00d4-477b-8982-93e9023ee59b"
+                     },
+                     "viewProp": {
+                        "animate selections": false,
+                        "autohide scrollbars": true,
+                        "cache": "none",
+                        "content height": "0",
+                        "dim on focusout": false,
+                        "dimmed hilite color": "80,94,100",
+                        "drop indicator template": null,
+                        "first working row": "0",
+                        "fixed row height": true,
+                        "hilite color": "65,169,212",
+                        "last working row": "0",
+                        "multiple lines": true,
+                        "resize controls": false,
+                        "row color": "66,79,85",
+                        "row height": "28",
+                        "row style templates": {
+                           "default": null
+                        },
+                        "scroll selections into view": true,
+                        "scrollbar corner offset": "0",
+                        "vscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 29633 of stack \"Message Box\"",
+                     "borderWidth": "0",
+                     "id": "26870",
+                     "layer": "9",
+                     "margins": "0",
+                     "name": "pendingMessagesRow",
+                     "opaque": true,
+                     "rect": "-45,333,462,358",
+                     "selectGroupedControls": false,
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "29633": {
+                  "#name": "button \"pendingMessagesRow Behavior\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "id": "29633",
+                     "layer": "31",
+                     "margins": "8",
+                     "name": "pendingMessagesRow Behavior",
+                     "rect": "392,187,556,210",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "31"
+               }
+            },
+            "properties": {
+               "id": "10773",
+               "layer": "9",
+               "name": "templates"
+            }
+         },
+         "1198": {
+            "#name": "card \"Multiple Lines\"",
+            "childcontrols": {
+               "141786": "#shared group",
+               "1612": {
+                  "#name": "group \"fields\"",
+                  "childcontrols": {
+                     "10827": {
+                        "#name": "graphic \"line\"",
+                        "properties": {
+                           "antialiased": false,
+                           "foreColor": "204,204,204",
+                           "id": "10827",
+                           "layer": "4",
+                           "name": "line",
+                           "points": "1,116\n681,116",
+                           "rect": "0,115,682,117",
+                           "style": "line"
+                        }
+                     },
+                     "1609": {
+                        "#name": "field \"script\"",
+                        "customproperties": {
+                           "cREVMinHeight": "50",
+                           "cTooltipTag": "Type a command or expression and press Enter",
+                           "profile": null
+                        },
+                        "properties": {
+                           "backColor": "255,255,255",
+                           "behavior": "stack \"revMessageBoxMultipleLinesMessageBehavior\"",
+                           "dontWrap": true,
+                           "htmlText": "%file%: assets/Message Box_1198_1612_1609_htmlText.txt",
+                           "id": "1609",
+                           "layer": "2",
+                           "name": "script",
+                           "rect": "0,21,682,115",
+                           "scrollbarWidth": "16",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textFont": "Source Code Pro",
+                           "textSize": "12",
+                           "toolTip": "Type a command or expression and press Enter",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1610": {
+                        "#name": "field \"results\"",
+                        "customproperties": {
+                           "cREVMinHeight": "50",
+                           "profile": null
+                        },
+                        "properties": {
+                           "htmlText": "<p>1: stack \"revMessageBoxMultipleLinesMessageBehavior\"</p>",
+                           "id": "1610",
+                           "layer": "3",
+                           "name": "results",
+                           "rect": "0,117,682,209",
+                           "scrollbarWidth": "16",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "stack \"com.livecode.scripteditor.behavior.editorcommon\"",
+                     "id": "1612",
+                     "layer": "1",
+                     "name": "fields",
+                     "rect": "-4,17,686,213"
+                  }
+               },
+               "203985": "#shared group"
+            },
+            "customproperties": {
+               "cREVBottom": "517",
+               "cREVHeight": "214",
+               "cREVLineLoc": "341,102",
+               "cREVMinHeight": null,
+               "cREVRight": "637",
+               "cREVWidth": "589"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "13"
+               }
+            },
+            "properties": {
+               "behavior": "stack \"revMessageBoxMultipleLinesCardBehavior\"",
+               "id": "1198",
+               "layer": "8",
+               "name": "Multiple Lines"
+            }
+         },
+         "141786": {
+            "#name": "group \"Stacks\"",
+            "childcontrols": {
+               "141785": {
+                  "#name": "button \"Open Stacks\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "hiliteBorder": false,
+                     "icon": "172079",
+                     "id": "141785",
+                     "label": "Message Box",
+                     "layer": "11",
+                     "menuMode": "popup",
+                     "name": "Open Stacks",
+                     "opaque": false,
+                     "rect": "178,0,263,21",
+                     "showIcon": true,
+                     "style": "menu",
+                     "text": "Message Box\nrevMenuBar\nrevPropertyInspector 1\nfindBrokenBehaviorsIDE\nrevInspector\nUntitled 1\nrevNewScriptEditor 1\nrevTools",
+                     "textAlign": "right",
+                     "textSize": "10",
+                     "threeD": false
+                  }
+               },
+               "172079": {
+                  "#name": "image \"stack.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "172079",
+                     "layer": "12",
+                     "lockLoc": true,
+                     "name": "stack.png",
+                     "rect": "7,137,17,147",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAFtJREFUeNpiTEtLi2VgYGgBYjkG0sB9IE5hARK9QCzKQDpQ\nBOK9LP///ydHMxyADGCg2IA5c+YwkqM5JSXlPxMlLgDpHQ4GMFAIRsOACmEAyo0MMTExZJsC\nEGAA9zhEDWkjtIYAAAAASUVORK5CYII="
+                     },
+                     "toolTip": "19249",
+                     "visible": false
+                  }
+               },
+               "172080": {
+                  "#name": "image \"stack.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "172080",
+                     "layer": "13",
+                     "lockLoc": true,
+                     "name": "stack.png",
+                     "rect": "6,136,18,148",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAFtJREFUeNpiTEtLi2VgYGgBYjkG0sB9IE5hARK9QCzKQDpQ\nBOK9LP///ydHMxyADGCg2IA5c+YwkqM5JSXlPxMlLgDpHQ4GMFAIRsOACmEAyo0MMTExZJsC\nEGAA9zhEDWkjtIYAAAAASUVORK5CYII="
+                     },
+                     "toolTip": "19249",
+                     "visible": false
+                  }
+               },
+               "172081": {
+                  "#name": "image \"stack.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "172081",
+                     "layer": "14",
+                     "lockLoc": true,
+                     "name": "stack.png",
+                     "rect": "5,135,19,149",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAFtJREFUeNpiTEtLi2VgYGgBYjkG0sB9IE5hARK9QCzKQDpQ\nBOK9LP///ydHMxyADGCg2IA5c+YwkqM5JSXlPxMlLgDpHQ4GMFAIRsOACmEAyo0MMTExZJsC\nEGAA9zhEDWkjtIYAAAAASUVORK5CYII="
+                     },
+                     "toolTip": "19249",
+                     "visible": false
+                  }
+               },
+               "196678": {
+                  "#name": "graphic \"pipe\"",
+                  "properties": {
+                     "antialiased": false,
+                     "foreColor": "204,204,204",
+                     "id": "196678",
+                     "layer": "15",
+                     "name": "pipe",
+                     "points": "179,1\n179,20",
+                     "rect": "178,0,180,21",
+                     "style": "line"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "141786",
+               "layer": "10",
+               "name": "Stacks",
+               "rect": "174,-4,267,25"
+            }
+         },
+         "203985": {
+            "#name": "group \"background\"",
+            "childcontrols": {
+               "203986": {
+                  "#name": "widget \"header_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "cog",
+                           "label": "Preferences",
+                           "menu": [
+                              {
+                                 "label": "Header // Footer Size",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "small",
+                                       "name": "small"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "medium",
+                                       "name": "medium"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "large",
+                                       "name": "large"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "largest",
+                                       "name": "largest"
+                                    }
+                                 ],
+                                 "name": "revPaletteFrameSize"
+                              },
+                              {
+                                 "label": "Tab Display Style",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "Icons",
+                                       "name": "icons"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Labels",
+                                       "name": "names"
+                                    }
+                                 ],
+                                 "name": "Message_Box_displayStyle"
+                              },
+                              {
+                                 "checked": false,
+                                 "label": "Auto Update Pending Messages",
+                                 "name": "ideMessageBox_autoupdate"
+                              },
+                              {
+                                 "label": "Select Intelligence Object",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "selectedObject",
+                                       "name": "selectedObject"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "mouseControl",
+                                       "name": "mouseControl"
+                                    }
+                                 ],
+                                 "name": "ideMessageBox_intelligenceobject"
+                              }
+                           ],
+                           "name": "preferences"
+                        }
+                     ],
+                     "is header": true,
+                     "nav data": [
+                        {
+                           "icon": "minus",
+                           "label": "Single Line",
+                           "name": "single line"
+                        },
+                        {
+                           "icon": "reorder",
+                           "label": "Multiple Lines",
+                           "name": "multiple lines"
+                        },
+                        {
+                           "icon": "file powerpoint alt",
+                           "label": "Global Properties",
+                           "name": "global properties"
+                        },
+                        {
+                           "icon": "file excel alt",
+                           "label": "Global Variables",
+                           "name": "global variables"
+                        },
+                        {
+                           "icon": "envelope alt",
+                           "label": "Pending Messages",
+                           "name": "pending messages"
+                        },
+                        {
+                           "icon": "file",
+                           "label": "Front Scripts",
+                           "name": "front scripts"
+                        },
+                        {
+                           "icon": "paste",
+                           "label": "Back Scripts",
+                           "name": "back scripts"
+                        },
+                        {
+                           "icon": "files alt",
+                           "label": "Stacks in Use",
+                           "name": "stacks in use"
+                        }
+                     ]
+                  },
+                  "customproperties": {
+                     "bordercolor": "178,178,178",
+                     "hilitecolor": "173,208,54"
+                  },
+                  "properties": {
+                     "id": "203986",
+                     "name": "header_background",
+                     "rect": "0,0,1113,21"
+                  }
+               },
+               "213319": {
+                  "#name": "widget \"footer_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "bullseye",
+                           "label": "Show last output source",
+                           "menu": null,
+                           "name": "outputSource"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "unlock alt",
+                           "label": "Lock the defaultStack",
+                           "menu": null,
+                           "name": "lockDefaultStack"
+                        }
+                     ],
+                     "is header": false,
+                     "nav data": null
+                  },
+                  "properties": {
+                     "id": "213319",
+                     "name": "footer_background",
+                     "rect": "0,315,1113,336"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "203985",
+               "layer": "1",
+               "name": "background",
+               "rect": "-4,-4,1117,340",
+               "sharedBehavior": true
+            }
+         },
+         "2525": {
+            "#name": "card \"Global Properties\"",
+            "childcontrols": {
+               "203985": "#shared group",
+               "2535": {
+                  "#name": "group \"controls\"",
+                  "childcontrols": {
+                     "2527": {
+                        "#name": "field \"filter label\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Filter:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>Filter:</p>",
+                           "id": "2527",
+                           "layer": "2",
+                           "lockText": true,
+                           "name": "filter label",
+                           "opaque": false,
+                           "rect": "0,26,50,46",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textSize": "12",
+                           "traversalOn": false
+                        }
+                     },
+                     "2528": {
+                        "#name": "field \"filter\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "id": "2528",
+                           "layer": "3",
+                           "name": "filter",
+                           "rect": "45,26,165,46",
+                           "textSize": "12"
+                        }
+                     },
+                     "2529": {
+                        "#name": "field \"type\"",
+                        "customproperties": {
+                           "cREVFullText": "%file%: assets/Message Box_2525_2535_2529_cREVFullText.bin",
+                           "cREVHilitedProperty": null,
+                           "profile": null
+                        },
+                        "properties": {
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "htmlText": "%file%: assets/Message Box_2525_2535_2529_htmlText.txt",
+                           "id": "2529",
+                           "layer": "4",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "type",
+                           "rect": "0,51,200,384",
+                           "scrollbarWidth": "16",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "vScrollbar": true
+                        }
+                     },
+                     "2531": {
+                        "#name": "field \"values range\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "id": "2531",
+                           "layer": "5",
+                           "lockText": true,
+                           "name": "values range",
+                           "opaque": false,
+                           "rect": "547,26,742,46",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textSize": "12",
+                           "traversalOn": false
+                        }
+                     },
+                     "2532": {
+                        "#name": "field \"contents\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "borderWidth": "1",
+                           "disabled": true,
+                           "dontWrap": true,
+                           "id": "2532",
+                           "layer": "6",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "contents",
+                           "rect": "200,51,747,384",
+                           "scrollbarWidth": "12",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "2535",
+                     "layer": "1",
+                     "name": "controls",
+                     "rect": "-4,22,751,388"
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVFieldStyle": "List",
+               "cREVheight": "200",
+               "cREVWidth": "500"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "8"
+               },
+               "cREVRange": {
+                  "accentColor": "0,0,128",
+                  "activatePalettes": true,
+                  "address": "georgias-imac.lan:/Users/georgia/Documents/IDE Widgets/widgets/LiveCode 7.0.1 (rc 2).app/Contents/MacOS/LiveCode-Commercial",
+                  "allowInterrupts": true,
+                  "arcAngle": "360",
+                  "backDrop": "none",
+                  "backList": "Global Variables\nGlobal Properties\nGlobal Variables\nGlobal Properties\nGlobal Variables\nGlobal Properties\nSingle Line\nMain",
+                  "beepDuration": "500",
+                  "beepLoudness": "100",
+                  "beepPitch": "1440",
+                  "blindTyping": true,
+                  "blinkRate": "566",
+                  "brush": "8",
+                  "brushColor": "255,255,255",
+                  "brushPattern": "136",
+                  "bufferHiddenImages": false,
+                  "centered": false,
+                  "colormap": "fixed",
+                  "colorWorld": null,
+                  "cursor": "14",
+                  "dashes": null,
+                  "defaultFolder": "/Users/georgia/Documents/IDE Widgets/widgets",
+                  "defaultMenubar": "group \"revMenuBar\" of card \"card id 1002\" of stack \"/Users/georgia/Documents/IDE Widgets/widgets/Toolset/revmenubar.rev\"",
+                  "defaultStack": "stack \"message\"",
+                  "dialogData": null,
+                  "directory": "/Users/georgia/Documents/IDE Widgets/widgets",
+                  "dontUseNS": false,
+                  "dontUseQT": true,
+                  "doubleClickDelta": "4",
+                  "doubleClickInterval": "500",
+                  "dragSpeed": "0",
+                  "editBackground": false,
+                  "editScripts": null,
+                  "effectRate": "2000",
+                  "emacsKeyBindings": false,
+                  "eraser": "2",
+                  "explicitVariables": false,
+                  "explicitVars": false,
+                  "extendKey": "5",
+                  "fileType": "ttxtTEXT",
+                  "filled": false,
+                  "folder": "/Users/georgia/Documents/IDE Widgets/widgets",
+                  "ftpProxy": null,
+                  "grid": true,
+                  "gridSize": "2",
+                  "hideConsoleWindows": false,
+                  "hidePalettes": true,
+                  "hiliteColor": "167,202,255",
+                  "httpHeaders": null,
+                  "httpProxy": null,
+                  "idleRate": "200",
+                  "idleTicks": "12",
+                  "jpegQuality": "100",
+                  "libraries": null,
+                  "lineSize": "0",
+                  "linkColor": "0,0,239",
+                  "linkHiliteColor": "0,0,239",
+                  "linkVisitedColor": "81,24,128",
+                  "lockColormap": null,
+                  "lockCursor": false,
+                  "lockErrorDialogs": false,
+                  "lockMenus": false,
+                  "lockMoves": false,
+                  "lockRecent": false,
+                  "lockScreen": true,
+                  "lookAndFeel": "Appearance Manager",
+                  "lowResolutionTimers": false,
+                  "markerColor": "167,202,255",
+                  "moveSpeed": "200",
+                  "multiple": false,
+                  "navigationArrows": false,
+                  "paintCompression": "png",
+                  "pattern": "136",
+                  "penColor": "0,0,0",
+                  "penHeight": "0",
+                  "penPat": "136",
+                  "penPattern": "136",
+                  "penWidth": "0",
+                  "pixelScale": "1",
+                  "playDestination": "internal",
+                  "playLoudness": "6",
+                  "pointerFocus": true,
+                  "polySides": "4",
+                  "printCardBorders": false,
+                  "printColors": true,
+                  "printCommand": null,
+                  "printFontTable": null,
+                  "printGutters": "36,36",
+                  "printMargins": "72,72,72,72",
+                  "printPaperSize": "595,842",
+                  "printRotated": false,
+                  "printRowsFirst": true,
+                  "printScale": "1",
+                  "privateColors": null,
+                  "proportionalThumbs": true,
+                  "raiseMenus": true,
+                  "raisePalettes": true,
+                  "randomSeed": "1426794728",
+                  "recentCards": "%file%: assets/Message Box_2525_cREVRange_recentCards.bin",
+                  "recentNames": "Global Variables\nGlobal Properties\nGlobal Variables\nGlobal Properties\nGlobal Variables\nGlobal Properties\nSingle Line\nMain",
+                  "relayerGroupedControls": false,
+                  "repeatDelay": "250",
+                  "repeatRate": "50",
+                  "roundEnds": false,
+                  "roundHeight": "15",
+                  "roundRadius": "15",
+                  "roundWidth": "15",
+                  "screenGamma": "2.2",
+                  "screenMouseLoc": "507,139",
+                  "screenNoPixmaps": false,
+                  "screenSharedMemory": false,
+                  "screenVCSharedMemory": false,
+                  "scriptError": null,
+                  "scriptTextFont": null,
+                  "scriptTextSize": "0",
+                  "secureMode": false,
+                  "selectGroupedControls": false,
+                  "selectionHandleColor": "Gray50",
+                  "selectionMode": "intersect",
+                  "serialControlString": "baud=9600 parity=N data=8 stop=1",
+                  "shellCommand": "/bin/sh",
+                  "showFill": false,
+                  "showGroups": true,
+                  "showInvisibles": false,
+                  "slices": "16",
+                  "socketTimeoutInterval": "10000",
+                  "soundChannel": "0",
+                  "spray": "34",
+                  "stackFileType": "RevoRSTK",
+                  "stacksInUse": null,
+                  "startAngle": "0",
+                  "syncRate": "20",
+                  "systemFileSelector": true,
+                  "systemPixelScale": "1",
+                  "textArrows": true,
+                  "thirdColor": "167,202,255",
+                  "tool": "browse tool",
+                  "toolTipDelay": "500",
+                  "traceAbort": false,
+                  "traceDelay": "500",
+                  "traceReturn": true,
+                  "traceStack": null,
+                  "twelveHourTime": true,
+                  "typingRate": "100",
+                  "umask": "18",
+                  "underLineLinks": true,
+                  "userLevel": "8",
+                  "userModify": true,
+                  "vcPlayer": null,
+                  "videoClipPlayer": null,
+                  "windowBoundingRect": "0,74,2560,1351"
+               }
+            },
+            "properties": {
+               "id": "2525",
+               "layer": "5",
+               "name": "Global Properties"
+            }
+         },
+         "2526": {
+            "#name": "card \"Global Variables\"",
+            "childcontrols": {
+               "203985": "#shared group",
+               "2704": {
+                  "#name": "group \"controls\"",
+                  "childcontrols": {
+                     "2700": {
+                        "#name": "field \"filter\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "id": "2700",
+                           "layer": "2",
+                           "name": "filter",
+                           "rect": "45,26,165,46",
+                           "textSize": "12"
+                        }
+                     },
+                     "2701": {
+                        "#name": "field \"filter label\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Filter:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>Filter:</p>",
+                           "id": "2701",
+                           "layer": "3",
+                           "lockText": true,
+                           "name": "filter label",
+                           "opaque": false,
+                           "rect": "0,26,50,46",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textSize": "12",
+                           "traversalOn": false
+                        }
+                     },
+                     "2702": {
+                        "#name": "field \"type\"",
+                        "customproperties": {
+                           "cREVFullText": "%file%: assets/Message Box_2526_2704_2702_cREVFullText.bin",
+                           "cREVHilitedVariable": "4",
+                           "profile": null,
+                           "rREVFullText": "%file%: assets/Message Box_2526_2704_2702_rREVFullText.bin"
+                        },
+                        "properties": {
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "htmlText": "%file%: assets/Message Box_2526_2704_2702_htmlText.txt",
+                           "id": "2702",
+                           "layer": "4",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "type",
+                           "rect": "0,51,200,384",
+                           "scrollbarWidth": "16",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "vScrollbar": true
+                        }
+                     },
+                     "2703": {
+                        "#name": "field \"contents\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "borderWidth": "1",
+                           "htmlText": "<p>Destination=file</p>",
+                           "id": "2703",
+                           "layer": "5",
+                           "name": "contents",
+                           "rect": "200,51,747,384",
+                           "scrollbarWidth": "12",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "2704",
+                     "layer": "1",
+                     "name": "controls",
+                     "rect": "-4,22,751,388"
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVFieldStyle": "Editable",
+               "cREVheight": "214",
+               "cREVWidth": "589"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "7"
+               }
+            },
+            "properties": {
+               "id": "2526",
+               "layer": "6",
+               "name": "Global Variables"
+            }
+         },
+         "2960": {
+            "#name": "card \"Pending Messages\"",
+            "childcontrols": {
+               "10669": "#shared group",
+               "203985": "#shared group",
+               "207210": {
+                  "#name": "field \"status\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>No pending messages to display.</p>",
+                     "id": "207210",
+                     "layer": "12",
+                     "lockText": true,
+                     "name": "status",
+                     "opaque": false,
+                     "rect": "4,24,348,45",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVHeight": "277",
+               "cREVRefreshTimerID": "59",
+               "cREVWidth": "565"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "12"
+               }
+            },
+            "properties": {
+               "id": "2960",
+               "layer": "7",
+               "name": "Pending Messages"
+            }
+         },
+         "3461": {
+            "#name": "card \"Front Scripts\"",
+            "childcontrols": {
+               "10669": "#shared group",
+               "203985": "#shared group",
+               "207631": {
+                  "#name": "field \"status\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>No front scripts to display.</p>",
+                     "id": "207631",
+                     "layer": "12",
+                     "lockText": true,
+                     "name": "status",
+                     "opaque": false,
+                     "rect": "4,24,348,45",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVHeight": "308",
+               "cREVHilitedLine": "3",
+               "cREVWidth": "527"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "101"
+               }
+            },
+            "properties": {
+               "id": "3461",
+               "layer": "3",
+               "name": "Front Scripts"
+            }
+         },
+         "3462": {
+            "#name": "card \"Back Scripts\"",
+            "childcontrols": {
+               "10669": "#shared group",
+               "203985": "#shared group",
+               "208993": {
+                  "#name": "field \"status\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>No back scripts to display.</p>",
+                     "id": "208993",
+                     "layer": "13",
+                     "lockText": true,
+                     "name": "status",
+                     "opaque": false,
+                     "rect": "4,24,348,45",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "7219": {
+                  "#name": "group \"contents\"",
+                  "properties": {
+                     "id": "7219",
+                     "layer": "1",
+                     "name": "contents",
+                     "rect": "205,88,213,96"
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVHeight": "373",
+               "cREVHilitedLine": "3",
+               "cREVWidth": "669"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "27"
+               }
+            },
+            "properties": {
+               "id": "3462",
+               "layer": "4",
+               "name": "Back Scripts"
+            }
+         },
+         "9525": {
+            "#name": "card \"Stacks in Use\"",
+            "childcontrols": {
+               "10669": "#shared group",
+               "11286": {
+                  "#name": "group \"contents\"",
+                  "properties": {
+                     "id": "11286",
+                     "layer": "9",
+                     "name": "contents",
+                     "rect": "211,108,219,116"
+                  }
+               },
+               "203985": "#shared group",
+               "209891": {
+                  "#name": "field \"status\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>No stacks in use to display.</p>",
+                     "id": "209891",
+                     "layer": "13",
+                     "lockText": true,
+                     "name": "status",
+                     "opaque": false,
+                     "rect": "4,24,348,45",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVHeight": "227",
+               "cREVWidth": "547"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "19"
+               }
+            },
+            "properties": {
+               "id": "9525",
+               "layer": "2",
+               "name": "Stacks in Use"
+            }
+         }
+      },
+      "customproperties": {
+         "cREVActiveStack": "Untitled 1",
+         "cREVBackScripts": "stack \"C:/Users/Elanor/Desktop/sampleLib.livecode\"\n",
+         "cREVFrontScripts": "%file%: assets/Message Box_cREVFrontScripts.bin",
+         "cREVIntelligenceObject": "selectedObject",
+         "cREVLeft": "259",
+         "cREVLinkedStack": null,
+         "cREVPendingMessages": null,
+         "cREVStacksInUse": null,
+         "cREVTop": "522",
+         "cREVTopLeft": "868,129",
+         "cUserOpen": true
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "213319"
+         }
+      },
+      "longID": "stack \"Message Box\"",
+      "properties": {
+         "behavior": "stack \"revMessageBoxBehavior\"",
+         "decorations": "title,menu,minimize,close",
+         "fileName": "revmessagebox.8.rev",
+         "id": "213319",
+         "minHeight": "92",
+         "minWidth": "110",
+         "name": "Message Box",
+         "rect": "247,371,1360,707",
+         "style": "palette",
+         "textSize": "11",
+         "title": "Message Box (Single Line)"
+      },
+      "sharedGroupIDs": "10669\n141786\n203985"
+   }
+}

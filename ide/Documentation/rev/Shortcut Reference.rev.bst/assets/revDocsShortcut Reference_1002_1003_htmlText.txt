@@ -1,0 +1,139 @@
+<p><b><font face="Verdana" size="18">Scripting</font></b></p>
+<p><a><b><font face="Verdana" size="14">close the script editor</font></b></a></p>
+<p><b><font face="Verdana" size="10">Enter key&#9;Control+Return&#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">apply changes and close the script editor</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> Option+close &#9;<img src="1160" char=" "><img src="1161" char=" "> Alt+close &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">complete words in scripts</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+number &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+number &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">edit a control's script</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+Option+hover &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+Alt+hover &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">edit the card script</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "></font></b><font face="Verdana" size="10"> <b><img src="1030" char=" ">+Shift+C&#9;<img src="1160" char=" "><img src="1161" char=" "> Control+Shift+C &#9;</b></font></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">edit the selected control's script</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+E &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+E &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">edit the stack script</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "></font></b><font face="Verdana" size="10"> <b><img src="1030" char=" ">+Shift+S&#9;<img src="1160" char=" "><img src="1161" char=" "> Control+Shift+S &#9;</b></font></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">find the selection in scripts</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+L &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+L &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">format the current handler</font></b></a></p>
+<p><b><font face="Verdana" size="10">Tab key&#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">look up Transcript term</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> Control+click &#9;<img src="1160" char=" "><img src="1161" char=" "> Right+click &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">stop a running handler</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+. &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+. | Control+break &#9;</font></b></p>
+<p></p>
+<p><b><font face="Verdana" size="18">Debuging Scripts</font></b></p>
+<p><a><b><font face="Verdana" size="14">close the error window</font></b></a></p>
+<p><b><font face="Verdana" size="10">Enter key&#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">step into the next line of a handler</font></b></a></p>
+<p><b><font face="Verdana" size="10">Space&#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">step over the next line of a handler</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> Option+Space &#9;<img src="1160" char=" "><img src="1161" char=" "> Alt+Space &#9;</font></b></p>
+<p></p>
+<p><b><font face="Verdana" size="18">Controls</font></b></p>
+<p><a><b><font face="Verdana" size="14">align control edges</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+Option+arrow key &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+Alt+arrow key &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">change a control's properties</font></b></a></p>
+<p><b><font face="Verdana" size="10">Return key&#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">display a control's property inspector</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+Shift+Option+hover &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+Shift+Alt+hover &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">duplicate a control</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> Option+drag &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+drag &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">equalize height and width of a control</font></b></a></p>
+<p><b><font face="Verdana" size="10">Shift key&#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">equalize heights of selected controls</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+Shift+= &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+Shift+= &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">equalize widths of selected controls</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+= &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+= &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">nudge the selected control</font></b></a></p>
+<p><b><font face="Verdana" size="10">arrow keys&#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">reverse Select Grouped Controls</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+click &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+click &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">select controls without moving them</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> Control+click &#9;<img src="1160" char=" "><img src="1161" char=" "> Right+click &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">select multiple controls</font></b></a></p>
+<p><b><font face="Verdana" size="10">Shift+click&#9;</font></b></p>
+<p></p>
+<p><b><font face="Verdana" size="18">Images</font></b></p>
+<p><a><b><font face="Verdana" size="14">magnify an image</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+click &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+right+click &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">make an image transparent</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> Control+click &#9;<img src="1160" char=" "><img src="1161" char=" "> Right+click &#9;</font></b></p>
+<p></p>
+<p><b><font face="Verdana" size="18">Navigation</font></b></p>
+<p><a><b><font face="Verdana" size="14">go to the next card</font></b></a></p>
+<p><b><font face="Verdana" size="10">Right arrow&#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">go to the previous card</font></b></a></p>
+<p><b><font face="Verdana" size="10">Left arrow&#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">go to the top or bottom of a field</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+Up or Down arrow &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+Up or Down arrow &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">navigate in a field</font></b></a></p>
+<p><b><font face="Verdana" size="10">arrow keys&#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">review the recent cards list</font></b></a></p>
+<p><b><font face="Verdana" size="10">Up arrow key&#9;</font></b></p>
+<p></p>
+<p><b><font face="Verdana" size="18">Message Box</font></b></p>
+<p><a><b><font face="Verdana" size="14">change message box mode</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+, &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+, &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">clear the message box</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+U &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+U &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">review message box history</font></b></a></p>
+<p><b><font face="Verdana" size="10">Up arrow key&#9;</font></b></p>
+<p></p>
+<p><b><font face="Verdana" size="18">Miscellaneous</font></b></p>
+<p><a><b><font face="Verdana" size="14">display a contextual menu (Pointer tool)</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> Control+click &#9;<img src="1160" char=" "><img src="1161" char=" "> Right+click &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">display a contextual menu</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+Shift+Control+click &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+Shift+Right+click &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">hide Revolution palettes</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+Control+Tab &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+Tab &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">move Revolution windows</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1160" char=" "><img src="1161" char=" "> Alt+drag menu bar &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">open a stack without the development environment</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+double+click &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+double+click &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">open Revolution documentation</font></b></a></p>
+<p><b><font face="Verdana" size="10">F1 key&#9;Help key&#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">remove font changes from text</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+; &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+; &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">save all open stacks</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+Option+S &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+Alt+S &#9;</font></b></p>
+<p></p>
+<p><a><b><font face="Verdana" size="14">switch between Browse and Pointer tool</font></b></a></p>
+<p><b><font face="Verdana" size="10"><img src="1159" char=" "><img src="1162" char=" "> <img src="1030" char=" ">+Option+Tab &#9;<img src="1160" char=" "><img src="1161" char=" "> Control+Alt+Tab &#9;</font></b></p>
+<p></p>

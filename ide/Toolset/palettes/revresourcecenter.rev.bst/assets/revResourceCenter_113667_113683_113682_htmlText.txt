@@ -1,0 +1,19 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> uncommonLines firstList,secondList</p>
+<p>  <font color="#68228B">-- find lines in the first list but not the second list:</font></p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> each line thisLine in firstList</p>
+<p>    <font color="#980517">if</font> thisLine is not in secondList <font color="#980517">then</font> <font color="#68228B">-- include this line</font></p>
+<p>      <font color="#0000FF">put</font> "-" &amp;&amp; thisLine &amp; <font color="#0000FF">return</font> after uncommon</p>
+<p>    <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#68228B">-- find lines in the second list but not the first list:</font></p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> each line thatLine in secondList</p>
+<p>    <font color="#980517">if</font> thatLine is not in firstList <font color="#980517">then</font> <font color="#68228B">-- include this line</font></p>
+<p>      <font color="#0000FF">put</font> "+" &amp;&amp; thatLine &amp; <font color="#0000FF">return</font> after uncommon</p>
+<p>    <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#980517">if</font> last char of uncommon is <font color="#0000FF">return</font></p>
+<p>  <font color="#980517">then</font> <font color="#0000FF">delete</font> last char of uncommon <font color="#68228B">-- strip trailing return</font></p>
+<p>  <font color="#0000FF">return</font> uncommon</p>
+<p><font color="#980517">end</font> uncommonLines</p>
+<p></p>

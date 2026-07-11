@@ -1,0 +1,15 @@
+<p>start of paragraph</p>
+<p>previous word</p>
+<p><font color="#707070">(none)</font></p>
+<p>end of paragraph</p>
+<p>next word</p>
+<p>delete previous word</p>
+<p><font color="#707070">(none)</font></p>
+<p><font color="#707070">(none)</font></p>
+<p>down one line</p>
+<p>up one line</p>
+<p>start of field</p>
+<p><font color="#707070">(none)</font></p>
+<p>focus first control</p>
+<p>focus last control</p>
+<p><font color="#707070">(none)</font></p>

@@ -1,0 +1,10 @@
+category=Useful Techniques
+description=<p>Profiles allow you to store sets of properties for an object and change between the different sets easily.  You could use profiles to create themed appearances for your application, or to display different languages.  This tutorial shows you how.</p>
+duration=3:50
+filename=profiles.avi
+level=2
+licensed=true
+name=Profiles
+scripts=<p></p>\n<p></p>\n<p></p>
+title=Profiles: creating skins or adding languages.
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;Creating and editing profiles</p>\n<p>-&#9;Using profiles in your standalone application</p>\n<p>-  Exporting and importing profiles</p>

@@ -1,0 +1,250 @@
+{
+   "#mainstack": "revideprojectbrowsersectionrowtemplate",
+   "revideprojectbrowsersectionrowtemplate": {
+      "#name": "stack \"revideprojectbrowsersectionrowtemplate\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1044": {
+                  "#name": "group \"sectionRow\"",
+                  "childcontrols": {
+                     "1045": {
+                        "#name": "graphic \"background\"",
+                        "custompropertysets": {
+                           "cREVGeneral[scripteditorselection]": {
+                              "scripteditorselection": "0"
+                           },
+                           "cREVGeneral[scripteditorvscroll]": {
+                              "scripteditorvscroll": "0"
+                           }
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "255,255,255",
+                           "filled": true,
+                           "id": "1045",
+                           "layer": "2",
+                           "lineSize": "0",
+                           "lockLoc": true,
+                           "name": "background",
+                           "opaque": true,
+                           "rect": "0,11,390,34"
+                        }
+                     },
+                     "1046": {
+                        "#name": "field \"type\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": null
+                           }
+                        },
+                        "properties": {
+                           "autoTab": true,
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "htmlText": "<p>Mainstack:</p>",
+                           "id": "1046",
+                           "layer": "3",
+                           "lockText": true,
+                           "name": "type",
+                           "opaque": false,
+                           "rect": "25,11,92,34",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1047": {
+                        "#name": "graphic \"bottom_border\"",
+                        "properties": {
+                           "antialiased": false,
+                           "foreColor": "234,234,234",
+                           "id": "1047",
+                           "layer": "4",
+                           "name": "bottom_border",
+                           "points": "1,33\n389,33",
+                           "rect": "0,32,390,34",
+                           "style": "line"
+                        }
+                     },
+                     "1048": {
+                        "#name": "button \"typeIcon\"",
+                        "properties": {
+                           "borderWidth": "0",
+                           "disabledIcon": "225355",
+                           "hiliteBorder": false,
+                           "icon": "137893",
+                           "id": "1048",
+                           "layer": "5",
+                           "name": "typeIcon",
+                           "opaque": false,
+                           "rect": "22,10,42,34",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "toolTip": "Expand"
+                        }
+                     },
+                     "1049": {
+                        "#name": "group \"disclosure\"",
+                        "childcontrols": {
+                           "1050": {
+                              "#name": "widget \"icon\"",
+                              "$kind": "com.livecode.widget.svgpath",
+                              "$state": {
+                                 "angle": "0",
+                                 "fillRule": "non-zero",
+                                 "flip vertically": false,
+                                 "hilited": false,
+                                 "maintain aspect ratio": true,
+                                 "svg path": "%file%: assets/revideprojectbrowsersectionrowtemplate_1002_1044_1049_1050_svg path.txt"
+                              },
+                              "customproperties": {
+                                 "textalign": null
+                              },
+                              "properties": {
+                                 "id": "1050",
+                                 "name": "icon",
+                                 "rect": "7,16,22,31"
+                              }
+                           },
+                           "1051": {
+                              "#name": "graphic \"line\"",
+                              "properties": {
+                                 "id": "1051",
+                                 "layer": "8",
+                                 "name": "line",
+                                 "points": "14,14\n14,30",
+                                 "rect": "10,13,18,31",
+                                 "style": "polygon"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1049",
+                           "layer": "6",
+                           "margins": "0",
+                           "name": "disclosure",
+                           "rect": "7,13,22,31"
+                        }
+                     },
+                     "1052": {
+                        "#name": "group \"connector1\"",
+                        "childcontrols": {
+                           "1053": {
+                              "#name": "widget \"icon\"",
+                              "$kind": "com.livecode.widget.svgpath",
+                              "$state": {
+                                 "angle": "0",
+                                 "fillRule": "non-zero",
+                                 "flip vertically": false,
+                                 "hilited": false,
+                                 "maintain aspect ratio": true,
+                                 "svg path": "%file%: assets/revideprojectbrowsersectionrowtemplate_1002_1044_1052_1053_svg path.txt"
+                              },
+                              "customproperties": {
+                                 "textalign": null
+                              },
+                              "properties": {
+                                 "id": "1053",
+                                 "name": "icon",
+                                 "rect": "17,16,32,31"
+                              }
+                           },
+                           "1054": {
+                              "#name": "graphic \"line\"",
+                              "properties": {
+                                 "id": "1054",
+                                 "layer": "11",
+                                 "name": "line",
+                                 "points": "24,14\n24,30",
+                                 "rect": "20,13,28,31",
+                                 "style": "polygon"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1052",
+                           "layer": "9",
+                           "margins": "0",
+                           "name": "connector1",
+                           "rect": "17,13,32,31"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "behaviorScriptLines": null,
+                     "cDragHilite": null,
+                     "cHilited": false,
+                     "cIndent": "35",
+                     "cMaxThumbnailHeight": "40",
+                     "cMaxThumbnailWidth": "100",
+                     "cMinThumbnailHeight": "20",
+                     "cMinThumbnailWidth": "20",
+                     "dragHilite": null,
+                     "objectDetails": {
+                        "behavior_control": null,
+                        "behavior_script_lines": null,
+                        "expanded": false,
+                        "indent": "0",
+                        "long id": "stack \"C:/Projects/LiveCode/IDE Overhaul into 554/Toolset/Unsupported/revanimation.rev\"",
+                        "name": "revAnimation",
+                        "script_lines": "5",
+                        "thumbnailHeight": "23",
+                        "type": "mainstack"
+                     },
+                     "scriptLines": "0",
+                     "thumbnail": null,
+                     "updateLine": false
+                  },
+                  "custompropertysets": {
+                     "objectDetails": {
+                        "behavior_control": null,
+                        "behavior_script_lines": "99",
+                        "expanded": false,
+                        "indent": "0",
+                        "long id": "stack \"C:/Users/Elanor/Documents/My LiveCode/Plugins/lcVCS.livecode\"",
+                        "name": "lcVCS",
+                        "script_lines": "1423",
+                        "thumbnailHeight": "23",
+                        "type": "mainstack"
+                     }
+                  },
+                  "properties": {
+                     "backColor": "255,255,255",
+                     "behavior": "stack \"revIDEProjectBrowserSectionRowBehavior\"",
+                     "borderColor": "224,224,224",
+                     "borderWidth": "0",
+                     "id": "1044",
+                     "layer": "1",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "sectionRow",
+                     "rect": "0,11,390,34",
+                     "threeD": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"revideprojectbrowsersectionrowtemplate\"",
+      "properties": {
+         "fileName": "revideprojectbrowsersectionrowtemplate.livecode",
+         "id": "1054",
+         "name": "revideprojectbrowsersectionrowtemplate",
+         "rect": "175,145,575,545"
+      },
+      "sharedGroupIDs": null
+   }
+}

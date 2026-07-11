@@ -1,0 +1,91 @@
+{
+   "#mainstack": "com.livecode.pi.imageid",
+   "com.livecode.pi.imageid": {
+      "#name": "stack \"com.livecode.pi.imageid\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1009": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1004": {
+                        "#name": "field \"value\"",
+                        "customproperties": {
+                           "cCurrentObject": "stack \"C:/Workspace/Projects/Revolution/2.10 ide/Toolset/revpalette.rev\"",
+                           "cEnglishname": "Icon",
+                           "Tabs": false
+                        },
+                        "custompropertysets": {
+                           "cREVDatabase": {
+                              "databasename": null,
+                              "host": null,
+                              "pass": null,
+                              "user": null
+                           }
+                        },
+                        "properties": {
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "htmlText": "<p>0</p>",
+                           "id": "1004",
+                           "layer": "2",
+                           "margins": "8,7,8,8",
+                           "name": "value",
+                           "rect": "118,68,244,87",
+                           "toolTip": "icon"
+                        }
+                     },
+                     "1011": {
+                        "#name": "button \"icon\"",
+                        "customproperties": {
+                           "acceleratorModifier": null
+                        },
+                        "properties": {
+                           "id": "1011",
+                           "layer": "3",
+                           "name": "icon",
+                           "rect": "66,64,96,94",
+                           "showName": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1009",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "62,60,248,98"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "4"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1011"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.imageid\"",
+      "properties": {
+         "fileName": "com.livecode.pi.imageid.livecode",
+         "id": "1011",
+         "name": "com.livecode.pi.imageid",
+         "rect": "209,163,609,563"
+      },
+      "sharedGroupIDs": null
+   }
+}

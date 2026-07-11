@@ -1,0 +1,22 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom command is used with the following statement:</p>
+<p></p>
+<p>  <font face="Courier" size="11">centerMe</font></p>
+<p></p>
+<p>You might call it in a stack's <font face="Courier" size="11">preOpenStack</font><font face="helvetica" size="12"> handler: the stack then would automatically center itself whenever it opens.  You might call it in a </font><font face="Courier" size="11">deskTopChanged</font><font face="helvetica" size="12"> handler so the stack would automatically center itself whenever the user changes the size of the desktop, e.g. by switching to a new monitor resolution setting.</font></p>
+<p></p>
+<p>This is the simplest of handlers: it has no parameters and only one statement, which changes the stack's location property. The word <font face="Courier" size="11">loc</font><font face="helvetica" size="12"> is a Transcript synonym for </font><font face="Courier" size="11">location</font><font face="helvetica" size="12">.</font></p>
+<p></p>
+<p>A stack's location is its center point. The handler moves the stack window so its center is at the center of the screen. The <font face="Courier" size="11">screenLoc</font><font face="helvetica" size="12"> function refers to the main screen; if the computer has more than one monitor, the </font><font face="Courier" size="11">screenLoc</font><font face="helvetica" size="12"> is the center of the main monitor. The main monitor is defined depending on the operating system: it may be the monitor that contains the menu bar, task bar, etc.</font></p>
+<p></p>
+<p>The expression this stack refers to the current stack. One simple variation on this handler is to provide it with a stack name, and to center the specified stack instead of the current stack. Such a handler looks like this:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">on</font><font face="Courier" size="11"> centerMe theStackName</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#0000FF">set</font><font face="Courier" size="11"> the </font><font face="Courier" size="11" color="#FF0000">loc</font><font face="Courier" size="11"> of stack theStackName to the </font><font face="Courier" size="11" color="#F88017">screenLoc</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> centerMe</font></p>
+<p></p>
+<p>You call this handler with a statement like one of the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  centerMe "My Stack"</font></p>
+<p><font face="Courier" size="11">  centerMe (the </font><font face="Courier" size="11" color="#FF0000">short</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#FF0000">name</font><font face="Courier" size="11"> of stack </font><font face="Courier" size="11" color="#FF0000">ID</font><font face="Courier" size="11"> 1620)</font></p>
+<p><font face="Courier" size="11">  centerMe the </font><font face="Courier" size="11" color="#FF0000">short</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#FF0000">name</font><font face="Courier" size="11"> of this stack</font></p>

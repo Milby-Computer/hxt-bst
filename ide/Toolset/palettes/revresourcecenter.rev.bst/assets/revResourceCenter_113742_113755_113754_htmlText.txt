@@ -1,0 +1,7 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> reversed theString</p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">with</font> thisChar = the <font color="#F88017">length</font> of theString down to 1</p>
+<p>    <font color="#0000FF">put</font> char thisChar of theString after reversedString</p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#0000FF">return</font> reversedString</p>
+<p><font color="#980517">end</font> reversed</p>

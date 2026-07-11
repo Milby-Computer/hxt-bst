@@ -1,0 +1,6 @@
+<p><b><font face="Lucida Grande" size="14" color="#990006">Buttons</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">First lets skin the buttons. Revolution allows you to associate a number of images to a button. This is done using the properties palette of the button in the 'Icons &amp; Borders' section. We will use two of these associations in this tutorial:</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Icon - The image displayed in the button's default state</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Armed Icon - The image displayed when the mouse is moved over the button</font></p>

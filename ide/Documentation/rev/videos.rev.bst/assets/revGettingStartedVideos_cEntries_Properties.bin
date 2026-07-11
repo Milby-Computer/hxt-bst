@@ -1,0 +1,10 @@
+category=Building an Application using Objects
+description=<p>Properties in Revolution allow you to set the look and basic behaviors of objects.  In this tutorial you learn how to set properties to give objects a range of standard object behaviors.</p>\n<p></p>
+duration=5:39
+filename=free_properties.avi
+level=1
+licensed=false
+name=Properties
+scripts=<p><font face="Courier New" size="11"></font><font face="Lucida Grande" size="12"></font><font face="Lucida Grande" size="11">Scripts Used in this Tutorial:</font></p>\n<p></p>\n<p></p>
+title=Properties: Customizing interface and window objects to suit your needs
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;Object properties control how an object looks and its basic behavior</p>\n<p>-&#9;Set properties to make the kinds of objects you need</p>\n<p>-&#9;How to use the Property Inspector</p>\n<p>-&#9;Setting properties by script</p>\n<p></p>

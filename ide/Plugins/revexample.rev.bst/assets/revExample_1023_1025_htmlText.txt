@@ -1,0 +1,9 @@
+<p>This stack demonstrates some of the messages that Revolution plugins receive.</p>
+<p></p>
+<p>Try continuing your normal working routine with this stack open, and watch it get various environmental messages.</p>
+<p></p>
+<p>For example, whenever you select a new control Revolution sends "revSelectedObjectChanged" to the plugin.</p>
+<p></p>
+<p>You can control which messages are sent to a plugin using the Plugin Settings dialog.</p>
+<p></p>
+<p>If you have any further questions email &lt;use-revolution@lists.runrev.com&gt;.</p>

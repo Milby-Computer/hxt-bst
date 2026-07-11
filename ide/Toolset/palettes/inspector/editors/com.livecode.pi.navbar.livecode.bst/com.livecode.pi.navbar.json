@@ -1,0 +1,86 @@
+{
+   "#mainstack": "com.livecode.pi.navbar",
+   "com.livecode.pi.navbar": {
+      "#name": "stack \"com.livecode.pi.navbar\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1003": {
+                        "#name": "widget id 1003",
+                        "$kind": "com.livecode.widget.navbar",
+                        "$state": {
+                           "hiliteColor": "0,121,255,255",
+                           "items": [
+                              {
+                                 "icon": "%file%: assets/com.livecode.pi.navbar_1002_1004_1003_items_icon.bin",
+                                 "icon_name": "star empty",
+                                 "label": "Favourites",
+                                 "name": "favourites",
+                                 "selected_icon": "%file%: assets/com.livecode.pi.navbar_1002_1004_1003_items_selected_icon.bin",
+                                 "selected_icon_name": "star"
+                              },
+                              {
+                                 "icon": "%file%: assets/com.livecode.pi.navbar_1002_1004_1003_items_icon.bin",
+                                 "icon_name": "music",
+                                 "label": "Music",
+                                 "name": "music",
+                                 "selected_icon": "%file%: assets/com.livecode.pi.navbar_1002_1004_1003_items_selected_icon.bin",
+                                 "selected_icon_name": null
+                              },
+                              {
+                                 "icon": "%file%: assets/com.livecode.pi.navbar_1002_1004_1003_items_icon.bin",
+                                 "icon_name": "user",
+                                 "label": "Contacts",
+                                 "name": "contacts",
+                                 "selected_icon": "%file%: assets/com.livecode.pi.navbar_1002_1004_1003_items_selected_icon.bin",
+                                 "selected_icon_name": null
+                              },
+                              {
+                                 "icon": "%file%: assets/com.livecode.pi.navbar_1002_1004_1003_items_icon.bin",
+                                 "icon_name": "search",
+                                 "label": "Search",
+                                 "name": "search",
+                                 "selected_icon": "%file%: assets/com.livecode.pi.navbar_1002_1004_1003_items_selected_icon.bin",
+                                 "selected_icon_name": null
+                              }
+                           ],
+                           "itemStyle": "icons and names",
+                           "selected": "1"
+                        },
+                        "properties": {
+                           "id": "1003",
+                           "name": "widget id 1003",
+                           "rect": "34,144,356,186"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "30,140,360,190"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"com.livecode.pi.navbar\"",
+      "properties": {
+         "fileName": "com.livecode.pi.navbar.livecode",
+         "id": "1005",
+         "name": "com.livecode.pi.navbar",
+         "rect": "1589,376,2051,890"
+      },
+      "sharedGroupIDs": null
+   }
+}

@@ -1,0 +1,60 @@
+{
+   "#mainstack": "com.livecode.pi.action",
+   "com.livecode.pi.action": {
+      "#name": "stack \"com.livecode.pi.action\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1003": {
+                        "#name": "button \"Button\"",
+                        "custompropertysets": {
+                           "uVersion": {
+                              "ID": "1003",
+                              "UUID": "3d676caf-d2c5-4a11-8cce-08857bd57b85"
+                           }
+                        },
+                        "properties": {
+                           "id": "1003",
+                           "layer": "2",
+                           "name": "Button",
+                           "rect": "153,156,235,179",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "1004",
+                        "UUID": "346e8d3a-1c53-4e53-8746-eff660d46eef"
+                     }
+                  },
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "149,152,239,183"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"com.livecode.pi.action\"",
+      "properties": {
+         "fileName": "com.livecode.pi.action.livecode",
+         "id": "1004",
+         "name": "com.livecode.pi.action",
+         "rect": "287,186,687,586"
+      },
+      "sharedGroupIDs": null
+   }
+}

@@ -1,0 +1,3 @@
+<p><font face="Courier New" size="12">A[B-D] </font><font face="verdana" size="11">matches &ldquo;AB&rdquo; or &ldquo;AC&rdquo;, but not &ldquo;AG&rdquo;</font></p>
+<p></p>
+<p><font face="Courier New" size="12">[A-Za-z0-9] </font><font face="verdana" size="11">matches any alphanumeric character</font></p>

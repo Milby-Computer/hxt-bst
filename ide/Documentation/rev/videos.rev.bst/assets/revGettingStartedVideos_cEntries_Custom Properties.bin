@@ -1,0 +1,10 @@
+category=Useful Techniques
+description=<p>Custom properties allow you to store information or create virtual object properties and behaviors.  In this tutorial we look at how to store information.</p>
+duration=3:19
+filename=custom_properties.avi
+level=2
+licensed=true
+name=Custom Properties
+scripts=<p><font face="Courier New" size="11"></font><font face="Lucida Grande" size="12"></font><font face="Lucida Grande" size="11">Scripts Used in this Tutorial:</font></p>\n<p></p>\n<p><font face="Courier New" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" color="#000000">  answer the myProperty of me</font></p>\n<p><font face="Courier New" color="#000000">end mouseUp</font></p>\n<p></p>\n<p><font face="Courier New" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" color="#000000">  ask &#147;What do you want to store?&#148;</font></p>\n<p><font face="Courier New" color="#000000">  set the dataStore of me to it</font></p>\n<p><font face="Courier New" color="#000000">end mouseUp</font></p>\n<p></p>
+title=Custom Properties: Data Storage
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;What are custom properties</p>\n<p>-&#9;When to use custom properties</p>\n<p>-&#9;Creating and setting custom properties by script</p>\n<p></p>

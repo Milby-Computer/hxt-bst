@@ -1,0 +1,225 @@
+{
+   "#mainstack": "com.livecode.pi.equalize",
+   "com.livecode.pi.equalize": {
+      "#name": "stack \"com.livecode.pi.equalize\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1006": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1007": {
+                        "#name": "group \"controls\"",
+                        "childcontrols": {
+                           "1003": {
+                              "#name": "button \"rect\"",
+                              "properties": {
+                                 "icon": "202722",
+                                 "id": "1003",
+                                 "layer": "3",
+                                 "name": "rect",
+                                 "rect": "175,97,200,119",
+                                 "showHilite": true,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "rectangle",
+                                 "toolTip": "Make Rects Equal",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1004": {
+                              "#name": "button \"height\"",
+                              "custompropertysets": {
+                                 "cREVDivergedrevLarge": {
+                                    "rect": "153,20,187,49"
+                                 },
+                                 "cREVDivergedrevsmall": null,
+                                 "cREVMaster": {
+                                    "rect": "143,19,170,42"
+                                 },
+                                 "cREVTempMaster": {
+                                    "accelKey": null,
+                                    "accelMods": null,
+                                    "accelText": null,
+                                    "altId": "0",
+                                    "arm": false,
+                                    "armBorder": false,
+                                    "armFill": false,
+                                    "autoArm": false,
+                                    "autoHilite": true,
+                                    "borderWidth": "2",
+                                    "colors": "\n\n\n\n\n\n\n",
+                                    "default": false,
+                                    "disabled": false,
+                                    "family": "0",
+                                    "hilite": false,
+                                    "hiliteBorder": false,
+                                    "hiliteFill": true,
+                                    "hiliteIcon": "200484",
+                                    "icon": "200483",
+                                    "id": "2232",
+                                    "ink": "srcCopy",
+                                    "label": null,
+                                    "labelWidth": "0",
+                                    "layer": "18",
+                                    "lockLoc": false,
+                                    "margins": "4",
+                                    "menuHistory": "1",
+                                    "menuLines": "5",
+                                    "menuMode": null,
+                                    "menuMouseButton": "1",
+                                    "menuName": null,
+                                    "mnemonic": "0",
+                                    "name": "Same Height",
+                                    "number": "14",
+                                    "opaque": false,
+                                    "patterns": "\n\n\n\n\n\n\n\n",
+                                    "rect": "143,19,170,42",
+                                    "shadow": false,
+                                    "shadowOffset": "4",
+                                    "sharedHilite": true,
+                                    "showBorder": false,
+                                    "showHilite": true,
+                                    "showIcon": true,
+                                    "showName": false,
+                                    "style": "transparent",
+                                    "textAlign": "center",
+                                    "textFont": null,
+                                    "textSize": null,
+                                    "textStyle": null,
+                                    "threeD": false,
+                                    "toolTip": null,
+                                    "traversalOn": false,
+                                    "visible": true
+                                 }
+                              },
+                              "properties": {
+                                 "icon": "202720",
+                                 "id": "1004",
+                                 "layer": "4",
+                                 "name": "height",
+                                 "rect": "138,97,163,119",
+                                 "showHilite": true,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "rectangle",
+                                 "toolTip": "Make Heights Equal",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1005": {
+                              "#name": "button \"width\"",
+                              "custompropertysets": {
+                                 "cREVDivergedrevLarge": {
+                                    "rect": "115,20,149,49"
+                                 },
+                                 "cREVDivergedrevsmall": null,
+                                 "cREVMaster": {
+                                    "rect": "115,19,142,42"
+                                 },
+                                 "cREVTempMaster": {
+                                    "accelKey": null,
+                                    "accelMods": null,
+                                    "accelText": null,
+                                    "altId": "0",
+                                    "arm": false,
+                                    "armBorder": false,
+                                    "armFill": false,
+                                    "autoArm": false,
+                                    "autoHilite": true,
+                                    "borderWidth": "2",
+                                    "colors": "\n\n\n\n\n\n\n",
+                                    "default": false,
+                                    "disabled": false,
+                                    "family": "0",
+                                    "hilite": false,
+                                    "hiliteBorder": false,
+                                    "hiliteFill": true,
+                                    "hiliteIcon": "200492",
+                                    "icon": "200491",
+                                    "id": "2231",
+                                    "ink": "srcCopy",
+                                    "label": null,
+                                    "labelWidth": "0",
+                                    "layer": "17",
+                                    "lockLoc": false,
+                                    "margins": "4",
+                                    "menuHistory": "1",
+                                    "menuLines": "5",
+                                    "menuMode": null,
+                                    "menuMouseButton": "1",
+                                    "menuName": null,
+                                    "mnemonic": "0",
+                                    "name": "Same Width",
+                                    "number": "13",
+                                    "opaque": false,
+                                    "patterns": "\n\n\n\n\n\n\n\n",
+                                    "rect": "115,19,142,42",
+                                    "shadow": false,
+                                    "shadowOffset": "4",
+                                    "sharedHilite": true,
+                                    "showBorder": false,
+                                    "showHilite": true,
+                                    "showIcon": true,
+                                    "showName": false,
+                                    "style": "transparent",
+                                    "textAlign": "center",
+                                    "textFont": null,
+                                    "textSize": null,
+                                    "textStyle": null,
+                                    "threeD": false,
+                                    "toolTip": null,
+                                    "traversalOn": false,
+                                    "visible": true
+                                 }
+                              },
+                              "properties": {
+                                 "icon": "202721",
+                                 "id": "1005",
+                                 "layer": "5",
+                                 "name": "width",
+                                 "rect": "101,97,126,119",
+                                 "showHilite": true,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "rectangle",
+                                 "toolTip": "Make Widths Equal",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1007",
+                           "layer": "2",
+                           "name": "controls",
+                           "rect": "97,93,204,123"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1006",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "93,89,208,127"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"com.livecode.pi.equalize\"",
+      "properties": {
+         "fileName": "com.livecode.pi.equalize.livecode",
+         "id": "1007",
+         "name": "com.livecode.pi.equalize",
+         "rect": "840,204,1240,604"
+      },
+      "sharedGroupIDs": null
+   }
+}

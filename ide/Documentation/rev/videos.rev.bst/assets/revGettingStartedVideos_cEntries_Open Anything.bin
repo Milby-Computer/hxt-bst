@@ -1,0 +1,10 @@
+category=Sample Projects
+description=<p>'Open Anything', a simple utility, opens any file on disk and displays the text portion of the file.  You can edit the text and save it out to a text file.  This tutorial shows you how to use this sample project, and how to take it apart to understand how it works or copy portions of it for use in your own applications.  We recommend you explore the introductory tutorials so you have a basic understanding of how Revolution works before you start on the sample projects.</p>
+duration=2:32
+filename=free_open_anything.avi
+level=2
+licensed=false
+name=Open Anything
+scripts=<p></p>\n<p></p>
+title=Open anything - display text from any file.
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;A walk through the Open Anything sample project</p>\n<p>-&#9;How to view the scripts</p>\n<p>-&#9;How to view the object-resizing options</p>\n<p></p>

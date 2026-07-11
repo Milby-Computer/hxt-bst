@@ -1,0 +1,44 @@
+<p><font face="helvetica" size="12"><b>Discussion:</b></font></p>
+<p>This custom command is used with a statement such as the following:</p>
+<p></p>
+<p>  <font face="Courier">appendSelectionToClipboard</font></p>
+<p></p>
+<p>This handler is based on <font face="Courier">the clipboardData</font> pr<font face="helvetica" size="12">operty. The </font><font face="Courier">clipboardData</font><font face="helvetica" size="12"> contains whatever is currently in the clipboard--</font><i>plain text</i><font face="helvetica" size="12">, </font><i>styled text</i><font face="helvetica" size="12">, </font><i>image data</i><font face="helvetica" size="12">, or </font><i>files</i><font face="helvetica" size="12">--stored in an </font><i>array</i><font face="helvetica" size="12"> whose </font><font face="Courier">keys</font><font face="helvetica" size="12"> are the data types that the clipboard can hold. The &quot;appendSelectionToClipboard&quot; handler takes the selected text and adds it to the end of the text on the clipboard, letting you accumulate text, instead of wiping out what was already on the clipboard.</font></p>
+<p></p>
+<p>The first thing this handler does is check whether any text is currently selected. If <font face="Courier">the selectedText</font><font face="helvetica" size="12"> function returns </font><font face="Courier">empty</font><font face="helvetica" size="12">, either there is no selection, or something other than text is selected. In either case, there's nothing to append to the clipboard, so the handler uses the </font><font face="Courier">return</font><font face="helvetica" size="12"> control structure to skip the rest of the handler and return an error message. The handler that called the &quot;appendToSelection&quot; command can check the result function to see whether there was an error:</font></p>
+<p></p>
+<p><font face="Courier">  </font><font face="Courier" color="#980517">on</font><font face="Courier"> mouseUp</font></p>
+<p><font face="Courier">    appendSelectionToClipboard</font></p>
+<p><font face="Courier">    </font><font face="Courier" color="#980517">if</font><font face="Courier"> the </font><font face="Courier" color="#F88017">result</font><font face="Courier"> is not empty </font><font face="Courier" color="#980517">then</font><font face="Courier"> </font><font face="Courier" color="#0000FF">answer</font><font face="Courier"> the </font><font face="Courier" color="#F88017">result</font></p>
+<p><font face="Courier">  </font><font face="Courier" color="#980517">end</font><font face="Courier"> mouseUp</font></p>
+<p></p>
+<p>If there is a text selection, the handler appends it to the end of <font face="Courier">the clipboard</font><font face="helvetica" size="12"> contents. It does this by setting the &quot;text&quot; element of </font><font face="Courier">the clipboardData</font><font face="helvetica" size="12"> array. The expression the </font><font face="Courier">clipboardData[&quot;text&quot;]</font><font face="helvetica" size="12"> refers to the plain text on the clipboard; the handler sets this property to the current clipboard text and the selected text, separated by a return.</font></p>
+<p></p>
+<p>If you use the &quot;appendSelectionToClipboard&quot; handler repeatedly, the text accumulates, one entry per line. When you choose <b>Edit -&gt; Paste</b><font face="helvetica" size="12">, all the accumulated text is pasted.</font></p>
+<p></p>
+<p>To make this example handler more flexible, we might give it a parameter to hold the text to add to the clipboard. Instead of appending the selection, the handler would add whatever text was provided as the parameter, and fall back on the selection only if no text is supplied. Here's what the modified handler looks like:</p>
+<p></p>
+<p><font face="Courier">  </font><font face="Courier" color="#980517">on</font><font face="Courier"> appendToClipboard theText</font></p>
+<p><font face="Courier">    </font><font face="Courier" color="#980517">if</font><font face="Courier"> theText is empty </font><font face="Courier" color="#980517">then</font><font face="Courier"> </font><font face="Courier" color="#68228B">-- use the selected text:</font></p>
+<p><font face="Courier">      </font><font face="Courier" color="#0000FF">put</font><font face="Courier"> the </font><font face="Courier" color="#F88017">selectedText</font><font face="Courier"> into theText</font></p>
+<p><font face="Courier">    </font><font face="Courier" color="#980517">end</font><font face="Courier"> </font><font face="Courier" color="#980517">if</font></p>
+<p><font face="Courier">    </font><font face="Courier" color="#980517">if</font><font face="Courier"> theText is empty </font><font face="Courier" color="#980517">then</font><font face="Courier"> </font><font face="Courier" color="#0000FF">return</font><font face="Courier"> &quot;Error: No text&quot;</font></p>
+<p><font face="Courier">    </font><font face="Courier" color="#0000FF">set</font><font face="Courier"> the </font><font face="Courier" color="#FF0000">clipboardData</font><font face="Courier">[&quot;text&quot;] \</font></p>
+<p><font face="Courier">     to the </font><font face="Courier" color="#FF0000">clipboardData</font><font face="Courier">[&quot;text&quot;] &amp; </font><font face="Courier" color="#0000FF">return</font><font face="Courier"> &amp; theText</font></p>
+<p><font face="Courier">  </font><font face="Courier" color="#980517">end</font><font face="Courier"> appendToClipboard</font></p>
+<p>  </p>
+<p>You use this modified handler with a statement like one of these:</p>
+<p></p>
+<p><font face="Courier">  appendToClipboard &quot;Hello world&quot; </font><font face="Courier" color="#68228B">-- adds &quot;Hello world&quot;</font></p>
+<p><font face="Courier">  appendToClipboard field &quot;Name&quot; </font><font face="Courier" color="#68228B">-- adds the field contents</font></p>
+<p><font face="Courier">  appendToClipboard </font><font face="Courier" color="#68228B">-- adds whatever is selected</font></p>
+<p></p>
+<p>Another way to modify the original handler is to change other parts of <font face="Courier">the clipboardData</font><font face="helvetica" size="12"> array to allow clipping styled text. Because this handler specifies the </font><font face="Courier">clipboardData[&quot;text&quot;]</font><font face="helvetica" size="12">, it's only capable of handling plain text with no styles. If the clipboard already contains styled text, setting the &quot;text&quot; element of the clipboardData causes the styles to be lost.</font></p>
+<p></p>
+<p>However, <font face="Courier">the clipboardData</font><font face="helvetica" size="12"> property also contains styled text. The expression the </font><font face="Courier">clipboardData[&quot;HTML&quot;] </font><font face="helvetica" size="12">evaluates to the styled text on the clipboard, in the same format as </font><font face="Courier">the htmlText</font><font face="helvetica" size="12"> property. We can use this element of </font><font face="Courier">the clipboardData</font><font face="helvetica" size="12"> array to set the clipboard to the selected text, while including any style information:</font></p>
+<p></p>
+<p><font face="Courier">  set the clipboardData[&quot;HTML&quot;] \</font></p>
+<p><font face="Courier">     to the clipboardData[&quot;HTML&quot;] &amp; &quot;&lt;p&gt;&lt;/p&gt;&quot; \</font></p>
+<p><font face="Courier">     &amp; the htmlText of the selectedChunk</font></p>
+<p></p>
+<p>The expression <font face="Courier">the htmlText of the selectedChunk</font><font face="helvetica" size="12"> evaluates to the selected text, along with its style information, in HTML format, so this variation includes the style information that goes with the selected text. The &quot;&lt;p&gt;&lt;/p&gt;&quot; is the htmlText equivalent of the return used in the original handler.</font></p>

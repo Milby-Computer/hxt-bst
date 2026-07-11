@@ -1,0 +1,21 @@
+<p><font face="Verdana" size="18">View and Delete Data</font></p>
+<p></p>
+<p><b><font face="Tahoma" size="11">Viewing Data</font></b></p>
+<p>We can use the SELECT statement to grab data from our database.</p>
+<p></p>
+<p><font face="Courier New" size="12">put "SELECT * FROM &lt;table_name&gt;" into tSQL</font></p>
+<p><font face="Courier New" size="12">put revdb_querylist(tab,cr,&lt;connectionID&gt;,tSQL) into tList</font></p>
+<p><font face="Courier New" size="12">--&gt; tList gives you all the records</font></p>
+<p><font face="Courier New" size="12">--&gt; First 2 params default to tab and cr and are the column and row delimiters</font></p>
+<p></p>
+<p><b><font face="Tahoma" size="11">Deleting Data</font></b></p>
+<p>We can use the DELETE statement to delete rows from our database.</p>
+<p></p>
+<p><font face="Courier New" size="12">put "</font><font face="Courier New" size="14">DELETE FROM &lt;table_name&gt; WHERE &lt;column_name&gt; = &lt;value&gt;" into tSQL</font></p>
+<p><font face="Courier New" size="12">put revdb_execute(&lt;connectionID&gt;,tSQL) into tTmp</font></p>
+<p><font face="Courier New" size="14">--&gt; tTmp returns the number of rows deleted</font></p>
+<p></p>
+<p><b><font face="Tahoma" size="11">Try it</font></b></p>
+<p>Click the <b><font face="Tahoma" size="11">Refresh Table</font></b> button to refresh the field with the current contents of the <b><font face="Tahoma" size="11">users</font></b> table. </p>
+<p>Then select a row and click the <b><font face="Tahoma" size="11">Delete Row</font></b> button to remove the data from the <b><font face="Tahoma" size="11">users</font></b> table.</p>
+<p>You can review the scripts of both buttons below.</p>

@@ -1,0 +1,6 @@
+category=Getting Started
+description=<p>The Video Capture application captures video from a camera plugged into the computer.  It can capture using either QuickTime or Video For Windows.  (Please note that video capture is not currently supported on Linux and Unix systems.) </p>\n<p></p>\n<p>The Video Tutorial shows you how to use this Sample Project, and how to take it apart to understand how it works or copy portions of it for use in your own applications.  The PDF contains the same information as the Video, in printable form.</p>\n<p></p>\n<p><font face="Lucida Grande" size="11"><a href="video:Video Capture">Click here to go to the corresponding video and PDF</a></font></p>\n<p></p>\n<p>We recommend you to have explored the introductory video tutorials so you have a basic understanding of how Revolution works before you start on the Sample Projects.</p>
+level=2
+name=Video Capture
+title=Video Capture - a custom video capture application
+topics=<p>The key topics covered in this Project are:</p>\n<p>   - How to capture video</p>\n<p>   - How to change video capture settings</p>\n<p>   - How to record video to a file</p>\n<p>   - How to display still images from a video</p>\n<p>   - How to save still images from a video to a file</p>

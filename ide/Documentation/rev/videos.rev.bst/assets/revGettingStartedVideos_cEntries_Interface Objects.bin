@@ -1,0 +1,10 @@
+category=Building an Application using Objects
+description=<p>This topic introduces you to the different types of object that can be created using the tools palette.  You'll learn how to create the standard object types, what each is used for and how to use the different editing modes.</p>
+duration=10:19
+filename=free_interface_objects.avi
+level=1
+licensed=false
+name=Interface Objects
+scripts=<p><font color="#000000">Scripts Used in this Tutorial:</font></p>\n<p></p>\n<p><font face="Courier New" size="12" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" size="12" color="#000000">  set the width of me to the width of me + 50</font></p>\n<p><font face="Courier New" size="12" color="#000000">  set the name of me to &quot;Splat!&quot;</font></p>\n<p><font face="Courier New" size="12" color="#000000">end mouseUp</font></p>
+title=Interface objects (buttons, text fields and menus): the building blocks of an application.
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;Using the tools palette</p>\n<p>-&#9;The different types of object</p>\n<p>-&#9;Editing modes</p>\n<p></p>

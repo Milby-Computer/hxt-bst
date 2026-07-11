@@ -1,0 +1,27 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom command is used with a statement such as the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  removeBold "First Name"</font></p>
+<p><font face="Courier" size="11">  removeBold (the </font><font face="Courier" size="11" color="#FF0000">short</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#FF0000">name</font><font face="Courier" size="11"> of the </font><font face="Courier" size="11" color="#F88017">selectedField</font><font face="Courier" size="11">)</font></p>
+<p></p>
+<p>This handler is based on <font face="Courier" size="11">the htmlText</font><font face="helvetica" size="12"> property. The </font><font face="Courier" size="11">htmlText</font><font face="helvetica" size="12"> of a field contains all of the field's text, plus style information in the form of HTML-like tags. The start of boldfaced text is indicated with a &lt;b&gt; tag, and the end of the boldfacing is indicated with a &lt;/b&gt; tag. If a field's text looks like this:</font></p>
+<p></p>
+<p>  This is a bold phrase.</p>
+<p></p>
+<p>then the field's htmlText looks like this:</p>
+<p></p>
+<p>  &lt;p&gt;This is a &lt;b&gt;bold phrase&lt;/b&gt;.&lt;/p&gt;</p>
+<p></p>
+<p>The handler works by retrieving <font face="Courier" size="11">the htmlText</font><font face="helvetica" size="12">, removing all the &lt;b&gt; and &lt;/b&gt; tags in it, then setting the field's </font><font face="Courier" size="11">htmlText</font><font face="helvetica" size="12"> to the changed string with the tags removed. By removing these tags, we remove the bold styling without removing the text. To remove a tag, the handler uses the </font><font face="Courier" size="11">replace</font><font face="helvetica" size="12"> command to substitute </font><font face="Courier" size="11">empty</font><font face="helvetica" size="12"> for the tag--in other words, to replace it with nothing. You can use the </font><font face="Courier" size="11">replace</font><font face="helvetica" size="12"> command in this way to remove any repetitive text string.</font></p>
+<p></p>
+<p>You can use a similar technique to remove any style from a field's text. All styles are encoded with tags in the field's <font face="Courier" size="11">htmlText</font><font face="helvetica" size="12"> property, so you can get the </font><font face="Courier" size="11">htmlText</font><font face="helvetica" size="12"> of the field, replace the appropriate tags with empty, and set the </font><font face="Courier" size="11">htmlText</font><font face="helvetica" size="12"> back to the string that has the tags removed.</font></p>
+<p></p>
+<p>To tell the handler which field to change, you pass the field's short name to the handler. The handler will also work with the field's number, although usually it's better to pass the name because the number changes whenever you change the <font face="Courier" size="11">layer</font><font face="helvetica" size="12"> of the field, while the name doesn't change unless you change it explicitly.</font></p>
+<p></p>
+<p><img src="202651" char=" "> <b><font face="Lucida Grande" size="11">Tip:</font></b><font face="helvetica" size="12"> To use this technique to change the selected text instead of the entire field, use the expression </font><font face="Courier" size="11">the htmlText of the selectedChunk</font><font face="helvetica" size="12"> to get the selected piece of text, tags and all. Then remove the unwanted tags and set </font><font face="Courier" size="11">the htmlText</font><font face="helvetica" size="12"> of the chunk to the changed string:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> the </font><font face="Courier" size="11" color="#F88017">selectedChunk</font><font face="Courier" size="11"> into savedChunk</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">get</font><font face="Courier" size="11"> the </font><font face="Courier" size="11" color="#FF0000">htmlText</font><font face="Courier" size="11"> of the </font><font face="Courier" size="11" color="#F88017">selectedChunk</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">replace</font><font face="Courier" size="11"> "&lt;b&gt;" </font><font face="Courier" size="11" color="#980517">with</font><font face="Courier" size="11"> empty in it</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">replace</font><font face="Courier" size="11"> "&lt;/b&gt;" </font><font face="Courier" size="11" color="#980517">with</font><font face="Courier" size="11"> empty in it</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">set</font><font face="Courier" size="11"> the </font><font face="Courier" size="11" color="#FF0000">htmlText</font><font face="Courier" size="11"> of savedChunk to it</font></p>

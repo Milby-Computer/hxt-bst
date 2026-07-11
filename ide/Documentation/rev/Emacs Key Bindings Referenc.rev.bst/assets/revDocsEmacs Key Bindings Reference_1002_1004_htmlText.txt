@@ -1,0 +1,15 @@
+<p>start of sentence</p>
+<p><font color="#707070">(none)</font></p>
+<p>delete next word</p>
+<p>end of sentence</p>
+<p><font color="#707070">(none)</font></p>
+<p><font color="#707070">(none)</font></p>
+<p><font color="#707070">(none)</font></p>
+<p><font color="#707070">(none)</font></p>
+<p><font color="#707070">(none)</font></p>
+<p><font color="#707070">(none)</font></p>
+<p>page up</p>
+<p><font color="#707070">(none)</font></p>
+<p><font color="#707070">(none)</font></p>
+<p><font color="#707070">(none)</font></p>
+<p>undo</p>

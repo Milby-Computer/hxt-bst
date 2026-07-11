@@ -1,0 +1,3 @@
+<p>Note:  The cursors in this stack are in the ID range 1-40 and have corresponding 32*32 cursors of the same ID for Windows and UNIX  in stack &quot;revCursors&quot;.</p>
+<p></p>
+<p>Stack &quot;revCursors&quot; is loaded instead of this stack on Windows and UNIX.</p>

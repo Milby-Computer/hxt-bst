@@ -1,0 +1,89 @@
+{
+   "#mainstack": "com.livecode.pi.graphiceffect",
+   "com.livecode.pi.graphiceffect": {
+      "#name": "stack \"com.livecode.pi.graphiceffect\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1007": {
+                        "#name": "graphic \"Round Rectangle\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "backColor": "255,255,255",
+                           "filled": true,
+                           "foreColor": "191,194,194",
+                           "id": "1007",
+                           "layer": "2",
+                           "margins": "8",
+                           "name": "Round Rectangle",
+                           "opaque": true,
+                           "rect": "190,132,246,164",
+                           "style": "roundrect"
+                        }
+                     },
+                     "1008": {
+                        "#name": "button \"Check\"",
+                        "customproperties": {
+                           "acceleratorModifier": null
+                        },
+                        "properties": {
+                           "borderWidth": "0",
+                           "id": "1008",
+                           "layer": "3",
+                           "margins": "8",
+                           "name": "Check",
+                           "opaque": false,
+                           "rect": "164,136,186,159",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "showName": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "164,132,246,164"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "3"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1008"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.graphiceffect\"",
+      "properties": {
+         "fileName": "com.livecode.pi.graphiceffect.livecode",
+         "id": "1008",
+         "name": "com.livecode.pi.graphiceffect",
+         "rect": "607,316,1007,716"
+      },
+      "sharedGroupIDs": null
+   }
+}

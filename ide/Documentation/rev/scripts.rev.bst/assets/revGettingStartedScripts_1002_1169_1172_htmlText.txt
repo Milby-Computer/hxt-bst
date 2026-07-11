@@ -1,0 +1,24 @@
+<p><font face="Courier" size="12" color="#980517">on</font><font face="Courier" size="12"> mouseUp</font></p>
+<p><font face="Courier" size="12">  </font><font face="Courier" size="12" color="#0000FF">beep</font></p>
+<p><font face="Courier" size="12" color="#980517">end</font><font face="Courier" size="12"> mouseUp</font></p>
+<p></p>
+<p><font face="Courier" size="12" color="#980517">on</font><font face="Courier" size="12"> goSomewhere</font></p>
+<p><font face="Courier" size="12">  </font><font face="Courier" size="12" color="#0000FF">go</font><font face="Courier" size="12"> any card</font></p>
+<p><font face="Courier" size="12" color="#980517">end</font><font face="Courier" size="12"> goSomewhere</font></p>
+<p></p>
+<p><font face="Courier" size="12" color="#0000FF">function</font><font face="Courier" size="12"> neverOnSunday</font></p>
+<p><font face="Courier" size="12">  </font><font face="Courier" size="12" color="#0000FF">get</font><font face="Courier" size="12"> the </font><font face="Courier" size="12" color="#F88017">date</font></p>
+<p><font face="Courier" size="12">  </font><font face="Courier" size="12" color="#0000FF">convert</font><font face="Courier" size="12"> it to dateItems</font></p>
+<p><font face="Courier" size="12">  </font><font face="Courier" size="12" color="#980517">if</font><font face="Courier" size="12"> last item of it is 3</font></p>
+<p><font face="Courier" size="12">  </font><font face="Courier" size="12" color="#980517">then</font><font face="Courier" size="12"> </font><font face="Courier" size="12" color="#0000FF">return</font><font face="Courier" size="12"> false</font></p>
+<p><font face="Courier" size="12">  </font><font face="Courier" size="12" color="#980517">else</font><font face="Courier" size="12"> </font><font face="Courier" size="12" color="#0000FF">return</font><font face="Courier" size="12"> true</font></p>
+<p><font face="Courier" size="12" color="#980517">end</font><font face="Courier" size="12"> neverOnSunday</font></p>
+<p></p>
+<p><font face="Courier" size="12" color="#980517">getProp</font><font face="Courier" size="12"> horizontalScale theScale</font></p>
+<p><font face="Courier" size="12">  </font><font face="Courier" size="12" color="#0000FF">set</font><font face="Courier" size="12"> the </font><font face="Courier" size="12" color="#FF0000">width</font><font face="Courier" size="12"> of </font><font face="Courier" size="12" color="#F88017">me</font><font face="Courier" size="12"> to the </font><font face="Courier" size="12" color="#FF0000">width</font><font face="Courier" size="12"> of </font><font face="Courier" size="12" color="#F88017">me</font><font face="Courier" size="12"> * theScale</font></p>
+<p><font face="Courier" size="12">  </font><font face="Courier" size="12" color="#0000FF">pass</font><font face="Courier" size="12"> </font><font face="Courier" size="12" color="#980517">getProp</font></p>
+<p><font face="Courier" size="12" color="#980517">end</font><font face="Courier" size="12"> horizontalScale</font></p>
+<p></p>
+<p><font face="Courier" size="12" color="#980517">on</font><font face="Courier" size="12"> goItAlone</font></p>
+<p><font face="Courier" size="12">  </font><font face="Courier" size="12" color="#68228B">-- do nothing</font></p>
+<p><font face="Courier" size="12" color="#980517">end</font><font face="Courier" size="12"> goItAlone</font></p>

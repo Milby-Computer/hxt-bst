@@ -1,0 +1,10 @@
+category=Useful Techniques
+description=<p>From time to time you will encounter an error message when you make a mistake in a script.  This tutorial looks at how to understand and fix the errors you encounter.</p>
+duration=3:25
+filename=error_messages.avi
+level=1
+licensed=true
+name=Error Messages
+scripts=<p><font color="#000000">Scripts Used in this Tutorial:</font></p>\n<p></p>\n<p><font face="Courier New" size="12" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" size="12" color="#000000">  put &quot;Hello world&quot; into field &quot;Sample Text&quot;</font></p>\n<p><font face="Courier New" size="12" color="#000000">end mouseUp</font></p>
+title=Error messages: understanding and fixing errors.
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;Compile error messages</p>\n<p>-&#9;Execution error messages</p>

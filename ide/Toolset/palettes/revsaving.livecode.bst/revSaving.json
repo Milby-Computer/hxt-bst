@@ -1,0 +1,57 @@
+{
+   "#mainstack": "revSaving",
+   "revSaving": {
+      "#name": "stack \"revSaving\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1001",
+      "childcontrols": {
+         "1001": {
+            "#name": "card id 1001",
+            "childcontrols": {
+               "1005": {
+                  "#name": "field \"field id 1005\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "%file%: assets/revSaving_1001_1005_htmlText.txt",
+                     "id": "1005",
+                     "layer": "1",
+                     "lockText": true,
+                     "margins": "12",
+                     "name": "field id 1005",
+                     "opaque": false,
+                     "rect": "0,0,688,134",
+                     "showBorder": false,
+                     "style": "transparent",
+                     "tabStops": "31",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cSavingStack": "revLibrary"
+            },
+            "properties": {
+               "id": "1001",
+               "showBorder": true
+            }
+         }
+      },
+      "customproperties": {
+         "cSaveStack": "revCardMenu",
+         "cSavingStack": "revIcons"
+      },
+      "longID": "stack \"revSaving\"",
+      "properties": {
+         "decorations": null,
+         "destroyWindow": true,
+         "fileName": "revsaving.livecode",
+         "id": "1005",
+         "liveResizing": false,
+         "name": "revSaving",
+         "rect": "0,368,688,502",
+         "resizable": false
+      },
+      "sharedGroupIDs": null
+   }
+}

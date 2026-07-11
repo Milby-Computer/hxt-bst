@@ -1,0 +1,846 @@
+{
+   "#mainstack": "revDataGridLibrary",
+   "revDataGridLibrary": {
+      "#name": "stack \"revDataGridLibrary\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"card id 1002\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "group \"Behaviors\"",
+                  "childcontrols": {
+                     "1005": {
+                        "#name": "button \"Data Grid\"",
+                        "custompropertysets": {
+                           "cREVGeneral[scripteditorvscroll]": {
+                              "scripteditorvscroll": "81322"
+                           },
+                           "uVersion": {
+                              "ID": "1005",
+                              "UUID": "4B5CF4EB-992B-4EDA-809F-6A2872946D3F"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsDataGridButtonBehavior\"",
+                           "id": "1005",
+                           "layer": "2",
+                           "margins": "4,5,4,4",
+                           "name": "Data Grid",
+                           "rect": "39,48,127,71",
+                           "traversalOn": false
+                        }
+                     },
+                     "1006": {
+                        "#name": "button \"Track Drag \u2026 Drop\"",
+                        "custompropertysets": {
+                           "tRevGeneral": {
+                              "tRevUniqueID": "1265850903848"
+                           },
+                           "uVersion": {
+                              "ID": "1006",
+                              "UUID": "7994108E-138B-4699-AA15-4614416F972A"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsTrackDragDropButtonBehavior\"",
+                           "id": "1006",
+                           "layer": "3",
+                           "margins": "4,5,4,4",
+                           "name": "Track Drag \u2026 Drop",
+                           "rect": "172,50,366,73",
+                           "traversalOn": false
+                        }
+                     },
+                     "1007": {
+                        "#name": "button \"Default Header\"",
+                        "custompropertysets": {
+                           "uVersion": {
+                              "ID": "1007",
+                              "UUID": "0EEB4BAB-6772-4DD6-9C68-DB9151C3783A"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsDefaultHeaderButtonBehavior\"",
+                           "id": "1007",
+                           "layer": "4",
+                           "margins": "4,5,4,4",
+                           "name": "Default Header",
+                           "rect": "37,85,184,108",
+                           "traversalOn": false
+                        }
+                     },
+                     "1066": {
+                        "#name": "button \"Header\"",
+                        "custompropertysets": {
+                           "tRevGeneral": {
+                              "tRevUniqueID": "1265729658710"
+                           },
+                           "uVersion": {
+                              "ID": "1066",
+                              "UUID": "59D5596E-742D-4B2B-8137-E54231ED9CBC"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsHeaderButtonBehavior\"",
+                           "disabled": true,
+                           "id": "1066",
+                           "layer": "5",
+                           "margins": "4,5,4,4",
+                           "name": "Header",
+                           "rect": "42,156,130,179",
+                           "traversalOn": false
+                        }
+                     },
+                     "1089": {
+                        "#name": "button \"Default Column\"",
+                        "custompropertysets": {
+                           "uVersion": {
+                              "ID": "1089",
+                              "UUID": "0AED05F4-AB4A-45D3-B3F9-4123FDB8B9A7"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsDefaultColumnButtonBehavior\"",
+                           "id": "1089",
+                           "layer": "6",
+                           "margins": "4,5,4,4",
+                           "name": "Default Column",
+                           "rect": "36,118,183,141",
+                           "traversalOn": false
+                        }
+                     },
+                     "1126": {
+                        "#name": "button \"Vertical Scrollbar\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": "\\\u0014#\u0014÷\u0013\u0080\u009D\u0098\u0088\u0085\u0088\u0086cW\u0080\u0080\\"
+                           },
+                           "uVersion": {
+                              "ID": "1126",
+                              "UUID": "91607A23-941F-4AE2-88FE-049F08CC2F25"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsVerticalScrollbarButtonBehavior\"",
+                           "id": "1126",
+                           "layer": "7",
+                           "margins": "4,5,4,4",
+                           "name": "Vertical Scrollbar",
+                           "rect": "206,112,353,135",
+                           "traversalOn": false
+                        }
+                     },
+                     "1127": {
+                        "#name": "button \"Field Editor\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": "ãR C\\¸[\u0088\u0099c.µ\u008B\u0088\u009D<å\""
+                           },
+                           "tRevGeneral": {
+                              "tRevUniqueID": "1236225144404"
+                           },
+                           "uVersion": {
+                              "ID": "1127",
+                              "UUID": "12E71764-D8C8-456B-8524-3E35AC296C36"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsFieldEditorButtonBehavior\"",
+                           "id": "1127",
+                           "layer": "8",
+                           "margins": "4,5,4,4",
+                           "name": "Field Editor",
+                           "rect": "210,140,357,163",
+                           "traversalOn": false
+                        }
+                     },
+                     "1128": {
+                        "#name": "button \"Drop Indicator\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": "M5*\u0092R®csTG\u0080\u009C\u00136\u000ES"
+                           },
+                           "tRevGeneral": {
+                              "tRevUniqueID": "1236267480063"
+                           },
+                           "uVersion": {
+                              "ID": "1128",
+                              "UUID": "984B7FD9-631C-49BC-B77D-FAE29178CB10"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsDropIndicatorButtonBehavior\"",
+                           "id": "1128",
+                           "layer": "9",
+                           "margins": "4,5,4,4",
+                           "name": "Drop Indicator",
+                           "rect": "204,82,351,105",
+                           "traversalOn": false
+                        }
+                     },
+                     "1145": {
+                        "#name": "button \"Column Group\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": "]'\u0093D\u0084\u0082\u0080\u0094!1\u0016\u0088\u0099V<¿\u00803"
+                           },
+                           "uVersion": {
+                              "ID": "1145",
+                              "UUID": "92537B69-3E4C-4C56-B1D9-BBCB6BAE0721"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsColumnGroupButtonBehavior\"",
+                           "id": "1145",
+                           "layer": "10",
+                           "margins": "4,5,4,4",
+                           "name": "Column Group",
+                           "rect": "210,170,357,193",
+                           "traversalOn": false
+                        }
+                     },
+                     "1146": {
+                        "#name": "button \"Horizontal Scrollbar\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": "\u0018\u0084\u000FJh\u0080\u0085\u0012\u000BåOç\u0092»\u009BΩ\u0011"
+                           },
+                           "uVersion": {
+                              "ID": "1146",
+                              "UUID": "5EA0680E-B19A-4B85-9573-DAF0833CE916"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsHorizontalScrollbarButtonBehavior\"",
+                           "id": "1146",
+                           "layer": "11",
+                           "margins": "4,5,4,4",
+                           "name": "Horizontal Scrollbar",
+                           "rect": "360,112,507,135",
+                           "traversalOn": false
+                        }
+                     },
+                     "1160": {
+                        "#name": "button \"Header Mask\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": "\u0080\u0080ñ\u0089\u0088\u0085\u0088\u0085Jh\u0088ä(/H9\b\\"
+                           },
+                           "uVersion": {
+                              "ID": "1160",
+                              "UUID": "6EB5FE48-CDD5-4B77-A4EC-DDE2BAF20B69"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsHeaderMaskButtonBehavior\"",
+                           "id": "1160",
+                           "layer": "12",
+                           "margins": "4,5,4,4",
+                           "name": "Header Mask",
+                           "rect": "380,52,527,75",
+                           "traversalOn": false
+                        }
+                     },
+                     "1173": {
+                        "#name": "button \"dgList Message Catcher\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": "\u0080\u0080ñ\u0089\u0088\u0085\u0088\u0085Jh\u0088ä(/H9\b\\"
+                           },
+                           "tRevGeneral": {
+                              "tRevUniqueID": "1268244595645"
+                           },
+                           "uVersion": {
+                              "ID": "1173",
+                              "UUID": "423A8BDF-8825-4B40-B185-B3B2D6DB4C76"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsDgListMessageCatcherButtonBehavior\"",
+                           "id": "1173",
+                           "layer": "13",
+                           "margins": "4,5,4,4",
+                           "name": "dgList Message Catcher",
+                           "rect": "370,166,517,189",
+                           "traversalOn": false
+                        }
+                     },
+                     "1174": {
+                        "#name": "button \"Row Chained Behavior\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": "M5*\u0092R®csTG\u0080\u009C\u00136\u000ES"
+                           },
+                           "tRevGeneral": {
+                              "tRevUniqueID": "1236267480063"
+                           },
+                           "uVersion": {
+                              "ID": "1128",
+                              "UUID": "984B7FD9-631C-49BC-B77D-FAE29178CB10"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsRowChainedBehavior\"",
+                           "id": "1174",
+                           "layer": "14",
+                           "margins": "4,5,4,4",
+                           "name": "Row Chained Behavior",
+                           "rect": "364,82,511,105",
+                           "traversalOn": false
+                        }
+                     },
+                     "1175": {
+                        "#name": "button \"Action Control Holder\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": "M5*\u0092R®csTG\u0080\u009C\u00136\u000ES"
+                           },
+                           "tRevGeneral": {
+                              "tRevUniqueID": "1236267480063"
+                           },
+                           "uVersion": {
+                              "ID": "1128",
+                              "UUID": "984B7FD9-631C-49BC-B77D-FAE29178CB10"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsActionControlHolderBehavior\"",
+                           "id": "1175",
+                           "layer": "15",
+                           "margins": "4,5,4,4",
+                           "name": "Action Control Holder",
+                           "rect": "364,141,511,164",
+                           "traversalOn": false
+                        }
+                     },
+                     "1176": {
+                        "#name": "button \"Swipe Control Holder\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": "M5*\u0092R®csTG\u0080\u009C\u00136\u000ES"
+                           },
+                           "tRevGeneral": {
+                              "tRevUniqueID": "1236267480063"
+                           },
+                           "uVersion": {
+                              "ID": "1128",
+                              "UUID": "984B7FD9-631C-49BC-B77D-FAE29178CB10"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "stack \"RevDataGridLibraryBehaviorsSwipeControlHolderBehavior\"",
+                           "id": "1176",
+                           "layer": "16",
+                           "margins": "4,5,4,4",
+                           "name": "Swipe Control Holder",
+                           "rect": "364,191,511,214",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": "\u0080\u0098\u001DåŸè\u0000\u0089\u0004\u0088\u0084\tò\u008F¯B~"
+                     }
+                  },
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "margins": "20",
+                     "name": "Behaviors",
+                     "opaque": true,
+                     "rect": "14,13,549,236",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "103001": {
+                  "#name": "image \"resize column\"",
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": null
+                     }
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "103001",
+                     "layer": "50",
+                     "name": "resize column",
+                     "rect": "612,122,628,138",
+                     "text": {
+                        "%base64%": "hAACAYCCAAIBgIIAAgGAggACAYCCAAIRiIIAAjGMggACf/6CAAJ//oIAAjGMggACEYiCAAIB\ngIIAAgGAggACAYCCAAIBgIYA"
+                     },
+                     "toolTip": "81",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "103002": {
+                  "#name": "image \"resize column to right\"",
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": null
+                     }
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "103002",
+                     "layer": "51",
+                     "name": "resize column to right",
+                     "rect": "612,149,628,165",
+                     "text": {
+                        "%base64%": "hAACAYCCAAIBgIIAAgGAggACAYCCAAIBiIIAAgGMggACAf6CAAIB/oIAAgGMggACAYiCAAIB\ngIIAAgGAggACAYCCAAIBgIYA"
+                     },
+                     "toolTip": "81",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "103003": {
+                  "#name": "image \"resize column to left\"",
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": null
+                     }
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "103003",
+                     "layer": "52",
+                     "name": "resize column to left",
+                     "rect": "610,173,626,189",
+                     "text": {
+                        "%base64%": "hAACAYCCAAIBgIIAAgGAggACAYCCAAIRgIIAAjGAggACf4CCAAJ/gIIAAjGAggACEYCCAAIB\ngIIAAgGAggACAYCCAAIBgIYA"
+                     },
+                     "toolTip": "81",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "103004": {
+                  "#name": "image \"sort ascending\"",
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": null
+                     }
+                  },
+                  "properties": {
+                     "id": "103004",
+                     "layer": "53",
+                     "name": "sort ascending",
+                     "opaque": false,
+                     "rect": "650,156,659,164",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revDataGridLibrary_1002_103004_text.png"
+                  }
+               },
+               "103005": {
+                  "#name": "image \"sort descending\"",
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": null
+                     }
+                  },
+                  "properties": {
+                     "id": "103005",
+                     "layer": "54",
+                     "name": "sort descending",
+                     "opaque": false,
+                     "rect": "650,167,659,175",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revDataGridLibrary_1002_103005_text.png"
+                  }
+               },
+               "1061": {
+                  "#name": "group \"Templates\"",
+                  "childcontrols": {
+                     "1090": {
+                        "#name": "group \"DataGrid\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": "\u0080\u0098\u001DåŸè\u0000\u0089\u0004\u0088\u0084\tò\u008F¯B~"
+                           },
+                           "dgCache": {
+                              "data": null,
+                              "sequencing": null
+                           },
+                           "dgProps": {
+                              "allow column resizing": true,
+                              "allow editing": true,
+                              "alternate row color": null,
+                              "alternate row colors": true,
+                              "auto hilite": true,
+                              "background color": null,
+                              "cache controls": false,
+                              "column divider color": "217,217,217",
+                              "column margins": null,
+                              "column properties": null,
+                              "column widths": null,
+                              "columns": null,
+                              "control type": "Data Grid",
+                              "corner color": "232,232,232",
+                              "data can be represented as text": true,
+                              "dim on focusOut": true,
+                              "fixed row height": true,
+                              "header background color": "219,219,219\n188,188,188",
+                              "header background hilite color": "194,207,221\n125,147,148",
+                              "header divider color": "168,168,168",
+                              "header divider threed color": "227,227,227",
+                              "header margins": null,
+                              "hilite color": null,
+                              "multiple lines": false,
+                              "persistent data": true,
+                              "row color": null,
+                              "row height": "21",
+                              "row template": null,
+                              "scroll selections into view": true,
+                              "scroll when hscrollbar is hidden": false,
+                              "scroll when vscrollbar is hidden": false,
+                              "scrollbar corner offset": "0",
+                              "scrollbar width": "auto",
+                              "show header": true,
+                              "show hscrollbar": true,
+                              "show vscrollbar": true,
+                              "style": "table"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "button id 1005 of stack \"revDataGridLibrary\"",
+                           "borderColor": "64,64,64",
+                           "borderWidth": "1",
+                           "id": "1090",
+                           "layer": "18",
+                           "margins": "0",
+                           "name": "DataGrid",
+                           "rect": "38,263,468,565",
+                           "selectGroupedControls": false,
+                           "showBorder": true,
+                           "threeD": false
+                        }
+                     },
+                     "1117": {
+                        "#name": "group \"Default Row Template\"",
+                        "childcontrols": {
+                           "1118": {
+                              "#name": "graphic \"Background\"",
+                              "custompropertysets": {
+                                 "cGlx2TimeStamp": {
+                                    "checksum": null
+                                 }
+                              },
+                              "properties": {
+                                 "backColor": "225,225,225",
+                                 "filled": true,
+                                 "id": "1118",
+                                 "layer": "42",
+                                 "lineSize": "0",
+                                 "name": "Background",
+                                 "opaque": true,
+                                 "rect": "40,575,440,596"
+                              }
+                           },
+                           "1119": {
+                              "#name": "field \"Label\"",
+                              "custompropertysets": {
+                                 "cGlx2TimeStamp": {
+                                    "checksum": null
+                                 }
+                              },
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Label</p>",
+                                 "id": "1119",
+                                 "layer": "43",
+                                 "lockText": true,
+                                 "name": "Label",
+                                 "opaque": false,
+                                 "rect": "40,575,430,596",
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": null
+                           }
+                        },
+                        "properties": {
+                           "behavior": "button id 1101 of stack \"Data Grid Templates 1236083417792\"",
+                           "borderWidth": "0",
+                           "id": "1117",
+                           "layer": "41",
+                           "margins": "0",
+                           "name": "Default Row Template",
+                           "rect": "40,575,440,596"
+                        }
+                     },
+                     "1130": {
+                        "#name": "group \"Default Column Template\"",
+                        "childcontrols": {
+                           "1132": {
+                              "#name": "field \"_ColumnData_\"",
+                              "custompropertysets": {
+                                 "cGlx2TimeStamp": {
+                                    "checksum": null
+                                 }
+                              },
+                              "properties": {
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Label</p>",
+                                 "id": "1132",
+                                 "layer": "45",
+                                 "lockText": true,
+                                 "name": "_ColumnData_",
+                                 "opaque": false,
+                                 "rect": "46,605,146,626",
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": null
+                           }
+                        },
+                        "properties": {
+                           "behavior": "button id 1101 of stack \"Data Grid Templates 1236083417792\"",
+                           "borderWidth": "0",
+                           "id": "1130",
+                           "layer": "44",
+                           "margins": "0",
+                           "name": "Default Column Template",
+                           "rect": "46,605,146,626"
+                        }
+                     },
+                     "1143": {
+                        "#name": "group \"_DataGridTemplateInstructions_\"",
+                        "childcontrols": {
+                           "1144": {
+                              "#name": "field \"_DataGridTemplateInstructions_\"",
+                              "custompropertysets": {
+                                 "cGlx2TimeStamp": {
+                                    "checksum": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "<p>You can edit the \u2026quot;Row Template\u2026quot; group on this card to customize the look and feel of your data grid form or table. To begin, select the \u2026quot;Row Template\u2026quot; group and choose Object \u2026gt; Edit Group menu item.</p>"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "foreColor": "52,52,52",
+                                 "htmlText": "<p>You can edit the \"Row Template\" group on this card to customize the look and feel of your data grid form or table. To begin, select the \"Row Template\" group and choose Object \u2026gt; Edit Group menu item.</p>",
+                                 "id": "1144",
+                                 "layer": "47",
+                                 "lockText": true,
+                                 "name": "_DataGridTemplateInstructions_",
+                                 "opaque": false,
+                                 "rect": "470,473,944,547",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textFont": "Arial",
+                                 "textHeight": "18",
+                                 "textSize": "14",
+                                 "textStyle": "plain",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": null
+                           }
+                        },
+                        "properties": {
+                           "id": "1143",
+                           "layer": "46",
+                           "name": "_DataGridTemplateInstructions_",
+                           "rect": "466,469,948,551"
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": null
+                     }
+                  },
+                  "properties": {
+                     "id": "1061",
+                     "layer": "17",
+                     "margins": "20",
+                     "name": "Templates",
+                     "opaque": true,
+                     "rect": "16,228,970,648",
+                     "showBorder": true,
+                     "showName": true
+                  }
+               },
+               "1113": {
+                  "#name": "button \"Default Script\"",
+                  "customproperties": {
+                     "uDefaultScript": "%file%: assets/revDataGridLibrary_1002_1113_uDefaultScript.bin"
+                  },
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": "\u0080\u0098\u001DåŸè\u0000\u0089\u0004\u0088\u0084\tò\u008F¯B~"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "icon": "1244",
+                     "id": "1113",
+                     "layer": "48",
+                     "margins": "4,5,4,4",
+                     "name": "Default Script",
+                     "opaque": false,
+                     "rect": "564,30,682,65",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1129": {
+                  "#name": "button \"Default Column Script\"",
+                  "customproperties": {
+                     "uDefaultScript": "%file%: assets/revDataGridLibrary_1002_1129_uDefaultScript.bin"
+                  },
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": "\u0080\u0098\u001DåŸè\u0000\u0089\u0004\u0088\u0084\tò\u008F¯B~"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "icon": "1244",
+                     "id": "1129",
+                     "layer": "49",
+                     "margins": "4,5,4,4",
+                     "name": "Default Column Script",
+                     "opaque": false,
+                     "rect": "566,64,684,99",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cGlx2General": {
+                  "cConstants": null,
+                  "cDirtyFlag": false,
+                  "cExplicitVariables": null,
+                  "cFolders": null,
+                  "cGlobals": null,
+                  "cHandlers": null,
+                  "cHandlersListWidth": "100",
+                  "cHilitedLine": null,
+                  "cHscrollHandlers": "0",
+                  "cHscrollScript": "0",
+                  "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089\u0080\u0094/\u0088\u009E\u0003\u0000\u00819.\u0084\u0007\u0000\u0000\u0000",
+                  "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "cLocals": null,
+                  "cScriptChecksum": null,
+                  "cSelectedChunk": "char 1 to 0",
+                  "cVscrollHandlers": "0",
+                  "cVscrollScript": "0"
+               },
+               "cGlx2TimeStamp": {
+                  "1233750505": "start",
+                  "1233750506": "end",
+                  "1233956084": "start",
+                  "1233956086": "end",
+                  "1234822798": "start",
+                  "1234822801": "end",
+                  "1237020963": "start",
+                  "1237020964": "start",
+                  "1237020965": "start",
+                  "1237020977": "end",
+                  "1237947001": "start",
+                  "1237947002": "start",
+                  "1237947003": "start",
+                  "1237947013": "end",
+                  "1238528828": "start",
+                  "1238528829": "start",
+                  "1238528842": "end",
+                  "1238631981": "start",
+                  "1238631993": "end",
+                  "1238634719": "start",
+                  "1238634732": "end",
+                  "1256551955": "start",
+                  "1256551956": "start",
+                  "checksum": "\u0080\u0098\u001DåŸè\u0000\u0089\u0004\u0088\u0084\tò\u008F¯B~"
+               },
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "46"
+               },
+               "uVersion": {
+                  "ID": "1002",
+                  "UUID": "6c1187c1-7100-4921-a743-3e5175ed6026"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "card id 1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         },
+         "uRIP": {
+            "buildNumber": "15",
+            "copyright": "Copyright (c) 2009-2012 Blue Mango Learning Systems",
+            "creator": "Blue Mango Learning Systems",
+            "date": "February 17, 2012",
+            "description": "Data Grid resources for Revolution 3.5 and above. Authored by Blue Mango Learning Systems. Licensed by Runtime Revolution.",
+            "name": "Data Grid Resources",
+            "version": "1.0.2"
+         },
+         "uVersion": {
+            "ID": "1173",
+            "UUID": "41958964-13f5-4f9c-91dc-67f3c62f485c"
+         }
+      },
+      "longID": "stack \"revDataGridLibrary\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "revdatagridlibrary.rev",
+         "id": "1176",
+         "liveResizing": false,
+         "name": "revDataGridLibrary",
+         "rect": "314,143,1304,826",
+         "stackFiles": "%file%: assets/revDataGridLibrary_stackFiles.bin"
+      },
+      "sharedGroupIDs": null
+   },
+   "tAddress": {
+      "childcontrols": "#data grid group"
+   }
+}

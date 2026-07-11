@@ -1,0 +1,84 @@
+<p><font size="12" color="#000000">This tutorial takes you through the task of making a Revolution program that controls and fetches information from your copy of iTunes. This may seem like a difficult task, but thanks to Revolution's support for executing so called &quot;active scripting&quot; languages, it's in fact very straight forward. The ideas used in this tutorial can also be used to interact with other Windows and Mac OS X applications.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Note that some of the Windows features discussed in this article were added in version 2.9 but the example stack should work in older versions of Revolution on Mac OS X.</font></p>
+<p></p>
+<p><font size="14" color="#990006"><b>How does it work?</b></font></p>
+<p><font size="12" color="#000000">Revolution programs can communicate with iTunes easily because iTunes makes most of its functionality available via a COM interface on Windows and via AppleScript on OS X.</font></p>
+<p></p>
+<p><font size="12" color="#000000">In this tutorial we use fragments of VBScript to communicate with iTunes on Windows and AppleScript to do so on the Mac. These scripts are executed directly by Revolution using the do as vbscript and do as applescript commands.</font></p>
+<p></p>
+<p><font size="14" color="#990006"><b>Start talking to iTunes</b></font></p>
+<p><font size="12" color="#000000">First off, we will try and make iTunes start playing from inside Revolution, this will show the general pattern for how we talk to iTunes, and from here, the rest of the functions we need should be easy.</font></p>
+<p></p>
+<p><font size="12" color="#000000">We need two fragments of &quot;active script&quot; code to achieve this, the simplest forms of these are shown below.</font></p>
+<p><font size="12" color="#000000">-- AppleScript code to start iTunes playing on OS X.</font></p>
+<p><font size="12" color="#000000">tell application &quot;iTunes&quot;</font></p>
+<p><font size="12" color="#000000">tell source &quot;Library&quot;</font></p>
+<p><font size="12" color="#000000">tell playlist &quot;Library&quot;</font></p>
+<p><font size="12" color="#000000">play track 1</font></p>
+<p><font size="12" color="#000000">end tell</font></p>
+<p><font size="12" color="#000000">end tell</font></p>
+<p><font size="12" color="#000000">end tell</font></p>
+<p></p>
+<p><font size="12" color="#000000">'VBScript code to start iTunes playing on Windows.</font></p>
+<p><font size="12" color="#000000">Dim thePlayLists, theTrack, theLibrary, thePlayList, i</font></p>
+<p><font size="12" color="#000000">Dim iTunesApp</font></p>
+<p><font size="12" color="#000000">Set iTunesApp = CreateObject(&quot;iTunes.Application&quot;)</font></p>
+<p></p>
+<p><font size="12" color="#000000">Set theLibrary = iTunesApp.LibrarySource</font></p>
+<p><font size="12" color="#000000">Set thePlayLists = theLibrary.Playlists</font></p>
+<p><font size="12" color="#000000">Set thePlayList = thePlayLists.ItemByName(&quot;Library&quot;)</font></p>
+<p><font size="12" color="#000000">Set theTrack = thePlayList.Tracks.Item(1)</font></p>
+<p><font size="12" color="#000000">theTrack.Play()</font></p>
+<p></p>
+<p><font size="12" color="#000000">These two code fragments can most conveniently be executed in Revolution by putting them into custom properties. To get this working, open Revolution and create a new stack. Set the cMacPlayScript of the stack to the Applescript sample above and the cWinPlayScript to the VBScript sample. Next edit the stack script and put the following simple command into it:</font></p>
+<p></p>
+<p><font face="Courier" color="#68008B">-- Tells iTunes to play the first track of the library on</font></p>
+<p><font face="Courier" color="#68008B">-- Windows and Mac</font></p>
+<p><font face="Courier" color="#000000">command iTunesPlay</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">local</font><font face="Courier" color="#000000"> tScript</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">if</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#E5001A">platform</font><font face="Courier" color="#000000"> is &quot;win32&quot; </font><font face="Courier" color="#990017">then</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cWinPlayScript </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#E5001A">me</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> tScript</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#2000FB">do</font><font face="Courier" color="#000000"> tScript as &quot;vbscript&quot;</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">else</font></p>
+<p><font face="Courier" color="#000000"> </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cMacPlayScript </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#E5001A">me</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> tScript</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#2000FB">do</font><font face="Courier" color="#000000"> tScript as &quot;applescript&quot;</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">if</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> iTunesPlay</font></p>
+<p></p>
+<p><font size="12" color="#000000">Finally, place a button called &quot;Play&quot; onto the stack, and set the script of the button to simply be:</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">on</font><font face="Courier" color="#000000"> mouseUp</font></p>
+<p><font face="Courier" color="#000000">   iTunesPlay</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> mouseUp</font></p>
+<p></p>
+<p><font size="12" color="#000000">When the button is clicked, iTunes should come to life by playing the first track of your music library. Of course there is no way to stop iTunes just yet, but the stop script is simpler than the one for play:</font></p>
+<p></p>
+<p><font size="12" color="#000000">-- AppleScript to stop iTunes playing on OS X</font></p>
+<p><font size="12" color="#000000">tell application &quot;iTunes&quot;</font></p>
+<p><font size="12" color="#000000">stop</font></p>
+<p><font size="12" color="#000000">end tell</font></p>
+<p></p>
+<p><font size="12" color="#000000">'VBScript to stop iTunes playing on Windows</font></p>
+<p><font size="12" color="#000000">Dim iTunesApp</font></p>
+<p><font size="12" color="#000000">Set iTunesApp = CreateObject(&quot;iTunes.Application&quot;)</font></p>
+<p><font size="12" color="#000000">iTunesApp.Stop</font></p>
+<p></p>
+<p><font size="12" color="#000000">The command iTunesStop is shown below and should be added to the stack script of our program.</font></p>
+<p></p>
+<p><font face="Courier" color="#000000">command iTunesStop</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#2000FB">local</font><font face="Courier" color="#000000"> tScript</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">if</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#E5001A">platform</font><font face="Courier" color="#000000"> is &quot;win32&quot; </font><font face="Courier" color="#990017">then</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cWinStopScript </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#E5001A">me</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> tScript</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#2000FB">do</font><font face="Courier" color="#000000"> tScript as &quot;vbscript&quot;</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">else</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#2000FB">put</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">the</font><font face="Courier" color="#000000"> cMacStopScript </font><font face="Courier" color="#990017">of</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#E5001A">me</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">into</font><font face="Courier" color="#000000"> tScript</font></p>
+<p><font face="Courier" color="#000000">      </font><font face="Courier" color="#2000FB">do</font><font face="Courier" color="#000000"> tScript as &quot;applescript&quot;</font></p>
+<p><font face="Courier" color="#000000">   </font><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> </font><font face="Courier" color="#990017">if</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> iTunesStop</font></p>
+<p></p>
+<p><font size="12" color="#000000">Finally, create a button called &quot;Stop&quot;, and set its script to:</font></p>
+<p></p>
+<p><font face="Courier" color="#990017">on</font><font face="Courier" color="#000000"> mouseUp</font></p>
+<p><font face="Courier" color="#000000">   iTunesStop</font></p>
+<p><font face="Courier" color="#990017">end</font><font face="Courier" color="#000000"> mouseUp</font></p>

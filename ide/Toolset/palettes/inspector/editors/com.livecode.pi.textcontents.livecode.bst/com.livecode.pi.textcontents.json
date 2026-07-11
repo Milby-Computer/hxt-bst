@@ -1,0 +1,188 @@
+{
+   "#mainstack": "com.livecode.pi.textcontents",
+   "com.livecode.pi.textcontents": {
+      "#name": "stack \"com.livecode.pi.textcontents\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1012": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1004": {
+                        "#name": "field \"htmlText\"",
+                        "customproperties": {
+                           "cCurrentObject": "stack \"Untitled 2\"",
+                           "cSavedObjects": "stack \"Untitled 2\""
+                        },
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "2",
+                              "Master,expectedRect": "20,283,220,420",
+                              "Master,movehDistance": false,
+                              "Master,movevDistance": false,
+                              "Master,scaleBottom": true,
+                              "Master,scaleBottomAbsolute": true,
+                              "Master,scalebottomDistance": "-20",
+                              "Master,scaleBottomObjectRef": "Card",
+                              "Master,scaleBottomObjectSide": "Bottom",
+                              "Master,scaleLeft": false,
+                              "Master,scaleLeftAbsolute": null,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleLeftObjectRef": null,
+                              "Master,scaleLeftObjectSide": null,
+                              "Master,scaleRight": true,
+                              "Master,scaleRightAbsolute": true,
+                              "Master,scalerightDistance": "-20",
+                              "Master,scaleRightObjectRef": "Card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaleTop": false,
+                              "Master,scaleTopAbsolute": null,
+                              "Master,scaletopDistance": null,
+                              "Master,scaletopObjectRef": null,
+                              "Master,scaleTopObjectSide": null
+                           },
+                           "cREVTable": {
+                              "currentview": null
+                           }
+                        },
+                        "properties": {
+                           "borderColor": "220,220,220",
+                           "dontWrap": true,
+                           "hScrollbar": true,
+                           "id": "1004",
+                           "layer": "2",
+                           "name": "htmlText",
+                           "rect": "84,75,289,370",
+                           "scrollbarWidth": "16",
+                           "style": "scrolling",
+                           "tabStops": "80",
+                           "textFont": "Helvetica Neue",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1011": {
+                        "#name": "group \"controls\"",
+                        "childcontrols": {
+                           "1008": {
+                              "#name": "button \"Wrap text\"",
+                              "customproperties": {
+                                 "Tabs": false
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "icon": "202670",
+                                 "id": "1008",
+                                 "layer": "4",
+                                 "margins": "4,4,5,5",
+                                 "name": "Wrap text",
+                                 "rect": "228,50,249,69",
+                                 "sharedHilite": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "rectangle"
+                              }
+                           },
+                           "1009": {
+                              "#name": "button \"Show grid\"",
+                              "customproperties": {
+                                 "Tabs": false
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "icon": "202672",
+                                 "id": "1009",
+                                 "layer": "5",
+                                 "margins": "4,4,4,5",
+                                 "name": "Show grid",
+                                 "rect": "248,50,269,69",
+                                 "sharedHilite": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "rectangle"
+                              }
+                           },
+                           "1010": {
+                              "#name": "button \"Import\"",
+                              "customproperties": {
+                                 "Tabs": false
+                              },
+                              "properties": {
+                                 "hiliteIcon": "202709",
+                                 "icon": "202706",
+                                 "id": "1010",
+                                 "layer": "6",
+                                 "margins": "4,8,5,7",
+                                 "name": "Import",
+                                 "rect": "268,50,289,69",
+                                 "sharedHilite": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "rectangle"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1011",
+                           "layer": "3",
+                           "margins": "0",
+                           "name": "controls",
+                           "rect": "228,50,289,69"
+                        }
+                     },
+                     "1014": {
+                        "#name": "field \"rowlabel\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "htmlText": "<p>Label:</p>",
+                           "id": "1014",
+                           "layer": "7",
+                           "lockText": true,
+                           "name": "rowlabel",
+                           "opaque": false,
+                           "rect": "89,50,189,71",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1012",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "80,46,293,374"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"com.livecode.pi.textcontents\"",
+      "properties": {
+         "fileName": "com.livecode.pi.textcontents.livecode",
+         "id": "1014",
+         "name": "com.livecode.pi.textcontents",
+         "rect": "257,109,657,509"
+      },
+      "sharedGroupIDs": null
+   }
+}

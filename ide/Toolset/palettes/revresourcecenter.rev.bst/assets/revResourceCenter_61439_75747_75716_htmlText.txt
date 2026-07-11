@@ -1,0 +1,1 @@
+<p>This tutorial will give you an overview of the objects and components you will use when building applications.  It describes how to place and manipulate objects in your application as well as explaining the inner workings of Revolution.  This knowledge will help you build efficient applications quickly.</p>

@@ -1,0 +1,187 @@
+{
+   "#mainstack": "Mobile Browser Example",
+   "Mobile Browser Example": {
+      "#name": "stack \"Mobile Browser Example\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"Advance\"",
+                  "properties": {
+                     "id": "1004",
+                     "label": ">",
+                     "layer": "1",
+                     "name": "Advance",
+                     "rect": "26,4,49,27",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1005": {
+                  "#name": "button \"Retreat\"",
+                  "properties": {
+                     "id": "1005",
+                     "label": "<",
+                     "layer": "2",
+                     "name": "Retreat",
+                     "rect": "4,4,27,27",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "button \"Stop\"",
+                  "properties": {
+                     "id": "1006",
+                     "label": "X",
+                     "layer": "3",
+                     "name": "Stop",
+                     "rect": "53,4,76,27",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1007": {
+                  "#name": "button \"Reload\"",
+                  "properties": {
+                     "id": "1007",
+                     "label": "@",
+                     "layer": "4",
+                     "name": "Reload",
+                     "rect": "80,4,103,27",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1009": {
+                  "#name": "field \"URL\"",
+                  "properties": {
+                     "autoTab": true,
+                     "borderWidth": "1",
+                     "htmlText": "<p>http://www.foobar.org</p>",
+                     "id": "1009",
+                     "layer": "5",
+                     "name": "URL",
+                     "rect": "107,4,316,27",
+                     "textFont": "Lucida Grande",
+                     "textHeight": "16",
+                     "textSize": "12",
+                     "textStyle": "plain",
+                     "threeD": false
+                  }
+               },
+               "1012": {
+                  "#name": "group \"Browser\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1012",
+                     "layer": "6",
+                     "lockLoc": true,
+                     "name": "Browser",
+                     "rect": "4,30,316,420",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "1014": {
+                  "#name": "field \"Status\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "<p>Label:</p>",
+                     "id": "1014",
+                     "layer": "7",
+                     "lockText": true,
+                     "margins": "4",
+                     "name": "Status",
+                     "opaque": false,
+                     "rect": "4,424,316,456",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Lucida Grande",
+                     "textHeight": "12",
+                     "textSize": "9",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "7"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1014"
+         },
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "cursors": false,
+            "errorDialog": false,
+            "inclusions": "search",
+            "ios": true,
+            "ios,bundle id": "com.runrev.example.browser",
+            "ios,device family": "1,2",
+            "ios,display name": "My Browser",
+            "Linux": false,
+            "MacOSX": false,
+            "MacOSX PowerPC-32": false,
+            "MacOSX x86-32": false,
+            "name": "MyBrowser",
+            "OSX,copyright": "2010  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,identifier": "com..mobilewebviewsample",
+            "OSX,info": "MobileWebViewSample Version 1.0.0.0",
+            "OSX,longVersion": "MobileWebViewSample 1.0.0.0",
+            "OSX,name": "MobileWebViewSample",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "scriptLibraries": "Internet\nGeometry\nPrinting",
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Web": false,
+            "Windows": false,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "/Users/mark/Workspace/revolution/ide/Runtime/Windows/x86-32/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "MobileWebViewSample 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "/Users/mark/Workspace/revolution/ide/Runtime/Windows/x86-32/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2010  All rights reserved worldwide",
+            "Windows,ProductName": "MobileWebViewSample",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0"
+         }
+      },
+      "longID": "stack \"Mobile Browser Example\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "Browser Example.livecode",
+         "id": "1014",
+         "liveResizing": false,
+         "name": "Mobile Browser Example",
+         "rect": "186,142,506,602",
+         "resizable": false
+      },
+      "sharedGroupIDs": null
+   }
+}

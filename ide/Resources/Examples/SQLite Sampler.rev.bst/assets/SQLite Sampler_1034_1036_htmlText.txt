@@ -1,0 +1,19 @@
+<p><font face="Verdana" size="18">Application Registration Database</font></p>
+<p></p>
+<p>This stack will walk you through creating a very simple, two-table SQLite database: <b><font face="Tahoma" size="11">AppReg</font></b>, then accessing it to create and delete records.</p>
+<p></p>
+<p>Our objective is to create a database to store all registered users of the software products Altuit sells. This way, we can quickly access information about users who have purchased our products and send them a copy of their registration code (in case they forgot it). To do this we need to understand exactly what data we wish to store.</p>
+<p></p>
+<p>We will begin by creating 2 tables: The Users table <b><font face="Tahoma" size="11">users</font></b>, The Applications table <b><font face="Tahoma" size="11">apps</font></b></p>
+<p></p>
+<p>In the <b><font face="Tahoma" size="11">users</font></b> table we wil have 4 columns (or fields): </p>
+<p>1. A unique ID (primary Key) for the User: <b><font face="Tahoma" size="11">userID</font></b></p>
+<p>2. The user name: <b><font face="Tahoma" size="11">name</font></b></p>
+<p>3. Their email: <b><font face="Tahoma" size="11">email</font></b> </p>
+<p>4. Their preference for being on our mailing list: <b><font face="Tahoma" size="11">emailList</font></b></p>
+<p></p>
+<p>In the <b><font face="Tahoma" size="11">apps</font></b> table we will have 4 columns (or fields):</p>
+<p>1. A unique ID (primary key) for the application: <b><font face="Tahoma" size="11">appID</font></b></p>
+<p>2. Application name: <b><font face="Tahoma" size="11">appName</font></b></p>
+<p>3. Application Registration Serial Number: <b><font face="Tahoma" size="11">appRegCode</font></b></p>
+<p>4. The unique ID (foreign key) of the User (userID from the Users table) who the app is registered to: <b><font face="Tahoma" size="11">appUserID</font></b></p>

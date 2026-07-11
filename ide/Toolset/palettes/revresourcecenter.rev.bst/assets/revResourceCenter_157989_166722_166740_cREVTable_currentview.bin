@@ -1,0 +1,7 @@
+<p><font size="12" color="#000000">Now we want to make the buttons change to their 'armed icon' image whenever we hover the mouse pointer over the button. Select one of the buttons and then type the following command into the message box:</font></p>
+<p></p>
+<p><font size="12" color="#000000">set the autoarm of the selobj to true</font></p>
+<p></p>
+<p><font size="12" color="#000000">This sets the 'autoarm' property of the selected object (in our case our button) to true. Now when you hover the mouse pointer over that button it will change to the 'Armed Icon' image.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Note: The autoarm property does not work when you place the buttons in a group. If you wish to do so you will need to manually implement this feature by setting the icons in mouseEnter and mouseLeave handlers.</font></p>

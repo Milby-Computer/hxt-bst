@@ -1,0 +1,595 @@
+{
+   "#mainstack": "revIDEExtensionManager",
+   "revIDEExtensionManager": {
+      "#name": "stack \"revIDEExtensionManager\"",
+      "#substacks": null,
+      "backgroundIDs": "25432",
+      "cardIDs": "1002\n5915\n1011",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"list\"",
+            "childcontrols": {
+               "1003": {
+                  "#name": "group \"extensionList\"",
+                  "childcontrols": "#data view group",
+                  "customproperties": {
+                     "viewProp": "ef625c4f-44e4-41b9-8a89-b665b0cd3d43"
+                  },
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "624012",
+                        "UUID": "eac8ebb6-00d4-477b-8982-93e9023ee59b"
+                     },
+                     "viewProp": {
+                        "alternate row color": "238,238,238",
+                        "animate selections": false,
+                        "autohide scrollbars": true,
+                        "cache": "none",
+                        "content height": "656",
+                        "dim on focusout": false,
+                        "dimmed hilite color": "80,94,100",
+                        "drop indicator template": null,
+                        "first working row": "1",
+                        "fixed row height": true,
+                        "hilite color": "226,238,185",
+                        "last working row": "16",
+                        "multiple lines": true,
+                        "resize controls": false,
+                        "row color": "255,255,255",
+                        "row height": "41",
+                        "row style templates": {
+                           "extension": "group id 1013 of card id 1011 of stack \"revIDEExtensionManager\""
+                        },
+                        "scroll selections into view": true,
+                        "scrollbar corner offset": "0",
+                        "vscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1003 of stack \"revDataViewControl\"",
+                     "borderWidth": "0",
+                     "id": "1003",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "extensionList",
+                     "opaque": true,
+                     "rect": "0,30,630,743",
+                     "selectGroupedControls": false,
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "25432": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "25"
+               }
+            },
+            "properties": {
+               "behavior": "stack \"revIDEExtensionManagerListBehavior\"",
+               "id": "1002",
+               "name": "list"
+            }
+         },
+         "1011": {
+            "#name": "card \"templates\"",
+            "childcontrols": {
+               "1013": {
+                  "#name": "group \"extensionRow\"",
+                  "childcontrols": {
+                     "1012": {
+                        "#name": "field \"description\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "htmlText": "<p>ag</p>\n<p>fj</p>",
+                           "id": "1012",
+                           "layer": "3",
+                           "lockText": true,
+                           "name": "description",
+                           "opaque": false,
+                           "rect": "77,213,177,230",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "transparent",
+                           "textHeight": "13",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1037": {
+                        "#name": "image \"icon\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "borderWidth": "1",
+                           "id": "1037",
+                           "layer": "4",
+                           "name": "icon",
+                           "rect": "56,216,90,246",
+                           "threeD": false
+                        }
+                     },
+                     "1046": {
+                        "#name": "graphic \"background\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "192,192,192",
+                           "filled": true,
+                           "id": "1046",
+                           "layer": "2",
+                           "lineSize": "0",
+                           "name": "background",
+                           "opaque": true,
+                           "rect": "50,215,292,232"
+                        }
+                     },
+                     "23453": {
+                        "#name": "image \"Error\"",
+                        "properties": {
+                           "borderWidth": "1",
+                           "fileName": "warning.png",
+                           "filepath": "../../resources/supporting_files/images",
+                           "id": "23453",
+                           "layer": "12",
+                           "name": "Error",
+                           "rect": "436,215,449,228",
+                           "threeD": false
+                        }
+                     },
+                     "23635": {
+                        "#name": "field \"Error Message\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "foreColor": "255,46,0",
+                           "htmlText": "<p>Label:</p>",
+                           "id": "23635",
+                           "layer": "13",
+                           "lockText": true,
+                           "name": "Error Message",
+                           "opaque": false,
+                           "rect": "320,213,420,234",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textHeight": "16",
+                           "traversalOn": false
+                        }
+                     },
+                     "3737": {
+                        "#name": "button \"Uninstall\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "id": "3737",
+                           "layer": "5",
+                           "margins": "8",
+                           "name": "Uninstall",
+                           "rect": "375,212,457,235",
+                           "showFocusBorder": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "3738": {
+                        "#name": "button \"Update\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "default": true,
+                           "id": "3738",
+                           "layer": "6",
+                           "margins": "8",
+                           "name": "Update",
+                           "rect": "377,211,459,234",
+                           "showFocusBorder": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "37612": {
+                        "#name": "widget \"ActionIcon\"",
+                        "$kind": "com.livecode.widget.svgpath",
+                        "$state": {
+                           "angle": "0",
+                           "fillRule": "non-zero",
+                           "flip vertically": false,
+                           "hilited": false,
+                           "iconPresetName": "angle down",
+                           "maintain aspect ratio": true,
+                           "svg path": "M1075-218Q1075-205 1065-195L599 271Q589 281 576 281 563 281 553 271L87-195Q77-205 77-218 77-231 87-241L137-291Q147-301 160-301 173-301 183-291L576 102 969-291Q979-301 992-301 1005-301 1015-291L1065-241Q1075-231 1075-218Z"
+                        },
+                        "properties": {
+                           "id": "37612",
+                           "name": "ActionIcon",
+                           "rect": "434,222,449,237"
+                        }
+                     },
+                     "38369": {
+                        "#name": "button \"extensionActions\"",
+                        "properties": {
+                           "id": "38369",
+                           "layer": "15",
+                           "menuMode": "popup",
+                           "name": "extensionActions",
+                           "rect": "288,214,416,246",
+                           "style": "menu",
+                           "visible": false
+                        }
+                     },
+                     "39390": {
+                        "#name": "widget \"svgicon\"",
+                        "$kind": "com.livecode.widget.svgpath",
+                        "$state": {
+                           "angle": "0",
+                           "fillRule": "non-zero",
+                           "flip vertically": false,
+                           "hilited": false,
+                           "iconPresetName": "Star",
+                           "maintain aspect ratio": true,
+                           "svg path": "%file%: assets/revIDEExtensionManager_1011_1013_39390_svg path.txt"
+                        },
+                        "properties": {
+                           "id": "39390",
+                           "name": "svgicon",
+                           "rect": "210,216,250,236"
+                        }
+                     },
+                     "4389": {
+                        "#name": "button \"Cancel\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "id": "4389",
+                           "layer": "7",
+                           "margins": "8",
+                           "name": "Cancel",
+                           "rect": "371,210,453,233",
+                           "showFocusBorder": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "4664": {
+                        "#name": "group \"installProgress\"",
+                        "childcontrols": {
+                           "4628": {
+                              "#name": "scrollbar \"installProgressBar\"",
+                              "customproperties": {
+                                 "profile": null
+                              },
+                              "properties": {
+                                 "endValue": "100",
+                                 "id": "4628",
+                                 "layer": "9",
+                                 "lineInc": "11.992065",
+                                 "name": "installProgressBar",
+                                 "pageInc": "91.876097",
+                                 "rect": "216,220,362,229",
+                                 "startValue": "0",
+                                 "style": "progress",
+                                 "thumbSize": "100"
+                              }
+                           },
+                           "4629": {
+                              "#name": "field \"installProgressStatus\"",
+                              "customproperties": {
+                                 "profile": null
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "autoTab": true,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Label:</p>",
+                                 "id": "4629",
+                                 "layer": "10",
+                                 "lockText": true,
+                                 "margins": "8,8,4,8",
+                                 "name": "installProgressStatus",
+                                 "opaque": false,
+                                 "rect": "217,225,362,240",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "textHeight": "11",
+                                 "textSize": "10",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "4664",
+                           "layer": "8",
+                           "margins": "0",
+                           "name": "installProgress",
+                           "rect": "216,220,362,240"
+                        }
+                     },
+                     "5420": {
+                        "#name": "graphic \"border\"",
+                        "properties": {
+                           "antialiased": false,
+                           "foreColor": "217,217,217",
+                           "id": "5420",
+                           "layer": "11",
+                           "name": "border",
+                           "points": "57,240\n423,240",
+                           "rect": "56,239,424,241",
+                           "style": "line"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "stack \"revIDEExtensionManagerRowBehavior\"",
+                     "borderWidth": "0",
+                     "id": "1013",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "extensionRow",
+                     "rect": "50,210,459,246",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "25432": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "18"
+               }
+            },
+            "properties": {
+               "id": "1011",
+               "layer": "3",
+               "name": "templates"
+            }
+         },
+         "25432": {
+            "#name": "group \"background\"",
+            "childcontrols": {
+               "25881": {
+                  "#name": "widget \"header_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "cog",
+                           "label": "Preferences",
+                           "menu": [
+                              {
+                                 "label": "Header // Footer Size",
+                                 "menu": [
+                                    {
+                                       "checked": false,
+                                       "label": "small",
+                                       "name": "small"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "medium",
+                                       "name": "medium"
+                                    },
+                                    {
+                                       "checked": true,
+                                       "label": "large",
+                                       "name": "large"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "largest",
+                                       "name": "largest"
+                                    }
+                                 ],
+                                 "name": "revPaletteFrameSize"
+                              },
+                              {
+                                 "label": "Tab Display Style",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "Icons",
+                                       "name": "icons"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Labels",
+                                       "name": "names"
+                                    }
+                                 ],
+                                 "name": "revIDEExtensionManager_displayStyle"
+                              }
+                           ],
+                           "name": "preferences"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "plus",
+                           "label": "Install extension",
+                           "menu": null,
+                           "name": "install"
+                        }
+                     ],
+                     "is header": true,
+                     "nav data": [
+                        {
+                           "icon": null,
+                           "label": "Widgets",
+                           "name": "widget"
+                        },
+                        {
+                           "icon": null,
+                           "label": "Libraries",
+                           "name": "library"
+                        },
+                        {
+                           "icon": null,
+                           "label": "Store",
+                           "name": "store"
+                        }
+                     ]
+                  },
+                  "properties": {
+                     "id": "25881",
+                     "name": "header_background",
+                     "rect": "0,0,630,30"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "25432",
+               "layer": "313",
+               "name": "background",
+               "rect": "-4,-4,634,34",
+               "textSize": "13"
+            }
+         },
+         "5915": {
+            "#name": "card \"search\"",
+            "childcontrols": {
+               "12499": {
+                  "#name": "graphic \"browser_background\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "backColor": "255,255,255",
+                     "filled": true,
+                     "id": "12499",
+                     "layer": "1",
+                     "lineSize": "0",
+                     "name": "browser_background",
+                     "opaque": true,
+                     "rect": "0,21,636,674"
+                  }
+               },
+               "12500": {
+                  "#name": "field \"status\"",
+                  "customproperties": {
+                     "lect": "393,399",
+                     "profile": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "autoTab": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Loading LiveCode extensions store</p>",
+                     "id": "12500",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "status",
+                     "opaque": false,
+                     "rect": "0,327,636,348",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textHeight": "16",
+                     "traversalOn": false
+                  }
+               },
+               "12720": {
+                  "#name": "image \"loading\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "borderWidth": "1",
+                     "fileName": "loading.gif",
+                     "filepath": "../../resources/supporting_files/images",
+                     "id": "12720",
+                     "layer": "3",
+                     "name": "loading",
+                     "rect": "310,313,326,324",
+                     "threeD": false
+                  }
+               },
+               "20471": {
+                  "#name": "image \"loading_header\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "borderWidth": "1",
+                     "fileName": "loading_header.gif",
+                     "filepath": "./../resources/supporting_files/images",
+                     "id": "20471",
+                     "layer": "4",
+                     "name": "loading_header",
+                     "rect": "714,8,730,19",
+                     "threeD": false,
+                     "visible": false
+                  }
+               },
+               "25432": "#shared group",
+               "36948": {
+                  "#name": "widget \"Browser\"",
+                  "$kind": "com.livecode.widget.browser",
+                  "$state": {
+                     "horizontalScrollbarEnabled": false,
+                     "javaScriptHandlers": "installExtension",
+                     "url": "http://www.livecode.com/products/extensions/",
+                     "userAgent": "LiveCode",
+                     "verticalScrollbarEnabled": false
+                  },
+                  "properties": {
+                     "id": "36948",
+                     "name": "Browser",
+                     "rect": "0,21,636,674"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "7"
+               }
+            },
+            "properties": {
+               "behavior": "stack \"revIDEExtensionManagerStoreBehavior\"",
+               "id": "5915",
+               "layer": "2",
+               "name": "search"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "39710"
+         }
+      },
+      "longID": "stack \"revIDEExtensionManager\"",
+      "properties": {
+         "behavior": "stack \"revIDEExtensionManagerBehavior\"",
+         "decorations": "title,menu,minimize,close",
+         "fileName": "revideextensionmanager.livecode",
+         "id": "39710",
+         "minHeight": "350",
+         "minWidth": "220",
+         "name": "revIDEExtensionManager",
+         "rect": "254,145,884,888",
+         "textSize": "12",
+         "title": "Extension Manager"
+      },
+      "sharedGroupIDs": "25432"
+   }
+}

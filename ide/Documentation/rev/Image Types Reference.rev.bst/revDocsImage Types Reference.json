@@ -1,0 +1,2018 @@
+{
+   "#mainstack": "revDocsImage Types Reference",
+   "revDocsImage Types Reference": {
+      "#name": "stack \"revDocsImage Types Reference\"",
+      "#substacks": null,
+      "backgroundIDs": "1069\n1370",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Tools\"",
+            "childcontrols": {
+               "1069": "#shared group",
+               "1370": "#shared group"
+            },
+            "customproperties": {
+               "revDocsCategory": null
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Tools"
+            }
+         },
+         "1069": {
+            "#name": "group \"Main\"",
+            "childcontrols": {
+               "1797": {
+                  "#name": "group \"Browse\"",
+                  "childcontrols": {
+                     "1798": {
+                        "#name": "field \"Type\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>GIF</p>"
+                           },
+                           "id": "1798",
+                           "layer": "3",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Type",
+                           "rect": "-1,129,52,153",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1799": {
+                        "#name": "field \"Extension\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">*.gif</font></p>\n<p><font face=\"verdana\" size=\"11\">'GIFf'</font></p>"
+                           },
+                           "id": "1799",
+                           "layer": "4",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Extension",
+                           "opaque": false,
+                           "rect": "52,129,117,167",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1801": {
+                        "#name": "field \"Mask\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">one index color</font></p>"
+                           },
+                           "id": "1801",
+                           "layer": "5",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Mask",
+                           "rect": "204,129,301,167",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1802": {
+                        "#name": "field \"Export\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">requires license</font></p>"
+                           },
+                           "id": "1802",
+                           "layer": "6",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Export",
+                           "opaque": false,
+                           "rect": "135,129,197,167",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1916": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>GIF87a and GIF89a; supports animation; supports interlaced GIFs; maximum 256 colors</p>"
+                           },
+                           "id": "1916",
+                           "layer": "7",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "rect": "296,129,465,195",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1797",
+                     "layer": "2",
+                     "margins": "0",
+                     "name": "Browse",
+                     "rect": "-1,129,465,195"
+                  }
+               },
+               "1803": {
+                  "#name": "group \"Brush\"",
+                  "childcontrols": {
+                     "1806": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1806",
+                           "layer": "9",
+                           "name": "Divider",
+                           "points": "3,196\n461,196",
+                           "rect": "2,195,462,197",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     },
+                     "1917": {
+                        "#name": "field \"Type\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>JPEG</p>"
+                           },
+                           "id": "1917",
+                           "layer": "10",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Type",
+                           "rect": "-1,199,52,223",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1918": {
+                        "#name": "field \"Extension\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">*.jpg</font></p>\n<p><font face=\"verdana\" size=\"11\">*.jpeg</font></p>\n<p><font face=\"verdana\" size=\"11\">'JPEG'</font></p>"
+                           },
+                           "id": "1918",
+                           "layer": "11",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Extension",
+                           "opaque": false,
+                           "rect": "52,199,117,251",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1919": {
+                        "#name": "field \"Mask\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1919",
+                           "layer": "12",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Mask",
+                           "rect": "204,199,301,223",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1920": {
+                        "#name": "field \"Export\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">yes</font></p>"
+                           },
+                           "id": "1920",
+                           "layer": "13",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Export",
+                           "opaque": false,
+                           "rect": "135,199,197,223",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1921": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Supports progressive JPEGs; lossy compression</p>"
+                           },
+                           "id": "1921",
+                           "layer": "14",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "rect": "296,199,465,237",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1803",
+                     "layer": "8",
+                     "margins": "0",
+                     "name": "Brush",
+                     "rect": "-1,195,465,251"
+                  }
+               },
+               "1901": {
+                  "#name": "group \"Notes\"",
+                  "childcontrols": {
+                     "1903": {
+                        "#name": "field \"Type\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p></p>"
+                           },
+                           "id": "1903",
+                           "layer": "80",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Type",
+                           "rect": "379,689,460,713",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1904": {
+                        "#name": "field \"Extension\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p></p>"
+                           },
+                           "id": "1904",
+                           "layer": "81",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Extension",
+                           "rect": "26,689,102,713",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1905": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1905",
+                           "layer": "82",
+                           "name": "Divider",
+                           "points": "3,686\n461,686",
+                           "rect": "2,685,462,687",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     },
+                     "1906": {
+                        "#name": "field \"Export\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p></p>"
+                           },
+                           "id": "1906",
+                           "layer": "83",
+                           "lockText": true,
+                           "name": "Export",
+                           "rect": "323,689,406,717",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     },
+                     "1907": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsImage Types Reference_1069_1901_1907_htmlText_1002.txt"
+                           },
+                           "id": "1907",
+                           "layer": "84",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "opaque": false,
+                           "rect": "-2,689,463,951",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1985": {
+                        "#name": "field \"Mask\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p></p>"
+                           },
+                           "id": "1985",
+                           "layer": "79",
+                           "lockText": true,
+                           "name": "Mask",
+                           "rect": "209,689,292,717",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1901",
+                     "layer": "78",
+                     "margins": "0",
+                     "name": "Notes",
+                     "rect": "-2,685,463,951"
+                  }
+               },
+               "1922": {
+                  "#name": "group \"PNG\"",
+                  "childcontrols": {
+                     "1923": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1923",
+                           "layer": "16",
+                           "name": "Divider",
+                           "points": "3,252\n461,252",
+                           "rect": "2,251,462,253",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     },
+                     "1924": {
+                        "#name": "field \"Type\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>PNG</p>"
+                           },
+                           "id": "1924",
+                           "layer": "17",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Type",
+                           "rect": "-1,255,52,279",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1925": {
+                        "#name": "field \"Extension\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">*.png</font></p>\n<p><font face=\"verdana\" size=\"11\">'PNGf'</font></p>"
+                           },
+                           "id": "1925",
+                           "layer": "18",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Extension",
+                           "opaque": false,
+                           "rect": "52,255,117,293",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1926": {
+                        "#name": "field \"Mask\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">index colors or <a>alpha channel</a></font></p>"
+                           },
+                           "id": "1926",
+                           "layer": "19",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Mask",
+                           "rect": "204,255,301,307",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1927": {
+                        "#name": "field \"Export\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">yes</font></p>"
+                           },
+                           "id": "1927",
+                           "layer": "20",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Export",
+                           "opaque": false,
+                           "rect": "135,255,197,279",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1928": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Supports <a><font face=\"verdana\" size=\"11\">gamma</font></a>; supports <a><font face=\"verdana\" size=\"11\">alpha channel</font></a>; supports interlacing</p>"
+                           },
+                           "id": "1928",
+                           "layer": "21",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "rect": "296,255,465,307",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1922",
+                     "layer": "15",
+                     "margins": "0",
+                     "name": "PNG",
+                     "rect": "-1,251,465,307"
+                  }
+               },
+               "1929": {
+                  "#name": "group \"Brush\"",
+                  "childcontrols": {
+                     "1930": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1930",
+                           "layer": "23",
+                           "name": "Divider",
+                           "points": "3,308\n461,308",
+                           "rect": "2,307,462,309",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     },
+                     "1931": {
+                        "#name": "field \"Type\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>PICT</p>"
+                           },
+                           "id": "1931",
+                           "layer": "24",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Type",
+                           "rect": "-1,311,52,335",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1932": {
+                        "#name": "field \"Extension\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsImage Types Reference_1069_1929_1932_htmlText_1002.txt"
+                           },
+                           "id": "1932",
+                           "layer": "25",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Extension",
+                           "opaque": false,
+                           "rect": "52,311,117,391",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1933": {
+                        "#name": "field \"Mask\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1933",
+                           "layer": "26",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Mask",
+                           "rect": "204,311,301,335",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1934": {
+                        "#name": "field \"Export\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1934",
+                           "layer": "27",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Export",
+                           "opaque": false,
+                           "rect": "135,311,197,335",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1935": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsImage Types Reference_1069_1929_1935_htmlText_1002.txt"
+                           },
+                           "id": "1935",
+                           "layer": "28",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "rect": "296,311,465,363",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1929",
+                     "layer": "22",
+                     "margins": "0",
+                     "name": "Brush",
+                     "rect": "-1,307,465,391"
+                  }
+               },
+               "1936": {
+                  "#name": "group \"Brush\"",
+                  "childcontrols": {
+                     "1937": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1937",
+                           "layer": "30",
+                           "name": "Divider",
+                           "points": "3,392\n461,392",
+                           "rect": "2,391,462,393",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     },
+                     "1938": {
+                        "#name": "field \"Type\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>BMP</p>"
+                           },
+                           "id": "1938",
+                           "layer": "31",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Type",
+                           "rect": "-1,395,52,419",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1939": {
+                        "#name": "field \"Extension\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">*.bmp</font></p>\n<p><font face=\"verdana\" size=\"11\">'BMP '</font></p>"
+                           },
+                           "id": "1939",
+                           "layer": "32",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Extension",
+                           "opaque": false,
+                           "rect": "52,395,117,433",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1940": {
+                        "#name": "field \"Mask\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1940",
+                           "layer": "33",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Mask",
+                           "rect": "204,395,301,419",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1941": {
+                        "#name": "field \"Export\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1941",
+                           "layer": "34",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Export",
+                           "opaque": false,
+                           "rect": "135,395,197,419",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1942": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>uncompressed</p>"
+                           },
+                           "id": "1942",
+                           "layer": "35",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "rect": "296,395,465,419",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1936",
+                     "layer": "29",
+                     "margins": "0",
+                     "name": "Brush",
+                     "rect": "-1,391,465,433"
+                  }
+               },
+               "1943": {
+                  "#name": "group \"Brush\"",
+                  "childcontrols": {
+                     "1944": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1944",
+                           "layer": "37",
+                           "name": "Divider",
+                           "points": "3,434\n461,434",
+                           "rect": "2,433,462,435",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     },
+                     "1945": {
+                        "#name": "field \"Type\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>PBM</p>"
+                           },
+                           "id": "1945",
+                           "layer": "38",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Type",
+                           "rect": "-1,437,52,461",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1946": {
+                        "#name": "field \"Extension\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">*.pbm</font></p>\n<p><font face=\"verdana\" size=\"11\">'PPGM'</font></p>"
+                           },
+                           "id": "1946",
+                           "layer": "39",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Extension",
+                           "opaque": false,
+                           "rect": "52,437,117,475",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1947": {
+                        "#name": "field \"Mask\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1947",
+                           "layer": "40",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Mask",
+                           "rect": "204,437,301,461",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1948": {
+                        "#name": "field \"Export\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">yes</font></p>"
+                           },
+                           "id": "1948",
+                           "layer": "41",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Export",
+                           "opaque": false,
+                           "rect": "135,437,197,461",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1949": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>1-bit (black and white)</p>"
+                           },
+                           "id": "1949",
+                           "layer": "42",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "rect": "296,437,465,461",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1943",
+                     "layer": "36",
+                     "margins": "0",
+                     "name": "Brush",
+                     "rect": "-1,433,465,475"
+                  }
+               },
+               "1950": {
+                  "#name": "group \"Brush\"",
+                  "childcontrols": {
+                     "1951": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1951",
+                           "layer": "44",
+                           "name": "Divider",
+                           "points": "3,476\n461,476",
+                           "rect": "2,475,462,477",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     },
+                     "1952": {
+                        "#name": "field \"Type\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>PGM</p>"
+                           },
+                           "id": "1952",
+                           "layer": "45",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Type",
+                           "rect": "-1,479,52,503",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1953": {
+                        "#name": "field \"Extension\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">*.pgm</font></p>\n<p><font face=\"verdana\" size=\"11\">'PPGM'</font></p>"
+                           },
+                           "id": "1953",
+                           "layer": "46",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Extension",
+                           "opaque": false,
+                           "rect": "52,479,117,517",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1954": {
+                        "#name": "field \"Mask\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1954",
+                           "layer": "47",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Mask",
+                           "rect": "204,479,301,503",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1955": {
+                        "#name": "field \"Export\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1955",
+                           "layer": "48",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Export",
+                           "opaque": false,
+                           "rect": "135,479,197,503",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1956": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>grayscale</p>"
+                           },
+                           "id": "1956",
+                           "layer": "49",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "rect": "296,479,465,503",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1950",
+                     "layer": "43",
+                     "margins": "0",
+                     "name": "Brush",
+                     "rect": "-1,475,465,517"
+                  }
+               },
+               "1957": {
+                  "#name": "group \"Brush\"",
+                  "childcontrols": {
+                     "1958": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1958",
+                           "layer": "51",
+                           "name": "Divider",
+                           "points": "3,518\n461,518",
+                           "rect": "2,517,462,519",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     },
+                     "1959": {
+                        "#name": "field \"Type\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>PPM</p>"
+                           },
+                           "id": "1959",
+                           "layer": "52",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Type",
+                           "rect": "-1,521,52,545",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1960": {
+                        "#name": "field \"Extension\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">*.ppm</font></p>\n<p><font face=\"verdana\" size=\"11\">'PPGM'</font></p>"
+                           },
+                           "id": "1960",
+                           "layer": "53",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Extension",
+                           "opaque": false,
+                           "rect": "52,521,117,559",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1961": {
+                        "#name": "field \"Mask\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1961",
+                           "layer": "54",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Mask",
+                           "rect": "204,521,301,545",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1962": {
+                        "#name": "field \"Export\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1962",
+                           "layer": "55",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Export",
+                           "opaque": false,
+                           "rect": "135,521,197,545",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1963": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p></p>"
+                           },
+                           "id": "1963",
+                           "layer": "56",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "rect": "296,521,465,545",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1957",
+                     "layer": "50",
+                     "margins": "0",
+                     "name": "Brush",
+                     "rect": "-1,517,465,559"
+                  }
+               },
+               "1964": {
+                  "#name": "group \"Brush\"",
+                  "childcontrols": {
+                     "1965": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1965",
+                           "layer": "58",
+                           "name": "Divider",
+                           "points": "3,560\n461,560",
+                           "rect": "2,559,462,561",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     },
+                     "1966": {
+                        "#name": "field \"Type\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>XBM</p>"
+                           },
+                           "id": "1966",
+                           "layer": "59",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Type",
+                           "rect": "-1,563,52,587",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1967": {
+                        "#name": "field \"Extension\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">*.xbm</font></p>\n<p><font face=\"verdana\" size=\"11\">'XBM '</font></p>"
+                           },
+                           "id": "1967",
+                           "layer": "60",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Extension",
+                           "opaque": false,
+                           "rect": "52,563,117,601",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1968": {
+                        "#name": "field \"Mask\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1968",
+                           "layer": "61",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Mask",
+                           "rect": "204,563,301,587",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1969": {
+                        "#name": "field \"Export\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1969",
+                           "layer": "62",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Export",
+                           "opaque": false,
+                           "rect": "135,563,197,587",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1970": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>1-bit (black and white)</p>"
+                           },
+                           "id": "1970",
+                           "layer": "63",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "rect": "296,563,465,587",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1964",
+                     "layer": "57",
+                     "margins": "0",
+                     "name": "Brush",
+                     "rect": "-1,559,465,601"
+                  }
+               },
+               "1971": {
+                  "#name": "group \"Brush\"",
+                  "childcontrols": {
+                     "1972": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1972",
+                           "layer": "65",
+                           "name": "Divider",
+                           "points": "3,602\n461,602",
+                           "rect": "2,601,462,603",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     },
+                     "1973": {
+                        "#name": "field \"Type\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>XPM</p>"
+                           },
+                           "id": "1973",
+                           "layer": "66",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Type",
+                           "rect": "-1,605,52,629",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1974": {
+                        "#name": "field \"Extension\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">*.xpm</font></p>\n<p><font face=\"verdana\" size=\"11\">'XPM '</font></p>"
+                           },
+                           "id": "1974",
+                           "layer": "67",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Extension",
+                           "opaque": false,
+                           "rect": "52,605,117,643",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1975": {
+                        "#name": "field \"Mask\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1975",
+                           "layer": "68",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Mask",
+                           "rect": "204,605,301,629",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1976": {
+                        "#name": "field \"Export\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1976",
+                           "layer": "69",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Export",
+                           "opaque": false,
+                           "rect": "135,605,197,629",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1977": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p></p>"
+                           },
+                           "id": "1977",
+                           "layer": "70",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "rect": "296,605,465,629",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1971",
+                     "layer": "64",
+                     "margins": "0",
+                     "name": "Brush",
+                     "rect": "-1,601,465,643"
+                  }
+               },
+               "1978": {
+                  "#name": "group \"Brush\"",
+                  "childcontrols": {
+                     "1979": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1979",
+                           "layer": "72",
+                           "name": "Divider",
+                           "points": "3,644\n461,644",
+                           "rect": "2,643,462,645",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     },
+                     "1980": {
+                        "#name": "field \"Type\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>XWD</p>"
+                           },
+                           "id": "1980",
+                           "layer": "73",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Type",
+                           "rect": "-1,647,52,671",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1981": {
+                        "#name": "field \"Extension\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">*.xwd</font></p>\n<p><font face=\"verdana\" size=\"11\">'XWDd'</font></p>"
+                           },
+                           "id": "1981",
+                           "layer": "74",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Extension",
+                           "opaque": false,
+                           "rect": "52,647,117,685",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1982": {
+                        "#name": "field \"Mask\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1982",
+                           "layer": "75",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Mask",
+                           "rect": "204,647,301,671",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1983": {
+                        "#name": "field \"Export\"",
+                        "customproperties": {
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"verdana\" size=\"11\">no</font></p>"
+                           },
+                           "id": "1983",
+                           "layer": "76",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Export",
+                           "opaque": false,
+                           "rect": "135,647,197,671",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1984": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>uncompressed</p>"
+                           },
+                           "id": "1984",
+                           "layer": "77",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "rect": "296,647,465,671",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1978",
+                     "layer": "71",
+                     "margins": "0",
+                     "name": "Brush",
+                     "rect": "-1,643,465,685"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1069",
+               "layer": "1",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "Main",
+               "rect": "-1,129,478,415",
+               "vScrollbar": true
+            }
+         },
+         "1370": {
+            "#name": "group \"Labels\"",
+            "childcontrols": {
+               "1909": {
+                  "#name": "field \"Extension\"",
+                  "customproperties": {
+                     "canHypertext": true
+                  },
+                  "properties": {
+                     "htmlText": {
+                        "1002": "<p>Extension</p>\n<p>\u2026amp; Type</p>"
+                     },
+                     "id": "1909",
+                     "layer": "86",
+                     "lockText": true,
+                     "margins": "8,8,8,4",
+                     "name": "Extension",
+                     "opaque": false,
+                     "rect": "52,93,135,131",
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "verdana",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1910": {
+                  "#name": "field \"Mask\"",
+                  "customproperties": {
+                     "canHypertext": true
+                  },
+                  "properties": {
+                     "htmlText": {
+                        "1002": "<p>Mask</p>"
+                     },
+                     "id": "1910",
+                     "layer": "87",
+                     "lockText": true,
+                     "margins": "8,8,8,4",
+                     "name": "Mask",
+                     "opaque": false,
+                     "rect": "204,107,307,131",
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "verdana",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1911": {
+                  "#name": "graphic \"Divider\"",
+                  "customproperties": {
+                     "apkUniqueID": "962187534610"
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "borderWidth": "1",
+                     "foreColor": "184,192,208",
+                     "id": "1911",
+                     "layer": "88",
+                     "name": "Divider",
+                     "points": "3,129\n461,129",
+                     "rect": "2,128,462,130",
+                     "style": "line",
+                     "threeD": false
+                  }
+               },
+               "1912": {
+                  "#name": "field \"Notes\"",
+                  "customproperties": {
+                     "canHypertext": true
+                  },
+                  "properties": {
+                     "htmlText": {
+                        "1002": "%file%: assets/revDocsImage Types Reference_1370_1912_htmlText_1002.txt"
+                     },
+                     "id": "1912",
+                     "layer": "89",
+                     "lockText": true,
+                     "margins": "8,8,8,4",
+                     "name": "Notes",
+                     "rect": "-2,-1,478,93",
+                     "showBorder": false,
+                     "style": "opaque",
+                     "textFont": "verdana",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1913": {
+                  "#name": "field \"Export\"",
+                  "customproperties": {
+                     "canHypertext": true
+                  },
+                  "properties": {
+                     "htmlText": {
+                        "1002": "<p>Export</p>"
+                     },
+                     "id": "1913",
+                     "layer": "90",
+                     "lockText": true,
+                     "margins": "8,8,8,4",
+                     "name": "Export",
+                     "opaque": false,
+                     "rect": "135,107,217,131",
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "verdana",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1915": {
+                  "#name": "field \"Comments\"",
+                  "customproperties": {
+                     "canHypertext": true
+                  },
+                  "properties": {
+                     "htmlText": {
+                        "1002": "<p>Comments</p>"
+                     },
+                     "id": "1915",
+                     "layer": "91",
+                     "lockText": true,
+                     "margins": "8,8,8,4",
+                     "name": "Comments",
+                     "opaque": false,
+                     "rect": "296,109,459,131",
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "verdana",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1370",
+               "layer": "85",
+               "margins": "0",
+               "name": "Labels",
+               "rect": "-2,-1,478,131"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.6.1",
+         "hilitedLinkColor": "black",
+         "revDocsCategory": "Developing wiith Revolution\nImages \u2026 Multimedia",
+         "revIsDocsStack": true,
+         "visitedLinkColor": "black"
+      },
+      "longID": "stack \"revDocsImage Types Reference\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "backColor": "white",
+         "decorations": "default",
+         "destroyStack": true,
+         "destroyWindow": true,
+         "fileName": "Image Types Reference.rev",
+         "id": "1985",
+         "linkColor": "black",
+         "linkHiliteColor": "Black",
+         "linkVisitedColor": "Black",
+         "liveResizing": false,
+         "maxWidth": "477",
+         "minHeight": "200",
+         "minWidth": "477",
+         "name": "revDocsImage Types Reference",
+         "rect": "90,186,567,602",
+         "style": "modeless",
+         "textFont": "verdana",
+         "textSize": "11",
+         "textStyle": "plain",
+         "title": "Image Types",
+         "underlineLinks": false
+      },
+      "sharedGroupIDs": "1069\n1370"
+   }
+}

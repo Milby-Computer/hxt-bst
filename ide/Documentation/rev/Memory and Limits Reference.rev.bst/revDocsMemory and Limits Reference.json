@@ -1,0 +1,1243 @@
+{
+   "#mainstack": "revDocsMemory and Limits Reference",
+   "revDocsMemory and Limits Reference": {
+      "#name": "stack \"revDocsMemory and Limits Reference\"",
+      "#substacks": null,
+      "backgroundIDs": "1069",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Operator Precedence\"",
+            "childcontrols": {
+               "1069": "#shared group"
+            },
+            "customproperties": {
+               "revDocsCategory": null
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Operator Precedence"
+            }
+         },
+         "1069": {
+            "#name": "group \"Limits\"",
+            "childcontrols": {
+               "1084": {
+                  "#name": "group \"Top Comments\"",
+                  "childcontrols": {
+                     "1087": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/revDocsMemory and Limits Reference_1069_1084_1087_htmlText_1002.txt"
+                           },
+                           "id": "1087",
+                           "layer": "3",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Comments",
+                           "rect": "5,-1,471,79",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1084",
+                     "layer": "2",
+                     "margins": "0",
+                     "name": "Top Comments",
+                     "rect": "5,-1,471,79"
+                  }
+               },
+               "1088": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1089": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Total addressable space</p>"
+                           },
+                           "id": "1089",
+                           "layer": "5",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,83,303,121",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1091": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>4G (on 32-bit systems)</p>\n<p>16P (on 64-bit systems)</p>"
+                           },
+                           "id": "1091",
+                           "layer": "6",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,83,483,121",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1092": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1092",
+                           "layer": "7",
+                           "name": "Divider",
+                           "points": "10,80\n558,80",
+                           "rect": "9,79,559,81",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1088",
+                     "layer": "4",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,79,559,121"
+                  }
+               },
+               "1149": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1224": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum total <a><font face=\"verdana\" size=\"11\">characters</font></a> in a <a><font face=\"verdana\" size=\"11\">field</font></a></p>"
+                           },
+                           "id": "1224",
+                           "layer": "13",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,149,303,173",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1225": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Unlimited</p>"
+                           },
+                           "id": "1225",
+                           "layer": "14",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,149,439,173",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1149",
+                     "layer": "12",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,149,439,173"
+                  }
+               },
+               "1153": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1227": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum size of an <a><font face=\"verdana\" size=\"11\">object</font></a></p>"
+                           },
+                           "id": "1227",
+                           "layer": "16",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,177,303,201",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1228": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Unlimited</p>"
+                           },
+                           "id": "1228",
+                           "layer": "17",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,177,439,201",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1229": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1229",
+                           "layer": "18",
+                           "name": "Divider",
+                           "points": "10,174\n558,174",
+                           "rect": "9,173,559,175",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1153",
+                     "layer": "15",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,173,559,201"
+                  }
+               },
+               "1157": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1230": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum number of <a><font face=\"verdana\" size=\"11\">objects</font></a> in a <a><font face=\"verdana\" size=\"11\">group</font></a></p>"
+                           },
+                           "id": "1230",
+                           "layer": "20",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,201,303,225",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1231": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Unlimited</p>"
+                           },
+                           "id": "1231",
+                           "layer": "21",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,201,439,225",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1157",
+                     "layer": "19",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,201,439,225"
+                  }
+               },
+               "1161": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1233": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum number of <a><font face=\"verdana\" size=\"11\">objects</font></a> on a <a><font face=\"verdana\" size=\"11\">card</font></a></p>"
+                           },
+                           "id": "1233",
+                           "layer": "23",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,225,303,249",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1234": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Unlimited</p>"
+                           },
+                           "id": "1234",
+                           "layer": "24",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,225,439,249",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1161",
+                     "layer": "22",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,225,439,249"
+                  }
+               },
+               "1165": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1236": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum number of <a><font face=\"verdana\" size=\"11\">cards</font></a> in a <a><font face=\"verdana\" size=\"11\">stack</font></a></p>"
+                           },
+                           "id": "1236",
+                           "layer": "26",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,249,303,273",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1237": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Unlimited</p>"
+                           },
+                           "id": "1237",
+                           "layer": "27",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,249,439,273",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1165",
+                     "layer": "25",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,249,439,273"
+                  }
+               },
+               "1169": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1239": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum number of <a><font face=\"verdana\" size=\"11\">objects</font></a> in a <a><font face=\"verdana\" size=\"11\">stack</font></a></p>"
+                           },
+                           "id": "1239",
+                           "layer": "29",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,273,303,297",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1240": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Unlimited</p>"
+                           },
+                           "id": "1240",
+                           "layer": "30",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,273,439,297",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1169",
+                     "layer": "28",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,273,439,297"
+                  }
+               },
+               "1173": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1242": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum length of <a><font face=\"verdana\" size=\"11\">object</font></a> names</p>"
+                           },
+                           "id": "1242",
+                           "layer": "32",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,301,303,325",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1243": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>65,536 characters</p>"
+                           },
+                           "id": "1243",
+                           "layer": "33",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,301,439,325",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1244": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1244",
+                           "layer": "34",
+                           "name": "Divider",
+                           "points": "10,298\n558,298",
+                           "rect": "9,297,559,299",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1173",
+                     "layer": "31",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,297,559,325"
+                  }
+               },
+               "1177": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1245": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum length of <a><font face=\"verdana\" size=\"11\">custom property</font></a> names</p>"
+                           },
+                           "id": "1245",
+                           "layer": "36",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,325,303,349",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1246": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>255 characters</p>"
+                           },
+                           "id": "1246",
+                           "layer": "37",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,325,439,349",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1177",
+                     "layer": "35",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,325,439,349"
+                  }
+               },
+               "1181": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1248": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum length of <a><font face=\"verdana\" size=\"11\">command</font></a> or <a><font face=\"verdana\" size=\"11\">function</font></a> names</p>"
+                           },
+                           "id": "1248",
+                           "layer": "39",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,349,303,373",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1249": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>65,536 characters</p>"
+                           },
+                           "id": "1249",
+                           "layer": "40",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,349,439,373",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1181",
+                     "layer": "38",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,349,439,373"
+                  }
+               },
+               "1185": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1251": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum size of <a><font face=\"verdana\" size=\"11\">custom properties</font></a></p>"
+                           },
+                           "id": "1251",
+                           "layer": "42",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,377,303,401",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1252": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Unlimited</p>"
+                           },
+                           "id": "1252",
+                           "layer": "43",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,377,439,401",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textHeight": "14",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1253": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1253",
+                           "layer": "44",
+                           "name": "Divider",
+                           "points": "10,374\n558,374",
+                           "rect": "9,373,559,375",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1185",
+                     "layer": "41",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,373,559,401"
+                  }
+               },
+               "1189": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1254": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum number of <a><font face=\"verdana\" size=\"11\">custom properties</font></a></p>"
+                           },
+                           "id": "1254",
+                           "layer": "46",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,401,303,425",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1255": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Unlimited</p>"
+                           },
+                           "id": "1255",
+                           "layer": "47",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,401,439,425",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1189",
+                     "layer": "45",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,401,439,425"
+                  }
+               },
+               "1193": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1257": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum size of a <a><font face=\"verdana\" size=\"11\">script</font></a></p>"
+                           },
+                           "id": "1257",
+                           "layer": "49",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,425,303,449",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1258": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Unlimited</p>"
+                           },
+                           "id": "1258",
+                           "layer": "50",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,425,439,449",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1193",
+                     "layer": "48",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,425,439,449"
+                  }
+               },
+               "1197": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1260": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum size of other <a><font face=\"verdana\" size=\"11\">properties</font></a></p>"
+                           },
+                           "id": "1260",
+                           "layer": "52",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,449,303,473",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1261": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>64K</p>"
+                           },
+                           "id": "1261",
+                           "layer": "53",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,449,439,473",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1197",
+                     "layer": "51",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,449,439,473"
+                  }
+               },
+               "1201": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1263": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum size of an <a><font face=\"verdana\" size=\"11\">external</font></a> <a><font face=\"verdana\" size=\"11\">call</font></a></p>"
+                           },
+                           "id": "1263",
+                           "layer": "55",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,473,303,497",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1264": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>64K</p>"
+                           },
+                           "id": "1264",
+                           "layer": "56",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,473,439,497",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1201",
+                     "layer": "54",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,473,439,497"
+                  }
+               },
+               "1205": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1266": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum size of data returned by an <a><font face=\"verdana\" size=\"11\">external</font></a></p>"
+                           },
+                           "id": "1266",
+                           "layer": "58",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,497,303,521",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1267": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>64K</p>"
+                           },
+                           "id": "1267",
+                           "layer": "59",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,497,439,521",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1205",
+                     "layer": "57",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,497,439,521"
+                  }
+               },
+               "1209": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1269": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum <a><font face=\"verdana\" size=\"11\">nesting</font></a> level in <a><font face=\"verdana\" size=\"11\">control structures</font></a></p>"
+                           },
+                           "id": "1269",
+                           "layer": "61",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,525,303,549",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1270": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Unlimited</p>"
+                           },
+                           "id": "1270",
+                           "layer": "62",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,525,439,549",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1271": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1271",
+                           "layer": "63",
+                           "name": "Divider",
+                           "points": "10,522\n558,522",
+                           "rect": "9,521,559,523",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1209",
+                     "layer": "60",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,521,559,549"
+                  }
+               },
+               "1213": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1272": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum level of <a><font face=\"verdana\" size=\"11\">recursion</font></a></p>"
+                           },
+                           "id": "1272",
+                           "layer": "65",
+                           "lockText": true,
+                           "name": "Description",
+                           "rect": "-23,549,303,577",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1273": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Unlimited</p>"
+                           },
+                           "id": "1273",
+                           "layer": "66",
+                           "lockText": true,
+                           "name": "Limit",
+                           "rect": "295,549,439,577",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1213",
+                     "layer": "64",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,549,439,577"
+                  }
+               },
+               "1217": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1221": {
+                        "#name": "field \"Description\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": true
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>Maximum length of a <a><font face=\"verdana\" size=\"11\">line</font></a> in a <a><font face=\"verdana\" size=\"11\">field</font></a></p>"
+                           },
+                           "id": "1221",
+                           "layer": "9",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Description",
+                           "rect": "-23,125,303,149",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1222": {
+                        "#name": "field \"Limit\"",
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>65,536 characters</p>"
+                           },
+                           "id": "1222",
+                           "layer": "10",
+                           "lockText": true,
+                           "margins": "8,8,8,4",
+                           "name": "Limit",
+                           "rect": "295,125,439,149",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textFont": "verdana",
+                           "textSize": "11",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1223": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1223",
+                           "layer": "11",
+                           "name": "Divider",
+                           "points": "10,122\n558,122",
+                           "rect": "9,121,559,123",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1217",
+                     "layer": "8",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-23,121,559,149"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1069",
+               "layer": "1",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "Limits",
+               "rect": "-1,-1,482,317",
+               "vScrollbar": true
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.6.1",
+         "hilitedLinkColor": "black",
+         "revDocsCategory": "Developing with Revolution\nThe System Environment",
+         "revIsDocsStack": true,
+         "revstack": false,
+         "storedHilitedChunk": null,
+         "visitedLinkColor": "black"
+      },
+      "longID": "stack \"revDocsMemory and Limits Reference\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "backColor": "white",
+         "decorations": "default",
+         "destroyStack": true,
+         "destroyWindow": true,
+         "fileName": "Memory and Limits Reference.rev",
+         "id": "1274",
+         "linkColor": "black",
+         "linkHiliteColor": "Black",
+         "linkVisitedColor": "Black",
+         "liveResizing": false,
+         "maxWidth": "481",
+         "minHeight": "150",
+         "minWidth": "481",
+         "name": "revDocsMemory and Limits Reference",
+         "rect": "102,186,583,517",
+         "style": "modeless",
+         "textFont": "verdana",
+         "textSize": "11",
+         "textStyle": "plain",
+         "title": "Memory and Limits",
+         "underlineLinks": false
+      },
+      "sharedGroupIDs": "1069"
+   }
+}

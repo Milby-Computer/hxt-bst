@@ -1,0 +1,7 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">function</font> shakespeareanInsult</p>
+<p>  <font color="#0000FF">return</font> "Begone, thou" \</p>
+<p>      &amp;&amp; any word of the firstAdjectiveList of <font color="#F88017">me</font> \</p>
+<p>      &amp;&amp; any word of the secondAdjectiveList of <font color="#F88017">me</font> \</p>
+<p>      &amp;&amp; any word of the nounsList of <font color="#F88017">me</font> &amp; "!"</p>
+<p><font color="#980517">end</font> shakespeareanInsult</p>

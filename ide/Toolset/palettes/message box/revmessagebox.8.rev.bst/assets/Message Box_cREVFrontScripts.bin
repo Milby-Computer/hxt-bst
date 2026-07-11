@@ -1,0 +1,6 @@
+stack "/Users/panos/Desktop/github/livecode/ide/Toolset/libraries/revshortcutslibrary.livecodescript"
+stack "/Users/panos/Desktop/github/livecode/ide/Toolset/libraries/revfrontscriptlibrary.livecodescript"
+stack "/Users/panos/Desktop/github/livecode/ide/Toolset/libraries/revtablelibrary.livecodescript"
+stack "/Users/panos/Desktop/github/livecode/ide/Toolset/libraries/revdebuggerlibrary.livecodescript"
+stack "/Users/panos/Desktop/github/livecode/ide/Toolset/libraries/revidemessagehandlerlibrary.livecodescript"
+stack "/Users/panos/Desktop/github/livecode/ide/Toolset/libraries/revdatabaselibrary.livecodescript"

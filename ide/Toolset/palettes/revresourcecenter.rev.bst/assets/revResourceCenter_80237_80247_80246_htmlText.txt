@@ -1,0 +1,10 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">put</font> "                                   " \</p>
+<p>      &amp; "You too can be a winner!" into <font color="#F88017">me</font></p>
+<p>  <font color="#980517">repeat</font> until the <font color="#FF0000">text</font> of <font color="#F88017">me</font> is empty</p>
+<p>    <font color="#68228B">-- shift everything one character to the left:</font></p>
+<p>    <font color="#0000FF">delete</font> first character of <font color="#F88017">me</font></p>
+<p>    <font color="#0000FF">wait</font> 6 <font color="#F88017">ticks</font> <font color="#68228B">-- 1/10th of a second</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p><font color="#980517">end</font> mouseUp</p>

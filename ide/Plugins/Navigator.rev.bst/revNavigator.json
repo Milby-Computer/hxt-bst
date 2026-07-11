@@ -1,0 +1,810 @@
+{
+   "#mainstack": "revNavigator",
+   "revNavigator": {
+      "#name": "stack \"revNavigator\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"display\"",
+            "childcontrols": {
+               "1017": {
+                  "#name": "image \"line2.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1017",
+                     "layer": "4",
+                     "name": "line2.gif",
+                     "rect": "4,-10,115,-2",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revNavigator_1002_1017_text.png"
+                  }
+               },
+               "1024": {
+                  "#name": "image \"script.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1024",
+                     "layer": "5",
+                     "name": "script.gif",
+                     "rect": "108,-14,117,-2",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revNavigator_1002_1024_text.png"
+                  }
+               },
+               "1040": {
+                  "#name": "field \"filter\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "125,-3,206,15",
+                        "Master,scaleBottom": false,
+                        "Master,scaleBottomAbsolute": false,
+                        "Master,scalebottomDistance": "0",
+                        "Master,scaleBottomObjectRef": null,
+                        "Master,scaleBottomObjectSide": "center",
+                        "Master,scaleLeft": false,
+                        "Master,scaleLeftAbsolute": false,
+                        "Master,scaleleftDistance": "0",
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleLeftObjectSide": "center",
+                        "Master,scaleRight": true,
+                        "Master,scaleRightAbsolute": true,
+                        "Master,scalerightDistance": "-4",
+                        "Master,scaleRightObjectRef": "card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaleTop": false,
+                        "Master,scaleTopAbsolute": false,
+                        "Master,scaletopDistance": "0",
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaleTopObjectSide": "center"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "fixedLineHeight": false,
+                     "id": "1040",
+                     "layer": "6",
+                     "name": "filter",
+                     "rect": "108,-2,323,18",
+                     "showFocusBorder": false,
+                     "textFont": "Geneva",
+                     "textHeight": "13",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "toolTip": "Enter text to filter the list"
+                  }
+               },
+               "1041": {
+                  "#name": "button \"whichStack\"",
+                  "properties": {
+                     "accelMods": "command",
+                     "icon": "1048",
+                     "id": "1041",
+                     "label": " ",
+                     "layer": "7",
+                     "menuMode": "pulldown",
+                     "name": "whichStack",
+                     "rect": "47,0,71,18",
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "style": "menu",
+                     "text": "the topStack\nStack List\n-\n",
+                     "threeD": false,
+                     "toolTip": "Option for all | Command to Go | Shift for unsorted",
+                     "traversalOn": false
+                  }
+               },
+               "1047": {
+                  "#name": "image \"card.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1047",
+                     "layer": "8",
+                     "name": "card.gif",
+                     "rect": "105,-28,124,-4",
+                     "text": {
+                        "%base64%": "qAAC//CCAAGAgwABgIMAAYCDAAWH/4AAhIMAAYSDAAGEgwABBIMAAQSDAAEEgwABBIsA"
+                     }
+                  }
+               },
+               "1048": {
+                  "#name": "image \"stack.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1048",
+                     "layer": "9",
+                     "name": "stack.gif",
+                     "rect": "75,-27,89,-3",
+                     "text": {
+                        "%base64%": "sAAC//iCAAKACIIAAv/4gwABCIMAAQiDAAEIgwABCIMAAQiDAAEIgwABCIMAAQiCAAL/+IIA\n"
+                     }
+                  }
+               },
+               "1049": {
+                  "#name": "button \"whichCard\"",
+                  "properties": {
+                     "accelMods": "command",
+                     "icon": "1047",
+                     "id": "1049",
+                     "label": " ",
+                     "layer": "10",
+                     "menuMode": "pulldown",
+                     "name": "whichCard",
+                     "rect": "71,0,95,18",
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "style": "menu",
+                     "text": "this card\nCard List\n-\ncard id 1002",
+                     "threeD": false,
+                     "toolTip": "Option for backgrounds | Shift to Sort | Command to Go",
+                     "traversalOn": false
+                  }
+               },
+               "1061": {
+                  "#name": "field \"copy\"",
+                  "properties": {
+                     "htmlText": "<p>stack \"Bouncy\"</p>",
+                     "id": "1061",
+                     "layer": "11",
+                     "name": "copy",
+                     "rect": "108,-20,171,-2"
+                  }
+               },
+               "1065": {
+                  "#name": "button \"popup\"",
+                  "customproperties": {
+                     "basicItems": "Copy\nCopy IDs\nPut\n-\nEdit Properties\nEdit Scripts\nShow Properties\nCount\n\tScripts\n\tEnclosed Scripts\nBookmark\nRemove\n-\nRemove All\nColor...\nBookmark Text...\nCommand...",
+                     "cardItems": "Go\nTopLevel\nBrowse Controls\n-\n",
+                     "groupItems": "Browse Controls\n-\n",
+                     "stackItems": "Save\nGo\nTopLevel\nPurge Stack...\nBrowse Controls\n-\n"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "id": "1065",
+                     "layer": "13",
+                     "menuMode": "popup",
+                     "name": "popup",
+                     "rect": "27,-23,74,-5",
+                     "showFocusBorder": false,
+                     "style": "menu",
+                     "text": "Copy\nCopy IDs\nPut\n-\nEdit Properties\nEdit Scripts\nShow Properties\nCount\n\tScripts\n\tEnclosed Scripts\nBookmark\nRemove\n-\nRemove All\nColor...\nBookmark Text...\nCommand...\nCommand\n\t",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1066": {
+                  "#name": "button \"popprop\"",
+                  "properties": {
+                     "accelMods": "command",
+                     "id": "1066",
+                     "layer": "14",
+                     "menuMode": "popup",
+                     "name": "popprop",
+                     "rect": "7,-49,54,-31",
+                     "showFocusBorder": false,
+                     "style": "menu",
+                     "text": "%file%: assets/revNavigator_1002_1066_text.txt",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1100": {
+                  "#name": "group \"commandGroup\"",
+                  "childcontrols": {
+                     "1068": {
+                        "#name": "field \"command\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1068",
+                           "layer": "23",
+                           "name": "command",
+                           "rect": "-2,-2,330,125",
+                           "showFocusBorder": false
+                        }
+                     },
+                     "1076": {
+                        "#name": "group \"commandControls\"",
+                        "childcontrols": {
+                           "1073": {
+                              "#name": "button \"Close\"",
+                              "customproperties": {
+                                 "Selection Description": false
+                              },
+                              "properties": {
+                                 "accelMods": "command",
+                                 "borderWidth": "1",
+                                 "id": "1073",
+                                 "layer": "19",
+                                 "name": "Close",
+                                 "rect": "1,126,47,146",
+                                 "style": "rectangle",
+                                 "threeD": false,
+                                 "toolTip": "Close the Command panel"
+                              }
+                           },
+                           "1074": {
+                              "#name": "button \"Set\"",
+                              "properties": {
+                                 "borderWidth": "1",
+                                 "id": "1074",
+                                 "layer": "20",
+                                 "name": "Set",
+                                 "rect": "49,126,81,146",
+                                 "style": "rectangle",
+                                 "threeD": false,
+                                 "toolTip": "Set properties: propName=propValue"
+                              }
+                           },
+                           "1075": {
+                              "#name": "button \"Do\"",
+                              "customproperties": {
+                                 null: "%file%: assets/revNavigator_1002_1100_1076_1075_.bin",
+                                 "commandCode": "delete tid",
+                                 "commandScript": "%file%: assets/revNavigator_1002_1100_1076_1075_commandScript.bin"
+                              },
+                              "properties": {
+                                 "accelMods": "command",
+                                 "borderWidth": "1",
+                                 "id": "1075",
+                                 "layer": "21",
+                                 "name": "Do",
+                                 "rect": "83,126,123,146",
+                                 "style": "rectangle",
+                                 "threeD": false,
+                                 "toolTip": "Run the code against each object. See variables below."
+                              }
+                           },
+                           "1133": {
+                              "#name": "button \"Save\"",
+                              "customproperties": {
+                                 "commandScript": "%file%: assets/revNavigator_1002_1100_1076_1133_commandScript.bin"
+                              },
+                              "properties": {
+                                 "accelMods": "command",
+                                 "borderWidth": "1",
+                                 "id": "1133",
+                                 "layer": "22",
+                                 "name": "Save",
+                                 "rect": "125,126,165,146",
+                                 "style": "rectangle",
+                                 "threeD": false,
+                                 "toolTip": "Save the code as a command for use later."
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1076",
+                           "layer": "18",
+                           "name": "commandControls",
+                           "opaque": true,
+                           "rect": "-3,122,169,150",
+                           "showFocusBorder": false,
+                           "threeD": false
+                        }
+                     },
+                     "1110": {
+                        "#name": "field \"commandHelp\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "192,220,192",
+                           "borderWidth": "1",
+                           "fixedLineHeight": false,
+                           "htmlText": "%file%: assets/revNavigator_1002_1100_1110_htmlText.txt",
+                           "id": "1110",
+                           "layer": "24",
+                           "lockText": true,
+                           "name": "commandHelp",
+                           "rect": "0,151,264,352",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque",
+                           "textFont": "Geneva",
+                           "textHeight": "12",
+                           "textSize": "9",
+                           "textStyle": "plain",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "pHilitedLines": "4",
+                     "pWorkingLines": "image id 1008 of card id 1002 of stack \"/Users/geoffcanyon/Desktops/MacHack/Bouncy.rev\"\n"
+                  },
+                  "properties": {
+                     "id": "1100",
+                     "layer": "17",
+                     "name": "commandGroup",
+                     "rect": "-7,-6,334,356",
+                     "tabGroupBehavior": true,
+                     "visible": false
+                  }
+               },
+               "1109": {
+                  "#name": "button \"Actions\"",
+                  "customproperties": {
+                     "Selection Description": false,
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "id": "1109",
+                     "layer": "15",
+                     "menuMode": "pulldown",
+                     "name": "Actions",
+                     "rect": "0,0,47,18",
+                     "showFocusBorder": false,
+                     "style": "menu",
+                     "text": "%file%: assets/revNavigator_1002_1109_text.txt",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1113": {
+                  "#name": "group \"about\"",
+                  "childcontrols": {
+                     "1058": {
+                        "#name": "field \"aboutHead\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "255,255,153",
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "htmlText": "%file%: assets/revNavigator_1002_1113_1058_htmlText.txt",
+                           "id": "1058",
+                           "layer": "35",
+                           "lockText": true,
+                           "name": "aboutHead",
+                           "rect": "-2,-2,329,95",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "center",
+                           "textFont": "Geneva",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false
+                        }
+                     },
+                     "1111": {
+                        "#name": "field \"aboutBody\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "255,255,153",
+                           "fixedLineHeight": false,
+                           "htmlText": "%file%: assets/revNavigator_1002_1113_1111_htmlText.txt",
+                           "id": "1111",
+                           "layer": "36",
+                           "lockText": true,
+                           "name": "aboutBody",
+                           "rect": "-2,95,329,481",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "scrolling",
+                           "textFont": "Geneva",
+                           "textSize": "11",
+                           "textStyle": "plain",
+                           "traversalOn": false,
+                           "vScrollbar": true
+                        }
+                     },
+                     "1151": {
+                        "#name": "button \"I Paid\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1151",
+                           "layer": "37",
+                           "name": "I Paid",
+                           "opaque": false,
+                           "rect": "5,69,115,91",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "textFont": "Lucida Grande",
+                           "textSize": "11",
+                           "textStyle": "bold"
+                        }
+                     },
+                     "1154": {
+                        "#name": "button \"Close\"",
+                        "properties": {
+                           "borderWidth": "1",
+                           "id": "1154",
+                           "layer": "38",
+                           "name": "Close",
+                           "rect": "0,0,40,16",
+                           "style": "rectangle",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1167": {
+                        "#name": "button \"Jump To:\"",
+                        "properties": {
+                           "id": "1167",
+                           "layer": "39",
+                           "menuMode": "pulldown",
+                           "name": "Jump To:",
+                           "rect": "79,71,152,89",
+                           "showFocusBorder": false,
+                           "style": "menu",
+                           "text": "%file%: assets/revNavigator_1002_1113_1167_text.txt",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1113",
+                     "layer": "34",
+                     "name": "about",
+                     "rect": "-6,-6,333,485",
+                     "tabGroupBehavior": true,
+                     "visible": false
+                  }
+               },
+               "1117": {
+                  "#name": "graphic \"fieldtop\"",
+                  "properties": {
+                     "antialiased": false,
+                     "filled": true,
+                     "foreColor": "160,160,160",
+                     "id": "1117",
+                     "layer": "16",
+                     "name": "fieldtop",
+                     "opaque": true,
+                     "points": "0,19\n332,19",
+                     "rect": "-1,18,333,20",
+                     "style": "line"
+                  }
+               },
+               "1123": {
+                  "#name": "button \"pophandlers\"",
+                  "properties": {
+                     "accelMods": "command",
+                     "id": "1123",
+                     "layer": "12",
+                     "menuMode": "popup",
+                     "name": "pophandlers",
+                     "rect": "7,-49,54,-31",
+                     "showFocusBorder": false,
+                     "style": "menu",
+                     "text": "Put Handler List\n(-\non commandKeyDown pWhat\non dragdrop\non dragEnter\non dropme\non mouseDown\non mouseMove x,y\non mouseRelease\non mouseUp\non openCard\non playSoundFile\non setImage pFilePath\non setMeUp\non shapeMe\n",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1132": {
+                  "#name": "button \"resizer\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "icon": "1161",
+                     "id": "1132",
+                     "layer": "41",
+                     "name": "resizer",
+                     "rect": "316,481,328,493",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "opaque",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1137": {
+                  "#name": "group \"CommandOption\"",
+                  "childcontrols": {
+                     "1138": {
+                        "#name": "graphic \"New Graphic 1\"",
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "tan",
+                           "filled": true,
+                           "id": "1138",
+                           "layer": "26",
+                           "lineSize": "0",
+                           "name": "New Graphic 1",
+                           "opaque": true,
+                           "rect": "0,-1,330,125"
+                        }
+                     },
+                     "1141": {
+                        "#name": "field \"CommandOptionList\"",
+                        "customproperties": {
+                           "tProp": null
+                        },
+                        "properties": {
+                           "dontWrap": true,
+                           "htmlText": "<p>sally</p>\n<p>bob</p>",
+                           "id": "1141",
+                           "layer": "27",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "multipleHilites": true,
+                           "name": "CommandOptionList",
+                           "noncontiguousHilites": true,
+                           "rect": "0,-1,330,100",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "style": "scrolling",
+                           "visible": false,
+                           "vScrollbar": true
+                        }
+                     },
+                     "1143": {
+                        "#name": "field \"CommandOptionLabel\"",
+                        "customproperties": {
+                           "Tabs": false
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Backgrounds:</p>",
+                           "id": "1143",
+                           "layer": "28",
+                           "lockText": true,
+                           "margins": "4",
+                           "name": "CommandOptionLabel",
+                           "opaque": false,
+                           "rect": "0,103,233,123",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1144": {
+                        "#name": "button \"CommandOptionPopup1\"",
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1144",
+                           "label": "g",
+                           "layer": "29",
+                           "menuHistory": "3",
+                           "menuMode": "option",
+                           "name": "CommandOptionPopup1",
+                           "rect": "8,13,200,33",
+                           "style": "menu",
+                           "text": "er\nsf\ng\nhgf",
+                           "traversalOn": false,
+                           "visible": false
+                        }
+                     },
+                     "1145": {
+                        "#name": "button \"CommandOptionPopup2\"",
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1145",
+                           "label": "g",
+                           "layer": "30",
+                           "menuHistory": "3",
+                           "menuMode": "option",
+                           "name": "CommandOptionPopup2",
+                           "rect": "8,39,200,59",
+                           "style": "menu",
+                           "text": "er\nsf\ng\nhgf",
+                           "traversalOn": false,
+                           "visible": false
+                        }
+                     },
+                     "1147": {
+                        "#name": "group \"CommandOptionControls\"",
+                        "childcontrols": {
+                           "1148": {
+                              "#name": "button \"OK\"",
+                              "customproperties": {
+                                 "commandScript": "%file%: assets/revNavigator_1002_1137_1147_1148_commandScript.bin"
+                              },
+                              "properties": {
+                                 "accelMods": "command",
+                                 "borderWidth": "1",
+                                 "id": "1148",
+                                 "layer": "32",
+                                 "name": "OK",
+                                 "rect": "287,102,320,122",
+                                 "style": "rectangle",
+                                 "threeD": false,
+                                 "toolTip": "Click to accept the values and continue the command."
+                              }
+                           },
+                           "1149": {
+                              "#name": "button \"Cancel\"",
+                              "customproperties": {
+                                 "commandScript": "%file%: assets/revNavigator_1002_1137_1147_1149_commandScript.bin"
+                              },
+                              "properties": {
+                                 "accelMods": "command",
+                                 "borderWidth": "1",
+                                 "id": "1149",
+                                 "layer": "33",
+                                 "name": "Cancel",
+                                 "rect": "241,102,286,122",
+                                 "style": "rectangle",
+                                 "threeD": false,
+                                 "toolTip": "Click to cancel the command."
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1147",
+                           "layer": "31",
+                           "name": "CommandOptionControls",
+                           "rect": "237,98,324,126"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "id": "1137",
+                     "layer": "25",
+                     "margins": "0",
+                     "name": "CommandOption",
+                     "rect": "0,-1,330,126",
+                     "showFocusBorder": false,
+                     "threeD": false,
+                     "visible": false
+                  }
+               },
+               "1152": {
+                  "#name": "button \"revNavigatorFront\"",
+                  "properties": {
+                     "id": "1152",
+                     "layer": "40",
+                     "name": "revNavigatorFront",
+                     "rect": "-148,-24,-100,-8"
+                  }
+               },
+               "1161": {
+                  "#name": "image \"resizebox.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1161",
+                     "layer": "42",
+                     "name": "resizebox.gif",
+                     "rect": "-21,-46,-9,-34",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revNavigator_1002_1161_text.png",
+                     "toolTip": "200943"
+                  }
+               },
+               "1162": {
+                  "#name": "group \"dragList\"",
+                  "childcontrols": {
+                     "1009": {
+                        "#name": "field \"List\"",
+                        "customproperties": {
+                           "cardPath": "card id 1002 of stack \"Untitled 1\"",
+                           "lastHilitedLines": "3",
+                           "pHilitedLines": null,
+                           "previouslyHilitedLines": null,
+                           "pSelectedText": null,
+                           "separatorLine": "0",
+                           "stackPath": "stack \"Untitled 1\"",
+                           "Tabs": false,
+                           "tProp": null
+                        },
+                        "custompropertysets": {
+                           "cREVDatabase": {
+                              "databasename": null,
+                              "host": null,
+                              "pass": null,
+                              "user": null
+                           }
+                        },
+                        "properties": {
+                           "borderColor": "lightblue",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "hGrid": true,
+                           "hiliteColor": "lightblue",
+                           "hScrollbar": true,
+                           "id": "1009",
+                           "layer": "2",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "multipleHilites": true,
+                           "name": "List",
+                           "noncontiguousHilites": true,
+                           "rect": "-2,20,329,495",
+                           "scrollbarWidth": "16",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textFont": "Geneva",
+                           "textHeight": "14",
+                           "textSize": "10",
+                           "textStyle": "plain",
+                           "threeD": false,
+                           "vScrollbar": true
+                        }
+                     },
+                     "1160": {
+                        "#name": "graphic \"dragIndicator\"",
+                        "properties": {
+                           "antialiased": false,
+                           "id": "1160",
+                           "layer": "3",
+                           "name": "dragIndicator",
+                           "rect": "5,-6,304,-4",
+                           "visible": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1162",
+                     "layer": "1",
+                     "name": "dragList",
+                     "rect": "-6,16,333,499"
+                  }
+               },
+               "1171": {
+                  "#name": "button \"showNavigator\"",
+                  "properties": {
+                     "id": "1171",
+                     "label": "Navigator",
+                     "layer": "43",
+                     "name": "showNavigator",
+                     "rect": "-1,476,329,494",
+                     "visible": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": null,
+                  "total": "43"
+               }
+            },
+            "properties": {
+               "backColor": "white",
+               "id": "1002",
+               "name": "display"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1192"
+         },
+         "gSBAddPropsProp": {
+            "Button": "loc\nfillfore\nleft\ntop\nright\nbottom\nheight\nwidth",
+            "Card": null,
+            "Field": "loc\nleft\ntop\nfillfore\nright\nbottom\nheight\nwidth",
+            "Graphic": "loc\nleft\ntop\nright\nbottom\nheight\nwidth\nfillfore",
+            "Group": "backgroundBehavior\nlayer\nfillfore\nloc",
+            "Image": "loc\nleft\ntop\nright\nbottom\nheight\nwidth",
+            "Player": "loc\nleft\ntop\nright\nbottom\nheight\nwidth",
+            "Scrollbar": "loc\nleft\ntop\nright\nbottom\nheight\nwidth",
+            "Stack": "editMenus\nloc\nleft\ntop\nright\nbottom\nheight\nwidth",
+            "tProp": null
+         },
+         "gSBControlSetsProp": null
+      },
+      "longID": "stack \"revNavigator\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "Navigator.rev",
+         "id": "1192",
+         "liveResizing": false,
+         "name": "revNavigator",
+         "rect": "326,-246,654,247",
+         "resizable": false,
+         "title": "Navigator"
+      },
+      "sharedGroupIDs": null
+   }
+}

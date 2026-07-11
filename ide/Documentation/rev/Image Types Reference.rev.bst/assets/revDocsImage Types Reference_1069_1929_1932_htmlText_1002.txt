@@ -1,0 +1,5 @@
+<p><font face="verdana" size="11">*.pic</font></p>
+<p><font face="verdana" size="11">*.pict</font></p>
+<p><font face="verdana" size="11">*.pct</font></p>
+<p><font face="verdana" size="11">*.mac</font></p>
+<p><font face="verdana" size="11">'PICT'</font></p>

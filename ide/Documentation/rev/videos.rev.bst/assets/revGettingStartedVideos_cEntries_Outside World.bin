@@ -1,0 +1,10 @@
+category=Advanced Concepts
+description=<p>You may want to communicate with other applications from within Revolution.  Whether you want to link to some existing code or communicate with another program, there are several options available.  This tutorial introduces you to them.</p>
+duration=4:02
+filename=outside_world.avi
+level=3
+licensed=true
+name=Outside World
+scripts=<p><font color="#000000">Scripts Used in this Tutorial:</font></p>\n<p></p>\n<p><font face="Courier New" size="12" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" size="12" color="#000000">  put &quot;ls -laF&quot; into tShellCommand</font></p>\n<p><font face="Courier New" size="12" color="#000000">  put shell(tShellCommand) into tResult</font></p>\n<p><font face="Courier New" size="12" color="#000000">  answer tResult</font></p>\n<p><font face="Courier New" size="12" color="#000000">end mouseUp</font></p>\n<p></p>\n<p><font face="Courier New" size="12" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" size="12" color="#000000">  put &quot;ls -laF&quot; into tShellCommand</font></p>\n<p><font face="Courier New" size="12" color="#000000">  put shell(tShellCommand) into tResult</font></p>\n<p><font face="Courier New" size="12" color="#000000">  write tFilesList to stdout</font></p>\n<p><font face="Courier New" size="12" color="#000000">end mouseUp</font></p>\n<p></p>\n<p><font face="Courier New" size="12" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" size="12" color="#000000">  do field 1 as appleScript</font></p>\n<p><font face="Courier New" size="12" color="#000000">end mouseUp</font></p>
+title=Outside world: communication with shell, processes, AppleScript or externals.
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;Revolution can be used with other applications or code libraries</p>\n<p>-&#9;Using shell() on Windows, Mac OS X or Unix to run and interact with other programs</p>\n<p>-&#9;Communicating using processes on Unix based operating systems</p>\n<p>-&#9;Using AppleScript on Mac OS to communicate with other applications</p>\n<p>-&#9;Definition of an external code library</p>

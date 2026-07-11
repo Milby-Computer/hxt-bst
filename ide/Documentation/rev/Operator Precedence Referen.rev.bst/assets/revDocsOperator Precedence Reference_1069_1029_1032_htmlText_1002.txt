@@ -1,0 +1,1 @@
+<p><a><font face="verdana" size="11">Operations</font></a> that join two <a><font face="verdana" size="11">strings</font></a> are done next. These are <a><font face="verdana" size="11">string</font></a> <a><font face="verdana" size="11">operators</font></a> and result in a <a><font face="verdana" size="11">string</font></a>.</p>

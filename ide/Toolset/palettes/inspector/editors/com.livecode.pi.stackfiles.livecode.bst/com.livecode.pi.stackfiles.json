@@ -1,0 +1,194 @@
+{
+   "#mainstack": "com.livecode.pi.stackfiles",
+   "com.livecode.pi.stackfiles": {
+      "#name": "stack \"com.livecode.pi.stackfiles\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1010": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1003": {
+                        "#name": "button \"Stack\"",
+                        "customproperties": {
+                           "altDontResize": false,
+                           "altEnableBtn": true,
+                           "altMinWidth": "65",
+                           "altOrder": "1"
+                        },
+                        "properties": {
+                           "accelMods": "command",
+                           "autoHilite": false,
+                           "id": "1003",
+                           "layer": "2",
+                           "lockLoc": true,
+                           "name": "Stack",
+                           "rect": "19,105,204,122",
+                           "showFocusBorder": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     },
+                     "1004": {
+                        "#name": "field \"stackFilesField\"",
+                        "customproperties": {
+                           "Tabs": false
+                        },
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "2",
+                              "Master,expectedRect": "19,121,221,421",
+                              "Master,movehDistance": false,
+                              "Master,movevDistance": false,
+                              "Master,scaleBottom": true,
+                              "Master,scaleBottomAbsolute": true,
+                              "Master,scaleBottomDistance": "-148",
+                              "Master,scaleBottomObjectRef": "Card",
+                              "Master,scaleBottomObjectSide": "Bottom",
+                              "Master,scaleLeft": false,
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleLeftObjectRef": null,
+                              "Master,scaleRight": true,
+                              "Master,scaleRightAbsolute": true,
+                              "Master,scalerightDistance": "-186",
+                              "Master,scaleRightObjectRef": "card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaleTop": false,
+                              "Master,scaletopDistance": null,
+                              "Master,scaleTopObjectRef": null
+                           }
+                        },
+                        "properties": {
+                           "borderColor": "220,220,220",
+                           "dontWrap": true,
+                           "id": "1004",
+                           "layer": "3",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "stackFilesField",
+                           "rect": "19,121,454,421",
+                           "scrollbarWidth": "16",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "tabStops": "177,2000",
+                           "vGrid": true,
+                           "vScrollbar": true
+                        }
+                     },
+                     "1006": {
+                        "#name": "button \"File Path\"",
+                        "customproperties": {
+                           "altDontResize": false,
+                           "altEnableBtn": true,
+                           "altMinWidth": "56",
+                           "altOrder": "2"
+                        },
+                        "properties": {
+                           "accelMods": "command",
+                           "autoHilite": false,
+                           "id": "1006",
+                           "layer": "4",
+                           "lockLoc": true,
+                           "name": "File Path",
+                           "rect": "204,105,454,122",
+                           "showFocusBorder": false,
+                           "style": "rectangle",
+                           "traversalOn": false
+                        }
+                     },
+                     "1008": {
+                        "#name": "button \"Remove key\"",
+                        "properties": {
+                           "hiliteIcon": "202667",
+                           "icon": "202663",
+                           "id": "1008",
+                           "layer": "6",
+                           "name": "Remove key",
+                           "rect": "433,82,454,101",
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "toolTip": "Remove stack file\n"
+                        }
+                     },
+                     "1009": {
+                        "#name": "button \"New key\"",
+                        "customproperties": {
+                           "Tabs": false
+                        },
+                        "properties": {
+                           "hiliteIcon": "202709",
+                           "icon": "202706",
+                           "id": "1009",
+                           "layer": "5",
+                           "margins": "4,5,5,4",
+                           "name": "New key",
+                           "rect": "413,82,434,101",
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "toolTip": "Add stack file"
+                        }
+                     },
+                     "1013": {
+                        "#name": "field \"label\"",
+                        "customproperties": {
+                           "basicTableObject": false,
+                           "cellFormatting": false,
+                           "maxEditableColumns": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "id": "1013",
+                           "layer": "7",
+                           "lockText": true,
+                           "name": "label",
+                           "opaque": false,
+                           "rect": "22,82,122,103",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1010",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "15,78,458,425"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "1453719786339\n",
+                  "total": "7"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1013"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.stackfiles\"",
+      "properties": {
+         "fileName": "com.livecode.pi.stackfiles.livecode",
+         "id": "1013",
+         "name": "com.livecode.pi.stackfiles",
+         "rect": "592,176,1232,745"
+      },
+      "sharedGroupIDs": null
+   }
+}

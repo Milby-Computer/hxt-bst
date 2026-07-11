@@ -1,0 +1,535 @@
+{
+   "#mainstack": "revCursors",
+   "revCursors": {
+      "#name": "stack \"revCursors\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1001",
+      "childcontrols": {
+         "1001": {
+            "#name": "card \"card id 1001\"",
+            "childcontrols": [
+               {
+                  "#name": "image \"unmagnifier.giy\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "40",
+                     "layer": "24",
+                     "name": "unmagnifier.giy",
+                     "rect": "591,125,623,157",
+                     "text": {
+                        "%base64%": "AgfAggACGDCCAAIgCIIAAkAEggACQASCAAKAAoIAAo/iggACj+KCAAKP4oIAAoACggACQASC\nAAJABoIAAiAJggAHGDiAAAfcQIIAAg4gggACBxCCAAIDkIIAAgHQgwAB4LEA"
+                     },
+                     "toolTip": "40"
+                  }
+               },
+               {
+                  "#name": "image \"textdragwin.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "24",
+                     "layer": "25",
+                     "name": "textdragwin.gif",
+                     "rect": "24,269,56,301",
+                     "text": {
+                        "%base64%": "AYCDAAHAgwABoIMAAZCDAAGIgwABhIMAAYKDAAGBgwCCgIIAAoBAggACg+CCAAGSgwABqYMA\nAcmDAAKEgIIAAgSAggACKmqCAAIWVIIAAiHCggACEASCAAIgAoIAAhAEggACIAKCAAIVVIIA\nAiqqngA="
+                     }
+                  }
+               },
+               {
+                  "#name": "image \"c23\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "23",
+                     "layer": "11",
+                     "name": "c23",
+                     "rect": "134,232,150,248",
+                     "text": {
+                        "%base64%": "AgfAggACH/CCAAI/+IIAAl/0ggACT+SCAAKHwoIAAoOCggACgQKCAAKDgoIAAofCggACT+SC\nAAJf9IIAAj/4ggACH/CCAAIHwIYA"
+                     },
+                     "toolTip": "23",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               {
+                  "#name": "image \"c22\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "22",
+                     "layer": "10",
+                     "name": "c22",
+                     "rect": "118,232,134,248",
+                     "text": {
+                        "%base64%": "AgfAggACHzCCAAI/CIIAAn8EggACfwSCAAL/AoIAAv8CggAC//6CAAKB/oIAAoH+ggACQfyC\nAAJB/IIAAiH4ggACGfCCAAIHwIYA"
+                     },
+                     "toolTip": "22",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               {
+                  "#name": "image \"c21\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "21",
+                     "layer": "9",
+                     "name": "c21",
+                     "rect": "102,232,118,248",
+                     "text": {
+                        "%base64%": "AgfAggACGDCCAAIgCIIAAnAcggACeDyCAAL8foIAgv6CAAL//oIAgv6CAAL8foIAAng8ggAC\ncByCAAIgCIIAAhgwggACB8CGAA=="
+                     },
+                     "toolTip": "21",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               {
+                  "#name": "image \"subtract.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "36",
+                     "layer": "14",
+                     "name": "subtract.gif",
+                     "rect": "293,258,325,290",
+                     "text": {
+                        "%base64%": "AYCDAAHAgwABoIMAAZCDAAGIgwABhIMAAYKDAAGBgwCCgIIAAoBAggACgCCCAAKD4IIAAZKD\nAAGpgwAByYMAAoSAggACBICCAAICQIIAAgJAggACAYCHAAI/+IIAAiAIggACIAiCAAIgCIIA\nAiAIggACJ8iCAAIgCIIAAiAIggACIAiCAAIgCIIAAz/4AA=="
+                     },
+                     "toolTip": "36"
+                  }
+               },
+               {
+                  "#name": "image \"crosshair.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "37",
+                     "layer": "12",
+                     "name": "crosshair.gif",
+                     "rect": "290,313,322,345",
+                     "text": {
+                        "%base64%": "AgCAgwABgIMAAYCDAAGAgwABgIMAAYCKAAP8n4CKAAGAgwABgIMAAYCDAAGAgwABgIMAAYC+\nAA=="
+                     },
+                     "toolTip": "37"
+                  }
+               },
+               {
+                  "#name": "image \"spray can.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "34",
+                     "layer": "20",
+                     "name": "spray can.gif",
+                     "rect": "301,133,333,165",
+                     "text": {
+                        "%base64%": "AgACgwABCIMAASKCAAIOiIIAAgwiggACHgiCAAIhAoIAASGDAAJAgIIAAqBAggACwECCAAKj\nwIIAAsJAggACo8CCAALCQIIAAqJAggACwkCCAAKiQIIAAsPAggACoECCAALAQIIAAv/AqgA=\n"
+                     },
+                     "toolTip": "34"
+                  }
+               },
+               {
+                  "#name": "image \"paint brush.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "35",
+                     "layer": "18",
+                     "name": "paint brush.gif",
+                     "rect": "305,196,337,228",
+                     "text": {
+                        "%base64%": "AwABwIIAAgJAggACAmCCAAIEwIIAAgTAggACCYCCAAIJgIIAARODAAETgwABJoMAASaDAAFM\ngwABTIMAAZiDAAGYggACAXCCAAIBMIIAAgPgggACBOCCAAIJwIIAAgvAggACF4CCAAEXgwAB\nLoMAAfifAA=="
+                     },
+                     "toolTip": "35"
+                  }
+               },
+               {
+                  "#name": "image \"c20\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "20",
+                     "layer": "8",
+                     "name": "c20",
+                     "rect": "86,232,102,248",
+                     "text": {
+                        "%base64%": "AgfAggACGfCCAAIh+IIAAkH8ggACQfyCAAKB/oIAAoH+ggAC//6CAAL/AoIAAv8CggACfwSC\nAAJ/BIIAAj8IggACHzCCAAIHwIYA"
+                     },
+                     "toolTip": "20",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               {
+                  "#name": "image \"wincopycursor.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "32",
+                     "layer": "13",
+                     "name": "wincopycursor.gif",
+                     "rect": "303,29,335,61",
+                     "text": {
+                        "%base64%": "AYCDAAHAgwABoIMAAZCDAAGIgwABhIMAAYKDAAGBgwCCgIIAAoBAggACgCCCAAKD4IIAAZKD\nAAGpgwAByYMAAoSAggACBICCAAICQIIAAgJAggACAYCHAAI/+IIAAiAIggACIAiCAAIhCIIA\nAiEIggACJ8iCAAIhCIIAAiEIggACIAiCAAIgCIIAAz/4AA=="
+                     },
+                     "toolTip": "32"
+                  }
+               },
+               {
+                  "#name": "image \"c19\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "19",
+                     "layer": "7",
+                     "name": "c19",
+                     "rect": "70,232,86,248",
+                     "text": {
+                        "%base64%": "AgfAggACH/CCAAI/+IIAAl/0ggACT+SCAAKHwoIAAoOCggACgQKCAAKDgoIAAofCggACT+SC\nAAJf9IIAAj/4ggACH/CCAAIHwIYA"
+                     },
+                     "toolTip": "19",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               {
+                  "#name": "image \"c18\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "18",
+                     "layer": "6",
+                     "name": "c18",
+                     "rect": "54,232,70,248",
+                     "text": {
+                        "%base64%": "AgfAggACHzCCAAI/CIIAAn8EggACfwSCAAL/AoIAAv8CggAC//6CAAKB/oIAAoH+ggACQfyC\nAAJB/IIAAiH4ggACGfCCAAIHwIYA"
+                     },
+                     "toolTip": "18",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               {
+                  "#name": "image \"textdragcopywin.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "25",
+                     "layer": "26",
+                     "name": "textdragcopywin.gif",
+                     "rect": "24,318,56,350",
+                     "text": {
+                        "%base64%": "AYCDAAHAgwABgIMAAZCDAAGIgwABhIMAAYKDAAGBgwCCgIIAAoBAggACg+CCAAGSgwABqYMA\nAcmDAAKEgIIAAgSAggCCKoIAAhZUggACIcKCAAIQBIIACCA/+AAQIAgAgiAJCAAVYQgAKqEI\nggACJ8iCAAIhCIIAAiEIggABIIMAAiAIggACP/iFAA=="
+                     }
+                  }
+               },
+               {
+                  "#name": "image \"eraser win.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "33",
+                     "layer": "19",
+                     "name": "eraser win.gif",
+                     "rect": "305,94,337,126",
+                     "text": {
+                        "%base64%": "AfCDAAvgH/gAwCAEAIBADIIAKYAUAAEAJAACAEQABACEAAgBBAAQAggAIAQQAH/4IABACEAA\nQAiAAEAJggACQAqCAAJADIIAAj/4ugA="
+                     },
+                     "toolTip": "33"
+                  }
+               },
+               {
+                  "#name": "image \"divideH.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "30",
+                     "layer": "16",
+                     "name": "divideH.gif",
+                     "rect": "15,495,47,527",
+                     "text": {
+                        "%base64%": "AgHAggACA2CCAAIGMIIAAgwYggCCCIIAAg94ggCC/waAAIAAgACC/wKAAIL/BoAAgACAAIL/\nBIAAD3iCAIIIggACDBiCAAIGMIIAAgNgggACAcC6AA=="
+                     },
+                     "toolTip": "30",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               {
+                  "#name": "image \"divideV.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "31",
+                     "layer": "17",
+                     "name": "divideV.gif",
+                     "rect": "57,495,89,527",
+                     "text": {
+                        "%base64%": "AgPwggACAtCCAAIC0IIAAgLQggACHt6CAAI224IAFmbZgADG2MAAgtBAAMbYwABm2YAANtuC\nAAIe3oIAAgLQggACAtCCAAIC0IIAAgPwvgA="
+                     },
+                     "toolTip": "31",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               {
+                  "#name": "field id 1100",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Edit Mode</p>",
+                     "id": "1100",
+                     "layer": "27",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "26,8,96,27",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               {
+                  "#name": "image \"pointer.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1",
+                     "layer": "28",
+                     "name": "pointer.gif",
+                     "rect": "34,38,66,70",
+                     "text": {
+                        "%base64%": "AYCDAAHAgwABoIMAAZCDAAGIgwABhIMAAYKDAAGBgwCCgIIAAoBAggACgCGCAAaH84AAiAGC\nAAKQAYIAAqABggAHwCEIAIB//IIAAiEIggABAYMAAQGDAAEBgwACA4CCAAEBpgA="
+                     },
+                     "toolTip": "1"
+                  }
+               },
+               {
+                  "#name": "field \"field id 1132\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/revCursors_1001_1133_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "<p>Note:</p>\n<p></p>\n<p>The cursors in this stack are in the ID range 1-40 and have corresponding 16*16 cursors of the same ID for Mac OS in stack \"revMacCursors\".</p>\n<p></p>\n<p>Stack \"revMacCursors\" is loaded instead of this stack on Mac OS.</p>",
+                     "id": "1133",
+                     "layer": "31",
+                     "lockText": true,
+                     "name": "field id 1132",
+                     "opaque": false,
+                     "rect": "284,354,526,484",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               {
+                  "#name": "image \"object eyedropper.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "38",
+                     "layer": "21",
+                     "name": "object eyedropper.gif",
+                     "rect": "591,31,623,63",
+                     "text": {
+                        "%base64%": "AwAHgIIAAgnAggACC8CCAAIPwIIAAn/AggACf4CCAAFcgwABjIIAJwEMYAACEJAABCEIAAhC\nBAATggQAJwMMAE4CnACcAnwAuAI8APABOIMAAbCDAAFgsQA="
+                     },
+                     "toolTip": "38"
+                  }
+               },
+               {
+                  "#name": "field id 1057",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Resize Division"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Resize Division</p>",
+                     "id": "1057",
+                     "layer": "15",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "4,454,165,473",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               {
+                  "#name": "image \"magnifier.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "39",
+                     "layer": "23",
+                     "name": "magnifier.gif",
+                     "rect": "594,79,626,111",
+                     "text": {
+                        "%base64%": "AgfAggACGDCCAAIgCIIAAkAEggACQ4SCAAKDgoIAAo/iggACj+KCAAKP4oIAAoOCggACQ4SC\nAAJABoIAAiAJggAHGDiAAAfcQIIAAg4gggACBxCCAAIDkIIAAgHQgwAB4LEA"
+                     },
+                     "toolTip": "39"
+                  }
+               },
+               {
+                  "#name": "image \"Cursors_03.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "29",
+                     "layer": "30",
+                     "name": "Cursors_03.gif",
+                     "rect": "16,412,48,444",
+                     "text": {
+                        "%base64%": "AYCDAAHAgwABoIMAAZCDAAGIgwABhIMAAYKDAAGBgwCCgIIAAoBAggACg+CCAAGSgwABqYMA\nAcmDAAKEgIIAAgSAggACAkCCAAICQIIAAgGAtgA="
+                     }
+                  }
+               },
+               {
+                  "#name": "image \"browse.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "5,1",
+                     "id": "28",
+                     "layer": "29",
+                     "name": "browse.gif",
+                     "rect": "20,366,52,398",
+                     "text": {
+                        "%base64%": "AQyDAAESgwABEoMAARKDAAESgwABEoMAAhPAggACcDiCAAKQBIIAApAEggACkASCAAKABIIA\nAoAEggACgASCAAJgBIIAAhAIggACH/iCAAIf+LoA"
+                     },
+                     "toolTip": "8",
+                     "xHot": "5"
+                  }
+               },
+               {
+                  "#name": "image \"c16\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "16",
+                     "layer": "4",
+                     "name": "c16",
+                     "rect": "22,232,38,248",
+                     "text": {
+                        "%base64%": "AgfAggACGfCCAAIh+IIAAkH8ggACQfyCAAKB/oIAAoH+ggAC//6CAAL/AoIAAv8CggACfwSC\nAAJ/BIIAAj8IggACHzCCAAIHwIYA"
+                     },
+                     "toolTip": "16",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               {
+                  "#name": "image \"c17\"",
+                  "properties": {
+                     "hotSpot": "8,8",
+                     "id": "17",
+                     "layer": "5",
+                     "name": "c17",
+                     "rect": "38,232,54,248",
+                     "text": {
+                        "%base64%": "AgfAggACGDCCAAIgCIIAAnAcggACeDyCAAL8foIAgv6CAAL//oIAgv6CAAL8foIAAng8ggAC\ncByCAAIgCIIAAhgwggACB8CGAA=="
+                     },
+                     "toolTip": "17",
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               {
+                  "#name": "image \"bucket.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "17,22",
+                     "id": "5",
+                     "layer": "1",
+                     "name": "bucket.gif",
+                     "rect": "28,99,60,131",
+                     "text": {
+                        "%base64%": "AgCAggACAUCCAAIBIIIAAgFQggACAbCCAAIBEIIAAgIYggACBBSCAAIIEoIAAhARggArOCjA\nAHwQ4AC+AeAAnwNgAE+GYAAnzGAAE/hgAAnwYAAE4GAAA8BgAAGAYIMAAWCDAAFApQA="
+                     },
+                     "toolTip": "5",
+                     "xHot": "17",
+                     "yHot": "22"
+                  }
+               },
+               {
+                  "#name": "image \"pencil.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "1,24",
+                     "id": "11",
+                     "layer": "2",
+                     "name": "pencil.gif",
+                     "rect": "22,139,54,171",
+                     "text": {
+                        "%base64%": "AgAwgwABXIMAAUyDAAGYgwABmIIAAgEwggACATCCAAICYIIAAgJgggACBMCCAAIEwIIAAgmA\nggACCYCCAAETgwABE4MAASaDAAEmgwABTIMAAUyDAAGIgwABiIMAAZCDAAHggwABwIMAAYCf\nAA=="
+                     },
+                     "toolTip": "11",
+                     "yHot": "24"
+                  }
+               },
+               {
+                  "#name": "image \"eyedropper.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "1,17",
+                     "id": "12",
+                     "layer": "3",
+                     "name": "eyedropper.gif",
+                     "rect": "24,179,56,211",
+                     "text": {
+                        "%base64%": "AwAHgIIAAgnAggACC8CCAAIPwIIAAn/AggACf4CCAAFcgwABjIIAAgEMggACAhCCAAIEIIIA\nAghAggACE4CCAAEngwABToMAAZyDAAG4gwAB8LsA"
+                     },
+                     "toolTip": "12",
+                     "yHot": "17"
+                  }
+               },
+               {
+                  "#name": "field id 1072",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Object Eyedropper"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Object Eyedropper</p>",
+                     "id": "1072",
+                     "layer": "22",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "474,30,584,50",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            ],
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "31"
+               }
+            },
+            "properties": {
+               "id": "1001",
+               "name": "card id 1001"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.6.1"
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1133"
+         }
+      },
+      "longID": "stack \"revCursors\"",
+      "properties": {
+         "backColor": "lightblue",
+         "decorations": "default",
+         "fileName": "revcursors.rev",
+         "id": "1133",
+         "liveResizing": false,
+         "name": "revCursors",
+         "rect": "465,271,1200,826"
+      },
+      "sharedGroupIDs": null
+   }
+}

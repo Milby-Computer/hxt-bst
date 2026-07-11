@@ -1,0 +1,81 @@
+{
+   "#mainstack": "com.livecode.pi.colorwithalpha",
+   "com.livecode.pi.colorwithalpha": {
+      "#name": "stack \"com.livecode.pi.colorwithalpha\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1009": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1012": {
+                        "#name": "group id 1012",
+                        "childcontrols": {
+                           "1011": {
+                              "#name": "scrollbar \"Scrollbar\"",
+                              "customproperties": {
+                                 "focusBorder": null
+                              },
+                              "properties": {
+                                 "endValue": "255",
+                                 "id": "1011",
+                                 "layer": "3",
+                                 "lineInc": "16.988327",
+                                 "name": "Scrollbar",
+                                 "pageInc": "0.996109",
+                                 "rect": "100,18,200,38",
+                                 "startValue": "0",
+                                 "style": "scale",
+                                 "thumbSize": "99",
+                                 "toolTip": "Opacity"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1012",
+                           "layer": "2",
+                           "rect": "96,14,204,42"
+                        }
+                     },
+                     "1013": {
+                        "#name": "widget id 1013",
+                        "$kind": "com.livecode.widget.colorSwatch",
+                        "properties": {
+                           "id": "1013",
+                           "name": "widget id 1013",
+                           "rect": "66,15,90,39"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1005 of stack \"Untitled 2\"",
+                     "id": "1009",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "66,14,204,42"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "visitedColor": "168,1,255"
+      },
+      "longID": "stack \"com.livecode.pi.colorwithalpha\"",
+      "properties": {
+         "fileName": "com.livecode.pi.colorwithalpha.livecode",
+         "id": "1013",
+         "name": "com.livecode.pi.colorwithalpha",
+         "rect": "793,327,1148,714"
+      },
+      "sharedGroupIDs": null
+   }
+}

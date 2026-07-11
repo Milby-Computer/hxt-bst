@@ -1,0 +1,19 @@
+<p><b><u><font face="helvetica" size="12">Discussion:</font></u></b></p>
+<p>This custom command is used with a statement such as one of the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  printThisCard</font></p>
+<p><font face="Courier" size="11">  printThisCard empty,144 </font><font face="Courier" size="11" color="#68228B">-- 2-inch margin</font></p>
+<p><font face="Courier" size="11">  printThisCard "576,720",72 </font><font face="Courier" size="11" color="#68228B">-- 8x10" paper, 1" margin</font></p>
+<p></p>
+<p>The first thing this handler does is to check its parameters. The "printThisCard" handler takes two parameters--the paper size in points and the margin width in points. There are 72 points in an inch.</p>
+<p></p>
+<p>You'll notice that you can call the handler with just one parameter, or with none. It's possible to do this because the first part of the handler checks to see whether a value was passed for both the parameters. If not, the handler assigns the value currently chosen for the user's printer. In other words, if you don't specify thePaperSize when you use the handler, it reads the size from the current paper size set by the system. If you don't specify theMargin, it assumes you want one-inch (72-point) margins.</p>
+<p></p>
+<p>You can use this method with any handler to assign a default value to one or more of the parameters. Just check whether the parameter is empty. If it is, then no value has been passed, and you set the default value by simply putting the desired default into the parameter.</p>
+<p></p>
+<p>Next, the handler sets up a rectangle for the page size less the margins. Finally, the card is printed into this rectangle. When you use the print...into form of the print command, the card is scaled up or down to fit the destination rectangle. In this case, it is scaled to fit the printable area of the page, since that's the destination rectangle that we put into the "destinationRect" variable.</p>
+<p></p>
+<p><img src="202651" char=" "> <b><font face="Lucida Grande" size="11">Tip:</font></b><font face="helvetica" size="12">  Suppose you want to approach the problem from the opposite direction, and specify that cards should be printed at, say, half size regardless of how many cards fit on a page. In this case, instead of using the print...into form, set the printScale property to specify how much the card should be magnified or reduced:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">set</font><font face="Courier" size="11"> the </font><font face="Courier" size="11" color="#FF0000">printScale</font><font face="Courier" size="11"> to 0.5 </font><font face="Courier" size="11" color="#68228B">-- half</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">print</font><font face="Courier" size="11"> this card</font></p>

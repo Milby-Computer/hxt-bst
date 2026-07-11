@@ -1,0 +1,23 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom function is called with a statement such as the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> uncommonLines(field "Original",field "New") into myLines</font></p>
+<p></p>
+<p>The "uncommonLines" function takes two lists, finds the lines that are in one list, but not in the other, and marks them with a leading "+" or "-" depending on which of the two lists the line is found in. If you start with the first list, add the lines marked with "+", and delete the lines marked with "-", you get the second list.</p>
+<p></p>
+<p>The handler goes through each list in turn, and builds a third list consisting of the lines that the lists don't have in common. First, it uses a <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> control structure to scan each line in the firstList parameter. If the line doesn't also appear in the secondList parameter, the handler adds that line to a variable called "uncommon", prepending a "-" to the line with the </font><font face="Courier" size="11">&amp;&amp;</font><font face="helvetica" size="12"> operator. (The &amp;&amp; operator places a space between the "-" and the text of the line for better readability.) It also adds a </font><font face="Courier" size="11">return</font><font face="helvetica" size="12"> character so that the next line added will start on a new line.</font></p>
+<p></p>
+<p>Next, the handler uses a similar <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> loop to scan each line in the secondList. If the line isn't in the firstList, the handler adds the line to the "uncommon" variable, prepending a "+" this time.</font></p>
+<p></p>
+<p>Since the handler adds a return character to "uncommon" after each uncommon line it finds, the last character of "uncommon" is a trailing return. The handler deletes this trailing return and then returns the contents of the "uncommon" variable.</p>
+<p></p>
+<p><b><font face="Lucida Grande" size="11">A note on efficiency:</font></b></p>
+<p>To make this handler faster, we've used the repeat for each form of the <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> control structure. A more traditional way to write the first </font><font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> loop would be like this:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">repeat</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">with</font><font face="Courier" size="11"> x = 1 to the </font><font face="Courier" size="11" color="#FF0000">number</font><font face="Courier" size="11"> of lines in firstList</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#980517">if</font><font face="Courier" size="11"> line x of firstList is not in secondList </font><font face="Courier" size="11" color="#980517">then</font></p>
+<p><font face="Courier" size="11">      </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> "-" &amp;&amp; thisLine &amp; </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> after uncommon</font></p>
+<p><font face="Courier" size="11">    </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">if</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#980517">end</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#980517">repeat</font></p>
+<p></p>
+<p>Many languages support this form of repeat loop, and Transcript does too: this form will work the same way as the one we used. However, the repeat for each form is much faster--depending on the circumstances, up to hundreds of times faster--than the <font face="Courier" size="11">repeat with x = start to end</font><font face="helvetica" size="12"> form.</font></p>

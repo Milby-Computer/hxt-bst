@@ -1,0 +1,18 @@
+<p><font color="#68228B">--&gt; SCRIPT OF BTN Delete users Table</font></p>
+<p></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#0000FF">global</font> gConID</p>
+<p>  </p>
+<p><font face="Courier New" size="14">  </font><font face="Courier New" size="14" color="#0000FF">put</font><font face="Courier New" size="14"> "DROP TABLE users" into tSQL</font></p>
+<p><font face="Courier New" size="14">  </font><font face="Courier New" size="12" color="#0000FF">put</font><font face="Courier New" size="12"> revdb_execute(gConID,tSQL) into tTmp</font></p>
+<p>  </p>
+<p>  handleRevDBerror <font face="Courier New" size="12">tTmp</font></p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">result</font> is not empty <font color="#980517">then</font> </p>
+<p>    <font color="#0000FF">answer</font> warning the <font color="#F88017">result</font></p>
+<p>    <font color="#0000FF">exit</font> mouseUp</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p>  </p>
+<p>  <font color="#0000FF">answer</font> information "Tables Deleted: " &amp; tTmp</p>
+<p>  </p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>

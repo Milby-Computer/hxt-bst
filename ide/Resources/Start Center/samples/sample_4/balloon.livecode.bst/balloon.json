@@ -1,0 +1,935 @@
+{
+   "#mainstack": "balloon",
+   "balloon": {
+      "#name": "stack \"balloon\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002\n1012\n1023\n1056\n1079\n1020",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"introduction\"",
+            "childcontrols": {
+               "1019": {
+                  "#name": "button \"start\"",
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorselection]": {
+                        "scripteditorselection": "89"
+                     },
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "hiliteIcon": "1035",
+                     "icon": "1034",
+                     "id": "1019",
+                     "layer": "2",
+                     "name": "start",
+                     "opaque": false,
+                     "rect": "248,353,776,575",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1033": {
+                  "#name": "image \"intro_background.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1033",
+                     "layer": "1",
+                     "name": "intro_background.png",
+                     "rect": "0,0,1024,768",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1002_1033_text.png"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "0"
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "2"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "introduction"
+            }
+         },
+         "1012": {
+            "#name": "card \"page1\"",
+            "childcontrols": {
+               "1013": {
+                  "#name": "image \"background.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1013",
+                     "layer": "1",
+                     "name": "background.png",
+                     "rect": "0,0,1024,768",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1012_1013_text.png"
+                  }
+               },
+               "1014": {
+                  "#name": "image \"foreground\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1014",
+                     "layer": "2",
+                     "name": "foreground",
+                     "rect": "-988,620,2012,769",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1012_1014_text.png"
+                  }
+               },
+               "1015": {
+                  "#name": "image \"balloon\"",
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorselection]": {
+                        "scripteditorselection": "670"
+                     },
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1015",
+                     "layer": "3",
+                     "name": "balloon",
+                     "rect": "975,254,1078,404",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1012_1015_text.png"
+                  }
+               },
+               "1017": {
+                  "#name": "field \"story\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "foreColor": "255,255,255",
+                     "htmlText": "<p>Hi, El. Your hot air balloon is about to take off on a round the world adventure.</p>\n<p></p>\n<p>Click on the balloon to take off.</p>",
+                     "id": "1017",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "story",
+                     "opaque": false,
+                     "rect": "51,127,973,281",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "24",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1027": {
+                  "#name": "field \"title\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Balloon Adventure"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "255,255,255",
+                     "htmlText": "<p>Balloon Adventure</p>",
+                     "id": "1027",
+                     "layer": "5",
+                     "lockText": true,
+                     "name": "title",
+                     "opaque": false,
+                     "rect": "241,31,783,97",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "48",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1036": {
+                  "#name": "graphic \"path\"",
+                  "properties": {
+                     "filled": true,
+                     "id": "1036",
+                     "layer": "6",
+                     "name": "path",
+                     "opaque": true,
+                     "points": "%file%: assets/balloon_1012_1036_points.bin",
+                     "rect": "85,328,1027,643",
+                     "style": "curve",
+                     "visible": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "0"
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "6"
+               }
+            },
+            "properties": {
+               "id": "1012",
+               "layer": "2",
+               "name": "page1"
+            }
+         },
+         "1020": {
+            "#name": "card \"images\"",
+            "childcontrols": {
+               "1034": {
+                  "#name": "image \"start.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1034",
+                     "layer": "1",
+                     "name": "start.png",
+                     "rect": "254,158,782,380",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1020_1034_text.png"
+                  }
+               },
+               "1035": {
+                  "#name": "image \"start_pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1035",
+                     "layer": "2",
+                     "name": "start_pressed.png",
+                     "rect": "252,416,780,638",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1020_1035_text.png"
+                  }
+               },
+               "1047": {
+                  "#name": "image \"down.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1047",
+                     "layer": "3",
+                     "name": "down.png",
+                     "rect": "470,344,554,424",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1020_1047_text.png"
+                  }
+               },
+               "1048": {
+                  "#name": "image \"down_pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1048",
+                     "layer": "4",
+                     "name": "down_pressed.png",
+                     "rect": "470,344,554,424",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1020_1048_text.png"
+                  }
+               },
+               "1049": {
+                  "#name": "image \"left.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1049",
+                     "layer": "5",
+                     "name": "left.png",
+                     "rect": "470,342,555,426",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1020_1049_text.png"
+                  }
+               },
+               "1050": {
+                  "#name": "image \"left_pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1050",
+                     "layer": "6",
+                     "name": "left_pressed.png",
+                     "rect": "470,342,555,426",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1020_1050_text.png"
+                  }
+               },
+               "1051": {
+                  "#name": "image \"right.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1051",
+                     "layer": "7",
+                     "name": "right.png",
+                     "rect": "468,340,557,429",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1020_1051_text.png"
+                  }
+               },
+               "1052": {
+                  "#name": "image \"right_pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1052",
+                     "layer": "8",
+                     "name": "right_pressed.png",
+                     "rect": "468,340,557,429",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1020_1052_text.png"
+                  }
+               },
+               "1053": {
+                  "#name": "image \"up.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1053",
+                     "layer": "9",
+                     "name": "up.png",
+                     "rect": "467,342,557,426",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1020_1053_text.png"
+                  }
+               },
+               "1054": {
+                  "#name": "image \"up_pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1054",
+                     "layer": "10",
+                     "name": "up_pressed.png",
+                     "rect": "467,342,557,426",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1020_1054_text.png"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "10"
+               }
+            },
+            "properties": {
+               "id": "1020",
+               "layer": "6",
+               "name": "images"
+            }
+         },
+         "1023": {
+            "#name": "card \"page2\"",
+            "childcontrols": {
+               "1024": {
+                  "#name": "image \"background.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1024",
+                     "layer": "1",
+                     "name": "background.png",
+                     "rect": "0,0,1024,768",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1023_1024_text.png"
+                  }
+               },
+               "1025": {
+                  "#name": "image \"foreground1\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1025",
+                     "layer": "2",
+                     "name": "foreground1",
+                     "rect": "-1273,620,1727,769",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1023_1025_text.png"
+                  }
+               },
+               "1026": {
+                  "#name": "image \"balloon\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1026",
+                     "layer": "4",
+                     "name": "balloon",
+                     "rect": "0,254,103,404",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1023_1026_text.png"
+                  }
+               },
+               "1028": {
+                  "#name": "field \"title\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Balloon Adventure"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "255,255,255",
+                     "htmlText": "<p>Balloon Adventure</p>",
+                     "id": "1028",
+                     "layer": "5",
+                     "lockText": true,
+                     "name": "title",
+                     "opaque": false,
+                     "rect": "241,31,783,97",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "48",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1031": {
+                  "#name": "field \"score\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "255,255,0",
+                     "htmlText": "<p>0</p>",
+                     "id": "1031",
+                     "layer": "7",
+                     "lockText": true,
+                     "name": "score",
+                     "opaque": false,
+                     "rect": "776,52,1004,94",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textSize": "24",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1032": {
+                  "#name": "image \"points\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1032",
+                     "layer": "8",
+                     "name": "points",
+                     "rect": "200,473,249,527",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1023_1032_text.png"
+                  }
+               },
+               "1037": {
+                  "#name": "image \"foreground2\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1037",
+                     "layer": "3",
+                     "name": "foreground2",
+                     "rect": "1727,620,4727,769",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1023_1037_text.png"
+                  }
+               },
+               "1040": {
+                  "#name": "button \"up\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "hiliteIcon": "1054",
+                     "icon": "1053",
+                     "id": "1040",
+                     "layer": "9",
+                     "lockLoc": true,
+                     "name": "up",
+                     "opaque": false,
+                     "rect": "838,580,928,664",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1042": {
+                  "#name": "button \"right\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "hiliteIcon": "1052",
+                     "icon": "1051",
+                     "id": "1042",
+                     "layer": "10",
+                     "lockLoc": true,
+                     "name": "right",
+                     "opaque": false,
+                     "rect": "910,619,999,708",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1044": {
+                  "#name": "button \"down\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "hiliteIcon": "1048",
+                     "icon": "1047",
+                     "id": "1044",
+                     "layer": "11",
+                     "lockLoc": true,
+                     "name": "down",
+                     "opaque": false,
+                     "rect": "842,681,926,761",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1046": {
+                  "#name": "button \"left\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "hiliteIcon": "1050",
+                     "icon": "1049",
+                     "id": "1046",
+                     "layer": "12",
+                     "lockLoc": true,
+                     "name": "left",
+                     "opaque": false,
+                     "rect": "766,628,851,712",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1061": {
+                  "#name": "field \"story\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Hi again, Elanor . For this task you have to collect 3000 points to move on to the next level. Pilot your balloon around using the arrow keys to collect points."
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "foreColor": "255,255,255",
+                     "htmlText": "<p>Hi again, El . For this task you have to collect 3000 points to move on to the next level. Pilot your balloon around using the arrow keys to collect points.</p>",
+                     "id": "1061",
+                     "layer": "6",
+                     "lockText": true,
+                     "name": "story",
+                     "opaque": false,
+                     "rect": "53,129,975,240",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "24",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorselection]": {
+                  "scripteditorselection": "0"
+               },
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "1228"
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "12"
+               }
+            },
+            "properties": {
+               "id": "1023",
+               "layer": "3",
+               "name": "page2"
+            }
+         },
+         "1056": {
+            "#name": "card \"page3\"",
+            "childcontrols": {
+               "1066": {
+                  "#name": "button \"left\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "hiliteIcon": "1050",
+                     "icon": "1049",
+                     "id": "1066",
+                     "layer": "4",
+                     "lockLoc": true,
+                     "name": "left",
+                     "opaque": false,
+                     "rect": "766,628,851,712",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1067": {
+                  "#name": "button \"down\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "hiliteIcon": "1048",
+                     "icon": "1047",
+                     "id": "1067",
+                     "layer": "5",
+                     "lockLoc": true,
+                     "name": "down",
+                     "opaque": false,
+                     "rect": "842,681,926,761",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1068": {
+                  "#name": "button \"right\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "hiliteIcon": "1052",
+                     "icon": "1051",
+                     "id": "1068",
+                     "layer": "6",
+                     "lockLoc": true,
+                     "name": "right",
+                     "opaque": false,
+                     "rect": "910,619,999,708",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1069": {
+                  "#name": "button \"up\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "hiliteIcon": "1054",
+                     "icon": "1053",
+                     "id": "1069",
+                     "layer": "7",
+                     "lockLoc": true,
+                     "name": "up",
+                     "opaque": false,
+                     "rect": "838,580,928,664",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1070": {
+                  "#name": "field \"title\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Balloon Adventure"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "255,255,255",
+                     "htmlText": "<p>Balloon Adventure</p>",
+                     "id": "1070",
+                     "layer": "8",
+                     "lockText": true,
+                     "name": "title",
+                     "opaque": false,
+                     "rect": "241,31,783,97",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "48",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1071": {
+                  "#name": "field \"story\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Hi again, Elanor . For this task you have to collect 3000 points to move on to the next level. Pilot your balloon around using the arrow keys to collect points."
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "foreColor": "255,255,255",
+                     "htmlText": "<p>Hi again, El . For this task you have to move across the screen without colliding with any birds.</p>",
+                     "id": "1071",
+                     "layer": "9",
+                     "lockText": true,
+                     "name": "story",
+                     "opaque": false,
+                     "rect": "53,129,975,240",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "24",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1072": {
+                  "#name": "image \"balloon\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1072",
+                     "layer": "10",
+                     "name": "balloon",
+                     "rect": "1025,604,1128,754",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1056_1072_text.png"
+                  }
+               },
+               "1073": {
+                  "#name": "image \"foreground1\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1073",
+                     "layer": "3",
+                     "name": "foreground1",
+                     "rect": "-1533,620,1467,769",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1056_1073_text.png"
+                  }
+               },
+               "1074": {
+                  "#name": "image \"background.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1074",
+                     "layer": "1",
+                     "name": "background.png",
+                     "rect": "0,0,1024,768",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1056_1074_text.png"
+                  }
+               },
+               "1075": {
+                  "#name": "image \"foreground2\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1075",
+                     "layer": "2",
+                     "name": "foreground2",
+                     "rect": "1467,620,4467,769",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1056_1075_text.png"
+                  }
+               },
+               "1076": {
+                  "#name": "image \"bird1\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1076",
+                     "layer": "11",
+                     "name": "bird1",
+                     "rect": "986,348,1062,413",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1056_1076_text.png"
+                  }
+               },
+               "1077": {
+                  "#name": "image \"bird2\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1077",
+                     "layer": "12",
+                     "name": "bird2",
+                     "rect": "122,238,198,303",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1056_1077_text.png"
+                  }
+               },
+               "1078": {
+                  "#name": "image \"bird3\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1078",
+                     "layer": "13",
+                     "name": "bird3",
+                     "rect": "362,468,438,533",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1056_1078_text.png"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorselection]": {
+                  "scripteditorselection": "0"
+               },
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "972"
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "13"
+               }
+            },
+            "properties": {
+               "id": "1056",
+               "layer": "4",
+               "name": "page3"
+            }
+         },
+         "1079": {
+            "#name": "card \"page4\"",
+            "childcontrols": {
+               "1080": {
+                  "#name": "image \"intro_background.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1080",
+                     "layer": "1",
+                     "name": "intro_background.png",
+                     "rect": "0,0,1024,768",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/balloon_1079_1080_text.png"
+                  }
+               },
+               "1083": {
+                  "#name": "field \"story\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Congratulations."
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "foreColor": "255,255,255",
+                     "htmlText": "<p>Congratulations El. You have reached the end of your balloon adventure.</p>",
+                     "id": "1083",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "story",
+                     "opaque": false,
+                     "rect": "46,319,978,589",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "50",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "2"
+               }
+            },
+            "properties": {
+               "id": "1079",
+               "layer": "5",
+               "name": "page4"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         },
+         "cREVGeometryCache": {
+            "stackID": "1083"
+         },
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "CopyReferencedFiles": false,
+            "cursors": false,
+            "files": null,
+            "inclusions": "search",
+            "Linux": true,
+            "MacOSX": true,
+            "MacOSX PowerPC-32": false,
+            "MacOSX x86-32": false,
+            "name": "balloon",
+            "OSX,copyright": "2013  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,identifier": "com..balloon",
+            "OSX,info": "balloon Version 1.0.0.0",
+            "OSX,longVersion": "balloon 1.0.0.0",
+            "OSX,name": "balloon",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "ReferencedFilesDestination": "Referenced Files",
+            "scriptLibraries": "Internet\nGeometry\nPrinting",
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Windows": true,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "C:/Program Files (x86)/RunRev/LiveCode 6.1.1/Runtime/Windows/x86-32/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "balloon 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "C:/Program Files (x86)/RunRev/LiveCode 6.1.1/Runtime/Windows/x86-32/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2013  All rights reserved worldwide",
+            "Windows,ProductName": "balloon",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0"
+         }
+      },
+      "longID": "stack \"balloon\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "balloon.livecode",
+         "id": "1083",
+         "liveResizing": false,
+         "name": "balloon",
+         "rect": "129,166,1153,934"
+      },
+      "sharedGroupIDs": null
+   }
+}

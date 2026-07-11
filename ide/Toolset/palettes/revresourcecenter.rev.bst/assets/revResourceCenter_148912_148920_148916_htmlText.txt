@@ -1,0 +1,8 @@
+<p><font face="Lucida Grande" size="12" color="#000000">Johnny Depp, the members of Guns and Roses, Donald Trump, Jon Berasategui. What links all these people? That's right, they're all in need of a good haircut. But should I be added to this list? Most likely, but why let conjecture and speculation decide when our trusty friend Revolution can do all the work? So how do we go about this? Lets find out...</font></p>
+<p></p>
+<p><b><font face="Lucida Grande" size="14" color="#990006">Image Data</font></b></p>
+<p><font face="Lucida Grande" size="12" color="#000000">What we ideally want is a function with the following prototype that takes an image and returns true if we need a haircut or false if we don't.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">function DoINeedAHaircut pImage, pWidth, pHeight</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Below is what I looked like this morning. Do I need a haircut? Only Revolution knows.</font></p>

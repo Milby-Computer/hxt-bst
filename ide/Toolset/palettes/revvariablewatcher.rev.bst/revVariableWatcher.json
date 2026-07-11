@@ -1,0 +1,381 @@
+{
+   "#mainstack": "revVariableWatcher",
+   "revVariableWatcher": {
+      "#name": "stack \"revVariableWatcher\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"home\"",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"Values\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>5</p>\n<p>4</p>",
+                     "id": "1003",
+                     "layer": "3",
+                     "listBehavior": true,
+                     "lockLoc": true,
+                     "lockText": true,
+                     "margins": "6,8,4,8",
+                     "name": "Values",
+                     "rect": "294,32,612,209",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "showLines": true,
+                     "style": "scrolling",
+                     "textFont": "ms sans serif",
+                     "textHeight": "21",
+                     "textSize": "16",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1004": {
+                  "#name": "field \"Names\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p><font color=\"#FF0000\">x</font></p>\n<p><font color=\"#FF0000\">y</font></p>",
+                     "id": "1004",
+                     "layer": "2",
+                     "listBehavior": true,
+                     "lockLoc": true,
+                     "lockText": true,
+                     "margins": "6,8,4,8",
+                     "name": "Names",
+                     "rect": "16,32,292,209",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "showLines": true,
+                     "textFont": "ms sans serif",
+                     "textHeight": "21",
+                     "textSize": "16",
+                     "textStyle": "plain"
+                  }
+               },
+               "1007": {
+                  "#name": "field \"Contents\"",
+                  "properties": {
+                     "htmlText": "<p>4</p>",
+                     "id": "1007",
+                     "layer": "4",
+                     "lockLoc": true,
+                     "name": "Contents",
+                     "rect": "4,211,612,403",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "ms sans serif",
+                     "textHeight": "21",
+                     "textSize": "16",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1026": {
+                  "#name": "field \"Watched\"",
+                  "properties": {
+                     "backColor": "220,220,220",
+                     "dontWrap": true,
+                     "foreColor": "152,0,0",
+                     "htmlText": "<p></p>\n<p></p>",
+                     "id": "1026",
+                     "layer": "1",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "margins": "4,8,4,8",
+                     "name": "Watched",
+                     "rect": "4,32,20,209",
+                     "sharedText": true,
+                     "showLines": true,
+                     "textFont": "ms sans serif",
+                     "textHeight": "21",
+                     "textSize": "16",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1028": {
+                  "#name": "field \"tvnames\"",
+                  "properties": {
+                     "htmlText": "<p>x,y</p>",
+                     "id": "1028",
+                     "layer": "5",
+                     "name": "tvnames",
+                     "rect": "-230,8,-94,92",
+                     "textFont": "ms sans serif",
+                     "textHeight": "21",
+                     "textSize": "16",
+                     "textStyle": "plain",
+                     "visible": false
+                  }
+               },
+               "1029": {
+                  "#name": "field \"tcline\"",
+                  "properties": {
+                     "htmlText": "<p>5</p>",
+                     "id": "1029",
+                     "layer": "6",
+                     "name": "tcline",
+                     "rect": "-222,100,-102,124",
+                     "textFont": "ms sans serif",
+                     "textHeight": "21",
+                     "textSize": "16",
+                     "textStyle": "plain",
+                     "visible": false
+                  }
+               },
+               "1030": {
+                  "#name": "field \"tcitem\"",
+                  "properties": {
+                     "htmlText": "<p>1</p>",
+                     "id": "1030",
+                     "layer": "7",
+                     "name": "tcitem",
+                     "rect": "-220,133,-100,157",
+                     "textFont": "ms sans serif",
+                     "textHeight": "21",
+                     "textSize": "16",
+                     "textStyle": "plain",
+                     "visible": false
+                  }
+               },
+               "1031": {
+                  "#name": "field \"handler\"",
+                  "properties": {
+                     "htmlText": "<p>mouseUp</p>",
+                     "id": "1031",
+                     "layer": "9",
+                     "name": "handler",
+                     "rect": "-222,163,-102,187",
+                     "textFont": "ms sans serif",
+                     "textHeight": "21",
+                     "textSize": "16",
+                     "textStyle": "plain",
+                     "visible": false
+                  }
+               },
+               "1032": {
+                  "#name": "field \"tvname\"",
+                  "properties": {
+                     "htmlText": "<p>y</p>",
+                     "id": "1032",
+                     "layer": "10",
+                     "name": "tvname",
+                     "rect": "-224,193,-104,217",
+                     "textFont": "ms sans serif",
+                     "textHeight": "21",
+                     "textSize": "16",
+                     "textStyle": "plain",
+                     "visible": false
+                  }
+               },
+               "1033": {
+                  "#name": "button \"Execution Contexts\"",
+                  "customproperties": {
+                     "cContexts": "button id 1004 of card id 1002 of stack \"C:/Users/Tom/Desktop/new test.rev\",mouseUp,9"
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1033",
+                     "label": "button \"Button\" , line 9",
+                     "layer": "11",
+                     "menuMode": "option",
+                     "name": "Execution Contexts",
+                     "rect": "65,6,576,26",
+                     "style": "menu",
+                     "text": "button \"Button\" , line 9",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               },
+               "1034": {
+                  "#name": "graphic \"New Graphic 1\"",
+                  "properties": {
+                     "antialiased": false,
+                     "filled": true,
+                     "id": "1034",
+                     "layer": "8",
+                     "lineSize": "0",
+                     "name": "New Graphic 1",
+                     "opaque": true,
+                     "rect": "132,-20,166,32"
+                  }
+               },
+               "1035": {
+                  "#name": "field \"Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Context</p>",
+                     "id": "1035",
+                     "layer": "12",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "name": "Field 1",
+                     "opaque": false,
+                     "rect": "7,4,64,26",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textFont": "ms sans serif",
+                     "textHeight": "21",
+                     "textSize": "16",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1037": {
+                  "#name": "field \"contentsArrayValue\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "id": "1037",
+                     "layer": "13",
+                     "lockText": true,
+                     "name": "contentsArrayValue",
+                     "rect": "184,211,612,403",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "textFont": "ms sans serif",
+                     "textHeight": "21",
+                     "textSize": "16",
+                     "textStyle": "plain",
+                     "visible": false,
+                     "vScrollbar": true
+                  }
+               },
+               "1041": {
+                  "#name": "field \"contentsArrayKey\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "id": "1041",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "contentsArrayKey",
+                     "rect": "4,211,182,403",
+                     "textFont": "ms sans serif",
+                     "textHeight": "21",
+                     "textSize": "16",
+                     "textStyle": "plain",
+                     "visible": false
+                  }
+               },
+               "1053": {
+                  "#name": "button \"hLine\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1053",
+                     "layer": "15",
+                     "name": "hLine",
+                     "opaque": false,
+                     "rect": "0,206,616,214",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1055": {
+                  "#name": "button \"contentsArrayLine\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1055",
+                     "layer": "16",
+                     "name": "contentsArrayLine",
+                     "opaque": false,
+                     "rect": "179,211,187,403",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1057": {
+                  "#name": "button \"vLine\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1057",
+                     "layer": "17",
+                     "name": "vLine",
+                     "opaque": false,
+                     "rect": "291,32,299,209",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1059": {
+                  "#name": "button \"script\"",
+                  "properties": {
+                     "icon": "203306",
+                     "id": "1059",
+                     "layer": "18",
+                     "name": "script",
+                     "rect": "586,6,612,26",
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "rectangle"
+                  }
+               }
+            },
+            "customproperties": {
+               "cLanguageNames": false
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "18"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "home",
+               "textFont": "ms sans serif",
+               "textSize": "12",
+               "textStyle": "plain"
+            }
+         }
+      },
+      "customproperties": {
+         "cActive": false,
+         "cBuildNo": "1",
+         "curline": "2",
+         "curscroll": "0",
+         "cVersionNo": "2.6.1",
+         "vcolors": "red,darkorange,brown,blue"
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1098"
+         }
+      },
+      "longID": "stack \"revVariableWatcher\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "bottomColor": "172,172,172",
+         "decorations": "default",
+         "destroyStack": true,
+         "fileName": "revvariablewatcher.rev",
+         "id": "1108",
+         "liveResizing": false,
+         "minHeight": "160",
+         "minWidth": "180",
+         "name": "revVariableWatcher",
+         "rect": "969,578,1585,988",
+         "shadowColor": "172,172,172",
+         "title": "Variable Watcher"
+      },
+      "sharedGroupIDs": null
+   }
+}

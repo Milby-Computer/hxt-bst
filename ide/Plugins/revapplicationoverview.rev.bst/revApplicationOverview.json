@@ -1,0 +1,1809 @@
+{
+   "#mainstack": "revApplicationOverview",
+   "revApplicationOverview": {
+      "#name": "stack \"revApplicationOverview\"",
+      "#substacks": null,
+      "backgroundIDs": "1606\n1642\n1583\n5536",
+      "cardIDs": "1002\n1580\n1581\n1582",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Cards and Controls\"",
+            "childcontrols": {
+               "1037": {
+                  "#name": "field \"Controls\"",
+                  "customproperties": {
+                     "cPrevHilitedLines": null,
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVDatabase": {
+                        "databasename": null,
+                        "host": null,
+                        "pass": null,
+                        "user": null
+                     },
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "2",
+                        "Master,expectedRect": "201,0,536,245",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scaleAbsolute": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scaleBottomDistance": "-14",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleLeft": false,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleRight": true,
+                        "Master,scaleRightAbsolute": true,
+                        "Master,scaleRightDistance": "1",
+                        "Master,scaleRightObjectRef": "Card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaleTop": false,
+                        "Master,scaletopDistance": null,
+                        "Master,scaleTopObjectRef": null,
+                        "Master,showHScroll": true
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "black",
+                     "hScrollbar": true,
+                     "htmlText": "<p><img src=\"201058\" char=\" \">\u2026#9;<img src=\"202863\" char=\" \">\u2026#9;<img src=\"202863\" char=\" \">\u2026#9;1\u2026#9;Field\u2026#9;0</p>\n<p><img src=\"201057\" char=\" \">\u2026#9;<img src=\"202863\" char=\" \">\u2026#9;<img src=\"202863\" char=\" \">\u2026#9;2\u2026#9;Button\u2026#9;0       </p>",
+                     "id": "1037",
+                     "layer": "6",
+                     "listBehavior": true,
+                     "lockLoc": true,
+                     "lockText": true,
+                     "name": "Controls",
+                     "rect": "310,19,655,271",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "tabStops": "32,62,92,189,446",
+                     "textHeight": "18",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               },
+               "1190": {
+                  "#name": "field \"Control Info\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "194,332,413,351",
+                        "Master,moveAbsolute": false,
+                        "Master,moveH": false,
+                        "Master,moveHAbsolute": true,
+                        "Master,movehDistance": false,
+                        "Master,moveHObjectRef": null,
+                        "Master,moveHObjectSide": "Right",
+                        "Master,moveV": true,
+                        "Master,moveVAbsolute": true,
+                        "Master,moveVDistance": "-7",
+                        "Master,moveVObjectRef": "Card",
+                        "Master,moveVObjectSide": "Bottom",
+                        "Master,scaleAbsolute": false,
+                        "Master,scalebottom": false,
+                        "Master,scaleBottomAbsolute": null,
+                        "Master,scaleBottomDistance": null,
+                        "Master,scalebottomObjectRef": null,
+                        "Master,scaleBottomObjectSide": null,
+                        "Master,scaleleft": false,
+                        "Master,scaleleftAbsolute": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleleftObjectRef": null,
+                        "Master,scaleleftObjectSide": null,
+                        "Master,scaleright": false,
+                        "Master,scalerightAbsolute": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scalerightObjectRef": null,
+                        "Master,scalerightObjectSide": null,
+                        "Master,scaletop": false,
+                        "Master,scaletopAbsolute": null,
+                        "Master,scaletopDistance": null,
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaletopObjectSide": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>2 Controls</p>",
+                     "id": "1190",
+                     "layer": "7",
+                     "lockText": true,
+                     "name": "Control Info",
+                     "opaque": false,
+                     "rect": "309,269,528,288",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1196": {
+                  "#name": "button \"Control Popup\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1196",
+                     "layer": "8",
+                     "menuMode": "popup",
+                     "menuMouseButton": "0",
+                     "name": "Control Popup",
+                     "rect": "-155,80,-10,107",
+                     "style": "menu",
+                     "text": "Property Inspector\nEdit Script\n-\nCut\nCopy\n(Paste\nClear\n-\nRefresh",
+                     "traversalOn": false
+                  }
+               },
+               "1198": {
+                  "#name": "button \"Control tabs popup\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1198",
+                     "layer": "9",
+                     "menuMode": "popup",
+                     "menuMouseButton": "0",
+                     "name": "Control tabs popup",
+                     "rect": "-155,132,-10,159",
+                     "style": "menu",
+                     "text": "!nVisible\n!cSelectable\n!cID\n!cScript Lines\n-\nReset Columns",
+                     "traversalOn": false
+                  }
+               },
+               "1583": "#shared group",
+               "1606": "#shared group",
+               "1642": "#shared group",
+               "2880": {
+                  "#name": "group \"Control Tabs\"",
+                  "childcontrols": {
+                     "2881": {
+                        "#name": "button \"Type\"",
+                        "customproperties": {
+                           null: "30",
+                           "cMinWidth": "30"
+                        },
+                        "properties": {
+                           "accelKey": "l",
+                           "id": "2881",
+                           "label": " ",
+                           "layer": "24",
+                           "margins": "16,6,4,7",
+                           "name": "Type",
+                           "rect": "310,0,344,20",
+                           "sharedHilite": false,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort controls by type",
+                           "traversalOn": false
+                        }
+                     },
+                     "2882": {
+                        "#name": "button \"Control\"",
+                        "customproperties": {
+                           "cMinWidth": "43"
+                        },
+                        "properties": {
+                           "id": "2882",
+                           "layer": "25",
+                           "margins": "6,6,4,7",
+                           "name": "Control",
+                           "rect": "501,0,758,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort controls by name",
+                           "traversalOn": false
+                        }
+                     },
+                     "2883": {
+                        "#name": "button \"Type Resize\"",
+                        "properties": {
+                           "accelKey": "1",
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "2883",
+                           "layer": "26",
+                           "name": "Type Resize",
+                           "opaque": false,
+                           "rect": "332,0,344,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "2884": {
+                        "#name": "button \"Control Resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "2884",
+                           "layer": "27",
+                           "name": "Control Resize",
+                           "opaque": false,
+                           "rect": "746,0,758,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "5233": {
+                        "#name": "button \"Layer\"",
+                        "customproperties": {
+                           "cMinWidth": "36"
+                        },
+                        "properties": {
+                           "id": "5233",
+                           "layer": "28",
+                           "margins": "6,6,4,7",
+                           "name": "Layer",
+                           "rect": "404,0,501,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort controls by layer",
+                           "traversalOn": false
+                        }
+                     },
+                     "5234": {
+                        "#name": "button \"Layer Resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "5234",
+                           "layer": "29",
+                           "name": "Layer Resize",
+                           "opaque": false,
+                           "rect": "489,0,501,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "5631": {
+                        "#name": "button \"Selectable\"",
+                        "customproperties": {
+                           "cMinWidth": "25"
+                        },
+                        "properties": {
+                           "icon": "203305",
+                           "id": "5631",
+                           "layer": "30",
+                           "margins": "4,7,4,7",
+                           "name": "Selectable",
+                           "rect": "374,0,404,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort controls by selectable",
+                           "traversalOn": false
+                        }
+                     },
+                     "5632": {
+                        "#name": "button \"Selectable Resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "5632",
+                           "layer": "31",
+                           "name": "Selectable Resize",
+                           "opaque": false,
+                           "rect": "392,0,404,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "5896": {
+                        "#name": "button \"Script Lines\"",
+                        "customproperties": {
+                           "cMinWidth": "25"
+                        },
+                        "properties": {
+                           "icon": "203306",
+                           "id": "5896",
+                           "layer": "32",
+                           "margins": "4,7,4,7",
+                           "name": "Script Lines",
+                           "rect": "758,0,808,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort controls by script lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "5897": {
+                        "#name": "button \"Script Lines Resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "5897",
+                           "layer": "33",
+                           "name": "Script Lines Resize",
+                           "opaque": false,
+                           "rect": "804,0,816,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "6093": {
+                        "#name": "button \"Visible\"",
+                        "customproperties": {
+                           "cMinWidth": "25"
+                        },
+                        "properties": {
+                           "icon": "203304",
+                           "id": "6093",
+                           "layer": "34",
+                           "margins": "4,7,4,7",
+                           "name": "Visible",
+                           "rect": "344,0,374,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort controls by visible",
+                           "traversalOn": false
+                        }
+                     },
+                     "6094": {
+                        "#name": "button \"Visible Resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "6094",
+                           "layer": "35",
+                           "name": "Visible Resize",
+                           "opaque": false,
+                           "rect": "362,0,374,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "altRightMargin": "326",
+                     "cCardTabs": "6,7",
+                     "cControlTabs": "1,2,3,4,5,7",
+                     "cHilitedButton": "1",
+                     "cLastTab": "Script Lines"
+                  },
+                  "properties": {
+                     "id": "2880",
+                     "layer": "23",
+                     "lockLoc": true,
+                     "name": "Control Tabs",
+                     "rect": "310,-4,655,25"
+                  }
+               },
+               "5536": "#shared group",
+               "5856": {
+                  "#name": "button \"No selection control popup\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "5856",
+                     "layer": "38",
+                     "menuMode": "popup",
+                     "menuMouseButton": "0",
+                     "name": "No selection control popup",
+                     "rect": "-155,80,-10,107",
+                     "style": "menu",
+                     "text": "(Paste\n-\nRefresh",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "Tabs": false
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "1033411909581\n1033354971135\n1037292858567\n1037314751024\n1037292951189\n",
+                  "total": "38"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "mark": true,
+               "name": "Cards and Controls"
+            }
+         },
+         "1580": {
+            "#name": "card \"Audioclips\"",
+            "childcontrols": {
+               "1583": "#shared group",
+               "1606": "#shared group",
+               "1615": {
+                  "#name": "field \"AudioClips\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVDatabase": {
+                        "databasename": null,
+                        "host": null,
+                        "pass": null,
+                        "user": null
+                     },
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "2",
+                        "Master,expectedRect": "217,0,552,268",
+                        "Master,scalebottom": true,
+                        "Master,scalebottomAbsolute": true,
+                        "Master,scalebottomDistance": "-14",
+                        "Master,scalebottomObjectRef": "Card",
+                        "Master,scalebottomObjectSide": "Bottom",
+                        "Master,scaleleft": false,
+                        "Master,scaleleftAbsolute": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleleftObjectRef": null,
+                        "Master,scaleleftObjectSide": null,
+                        "Master,scaleright": true,
+                        "Master,scalerightAbsolute": true,
+                        "Master,scalerightDistance": "2",
+                        "Master,scalerightObjectRef": "Card",
+                        "Master,scalerightObjectSide": "Right",
+                        "Master,scaletop": false,
+                        "Master,scaletopAbsolute": null,
+                        "Master,scaletopDistance": null,
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaletopObjectSide": null,
+                        "Master,showHScroll": true
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p> \u2026#9; \u2026#9; \u2026#9; \u2026#9;        </p>",
+                     "id": "1615",
+                     "layer": "12",
+                     "listBehavior": true,
+                     "lockLoc": true,
+                     "lockText": true,
+                     "margins": "8,27,8,8",
+                     "name": "AudioClips",
+                     "rect": "414,0,941,691",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "tabStops": "37,169,230,272",
+                     "textHeight": "18",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               },
+               "1623": {
+                  "#name": "button \"Audioclip tabs popup\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1623",
+                     "layer": "13",
+                     "menuMode": "popup",
+                     "menuMouseButton": "0",
+                     "name": "Audioclip tabs popup",
+                     "rect": "-155,132,-10,159",
+                     "style": "menu",
+                     "text": "!cID\n!nScript Lines\n!cSize\n-\nReset Columns",
+                     "traversalOn": false
+                  }
+               },
+               "1642": "#shared group",
+               "3893": {
+                  "#name": "group \"Audioclip Tabs\"",
+                  "childcontrols": {
+                     "3906": {
+                        "#name": "button \"Num\"",
+                        "customproperties": {
+                           null: "30",
+                           "cMinWidth": "32"
+                        },
+                        "properties": {
+                           "accelKey": "l",
+                           "id": "3906",
+                           "layer": "22",
+                           "margins": "6,6,4,7",
+                           "name": "Num",
+                           "rect": "414,0,453,20",
+                           "sharedHilite": false,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort audioclips by number",
+                           "traversalOn": false
+                        }
+                     },
+                     "3909": {
+                        "#name": "button \"Audioclip\"",
+                        "customproperties": {
+                           "cMinWidth": "53"
+                        },
+                        "properties": {
+                           "id": "3909",
+                           "layer": "23",
+                           "margins": "6,6,4,7",
+                           "name": "Audioclip",
+                           "rect": "453,0,585,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort audioclips by name",
+                           "traversalOn": false
+                        }
+                     },
+                     "3910": {
+                        "#name": "button \"Num Resize\"",
+                        "properties": {
+                           "accelKey": "1",
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "3910",
+                           "layer": "24",
+                           "name": "Num Resize",
+                           "opaque": false,
+                           "rect": "441,0,453,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "3912": {
+                        "#name": "button \"Audioclip Resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "3912",
+                           "layer": "25",
+                           "name": "Audioclip Resize",
+                           "opaque": false,
+                           "rect": "573,0,585,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "5133": {
+                        "#name": "button \"ID\"",
+                        "customproperties": {
+                           "cMinWidth": "21"
+                        },
+                        "properties": {
+                           "id": "5133",
+                           "layer": "26",
+                           "margins": "6,6,4,7",
+                           "name": "ID",
+                           "rect": "585,0,646,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort audioclips by id",
+                           "traversalOn": false
+                        }
+                     },
+                     "5134": {
+                        "#name": "button \"ID Resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "5134",
+                           "layer": "27",
+                           "name": "ID Resize",
+                           "opaque": false,
+                           "rect": "634,0,646,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "5137": {
+                        "#name": "button \"Size\"",
+                        "customproperties": {
+                           "cMinWidth": "30"
+                        },
+                        "properties": {
+                           "id": "5137",
+                           "layer": "28",
+                           "margins": "6,6,4,7",
+                           "name": "Size",
+                           "rect": "688,0,742,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort audioclips by size",
+                           "traversalOn": false
+                        }
+                     },
+                     "5138": {
+                        "#name": "button \"Size Resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "5138",
+                           "layer": "29",
+                           "name": "Size Resize",
+                           "opaque": false,
+                           "rect": "730,0,742,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "5670": {
+                        "#name": "button \"Script Lines\"",
+                        "customproperties": {
+                           "cMinWidth": "25"
+                        },
+                        "properties": {
+                           "icon": "203306",
+                           "id": "5670",
+                           "layer": "30",
+                           "margins": "4,6,4,7",
+                           "name": "Script Lines",
+                           "rect": "646,0,688,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort audioclips by script lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "5671": {
+                        "#name": "button \"Script Lines Resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "5671",
+                           "layer": "31",
+                           "name": "Script Lines Resize",
+                           "opaque": false,
+                           "rect": "676,0,688,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "cAudioclipTabs": "1,2,3,4,5",
+                     "cHilitedButton": "2",
+                     "cLastTab": "Size"
+                  },
+                  "properties": {
+                     "id": "3893",
+                     "layer": "21",
+                     "lockLoc": true,
+                     "name": "Audioclip Tabs",
+                     "rect": "414,0,941,21"
+                  }
+               },
+               "4042": {
+                  "#name": "field \"Audioclip Info\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "194,332,413,351",
+                        "Master,moveAbsolute": false,
+                        "Master,moveH": false,
+                        "Master,moveHAbsolute": true,
+                        "Master,movehDistance": "-415",
+                        "Master,moveHObjectRef": null,
+                        "Master,moveHObjectSide": "Right",
+                        "Master,moveV": true,
+                        "Master,moveVAbsolute": true,
+                        "Master,moveVDistance": "-7",
+                        "Master,moveVObjectRef": "Card",
+                        "Master,moveVObjectSide": "Bottom",
+                        "Master,scaleAbsolute": false,
+                        "Master,scalebottom": false,
+                        "Master,scaleBottomAbsolute": null,
+                        "Master,scaleBottomDistance": null,
+                        "Master,scalebottomObjectRef": null,
+                        "Master,scaleBottomObjectSide": null,
+                        "Master,scaleleft": false,
+                        "Master,scaleleftAbsolute": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleleftObjectRef": null,
+                        "Master,scaleleftObjectSide": null,
+                        "Master,scaleright": false,
+                        "Master,scalerightAbsolute": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scalerightObjectRef": null,
+                        "Master,scalerightObjectSide": null,
+                        "Master,scaletop": false,
+                        "Master,scaletopAbsolute": null,
+                        "Master,scaletopDistance": null,
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaletopObjectSide": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "id": "4042",
+                     "layer": "32",
+                     "lockText": true,
+                     "name": "Audioclip Info",
+                     "opaque": false,
+                     "rect": "413,689,632,708",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Lucida Grande",
+                     "textHeight": "13",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "5536": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "34"
+               }
+            },
+            "properties": {
+               "id": "1580",
+               "layer": "2",
+               "name": "Audioclips"
+            }
+         },
+         "1581": {
+            "#name": "card \"VideoClips\"",
+            "childcontrols": {
+               "1583": "#shared group",
+               "1606": "#shared group",
+               "1642": "#shared group",
+               "4148": {
+                  "#name": "button \"Videoclip tabs popup\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "4148",
+                     "layer": "19",
+                     "menuMode": "popup",
+                     "menuMouseButton": "0",
+                     "name": "Videoclip tabs popup",
+                     "rect": "-155,132,-10,159",
+                     "style": "menu",
+                     "text": "!cID\n!cScript Lines\n!cSize\n-\nReset Columns",
+                     "traversalOn": false
+                  }
+               },
+               "4159": {
+                  "#name": "group \"Videoclip Tabs\"",
+                  "childcontrols": {
+                     "4160": {
+                        "#name": "button \"Num\"",
+                        "customproperties": {
+                           null: "30",
+                           "cMinWidth": "32"
+                        },
+                        "properties": {
+                           "accelKey": "l",
+                           "id": "4160",
+                           "layer": "22",
+                           "margins": "6,6,4,7",
+                           "name": "Num",
+                           "rect": "310,0,342,20",
+                           "sharedHilite": false,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort videoclips by number",
+                           "traversalOn": false
+                        }
+                     },
+                     "4161": {
+                        "#name": "button \"Videoclip\"",
+                        "customproperties": {
+                           "cMinWidth": "53"
+                        },
+                        "properties": {
+                           "id": "4161",
+                           "layer": "23",
+                           "margins": "6,6,4,7",
+                           "name": "Videoclip",
+                           "rect": "342,0,490,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort videoclips by name",
+                           "traversalOn": false
+                        }
+                     },
+                     "4162": {
+                        "#name": "button \"Num Resize\"",
+                        "properties": {
+                           "accelKey": "1",
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "4162",
+                           "layer": "24",
+                           "name": "Num Resize",
+                           "opaque": false,
+                           "rect": "330,0,342,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "4163": {
+                        "#name": "button \"videoclip resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "4163",
+                           "layer": "25",
+                           "name": "videoclip resize",
+                           "opaque": false,
+                           "rect": "478,0,490,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "5158": {
+                        "#name": "button \"Size\"",
+                        "customproperties": {
+                           "cMinWidth": "30"
+                        },
+                        "properties": {
+                           "id": "5158",
+                           "layer": "26",
+                           "margins": "6,6,4,7",
+                           "name": "Size",
+                           "rect": "582,0,636,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort videoclips by size",
+                           "traversalOn": false
+                        }
+                     },
+                     "5159": {
+                        "#name": "button \"Size Resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "5159",
+                           "layer": "27",
+                           "name": "Size Resize",
+                           "opaque": false,
+                           "rect": "624,0,636,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "5419": {
+                        "#name": "button \"Script Lines\"",
+                        "customproperties": {
+                           "cMinWidth": "25"
+                        },
+                        "properties": {
+                           "icon": "203306",
+                           "id": "5419",
+                           "layer": "28",
+                           "margins": "4,6,4,7",
+                           "name": "Script Lines",
+                           "rect": "540,0,582,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort videoclips by script lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "5420": {
+                        "#name": "button \"Script Lines Resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "5420",
+                           "layer": "29",
+                           "name": "Script Lines Resize",
+                           "opaque": false,
+                           "rect": "570,0,582,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "5674": {
+                        "#name": "button \"ID\"",
+                        "customproperties": {
+                           "cMinWidth": "21"
+                        },
+                        "properties": {
+                           "id": "5674",
+                           "layer": "30",
+                           "margins": "6,6,4,7",
+                           "name": "ID",
+                           "rect": "490,0,540,20",
+                           "sharedHilite": false,
+                           "showHilite": true,
+                           "style": "rectangle",
+                           "textAlign": "left",
+                           "toolTip": "Click to sort videoclips by id",
+                           "traversalOn": false
+                        }
+                     },
+                     "5675": {
+                        "#name": "button \"ID Resize\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hiliteFill": false,
+                           "id": "5675",
+                           "layer": "31",
+                           "name": "ID Resize",
+                           "opaque": false,
+                           "rect": "528,0,540,20",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "cHilitedButton": "1",
+                     "cLastTab": "Size",
+                     "cVideoclipTabs": "1,2,3,4,5"
+                  },
+                  "properties": {
+                     "id": "4159",
+                     "layer": "21",
+                     "lockLoc": true,
+                     "name": "Videoclip Tabs",
+                     "rect": "310,0,765,21"
+                  }
+               },
+               "4164": {
+                  "#name": "field \"Videoclips\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVDatabase": {
+                        "databasename": null,
+                        "host": null,
+                        "pass": null,
+                        "user": null
+                     },
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "2",
+                        "Master,expectedRect": "217,0,552,268",
+                        "Master,scalebottom": true,
+                        "Master,scalebottomAbsolute": true,
+                        "Master,scalebottomDistance": "-14",
+                        "Master,scalebottomObjectRef": "Card",
+                        "Master,scalebottomObjectSide": "Bottom",
+                        "Master,scaleleft": false,
+                        "Master,scaleleftAbsolute": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleleftObjectRef": null,
+                        "Master,scaleleftObjectSide": null,
+                        "Master,scaleright": true,
+                        "Master,scalerightAbsolute": true,
+                        "Master,scalerightDistance": "2",
+                        "Master,scalerightObjectRef": "Card",
+                        "Master,scalerightObjectSide": "Right",
+                        "Master,scaletop": false,
+                        "Master,scaletopAbsolute": null,
+                        "Master,scaletopDistance": null,
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaletopObjectSide": null,
+                        "Master,showHScroll": true
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p> \u2026#9; \u2026#9; \u2026#9; \u2026#9;        </p>",
+                     "id": "4164",
+                     "layer": "20",
+                     "listBehavior": true,
+                     "lockLoc": true,
+                     "lockText": true,
+                     "margins": "8,27,8,8",
+                     "name": "Videoclips",
+                     "rect": "310,0,765,438",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "tabStops": "30,178,228,270",
+                     "textHeight": "18",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               },
+               "4165": {
+                  "#name": "field \"Videoclip Info\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "194,332,413,351",
+                        "Master,moveAbsolute": false,
+                        "Master,moveH": false,
+                        "Master,moveHAbsolute": true,
+                        "Master,movehDistance": "-415",
+                        "Master,moveHObjectRef": null,
+                        "Master,moveHObjectSide": "Right",
+                        "Master,moveV": true,
+                        "Master,moveVAbsolute": true,
+                        "Master,moveVDistance": "-7",
+                        "Master,moveVObjectRef": "Card",
+                        "Master,moveVObjectSide": "Bottom",
+                        "Master,scaleAbsolute": false,
+                        "Master,scalebottom": false,
+                        "Master,scaleBottomAbsolute": null,
+                        "Master,scaleBottomDistance": null,
+                        "Master,scalebottomObjectRef": null,
+                        "Master,scaleBottomObjectSide": null,
+                        "Master,scaleleft": false,
+                        "Master,scaleleftAbsolute": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleleftObjectRef": null,
+                        "Master,scaleleftObjectSide": null,
+                        "Master,scaleright": false,
+                        "Master,scalerightAbsolute": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scalerightObjectRef": null,
+                        "Master,scalerightObjectSide": null,
+                        "Master,scaletop": false,
+                        "Master,scaletopAbsolute": null,
+                        "Master,scaletopDistance": null,
+                        "Master,scaletopObjectRef": null,
+                        "Master,scaletopObjectSide": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "id": "4165",
+                     "layer": "32",
+                     "lockText": true,
+                     "name": "Videoclip Info",
+                     "opaque": false,
+                     "rect": "309,436,528,455",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Lucida Grande",
+                     "textHeight": "13",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "5536": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "34"
+               }
+            },
+            "properties": {
+               "id": "1581",
+               "layer": "3",
+               "name": "VideoClips"
+            }
+         },
+         "1582": {
+            "#name": "card \"Blank\"",
+            "childcontrols": {
+               "1583": "#shared group",
+               "1606": "#shared group",
+               "1642": "#shared group",
+               "203708": {
+                  "#name": "image \"refresh.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "203708",
+                     "layer": "22",
+                     "name": "refresh.png",
+                     "opaque": false,
+                     "rect": "478,318,492,332",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/revApplicationOverview_1582_203708_text.png",
+                     "visible": false
+                  }
+               },
+               "4200": {
+                  "#name": "field \"select a card\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "2",
+                        "Master,expectedRect": "261,21,455,44",
+                        "Master,moveH": false,
+                        "Master,moveHAbsolute": false,
+                        "Master,movehDistance": "-0.462264",
+                        "Master,moveHObjectRef": "card",
+                        "Master,moveHObjectSide": "right",
+                        "Master,moveV": false,
+                        "Master,moveVAbsolute": false,
+                        "Master,movevDistance": "-0.793594",
+                        "Master,moveVObjectRef": "card",
+                        "Master,moveVObjectSide": "bottom",
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "fixedLineHeight": false,
+                     "foreColor": "128,128,128",
+                     "htmlText": "<p>Select a card</p>",
+                     "id": "4200",
+                     "layer": "19",
+                     "lockText": true,
+                     "name": "select a card",
+                     "opaque": false,
+                     "rect": "310,21,504,96",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "18",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "5536": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "22"
+               }
+            },
+            "properties": {
+               "id": "1582",
+               "layer": "4",
+               "name": "Blank"
+            }
+         },
+         "1583": {
+            "#name": "group \"Cards\"",
+            "childcontrols": {
+               "1029": {
+                  "#name": "field \"Cards\"",
+                  "customproperties": {
+                     "cSelLine": "2",
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "-2,0,357,255",
+                        "Master,moveh": false,
+                        "Master,movehAbsolute": null,
+                        "Master,movehDistance": false,
+                        "Master,movehObjectRef": null,
+                        "Master,movev": false,
+                        "Master,movevAbsolute": null,
+                        "Master,movevDistance": false,
+                        "Master,movevObjectRef": null,
+                        "Master,scaleAbsolute": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scaleBottomDistance": "-14",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleLeft": false,
+                        "Master,scaleleftAbsolute": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleleftObjectSide": null,
+                        "Master,scaleRight": false,
+                        "Master,scalerightAbsolute": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scaleRightObjectRef": null,
+                        "Master,scalerightObjectSide": null,
+                        "Master,scaleTop": false,
+                        "Master,scaletopAbsolute": null,
+                        "Master,scaletopDistance": null,
+                        "Master,scaleTopObjectRef": null,
+                        "Master,scaletopObjectSide": null,
+                        "Master,showHScroll": true
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "hScrollbar": true,
+                     "htmlText": "%file%: assets/revApplicationOverview_1583_1029_htmlText.txt",
+                     "id": "1029",
+                     "layer": "2",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "name": "Cards",
+                     "rect": "-2,19,302,271",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "tabStops": "301,339",
+                     "textHeight": "18",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               },
+               "1189": {
+                  "#name": "field \"Card Info\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "-2,332,157,351",
+                        "Master,moveAbsolute": false,
+                        "Master,moveH": false,
+                        "Master,movehDistance": false,
+                        "Master,moveHObjectRef": null,
+                        "Master,moveV": true,
+                        "Master,moveVAbsolute": true,
+                        "Master,moveVDistance": "-7",
+                        "Master,moveVObjectRef": "Card",
+                        "Master,moveVObjectSide": "Bottom",
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>1 Cards</p>",
+                     "id": "1189",
+                     "layer": "3",
+                     "lockText": true,
+                     "name": "Card Info",
+                     "opaque": false,
+                     "rect": "-2,269,157,288",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1219": {
+                  "#name": "button \"Resize\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "1",
+                        "Master,expectedRect": "193,0,201,329",
+                        "Master,moveh": false,
+                        "Master,movehAbsolute": null,
+                        "Master,movehDistance": false,
+                        "Master,movehObjectRef": null,
+                        "Master,moveV": false,
+                        "Master,moveVAbsolute": null,
+                        "Master,moveVDistance": false,
+                        "Master,moveVObjectRef": null,
+                        "Master,moveVObjectSide": "Bottom",
+                        "Master,scaleAbsolute": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scaleBottomDistance": "-14",
+                        "Master,scaleBottomObjectRef": "Card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleLeft": false,
+                        "Master,scaleleftAbsolute": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleLeftObjectRef": null,
+                        "Master,scaleleftObjectSide": null,
+                        "Master,scaleRight": false,
+                        "Master,scalerightAbsolute": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scaleRightObjectRef": null,
+                        "Master,scalerightObjectSide": null,
+                        "Master,scaleTop": false,
+                        "Master,scaletopAbsolute": null,
+                        "Master,scaletopDistance": null,
+                        "Master,scaleTopObjectRef": null,
+                        "Master,scaletopObjectSide": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1219",
+                     "layer": "4",
+                     "name": "Resize",
+                     "opaque": false,
+                     "rect": "302,0,310,271",
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "transparent"
+                  }
+               },
+               "5989": {
+                  "#name": "button \"Refresh\"",
+                  "properties": {
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "icon": "203708",
+                     "id": "5989",
+                     "layer": "5",
+                     "name": "Refresh",
+                     "opaque": false,
+                     "rect": "285,270,302,285",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "toolTip": "Refresh the Application Browser"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1583",
+               "layer": "1",
+               "name": "Cards",
+               "rect": "-6,-4,310,292",
+               "sharedBehavior": true
+            }
+         },
+         "1606": {
+            "#name": "group \"common menus\"",
+            "childcontrols": {
+               "1195": {
+                  "#name": "button \"Card Popup\"",
+                  "customproperties": {
+                     "cLine": "2",
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1195",
+                     "layer": "11",
+                     "menuMode": "popup",
+                     "menuMouseButton": "0",
+                     "name": "Card Popup",
+                     "rect": "-314,106,-169,133",
+                     "style": "menu",
+                     "text": "Go\nTopLevel\nSelect\n-\nProperty Inspector\nEdit Script\n-\nNew Card\nDelete Card",
+                     "traversalOn": false
+                  }
+               },
+               "1197": {
+                  "#name": "button \"Card Tabs Popup\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1197",
+                     "layer": "12",
+                     "menuMode": "popup",
+                     "menuMouseButton": "0",
+                     "name": "Card Tabs Popup",
+                     "rect": "-314,158,-169,185",
+                     "style": "menu",
+                     "text": "!cID\n!cScript Lines\n!cMarked\n-\nReset Columns",
+                     "traversalOn": false
+                  }
+               },
+               "1607": {
+                  "#name": "button \"Stack Popup\"",
+                  "customproperties": {
+                     "cLine": "1",
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1607",
+                     "layer": "13",
+                     "menuMode": "popup",
+                     "menuMouseButton": "0",
+                     "name": "Stack Popup",
+                     "rect": "-159,138,-14,165",
+                     "style": "menu",
+                     "text": "Go\nTopLevel\n-\nProperty Inspector\nEdit Script\n-\nNew Substack\n(Delete Substack\nClose and Remove From Memory\n-\nSave\n-\nStandalone Application Settings...\nSave As Standalone Application...",
+                     "traversalOn": false
+                  }
+               },
+               "1608": {
+                  "#name": "button \"Audioclip Popup\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1608",
+                     "layer": "14",
+                     "menuMode": "popup",
+                     "menuMouseButton": "0",
+                     "name": "Audioclip Popup",
+                     "rect": "-159,138,-14,165",
+                     "style": "menu",
+                     "text": "Property Inspector\nEdit Script\n-\nPlay\nStop\n-\nDelete",
+                     "traversalOn": false
+                  }
+               },
+               "1609": {
+                  "#name": "button \"VideoClip Popup\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1609",
+                     "layer": "15",
+                     "menuMode": "popup",
+                     "menuMouseButton": "0",
+                     "name": "VideoClip Popup",
+                     "rect": "-159,138,-14,165",
+                     "style": "menu",
+                     "text": "Property Inspector\nEdit Script\n-\nPlay\nStop\n-\nDelete\n",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1606",
+               "layer": "10",
+               "lockLoc": true,
+               "name": "common menus",
+               "rect": "-318,102,-10,189"
+            }
+         },
+         "1642": {
+            "#name": "group \"Card Tabs\"",
+            "childcontrols": {
+               "1643": {
+                  "#name": "button \"Name\"",
+                  "customproperties": {
+                     "cMinWidth": "48"
+                  },
+                  "properties": {
+                     "accelKey": "l",
+                     "id": "1643",
+                     "layer": "17",
+                     "margins": "16,6,4,7",
+                     "name": "Name",
+                     "rect": "0,0,301,20",
+                     "sharedHilite": false,
+                     "style": "rectangle",
+                     "textAlign": "left",
+                     "toolTip": "Click to sort cards by name",
+                     "traversalOn": false
+                  }
+               },
+               "1644": {
+                  "#name": "button \"Num\"",
+                  "customproperties": {
+                     "cMinWidth": "38"
+                  },
+                  "properties": {
+                     "id": "1644",
+                     "layer": "18",
+                     "margins": "6,6,4,7",
+                     "name": "Num",
+                     "rect": "301,0,339,20",
+                     "sharedHilite": false,
+                     "showHilite": true,
+                     "style": "rectangle",
+                     "textAlign": "left",
+                     "toolTip": "Click to sort cards by number",
+                     "traversalOn": false
+                  }
+               },
+               "1645": {
+                  "#name": "button \"Name Resize\"",
+                  "properties": {
+                     "accelKey": "1",
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1645",
+                     "layer": "19",
+                     "name": "Name Resize",
+                     "opaque": false,
+                     "rect": "289,0,301,20",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1646": {
+                  "#name": "button \"Num Resize\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1646",
+                     "layer": "20",
+                     "name": "Num Resize",
+                     "opaque": false,
+                     "rect": "327,0,339,20",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "5806": {
+                  "#name": "button \"Script Lines\"",
+                  "customproperties": {
+                     "cMinWidth": "25"
+                  },
+                  "properties": {
+                     "accelKey": "l",
+                     "icon": "203306",
+                     "id": "5806",
+                     "layer": "21",
+                     "margins": "4,7,4,7",
+                     "name": "Script Lines",
+                     "rect": "339,0,386,20",
+                     "sharedHilite": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "rectangle",
+                     "textAlign": "left",
+                     "toolTip": "Click to sort cards by script lines",
+                     "traversalOn": false
+                  }
+               },
+               "5807": {
+                  "#name": "button \"Script Lines Resize\"",
+                  "properties": {
+                     "accelKey": "1",
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "5807",
+                     "layer": "22",
+                     "name": "Script Lines Resize",
+                     "opaque": false,
+                     "rect": "381,0,393,20",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altRightMargin": "326",
+               "cCardTabs": "6,7,9",
+               "cHilitedButton": "7",
+               "cLastTab": "Script Lines"
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1642",
+               "layer": "16",
+               "lockLoc": true,
+               "name": "Card Tabs",
+               "rect": "-2,-4,302,25"
+            }
+         },
+         "5536": {
+            "#name": "group \"measure width\"",
+            "childcontrols": {
+               "5535": {
+                  "#name": "field \"measure width\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>0</p>\n<p>0       </p>",
+                     "id": "5535",
+                     "layer": "37",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "name": "measure width",
+                     "opaque": false,
+                     "rect": "-148,102,-104,121",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "5536",
+               "layer": "36",
+               "lockLoc": true,
+               "name": "measure width",
+               "rect": "-152,98,-100,125",
+               "traversalOn": false
+            }
+         }
+      },
+      "customproperties": {
+         "cAudioclipIcon": "200188",
+         "cBuildNo": "1",
+         "cButtonIcon": "201057",
+         "cCardIcon": "201458",
+         "cCardID": "1002",
+         "cClassicInIcon": "200946",
+         "cClassicOutIcon": "200951",
+         "cFieldIcon": "201058",
+         "cGraphicIcon": "201059",
+         "cGroupIcon": "201060",
+         "cImageIcon": "201061",
+         "cMainStackIcon": "200083",
+         "cMovingCd": false,
+         "cOSXInIcon": "202864",
+         "cOSXOutIcon": "202866",
+         "cPasswordIcon": "122016",
+         "cPlayerIcon": "201062",
+         "cREVGetsUpdate": true,
+         "cScriptLinesIcon": "203306",
+         "cScrollbarIcon": "201063",
+         "cSelectableIcon": "203305",
+         "cShowAudioClips": false,
+         "cShowVideoClips": false,
+         "cSubstackIcon": "200082",
+         "cSuspended": true,
+         "cTickIcon": "202863",
+         "cUnTickIcon": "202861",
+         "cVersionNo": "2.6.1",
+         "cVideoclipIcon": "200085",
+         "cVisibleIcon": "203304",
+         "cWidgetIcon": "225104",
+         "cWindowsInIcon": "200086",
+         "cWindowsOutIcon": "200087"
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "6112"
+         }
+      },
+      "longID": "stack \"revApplicationOverview\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "revapplicationoverview.rev",
+         "id": "6113",
+         "linkColor": "black",
+         "linkHiliteColor": "black",
+         "linkVisitedColor": "black",
+         "liveResizing": false,
+         "minHeight": "71",
+         "minWidth": "198",
+         "name": "revApplicationOverview",
+         "rect": "622,113,1276,398",
+         "title": "Application Browser",
+         "underlineLinks": false
+      },
+      "sharedGroupIDs": "1606\n1642\n1583\n5536"
+   }
+}

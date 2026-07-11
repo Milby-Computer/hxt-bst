@@ -1,0 +1,330 @@
+{
+   "#mainstack": "revAbout",
+   "revAbout": {
+      "#name": "stack \"revAbout\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"card id 1002\"",
+            "childcontrols": {
+               "1010": {
+                  "#name": "field \"Copyright\"",
+                  "customproperties": {
+                     "apkUniqueID": "956844552813",
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cAPKGeneral": {
+                        "handlerList": null,
+                        "tempScript": null
+                     },
+                     "cREVTable": {
+                        "bottomfieldloc": "229",
+                        "cellxspacing": "75",
+                        "cellyspacing": "14",
+                        "currenthscroll": "0",
+                        "currentview": "<p>\u2026copy; 2000-2010, Runtime Revolution Ltd.</p>",
+                        "currentvscroll": "0",
+                        "currentxmouseloc": "70",
+                        "currentymouseloc": "70",
+                        "leftfieldloc": "608",
+                        "numbertabstops": "1",
+                        "rightfieldloc": "829",
+                        "scrollbarwidth": "20",
+                        "topfieldloc": "178",
+                        "viewablecolumns": "3",
+                        "viewablerows": "4"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>\u2026copy; 2000-2016 RunRev Ltd.</p>",
+                     "id": "1010",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "Copyright",
+                     "opaque": false,
+                     "rect": "26,275,239,295",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "tabStops": "75",
+                     "textFont": "Helvetica",
+                     "textSize": "12",
+                     "traversalOn": false
+                  }
+               },
+               "102250": {
+                  "#name": "image \"aboutBackground\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "fileName": "about-background.png",
+                     "filepath": "home/pbrett/git/livecode/ide/Toolset/resources/community/ideSkin",
+                     "id": "102250",
+                     "layer": "1",
+                     "name": "aboutBackground",
+                     "rect": "0,0,532,327"
+                  }
+               },
+               "102253": {
+                  "#name": "field \"Edition\"",
+                  "customproperties": {
+                     "apkUniqueID": "956844552813",
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cAPKGeneral": {
+                        "handlerList": null,
+                        "tempScript": null
+                     },
+                     "cREVTable": {
+                        "currentview": "Version 2.6\nEngine 2.6.5 Build 108"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>Community Edition</p>",
+                     "id": "102253",
+                     "layer": "7",
+                     "lockText": true,
+                     "name": "Edition",
+                     "opaque": false,
+                     "rect": "293,22,493,50",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textSize": "18",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "102255": {
+                  "#name": "field \"displayData\"",
+                  "customproperties": {
+                     "apkUniqueID": "956844552813",
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cAPKGeneral": {
+                        "handlerList": null,
+                        "tempScript": null
+                     },
+                     "cREVTable": {
+                        "bottomfieldloc": "229",
+                        "cellxspacing": "75",
+                        "cellyspacing": "14",
+                        "currenthscroll": "0",
+                        "currentview": "About | Legal",
+                        "currentvscroll": "0",
+                        "currentxmouseloc": "70",
+                        "currentymouseloc": "70",
+                        "leftfieldloc": "608",
+                        "numbertabstops": "1",
+                        "rightfieldloc": "829",
+                        "scrollbarwidth": "20",
+                        "topfieldloc": "178",
+                        "viewablecolumns": "3",
+                        "viewablerows": "4"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p><font color=\"#87B72B\">About</font> | Legal</p>",
+                     "id": "102255",
+                     "layer": "3",
+                     "lockText": true,
+                     "name": "displayData",
+                     "opaque": false,
+                     "rect": "287,275,500,295",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "tabStops": "75",
+                     "textAlign": "right",
+                     "textFont": "Segoe UI",
+                     "textSize": "12",
+                     "traversalOn": false
+                  }
+               },
+               "102256": {
+                  "#name": "field \"License\"",
+                  "customproperties": {
+                     "apkUniqueID": "956844552813",
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cAPKGeneral": {
+                        "handlerList": null,
+                        "tempScript": null
+                     },
+                     "cREVTable": {
+                        "currentview": "<p>This Indy license is only valid for organizations with annual revenues of $500,000 USD or less</p>"
+                     },
+                     "uVersion": {
+                        "ID": "102256",
+                        "UUID": "d424ed91-1677-4f9a-a4f3-8fa38381f3d3"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "blendLevel": "40",
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>This Indy license is only valid for organizations with annual revenues of $500,000 USD or less</p>",
+                     "id": "102256",
+                     "layer": "8",
+                     "lockText": true,
+                     "name": "License",
+                     "opaque": false,
+                     "rect": "0,295,532,323",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "10",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1033": {
+                  "#name": "field \"Credits\"",
+                  "customproperties": {
+                     "Divider": false,
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/revAbout_1002_1033_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "%file%: assets/revAbout_1002_1033_htmlText.txt",
+                     "id": "1033",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "Credits",
+                     "opaque": false,
+                     "rect": "28,118,500,265",
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1040": {
+                  "#name": "field \"Pause\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "255,255,255",
+                     "id": "1040",
+                     "layer": "5",
+                     "lockText": true,
+                     "margins": "4",
+                     "name": "Pause",
+                     "opaque": false,
+                     "rect": "179,289,343,309",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1083": {
+                  "#name": "field \"Version\"",
+                  "customproperties": {
+                     "apkUniqueID": "956844552813",
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cAPKGeneral": {
+                        "handlerList": null,
+                        "tempScript": null
+                     },
+                     "cREVTable": {
+                        "currentview": "Version 2.6\nEngine 2.6.5 Build 108"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "blendLevel": "40",
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>8.0.0-rc-1 | Build 13017</p>",
+                     "id": "1083",
+                     "layer": "6",
+                     "lockText": true,
+                     "name": "Version",
+                     "opaque": false,
+                     "rect": "232,44,493,72",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textSize": "16",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "crevdescriptionloc": "333,167",
+               "cREVDescriptionTopLeft": "159,126",
+               "creveasterloc": "350,157",
+               "cREVImageTopLeft": "191,124"
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "0"
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "8"
+               }
+            },
+            "properties": {
+               "behavior": "stack \"revAboutCardBehavior\"",
+               "id": "1002",
+               "name": "card id 1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.6.1"
+      },
+      "custompropertysets": {
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         },
+         "cREVGeometryCache": {
+            "stackID": "102256"
+         }
+      },
+      "longID": "stack \"revAbout\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "backColor": "0,0,0",
+         "decorations": null,
+         "fileName": "revabout.rev",
+         "foreColor": "128,130,133",
+         "id": "102256",
+         "liveResizing": false,
+         "name": "revAbout",
+         "rect": "370,484,902,811",
+         "resizable": false,
+         "stackFiles": "revAboutCardBehavior,behaviors/revaboutcardbehavior.livecodescript",
+         "title": "About Revolution 1",
+         "windowShape": "102250"
+      },
+      "sharedGroupIDs": null
+   }
+}

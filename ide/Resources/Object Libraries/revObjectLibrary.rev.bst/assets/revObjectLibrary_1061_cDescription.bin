@@ -1,0 +1,5 @@
+Scripted scrollbar. Scrolls a field or group when it is necessary to have a separate scrollbar. Two custom properties are set on the scrollbar:
+
+cTargetType - set to either "field" or "group" depending on the type of control you want to scroll.
+
+cTargetName - set to the short name of the control you want to scroll.

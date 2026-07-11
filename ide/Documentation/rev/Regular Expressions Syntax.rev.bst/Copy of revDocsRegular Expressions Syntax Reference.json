@@ -1,0 +1,1246 @@
+{
+   "#mainstack": "Copy of revDocsRegular Expressions Syntax Reference",
+   "Copy of revDocsRegular Expressions Syntax Reference": {
+      "#name": "stack \"Copy of revDocsRegular Expressions Syntax Reference\"",
+      "#substacks": null,
+      "backgroundIDs": "1069",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Operator Precedence\"",
+            "childcontrols": {
+               "1069": "#shared group"
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Operator Precedence"
+            }
+         },
+         "1069": {
+            "#name": "group \"Regular Expression Syntax\"",
+            "childcontrols": {
+               "1084": {
+                  "#name": "group \"Grouping\"",
+                  "childcontrols": {
+                     "1085": {
+                        "#name": "field \"Character\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "fixedLineHeight": false,
+                           "htmlText": {
+                              "1002": "<p><b><font face=\"Courier New\" size=\"11\">[</font><i><font face=\"Courier New\" size=\"12\">chars</font></i><font face=\"Courier New\" size=\"11\">]</font></b></p>"
+                           },
+                           "id": "1085",
+                           "layer": "3",
+                           "lockText": true,
+                           "name": "Character",
+                           "rect": "-4,-1,91,41",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1086": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>matches any one of the <a><font face=\"verdana\" size=\"11\">characters</font></a> inside the brackets</p>"
+                           },
+                           "id": "1086",
+                           "layer": "4",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "91,-1,318,41",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1087": {
+                        "#name": "field \"Examples\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"Courier New\" size=\"12\">A[BCD]E </font>matches \u2026ldquo;ACE\u2026rdquo;, but not \u2026ldquo;AFE\u2026rdquo; or \u2026ldquo;AB\u2026rdquo;</p>"
+                           },
+                           "id": "1087",
+                           "layer": "5",
+                           "lockText": true,
+                           "name": "Examples",
+                           "rect": "318,-1,501,41",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1084",
+                     "layer": "2",
+                     "margins": "0",
+                     "name": "Grouping",
+                     "rect": "-4,-1,501,41"
+                  }
+               },
+               "1088": {
+                  "#name": "group \"Unary\"",
+                  "childcontrols": {
+                     "1089": {
+                        "#name": "field \"Character\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>[^<i><b><font face=\"Courier New\" size=\"12\">chars</font></b></i>]</p>"
+                           },
+                           "id": "1089",
+                           "layer": "7",
+                           "lockText": true,
+                           "name": "Character",
+                           "rect": "-4,43,91,85",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1090": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>matches any single <a><font face=\"verdana\" size=\"11\">character</font></a> that is not inside the brackets</p>"
+                           },
+                           "id": "1090",
+                           "layer": "8",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "91,43,318,85",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1091": {
+                        "#name": "field \"Examples\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"Courier New\" size=\"12\">[^ABC]D </font>matches \u2026ldquo;FD\u2026rdquo; or \u2026ldquo;ZD\u2026rdquo;, but not \u2026ldquo;AD\u2026rdquo; or \u2026ldquo;CD\u2026rdquo;</p>"
+                           },
+                           "id": "1091",
+                           "layer": "9",
+                           "lockText": true,
+                           "name": "Examples",
+                           "rect": "318,43,501,85",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1092": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1092",
+                           "layer": "10",
+                           "name": "Divider",
+                           "points": "98,40\n646,40",
+                           "rect": "97,39,647,41",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1088",
+                     "layer": "6",
+                     "margins": "0",
+                     "name": "Unary",
+                     "rect": "-4,39,647,85"
+                  }
+               },
+               "1093": {
+                  "#name": "group \"Exponentiation\"",
+                  "childcontrols": {
+                     "1094": {
+                        "#name": "field \"Character\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>[<i><b><font face=\"Courier New\" size=\"12\">char</font></b></i>-<i><b><font face=\"Courier New\" size=\"12\">char</font></b></i>]</p>"
+                           },
+                           "id": "1094",
+                           "layer": "12",
+                           "lockText": true,
+                           "name": "Character",
+                           "rect": "-4,87,91,171",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1095": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/Copy of revDocsRegular Expressions Syntax Reference_1069_1093_1095_htmlText_1002.txt"
+                           },
+                           "id": "1095",
+                           "layer": "13",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "91,87,318,171",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1096": {
+                        "#name": "field \"Examples\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "<p><font face=\"Courier New\" size=\"12\">A[B-D] </font>matches \u2026#147;AB\u2026#148; or \u2026#147;AC\u2026#148;, but not \u2026#147;AG\u2026#148;</p>\n<p></p>\n<p><font face=\"Courier New\" size=\"12\">[A-Za-z0-9] </font>matches any alphanumeric character</p>"
+                           }
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/Copy of revDocsRegular Expressions Syntax Reference_1069_1093_1096_htmlText_1002.txt"
+                           },
+                           "id": "1096",
+                           "layer": "14",
+                           "lockText": true,
+                           "name": "Examples",
+                           "rect": "318,87,501,171",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1097": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1097",
+                           "layer": "15",
+                           "name": "Divider",
+                           "points": "98,84\n646,84",
+                           "rect": "97,83,647,85",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1093",
+                     "layer": "11",
+                     "margins": "0",
+                     "name": "Exponentiation",
+                     "rect": "-4,83,647,171"
+                  }
+               },
+               "1098": {
+                  "#name": "group \"Multiplication\"",
+                  "childcontrols": {
+                     "1099": {
+                        "#name": "field \"Character\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>.</p>"
+                           },
+                           "id": "1099",
+                           "layer": "17",
+                           "lockText": true,
+                           "name": "Character",
+                           "rect": "-4,173,91,229",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1100": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>matches any single <a><font face=\"verdana\" size=\"11\">character</font></a> (except a linefeed)</p>"
+                           },
+                           "id": "1100",
+                           "layer": "18",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "91,173,318,229",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1101": {
+                        "#name": "field \"Examples\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"Courier New\" size=\"12\">A.C </font>matches \u2026ldquo;ABC\u2026rdquo; or \u2026ldquo;AGC\u2026rdquo;, but not \u2026ldquo;AC\u2026rdquo; or \u2026ldquo;ABDC\u2026rdquo;</p>"
+                           },
+                           "id": "1101",
+                           "layer": "19",
+                           "lockText": true,
+                           "name": "Examples",
+                           "rect": "318,173,501,229",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1102": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1102",
+                           "layer": "20",
+                           "name": "Divider",
+                           "points": "98,170\n646,170",
+                           "rect": "97,169,647,171",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1098",
+                     "layer": "16",
+                     "margins": "0",
+                     "name": "Multiplication",
+                     "rect": "-4,169,647,229"
+                  }
+               },
+               "1103": {
+                  "#name": "group \"Addition\"",
+                  "childcontrols": {
+                     "1104": {
+                        "#name": "field \"Character\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>^</p>"
+                           },
+                           "id": "1104",
+                           "layer": "22",
+                           "lockText": true,
+                           "name": "Character",
+                           "rect": "-4,231,91,273",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1105": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>matches the following <a><font face=\"verdana\" size=\"11\">character</font></a> at the beginning of the <a><font face=\"verdana\" size=\"11\">string</font></a></p>"
+                           },
+                           "id": "1105",
+                           "layer": "23",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "91,231,318,273",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1106": {
+                        "#name": "field \"Examples\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"Courier New\" size=\"12\">^A </font>matches \u2026ldquo;ABC\u2026rdquo; but not \u2026ldquo;CAB\u2026rdquo;</p>"
+                           },
+                           "id": "1106",
+                           "layer": "24",
+                           "lockText": true,
+                           "name": "Examples",
+                           "rect": "318,231,501,273",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1107": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1107",
+                           "layer": "25",
+                           "name": "Divider",
+                           "points": "98,228\n646,228",
+                           "rect": "97,227,647,229",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1103",
+                     "layer": "21",
+                     "margins": "0",
+                     "name": "Addition",
+                     "rect": "-4,227,647,273"
+                  }
+               },
+               "1108": {
+                  "#name": "group \"Concatenation\"",
+                  "childcontrols": {
+                     "1109": {
+                        "#name": "field \"Character\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>$</p>"
+                           },
+                           "id": "1109",
+                           "layer": "27",
+                           "lockText": true,
+                           "name": "Character",
+                           "rect": "-4,275,91,317",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1110": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>matches the preceding <a><font face=\"verdana\" size=\"11\">character</font></a> at the end of a <a><font face=\"verdana\" size=\"11\">string</font></a></p>"
+                           },
+                           "id": "1110",
+                           "layer": "28",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "91,275,318,317",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1111": {
+                        "#name": "field \"Examples\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"Courier New\" size=\"12\">B$ </font>matches \u2026ldquo;CAB\u2026rdquo; but not \u2026ldquo;BBC\u2026rdquo;</p>"
+                           },
+                           "id": "1111",
+                           "layer": "29",
+                           "lockText": true,
+                           "name": "Examples",
+                           "rect": "318,275,501,317",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1112": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1112",
+                           "layer": "30",
+                           "name": "Divider",
+                           "points": "98,272\n646,272",
+                           "rect": "97,271,647,273",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1108",
+                     "layer": "26",
+                     "margins": "0",
+                     "name": "Concatenation",
+                     "rect": "-4,271,647,317"
+                  }
+               },
+               "1113": {
+                  "#name": "group \"Comparison\"",
+                  "childcontrols": {
+                     "1114": {
+                        "#name": "field \"Character\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>*</p>"
+                           },
+                           "id": "1114",
+                           "layer": "32",
+                           "lockText": true,
+                           "name": "Character",
+                           "rect": "-4,319,91,417",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1115": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>matches zero or more occurrences of the preceding <a><font face=\"verdana\" size=\"11\">character</font></a> or pattern</p>"
+                           },
+                           "id": "1115",
+                           "layer": "33",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "91,319,318,417",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1116": {
+                        "#name": "field \"Examples\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/Copy of revDocsRegular Expressions Syntax Reference_1069_1113_1116_htmlText_1002.txt"
+                           },
+                           "id": "1116",
+                           "layer": "34",
+                           "lockText": true,
+                           "name": "Examples",
+                           "rect": "318,319,501,417",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1117": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1117",
+                           "layer": "35",
+                           "name": "Divider",
+                           "points": "98,316\n646,316",
+                           "rect": "97,315,647,317",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1113",
+                     "layer": "31",
+                     "margins": "0",
+                     "name": "Comparison",
+                     "rect": "-4,315,647,417"
+                  }
+               },
+               "1118": {
+                  "#name": "group \"Equality\"",
+                  "childcontrols": {
+                     "1119": {
+                        "#name": "field \"Character\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>+</p>"
+                           },
+                           "id": "1119",
+                           "layer": "37",
+                           "lockText": true,
+                           "name": "Character",
+                           "rect": "-4,419,91,503",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1120": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>matches one or more occurrences of the preceding <a><font face=\"verdana\" size=\"11\">character</font></a> or pattern</p>"
+                           },
+                           "id": "1120",
+                           "layer": "38",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "91,419,318,503",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1121": {
+                        "#name": "field \"Examples\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "%file%: assets/Copy of revDocsRegular Expressions Syntax Reference_1069_1118_1121_cREVTable_currentview.bin"
+                           }
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/Copy of revDocsRegular Expressions Syntax Reference_1069_1118_1121_htmlText_1002.txt"
+                           },
+                           "id": "1121",
+                           "layer": "39",
+                           "lockText": true,
+                           "name": "Examples",
+                           "rect": "318,419,501,503",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1122": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1122",
+                           "layer": "40",
+                           "name": "Divider",
+                           "points": "98,416\n646,416",
+                           "rect": "97,415,647,417",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1118",
+                     "layer": "36",
+                     "margins": "0",
+                     "name": "Equality",
+                     "rect": "-4,415,647,503"
+                  }
+               },
+               "1123": {
+                  "#name": "group \"bitAnd\"",
+                  "childcontrols": {
+                     "1124": {
+                        "#name": "field \"Character\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>?</p>"
+                           },
+                           "id": "1124",
+                           "layer": "42",
+                           "lockText": true,
+                           "name": "Character",
+                           "rect": "-4,505,91,589",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1125": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>matches zero or one occurrences of the preceding <a><font face=\"verdana\" size=\"11\">character</font></a> or pattern</p>"
+                           },
+                           "id": "1125",
+                           "layer": "43",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "91,505,318,589",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1126": {
+                        "#name": "field \"Examples\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "<p>ZA?B matches \u2026#147;ZB\u2026#148; or \u2026#147;ZAB\u2026#148;, but not \u2026#147;ZAAB\u2026#148;</p>\n<p></p>\n<p><font face=\"Courier New\" size=\"12\">[A-D]+G </font>matches \u2026#147;AG\u2026#148; or \u2026#147;CAG\u2026#148;, but not \u2026#147;G\u2026#148; or \u2026#147;AB\u2026#148;</p>"
+                           }
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/Copy of revDocsRegular Expressions Syntax Reference_1069_1123_1126_htmlText_1002.txt"
+                           },
+                           "id": "1126",
+                           "layer": "44",
+                           "lockText": true,
+                           "name": "Examples",
+                           "rect": "318,505,501,589",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1127": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1127",
+                           "layer": "45",
+                           "name": "Divider",
+                           "points": "98,502\n646,502",
+                           "rect": "97,501,647,503",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1123",
+                     "layer": "41",
+                     "margins": "0",
+                     "name": "bitAnd",
+                     "rect": "-4,501,647,589"
+                  }
+               },
+               "1128": {
+                  "#name": "group \"bitXOr\"",
+                  "childcontrols": {
+                     "1129": {
+                        "#name": "field \"Character\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>|</p>"
+                           },
+                           "id": "1129",
+                           "layer": "47",
+                           "lockText": true,
+                           "name": "Character",
+                           "rect": "-4,591,91,675",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1130": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>matches either the pattern before or the pattern after the |.</p>"
+                           },
+                           "id": "1130",
+                           "layer": "48",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "91,591,318,675",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1131": {
+                        "#name": "field \"Examples\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "%file%: assets/Copy of revDocsRegular Expressions Syntax Reference_1069_1128_1131_htmlText_1002.txt"
+                           },
+                           "id": "1131",
+                           "layer": "49",
+                           "lockText": true,
+                           "name": "Examples",
+                           "rect": "318,591,501,675",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1132": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1132",
+                           "layer": "50",
+                           "name": "Divider",
+                           "points": "98,588\n646,588",
+                           "rect": "97,587,647,589",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1128",
+                     "layer": "46",
+                     "margins": "0",
+                     "name": "bitXOr",
+                     "rect": "-4,587,647,675"
+                  }
+               },
+               "1133": {
+                  "#name": "group \"bitOr\"",
+                  "childcontrols": {
+                     "1134": {
+                        "#name": "field \"Character\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>\\</p>"
+                           },
+                           "id": "1134",
+                           "layer": "52",
+                           "lockText": true,
+                           "name": "Character",
+                           "rect": "-4,677,91,747",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1135": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>causes the following <a><font face=\"verdana\" size=\"11\">character</font></a> to be matched literally, even if it has special meaning in a <a><font face=\"verdana\" size=\"11\">regular expression</font></a></p>"
+                           },
+                           "id": "1135",
+                           "layer": "53",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "91,677,318,747",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1136": {
+                        "#name": "field \"Examples\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"Courier New\" size=\"12\">A\\.C </font>matches \u2026ldquo;A.C\u2026rdquo;, but not \u2026ldquo;A\\.C\u2026rdquo; or \u2026ldquo;ABC\u2026rdquo;</p>\n<p></p>\n<p><font face=\"Courier New\" size=\"12\">\\\\ </font>matches \u2026ldquo;\\\u2026rdquo;</p>"
+                           },
+                           "id": "1136",
+                           "layer": "54",
+                           "lockText": true,
+                           "name": "Examples",
+                           "rect": "318,677,501,747",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1137": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1137",
+                           "layer": "55",
+                           "name": "Divider",
+                           "points": "98,674\n646,674",
+                           "rect": "97,673,647,675",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1133",
+                     "layer": "51",
+                     "margins": "0",
+                     "name": "bitOr",
+                     "rect": "-4,673,647,747"
+                  }
+               },
+               "1138": {
+                  "#name": "group \"and\"",
+                  "childcontrols": {
+                     "1139": {
+                        "#name": "field \"Character\"",
+                        "customproperties": {
+                           "canCopyFrom": false,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>any other character</p>"
+                           },
+                           "id": "1139",
+                           "layer": "57",
+                           "lockText": true,
+                           "name": "Character",
+                           "rect": "-4,749,91,795",
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "right",
+                           "textFont": "Courier New",
+                           "textHeight": "16",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1140": {
+                        "#name": "field \"Comments\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": true,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p>matches itself</p>"
+                           },
+                           "id": "1140",
+                           "layer": "58",
+                           "lockText": true,
+                           "name": "Comments",
+                           "rect": "91,749,318,795",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1141": {
+                        "#name": "field \"Examples\"",
+                        "customproperties": {
+                           "canCopyFrom": true,
+                           "canHypertext": false,
+                           "showBorders": false
+                        },
+                        "properties": {
+                           "htmlText": {
+                              "1002": "<p><font face=\"Courier New\" size=\"12\">ABC </font>matches \u2026ldquo;ABC\u2026rdquo;</p>"
+                           },
+                           "id": "1141",
+                           "layer": "59",
+                           "lockText": true,
+                           "name": "Examples",
+                           "rect": "318,749,501,795",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque"
+                        }
+                     },
+                     "1142": {
+                        "#name": "graphic \"Divider\"",
+                        "customproperties": {
+                           "apkUniqueID": "962187534610"
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "borderWidth": "1",
+                           "foreColor": "184,192,208",
+                           "id": "1142",
+                           "layer": "60",
+                           "name": "Divider",
+                           "points": "98,746\n646,746",
+                           "rect": "97,745,647,747",
+                           "style": "line",
+                           "threeD": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1138",
+                     "layer": "56",
+                     "margins": "0",
+                     "name": "and",
+                     "rect": "-4,745,647,795"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1069",
+               "layer": "1",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "Regular Expression Syntax",
+               "rect": "-4,-1,519,623",
+               "vScrollbar": true
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.5B2",
+         "hilitedLinkColor": "black",
+         "revDocsCategory": "Text and Data Processing",
+         "revIsDocsStack": true,
+         "revstack": false,
+         "storedHilitedChunk": null,
+         "visitedLinkColor": "black"
+      },
+      "longID": "stack \"Copy of revDocsRegular Expressions Syntax Reference\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "backColor": "white",
+         "decorations": "default",
+         "destroyStack": true,
+         "destroyWindow": true,
+         "fileName": "Regular Expressions Syntax.rev",
+         "id": "1143",
+         "linkColor": "black",
+         "linkHiliteColor": "Black",
+         "linkVisitedColor": "Black",
+         "liveResizing": false,
+         "maxWidth": "518",
+         "minHeight": "80",
+         "minWidth": "518",
+         "name": "Copy of revDocsRegular Expressions Syntax Reference",
+         "rect": "737,169,1255,806",
+         "style": "modeless",
+         "textFont": "verdana",
+         "textSize": "11",
+         "textStyle": "plain",
+         "title": "Regular Expressions Syntax",
+         "underlineLinks": false
+      },
+      "sharedGroupIDs": "1069"
+   }
+}

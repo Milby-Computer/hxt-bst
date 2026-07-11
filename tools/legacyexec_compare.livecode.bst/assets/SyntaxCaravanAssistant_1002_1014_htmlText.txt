@@ -1,0 +1,19 @@
+<p>Found 647 blocks in left folder</p>
+<p>Found 657 blocks in right folder</p>
+<p>Processing 659 blocks</p>
+<p>Block 'MCStdDev' in left but not right</p>
+<p>Block 'MCCustomProp' in right but not left</p>
+<p>Block 'MCObject::getarrayprop' in right but not left</p>
+<p>Block 'MCGraphic::getarrayprop' in right but not left</p>
+<p>Block 'MCObject::setarrayprop' in right but not left</p>
+<p>Block 'MCControl::getarrayprop' in right but not left</p>
+<p>Block 'MCMarking' in right but not left</p>
+<p>Block 'MCArrayDecode' in right but not left</p>
+<p>Block 'MCGraphic::setarrayprop' in right but not left</p>
+<p>Block 'MCRelayer' in right but not left</p>
+<p>Block 'MCControl::setarrayprop' in right but not left</p>
+<p>Block 'MCSampleStdDev' in right but not left</p>
+<p>Block 'MCUuidFunc' in right but not left</p>
+<p>Block 'MCSystemBeepAndroid' in left but not right</p>
+<p>Found 135 differences</p>
+<p></p>

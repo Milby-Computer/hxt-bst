@@ -1,0 +1,64 @@
+{
+   "#mainstack": "com.livecode.pi.dgcolumnbehavior",
+   "com.livecode.pi.dgcolumnbehavior": {
+      "#name": "stack \"com.livecode.pi.dgcolumnbehavior\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1005": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1003": {
+                        "#name": "button \"New Behavior\"",
+                        "properties": {
+                           "hiliteIcon": "202669",
+                           "icon": "202668",
+                           "id": "1003",
+                           "layer": "2",
+                           "name": "New Behavior",
+                           "rect": "252,146,273,165",
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "toolTip": "Add custom column behavior"
+                        }
+                     },
+                     "1004": {
+                        "#name": "button \"Column Behavior...\"",
+                        "properties": {
+                           "disabled": true,
+                           "id": "1004",
+                           "layer": "3",
+                           "name": "Column Behavior...",
+                           "rect": "98,145,248,167",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1005",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "94,141,277,171"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"com.livecode.pi.dgcolumnbehavior\"",
+      "properties": {
+         "fileName": "com.livecode.pi.dgcolumnbehavior.livecode",
+         "id": "1005",
+         "name": "com.livecode.pi.dgcolumnbehavior",
+         "rect": "1424,283,1824,683"
+      },
+      "sharedGroupIDs": null
+   }
+}

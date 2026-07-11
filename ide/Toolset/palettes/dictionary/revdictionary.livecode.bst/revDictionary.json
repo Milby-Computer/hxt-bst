@@ -1,0 +1,81 @@
+{
+   "#mainstack": "revDictionary",
+   "revDictionary": {
+      "#name": "stack \"revDictionary\"",
+      "#substacks": null,
+      "backgroundIDs": "1004",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "widget \"Dictionary\"",
+                  "$kind": "com.livecode.widget.browser",
+                  "$state": {
+                     "url": "file:///Applications/LiveCode%20Community%208.0%20(dp%2011).app/Contents/Tools/Documentation/html_viewer/viewer.html"
+                  },
+                  "properties": {
+                     "id": "1003",
+                     "name": "Dictionary",
+                     "rect": "0,21,1000,1054"
+                  }
+               },
+               "1004": "#shared group"
+            },
+            "properties": {
+               "id": "1002"
+            }
+         },
+         "1004": {
+            "#name": "group \"background\"",
+            "childcontrols": {
+               "1006": {
+                  "#name": "widget \"header_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": null,
+                     "is header": true,
+                     "nav data": [
+                        {
+                           "icon": "f1b3",
+                           "label": "API",
+                           "name": "show_apis"
+                        },
+                        {
+                           "icon": "f1b3",
+                           "label": "Guide",
+                           "name": "show_guides"
+                        }
+                     ]
+                  },
+                  "properties": {
+                     "id": "1006",
+                     "name": "header_background",
+                     "rect": "0,0,1000,21"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1004",
+               "layer": "2",
+               "name": "background",
+               "rect": "-4,-4,1004,25"
+            }
+         }
+      },
+      "longID": "stack \"revDictionary\"",
+      "properties": {
+         "behavior": "stack \"revDictionaryBehavior\"",
+         "cantModify": true,
+         "fileName": "revdictionary.livecode",
+         "id": "1006",
+         "minWidth": "1000",
+         "name": "revDictionary",
+         "rect": "1456,119,2456,1173",
+         "title": "Dictionary"
+      },
+      "sharedGroupIDs": "1004"
+   }
+}

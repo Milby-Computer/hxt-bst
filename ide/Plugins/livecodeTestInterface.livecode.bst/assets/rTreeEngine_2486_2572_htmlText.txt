@@ -1,0 +1,10 @@
+<p>Drag rTree onto your stack.</p>
+<p></p>
+<p>You can also type "new_rTree" into the message box and hit return.</p>
+<p></p>
+<p>Right click in rTree to start building, decorate and manipulate your new tree.</p>
+<p></p>
+<p>Enjoy!</p>
+<p></p>
+<p></p>
+<p><a><font face="Segoe UI" size="12">Tapirsoft</font></a> &copy; 2011</p>

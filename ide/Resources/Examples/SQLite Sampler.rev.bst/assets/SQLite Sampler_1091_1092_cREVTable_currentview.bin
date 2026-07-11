@@ -1,0 +1,17 @@
+<p><font face="Verdana" size="18">Connecting to SQLite</font></p>
+<p></p>
+<p>With the dbSQLite driver, you can easily create databases 'on the fly.' There is nothing else to install or manage other than the external. Each database the driver creates will be a separate file.</p>
+<p></p>
+<p>Creating a new database is simplicity itself. If you try to connect to a database that does not yet exist, one will be created automatically.</p>
+<p></p>
+<p>Now, you are ready to create and connect to your first database.</p>
+<p>To do this, you only need to execute a single command:</p>
+<p></p>
+<p><font face="Courier New" size="12">revOpenDatabase(&quot;dbsqlite&quot;,[filepath],,,,,,)</font></p>
+<p></p>
+<p>Click the button <b>Connect to AppReg</b> and you should receive an answer &quot;AppReg Connected!&quot; and the connection ID. We've stored the connection ID in a global gConID. You can see the script of both buttons below.</p>
+<p></p>
+<p>You can disconnect from the database as well. Notice the error handling in the Disconnect script.</p>
+<p></p>
+<p>If you like, you can delete the AppReg.db file and start over by pressing the <b>Delete Database File</b> button.</p>
+<p></p>

@@ -1,0 +1,3 @@
+<p><font face="Lucida Grande" size="12" color="#000000">As they say, knowledge is power. If you bear these things in mind when writing your software for Vista, you should avoid the pitfalls and enjoy smooth application creation with added security, using Revolution 2.8 to create Vista compatible programs.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Our thanks to Ken Ray for drawing these issues to our attention. You can see more of his excellent </font><a href="http://www.sonsothunder.com/devres/revolution/revolution.htm"><font face="Lucida Grande" size="12" color="#990006">Revolution tips, tricks and tutorials</font></a><font face="Lucida Grande" size="12" color="#000000"> online.</font></p>

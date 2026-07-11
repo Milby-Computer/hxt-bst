@@ -1,0 +1,10 @@
+category=Building an Application using Objects
+description=<p>This topic introduces you to the card and stack objects &#150; the foundations of the different windows, dialog boxes and palettes that your application might need to use. You&#146;ll learn how to create stacks of cards, each with their own content, for these different purposes.</p>
+duration=10:29
+filename=free_window_objects.avi
+level=1
+licensed=false
+name=Window Objects
+scripts=<p><font face="Courier New" size="11"></font><font face="Lucida Grande" size="12"></font><font face="Lucida Grande" size="11">Scripts Used in this Tutorial:</font></p>\n<p></p>\n<p><font face="Courier New" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" color="#000000">  go to the next card</font></p>\n<p><font face="Courier New" color="#000000">end mouseUp</font></p>\n<p></p>\n<p><font face="Courier New" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" color="#000000">  visual effect dissolve</font></p>\n<p><font face="Courier New" color="#000000">  go to the previous card</font></p>\n<p><font face="Courier New" color="#000000">end mouseUp</font></p>\n<p></p>\n<p><font face="Courier New" color="#000000">on mouseUp</font></p>\n<p><font face="Courier New" color="#000000">  go to stack &quot;Example preferences&quot;</font></p>\n<p><font face="Courier New" color="#000000">end mouseUp</font></p>\n<p></p>\n<p><font face="Courier New" color="#000000">on menuPick whatTab</font></p>\n<p><font face="Courier New" color="#000000">  go to card whatTab</font></p>\n<p><font face="Courier New" size="9" color="#000000">end menuPick</font></p>\n<p></p>
+title=Window Objects: (cards, stacks, and backgrounds) the foundations of an application
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;Using stacks to create multiple windows in your application</p>\n<p>-&#9;Using cards to display multiple views within a window</p>\n<p>-&#9;Using backgrounds to place common objects on groups of cards</p>\n<p>-&#9;Using fields on backgrounds</p>\n<p>-&#9;Using backgrounds with the tabbed object</p>\n<p></p>

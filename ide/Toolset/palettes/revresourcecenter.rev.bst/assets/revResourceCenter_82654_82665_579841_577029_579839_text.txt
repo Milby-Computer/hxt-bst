@@ -1,0 +1,293 @@
+Font
+	#PC∏Ì¡∂
+	#±√º≠√º
+	#«ÏµÂ∂Û¿ŒA
+	#« ±‚√º
+	??????
+	????????? ????
+	Academy Engraved LET
+	Adobe Caslon Pro
+	Adobe Caslon Pro Bold
+	Adobe Caslon Pro Bold Italic
+	Adobe Caslon Pro Italic
+	Adobe Caslon Pro SmBd
+	Adobe Caslon Pro SmBd Italic
+	Adobe Garamond Pro
+	Adobe Garamond Pro Bold
+	Adobe Garamond Pro Bold Italic
+	Adobe Garamond Pro Italic
+	American Typewriter
+	American Typewriter Condensed
+	American Typewriter Condensed Light
+	American Typewriter Light
+	Andale Mono
+	Apple Chancery
+	Apple LiGothic Medium
+	Apple LiSung Light
+	AppleGothic
+	AppleMyungjo
+	Arial
+	Arial Black
+	Arial Narrow
+	Arial Rounded MT Bold
+	Arno Pro
+	Arno Pro Bold
+	Arno Pro Bold Caption
+	Arno Pro Bold Display
+	Arno Pro Bold Italic
+	Arno Pro Bold Italic Caption
+	Arno Pro Bold Italic Display
+	Arno Pro Bold Italic SmText
+	Arno Pro Bold Italic Subhead
+	Arno Pro Bold SmText
+	Arno Pro Bold Subhead
+	Arno Pro Caption
+	Arno Pro Display
+	Arno Pro Italic
+	Arno Pro Italic Caption
+	Arno Pro Italic Display
+	Arno Pro Italic SmText
+	Arno Pro Italic Subhead
+	Arno Pro Light Display
+	Arno Pro Light Italic Display
+	Arno Pro Smbd
+	Arno Pro Smbd Caption
+	Arno Pro Smbd Display
+	Arno Pro Smbd Italic
+	Arno Pro Smbd Italic Caption
+	Arno Pro Smbd Italic Display
+	Arno Pro Smbd Italic SmText
+	Arno Pro Smbd Italic Subhead
+	Arno Pro Smbd SmText
+	Arno Pro Smbd Subhead
+	Arno Pro SmText
+	Arno Pro Subhead
+	Ayuthaya
+	Bank Gothic
+	Baskerville
+	Baskerville Semibold
+	Bell Gothic Std Black
+	Bell Gothic Std Bold
+	BiauKai
+	Bickham Script Pro Bold
+	Bickham Script Pro Regular
+	Bickham Script Pro Semibold
+	Big Caslon
+	Birch Std
+	Bitstream Vera Sans
+	Bitstream Vera Sans Bold
+	Bitstream Vera Sans Bold Oblique
+	Bitstream Vera Sans Mono
+	Bitstream Vera Sans Mono Bold
+	Bitstream Vera Sans Mono Bold Oblique
+	Bitstream Vera Sans Mono Oblique
+	Bitstream Vera Sans Oblique
+	Bitstream Vera Serif
+	Bitstream Vera Serif Bold
+	Blackmoor LET
+	Blackoak Std
+	BlairMdITC TT-Medium
+	Bodoni Ornaments ITC TT
+	Bodoni SvtyTwo ITC TT-Bold
+	Bodoni SvtyTwo ITC TT-Book
+	Bodoni SvtyTwo ITC TT-BookIta
+	Bodoni SvtyTwo OS ITC TT-Bold
+	Bodoni SvtyTwo OS ITC TT-Book
+	Bodoni SvtyTwo OS ITC TT-BookIt
+	Bodoni SvtyTwo SC ITC TT-Book
+	Bordeaux Roman Bold LET
+	Bradley Hand ITC TT-Bold
+	Brush Script MT
+	Brush Script Std
+	Chalkboard
+	Chalkboard Bold
+	Chaparral Pro
+	Chaparral Pro Bold
+	Chaparral Pro Bold Ital
+	Chaparral Pro Ital
+	Charcoal CY
+	Charlemagne Std Bold
+	Cochin
+	Comic Sans MS
+	Cooper Black Std Italic
+	Cooper Std Black
+	Copperplate
+	Copperplate Light
+	Courier
+	Courier CE
+	Courier New
+	Cracked
+	Didot
+	Eccentric Std
+	Euphemia UCAS
+	Euphemia UCAS Bold
+	Euphemia UCAS Italic
+	Futura
+	Futura Condensed
+	Garamond Premr Pro
+	Garamond Premr Pro It
+	Garamond Premr Pro Smbd
+	Garamond Premr Pro Smbd It
+	GB18030 Bitmap
+	Geeza Pro
+	Geeza Pro Bold
+	Geneva
+	Geneva CE
+	Geneva CY
+	Georgia
+	Giddyup Std
+	Gill Sans
+	Gill Sans Light
+	Handwriting - Dakota
+	Hei
+	Helvetica
+	Helvetica CE
+	Helvetica CY
+	Helvetica Neue
+	Helvetica Neue Black Condensed
+	Helvetica Neue Bold Condensed
+	Helvetica Neue Light
+	Helvetica Neue UltraLight
+	Herculanum
+	Hobo Std
+	Hoefler Text
+	Hoefler Text Ornaments
+	Impact
+	InaiMathi
+	Jazz LET
+	Kai
+	Krungthep
+	Letter Gothic Std
+	Letter Gothic Std Bold
+	Letter Gothic Std Bold Slanted
+	Letter Gothic Std Slanted
+	Lithos Pro Black
+	Lithos Pro Regular
+	Lucida Grande
+	Lucida Grande CE
+	Lucida Grande CY
+	Marker Felt
+	Mesquite Std
+	Minion Pro
+	Minion Pro Bold
+	Minion Pro Bold Cond
+	Minion Pro Bold Cond Ital
+	Minion Pro Bold Ital
+	Minion Pro Ital
+	Minion Pro Med
+	Minion Pro Med Ital
+	Minion Pro SmBd
+	Minion Pro SmBd Ital
+	Mona Lisa Solid ITC TT
+	Monaco
+	Monaco CE
+	Monaco CY
+	Myriad Pro
+	Myriad Pro Bold
+	Myriad Pro Bold Cond
+	Myriad Pro Bold Cond It
+	Myriad Pro Bold It
+	Myriad Pro Cond
+	Myriad Pro Cond It
+	Myriad Pro It
+	Myriad Pro Semibold
+	Myriad Pro Semibold It
+	Nueva Std Bold Cond
+	Nueva Std Bold Cond Italic
+	Nueva Std Cond
+	Nueva Std Cond Italic
+	OCR A Std
+	OpenSymbol
+	Optima
+	Optima ExtraBlack
+	Orator Std
+	Orator Std Slanted
+	Osaka
+	OsakaÅ|ìôïù
+	Palatino
+	Papyrus
+	Party LET
+	Plantagenet Cherokee
+	Poplar Std
+	PortagoITC TT
+	Prestige Elite Std Bold
+	Princetown LET
+	Rosewood Std Regular
+	Santa Fe LET
+	Sathu
+	Savoye LET
+	SchoolHouse Cursive B
+	SchoolHouse Printed A
+	Silom
+	Skia
+	Snell Roundhand
+	Snell Roundhand Black
+	Snell Roundhand Bold
+	Stencil Std
+	Stone Sans ITC TT-Bold
+	Stone Sans ITC TT-Semi
+	Stone Sans ITC TT-SemiIta
+	Symbol
+	Synchro LET
+	Tekton Pro Bold
+	Tekton Pro BoldCond
+	Tekton Pro BoldExt
+	Tekton Pro BoldObl
+	Thonburi
+	Times
+	Times CE
+	Times CY
+	Times New Roman
+	Trajan Pro
+	Trajan Pro Bold
+	Trebuchet MS
+	Type Embellishments One LET
+	Verdana
+	Webdings
+	Zapf Dingbats
+	Zapfino
+	ÉqÉâÉMÉmäpÉS Pro W3
+	ÉqÉâÉMÉmäpÉS Pro W6
+	ÉqÉâÉMÉmäpÉS Std W8
+	ÉqÉâÉMÉmä€ÉS Pro W4
+	ÉqÉâÉMÉmñæí© Pro W3
+	ÉqÉâÉMÉmñæí© Pro W6
+	è¨íÀÉSÉVÉbÉN Pro B
+	è¨íÀÉSÉVÉbÉN Pro EL
+	è¨íÀÉSÉVÉbÉN Pro H
+	è¨íÀÉSÉVÉbÉN Pro L
+	è¨íÀÉSÉVÉbÉN Pro M
+	è¨íÀÉSÉVÉbÉN Pro R
+	è¨íÀñæí© Pro B
+	è¨íÀñæí© Pro EL
+	è¨íÀñæí© Pro H
+	è¨íÀñæí© Pro L
+	è¨íÀñæí© Pro M
+	è¨íÀñæí© Pro R
+	ª™ŒƒÀŒÃÂ
+	ª™Œƒ∑¬ÀŒ
+	ª™Œƒ∫⁄ÃÂ
+	ª™Œƒø¨ÃÂ
+	ª™Œƒœ∏∫⁄
+	ƒ◊ß∫ Pro
+	ƒ◊∂¬ Pro
+Size
+	9
+	10
+	12
+	14
+	18
+	20
+	24
+	36
+Color
+	Black
+	Yellow
+	Red
+	Blue
+	Green
+(-
+Plain
+Bold
+Italic
+Underline

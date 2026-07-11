@@ -1,0 +1,2 @@
+<p>Tables are a collection of enhancements to the basic field object that provide tab stops, vertical and horizontal lines, and linkage to record sets in databases. However, they share many of the same limitations as the basic field object, such as the inability to control alignment of individual columns and placement of controls like check boxes. Use tables, or features of tables, when you need to display tabular information with limited formatting.</p>
+<p></p>

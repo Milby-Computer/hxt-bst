@@ -1,0 +1,6 @@
+category=Getting Started
+description=<p>Preferences Pane is a simple Preferences window with two panes.  Two versions of the sample are provided: one which saves to a stack file, and another which saves to a delimited text file.</p>\n<p></p>\n<p>The Video Tutorial shows you how to use this Sample Project, and how to take it apart to understand how it works or copy portions of it for use in your own applications.  The PDF contains the same information as the Video, in printable form.</p>\n<p></p>\n<p><font face="Lucida Grande" size="11"><a href="video:Preferences Pane">Click here to go to the corresponding video and PDF</a></font></p>\n<p></p>\n<p><font face="Lucida Grande" size="11">We recommend you to have explored the introductory video tutorials so you have a basic understanding of how Revolution works before you start on the Sample Projects.</font></p>
+level=1
+name=Preferences pane
+title=Preferences pane - saving to a stack or text file
+topics=<p>The key topics covered in this Project are:</p>\n<p>   - How you might create a Preferences screen</p>\n<p>   - How to save changes to a stack by script</p>\n<p>   - How to save changes to a text file by script</p>

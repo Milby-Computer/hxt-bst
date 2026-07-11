@@ -1,0 +1,30 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom command is used with a statement such as the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  underlineToItalic "Basic Text"</font></p>
+<p><font face="Courier" size="11">  underlineToItalic (the </font><font face="Courier" size="11" color="#FF0000">short</font><font face="Courier" size="11"> </font><font face="Courier" size="11" color="#FF0000">name</font><font face="Courier" size="11"> of field </font><font face="Courier" size="11" color="#FF0000">ID</font><font face="Courier" size="11"> 1045)</font></p>
+<p></p>
+<p>This handler is based on the <font face="Courier" size="11">htmlText</font><font face="helvetica" size="12"> property. The </font><font face="Courier" size="11">htmlText</font><font face="helvetica" size="12"> of a field contains all of the field's text, plus style information in the form of HTML-like tags. The start of underlined text is indicated with a &lt;u&gt; tag, and the end of the underlining is indicated with a &lt;/u&gt; tag. Similarly, italicizing is marked with &lt;i&gt; and &lt;/i&gt; tags. If a field's text looks like this:</font></p>
+<p></p>
+<p>  This is some underlined text.</p>
+<p></p>
+<p>then the field's htmlText looks like this:</p>
+<p></p>
+<p>  &lt;p&gt;This is a some &lt;u&gt;underlined&lt;/u&gt; text.&lt;/p&gt;</p>
+<p></p>
+<p>The handler works by retrieving the <font face="Courier" size="11">htmlText</font><font face="helvetica" size="12">, replacing all the &lt;u&gt; tags with &lt;i&gt; and the &lt;/u&gt; tags with &lt;/i&gt;, then setting the field's </font><font face="Courier" size="11">htmlText</font><font face="helvetica" size="12"> to the changed string with the tags changed. By changing these tags, we change the underline style to italic without changing the text.</font></p>
+<p></p>
+<p>You can use a similar technique to change <i><font face="Lucida Grande" size="11">any style</font></i><font face="helvetica" size="12"> to a different style in a field's text. All styles are encoded with tags in the field's </font><font face="Courier" size="11">htmlText</font><font face="helvetica" size="12"> property, so you can get the </font><font face="Courier" size="11">htmlText</font><font face="helvetica" size="12"> of the field, replace the appropriate tags with the new tags, and set the </font><font face="Courier" size="11">htmlText</font><font face="helvetica" size="12"> back to the string that has the tags removed. For example, the following two lines change boldface text to italic strikeout:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">replace</font><font face="Courier" size="11"> "&lt;b&gt;" </font><font face="Courier" size="11" color="#980517">with</font><font face="Courier" size="11"> "&lt;i&gt;&lt;strike&gt;" in myHTML</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">replace</font><font face="Courier" size="11"> "&lt;/b&gt;" </font><font face="Courier" size="11" color="#980517">with</font><font face="Courier" size="11"> "&lt;/strike&gt;&lt;/i&gt;" in myHTML</font></p>
+<p></p>
+<p>To tell the handler which field to change, you pass the field's short name to the handler. The handler will also work with the field's number, although usually it's better to pass the name because the number changes whenever you change the layer of the field, while the name doesn't change unless you change it explicitly.</p>
+<p></p>
+<p><img src="202651" char=" "> <b><font face="Lucida Grande" size="11">Tip:</font></b><font face="helvetica" size="12"> To use this technique to change the selected text instead of the entire field, use the expression </font><font face="Courier" size="11">the htmlText of the selectedChunk</font><font face="helvetica" size="12"> to get the selected piece of text, tags and all. Then remove the unwanted tags and set the htmlText of the chunk to the changed string:</font></p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> the </font><font face="Courier" size="11" color="#F88017">selectedChunk</font><font face="Courier" size="11"> into savedChunk</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">get</font><font face="Courier" size="11"> the </font><font face="Courier" size="11" color="#FF0000">htmlText</font><font face="Courier" size="11"> of the </font><font face="Courier" size="11" color="#F88017">selectedChunk</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">replace</font><font face="Courier" size="11"> "&lt;b&gt;" </font><font face="Courier" size="11" color="#980517">with</font><font face="Courier" size="11"> "&lt;u&gt;" in it</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">replace</font><font face="Courier" size="11"> "&lt;/b&gt;" </font><font face="Courier" size="11" color="#980517">with</font><font face="Courier" size="11"> "&lt;/u&gt;" in it</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">set</font><font face="Courier" size="11"> the </font><font face="Courier" size="11" color="#FF0000">htmlText</font><font face="Courier" size="11"> of savedChunk to it</font></p>

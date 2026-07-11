@@ -1,0 +1,153 @@
+{
+   "#mainstack": "ZipTest",
+   "ZipTest": {
+      "#name": "stack \"ZipTest\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"card id 1002\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"card id 1002\"",
+                  "properties": {
+                     "cantSelect": true,
+                     "disabled": true,
+                     "id": "1004",
+                     "label": "Test",
+                     "layer": "1",
+                     "name": "card id 1002",
+                     "rect": "39,305,121,328"
+                  }
+               },
+               "1006": {
+                  "#name": "button \"Test2\"",
+                  "properties": {
+                     "disabled": true,
+                     "id": "1006",
+                     "label": "Test2",
+                     "layer": "2",
+                     "name": "Test2",
+                     "rect": "138,304,220,328"
+                  }
+               },
+               "1008": {
+                  "#name": "button \"ReadTest\"",
+                  "properties": {
+                     "disabled": true,
+                     "id": "1008",
+                     "label": "ReadTest",
+                     "layer": "3",
+                     "name": "ReadTest",
+                     "rect": "240,306,322,329",
+                     "style": "rectangle"
+                  }
+               },
+               "1010": {
+                  "#name": "button \"Main Test\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1010",
+                     "label": "Main Test",
+                     "layer": "4",
+                     "name": "Main Test",
+                     "rect": "338,306,420,329"
+                  }
+               },
+               "1012": {
+                  "#name": "field \"DataField\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "5",
+                     "name": "DataField",
+                     "rect": "22,12,426,153"
+                  }
+               },
+               "1014": {
+                  "#name": "button \"View Data\"",
+                  "properties": {
+                     "id": "1014",
+                     "label": "View Data",
+                     "layer": "6",
+                     "name": "View Data",
+                     "rect": "24,168,106,191"
+                  }
+               },
+               "1018": {
+                  "#name": "button \"View Files\"",
+                  "properties": {
+                     "id": "1018",
+                     "label": "View Files",
+                     "layer": "7",
+                     "name": "View Files",
+                     "rect": "124,168,206,191",
+                     "style": "rectangle"
+                  }
+               },
+               "1020": {
+                  "#name": "button \"View State\"",
+                  "properties": {
+                     "id": "1020",
+                     "layer": "8",
+                     "name": "View State",
+                     "rect": "224,168,306,191"
+                  }
+               },
+               "1022": {
+                  "#name": "field \"CallbackLine\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>\u2026#63743;\u2026iquest;,var.txt,packing,30,30,227742,32336,</p>",
+                     "id": "1022",
+                     "layer": "9",
+                     "lockText": true,
+                     "name": "CallbackLine",
+                     "opaque": false,
+                     "rect": "34,234,408,255",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "9"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "card id 1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1022"
+         }
+      },
+      "longID": "stack \"ZipTest\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "externals": "/Users/mark/Desktop/externals/_build/Release/revzip.bundle",
+         "fileName": "revziptest.rev",
+         "id": "1022",
+         "liveResizing": false,
+         "name": "ZipTest",
+         "rect": "108,132,555,486",
+         "title": "revZip test"
+      },
+      "sharedGroupIDs": null
+   }
+}

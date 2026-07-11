@@ -1,0 +1,65 @@
+{
+   "#mainstack": "com.livecode.pi.set",
+   "com.livecode.pi.set": {
+      "#name": "stack \"com.livecode.pi.set\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1009": {
+                  "#name": "button \"behavior\"",
+                  "properties": {
+                     "behavior": "stack \"editorSharedBehavior\"",
+                     "id": "1009",
+                     "layer": "1",
+                     "name": "behavior",
+                     "rect": "57,193,185,225"
+                  }
+               },
+               "1016": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1014": {
+                        "#name": "field \"value\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1014",
+                           "layer": "3",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "multipleHilites": true,
+                           "name": "value",
+                           "noncontiguousHilites": true,
+                           "rect": "126,56,245,110",
+                           "scrollbarWidth": "16",
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1016",
+                     "layer": "2",
+                     "name": "template",
+                     "rect": "122,52,249,114"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"com.livecode.pi.set\"",
+      "properties": {
+         "fileName": "com.livecode.pi.set.livecode",
+         "id": "1016",
+         "name": "com.livecode.pi.set",
+         "rect": "669,378,1069,778"
+      },
+      "sharedGroupIDs": null
+   }
+}

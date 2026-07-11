@@ -1,0 +1,140 @@
+{
+   "#mainstack": "Zip Extract Sampler",
+   "Zip Extract Sampler": {
+      "#name": "stack \"Zip Extract Sampler\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Main\"",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"Files\"",
+                  "properties": {
+                     "blendLevel": "37",
+                     "dontWrap": true,
+                     "id": "1003",
+                     "layer": "2",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "name": "Files",
+                     "rect": "4,4,334,186",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1005": {
+                  "#name": "field \"Label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Drag Archive to view Contents"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "<p>Drag Archive to view Contents</p>",
+                     "id": "1005",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "Label",
+                     "opaque": false,
+                     "rect": "26,46,302,146",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textFont": "Tahoma",
+                     "textHeight": "32",
+                     "textSize": "24",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1009": {
+                  "#name": "button \"Clear\"",
+                  "properties": {
+                     "default": true,
+                     "id": "1009",
+                     "layer": "3",
+                     "name": "Clear",
+                     "rect": "124,190,206,213"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Main"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "cursors": false,
+            "inclusions": "select",
+            "MacOS,creator": "????",
+            "MacOS,documentType": null,
+            "MacOS,dynamicMemory": true,
+            "MacOS,longVersion": "Zip Extract Sampler 1.0.0.0",
+            "MacOS,MinimumSize": "15000",
+            "MacOS,PreferredSize": "15000",
+            "MacOS,Region": "1",
+            "MacOS,Release": "Final",
+            "MacOS,versionnumber1": "1",
+            "MacOS,versionnumber2": "0",
+            "MacOS,versionnumber3": "0",
+            "MacOS68k": false,
+            "MacOSfat": false,
+            "MacOSPPC": false,
+            "MacOSX": true,
+            "MacOSX PowerPC-32": false,
+            "MacOSX x86-32": false,
+            "name": "Zip Extract Sampler",
+            "OSX,copyright": "2006  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,identifier": "com..zipextractsampler",
+            "OSX,info": "Zip Extract Sampler Version 1.0.0.0",
+            "OSX,longVersion": "Zip Extract Sampler 1.0.0.0",
+            "OSX,name": "Zip Extract Sampler",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "scriptLibraries": "Animation\nRevolution Zip\n",
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Windows": true,
+            "Windows,buildU3": false,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "//Marcus-van-houd/marcusvanhoudt/Desktop/Masters/2.7.3-gm-1/Runtime/Windows/x86-32/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "Zip Extract Sampler 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "//Marcus-van-houd/marcusvanhoudt/Desktop/Masters/2.7.3-gm-1/Runtime/Windows/x86-32/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2006  All rights reserved worldwide",
+            "Windows,ProductName": "Zip Extract Sampler",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0"
+         }
+      },
+      "longID": "stack \"Zip Extract Sampler\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "fileName": "Zip Extract Sampler.rev",
+         "id": "1009",
+         "liveResizing": false,
+         "name": "Zip Extract Sampler",
+         "rect": "213,235,552,453"
+      },
+      "sharedGroupIDs": null
+   }
+}

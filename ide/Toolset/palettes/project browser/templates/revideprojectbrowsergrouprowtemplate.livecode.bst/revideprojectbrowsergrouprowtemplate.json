@@ -1,0 +1,880 @@
+{
+   "#mainstack": "revideprojectbrowsergrouprowtemplate",
+   "revideprojectbrowsergrouprowtemplate": {
+      "#name": "stack \"revideprojectbrowsergrouprowtemplate\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1044": {
+                  "#name": "group \"groupRow\"",
+                  "childcontrols": {
+                     "1045": {
+                        "#name": "graphic \"background\"",
+                        "custompropertysets": {
+                           "cREVGeneral[scripteditorselection]": {
+                              "scripteditorselection": "0"
+                           },
+                           "cREVGeneral[scripteditorvscroll]": {
+                              "scripteditorvscroll": "0"
+                           }
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "255,255,255",
+                           "filled": true,
+                           "id": "1045",
+                           "layer": "2",
+                           "lineSize": "0",
+                           "lockLoc": true,
+                           "name": "background",
+                           "opaque": true,
+                           "rect": "0,155,390,178"
+                        }
+                     },
+                     "1046": {
+                        "#name": "field \"type\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": null
+                           }
+                        },
+                        "properties": {
+                           "autoTab": true,
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "foreColor": "95,95,95",
+                           "htmlText": "<p>Mainstack:</p>",
+                           "id": "1046",
+                           "layer": "3",
+                           "lockText": true,
+                           "name": "type",
+                           "opaque": false,
+                           "rect": "23,155,90,177",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1047": {
+                        "#name": "field \"name\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": null
+                           }
+                        },
+                        "properties": {
+                           "autoTab": true,
+                           "backColor": "255,255,255",
+                           "borderColor": "225,225,225",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "foreColor": "0,0,0",
+                           "htmlText": "<p>lcVCS</p>",
+                           "id": "1047",
+                           "layer": "4",
+                           "lockText": true,
+                           "name": "name",
+                           "opaque": false,
+                           "rect": "87,155,324,177",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "toolTip": "lcVCS",
+                           "traversalOn": false
+                        }
+                     },
+                     "1048": {
+                        "#name": "field \"scriptLines\"",
+                        "customproperties": {
+                           "textColo": "black"
+                        },
+                        "custompropertysets": {
+                           "cREVGeneral[scripteditorvscroll]": {
+                              "scripteditorvscroll": "0"
+                           },
+                           "cREVTable": {
+                              "currentview": "script lines"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "0,195,255",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "foreColor": "255,255,255",
+                           "htmlText": "<p>1423</p>",
+                           "id": "1048",
+                           "layer": "5",
+                           "lockText": true,
+                           "margins": "6",
+                           "name": "scriptLines",
+                           "rect": "348,157,389,176",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "center",
+                           "textStyle": "plain",
+                           "threeD": false,
+                           "toolTip": "Script lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "1049": {
+                        "#name": "graphic \"bottom_border\"",
+                        "properties": {
+                           "antialiased": false,
+                           "foreColor": "234,234,234",
+                           "id": "1049",
+                           "layer": "6",
+                           "name": "bottom_border",
+                           "points": "1,177\n389,177",
+                           "rect": "0,176,390,178",
+                           "style": "line"
+                        }
+                     },
+                     "1050": {
+                        "#name": "image \"warning.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "fileName": "warning.png",
+                           "filepath": "C:/Users/Elanor/Documents/GitHub/livecode/ide/Toolset/resources/supporting_files/images",
+                           "id": "1050",
+                           "layer": "7",
+                           "name": "warning.png",
+                           "rect": "3,160,16,173",
+                           "toolTip": "Behavior: \nWarning: the behavior object does not exist",
+                           "visible": false
+                        }
+                     },
+                     "1052": {
+                        "#name": "button \"cantSelect\"",
+                        "properties": {
+                           "borderWidth": "0",
+                           "hiliteBorder": false,
+                           "icon": "137876",
+                           "id": "1052",
+                           "layer": "8",
+                           "lockLoc": true,
+                           "name": "cantSelect",
+                           "opaque": false,
+                           "rect": "17,163,28,178",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "toolTip": "Expand",
+                           "traversalOn": false
+                        }
+                     },
+                     "1053": {
+                        "#name": "button \"visible\"",
+                        "properties": {
+                           "borderWidth": "0",
+                           "hiliteBorder": false,
+                           "icon": "137878",
+                           "id": "1053",
+                           "layer": "9",
+                           "lockLoc": true,
+                           "name": "visible",
+                           "opaque": false,
+                           "rect": "17,153,32,169",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "toolTip": "Expand",
+                           "traversalOn": false
+                        }
+                     },
+                     "1054": {
+                        "#name": "image \"groupIcon\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1054",
+                           "layer": "10",
+                           "name": "groupIcon",
+                           "rect": "35,158,51,174",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/revideprojectbrowsergrouprowtemplate_1002_1044_1054_text.png",
+                           "toolTip": "201060"
+                        }
+                     },
+                     "1055": {
+                        "#name": "group \"connector1\"",
+                        "childcontrols": {
+                           "1056": {
+                              "#name": "widget \"icon\"",
+                              "$kind": "com.livecode.widget.svgpath",
+                              "$state": {
+                                 "angle": "0",
+                                 "fillRule": "non-zero",
+                                 "flip vertically": false,
+                                 "hilited": false,
+                                 "maintain aspect ratio": true,
+                                 "svg path": "%file%: assets/revideprojectbrowsergrouprowtemplate_1002_1044_1055_1056_svg path.txt"
+                              },
+                              "customproperties": {
+                                 "textalign": null
+                              },
+                              "properties": {
+                                 "id": "1056",
+                                 "name": "icon",
+                                 "rect": "7,160,22,175"
+                              }
+                           },
+                           "1057": {
+                              "#name": "graphic \"line\"",
+                              "properties": {
+                                 "id": "1057",
+                                 "layer": "13",
+                                 "name": "line",
+                                 "points": "14,158\n14,174",
+                                 "rect": "10,157,18,175",
+                                 "style": "polygon"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1055",
+                           "layer": "11",
+                           "margins": "0",
+                           "name": "connector1",
+                           "rect": "7,157,22,175"
+                        }
+                     },
+                     "1058": {
+                        "#name": "group \"connector2\"",
+                        "childcontrols": {
+                           "1059": {
+                              "#name": "widget \"icon\"",
+                              "$kind": "com.livecode.widget.svgpath",
+                              "$state": {
+                                 "angle": "0",
+                                 "fillRule": "non-zero",
+                                 "flip vertically": false,
+                                 "hilited": false,
+                                 "maintain aspect ratio": true,
+                                 "svg path": "%file%: assets/revideprojectbrowsergrouprowtemplate_1002_1044_1058_1059_svg path.txt"
+                              },
+                              "customproperties": {
+                                 "textalign": null
+                              },
+                              "properties": {
+                                 "id": "1059",
+                                 "name": "icon",
+                                 "rect": "7,160,22,175"
+                              }
+                           },
+                           "1060": {
+                              "#name": "graphic \"line\"",
+                              "properties": {
+                                 "id": "1060",
+                                 "layer": "16",
+                                 "name": "line",
+                                 "points": "14,158\n14,174",
+                                 "rect": "10,157,18,175",
+                                 "style": "polygon"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1058",
+                           "layer": "14",
+                           "margins": "0",
+                           "name": "connector2",
+                           "rect": "7,157,22,175"
+                        }
+                     },
+                     "1061": {
+                        "#name": "group \"connector3\"",
+                        "childcontrols": {
+                           "1062": {
+                              "#name": "widget \"icon\"",
+                              "$kind": "com.livecode.widget.svgpath",
+                              "$state": {
+                                 "angle": "0",
+                                 "fillRule": "non-zero",
+                                 "flip vertically": false,
+                                 "hilited": false,
+                                 "maintain aspect ratio": true,
+                                 "svg path": "%file%: assets/revideprojectbrowsergrouprowtemplate_1002_1044_1061_1062_svg path.txt"
+                              },
+                              "customproperties": {
+                                 "textalign": null
+                              },
+                              "properties": {
+                                 "id": "1062",
+                                 "name": "icon",
+                                 "rect": "7,160,22,175"
+                              }
+                           },
+                           "1063": {
+                              "#name": "graphic \"line\"",
+                              "properties": {
+                                 "id": "1063",
+                                 "layer": "19",
+                                 "name": "line",
+                                 "points": "14,158\n14,174",
+                                 "rect": "10,157,18,175",
+                                 "style": "polygon"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1061",
+                           "layer": "17",
+                           "margins": "0",
+                           "name": "connector3",
+                           "rect": "7,157,22,175"
+                        }
+                     },
+                     "1064": {
+                        "#name": "group \"connector4\"",
+                        "childcontrols": {
+                           "1065": {
+                              "#name": "widget \"icon\"",
+                              "$kind": "com.livecode.widget.svgpath",
+                              "$state": {
+                                 "angle": "0",
+                                 "fillRule": "non-zero",
+                                 "flip vertically": false,
+                                 "hilited": false,
+                                 "maintain aspect ratio": true,
+                                 "svg path": "%file%: assets/revideprojectbrowsergrouprowtemplate_1002_1044_1064_1065_svg path.txt"
+                              },
+                              "customproperties": {
+                                 "textalign": null
+                              },
+                              "properties": {
+                                 "id": "1065",
+                                 "name": "icon",
+                                 "rect": "7,160,22,175"
+                              }
+                           },
+                           "1066": {
+                              "#name": "graphic \"line\"",
+                              "properties": {
+                                 "id": "1066",
+                                 "layer": "22",
+                                 "name": "line",
+                                 "points": "14,158\n14,174",
+                                 "rect": "10,157,18,175",
+                                 "style": "polygon"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1064",
+                           "layer": "20",
+                           "margins": "0",
+                           "name": "connector4",
+                           "rect": "7,157,22,175"
+                        }
+                     },
+                     "1067": {
+                        "#name": "group \"connector5\"",
+                        "childcontrols": {
+                           "1068": {
+                              "#name": "widget \"icon\"",
+                              "$kind": "com.livecode.widget.svgpath",
+                              "$state": {
+                                 "angle": "0",
+                                 "fillRule": "non-zero",
+                                 "flip vertically": false,
+                                 "hilited": false,
+                                 "maintain aspect ratio": true,
+                                 "svg path": "%file%: assets/revideprojectbrowsergrouprowtemplate_1002_1044_1067_1068_svg path.txt"
+                              },
+                              "customproperties": {
+                                 "textalign": null
+                              },
+                              "properties": {
+                                 "id": "1068",
+                                 "name": "icon",
+                                 "rect": "7,160,22,175"
+                              }
+                           },
+                           "1069": {
+                              "#name": "graphic \"line\"",
+                              "properties": {
+                                 "id": "1069",
+                                 "layer": "25",
+                                 "name": "line",
+                                 "points": "14,158\n14,174",
+                                 "rect": "10,157,18,175",
+                                 "style": "polygon"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1067",
+                           "layer": "23",
+                           "margins": "0",
+                           "name": "connector5",
+                           "rect": "7,157,22,175"
+                        }
+                     },
+                     "1070": {
+                        "#name": "group \"connector6\"",
+                        "childcontrols": {
+                           "1071": {
+                              "#name": "widget \"icon\"",
+                              "$kind": "com.livecode.widget.svgpath",
+                              "$state": {
+                                 "angle": "0",
+                                 "fillRule": "non-zero",
+                                 "flip vertically": false,
+                                 "hilited": false,
+                                 "maintain aspect ratio": true,
+                                 "svg path": "%file%: assets/revideprojectbrowsergrouprowtemplate_1002_1044_1070_1071_svg path.txt"
+                              },
+                              "customproperties": {
+                                 "textalign": null
+                              },
+                              "properties": {
+                                 "id": "1071",
+                                 "name": "icon",
+                                 "rect": "7,160,22,175"
+                              }
+                           },
+                           "1072": {
+                              "#name": "graphic \"line\"",
+                              "properties": {
+                                 "id": "1072",
+                                 "layer": "28",
+                                 "name": "line",
+                                 "points": "14,158\n14,174",
+                                 "rect": "10,157,18,175",
+                                 "style": "polygon"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1070",
+                           "layer": "26",
+                           "margins": "0",
+                           "name": "connector6",
+                           "rect": "7,157,22,175"
+                        }
+                     },
+                     "1073": {
+                        "#name": "group \"connector7\"",
+                        "childcontrols": {
+                           "1074": {
+                              "#name": "widget \"icon\"",
+                              "$kind": "com.livecode.widget.svgpath",
+                              "$state": {
+                                 "angle": "0",
+                                 "fillRule": "non-zero",
+                                 "flip vertically": false,
+                                 "hilited": false,
+                                 "maintain aspect ratio": true,
+                                 "svg path": "%file%: assets/revideprojectbrowsergrouprowtemplate_1002_1044_1073_1074_svg path.txt"
+                              },
+                              "customproperties": {
+                                 "textalign": null
+                              },
+                              "properties": {
+                                 "id": "1074",
+                                 "name": "icon",
+                                 "rect": "7,160,22,175"
+                              }
+                           },
+                           "1075": {
+                              "#name": "graphic \"line\"",
+                              "properties": {
+                                 "id": "1075",
+                                 "layer": "31",
+                                 "name": "line",
+                                 "points": "14,158\n14,174",
+                                 "rect": "10,157,18,175",
+                                 "style": "polygon"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1073",
+                           "layer": "29",
+                           "margins": "0",
+                           "name": "connector7",
+                           "rect": "7,157,22,175"
+                        }
+                     },
+                     "1076": {
+                        "#name": "group \"connector8\"",
+                        "childcontrols": {
+                           "1077": {
+                              "#name": "widget \"icon\"",
+                              "$kind": "com.livecode.widget.svgpath",
+                              "$state": {
+                                 "angle": "0",
+                                 "fillRule": "non-zero",
+                                 "flip vertically": false,
+                                 "hilited": false,
+                                 "maintain aspect ratio": true,
+                                 "svg path": "%file%: assets/revideprojectbrowsergrouprowtemplate_1002_1044_1076_1077_svg path.txt"
+                              },
+                              "customproperties": {
+                                 "textalign": null
+                              },
+                              "properties": {
+                                 "id": "1077",
+                                 "name": "icon",
+                                 "rect": "7,160,22,175"
+                              }
+                           },
+                           "1078": {
+                              "#name": "graphic \"line\"",
+                              "properties": {
+                                 "id": "1078",
+                                 "layer": "34",
+                                 "name": "line",
+                                 "points": "14,158\n14,174",
+                                 "rect": "10,157,18,175",
+                                 "style": "polygon"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1076",
+                           "layer": "32",
+                           "margins": "0",
+                           "name": "connector8",
+                           "rect": "7,157,22,175"
+                        }
+                     },
+                     "1079": {
+                        "#name": "group \"connector9\"",
+                        "childcontrols": {
+                           "1080": {
+                              "#name": "widget \"icon\"",
+                              "$kind": "com.livecode.widget.svgpath",
+                              "$state": {
+                                 "angle": "0",
+                                 "fillRule": "non-zero",
+                                 "flip vertically": false,
+                                 "hilited": false,
+                                 "maintain aspect ratio": true,
+                                 "svg path": "%file%: assets/revideprojectbrowsergrouprowtemplate_1002_1044_1079_1080_svg path.txt"
+                              },
+                              "customproperties": {
+                                 "textalign": null
+                              },
+                              "properties": {
+                                 "id": "1080",
+                                 "name": "icon",
+                                 "rect": "7,160,22,175"
+                              }
+                           },
+                           "1081": {
+                              "#name": "graphic \"line\"",
+                              "properties": {
+                                 "id": "1081",
+                                 "layer": "37",
+                                 "name": "line",
+                                 "points": "14,158\n14,174",
+                                 "rect": "10,157,18,175",
+                                 "style": "polygon"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1079",
+                           "layer": "35",
+                           "margins": "0",
+                           "name": "connector9",
+                           "rect": "7,157,22,175"
+                        }
+                     },
+                     "1082": {
+                        "#name": "group \"disclosure\"",
+                        "childcontrols": {
+                           "1083": {
+                              "#name": "widget \"icon\"",
+                              "$kind": "com.livecode.widget.svgpath",
+                              "$state": {
+                                 "angle": "0",
+                                 "fillRule": "non-zero",
+                                 "flip vertically": false,
+                                 "hilited": false,
+                                 "maintain aspect ratio": true,
+                                 "svg path": "%file%: assets/revideprojectbrowsergrouprowtemplate_1002_1044_1082_1083_svg path.txt"
+                              },
+                              "customproperties": {
+                                 "textalign": null
+                              },
+                              "properties": {
+                                 "id": "1083",
+                                 "name": "icon",
+                                 "rect": "7,160,22,175"
+                              }
+                           },
+                           "1084": {
+                              "#name": "graphic \"line\"",
+                              "properties": {
+                                 "id": "1084",
+                                 "layer": "40",
+                                 "name": "line",
+                                 "points": "14,158\n14,174",
+                                 "rect": "10,157,18,175",
+                                 "style": "polygon"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1082",
+                           "layer": "38",
+                           "margins": "0",
+                           "name": "disclosure",
+                           "rect": "7,157,22,175"
+                        }
+                     },
+                     "1098": {
+                        "#name": "graphic \"behaviorScriptLines1\"",
+                        "properties": {
+                           "backColor": "33,125,181",
+                           "filled": true,
+                           "id": "1098",
+                           "label": "1",
+                           "layer": "41",
+                           "lineSize": "0",
+                           "margins": "8",
+                           "name": "behaviorScriptLines1",
+                           "opaque": true,
+                           "rect": "230,158,241,176",
+                           "showName": true,
+                           "style": "oval"
+                        }
+                     },
+                     "1099": {
+                        "#name": "graphic \"behaviorScriptLines2\"",
+                        "properties": {
+                           "backColor": "33,125,181",
+                           "filled": true,
+                           "id": "1099",
+                           "label": "2",
+                           "layer": "42",
+                           "lineSize": "0",
+                           "margins": "8",
+                           "name": "behaviorScriptLines2",
+                           "opaque": true,
+                           "rect": "254,158,265,176",
+                           "showName": true,
+                           "style": "oval"
+                        }
+                     },
+                     "1100": {
+                        "#name": "graphic \"behaviorScriptLines3\"",
+                        "properties": {
+                           "backColor": "33,125,181",
+                           "filled": true,
+                           "id": "1100",
+                           "label": "3",
+                           "layer": "43",
+                           "lineSize": "0",
+                           "margins": "8",
+                           "name": "behaviorScriptLines3",
+                           "opaque": true,
+                           "rect": "267,158,278,176",
+                           "showName": true,
+                           "style": "oval"
+                        }
+                     },
+                     "1101": {
+                        "#name": "graphic \"behaviorScriptLines4\"",
+                        "properties": {
+                           "backColor": "33,125,181",
+                           "filled": true,
+                           "id": "1101",
+                           "label": "4",
+                           "layer": "44",
+                           "lineSize": "0",
+                           "margins": "8",
+                           "name": "behaviorScriptLines4",
+                           "opaque": true,
+                           "rect": "279,158,290,176",
+                           "showName": true,
+                           "style": "oval"
+                        }
+                     },
+                     "1102": {
+                        "#name": "graphic \"behaviorScriptLines5\"",
+                        "properties": {
+                           "backColor": "33,125,181",
+                           "filled": true,
+                           "id": "1102",
+                           "label": "5",
+                           "layer": "45",
+                           "lineSize": "0",
+                           "margins": "8",
+                           "name": "behaviorScriptLines5",
+                           "opaque": true,
+                           "rect": "294,158,305,176",
+                           "showName": true,
+                           "style": "oval"
+                        }
+                     },
+                     "1103": {
+                        "#name": "graphic \"behaviorScriptLines6\"",
+                        "properties": {
+                           "backColor": "33,125,181",
+                           "filled": true,
+                           "id": "1103",
+                           "label": "6",
+                           "layer": "46",
+                           "lineSize": "0",
+                           "margins": "8",
+                           "name": "behaviorScriptLines6",
+                           "opaque": true,
+                           "rect": "307,158,318,176",
+                           "showName": true,
+                           "style": "oval"
+                        }
+                     },
+                     "1104": {
+                        "#name": "graphic \"behaviorScriptLines7\"",
+                        "properties": {
+                           "backColor": "33,125,181",
+                           "filled": true,
+                           "id": "1104",
+                           "label": "7",
+                           "layer": "47",
+                           "lineSize": "0",
+                           "margins": "8",
+                           "name": "behaviorScriptLines7",
+                           "opaque": true,
+                           "rect": "325,158,336,176",
+                           "showName": true,
+                           "style": "oval"
+                        }
+                     },
+                     "1105": {
+                        "#name": "graphic \"behaviorScriptLines8\"",
+                        "properties": {
+                           "backColor": "33,125,181",
+                           "filled": true,
+                           "id": "1105",
+                           "label": "8",
+                           "layer": "48",
+                           "lineSize": "0",
+                           "margins": "8",
+                           "name": "behaviorScriptLines8",
+                           "opaque": true,
+                           "rect": "340,158,351,176",
+                           "showName": true,
+                           "style": "oval"
+                        }
+                     },
+                     "1106": {
+                        "#name": "graphic \"behaviorScriptLines9\"",
+                        "properties": {
+                           "backColor": "33,125,181",
+                           "filled": true,
+                           "id": "1106",
+                           "label": "9",
+                           "layer": "49",
+                           "lineSize": "0",
+                           "margins": "8",
+                           "name": "behaviorScriptLines9",
+                           "opaque": true,
+                           "rect": "357,158,368,176",
+                           "showName": true,
+                           "style": "oval"
+                        }
+                     },
+                     "1107": {
+                        "#name": "graphic \"behaviorScriptLines10\"",
+                        "properties": {
+                           "backColor": "33,125,181",
+                           "filled": true,
+                           "id": "1107",
+                           "label": "10",
+                           "layer": "50",
+                           "lineSize": "0",
+                           "margins": "8",
+                           "name": "behaviorScriptLines10",
+                           "opaque": true,
+                           "rect": "371,160,382,178",
+                           "showName": true,
+                           "style": "oval"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "behaviorScriptLines": null,
+                     "cDragHilite": null,
+                     "cHilited": false,
+                     "cIndent": "35",
+                     "cMaxThumbnailHeight": "40",
+                     "cMaxThumbnailWidth": "100",
+                     "cMinThumbnailHeight": "20",
+                     "cMinThumbnailWidth": "20",
+                     "dragHilite": null,
+                     "objectDetails": {
+                        "behavior_control": null,
+                        "behavior_script_lines": null,
+                        "expanded": false,
+                        "indent": "0",
+                        "long id": "stack \"C:/Projects/LiveCode/IDE Overhaul into 554/Toolset/Unsupported/revanimation.rev\"",
+                        "name": "revAnimation",
+                        "script_lines": "5",
+                        "thumbnailHeight": "23",
+                        "type": "mainstack"
+                     },
+                     "scriptLines": "0",
+                     "thumbnail": null,
+                     "updateLine": false
+                  },
+                  "custompropertysets": {
+                     "objectDetails": {
+                        "behavior_control": null,
+                        "behavior_script_lines": "99",
+                        "expanded": false,
+                        "indent": "0",
+                        "long id": "stack \"C:/Users/Elanor/Documents/My LiveCode/Plugins/lcVCS.livecode\"",
+                        "name": "lcVCS",
+                        "script_lines": "1423",
+                        "thumbnailHeight": "23",
+                        "type": "mainstack"
+                     }
+                  },
+                  "properties": {
+                     "backColor": "255,255,255",
+                     "behavior": "stack \"revIDEProjectBrowserGroupRowBehavior\"",
+                     "borderColor": "224,224,224",
+                     "borderWidth": "0",
+                     "id": "1044",
+                     "layer": "1",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "groupRow",
+                     "rect": "0,155,390,178",
+                     "threeD": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"revideprojectbrowsergrouprowtemplate\"",
+      "properties": {
+         "fileName": "revideprojectbrowsergrouprowtemplate.livecode",
+         "id": "1107",
+         "name": "revideprojectbrowsergrouprowtemplate",
+         "rect": "238,201,638,601"
+      },
+      "sharedGroupIDs": null
+   }
+}

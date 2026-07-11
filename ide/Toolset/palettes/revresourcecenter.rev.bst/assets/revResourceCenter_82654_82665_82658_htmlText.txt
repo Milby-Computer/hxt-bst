@@ -1,0 +1,31 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> populateTextMenu theSizes,theColors</p>
+<p>  <font color="#68228B">-- set up defaults for the size and color lists</font></p>
+<p>  <font color="#980517">if</font> theSizes is empty <font color="#980517">then</font> <font color="#0000FF">put</font> \</p>
+<p>     "9,10,12,14,18,24,36" into theSizes</p>
+<p>  <font color="#980517">if</font> theColors is empty <font color="#980517">then</font> <font color="#0000FF">put</font> \</p>
+<p>     "Black,Yellow,Red,Blue,Green" into theColors</p>
+<p>  <font color="#68228B">-- set up the Font submenu:</font></p>
+<p>  <font color="#0000FF">get</font> the <font color="#F88017">fontNames</font></p>
+<p>  <font color="#0000FF">sort</font> it</p>
+<p>  <font color="#0000FF">put</font> "Font" into button "Text"</p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> each line thisFont in it</p>
+<p>    <font color="#0000FF">put</font> <font color="#0000FF">return</font> &amp; tab &amp; thisFont after button "Text"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#68228B">-- set up the Size submenu:</font></p>
+<p>  <font color="#0000FF">put</font> <font color="#0000FF">return</font> &amp; "Size" after button "Text"</p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> each item thisSize in theSizes</p>
+<p>    <font color="#0000FF">put</font> <font color="#0000FF">return</font> &amp; tab &amp; thisSize after button "Text"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#68228B">-- set up the Color submenu:</font></p>
+<p>  <font color="#0000FF">put</font> <font color="#0000FF">return</font> &amp; "Color" after button "Text"</p>
+<p>  <font color="#980517">repeat</font> <font color="#980517">for</font> each item thisColor in theColors</p>
+<p>    <font color="#0000FF">put</font> <font color="#0000FF">return</font> &amp; tab &amp; thisColor after button "Text"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">repeat</font></p>
+<p>  <font color="#68228B">-- set up style choices:</font></p>
+<p>  <font color="#0000FF">put</font> <font color="#0000FF">return</font> &amp; "(-" &amp; <font color="#0000FF">return</font> \</p>
+<p>     &amp; "Plain" &amp; <font color="#0000FF">return</font> \</p>
+<p>     &amp; "Bold" &amp; <font color="#0000FF">return</font> \</p>
+<p>     &amp; "Italic" &amp; <font color="#0000FF">return</font> \</p>
+<p>     &amp; "Underline" after button "Text"</p>
+<p><font color="#980517">end</font> populateTextMenu</p>

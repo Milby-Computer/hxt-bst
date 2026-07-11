@@ -1,0 +1,4 @@
+<p><b><font color="#000000">repeat</font></b><font color="#000000"> </font><font color="#7F007F">with</font><font color="#000000"> X = </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#00007F">10</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">add</font></b><font color="#000000"> </font><font color="#7F007F">random</font><font color="#000000">(X) </font><font color="#7F007F">to</font><font color="#000000"> Y</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> <b>repeat</b></font></p>
+<p><b><font color="#7F7F00">put</font></b><font color="#000000"> Y</font></p>

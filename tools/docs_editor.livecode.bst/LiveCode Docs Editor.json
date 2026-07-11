@@ -1,0 +1,2423 @@
+{
+   "#mainstack": "LiveCode Docs Editor",
+   "LiveCode Docs Editor": {
+      "#name": "stack \"LiveCode Docs Editor\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"card id 1002\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"main tabs\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "2",
+                        "Master,expectedRect": "4,36,858,824",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scalebottomDistance": "-38",
+                        "Master,scaleBottomObjectRef": "card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleRight": true,
+                        "Master,scaleRightAbsolute": true,
+                        "Master,scalerightDistance": "-15",
+                        "Master,scaleRightObjectRef": "card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "lockLoc": true,
+                     "menuHistory": "2",
+                     "menuMode": "tabbed",
+                     "name": "main tabs",
+                     "rect": "4,36,954,873",
+                     "showName": false,
+                     "style": "menu",
+                     "text": "Editing\nDictionary Display\nXML Source"
+                  }
+               },
+               "1088": {
+                  "#name": "field \"file\"",
+                  "properties": {
+                     "htmlText": "<p>C:/Projects/Docs/Dictionary/dictionary/function/mobileAllowedOrientations.xml</p>",
+                     "id": "1088",
+                     "layer": "2",
+                     "name": "file",
+                     "rect": "8,7,772,28"
+                  }
+               },
+               "1090": {
+                  "#name": "button \"choose file\"",
+                  "properties": {
+                     "id": "1090",
+                     "layer": "3",
+                     "name": "choose file",
+                     "rect": "773,6,855,29",
+                     "traversalOn": false
+                  }
+               },
+               "1098": {
+                  "#name": "button \"clear\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "2",
+                        "Master,expectedRect": "772,828,854,851",
+                        "Master,moveH": true,
+                        "Master,moveHAbsolute": true,
+                        "Master,movehDistance": "-57",
+                        "Master,moveHObjectRef": "card",
+                        "Master,moveHObjectSide": "right",
+                        "Master,moveV": true,
+                        "Master,moveVAbsolute": true,
+                        "Master,movevDistance": "-21",
+                        "Master,moveVObjectRef": "card",
+                        "Master,moveVObjectSide": "bottom",
+                        "Master,scaleBottom": false,
+                        "Master,scaleBottomAbsolute": false,
+                        "Master,scalebottomDistance": "-0.010078",
+                        "Master,scaleBottomObjectRef": "card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleBottomscaleBottom": true,
+                        "Master,scaleleftDistance": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "id": "1098",
+                     "layer": "4",
+                     "name": "clear",
+                     "rect": "871,879,953,902",
+                     "traversalOn": false
+                  }
+               },
+               "1101": {
+                  "#name": "button \"save xml\"",
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "2",
+                        "Master,expectedRect": "688,828,770,851",
+                        "Master,moveH": true,
+                        "Master,moveHAbsolute": true,
+                        "Master,movehDistance": "-141",
+                        "Master,moveHObjectRef": "card",
+                        "Master,moveHObjectSide": "right",
+                        "Master,moveV": true,
+                        "Master,moveVAbsolute": true,
+                        "Master,movevDistance": "-21",
+                        "Master,moveVObjectRef": "card",
+                        "Master,moveVObjectSide": "bottom",
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleftDistance": null,
+                        "Master,scalerightDistance": null,
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "id": "1101",
+                     "layer": "5",
+                     "name": "save xml",
+                     "rect": "787,879,869,902",
+                     "traversalOn": false
+                  }
+               },
+               "1102": {
+                  "#name": "group \"xml editing\"",
+                  "childcontrols": {
+                     "1006": {
+                        "#name": "field \"legacy id label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Legacy ID:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Legacy ID:</p>",
+                           "id": "1006",
+                           "layer": "8",
+                           "lockText": true,
+                           "name": "legacy id label",
+                           "opaque": false,
+                           "rect": "21,76,121,97",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1007": {
+                        "#name": "field \"name label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Name:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Name:</p>",
+                           "id": "1007",
+                           "layer": "9",
+                           "lockText": true,
+                           "name": "name label",
+                           "opaque": false,
+                           "rect": "21,101,121,122",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1008": {
+                        "#name": "field \"type label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Type:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Type:</p>",
+                           "id": "1008",
+                           "layer": "10",
+                           "lockText": true,
+                           "name": "type label",
+                           "opaque": false,
+                           "rect": "21,126,121,147",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1032": {
+                        "#name": "field \"legacy_id\"",
+                        "properties": {
+                           "id": "1032",
+                           "layer": "11",
+                           "name": "legacy_id",
+                           "rect": "116,76,436,97"
+                        }
+                     },
+                     "1033": {
+                        "#name": "field \"name\"",
+                        "properties": {
+                           "htmlText": "<p>mobileAllowedOrientations</p>",
+                           "id": "1033",
+                           "layer": "12",
+                           "name": "name",
+                           "rect": "116,101,436,122"
+                        }
+                     },
+                     "1034": {
+                        "#name": "field \"type\"",
+                        "properties": {
+                           "htmlText": "<p>function</p>",
+                           "id": "1034",
+                           "layer": "13",
+                           "name": "type",
+                           "rect": "116,126,436,147"
+                        }
+                     },
+                     "1114": {
+                        "#name": "group \"description\"",
+                        "childcontrols": {
+                           "1075": {
+                              "#name": "field \"overview label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Overview:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Overview:</p>",
+                                 "id": "1075",
+                                 "layer": "15",
+                                 "lockText": true,
+                                 "name": "overview label",
+                                 "opaque": false,
+                                 "rect": "23,190,145,211",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1076": {
+                              "#name": "field \"overview\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "1",
+                                    "Master,expectedRect": "150,190,834,246",
+                                    "Master,movehDistance": false,
+                                    "Master,movevDistance": false,
+                                    "Master,scaleBottom": false,
+                                    "Master,scaleBottomAbsolute": false,
+                                    "Master,scalebottomDistance": "-0.724524",
+                                    "Master,scaleBottomObjectRef": "card",
+                                    "Master,scaleBottomObjectSide": "Bottom",
+                                    "Master,scaleBottomscaleBottom": true,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scaleRight": true,
+                                    "Master,scaleRightAbsolute": true,
+                                    "Master,scalerightDistance": "-42",
+                                    "Master,scaleRightObjectRef": "card",
+                                    "Master,scaleRightObjectSide": "Right",
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": null
+                                 }
+                              },
+                              "properties": {
+                                 "htmlText": "<p>Use the <b>mobileAllowedOrientations</b> function to find a list of the currently allowed orientations.</p>",
+                                 "id": "1076",
+                                 "layer": "16",
+                                 "name": "overview",
+                                 "rect": "150,190,927,246",
+                                 "scrollbarWidth": "16",
+                                 "style": "scrolling",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1078": {
+                              "#name": "field \"parameters label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Parameters:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Parameters:</p>",
+                                 "id": "1078",
+                                 "layer": "17",
+                                 "lockText": true,
+                                 "name": "parameters label",
+                                 "opaque": false,
+                                 "rect": "23,254,145,275",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1079": {
+                              "#name": "field \"parameters\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "1",
+                                    "Master,expectedRect": "150,254,470,351",
+                                    "Master,movehDistance": false,
+                                    "Master,movevDistance": false,
+                                    "Master,scaleBottom": true,
+                                    "Master,scaleBottomAbsolute": true,
+                                    "Master,scalebottomDistance": "-498",
+                                    "Master,scaleBottomObjectRef": "card",
+                                    "Master,scaleBottomObjectSide": "Bottom",
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scaleright": true,
+                                    "Master,scalerightAbsolute": true,
+                                    "Master,scalerightDistance": "-452",
+                                    "Master,scalerightObjectRef": "1294745880336",
+                                    "Master,scalerightObjectSide": "right",
+                                    "Master,scaletopDistance": null
+                                 }
+                              },
+                              "properties": {
+                                 "id": "1079",
+                                 "layer": "18",
+                                 "name": "parameters",
+                                 "rect": "150,254,475,413",
+                                 "scrollbarWidth": "16",
+                                 "style": "scrolling",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1081": {
+                              "#name": "field \"comments label\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "1",
+                                    "Master,expectedRect": "23,376,145,397",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-479",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "Comments:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Comments:</p>",
+                                 "id": "1081",
+                                 "layer": "19",
+                                 "lockText": true,
+                                 "name": "comments label",
+                                 "opaque": false,
+                                 "rect": "23,422,145,443",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1082": {
+                              "#name": "field \"comments\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "150,376,834,516",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-419",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scaleRight": true,
+                                    "Master,scaleRightAbsolute": true,
+                                    "Master,scalerightDistance": "-42",
+                                    "Master,scaleRightObjectRef": "card",
+                                    "Master,scaleRightObjectSide": "Right",
+                                    "Master,scaletopDistance": null
+                                 }
+                              },
+                              "properties": {
+                                 "htmlText": "%file%: assets/LiveCode Docs Editor_1002_1102_1114_1082_htmlText.txt",
+                                 "id": "1082",
+                                 "layer": "20",
+                                 "name": "comments",
+                                 "rect": "150,422,927,562",
+                                 "scrollbarWidth": "16",
+                                 "style": "scrolling",
+                                 "tabStops": "50",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1094": {
+                              "#name": "field \"value label\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "1",
+                                    "Master,expectedRect": "419,254,519,275",
+                                    "Master,moveH": true,
+                                    "Master,moveHAbsolute": true,
+                                    "Master,movehDistance": "-495",
+                                    "Master,moveHObjectRef": "card",
+                                    "Master,moveHObjectSide": "right",
+                                    "Master,movevDistance": false,
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "Value:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Value:</p>",
+                                 "id": "1094",
+                                 "layer": "21",
+                                 "lockText": true,
+                                 "name": "value label",
+                                 "opaque": false,
+                                 "rect": "424,254,524,275",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1095": {
+                              "#name": "field \"value\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "3",
+                                    "Master,expectedRect": "514,254,922,351",
+                                    "Master,moveH": true,
+                                    "Master,moveHAbsolute": true,
+                                    "Master,movehDistance": "-246",
+                                    "Master,moveHObjectRef": "card",
+                                    "Master,moveHObjectSide": "right",
+                                    "Master,movevDistance": false,
+                                    "Master,scaleBottom": true,
+                                    "Master,scaleBottomAbsolute": true,
+                                    "Master,scalebottomDistance": "-498",
+                                    "Master,scaleBottomObjectRef": "card",
+                                    "Master,scaleBottomObjectSide": "Bottom",
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scaleRight": true,
+                                    "Master,scaleRightAbsolute": true,
+                                    "Master,scalerightDistance": "-42",
+                                    "Master,scaleRightObjectRef": "card",
+                                    "Master,scaleRightObjectSide": "Right",
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": null
+                                 }
+                              },
+                              "properties": {
+                                 "htmlText": "<p>The <b>mobileAllowedOrientations</b> function returns a comma delimited list including at least one of:</p>\n<p>\u2026#9;* <i>portrait</i></p>\n<p>\u2026#9;* <i>portrait upside down</i> </p>\n<p>\u2026#9;* <i>landscape left</i> </p>\n<p>\u2026#9;* <i>landscape right</i> </p>",
+                                 "id": "1095",
+                                 "layer": "22",
+                                 "name": "value",
+                                 "rect": "519,254,927,413",
+                                 "scrollbarWidth": "16",
+                                 "style": "scrolling",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1170": {
+                              "#name": "field \"description label\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "1",
+                                    "Master,expectedRect": "46,516,146,537",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-339",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "Description:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Description:</p>",
+                                 "id": "1170",
+                                 "layer": "23",
+                                 "lockText": true,
+                                 "name": "description label",
+                                 "opaque": false,
+                                 "rect": "46,562,146,583",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1171": {
+                              "#name": "field \"description\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "150,542,834,798",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-197",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scaleRight": true,
+                                    "Master,scaleRightAbsolute": true,
+                                    "Master,scalerightDistance": "-42",
+                                    "Master,scaleRightObjectRef": "card",
+                                    "Master,scaleRightObjectSide": "Right",
+                                    "Master,scaletopDistance": null
+                                 }
+                              },
+                              "properties": {
+                                 "id": "1171",
+                                 "layer": "24",
+                                 "name": "description",
+                                 "rect": "150,586,927,842",
+                                 "scrollbarWidth": "16",
+                                 "style": "scrolling",
+                                 "tabStops": "25",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1173": {
+                              "#name": "graphic \"Line\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "150,527,834,529",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-337",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scaleRight": true,
+                                    "Master,scaleRightAbsolute": true,
+                                    "Master,scalerightDistance": "-42",
+                                    "Master,scaleRightObjectRef": "card",
+                                    "Master,scaleRightObjectSide": "Right",
+                                    "Master,scaletopDistance": null
+                                 }
+                              },
+                              "properties": {
+                                 "id": "1173",
+                                 "layer": "25",
+                                 "name": "Line",
+                                 "points": "151,574\n926,574",
+                                 "rect": "150,573,927,575",
+                                 "style": "line"
+                              }
+                           },
+                           "1184": {
+                              "#name": "field \"formatting tag list\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "1",
+                                    "Master,expectedRect": "34,542,142,768",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-212",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "command\nfunction\nmessage\nproperty\noperator\nkeyword\nconstant\nobject\ncontrol_st\nglossary\n"
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "htmlText": "<p>command</p>\n<p>function</p>\n<p>message</p>\n<p>property</p>\n<p>operator</p>\n<p>keyword</p>\n<p>constant</p>\n<p>object</p>\n<p>control_st</p>\n<p>glossary</p>\n<p></p>",
+                                 "id": "1184",
+                                 "layer": "26",
+                                 "listBehavior": true,
+                                 "lockText": true,
+                                 "name": "formatting tag list",
+                                 "rect": "34,586,142,812",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1186": {
+                              "#name": "button \"set\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "1",
+                                    "Master,expectedRect": "46,772,128,795",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-84",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 }
+                              },
+                              "properties": {
+                                 "id": "1186",
+                                 "layer": "27",
+                                 "name": "set",
+                                 "rect": "46,816,128,839",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1114",
+                           "layer": "14",
+                           "name": "description",
+                           "rect": "19,186,931,846",
+                           "visible": false
+                        }
+                     },
+                     "1117": {
+                        "#name": "button \"edit sections\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "2",
+                              "Master,expectedRect": "22,158,848,814",
+                              "Master,movehDistance": false,
+                              "Master,movevDistance": false,
+                              "Master,scaleBottom": true,
+                              "Master,scaleBottomAbsolute": true,
+                              "Master,scalebottomDistance": "-54",
+                              "Master,scaleBottomObjectRef": "card",
+                              "Master,scaleBottomObjectSide": "Bottom",
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleRight": true,
+                              "Master,scaleRightAbsolute": true,
+                              "Master,scalerightDistance": "-29",
+                              "Master,scaleRightObjectRef": "card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaletopDistance": null
+                           }
+                        },
+                        "properties": {
+                           "id": "1117",
+                           "layer": "7",
+                           "menuHistory": "2",
+                           "menuMode": "tabbed",
+                           "name": "edit sections",
+                           "rect": "22,158,940,857",
+                           "showName": false,
+                           "style": "menu",
+                           "text": "Basics\nHistory\nProperties\nClassifications\nReferences\nDescription"
+                        }
+                     },
+                     "1118": {
+                        "#name": "group \"properties\"",
+                        "childcontrols": {
+                           "1010": {
+                              "#name": "field \"objects label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Objects:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Objects:</p>",
+                                 "id": "1010",
+                                 "layer": "29",
+                                 "lockText": true,
+                                 "name": "objects label",
+                                 "opaque": false,
+                                 "rect": "23,190,145,211",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1017": {
+                              "#name": "field \"supported platforms label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Supported Platforms:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Supported Platforms:</p>",
+                                 "id": "1017",
+                                 "layer": "30",
+                                 "lockText": true,
+                                 "name": "supported platforms label",
+                                 "opaque": false,
+                                 "rect": "23,341,145,362",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1019": {
+                              "#name": "field \"classes label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Classes:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Classes:</p>",
+                                 "id": "1019",
+                                 "layer": "31",
+                                 "lockText": true,
+                                 "name": "classes label",
+                                 "opaque": false,
+                                 "rect": "23,492,145,513",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1027": {
+                              "#name": "field \"security settings label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Security Settings:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Security Settings:</p>",
+                                 "id": "1027",
+                                 "layer": "32",
+                                 "lockText": true,
+                                 "name": "security settings label",
+                                 "opaque": false,
+                                 "rect": "23,642,145,663",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1037": {
+                              "#name": "field \"objects\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "stack\ncard\ngroup\nfield\nbutton\ngraphic\nscrollbar\nplayer\nimage\nglobal\nlocal\niosScroller\niosBrowser\niosPlayer\niosTextInput\nAndroidScroller\nAndroidBrowser\nAndroidPlayer\nandroidTextInput\nandroidMultiline"
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "htmlText": "%file%: assets/LiveCode Docs Editor_1002_1102_1118_1037_htmlText.txt",
+                                 "id": "1037",
+                                 "layer": "33",
+                                 "listBehavior": true,
+                                 "lockText": true,
+                                 "multipleHilites": true,
+                                 "name": "objects",
+                                 "noncontiguousHilites": true,
+                                 "rect": "150,190,500,336",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1042": {
+                              "#name": "field \"supported_platforms\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "bottomfieldloc": "487",
+                                    "cellxspacing": "75",
+                                    "cellyspacing": "14",
+                                    "currenthscroll": "0",
+                                    "currentview": "mac\nwindows\nlinux\nios\nandroid\nwindows_mobile\nlinux_mobile",
+                                    "currentvscroll": "0",
+                                    "currentxmouseloc": "123",
+                                    "currentymouseloc": "70",
+                                    "leftfieldloc": "150",
+                                    "numbertabstops": "1",
+                                    "rightfieldloc": "500",
+                                    "scrollbarwidth": "16",
+                                    "topfieldloc": "341",
+                                    "viewablecolumns": "5",
+                                    "viewablerows": "11"
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "htmlText": "<p>mac</p>\n<p>windows</p>\n<p>linux</p>\n<p>ios</p>\n<p>android</p>\n<p>windows_mobile</p>\n<p>linux_mobile</p>",
+                                 "id": "1042",
+                                 "layer": "34",
+                                 "listBehavior": true,
+                                 "lockText": true,
+                                 "multipleHilites": true,
+                                 "name": "supported_platforms",
+                                 "noncontiguousHilites": true,
+                                 "rect": "150,341,500,487",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "tabStops": "75",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1049": {
+                              "#name": "field \"classes\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "desktop\nserver\nweb\nmobile"
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "htmlText": "<p>desktop</p>\n<p>server</p>\n<p>web</p>\n<p>mobile</p>",
+                                 "id": "1049",
+                                 "layer": "35",
+                                 "listBehavior": true,
+                                 "lockText": true,
+                                 "multipleHilites": true,
+                                 "name": "classes",
+                                 "noncontiguousHilites": true,
+                                 "rect": "150,492,500,638",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1056": {
+                              "#name": "field \"security_settings\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "disk\nnetwork\nprocess\nregistryread\nregistrywrite\nstack\nprinting\nprivacy\napplescript\ndoalternate\nnone required"
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "htmlText": "<p>disk</p>\n<p>network</p>\n<p>process</p>\n<p>registryread</p>\n<p>registrywrite</p>\n<p>stack</p>\n<p>printing</p>\n<p>privacy</p>\n<p>applescript</p>\n<p>doalternate</p>\n<p>none required</p>",
+                                 "id": "1056",
+                                 "layer": "36",
+                                 "listBehavior": true,
+                                 "lockText": true,
+                                 "name": "security_settings",
+                                 "rect": "150,642,500,788",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "vScrollbar": true
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1118",
+                           "layer": "28",
+                           "name": "properties",
+                           "rect": "19,186,504,792",
+                           "visible": false
+                        }
+                     },
+                     "1130": {
+                        "#name": "group \"classifications\"",
+                        "childcontrols": {
+                           "1011": {
+                              "#name": "field \"concepts label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Concepts:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Concepts:</p>",
+                                 "id": "1011",
+                                 "layer": "38",
+                                 "lockText": true,
+                                 "name": "concepts label",
+                                 "opaque": false,
+                                 "rect": "23,340,145,361",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1013": {
+                              "#name": "field \"categories label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Categories:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Categories:</p>",
+                                 "id": "1013",
+                                 "layer": "39",
+                                 "lockText": true,
+                                 "name": "categories label",
+                                 "opaque": false,
+                                 "rect": "23,190,145,211",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1039": {
+                              "#name": "field \"concepts\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "printing\ndatabases\nanimations\nweb\ntext processing\ndisplay\nplayers\ncustom controls\nmessages"
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "htmlText": "<p>printing</p>\n<p>databases</p>\n<p>animations</p>\n<p>web</p>\n<p>text processing</p>\n<p>display</p>\n<p>players</p>\n<p>custom controls</p>\n<p>messages</p>",
+                                 "id": "1039",
+                                 "layer": "40",
+                                 "listBehavior": true,
+                                 "lockText": true,
+                                 "name": "concepts",
+                                 "rect": "150,340,470,516",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1044": {
+                              "#name": "field \"categories\"",
+                              "properties": {
+                                 "id": "1044",
+                                 "layer": "41",
+                                 "name": "categories",
+                                 "rect": "150,190,470,334"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1130",
+                           "layer": "37",
+                           "name": "classifications",
+                           "rect": "19,186,474,520",
+                           "visible": false
+                        }
+                     },
+                     "1131": {
+                        "#name": "group \"references\"",
+                        "childcontrols": {
+                           "1029": {
+                              "#name": "field \"related functions label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Related Functions:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Related Functions:</p>",
+                                 "id": "1029",
+                                 "layer": "43",
+                                 "lockText": true,
+                                 "name": "related functions label",
+                                 "opaque": false,
+                                 "rect": "29,190,151,211",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1062": {
+                              "#name": "field \"functions\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "150,191,436,337",
+                                    "Master,movehDistance": false,
+                                    "Master,movevDistance": false,
+                                    "Master,scaleBottom": true,
+                                    "Master,scaleBottomAbsolute": true,
+                                    "Master,scalebottomDistance": "-523",
+                                    "Master,scaleBottomObjectRef": "card",
+                                    "Master,scaleBottomObjectSide": "Bottom",
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scaleRight": true,
+                                    "Master,scaleRightAbsolute": true,
+                                    "Master,scalerightDistance": "-459",
+                                    "Master,scaleRightObjectRef": "card",
+                                    "Master,scaleRightObjectSide": "Right",
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "bottomfieldloc": "337",
+                                    "cellxspacing": "75",
+                                    "cellyspacing": "14",
+                                    "currenthscroll": "0",
+                                    "currentview": "<p>numToChar\u2026#9;numToChar Function</p>\n<p>toUpper</p>\n<p></p>",
+                                    "currentvscroll": "0",
+                                    "currentxmouseloc": "128",
+                                    "currentymouseloc": "66",
+                                    "leftfieldloc": "150",
+                                    "numbertabstops": "1",
+                                    "rightfieldloc": "436",
+                                    "scrollbarwidth": "16",
+                                    "topfieldloc": "191",
+                                    "viewablecolumns": "4",
+                                    "viewablerows": "11"
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "hScrollbar": true,
+                                 "htmlText": "<p>mobileDeviceOrientation\u2026#9;mobileDeviceOrientation Function</p>\n<p>mobileOrientation\u2026#9;mobileOrientation Function</p>\n<p></p>",
+                                 "id": "1062",
+                                 "layer": "44",
+                                 "name": "functions",
+                                 "rect": "150,191,510,388",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "tabStops": "75",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1144": {
+                              "#name": "field \"lessons label\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "1",
+                                    "Master,expectedRect": "29,497,151,518",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-353",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scaleBottom": false,
+                                    "Master,scaleBottomAbsolute": false,
+                                    "Master,scalebottomDistance": "-0.382979",
+                                    "Master,scaleBottomObjectRef": "card",
+                                    "Master,scaleBottomObjectSide": "Bottom",
+                                    "Master,scaleBottomscaleBottom": true,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "Lessons:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Lessons:</p>",
+                                 "id": "1144",
+                                 "layer": "45",
+                                 "lockText": true,
+                                 "name": "lessons label",
+                                 "opaque": false,
+                                 "rect": "29,548,151,569",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1145": {
+                              "#name": "field \"lessons\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "150,496,438,642",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-291",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scaleRight": true,
+                                    "Master,scaleRightAbsolute": true,
+                                    "Master,scalerightDistance": "-457",
+                                    "Master,scaleRightObjectRef": "card",
+                                    "Master,scaleRightObjectSide": "Right",
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": null
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "id": "1145",
+                                 "layer": "46",
+                                 "name": "lessons",
+                                 "rect": "150,547,512,693",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1147": {
+                              "#name": "field \"links label\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "1",
+                                    "Master,expectedRect": "29,650,151,671",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-200",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scaleBottom": false,
+                                    "Master,scaleBottomAbsolute": false,
+                                    "Master,scalebottomDistance": "-0.211646",
+                                    "Master,scaleBottomObjectRef": "card",
+                                    "Master,scaleBottomObjectSide": "Bottom",
+                                    "Master,scaleBottomscaleBottom": true,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "Links:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Links:</p>",
+                                 "id": "1147",
+                                 "layer": "47",
+                                 "lockText": true,
+                                 "name": "links label",
+                                 "opaque": false,
+                                 "rect": "29,701,151,722",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1148": {
+                              "#name": "field \"links\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "150,648,438,794",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-139",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scaleBottom": false,
+                                    "Master,scaleBottomAbsolute": false,
+                                    "Master,scalebottomDistance": "-0.073908",
+                                    "Master,scaleBottomObjectRef": "card",
+                                    "Master,scaleBottomObjectSide": "Bottom",
+                                    "Master,scaleBottomscaleBottom": true,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scaleRight": true,
+                                    "Master,scaleRightAbsolute": true,
+                                    "Master,scalerightDistance": "-457",
+                                    "Master,scaleRightObjectRef": "card",
+                                    "Master,scaleRightObjectSide": "Right",
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": null
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "id": "1148",
+                                 "layer": "48",
+                                 "name": "links",
+                                 "rect": "150,699,512,845",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1156": {
+                              "#name": "field \"related commands label\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "1",
+                                    "Master,expectedRect": "29,343,151,364",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-507",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "Related Commands:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Related Commands:</p>",
+                                 "id": "1156",
+                                 "layer": "49",
+                                 "lockText": true,
+                                 "name": "related commands label",
+                                 "opaque": false,
+                                 "rect": "29,394,151,415",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1157": {
+                              "#name": "field \"commands\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "150,343,438,489",
+                                    "Master,movehDistance": false,
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-444",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scaleRight": true,
+                                    "Master,scaleRightAbsolute": true,
+                                    "Master,scalerightDistance": "-457",
+                                    "Master,scaleRightObjectRef": "card",
+                                    "Master,scaleRightObjectSide": "Right",
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "bottomfieldloc": "489",
+                                    "cellxspacing": "75",
+                                    "cellyspacing": "14",
+                                    "currenthscroll": "0",
+                                    "currentview": "<p>find\u2026#9;find Command</p>\n<p>filter\u2026#9;filter Command</p>\n<p>replace</p>\n<p></p>",
+                                    "currentvscroll": "0",
+                                    "currentxmouseloc": "111",
+                                    "currentymouseloc": "68",
+                                    "leftfieldloc": "150",
+                                    "numbertabstops": "1",
+                                    "rightfieldloc": "438",
+                                    "scrollbarwidth": "16",
+                                    "topfieldloc": "343",
+                                    "viewablecolumns": "4",
+                                    "viewablerows": "11"
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "fixedLineHeight": false,
+                                 "hScrollbar": true,
+                                 "htmlText": "<p>mobileSetAllowedOrientations\u2026#9;mobileSetAllowedOrientations Command</p>\n<p>mobileLockOrientation\u2026#9;mobileLockOrientation Command</p>\n<p>mobileUnlockOrientation\u2026#9;mobileUnlockOrientation Command</p>\n<p></p>",
+                                 "id": "1157",
+                                 "layer": "50",
+                                 "name": "commands",
+                                 "rect": "150,394,512,540",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "tabStops": "50",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1174": {
+                              "#name": "field \"related keywords label\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "1",
+                                    "Master,expectedRect": "644,190,766,211",
+                                    "Master,moveH": true,
+                                    "Master,moveHAbsolute": true,
+                                    "Master,movehDistance": "-389",
+                                    "Master,moveHObjectRef": "card",
+                                    "Master,moveHObjectSide": "right",
+                                    "Master,movevDistance": false,
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "Keywords:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Keywords:</p>",
+                                 "id": "1174",
+                                 "layer": "51",
+                                 "lockText": true,
+                                 "name": "related keywords label",
+                                 "opaque": false,
+                                 "rect": "519,190,641,211",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1175": {
+                              "#name": "field \"keywords\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "765,191,1051,337",
+                                    "Master,moveH": true,
+                                    "Master,moveHAbsolute": true,
+                                    "Master,movehDistance": "-186",
+                                    "Master,moveHObjectRef": "card",
+                                    "Master,moveHObjectSide": "right",
+                                    "Master,movevDistance": false,
+                                    "Master,scaleBottom": true,
+                                    "Master,scaleBottomAbsolute": true,
+                                    "Master,scalebottomDistance": "-521",
+                                    "Master,scaleBottomObjectRef": "card",
+                                    "Master,scaleBottomObjectSide": "Bottom",
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": null
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "id": "1175",
+                                 "layer": "52",
+                                 "name": "keywords",
+                                 "rect": "640,193,926,390",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "tabStops": "75",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1187": {
+                              "#name": "field \"messages\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "765,342,1051,488",
+                                    "Master,moveH": true,
+                                    "Master,moveHAbsolute": true,
+                                    "Master,movehDistance": "-186",
+                                    "Master,moveHObjectRef": "card",
+                                    "Master,moveHObjectSide": "right",
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-442",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": null
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "htmlText": "<p>orientationChanged\u2026#9;orientationChanged Message</p>\n<p></p>",
+                                 "id": "1187",
+                                 "layer": "53",
+                                 "name": "messages",
+                                 "rect": "640,396,926,542",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "tabStops": "75",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1189": {
+                              "#name": "field \"related messages label\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "644,340,766,361",
+                                    "Master,moveH": true,
+                                    "Master,moveHAbsolute": true,
+                                    "Master,movehDistance": "-389",
+                                    "Master,moveHObjectRef": "card",
+                                    "Master,moveHObjectSide": "right",
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-507",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scaleRight": false,
+                                    "Master,scaleRightAbsolute": false,
+                                    "Master,scalerightDistance": "-0.329317",
+                                    "Master,scaleRightObjectRef": "card",
+                                    "Master,scaleRightObjectSide": "Right",
+                                    "Master,scaleRightscaleBottom": true,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "Messages:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Messages:</p>",
+                                 "id": "1189",
+                                 "layer": "54",
+                                 "lockText": true,
+                                 "name": "related messages label",
+                                 "opaque": false,
+                                 "rect": "519,394,641,415",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1190": {
+                              "#name": "field \"related properties label\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "644,493,766,514",
+                                    "Master,moveH": true,
+                                    "Master,moveHAbsolute": true,
+                                    "Master,movehDistance": "-389",
+                                    "Master,moveHObjectRef": "card",
+                                    "Master,moveHObjectSide": "right",
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-354",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "Properties:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Properties:</p>",
+                                 "id": "1190",
+                                 "layer": "55",
+                                 "lockText": true,
+                                 "name": "related properties label",
+                                 "opaque": false,
+                                 "rect": "519,547,641,568",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1191": {
+                              "#name": "field \"properties\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "765,493,1051,639",
+                                    "Master,moveH": true,
+                                    "Master,moveHAbsolute": true,
+                                    "Master,movehDistance": "-186",
+                                    "Master,moveHObjectRef": "card",
+                                    "Master,moveHObjectSide": "right",
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-291",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scaleBottom": false,
+                                    "Master,scaleBottomAbsolute": false,
+                                    "Master,scalebottomDistance": "-0.244121",
+                                    "Master,scaleBottomObjectRef": "card",
+                                    "Master,scaleBottomObjectSide": "Bottom",
+                                    "Master,scaleBottomscaleBottom": true,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": null
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "id": "1191",
+                                 "layer": "56",
+                                 "name": "properties",
+                                 "rect": "640,547,926,693",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "tabStops": "75",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1193": {
+                              "#name": "field \"related operators label\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "643,644,765,665",
+                                    "Master,moveH": true,
+                                    "Master,moveHAbsolute": true,
+                                    "Master,movehDistance": "-390",
+                                    "Master,moveHObjectRef": "card",
+                                    "Master,moveHObjectSide": "right",
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-203",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "Operators:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Operators:</p>",
+                                 "id": "1193",
+                                 "layer": "57",
+                                 "lockText": true,
+                                 "name": "related operators label",
+                                 "opaque": false,
+                                 "rect": "518,698,640,719",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1194": {
+                              "#name": "field \"operators\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "765,712,1051,782",
+                                    "Master,moveH": true,
+                                    "Master,moveHAbsolute": true,
+                                    "Master,movehDistance": "-186",
+                                    "Master,moveHObjectRef": "card",
+                                    "Master,moveHObjectSide": "right",
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-177",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "<p>\u2026gt;\u2026#9;\u2026amp;gt; Operator</p>\n<p></p>"
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "id": "1194",
+                                 "layer": "58",
+                                 "name": "operators",
+                                 "rect": "640,699,926,769",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "tabStops": "75",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1196": {
+                              "#name": "field \"related control_st label\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "643,719,765,740",
+                                    "Master,moveH": true,
+                                    "Master,moveHAbsolute": true,
+                                    "Master,movehDistance": "-390",
+                                    "Master,moveHObjectRef": "card",
+                                    "Master,moveHObjectSide": "right",
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-128",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": "Control structures:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Control structures:</p>",
+                                 "id": "1196",
+                                 "layer": "59",
+                                 "lockText": true,
+                                 "name": "related control_st label",
+                                 "opaque": false,
+                                 "rect": "518,773,640,794",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1197": {
+                              "#name": "field \"control_sts\"",
+                              "custompropertysets": {
+                                 "cREVGeometry": {
+                                    "Master": true,
+                                    "Master,cardRanking": "2",
+                                    "Master,expectedRect": "765,787,1051,857",
+                                    "Master,moveH": true,
+                                    "Master,moveHAbsolute": true,
+                                    "Master,movehDistance": "-186",
+                                    "Master,moveHObjectRef": "card",
+                                    "Master,moveHObjectSide": "right",
+                                    "Master,moveV": true,
+                                    "Master,moveVAbsolute": true,
+                                    "Master,movevDistance": "-102",
+                                    "Master,moveVObjectRef": "card",
+                                    "Master,moveVObjectSide": "bottom",
+                                    "Master,scalebottomDistance": null,
+                                    "Master,scaleleftDistance": null,
+                                    "Master,scalerightDistance": null,
+                                    "Master,scaletopDistance": null
+                                 },
+                                 "cREVTable": {
+                                    "currentview": null
+                                 }
+                              },
+                              "properties": {
+                                 "dontWrap": true,
+                                 "id": "1197",
+                                 "layer": "60",
+                                 "name": "control_sts",
+                                 "rect": "640,774,926,844",
+                                 "scrollbarWidth": "16",
+                                 "sharedText": true,
+                                 "style": "scrolling",
+                                 "tabStops": "75",
+                                 "vScrollbar": true
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1131",
+                           "layer": "42",
+                           "name": "references",
+                           "rect": "25,186,930,849",
+                           "visible": false
+                        }
+                     },
+                     "1132": {
+                        "#name": "group \"basics\"",
+                        "childcontrols": {
+                           "1009": {
+                              "#name": "field \"syntax label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Syntax:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Syntax:</p>",
+                                 "id": "1009",
+                                 "layer": "62",
+                                 "lockText": true,
+                                 "name": "syntax label",
+                                 "opaque": false,
+                                 "rect": "23,190,145,211",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1012": {
+                              "#name": "field \"synonyms label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Synonyms:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Synonyms:</p>",
+                                 "id": "1012",
+                                 "layer": "63",
+                                 "lockText": true,
+                                 "name": "synonyms label",
+                                 "opaque": false,
+                                 "rect": "23,282,145,303",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1020": {
+                              "#name": "field \"summary label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Summary:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Summary:</p>",
+                                 "id": "1020",
+                                 "layer": "64",
+                                 "lockText": true,
+                                 "name": "summary label",
+                                 "opaque": false,
+                                 "rect": "23,377,145,398",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1021": {
+                              "#name": "field \"examples label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Examples:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Examples:</p>",
+                                 "id": "1021",
+                                 "layer": "65",
+                                 "lockText": true,
+                                 "name": "examples label",
+                                 "opaque": false,
+                                 "rect": "23,472,145,493",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1035": {
+                              "#name": "field \"syntax\"",
+                              "properties": {
+                                 "htmlText": "<p>mobileAllowedOrientations()</p>\n<p></p>",
+                                 "id": "1035",
+                                 "layer": "66",
+                                 "name": "syntax",
+                                 "rect": "150,190,832,274"
+                              }
+                           },
+                           "1041": {
+                              "#name": "field \"synonyms\"",
+                              "properties": {
+                                 "htmlText": "<p>iphoneAllowedOrientations</p>\n<p></p>",
+                                 "id": "1041",
+                                 "layer": "67",
+                                 "name": "synonyms",
+                                 "rect": "150,282,832,366"
+                              }
+                           },
+                           "1052": {
+                              "#name": "field \"summary\"",
+                              "properties": {
+                                 "htmlText": "<p>Returns a list of the currently allowed orientations.</p>",
+                                 "id": "1052",
+                                 "layer": "68",
+                                 "name": "summary",
+                                 "rect": "150,378,832,462",
+                                 "scrollbarWidth": "16",
+                                 "style": "scrolling",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1207": {
+                              "#name": "group \"examples\"",
+                              "childcontrols": {
+                                 "1070": {
+                                    "#name": "field \"example 1\"",
+                                    "properties": {
+                                       "htmlText": "<p>put mobileAllowedOrientations() into theAllowedOrientations</p>",
+                                       "id": "1070",
+                                       "layer": "70",
+                                       "name": "example 1",
+                                       "rect": "154,478,804,553",
+                                       "scrollbarWidth": "16",
+                                       "style": "scrolling",
+                                       "vScrollbar": true
+                                    }
+                                 },
+                                 "1199": {
+                                    "#name": "field \"example 2\"",
+                                    "properties": {
+                                       "id": "1199",
+                                       "layer": "71",
+                                       "name": "example 2",
+                                       "rect": "154,556,804,631",
+                                       "scrollbarWidth": "16",
+                                       "style": "scrolling",
+                                       "vScrollbar": true
+                                    }
+                                 },
+                                 "1201": {
+                                    "#name": "field \"example 3\"",
+                                    "properties": {
+                                       "id": "1201",
+                                       "layer": "72",
+                                       "name": "example 3",
+                                       "rect": "154,634,804,709",
+                                       "scrollbarWidth": "16",
+                                       "style": "scrolling",
+                                       "vScrollbar": true
+                                    }
+                                 },
+                                 "1203": {
+                                    "#name": "field \"example 4\"",
+                                    "properties": {
+                                       "id": "1203",
+                                       "layer": "73",
+                                       "name": "example 4",
+                                       "rect": "154,712,804,787",
+                                       "scrollbarWidth": "16",
+                                       "style": "scrolling",
+                                       "vScrollbar": true
+                                    }
+                                 },
+                                 "1205": {
+                                    "#name": "field \"example 5\"",
+                                    "properties": {
+                                       "id": "1205",
+                                       "layer": "74",
+                                       "name": "example 5",
+                                       "rect": "154,790,804,865",
+                                       "scrollbarWidth": "16",
+                                       "style": "scrolling",
+                                       "vScrollbar": true
+                                    }
+                                 }
+                              },
+                              "properties": {
+                                 "id": "1207",
+                                 "layer": "69",
+                                 "lockLoc": true,
+                                 "name": "examples",
+                                 "rect": "150,474,831,779",
+                                 "vScrollbar": true
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1132",
+                           "layer": "61",
+                           "lockLoc": true,
+                           "name": "basics",
+                           "rect": "34,186,836,802",
+                           "visible": false
+                        }
+                     },
+                     "1134": {
+                        "#name": "group \"history\"",
+                        "childcontrols": {
+                           "1135": {
+                              "#name": "field \"introduced label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Introduced:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Introduced:</p>",
+                                 "id": "1135",
+                                 "layer": "76",
+                                 "lockText": true,
+                                 "name": "introduced label",
+                                 "opaque": false,
+                                 "rect": "23,190,145,211",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1136": {
+                              "#name": "field \"changed abel\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Changed:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Changed:</p>",
+                                 "id": "1136",
+                                 "layer": "77",
+                                 "lockText": true,
+                                 "name": "changed abel",
+                                 "opaque": false,
+                                 "rect": "23,215,145,236",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1137": {
+                              "#name": "field \"deprecated label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Deprecated:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Deprecated:</p>",
+                                 "id": "1137",
+                                 "layer": "78",
+                                 "lockText": true,
+                                 "name": "deprecated label",
+                                 "opaque": false,
+                                 "rect": "23,369,145,390",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1138": {
+                              "#name": "field \"deprecated\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": null
+                                 }
+                              },
+                              "properties": {
+                                 "htmlText": "<p>\u2026#9;</p>",
+                                 "id": "1138",
+                                 "layer": "79",
+                                 "name": "deprecated",
+                                 "rect": "150,369,832,390"
+                              }
+                           },
+                           "1139": {
+                              "#name": "field \"changed\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "bottomfieldloc": "360",
+                                    "cellxspacing": "75",
+                                    "cellyspacing": "14",
+                                    "currenthscroll": "0",
+                                    "currentview": "<p>4.5</p>",
+                                    "currentvscroll": "0",
+                                    "currentxmouseloc": "47",
+                                    "currentymouseloc": "59",
+                                    "leftfieldloc": "150",
+                                    "numbertabstops": "1",
+                                    "rightfieldloc": "834",
+                                    "scrollbarwidth": "16",
+                                    "topfieldloc": "215",
+                                    "viewablecolumns": "10",
+                                    "viewablerows": "11"
+                                 }
+                              },
+                              "properties": {
+                                 "htmlText": "<p>4.6.1\u2026#9;4.6.1</p>\n<p></p>",
+                                 "id": "1139",
+                                 "layer": "80",
+                                 "name": "changed",
+                                 "rect": "150,215,834,360",
+                                 "scrollbarWidth": "16",
+                                 "style": "scrolling",
+                                 "tabStops": "75",
+                                 "vScrollbar": true
+                              }
+                           },
+                           "1141": {
+                              "#name": "field \"introduced\"",
+                              "properties": {
+                                 "htmlText": "<p>4.5.3\u2026#9;Added.</p>",
+                                 "id": "1141",
+                                 "layer": "81",
+                                 "name": "introduced",
+                                 "rect": "150,190,834,210",
+                                 "tabStops": "50"
+                              }
+                           },
+                           "1142": {
+                              "#name": "field \"removed label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Removed:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Removed:</p>",
+                                 "id": "1142",
+                                 "layer": "82",
+                                 "lockText": true,
+                                 "name": "removed label",
+                                 "opaque": false,
+                                 "rect": "23,395,145,416",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1143": {
+                              "#name": "field \"removed\"",
+                              "properties": {
+                                 "htmlText": "<p>\u2026#9;</p>",
+                                 "id": "1143",
+                                 "layer": "83",
+                                 "name": "removed",
+                                 "rect": "150,395,832,416"
+                              }
+                           },
+                           "1215": {
+                              "#name": "field \"experimental label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Experimental:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Experimental:</p>",
+                                 "id": "1215",
+                                 "layer": "84",
+                                 "lockText": true,
+                                 "name": "experimental label",
+                                 "opaque": false,
+                                 "rect": "23,419,145,440",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1216": {
+                              "#name": "field \"experimental\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": null
+                                 }
+                              },
+                              "properties": {
+                                 "htmlText": "<p>6.0.0\u2026#9;6.0.0</p>",
+                                 "id": "1216",
+                                 "layer": "85",
+                                 "name": "experimental",
+                                 "rect": "150,419,832,440"
+                              }
+                           },
+                           "1217": {
+                              "#name": "field \"nonexperimental label\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Non-experimental:"
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "dontWrap": true,
+                                 "htmlText": "<p>Non-experimental:</p>",
+                                 "id": "1217",
+                                 "layer": "86",
+                                 "lockText": true,
+                                 "name": "nonexperimental label",
+                                 "opaque": false,
+                                 "rect": "23,445,145,466",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "right",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1218": {
+                              "#name": "field \"nonexperimental\"",
+                              "properties": {
+                                 "htmlText": "<p>6.0.1\u2026#9;6.0.1</p>",
+                                 "id": "1218",
+                                 "layer": "87",
+                                 "name": "nonexperimental",
+                                 "rect": "150,445,832,466"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1134",
+                           "layer": "75",
+                           "lockLoc": true,
+                           "name": "history",
+                           "rect": "34,186,836,802"
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "2",
+                        "Master,expectedRect": "15,72,852,818",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scaleBottom": true,
+                        "Master,scaleBottomAbsolute": true,
+                        "Master,scalebottomDistance": "-50",
+                        "Master,scaleBottomObjectRef": "card",
+                        "Master,scaleBottomObjectSide": "Bottom",
+                        "Master,scaleleftDistance": null,
+                        "Master,scaleRight": true,
+                        "Master,scaleRightAbsolute": true,
+                        "Master,scalerightDistance": "-25",
+                        "Master,scaleRightObjectRef": "card",
+                        "Master,scaleRightObjectSide": "Right",
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "id": "1102",
+                     "layer": "6",
+                     "name": "xml editing",
+                     "rect": "17,72,944,861",
+                     "visible": false
+                  }
+               },
+               "1106": {
+                  "#name": "group \"dictionary display\"",
+                  "childcontrols": {
+                     "1104": {
+                        "#name": "field \"dictionary display\"",
+                        "custompropertysets": {
+                           "cREVGeometry": {
+                              "Master": true,
+                              "Master,cardRanking": "2",
+                              "Master,expectedRect": "12,65,1072,859",
+                              "Master,movehDistance": false,
+                              "Master,movevDistance": false,
+                              "Master,scaleBottom": true,
+                              "Master,scaleBottomAbsolute": true,
+                              "Master,scalebottomDistance": "-50",
+                              "Master,scaleBottomObjectRef": "card",
+                              "Master,scaleBottomObjectSide": "Bottom",
+                              "Master,scaleleftDistance": null,
+                              "Master,scaleRight": true,
+                              "Master,scaleRightAbsolute": true,
+                              "Master,scalerightDistance": "-22",
+                              "Master,scaleRightObjectRef": "card",
+                              "Master,scaleRightObjectSide": "Right",
+                              "Master,scaletopDistance": null
+                           },
+                           "cREVTable": {
+                              "currentview": "%file%: assets/LiveCode Docs Editor_1002_1106_1104_cREVTable_currentview.bin"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "fixedLineHeight": false,
+                           "id": "1104",
+                           "layer": "89",
+                           "lockText": true,
+                           "margins": "8,32,8,8",
+                           "name": "dictionary display",
+                           "rect": "12,65,947,861",
+                           "scrollbarWidth": "16",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "traversalOn": false,
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1106",
+                     "layer": "88",
+                     "name": "dictionary display",
+                     "rect": "8,61,951,865",
+                     "visible": false
+                  }
+               },
+               "1110": {
+                  "#name": "group \"xml source\"",
+                  "childcontrols": {
+                     "1108": {
+                        "#name": "field \"xml source text\"",
+                        "properties": {
+                           "htmlText": "%file%: assets/LiveCode Docs Editor_1002_1110_1108_htmlText.txt",
+                           "id": "1108",
+                           "layer": "91",
+                           "name": "xml source text",
+                           "rect": "14,64,850,812",
+                           "scrollbarWidth": "16",
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1110",
+                     "layer": "90",
+                     "name": "xml source",
+                     "rect": "10,60,854,816",
+                     "visible": false
+                  }
+               },
+               "1214": {
+                  "#name": "button \"refresh\"",
+                  "properties": {
+                     "id": "1214",
+                     "layer": "92",
+                     "name": "refresh",
+                     "rect": "858,6,920,29",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "%file%: assets/LiveCode Docs Editor_1002_cREVGeometrycache_order.bin",
+                  "total": "88"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "card id 1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1218"
+         }
+      },
+      "longID": "stack \"LiveCode Docs Editor\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "docs_editor.livecode",
+         "id": "1218",
+         "liveResizing": false,
+         "name": "LiveCode Docs Editor",
+         "rect": "168,194,1137,1105",
+         "title": "LiveCode Docs Editor"
+      },
+      "sharedGroupIDs": null
+   }
+}

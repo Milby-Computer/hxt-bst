@@ -1,0 +1,215 @@
+{
+   "#mainstack": "Printer Chooser",
+   "Printer Chooser": {
+      "#name": "stack \"Printer Chooser\"",
+      "#substacks": null,
+      "backgroundIDs": "1003\n1013",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": "#shared group",
+               "1007": {
+                  "#name": "field \"Command\"",
+                  "properties": {
+                     "autoTab": true,
+                     "id": "1007",
+                     "layer": "11",
+                     "name": "Command",
+                     "rect": "64,86,205,107"
+                  }
+               },
+               "1008": {
+                  "#name": "field id 1008",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Command:</p>",
+                     "id": "1008",
+                     "layer": "10",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "-3,86,67,107",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1013": "#shared group",
+               "1019": {
+                  "#name": "button \"OK\"",
+                  "properties": {
+                     "armBorder": false,
+                     "default": true,
+                     "id": "1019",
+                     "layer": "8",
+                     "menuMode": "pulldown",
+                     "name": "OK",
+                     "rect": "139,117,201,135"
+                  }
+               },
+               "1020": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "armBorder": false,
+                     "id": "1020",
+                     "layer": "9",
+                     "menuMode": "pulldown",
+                     "name": "Cancel",
+                     "rect": "65,116,129,136"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         },
+         "1003": {
+            "#name": "group \"Orientation:\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"Portrait\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1004",
+                     "layer": "2",
+                     "menuMode": "pulldown",
+                     "name": "Portrait",
+                     "opaque": false,
+                     "rect": "12,21,84,41",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1005": {
+                  "#name": "button \"Landscape\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "hiliteFill": false,
+                     "id": "1005",
+                     "layer": "3",
+                     "menuMode": "pulldown",
+                     "name": "Landscape",
+                     "opaque": false,
+                     "rect": "12,39,95,59",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "hilitedButton": "2",
+               "id": "1003",
+               "layer": "1",
+               "lockLoc": true,
+               "name": "Orientation:",
+               "rect": "6,5,103,80",
+               "showBorder": true,
+               "showName": true,
+               "tabGroupBehavior": true
+            }
+         },
+         "1013": {
+            "#name": "group \"Paper Size:\"",
+            "childcontrols": {
+               "1014": {
+                  "#name": "button \"Letter\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1014",
+                     "layer": "5",
+                     "menuMode": "pulldown",
+                     "name": "Letter",
+                     "opaque": false,
+                     "rect": "114,39,178,59",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1015": {
+                  "#name": "button \"Legal\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hiliteFill": false,
+                     "id": "1015",
+                     "layer": "6",
+                     "menuMode": "pulldown",
+                     "name": "Legal",
+                     "opaque": false,
+                     "rect": "114,57,178,77",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               },
+               "1016": {
+                  "#name": "button \"A4\"",
+                  "properties": {
+                     "armBorder": false,
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "hiliteFill": false,
+                     "id": "1016",
+                     "layer": "7",
+                     "menuMode": "pulldown",
+                     "name": "A4",
+                     "opaque": false,
+                     "rect": "114,21,162,41",
+                     "showBorder": false,
+                     "style": "radiobutton",
+                     "textAlign": "left"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "hilitedButton": "3",
+               "id": "1013",
+               "layer": "4",
+               "lockLoc": true,
+               "name": "Paper Size:",
+               "rect": "108,5,205,80",
+               "showBorder": true,
+               "showName": true,
+               "tabGroupBehavior": true
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.6.1",
+         "revstack": false
+      },
+      "longID": "stack \"Printer Chooser\"",
+      "properties": {
+         "bottomColor": "128,128,128",
+         "decorations": "default",
+         "fileName": "revprinterchooser.rev",
+         "foreColor": "0,0,0",
+         "hiliteColor": "160,160,160",
+         "id": "1023",
+         "liveResizing": false,
+         "name": "Printer Chooser",
+         "rect": "230,235,441,379",
+         "resizable": false,
+         "shadowColor": "172,172,172",
+         "topColor": "white"
+      },
+      "sharedGroupIDs": "1003\n1013"
+   }
+}

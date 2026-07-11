@@ -1,0 +1,6 @@
+<p>This card tests the Status Bar Configuration.</p>
+<p></p>
+<p>Use the tick box to toggle between the Status Bar shown and the Status Bar hidden.</p>
+<p>Use the Status Bar Style option menu to specify how the Status Bar is to be displayed when it is visible.</p>
+<p></p>
+<p>The date/time and Card Size inform you when a resizeStack was received.</p>

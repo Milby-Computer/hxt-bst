@@ -1,0 +1,224 @@
+{
+   "#mainstack": "File Selector",
+   "File Selector": {
+      "#name": "stack \"File Selector\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"File Selector Card\"",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Help\"",
+                  "properties": {
+                     "armBorder": false,
+                     "id": "1003",
+                     "layer": "1",
+                     "menuMode": "pulldown",
+                     "mnemonic": "1",
+                     "name": "Help",
+                     "rect": "324,357,368,385",
+                     "sharedHilite": false
+                  }
+               },
+               "1004": {
+                  "#name": "field \"Selection\"",
+                  "properties": {
+                     "autoTab": true,
+                     "dontWrap": true,
+                     "id": "1004",
+                     "layer": "2",
+                     "lockLoc": true,
+                     "name": "Selection",
+                     "rect": "18,317,393,345",
+                     "sharedText": true
+                  }
+               },
+               "1005": {
+                  "#name": "field \"Prompt\"",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "id": "1005",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "name": "Prompt",
+                     "opaque": false,
+                     "rect": "0,291,320,315",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Files\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "firstIndent": "8",
+                     "htmlText": "%file%: assets/File Selector_1002_1006_htmlText.txt",
+                     "id": "1006",
+                     "layer": "4",
+                     "listBehavior": true,
+                     "lockLoc": true,
+                     "lockText": true,
+                     "margins": "4",
+                     "name": "Files",
+                     "rect": "201,84,378,287",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1008": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "armBorder": false,
+                     "id": "1008",
+                     "layer": "5",
+                     "menuMode": "pulldown",
+                     "mnemonic": "1",
+                     "name": "Cancel",
+                     "rect": "228,357,286,385",
+                     "sharedHilite": false
+                  }
+               },
+               "1009": {
+                  "#name": "button \"Filter\"",
+                  "properties": {
+                     "armBorder": false,
+                     "id": "1009",
+                     "layer": "6",
+                     "menuMode": "pulldown",
+                     "mnemonic": "1",
+                     "name": "Filter",
+                     "rect": "137,357,189,385",
+                     "sharedHilite": false
+                  }
+               },
+               "1010": {
+                  "#name": "field \"Directories\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "firstIndent": "8",
+                     "htmlText": "%file%: assets/File Selector_1002_1010_htmlText.txt",
+                     "id": "1010",
+                     "layer": "7",
+                     "listBehavior": true,
+                     "lockLoc": true,
+                     "lockText": true,
+                     "margins": "4",
+                     "name": "Directories",
+                     "rect": "8,84,193,287",
+                     "scrollbarWidth": "16",
+                     "sharedText": true,
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1012": {
+                  "#name": "button \"Save\"",
+                  "properties": {
+                     "id": "1012",
+                     "layer": "8",
+                     "menuMode": "pulldown",
+                     "mnemonic": "1",
+                     "name": "Save",
+                     "rect": "39,357,99,385",
+                     "sharedHilite": false
+                  }
+               },
+               "1013": {
+                  "#name": "field \"Dlabel\"",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>Directories:</p>",
+                     "id": "1013",
+                     "layer": "9",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "name": "Dlabel",
+                     "opaque": false,
+                     "rect": "0,60,92,84",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1014": {
+                  "#name": "field \"Flabel\"",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>Files:</p>",
+                     "id": "1014",
+                     "layer": "10",
+                     "lockText": true,
+                     "name": "Flabel",
+                     "opaque": false,
+                     "rect": "193,60,241,84",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1015": {
+                  "#name": "field \"Directory\"",
+                  "properties": {
+                     "autoTab": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>/Users/alilloyd/Documents/GitHub/livecode-ali/livecode/_build/mac/Debug/*</p>",
+                     "id": "1015",
+                     "layer": "11",
+                     "lockLoc": true,
+                     "name": "Directory",
+                     "rect": "8,29,399,57",
+                     "sharedText": true
+                  }
+               },
+               "1016": {
+                  "#name": "field id 1016",
+                  "properties": {
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>File Filter:</p>",
+                     "id": "1016",
+                     "layer": "12",
+                     "lockLoc": true,
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "0,4,80,32",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "File Selector Card"
+            }
+         }
+      },
+      "longID": "stack \"File Selector\"",
+      "properties": {
+         "fileName": "revfileselector.rev",
+         "id": "1016",
+         "name": "File Selector",
+         "rect": "628,412,1035,809",
+         "title": "Save"
+      },
+      "sharedGroupIDs": null
+   }
+}

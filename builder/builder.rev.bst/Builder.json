@@ -1,0 +1,350 @@
+{
+   "#mainstack": "Builder",
+   "Builder": {
+      "#name": "stack \"Builder\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Main\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"Log\"",
+                  "properties": {
+                     "htmlText": "%file%: assets/Builder_1002_1004_htmlText.txt",
+                     "id": "1004",
+                     "layer": "1",
+                     "name": "Log",
+                     "rect": "4,31,1322,625",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1008": {
+                  "#name": "group \"Controls\"",
+                  "childcontrols": {
+                     "1015": {
+                        "#name": "button \"Build Tools\"",
+                        "properties": {
+                           "id": "1015",
+                           "layer": "3",
+                           "name": "Build Tools",
+                           "rect": "252,4,328,27",
+                           "traversalOn": false
+                        }
+                     },
+                     "1017": {
+                        "#name": "button \"Windows\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1017",
+                           "layer": "4",
+                           "name": "Windows",
+                           "opaque": false,
+                           "rect": "859,4,941,27",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1019": {
+                        "#name": "button \"Linux\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1019",
+                           "layer": "5",
+                           "name": "Linux",
+                           "opaque": false,
+                           "rect": "946,4,1028,27",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1021": {
+                        "#name": "button \"Mac OS X\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1021",
+                           "layer": "6",
+                           "name": "Mac OS X",
+                           "opaque": false,
+                           "rect": "1240,4,1322,27",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1039": {
+                        "#name": "button \"Build Server\"",
+                        "properties": {
+                           "id": "1039",
+                           "layer": "7",
+                           "name": "Build Server",
+                           "rect": "328,4,411,27",
+                           "traversalOn": false
+                        }
+                     },
+                     "1045": {
+                        "#name": "button \"Edition\"",
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1045",
+                           "label": "Community",
+                           "layer": "8",
+                           "menuMode": "option",
+                           "name": "Edition",
+                           "rect": "549,5,699,27",
+                           "style": "menu",
+                           "text": "Community\nCommercial",
+                           "traversalOn": false
+                        }
+                     },
+                     "1046": {
+                        "#name": "button \"Linux x64\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1046",
+                           "layer": "9",
+                           "name": "Linux x64",
+                           "opaque": false,
+                           "rect": "1021,4,1107,27",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1050": {
+                        "#name": "button \"Build Docs\"",
+                        "properties": {
+                           "id": "1050",
+                           "layer": "10",
+                           "name": "Build Docs",
+                           "rect": "4,4,79,27",
+                           "traversalOn": false
+                        }
+                     },
+                     "1051": {
+                        "#name": "button \"Build Notes\"",
+                        "properties": {
+                           "id": "1051",
+                           "layer": "11",
+                           "name": "Build Notes",
+                           "rect": "79,4,159,27",
+                           "traversalOn": false
+                        }
+                     },
+                     "1052": {
+                        "#name": "button \"Build Engines\"",
+                        "properties": {
+                           "id": "1052",
+                           "layer": "12",
+                           "name": "Build Engines",
+                           "rect": "159,4,252,27",
+                           "traversalOn": false
+                        }
+                     },
+                     "1061": {
+                        "#name": "button \"Archive\"",
+                        "properties": {
+                           "id": "1061",
+                           "layer": "13",
+                           "name": "Archive",
+                           "rect": "411,4,465,27",
+                           "traversalOn": false
+                        }
+                     },
+                     "1062": {
+                        "#name": "button \"Type\"",
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1062",
+                           "label": "Stable",
+                           "layer": "14",
+                           "menuMode": "option",
+                           "name": "Type",
+                           "rect": "702,5,852,27",
+                           "style": "menu",
+                           "text": "Stable\nMaintenance\nDevelopment\nBeta",
+                           "traversalOn": false
+                        }
+                     },
+                     "1063": {
+                        "#name": "button \"Linux ARMv6\"",
+                        "custompropertysets": {
+                           "uVersion": {
+                              "ID": "1063",
+                              "UUID": "7d4deaf9-b58e-43e5-83bf-30b535b1ebcf"
+                           }
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1063",
+                           "layer": "15",
+                           "name": "Linux ARMv6",
+                           "opaque": false,
+                           "rect": "1120,4,1224,27",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "4",
+                     "id": "1008",
+                     "layer": "2",
+                     "margins": "0",
+                     "name": "Controls",
+                     "rect": "4,4,1322,27"
+                  }
+               },
+               "1057": {
+                  "#name": "button \"Android\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1057",
+                     "layer": "16",
+                     "name": "Android",
+                     "opaque": false,
+                     "rect": "1263,4,1345,27",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "visible": false
+                  }
+               },
+               "1058": {
+                  "#name": "button \"iOS\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1058",
+                     "layer": "17",
+                     "name": "iOS",
+                     "opaque": false,
+                     "rect": "1220,4,1267,27",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "visible": false
+                  }
+               },
+               "1066": {
+                  "#name": "button \"Build Guide\"",
+                  "properties": {
+                     "id": "1066",
+                     "layer": "18",
+                     "name": "Build Guide",
+                     "rect": "466,4,546,27",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "18"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Main"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1066"
+         },
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "cursors": false,
+            "inclusions": "search",
+            "Linux": false,
+            "MacOS,creator": "????",
+            "MacOS,documentType": null,
+            "MacOS,dynamicMemory": true,
+            "MacOS,longVersion": "Builder 1.0.0.0",
+            "MacOS,MinimumSize": "15000",
+            "MacOS,PreferredSize": "15000",
+            "MacOS,Region": "1",
+            "MacOS,Release": "Final",
+            "MacOS,versionnumber1": "1",
+            "MacOS,versionnumber2": "0",
+            "MacOS,versionnumber3": "0",
+            "MacOS68k": false,
+            "MacOSfat": false,
+            "MacOSPPC": false,
+            "MacOSX": false,
+            "MacOSX PowerPC-32": false,
+            "MacOSX x86-32": false,
+            "name": "Builder",
+            "OSX,copyright": "2010  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,identifier": "com..builder",
+            "OSX,info": "Builder Version 1.0.0.0",
+            "OSX,longVersion": "Builder 1.0.0.0",
+            "OSX,name": "Builder",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "scriptLibraries": "Internet\nGeometry\nPrinting",
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Web": false,
+            "Web,Affiliateid": null,
+            "Web,AffiliateInclude": false,
+            "Web,AllowOtherPlatforms": true,
+            "Web,CustomBackgroundColor": "237,237,237",
+            "Web,CustomBackgroundColor2": "237,237,237",
+            "Web,CustomLoadIcon": null,
+            "Web,DetectSecurityPermissions": true,
+            "Web,Domain": "0xFF",
+            "Web,ExecutionMode": "Browser",
+            "Web,InstanceId": null,
+            "Web,LinuxSupported": true,
+            "Web,MacOSXSupported": true,
+            "Web,MinEnvironmentVersion": null,
+            "Web,RequestedName": null,
+            "Web,SecurityPermissions": null,
+            "Web,SkipLoadScreen": false,
+            "Web,UUID": "a0ccbed9-8084-49ee-8b1b-9530047f2a26",
+            "Web,WindowsSupported": true,
+            "Windows": false,
+            "Windows,buildU3": false,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "G:/Workspace/Revolution/ide/Runtime/Windows/x86-32/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "Builder 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "G:/Workspace/Revolution/ide/Runtime/Windows/x86-32/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2010  All rights reserved worldwide",
+            "Windows,ProductName": "Builder",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0"
+         }
+      },
+      "longID": "stack \"Builder\"",
+      "properties": {
+         "decorations": "default",
+         "fileName": "builder.rev",
+         "id": "1066",
+         "liveResizing": false,
+         "name": "Builder",
+         "rect": "327,430,1653,1059"
+      },
+      "sharedGroupIDs": null
+   }
+}

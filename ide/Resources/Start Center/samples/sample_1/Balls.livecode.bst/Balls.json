@@ -1,0 +1,547 @@
+{
+   "#mainstack": "Balls",
+   "Balls": {
+      "#name": "stack \"Balls\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"main\"",
+            "childcontrols": {
+               "14170": {
+                  "#name": "graphic id 14170",
+                  "properties": {
+                     "backColor": "LemonChiffon",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14170",
+                     "layer": "8",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "59,728,99,768",
+                     "style": "oval"
+                  }
+               },
+               "14171": {
+                  "#name": "graphic id 14171",
+                  "properties": {
+                     "backColor": "Turquoise2",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14171",
+                     "layer": "9",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "134,738,164,768",
+                     "style": "oval"
+                  }
+               },
+               "14172": {
+                  "#name": "graphic id 14172",
+                  "properties": {
+                     "backColor": "Gray66",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14172",
+                     "layer": "10",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "902,720,950,768",
+                     "style": "oval"
+                  }
+               },
+               "14173": {
+                  "#name": "graphic id 14173",
+                  "properties": {
+                     "backColor": "Plum3",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14173",
+                     "layer": "11",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "155,707,216,768",
+                     "style": "oval"
+                  }
+               },
+               "14174": {
+                  "#name": "graphic id 14174",
+                  "properties": {
+                     "backColor": "Gray91",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14174",
+                     "layer": "12",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "90,698,160,768",
+                     "style": "oval"
+                  }
+               },
+               "14175": {
+                  "#name": "graphic id 14175",
+                  "properties": {
+                     "backColor": "Gray30",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14175",
+                     "layer": "13",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "0,672,96,768",
+                     "style": "oval"
+                  }
+               },
+               "14176": {
+                  "#name": "graphic id 14176",
+                  "properties": {
+                     "backColor": "OrangeRed2",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14176",
+                     "layer": "14",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "272,698,342,768",
+                     "style": "oval"
+                  }
+               },
+               "14177": {
+                  "#name": "graphic id 14177",
+                  "properties": {
+                     "backColor": "LavenderBlush4",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14177",
+                     "layer": "15",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "918,682,1004,768",
+                     "style": "oval"
+                  }
+               },
+               "14178": {
+                  "#name": "graphic id 14178",
+                  "properties": {
+                     "backColor": "Honeydew1",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14178",
+                     "layer": "16",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "817,681,904,768",
+                     "style": "oval"
+                  }
+               },
+               "14179": {
+                  "#name": "graphic id 14179",
+                  "properties": {
+                     "backColor": "Ivory3",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14179",
+                     "layer": "17",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "40,742,66,768",
+                     "style": "oval"
+                  }
+               },
+               "14180": {
+                  "#name": "graphic id 14180",
+                  "properties": {
+                     "backColor": "LightYellow4",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14180",
+                     "layer": "18",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "918,735,951,768",
+                     "style": "oval"
+                  }
+               },
+               "14181": {
+                  "#name": "graphic id 14181",
+                  "properties": {
+                     "backColor": "Seashell4",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14181",
+                     "layer": "19",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "256,758,266,768",
+                     "style": "oval"
+                  }
+               },
+               "14182": {
+                  "#name": "graphic id 14182",
+                  "properties": {
+                     "backColor": "SlateBlue2",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14182",
+                     "layer": "20",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "341,749,360,768",
+                     "style": "oval"
+                  }
+               },
+               "14183": {
+                  "#name": "graphic id 14183",
+                  "properties": {
+                     "backColor": "LightPink3",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14183",
+                     "layer": "21",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "540,671,637,768",
+                     "style": "oval"
+                  }
+               },
+               "14184": {
+                  "#name": "graphic id 14184",
+                  "properties": {
+                     "backColor": "Gray71",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14184",
+                     "layer": "22",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "992,753,1007,768",
+                     "style": "oval"
+                  }
+               },
+               "14185": {
+                  "#name": "graphic id 14185",
+                  "properties": {
+                     "backColor": "Goldenrod2",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14185",
+                     "layer": "23",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "270,742,296,768",
+                     "style": "oval"
+                  }
+               },
+               "14186": {
+                  "#name": "graphic id 14186",
+                  "properties": {
+                     "backColor": "Maroon2",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14186",
+                     "layer": "24",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "0,702,66,768",
+                     "style": "oval"
+                  }
+               },
+               "14187": {
+                  "#name": "graphic id 14187",
+                  "properties": {
+                     "backColor": "MistyRose3",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14187",
+                     "layer": "25",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "257,673,352,768",
+                     "style": "oval"
+                  }
+               },
+               "14188": {
+                  "#name": "graphic id 14188",
+                  "properties": {
+                     "backColor": "Yellow2",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14188",
+                     "layer": "26",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "606,755,619,768",
+                     "style": "oval"
+                  }
+               },
+               "14189": {
+                  "#name": "graphic id 14189",
+                  "properties": {
+                     "backColor": "Gold",
+                     "behavior": "button id 1969 of stack \"Balls\"",
+                     "filled": true,
+                     "id": "14189",
+                     "layer": "27",
+                     "layerMode": "dynamic",
+                     "lineSize": "2",
+                     "opaque": true,
+                     "rect": "507,736,539,768",
+                     "style": "oval"
+                  }
+               },
+               "1989": {
+                  "#name": "group id 1989",
+                  "childcontrols": {
+                     "1968": {
+                        "#name": "button \"Simulate Shake\"",
+                        "custompropertysets": {
+                           "cREVGeneral[scripteditorselection]": {
+                              "scripteditorselection": "68"
+                           },
+                           "cREVGeneral[scripteditorvscroll]": {
+                              "scripteditorvscroll": "0"
+                           }
+                        },
+                        "properties": {
+                           "id": "1968",
+                           "layer": "2",
+                           "name": "Simulate Shake",
+                           "rect": "617,5,816,63",
+                           "traversalOn": false
+                        }
+                     },
+                     "1969": {
+                        "#name": "button \"bounce\"",
+                        "custompropertysets": {
+                           "cREVGeneral[scripteditorselection]": {
+                              "scripteditorselection": "3230"
+                           },
+                           "cREVGeneral[scripteditorvscroll]": {
+                              "scripteditorvscroll": "83"
+                           }
+                        },
+                        "properties": {
+                           "id": "1969",
+                           "label": "Bounce Behavior",
+                           "layer": "3",
+                           "name": "bounce",
+                           "rect": "821,5,1020,63",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorselection]": {
+                        "scripteditorselection": "0"
+                     },
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "id": "1989",
+                     "layer": "1",
+                     "rect": "613,1,1024,67"
+                  }
+               },
+               "2429": {
+                  "#name": "group id 2429",
+                  "childcontrols": {
+                     "14121": {
+                        "#name": "button \"toggleGraphics\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "14121",
+                           "label": "Accelerated rendering",
+                           "layer": "7",
+                           "name": "toggleGraphics",
+                           "opaque": false,
+                           "rect": "5,62,389,85",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "2427": {
+                        "#name": "button \"Clear Balls\"",
+                        "custompropertysets": {
+                           "cREVGeneral[scripteditorselection]": {
+                              "scripteditorselection": "68"
+                           },
+                           "cREVGeneral[scripteditorvscroll]": {
+                              "scripteditorvscroll": "0"
+                           }
+                        },
+                        "properties": {
+                           "id": "2427",
+                           "layer": "5",
+                           "name": "Clear Balls",
+                           "rect": "208,5,407,63",
+                           "traversalOn": false
+                        }
+                     },
+                     "2428": {
+                        "#name": "button \"Create Balls\"",
+                        "custompropertysets": {
+                           "cREVGeneral[scripteditorselection]": {
+                              "scripteditorselection": "133"
+                           },
+                           "cREVGeneral[scripteditorvscroll]": {
+                              "scripteditorvscroll": "0"
+                           }
+                        },
+                        "properties": {
+                           "id": "2428",
+                           "layer": "6",
+                           "name": "Create Balls",
+                           "rect": "5,5,204,63",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cREVGeneral[scripteditorselection]": {
+                        "scripteditorselection": "0"
+                     },
+                     "cREVGeneral[scripteditorvscroll]": {
+                        "scripteditorvscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "3",
+                     "id": "2429",
+                     "layer": "4",
+                     "rect": "1,1,411,89"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorselection]": {
+                  "scripteditorselection": "5830"
+               },
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "543"
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "7"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "main"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeneral[AlreadyHidden]": {
+            "AlreadyHidden": false
+         },
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         },
+         "cREVGeneral[scripteditorselection]": {
+            "scripteditorselection": "1281"
+         },
+         "cREVGeneral[scripteditorvscroll]": {
+            "scripteditorvscroll": "0"
+         },
+         "cREVGeometryCache": {
+            "stackID": "14169"
+         },
+         "cRevStandaloneSettings": {
+            "android": true,
+            "android,identifier": "com.yourcompany.balls",
+            "answerDialog": true,
+            "askDialog": true,
+            "cursors": false,
+            "defaultBuildFolder": "/Users/michael/Desktop",
+            "errorDialog": false,
+            "inclusions": "search",
+            "ios": true,
+            "ios,bundle id": "com.runrev.balls",
+            "ios,device family": "1,2",
+            "ios,initial orientation": null,
+            "ios,ipad intial orientations": "LandscapeLeft,",
+            "ios,iphone initial orientation": "LandscapeLeft",
+            "ios,profile": "117B84A7-C0DC-482B-B842-A346BB63FE1E",
+            "ios,status bar hidden": true,
+            "Linux": false,
+            "MacOSX": false,
+            "MacOSX PowerPC-32": false,
+            "MacOSX x86-32": false,
+            "name": "Balls",
+            "OSX,copyright": "2011  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,identifier": "com..balls",
+            "OSX,info": "Balls Version 1.0.0.0",
+            "OSX,longVersion": "Balls 1.0.0.0",
+            "OSX,name": "Balls",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "scriptLibraries": "Internet\nGeometry\nPrinting",
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Web": false,
+            "Windows": false,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "/Applications/LiveCode 5.0 (dp 1).app/Contents/Tools/Runtime/Windows/x86-32/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "Balls 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "/Applications/LiveCode 5.0 (dp 1).app/Contents/Tools/Runtime/Windows/x86-32/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2011  All rights reserved worldwide",
+            "Windows,ProductName": "Balls",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0"
+         }
+      },
+      "longID": "stack \"Balls\"",
+      "properties": {
+         "backColor": "255,255,255",
+         "decorations": "default",
+         "fileName": "Balls.livecode",
+         "id": "14189",
+         "liveResizing": false,
+         "name": "Balls",
+         "rect": "136,211,1160,979",
+         "resizable": false,
+         "title": "Bouncing balls"
+      },
+      "sharedGroupIDs": null
+   }
+}

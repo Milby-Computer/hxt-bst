@@ -1,0 +1,734 @@
+{
+   "#mainstack": "mobileTemplate",
+   "mobileTemplate": {
+      "#name": "stack \"mobileTemplate\"",
+      "#substacks": null,
+      "backgroundIDs": "1004\n1018",
+      "cardIDs": "1868\n2244\n2310\n2253",
+      "childcontrols": {
+         "1004": {
+            "#name": "group \"header\"",
+            "childcontrols": {
+               "1003": {
+                  "#name": "graphic \"background\"",
+                  "properties": {
+                     "antialiased": false,
+                     "backColor": "175,207,54",
+                     "filled": true,
+                     "id": "1003",
+                     "layer": "2",
+                     "lineSize": "0",
+                     "name": "background",
+                     "opaque": true,
+                     "rect": "0,0,430,48"
+                  }
+               },
+               "1006": {
+                  "#name": "field \"title\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "dropShadow": {
+                        "angle": "270",
+                        "blendmode": "normal",
+                        "color": "0,0,0",
+                        "distance": "1",
+                        "filter": "box3pass",
+                        "knockout": true,
+                        "opacity": "79",
+                        "size": "0",
+                        "spread": "0"
+                     },
+                     "foreColor": "255,255,255",
+                     "htmlText": "<p>Mobile Template</p>",
+                     "id": "1006",
+                     "layer": "3",
+                     "lockText": true,
+                     "name": "title",
+                     "opaque": false,
+                     "rect": "0,9,430,35",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "14",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               },
+               "1008": {
+                  "#name": "button \"back\"",
+                  "properties": {
+                     "backColor": "255,255,255",
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "id": "1008",
+                     "layer": "4",
+                     "name": "back",
+                     "rect": "10,11,50,34",
+                     "shadowOffset": "0",
+                     "showBorder": false,
+                     "style": "rectangle",
+                     "textStyle": "bold",
+                     "threeD": false,
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1010": {
+                  "#name": "button \"delete\"",
+                  "properties": {
+                     "backColor": "255,255,255",
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "id": "1010",
+                     "label": "x",
+                     "layer": "5",
+                     "name": "delete",
+                     "rect": "391,11,420,34",
+                     "showBorder": false,
+                     "style": "rectangle",
+                     "textStyle": "bold",
+                     "threeD": false,
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1012": {
+                  "#name": "button \"add\"",
+                  "properties": {
+                     "backColor": "255,255,255",
+                     "borderWidth": "0",
+                     "hiliteBorder": false,
+                     "id": "1012",
+                     "label": "+",
+                     "layer": "6",
+                     "name": "add",
+                     "rect": "392,11,420,34",
+                     "shadowOffset": "0",
+                     "showBorder": false,
+                     "style": "rectangle",
+                     "textStyle": "bold",
+                     "threeD": false,
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1014": {
+                  "#name": "button \"upload\"",
+                  "properties": {
+                     "id": "1014",
+                     "label": "up",
+                     "layer": "7",
+                     "name": "upload",
+                     "rect": "388,11,420,34",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1015": {
+                  "#name": "graphic \"strip\"",
+                  "properties": {
+                     "antialiased": false,
+                     "backColor": "0,0,0",
+                     "blendLevel": "81",
+                     "filled": true,
+                     "id": "1015",
+                     "layer": "8",
+                     "lineSize": "0",
+                     "name": "strip",
+                     "opaque": true,
+                     "rect": "0,43,430,48"
+                  }
+               }
+            },
+            "properties": {
+               "backColor": "210,0,221",
+               "backgroundBehavior": true,
+               "borderWidth": "0",
+               "id": "1004",
+               "layer": "1",
+               "margins": "0",
+               "name": "header",
+               "outerGlow": {
+                  "blendmode": "normal",
+                  "color": "0,0,0",
+                  "filter": "box3pass",
+                  "opacity": "49",
+                  "range": "255",
+                  "size": "3",
+                  "spread": "0"
+               },
+               "rect": "0,0,430,48"
+            }
+         },
+         "1018": {
+            "#name": "group \"nav\"",
+            "childcontrols": {
+               "1016": {
+                  "#name": "graphic \"background\"",
+                  "properties": {
+                     "antialiased": false,
+                     "backColor": "228,228,228",
+                     "filled": true,
+                     "id": "1016",
+                     "layer": "10",
+                     "lineSize": "0",
+                     "name": "background",
+                     "opaque": true,
+                     "rect": "0,597,430,650"
+                  }
+               },
+               "1017": {
+                  "#name": "graphic \"highlight\"",
+                  "properties": {
+                     "backColor": "175,207,54",
+                     "filled": true,
+                     "id": "1017",
+                     "layer": "11",
+                     "lineSize": "0",
+                     "name": "highlight",
+                     "opaque": true,
+                     "rect": "0,597,108,650"
+                  }
+               },
+               "2311": {
+                  "#name": "image \"image1\"",
+                  "customproperties": {
+                     "cNavID": "1"
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "colorOverlay": {
+                        "blendmode": "normal",
+                        "color": "255,255,255",
+                        "opacity": "255"
+                     },
+                     "dropShadow": {
+                        "angle": "270",
+                        "blendmode": "normal",
+                        "color": "0,0,0",
+                        "distance": "1",
+                        "filter": "box3pass",
+                        "knockout": true,
+                        "opacity": "79",
+                        "size": "0",
+                        "spread": "0"
+                     },
+                     "fileName": "settings.png",
+                     "filepath": "C:/Projects/LiveCode/IDE_7/ide/Resources/Start Center/samples/sample_3/images/icons",
+                     "id": "2311",
+                     "layer": "12",
+                     "name": "image1",
+                     "rect": "38,607,70,639",
+                     "resizeQuality": "best"
+                  }
+               },
+               "2312": {
+                  "#name": "image \"image2\"",
+                  "customproperties": {
+                     "cNavID": "2"
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "dropShadow": {
+                        "angle": "270",
+                        "blendmode": "normal",
+                        "color": "0,0,0",
+                        "distance": "1",
+                        "filter": "box3pass",
+                        "knockout": true,
+                        "opacity": "79",
+                        "size": "0",
+                        "spread": "0"
+                     },
+                     "fileName": "trophy.png",
+                     "filepath": "C:/Projects/LiveCode/IDE_7/ide/Resources/Start Center/samples/sample_3/images/icons",
+                     "id": "2312",
+                     "layer": "13",
+                     "name": "image2",
+                     "rect": "145,607,177,639",
+                     "resizeQuality": "best"
+                  }
+               },
+               "2313": {
+                  "#name": "image \"image3\"",
+                  "customproperties": {
+                     "cNavID": "3"
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "dropShadow": {
+                        "angle": "270",
+                        "blendmode": "normal",
+                        "color": "0,0,0",
+                        "distance": "1",
+                        "filter": "box3pass",
+                        "knockout": true,
+                        "opacity": "79",
+                        "size": "0",
+                        "spread": "0"
+                     },
+                     "fileName": "zoom-out.png",
+                     "filepath": "C:/Projects/LiveCode/IDE_7/ide/Resources/Start Center/samples/sample_3/images/icons",
+                     "id": "2313",
+                     "layer": "14",
+                     "name": "image3",
+                     "rect": "253,607,285,639",
+                     "resizeQuality": "best"
+                  }
+               },
+               "2314": {
+                  "#name": "image \"image4\"",
+                  "customproperties": {
+                     "cNavID": "4"
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "dropShadow": {
+                        "angle": "270",
+                        "blendmode": "normal",
+                        "color": "0,0,0",
+                        "distance": "1",
+                        "filter": "box3pass",
+                        "knockout": true,
+                        "opacity": "79",
+                        "size": "0",
+                        "spread": "0"
+                     },
+                     "fileName": "add.png",
+                     "filepath": "C:/Projects/LiveCode/IDE_7/ide/Resources/Start Center/samples/sample_3/images/icons",
+                     "id": "2314",
+                     "layer": "15",
+                     "name": "image4",
+                     "rect": "360,607,392,639",
+                     "resizeQuality": "best"
+                  }
+               }
+            },
+            "customproperties": {
+               "cNavItems": "template,settings\nbooking,trophy\nasdfasdf,zoom-out"
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "1466"
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1018",
+               "layer": "9",
+               "margins": "0",
+               "name": "nav",
+               "outerGlow": {
+                  "blendmode": "normal",
+                  "color": "0,0,0",
+                  "filter": "box3pass",
+                  "opacity": "49",
+                  "range": "255",
+                  "size": "3",
+                  "spread": "0"
+               },
+               "rect": "0,597,430,650"
+            }
+         },
+         "1868": {
+            "#name": "card \"template\"",
+            "childcontrols": {
+               "1004": "#shared group",
+               "1018": "#shared group",
+               "1889": {
+                  "#name": "button \"theme\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1889",
+                     "label": "Green",
+                     "layer": "16",
+                     "menuHistory": "4",
+                     "menuMode": "option",
+                     "name": "theme",
+                     "rect": "118,66,306,88",
+                     "style": "menu",
+                     "text": "Red\nOrange\nYellow\nGreen\nBlue\nPurple\nBrown",
+                     "traversalOn": false
+                  }
+               },
+               "1891": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Theme"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Theme</p>",
+                     "id": "1891",
+                     "layer": "17",
+                     "lockText": true,
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "14,66,114,87",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1893": {
+                  "#name": "field \"navItems\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>template,settings</p>\n<p>booking,trophy</p>\n<p>asdfasdf,zoom-out</p>",
+                     "id": "1893",
+                     "layer": "18",
+                     "name": "navItems",
+                     "rect": "118,98,306,216",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "traversalOn": false,
+                     "vScrollbar": true
+                  }
+               },
+               "1895": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Nav Items"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Nav Items</p>",
+                     "id": "1895",
+                     "layer": "19",
+                     "lockText": true,
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "14,98,114,119",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1909": {
+                  "#name": "button \"Update\"",
+                  "properties": {
+                     "id": "1909",
+                     "layer": "20",
+                     "name": "Update",
+                     "rect": "118,220,194,243",
+                     "traversalOn": false
+                  }
+               },
+               "2029": {
+                  "#name": "field \"Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/mobileTemplate_1868_2029_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "%file%: assets/mobileTemplate_1868_2029_htmlText.txt",
+                     "id": "2029",
+                     "layer": "21",
+                     "lockText": true,
+                     "name": "Field",
+                     "rect": "14,334,418,596",
+                     "scrollbarWidth": "16",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "traversalOn": false,
+                     "vScrollbar": true
+                  }
+               },
+               "2033": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Header Buttons\n"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Header Buttons</p>\n<p></p>",
+                     "id": "2033",
+                     "layer": "22",
+                     "lockText": true,
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "16,256,116,277",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "2035": {
+                  "#name": "button \"Back\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "2035",
+                     "layer": "23",
+                     "name": "Back",
+                     "opaque": false,
+                     "rect": "120,256,272,279",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "2036": {
+                  "#name": "button \"Add\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "2036",
+                     "layer": "24",
+                     "name": "Add",
+                     "opaque": false,
+                     "rect": "120,276,272,299",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "2037": {
+                  "#name": "button \"Delele\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "2037",
+                     "layer": "25",
+                     "name": "Delele",
+                     "opaque": false,
+                     "rect": "120,296,272,319",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "2183": {
+                  "#name": "button \"Reset\"",
+                  "properties": {
+                     "id": "2183",
+                     "layer": "26",
+                     "name": "Reset",
+                     "rect": "198,220,274,243",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cNavID": "1"
+            },
+            "custompropertysets": {
+               "cREVGeneral[scripteditorselection]": {
+                  "scripteditorselection": "877"
+               },
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "0"
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "26"
+               }
+            },
+            "properties": {
+               "id": "1868",
+               "name": "template"
+            }
+         },
+         "2244": {
+            "#name": "card \"booking\"",
+            "childcontrols": {
+               "1004": "#shared group",
+               "1018": "#shared group"
+            },
+            "customproperties": {
+               "cNavID": "2"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "15"
+               }
+            },
+            "properties": {
+               "id": "2244",
+               "layer": "2",
+               "name": "booking"
+            }
+         },
+         "2253": {
+            "#name": "card \"search\"",
+            "childcontrols": {
+               "1004": "#shared group",
+               "1018": "#shared group"
+            },
+            "customproperties": {
+               "cNavID": "3"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "15"
+               }
+            },
+            "properties": {
+               "id": "2253",
+               "layer": "4",
+               "name": "search"
+            }
+         },
+         "2310": {
+            "#name": "card \"asdfasdf\"",
+            "childcontrols": {
+               "1004": "#shared group",
+               "1018": "#shared group"
+            },
+            "customproperties": {
+               "cNavID": "3"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "15"
+               }
+            },
+            "properties": {
+               "id": "2310",
+               "layer": "3",
+               "name": "asdfasdf"
+            }
+         }
+      },
+      "customproperties": {
+         "cNewCardScript": "%file%: assets/mobileTemplate_cNewCardScript.bin",
+         "cTheme": "green",
+         "navSelectedItem": "1"
+      },
+      "custompropertysets": {
+         "cREVGeneral[AlreadyHidden]": {
+            "AlreadyHidden": false
+         },
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         },
+         "cREVGeneral[scripteditorselection]": {
+            "scripteditorselection": "250"
+         },
+         "cREVGeneral[scripteditorvscroll]": {
+            "scripteditorvscroll": "0"
+         },
+         "cREVGeometryCache": {
+            "stackID": "2314"
+         },
+         "cRevStandaloneSettings": {
+            "android": true,
+            "android,device capabilities": {
+               "hardware.camera": true,
+               "hardware.camera.autofocus": true
+            },
+            "android,icon": "images/icon-114.png",
+            "android,identifier": "com.runrev.cloud_academy",
+            "android,include dbmysql": true,
+            "android,include dbsqlite": true,
+            "android,installLocation": "Allow External Storage",
+            "android,label": "Cloud App",
+            "android,minimum version": "8",
+            "android,signing": "Do not sign",
+            "android,splash": "images/splash-iphone-retina.png",
+            "android,status bar hidden": true,
+            "android,statusBarIcon": null,
+            "answerDialog": true,
+            "askDialog": true,
+            "CopyReferencedFiles": false,
+            "cursors": false,
+            "errorDialog": false,
+            "files": "images/icons/*",
+            "inclusions": "search",
+            "ios": false,
+            "ios,build type": "Universal",
+            "ios,bundle id": "com.runrev.cloud_academy",
+            "ios,device capabilities": {
+               "still-camera": true,
+               "wifi": true
+            },
+            "ios,device family": "1",
+            "ios,display name": "Cloud App",
+            "ios,include dbmysql": true,
+            "ios,include dbsqlite": true,
+            "ios,ipad intial orientations": "Portrait",
+            "ios,iphone 4inch splash": "images/splash-iphone-5.png",
+            "ios,iphone icon": "images/icon-57.png",
+            "ios,iphone splash": "images/splash-iphone.png",
+            "ios,minimum version": "6.0",
+            "ios,persistent wifi": true,
+            "ios,retina icon": "images/icon-114.png",
+            "ios,retina splash": "images/splash-iphone-retina.png",
+            "ios,status bar hidden": true,
+            "Linux": false,
+            "MacOSX": false,
+            "MacOSX PowerPC-32": false,
+            "MacOSX x86-32": false,
+            "name": "cloud-academy-template",
+            "OSX,copyright": "2013  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,identifier": "com..cloud-academy-template",
+            "OSX,info": "cloud-academy-template Version 1.0.0.0",
+            "OSX,longVersion": "cloud-academy-template 1.0.0.0",
+            "OSX,name": "cloud-academy-template",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "ReferencedFilesDestination": "Referenced Files",
+            "scriptLibraries": "Internet\nGeometry\nPrinting",
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Windows": false,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "/Applications/LiveCode 6.1.1 (rc 4).app/Contents/Tools/Runtime/Windows/x86-32/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "cloud-academy-template 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "/Applications/LiveCode 6.1.1 (rc 4).app/Contents/Tools/Runtime/Windows/x86-32/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2013  All rights reserved worldwide",
+            "Windows,ProductName": "cloud-academy-template",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0"
+         }
+      },
+      "longID": "stack \"mobileTemplate\"",
+      "properties": {
+         "backColor": "251,249,244",
+         "fileName": "mobileTemplate.livecode",
+         "foreColor": "0,0,0",
+         "id": "2314",
+         "name": "mobileTemplate",
+         "rect": "221,173,651,823",
+         "title": "Mobile template"
+      },
+      "sharedGroupIDs": "1004\n1018"
+   }
+}

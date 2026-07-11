@@ -1,0 +1,222 @@
+{
+   "#mainstack": "com.livecode.pi.relayer",
+   "com.livecode.pi.relayer": {
+      "#name": "stack \"com.livecode.pi.relayer\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1033": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1034": {
+                        "#name": "group \"controls\"",
+                        "childcontrols": {
+                           "1031": {
+                              "#name": "button \"Move Forward\"",
+                              "custompropertysets": {
+                                 "cREVDivergedrevLarge": {
+                                    "rect": "153,73,187,102"
+                                 },
+                                 "cREVDivergedrevsmall": null,
+                                 "cREVMaster": {
+                                    "rect": "143,73,170,96"
+                                 },
+                                 "cREVTempMaster": {
+                                    "accelKey": null,
+                                    "accelMods": null,
+                                    "accelText": null,
+                                    "altId": "0",
+                                    "arm": false,
+                                    "armBorder": false,
+                                    "armFill": false,
+                                    "autoArm": false,
+                                    "autoHilite": true,
+                                    "borderWidth": "2",
+                                    "colors": "\n\n\n\n\n\n\n",
+                                    "default": false,
+                                    "disabled": false,
+                                    "family": "0",
+                                    "hilite": false,
+                                    "hiliteBorder": false,
+                                    "hiliteFill": true,
+                                    "hiliteIcon": "200488",
+                                    "icon": "200487",
+                                    "id": "2229",
+                                    "ink": "srcCopy",
+                                    "label": null,
+                                    "labelWidth": "0",
+                                    "layer": "14",
+                                    "lockLoc": false,
+                                    "margins": "4",
+                                    "menuHistory": "1",
+                                    "menuLines": "5",
+                                    "menuMode": "tabbed",
+                                    "menuMouseButton": "1",
+                                    "menuName": null,
+                                    "mnemonic": "5",
+                                    "name": "Backwards",
+                                    "number": "11",
+                                    "opaque": false,
+                                    "patterns": "\n\n\n\n\n\n\n\n",
+                                    "rect": "143,73,170,96",
+                                    "shadow": false,
+                                    "shadowOffset": "4",
+                                    "sharedHilite": true,
+                                    "showBorder": false,
+                                    "showHilite": false,
+                                    "showIcon": true,
+                                    "showName": false,
+                                    "style": "transparent",
+                                    "textAlign": "center",
+                                    "textFont": null,
+                                    "textSize": null,
+                                    "textStyle": null,
+                                    "threeD": false,
+                                    "toolTip": null,
+                                    "traversalOn": false,
+                                    "visible": true
+                                 }
+                              },
+                              "properties": {
+                                 "icon": "202726",
+                                 "id": "1031",
+                                 "layer": "3",
+                                 "menuMode": "tabbed",
+                                 "mnemonic": "5",
+                                 "name": "Move Forward",
+                                 "rect": "146,20,171,42",
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "rectangle",
+                                 "toolTip": "Relayer Up",
+                                 "traversalOn": false
+                              }
+                           },
+                           "1032": {
+                              "#name": "button \"Move Backward\"",
+                              "custompropertysets": {
+                                 "cREVDivergedrevLarge": {
+                                    "rect": "115,73,149,102"
+                                 },
+                                 "cREVDivergedrevsmall": null,
+                                 "cREVMaster": {
+                                    "rect": "115,73,142,96"
+                                 },
+                                 "cREVTempMaster": {
+                                    "accelKey": null,
+                                    "accelMods": null,
+                                    "accelText": null,
+                                    "altId": "0",
+                                    "arm": false,
+                                    "armBorder": false,
+                                    "armFill": false,
+                                    "autoArm": false,
+                                    "autoHilite": true,
+                                    "borderWidth": "2",
+                                    "colors": "\n\n\n\n\n\n\n",
+                                    "default": false,
+                                    "disabled": false,
+                                    "family": "0",
+                                    "hilite": false,
+                                    "hiliteBorder": false,
+                                    "hiliteFill": true,
+                                    "hiliteIcon": "200490",
+                                    "icon": "200489",
+                                    "id": "2230",
+                                    "ink": "srcCopy",
+                                    "label": null,
+                                    "labelWidth": "0",
+                                    "layer": "15",
+                                    "lockLoc": false,
+                                    "margins": "4",
+                                    "menuHistory": "1",
+                                    "menuLines": "5",
+                                    "menuMode": "tabbed",
+                                    "menuMouseButton": "1",
+                                    "menuName": null,
+                                    "mnemonic": "5",
+                                    "name": "Forwards",
+                                    "number": "12",
+                                    "opaque": false,
+                                    "patterns": "\n\n\n\n\n\n\n\n",
+                                    "rect": "115,73,142,96",
+                                    "shadow": false,
+                                    "shadowOffset": "4",
+                                    "sharedHilite": true,
+                                    "showBorder": false,
+                                    "showHilite": false,
+                                    "showIcon": true,
+                                    "showName": false,
+                                    "style": "transparent",
+                                    "textAlign": "center",
+                                    "textFont": null,
+                                    "textSize": null,
+                                    "textStyle": null,
+                                    "threeD": false,
+                                    "toolTip": null,
+                                    "traversalOn": false,
+                                    "visible": true
+                                 }
+                              },
+                              "properties": {
+                                 "icon": "202728",
+                                 "id": "1032",
+                                 "layer": "4",
+                                 "menuMode": "tabbed",
+                                 "mnemonic": "5",
+                                 "name": "Move Backward",
+                                 "rect": "109,20,134,42",
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "rectangle",
+                                 "toolTip": "Relayer Down",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1034",
+                           "layer": "2",
+                           "name": "controls",
+                           "rect": "105,16,175,46"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1033",
+                     "layer": "1",
+                     "name": "template",
+                     "rect": "101,12,179,50"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "3"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1033"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.relayer\"",
+      "properties": {
+         "fileName": "com.livecode.pi.relayer.livecode",
+         "id": "1034",
+         "name": "com.livecode.pi.relayer",
+         "rect": "449,115,763,268"
+      },
+      "sharedGroupIDs": null
+   }
+}

@@ -1,0 +1,7 @@
+<p><font face="Verdana" size="18">Complete both tables</font></p>
+<p></p>
+<p>Below are both tables for this database. Press the <b><font face="Tahoma" size="11">Refresh</font></b> button to display the contents of the individual tables. Add data to both tables so we can work on creating reports. Or, if you like, you can add 'dummy data' by clicking the <b><font face="Tahoma" size="11">Default Data</font></b> button. It's very important you create the correct 'foreign key' for the <b><font face="Tahoma" size="11">apps</font></b> table. In other words, there should be a number in the <b><font face="Tahoma" size="11">appUserID</font></b> column in the <b><font face="Tahoma" size="11">apps</font></b> table which equals the <b><font face="Tahoma" size="11">userID</font></b> of a person in the <b><font face="Tahoma" size="11">users</font></b> table.</p>
+<p></p>
+<p>Currently, there is no error checking for this in our demo stack, so we depend on you being careful with the foreign key. If you're unsure on how to do this, just press the <b><font face="Tahoma" size="11">Default Data</font></b> button. </p>
+<p></p>
+<p><i><b><font face="Tahoma" size="11">When you are finished, press the Default Data button to preload the database for some of the reports we'll be showing next.</font></b></i></p>

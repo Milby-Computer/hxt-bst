@@ -1,0 +1,52 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">constant</font> startBottles = 99</p>
+<p><font color="#0000FF">local</font> bottlesLeft = 99</p>
+<p><font color="#0000FF">local</font> currentVerseMessage <font color="#68228B">-- stores message ID so we can cancel</font></p>
+<p></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#980517">if</font> currentVerseMessage is empty <font color="#980517">then</font> <font color="#68228B">-- song hasn't started</font></p>
+<p>    displayCurrentVerse <font color="#68228B">-- start the song</font></p>
+<p>  <font color="#980517">else</font> <font color="#68228B">-- song is already going, so stop it</font></p>
+<p>    <font color="#0000FF">cancel</font> currentVerseMessage</p>
+<p>    <font color="#0000FF">put</font> empty into currentVerseMessage</p>
+<p>    <font color="#0000FF">put</font> empty into field "Song"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#980517">on</font> displayCurrentVerse</p>
+<p>  <font color="#68228B">-- show a verse, using the bottlePhrase function,</font></p>
+<p>  <font color="#68228B">-- and set up the variable for the next verse</font></p>
+<p>  <font color="#980517">switch</font> bottlesLeft</p>
+<p>  <font color="#980517">case</font> zero <font color="#68228B">-- last verse, zero bottles left</font></p>
+<p>    <font color="#0000FF">put</font> bottlePhrase(bottlesLeft) &amp;&amp; "on the wall," \</p>
+<p>        &amp;&amp; <font color="#F88017">toLower</font>(bottlePhrase(bottlesLeft)) &amp; <font color="#0000FF">return</font> \</p>
+<p>        &amp; "You go to the store and buy some more," \ </p>
+<p>        &amp;&amp; <font color="#F88017">toLower</font>(bottlePhrase(startBottles)) \</p>
+<p>        &amp;&amp; "on the wall!" into field "Song"</p>
+<p>    <font color="#0000FF">put</font> startBottles into bottlesLeft <font color="#68228B">-- start again</font></p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#FF0000">default</font> <font color="#68228B">-- all other verses</font></p>
+<p>    <font color="#0000FF">put</font> bottlePhrase(bottlesLeft) &amp;&amp; "on the wall," \</p>
+<p>        &amp;&amp; <font color="#F88017">toLower</font>(bottlePhrase(bottlesLeft)) &amp; <font color="#0000FF">return</font> \</p>
+<p>        &amp; "You take one down and pass it around," \</p>
+<p>        &amp;&amp; <font color="#F88017">toLower</font>(bottlePhrase(bottlesLeft - 1)) \</p>
+<p>        &amp;&amp; "on the wall!" into field "Song"</p>
+<p>    <font color="#0000FF">subtract</font> 1 from bottlesLeft <font color="#68228B">-- for the next verse</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">switch</font></p>
+<p>  <font color="#0000FF">send</font> "displayCurrentVerse" to <font color="#F88017">me</font> in 1 second</p>
+<p>  <font color="#0000FF">put</font> the <font color="#F88017">result</font> into currentVerseMessage</p>
+<p><font color="#980517">end</font> displayCurrentVerse</p>
+<p></p>
+<p><font color="#0000FF">function</font> bottlePhrase theNumber</p>
+<p>  <font color="#68228B">-- generate the "base phrase" used to make a verse</font></p>
+<p>  <font color="#980517">switch</font> theNumber</p>
+<p>  <font color="#980517">case</font> zero</p>
+<p>    <font color="#0000FF">return</font> "No more bottles of beer"</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#980517">case</font> one</p>
+<p>    <font color="#0000FF">return</font> "One last bottle of beer"</p>
+<p>    <font color="#0000FF">break</font></p>
+<p>  <font color="#FF0000">default</font></p>
+<p>    <font color="#0000FF">return</font> theNumber &amp;&amp; "bottles of beer"</p>
+<p>  <font color="#980517">end</font> <font color="#980517">switch</font></p>
+<p><font color="#980517">end</font> bottlePhrase</p>

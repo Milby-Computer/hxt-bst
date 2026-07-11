@@ -1,0 +1,81 @@
+\/Users\/gheizhwinder\/Dev\/extensions\/libraries\/grayscaler/|/Users/gheizhwinder/Dev/extensions/libraries/grayscaler
+\/Users\/gheizhwinder\/Dev\/extensions\/widgets\/iosfield/|/Users/gheizhwinder/Dev/extensions/widgets/iosfield
+\/Users\/gheizhwinder\/Dev\/extensions\/widgets\/map/|/Users/gheizhwinder/Dev/extensions/widgets/map
+\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/chart/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/chart
+\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/checkbox/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/checkbox
+\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/list/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/list
+\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/multilist/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/multilist
+\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/pinkcircle/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/pinkcircle
+\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/pushbutton/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/pushbutton
+\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/radiobutton/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/radiobutton
+\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/selector/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/selector
+\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/simplecomposed/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/simplecomposed
+\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/libraries\/common/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/libraries/common
+\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/chart/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/chart
+\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/checkbox/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/checkbox
+\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/multilist/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/multilist
+\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/pinkcircle/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/pinkcircle
+\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/progressbar/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/progressbar
+\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/pushbutton/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/pushbutton
+\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/radiobutton/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/radiobutton
+\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/selector/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/selector
+\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/simplecomposed/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/simplecomposed
+Android Audio Recorder/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/libraries/androidaudiorecorder
+Android Background Audio/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/libraries/androidbgaudio
+Android Charts/|/Users/gheizhwinder/Dev/extensions/widgets/androidcharts
+Android Native Button/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/androidbutton
+Android Native Field/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/androidfield
+Android Speech-To-Text/|/Users/gheizhwinder/Dropbox/LCG/Part VI/1. android speech to text
+Android Wav Compare/|/Users/gheizhwinder/Dev/extensions/libraries/androidwavcompare
+Android Wav Recorder/|/Users/gheizhwinder/Dev/extensions/libraries/androidwavrecorder
+AndroidFingerprint (\/Users\/gheizhwinder\/Dev\/extensions\/libraries\/fingerprint)/|/Users/gheizhwinder/Dev/extensions/libraries/fingerprint
+AndroidFingerprint (\/Users\/gheizhwinder\/Dev\/extensions\/libraries\/androidfingerprint)/|/Users/gheizhwinder/Dev/extensions/libraries/androidfingerprint
+Browser (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/browser)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/browser
+Browser (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/browser)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/browser
+Canvas Library (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/libraries\/canvas)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/libraries/canvas
+Canvas Library (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/libraries\/canvas)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/libraries/canvas
+Clock (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/clock)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/clock
+Clock (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/clock)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/clock
+Color Swatch (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/colorswatch)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/colorswatch
+Color Swatch (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/colorswatch)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/colorswatch
+com.livecode.lcs_tests.core.engine_lcb.widget.library_sendpost/|/Users/gheizhwinder/Dev/extensions/libraries/test
+ConvexHull/|/Users/gheizhwinder/Downloads/community.livecode.hermann.convexhull.1.2.0
+Drawing/|/Users/gheizhwinder/Dev/livecode-private/extensions/widgets/drawing
+Dropbox Library/|/Users/gheizhwinder/Dev/extensions/script-libraries/dropboxtest
+Gradient Ramp Editor (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/gradientrampeditor)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/gradientrampeditor
+Gradient Ramp Editor (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/gradientrampeditor)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/gradientrampeditor
+Header Bar (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/header)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/header
+Header Bar (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/header)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/header
+Icon Picker (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/iconpicker)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/iconpicker
+Icon Picker (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/iconpicker)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/iconpicker
+Icon SVG Library (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/libraries\/iconsvg)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/libraries/iconsvg
+Icon SVG Library (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/libraries\/iconsvg)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/libraries/iconsvg
+iOS Native Button/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/iosbutton
+JSON Library (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/libraries\/json)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/libraries/json
+JSON Library (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/libraries\/json)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/libraries/json
+Line Graph (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/graph)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/graph
+Line Graph (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/graph)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/graph
+List/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/list
+Mac and Ios Speech-To-Text/|/Users/gheizhwinder/Dropbox/LCG/speech to text mac
+Mac Native Button/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/macbutton
+Mac Native Single-line Field/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/mactextfield
+Map/|/Users/gheizhwinder/Dropbox/LCG/Part VI/2. map
+Navigation Bar (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/navbar)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/navbar
+Navigation Bar (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/navbar)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/navbar
+Object Repository Library/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/libraries/objectrepository
+Palette Actions (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/paletteactions)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/paletteactions
+Palette Actions (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/paletteactions)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/paletteactions
+Progress Bar/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/progressbar
+Secure Key Storage/|/Users/gheizhwinder/Dev/extensions/libraries/securekey
+Segmented Control (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/segmented)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/segmented
+Segmented Control (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/segmented)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/segmented
+Spinner/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/spinner
+SVG Icon (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/svgpath)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/svgpath
+SVG Icon (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/svgpath)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/svgpath
+Switch Button (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/switchbutton)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/switchbutton
+Switch Button (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/switchbutton)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/switchbutton
+test/|/Users/gheizhwinder/Dev/extensions/widgets/test
+Tile (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/tile)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/tile
+Tile (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/tile)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/tile
+Tree View (\/Users\/gheizhwinder\/Dev\/livecode-maintenance\/livecode\/extensions\/widgets\/treeview)/|/Users/gheizhwinder/Dev/livecode-maintenance/livecode/extensions/widgets/treeview
+Tree View (\/Users\/gheizhwinder\/Dev\/livecode-private\/livecode\/extensions\/widgets\/treeview)/|/Users/gheizhwinder/Dev/livecode-private/livecode/extensions/widgets/treeview

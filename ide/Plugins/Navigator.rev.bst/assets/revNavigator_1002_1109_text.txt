@@ -1,0 +1,58 @@
+!nAbout Navigator...
+Prefs
+!c	Use Names
+!c	Color Scripted Objects
+!n	Named Objects Only
+!n	Scripted Objects Only
+!n	Use Long Name or ID
+!n	Show Tooltip
+!c	Update List Automatically
+	-
+	Indent String...
+	Add Properties...
+	Colors
+		Default...
+		Scripted Object...
+		Object Missing...
+	Menu Limit:
+!n		30
+!n		100
+!c		300
+!n		1000
+!n		10000
+	Object Limit:
+!n		30
+!n		100
+!n		300
+!n		1000
+!c		10000
+	-
+	Double-Click:
+!n		Copy ID
+!c		Edit Script
+!n		Edit Properties
+!n		Bookmark-Remove
+	Option-Double-Click:
+!n		Copy ID
+!n		Edit Script
+!c		Edit Properties
+!n		Bookmark-Remove
+	Command-Double-Click:
+!n		Copy ID
+!n		Edit Script
+!n		Edit Properties
+!c		Bookmark-Remove
+-
+Get Scripts
+Edit Properties
+Edit Scripts
+Show Properties
+Command...
+Update List Now
+-
+Bookmark
+Remove
+Remove All
+Save Control Set...
+-
+michael

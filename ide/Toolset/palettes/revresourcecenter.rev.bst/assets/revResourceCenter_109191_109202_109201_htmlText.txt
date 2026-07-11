@@ -1,0 +1,5 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> returnInField <font color="#68228B">-- goes in Find field's script</font></p>
+<p>  <font color="#980517">if</font> <font color="#F88017">me</font> is empty <font color="#980517">then</font> <font color="#0000FF">beep</font> <font color="#68228B">-- nothing to find</font></p>
+<p>  <font color="#980517">else</font> <font color="#0000FF">find</font> the <font color="#FF0000">text</font> of <font color="#F88017">me</font> <font color="#68228B">-- "me" is the field</font></p>
+<p><font color="#980517">end</font> returnInField</p>

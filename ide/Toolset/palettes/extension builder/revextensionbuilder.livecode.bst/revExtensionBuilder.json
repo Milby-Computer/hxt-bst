@@ -1,0 +1,647 @@
+{
+   "#mainstack": "revExtensionBuilder",
+   "revExtensionBuilder": {
+      "#name": "stack \"revExtensionBuilder\"",
+      "#substacks": null,
+      "backgroundIDs": "1508\n1610",
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1040": {
+                  "#name": "field \"label_icons\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "autoTab": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Icons</p>",
+                     "id": "1040",
+                     "layer": "1",
+                     "lockText": true,
+                     "name": "label_icons",
+                     "opaque": false,
+                     "rect": "12,61,136,82",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textHeight": "16",
+                     "traversalOn": false
+                  }
+               },
+               "1041": {
+                  "#name": "image \"icon\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1041",
+                     "layer": "2",
+                     "lockLoc": true,
+                     "name": "icon",
+                     "rect": "228,61,268,81",
+                     "showBorder": true,
+                     "text": "%file%: assets/revExtensionBuilder_1002_1041_text.png",
+                     "threeD": false
+                  }
+               },
+               "1042": {
+                  "#name": "image \"icon_retina\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1042",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "name": "icon_retina",
+                     "rect": "142,61,222,101",
+                     "showBorder": true,
+                     "text": "%file%: assets/revExtensionBuilder_1002_1042_text.png",
+                     "threeD": false
+                  }
+               },
+               "1044": {
+                  "#name": "field \"label_resources\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "autoTab": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Resources</p>",
+                     "id": "1044",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "label_resources",
+                     "opaque": false,
+                     "rect": "12,107,136,128",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textHeight": "16",
+                     "traversalOn": false
+                  }
+               },
+               "1045": {
+                  "#name": "field \"resources\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>No resources found in extension</p>",
+                     "id": "1045",
+                     "layer": "5",
+                     "lockText": true,
+                     "name": "resources",
+                     "rect": "142,107,482,168",
+                     "scrollbarWidth": "13",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textHeight": "16",
+                     "traversalOn": false,
+                     "vScrollbar": true
+                  }
+               },
+               "1047": {
+                  "#name": "field \"label_api\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "autoTab": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>API</p>",
+                     "id": "1047",
+                     "layer": "6",
+                     "lockText": true,
+                     "name": "label_api",
+                     "opaque": false,
+                     "rect": "12,301,136,331",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textHeight": "16",
+                     "traversalOn": false
+                  }
+               },
+               "1048": {
+                  "#name": "field \"message_api\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "autoTab": true,
+                     "foreColor": "124,124,124",
+                     "htmlText": "<p>Yes</p>",
+                     "id": "1048",
+                     "layer": "7",
+                     "lockText": true,
+                     "name": "message_api",
+                     "opaque": false,
+                     "rect": "142,301,482,317",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textHeight": "16",
+                     "traversalOn": false
+                  }
+               },
+               "1049": {
+                  "#name": "field \"label_guide\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "autoTab": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>User Guide</p>",
+                     "id": "1049",
+                     "layer": "8",
+                     "lockText": true,
+                     "name": "label_guide",
+                     "opaque": false,
+                     "rect": "12,323,136,344",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textHeight": "16",
+                     "traversalOn": false
+                  }
+               },
+               "1050": {
+                  "#name": "field \"message_guide\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "autoTab": true,
+                     "foreColor": "124,124,124",
+                     "htmlText": "<p>No user guide found</p>",
+                     "id": "1050",
+                     "layer": "9",
+                     "lockText": true,
+                     "name": "message_guide",
+                     "opaque": false,
+                     "rect": "142,323,482,339",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textHeight": "16",
+                     "traversalOn": false
+                  }
+               },
+               "1056": {
+                  "#name": "field \"console\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "id": "1056",
+                     "layer": "10",
+                     "lockText": true,
+                     "name": "console",
+                     "rect": "12,378,482,577",
+                     "showFocusBorder": false,
+                     "textHeight": "16"
+                  }
+               },
+               "1064": {
+                  "#name": "button \"extensions\"",
+                  "properties": {
+                     "id": "1064",
+                     "label": "  ",
+                     "layer": "11",
+                     "margins": "8",
+                     "menuHistory": "10",
+                     "menuMode": "option",
+                     "name": "extensions",
+                     "rect": "142,33,482,55",
+                     "style": "menu",
+                     "text": "%file%: assets/revExtensionBuilder_1002_1064_text.txt"
+                  }
+               },
+               "1065": {
+                  "#name": "field \"label_extensions\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "autoTab": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Extensions</p>",
+                     "id": "1065",
+                     "layer": "12",
+                     "lockText": true,
+                     "name": "label_extensions",
+                     "opaque": false,
+                     "rect": "12,33,136,54",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textHeight": "16",
+                     "traversalOn": false
+                  }
+               },
+               "1243": {
+                  "#name": "button \"extensions2\"",
+                  "properties": {
+                     "id": "1243",
+                     "label": "test",
+                     "layer": "13",
+                     "menuMode": "popup",
+                     "name": "extensions2",
+                     "opaque": false,
+                     "rect": "142,33,482,55",
+                     "style": "menu",
+                     "text": "%file%: assets/revExtensionBuilder_1002_1243_text.txt",
+                     "textAlign": "left"
+                  }
+               },
+               "1508": "#shared group",
+               "1516": {
+                  "#name": "field \"label_defaultscript\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "autoTab": true,
+                     "dontWrap": true,
+                     "htmlText": "<p>Default Script</p>",
+                     "id": "1516",
+                     "layer": "17",
+                     "lockText": true,
+                     "name": "label_defaultscript",
+                     "opaque": false,
+                     "rect": "12,174,136,195",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textHeight": "16",
+                     "traversalOn": false
+                  }
+               },
+               "1517": {
+                  "#name": "field \"defaultscript\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>No default script found</p>",
+                     "id": "1517",
+                     "layer": "18",
+                     "name": "defaultscript",
+                     "rect": "142,174,482,266",
+                     "scrollbarWidth": "13",
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textHeight": "16",
+                     "traversalOn": false,
+                     "vScrollbar": true
+                  }
+               },
+               "1519": {
+                  "#name": "field \"label_console\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Log</p>",
+                     "id": "1519",
+                     "layer": "19",
+                     "lockText": true,
+                     "name": "label_console",
+                     "opaque": false,
+                     "rect": "12,351,112,372",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1520": {
+                  "#name": "button \"defaultscript_edit\"",
+                  "properties": {
+                     "id": "1520",
+                     "label": "Edit",
+                     "layer": "20",
+                     "name": "defaultscript_edit",
+                     "rect": "400,272,482,295",
+                     "traversalOn": false
+                  }
+               },
+               "1531": {
+                  "#name": "widget \"svgicon\"",
+                  "$kind": "com.livecode.widget.svgpath",
+                  "$state": {
+                     "angle": "0",
+                     "fillRule": "non-zero",
+                     "flip vertically": false,
+                     "hilited": false,
+                     "iconPresetName": null,
+                     "maintain aspect ratio": true,
+                     "svg path": null
+                  },
+                  "properties": {
+                     "id": "1531",
+                     "name": "svgicon",
+                     "rect": "390,65,430,85"
+                  }
+               },
+               "1532": {
+                  "#name": "widget \"svgicon_retina\"",
+                  "$kind": "com.livecode.widget.svgpath",
+                  "$state": {
+                     "angle": "0",
+                     "fillRule": "non-zero",
+                     "flip vertically": false,
+                     "hilited": false,
+                     "iconPresetName": null,
+                     "maintain aspect ratio": true,
+                     "svg path": null
+                  },
+                  "properties": {
+                     "id": "1532",
+                     "name": "svgicon_retina",
+                     "rect": "304,65,384,105"
+                  }
+               },
+               "1533": {
+                  "#name": "field \"label_svgicon_absent\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>No SVG icon</p>",
+                     "id": "1533",
+                     "layer": "23",
+                     "lockText": true,
+                     "name": "label_svgicon_absent",
+                     "opaque": false,
+                     "rect": "320,65,420,86",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "29"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         },
+         "1508": {
+            "#name": "group \"background\"",
+            "childcontrols": {
+               "1521": {
+                  "#name": "widget \"header_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "cog",
+                           "label": "Preferences",
+                           "menu": [
+                              {
+                                 "label": "Header // Footer Size",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "small",
+                                       "name": "small"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "medium",
+                                       "name": "medium"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "large",
+                                       "name": "large"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "largest",
+                                       "name": "largest"
+                                    }
+                                 ],
+                                 "name": "revPaletteFrameSize"
+                              },
+                              {
+                                 "label": "Tab Display Style",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "Icons",
+                                       "name": "icons"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Labels",
+                                       "name": "names"
+                                    }
+                                 ],
+                                 "name": "revExtensionBuilder_displayStyle"
+                              }
+                           ],
+                           "name": "preferences"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "folder open",
+                           "label": "Open an existing extension",
+                           "menu": null,
+                           "name": "open"
+                        }
+                     ],
+                     "is header": true,
+                     "nav data": null
+                  },
+                  "properties": {
+                     "id": "1521",
+                     "name": "header_background",
+                     "rect": "0,0,494,21"
+                  }
+               },
+               "1613": {
+                  "#name": "widget \"footer_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "play circle",
+                           "label": "Test extension",
+                           "menu": null,
+                           "name": "test"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "stop circle",
+                           "label": "Stop testing extension",
+                           "menu": null,
+                           "name": "stop testing"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "remove circle",
+                           "label": "Uninstall",
+                           "menu": null,
+                           "name": "uninstall"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "plus sign",
+                           "label": "Install",
+                           "menu": null,
+                           "name": "install"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "archive",
+                           "label": "Package",
+                           "menu": null,
+                           "name": "package"
+                        }
+                     ],
+                     "is header": false,
+                     "nav data": null
+                  },
+                  "properties": {
+                     "id": "1613",
+                     "name": "footer_background",
+                     "rect": "0,589,494,610"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1508",
+               "layer": "14",
+               "name": "background",
+               "rect": "-4,-4,498,614",
+               "textFont": "fontawesome",
+               "textSize": "15"
+            }
+         },
+         "1610": {
+            "#name": "group \"background\"",
+            "childcontrols": {
+               "1611": {
+                  "#name": "widget \"header_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "cog",
+                           "label": "Preferences",
+                           "menu": [
+                              {
+                                 "label": "Header // Footer Size",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "small",
+                                       "name": "small"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "medium",
+                                       "name": "medium"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "large",
+                                       "name": "large"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "largest",
+                                       "name": "largest"
+                                    }
+                                 ],
+                                 "name": "revPaletteFrameSize"
+                              },
+                              {
+                                 "label": "Tab Display Style",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "Icons",
+                                       "name": "icons"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Labels",
+                                       "name": "names"
+                                    }
+                                 ],
+                                 "name": "revExtensionBuilder_displayStyle"
+                              }
+                           ],
+                           "name": "preferences"
+                        },
+                        {
+                           "enabled": true,
+                           "icon": "folder open",
+                           "label": "Open an existing extension",
+                           "menu": null,
+                           "name": "open"
+                        }
+                     ],
+                     "is header": true,
+                     "nav data": null
+                  },
+                  "properties": {
+                     "id": "1611",
+                     "name": "header_background",
+                     "rect": "0,0,460,21"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1610",
+               "layer": "23",
+               "name": "background",
+               "rect": "-4,-4,464,25"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1613"
+         }
+      },
+      "longID": "stack \"revExtensionBuilder\"",
+      "properties": {
+         "behavior": "stack \"revExtensionBuilderBehavior\"",
+         "fileName": "revextensionbuilder.livecode",
+         "id": "1613",
+         "minHeight": "400",
+         "minWidth": "116",
+         "name": "revExtensionBuilder",
+         "rect": "194,117,688,727",
+         "textFont": "Helvetica",
+         "title": "Extension Builder"
+      },
+      "sharedGroupIDs": "1508\n1610"
+   }
+}

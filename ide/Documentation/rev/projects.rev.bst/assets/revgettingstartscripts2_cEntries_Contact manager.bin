@@ -1,0 +1,6 @@
+category=Getting Started
+description=<p>Contact Manager is a very simple application that allows you to enter a note and date to call someone.  It uses cards to store each record, and a script at the start of the stack updates the summary field.</p>\n<p></p>\n<p>The Video Tutorial shows you how to use this Sample Project, and how to take it apart to understand how it works or copy portions of it for use in your own applications.  The PDF contains the same information as the Video, in printable form.</p>\n<p></p>\n<p><font face="Lucida Grande" size="11"><a href="video:Contact Manager">Click here to go to the corresponding video and PDF</a></font></p>\n<p></p>\n<p><font face="Lucida Grande" size="11">We recommend you to have explored the introductory video tutorials so you have a basic understanding of how Revolution works before you start on the Sample Projects.</font></p>
+level=1
+name=Contact manager
+title=Contact manager - a simple card based database
+topics=<p>The key topics covered in this Project are:</p>\n<p>   - How to use cards and background groups to create a simple database</p>\n<p>   - How to update a field by script</p>\n<p>   - How to change card by script</p>\n<p>   - How to access data in different cards by script</p>

@@ -1,0 +1,167 @@
+<p><font size="12" color="#000000">You may notice in Visual Studio that one of the projects is highlighted in bold. This signifies which is the current Startup Project - the project that is built and run whenever you click the Run button. You can change the startup project by right-clicking on a project node and choosing Set as Startup Project - this will becomed particularly important for you if you add new externals to the environment.</font></p>
+<p><font size="12" color="#000000">My personal preference is to use XCode in all-in-one mode where you switch between Edit/Build/Debug by the little tab control in the top-left &#150; this article reflects this preference. By default, however, XCode is not configured in this mode &#150; to change this select the General pane in Preferences and choose All-in-one from the Layout option menu.</font></p>
+<p><font size="12" color="#000000">You may wish to spend some time looking around the IDEs and the project/solution structure we have created to familiarise yourself with them before going any further.</font></p>
+<p></p>
+<p><font size="12" color="#000000"><b>Adding functionality &#150; our first function</b></font></p>
+<p></p>
+<p><font size="12" color="#000000">At this stage, you should be looking at the rnahello project created with the External Creator. This project has all the appropriate build configurations configured as well as the necessary setup for launching the test stack on run so you can debug and/or see your external running &#150; basically we have a skeleton external that will work, but not actually provide any functionality to the development environment.</font></p>
+<p></p>
+<p><font size="12" color="#000000">In this section we will add an external function to our external. An external function is exactly the same as a function handler (defined by the <b>function</b> keyword) you will be familiar with in Revolution, except that it&#146;s implementation is in native code defined in an external. As with a function handler, an external function takes a number of parameters as input and returns a value as a result.</font></p>
+<p></p>
+<p><font size="12" color="#000000">The External Creator will have created an outline main file rnahello.cpp which you may want to familiarise yourself with before continuing.</font></p>
+<p></p>
+<p><font size="12" color="#000000">We will now add our first external function to our project &#150; called rnahellouser. This will take one parameter (a name) and return a friendly message.</font></p>
+<p></p>
+<p><font size="12" color="#000000"><b>The external declarations block &#150; describing the functionality the external provides</b></font></p>
+<p></p>
+<p><font size="12" color="#000000">The external glue code provided in libexternal provides a number of C/C++-macros that help in the construction of the external declarations block that tells Revolution what the external exports to it.</font></p>
+<p></p>
+<p><font size="12" color="#000000">A block starts with:</font></p>
+<p></p>
+<p><font size="12" color="#000000">EXTERNAL_BEGIN_DECLARATIONS()</font></p>
+<p></p>
+<p><font size="12" color="#000000">This is followed by a sequence of command or functions declarations:</font></p>
+<p></p>
+<p><font size="12" color="#000000">EXTERNAL_DECLARE_FUNCTION(, )</font></p>
+<p></p>
+<p><font size="12" color="#000000">or</font></p>
+<p></p>
+<p><font size="12" color="#000000">EXTERNAL_DECLARE_COMMAND(, )</font></p>
+<p></p>
+<p><font size="12" color="#000000">Then the block finishes with:</font></p>
+<p></p>
+<p><font size="12" color="#000000">EXTERNAL_END_DECLARATIONS</font></p>
+<p></p>
+<p><font size="12" color="#000000">In our case we wish to declare the existence of an external function called rnahellouser. So, scroll to where the (empty) external declarations block is in the <b>rnahello.cpp</b> file and insert the line:</font></p>
+<p></p>
+<p><font size="12" color="#000000">EXTERNAL_DECLARE_FUNCTION(&quot;rnahellouser&quot;, rnaHelloUser)</font></p>
+<p></p>
+<p><font size="12" color="#000000">Between the comments '// BEGIN USER DECLARATIONS' and '// END USER DECLARATIONS'. This will cause a call to a function<b> rnahellouse</b>r in Revolution to be mapped to a call to the C++ function<b> rnaHelloUse</b>r which we will implement next.</font></p>
+<p></p>
+<p><font size="12" color="#000000"><b>The function definition &#150; implementing an external function</b></font></p>
+<p></p>
+<p><font size="12" color="#000000">Now we have declared the existence of our external function, we now need to implement it. For any external handler (command or function), the C/C++ prototype is the same:</font></p>
+<p></p>
+<p><font size="12" color="#000000">void handler(char *p_arguments[], int p_argument_count,</font></p>
+<p><font size="12" color="#000000">             char **r_result, Bool *r_pass, Bool *r_err)</font></p>
+<p></p>
+<p><font size="12" color="#000000">Here:</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; p_arguments is an array of C-strings of length p_argument_count &#150; each element of the array is an argument passed to the external handler.</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; r_result is a pointer to a C-string variable that should be set to a pointer to the result of the external handler. (The C-string returned in this way must <b>be </b>allocated using malloc/calloc/realloc and ownership of the memory will pass to Revolution.)</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; r_pass is a pointer to a Bool variable that should be set to True if the handler invocation should be <b>passed </b>in the message path.</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; r_err is a pointer to a Bool variable that should be set to True if the invocation of this handler should raise a runtime error in Revolution.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Add the following function to the rnahello.cpp file between the // BEGIN USER DEFINITIONS and // END USER DEFINITIONS:</font></p>
+<p></p>
+<p><font size="12" color="#000000">// Function:</font></p>
+<p><font size="12" color="#000000">//   rnaHelloUser(pName)</font></p>
+<p><font size="12" color="#000000">// Parameters:</font></p>
+<p><font size="12" color="#000000">//   pName &#150; string</font></p>
+<p><font size="12" color="#000000">// Result:</font></p>
+<p><font size="12" color="#000000">//   a string containing a friendly message</font></p>
+<p><font size="12" color="#000000">//</font></p>
+<p></p>
+<p><font size="12" color="#000000">void rnaHelloUser(char *p_arguments[], int p_argument_count,</font></p>
+<p><font size="12" color="#000000">                  char **r_result, Bool *r_pass, Bool *r_err)</font></p>
+<p><font size="12" color="#000000">{</font></p>
+<p><font size="12" color="#000000">// First check we have been passed a single argument &#150; if not it&#146;s an error</font></p>
+<p><font size="12" color="#000000">//</font></p>
+<p><font size="12" color="#000000">if (p_argument_count != 1)</font></p>
+<p><font size="12" color="#000000">{</font></p>
+<p><font size="12" color="#000000">*r_result = strdup(&quot;wrong number of parameters&quot;);</font></p>
+<p><font size="12" color="#000000">*r_err = True;</font></p>
+<p><font size="12" color="#000000">*r_pass = False;</font></p>
+<p><font size="12" color="#000000">return;</font></p>
+<p><font size="12" color="#000000">}</font></p>
+<p></p>
+<p><font size="12" color="#000000">// Next compute the length of our required string</font></p>
+<p><font size="12" color="#000000">// = length of first argument (p_arguments[0]) + length of &quot;Hello, !&quot; + 1</font></p>
+<p><font size="12" color="#000000">//</font></p>
+<p><font size="12" color="#000000">unsigned int t_buffer_length;</font></p>
+<p><font size="12" color="#000000">char *t_buffer;</font></p>
+<p><font size="12" color="#000000">t_buffer_length = strlen(p_arguments[0]) + 8 + 1;</font></p>
+<p><font size="12" color="#000000">t_buffer = (char *)malloc(t_buffer_length);</font></p>
+<p><font size="12" color="#000000">if (t_buffer == NULL)</font></p>
+<p><font size="12" color="#000000">{</font></p>
+<p><font size="12" color="#000000">*r_result = strdup(&quot;out of memory&quot;);</font></p>
+<p><font size="12" color="#000000">*r_err = True;</font></p>
+<p><font size="12" color="#000000">*r_pass = False;</font></p>
+<p><font size="12" color="#000000">return;</font></p>
+<p><font size="12" color="#000000">}</font></p>
+<p></p>
+<p><font size="12" color="#000000">// We have allocated our buffer &#150; so now construct our string</font></p>
+<p><font size="12" color="#000000">//</font></p>
+<p><font size="12" color="#000000">sprintf(t_buffer, &quot;Hello, %s!&quot;, p_arguments[0]);</font></p>
+<p></p>
+<p><font size="12" color="#000000">// t_buffer now contains a pointer to the result so just return...</font></p>
+<p><font size="12" color="#000000">//</font></p>
+<p><font size="12" color="#000000">*r_result = t_buffer;</font></p>
+<p><font size="12" color="#000000">*r_err = False;</font></p>
+<p><font size="12" color="#000000">*r_pass = False;</font></p>
+<p><font size="12" color="#000000">}</font></p>
+<p></p>
+<p><font size="12" color="#000000">In this function we have used a number of standard library functions which we will need to include in our environment. In C/C++ this is done via #include directives, so add the following to the <b>rnahello.cpp</b> file before the #include directive.</font></p>
+<p></p>
+<p><font size="12" color="#000000">#include </font></p>
+<p><font size="12" color="#000000">#include </font></p>
+<p><font size="12" color="#000000">#include</font></p>
+<p></p>
+<p><font size="12" color="#000000">This imports memory management (cstdlib), i/o (cstdio) and string manipulation (cstring) functions into our file.</font></p>
+<p></p>
+<p><font size="12" color="#000000">All being well, you should now be able to compile your external and launch it within Revolution...</font></p>
+<p></p>
+<p><font size="12" color="#000000">In Visual Studio:</font></p>
+<p><font size="12" color="#000000">&#149; Ensure rnahello is the Startup Project</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; Make sure Debug is chosen in the Solution Configurations drop-down list (on the toolbar)</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; Click the green Run button</font></p>
+<p></p>
+<p><font size="12" color="#000000">Note: Due to the relaunch feature added to recent versions of Revolution, you need to make sure the version of Revolution you are debugging externals in is not already running when you launch a debug session from Visual Studio</font></p>
+<p></p>
+<p><font size="12" color="#000000">Note: You will likely get a message saying 'Unable to find debug symbols for Revolution.exe' the first time you run your application - do not worry about this, just click to continue and choose not to show the dialog again.</font></p>
+<p></p>
+<p><font size="12" color="#000000">In XCode:</font></p>
+<p><font size="12" color="#000000">&#149; Choose Build mode (either by choosing Build Results from the Build menu, or by clicking on the Build icon in the Page tab in the in the top-left).</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; Choose rnaHello from the Target drop-down</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; Choose Release from the Configuration drop-down</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; Choose Build</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; Now choose the Debug configuration and click Build and when it has finished click Debug. (The previous two steps shouldn't be necessary, but there seems to be a glitch in XCode that prevents it picking up the correct settings for launching the debug executable if you have only ever built a Debug variant of a project - from now on you won't need to build a release variant before a debug one in this project).</font></p>
+<p></p>
+<p><font size="12" color="#000000">Assuming the above steps were followed correctly, after a short while an empty stack called rnaHelloTest should pop-up inside the development environment.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Testing our function &#150; hooking into our external</font></p>
+<p></p>
+<p><font size="12" color="#000000">At this point you should be looking at the Revolution IDE with a stack opened up. This stack should have already loaded the external into the Revolution environment &#150; so now we just need to hook into it.</font></p>
+<p></p>
+<p><font size="12" color="#000000">So do the following:</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; First add a field called Name to the stack.</font></p>
+<p></p>
+<p><font size="12" color="#000000">&#149; Add a button called rnaHelloUser to the stack and place the following into its script:&#0;</font></p>
+<p></p>
+<p><font size="12" color="#000000">on mouseUp</font></p>
+<p><font size="12" color="#000000">answer rnaHelloUser(field &quot;Name&quot;)</font></p>
+<p><font size="12" color="#000000">end mouseUp</font></p>
+<p><font size="12" color="#000000">Now enter any string into the field and click the button &#150; you should get an answer dialog popping up with a friendly message.</font></p>
+<p></p>
+<p><font size="12" color="#000000">Before continuing, make sure you save your test stack (we will be building on it in the next section) and then quit Revolution.</font></p>
+<p></p>
+<p><font size="12" color="#000000"><b>Adding functionality &#150; our first command</b></font></p>
+<p><font size="12" color="#000000">In the previous section, we looked at adding an external function. In this section we will look at adding an external command instead. Just with external functions, external commands are effectively the same as command handlers (defined with the <b>on</b> keyword) in Revolution except that their implementation resides in a external.</font></p>
+<p></p>
+<p><font size="12" color="#000000">In reality, there is very little difference between external commands and functions (just like there is little difference between command and function handlers in Revolution). Indeed, the difference is mainly syntactic, and the fact that you have to use <b>the result</b> to get the return value of a previously executed command. Therefore, we will use this opportunity to introduce how to set and get local variables in an external handler.</font></p>
+<p></p>
+<p><font size="12" color="#000000">The command we will implement will be called rnaHelloUserIndirect and will have syntax:</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>

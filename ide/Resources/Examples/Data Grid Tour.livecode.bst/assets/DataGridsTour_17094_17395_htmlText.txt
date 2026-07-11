@@ -1,0 +1,3 @@
+<p>There are three key components which make up the Data Grid control. These are the 'template group', 'behavior script' and the Data Grid control itself. When a Data Grid control is dragged onto your stack from the Revolution tools palette, each of these items is created automatically.</p>
+<p></p>
+<p>A substack is created and attached to your stack. The substack holds both the 'template group' and the 'behavior script'. </p>

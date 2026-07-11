@@ -1,0 +1,16 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#68228B">-- check fields</font></p>
+<p>  <font color="#980517">if</font> approxEqual(field "First Number", field "Second Number", field "Tolerance") <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">answer</font> "Yes:" &amp;&amp; field "First Number" &amp;&amp; "is within" &amp;&amp; field "Tolerance" &amp;&amp; "of" &amp;&amp; field "Second Number" &amp; "."</p>
+<p>  <font color="#980517">else</font></p>
+<p>    <font color="#0000FF">answer</font> "No:" &amp;&amp; field "First Number" &amp;&amp; "is not within" &amp;&amp; field "Tolerance" &amp;&amp; "of" &amp;&amp; field "Second Number" &amp; "."</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p><font color="#980517">end</font> mouseUp</p>
+<p></p>
+<p><font color="#0000FF">function</font> approxEqual firstNumber,secondNumber,tolerance</p>
+<p>  <font color="#980517">if</font> tolerance is empty <font color="#980517">then</font> <font color="#0000FF">put</font> 1 into tolerance <font color="#68228B">-- default</font></p>
+<p>  <font color="#980517">if</font> <font color="#F88017">abs</font>(firstNumber - secondNumber) &lt; tolerance</p>
+<p>  <font color="#980517">then</font> <font color="#0000FF">return</font> true  <font color="#68228B">-- the numbers are within tolerance</font></p>
+<p>  <font color="#980517">else</font> <font color="#0000FF">return</font> false <font color="#68228B">-- not close enough</font></p>
+<p><font color="#980517">end</font> approxEqual </p>

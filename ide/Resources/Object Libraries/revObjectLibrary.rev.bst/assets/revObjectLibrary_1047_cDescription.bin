@@ -1,0 +1,8 @@
+Scripted button. Resizes the height of the stack in which it is placed to one of two sizes contained in custom properties stored on the button:
+
+cContractedStackHeight
+cExpandedStackHeight
+
+The button references 2 images. These are set as the icon and the hiliteIcon of the button.
+
+Note that this control requires the "Revolution Icons" image library to be tranferred to your stack using Distribution Builder when you are preparing your stack for distribution.

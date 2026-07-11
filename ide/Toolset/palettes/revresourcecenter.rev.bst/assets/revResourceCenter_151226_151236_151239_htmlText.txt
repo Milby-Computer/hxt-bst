@@ -1,0 +1,3 @@
+<p><font face="Lucida Grande" size="12" color="#000000">Figure 1: Stories included in RSS Feed from http://slashdot.org/</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">Once you know where you are getting your feed from you must decide how often you are going to retrieve it. Some websites update their RSS Feeds every hour while others only update once a day. You can create a function which retrieves the RSS feed within specified time periods or, as in this tutorial, you can create a button which will retrieve the feed when pressed. The best method to take will depend on the update rate of the feed itself and when you expect people to be reading the results you retrieve.</font></p>

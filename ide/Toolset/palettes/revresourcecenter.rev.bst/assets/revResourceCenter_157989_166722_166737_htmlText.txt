@@ -1,0 +1,3 @@
+<p><font face="Lucida Grande" size="12" color="#000000">Repeat these steps for the over state by clicking on the wand to the right of the 'Armed Icon' field and then repeat the whole process for each button on the remote control.</font></p>
+<p></p>
+<p><font face="Lucida Grande" size="12" color="#000000">To make the buttons blend into the background we have to alter one or two of the buttons basic properties. In the buttons properties palette, select 'Basic Properties' from the pull down menu and change the style of the button to 'Transparent Button' and uncheck the 'Show name' property.</font></p>

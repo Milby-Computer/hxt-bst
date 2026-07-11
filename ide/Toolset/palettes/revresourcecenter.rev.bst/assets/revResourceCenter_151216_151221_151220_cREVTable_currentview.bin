@@ -1,0 +1,9 @@
+<p><font size="14" color="#990006"><b>Using images from the Web</b></font></p>
+<p><font size="12" color="#000000">Did you know you can grab images from an internet site and use them <b>really </b>easily in Rev? No? Well, in this example I will show you a neat little application that does just that.</font></p>
+<p></p>
+<p><font size="14" color="#990006"><b>The basics</b></font></p>
+<p><font size="12" color="#000000">Ok, so to use an image from the internet, you can simply set the filename of your Rev image to the URL of the image file on the internet. So for example, drop an empty image onto a fresh card. Now enter this command in the message box:</font></p>
+<p></p>
+<p><font size="12" color="#000000">set the filename of image 1 to </font><font size="12" color="#990006">http://www.runrev.com/images/logo.jpg</font></p>
+<p></p>
+<p></p>

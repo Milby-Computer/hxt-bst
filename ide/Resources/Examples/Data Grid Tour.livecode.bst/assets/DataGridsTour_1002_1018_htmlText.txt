@@ -1,0 +1,2 @@
+<p>LiveCode data grids allow for virtually unlimited presentation of not only text but also graphics, buttons, multiple field styles, and images. This is because each row of the data grid is a free-form canvas upon which you can add and arrange items to your preference. Yet, management of the grid is completely handled by LiveCode. You don&rsquo;t need to reinvent the wheel, and the data grid operates with lightning performance. </p>
+<p></p>

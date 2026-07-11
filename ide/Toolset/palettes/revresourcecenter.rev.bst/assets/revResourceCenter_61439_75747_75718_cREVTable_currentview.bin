@@ -1,0 +1,3 @@
+Applications in Revolution are known as stacks and the separate screens which make these up are called cards.  A stack can contain any number of cards and may also contain substacks.  The substacks will generally provide specialist actions or implement specific parts of your application.
+
+Objects can be placed on cards by dragging them from the Toolbar.  Once an object has been placed on a card it can be moved around by further drag and drop actions or by using the objects property inspector.

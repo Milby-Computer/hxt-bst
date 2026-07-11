@@ -1,0 +1,66 @@
+<p><b><font face="helvetica" size="12">Discussion:</font></b></p>
+<p>This custom function is called with a statement such as one of the following:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">get</font><font face="Courier" size="11"> wordWrapped(field "Quotations",62)</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> wordWrapped(myText,the </font><font face="Courier" size="11" color="#F88017">length</font><font face="Courier" size="11"> of line 1 of </font><font face="Courier" size="11" color="#F88017">me</font><font face="Courier" size="11">) after </font><font face="Courier" size="11" color="#F88017">me</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> wordWrapped(it) into field "Email"</font></p>
+<p></p>
+<p>You pass the "wordWrapped" function a string, along with the maximum number of characters per line. (If you don't specify a maximum, the text is wrapped to 75 characters per line.) The function walks through each line of text to see whether it's short enough to fit in the maximum length. If it's too long, the function breaks the line--at a space character, if possible--so that each line in the returned value is short enough to fit within the maximum.</p>
+<p></p>
+<p>Before starting, the handler checks the maxLength parameter. If it's empty (meaning that the function call didn't include it, as in the third example above), or isn't numeric, the handler substitutes a default value of 75 characters. If it's not an integer--for example, if the function call uses a value like "22.4"--the handler truncates it to the nearest integer, since the number of characters in a line can't be a fraction. (This might happen if the value in the function call is the result of a calculation that might not give an integer result.)</p>
+<p></p>
+<p>Now we're ready to start wrapping the lines of theText. The handler loops through each line in theText. The <font face="Courier" size="11">repeat for each form</font><font face="helvetica" size="12"> of the </font><font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> control structure that's used here places each line in turn in the variable "thisLine" so it can be examined. Then it builds the wrapped text, line by line, in the variable "theWrappedText".</font></p>
+<p></p>
+<p>Within the loop, the handler checks whether the current line is short enough to fit. If the length of the line--its number of characters--is less than or equal to the maxLength, we add the line to "theWrappedText", with a return character at the end for the next line. If the current line fits, we don't need to do anything else to it, and the <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> loop continues to the next iteration and the next line of theText.</font></p>
+<p></p>
+<p>If the current line is too long to fit, the handler enters a second <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> loop. This loop chops up the current line into shorter segments that will fit in the maxLength. The loop removes each segment from the current line as it goes, so when the variable "thisLine" is empty, there are no segments left and the entire line has been wrapped.</font></p>
+<p></p>
+<p>To accomplish this, the second <font face="Courier" size="11">repeat</font><font face="helvetica" size="12"> loop uses a third nested loop, which works backward through the current segment, looking for space characters where the line can be broken. To do this, the third loop uses the </font><font face="Courier" size="11">repeat with x = start down to end</font><font face="helvetica" size="12"> form of the repeat control structure.</font></p>
+<p></p>
+<p>This loop takes a segment of the first maxLength characters in the current line and checks each character, from the last character in the segment backwards to the first character. If the current character is a space (or if what's left in the current line is short enough to fit in the maxLength), it stops and adds the current segment, up to but not including the last space, to the end of the "theWrappedText" variable along with a return character. Then it deletes that part (including the space) from the current line. Finally, the <font face="Courier" size="11">exit repeat</font><font face="helvetica" size="12"> statement tells the handler to go to the next iteration of the loop and start again with the next segment.</font></p>
+<p></p>
+<p>When the "thisLine" variable is empty, it means the handler has moved all segments of the current line into the "theWrappedLines" variable, and it's finished processing the current line. The second loop is finished, and the outermost loop continues to the next iteration and the next line of theText.</p>
+<p></p>
+<p>To make the process clearer, let's look at an example. Suppose the maxLength is 12, and the current line is "This is a test. This is only a test." When the handler determines that the length of the line is greater than 12, it enters the second repeat loop, then immediately enters the third loop, looking at the segment consisting of the first to 12th character: "This is a te". The third loop moves backwards through this segment, looking at character 12 and character 11, before it finds that character 10 is a space so the line can be broken here:</p>
+<p><b><font face="Lucida Grande" size="11">  This is a</font></b></p>
+<p>The handler deletes the first 10 characters (up to the space) from the current line and gets the next segment. The current line is now "test. This is only a test.", so the next segment of 12 consists of "test. This i". Going backwards from the end, the handler finds that character 11 is a space. It adds the segment (up to this breaking space) to the wrapped text:</p>
+<p><b><font face="Lucida Grande" size="11">  This is a</font></b></p>
+<p><b><font face="Lucida Grande" size="11">  test. This</font></b></p>
+<p>Then it deletes the first 11 characters from the current line and gets the next segment of 12, which is "is only a te". Going backwards again, character 10 is a space, and adding the part of the current segment up to character 10 to the wrapped lines gives us:</p>
+<p><b><font face="Lucida Grande" size="11">  This is a</font></b></p>
+<p><b><font face="Lucida Grande" size="11">  test. This</font></b></p>
+<p><b><font face="Lucida Grande" size="11">  is only a</font></b></p>
+<p>Then the handler deletes the first ten characters from the current line, leaving "test." However, this time, when the loop checks the length of the current line, it finds that what's left is shorter than the maxLength. This means there's no need to check for spaces: it simply adds the remaining part of the line to the wrapped lines:</p>
+<p><b><font face="Lucida Grande" size="11">  This is a</font></b></p>
+<p><b><font face="Lucida Grande" size="11">  test. This</font></b></p>
+<p><b><font face="Lucida Grande" size="11">  is only a</font></b></p>
+<p><b><font face="Lucida Grande" size="11">  test.</font></b></p>
+<p>As with each previous segment, the handler deletes the text it's already dealt with from the current line. This time, it's deleting all of what's left. And since the second loop starts with "<font face="Courier" size="11">repeat until thisLine is empty</font><font face="helvetica" size="12">", it ends at this point, because the current line is now empty. The handler is now finished with that line and is ready to go on to the next line.</font></p>
+<p></p>
+<p>What if the third loop goes through the whole segment without finding any spaces? In this case, the loop variable "x" (in repeat with x = maxLength down to 1), which starts out being equal to maxLength, has been reduced by one through each iteration. If the third loop encounters a space, an <font face="Courier" size="11">exit repeat</font><font face="helvetica" size="12"> control structure stops the loop. The only way for the variable "x" to be equal to one is if the loop went through the entire segment without finding a space; otherwise, the handler would have exited the loop before "x" reached one.</font></p>
+<p></p>
+<p>Because of this, the handler can check whether x = 1 after the third loop. to find out whether the segment didn't contain any spaces. When this happens, the handler just inserts an arbitrary return character after the first maxLength characters, and deletes the same number of characters from the current line. This ensures that there are no lines longer than maxLength, even if a line has to be broken at a non-space character. Then the second loop continues with the next segment in the current line.</p>
+<p></p>
+<p>Once the current line has been completely processed, the second loop ends, and the next iteration of the first loop starts with the next line. The process continues until all the lines have been processed. Finally, the handler returns the contents of the "theWrappedText" variable, which contains the wrapped lines of text.</p>
+<p></p>
+<p><img src="202651" char=" "> <b><font face="Lucida Grande" size="11">Tip:</font></b><font face="helvetica" size="12"> For a way to word-wrap text in a field so each line fits in the width of the field, see the </font><font face="Courier" size="11">formattedText</font><font face="helvetica" size="12"> property.</font></p>
+<p></p>
+<p>One interesting variation on this handler is adding a quotation character before each wrapped line. Quotation characters are used in email or newsgroup posts to indicate text that's quoted from a previous message. Usually, the character "&gt;" is used. To make this change, you need to alter the three statements in the handler that add text to the "theWrappedText" variable:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> "&gt;" &amp; thisLine &amp; </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> after theWrappedText</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> "&gt;" &amp; (char 1 to x-1 of thisLine) &amp; </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> \</font></p>
+<p><font face="Courier" size="11">               after theWrappedText</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> "&gt;" &amp; char 1 to maxLength of thisLine &amp; </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> \</font></p>
+<p><font face="Courier" size="11">             after theWrappedText</font></p>
+<p></p>
+<p>You can even add a third parameter to let the user specify the quote character, and use that parameter in the three statements instead of the literal string "&gt;".</p>
+<p></p>
+<p><b><font face="Lucida Grande" size="11">A note on efficiency:</font></b></p>
+<p>At first glance, if you're familiar with chunk expressions, it might seem more efficient to remove the third (innermost) loop, and replace it with the following statements:</p>
+<p></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">put</font><font face="Courier" size="11"> word 1 to -2 of (char 1 to maxLength of thisLine) \</font></p>
+<p><font face="Courier" size="11">     &amp; </font><font face="Courier" size="11" color="#0000FF">return</font><font face="Courier" size="11"> after theWrappedText</font></p>
+<p><font face="Courier" size="11">  </font><font face="Courier" size="11" color="#0000FF">delete</font><font face="Courier" size="11"> word 1 to -2 of (char 1 to maxLength of thisLine)</font></p>
+<p><font face="Courier" size="11">     of thisLine</font></p>
+<p></p>
+<p>Instead of checking each character in a segment to find a space, the above statements simply take the first to next-to-last word in the first maxLength characters of the current line, making that part of the line into a wrapped line. However, there's a problem with this method if the line contains quoted text. Revolution interprets text between double quotes as a single word--even if it contains spaces--so any spaces within the quoted text won't be recognized as an opportunity to break the line.</p>

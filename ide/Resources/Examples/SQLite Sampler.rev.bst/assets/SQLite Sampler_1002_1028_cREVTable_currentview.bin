@@ -1,0 +1,17 @@
+<p><font face="Verdana" size="18">Welcome to the SQLite Demo stack </font></p>
+<p></p>
+<p><b>dbSQLite</b> is a revDB database driver which allows you to build and access SQLlite databases from within Revolution and your standalone. <b>dbSQLite</b> currently runs on Mac OS X and Windows XP. SQLlite is a great single-user database, and is perfect for creating desktop database applications which don't need any internet connectivity. SQLlite has many features:</p>
+<p></p>
+<p>1. Zero-configuration - no setup or administration needed!</p>
+<p>2. It is very fast and compact.  Supports databases up to 2 terabytes in size.</p>
+<p>3. It is SQL92 compliant, so you can migrate to MySQL servers with a simple connection string change!</p>
+<p>4. The complete database is stored in a single file which can be freely shared between multiple OS'es.</p>
+<p></p>
+<p>More info about SQLlite can be found at: <a href="http://www.sqlite.org">www.sqlite.org</a>. Currently, <b>dbSQLite</b> uses the 3.2.15 build of SQLite.</p>
+<p></p>
+<p>This Demo Stack does the following:</p>
+<p></p>
+<p>  - Overview of Revolution's built-in Database capabilities</p>
+<p>  - Brief overview of SQL with hyperlinks to online SQL tutorial</p>
+<p>  - Walks you through creating a sample relational database</p>
+<p>  - Provided numerous scripts and special handlers/functions</p>

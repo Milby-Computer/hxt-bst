@@ -1,0 +1,10 @@
+category=Building an Application using Objects
+description=<p>Some variables are only available while a script is running.  Others are available to all the scripts in your application.  In this tutorial we discuss the differences between the two, and when and how to use each.</p>
+duration=11:40
+filename=free_local_global.avi
+level=1
+licensed=false
+name=Local and Global Variables
+scripts=<p></p>\n<p></p>\n<p></p>
+title=Local and Global Variables: Short Term and Long Term Memory
+topics=<p>Key Topics Covered in this Tutorial:</p>\n<p>-&#9;The difference between global and local variables </p>\n<p>-&#9;How to use local variables</p>\n<p>-&#9;How to use global variables</p>\n<p>-&#9;Naming variables</p>\n<p>-&#9;Storing global variables permanently using text fields</p>\n<p>-&#9;Using Search and Replace in the Script Editor</p>\n<p></p>

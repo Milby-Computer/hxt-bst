@@ -1,0 +1,27 @@
+<p><b><font face="helvetica" size="12">Solution:</font></b></p>
+<p><font color="#0000FF">local</font> didPopUpMenu <font color="#68228B">-- keeps track of whether the menu was popped up</font></p>
+<p></p>
+<p><font color="#980517">on</font> mouseDown</p>
+<p>  <font color="#0000FF">put</font> false into didPopUpMenu <font color="#68228B">-- start out by assuming no menu</font></p>
+<p>  <font color="#0000FF">send</font> "popGoesTheMenu" to <font color="#F88017">me</font> in 2 <font color="#F88017">seconds</font></p>
+<p><font color="#980517">end</font> mouseDown</p>
+<p></p>
+<p><font color="#980517">on</font> popGoesTheMenu theLocation</p>
+<p>  <font color="#68228B">-- The menu will pop up only if the user is still pressing</font></p>
+<p>  <font color="#68228B">-- the mouse over the button after 2 seconds:</font></p>
+<p>  <font color="#980517">if</font> the <font color="#F88017">mouse</font> is up \</p>
+<p>     or the <font color="#F88017">mouseLoc</font> is not <font color="#F88017">within</font> the <font color="#FF0000">rect</font> of <font color="#F88017">me</font> \</p>
+<p>     <font color="#980517">then</font> <font color="#0000FF">exit</font> popGoesTheMenu</p>
+<p>  <font color="#0000FF">put</font> true into didPopUpMenu <font color="#68228B">-- skip the mouseUp actions</font></p>
+<p>  <font color="#0000FF">popup</font> button "Colors" <font color="#68228B">-- the hidden popup menu</font></p>
+<p><font color="#980517">end</font> popGoesTheMenu</p>
+<p></p>
+<p><font color="#980517">on</font> mouseUp</p>
+<p>  <font color="#68228B">-- if the user popped up the menu, don't do the click action</font></p>
+<p>  <font color="#980517">if</font> didPopUpMenu <font color="#980517">then</font> <font color="#0000FF">pass</font> mouseUp</p>
+<p>  <font color="#68228B">-- if there is a text selection, set its color:</font></p>
+<p>  <font color="#980517">if</font> the <font color="#FF0000">short</font> <font color="#FF0000">name</font> of the <font color="#F88017">selectedField</font> is "Example Text" <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">set</font> the <font color="#FF0000">textColor</font> of the <font color="#F88017">selectedChunk</font> \</p>
+<p>       to (last word of the <font color="#FF0000">label</font> of <font color="#F88017">me</font>)</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p><font color="#980517">end</font> mouseUp</p>

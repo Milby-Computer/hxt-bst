@@ -1,0 +1,25 @@
+<p>widget bar.test</p>
+<p></p>
+<p>variable sColor</p>
+<p></p>
+<p>public handler OnOpen()</p>
+<p>   put color [1, 0, 0] into sColor</p>
+<p>end handler</p>
+<p></p>
+<p>public handler OnMouseDown(pX, pY, pButton)</p>
+<p>  put color [0, 1, 0] into sColor</p>
+<p>  redraw all</p>
+<p>end handler</p>
+<p></p>
+<p>public handler OnMouseUp(pX, pY, pButton)</p>
+<p>  put color [1, 0, 0] into sColor</p>
+<p>  redraw all</p>
+<p>end handler</p>
+<p></p>
+<p>public handler OnPaint()</p>
+<p>    set the paint of this canvas to solid paint with sColor</p>
+<p>    fill rectangle path of rectangle [0, 0, 100,100] on this canvas</p>
+<p>end handler</p>
+<p></p>
+<p>end widget</p>
+<p></p>

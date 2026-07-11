@@ -1,0 +1,84 @@
+{
+   "#mainstack": "Symbolicator",
+   "Symbolicator": {
+      "#name": "stack \"Symbolicator\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Symbolicator\"",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"Field\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Symbolicator_1002_1003_htmlText.txt",
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Field",
+                     "rect": "22,16,374,120"
+                  }
+               },
+               "1004": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1004",
+                     "layer": "2",
+                     "name": "Button",
+                     "rect": "158,182,240,205",
+                     "traversalOn": false
+                  }
+               },
+               "1005": {
+                  "#name": "field \"Field\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "id": "1005",
+                     "layer": "3",
+                     "name": "Field",
+                     "rect": "21,133,372,154"
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Field\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "id": "1006",
+                     "layer": "4",
+                     "name": "Field",
+                     "rect": "23,216,370,382"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Symbolicator"
+            }
+         }
+      },
+      "longID": "stack \"Symbolicator\"",
+      "properties": {
+         "fileName": "Symbolicator.livecode",
+         "id": "1006",
+         "name": "Symbolicator",
+         "rect": "170,141,570,541"
+      },
+      "sharedGroupIDs": null
+   }
+}
