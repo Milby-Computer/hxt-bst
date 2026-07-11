@@ -2,7 +2,7 @@
    "#mainstack": "Installer",
    "Installer": {
       "#name": "stack \"Installer\"",
-      "#substacks": "UninstallerUI\nInstallerUI",
+      "#substacks": "%file%: assets/Installer_#substacks.bin",
       "backgroundIDs": null,
       "cardIDs": "1002",
       "childcontrols": {
@@ -20,6 +20,13 @@
             }
          }
       },
+      "customproperties": {
+         "uProduct": "HyperXTalk 1.0.0  ",
+         "uProductDetails": "%file%: assets/Installer_uProductDetails.bin",
+         "uProductLicense": "%file%: assets/Installer_uProductLicense.bin",
+         "uProductTag": "hyperxtalk-1.0.0-community-1",
+         "uProductTitle": "HyperXTalk v1.0.0 (Community)"
+      },
       "custompropertysets": {
          "cREVGeometryCache": {
             "stackID": "1183"
@@ -33,8 +40,262 @@
          "id": "1183",
          "liveResizing": false,
          "name": "Installer",
-         "rect": "337,208,1597,850",
-         "stackFiles": "%file%: assets/Installer_stackFiles.bin"
+         "rect": "337,208,1597,850"
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUIConfirmCardBehavior": {
+      "#name": "stack \"InstallerInstallerUIConfirmCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUIConfirmCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUIConfirmCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUICustomizeCardBehavior": {
+      "#name": "stack \"InstallerInstallerUICustomizeCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUICustomizeCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUICustomizeCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUICustomizeChangeLocationButtonBehavior": {
+      "#name": "stack \"InstallerInstallerUICustomizeChangeLocationButtonBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUICustomizeChangeLocationButtonBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUICustomizeChangeLocationButtonBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUIFinishCardBehavior": {
+      "#name": "stack \"InstallerInstallerUIFinishCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUIFinishCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUIFinishCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUIInstallCardBehavior": {
+      "#name": "stack \"InstallerInstallerUIInstallCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUIInstallCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUIInstallCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUILicenseCardBehavior": {
+      "#name": "stack \"InstallerInstallerUILicenseCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUILicenseCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUILicenseCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUIStackBehavior": {
+      "#name": "stack \"InstallerInstallerUIStackBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUIStackBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUIStackBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUITypeCardBehavior": {
+      "#name": "stack \"InstallerInstallerUITypeCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUITypeCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUITypeCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUIUpdateCheckCardBehavior": {
+      "#name": "stack \"InstallerInstallerUIUpdateCheckCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUIUpdateCheckCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUIUpdateCheckCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUIUpdateCheckUpdateCheckingLoaderGroupBehavior": {
+      "#name": "stack \"InstallerInstallerUIUpdateCheckUpdateCheckingLoaderGroupBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUIUpdateCheckUpdateCheckingLoaderGroupBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUIUpdateCheckUpdateCheckingLoaderGroupBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUIUpdateCheckUpdatesAvailableMarketingFieldBehavior": {
+      "#name": "stack \"InstallerInstallerUIUpdateCheckUpdatesAvailableMarketingFieldBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUIUpdateCheckUpdatesAvailableMarketingFieldBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUIUpdateCheckUpdatesAvailableMarketingFieldBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUIUpdateDownloadCardBehavior": {
+      "#name": "stack \"InstallerInstallerUIUpdateDownloadCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUIUpdateDownloadCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUIUpdateDownloadCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUIWaitCardBehavior": {
+      "#name": "stack \"InstallerInstallerUIWaitCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUIWaitCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUIWaitCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerInstallerUIWelcomeCardBehavior": {
+      "#name": "stack \"InstallerInstallerUIWelcomeCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerInstallerUIWelcomeCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerInstallerUIWelcomeCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerStackBehavior": {
+      "#name": "stack \"InstallerStackBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerStackBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerStackBehavior",
+         "visible": false
       },
       "sharedGroupIDs": null
    },
@@ -2215,6 +2476,1298 @@
          "title": "LiveCode Installer"
       },
       "sharedGroupIDs": "1008"
+   },
+   "InstallerUninstallerUIFinishCardBehavior": {
+      "#name": "stack \"InstallerUninstallerUIFinishCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerUninstallerUIFinishCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerUninstallerUIFinishCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerUninstallerUIStackBehavior": {
+      "#name": "stack \"InstallerUninstallerUIStackBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerUninstallerUIStackBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerUninstallerUIStackBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerUninstallerUIUninstallCardBehavior": {
+      "#name": "stack \"InstallerUninstallerUIUninstallCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerUninstallerUIUninstallCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerUninstallerUIUninstallCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "InstallerUninstallerUIWelcomeCardBehavior": {
+      "#name": "stack \"InstallerUninstallerUIWelcomeCardBehavior\"",
+      "backgroundIDs": null,
+      "cardIDs": "0",
+      "childcontrols": [
+         {
+            "#name": "card id 0",
+            "properties": null
+         }
+      ],
+      "longID": "stack \"InstallerUninstallerUIWelcomeCardBehavior\" of stack \"Installer\"",
+      "properties": {
+         "name": "InstallerUninstallerUIWelcomeCardBehavior",
+         "visible": false
+      },
+      "sharedGroupIDs": null
+   },
+   "Resources": {
+      "#name": "stack \"Resources\"",
+      "backgroundIDs": null,
+      "cardIDs": "1023",
+      "childcontrols": {
+         "1023": {
+            "#name": "card \"Resources\"",
+            "childcontrols": {
+               "1024": {
+                  "#name": "image \"community.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "borderWidth": "0",
+                     "id": "1024",
+                     "layer": "84",
+                     "name": "community.png",
+                     "rect": "10,8,524,370",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1024_text.png"
+                  }
+               },
+               "1025": {
+                  "#name": "image \"button-browse-default.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1025",
+                     "layer": "73",
+                     "name": "button-browse-default.png",
+                     "rect": "826,92,848,114",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1025_text.png"
+                  }
+               },
+               "1026": {
+                  "#name": "image \"button-browse-hover.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1026",
+                     "layer": "65",
+                     "name": "button-browse-hover.png",
+                     "rect": "868,88,890,110",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1026_text.png"
+                  }
+               },
+               "1027": {
+                  "#name": "image \"button-default.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1027",
+                     "layer": "79",
+                     "name": "button-default.png",
+                     "rect": "954,6,1036,28",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAFIAAAAWCAYAAABT5cvhAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAIxJREFUeNrs2U0JgEAUReHxBxsIgims40qwhKAo2kOYlXks\nIQiW8L4IOq7kHLgvwMfsJtr2KnPOjVqjlY6edGheW1KdWesweZU9vF5LYp0Wj+Bag8xxCC6P\nMfgmIIEEEkgCEkgggSQggQSSgAQSyL9DXjAEdxnkikNw3v5sJs0+wGqtwORRp7Zpwy3AAMtO\nDXMqjaenAAAAAElFTkSuQmCC"
+                     }
+                  }
+               },
+               "1028": {
+                  "#name": "image \"button-disabled.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1028",
+                     "layer": "64",
+                     "name": "button-disabled.png",
+                     "rect": "957,34,1039,56",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAFIAAAAWCAYAAABT5cvhAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAItJREFUeNrs2V0KQEAYheHxkx0oZWeulE0oIvah5so+ZC1K\n2YTzLYFxpfet8y3gae4m2rctc84NWq2Vjp50aF6bU51JazF5lT28TktinQaP4BqDzHEILo8x\n+CYggQQSSAISSCCBJCCBBJKABBLIv0NeMAR3GeSCQ3De/mxGzT7AKq3A5FGntmr9LcAAPeEO\nERnidboAAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "1029": {
+                  "#name": "image \"button-hover.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1029",
+                     "layer": "63",
+                     "name": "button-hover.png",
+                     "rect": "957,58,1039,80",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAFIAAAAWCAYAAABT5cvhAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAI1JREFUeNrs2d8JQFAYhvHjTzZQyhTWcaUsoYgYwp1yZR5L\nKGUJ7zcCx5Wep95vgF/n7gR7MSfOuV6rtNzRkw5t1aZYZ9QaTF5lD6/VolCnxsO72iBTHLxL\nQwy+CUgggQSSgAQSSCAJSCCBJCCBBPLvkBcM3l0GueDg3Wp/NoNmH2CllmHyqFPbtO4WYAAG\nxA1jC4p9rQAAAABJRU5ErkJggg=="
+                     }
+                  }
+               },
+               "1030": {
+                  "#name": "image \"button-standard.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1030",
+                     "layer": "62",
+                     "name": "button-standard.png",
+                     "rect": "955,84,1037,106",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAFIAAAAWCAYAAABT5cvhAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAItJREFUeNrs2V0KQEAYheHxkx0oZWeulE0oIvah5so+ZC1K\n2YTzLYFxpfet8y3gae4m2rctc84NWq2Vjp50aF6bU51JazF5lT28TktinQaP4BqDzHEILo8x\n+CYggQQSSAISSCCBJCCBBJKABBLIv0NeMAR3GeSCQ3De/mxGzT7AKq3A5FGntmr9LcAAPeEO\nERnidboAAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "1031": {
+                  "#name": "image \"button-ticked-disabled.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1031",
+                     "layer": "1",
+                     "name": "button-ticked-disabled.png",
+                     "opaque": false,
+                     "rect": "580,81,600,101",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1031_text.png"
+                  }
+               },
+               "1032": {
+                  "#name": "image \"button-ticked.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1032",
+                     "layer": "2",
+                     "name": "button-ticked.png",
+                     "opaque": false,
+                     "rect": "580,61,600,81",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1032_text.png"
+                  }
+               },
+               "1033": {
+                  "#name": "image \"button-unticked-disabled.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1033",
+                     "layer": "3",
+                     "name": "button-unticked-disabled.png",
+                     "opaque": false,
+                     "rect": "610,81,630,101",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1033_text.png"
+                  }
+               },
+               "1034": {
+                  "#name": "image \"button-unticked.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1034",
+                     "layer": "4",
+                     "name": "button-unticked.png",
+                     "opaque": false,
+                     "rect": "610,61,630,81",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1034_text.png"
+                  }
+               },
+               "1035": {
+                  "#name": "image \"progress-background-2.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1035",
+                     "layer": "61",
+                     "name": "progress-background-2.png",
+                     "opaque": false,
+                     "rect": "534,38,952,47",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAaIAAAAJCAYAAABwpyj2AAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNrs1TENADAMA0Fn6Vj+OIsgRZEhupNMwMtXkvt3\nAgDzXgkRAEIEgBD5AgAhAkCIAECIABAiABAiANaHqAUYANQWCUDUCmgfAAAAAElFTkSuQmCC\n"
+                     }
+                  }
+               },
+               "1036": {
+                  "#name": "image \"progress-foreground.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1036",
+                     "layer": "81",
+                     "name": "progress-foreground.png",
+                     "rect": "534,26,952,35",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAaIAAAAJCAIAAAD/xb+hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNrs1DEBADAIwLAxR5hGD5LwAYmEHo3qfAB7fQkA\nmwOwOQCbA7A5AJsDsDkAmwMOGQEGAKHsAbkAdX5AAAAAAElFTkSuQmCC"
+                     }
+                  }
+               },
+               "1037": {
+                  "#name": "image \"radio-off.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1037",
+                     "layer": "5",
+                     "name": "radio-off.png",
+                     "opaque": false,
+                     "rect": "650,81,669,100",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1037_text.png"
+                  }
+               },
+               "1038": {
+                  "#name": "image \"radio-on.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1038",
+                     "layer": "6",
+                     "name": "radio-on.png",
+                     "opaque": false,
+                     "rect": "650,61,669,80",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1038_text.png"
+                  }
+               },
+               "1039": {
+                  "#name": "image \"scroll-bar-disabled.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1039",
+                     "layer": "7",
+                     "lockLoc": true,
+                     "name": "scroll-bar-disabled.png",
+                     "rect": "552,50,563,546",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1039_text.png"
+                  }
+               },
+               "1040": {
+                  "#name": "image \"scroll-bar.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1040",
+                     "layer": "8",
+                     "name": "scroll-bar.png",
+                     "rect": "532,50,543,160",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1040_text.png"
+                  }
+               },
+               "1041": {
+                  "#name": "image \"scroll-down-default.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1041",
+                     "layer": "9",
+                     "name": "scroll-down-default.png",
+                     "opaque": false,
+                     "rect": "734,85,745,97",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1041_text.png"
+                  }
+               },
+               "1042": {
+                  "#name": "image \"scroll-down-disabled.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1042",
+                     "layer": "10",
+                     "name": "scroll-down-disabled.png",
+                     "opaque": false,
+                     "rect": "714,85,725,97",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1042_text.png"
+                  }
+               },
+               "1043": {
+                  "#name": "image \"scroll-down-hover.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1043",
+                     "layer": "11",
+                     "name": "scroll-down-hover.png",
+                     "opaque": false,
+                     "rect": "694,85,705,97",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1043_text.png"
+                  }
+               },
+               "1044": {
+                  "#name": "image \"scroll-up-default.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1044",
+                     "layer": "12",
+                     "name": "scroll-up-default.png",
+                     "opaque": false,
+                     "rect": "734,65,745,77",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1044_text.png"
+                  }
+               },
+               "1045": {
+                  "#name": "image \"scroll-up-disabled.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1045",
+                     "layer": "13",
+                     "name": "scroll-up-disabled.png",
+                     "opaque": false,
+                     "rect": "714,65,725,77",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1045_text.png"
+                  }
+               },
+               "1046": {
+                  "#name": "image \"scroll-up-hover.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1046",
+                     "layer": "14",
+                     "name": "scroll-up-hover.png",
+                     "opaque": false,
+                     "rect": "694,65,705,77",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1046_text.png"
+                  }
+               },
+               "1049": {
+                  "#name": "button \"Push Button Behavior\"",
+                  "properties": {
+                     "foreColor": "#474747",
+                     "icon": "1028",
+                     "id": "1049",
+                     "layer": "15",
+                     "name": "Push Button Behavior",
+                     "rect": "580,174,720,197",
+                     "showIcon": true,
+                     "traversalOn": false
+                  }
+               },
+               "1050": {
+                  "#name": "image \"button-allusers-hover.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1050",
+                     "layer": "16",
+                     "name": "button-allusers-hover.png",
+                     "opaque": false,
+                     "rect": "747,399,859,527",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1050_text.png"
+                  }
+               },
+               "1051": {
+                  "#name": "image \"button-allusers-pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1051",
+                     "layer": "17",
+                     "name": "button-allusers-pressed.png",
+                     "opaque": false,
+                     "rect": "807,399,919,527",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1051_text.png"
+                  }
+               },
+               "1052": {
+                  "#name": "image \"button-allusers-selected.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1052",
+                     "layer": "18",
+                     "name": "button-allusers-selected.png",
+                     "opaque": false,
+                     "rect": "877,399,989,527",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1052_text.png"
+                  }
+               },
+               "1053": {
+                  "#name": "image \"button-allusers.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1053",
+                     "layer": "19",
+                     "name": "button-allusers.png",
+                     "opaque": false,
+                     "rect": "947,399,1059,527",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1053_text.png"
+                  }
+               },
+               "1054": {
+                  "#name": "image \"button-browse-pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1054",
+                     "layer": "74",
+                     "name": "button-browse-pressed.png",
+                     "rect": "824,62,846,84",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1054_text.png"
+                  }
+               },
+               "1055": {
+                  "#name": "image \"button-custom-hover.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1055",
+                     "layer": "20",
+                     "name": "button-custom-hover.png",
+                     "opaque": false,
+                     "rect": "747,269,859,397",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1055_text.png"
+                  }
+               },
+               "1056": {
+                  "#name": "image \"button-custom-pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1056",
+                     "layer": "21",
+                     "name": "button-custom-pressed.png",
+                     "opaque": false,
+                     "rect": "807,269,919,397",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1056_text.png"
+                  }
+               },
+               "1057": {
+                  "#name": "image \"button-custom-selected.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1057",
+                     "layer": "22",
+                     "name": "button-custom-selected.png",
+                     "opaque": false,
+                     "rect": "877,269,989,397",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1057_text.png"
+                  }
+               },
+               "1058": {
+                  "#name": "image \"button-custom.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1058",
+                     "layer": "23",
+                     "name": "button-custom.png",
+                     "opaque": false,
+                     "rect": "947,269,1059,397",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1058_text.png"
+                  }
+               },
+               "1059": {
+                  "#name": "image \"button-pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1059",
+                     "layer": "78",
+                     "name": "button-pressed.png",
+                     "rect": "958,108,1040,130",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAFIAAAAWCAYAAABT5cvhAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAJNJREFUeNrs0rsJhEAYReHxgckaCRMZiV1sH5sLtmCwMCBo\nGYJgbBvWIizYhHdK0DFazoH7M/HHRN1aZ8aYXmu00tCVdm3RxlRn0L6Y3Mp/PKclsU6LR3Ct\nh7Q4BGdjDJ4JSCCBBJKABBJIIAlIIIEkIIEE8t8hDxiCOzzkjENwS/L+FJseL63Sckwu9dMm\nzZ0CDABbHQ2kaTvzhgAAAABJRU5ErkJggg=="
+                     }
+                  }
+               },
+               "1060": {
+                  "#name": "image \"button-youonly-hover.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1060",
+                     "layer": "24",
+                     "name": "button-youonly-hover.png",
+                     "opaque": false,
+                     "rect": "747,139,859,267",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1060_text.png"
+                  }
+               },
+               "1061": {
+                  "#name": "image \"button-youonly-pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1061",
+                     "layer": "25",
+                     "name": "button-youonly-pressed.png",
+                     "opaque": false,
+                     "rect": "807,139,919,267",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1061_text.png"
+                  }
+               },
+               "1062": {
+                  "#name": "image \"button-youonly-selected.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1062",
+                     "layer": "26",
+                     "name": "button-youonly-selected.png",
+                     "opaque": false,
+                     "rect": "877,139,989,267",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1062_text.png"
+                  }
+               },
+               "1063": {
+                  "#name": "image \"button-youonly.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1063",
+                     "layer": "27",
+                     "name": "button-youonly.png",
+                     "opaque": false,
+                     "rect": "947,139,1059,267",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1063_text.png"
+                  }
+               },
+               "1064": {
+                  "#name": "image \"radio-pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1064",
+                     "layer": "28",
+                     "name": "radio-pressed.png",
+                     "opaque": false,
+                     "rect": "650,103,669,122",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1064_text.png"
+                  }
+               },
+               "1065": {
+                  "#name": "image \"scroll-down-pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1065",
+                     "layer": "29",
+                     "name": "scroll-down-pressed.png",
+                     "opaque": false,
+                     "rect": "677,85,688,97",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1065_text.png"
+                  }
+               },
+               "1066": {
+                  "#name": "image \"scroll-up-pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1066",
+                     "layer": "30",
+                     "name": "scroll-up-pressed.png",
+                     "opaque": false,
+                     "rect": "677,65,688,77",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1066_text.png"
+                  }
+               },
+               "1067": {
+                  "#name": "group \"Template Push Button\"",
+                  "childcontrols": {
+                     "1068": {
+                        "#name": "button \"Button\"",
+                        "properties": {
+                           "foreColor": "white",
+                           "hiliteIcon": "1027",
+                           "hoverIcon": "1029",
+                           "icon": "1030",
+                           "id": "1068",
+                           "layer": "32",
+                           "margins": "0",
+                           "name": "Button",
+                           "opaque": false,
+                           "rect": "580,202,664,226",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1069": {
+                        "#name": "field \"Label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "fixedLineHeight": false,
+                           "foreColor": "#ffffff",
+                           "htmlText": "<p>Cancel</p>",
+                           "id": "1069",
+                           "layer": "33",
+                           "lockText": true,
+                           "margins": "8,9,8,2",
+                           "name": "Label",
+                           "opaque": false,
+                           "rect": "580,202,664,226",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "transparent",
+                           "textAlign": "center",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1049 of stack \"ToolsInstaller\"",
+                     "id": "1067",
+                     "layer": "31",
+                     "margins": "0",
+                     "name": "Template Push Button",
+                     "rect": "580,202,664,226",
+                     "selectGroupedControls": false
+                  }
+               },
+               "1071": {
+                  "#name": "button \"Scrolling List Behavior\"",
+                  "properties": {
+                     "icon": "1039",
+                     "id": "1071",
+                     "layer": "34",
+                     "name": "Scrolling List Behavior",
+                     "rect": "578,231,718,254",
+                     "showIcon": true,
+                     "text": "%file%: assets/Resources_1023_1071_text.txt",
+                     "traversalOn": false
+                  }
+               },
+               "1081": {
+                  "#name": "group \"Scrolling List Template\"",
+                  "childcontrols": {
+                     "1073": {
+                        "#name": "field \"Text\"",
+                        "properties": {
+                           "id": "1073",
+                           "layer": "36",
+                           "lockText": true,
+                           "name": "Text",
+                           "opaque": false,
+                           "rect": "8,376,287,508",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "threeD": false
+                        }
+                     },
+                     "1076": {
+                        "#name": "button \"Up\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "icon": "1045",
+                           "id": "1076",
+                           "layer": "37",
+                           "name": "Up",
+                           "opaque": false,
+                           "rect": "287,376,298,388",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1077": {
+                        "#name": "button \"Down\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "icon": "1042",
+                           "id": "1077",
+                           "layer": "38",
+                           "name": "Down",
+                           "opaque": false,
+                           "rect": "287,496,298,508",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1078": {
+                        "#name": "button \"Well\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "#1e1e1e",
+                           "hiliteBorder": false,
+                           "icon": "1039",
+                           "id": "1078",
+                           "layer": "39",
+                           "name": "Well",
+                           "opaque": false,
+                           "rect": "287,389,298,495",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1080": {
+                        "#name": "image \"Bar\"",
+                        "properties": {
+                           "borderWidth": "1",
+                           "id": "1080",
+                           "layer": "40",
+                           "lockLoc": true,
+                           "name": "Bar",
+                           "rect": "287,389,298,426",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/Resources_1023_1081_1080_text.png",
+                           "threeD": false,
+                           "visible": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1071 of stack \"ToolsInstaller\"",
+                     "id": "1081",
+                     "layer": "35",
+                     "margins": "0",
+                     "name": "Scrolling List Template",
+                     "rect": "8,376,298,508",
+                     "selectGroupedControls": false
+                  }
+               },
+               "1086": {
+                  "#name": "group \"Check Box Template\"",
+                  "childcontrols": {
+                     "1083": {
+                        "#name": "button \"Check\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "hiliteBorder": false,
+                           "hiliteIcon": "1032",
+                           "icon": "1034",
+                           "id": "1083",
+                           "layer": "42",
+                           "name": "Check",
+                           "opaque": false,
+                           "rect": "592,383,612,403",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1085": {
+                        "#name": "field \"Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "I accept the terms"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "foreColor": "white",
+                           "htmlText": "<p>I accept the terms</p>",
+                           "id": "1085",
+                           "layer": "43",
+                           "lockText": true,
+                           "name": "Label",
+                           "opaque": false,
+                           "rect": "609,382,709,403",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1088 of stack \"ToolsInstaller\"",
+                     "id": "1086",
+                     "layer": "41",
+                     "margins": "0",
+                     "name": "Check Box Template",
+                     "rect": "592,382,709,403",
+                     "selectGroupedControls": false
+                  }
+               },
+               "1088": {
+                  "#name": "button \"Check Box Behavior\"",
+                  "properties": {
+                     "id": "1088",
+                     "layer": "44",
+                     "name": "Check Box Behavior",
+                     "rect": "578,258,718,281",
+                     "traversalOn": false
+                  }
+               },
+               "1091": {
+                  "#name": "group \"Toggle Template\"",
+                  "childcontrols": {
+                     "1090": {
+                        "#name": "button \"Toggle\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "hiliteIcon": "1052",
+                           "hoverIcon": "1050",
+                           "icon": "1053",
+                           "id": "1090",
+                           "layer": "46",
+                           "name": "Toggle",
+                           "opaque": false,
+                           "rect": "371,390,483,518",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1093 of stack \"ToolsInstaller\"",
+                     "hilitedButton": "1",
+                     "id": "1091",
+                     "layer": "45",
+                     "margins": "0",
+                     "name": "Toggle Template",
+                     "rect": "371,390,483,518",
+                     "selectGroupedControls": false
+                  }
+               },
+               "1093": {
+                  "#name": "button \"Toggle Behavior\"",
+                  "properties": {
+                     "id": "1093",
+                     "layer": "47",
+                     "name": "Toggle Behavior",
+                     "rect": "580,286,716,309",
+                     "traversalOn": false
+                  }
+               },
+               "1098": {
+                  "#name": "group \"Progress Template\"",
+                  "childcontrols": {
+                     "1095": {
+                        "#name": "button \"Well\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "hiliteBorder": false,
+                           "icon": "1035",
+                           "id": "1095",
+                           "layer": "49",
+                           "name": "Well",
+                           "opaque": false,
+                           "rect": "52,529,469,546",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1097": {
+                        "#name": "group \"Bar\"",
+                        "childcontrols": {
+                           "1096": {
+                              "#name": "button \"Fill\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "hiliteBorder": false,
+                                 "icon": "1036",
+                                 "id": "1096",
+                                 "layer": "51",
+                                 "name": "Fill",
+                                 "opaque": false,
+                                 "rect": "52,529,469,544",
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "transparent",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1097",
+                           "layer": "50",
+                           "lockLoc": true,
+                           "margins": "0",
+                           "name": "Bar",
+                           "rect": "52,529,53,546"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1100 of stack \"ToolsInstaller\"",
+                     "id": "1098",
+                     "layer": "48",
+                     "margins": "0",
+                     "name": "Progress Template",
+                     "rect": "52,529,469,546",
+                     "selectGroupedControls": false
+                  }
+               },
+               "1100": {
+                  "#name": "button \"Progress Behavior\"",
+                  "properties": {
+                     "id": "1100",
+                     "layer": "52",
+                     "name": "Progress Behavior",
+                     "rect": "582,316,716,339",
+                     "traversalOn": false
+                  }
+               },
+               "1101": {
+                  "#name": "group \"Radio Box Template\"",
+                  "childcontrols": {
+                     "1102": {
+                        "#name": "button \"Radio\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "hiliteIcon": "1038",
+                           "icon": "1037",
+                           "id": "1102",
+                           "layer": "54",
+                           "name": "Radio",
+                           "opaque": false,
+                           "rect": "592,407,612,427",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1103": {
+                        "#name": "field \"Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "I accept the terms"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "foreColor": "white",
+                           "htmlText": "<p>I accept the terms</p>",
+                           "id": "1103",
+                           "layer": "55",
+                           "lockText": true,
+                           "name": "Label",
+                           "opaque": false,
+                           "rect": "609,406,709,427",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1104 of stack \"ToolsInstaller\"",
+                     "hilitedButton": "1",
+                     "id": "1101",
+                     "layer": "53",
+                     "margins": "0",
+                     "name": "Radio Box Template",
+                     "rect": "592,406,709,427",
+                     "selectGroupedControls": false
+                  }
+               },
+               "1104": {
+                  "#name": "button \"Radio Box Behavior\"",
+                  "properties": {
+                     "id": "1104",
+                     "layer": "56",
+                     "name": "Radio Box Behavior",
+                     "rect": "578,348,718,371",
+                     "traversalOn": false
+                  }
+               },
+               "1105": {
+                  "#name": "image \"icon.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1105",
+                     "layer": "83",
+                     "name": "icon.png",
+                     "rect": "586,408,714,536",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1105_text.png"
+                  }
+               },
+               "1114": {
+                  "#name": "button \"Update Nav Behavior\"",
+                  "properties": {
+                     "foreColor": "#474747",
+                     "icon": "1125",
+                     "id": "1114",
+                     "layer": "57",
+                     "name": "Update Nav Behavior",
+                     "rect": "578,146,718,169",
+                     "showIcon": true,
+                     "traversalOn": false
+                  }
+               },
+               "1116": {
+                  "#name": "image \"button-default-wide.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1116",
+                     "layer": "77",
+                     "name": "button-default-wide.png",
+                     "rect": "1046,6,1156,28",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAG4AAAAWCAYAAAAhKqlXAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAJFJREFUeNrsmssJgEAQxdYPdiAIVmE7ngSbEBRF+xD2ZD02\nIQg24ZsuHEwgU8ALe9vkOJsihDDLTtYBvswlo9xynVUObOICe1ijzFKdnj3c0Vu4kh3cUaZs\n4BPCEQ4IB4QjHBAOCEc4IBwQDghHOCAcEO6P4R5mcMdj4XZ2cEe0PyeLtA9DrazY5NPc8pDT\nK8AAMzcNc8Pa5KMAAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "1118": {
+                  "#name": "image \"button-hover-wide.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1118",
+                     "layer": "67",
+                     "name": "button-hover-wide.png",
+                     "rect": "1042,58,1152,80",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAG4AAAAWCAYAAAAhKqlXAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAJNJREFUeNrsmrsJgEAQBc8PdiAIVmE7RoJNCIqiRZgJRtZj\nE4JgE77twsUZmC3gDZdddFZrFkIYZSPLAF/mkrtcUp1ZdmziAntYvUxinZY93NFauJwd3JHH\nbOATwhEOCAeEIxwQDghHOCAcEA4IRzggHBDuj+EeZnDHY+E2dnDHbn9OJmkfhmpZsMmnueUh\nh1eAAQDUjw1j6PmxuwAAAABJRU5ErkJggg=="
+                     }
+                  }
+               },
+               "1119": {
+                  "#name": "image \"button-pressed-wide.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1119",
+                     "layer": "75",
+                     "name": "button-pressed-wide.png",
+                     "rect": "1050,108,1160,130",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAG4AAAAWCAYAAAAhKqlXAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAJJJREFUeNrsmrsJgEAQBc8PdiAIhnZlJNiCgaAo2odgZGBf\ngmATvu3CxRmYLeANl13UnVUWQphkI8sAX+aSu1xTnUX2bOICe1iDTGKdlj3c0Vq4nB3ckcds\n4BPCEQ4IB4QjHBAOCEc4IBwQDghHOCAcEO6P4R5mcMdj4TZ2cMduf05maR+Galmwyae55SHH\nV4ABABlaDQ0VcyD2AAAAAElFTkSuQmCC"
+                     }
+                  }
+               },
+               "1120": {
+                  "#name": "image \"button-standard-wide.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1120",
+                     "layer": "72",
+                     "name": "button-standard-wide.png",
+                     "rect": "1048,32,1158,54",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAG4AAAAWCAYAAAAhKqlXAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAJBJREFUeNrsmssJgEAQxdYPdiAIduZJsAlBUbQPYU/2IdYi\nCDbhmy4cTCBTwAt72+Q8jiKEMMlW1gG+zCWjXHOdRfZs4gJ7WIPMUp2OPdzRWbiSHdxRpmzg\nE8IRDggHhCMcEA4IRzggHBAOCEc4IBwQ7o/hHmZwx2PhNnZwR7Q/J7O0D0ONrNjk09xyl+Mr\nwACW1Q4RcusZpgAAAABJRU5ErkJggg=="
+                     }
+                  }
+               },
+               "1123": {
+                  "#name": "image \"nav-hover.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1123",
+                     "layer": "69",
+                     "lockLoc": true,
+                     "name": "nav-hover.png",
+                     "rect": "1086,233,1256,273",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1123_text.png"
+                  }
+               },
+               "1125": {
+                  "#name": "image \"nav-disabled.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1125",
+                     "layer": "70",
+                     "lockLoc": true,
+                     "name": "nav-disabled.png",
+                     "rect": "1088,170,1258,210",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1125_text.png"
+                  }
+               },
+               "1126": {
+                  "#name": "image \"nav-pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1126",
+                     "layer": "76",
+                     "lockLoc": true,
+                     "name": "nav-pressed.png",
+                     "rect": "1084,289,1254,329",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1126_text.png"
+                  }
+               },
+               "1127": {
+                  "#name": "image \"badge-free.png\"",
+                  "properties": {
+                     "id": "1127",
+                     "layer": "58",
+                     "name": "badge-free.png",
+                     "opaque": false,
+                     "rect": "665,545,688,595",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1127_text.png"
+                  }
+               },
+               "1128": {
+                  "#name": "image \"badge-test.png\"",
+                  "properties": {
+                     "id": "1128",
+                     "layer": "59",
+                     "name": "badge-test.png",
+                     "opaque": false,
+                     "rect": "691,545,714,595",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1128_text.png"
+                  }
+               },
+               "1129": {
+                  "#name": "image \"badge-paid.png\"",
+                  "properties": {
+                     "id": "1129",
+                     "layer": "60",
+                     "name": "badge-paid.png",
+                     "opaque": false,
+                     "rect": "715,545,738,595",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1129_text.png"
+                  }
+               },
+               "1130": {
+                  "#name": "image \"status-icon.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1130",
+                     "layer": "82",
+                     "name": "status-icon.png",
+                     "rect": "704,496,736,528",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1130_text.png"
+                  }
+               },
+               "1156": {
+                  "#name": "image \"button-disabled-wide.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1156",
+                     "layer": "68",
+                     "name": "button-disabled-wide.png",
+                     "rect": "1046,82,1156,104",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAG4AAAAWCAYAAAAhKqlXAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAJBJREFUeNrsmssJgEAQxdYPdiAIduZJsAlBUbQPYU/2IdYi\nCDbhmy4cTCBTwAt72+Q8jiKEMMlW1gG+zCWjXHOdRfZs4gJ7WIPMUp2OPdzRWbiSHdxRpmzg\nE8IRDggHhCMcEA4IRzggHBAOCEc4IBwQ7o/hHmZwx2PhNnZwR7Q/J7O0D0ONrNjk09xyl+Mr\nwACW1Q4RcusZpgAAAABJRU5ErkJggg=="
+                     }
+                  }
+               },
+               "1158": {
+                  "#name": "image \"nav-default.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1158",
+                     "layer": "80",
+                     "lockLoc": true,
+                     "name": "nav-default.png",
+                     "rect": "1082,345,1252,385",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1158_text.png"
+                  }
+               },
+               "1162": {
+                  "#name": "image \"nav-standard.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1162",
+                     "layer": "71",
+                     "lockLoc": true,
+                     "name": "nav-standard.png",
+                     "rect": "1082,405,1252,445",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1162_text.png"
+                  }
+               },
+               "1165": {
+                  "#name": "image \"button-browse-standard.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1165",
+                     "layer": "66",
+                     "name": "button-browse-standard.png",
+                     "rect": "864,60,886,82",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Resources_1023_1165_text.png"
+                  }
+               }
+            },
+            "customproperties": {
+               "cInstallerType": "community"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "84"
+               }
+            },
+            "properties": {
+               "id": "1023",
+               "name": "Resources"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1186"
+         }
+      },
+      "longID": "stack \"Resources\" of stack \"Installer\"",
+      "properties": {
+         "decorations": "default",
+         "id": "1186",
+         "liveResizing": false,
+         "name": "Resources",
+         "rect": "5,420,1286,1062"
+      },
+      "sharedGroupIDs": null
    },
    "UninstallerUI": {
       "#name": "stack \"UninstallerUI\"",
