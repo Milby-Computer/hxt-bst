@@ -375,6 +375,405 @@
       },
       "sharedGroupIDs": null
    },
+   "revEntitlements": {
+      "#name": "stack \"revEntitlements\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "button \"Tab Menu\"",
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "lockLoc": true,
+                     "menuMode": "tabbed",
+                     "name": "Tab Menu",
+                     "rect": "0,10,400,410",
+                     "showName": false,
+                     "style": "menu",
+                     "text": "Entitlements\nCode Signing"
+                  }
+               },
+               "1016": {
+                  "#name": "group \"Entitlements\"",
+                  "childcontrols": {
+                     "1005": {
+                        "#name": "button \"com.apple.security.device.audio-input\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1005",
+                           "label": "Microphone",
+                           "layer": "3",
+                           "name": "com.apple.security.device.audio-input",
+                           "opaque": false,
+                           "rect": "32,49,365,72",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1006": {
+                        "#name": "button \"com.apple.security.device.camera\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1006",
+                           "label": "Camera",
+                           "layer": "4",
+                           "name": "com.apple.security.device.camera",
+                           "opaque": false,
+                           "rect": "32,79,365,102",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1007": {
+                        "#name": "button \"com.apple.security.personal-information.location\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1007",
+                           "label": "Location",
+                           "layer": "5",
+                           "name": "com.apple.security.personal-information.location",
+                           "opaque": false,
+                           "rect": "32,109,365,132",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1008": {
+                        "#name": "button \"com.apple.security.personal-information.addressbook\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1008",
+                           "label": "Contacts / Address Book",
+                           "layer": "6",
+                           "name": "com.apple.security.personal-information.addressbook",
+                           "opaque": false,
+                           "rect": "32,139,365,162",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1009": {
+                        "#name": "button \"com.apple.security.personal-information.photos-library\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1009",
+                           "label": "Photos",
+                           "layer": "7",
+                           "name": "com.apple.security.personal-information.photos-library",
+                           "opaque": false,
+                           "rect": "32,169,365,192",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1010": {
+                        "#name": "button \"com.apple.security.automation.apple-events\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1010",
+                           "label": "AppleScript",
+                           "layer": "8",
+                           "name": "com.apple.security.automation.apple-events",
+                           "opaque": false,
+                           "rect": "32,199,365,222",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1011": {
+                        "#name": "button \"com.apple.security.files.user-selected.executable\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1011",
+                           "label": "Execute User-Selected Files",
+                           "layer": "9",
+                           "name": "com.apple.security.files.user-selected.executable",
+                           "opaque": false,
+                           "rect": "32,229,365,252",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1012": {
+                        "#name": "button \"com.apple.security.network.client\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1012",
+                           "label": "Network Client",
+                           "layer": "10",
+                           "name": "com.apple.security.network.client",
+                           "opaque": false,
+                           "rect": "32,259,365,282",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1013": {
+                        "#name": "button \"com.apple.security.network.server\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1013",
+                           "label": "Network Server",
+                           "layer": "11",
+                           "name": "com.apple.security.network.server",
+                           "opaque": false,
+                           "rect": "32,289,365,312",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1016",
+                     "layer": "2",
+                     "name": "Entitlements",
+                     "rect": "28,45,369,316"
+                  }
+               },
+               "1024": {
+                  "#name": "group \"Code Signing\"",
+                  "childcontrols": {
+                     "1017": {
+                        "#name": "field \"Label Signing Cert\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "htmlText": "<p>Signing Certificate:</p>",
+                           "id": "1017",
+                           "layer": "13",
+                           "lockText": true,
+                           "name": "Label Signing Cert",
+                           "opaque": false,
+                           "rect": "32,62,358,83",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1018": {
+                        "#name": "button \"Signing Certificate\"",
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1018",
+                           "layer": "14",
+                           "menuMode": "option",
+                           "name": "Signing Certificate",
+                           "rect": "32,87,358,109",
+                           "style": "menu",
+                           "textAlign": "left",
+                           "traversalOn": false
+                        }
+                     },
+                     "1019": {
+                        "#name": "field \"Label Apple ID\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "htmlText": "<p>Apple ID:</p>",
+                           "id": "1019",
+                           "layer": "15",
+                           "lockText": true,
+                           "name": "Label Apple ID",
+                           "opaque": false,
+                           "rect": "32,119,358,140",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1021": {
+                        "#name": "field \"Apple ID\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "fixedLineHeight": false,
+                           "hintText": "user@example.org",
+                           "id": "1021",
+                           "layer": "16",
+                           "name": "Apple ID",
+                           "rect": "33,145,357,166"
+                        }
+                     },
+                     "1022": {
+                        "#name": "field \"Label Password\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "htmlText": "<p>Password:</p>",
+                           "id": "1022",
+                           "layer": "17",
+                           "lockText": true,
+                           "name": "Label Password",
+                           "opaque": false,
+                           "rect": "32,233,358,254",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1023": {
+                        "#name": "field \"App-specific Password\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "fixedLineHeight": false,
+                           "hintText": "App-specific password",
+                           "id": "1023",
+                           "layer": "19",
+                           "name": "App-specific Password",
+                           "passwordField": true,
+                           "rect": "33,259,357,280"
+                        }
+                     },
+                     "1027": {
+                        "#name": "field \"Team ID\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "fixedLineHeight": false,
+                           "hintText": "XXXXXXXXXX",
+                           "id": "1027",
+                           "layer": "18",
+                           "name": "Team ID",
+                           "rect": "33,202,357,223"
+                        }
+                     },
+                     "1028": {
+                        "#name": "field \"Label Team ID\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "htmlText": "<p>Team ID:</p>",
+                           "id": "1028",
+                           "layer": "20",
+                           "lockText": true,
+                           "name": "Label Team ID",
+                           "opaque": false,
+                           "rect": "32,176,358,197",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1030": {
+                        "#name": "button \"Notarize after signing\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1030",
+                           "layer": "21",
+                           "name": "Notarize after signing",
+                           "opaque": false,
+                           "rect": "32,291,358,314",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1024",
+                     "layer": "12",
+                     "name": "Code Signing",
+                     "rect": "28,58,362,318",
+                     "visible": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "21"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "cEnclosingFolder": "/Users/emily-elizabethhoward/Downloads/",
+         "cTargetStack": "Untitled 1"
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1030"
+         }
+      },
+      "longID": "stack \"revEntitlements\" of stack \"revStandaloneSettings\"",
+      "properties": {
+         "id": "1030",
+         "name": "revEntitlements",
+         "rect": "433,255,833,601",
+         "resizable": false,
+         "title": "Entitlements \u2026 Code Signing"
+      },
+      "sharedGroupIDs": null
+   },
    "revErrorReport": {
       "#name": "stack \"revErrorReport\"",
       "backgroundIDs": null,
@@ -860,7 +1259,7 @@
    },
    "revStandaloneSettings": {
       "#name": "stack \"revStandaloneSettings\"",
-      "#substacks": "revErrorReport\nrevBuildResults\nrevStandaloneProgress\nrevStandaloneInclusionWarning\nData Grid Templates 1496227828115",
+      "#substacks": "revErrorReport\nrevBuildResults\nrevStandaloneProgress\nrevStandaloneInclusionWarning\nData Grid Templates 1496227828115\nrevEntitlements",
       "backgroundIDs": "1317\n1617\n1010",
       "cardIDs": "1002\n1027\n5263\n1013\n1015\n1016\n1035\n1017",
       "childcontrols": {
@@ -1290,6 +1689,7 @@
                               "#name": "button \"search\"",
                               "properties": {
                                  "hiliteBorder": false,
+                                 "hilited": true,
                                  "id": "1292",
                                  "label": "Search for required inclusions when saving the standalone application",
                                  "layer": "43",
@@ -1306,7 +1706,6 @@
                               "#name": "button \"select\"",
                               "properties": {
                                  "hiliteBorder": false,
-                                 "hilited": true,
                                  "id": "23250",
                                  "label": "Select inclusions for the standalone application",
                                  "layer": "42",
@@ -1321,7 +1720,7 @@
                            }
                         },
                         "properties": {
-                           "hilitedButton": "1",
+                           "hilitedButton": "2",
                            "id": "1294",
                            "layer": "41",
                            "name": "inclusions",
@@ -1337,7 +1736,6 @@
                         },
                         "properties": {
                            "dontWrap": true,
-                           "htmlText": "<p>/Users/emily-elizabethhoward/Downloads</p>",
                            "id": "1492",
                            "layer": "34",
                            "lockText": true,
@@ -1420,7 +1818,7 @@
                         "properties": {
                            "autoTab": true,
                            "dontWrap": true,
-                           "htmlText": "<p>allControls2</p>",
+                           "htmlText": "<p>Untitled 1</p>",
                            "id": "2883",
                            "layer": "38",
                            "name": "standalone name",
@@ -1738,7 +2136,7 @@
             },
             "custompropertysets": {
                "cREVGeometryCache": {
-                  "order": null,
+                  "order": "\n1070531719171\n1070576289462\n1070583258473\n1070531913674\n1070531913800",
                   "total": "60"
                }
             },
@@ -1799,7 +2197,7 @@
                      "showFocusBorder": false,
                      "showIcon": true,
                      "style": "rectangle",
-                     "textStyle": "plain",
+                     "textStyle": "bold",
                      "traversalOn": false
                   }
                },
@@ -1906,7 +2304,7 @@
                      "showFocusBorder": false,
                      "showIcon": true,
                      "style": "rectangle",
-                     "textStyle": "bold",
+                     "textStyle": "plain",
                      "traversalOn": false
                   }
                },
@@ -1914,6 +2312,7 @@
                   "#name": "button \"Inclusions\"",
                   "properties": {
                      "borderWidth": "1",
+                     "disabled": true,
                      "icon": "22781",
                      "id": "5746",
                      "layer": "10",
@@ -2696,7 +3095,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "htmlText": "<p>allControls2</p>",
+                                 "htmlText": "<p>Untitled 1</p>",
                                  "id": "1092",
                                  "layer": "25",
                                  "name": "name",
@@ -2712,7 +3111,7 @@
                               "properties": {
                                  "autoTab": true,
                                  "dontWrap": true,
-                                 "htmlText": "<p>allControls2 1.0.0.0</p>",
+                                 "htmlText": "<p>Untitled 1 1.0.0.0</p>",
                                  "id": "1093",
                                  "layer": "30",
                                  "name": "longVersion",
@@ -2782,7 +3181,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "htmlText": "<p>allControls2 Version 1.0.0.0</p>",
+                                 "htmlText": "<p>Untitled 1 Version 1.0.0.0</p>",
                                  "id": "1098",
                                  "layer": "31",
                                  "name": "info",
@@ -3000,7 +3399,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "htmlText": "<p>com.emily.allcontrols2</p>",
+                                 "htmlText": "<p>com..untitled1</p>",
                                  "id": "1363",
                                  "layer": "40",
                                  "name": "identifier",
@@ -3032,7 +3431,7 @@
                            }
                         },
                         "customproperties": {
-                           "cSize": "549"
+                           "cSize": "589"
                         },
                         "properties": {
                            "id": "1282",
@@ -3144,7 +3543,7 @@
                            }
                         },
                         "customproperties": {
-                           "cSize": "355"
+                           "cSize": "395"
                         },
                         "properties": {
                            "id": "1284",
@@ -3421,13 +3820,24 @@
                            "rect": "129,242,629,244",
                            "style": "line"
                         }
+                     },
+                     "32931": {
+                        "#name": "button \"entitlements\"",
+                        "properties": {
+                           "id": "32931",
+                           "label": "Entitlements \u2026 Code Signing",
+                           "layer": "64",
+                           "name": "entitlements",
+                           "rect": "153,546,415,569",
+                           "traversalOn": false
+                        }
                      }
                   },
                   "properties": {
                      "id": "1221",
                      "layer": "14",
                      "name": "OSX",
-                     "rect": "-6,97,793,539"
+                     "rect": "-6,97,793,573"
                   }
                },
                "1317": "#shared group",
@@ -3452,7 +3862,7 @@
                      "hiliteBorder": false,
                      "id": "1329",
                      "label": "?",
-                     "layer": "69",
+                     "layer": "70",
                      "name": "help",
                      "rect": "529,100,552,123",
                      "sharedHilite": false,
@@ -3484,7 +3894,7 @@
                      "hiliteBorder": false,
                      "id": "1332",
                      "label": "?",
-                     "layer": "70",
+                     "layer": "71",
                      "name": "help",
                      "rect": "236,197,259,220",
                      "sharedHilite": false,
@@ -3516,7 +3926,7 @@
                      "hiliteBorder": false,
                      "id": "1333",
                      "label": "?",
-                     "layer": "71",
+                     "layer": "72",
                      "name": "help",
                      "rect": "529,197,552,220",
                      "sharedHilite": false,
@@ -3548,7 +3958,7 @@
                      "hiliteBorder": false,
                      "id": "1334",
                      "label": "?",
-                     "layer": "72",
+                     "layer": "73",
                      "name": "help",
                      "rect": "126,227,149,250",
                      "sharedHilite": false,
@@ -3580,7 +3990,7 @@
                      "hiliteBorder": false,
                      "id": "1337",
                      "label": "?",
-                     "layer": "73",
+                     "layer": "74",
                      "name": "help",
                      "rect": "529,134,552,157",
                      "sharedHilite": false,
@@ -3593,15 +4003,15 @@
                }
             },
             "customproperties": {
-               "cSize": "567,549"
+               "cSize": "567,589"
             },
             "custompropertysets": {
                "cREVGeneral[scripteditorvscroll]": {
                   "scripteditorvscroll": "0"
                },
                "cREVGeometryCache": {
-                  "order": null,
-                  "total": "73"
+                  "order": "\n1070531719171\n1070576289462\n1075076713095\n1075076713097",
+                  "total": "74"
                }
             },
             "properties": {
@@ -3640,6 +4050,7 @@
                         "#name": "field id 1135",
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Application Icon:</p>",
                            "id": "1135",
@@ -3676,8 +4087,9 @@
                         },
                         "properties": {
                            "autoTab": true,
+                           "disabled": true,
                            "dontWrap": true,
-                           "htmlText": "<p>/Applications/HyperXTalk.app/Contents/Tools/Runtime/Windows/x86-64/Support/Sample Icons/genericapp.ico</p>",
+                           "htmlText": "<p>/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Runtime/Windows/x86-64/Support/Sample Icons/genericapp.ico</p>",
                            "id": "1136",
                            "layer": "16",
                            "lockText": true,
@@ -3709,6 +4121,7 @@
                            }
                         },
                         "properties": {
+                           "disabled": true,
                            "id": "1137",
                            "layer": "17",
                            "name": "Use None",
@@ -3737,6 +4150,7 @@
                            }
                         },
                         "properties": {
+                           "disabled": true,
                            "id": "1138",
                            "layer": "18",
                            "name": "Choose...",
@@ -3766,8 +4180,9 @@
                         },
                         "properties": {
                            "autoTab": true,
+                           "disabled": true,
                            "dontWrap": true,
-                           "htmlText": "<p>/Applications/HyperXTalk.app/Contents/Tools/Runtime/Windows/x86-64/Support/Sample Icons/genericdoc.ico</p>",
+                           "htmlText": "<p>/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Runtime/Windows/x86-64/Support/Sample Icons/genericdoc.ico</p>",
                            "id": "1139",
                            "layer": "19",
                            "lockText": true,
@@ -3804,6 +4219,7 @@
                            }
                         },
                         "properties": {
+                           "disabled": true,
                            "id": "1140",
                            "layer": "20",
                            "name": "Use None",
@@ -3832,6 +4248,7 @@
                            }
                         },
                         "properties": {
+                           "disabled": true,
                            "id": "1141",
                            "layer": "21",
                            "name": "Choose...",
@@ -3843,6 +4260,7 @@
                         "#name": "field id 1144",
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Document Icon:</p>",
                            "id": "1144",
@@ -3864,6 +4282,7 @@
                         },
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Copyright Notice:</p>",
                            "id": "1145",
@@ -3886,6 +4305,7 @@
                         },
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>File Description:</p>",
                            "id": "1146",
@@ -3908,6 +4328,7 @@
                         },
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p><b>Version Information</b></p>",
                            "id": "1147",
@@ -3950,6 +4371,7 @@
                         },
                         "properties": {
                            "antialiased": false,
+                           "disabled": true,
                            "filled": true,
                            "foreColor": "128,128,128",
                            "id": "1148",
@@ -3965,6 +4387,7 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Comments:</p>",
                            "id": "1149",
@@ -3984,6 +4407,7 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Internal Name:</p>",
                            "id": "1154",
@@ -4003,6 +4427,7 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>File Version:</p>",
                            "id": "1155",
@@ -4022,6 +4447,7 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Original Filename:</p>",
                            "id": "1156",
@@ -4041,6 +4467,7 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Legal Trademarks:</p>",
                            "id": "1157",
@@ -4060,6 +4487,7 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Product Name:</p>",
                            "id": "1158",
@@ -4079,6 +4507,7 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Product Version:</p>",
                            "id": "1159",
@@ -4098,6 +4527,7 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Private Build:</p>",
                            "id": "1160",
@@ -4117,6 +4547,7 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Company Name:</p>",
                            "id": "1167",
@@ -4136,6 +4567,7 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Special Build:</p>",
                            "id": "1168",
@@ -4180,8 +4612,9 @@
                               },
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
-                                 "htmlText": "<p>allControls2 1.0.0.0 for Windows</p>",
+                                 "htmlText": "<p>Untitled 1 1.0.0.0 for Windows</p>",
                                  "id": "1142",
                                  "layer": "38",
                                  "name": "FileDescription",
@@ -4218,6 +4651,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>2026  All rights reserved worldwide</p>",
                                  "id": "1143",
@@ -4234,6 +4668,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1150",
                                  "layer": "40",
@@ -4249,6 +4684,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1151",
                                  "layer": "52",
@@ -4264,8 +4700,9 @@
                               },
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
-                                 "htmlText": "<p>allControls2</p>",
+                                 "htmlText": "<p>Untitled 1</p>",
                                  "id": "1152",
                                  "layer": "42",
                                  "name": "ProductName",
@@ -4280,6 +4717,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1153",
                                  "layer": "54",
@@ -4296,6 +4734,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1161",
                                  "layer": "43",
@@ -4311,6 +4750,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1163",
                                  "layer": "53",
@@ -4326,6 +4766,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1164",
                                  "layer": "41",
@@ -4341,6 +4782,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1166",
                                  "layer": "55",
@@ -4353,6 +4795,7 @@
                               "#name": "field \"fileversion3\"",
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>0</p>",
                                  "id": "1349",
@@ -4369,6 +4812,7 @@
                               },
                               "properties": {
                                  "autoHilite": false,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "fixedLineHeight": false,
                                  "htmlText": "<p>.</p>",
@@ -4393,6 +4837,7 @@
                               "#name": "field \"fileversion2\"",
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>0</p>",
                                  "id": "1351",
@@ -4409,6 +4854,7 @@
                               },
                               "properties": {
                                  "autoHilite": false,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "fixedLineHeight": false,
                                  "htmlText": "<p>.</p>",
@@ -4433,6 +4879,7 @@
                               "#name": "field \"fileversion1\"",
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>1</p>",
                                  "id": "1353",
@@ -4446,6 +4893,7 @@
                               "#name": "field \"fileversion4\"",
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>0</p>",
                                  "id": "1354",
@@ -4462,6 +4910,7 @@
                               },
                               "properties": {
                                  "autoHilite": false,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "fixedLineHeight": false,
                                  "htmlText": "<p>.</p>",
@@ -4486,6 +4935,7 @@
                               "#name": "field \"productversion3\"",
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>0</p>",
                                  "id": "1356",
@@ -4502,6 +4952,7 @@
                               },
                               "properties": {
                                  "autoHilite": false,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "fixedLineHeight": false,
                                  "htmlText": "<p>.</p>",
@@ -4526,6 +4977,7 @@
                               "#name": "field \"productversion2\"",
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>0</p>",
                                  "id": "1358",
@@ -4542,6 +4994,7 @@
                               },
                               "properties": {
                                  "autoHilite": false,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "fixedLineHeight": false,
                                  "htmlText": "<p>.</p>",
@@ -4566,6 +5019,7 @@
                               "#name": "field \"productversion1\"",
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>1</p>",
                                  "id": "1360",
@@ -4579,6 +5033,7 @@
                               "#name": "field \"productversion4\"",
                               "properties": {
                                  "autoTab": true,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>0</p>",
                                  "id": "1361",
@@ -4595,6 +5050,7 @@
                               },
                               "properties": {
                                  "autoHilite": false,
+                                 "disabled": true,
                                  "dontWrap": true,
                                  "fixedLineHeight": false,
                                  "htmlText": "<p>.</p>",
@@ -4617,6 +5073,7 @@
                            }
                         },
                         "properties": {
+                           "disabled": true,
                            "id": "1348",
                            "layer": "37",
                            "rect": "134,238,617,422"
@@ -4634,6 +5091,7 @@
                         },
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p><b>Icon</b></p>",
                            "id": "1618",
@@ -4676,6 +5134,7 @@
                         },
                         "properties": {
                            "antialiased": false,
+                           "disabled": true,
                            "filled": true,
                            "foreColor": "128,128,128",
                            "id": "1620",
@@ -4712,6 +5171,7 @@
                         },
                         "properties": {
                            "antialiased": false,
+                           "disabled": true,
                            "filled": true,
                            "foreColor": "128,128,128",
                            "id": "1621",
@@ -4735,6 +5195,7 @@
                         },
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p><b>UAC Execution Level</b></p>",
                            "id": "1622",
@@ -4760,6 +5221,7 @@
                         "properties": {
                            "armBorder": false,
                            "autoHilite": false,
+                           "disabled": true,
                            "id": "1624",
                            "label": "Default",
                            "layer": "66",
@@ -4783,6 +5245,7 @@
                         },
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "htmlText": "<p>Runs with default UAC access. No manifest is included.</p>",
                            "id": "1626",
                            "layer": "67",
@@ -4822,6 +5285,7 @@
                         },
                         "properties": {
                            "antialiased": false,
+                           "disabled": true,
                            "filled": true,
                            "foreColor": "128,128,128",
                            "id": "3194",
@@ -4845,6 +5309,7 @@
                         },
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p><b>Hi-DPI support</b></p>",
                            "id": "3196",
@@ -4871,6 +5336,7 @@
                         },
                         "properties": {
                            "autoHilite": false,
+                           "disabled": true,
                            "htmlText": "<p>If enabled, stacks will be automatically scaled to match the system display settings.</p>",
                            "id": "3197",
                            "layer": "70",
@@ -4888,6 +5354,7 @@
                      "3200": {
                         "#name": "button \"usePixelScaling\"",
                         "properties": {
+                           "disabled": true,
                            "hiliteBorder": false,
                            "hilited": true,
                            "id": "3200",
@@ -4903,6 +5370,7 @@
                      }
                   },
                   "properties": {
+                     "disabled": true,
                      "hilitedButton": "6",
                      "id": "1169",
                      "layer": "14",
@@ -4935,7 +5403,6 @@
                         "#name": "button \"Windows x86-64\"",
                         "properties": {
                            "hiliteBorder": false,
-                           "hilited": true,
                            "id": "31526",
                            "layer": "74",
                            "name": "Windows x86-64",
@@ -4950,7 +5417,6 @@
                      }
                   },
                   "properties": {
-                     "hilitedButton": "2",
                      "id": "1266",
                      "layer": "72",
                      "name": "platforms",
@@ -6072,8 +6538,7 @@
                      "showIcon": true,
                      "showName": false,
                      "style": "transparent",
-                     "traversalOn": false,
-                     "visible": false
+                     "traversalOn": false
                   }
                },
                "1590": {
@@ -6102,7 +6567,7 @@
                "id": "1317",
                "layer": "11",
                "name": "checks",
-               "rect": "305,14,401,45"
+               "rect": "305,14,467,45"
             }
          },
          "1617": {
@@ -6400,7 +6865,7 @@
       "customproperties": {
          "brushes": false,
          "cBuildNo": "1",
-         "cRevTargetStack": "allControls2",
+         "cRevTargetStack": "Untitled 1",
          "cVersionNo": "2.6.1",
          "errorObject": "card id 1002 of stack \"/Users/rebecca/Desktop/revStandaloneSettings.rev\"",
          "executionError": "%file%: assets/revStandaloneSettings_executionError.bin",
@@ -6454,7 +6919,7 @@
             "scripteditorvscroll": "7647"
          },
          "cREVGeometryCache": {
-            "stackID": "32929"
+            "stackID": "32931"
          },
          "cRevStandaloneSettings": {
             "android": false,
@@ -6624,12 +7089,12 @@
          "decorations": "title,menu,minimize,close",
          "fileName": "revstandalonesettings.8.rev",
          "foreColor": "#000000",
-         "id": "32929",
+         "id": "32931",
          "liveResizing": false,
          "name": "revStandaloneSettings",
-         "rect": "240,130,870,670",
+         "rect": "359,122,926,711",
          "resizable": false,
-         "title": "Standalone Application Settings for allControls2 - Windows"
+         "title": "Standalone Application Settings for Untitled 1 - Mac"
       },
       "sharedGroupIDs": "1317\n1617\n1010"
    }

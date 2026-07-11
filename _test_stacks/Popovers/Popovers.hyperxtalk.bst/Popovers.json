@@ -1,0 +1,144 @@
+{
+   "#mainstack": "Popovers",
+   "MyPopover": {
+      "#name": "stack \"MyPopover\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"Name\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "hintText": "Hello",
+                     "htmlText": "<p>world</p>",
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Name",
+                     "rect": "13,17,171,38"
+                  }
+               },
+               "1004": {
+                  "#name": "field \"Field\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "id": "1004",
+                     "layer": "2",
+                     "name": "Field",
+                     "rect": "13,48,171,69"
+                  }
+               },
+               "1005": {
+                  "#name": "field \"Field\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "id": "1005",
+                     "layer": "3",
+                     "name": "Field",
+                     "rect": "13,78,171,99"
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Field\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "id": "1006",
+                     "layer": "4",
+                     "name": "Field",
+                     "rect": "13,108,171,129"
+                  }
+               },
+               "1007": {
+                  "#name": "button \"Check\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1007",
+                     "layer": "5",
+                     "name": "Check",
+                     "opaque": false,
+                     "rect": "13,141,166,164",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"MyPopover\" of stack \"Popovers\"",
+      "properties": {
+         "id": "1007",
+         "name": "MyPopover",
+         "rect": "1254,309,1440,487"
+      },
+      "sharedGroupIDs": null
+   },
+   "Popovers": {
+      "#name": "stack \"Popovers\"",
+      "#substacks": "MyPopover",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Info\"",
+                  "properties": {
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Info",
+                     "rect": "103,167,185,190",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"Popovers\"",
+      "properties": {
+         "fileName": "Popovers.hyperxtalk",
+         "id": "1003",
+         "name": "Popovers",
+         "rect": "477,202,877,602"
+      },
+      "sharedGroupIDs": null
+   }
+}

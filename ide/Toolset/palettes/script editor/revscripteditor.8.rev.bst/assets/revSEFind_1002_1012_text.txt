@@ -1,21 +1,20 @@
-preOpenCard
-extensionInitialize
-pMessage
-__FindAllCallback
-revSEGetLastSelectedWord
-getSearchContext
-$LIVECODE_USE_CEF
-set the mainstack
-DataGrid
-Data Grid
-open secure
-https
-revLibraryMapping
-_internal library mapping
-revEnvironmentNonNativeBinariesPath
-external-tmp
-revCopyMobileExternals
-jarFiles
-revStandaloneCopyInclusions
-revCopyExternals
-revSBUpdateForDependencies
+revIDEGetPreference("cREVMenuBarTopLeft")
+revIDEGetPreference
+customProperties["cRevStandaloneSettings"]
+revIDEInitialiseIDELibrary
+revIDEGenerateDistributedDocs
+revInternal__BuildDictionary
+then  // HXT
+put revIDEGetPreference
+oxt
+101528
+stackFiles
+revSE
+scripComment
+revHookBuildScriptEditorContextMenu
+updateGutterRequest
+Gutter
+1138
+Color
+_internal
+generic

@@ -1270,7 +1270,7 @@
                      "id": "210092",
                      "layer": "85",
                      "name": "Error.png",
-                     "rect": "231,72,285,126",
+                     "rect": "228,69,288,129",
                      "repeatCount": "-1",
                      "text": "%file%: assets/revGeneralIcons_1002_210092_text.png"
                   }
@@ -1283,7 +1283,7 @@
                      "layer": "86",
                      "name": "Info.png",
                      "opaque": false,
-                     "rect": "230,8,287,65",
+                     "rect": "228,6,288,66",
                      "repeatCount": "-1",
                      "text": "%file%: assets/revGeneralIcons_1002_210093_text.png"
                   }
@@ -1296,7 +1296,7 @@
                      "layer": "87",
                      "name": "Warning.png",
                      "opaque": false,
-                     "rect": "229,135,285,195",
+                     "rect": "227,135,287,195",
                      "repeatCount": "-1",
                      "text": "%file%: assets/revGeneralIcons_1002_210094_text.png"
                   }
@@ -1334,7 +1334,7 @@
                      "id": "210097",
                      "layer": "88",
                      "name": "Answer Info.png",
-                     "rect": "225,201,289,265",
+                     "rect": "227,203,287,263",
                      "repeatCount": "-1",
                      "text": "%file%: assets/revGeneralIcons_1002_210097_text.png"
                   }
@@ -1358,7 +1358,7 @@
       },
       "custompropertysets": {
          "cREVGeometryCache": {
-            "stackID": "210110"
+            "stackID": "210114"
          }
       },
       "longID": "stack \"revGeneralIcons\"",

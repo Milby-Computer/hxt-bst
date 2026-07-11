@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI_card_id_1008"
 /*
 # Name: card "Editor" of stack "revPreferencesGUI"
 # ID: card id 1008 of stack "revPreferencesGUI"
-# Hash: Yht5wmEKe4bEWf28MDsS0Q==
+# Hash: 4j7/43pF/1HxNDHBnRaV5w==
 */
 
 
@@ -22,7 +22,7 @@ private command UpdateColorization
    local tSchemeName
    put revIDEGetPreference("cScriptEditor,colorization,scheme") into tSchemeName
    
-   set the text of button "Colorization Scheme" to "Default" & LF & "Revolution Classic" & LF & "No Colorization"
+   set the text of button "Colorization Scheme" to "Default" & LF & "Revolution Classic" & LF & "One Dark Pro" & LF & "No Colorization"
    -- if the schemes folder exists, then load the scheme files
    if (there is a folder revEnvironmentUserColorSchemesPath()) then
       local tFiles

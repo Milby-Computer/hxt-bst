@@ -15,7 +15,7 @@
                      "dontSearch": true,
                      "dontWrap": true,
                      "fixedLineHeight": false,
-                     "htmlText": "<p>moo</p>",
+                     "htmlText": "<p>Moo</p>",
                      "id": "1006",
                      "layer": "3",
                      "lockText": true,
@@ -23,10 +23,10 @@
                      "rect": "95,12,388,54",
                      "sharedText": true,
                      "showBorder": false,
+                     "showFocusBorder": false,
                      "style": "transparent",
                      "textSize": "13",
-                     "textStyle": "plain",
-                     "traversalOn": false
+                     "textStyle": "plain"
                   }
                },
                "1146": {
@@ -95,7 +95,7 @@
                "1241": {
                   "#name": "button id 1241",
                   "customproperties": {
-                     "cPrevLoc": "-100,-101"
+                     "cPrevLoc": "-100,-100"
                   },
                   "properties": {
                      "id": "1241",
@@ -109,7 +109,7 @@
                "1242": {
                   "#name": "button id 1242",
                   "customproperties": {
-                     "cPrevLoc": "-100,-101"
+                     "cPrevLoc": "-100,-100"
                   },
                   "properties": {
                      "id": "1242",
@@ -123,7 +123,7 @@
                "1245": {
                   "#name": "button id 1245",
                   "customproperties": {
-                     "cPrevLoc": "-100,-101"
+                     "cPrevLoc": "-100,-100"
                   },
                   "properties": {
                      "id": "1245",
@@ -137,7 +137,7 @@
                "1246": {
                   "#name": "button \"4\"",
                   "customproperties": {
-                     "cPrevLoc": "-100,-101"
+                     "cPrevLoc": "-100,-100"
                   },
                   "properties": {
                      "id": "1246",
@@ -152,7 +152,7 @@
                "1247": {
                   "#name": "button \"3\"",
                   "customproperties": {
-                     "cPrevLoc": "-100,-101"
+                     "cPrevLoc": "-100,-100"
                   },
                   "properties": {
                      "id": "1247",
@@ -167,7 +167,7 @@
                "1248": {
                   "#name": "button id 1248",
                   "customproperties": {
-                     "cPrevLoc": "-100,-101"
+                     "cPrevLoc": "-100,-100"
                   },
                   "properties": {
                      "id": "1248",
@@ -181,7 +181,7 @@
                "1343": {
                   "#name": "button id 1343",
                   "customproperties": {
-                     "cPrevLoc": "-100,-101"
+                     "cPrevLoc": "-100,-100"
                   },
                   "properties": {
                      "id": "1343",
@@ -211,8 +211,8 @@
                }
             },
             "properties": {
-               "backColor": "#323232",
-               "foreColor": "white",
+               "backColor": "#ececec",
+               "foreColor": "#000000",
                "id": "1002",
                "name": "card id 1002"
             }

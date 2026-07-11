@@ -427,6 +427,7 @@
                      "menuLines": "14",
                      "menuMode": "option",
                      "name": "Search In",
+                     "opaque": false,
                      "rect": "50,43,252,65",
                      "style": "menu",
                      "text": "The current selection\n-\nThis card\nThis stack\nThis stack File\nThis stack file and its stack files\n-\nAll open stacks\nAll open stack files\nSpecific open stack file\n-\nAll stack files in a folder\n-\nGlobal variable contents",
@@ -1179,7 +1180,7 @@
                   "properties": {
                      "dontWrap": true,
                      "htmlText": {
-                        "1002": "<p>Debug</p>"
+                        "1002": "<p>HyperXTalk.app</p>"
                      },
                      "id": "1340",
                      "layer": "21",
@@ -1489,7 +1490,7 @@
          "cBuildNo": "1",
          "cButtonContents": false,
          "cCustomProperties": false,
-         "cDirectory": "/Users/gheizhwinder/Programming/livecode/_build/mac/Debug",
+         "cDirectory": "/Users/emily-elizabethhoward/Developer/HyperXTalk/mac-bin/HyperXTalk.app",
          "cFieldText": false,
          "cName": true,
          "cOtherProperties": false,

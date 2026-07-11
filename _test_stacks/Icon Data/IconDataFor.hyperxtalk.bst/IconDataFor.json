@@ -1,0 +1,62 @@
+{
+   "#mainstack": "IconDataFor",
+   "IconDataFor": {
+      "#name": "stack \"IconDataFor\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1003",
+                     "label": "iconDataForExtension",
+                     "layer": "1",
+                     "name": "Button",
+                     "rect": "108,322,270,345",
+                     "traversalOn": false
+                  }
+               },
+               "1004": {
+                  "#name": "image \"Image\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1004",
+                     "layer": "2",
+                     "name": "Image",
+                     "rect": "65,44,321,300",
+                     "showBorder": true,
+                     "text": "%file%: assets/IconDataFor_1002_1004_text.png",
+                     "threeD": false
+                  }
+               },
+               "1007": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1007",
+                     "label": "iconDataForFile",
+                     "layer": "3",
+                     "name": "Button",
+                     "rect": "111,355,273,378",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"IconDataFor\"",
+      "properties": {
+         "fileName": "IconDataFor.hyperxtalk",
+         "id": "1007",
+         "name": "IconDataFor",
+         "rect": "219,126,619,526"
+      },
+      "sharedGroupIDs": null
+   }
+}

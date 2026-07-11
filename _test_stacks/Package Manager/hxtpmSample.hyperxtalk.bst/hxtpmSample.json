@@ -1,0 +1,667 @@
+{
+   "#mainstack": "hxtpmSample",
+   "Data Grid Templates 1779486520875": {
+      "#name": "stack \"Data Grid Templates 1779486520875\"",
+      "backgroundIDs": "1003",
+      "cardIDs": "1002\n1005",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": null
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         },
+         "1003": {
+            "#name": "group \"_DataGridTemplateInstructions_\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"_DataGridTemplateInstructions_\"",
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": null
+                     },
+                     "cREVTable": {
+                        "currentview": "<p>You can edit the \u2026quot;Row Template\u2026quot; group on this card to customize the look and feel of your data grid form or table. To begin, select the \u2026quot;Row Template\u2026quot; group and choose Object \u2026gt; Edit Group menu item.</p>"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "foreColor": "52,52,52",
+                     "htmlText": "<p>You can edit the \"Row Template\" group on this card to customize the look and feel of your data grid form or table. To begin, select the \"Row Template\" group and choose Object \u2026gt; Edit Group menu item.</p>",
+                     "id": "1004",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "_DataGridTemplateInstructions_",
+                     "opaque": false,
+                     "rect": "4,322,478,396",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Arial",
+                     "textHeight": "18",
+                     "textSize": "14",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cGlx2TimeStamp": {
+                  "checksum": null
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1003",
+               "layer": "1",
+               "name": "_DataGridTemplateInstructions_",
+               "rect": "0,318,482,400"
+            }
+         },
+         "1005": {
+            "#name": "card id 1005",
+            "childcontrols": {
+               "1003": "#shared group",
+               "1006": {
+                  "#name": "group \"Row Template\"",
+                  "childcontrols": {
+                     "1007": {
+                        "#name": "graphic \"Background\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": null
+                           }
+                        },
+                        "properties": {
+                           "backColor": "225,225,225",
+                           "filled": true,
+                           "id": "1007",
+                           "layer": "4",
+                           "lineSize": "0",
+                           "name": "Background",
+                           "opaque": true,
+                           "rect": "0,-2,400,152"
+                        }
+                     },
+                     "1023": {
+                        "#name": "field \"title\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "id": "1023",
+                           "layer": "6",
+                           "lockText": true,
+                           "name": "title",
+                           "opaque": false,
+                           "rect": "8,5,395,26",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textSize": "16",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1024": {
+                        "#name": "field \"author\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "id": "1024",
+                           "layer": "7",
+                           "lockText": true,
+                           "name": "author",
+                           "opaque": false,
+                           "rect": "8,25,395,46",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1027": {
+                        "#name": "field \"description\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "fixedLineHeight": false,
+                           "id": "1027",
+                           "layer": "8",
+                           "lockText": true,
+                           "name": "description",
+                           "opaque": false,
+                           "rect": "5,65,300,140",
+                           "scrollbarWidth": "12",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "scrolling",
+                           "traversalOn": false,
+                           "vScrollbar": true
+                        }
+                     },
+                     "1028": {
+                        "#name": "button \"install\"",
+                        "properties": {
+                           "id": "1028",
+                           "label": "Install",
+                           "layer": "9",
+                           "name": "install",
+                           "rect": "307,117,389,140",
+                           "traversalOn": false
+                        }
+                     },
+                     "1030": {
+                        "#name": "field \"source\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "id": "1030",
+                           "layer": "10",
+                           "lockText": true,
+                           "name": "source",
+                           "opaque": false,
+                           "rect": "8,45,395,66",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1031": {
+                        "#name": "graphic \"Rectangle\"",
+                        "properties": {
+                           "bottomColor": "178,178,178",
+                           "dropShadow": {
+                              "angle": "83",
+                              "blendmode": "normal",
+                              "color": "0,0,0",
+                              "distance": "3",
+                              "filter": "box3pass",
+                              "knockout": true,
+                              "opacity": "117",
+                              "size": "3",
+                              "spread": "0"
+                           },
+                           "filled": true,
+                           "foreColor": "178,178,178",
+                           "id": "1031",
+                           "layer": "5",
+                           "margins": "8",
+                           "name": "Rectangle",
+                           "opaque": true,
+                           "rect": "3,3,397,147",
+                           "topColor": "178,178,178"
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": null
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1009 of stack \"Data Grid Templates 1779486520875\"",
+                     "borderWidth": "0",
+                     "id": "1006",
+                     "layer": "3",
+                     "margins": "0",
+                     "name": "Row Template",
+                     "rect": "0,-2,400,152"
+                  }
+               },
+               "1009": {
+                  "#name": "button \"Behavior Script\"",
+                  "properties": {
+                     "behavior": "button id 1174 of stack \"revDataGridLibrary\"",
+                     "id": "1009",
+                     "layer": "11",
+                     "name": "Behavior Script",
+                     "rect": "236,184,364,216",
+                     "visible": false
+                  }
+               },
+               "1010": {
+                  "#name": "group \"DG2 Default Action Control\"",
+                  "childcontrols": {
+                     "1011": {
+                        "#name": "button \"DG2 Default Action Control\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "255,59,48",
+                           "foreColor": "255,255,255",
+                           "id": "1011",
+                           "label": "Delete",
+                           "layer": "13",
+                           "margins": "0",
+                           "name": "DG2 Default Action Control",
+                           "rect": "250,122,350,276",
+                           "showBorder": false,
+                           "style": "opaque"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1010",
+                     "layer": "12",
+                     "layerMode": "dynamic",
+                     "margins": "0",
+                     "name": "DG2 Default Action Control",
+                     "rect": "250,122,350,276",
+                     "visible": false
+                  }
+               },
+               "1012": {
+                  "#name": "group \"DG2 Default Edit Mode Action Select Control\"",
+                  "childcontrols": {
+                     "1013": {
+                        "#name": "widget id 1013",
+                        "$kind": "com.livecode.widget.svgpath",
+                        "$state": {
+                           "angle": "0",
+                           "fillRule": "non-zero",
+                           "flip vertically": false,
+                           "hilited": false,
+                           "iconPresetName": "minus sign",
+                           "maintain aspect ratio": true,
+                           "svg path": "%file%: assets/Data Grid Templates 1779486520875_1005_1012_1013_svg path.txt"
+                        },
+                        "properties": {
+                           "id": "1013",
+                           "name": "widget id 1013",
+                           "rect": "292,184,307,216"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1012",
+                     "layer": "14",
+                     "layerMode": "dynamic",
+                     "margins": "8",
+                     "name": "DG2 Default Edit Mode Action Select Control",
+                     "rect": "284,176,315,224",
+                     "visible": false
+                  }
+               },
+               "1014": {
+                  "#name": "group \"DG2 Default Edit Mode Reorder Control\"",
+                  "childcontrols": {
+                     "1015": {
+                        "#name": "widget id 1015",
+                        "$kind": "com.livecode.widget.svgpath",
+                        "$state": {
+                           "angle": "0",
+                           "fillRule": "non-zero",
+                           "flip vertically": false,
+                           "hilited": false,
+                           "iconPresetName": "reorder",
+                           "maintain aspect ratio": true,
+                           "svg path": "%file%: assets/Data Grid Templates 1779486520875_1005_1014_1015_svg path.txt"
+                        },
+                        "properties": {
+                           "id": "1015",
+                           "name": "widget id 1015",
+                           "rect": "290,184,310,216"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1014",
+                     "layer": "16",
+                     "layerMode": "dynamic",
+                     "margins": "8",
+                     "name": "DG2 Default Edit Mode Reorder Control",
+                     "rect": "282,176,318,224",
+                     "visible": false
+                  }
+               },
+               "1016": {
+                  "#name": "group \"DG2 Default Left Swipe Control\"",
+                  "childcontrols": {
+                     "1017": {
+                        "#name": "graphic id 1017",
+                        "properties": {
+                           "backColor": "255,59,48",
+                           "filled": true,
+                           "id": "1017",
+                           "layer": "19",
+                           "lineSize": "0",
+                           "opaque": true,
+                           "rect": "237,122,362,276"
+                        }
+                     },
+                     "1018": {
+                        "#name": "widget id 1018",
+                        "$kind": "com.livecode.widget.svgpath",
+                        "$state": {
+                           "angle": "0",
+                           "fillRule": "non-zero",
+                           "flip vertically": false,
+                           "hilited": false,
+                           "iconPresetName": "trash",
+                           "maintain aspect ratio": true,
+                           "svg path": "%file%: assets/Data Grid Templates 1779486520875_1005_1016_1018_svg path.txt"
+                        },
+                        "properties": {
+                           "id": "1018",
+                           "name": "widget id 1018",
+                           "rect": "289,183,309,215"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1016",
+                     "layer": "18",
+                     "layerMode": "dynamic",
+                     "margins": "0",
+                     "name": "DG2 Default Left Swipe Control",
+                     "rect": "237,122,362,276",
+                     "visible": false
+                  }
+               },
+               "1019": {
+                  "#name": "group \"DG2 Default Right Swipe Control\"",
+                  "childcontrols": {
+                     "1020": {
+                        "#name": "graphic id 1020",
+                        "properties": {
+                           "backColor": "255,59,48",
+                           "filled": true,
+                           "id": "1020",
+                           "layer": "22",
+                           "lineSize": "0",
+                           "opaque": true,
+                           "rect": "237,122,362,276"
+                        }
+                     },
+                     "1021": {
+                        "#name": "widget id 1021",
+                        "$kind": "com.livecode.widget.svgpath",
+                        "$state": {
+                           "angle": "0",
+                           "fillRule": "non-zero",
+                           "flip vertically": false,
+                           "hilited": false,
+                           "iconPresetName": "trash",
+                           "maintain aspect ratio": true,
+                           "svg path": "%file%: assets/Data Grid Templates 1779486520875_1005_1019_1021_svg path.txt"
+                        },
+                        "properties": {
+                           "id": "1021",
+                           "name": "widget id 1021",
+                           "rect": "289,183,309,215"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1019",
+                     "layer": "21",
+                     "layerMode": "dynamic",
+                     "margins": "0",
+                     "name": "DG2 Default Right Swipe Control",
+                     "rect": "237,122,362,276",
+                     "visible": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "23"
+               }
+            },
+            "properties": {
+               "id": "1005",
+               "layer": "2"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1032"
+         }
+      },
+      "longID": "stack \"Data Grid Templates 1779486520875\" of stack \"hxtpmSample\"",
+      "properties": {
+         "id": "1032",
+         "name": "Data Grid Templates 1779486520875",
+         "rect": "481,302,1081,702"
+      },
+      "sharedGroupIDs": "1003"
+   },
+   "hxtpmSample": {
+      "#name": "stack \"hxtpmSample\"",
+      "#substacks": "Data Grid Templates 1779486520875",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1033": {
+                  "#name": "group \"packageList\"",
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": "\u0080\u0098\u001DåŸè\u0000\u0089\u0004\u0088\u0084\tò\u008F¯B~"
+                     },
+                     "dgCache": {
+                        "data": [
+                           {
+                              "author": "emily-elizabeth",
+                              "description": "Native LCE library wrapping the macOS FSEvents API to provide real-time filesystem monitoring. Dispatches messages such as fseventsFileCreated, fseventsFileModified, and fseventsFileDeleted up the message hierarchy as events occur.",
+                              "latest": "1.0.0",
+                              "license": "gpl-3.0",
+                              "name": "org.openxtalk.library.fsevents",
+                              "repository": "https://github.com/emily-elizabeth/macOSfsevents",
+                              "source": "HyperXTalk Official",
+                              "title": "macOS FSEvents",
+                              "type": "lce",
+                              "versions": [
+                                 "1.0.0"
+                              ]
+                           },
+                           {
+                              "author": "FerrusLogic Team",
+                              "description": "LiveCode IDE plugin that shows smart alignment guides and pixel distances while moving or resizing controls, making it easy to design well-spaced, aligned interfaces.",
+                              "latest": "1.0.7",
+                              "license": null,
+                              "name": "community.ferruslogic.plugin.devguides",
+                              "repository": "https://github.com/DTByte-Ltd/DevGuides",
+                              "source": "HyperXTalk Official",
+                              "title": "DevGuides",
+                              "type": "lcp",
+                              "versions": [
+                                 "1.0.7"
+                              ]
+                           },
+                           {
+                              "author": "HyperXTalk",
+                              "description": "Minimal test library for verifying the hxtpm package manager install pipeline. Call hxtpmTestPing() after install to confirm the library is live.",
+                              "latest": "1.0.0",
+                              "license": "gpl-3.0",
+                              "name": "com.hyperxtalk.library.test",
+                              "repository": "https://gist.github.com/emily-elizabeth/e0f8c61b7ed48b6b422f5cd113b20cbb",
+                              "source": "HyperXTalk Official",
+                              "title": "hxtpm Test Library",
+                              "type": "lcs",
+                              "versions": [
+                                 "1.0.0"
+                              ]
+                           }
+                        ],
+                        "sequencing": "1,2,3"
+                     },
+                     "dgProps": {
+                        "allow column resizing": false,
+                        "allow editing": false,
+                        "alternate row color": null,
+                        "alternate row colors": false,
+                        "animate actions": true,
+                        "auto hilite": true,
+                        "background color": null,
+                        "cache controls": false,
+                        "column divider color": "217,217,217",
+                        "column margins": null,
+                        "column properties": null,
+                        "column widths": null,
+                        "columns": null,
+                        "control type": "Data Grid",
+                        "corner color": "232,232,232",
+                        "data can be represented as text": true,
+                        "dim on focusOut": true,
+                        "edit mode action control": "group id 1010 of card id 1005 of stack \"Data Grid Templates 1779486520875\"",
+                        "edit mode action select control": "group id 1012 of card id 1005 of stack \"Data Grid Templates 1779486520875\"",
+                        "edit mode reorder control": "group id 1014 of card id 1005 of stack \"Data Grid Templates 1779486520875\"",
+                        "enable swipe": false,
+                        "fixed row height": true,
+                        "header background color": "219,219,219\n188,188,188",
+                        "header background hilite color": "194,207,221\n125,147,148",
+                        "header divider color": "168,168,168",
+                        "header divider threed color": "227,227,227",
+                        "header margins": null,
+                        "hilite color": null,
+                        "left swipe control": "group id 1016 of card id 1005 of stack \"Data Grid Templates 1779486520875\"",
+                        "multiple lines": false,
+                        "persistent data": true,
+                        "right swipe control": "group id 1019 of card id 1005 of stack \"Data Grid Templates 1779486520875\"",
+                        "row color": null,
+                        "row height": "154",
+                        "row template": "group id 1006 of card id 1005 of stack \"Data Grid Templates 1779486520875\"",
+                        "scroll selections into view": true,
+                        "scroll when hscrollbar is hidden": false,
+                        "scroll when vscrollbar is hidden": false,
+                        "scrollbar corner offset": "0",
+                        "scrollbar width": "auto",
+                        "show header": true,
+                        "show hscrollbar": false,
+                        "show vscrollbar": true,
+                        "style": "form"
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1005 of stack \"revDataGridLibrary\"",
+                     "borderColor": "64,64,64",
+                     "borderWidth": "0",
+                     "id": "1033",
+                     "layer": "1",
+                     "layerMode": "container",
+                     "margins": "0",
+                     "name": "packageList",
+                     "rect": "0,45,416,400",
+                     "selectGroupedControls": false,
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "2979": {
+                  "#name": "field \"Label Repo\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>Repo:</p>",
+                     "id": "2979",
+                     "layer": "70",
+                     "lockText": true,
+                     "name": "Label Repo",
+                     "opaque": false,
+                     "rect": "-36,8,64,29",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "2980": {
+                  "#name": "button \"repos\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "2980",
+                     "label": "HyperXTalk Official",
+                     "layer": "71",
+                     "menuMode": "option",
+                     "name": "repos",
+                     "rect": "66,8,383,30",
+                     "style": "menu",
+                     "text": "HyperXTalk Official",
+                     "textAlign": "left",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "71"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "4471"
+         }
+      },
+      "longID": "stack \"hxtpmSample\"",
+      "properties": {
+         "fileName": "hxtpmSample.hyperxtalk",
+         "id": "4589",
+         "name": "hxtpmSample",
+         "rect": "228,254,644,654",
+         "resizable": false
+      },
+      "sharedGroupIDs": null
+   },
+   "tAddress": {
+      "childcontrols": "#data grid group"
+   }
+}

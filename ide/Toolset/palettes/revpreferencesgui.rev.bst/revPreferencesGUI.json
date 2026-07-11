@@ -447,6 +447,7 @@
                      "id": "1003",
                      "layer": "2",
                      "lockLoc": true,
+                     "menuHistory": "5",
                      "menuMode": "tabbed",
                      "name": "Tab Menu",
                      "rect": "-1,6,601,606",
@@ -2959,7 +2960,7 @@
          "foreColor": "#000000",
          "id": "1176",
          "name": "revPreferencesGUI",
-         "rect": "297,118,895,480",
+         "rect": "297,118,895,564",
          "title": "Settings"
       },
       "sharedGroupIDs": "1004"

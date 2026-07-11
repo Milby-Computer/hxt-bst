@@ -3,7 +3,7 @@ Script "stack_revStandaloneSettings_group_id_1283"
 /*
 # Name: group "plist" of group "OSX" of card "OS X" of stack "revStandaloneSettings"
 # ID: group id 1283 of group id 1221 of card id 1015 of stack "revStandaloneSettings"
-# Hash: m/oT9OOUHL8gYNbGmUePdA==
+# Hash: ySoAkMC2Tib7k0IpVMfOEQ==
 */
 
 
@@ -26,4 +26,5 @@ on mouseUp
          break
    end switch
    revChangeWindowSize item 1 of the cSize of this card,tSize,"snap",,250
+   set the bottom of button "Entitlements" to (the bottom of this card - 20)
 end mouseUp

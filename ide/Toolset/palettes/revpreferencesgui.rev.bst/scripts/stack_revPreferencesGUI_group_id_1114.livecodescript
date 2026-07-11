@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI_group_id_1114"
 /*
 # Name: group "Script Editor" of card "Editor" of stack "revPreferencesGUI"
 # ID: group id 1114 of card id 1008 of stack "revPreferencesGUI"
-# Hash: OMITA5/S0XIiUCE4NNAHzQ==
+# Hash: y2Banh9G0p1F1WpAJ0TPHw==
 */
 
 
@@ -148,7 +148,7 @@ on menuPick pItem
       set the menuHistory of button "Colorization Scheme" to (lineOffset(tSchemeName, the text of button "Colorization Scheme"))
       modeless stack "revScriptColourEditor"
       
-   else if (pItem is not among the items of "Default,Revolution Classic,No Colorization") then
+   else if (pItem is not among the items of "Default,Revolution Classic,One Dark Pro,No Colorization") then
       local tFilePath
       put revEnvironmentUserColorSchemesPath() & SLASH & pItem & ".scheme" into tFilePath
       
