@@ -1,0 +1,1059 @@
+{
+   "#mainstack": "ae6demo",
+   "ae6demo": {
+      "#name": "stack \"ae6demo\"",
+      "#substacks": null,
+      "backgroundIDs": "1023\n1067",
+      "cardIDs": "1002\n1007\n1008\n1024\n1030",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1023": "#shared group",
+               "1053": {
+                  "#name": "field \"Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/ae6demo_1002_1053_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "htmlText": "%file%: assets/ae6demo_1002_1053_htmlText.txt",
+                     "id": "1053",
+                     "layer": "9",
+                     "lockText": true,
+                     "name": "Field",
+                     "rect": "0,99,656,464",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "textFont": "tahoma",
+                     "textSize": "14",
+                     "vScrollbar": true
+                  }
+               },
+               "1067": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "9"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         },
+         "1007": {
+            "#name": "card id 1007",
+            "childcontrols": {
+               "1003": {
+                  "#name": "graphic \"path\"",
+                  "properties": {
+                     "id": "1003",
+                     "layer": "6",
+                     "name": "path",
+                     "rect": "70,118,230,278",
+                     "style": "oval"
+                  }
+               },
+               "1004": {
+                  "#name": "graphic \"ball\"",
+                  "properties": {
+                     "backColor": "255,240,61",
+                     "filled": true,
+                     "id": "1004",
+                     "layer": "7",
+                     "name": "ball",
+                     "opaque": true,
+                     "rect": "132,100,168,136",
+                     "style": "oval"
+                  }
+               },
+               "1005": {
+                  "#name": "button \"clockwise\"",
+                  "properties": {
+                     "id": "1005",
+                     "layer": "8",
+                     "name": "clockwise",
+                     "rect": "410,106,492,129",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "button \"counterclockwise\"",
+                  "properties": {
+                     "id": "1006",
+                     "layer": "9",
+                     "name": "counterclockwise",
+                     "rect": "498,106,620,129",
+                     "traversalOn": false
+                  }
+               },
+               "1023": "#shared group",
+               "1057": {
+                  "#name": "field \"Field\"",
+                  "properties": {
+                     "htmlText": "%file%: assets/ae6demo_1007_1057_htmlText.txt",
+                     "id": "1057",
+                     "layer": "13",
+                     "name": "Field",
+                     "rect": "0,318,656,464",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textSize": "12",
+                     "vScrollbar": true
+                  }
+               },
+               "1067": "#shared group",
+               "1073": {
+                  "#name": "graphic \"Jobs\"",
+                  "customproperties": {
+                     "textmargins": "0,-6,0,0"
+                  },
+                  "custompropertysets": {
+                     "cGlx2General": {
+                        "cConstants": null,
+                        "cDirtyFlag": false,
+                        "cExplicitVariables": null,
+                        "cFolders": "all handlers",
+                        "cGlobals": null,
+                        "cHandlers": "mouseUp",
+                        "cHandlersListWidth": "86",
+                        "cHilitedLine": null,
+                        "cHscrollHandlers": "0",
+                        "cHscrollScript": "0",
+                        "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089I\u0089\u0089).\u0005\u0012ô\u0080\u0088\n\u0089\u0088E\u0080\u0088\u0082J\u0088\u0086\u0088\u0086\u0088\u0086\u009C\u0088\u0086\u0080Jv6\u0088\u0099 q\u0084\u0092ú\u001C\u0084å\u0092ºîú\u0080\u0098¢b\u001B}\u0080B\u0088\u009D\u0002;\u0000\b\u0088\u009B\u009128\u0000\u0000\u0000",
+                        "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0080\u009D\u0080\u0099µSH\u0083\u0080Q»H\u0083K\u0080I-*\u0080\u0080\u0085 \u0093S»\u0095/-N\r-\u0080R\u0000\u0087\u0080\u0085\u0080\u0098í\u0080\u009C\u0002\u0081\u0080\u009C¢¢\u0080\u0098º\u0012ó\u0092íT\u0086\u0080\u0098º\u0014ò\u0002\u0000L\u0088L\u0089\u0088=\u0000\u0000\u0000",
+                        "cLocals": null,
+                        "cScriptChecksum": null,
+                        "cSelectedChunk": "char 32 to 31",
+                        "cVscrollHandlers": "0",
+                        "cVscrollScript": "0"
+                     },
+                     "cGlx2TimeStamp": {
+                        "1252506949": "start",
+                        "1252506955": "working",
+                        "checksum": "u\\/\u0016\u0085\u0091\u0099\u0082ù\u008524MSµM#"
+                     }
+                  },
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "304,316",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,188,188,188\n1.00000,242,242,242",
+                        "repeat": "1",
+                        "to": "304,303",
+                        "type": "linear",
+                        "via": "409,316",
+                        "wrap": false
+                     },
+                     "foreColor": "71,71,71",
+                     "id": "1073",
+                     "label": "Neues Ereignis",
+                     "layer": "14",
+                     "margins": "0,-5,0,0",
+                     "name": "Jobs",
+                     "opaque": true,
+                     "rect": "0,300,660,320"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "14"
+               }
+            },
+            "properties": {
+               "id": "1007",
+               "layer": "2"
+            }
+         },
+         "1008": {
+            "#name": "card id 1008",
+            "childcontrols": {
+               "1009": {
+                  "#name": "graphic \"Morpher\"",
+                  "properties": {
+                     "backColor": "255,217,94",
+                     "filled": true,
+                     "id": "1009",
+                     "layer": "6",
+                     "name": "Morpher",
+                     "opaque": true,
+                     "points": "%file%: assets/ae6demo_1008_1009_points.bin",
+                     "rect": "49,119,151,221",
+                     "style": "curve"
+                  }
+               },
+               "1011": {
+                  "#name": "button \"morph\"",
+                  "customproperties": {
+                     "flag": true
+                  },
+                  "properties": {
+                     "id": "1011",
+                     "layer": "7",
+                     "name": "morph",
+                     "rect": "434,106,516,129",
+                     "traversalOn": false
+                  }
+               },
+               "1019": {
+                  "#name": "group \"Effect\"",
+                  "childcontrols": {
+                     "1013": {
+                        "#name": "button \"none\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1013",
+                           "layer": "9",
+                           "name": "none",
+                           "opaque": false,
+                           "rect": "300,104,382,127",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1014": {
+                        "#name": "button \"In\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1014",
+                           "layer": "10",
+                           "name": "In",
+                           "opaque": false,
+                           "rect": "300,132,382,155",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1015": {
+                        "#name": "button \"Out\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1015",
+                           "layer": "11",
+                           "name": "Out",
+                           "opaque": false,
+                           "rect": "300,160,382,183",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1016": {
+                        "#name": "button \"InOut\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1016",
+                           "layer": "12",
+                           "name": "InOut",
+                           "opaque": false,
+                           "rect": "300,186,382,209",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1017": {
+                        "#name": "button \"overshoot\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1017",
+                           "layer": "13",
+                           "name": "overshoot",
+                           "opaque": false,
+                           "rect": "300,214,382,237",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1018": {
+                        "#name": "button \"bounce\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1018",
+                           "layer": "14",
+                           "name": "bounce",
+                           "opaque": false,
+                           "rect": "300,242,382,265",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "5",
+                     "id": "1019",
+                     "layer": "8",
+                     "name": "Effect",
+                     "rect": "296,100,386,269"
+                  }
+               },
+               "1023": "#shared group",
+               "1059": {
+                  "#name": "field \"Field\"",
+                  "properties": {
+                     "htmlText": "%file%: assets/ae6demo_1008_1059_htmlText.txt",
+                     "id": "1059",
+                     "layer": "18",
+                     "name": "Field",
+                     "rect": "0,320,658,464",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textSize": "14",
+                     "vScrollbar": true
+                  }
+               },
+               "1067": "#shared group",
+               "1074": {
+                  "#name": "graphic \"Jobs\"",
+                  "customproperties": {
+                     "textmargins": "0,-6,0,0"
+                  },
+                  "custompropertysets": {
+                     "cGlx2General": {
+                        "cConstants": null,
+                        "cDirtyFlag": false,
+                        "cExplicitVariables": null,
+                        "cFolders": "all handlers",
+                        "cGlobals": null,
+                        "cHandlers": "mouseUp",
+                        "cHandlersListWidth": "86",
+                        "cHilitedLine": null,
+                        "cHscrollHandlers": "0",
+                        "cHscrollScript": "0",
+                        "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089I\u0089\u0089).\u0005\u0012ô\u0080\u0088\n\u0089\u0088E\u0080\u0088\u0082J\u0088\u0086\u0088\u0086\u0088\u0086\u009C\u0088\u0086\u0080Jv6\u0088\u0099 q\u0084\u0092ú\u001C\u0084å\u0092ºîú\u0080\u0098¢b\u001B}\u0080B\u0088\u009D\u0002;\u0000\b\u0088\u009B\u009128\u0000\u0000\u0000",
+                        "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0080\u009D\u0080\u0099µSH\u0083\u0080Q»H\u0083K\u0080I-*\u0080\u0080\u0085 \u0093S»\u0095/-N\r-\u0080R\u0000\u0087\u0080\u0085\u0080\u0098í\u0080\u009C\u0002\u0081\u0080\u009C¢¢\u0080\u0098º\u0012ó\u0092íT\u0086\u0080\u0098º\u0014ò\u0002\u0000L\u0088L\u0089\u0088=\u0000\u0000\u0000",
+                        "cLocals": null,
+                        "cScriptChecksum": null,
+                        "cSelectedChunk": "char 32 to 31",
+                        "cVscrollHandlers": "0",
+                        "cVscrollScript": "0"
+                     },
+                     "cGlx2TimeStamp": {
+                        "1252506949": "start",
+                        "1252506955": "working",
+                        "checksum": "u\\/\u0016\u0085\u0091\u0099\u0082ù\u008524MSµM#"
+                     }
+                  },
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "304,316",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,188,188,188\n1.00000,242,242,242",
+                        "repeat": "1",
+                        "to": "304,303",
+                        "type": "linear",
+                        "via": "409,316",
+                        "wrap": false
+                     },
+                     "foreColor": "71,71,71",
+                     "id": "1074",
+                     "label": "Neues Ereignis",
+                     "layer": "19",
+                     "margins": "0,-5,0,0",
+                     "name": "Jobs",
+                     "opaque": true,
+                     "rect": "0,300,660,320"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "19"
+               }
+            },
+            "properties": {
+               "id": "1008",
+               "layer": "3"
+            }
+         },
+         "1023": {
+            "#name": "group \"nav\"",
+            "childcontrols": {
+               "1021": {
+                  "#name": "button \"next\"",
+                  "properties": {
+                     "id": "1021",
+                     "layer": "7",
+                     "name": "next",
+                     "rect": "574,486,656,509",
+                     "traversalOn": false
+                  }
+               },
+               "1022": {
+                  "#name": "button \"previous\"",
+                  "properties": {
+                     "id": "1022",
+                     "layer": "8",
+                     "name": "previous",
+                     "rect": "490,486,572,509",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1023",
+               "layer": "6",
+               "name": "nav",
+               "rect": "486,482,660,513"
+            }
+         },
+         "1024": {
+            "#name": "card id 1024",
+            "childcontrols": {
+               "1023": "#shared group",
+               "1025": {
+                  "#name": "graphic \"morpher\"",
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "322,280",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,255,55,255\n1.00000,30,70,100",
+                        "repeat": "1",
+                        "to": "318,138",
+                        "type": "linear",
+                        "via": "1030,281",
+                        "wrap": false
+                     },
+                     "id": "1025",
+                     "layer": "9",
+                     "name": "morpher",
+                     "opaque": true,
+                     "rect": "-2,136,654,282"
+                  }
+               },
+               "1027": {
+                  "#name": "button \"morph\"",
+                  "customproperties": {
+                     "flag": false
+                  },
+                  "properties": {
+                     "id": "1027",
+                     "layer": "10",
+                     "name": "morph",
+                     "rect": "562,108,644,131",
+                     "traversalOn": false
+                  }
+               },
+               "1061": {
+                  "#name": "field \"Field\"",
+                  "properties": {
+                     "htmlText": "%file%: assets/ae6demo_1024_1061_htmlText.txt",
+                     "id": "1061",
+                     "layer": "11",
+                     "name": "Field",
+                     "rect": "0,320,656,464",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textSize": "14",
+                     "vScrollbar": true
+                  }
+               },
+               "1067": "#shared group",
+               "1075": {
+                  "#name": "graphic \"Jobs\"",
+                  "customproperties": {
+                     "textmargins": "0,-6,0,0"
+                  },
+                  "custompropertysets": {
+                     "cGlx2General": {
+                        "cConstants": null,
+                        "cDirtyFlag": false,
+                        "cExplicitVariables": null,
+                        "cFolders": "all handlers",
+                        "cGlobals": null,
+                        "cHandlers": "mouseUp",
+                        "cHandlersListWidth": "86",
+                        "cHilitedLine": null,
+                        "cHscrollHandlers": "0",
+                        "cHscrollScript": "0",
+                        "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089I\u0089\u0089).\u0005\u0012ô\u0080\u0088\n\u0089\u0088E\u0080\u0088\u0082J\u0088\u0086\u0088\u0086\u0088\u0086\u009C\u0088\u0086\u0080Jv6\u0088\u0099 q\u0084\u0092ú\u001C\u0084å\u0092ºîú\u0080\u0098¢b\u001B}\u0080B\u0088\u009D\u0002;\u0000\b\u0088\u009B\u009128\u0000\u0000\u0000",
+                        "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0080\u009D\u0080\u0099µSH\u0083\u0080Q»H\u0083K\u0080I-*\u0080\u0080\u0085 \u0093S»\u0095/-N\r-\u0080R\u0000\u0087\u0080\u0085\u0080\u0098í\u0080\u009C\u0002\u0081\u0080\u009C¢¢\u0080\u0098º\u0012ó\u0092íT\u0086\u0080\u0098º\u0014ò\u0002\u0000L\u0088L\u0089\u0088=\u0000\u0000\u0000",
+                        "cLocals": null,
+                        "cScriptChecksum": null,
+                        "cSelectedChunk": "char 32 to 31",
+                        "cVscrollHandlers": "0",
+                        "cVscrollScript": "0"
+                     },
+                     "cGlx2TimeStamp": {
+                        "1252506949": "start",
+                        "1252506955": "working",
+                        "checksum": "u\\/\u0016\u0085\u0091\u0099\u0082ù\u008524MSµM#"
+                     }
+                  },
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "304,316",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,188,188,188\n1.00000,242,242,242",
+                        "repeat": "1",
+                        "to": "304,303",
+                        "type": "linear",
+                        "via": "409,316",
+                        "wrap": false
+                     },
+                     "foreColor": "71,71,71",
+                     "id": "1075",
+                     "label": "Neues Ereignis",
+                     "layer": "12",
+                     "margins": "0,-5,0,0",
+                     "name": "Jobs",
+                     "opaque": true,
+                     "rect": "0,300,660,320"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "12"
+               }
+            },
+            "properties": {
+               "id": "1024",
+               "layer": "4"
+            }
+         },
+         "1030": {
+            "#name": "card id 1030",
+            "childcontrols": {
+               "1023": "#shared group",
+               "1037": {
+                  "#name": "graphic \"center\"",
+                  "customproperties": {
+                     "constrainCircular": null,
+                     "constrainElliptical": null,
+                     "constrainLinear": null,
+                     "constrainRectangular": "0,0,656,532",
+                     "uAllowConstrainDrag": null
+                  },
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "200,200",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,183,248,8\n1.00000,60,149,56",
+                        "repeat": "1",
+                        "to": "200,187",
+                        "type": "radial",
+                        "via": "212,196",
+                        "wrap": false
+                     },
+                     "id": "1037",
+                     "layer": "15",
+                     "name": "center",
+                     "opaque": true,
+                     "rect": "186,186,214,214",
+                     "style": "oval"
+                  }
+               },
+               "1039": {
+                  "#name": "group \"rotateme\"",
+                  "childcontrols": {
+                     "1047": {
+                        "#name": "graphic \"Rectangle\"",
+                        "customproperties": {
+                           "constrainCircular": null,
+                           "constrainElliptical": null,
+                           "constrainLinear": null,
+                           "constrainRectangular": "0,0,656,532",
+                           "uAllowConstrainDrag": null
+                        },
+                        "properties": {
+                           "filled": true,
+                           "fillGradient": {
+                              "from": "161,163",
+                              "mirror": false,
+                              "quality": "normal",
+                              "ramp": "0.00000,255,34,60\n1.00000,144,185,30",
+                              "repeat": "1",
+                              "to": "161,119",
+                              "type": "linear",
+                              "via": "205,163",
+                              "wrap": false
+                           },
+                           "id": "1047",
+                           "layer": "9",
+                           "name": "Rectangle",
+                           "opaque": true,
+                           "rect": "142,127,178,163"
+                        }
+                     },
+                     "1048": {
+                        "#name": "graphic \"Regular Polygon\"",
+                        "customproperties": {
+                           "constrainCircular": null,
+                           "constrainElliptical": null,
+                           "constrainLinear": null,
+                           "constrainRectangular": "0,0,656,532",
+                           "uAllowConstrainDrag": null
+                        },
+                        "properties": {
+                           "backColor": "255,219,92",
+                           "filled": true,
+                           "id": "1048",
+                           "layer": "10",
+                           "name": "Regular Polygon",
+                           "opaque": true,
+                           "polySides": "3",
+                           "rect": "121,221,179,279",
+                           "style": "regular"
+                        }
+                     },
+                     "1049": {
+                        "#name": "graphic \"Oval\"",
+                        "customproperties": {
+                           "constrainCircular": null,
+                           "constrainElliptical": null,
+                           "constrainLinear": null,
+                           "constrainRectangular": "0,0,656,532",
+                           "uAllowConstrainDrag": null
+                        },
+                        "properties": {
+                           "filled": true,
+                           "fillGradient": {
+                              "from": "229,252",
+                              "mirror": false,
+                              "quality": "normal",
+                              "ramp": "0.00000,255,255,255\n1.00000,20,56,155",
+                              "repeat": "1",
+                              "to": "268,249",
+                              "type": "linear",
+                              "via": "232,291",
+                              "wrap": false
+                           },
+                           "id": "1049",
+                           "layer": "11",
+                           "name": "Oval",
+                           "opaque": true,
+                           "rect": "227,227,273,273",
+                           "style": "oval"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1039",
+                     "layer": "8",
+                     "name": "rotateme",
+                     "rect": "117,123,277,283"
+                  }
+               },
+               "1041": {
+                  "#name": "button \"rotateGroup\"",
+                  "properties": {
+                     "id": "1041",
+                     "layer": "16",
+                     "name": "rotateGroup",
+                     "rect": "508,102,618,125",
+                     "traversalOn": false
+                  }
+               },
+               "1051": {
+                  "#name": "field \"tip\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Now drag the green dot!"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Now drag the green dot!</p>",
+                     "id": "1051",
+                     "layer": "17",
+                     "lockText": true,
+                     "name": "tip",
+                     "opaque": false,
+                     "rect": "408,126,655,156",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "14",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1055": {
+                  "#name": "button \"reset\"",
+                  "properties": {
+                     "id": "1055",
+                     "layer": "18",
+                     "name": "reset",
+                     "rect": "430,103,504,125",
+                     "traversalOn": false
+                  }
+               },
+               "1063": {
+                  "#name": "field \"Field\"",
+                  "properties": {
+                     "htmlText": "%file%: assets/ae6demo_1030_1063_htmlText.txt",
+                     "id": "1063",
+                     "layer": "7",
+                     "name": "Field",
+                     "rect": "0,320,656,464",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textSize": "14",
+                     "vScrollbar": true
+                  }
+               },
+               "1067": "#shared group",
+               "1077": {
+                  "#name": "graphic \"Jobs\"",
+                  "customproperties": {
+                     "textmargins": "0,-6,0,0"
+                  },
+                  "custompropertysets": {
+                     "cGlx2General": {
+                        "cConstants": null,
+                        "cDirtyFlag": false,
+                        "cExplicitVariables": null,
+                        "cFolders": "all handlers",
+                        "cGlobals": null,
+                        "cHandlers": "mouseUp",
+                        "cHandlersListWidth": "86",
+                        "cHilitedLine": null,
+                        "cHscrollHandlers": "0",
+                        "cHscrollScript": "0",
+                        "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089I\u0089\u0089).\u0005\u0012ô\u0080\u0088\n\u0089\u0088E\u0080\u0088\u0082J\u0088\u0086\u0088\u0086\u0088\u0086\u009C\u0088\u0086\u0080Jv6\u0088\u0099 q\u0084\u0092ú\u001C\u0084å\u0092ºîú\u0080\u0098¢b\u001B}\u0080B\u0088\u009D\u0002;\u0000\b\u0088\u009B\u009128\u0000\u0000\u0000",
+                        "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0080\u009D\u0080\u0099µSH\u0083\u0080Q»H\u0083K\u0080I-*\u0080\u0080\u0085 \u0093S»\u0095/-N\r-\u0080R\u0000\u0087\u0080\u0085\u0080\u0098í\u0080\u009C\u0002\u0081\u0080\u009C¢¢\u0080\u0098º\u0012ó\u0092íT\u0086\u0080\u0098º\u0014ò\u0002\u0000L\u0088L\u0089\u0088=\u0000\u0000\u0000",
+                        "cLocals": null,
+                        "cScriptChecksum": null,
+                        "cSelectedChunk": "char 32 to 31",
+                        "cVscrollHandlers": "0",
+                        "cVscrollScript": "0"
+                     },
+                     "cGlx2TimeStamp": {
+                        "1252506949": "start",
+                        "1252506955": "working",
+                        "checksum": "u\\/\u0016\u0085\u0091\u0099\u0082ù\u008524MSµM#"
+                     }
+                  },
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "304,316",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,188,188,188\n1.00000,242,242,242",
+                        "repeat": "1",
+                        "to": "304,303",
+                        "type": "linear",
+                        "via": "409,316",
+                        "wrap": false
+                     },
+                     "foreColor": "71,71,71",
+                     "id": "1077",
+                     "label": "Neues Ereignis",
+                     "layer": "1",
+                     "margins": "0,-5,0,0",
+                     "name": "Jobs",
+                     "opaque": true,
+                     "rect": "0,300,660,320"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "18"
+               }
+            },
+            "properties": {
+               "id": "1030",
+               "layer": "5"
+            }
+         },
+         "1067": {
+            "#name": "group \"imgGrp\"",
+            "childcontrols": {
+               "1066": {
+                  "#name": "image \"ae.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1066",
+                     "layer": "2",
+                     "name": "ae.png",
+                     "rect": "0,0,180,80",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/ae6demo_1067_1066_text.png"
+                  }
+               },
+               "1071": {
+                  "#name": "graphic \"Jobs\"",
+                  "customproperties": {
+                     "constrainCircular": null,
+                     "constrainElliptical": null,
+                     "constrainLinear": null,
+                     "constrainRectangular": "0,0,656,532",
+                     "textmargins": "0,-6,0,0"
+                  },
+                  "custompropertysets": {
+                     "cGlx2General": {
+                        "cConstants": null,
+                        "cDirtyFlag": false,
+                        "cExplicitVariables": null,
+                        "cFolders": "all handlers",
+                        "cGlobals": null,
+                        "cHandlers": "mouseUp",
+                        "cHandlersListWidth": "86",
+                        "cHilitedLine": null,
+                        "cHscrollHandlers": "0",
+                        "cHscrollScript": "0",
+                        "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089I\u0089\u0089).\u0005\u0012ô\u0080\u0088\n\u0089\u0088E\u0080\u0088\u0082J\u0088\u0086\u0088\u0086\u0088\u0086\u009C\u0088\u0086\u0080Jv6\u0088\u0099 q\u0084\u0092ú\u001C\u0084å\u0092ºîú\u0080\u0098¢b\u001B}\u0080B\u0088\u009D\u0002;\u0000\b\u0088\u009B\u009128\u0000\u0000\u0000",
+                        "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0080\u009D\u0080\u0099µSH\u0083\u0080Q»H\u0083K\u0080I-*\u0080\u0080\u0085 \u0093S»\u0095/-N\r-\u0080R\u0000\u0087\u0080\u0085\u0080\u0098í\u0080\u009C\u0002\u0081\u0080\u009C¢¢\u0080\u0098º\u0012ó\u0092íT\u0086\u0080\u0098º\u0014ò\u0002\u0000L\u0088L\u0089\u0088=\u0000\u0000\u0000",
+                        "cLocals": null,
+                        "cScriptChecksum": null,
+                        "cSelectedChunk": "char 32 to 31",
+                        "cVscrollHandlers": "0",
+                        "cVscrollScript": "0"
+                     },
+                     "cGlx2TimeStamp": {
+                        "1252506949": "start",
+                        "1252506955": "working",
+                        "checksum": "u\\/\u0016\u0085\u0091\u0099\u0082ù\u008524MSµM#"
+                     }
+                  },
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "303,96",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,188,188,188\n1.00000,242,242,242",
+                        "repeat": "1",
+                        "to": "303,83",
+                        "type": "linear",
+                        "via": "408,96",
+                        "wrap": false
+                     },
+                     "foreColor": "71,71,71",
+                     "id": "1071",
+                     "label": "Neues Ereignis",
+                     "layer": "3",
+                     "margins": "0,-5,0,0",
+                     "name": "Jobs",
+                     "opaque": true,
+                     "rect": "-1,80,659,100"
+                  }
+               },
+               "1072": {
+                  "#name": "graphic \"Jobs\"",
+                  "customproperties": {
+                     "constrainCircular": null,
+                     "constrainElliptical": null,
+                     "constrainLinear": null,
+                     "constrainRectangular": "0,0,656,532",
+                     "textmargins": "0,-6,0,0"
+                  },
+                  "custompropertysets": {
+                     "cGlx2General": {
+                        "cConstants": null,
+                        "cDirtyFlag": false,
+                        "cExplicitVariables": null,
+                        "cFolders": "all handlers",
+                        "cGlobals": null,
+                        "cHandlers": "mouseUp",
+                        "cHandlersListWidth": "86",
+                        "cHilitedLine": null,
+                        "cHscrollHandlers": "0",
+                        "cHscrollScript": "0",
+                        "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089I\u0089\u0089).\u0005\u0012ô\u0080\u0088\n\u0089\u0088E\u0080\u0088\u0082J\u0088\u0086\u0088\u0086\u0088\u0086\u009C\u0088\u0086\u0080Jv6\u0088\u0099 q\u0084\u0092ú\u001C\u0084å\u0092ºîú\u0080\u0098¢b\u001B}\u0080B\u0088\u009D\u0002;\u0000\b\u0088\u009B\u009128\u0000\u0000\u0000",
+                        "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0080\u009D\u0080\u0099µSH\u0083\u0080Q»H\u0083K\u0080I-*\u0080\u0080\u0085 \u0093S»\u0095/-N\r-\u0080R\u0000\u0087\u0080\u0085\u0080\u0098í\u0080\u009C\u0002\u0081\u0080\u009C¢¢\u0080\u0098º\u0012ó\u0092íT\u0086\u0080\u0098º\u0014ò\u0002\u0000L\u0088L\u0089\u0088=\u0000\u0000\u0000",
+                        "cLocals": null,
+                        "cScriptChecksum": null,
+                        "cSelectedChunk": "char 32 to 31",
+                        "cVscrollHandlers": "0",
+                        "cVscrollScript": "0"
+                     },
+                     "cGlx2TimeStamp": {
+                        "1252506949": "start",
+                        "1252506955": "working",
+                        "checksum": "u\\/\u0016\u0085\u0091\u0099\u0082ù\u008524MSµM#"
+                     }
+                  },
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "303,529",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,188,188,188\n1.00000,242,242,242",
+                        "repeat": "1",
+                        "to": "303,516",
+                        "type": "linear",
+                        "via": "408,529",
+                        "wrap": false
+                     },
+                     "foreColor": "71,71,71",
+                     "id": "1072",
+                     "label": "Neues Ereignis",
+                     "layer": "4",
+                     "margins": "0,-5,0,0",
+                     "name": "Jobs",
+                     "opaque": true,
+                     "rect": "-1,513,659,533"
+                  }
+               },
+               "1076": {
+                  "#name": "graphic \"Jobs\"",
+                  "customproperties": {
+                     "constrainCircular": null,
+                     "constrainElliptical": null,
+                     "constrainLinear": null,
+                     "constrainRectangular": "0,0,656,532",
+                     "textmargins": "0,-6,0,0"
+                  },
+                  "custompropertysets": {
+                     "cGlx2General": {
+                        "cConstants": null,
+                        "cDirtyFlag": false,
+                        "cExplicitVariables": null,
+                        "cFolders": "all handlers",
+                        "cGlobals": null,
+                        "cHandlers": "mouseUp",
+                        "cHandlersListWidth": "86",
+                        "cHilitedLine": null,
+                        "cHscrollHandlers": "0",
+                        "cHscrollScript": "0",
+                        "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089I\u0089\u0089).\u0005\u0012ô\u0080\u0088\n\u0089\u0088E\u0080\u0088\u0082J\u0088\u0086\u0088\u0086\u0088\u0086\u009C\u0088\u0086\u0080Jv6\u0088\u0099 q\u0084\u0092ú\u001C\u0084å\u0092ºîú\u0080\u0098¢b\u001B}\u0080B\u0088\u009D\u0002;\u0000\b\u0088\u009B\u009128\u0000\u0000\u0000",
+                        "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0080\u009D\u0080\u0099µSH\u0083\u0080Q»H\u0083K\u0080I-*\u0080\u0080\u0085 \u0093S»\u0095/-N\r-\u0080R\u0000\u0087\u0080\u0085\u0080\u0098í\u0080\u009C\u0002\u0081\u0080\u009C¢¢\u0080\u0098º\u0012ó\u0092íT\u0086\u0080\u0098º\u0014ò\u0002\u0000L\u0088L\u0089\u0088=\u0000\u0000\u0000",
+                        "cLocals": null,
+                        "cScriptChecksum": null,
+                        "cSelectedChunk": "char 32 to 31",
+                        "cVscrollHandlers": "0",
+                        "cVscrollScript": "0"
+                     },
+                     "cGlx2TimeStamp": {
+                        "1252506949": "start",
+                        "1252506955": "working",
+                        "checksum": "u\\/\u0016\u0085\u0091\u0099\u0082ù\u008524MSµM#"
+                     }
+                  },
+                  "properties": {
+                     "filled": true,
+                     "fillGradient": {
+                        "from": "303,479",
+                        "mirror": false,
+                        "quality": "normal",
+                        "ramp": "0.00000,188,188,188\n1.00000,242,242,242",
+                        "repeat": "1",
+                        "to": "303,466",
+                        "type": "linear",
+                        "via": "408,479",
+                        "wrap": false
+                     },
+                     "foreColor": "71,71,71",
+                     "id": "1076",
+                     "label": "Neues Ereignis",
+                     "layer": "5",
+                     "margins": "0,-5,0,0",
+                     "name": "Jobs",
+                     "opaque": true,
+                     "rect": "-1,463,659,483"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1067",
+               "layer": "1",
+               "name": "imgGrp",
+               "rect": "-5,-4,663,537",
+               "sharedBehavior": true
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1077"
+         },
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "cursors": false,
+            "defaultBuildFolder": "/Users/emily-elizabethhoward/Downloads",
+            "inclusions": "search",
+            "Linux": false,
+            "Linux ARMv6-HF": false,
+            "Linux x64": false,
+            "MacOSX arm64": true,
+            "name": "ae6demo",
+            "OSX,copyright": "2026  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,iconFile": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Runtime/Mac OS X/arm64/Support/Sample Icons/GenericApplication.icns",
+            "OSX,identifier": "com..ae6demo",
+            "OSX,info": "ae6demo Version 1.0.0.0",
+            "OSX,longVersion": "ae6demo 1.0.0.0",
+            "OSX,name": "ae6demo",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "scriptLibraries": null,
+            "Solaris Intel": false,
+            "Solaris SPARC": false,
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Windows": false,
+            "Windows x86-64": false,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Runtime/Windows/x86-32/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "ae6demo 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Runtime/Windows/x86-32/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2026  All rights reserved worldwide",
+            "Windows,ProductName": "ae6demo",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0",
+            "Windows,UUID": null
+         }
+      },
+      "longID": "stack \"ae6demo\"",
+      "properties": {
+         "backColor": "157,152,152",
+         "fileName": "ae6demo.hyperxtalk",
+         "id": "1077",
+         "name": "ae6demo",
+         "rect": "240,113,896,645",
+         "resizable": false
+      },
+      "sharedGroupIDs": "1023\n1067"
+   }
+}

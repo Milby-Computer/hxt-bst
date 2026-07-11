@@ -1,0 +1,22 @@
+<p></p>
+<p>aeMorphGraphic transitions a graphic between 2 pointlists. This is also known as "tweening".</p>
+<p></p>
+<p>Example: </p>
+<p></p>
+<p>aeMorphGraphic the long ID of grc 1,sPoints1,sPoints2,1500, tEffect</p>
+<p></p>
+<p>Parameters:</p>
+<p></p>
+<p>   long ID of a graphic object</p>
+<p>   pointList (start)</p>
+<p>   pointList (end)</p>
+<p>   duration in millisecs</p>
+<p>   easing method (in, out, inOut, overshoot, bounce or empty)</p>
+<p></p>
+<p>See stack ae6demo to see it in action.</p>
+<p></p>
+<p>Attention! </p>
+<p></p>
+<p>Currently the pointLists must hold an equal number of entries, otherwise the morphing of the graphics will break. If there is enough interested in this feature, I will try to explore means to change that behaviour.</p>
+<p></p>
+<p></p>

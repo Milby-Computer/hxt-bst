@@ -1,0 +1,15 @@
+<p></p>
+<p>aeRotateGroup rotates all members of the target group around an arbitrary point.</p>
+<p></p>
+<p>Example: </p>
+<p></p>
+<p>aeRotateGroup the long ID of grp "rotateMe", the loc of grc "Center",90,1000,"overshoot"</p>
+<p></p>
+<p>Parameters:</p>
+<p></p>
+<p>   long ID of a group</p>
+<p>   centerX of rotationPoint</p>
+<p>   centerY of rotationPoint (centerX and centerY can be combined expression)</p>
+<p>   desired angle in degrees</p>
+<p>   duration in millisecs</p>
+<p>   easing method (in, out, inOut, overshoot, bounce or empty)</p>

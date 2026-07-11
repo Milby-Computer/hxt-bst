@@ -1,0 +1,21 @@
+<p></p>
+<p>aeMorphGradientRamp changes the ramp of a fillgradient of an object. It allows you to use easing effects for the transition.</p>
+<p></p>
+<p>Example:</p>
+<p></p>
+<p>aeMorphGradientRamp the long ID of grc 1,tGradient1,tGradient2,3000,"overshoot"</p>
+<p></p>
+<p>Parameters:</p>
+<p></p>
+<p>   long ID of the graphic that changes the gradient</p>
+<p>   startGradient</p>
+<p>   endGradient</p>
+<p>   duration in millisecs</p>
+<p>   easing method (in, out, inOut, overshoot, bounce or empty)</p>
+<p></p>
+<p>See stack ae6demo to see it in action.</p>
+<p></p>
+<p>Attention! </p>
+<p></p>
+<p>Currently the gradientLists must hold an equal number of entries, otherwise the morphing of the graphics will break. If there is enough interested in this feature, I will try to explore means to change that behaviour.</p>
+<p></p>

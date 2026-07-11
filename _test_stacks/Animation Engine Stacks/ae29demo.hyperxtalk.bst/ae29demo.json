@@ -1,0 +1,689 @@
+{
+   "#mainstack": "ae29demo",
+   "ae29demo": {
+      "#name": "stack \"ae29demo\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "image \"back-1.png\"",
+                  "custompropertysets": {
+                     "cGlx2General": {
+                        "cConstants": null,
+                        "cDirtyFlag": false,
+                        "cExplicitVariables": null,
+                        "cFolders": null,
+                        "cGlobals": null,
+                        "cHandlers": null,
+                        "cHandlersListWidth": "119",
+                        "cHilitedLine": null,
+                        "cHscrollHandlers": "0",
+                        "cHscrollScript": "0",
+                        "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089\u0080\u0094/\u0088\u009E\u0003\u0000\u00819.\u0084\u0007\u0000\u0000\u0000",
+                        "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                        "cLocals": null,
+                        "cScriptChecksum": null,
+                        "cSelectedChunk": "char 1 to 0",
+                        "cVscrollHandlers": "0",
+                        "cVscrollScript": "0"
+                     },
+                     "cGlx2TimeStamp": {
+                        "1213648708": "start",
+                        "1213649200": "start",
+                        "1213649215": "working",
+                        "1213649320": "start",
+                        "1213649485": "start",
+                        "1213649562": "start",
+                        "1213649612": "start",
+                        "1213651147": "start",
+                        "1213651157": "working",
+                        "1213651589": "start",
+                        "checksum": "\u0080\u0098\u001DåŸè\u0000\u0089\u0004\u0088\u0084\tò\u008F¯B~"
+                     }
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1004",
+                     "layer": "1",
+                     "name": "back-1.png",
+                     "rect": "0,0,800,600",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/ae29demo_1002_1004_text.png"
+                  }
+               },
+               "1024": {
+                  "#name": "button \"Start\"",
+                  "custompropertysets": {
+                     "cGlx2General": {
+                        "cConstants": null,
+                        "cDirtyFlag": false,
+                        "cExplicitVariables": null,
+                        "cFolders": "all handlers",
+                        "cGlobals": null,
+                        "cHandlers": "aeMoveDone\nani2\nblendOut\nbounceStack\ndoAnimation\nmouseUp",
+                        "cHandlersListWidth": "116",
+                        "cHilitedLine": "7",
+                        "cHscrollHandlers": "0",
+                        "cHscrollScript": "0",
+                        "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003ï\u0080¡\n\u0002!\u0014\u0084·}O!\u0013¥ï\u0080\n§õ\u0010¥ç\u0016\u0080\u0094\u00038z)I\u00982j\u0093\u0099\u0082\u0083*h\u0082l\u0092\u0080\u0085\u0099\u007Fê\u0014\f\nrù\u0088\u0086\u0084'\u0080£9uBà^»N\u0001ü\u007F¶Ωg/M÷\u0080\u009Eò\u0085O!Oj\u0005Im÷\u0085¯'\u0088\u009C\u0088\u009DA\u0093\u0092O\u0080\u00855~\u0099\u0012\t\u0017\u0018r\u0082\u0088\u0086z\u0099H\u0088\u0086V\u0080\u0002\u0011+\u0019º\u0017m\u0099\u0081\u0081»\u0088\u00863\u0080\u0080ãã\u0080\u0098éB¨\u0019\u001Fi\u0006_\tw6\u0099g\u0001\u0000\u0000",
+                        "cHtmlScript": "%file%: assets/ae29demo_1002_1024_cGlx2General_cHtmlScript.bin",
+                        "cLocals": "sFlag",
+                        "cScriptChecksum": null,
+                        "cSelectedChunk": "char 438 to 437",
+                        "cVscrollHandlers": "0",
+                        "cVscrollScript": "0"
+                     },
+                     "cGlx2TimeStamp": {
+                        "1213636458": "start",
+                        "1213636492": "working",
+                        "1213636558": "start",
+                        "1213636565": "start",
+                        "1213636601": "working",
+                        "1213636615": "working",
+                        "1213636652": "working",
+                        "1213636899": "start",
+                        "1213637268": "working",
+                        "1213638091": "start",
+                        "1213647834": "start",
+                        "1213647932": "start",
+                        "1213647949": "working",
+                        "1213648128": "start",
+                        "1213648251": "working",
+                        "1213649088": "start",
+                        "1213650974": "start",
+                        "1213652460": "start",
+                        "1213652508": "working",
+                        "1213652575": "working",
+                        "1213652591": "working",
+                        "1213652654": "working",
+                        "1213652739": "working",
+                        "1213652754": "start",
+                        "1213652858": "start",
+                        "1213652961": "working",
+                        "1213652973": "working",
+                        "1213653391": "working",
+                        "1213653456": "working",
+                        "1213653460": "working",
+                        "1213653495": "working",
+                        "1213654699": "start",
+                        "1213654926": "start",
+                        "1213655060": "working",
+                        "1213655292": "working",
+                        "1213655370": "start",
+                        "1213661696": "start",
+                        "1213661789": "working",
+                        "1213661836": "working",
+                        "1213661861": "working",
+                        "1213662029": "working",
+                        "1213662146": "start",
+                        "1213662188": "start",
+                        "1213662306": "start",
+                        "1213662362": "working",
+                        "1213693326": "start",
+                        "1213693336": "working",
+                        "checksum": "¶µk\u0094¶M=2»ÿy\u001A£\u0080\u009C\u0088\u0086\u0081"
+                     }
+                  },
+                  "properties": {
+                     "id": "1024",
+                     "layer": "2",
+                     "name": "Start",
+                     "rect": "354,236,436,259",
+                     "traversalOn": false
+                  }
+               },
+               "1025": {
+                  "#name": "group id 1025",
+                  "childcontrols": {
+                     "1005": {
+                        "#name": "image \"1_02.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "589,543",
+                           "cEndPoint": "29,543",
+                           "cStartPoint": "29,-130"
+                        },
+                        "custompropertysets": {
+                           "cGlx2General": {
+                              "cConstants": null,
+                              "cDirtyFlag": false,
+                              "cExplicitVariables": null,
+                              "cFolders": null,
+                              "cGlobals": null,
+                              "cHandlers": "aeMoveDone",
+                              "cHandlersListWidth": "119",
+                              "cHilitedLine": null,
+                              "cHscrollHandlers": "0",
+                              "cHscrollScript": "0",
+                              "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089\u0080\u0094/\u0088\u009E\u0003\u0000\u00819.\u0084\u0007\u0000\u0000\u0000",
+                              "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003Eé±\u000E¬@\fC\u0088\u009C~\u0084\u0080\u0099ΩR\u0017~\u0000±v\u0087\u001F8rQ\u001Bq$®\t\u0080\u0088\u009B=w®\bOë\u0088\u009D\u0080ÿ\u0014â'{\u0092\u0080î;T\r\u0003(ïrLtõÿ=\u0095\fg\r\\\u0088\u0091ùºÿó´fF/*q~ã\u0092hWè0\u0092\"\u000E \u0080\u0099¿a\u001CqóR\u0092ô¸\u0097\u0080\u0093¥ #@¶!\u0088\u0099do`,\\ø\u0086y\u000Fª÷\u0088\u009D\u0099\u0082ı\u0001\u0003\u0011\u00809\u0080\u0000\u0000\u0000",
+                              "cLocals": null,
+                              "cScriptChecksum": null,
+                              "cSelectedChunk": "char 151 to 150",
+                              "cVscrollHandlers": "0",
+                              "cVscrollScript": "0"
+                           },
+                           "cGlx2TimeStamp": {
+                              "1213651188": "start",
+                              "1213651594": "start",
+                              "1213653541": "start",
+                              "1213653573": "working",
+                              "checksum": "ü|\u0088\u0086õH±üN\u0080\u0081ãgzKE÷"
+                           }
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1005",
+                           "layer": "4",
+                           "name": "1_02.png",
+                           "opaque": false,
+                           "rect": "6,950,52,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1005_text.png"
+                        }
+                     },
+                     "1006": {
+                        "#name": "image \"1_03.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "621,543",
+                           "cEndPoint": "71,543",
+                           "cStartPoint": "71,-177"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1006",
+                           "layer": "5",
+                           "name": "1_03.png",
+                           "opaque": false,
+                           "rect": "49,950,93,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1006_text.png"
+                        }
+                     },
+                     "1007": {
+                        "#name": "image \"1_04.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "643,543",
+                           "cEndPoint": "103,543",
+                           "cStartPoint": "103,-137"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1007",
+                           "layer": "6",
+                           "name": "1_04.png",
+                           "opaque": false,
+                           "rect": "89,950,117,1050",
+                           "repeatCount": "-1",
+                           "text": {
+                              "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABwAAABkCAYAAACVfFA4AAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAHJJREFUeNrs2rENgDAMBMAEMQijMAqjsBkrsJFJmQoXiRDF\nvfTFy8Ut4BoR5SVH61bGcvajJuDVug+CtR9L+ThAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAI\nBAKBQCAQCAQCgcBfg2tyv2eD2Qft9DwCDAAjiQyPsH0VZgAAAABJRU5ErkJggg=="
+                           }
+                        }
+                     },
+                     "1008": {
+                        "#name": "image \"1_05.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "672,543",
+                           "cEndPoint": "142,543",
+                           "cStartPoint": "142,-227"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1008",
+                           "layer": "7",
+                           "name": "1_05.png",
+                           "opaque": false,
+                           "rect": "113,950,172,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1008_text.png"
+                        }
+                     },
+                     "1009": {
+                        "#name": "image \"1_06.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "704,543",
+                           "cEndPoint": "194,543",
+                           "cStartPoint": "194,-127"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1009",
+                           "layer": "8",
+                           "name": "1_06.png",
+                           "opaque": false,
+                           "rect": "171,950,218,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1009_text.png"
+                        }
+                     },
+                     "1010": {
+                        "#name": "image \"1_07.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "727,543",
+                           "cEndPoint": "233,543",
+                           "cStartPoint": "233,-177"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1010",
+                           "layer": "9",
+                           "name": "1_07.png",
+                           "opaque": false,
+                           "rect": "215,950,252,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1010_text.png"
+                        }
+                     },
+                     "1011": {
+                        "#name": "image \"1_08.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "745,543",
+                           "cEndPoint": "260,543",
+                           "cStartPoint": "260,-137"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1011",
+                           "layer": "10",
+                           "name": "1_08.png",
+                           "opaque": false,
+                           "rect": "250,950,271,1050",
+                           "repeatCount": "-1",
+                           "text": {
+                              "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABUAAABkCAYAAABpaXvyAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAGdJREFUeNrs2sENgCAQRUEwNmZnlmIplGAJdrJCIgl38DYv\n2eSfpoLNEZG+zjTXU+9qIw9oTKKl3tHGln4ICoVCoVAoFAqFQqFQKBQKhUKhUCgUCoVCoVDo\n0vZhl0nr7mP8RFjWK8AAgbMPTy+Z1ioAAAAASUVORK5CYII="
+                           }
+                        }
+                     },
+                     "1012": {
+                        "#name": "image \"1_09.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "766,543",
+                           "cEndPoint": "291,543",
+                           "cStartPoint": "291,-167"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1012",
+                           "layer": "11",
+                           "name": "1_09.png",
+                           "opaque": false,
+                           "rect": "268,950,315,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1012_text.png"
+                        }
+                     },
+                     "1013": {
+                        "#name": "image \"1_10.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "797,543",
+                           "cEndPoint": "342,543",
+                           "cStartPoint": "342,-197"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1013",
+                           "layer": "12",
+                           "name": "1_10.png",
+                           "opaque": false,
+                           "rect": "311,950,373,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1013_text.png"
+                        }
+                     },
+                     "1014": {
+                        "#name": "image \"1_11.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "822,543",
+                           "cEndPoint": "392,543",
+                           "cStartPoint": "392,-147"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1014",
+                           "layer": "13",
+                           "name": "1_11.png",
+                           "opaque": false,
+                           "rect": "370,950,415,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1014_text.png"
+                        }
+                     },
+                     "1015": {
+                        "#name": "image \"1_12.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "854,543",
+                           "cEndPoint": "434,543",
+                           "cStartPoint": "434,-157"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1015",
+                           "layer": "14",
+                           "name": "1_12.png",
+                           "opaque": false,
+                           "rect": "411,950,458,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1015_text.png"
+                        }
+                     },
+                     "1016": {
+                        "#name": "image \"1_13.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "877,543",
+                           "cEndPoint": "477,543",
+                           "cStartPoint": "477,-227"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1016",
+                           "layer": "15",
+                           "name": "1_13.png",
+                           "opaque": false,
+                           "rect": "455,950,499,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1016_text.png"
+                        }
+                     },
+                     "1017": {
+                        "#name": "image \"1_14.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "888,543",
+                           "cEndPoint": "508,543",
+                           "cStartPoint": "508,-147"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1017",
+                           "layer": "16",
+                           "name": "1_14.png",
+                           "opaque": false,
+                           "rect": "495,950,521,1050",
+                           "repeatCount": "-1",
+                           "text": {
+                              "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABoAAABkCAYAAACYYiB/AAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAHVJREFUeNrs2sEJgDAQBMAoFpbSLMVSLCUl2EGM4Mcjv6Ag\nzMJ+9nHTwE211hSS745kay2P5YJC1zqeHO/O6aOAQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQ\nCAQCgUAgEAj0I2jpbKV1H7x7xGHqvCa+klOAAQDUCGmzTKzPPAAAAABJRU5ErkJggg=="
+                           }
+                        }
+                     },
+                     "1018": {
+                        "#name": "image \"1_15.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "899,543",
+                           "cEndPoint": "540,543",
+                           "cStartPoint": "540,-107"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1018",
+                           "layer": "17",
+                           "name": "1_15.png",
+                           "opaque": false,
+                           "rect": "517,950,564,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1018_text.png"
+                        }
+                     },
+                     "1019": {
+                        "#name": "image \"1_16.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "923,543",
+                           "cEndPoint": "581,543",
+                           "cStartPoint": "581,-147"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1019",
+                           "layer": "18",
+                           "name": "1_16.png",
+                           "opaque": false,
+                           "rect": "560,950,603,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1019_text.png"
+                        }
+                     },
+                     "1020": {
+                        "#name": "image \"1_17.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "951,543",
+                           "cEndPoint": "633,543",
+                           "cStartPoint": "633,-197"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1020",
+                           "layer": "19",
+                           "name": "1_17.png",
+                           "opaque": false,
+                           "rect": "602,950,664,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1020_text.png"
+                        }
+                     },
+                     "1021": {
+                        "#name": "image \"1_19.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "977,543",
+                           "cEndPoint": "690,543",
+                           "cStartPoint": "690,-177"
+                        },
+                        "custompropertysets": {
+                           "cGlx2General": {
+                              "cConstants": null,
+                              "cDirtyFlag": false,
+                              "cExplicitVariables": null,
+                              "cFolders": "all handlers",
+                              "cGlobals": null,
+                              "cHandlers": "newHandler",
+                              "cHandlersListWidth": "119",
+                              "cHilitedLine": "2",
+                              "cHscrollHandlers": "0",
+                              "cHscrollScript": "0",
+                              "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089I\u0089\u0089).\u0005\u0012ô\u0080\u0088\n\u0089\u0088E\u0080\u0088\u0082J\u0088\u0086\u0088\u0086\u0088\u0086\u009C\u0088\u0086ñJv6\u0088\u0099 q\u0084\u0092ú\u001C\u0084å\u0092ºîú\u0080\u0098¢b\u001B}\u0080B\u0088\u009D\u0002;.õ\u0002;5eKk4ù¶\u009Cfñ\u2026\u0088\u0086pùy©\u0082\u001E\u0010ç =\u0000>\u001A\f\u0088\u009Dl\u0000\u0000\u0000",
+                              "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0080\u009D\u0080\u0099µSH\u0083\u0080Q»H\u0083K\u0080I-*\u0080\u0080\u0085 \u0093S»K-\u0088\u009C\u0084\u0099\u0080\u0014\u0084\u0084+5/\u0005I\f\u0000söF]3\u0000\u0000\u0000",
+                              "cLocals": null,
+                              "cScriptChecksum": null,
+                              "cSelectedChunk": "char 19 to 31",
+                              "cVscrollHandlers": "0",
+                              "cVscrollScript": "0"
+                           },
+                           "cGlx2TimeStamp": {
+                              "1213649177": "start",
+                              "1213649188": "end",
+                              "checksum": "\u0080\u0098\u001DåŸè\u0000\u0089\u0004\u0088\u0084\tò\u008F¯B~"
+                           }
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1021",
+                           "layer": "20",
+                           "name": "1_19.png",
+                           "opaque": false,
+                           "rect": "668,950,713,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1021_text.png"
+                        }
+                     },
+                     "1022": {
+                        "#name": "image \"1_18.png\"",
+                        "customproperties": {
+                           "cEnd2Point": "972,543",
+                           "cEndPoint": "657,543",
+                           "cStartPoint": "657,-147"
+                        },
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "1022",
+                           "layer": "21",
+                           "name": "1_18.png",
+                           "opaque": false,
+                           "rect": "650,951,665,1050",
+                           "repeatCount": "-1",
+                           "text": "%file%: assets/ae29demo_1002_1025_1022_text.png"
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cGlx2General": {
+                        "cConstants": null,
+                        "cDirtyFlag": false,
+                        "cExplicitVariables": null,
+                        "cFolders": null,
+                        "cGlobals": null,
+                        "cHandlers": "aeMoveDone",
+                        "cHandlersListWidth": "119",
+                        "cHilitedLine": null,
+                        "cHscrollHandlers": "0",
+                        "cHscrollScript": "0",
+                        "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089\u0080\u0094/\u0088\u009E\u0003\u0000\u00819.\u0084\u0007\u0000\u0000\u0000",
+                        "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003eé1\u000E\u00021\f\u0004\u0088\u0085{\u0089\u0088ñP\u0080/h©x\u0085IL.`lî¯\u0080\u0088\u0085¯\u0087\u0010\u0005.livΩZS\u0010\u001F\u0081\u0080\u0007Sû\u00103\u0093\u0088\u008F\u0086\u0080AH$r¶t\u0088\u0085Bö\u0084\u0082W.\u009C\u0085\u0080\u0080\u000Bá\u0089e\u0099\u0080\u0098\u0082\u0088\u0085±c\u0088A\u0091÷\u0092\u0088\u0085·\u0098óa\u0012\u0080\u009D\u0002\u0080;\u0088\u0085>¿©\u0015v\u0080\u0098\u0088\u009B/«\u000E¶\u0080\u009E}Dhı\u0080\u009D´j\u0019\u00915G\u008B¥ù_\u009B7±wª3«\u0000\u0000\u0000",
+                        "cLocals": null,
+                        "cScriptChecksum": null,
+                        "cSelectedChunk": "char 93 to 92",
+                        "cVscrollHandlers": "0",
+                        "cVscrollScript": "0"
+                     },
+                     "cGlx2TimeStamp": {
+                        "1213648925": "start",
+                        "1213648933": "working",
+                        "1213649188": "start",
+                        "1213649501": "start",
+                        "1213649516": "start",
+                        "1213649539": "working",
+                        "1213649544": "working",
+                        "1213649580": "start",
+                        "1213651669": "start",
+                        "1213652768": "start",
+                        "1213653695": "start",
+                        "1213653722": "working",
+                        "1213655382": "start",
+                        "checksum": "\u0092\u0080\u009Dã«ñpµK\u0094E\u0080\u009EmG\u0082R\u0099"
+                     }
+                  },
+                  "properties": {
+                     "blendLevel": "100",
+                     "id": "1025",
+                     "layer": "3",
+                     "rect": "2,946,717,1054"
+                  }
+               },
+               "1031": {
+                  "#name": "field \"info\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "<p>open animationEngine</p>\n<p>in the messagebox type: start using stack \u2026quot;animationEngine\u2026quot;</p>\n<p>Click the Start button</p>\n<p></p>\n<p>All script can be found in button \u2026quot;Start\u2026quot;</p>"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "foreColor": "255,255,255",
+                     "htmlText": "<p>open animationEngine</p>\n<p>in the messagebox type: start using stack \"animationEngine\"</p>\n<p>Click the Start button</p>\n<p></p>\n<p>All script can be found in button \"Start\"</p>",
+                     "id": "1031",
+                     "layer": "22",
+                     "lockText": true,
+                     "name": "info",
+                     "opaque": false,
+                     "rect": "1,322,800,454",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textFont": "Monaco",
+                     "textHeight": "18",
+                     "textSize": "14",
+                     "textStyle": "plain",
+                     "threeD": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cGlx2General": {
+                  "cConstants": null,
+                  "cDirtyFlag": false,
+                  "cExplicitVariables": null,
+                  "cFolders": null,
+                  "cGlobals": null,
+                  "cHandlers": "preOpenStack",
+                  "cHandlersListWidth": "125",
+                  "cHilitedLine": null,
+                  "cHscrollHandlers": "0",
+                  "cHscrollScript": "0",
+                  "cHtmlHandlers": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0089)\u0088\u009E\u0089\u0080\u0094/\u0088\u009E\u0003\u0000\u00819.\u0084\u0007\u0000\u0000\u0000",
+                  "cHtmlScript": "\u001Fã\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0080\u0093S((Jı/H\u0095\u000B.IL\u0092\u0080R\u0000\u0087\u0080\u0085å¸r\u0084¥\u0083\u0080\u0098ú\u0014\u0005\u0080\u0083º¥|%\u0086\u0080\u0098º\u0014Te@\u0000\u0000\u0088\u0099\u0011\u0084~:\u0000\u0000\u0000",
+                  "cLocals": null,
+                  "cScriptChecksum": null,
+                  "cSelectedChunk": "char 39 to 38",
+                  "cVscrollHandlers": "0",
+                  "cVscrollScript": "0"
+               },
+               "cGlx2TimeStamp": {
+                  "1213648768": "start",
+                  "1213648894": "working",
+                  "1213648982": "start",
+                  "1213649105": "start",
+                  "1213649194": "start",
+                  "1213649409": "start",
+                  "1213649503": "start",
+                  "1213649551": "start",
+                  "1213649640": "start",
+                  "1213651430": "start",
+                  "1213651503": "working",
+                  "1213651674": "start",
+                  "1213652347": "working",
+                  "1213652412": "working",
+                  "1213652423": "working",
+                  "1213652770": "start",
+                  "1213652817": "working",
+                  "1213652821": "working",
+                  "1213653577": "start",
+                  "1213653667": "working",
+                  "1213653686": "working",
+                  "1213655385": "start",
+                  "1213655440": "start",
+                  "1213655457": "working",
+                  "1213655480": "working",
+                  "1213662270": "start",
+                  "1213693282": "start",
+                  "1213693295": "working",
+                  "checksum": "äå\u0088\u0099\u0089\u0092\u0014ë1¥\u0080,\u0080ñ>\u001B\u001E"
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "22"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cGlx2General": {
+            "cDirtyFlag": false,
+            "CompilesForSave": "4",
+            "id": "1213628616796"
+         },
+         "cGlx2TimeStamp": {
+            "1213662284": "start"
+         },
+         "cREVGeometryCache": {
+            "stackID": "1031"
+         }
+      },
+      "longID": "stack \"ae29demo\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "backColor": "110,23,18",
+         "decorations": "default",
+         "fileName": "ae29demo.hyperxtalk",
+         "id": "1031",
+         "liveResizing": false,
+         "name": "ae29demo",
+         "rect": "244,114,1044,714",
+         "resizable": false,
+         "title": "ae 2.9 Demo"
+      },
+      "sharedGroupIDs": null
+   }
+}

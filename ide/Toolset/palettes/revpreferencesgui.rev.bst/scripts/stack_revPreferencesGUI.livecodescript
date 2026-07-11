@@ -3,13 +3,13 @@ Script "stack_revPreferencesGUI"
 /*
 # Name: stack "revPreferencesGUI"
 # ID: stack "revPreferencesGUI"
-# Hash: BFkUvhSNyVfv3R8606AXjQ==
+# Hash: a8q5wLQVGPjJiVEJzk8ifQ==
 */
 
 
 local lAlreadyBeenOpened
 
-on preOpenStack
+on PreOpenStack
    --   if the short name of the target is not "revPreferencesGUI" then
    --      exit preOpenStack
    --   end if
@@ -31,31 +31,33 @@ on preOpenStack
    else
       set the loc of me to tLoc
    end if
-   set the topLeft of me to (revIDEGetPreference("cPreferencesTopLeft"))  // HXT
    
-   if not lAlreadyBeenOpened then
-      --      set the textFont of fld "Menu" of cd 1 to empty
-      --      set the textHeight of fld "Menu" of cd 1 to 20
-      put true into lAlreadyBeenOpened
+   local tTopLeft
+   put revIDEGetPreference("cPreferencesTopLeft") into tTopLeft
+   if (tTopLeft is not EMPTY) then
+      set the topLeft of me to tTopLeft  // HXT
    end if
    
    ## Bug 17034
    ## Restore the fixed-font-and-size settings that the stack was originally designed for
    ## The theming changes in 8 make text too large to fit in available space
-   if the platform is "Linux" then
-      set the theme of this stack to "legacy"
+   --   if the platform is "Linux" then
+   --      set the theme of this stack to "legacy"
+   --   end if
+   
+   if not lAlreadyBeenOpened then
+      send "hxtGoToGeneralTab" to me in 1 millisecond
+      put true into lAlreadyBeenOpened
    end if
    
-   ## Bug 11173
-   ## Last opened pane is shown but item 1 in list selected.
-   --   set the hilitedLines of fld "Menu" to lineOffset(the short name of this card,the text of field "menu")
-   --   send "mouseUp" to fld "Menu"
-   set the backgroundColor of this stack to (the systemWindowColor)
-   set the foregroundColor of this stack to (the systemTextColor)
+   pass PreOpenStack
+end PreOpenStack
+
+
+on hxtGoToGeneralTab
+   lock screen
    set the menuHistory of button "Tab Menu" to 1  // HXT
-   
-   pass preOpenStack
-end preOpenStack
+end hxtGoToGeneralTab
 
 
 on SystemAppearanceChanged pMode, pWindowColor, pTextColor
@@ -172,12 +174,15 @@ on hxtSetTheHeightOfThisStackTo pHeight
    */
    
    if (the platform = "macOS") then
+      lock screen
       windowAnimateResize the windowID of stack "revPreferencesGUI", the left of this stack, the top of this stack, the width of this stack, pHeight, 0.5
+      unlock screen
    else
       lock screen
       local tTopLeft
       put the topLeft of this stack into tTopLeft
       set the height of this stack to pHeight
       set the topLeft of this stack to tTopLeft
+      unlock screen
    end if
 end hxtSetTheHeightOfThisStackTo

@@ -1900,9 +1900,8 @@
                            "armBorder": false,
                            "autoHilite": false,
                            "id": "1128",
-                           "label": "Red",
+                           "label": "Default",
                            "layer": "17",
-                           "menuHistory": "6",
                            "menuMode": "option",
                            "name": "Colorization Scheme",
                            "opaque": false,
@@ -2961,7 +2960,7 @@
          "foreColor": "#000000",
          "id": "1176",
          "name": "revPreferencesGUI",
-         "rect": "711,133,1311,579",
+         "rect": "297,160,897,522",
          "title": "Settings"
       },
       "sharedGroupIDs": "1004"

@@ -1028,7 +1028,7 @@
                            "lockText": true,
                            "name": "New Field 4",
                            "opaque": false,
-                           "rect": "50,163,135,182",
+                           "rect": "50,103,135,122",
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
@@ -1050,7 +1050,7 @@
                            "lockText": true,
                            "name": "New Field 4",
                            "opaque": false,
-                           "rect": "20,243,132,263",
+                           "rect": "20,183,132,203",
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
@@ -1071,7 +1071,7 @@
                                  "layer": "24",
                                  "name": "remove",
                                  "opaque": false,
-                                 "rect": "90,270,304,291",
+                                 "rect": "90,210,304,231",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1093,7 +1093,7 @@
                                  "multipleHilites": true,
                                  "name": "include profiles",
                                  "noncontiguousHilites": true,
-                                 "rect": "283,375,482,443",
+                                 "rect": "283,315,482,383",
                                  "scrollbarWidth": "15",
                                  "style": "scrolling",
                                  "toggleHilites": true,
@@ -1111,7 +1111,7 @@
                                  "layer": "31",
                                  "menuMode": "option",
                                  "name": "set objects",
-                                 "rect": "283,297,484,317",
+                                 "rect": "283,237,484,257",
                                  "style": "menu",
                                  "text": "Other\nMaster",
                                  "textAlign": "left",
@@ -1131,7 +1131,7 @@
                                        "layer": "28",
                                        "name": "selected",
                                        "opaque": false,
-                                       "rect": "283,346,497,366",
+                                       "rect": "283,286,497,306",
                                        "sharedHilite": false,
                                        "showBorder": false,
                                        "style": "radiobutton",
@@ -1150,7 +1150,7 @@
                                        "layer": "29",
                                        "name": "all",
                                        "opaque": false,
-                                       "rect": "90,346,264,366",
+                                       "rect": "90,286,264,306",
                                        "sharedHilite": false,
                                        "showBorder": false,
                                        "style": "radiobutton",
@@ -1165,7 +1165,7 @@
                                  "id": "1220",
                                  "layer": "27",
                                  "name": "include profiles",
-                                 "rect": "86,342,501,370"
+                                 "rect": "86,282,501,310"
                               }
                            },
                            "1267": {
@@ -1177,7 +1177,7 @@
                                  "layer": "26",
                                  "name": "include",
                                  "opaque": false,
-                                 "rect": "90,322,415,342",
+                                 "rect": "90,262,415,282",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1194,7 +1194,7 @@
                                  "layer": "30",
                                  "name": "set",
                                  "opaque": false,
-                                 "rect": "90,296,304,317",
+                                 "rect": "90,236,304,257",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1208,7 +1208,7 @@
                            "id": "1215",
                            "layer": "23",
                            "name": "profiles",
-                           "rect": "82,266,505,447"
+                           "rect": "82,206,505,387"
                         }
                      },
                      "1217": {
@@ -1242,8 +1242,8 @@
                            "layer": "32",
                            "name": "New Graphic 1",
                            "opaque": true,
-                           "points": "136,176\n634,176",
-                           "rect": "135,175,635,177",
+                           "points": "136,116\n634,116",
+                           "rect": "135,115,635,117",
                            "style": "line"
                         }
                      },
@@ -1278,8 +1278,8 @@
                            "layer": "33",
                            "name": "New Graphic 1",
                            "opaque": true,
-                           "points": "162,257\n660,257",
-                           "rect": "161,256,661,258",
+                           "points": "162,197\n660,197",
+                           "rect": "161,196,661,198",
                            "style": "line"
                         }
                      },
@@ -1295,7 +1295,7 @@
                                  "layer": "43",
                                  "name": "search",
                                  "opaque": false,
-                                 "rect": "100,191,560,214",
+                                 "rect": "100,131,560,154",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1312,7 +1312,7 @@
                                  "layer": "42",
                                  "name": "select",
                                  "opaque": false,
-                                 "rect": "100,216,420,239",
+                                 "rect": "100,156,420,179",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1325,7 +1325,7 @@
                            "id": "1294",
                            "layer": "41",
                            "name": "inclusions",
-                           "rect": "96,187,564,243"
+                           "rect": "96,127,564,183"
                         }
                      },
                      "1492": {
@@ -1342,7 +1342,7 @@
                            "layer": "34",
                            "lockText": true,
                            "name": "Default Build Folder",
-                           "rect": "152,452,496,473"
+                           "rect": "152,392,496,413"
                         }
                      },
                      "1494": {
@@ -1361,7 +1361,7 @@
                            "lockText": true,
                            "name": "Label Field",
                            "opaque": false,
-                           "rect": "12,452,148,473",
+                           "rect": "12,392,148,413",
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
@@ -1377,7 +1377,7 @@
                            "layer": "36",
                            "name": "Automatically build here",
                            "opaque": false,
-                           "rect": "151,476,320,499",
+                           "rect": "151,416,320,439",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -1390,7 +1390,7 @@
                            "label": "..",
                            "layer": "37",
                            "name": "Browse",
-                           "rect": "498,451,560,474",
+                           "rect": "498,391,560,414",
                            "traversalOn": false
                         }
                      },
@@ -1420,11 +1420,11 @@
                         "properties": {
                            "autoTab": true,
                            "dontWrap": true,
-                           "htmlText": "<p>Untitled 1</p>",
+                           "htmlText": "<p>allControls2</p>",
                            "id": "2883",
                            "layer": "38",
                            "name": "standalone name",
-                           "rect": "137,138,370,160"
+                           "rect": "137,78,370,100"
                         }
                      },
                      "2884": {
@@ -1457,7 +1457,7 @@
                            "layer": "39",
                            "lockText": true,
                            "opaque": false,
-                           "rect": "367,138,576,159",
+                           "rect": "367,78,576,99",
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
@@ -1475,7 +1475,7 @@
                            "lockText": true,
                            "name": "File name label",
                            "opaque": false,
-                           "rect": "9,138,138,159",
+                           "rect": "9,78,138,99",
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
@@ -1489,7 +1489,7 @@
                      "layer": "20",
                      "margins": "0",
                      "name": "generalContent",
-                     "rect": "9,138,661,499"
+                     "rect": "9,78,661,439"
                   }
                },
                "3125": {
@@ -1583,7 +1583,8 @@
                      "layer": "44",
                      "margins": "0",
                      "name": "generalCommercialTip",
-                     "rect": "9,64,743,125"
+                     "rect": "9,64,743,125",
+                     "visible": false
                   }
                },
                "3723": {
@@ -1733,7 +1734,7 @@
             },
             "customproperties": {
                "cRevTargetStack": "revStandaloneSettings",
-               "cSize": "568,520"
+               "cSize": "568,460"
             },
             "custompropertysets": {
                "cREVGeometryCache": {
@@ -1798,7 +1799,7 @@
                      "showFocusBorder": false,
                      "showIcon": true,
                      "style": "rectangle",
-                     "textStyle": "bold",
+                     "textStyle": "plain",
                      "traversalOn": false
                   }
                },
@@ -1905,7 +1906,7 @@
                      "showFocusBorder": false,
                      "showIcon": true,
                      "style": "rectangle",
-                     "textStyle": "plain",
+                     "textStyle": "bold",
                      "traversalOn": false
                   }
                },
@@ -2038,7 +2039,6 @@
                            "Tabs": false
                         },
                         "properties": {
-                           "disabled": true,
                            "hiliteBorder": false,
                            "id": "1237",
                            "label": "Move substacks into individual stackfiles",
@@ -2060,7 +2060,6 @@
                         },
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>For the selected stack file:</p>",
                            "id": "1242",
@@ -2082,9 +2081,8 @@
                            "Tabs": false
                         },
                         "properties": {
-                           "disabled": true,
                            "dontWrap": true,
-                           "htmlText": "<p><b>revStandaloneSettings</b></p>\n<p>revErrorReport</p>\n<p>revBuildResults</p>\n<p>revStandaloneProgress</p>\n<p>revStandaloneInclusionWarning</p>\n<p>Data Grid Templates 1496227828115</p>",
+                           "htmlText": "<p><b>allControls2</b></p>",
                            "id": "1254",
                            "layer": "22",
                            "listBehavior": true,
@@ -2107,7 +2105,6 @@
                         },
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Stacks in the selected stack file:</p>",
                            "id": "1256",
@@ -2129,7 +2126,6 @@
                         },
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>For the selected stack:</p>",
                            "id": "1257",
@@ -2273,7 +2269,6 @@
                         },
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Advanced Options</p>",
                            "id": "1262",
@@ -2313,7 +2308,6 @@
                         },
                         "properties": {
                            "antialiased": false,
-                           "disabled": true,
                            "filled": true,
                            "foreColor": "128,128,128",
                            "id": "1263",
@@ -2327,7 +2321,6 @@
                      }
                   },
                   "properties": {
-                     "disabled": true,
                      "id": "2036",
                      "layer": "19",
                      "name": "Advanced Options",
@@ -2340,7 +2333,7 @@
                      "1232": {
                         "#name": "field \"stackfiles\"",
                         "customproperties": {
-                           "cStackPaths": "/Users/alexandrubrisan/Desktop/develop-8.1/livecode/ide/Toolset/palettes/standalone settings/revstandalonesettings.8.rev"
+                           "cStackPaths": "/Users/emily-elizabethhoward/Developer/HyperXTalk/allcontrols2.hyperxtalk"
                         },
                         "custompropertysets": {
                            "dragtest.rev": {
@@ -2399,10 +2392,9 @@
                            }
                         },
                         "properties": {
-                           "disabled": true,
                            "dontWrap": true,
                            "hScrollbar": true,
-                           "htmlText": "<p>revstandalonesettings.8.rev</p>",
+                           "htmlText": "<p>allcontrols2.hyperxtalk</p>",
                            "id": "1232",
                            "layer": "36",
                            "listBehavior": true,
@@ -2421,7 +2413,6 @@
                      "1234": {
                         "#name": "button \"Add Stack File...\"",
                         "properties": {
-                           "disabled": true,
                            "id": "1234",
                            "layer": "37",
                            "name": "Add Stack File...",
@@ -2432,7 +2423,6 @@
                      "1235": {
                         "#name": "button \"Remove Stack File\"",
                         "properties": {
-                           "disabled": true,
                            "id": "1235",
                            "layer": "38",
                            "name": "Remove Stack File",
@@ -2442,7 +2432,6 @@
                      }
                   },
                   "properties": {
-                     "disabled": true,
                      "id": "2037",
                      "layer": "35",
                      "name": "Basic Options",
@@ -2453,7 +2442,7 @@
             "customproperties": {
                "cDisabled": true,
                "cFocusedObject": "substacks",
-               "cSize": "568,487"
+               "cSize": "710,487"
             },
             "custompropertysets": {
                "cREVGeometryCache": {
@@ -2707,7 +2696,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "htmlText": "<p>Untitled 1</p>",
+                                 "htmlText": "<p>allControls2</p>",
                                  "id": "1092",
                                  "layer": "25",
                                  "name": "name",
@@ -2723,7 +2712,7 @@
                               "properties": {
                                  "autoTab": true,
                                  "dontWrap": true,
-                                 "htmlText": "<p>Untitled 1 1.0.0.0</p>",
+                                 "htmlText": "<p>allControls2 1.0.0.0</p>",
                                  "id": "1093",
                                  "layer": "30",
                                  "name": "longVersion",
@@ -2793,7 +2782,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "htmlText": "<p>Untitled 1 Version 1.0.0.0</p>",
+                                 "htmlText": "<p>allControls2 Version 1.0.0.0</p>",
                                  "id": "1098",
                                  "layer": "31",
                                  "name": "info",
@@ -3011,7 +3000,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "htmlText": "<p>com..untitled1</p>",
+                                 "htmlText": "<p>com.emily.allcontrols2</p>",
                                  "id": "1363",
                                  "layer": "40",
                                  "name": "identifier",
@@ -3651,7 +3640,6 @@
                         "#name": "field id 1135",
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Application Icon:</p>",
                            "id": "1135",
@@ -3688,9 +3676,8 @@
                         },
                         "properties": {
                            "autoTab": true,
-                           "disabled": true,
                            "dontWrap": true,
-                           "htmlText": "<p>C:/Documents and Settings/Monster/My Documents/Revolution 2.2A1/Sample Icons/genericapp.ico</p>",
+                           "htmlText": "<p>/Applications/HyperXTalk.app/Contents/Tools/Runtime/Windows/x86-64/Support/Sample Icons/genericapp.ico</p>",
                            "id": "1136",
                            "layer": "16",
                            "lockText": true,
@@ -3722,7 +3709,6 @@
                            }
                         },
                         "properties": {
-                           "disabled": true,
                            "id": "1137",
                            "layer": "17",
                            "name": "Use None",
@@ -3751,7 +3737,6 @@
                            }
                         },
                         "properties": {
-                           "disabled": true,
                            "id": "1138",
                            "layer": "18",
                            "name": "Choose...",
@@ -3781,9 +3766,8 @@
                         },
                         "properties": {
                            "autoTab": true,
-                           "disabled": true,
                            "dontWrap": true,
-                           "htmlText": "<p>C:/Documents and Settings/Monster/My Documents/Revolution 2.2A1/Sample Icons/genericdoc.ico</p>",
+                           "htmlText": "<p>/Applications/HyperXTalk.app/Contents/Tools/Runtime/Windows/x86-64/Support/Sample Icons/genericdoc.ico</p>",
                            "id": "1139",
                            "layer": "19",
                            "lockText": true,
@@ -3820,7 +3804,6 @@
                            }
                         },
                         "properties": {
-                           "disabled": true,
                            "id": "1140",
                            "layer": "20",
                            "name": "Use None",
@@ -3849,7 +3832,6 @@
                            }
                         },
                         "properties": {
-                           "disabled": true,
                            "id": "1141",
                            "layer": "21",
                            "name": "Choose...",
@@ -3861,7 +3843,6 @@
                         "#name": "field id 1144",
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Document Icon:</p>",
                            "id": "1144",
@@ -3883,7 +3864,6 @@
                         },
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Copyright Notice:</p>",
                            "id": "1145",
@@ -3906,7 +3886,6 @@
                         },
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>File Description:</p>",
                            "id": "1146",
@@ -3929,7 +3908,6 @@
                         },
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p><b>Version Information</b></p>",
                            "id": "1147",
@@ -3972,7 +3950,6 @@
                         },
                         "properties": {
                            "antialiased": false,
-                           "disabled": true,
                            "filled": true,
                            "foreColor": "128,128,128",
                            "id": "1148",
@@ -3988,7 +3965,6 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Comments:</p>",
                            "id": "1149",
@@ -4008,7 +3984,6 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Internal Name:</p>",
                            "id": "1154",
@@ -4028,7 +4003,6 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>File Version:</p>",
                            "id": "1155",
@@ -4048,7 +4022,6 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Original Filename:</p>",
                            "id": "1156",
@@ -4068,7 +4041,6 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Legal Trademarks:</p>",
                            "id": "1157",
@@ -4088,7 +4060,6 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Product Name:</p>",
                            "id": "1158",
@@ -4108,7 +4079,6 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Product Version:</p>",
                            "id": "1159",
@@ -4128,7 +4098,6 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Private Build:</p>",
                            "id": "1160",
@@ -4148,7 +4117,6 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Company Name:</p>",
                            "id": "1167",
@@ -4168,7 +4136,6 @@
                         "#name": "field \"New Field 4\"",
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p>Special Build:</p>",
                            "id": "1168",
@@ -4213,9 +4180,8 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
-                                 "htmlText": "<p>revStandaloneSettings 1.0.0 for Windows</p>",
+                                 "htmlText": "<p>allControls2 1.0.0.0 for Windows</p>",
                                  "id": "1142",
                                  "layer": "38",
                                  "name": "FileDescription",
@@ -4252,9 +4218,8 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
-                                 "htmlText": "<p>2004 Sweat Technologies All rights reserved worldwide</p>",
+                                 "htmlText": "<p>2026  All rights reserved worldwide</p>",
                                  "id": "1143",
                                  "layer": "39",
                                  "name": "LegalCopyright",
@@ -4269,7 +4234,6 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1150",
                                  "layer": "40",
@@ -4285,7 +4249,6 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1151",
                                  "layer": "52",
@@ -4301,9 +4264,8 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
-                                 "htmlText": "<p>revStandaloneSettings</p>",
+                                 "htmlText": "<p>allControls2</p>",
                                  "id": "1152",
                                  "layer": "42",
                                  "name": "ProductName",
@@ -4318,7 +4280,6 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1153",
                                  "layer": "54",
@@ -4335,9 +4296,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
-                                 "htmlText": "<p>Sweat Technologies</p>",
                                  "id": "1161",
                                  "layer": "43",
                                  "name": "CompanyName",
@@ -4352,7 +4311,6 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1163",
                                  "layer": "53",
@@ -4368,7 +4326,6 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1164",
                                  "layer": "41",
@@ -4384,7 +4341,6 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "id": "1166",
                                  "layer": "55",
@@ -4397,7 +4353,6 @@
                               "#name": "field \"fileversion3\"",
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>0</p>",
                                  "id": "1349",
@@ -4414,7 +4369,6 @@
                               },
                               "properties": {
                                  "autoHilite": false,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "fixedLineHeight": false,
                                  "htmlText": "<p>.</p>",
@@ -4439,7 +4393,6 @@
                               "#name": "field \"fileversion2\"",
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>0</p>",
                                  "id": "1351",
@@ -4456,7 +4409,6 @@
                               },
                               "properties": {
                                  "autoHilite": false,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "fixedLineHeight": false,
                                  "htmlText": "<p>.</p>",
@@ -4481,7 +4433,6 @@
                               "#name": "field \"fileversion1\"",
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>1</p>",
                                  "id": "1353",
@@ -4495,7 +4446,6 @@
                               "#name": "field \"fileversion4\"",
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>0</p>",
                                  "id": "1354",
@@ -4512,7 +4462,6 @@
                               },
                               "properties": {
                                  "autoHilite": false,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "fixedLineHeight": false,
                                  "htmlText": "<p>.</p>",
@@ -4537,7 +4486,6 @@
                               "#name": "field \"productversion3\"",
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>0</p>",
                                  "id": "1356",
@@ -4554,7 +4502,6 @@
                               },
                               "properties": {
                                  "autoHilite": false,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "fixedLineHeight": false,
                                  "htmlText": "<p>.</p>",
@@ -4579,7 +4526,6 @@
                               "#name": "field \"productversion2\"",
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>0</p>",
                                  "id": "1358",
@@ -4596,7 +4542,6 @@
                               },
                               "properties": {
                                  "autoHilite": false,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "fixedLineHeight": false,
                                  "htmlText": "<p>.</p>",
@@ -4621,7 +4566,6 @@
                               "#name": "field \"productversion1\"",
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>1</p>",
                                  "id": "1360",
@@ -4635,7 +4579,6 @@
                               "#name": "field \"productversion4\"",
                               "properties": {
                                  "autoTab": true,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "htmlText": "<p>0</p>",
                                  "id": "1361",
@@ -4652,7 +4595,6 @@
                               },
                               "properties": {
                                  "autoHilite": false,
-                                 "disabled": true,
                                  "dontWrap": true,
                                  "fixedLineHeight": false,
                                  "htmlText": "<p>.</p>",
@@ -4675,7 +4617,6 @@
                            }
                         },
                         "properties": {
-                           "disabled": true,
                            "id": "1348",
                            "layer": "37",
                            "rect": "134,238,617,422"
@@ -4693,7 +4634,6 @@
                         },
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p><b>Icon</b></p>",
                            "id": "1618",
@@ -4705,7 +4645,7 @@
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
-                           "textFont": "MacOS Classic",
+                           "textFont": "Lucida Grande",
                            "textSize": "11",
                            "textStyle": "bold",
                            "traversalOn": false
@@ -4736,7 +4676,6 @@
                         },
                         "properties": {
                            "antialiased": false,
-                           "disabled": true,
                            "filled": true,
                            "foreColor": "128,128,128",
                            "id": "1620",
@@ -4773,7 +4712,6 @@
                         },
                         "properties": {
                            "antialiased": false,
-                           "disabled": true,
                            "filled": true,
                            "foreColor": "128,128,128",
                            "id": "1621",
@@ -4797,7 +4735,6 @@
                         },
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p><b>UAC Execution Level</b></p>",
                            "id": "1622",
@@ -4846,7 +4783,6 @@
                         },
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "htmlText": "<p>Runs with default UAC access. No manifest is included.</p>",
                            "id": "1626",
                            "layer": "67",
@@ -4886,7 +4822,6 @@
                         },
                         "properties": {
                            "antialiased": false,
-                           "disabled": true,
                            "filled": true,
                            "foreColor": "128,128,128",
                            "id": "3194",
@@ -4910,7 +4845,6 @@
                         },
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "dontWrap": true,
                            "htmlText": "<p><b>Hi-DPI support</b></p>",
                            "id": "3196",
@@ -4937,7 +4871,6 @@
                         },
                         "properties": {
                            "autoHilite": false,
-                           "disabled": true,
                            "htmlText": "<p>If enabled, stacks will be automatically scaled to match the system display settings.</p>",
                            "id": "3197",
                            "layer": "70",
@@ -4970,7 +4903,6 @@
                      }
                   },
                   "properties": {
-                     "disabled": true,
                      "hilitedButton": "6",
                      "id": "1169",
                      "layer": "14",
@@ -4995,18 +4927,20 @@
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left",
-                           "toolTip": "32 bit Windows"
+                           "toolTip": "32 bit Windows",
+                           "visible": false
                         }
                      },
                      "31526": {
                         "#name": "button \"Windows x86-64\"",
                         "properties": {
                            "hiliteBorder": false,
+                           "hilited": true,
                            "id": "31526",
                            "layer": "74",
                            "name": "Windows x86-64",
                            "opaque": false,
-                           "rect": "208,75,349,95",
+                           "rect": "90,75,231,95",
                            "sharedHilite": false,
                            "showBorder": false,
                            "style": "checkbox",
@@ -5016,10 +4950,11 @@
                      }
                   },
                   "properties": {
+                     "hilitedButton": "2",
                      "id": "1266",
                      "layer": "72",
                      "name": "platforms",
-                     "rect": "87,71,353,99"
+                     "rect": "86,71,235,99"
                   }
                },
                "1317": "#shared group",
@@ -5090,12 +5025,12 @@
                "1617": "#shared group"
             },
             "customproperties": {
-               "cSize": "610,540"
+               "cSize": "630,540"
             },
             "custompropertysets": {
                "cREVGeometryCache": {
                   "order": null,
-                  "total": "87"
+                  "total": "81"
                },
                "cVersionFlds": {
                   "LegalCopyright": null
@@ -5115,7 +5050,6 @@
                "1179": {
                   "#name": "button \"errorDialog\"",
                   "properties": {
-                     "disabled": true,
                      "hiliteBorder": false,
                      "id": "1179",
                      "label": "Include Error Reporting Dialog",
@@ -5516,7 +5450,6 @@
                      "1461": {
                         "#name": "button \"Copy Referenced Files\"",
                         "properties": {
-                           "disabled": true,
                            "hiliteBorder": false,
                            "id": "1461",
                            "layer": "22",
@@ -5647,7 +5580,7 @@
             "customproperties": {
                "cDisabled": "true,true",
                "cFocusedObject": "files",
-               "cSize": "650,360"
+               "cSize": "760,360"
             },
             "custompropertysets": {
                "cREVGeometryCache": {
@@ -6048,8 +5981,7 @@
                            "rect": "299,79,429,102",
                            "showBorder": false,
                            "style": "checkbox",
-                           "textAlign": "left",
-                           "visible": false
+                           "textAlign": "left"
                         }
                      }
                   },
@@ -6063,7 +5995,7 @@
                      "id": "1476",
                      "layer": "27",
                      "name": "Flavors",
-                     "rect": "10,75,290,106"
+                     "rect": "10,75,433,106"
                   }
                }
             },
@@ -6121,8 +6053,7 @@
                      "showIcon": true,
                      "showName": false,
                      "style": "transparent",
-                     "traversalOn": false,
-                     "visible": false
+                     "traversalOn": false
                   }
                },
                "1316": {
@@ -6171,7 +6102,7 @@
                "id": "1317",
                "layer": "11",
                "name": "checks",
-               "rect": "305,14,335,45"
+               "rect": "305,14,401,45"
             }
          },
          "1617": {
@@ -6226,15 +6157,15 @@
                         "animate selections": false,
                         "autohide scrollbars": true,
                         "cache": "none",
-                        "content height": "2747",
+                        "content height": "2870",
                         "deselect on mouseUp": true,
                         "dim on focusout": false,
                         "dimmed hilite color": "80,94,100",
                         "drop indicator template": null,
-                        "first working row": "50",
+                        "first working row": "33",
                         "fixed row height": true,
                         "hilite color": "226,238,185",
-                        "last working row": "62",
+                        "last working row": "45",
                         "multiple lines": true,
                         "resize controls": false,
                         "row color": "255,255,255",
@@ -6244,7 +6175,7 @@
                         },
                         "scroll selections into view": false,
                         "scrollbar corner offset": "0",
-                        "vscroll": "2009"
+                        "vscroll": "1323"
                      }
                   },
                   "properties": {
@@ -6469,7 +6400,7 @@
       "customproperties": {
          "brushes": false,
          "cBuildNo": "1",
-         "cRevTargetStack": "Untitled 1",
+         "cRevTargetStack": "allControls2",
          "cVersionNo": "2.6.1",
          "errorObject": "card id 1002 of stack \"/Users/rebecca/Desktop/revStandaloneSettings.rev\"",
          "executionError": "%file%: assets/revStandaloneSettings_executionError.bin",
@@ -6523,7 +6454,7 @@
             "scripteditorvscroll": "7647"
          },
          "cREVGeometryCache": {
-            "stackID": "32422"
+            "stackID": "32929"
          },
          "cRevStandaloneSettings": {
             "android": false,
@@ -6688,15 +6619,17 @@
       "longID": "stack \"revStandaloneSettings\"",
       "properties": {
          "alwaysBuffer": true,
+         "backColor": "#ececec",
          "behavior": "stack \"revStandaloneSettingsBehavior\"",
          "decorations": "title,menu,minimize,close",
          "fileName": "revstandalonesettings.8.rev",
-         "id": "32422",
+         "foreColor": "#000000",
+         "id": "32929",
          "liveResizing": false,
          "name": "revStandaloneSettings",
-         "rect": "203,129,770,678",
+         "rect": "240,130,870,670",
          "resizable": false,
-         "title": "Standalone Application Settings for Untitled 1 - Mac"
+         "title": "Standalone Application Settings for allControls2 - Windows"
       },
       "sharedGroupIDs": "1317\n1617\n1010"
    }

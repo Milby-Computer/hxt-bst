@@ -43,7 +43,7 @@ Prefs
 !n		Edit Properties
 !c		Bookmark-Remove
 -
-Get Scripts
+(Get Scripts
 Edit Properties
 Edit Scripts
 Show Properties

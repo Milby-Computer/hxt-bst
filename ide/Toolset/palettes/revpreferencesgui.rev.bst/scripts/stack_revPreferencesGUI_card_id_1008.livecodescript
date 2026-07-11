@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI_card_id_1008"
 /*
 # Name: card "Editor" of stack "revPreferencesGUI"
 # ID: card id 1008 of stack "revPreferencesGUI"
-# Hash: bQ4Gk0ru62khQikX3qNiuQ==
+# Hash: Yht5wmEKe4bEWf28MDsS0Q==
 */
 
 
@@ -12,7 +12,7 @@ on preOpenCard
    set the hilite of button "hide palettes" to the cSEHidePalettes of stack "revPreferences"
    set the hilite of button "hide message box" to the cSEHideMessageBox of stack "revPreferences"
    send "update" to group "Script Editor"
-   send "hxtSetTheHeightOfThisStackTo 446" to this stack in 0 milliseconds
+   send "hxtSetTheHeightOfThisStackTo 446" to this stack in 1 milliseconds
    UpdateColorization
 end preOpenCard
 

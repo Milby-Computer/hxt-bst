@@ -1,0 +1,21 @@
+<p> </p>
+<p>aeChangeAngleCircular changes the position of an object on a cirCular path. It allows you to use easing effects for the transition.</p>
+<p></p>
+<p>Example:</p>
+<p></p>
+<p>aeChangeAngleCircular the long ID of grc "ball",the loc of grc "path",80,tNewAngle,2000,"counterclockwise","bounce"</p>
+<p>aeChangeAngleCircular the long ID of grc "ball",the loc of grc "path",80,270,2000,"clockwise","inout"</p>
+<p></p>
+<p>Parameters:</p>
+<p></p>
+<p>   long ID of the object to move</p>
+<p>   centerX of path</p>
+<p>   centerY of path (centerX and centerY can be combined expression)</p>
+<p>   radius from center</p>
+<p>   desired new angle</p>
+<p>   duration in millisecs</p>
+<p>   direction (clockwise OR counterClockwise)</p>
+<p>   easing method (in, out, inOut, overshoot, bounce or empty)</p>
+<p></p>
+<p></p>
+<p></p>

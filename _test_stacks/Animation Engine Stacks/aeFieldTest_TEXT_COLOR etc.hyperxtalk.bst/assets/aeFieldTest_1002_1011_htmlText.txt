@@ -1,0 +1,94 @@
+<p><font color="#980517">on</font><font color="#000000"> mouseUp</font></p>
+<p><font color="#000000">   </font><font color="#68228B">--setup animations</font></p>
+<p><font color="#000000">   aeSetFrameRate 18</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><font color="#980517">if</font><font color="#000000"> </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">visible</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "theScript" </font><font color="#980517">then</font></p>
+<p><font color="#000000">      </font><font color="#0000FF">set</font><font color="#000000"> </font><font color="#980517">the</font><font color="#000000"> flag </font><font color="#980517">of</font><font color="#000000"> btn "theScript" </font><font color="#980517">to</font><font color="#000000"> false</font></p>
+<p><font color="#000000">      aeFadeOut </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "theScript",250</font></p>
+<p><font color="#000000">   </font><font color="#980517">end</font><font color="#000000"> </font><font color="#980517">if</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><font color="#0000FF">show</font><font color="#000000"> fld "Lipsum"</font></p>
+<p><font color="#000000">   aeChangeRect </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum",</font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">topLeft</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum",500,300,1000,"overshoot"</font></p>
+<p><font color="#000000">   </font><font color="#0000FF">send</font><font color="#000000"> "animationStep 1" </font><font color="#980517">to</font><font color="#000000"> </font><font color="#F88017">me</font><font color="#000000"> in 1 </font><font color="#F88017">secs</font></p>
+<p><font color="#000000">   </font><font color="#0000FF">send</font><font color="#000000"> "animationStep 2" </font><font color="#980517">to</font><font color="#000000"> </font><font color="#F88017">me</font><font color="#000000"> in 3 </font><font color="#F88017">secs</font></p>
+<p><font color="#000000">   </font><font color="#0000FF">send</font><font color="#000000"> "animationStep 3" </font><font color="#980517">to</font><font color="#000000"> </font><font color="#F88017">me</font><font color="#000000"> in 4 </font><font color="#F88017">secs</font></p>
+<p><font color="#000000">   </font><font color="#0000FF">send</font><font color="#000000"> "animationStep 4" </font><font color="#980517">to</font><font color="#000000"> </font><font color="#F88017">me</font><font color="#000000"> in 5 </font><font color="#F88017">secs</font></p>
+<p><font color="#000000">   </font><font color="#0000FF">send</font><font color="#000000"> "animationStep 5" </font><font color="#980517">to</font><font color="#000000"> </font><font color="#F88017">me</font><font color="#000000"> in 6 </font><font color="#F88017">secs</font></p>
+<p><font color="#000000">   </font><font color="#0000FF">send</font><font color="#000000"> "animationStep 6" </font><font color="#980517">to</font><font color="#000000"> </font><font color="#F88017">me</font><font color="#000000"> in 7 </font><font color="#F88017">secs</font></p>
+<p><font color="#000000">   </font><font color="#0000FF">send</font><font color="#000000"> "animationStep 7" </font><font color="#980517">to</font><font color="#000000"> </font><font color="#F88017">me</font><font color="#000000"> in 8 </font><font color="#F88017">secs</font></p>
+<p><font color="#000000">   </font><font color="#0000FF">send</font><font color="#000000"> "animationStep 8" </font><font color="#980517">to</font><font color="#000000"> </font><font color="#F88017">me</font><font color="#000000"> in 9 </font><font color="#F88017">secs</font></p>
+<p><font color="#000000">   </font><font color="#0000FF">send</font><font color="#000000"> "animationStep 9" </font><font color="#980517">to</font><font color="#000000"> </font><font color="#F88017">me</font><font color="#000000"> in 10 second</font></p>
+<p><font color="#000000">   </font><font color="#0000FF">send</font><font color="#000000"> "animationStep 10" </font><font color="#980517">to</font><font color="#000000"> </font><font color="#F88017">me</font><font color="#000000"> in 10500 </font><font color="#F88017">milliseconds</font></p>
+<p><font color="#000000">   </font><font color="#0000FF">send</font><font color="#000000"> "animationStep 11" </font><font color="#980517">to</font><font color="#000000"> </font><font color="#F88017">me</font><font color="#000000"> in 11 </font><font color="#F88017">secs</font></p>
+<p><font color="#000000">   </font><font color="#0000FF">send</font><font color="#000000"> "animationStep 12" </font><font color="#980517">to</font><font color="#000000"> </font><font color="#F88017">me</font><font color="#000000"> in 12 </font><font color="#F88017">secs</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#980517">end</font><font color="#000000"> mouseUp</font></p>
+<p></p>
+<p></p>
+<p><font color="#980517">on</font><font color="#000000"> animationStep pWhat</font></p>
+<p><font color="#000000">   </font><font color="#68228B">--lock changes</font></p>
+<p><font color="#000000">   aeLockRects</font></p>
+<p><font color="#000000">   aeLockHeights</font></p>
+<p><font color="#000000">   aeLockWidths</font></p>
+<p><font color="#000000">   </font><font color="#980517">switch</font><font color="#000000"> pWhat</font></p>
+<p><font color="#000000">      </font><font color="#980517">case</font><font color="#000000"> 1</font></p>
+<p><font color="#000000">         aeChangeForColorOfChunk </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum","word 1","blue",1100</font></p>
+<p><font color="#000000">         aeChangeForColorOfChunk </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum","word 2","red",1100</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">break</font></p>
+<p><font color="#000000">      </font><font color="#980517">case</font><font color="#000000"> 2</font></p>
+<p><font color="#000000">         aeChangeHscroll </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum",500,1000,"overShoot"</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">break</font></p>
+<p><font color="#000000">         case3</font></p>
+<p><font color="#000000">         aeMoveTo </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> grc "grcTest",275,175,1000,"overshoot"</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">break</font></p>
+<p><font color="#000000">      </font><font color="#980517">case</font><font color="#000000"> 4</font></p>
+<p><font color="#000000">         aeChangeHscroll </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum",1500,1000,"bounce"</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">break</font></p>
+<p><font color="#000000">      </font><font color="#980517">case</font><font color="#000000"> 5</font></p>
+<p><font color="#000000">         aeChangeVscroll </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum",600,1000,"bounce"</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">break</font></p>
+<p><font color="#000000">      </font><font color="#980517">case</font><font color="#000000"> 6</font></p>
+<p><font color="#000000">         aeChangeRect </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> grc "grcTest",200,200,500,300,1000,"bounce"</font></p>
+<p><font color="#000000">         aeChangeRect </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum",200,200,500,300,1000,"bounce"</font></p>
+<p><font color="#000000">      </font><font color="#980517">case</font><font color="#000000"> 7</font></p>
+<p><font color="#000000">         aeChangeHeight </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum",300,1000,"inOut"</font></p>
+<p><font color="#000000">         aeChangeHeight </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> grc "grcTest",300,1000,"inOut"</font></p>
+<p><font color="#000000">         aeChangeBackColor </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum","blue",1000,"inOut"</font></p>
+<p><font color="#000000">         aeChangeForeColor </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum","red",1000,"inOut"</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">break</font></p>
+<p><font color="#000000">      </font><font color="#980517">case</font><font color="#000000"> 8</font></p>
+<p><font color="#000000">         aeChangeWidth </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum",400,500,"inOut"</font></p>
+<p><font color="#000000">         aeChangeWidth </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> grc "grcTest",400,500,"inOut"</font></p>
+<p><font color="#000000">         aeChangeForeColor </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum","black",1000,"inOut"</font></p>
+<p><font color="#000000">         aeChangeBackColor </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum","white",1000,"inOut"</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">break</font></p>
+<p><font color="#000000">      </font><font color="#980517">case</font><font color="#000000"> 9</font></p>
+<p><font color="#000000">         aeChangeHscroll </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum",0,1000,"inOut"</font></p>
+<p><font color="#000000">         aeChangeVscroll </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum",0,1000,"inOut"</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">break</font></p>
+<p><font color="#000000">      </font><font color="#980517">case</font><font color="#000000"> 10</font></p>
+<p><font color="#000000">         aeChangeForeColorOfChunk </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum","line 3","orange",1600</font></p>
+<p><font color="#000000">         aeChangeBackColorOfChunk </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum","line 3","gren",1600,"overshoot"</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">break</font></p>
+<p><font color="#000000">      </font><font color="#980517">case</font><font color="#000000"> 11</font></p>
+<p><font color="#000000">         aeChangeRect </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum",50,50,50,50,1000,"inOut"</font></p>
+<p><font color="#000000">         aeMoveTo </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> grc "grcTest",900,150,1000,"inOut"</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">set</font><font color="#000000"> </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">width</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> grc "grcTest" </font><font color="#980517">to</font><font color="#000000"> 450</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">set</font><font color="#000000"> </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">height</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> grc "grcTest" </font><font color="#980517">to</font><font color="#000000"> 250</font></p>
+<p><font color="#000000">         aeFadeOut </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">long</font><font color="#000000"> </font><font color="#FF0000">ID</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> fld "Lipsum",1000</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">break</font></p>
+<p><font color="#000000">      </font><font color="#980517">case</font><font color="#000000"> 12</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">enable</font><font color="#000000"> </font><font color="#F88017">me</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">set</font><font color="#000000"> </font><font color="#980517">the</font><font color="#000000"> </font><font color="#FF0000">loc</font><font color="#000000"> </font><font color="#980517">of</font><font color="#000000"> grc "grcTest" </font><font color="#980517">to</font><font color="#000000"> -500,-200</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">break</font></p>
+<p><font color="#000000">      </font><font color="#980517">default</font></p>
+<p><font color="#000000">         </font><font color="#0000FF">break</font></p>
+<p><font color="#000000">   </font><font color="#980517">end</font><font color="#000000"> </font><font color="#980517">switch</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><font color="#68228B">-- unlock changes and play animation</font></p>
+<p><font color="#000000">   aeUnlockRects</font></p>
+<p><font color="#000000">   aeUnLockHeights</font></p>
+<p><font color="#000000">   aeUnLockWidths</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#980517">end</font><font color="#000000"> animationStep</font></p>
+<p></p>

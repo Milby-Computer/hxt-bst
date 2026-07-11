@@ -3,7 +3,7 @@ Script "stack_revOnlineLibrary"
 /*
 # Name: stack "revOnlineLibrary"
 # ID: stack "revOnlineLibrary"
-# Hash: g6yZkPimybsdZSOaD1DWvA==
+# Hash: SpFNDSh7NdTa5sFVaMI59g==
 */
 
 
@@ -38,14 +38,14 @@ function revOnlineSecureCGIUrl
    if gREVUseTestServer then
       return "https://10.2.1.26/cgi-bin/revonline_secure.rev"
    else
-      if line 4 of revLicenseInfo is "enterprise" then
-         //return "https://secure.runrev.com/cgi-bin/revonline_secure.rev"
-         return "https://developer.runrev.com/revonline_secure.irev"
-      else
-         # Temporary measure as ssl is an enterprise feature
-         //return "http://secure.runrev.com/cgi-bin/revonline_secure.rev"
-         return "http://developer.runrev.com/revonline_secure.irev"
-      end if
+      --      if line 4 of revLicenseInfo is "enterprise" then
+      --         //return "https://secure.runrev.com/cgi-bin/revonline_secure.rev"
+      --         return "https://developer.runrev.com/revonline_secure.irev"
+      --      else
+      --         # Temporary measure as ssl is an enterprise feature
+      --         //return "http://secure.runrev.com/cgi-bin/revonline_secure.rev"
+      --         return "http://developer.runrev.com/revonline_secure.irev"
+      --      end if
    end if
 end revOnlineSecureCGIUrl
 
@@ -253,27 +253,27 @@ local sAccountFailureCallback
 
 command revOnlineRequestAccount pEmail, pCallback, pCallbackTarget
    # Temporary measure
-   if line 3 of the revLicenseInfo is not "evaluation" then
-      local tExternalCallback
-      put revCallbackCreate(pCallbackTarget, pCallback) into tExternalCallback
-      
-      local tInternalCallback
-      put revCallbackCreate(the long id of me, "revOnlineRequestAccountCallback") into tInternalCallback
-      revCallbackAddParameter tInternalCallback, tExternalCallback
-      
-      if pEmail is not empty then
-         local tRequest
-         put "accountRequest" into tRequest["action"]
-         put pEmail into tRequest["parameters"]["email"]
-         revOnlineQueryServer tRequest, false, "get", tInternalCallback
-      else
-         revCallbackAddParameter tInternalCallback, "Empty email address"
-         revCallbackApplyLast tInternalCallback
-      end if
+   --   if line 3 of the revLicenseInfo is not "evaluation" then
+   local tExternalCallback
+   put revCallbackCreate(pCallbackTarget, pCallback) into tExternalCallback
+   
+   local tInternalCallback
+   put revCallbackCreate(the long id of me, "revOnlineRequestAccountCallback") into tInternalCallback
+   revCallbackAddParameter tInternalCallback, tExternalCallback
+   
+   if pEmail is not empty then
+      local tRequest
+      put "accountRequest" into tRequest["action"]
+      put pEmail into tRequest["parameters"]["email"]
+      revOnlineQueryServer tRequest, false, "get", tInternalCallback
    else
-      # Temporary
-      send sAccountFailureCallback to sAccountFailureCallbackTarget
+      revCallbackAddParameter tInternalCallback, "Empty email address"
+      revCallbackApplyLast tInternalCallback
    end if
+   --else
+   --   # Temporary
+   --   send sAccountFailureCallback to sAccountFailureCallbackTarget
+   --end if
 end revOnlineRequestAccount
 
 

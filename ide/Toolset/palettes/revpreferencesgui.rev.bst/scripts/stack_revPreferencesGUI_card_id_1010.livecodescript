@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI_card_id_1010"
 /*
 # Name: card "Browser" of stack "revPreferencesGUI"
 # ID: card id 1010 of stack "revPreferencesGUI"
-# Hash: xMxK1i54jMwV2gD1nVxtww==
+# Hash: XEabQkodqEQsC9/IiMJWxg==
 */
 
 
@@ -51,8 +51,7 @@ end updatePreference
 
 
 on OpenCard
-   send "hxtSetTheHeightOfThisStackTo 346" to this stack in 0 milliseconds
-   --   hxtSetTheHeightOfThisStackTo 346
+   send "hxtSetTheHeightOfThisStackTo 346" to this stack in 1 milliseconds
 end OpenCard
 
 
