@@ -131,7 +131,7 @@
             },
             "customproperties": {
                "cRTL": false,
-               "fieldmode": "password"
+               "fieldmode": "plain"
             },
             "custompropertysets": {
                "cAPKGeneral": {
@@ -155,8 +155,8 @@
                }
             },
             "properties": {
-               "backColor": "#ececec",
-               "foreColor": "#000000",
+               "backColor": "#323232",
+               "foreColor": "#ffffff",
                "id": "1002",
                "name": "card id 1002"
             }
@@ -185,7 +185,6 @@
          "decorations": "default",
          "destroyWindow": true,
          "fileName": "revaskdialog.rev",
-         "foreColor": "0,0,0",
          "id": "1132",
          "liveResizing": false,
          "name": "Ask Dialog",
