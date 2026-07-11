@@ -24,8 +24,8 @@
          "uProduct": "HyperXTalk 1.0.0  ",
          "uProductDetails": "%file%: assets/Installer_uProductDetails.bin",
          "uProductLicense": "%file%: assets/Installer_uProductLicense.bin",
-         "uProductTag": "hyperxtalk-1.0.0-community-1",
-         "uProductTitle": "HyperXTalk v1.0.0 (Community)"
+         "uProductTag": "hyperxtalk-1.0.0",
+         "uProductTitle": "HyperXTalk v1.0.0"
       },
       "custompropertysets": {
          "cREVGeometryCache": {
@@ -40,7 +40,7 @@
          "id": "1183",
          "liveResizing": false,
          "name": "Installer",
-         "rect": "337,208,1597,850"
+         "rect": "170,208,1430,850"
       },
       "sharedGroupIDs": null
    },
@@ -337,7 +337,7 @@
                      "dontWrap": true,
                      "fixedLineHeight": false,
                      "foreColor": "255,255,255",
-                     "htmlText": "<p><font color=\"#555555\">LiveCode Installer // </font><font color=\"#444444\">Installation Failed</font></p>",
+                     "htmlText": "<p><font color=\"#555555\">HyperXTalk Installer // </font><b><font color=\"#444444\">License Agreement</font></b></p>",
                      "id": "1019",
                      "layer": "3",
                      "lockText": true,
@@ -361,7 +361,6 @@
                      "autoHilite": false,
                      "fixedLineHeight": false,
                      "foreColor": "#555555",
-                     "htmlText": "<p>The installation was not successful.</p>",
                      "id": "1020",
                      "layer": "4",
                      "lockText": true,
@@ -451,8 +450,7 @@
                      "margins": "0",
                      "name": "Cancel",
                      "rect": "20,315,104,339",
-                     "selectGroupedControls": false,
-                     "visible": false
+                     "selectGroupedControls": false
                   }
                },
                "1093": {
@@ -464,7 +462,7 @@
                            "foreColor": "white",
                            "hiliteIcon": "1027",
                            "hoverIcon": "1029",
-                           "icon": "1027",
+                           "icon": "1028",
                            "id": "1094",
                            "layer": "9",
                            "margins": "0",
@@ -484,7 +482,7 @@
                         "properties": {
                            "autoHilite": false,
                            "fixedLineHeight": false,
-                           "foreColor": "#ffffff",
+                           "foreColor": "#474747",
                            "htmlText": "<p>Continue</p>",
                            "id": "1095",
                            "layer": "10",
@@ -527,7 +525,7 @@
                            "foreColor": "white",
                            "hiliteIcon": "1027",
                            "hoverIcon": "1029",
-                           "icon": "1028",
+                           "icon": "1030",
                            "id": "1097",
                            "layer": "12",
                            "margins": "0",
@@ -547,7 +545,7 @@
                         "properties": {
                            "autoHilite": false,
                            "fixedLineHeight": false,
-                           "foreColor": "#474747",
+                           "foreColor": "#ffffff",
                            "htmlText": "<p>Back</p>",
                            "id": "1098",
                            "layer": "13",
@@ -739,6 +737,7 @@
                   "properties": {
                      "autoHilite": false,
                      "foreColor": "#555555",
+                     "htmlText": "%file%: assets/InstallerUI_1009_1209_htmlText.txt",
                      "id": "1209",
                      "layer": "22",
                      "lockText": true,
@@ -990,7 +989,7 @@
                }
             },
             "customproperties": {
-               "uError": "573,2652,1,moveStack\n241,2652,1,resizeStack\n353,0,0,stack \"/Users/sebastien/Workspace/livecode-commercial-6/livecode/ide/Toolset/palettes/revProjectBrowser.livecode\"\n573,38,1,installerRun"
+               "uError": null
             },
             "custompropertysets": {
                "cREVGeometrycache": {
@@ -1459,7 +1458,7 @@
                            "lockLoc": true,
                            "margins": "0",
                            "name": "Bar",
-                           "rect": "48,208,465,222"
+                           "rect": "48,208,355,222"
                         }
                      }
                   },
@@ -1484,7 +1483,7 @@
                      "autoHilite": false,
                      "dontWrap": true,
                      "foreColor": "#555555",
-                     "htmlText": "<p>Launching...</p>",
+                     "htmlText": "<p>Downloading...</p>",
                      "id": "1141",
                      "layer": "18",
                      "lockText": true,
@@ -2468,9 +2467,8 @@
          "id": "1281",
          "liveResizing": false,
          "name": "InstallerUI",
-         "rect": "857,522,1371,883",
+         "rect": "463,270,977,631",
          "resizable": false,
-         "textFont": "Lucida Grande",
          "textSize": "11",
          "textStyle": "plain",
          "title": "LiveCode Installer"
