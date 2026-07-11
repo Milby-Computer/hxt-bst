@@ -104,6 +104,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsersectionrowtemplate_1002_1044_1049_1050_svg path.txt"
                               },
@@ -120,7 +121,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1051",
-                                 "layer": "8",
+                                 "layer": "7",
                                  "name": "line",
                                  "points": "14,14\n14,30",
                                  "rect": "10,13,18,31",
@@ -147,6 +148,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsersectionrowtemplate_1002_1044_1052_1053_svg path.txt"
                               },
@@ -163,7 +165,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1054",
-                                 "layer": "11",
+                                 "layer": "10",
                                  "name": "line",
                                  "points": "24,14\n24,30",
                                  "rect": "20,13,28,31",
@@ -243,7 +245,8 @@
          "fileName": "revideprojectbrowsersectionrowtemplate.livecode",
          "id": "1054",
          "name": "revideprojectbrowsersectionrowtemplate",
-         "rect": "175,145,575,545"
+         "rect": "175,145,575,545",
+         "visible": false
       },
       "sharedGroupIDs": null
    }

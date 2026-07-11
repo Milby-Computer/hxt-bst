@@ -1,0 +1,43 @@
+<p>Store[]&#9;196 ms</p>
+<p>Fetch[]&#9;145 ms</p>
+<p>Store[][]&#9;308 ms</p>
+<p>Fetch[][]&#9;208 ms</p>
+<p></p>
+<p>Get Base&#9;67 ms</p>
+<p>Get Base[&lt;name&gt;]&#9;147 ms</p>
+<p>Get Base[&lt;number&gt;]&#9;176 ms</p>
+<p>Get Base[&lt;string&gt;]&#9;217 ms</p>
+<p>Get Base[&lt;seq-1&gt;]&#9;218 ms</p>
+<p>Get Base[&lt;name&gt;][&lt;name&gt;]&#9;216 ms</p>
+<p>Get Base[&lt;number&gt;][&lt;number&gt;]&#9;276 ms</p>
+<p>Get Base[&lt;string&gt;][&lt;string&gt;]&#9;347 ms</p>
+<p>Get Base[&lt;seq-2&gt;]&#9;319 ms</p>
+<p></p>
+<p>Replace Into Base&#9;64 ms</p>
+<p>Replace Into Base[&lt;name&gt;]&#9;34 ms</p>
+<p>Replace Into Base[&lt;number&gt;]&#9;46 ms</p>
+<p>Replace Into Base[&lt;string&gt;]&#9;52 ms</p>
+<p>Replace Into Base[&lt;seq-1&gt;]&#9;53 ms</p>
+<p>Replace Into Base[&lt;name&gt;][&lt;name&gt;]&#9;49 ms</p>
+<p>Replace Into Base[&lt;number&gt;][&lt;number&gt;]&#9;70 ms</p>
+<p>Replace Into Base[&lt;string&gt;][&lt;string&gt;]&#9;84 ms</p>
+<p>Replace Into Base[&lt;seq-2&gt;]&#9;75 ms</p>
+<p></p>
+<p>ArrayAccessNamed</p>
+<p>Store[]&#9;195 ms</p>
+<p>Fetch[]&#9;143 ms</p>
+<p>Store[][]&#9;308 ms</p>
+<p>Fetch[][]&#9;209 ms</p>
+<p></p>
+<p>ArrayAccessIndexKey</p>
+<p>Store[]&#9;242 ms</p>
+<p>Fetch[]&#9;186 ms</p>
+<p>Store[][]&#9;397 ms</p>
+<p>Fetch[][]&#9;296 ms</p>
+<p></p>
+<p>ArrayAccessStringKey</p>
+<p>Store[]&#9;279 ms</p>
+<p>Fetch[]&#9;224 ms</p>
+<p>Store[][]&#9;468 ms</p>
+<p>Fetch[][]&#9;369 ms</p>
+<p></p>

@@ -1,0 +1,24 @@
+Store[]	53 ms
+Fetch[]	25 ms
+Store[][]	76 ms
+Fetch[][]	34 ms
+
+Get Base	12 ms
+Get Base[<name>]	28 ms
+Get Base[<number>]	32 ms
+Get Base[<string>]	32 ms
+Get Base[<seq-1>]	40 ms
+Get Base[<name>][<name>]	38 ms
+Get Base[<number>][<number>]	47 ms
+Get Base[<string>][<string>]	56 ms
+Get Base[<seq-2>]	52 ms
+
+Replace Into Base	15 ms
+Replace Into Base[<name>]	7 ms
+Replace Into Base[<number>]	8 ms
+Replace Into Base[<string>]	9 ms
+Replace Into Base[<seq-1>]	9 ms
+Replace Into Base[<name>][<name>]	9 ms
+Replace Into Base[<number>][<number>]	13 ms
+Replace Into Base[<string>][<string>]	14 ms
+Replace Into Base[<seq-2>]	12 ms

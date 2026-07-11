@@ -1,0 +1,57 @@
+{
+   "#mainstack": "ShakeControl",
+   "ShakeControl": {
+      "#name": "stack \"ShakeControl\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"Password\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>Hello World</p>",
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Password",
+                     "passwordField": true,
+                     "passwordToggle": true,
+                     "rect": "88,138,289,159"
+                  }
+               },
+               "1004": {
+                  "#name": "button \"Verify Password\"",
+                  "properties": {
+                     "id": "1004",
+                     "layer": "2",
+                     "name": "Verify Password",
+                     "rect": "110,177,255,200",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"ShakeControl\"",
+      "properties": {
+         "fileName": "ShakeControl.hyperxtalk",
+         "id": "1005",
+         "name": "ShakeControl",
+         "rect": "219,118,619,518"
+      },
+      "sharedGroupIDs": null
+   }
+}

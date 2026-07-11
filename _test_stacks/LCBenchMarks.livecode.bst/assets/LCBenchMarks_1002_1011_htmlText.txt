@@ -1,0 +1,5 @@
+<p>This is part of the benchmarks:</p>
+<p><a>https://github.com/emily-elizabeth/HyperXTalk/blob/main/benchmarks/lcs/control/variable.livecodescript</a></p>
+<p>It compares speed between Livecode and HyperXTalk.</p>
+<p>Open the stack in either LC or HXT and run "StartBenchmar". Then save the stack and open it in the other environment.</p>
+<p>It puts the results into the appropriate fields. Note the difference.</p>

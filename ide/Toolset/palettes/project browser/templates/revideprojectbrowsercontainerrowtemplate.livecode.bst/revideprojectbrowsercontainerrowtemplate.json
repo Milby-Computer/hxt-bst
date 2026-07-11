@@ -195,6 +195,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontainerrowtemplate_1002_1044_1053_1055_svg path.txt"
                               },
@@ -227,6 +228,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontainerrowtemplate_1002_1044_1056_1057_svg path.txt"
                               },
@@ -243,7 +245,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1058",
-                                 "layer": "14",
+                                 "layer": "13",
                                  "name": "line",
                                  "points": "14,54\n14,70",
                                  "rect": "10,53,18,71",
@@ -270,6 +272,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontainerrowtemplate_1002_1044_1059_1060_svg path.txt"
                               },
@@ -286,7 +289,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1061",
-                                 "layer": "17",
+                                 "layer": "16",
                                  "name": "line",
                                  "points": "14,54\n14,70",
                                  "rect": "10,53,18,71",
@@ -536,7 +539,8 @@
          "fileName": "revideprojectbrowsercontainerrowtemplate.livecode",
          "id": "1084",
          "name": "revideprojectbrowsercontainerrowtemplate",
-         "rect": "885,269,1285,669"
+         "rect": "885,269,1285,669",
+         "visible": false
       },
       "sharedGroupIDs": null
    }

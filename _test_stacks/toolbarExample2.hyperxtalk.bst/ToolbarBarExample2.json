@@ -1,0 +1,100 @@
+{
+   "#mainstack": "ToolbarBarExample2",
+   "ToolbarBarExample2": {
+      "#name": "stack \"ToolbarBarExample2\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1003",
+                     "label": "create toolbar",
+                     "layer": "1",
+                     "name": "Button",
+                     "rect": "31,117,143,140",
+                     "traversalOn": false
+                  }
+               },
+               "1004": {
+                  "#name": "toolbar \"myToolbar\"",
+                  "properties": "%no properties%"
+               },
+               "1005": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1005",
+                     "label": "create toolbar items",
+                     "layer": "3",
+                     "name": "Button",
+                     "rect": "190,93,342,116",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "image \"settings\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "borderWidth": "0",
+                     "id": "1006",
+                     "layer": "4",
+                     "name": "settings",
+                     "rect": "176,176,224,224",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/ToolbarBarExample2_1002_1006_text.png"
+                  }
+               },
+               "1024": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1024",
+                     "label": "delete Open toolbar item",
+                     "layer": "5",
+                     "name": "Button",
+                     "rect": "190,125,365,148",
+                     "traversalOn": false
+                  }
+               },
+               "1025": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1025",
+                     "label": "itemIcon",
+                     "layer": "6",
+                     "name": "Button",
+                     "rect": "254,157,336,180",
+                     "traversalOn": false
+                  }
+               },
+               "1311": {
+                  "#name": "button \"OpenShareAnchor\"",
+                  "properties": {
+                     "id": "1311",
+                     "layer": "7",
+                     "name": "OpenShareAnchor",
+                     "rect": "347,-22,372,1",
+                     "style": "rectangle",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"ToolbarBarExample2\"",
+      "properties": {
+         "fileName": "toolbarExample2.hyperxtalk",
+         "id": "1311",
+         "name": "ToolbarBarExample2",
+         "rect": "322,181,751,581"
+      },
+      "sharedGroupIDs": null
+   }
+}

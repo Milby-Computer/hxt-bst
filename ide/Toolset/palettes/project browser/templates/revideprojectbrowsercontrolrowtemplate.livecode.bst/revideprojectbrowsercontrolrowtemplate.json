@@ -226,6 +226,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1014_1015_svg path.txt"
                               },
@@ -242,7 +243,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1016",
-                                 "layer": "13",
+                                 "layer": "12",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -269,6 +270,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1017_1018_svg path.txt"
                               },
@@ -285,7 +287,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1019",
-                                 "layer": "16",
+                                 "layer": "15",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -312,6 +314,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1020_1021_svg path.txt"
                               },
@@ -328,7 +331,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1022",
-                                 "layer": "19",
+                                 "layer": "18",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -355,6 +358,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1023_1024_svg path.txt"
                               },
@@ -371,7 +375,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1025",
-                                 "layer": "22",
+                                 "layer": "21",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -398,6 +402,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1026_1027_svg path.txt"
                               },
@@ -414,7 +419,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1028",
-                                 "layer": "25",
+                                 "layer": "24",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -441,6 +446,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1029_1030_svg path.txt"
                               },
@@ -457,7 +463,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1031",
-                                 "layer": "28",
+                                 "layer": "27",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -484,6 +490,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1032_1033_svg path.txt"
                               },
@@ -500,7 +507,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1034",
-                                 "layer": "31",
+                                 "layer": "30",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -527,6 +534,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1035_1036_svg path.txt"
                               },
@@ -543,7 +551,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1037",
-                                 "layer": "34",
+                                 "layer": "33",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -570,6 +578,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1038_1039_svg path.txt"
                               },
@@ -586,7 +595,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1040",
-                                 "layer": "37",
+                                 "layer": "36",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -613,6 +622,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1041_1042_svg path.txt"
                               },
@@ -629,7 +639,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1043",
-                                 "layer": "40",
+                                 "layer": "39",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -869,6 +879,12 @@
                   }
                }
             },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "50"
+               }
+            },
             "properties": {
                "id": "1002"
             }
@@ -876,7 +892,7 @@
       },
       "custompropertysets": {
          "cREVGeometryCache": {
-            "stackID": "1046"
+            "stackID": "1056"
          }
       },
       "longID": "stack \"revideprojectbrowsercontrolrowtemplate\"",
@@ -884,7 +900,8 @@
          "fileName": "revideprojectbrowsercontrolrowtemplate.livecode",
          "id": "1056",
          "name": "revideprojectbrowsercontrolrowtemplate",
-         "rect": "354,210,754,610"
+         "rect": "354,210,754,610",
+         "visible": false
       },
       "sharedGroupIDs": null
    }

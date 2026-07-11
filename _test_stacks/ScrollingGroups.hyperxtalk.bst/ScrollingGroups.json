@@ -1,0 +1,110 @@
+{
+   "#mainstack": "ScrollingGroups",
+   "ScrollingGroups": {
+      "#name": "stack \"ScrollingGroups\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1005": {
+                  "#name": "group id 1005",
+                  "childcontrols": {
+                     "1003": {
+                        "#name": "button \"Button\"",
+                        "properties": {
+                           "id": "1003",
+                           "layer": "2",
+                           "name": "Button",
+                           "rect": "4,4,86,27",
+                           "traversalOn": false
+                        }
+                     },
+                     "1004": {
+                        "#name": "button \"Button\"",
+                        "properties": {
+                           "id": "1004",
+                           "layer": "3",
+                           "name": "Button",
+                           "rect": "247,296,329,319",
+                           "traversalOn": false
+                        }
+                     },
+                     "1010": {
+                        "#name": "field \"Field\"",
+                        "customproperties": {
+                           "cellFormatting": false
+                        },
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "fixedLineHeight": false,
+                           "htmlText": "%file%: assets/ScrollingGroups_1002_1005_1010_htmlText.txt",
+                           "id": "1010",
+                           "layer": "4",
+                           "name": "Field",
+                           "rect": "18,31,122,87",
+                           "scrollbarWidth": "16",
+                           "style": "scrolling",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1012": {
+                        "#name": "field \"Label Field\"",
+                        "custompropertysets": {
+                           "cRevTable": {
+                              "cellEdit": false,
+                              "cellFormat": false,
+                              "maxColumnCount": null
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "fixedLineHeight": false,
+                           "htmlText": "<p>Label:</p>",
+                           "id": "1012",
+                           "layer": "5",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "6,96,106,132",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1005",
+                     "layer": "1",
+                     "lockLoc": true,
+                     "rect": "0,0,140,140"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"ScrollingGroups\"",
+      "properties": {
+         "fileName": "ScrollingGroups.hyperxtalk",
+         "id": "1012",
+         "name": "ScrollingGroups",
+         "rect": "348,167,488,307",
+         "resizable": false
+      },
+      "sharedGroupIDs": null
+   }
+}
