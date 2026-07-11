@@ -1,4 +1,4 @@
-!cstack "\/Users\/emily-elizabethhoward\/Developer\/HyperXTalk\/ide\/Toolset\/palettes\/script editor\/behaviors\/revsehandlerlistbehavior.livecodescript" - Code Editor \(editing)/|stack "revNewScriptEditor 1"
-!nallControls2/|stack "allControls2"
+!cgroup "Pane Tabs" of card "Main" of stack "revSETemplate" of stack "\/Users\/emily-elizabethhoward\/Developer\/HyperXTalk\/ide\/Toolset\/palettes\/script editor\/revscripteditor.8.rev" - Code Editor \(editing)/|stack "revNewScriptEditor 1"
+!nUntitled 1/|stack "Untitled 1"
 -
 Send Window to Back/`

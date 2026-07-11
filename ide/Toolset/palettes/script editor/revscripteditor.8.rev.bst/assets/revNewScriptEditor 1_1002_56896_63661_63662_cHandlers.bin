@@ -1,79 +1,18 @@
-M revUpdatePalette 3 4 button id 56803 of group id 1046 of card id 1002 of stack "revNewScriptEditor 1" of stack "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev"
+M getCurrentTab 64 66
+M mouseUp 36 40
+M resize 4 18
+PM selectObject 75 101
+M setCurrentTab 46 60
+M update 27 34 button id 56803 of group id 1046 of card id 1002 of stack "revNewScriptEditor 1" of stack "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/script editor/revscripteditor.8.rev"
 
 
-appleEvent
-arrowKey
-backspaceKey
-closeBackground
-closeCard
-closeStack
-closeStackRequest
-commandKeyDown
-controlKeyDown
-copyKey
-cutKey
-deleteCard
-deleteKey
-deleteStack
-desktopChanged
-dragDrop
-dragEnter
-dragLeave
-dragMove
-editScript
-enterKey
-escapeKey
-functionKey
-iconifyStack
-idle
-keyDown
-keyUp
-mouseDoubleDown
-mouseDoubleUp
-mouseDown
-mouseDownInBackdrop
-mouseEnter
-mouseLeave
-mouseMove
-mouseRelease
-mouseStillDown
-mouseUp
-mouseUpInBackdrop
-mouseWithin
-moveStack
-nameChanged
-newCard
-newStack
-newTool
-objectSelectionEnded
-objectSelectionStarted
-openCard
-openStack
-optionKeyDown
-pasteKey
+closeControl
+deleteBackground
+deleteGroup
+newBackground
+newGroup
+openBackground
+openControl
 preOpenBackground
-preOpenCard
-preOpenStack
-queryRecordChanged
-resizeStack
-resume
-resumeStack
-revEndXMLNode
-revStartXMLData
-revStartXMLNode
-revXMLEndTree
-revXMLStartTree
-saveStackRequest
-selectedObjectChanged
-shutdown
-shutdownRequest
-signal
-socketClosed
-socketError
-socketTimeout
-suspend
-suspendStack
-systemAppearanceChanged
-tabKey
-undoChanged
-unIconifyStack
+preOpenControl
+scrollbarDrag

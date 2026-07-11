@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI"
 /*
 # Name: stack "revPreferencesGUI"
 # ID: stack "revPreferencesGUI"
-# Hash: cI+GwsHswUA0YnjILH3PdQ==
+# Hash: BFkUvhSNyVfv3R8606AXjQ==
 */
 
 
@@ -53,6 +53,7 @@ on preOpenStack
    set the backgroundColor of this stack to (the systemWindowColor)
    set the foregroundColor of this stack to (the systemTextColor)
    set the menuHistory of button "Tab Menu" to 1  // HXT
+   
    pass preOpenStack
 end preOpenStack
 

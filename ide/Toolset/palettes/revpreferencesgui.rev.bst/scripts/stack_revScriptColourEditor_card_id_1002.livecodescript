@@ -3,7 +3,7 @@ Script "stack_revScriptColourEditor_card_id_1002"
 /*
 # Name: card id 1002 of stack "revScriptColourEditor" of stack "revPreferencesGUI"
 # ID: card id 1002 of stack "revScriptColourEditor" of stack "revPreferencesGUI"
-# Hash: uemT0jYw8WgXIoQgx6k/mA==
+# Hash: lMmetDn68/l4wB/+iC58Pg==
 */
 
 
@@ -70,7 +70,40 @@ private command updateOpenScriptEditors
    put revListScriptEditors() into tScriptEditors
    lock screen
    repeat for each line tScriptEditor in tScriptEditors
-      dispatch "scriptColorize" to group "Editor" of stack tScriptEditor with "script"
+      send "revSEUpdate" to tScriptEditor
    end repeat
    unlock screen
 end updateOpenScriptEditors
+
+
+command SaveOutScheme pSchemeName, pSchemeData
+   if (there is no file revEnvironmentUserColorSchemesPath()) then
+      create folder revEnvironmentUserColorSchemesPath()
+   end if
+   put pSchemeData into URL ("file://" & revEnvironmentUserColorSchemesPath() & SLASH & pSchemeName & ".scheme")
+end SaveOutScheme
+
+
+on PreOpenCard
+   local tSchemeName
+   put revIDEGetPreference("cScriptEditor,colorization,scheme") into tSchemeName
+   
+   set the text of button "schemes" to "Default" & LF & "Revolution Classic" & LF & "No Colorization"
+   -- if the schemes folder exists, then load the scheme files
+   if (there is a folder revEnvironmentUserColorSchemesPath()) then
+      local tFiles
+      put files(revEnvironmentUserColorSchemesPath(), "detailed-utf8") into tFiles
+      
+      local tSchemeNames
+      repeat for each line tFileInfo in tFiles
+         if (tFileInfo begins with ".") then next repeat
+         put LINEFEED & textDecode(URLDecode(item 1 of tFileInfo), "utf8") after tSchemeNames
+      end repeat
+      sort tSchemeNames
+      replace ".scheme" with EMPTY in tSchemeNames
+      set the text of button "schemes" to (the text of button "schemes" & tSchemeNames)
+   end if
+   
+   set the menuHistory of button "schemes" to (lineOffset(tSchemeName, the text of button "schemes"))
+   set the label of button "schemes" to tSchemeName
+end PreOpenCard

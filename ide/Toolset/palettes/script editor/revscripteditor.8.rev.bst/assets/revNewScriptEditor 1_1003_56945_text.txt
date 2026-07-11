@@ -1,49 +1,19 @@
 Go to handler...
-	resize
-	filterUpdate
-	filterChanged
-	filterHandlerNames
-	jumpToHandler
-	closeReject
-	closeAccept
-	hideGroup
-	initializeWithoutGrabbingFocus
-	mouseMove
 	update
-	initialize
-	handlerPicked
-	updateSelectedHandler
-	handlerTypeSortCallback
-	getIcon
-Add default handler...
-	errorDialog
-	libraryStack
-	localNotificationReceived
-	mainStackChanged
-	mouseDoubleDown
-	mouseDoubleUp
-	mouseDown
-	mouseEnter
-	mouseLeave
-	mouseMove
-	mouseRelease
-	mouseStillDown
+	resize
+	getCurrentTab
+	selectObject
+	setCurrentTab
 	mouseUp
-	mouseWithin
-	nameChanged
-	pushNotificationReceived
-	pushNotificationRegistered
-	pushNotificationRegistrationError
-	reachabilityChanged
-	relaunch
-	releaseStack
-	reloadStack
-	savingMobileStandalone
-	savingStandalone
-	selectedObjectChanged
-	socketClosed
-	socketError
-	socketTimeout
-	standaloneSaved
-	startup
+Add default handler...
+	closeControl
+	deleteBackground
+	deleteGroup
+	newBackground
+	newGroup
+	openBackground
+	openControl
+	preOpenBackground
+	preOpenControl
+	scrollbarDrag
 !cShow default handlers

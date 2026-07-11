@@ -153,7 +153,7 @@
    },
    "revPreferencesGUI": {
       "#name": "stack \"revPreferencesGUI\"",
-      "#substacks": "Data Grid Templates 1251408928068\nrevScriptColourEditor",
+      "#substacks": "revScriptColourEditor\nData Grid Templates 1251408928068",
       "backgroundIDs": "1004",
       "cardIDs": "1002\n1005\n1006\n1007\n1008\n1009\n1010",
       "childcontrols": {
@@ -447,6 +447,7 @@
                      "id": "1003",
                      "layer": "2",
                      "lockLoc": true,
+                     "menuHistory": "5",
                      "menuMode": "tabbed",
                      "name": "Tab Menu",
                      "rect": "-1,6,601,606",
@@ -1899,14 +1900,15 @@
                            "armBorder": false,
                            "autoHilite": false,
                            "id": "1128",
-                           "label": "Default",
+                           "label": "Red",
                            "layer": "17",
+                           "menuHistory": "6",
                            "menuMode": "option",
                            "name": "Colorization Scheme",
                            "opaque": false,
                            "rect": "314,181,460,203",
                            "style": "menu",
-                           "text": "Default\nRevolution classic\nNo Colorization\nCustom...",
+                           "text": "Default\nRevolution Classic\nNo Colorization\n(-\nBlue\nRed\n(-\nCustom...",
                            "traversalOn": false
                         }
                      },
@@ -1954,7 +1956,7 @@
                         }
                      },
                      "1131": {
-                        "#name": "button \"Colorization Scheme\"",
+                        "#name": "button \"Handler List\"",
                         "customproperties": {
                            "cPref": "editor,sorthandlerlist",
                            "cProperty": "label"
@@ -1967,7 +1969,7 @@
                            "layer": "20",
                            "menuLines": "3",
                            "menuMode": "option",
-                           "name": "Colorization Scheme",
+                           "name": "Handler List",
                            "opaque": false,
                            "rect": "314,132,460,154",
                            "style": "menu",
@@ -2959,7 +2961,7 @@
          "foreColor": "#000000",
          "id": "1176",
          "name": "revPreferencesGUI",
-         "rect": "531,256,1131,618",
+         "rect": "711,133,1311,579",
          "title": "Settings"
       },
       "sharedGroupIDs": "1004"
@@ -2993,7 +2995,7 @@
                      "label": "Colourize",
                      "layer": "3",
                      "name": "colourize",
-                     "rect": "331,212,413,235",
+                     "rect": "331,252,413,275",
                      "traversalOn": false
                   }
                },
@@ -3006,8 +3008,8 @@
                      "dgCache": {
                         "data": [
                            {
-                              "Attributes": "bold",
-                              "Colour": "127,127,0",
+                              "Attributes": "none",
+                              "Colour": "255,38,0",
                               "Name": "commands",
                               "Type": "group"
                            },
@@ -3283,7 +3285,7 @@
                      "lockLoc": true,
                      "margins": "0",
                      "name": "colours",
-                     "rect": "15,44,415,212",
+                     "rect": "15,44,415,252",
                      "selectGroupedControls": false,
                      "showBorder": true,
                      "threeD": false
@@ -3295,20 +3297,19 @@
                      "id": "1252",
                      "layer": "1",
                      "name": "Rectangle",
-                     "rect": "15,211,415,236"
+                     "rect": "15,251,415,276"
                   }
                },
                "1253": {
                   "#name": "button \"bold\"",
                   "properties": {
                      "hiliteBorder": false,
-                     "hilited": true,
                      "id": "1253",
                      "label": "Bold",
-                     "layer": "99",
+                     "layer": "104",
                      "name": "bold",
                      "opaque": false,
-                     "rect": "26,212,110,235",
+                     "rect": "26,252,110,275",
                      "showBorder": false,
                      "style": "checkbox",
                      "textAlign": "left"
@@ -3320,10 +3321,10 @@
                      "hiliteBorder": false,
                      "id": "1254",
                      "label": "Italic",
-                     "layer": "100",
+                     "layer": "105",
                      "name": "italic",
                      "opaque": false,
-                     "rect": "100,212,188,235",
+                     "rect": "100,252,188,275",
                      "showBorder": false,
                      "style": "checkbox",
                      "textAlign": "left"
@@ -3332,11 +3333,11 @@
                "1255": {
                   "#name": "button \"colourWell\"",
                   "properties": {
-                     "backColor": "171,121,66",
+                     "backColor": "255,38,0",
                      "id": "1255",
-                     "layer": "101",
+                     "layer": "106",
                      "name": "colourWell",
-                     "rect": "230,216,248,232",
+                     "rect": "230,256,248,272",
                      "showName": false,
                      "style": "rectangle",
                      "traversalOn": false
@@ -3354,33 +3355,15 @@
                      "dontWrap": true,
                      "htmlText": "<p>Colour:</p>",
                      "id": "1256",
-                     "layer": "102",
+                     "layer": "107",
                      "lockText": true,
                      "name": "Label Field",
                      "opaque": false,
-                     "rect": "164,213,230,234",
+                     "rect": "164,253,230,274",
                      "sharedText": true,
                      "showBorder": false,
                      "style": "transparent",
                      "textAlign": "right",
-                     "traversalOn": false
-                  }
-               },
-               "2515": {
-                  "#name": "button \"scheme\"",
-                  "properties": {
-                     "armBorder": false,
-                     "autoHilite": false,
-                     "id": "2515",
-                     "label": "Default",
-                     "layer": "103",
-                     "menuLines": "100",
-                     "menuMode": "option",
-                     "name": "scheme",
-                     "rect": "15,14,415,36",
-                     "style": "menu",
-                     "text": "Default\nRevolution Classic\nNo Colorization",
-                     "textAlign": "left",
                      "traversalOn": false
                   }
                },
@@ -3389,7 +3372,7 @@
                   "properties": {
                      "id": "2516",
                      "label": "Duplicate",
-                     "layer": "104",
+                     "layer": "108",
                      "name": "duplicate",
                      "rect": "333,14,415,36",
                      "style": "rectangle",
@@ -3402,12 +3385,27 @@
                   "properties": {
                      "id": "2638",
                      "label": "Save...",
-                     "layer": "105",
+                     "layer": "109",
                      "name": "save",
                      "rect": "333,211,415,236",
                      "style": "rectangle",
                      "traversalOn": false,
                      "visible": false
+                  }
+               },
+               "3023": {
+                  "#name": "button \"schemes\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "3023",
+                     "label": "Red",
+                     "layer": "110",
+                     "menuMode": "combobox",
+                     "name": "schemes",
+                     "rect": "15,12,415,34",
+                     "style": "menu",
+                     "text": "Default\nRevolution Classic\nNo Colorization"
                   }
                }
             },
@@ -3419,7 +3417,7 @@
             "custompropertysets": {
                "cREVGeometrycache": {
                   "order": null,
-                  "total": "105"
+                  "total": "110"
                }
             },
             "properties": {
@@ -3429,7 +3427,7 @@
       },
       "custompropertysets": {
          "cREVGeometryCache": {
-            "stackID": "3294"
+            "stackID": "4219"
          }
       },
       "longID": "stack \"revScriptColourEditor\" of stack \"revPreferencesGUI\"",
@@ -3438,12 +3436,12 @@
          "backColor": "#ececec",
          "decorations": "title,menu,close",
          "foreColor": "#000000",
-         "id": "3294",
+         "id": "4219",
          "liveResizing": false,
          "name": "revScriptColourEditor",
-         "rect": "842,179,1272,469",
+         "rect": "491,110,921,400",
          "resizable": false,
-         "title": "Colorization Editor"
+         "title": "Script Colour Editor"
       },
       "sharedGroupIDs": null
    },

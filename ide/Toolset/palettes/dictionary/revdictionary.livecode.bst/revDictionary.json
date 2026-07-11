@@ -14,7 +14,7 @@
                   "$kind": "com.livecode.widget.browser",
                   "$state": {
                      "javaScriptHandlers": "linkClicked",
-                     "url": "file:///Users/emily-elizabethhoward/Library/Application%20Support/HyperXTalk/Documentation%20Cache/9_7_0_dp_1_/api.html"
+                     "url": "file:///Users/emily-elizabethhoward/Library/Application%20Support/HyperXTalk/Documentation%20Cache/0_9_9_/api.html"
                   },
                   "properties": {
                      "id": "1003",
@@ -48,7 +48,7 @@
          "id": "1006",
          "minWidth": "1010",
          "name": "revDictionary",
-         "rect": "416,112,1426,773",
+         "rect": "210,115,1220,776",
          "title": "Dictionary"
       },
       "sharedGroupIDs": "1004"

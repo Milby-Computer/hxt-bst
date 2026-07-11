@@ -1,0 +1,229 @@
+<p><b><font color="#007F00"># Stores the data for the nodes, an array with numeric keys that</font></b></p>
+<p><b><font color="#007F00"># determine the order nodes appear in. The value of the array items</font></b></p>
+<p><b><font color="#007F00"># is a string that is passed to the each item as parameters to the itemInit</font></b></p>
+<p><b><font color="#007F00"># handler to allow each item to initialize itself</font></b></p>
+<p><b><font color="#0432FF">local</font></b><font color="#000000"> sData</font></p>
+<p></p>
+<p><b><font color="#000000">private</font></b><font color="#000000"> <b>function</b> listObject</font></p>
+<p><font color="#000000">   <b>if</b> </font><font color="#7F007F">there</font><font color="#000000"> </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">a</font><font color="#000000"> </font><b><font color="#0432FF">group</font></b><font color="#000000"> </font><font color="#00007F">"List"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">return</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">long</font><font color="#000000"> </font><font color="#007F7F">id</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><b><font color="#0432FF">group</font></b><font color="#000000"> </font><font color="#00007F">"List"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   <b>else</b></font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">return</font></b><font color="#000000"> </font><font color="#7F007F">empty</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> listObject</font></p>
+<p></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> paneOpenControl</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> paneOpenControl</font></p>
+<p></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> paneCloseControl</font></p>
+<p><font color="#000000">   clearErrors</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> paneCloseControl</font></p>
+<p></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> paneResizeControl</font></p>
+<p><font color="#000000">   ensureListObject</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">height</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> listObject() </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">height</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">width</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> listObject() </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">width</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> - </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">width</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">scrollbar</font><font color="#000000"> </font><font color="#00007F">"Scrollbar"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">topLeft</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> listObject() </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">topLeft</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   updateList</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> paneResizeControl</font></p>
+<p></p>
+<p><b><font color="#007F00"># Description</font></b></p>
+<p><b><font color="#007F00">#   Sent by the parent when something that might have affected the error pane has changed.</font></b></p>
+<p><b><font color="#007F00">#   Causes the error pane to update itself.</font></b></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> </font><font color="#7F007F">update</font></p>
+<p><font color="#000000">   updateList</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> </font><font color="#7F007F">update</font></p>
+<p></p>
+<p><b><font color="#000000">private</font></b><font color="#000000"> <b>command</b> ensureListObject</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">local</font></b><font color="#000000"> tObject</font></p>
+<p><font color="#000000">   <b>if</b> listObject() </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">lock</font></b><font color="#000000"> </font><font color="#7F007F">messages</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">copy</font></b><font color="#000000"> </font><b><font color="#0432FF">group</font></b><font color="#000000"> </font><font color="#00007F">"List Template"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">card</font><font color="#000000"> </font><font color="#00007F">"Templates"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">stack</font><font color="#000000"> (revTargetStack(</font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">long</font><font color="#000000"> </font><font color="#007F7F">id</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000">)) </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">long</font><font color="#000000"> </font><font color="#007F7F">id</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> it </font><font color="#7F007F">into</font><font color="#000000"> tObject</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">unlock</font></b><font color="#000000"> </font><font color="#7F007F">messages</font></p>
+<p><font color="#000000">      </font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">name</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> tObject </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#00007F">"List"</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">lockLocation</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> tObject </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">true</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">cantDelete</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> tObject </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">false</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">showBorder</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> tObject </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">false</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cMutable </font><font color="#7F007F">of</font><font color="#000000"> tObject </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">true</font></p>
+<p><font color="#000000">   <b>else</b></font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">put</font></b><font color="#000000"> listObject() </font><font color="#7F007F">into</font><font color="#000000"> tObject</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cItemTemplate </font><font color="#7F007F">of</font><font color="#000000"> tObject </font><font color="#7F007F">to</font><font color="#000000"> itemTemplate()</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> ensureListObject</font></p>
+<p></p>
+<p><b><font color="#007F00"># Parameters</font></b></p>
+<p><b><font color="#007F00">#   pType : the error type, either "compilation", "execution" or "warning"</font></b></p>
+<p><b><font color="#007F00">#   pError : an error in the format returned by the result when setting a script</font></b></p>
+<p><b><font color="#007F00"># Description</font></b></p>
+<p><b><font color="#007F00">#   Adds pError to the errors list.</font></b></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> addError pType, pError, pObject</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">local</font></b><font color="#000000"> tFormattedError</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">put</font></b><font color="#000000"> formatError(pType, pError, pObject) </font><font color="#7F007F">into</font><font color="#000000"> tFormattedError</font></p>
+<p><font color="#000000">  <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> cData </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">    </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cData </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> tFormattedError</font></p>
+<p><font color="#000000">  <b>else</b></font></p>
+<p><font color="#000000">    </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cData </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> tFormattedError &amp; </font><b><font color="#0432FF">return</font></b><font color="#000000"> &amp; </font><font color="#7F007F">the</font><font color="#000000"> cData </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">  <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">  </font></p>
+<p><font color="#000000">  updateList</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> addError</font></p>
+<p></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> clearErrors</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">delete</font></b><font color="#000000"> </font><font color="#7F007F">variable</font><font color="#000000"> sData</font></p>
+<p><font color="#000000">   ensureListObject</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">call</font></b><font color="#000000"> </font><font color="#00007F">"itemPurgeAll"</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> listObject()</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cData </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">empty</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cData </font><font color="#7F007F">of</font><font color="#000000"> listObject() </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">empty</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   updateList</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> clearErrors</font></p>
+<p></p>
+<p><b><font color="#007F00"># Parameters</font></b></p>
+<p><b><font color="#007F00">#   pType : the error type. This is either "execution", "compilation" or "warning"</font></b></p>
+<p><b><font color="#007F00">#   pError : an error in the format returned by the result of setting the script.</font></b></p>
+<p><b><font color="#007F00">#   pObject : reference to the object that the error is associated with</font></b></p>
+<p><b><font color="#007F00"># Returns</font></b></p>
+<p><b><font color="#007F00">#   A string in the following format.</font></b></p>
+<p><b><font color="#007F00">#   &lt;object&gt; tab &lt;type&gt; tab &lt;line&gt; tab &lt;char&gt; tab &lt;description&gt; tab &lt;token&gt;</font></b></p>
+<p><b><font color="#000000">private</font></b><font color="#000000"> <b>function</b> formatError pType, pError, pObject</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">local</font></b><font color="#000000"> tLine, tPosition, tDescription, tToken</font></p>
+<p><font color="#000000">   <b>if</b> pType </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#00007F">"compilation"</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">put</font></b><font color="#000000"> seErrorDescription(pType, pError) </font><font color="#7F007F">into</font><font color="#000000"> tDescription</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">item</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pError </font><font color="#7F007F">into</font><font color="#000000"> tLine</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">item</font><font color="#000000"> </font><font color="#00007F">3</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pError </font><font color="#7F007F">into</font><font color="#000000"> tPosition</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">item</font><font color="#000000"> </font><font color="#00007F">4</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> -1 </font><font color="#7F007F">of</font><font color="#000000"> pError </font><font color="#7F007F">into</font><font color="#000000"> tToken</font></p>
+<p><font color="#000000">   <b>else</b> <b>if</b> pType </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#00007F">"execution"</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">put</font></b><font color="#000000"> seErrorDescription(pType, pError) </font><font color="#7F007F">into</font><font color="#000000"> tDescription</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">item</font><font color="#000000"> </font><font color="#00007F">4</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> -1 </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pError </font><font color="#7F007F">into</font><font color="#000000"> tToken</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">item</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pError </font><font color="#7F007F">into</font><font color="#000000"> tLine</font></p>
+<p><font color="#000000">      <b>if</b> tToken </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#00007F">"runtime"</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">         </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tToken</font></p>
+<p><font color="#000000">      <b>else</b></font></p>
+<p><font color="#000000">         </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">item</font><font color="#000000"> </font><font color="#00007F">3</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pError </font><font color="#7F007F">into</font><font color="#000000"> tPosition</font></p>
+<p><font color="#000000">      <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">local</font></b><font color="#000000"> tFormattedError</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">put</font></b><font color="#000000"> pObject &amp; </font><font color="#7F007F">tab</font><font color="#000000"> &amp; pType &amp; </font><font color="#7F007F">tab</font><font color="#000000"> &amp; tLine &amp; </font><font color="#7F007F">tab</font><font color="#000000"> &amp; tPosition &amp; </font><font color="#7F007F">tab</font><font color="#000000"> &amp; tDescription &amp; </font><font color="#7F007F">tab</font><font color="#000000"> &amp; tToken </font><font color="#7F007F">into</font><font color="#000000"> tFormattedError</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">return</font></b><font color="#000000"> tFormattedError</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> formatError</font></p>
+<p></p>
+<p><b><font color="#000000">private</font></b><font color="#000000"> <b>command</b> updateList   </font></p>
+<p><font color="#000000">   ensureListObject</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">local</font></b><font color="#000000"> tPrefs</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#00007F">"marginLeft=5"</font><font color="#000000"> &amp; </font><b><font color="#0432FF">return</font></b><font color="#000000"> &amp; \</font></p>
+<p><font color="#000000">   </font><font color="#00007F">"marginRight=5"</font><font color="#000000"> &amp; </font><b><font color="#0432FF">return</font></b><font color="#000000"> &amp; \</font></p>
+<p><font color="#000000">   </font><font color="#00007F">"marginTop=10"</font><font color="#000000"> &amp; </font><b><font color="#0432FF">return</font></b><font color="#000000"> &amp; \</font></p>
+<p><font color="#000000">   </font><font color="#00007F">"spacing=5"</font><font color="#000000"> &amp; </font><b><font color="#0432FF">return</font></b><font color="#000000"> &amp; \</font></p>
+<p><font color="#000000">   </font><font color="#00007F">"justification=left"</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tPrefs</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cPrefs </font><font color="#7F007F">of</font><font color="#000000"> listObject() </font><font color="#7F007F">to</font><font color="#000000"> tPrefs</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">local</font></b><font color="#000000"> tData</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cData </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tData</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#007F00"># Show a nice green tick etc if no errors occurred</font></b></p>
+<p><font color="#000000">   <b>if</b> tData </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">local</font></b><font color="#000000"> tObject</font></p>
+<p><font color="#000000">      revSEGetCurrentObject</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#7F007F">result</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tObject</font></p>
+<p><font color="#000000">      </font><b><font color="#0432FF">put</font></b><font color="#000000"> tObject &amp; </font><font color="#7F007F">tab</font><font color="#000000"> &amp; </font><font color="#00007F">"noerror"</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tData</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cData </font><font color="#7F007F">of</font><font color="#000000"> listObject() </font><font color="#7F007F">to</font><font color="#000000"> tData</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#007F00"># Update the group</font></b></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">call</font></b><font color="#000000"> </font><font color="#00007F">"update"</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> listObject()</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#007F00"># The scrolling is done separately to get around an engine bug (bz#4210)</font></b></p>
+<p><font color="#000000">   updateScrollbar</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> updateList</font></p>
+<p></p>
+<p><b><font color="#000000">private</font></b><font color="#000000"> <b>command</b> updateScrollbar</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">lock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">height</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">scrollbar</font><font color="#000000"> </font><font color="#00007F">"Scrollbar"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">height</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> listObject()</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">topRight</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">scrollbar</font><font color="#000000"> </font><font color="#00007F">"Scrollbar"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">topRight</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> listObject()</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">startValue</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">scrollbar</font><font color="#000000"> </font><font color="#00007F">"Scrollbar"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#00007F">0</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">endValue</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">scrollbar</font><font color="#000000"> </font><font color="#00007F">"Scrollbar"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">formattedHeight</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> listObject() + </font><font color="#00007F">1</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">lineInc</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">scrollbar</font><font color="#000000"> </font><font color="#00007F">"Scrollbar"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">round</font><font color="#000000">(</font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">formattedHeight</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> listObject() / </font><font color="#00007F">200</font><font color="#000000">)</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">pageInc</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">scrollbar</font><font color="#000000"> </font><font color="#00007F">"Scrollbar"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">round</font><font color="#000000">(</font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">height</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> listObject())</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">thumbSize</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">scrollbar</font><font color="#000000"> </font><font color="#00007F">"Scrollbar"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#00007F">1</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">thumbPosition</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">scrollbar</font><font color="#000000"> </font><font color="#00007F">"Scrollbar"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">vScroll</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> listObject()</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">visible</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">scrollbar</font><font color="#000000"> </font><font color="#00007F">"Scrollbar"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> (</font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">formattedHeight</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> listObject() &gt; </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">height</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> listObject())</font></p>
+<p><font color="#000000">  </font><b><font color="#0432FF">unlock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> updateScrollbar</font></p>
+<p></p>
+<p><b><font color="#007F00"># Returns a reference to the item template to use, this can be any control, and will be copied into the list</font></b></p>
+<p><b><font color="#007F00"># for each item and send an itemInit message to initilize itself. Basically you can use any control, but the script</font></b></p>
+<p><b><font color="#007F00"># of the control must handle the itemInit message.</font></b></p>
+<p><b><font color="#000000">private</font></b><font color="#000000"> <b>function</b> itemTemplate</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">local</font></b><font color="#000000"> tStackName</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">put</font></b><font color="#000000"> revTargetStack(</font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">long</font><font color="#000000"> </font><font color="#007F7F">id</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000">) </font><font color="#7F007F">into</font><font color="#000000"> tStackName</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">return</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">long</font><font color="#000000"> </font><font color="#007F7F">id</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><b><font color="#0432FF">group</font></b><font color="#000000"> </font><font color="#00007F">"Error Template"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">card</font><font color="#000000"> </font><font color="#00007F">"Templates"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">stack</font><font color="#000000"> tStackName</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> itemTemplate</font></p>
+<p></p>
+<p><b><font color="#007F00"># Parameters</font></b></p>
+<p><b><font color="#007F00">#   pObject : reference to an object inside the errors group</font></b></p>
+<p><b><font color="#007F00"># Returns</font></b></p>
+<p><b><font color="#007F00">#   The long id of the item that contains pObject (or pObject if already an item).</font></b></p>
+<p><b><font color="#000000">private</font></b><font color="#000000"> <b>function</b> resolveItem pObject</font></p>
+<p><font color="#000000">  <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> cListItem </font><font color="#7F007F">of</font><font color="#000000"> pObject </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">true</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">    </font><b><font color="#0432FF">return</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">long</font><font color="#000000"> </font><font color="#007F7F">id</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pObject</font></p>
+<p><font color="#000000">  <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">  </font></p>
+<p><font color="#000000">  </font><b><font color="#007F00"># For now the items only have one level of nested control ownership.</font></b></p>
+<p><font color="#000000">  <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> cListItem </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#7F007F">owner</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pObject </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">true</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">    </font><b><font color="#0432FF">return</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">long</font><font color="#000000"> </font><font color="#007F7F">id</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#7F007F">owner</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pObject</font></p>
+<p><font color="#000000">  <b>end</b> <b>if</b></font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> resolveItem</font></p>
+<p></p>
+<p><b><font color="#000000">on</font></b><font color="#000000"> mouseDoubleUp</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">local</font></b><font color="#000000"> tItem</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">put</font></b><font color="#000000"> resolveItem(</font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">long</font><font color="#000000"> </font><font color="#007F7F">id</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#7F007F">target</font><font color="#000000">) </font><font color="#7F007F">into</font><font color="#000000"> tItem</font></p>
+<p><font color="#000000">   <b>if</b> tItem </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      <b>exit</b> mouseDoubleUp</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#007F00"># If the "no errors occurred" object is clicked on, don't attempt to go to the error location.</font></b></p>
+<p><font color="#000000">   <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> cType </font><font color="#7F007F">of</font><font color="#000000"> tItem </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#00007F">"noerror"</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      <b>exit</b> mouseDoubleUp</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">local</font></b><font color="#000000"> tObject</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cObject </font><font color="#7F007F">of</font><font color="#000000"> tItem </font><font color="#7F007F">into</font><font color="#000000"> tObject</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">local</font></b><font color="#000000"> tLine</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cLine </font><font color="#7F007F">of</font><font color="#000000"> tItem </font><font color="#7F007F">into</font><font color="#000000"> tLine</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">local</font></b><font color="#000000"> tPosition</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cPosition </font><font color="#7F007F">of</font><font color="#000000"> tItem </font><font color="#7F007F">into</font><font color="#000000"> tPosition</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">local</font></b><font color="#000000"> tHighlightType</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">put</font></b><font color="#000000"> </font><font color="#00007F">"position"</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tHighlightType</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   revSESetCurrentObject tObject</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">send</font></b><font color="#000000"> </font><font color="#00007F">"goLine tLine, tHighlightType, tPosition"</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><b><font color="#0432FF">group</font></b><font color="#000000"> </font><font color="#00007F">"Editor"</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> mouseDoubleUp</font></p>
+<p></p>
+<p><b><font color="#000000">on</font></b><font color="#000000"> mouseUp</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">local</font></b><font color="#000000"> tItem</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">put</font></b><font color="#000000"> resolveItem(</font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">long</font><font color="#000000"> </font><font color="#007F7F">id</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#7F007F">target</font><font color="#000000">) </font><font color="#7F007F">into</font><font color="#000000"> tItem</font></p>
+<p><font color="#000000">   <b>if</b> tItem </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      <b>exit</b> mouseUp</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">lock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><font color="#000000">   <b>repeat</b> </font><font color="#7F007F">with</font><font color="#000000"> x = </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">number</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">controls</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">      <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> cListItem </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">control</font><font color="#000000"> x </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">         </font><b><font color="#0432FF">send</font></b><font color="#000000"> </font><font color="#00007F">"itemUnhilite"</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">control</font><font color="#000000"> x </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">      <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   <b>end</b> <b>repeat</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">send</font></b><font color="#000000"> </font><font color="#00007F">"itemHilite"</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> tItem</font></p>
+<p><font color="#000000">   </font><b><font color="#0432FF">unlock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> mouseUp</font></p>
+<p></p>

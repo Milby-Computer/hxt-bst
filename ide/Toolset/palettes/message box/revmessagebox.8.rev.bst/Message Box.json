@@ -23,9 +23,9 @@
                            }
                         },
                         "properties": {
-                           "backColor": "255,255,255",
+                           "backColor": "36,36,38",
                            "dontWrap": true,
-                           "foreColor": "gray70",
+                           "foreColor": "230,230,230",
                            "id": "1085",
                            "layer": "6",
                            "name": "auto complete",
@@ -44,7 +44,10 @@
                            "profile": null
                         },
                         "properties": {
+                           "backColor": "36,36,38",
                            "borderWidth": "0",
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>dark,#323232,#ffffff</p>",
                            "id": "1088",
                            "layer": "5",
                            "name": "results",
@@ -62,9 +65,10 @@
                            "cTooltipTag": "Type a command or expression and press Return"
                         },
                         "properties": {
+                           "backColor": "36,36,38",
                            "behavior": "stack \"revMessageBoxSingleLineMessageBehavior\"",
                            "dontWrap": true,
-                           "foreColor": "black",
+                           "foreColor": "230,230,230",
                            "htmlText": "%file%: assets/Message Box_1002_1090_1128_htmlText.txt",
                            "id": "1128",
                            "layer": "7",
@@ -136,10 +140,11 @@
             "custompropertysets": {
                "cREVGeometrycache": {
                   "order": "\n",
-                  "total": "14"
+                  "total": "15"
                }
             },
             "properties": {
+               "backColor": "36,36,38",
                "behavior": "stack \"revMessageBoxSingleLineCardBehavior\"",
                "id": "1002",
                "name": "Single Line"
@@ -157,7 +162,7 @@
                   "UUID": "eac8ebb6-00d4-477b-8982-93e9023ee59b"
                },
                "viewProp": {
-                  "alternate row color": "238,238,238",
+                  "alternate row color": "36,36,38",
                   "animate selections": false,
                   "autohide scrollbars": true,
                   "cache": "none",
@@ -167,11 +172,11 @@
                   "drop indicator template": null,
                   "first working row": "1",
                   "fixed row height": true,
-                  "hilite color": "48,160,209",
+                  "hilite color": "10,95,175",
                   "last working row": "1",
                   "multiple lines": true,
                   "resize controls": false,
-                  "row color": "255,255,255",
+                  "row color": "36,36,38",
                   "row height": "24",
                   "row style templates": {
                      "backScripts": "group id 26763 of card id 10773 of stack \"Message Box\"",
@@ -185,7 +190,7 @@
                }
             },
             "properties": {
-               "backColor": "255,255,255",
+               "backColor": "36,36,38",
                "backgroundBehavior": true,
                "behavior": "button id 1003 of stack \"revDataViewControl\"",
                "borderWidth": "0",
@@ -234,7 +239,9 @@
                         "properties": {
                            "autoHilite": false,
                            "autoTab": true,
+                           "backColor": "36,36,38",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "htmlText": "<p>stack</p>",
                            "id": "10801",
                            "layer": "4",
@@ -292,8 +299,10 @@
                         },
                         "properties": {
                            "autoHilite": false,
+                           "backColor": "36,36,38",
                            "borderWidth": "1",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "htmlText": "<p>script</p>",
                            "id": "11502",
                            "layer": "5",
@@ -325,8 +334,10 @@
                         },
                         "properties": {
                            "autoHilite": false,
+                           "backColor": "36,36,38",
                            "borderWidth": "1",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "htmlText": "<p>behavior</p>",
                            "id": "11503",
                            "layer": "6",
@@ -533,7 +544,9 @@
                         "properties": {
                            "autoHilite": false,
                            "autoTab": true,
+                           "backColor": "36,36,38",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "htmlText": "<p>Label:</p>",
                            "id": "26756",
                            "layer": "19",
@@ -557,8 +570,10 @@
                         },
                         "properties": {
                            "autoHilite": false,
+                           "backColor": "36,36,38",
                            "borderWidth": "1",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "htmlText": "<p>Label:</p>",
                            "id": "26757",
                            "layer": "20",
@@ -584,8 +599,10 @@
                         },
                         "properties": {
                            "autoHilite": false,
+                           "backColor": "36,36,38",
                            "borderWidth": "1",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "htmlText": "<p>Label:</p>",
                            "id": "26758",
                            "layer": "21",
@@ -642,7 +659,9 @@
                         "properties": {
                            "autoHilite": false,
                            "autoTab": true,
+                           "backColor": "36,36,38",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "htmlText": "<p>Label:</p>",
                            "id": "27166",
                            "layer": "23",
@@ -740,6 +759,7 @@
                }
             },
             "properties": {
+               "backColor": "36,36,38",
                "id": "10773",
                "layer": "9",
                "name": "templates"
@@ -773,9 +793,10 @@
                            "profile": null
                         },
                         "properties": {
-                           "backColor": "255,255,255",
+                           "backColor": "36,36,38",
                            "behavior": "stack \"revMessageBoxMultipleLinesMessageBehavior\"",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "htmlText": "<p></p>\n<p></p>",
                            "id": "1609",
                            "layer": "2",
@@ -798,6 +819,8 @@
                            "profile": null
                         },
                         "properties": {
+                           "backColor": "36,36,38",
+                           "foreColor": "230,230,230",
                            "id": "1610",
                            "layer": "3",
                            "name": "results",
@@ -835,6 +858,7 @@
                }
             },
             "properties": {
+               "backColor": "36,36,38",
                "behavior": "stack \"revMessageBoxMultipleLinesCardBehavior\"",
                "id": "1198",
                "layer": "8",
@@ -853,12 +877,12 @@
                      "hiliteBorder": false,
                      "icon": "172079",
                      "id": "141785",
-                     "label": "revIDEProjectBrowser",
+                     "label": "Untitled 1",
                      "layer": "11",
                      "menuMode": "popup",
                      "name": "Open Stacks",
                      "opaque": false,
-                     "rect": "178,0,304,21",
+                     "rect": "178,0,245,21",
                      "showIcon": true,
                      "style": "menu",
                      "text": "Message Box\nrevMenuBar\nrevPropertyInspector 1\nfindBrokenBehaviorsIDE\nrevInspector\nUntitled 1\nrevNewScriptEditor 1\nrevTools",
@@ -937,7 +961,7 @@
                "id": "141786",
                "layer": "10",
                "name": "Stacks",
-               "rect": "174,-4,308,25"
+               "rect": "174,-4,249,25"
             }
          },
          "203985": {
@@ -1074,11 +1098,18 @@
                      "rect": "0,0,539,21"
                   }
                },
-               "213551": {
+               "213555": {
                   "#name": "widget \"footer_background\"",
                   "$kind": "com.livecode.widget.paletteActions",
                   "$state": {
                      "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "bullseye",
+                           "label": "Show last output source",
+                           "menu": null,
+                           "name": "outputSource"
+                        },
                         {
                            "enabled": true,
                            "icon": "unlock alt",
@@ -1091,7 +1122,7 @@
                      "nav data": null
                   },
                   "properties": {
-                     "id": "213551",
+                     "id": "213555",
                      "name": "footer_background",
                      "rect": "0,168,539,189"
                   }
@@ -1126,7 +1157,9 @@
                         "properties": {
                            "autoHilite": false,
                            "autoTab": true,
+                           "backColor": "36,36,38",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "htmlText": "<p>Filter:</p>",
                            "id": "2527",
                            "layer": "2",
@@ -1148,6 +1181,8 @@
                            "profile": null
                         },
                         "properties": {
+                           "backColor": "36,36,38",
+                           "foreColor": "230,230,230",
                            "id": "2528",
                            "layer": "3",
                            "name": "filter",
@@ -1163,8 +1198,10 @@
                            "profile": null
                         },
                         "properties": {
+                           "backColor": "36,36,38",
                            "borderWidth": "1",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "htmlText": "%file%: assets/Message Box_2525_2535_2529_htmlText.txt",
                            "id": "2529",
                            "layer": "4",
@@ -1187,7 +1224,9 @@
                         "properties": {
                            "autoHilite": false,
                            "autoTab": true,
+                           "backColor": "36,36,38",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "id": "2531",
                            "layer": "5",
                            "lockText": true,
@@ -1208,9 +1247,11 @@
                            "profile": null
                         },
                         "properties": {
+                           "backColor": "36,36,38",
                            "borderWidth": "1",
                            "disabled": true,
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "id": "2532",
                            "layer": "6",
                            "listBehavior": true,
@@ -1398,6 +1439,7 @@
                }
             },
             "properties": {
+               "backColor": "36,36,38",
                "id": "2525",
                "layer": "5",
                "name": "Global Properties"
@@ -1416,6 +1458,8 @@
                            "profile": null
                         },
                         "properties": {
+                           "backColor": "36,36,38",
+                           "foreColor": "230,230,230",
                            "id": "2700",
                            "layer": "2",
                            "name": "filter",
@@ -1436,7 +1480,9 @@
                         "properties": {
                            "autoHilite": false,
                            "autoTab": true,
+                           "backColor": "36,36,38",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "htmlText": "<p>Filter:</p>",
                            "id": "2701",
                            "layer": "3",
@@ -1461,8 +1507,10 @@
                            "rREVFullText": "%file%: assets/Message Box_2526_2704_2702_rREVFullText.bin"
                         },
                         "properties": {
+                           "backColor": "36,36,38",
                            "borderWidth": "1",
                            "dontWrap": true,
+                           "foreColor": "230,230,230",
                            "htmlText": "%file%: assets/Message Box_2526_2704_2702_htmlText.txt",
                            "id": "2702",
                            "layer": "4",
@@ -1483,7 +1531,9 @@
                            "profile": null
                         },
                         "properties": {
+                           "backColor": "36,36,38",
                            "borderWidth": "1",
+                           "foreColor": "230,230,230",
                            "htmlText": "<p>com.hyperxtalk.hyperxtalk</p>",
                            "id": "2703",
                            "layer": "5",
@@ -1517,6 +1567,7 @@
                }
             },
             "properties": {
+               "backColor": "36,36,38",
                "id": "2526",
                "layer": "6",
                "name": "Global Variables"
@@ -1536,7 +1587,9 @@
                   },
                   "properties": {
                      "autoHilite": false,
+                     "backColor": "36,36,38",
                      "dontWrap": true,
+                     "foreColor": "230,230,230",
                      "htmlText": "<p>No pending messages to display.</p>",
                      "id": "207210",
                      "layer": "19",
@@ -1563,6 +1616,7 @@
                }
             },
             "properties": {
+               "backColor": "36,36,38",
                "id": "2960",
                "layer": "7",
                "name": "Pending Messages"
@@ -1582,7 +1636,9 @@
                   },
                   "properties": {
                      "autoHilite": false,
+                     "backColor": "36,36,38",
                      "dontWrap": true,
+                     "foreColor": "230,230,230",
                      "htmlText": "<p>No front scripts to display.</p>",
                      "id": "207631",
                      "layer": "19",
@@ -1610,6 +1666,7 @@
                }
             },
             "properties": {
+               "backColor": "36,36,38",
                "id": "3461",
                "layer": "3",
                "name": "Front Scripts"
@@ -1629,7 +1686,9 @@
                   },
                   "properties": {
                      "autoHilite": false,
+                     "backColor": "36,36,38",
                      "dontWrap": true,
+                     "foreColor": "230,230,230",
                      "htmlText": "<p>No back scripts to display.</p>",
                      "id": "208993",
                      "layer": "20",
@@ -1666,6 +1725,7 @@
                }
             },
             "properties": {
+               "backColor": "36,36,38",
                "id": "3462",
                "layer": "4",
                "name": "Back Scripts"
@@ -1694,7 +1754,9 @@
                   },
                   "properties": {
                      "autoHilite": false,
+                     "backColor": "36,36,38",
                      "dontWrap": true,
+                     "foreColor": "230,230,230",
                      "htmlText": "<p>No stacks in use to display.</p>",
                      "id": "209891",
                      "layer": "20",
@@ -1721,6 +1783,7 @@
                }
             },
             "properties": {
+               "backColor": "36,36,38",
                "id": "9525",
                "layer": "2",
                "name": "Stacks in Use"
@@ -1742,24 +1805,24 @@
       },
       "custompropertysets": {
          "cREVGeometryCache": {
-            "stackID": "213551"
+            "stackID": "213555"
          }
       },
       "longID": "stack \"Message Box\"",
       "properties": {
-         "backColor": "#ececec",
+         "backColor": "#323232",
          "behavior": "stack \"revMessageBoxBehavior\"",
          "decorations": "title,menu,minimize,close",
          "fileName": "revmessagebox.8.rev",
-         "foreColor": "#000000",
-         "id": "213551",
+         "foreColor": "#ffffff",
+         "id": "213555",
          "minHeight": "92",
          "minWidth": "110",
          "name": "Message Box",
          "rect": "59,708,598,897",
          "style": "palette",
          "textSize": "11",
-         "title": "Message Box (Multiple Lines)"
+         "title": "Message Box (Single Line)"
       },
       "sharedGroupIDs": "10669\n141786\n203985"
    }

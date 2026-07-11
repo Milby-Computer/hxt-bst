@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI_group_id_1114"
 /*
 # Name: group "Script Editor" of card "Editor" of stack "revPreferencesGUI"
 # ID: group id 1114 of card id 1008 of stack "revPreferencesGUI"
-# Hash: rRgtuoNKQafs7V6qkN+SHA==
+# Hash: OMITA5/S0XIiUCE4NNAHzQ==
 */
 
 
@@ -141,9 +141,27 @@ on mouseUp
   end if
 end mouseUp
 
-on menuPick
+on menuPick pItem
    if (the short name of the target = "Colorization Scheme") AND (the label of the target = "Custom...") then
+      local tSchemeName
+      put revIDEGetPreference("cScriptEditor,colorization,scheme") into tSchemeName
+      set the menuHistory of button "Colorization Scheme" to (lineOffset(tSchemeName, the text of button "Colorization Scheme"))
       modeless stack "revScriptColourEditor"
+      
+   else if (pItem is not among the items of "Default,Revolution Classic,No Colorization") then
+      local tFilePath
+      put revEnvironmentUserColorSchemesPath() & SLASH & pItem & ".scheme" into tFilePath
+      
+      local tColourSchemeData
+      put URL ("file:" & tFilePath) into tColourSchemeData
+      
+      revIDESetPreference "cScriptEditor,colorization,scheme", pItem
+      revIDESetPreference "cScriptEditor,colorization,config", tColourSchemeData
+      
+      --      set the "cScriptEditor,colorization,scheme" of stack "revPreferences" to pItem
+      --      set the "cScriptEditor,colorization,config" of stack "revPreferences" to tColourSchemeData
+      
+      applyPref the cPref of the target, getValue(the long id of the target)
       
    else if the cPref of the target is not empty then
       applyPref the cPref of the target, getValue(the long id of the target)

@@ -3,7 +3,7 @@ Script "stack_revScriptColourEditor_button_id_1006"
 /*
 # Name: button "colourize" of card id 1002 of stack "revScriptColourEditor" of stack "revPreferencesGUI"
 # ID: button id 1006 of card id 1002 of stack "revScriptColourEditor" of stack "revPreferencesGUI"
-# Hash: Tjz6cscZEcqyUiepMkGMdw==
+# Hash: ZvlRlTsRRTA0MPeM2AB4ew==
 */
 
 
@@ -14,16 +14,18 @@ Script "stack_revScriptColourEditor_button_id_1006"
 * Do the colourization handler (card script of this stack)
 */
 on mouseUp
-   constant kPrefScheme = "cScriptEditor,colorization,scheme"
-   constant kPrefConfig = "cScriptEditor,colorization,config"
    local tPrefConfigData
-   
    put the dgText of group "colours" into tPrefConfigData
+   
+   SaveOutScheme the label of button "schemes", tPrefConfigData
+   
    replace TAB with SPACE in tPrefConfigData
    
-   set the label of button "Colorization Scheme" of stack "revPreferencesGUI" to "Custom..."
-   set the kPrefScheme of stack "revPreferences" to "Custom"
-   set the kPrefConfig of stack "revPreferences" to tPrefConfigData
+   revIDESetPreference "cScriptEditor,colorization,scheme", the label of button "schemes"
+   revIDESetPreference "cScriptEditor,colorization,config", tPrefConfigData
+   
+   --   set the "cScriptEditor,colorization,scheme" of stack "revPreferences" to (the label of button "schemes")
+   --   set the "cScriptEditor,colorization,config" of stack "revPreferences" to tPrefConfigData
    
    colourize
 end mouseUp

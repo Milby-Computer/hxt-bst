@@ -1,4 +1,0 @@
-<p><font color="#980517">on</font><font color="#000000"> MouseUp</font></p>
-<p><font color="#000000">   </font><font color="#0000FF">put</font><font color="#000000"> 1</font></p>
-<p><font color="#980517">end</font><font color="#000000"> MouseUp</font></p>
-<p></p>
