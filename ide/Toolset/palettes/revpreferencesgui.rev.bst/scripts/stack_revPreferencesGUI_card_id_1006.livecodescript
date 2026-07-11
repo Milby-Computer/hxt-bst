@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI_card_id_1006"
 /*
 # Name: card "Appearance" of stack "revPreferencesGUI"
 # ID: card id 1006 of stack "revPreferencesGUI"
-# Hash: KLfpgXjLcaQjJ9W7AcNW+Q==
+# Hash: G/ZZM6wCy1eFpe0dq4C4yg==
 */
 
 
@@ -14,13 +14,11 @@ on preOpenCard
    if the platform is "MacOS" then
       put "(-" into line -2 of button "backdrop color"
       put "(-" into line -2 of button "selectionHandle color"
-      put "(-" into line -2 of button "hypertext color"
       --put "Default" & cr & "(-" & cr & tFontNames into button "Default script font"
    else
       # Can't have dividers in option menus on PC platforms
       put empty into line -2 of button "backdrop color"
       put empty into line -2 of button "selectionHandle color"
-      put empty into line -2 of button "hypertext color"
       --      put "Default" & cr & cr & tFontNames into button "Default script font"
    end if
    
@@ -39,8 +37,8 @@ on preOpenCard
       set the backgroundColor of graphic "Selection Handle Swatch" to the cSelectionHandleColor of stack "revPreferences"
    end if
    
-   set the label of button "hypertext color" to the cREVHelpHiliteColor of stack "revPreferences"
-   set the backgroundColor of graphic "Help Hilite Swatch" to the cREVHelpHiliteColor of stack "revPreferences"
+   --   set the label of button "hypertext color" to the cREVHelpHiliteColor of stack "revPreferences"
+   --   set the backgroundColor of graphic "Help Hilite Swatch" to the cREVHelpHiliteColor of stack "revPreferences"
    
    put the cREVToolTipDelay of stack "revPreferences" into field "tooltip delay"
    put the toolTipDelay into field "ToolTip Delay"
@@ -60,15 +58,15 @@ on OpenCard
    pDuration     — animation length in seconds, e.g. 0.3
    */
    
-   --   if (the platform = "macOS") then
-   --      windowAnimateResize the windowID of this stack, the left of this stack, the top of this stack, the width of this stack, 290, 0.5
-   --   else
-   lock screen
-   local tTopLeft
-   put the topLeft of this stack into tTopLeft
-   set the height of this stack to 290
-   set the topLeft of this stack to tTopLeft
-   --end if
+   if (the platform = "macOS") then
+      windowAnimateResize the windowID of stack "revPreferencesGUI", the left of this stack, the top of this stack, the width of this stack, 290, 0.5
+   else
+      lock screen
+      local tTopLeft
+      put the topLeft of this stack into tTopLeft
+      set the height of this stack to 290
+      set the topLeft of this stack to tTopLeft
+   end if
 end OpenCard
 
 

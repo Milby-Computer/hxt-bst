@@ -825,56 +825,8 @@
                      "pageInc": "0.999771",
                      "rect": "347,80,362,108",
                      "startValue": "0",
-                     "thumbPosition": "18",
+                     "thumbPosition": "2",
                      "thumbSize": "0.999771"
-                  }
-               },
-               "1068": {
-                  "#name": "field \"New Field 2\"",
-                  "properties": {
-                     "autoHilite": false,
-                     "htmlText": "<p>Documentation Hypertext:</p>",
-                     "id": "1068",
-                     "layer": "14",
-                     "lockText": true,
-                     "name": "New Field 2",
-                     "opaque": false,
-                     "rect": "160,196,313,216",
-                     "sharedText": true,
-                     "showBorder": false,
-                     "style": "transparent",
-                     "textAlign": "right",
-                     "traversalOn": false
-                  }
-               },
-               "1069": {
-                  "#name": "button \"hypertext color\"",
-                  "properties": {
-                     "accelMods": "command",
-                     "autoHilite": false,
-                     "id": "1069",
-                     "layer": "15",
-                     "menuLines": "8",
-                     "menuMode": "option",
-                     "name": "hypertext color",
-                     "rect": "308,196,428,218",
-                     "style": "menu",
-                     "text": "Aquamarine\nBrown\nCadetBlue\nRoyalBlue\nGray\nSienna\n(-\nOther...",
-                     "textAlign": "left",
-                     "toolTip": "Color that glossary terms become when the mouse pointer is over them"
-                  }
-               },
-               "1070": {
-                  "#name": "graphic \"Help Hilite Swatch\"",
-                  "properties": {
-                     "antialiased": false,
-                     "filled": true,
-                     "foreColor": "64,128,128",
-                     "id": "1070",
-                     "layer": "16",
-                     "name": "Help Hilite Swatch",
-                     "opaque": true,
-                     "rect": "434,197,466,216"
                   }
                },
                "1071": {
@@ -882,7 +834,7 @@
                   "properties": {
                      "htmlText": "<p>500</p>",
                      "id": "1071",
-                     "layer": "17",
+                     "layer": "14",
                      "name": "tooltip delay",
                      "rect": "309,249,361,270"
                   }
@@ -894,7 +846,7 @@
                      "dontWrap": true,
                      "htmlText": "<p>Display tool tips after:</p>",
                      "id": "1072",
-                     "layer": "18",
+                     "layer": "15",
                      "lockText": true,
                      "name": "Label Field",
                      "opaque": false,
@@ -2835,7 +2787,7 @@
          "fileName": "revpreferencesgui.rev",
          "id": "1176",
          "name": "revPreferencesGUI",
-         "rect": "251,376,851,738",
+         "rect": "252,127,852,489",
          "title": "Settings"
       },
       "sharedGroupIDs": "1004"

@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI_card_id_1008"
 /*
 # Name: card "Editor" of stack "revPreferencesGUI"
 # ID: card id 1008 of stack "revPreferencesGUI"
-# Hash: en7vYVcLs+ZHA8zhLPMa4Q==
+# Hash: Ab5ThTmcTeEeJV1FKNw+eg==
 */
 
 
@@ -28,15 +28,15 @@ on OpenCard
    pDuration     — animation length in seconds, e.g. 0.3
    */
    
-   --   if (the platform = "macOS") then
-   --      windowAnimateResize the windowID of this stack, the left of this stack, the top of this stack, the width of this stack, 446, 0.5
-   --   else
-   lock screen
-   local tTopLeft
-   put the topLeft of this stack into tTopLeft
-   set the height of this stack to 446
-   set the topLeft of this stack to tTopLeft
-   --end if
+   if (the platform = "macOS") then
+      windowAnimateResize the windowID of stack "revPreferencesGUI", the left of this stack, the top of this stack, the width of this stack, 446, 0.5
+   else
+      lock screen
+      local tTopLeft
+      put the topLeft of this stack into tTopLeft
+      set the height of this stack to 446
+      set the topLeft of this stack to tTopLeft
+   end if
 end OpenCard
 
 

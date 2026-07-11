@@ -1,0 +1,60 @@
+{
+   "#mainstack": "com.livecode.pi.string",
+   "com.livecode.pi.string": {
+      "#name": "stack \"com.livecode.pi.string\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1004": {
+                  "#name": "group \"template\"",
+                  "childcontrols": {
+                     "1003": {
+                        "#name": "field \"Field\"",
+                        "properties": {
+                           "dontWrap": true,
+                           "id": "1003",
+                           "layer": "2",
+                           "name": "Field",
+                           "rect": "92,66,198,87"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1004",
+                     "layer": "1",
+                     "margins": "0",
+                     "name": "template",
+                     "rect": "92,66,198,87"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "2"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1005"
+         }
+      },
+      "longID": "stack \"com.livecode.pi.string\"",
+      "properties": {
+         "fileName": "com.livecode.pi.combobox.livecode",
+         "id": "1005",
+         "name": "com.livecode.pi.string",
+         "rect": "1078,582,1478,982"
+      },
+      "sharedGroupIDs": null
+   }
+}
