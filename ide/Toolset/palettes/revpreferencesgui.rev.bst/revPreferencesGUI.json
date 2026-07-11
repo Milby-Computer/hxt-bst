@@ -447,7 +447,6 @@
                      "id": "1003",
                      "layer": "2",
                      "lockLoc": true,
-                     "menuHistory": "5",
                      "menuMode": "tabbed",
                      "name": "Tab Menu",
                      "rect": "-1,6,601,606",
@@ -1907,7 +1906,7 @@
                            "opaque": false,
                            "rect": "314,181,460,203",
                            "style": "menu",
-                           "text": "Default\nRevolution Classic\nNo Colorization\n(-\nBlue\nRed\n(-\nCustom...",
+                           "text": "Default\nRevolution Classic\nNo Colorization\n(-\nBlue\nOne Dark Pro\nRed\n(-\nCustom...",
                            "traversalOn": false
                         }
                      },
@@ -2960,7 +2959,7 @@
          "foreColor": "#000000",
          "id": "1176",
          "name": "revPreferencesGUI",
-         "rect": "297,160,897,522",
+         "rect": "297,118,895,480",
          "title": "Settings"
       },
       "sharedGroupIDs": "1004"

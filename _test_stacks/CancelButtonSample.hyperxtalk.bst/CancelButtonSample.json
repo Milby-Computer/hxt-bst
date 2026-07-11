@@ -23,6 +23,7 @@
                   },
                   "properties": {
                      "fixedLineHeight": false,
+                     "htmlText": "<p>hello world</p>",
                      "id": "1003",
                      "layer": "1",
                      "name": "Field",
@@ -50,7 +51,7 @@
          "fileName": "CancelButtonSample.hyperxtalk",
          "id": "1007",
          "name": "CancelButtonSample",
-         "rect": "219,118,619,518"
+         "rect": "661,169,1061,569"
       },
       "sharedGroupIDs": null
    }

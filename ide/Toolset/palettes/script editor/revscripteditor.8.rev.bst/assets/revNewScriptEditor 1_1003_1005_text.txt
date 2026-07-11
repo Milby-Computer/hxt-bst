@@ -1,7 +1,7 @@
 Undo/Z
 (Redo/^@Z
-(Cut/X
-(Copy/C
+Cut/X
+Copy/C
 Paste/V
 Select All/A
 Revert

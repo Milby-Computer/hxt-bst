@@ -3,7 +3,7 @@ Script "stack_Answer_Dialog"
 /*
 # Name: stack "Answer Dialog"
 # ID: stack "Answer Dialog"
-# Hash: dlLJEmitK/jL6dnW9Jc1Yg==
+# Hash: 7CQ+akzJsuYiPxv0ouxQkQ==
 */
 
 
@@ -21,3 +21,6 @@ end openCard
 
 on closeCard
 end closeCard
+
+on mouseDown
+end mouseDown

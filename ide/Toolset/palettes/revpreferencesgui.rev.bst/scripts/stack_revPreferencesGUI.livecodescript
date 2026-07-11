@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI"
 /*
 # Name: stack "revPreferencesGUI"
 # ID: stack "revPreferencesGUI"
-# Hash: a8q5wLQVGPjJiVEJzk8ifQ==
+# Hash: V0f/pqJyIqR1ct/p5n4tWQ==
 */
 
 
@@ -25,18 +25,18 @@ on PreOpenStack
    local tScreenRect
    put revIDEStackScreenRect(tMenubarStack, true) into tScreenRect
    
-   if tLoc is empty or tLoc is not within tScreenRect then
-      set the loc of me to revIDEStackScreenLoc(tMenubarStack)
-      revIDESetPreference "cPreferencesLoc", the loc of me
-   else
-      set the loc of me to tLoc
-   end if
+   --   if tLoc is empty or tLoc is not within tScreenRect then
+   --      set the loc of me to revIDEStackScreenLoc(tMenubarStack)
+   --      revIDESetPreference "cPreferencesLoc", the loc of me
+   --   else
+   --      set the loc of me to tLoc
+   --   end if
    
-   local tTopLeft
-   put revIDEGetPreference("cPreferencesTopLeft") into tTopLeft
-   if (tTopLeft is not EMPTY) then
-      set the topLeft of me to tTopLeft  // HXT
-   end if
+   --   local tTopLeft
+   --   put revIDEGetPreference("cPreferencesTopLeft") into tTopLeft
+   --   if (tTopLeft is not EMPTY) then
+   --      set the topLeft of me to tTopLeft  // HXT
+   --   end if
    
    ## Bug 17034
    ## Restore the fixed-font-and-size settings that the stack was originally designed for
@@ -49,6 +49,9 @@ on PreOpenStack
       send "hxtGoToGeneralTab" to me in 1 millisecond
       put true into lAlreadyBeenOpened
    end if
+   
+   set the backgroundColor of this stack to (the systemWindowColor)
+   set the foregroundColor of this stack to (the systemTextColor)
    
    pass PreOpenStack
 end PreOpenStack

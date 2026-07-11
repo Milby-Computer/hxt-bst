@@ -3,7 +3,7 @@ Script "stack_revSETemplate_card_id_1002"
 /*
 # Name: card "Main" of stack "revSETemplate" of stack "revNewScriptEditor"
 # ID: card id 1002 of stack "revSETemplate" of stack "revNewScriptEditor"
-# Hash: Z4VYi5ipDmD/wRxTJwDwpw==
+# Hash: bY9D7GqqroIzuJSTjE/v/Q==
 */
 
 
@@ -11,3 +11,8 @@ Script "stack_revSETemplate_card_id_1002"
 # so it should be handled to prevent errors.
 command revUpdatePalette
 end revUpdatePalette
+
+on SystemAppearanceChanged pMode, pWindowColor, pTextColor
+   set the backgroundColor of field "Numbers" to (iff(pMode = "dark", "128,128,128", "217,217,217"))
+   set the foregroundColor of field "Numbers" to (iff(pMode = "dark", "217,217,217", "128,128,128"))
+end SystemAppearanceChanged
