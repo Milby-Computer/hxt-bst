@@ -1,0 +1,60 @@
+<p><b><font color="#000000">on</font></b><font color="#000000"> mouseUp</font></p>
+<p><font color="#000000"> closeAccept</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> mouseUp</font></p>
+<p></p>
+<p><b><font color="#000000">on</font></b><font color="#000000"> focusOut</font></p>
+<p><font color="#000000">  closeReject</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> focusOut</font></p>
+<p></p>
+<p><b><font color="#000000">on</font></b><font color="#000000"> enterInField</font></p>
+<p><font color="#000000">  closeAccept</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> enterInField</font></p>
+<p></p>
+<p><b><font color="#000000">on</font></b><font color="#000000"> returnInField</font></p>
+<p><font color="#000000">  closeAccept</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> returnInField</font></p>
+<p></p>
+<p><b><font color="#000000">on</font></b><font color="#000000"> arrowKey pKey</font></p>
+<p><font color="#000000">  <b>if</b> pKey </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">among</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#7F007F">items</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#00007F">"up,down"</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">    selectionScroll pKey</font></p>
+<p><font color="#000000">  <b>end</b> <b>if</b></font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> arrowKey</font></p>
+<p></p>
+<p><b><font color="#000000">private</font></b><font color="#000000"> <b>command</b> selectionScroll pDirection</font></p>
+<p><font color="#000000">  </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tOldSelectedLine</font></p>
+<p><font color="#000000">  </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#7F007F">selectedLine</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tOldSelectedLine</font></p>
+<p><font color="#000000">  </font></p>
+<p><font color="#000000">  </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tNewSelectedLine</font></p>
+<p><font color="#000000">  <b>if</b> pDirection </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#00007F">"up"</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">    <b>if</b> tOldSelectedLine </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tNewSelectedLine</font></p>
+<p><font color="#000000">    <b>else</b> <b>if</b> tOldSelectedLine </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tNewSelectedLine</font></p>
+<p><font color="#000000">    <b>else</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> tOldSelectedLine - </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tNewSelectedLine</font></p>
+<p><font color="#000000">    <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">  <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">  </font></p>
+<p><font color="#000000">  <b>if</b> pDirection </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#00007F">"down"</font><font color="#000000"> <b>then</b> </font></p>
+<p><font color="#000000">    <b>if</b> tOldSelectedLine </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tNewSelectedLine</font></p>
+<p><font color="#000000">    <b>else</b> <b>if</b> tOldSelectedLine </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">number</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">lines</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">number</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">lines</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tNewSelectedLine</font></p>
+<p><font color="#000000">    <b>else</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> tOldSelectedLine + </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tNewSelectedLine</font></p>
+<p><font color="#000000">    <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">  <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">  </font></p>
+<p><font color="#000000">  </font><b><font color="#7F7F00">select</font></b><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> tNewSelectedLine </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> selectionScroll</font></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>

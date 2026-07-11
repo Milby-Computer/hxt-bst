@@ -391,7 +391,7 @@
                      "lockLoc": true,
                      "menuMode": "tabbed",
                      "name": "Tab Menu",
-                     "rect": "0,10,400,410",
+                     "rect": "0,18,400,418",
                      "showName": false,
                      "style": "menu",
                      "text": "Entitlements\nCode Signing"
@@ -424,7 +424,7 @@
                            "layer": "4",
                            "name": "com.apple.security.device.camera",
                            "opaque": false,
-                           "rect": "32,79,365,102",
+                           "rect": "32,76,365,99",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -439,7 +439,7 @@
                            "layer": "5",
                            "name": "com.apple.security.personal-information.location",
                            "opaque": false,
-                           "rect": "32,109,365,132",
+                           "rect": "32,102,365,125",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -454,7 +454,7 @@
                            "layer": "6",
                            "name": "com.apple.security.personal-information.addressbook",
                            "opaque": false,
-                           "rect": "32,139,365,162",
+                           "rect": "32,129,365,152",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -466,10 +466,10 @@
                            "hiliteBorder": false,
                            "id": "1009",
                            "label": "Photos",
-                           "layer": "7",
+                           "layer": "8",
                            "name": "com.apple.security.personal-information.photos-library",
                            "opaque": false,
-                           "rect": "32,169,365,192",
+                           "rect": "32,182,365,205",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -481,10 +481,10 @@
                            "hiliteBorder": false,
                            "id": "1010",
                            "label": "AppleScript",
-                           "layer": "8",
+                           "layer": "9",
                            "name": "com.apple.security.automation.apple-events",
                            "opaque": false,
-                           "rect": "32,199,365,222",
+                           "rect": "32,209,365,232",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -496,10 +496,10 @@
                            "hiliteBorder": false,
                            "id": "1011",
                            "label": "Execute User-Selected Files",
-                           "layer": "9",
+                           "layer": "10",
                            "name": "com.apple.security.files.user-selected.executable",
                            "opaque": false,
-                           "rect": "32,229,365,252",
+                           "rect": "32,236,365,259",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -511,10 +511,10 @@
                            "hiliteBorder": false,
                            "id": "1012",
                            "label": "Network Client",
-                           "layer": "10",
+                           "layer": "11",
                            "name": "com.apple.security.network.client",
                            "opaque": false,
-                           "rect": "32,259,365,282",
+                           "rect": "32,262,365,285",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -526,10 +526,25 @@
                            "hiliteBorder": false,
                            "id": "1013",
                            "label": "Network Server",
-                           "layer": "11",
+                           "layer": "12",
                            "name": "com.apple.security.network.server",
                            "opaque": false,
                            "rect": "32,289,365,312",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1032": {
+                        "#name": "button \"com.apple.security.personal-information.calendars\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1032",
+                           "label": "Calendars",
+                           "layer": "7",
+                           "name": "com.apple.security.personal-information.calendars",
+                           "opaque": false,
+                           "rect": "32,156,365,179",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -561,7 +576,7 @@
                            "fixedLineHeight": false,
                            "htmlText": "<p>Signing Certificate:</p>",
                            "id": "1017",
-                           "layer": "13",
+                           "layer": "14",
                            "lockText": true,
                            "name": "Label Signing Cert",
                            "opaque": false,
@@ -578,7 +593,7 @@
                            "armBorder": false,
                            "autoHilite": false,
                            "id": "1018",
-                           "layer": "14",
+                           "layer": "15",
                            "menuMode": "option",
                            "name": "Signing Certificate",
                            "rect": "32,87,358,109",
@@ -602,7 +617,7 @@
                            "fixedLineHeight": false,
                            "htmlText": "<p>Apple ID:</p>",
                            "id": "1019",
-                           "layer": "15",
+                           "layer": "16",
                            "lockText": true,
                            "name": "Label Apple ID",
                            "opaque": false,
@@ -626,7 +641,7 @@
                            "fixedLineHeight": false,
                            "hintText": "user@example.org",
                            "id": "1021",
-                           "layer": "16",
+                           "layer": "17",
                            "name": "Apple ID",
                            "rect": "33,145,357,166"
                         }
@@ -646,7 +661,7 @@
                            "fixedLineHeight": false,
                            "htmlText": "<p>Password:</p>",
                            "id": "1022",
-                           "layer": "17",
+                           "layer": "18",
                            "lockText": true,
                            "name": "Label Password",
                            "opaque": false,
@@ -670,7 +685,7 @@
                            "fixedLineHeight": false,
                            "hintText": "App-specific password",
                            "id": "1023",
-                           "layer": "19",
+                           "layer": "20",
                            "name": "App-specific Password",
                            "passwordField": true,
                            "rect": "33,259,357,280"
@@ -689,7 +704,7 @@
                            "fixedLineHeight": false,
                            "hintText": "XXXXXXXXXX",
                            "id": "1027",
-                           "layer": "18",
+                           "layer": "19",
                            "name": "Team ID",
                            "rect": "33,202,357,223"
                         }
@@ -709,7 +724,7 @@
                            "fixedLineHeight": false,
                            "htmlText": "<p>Team ID:</p>",
                            "id": "1028",
-                           "layer": "20",
+                           "layer": "21",
                            "lockText": true,
                            "name": "Label Team ID",
                            "opaque": false,
@@ -725,7 +740,7 @@
                         "properties": {
                            "hiliteBorder": false,
                            "id": "1030",
-                           "layer": "21",
+                           "layer": "22",
                            "name": "Notarize after signing",
                            "opaque": false,
                            "rect": "32,291,358,314",
@@ -737,7 +752,7 @@
                   },
                   "properties": {
                      "id": "1024",
-                     "layer": "12",
+                     "layer": "13",
                      "name": "Code Signing",
                      "rect": "28,58,362,318",
                      "visible": false
@@ -747,7 +762,7 @@
             "custompropertysets": {
                "cREVGeometrycache": {
                   "order": "\n",
-                  "total": "21"
+                  "total": "22"
                }
             },
             "properties": {
@@ -761,14 +776,14 @@
       },
       "custompropertysets": {
          "cREVGeometryCache": {
-            "stackID": "1030"
+            "stackID": "1031"
          }
       },
       "longID": "stack \"revEntitlements\" of stack \"revStandaloneSettings\"",
       "properties": {
-         "id": "1030",
+         "id": "1032",
          "name": "revEntitlements",
-         "rect": "433,255,833,601",
+         "rect": "443,322,843,668",
          "resizable": false,
          "title": "Entitlements \u2026 Code Signing"
       },
@@ -1427,7 +1442,7 @@
                            "lockText": true,
                            "name": "New Field 4",
                            "opaque": false,
-                           "rect": "50,103,135,122",
+                           "rect": "50,163,135,182",
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
@@ -1449,7 +1464,7 @@
                            "lockText": true,
                            "name": "New Field 4",
                            "opaque": false,
-                           "rect": "20,183,132,203",
+                           "rect": "20,243,132,263",
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
@@ -1470,7 +1485,7 @@
                                  "layer": "24",
                                  "name": "remove",
                                  "opaque": false,
-                                 "rect": "90,210,304,231",
+                                 "rect": "90,270,304,291",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1492,7 +1507,7 @@
                                  "multipleHilites": true,
                                  "name": "include profiles",
                                  "noncontiguousHilites": true,
-                                 "rect": "283,315,482,383",
+                                 "rect": "283,375,482,443",
                                  "scrollbarWidth": "15",
                                  "style": "scrolling",
                                  "toggleHilites": true,
@@ -1510,7 +1525,7 @@
                                  "layer": "31",
                                  "menuMode": "option",
                                  "name": "set objects",
-                                 "rect": "283,237,484,257",
+                                 "rect": "283,297,484,317",
                                  "style": "menu",
                                  "text": "Other\nMaster",
                                  "textAlign": "left",
@@ -1530,7 +1545,7 @@
                                        "layer": "28",
                                        "name": "selected",
                                        "opaque": false,
-                                       "rect": "283,286,497,306",
+                                       "rect": "283,346,497,366",
                                        "sharedHilite": false,
                                        "showBorder": false,
                                        "style": "radiobutton",
@@ -1549,7 +1564,7 @@
                                        "layer": "29",
                                        "name": "all",
                                        "opaque": false,
-                                       "rect": "90,286,264,306",
+                                       "rect": "90,346,264,366",
                                        "sharedHilite": false,
                                        "showBorder": false,
                                        "style": "radiobutton",
@@ -1564,7 +1579,7 @@
                                  "id": "1220",
                                  "layer": "27",
                                  "name": "include profiles",
-                                 "rect": "86,282,501,310"
+                                 "rect": "86,342,501,370"
                               }
                            },
                            "1267": {
@@ -1576,7 +1591,7 @@
                                  "layer": "26",
                                  "name": "include",
                                  "opaque": false,
-                                 "rect": "90,262,415,282",
+                                 "rect": "90,322,415,342",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1593,7 +1608,7 @@
                                  "layer": "30",
                                  "name": "set",
                                  "opaque": false,
-                                 "rect": "90,236,304,257",
+                                 "rect": "90,296,304,317",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1607,7 +1622,7 @@
                            "id": "1215",
                            "layer": "23",
                            "name": "profiles",
-                           "rect": "82,206,505,387"
+                           "rect": "82,266,505,447"
                         }
                      },
                      "1217": {
@@ -1641,8 +1656,8 @@
                            "layer": "32",
                            "name": "New Graphic 1",
                            "opaque": true,
-                           "points": "136,116\n634,116",
-                           "rect": "135,115,635,117",
+                           "points": "136,176\n634,176",
+                           "rect": "135,175,635,177",
                            "style": "line"
                         }
                      },
@@ -1677,8 +1692,8 @@
                            "layer": "33",
                            "name": "New Graphic 1",
                            "opaque": true,
-                           "points": "162,197\n660,197",
-                           "rect": "161,196,661,198",
+                           "points": "162,257\n660,257",
+                           "rect": "161,256,661,258",
                            "style": "line"
                         }
                      },
@@ -1689,13 +1704,12 @@
                               "#name": "button \"search\"",
                               "properties": {
                                  "hiliteBorder": false,
-                                 "hilited": true,
                                  "id": "1292",
                                  "label": "Search for required inclusions when saving the standalone application",
                                  "layer": "43",
                                  "name": "search",
                                  "opaque": false,
-                                 "rect": "100,131,560,154",
+                                 "rect": "100,191,560,214",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1706,12 +1720,13 @@
                               "#name": "button \"select\"",
                               "properties": {
                                  "hiliteBorder": false,
+                                 "hilited": true,
                                  "id": "23250",
                                  "label": "Select inclusions for the standalone application",
                                  "layer": "42",
                                  "name": "select",
                                  "opaque": false,
-                                 "rect": "100,156,420,179",
+                                 "rect": "100,216,420,239",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1720,11 +1735,11 @@
                            }
                         },
                         "properties": {
-                           "hilitedButton": "2",
+                           "hilitedButton": "1",
                            "id": "1294",
                            "layer": "41",
                            "name": "inclusions",
-                           "rect": "96,127,564,183"
+                           "rect": "96,187,564,243"
                         }
                      },
                      "1492": {
@@ -1736,11 +1751,12 @@
                         },
                         "properties": {
                            "dontWrap": true,
+                           "htmlText": "<p>/Users/emily-elizabethhoward/Downloads</p>",
                            "id": "1492",
                            "layer": "34",
                            "lockText": true,
                            "name": "Default Build Folder",
-                           "rect": "152,392,496,413"
+                           "rect": "152,452,496,473"
                         }
                      },
                      "1494": {
@@ -1759,7 +1775,7 @@
                            "lockText": true,
                            "name": "Label Field",
                            "opaque": false,
-                           "rect": "12,392,148,413",
+                           "rect": "12,452,148,473",
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
@@ -1775,7 +1791,7 @@
                            "layer": "36",
                            "name": "Automatically build here",
                            "opaque": false,
-                           "rect": "151,416,320,439",
+                           "rect": "151,476,320,499",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -1788,7 +1804,7 @@
                            "label": "..",
                            "layer": "37",
                            "name": "Browse",
-                           "rect": "498,391,560,414",
+                           "rect": "498,451,560,474",
                            "traversalOn": false
                         }
                      },
@@ -1822,7 +1838,7 @@
                            "id": "2883",
                            "layer": "38",
                            "name": "standalone name",
-                           "rect": "137,78,370,100"
+                           "rect": "137,138,370,160"
                         }
                      },
                      "2884": {
@@ -1855,7 +1871,7 @@
                            "layer": "39",
                            "lockText": true,
                            "opaque": false,
-                           "rect": "367,78,576,99",
+                           "rect": "367,138,576,159",
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
@@ -1873,7 +1889,7 @@
                            "lockText": true,
                            "name": "File name label",
                            "opaque": false,
-                           "rect": "9,78,138,99",
+                           "rect": "9,138,138,159",
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
@@ -1887,7 +1903,7 @@
                      "layer": "20",
                      "margins": "0",
                      "name": "generalContent",
-                     "rect": "9,78,661,439"
+                     "rect": "9,138,661,499"
                   }
                },
                "3125": {
@@ -1981,8 +1997,7 @@
                      "layer": "44",
                      "margins": "0",
                      "name": "generalCommercialTip",
-                     "rect": "9,64,743,125",
-                     "visible": false
+                     "rect": "9,64,743,125"
                   }
                },
                "3723": {
@@ -2132,7 +2147,7 @@
             },
             "customproperties": {
                "cRevTargetStack": "revStandaloneSettings",
-               "cSize": "568,460"
+               "cSize": "568,520"
             },
             "custompropertysets": {
                "cREVGeometryCache": {
@@ -2162,7 +2177,7 @@
                      "showFocusBorder": false,
                      "showIcon": true,
                      "style": "rectangle",
-                     "textStyle": "plain",
+                     "textStyle": "bold",
                      "traversalOn": false
                   }
                },
@@ -2197,7 +2212,7 @@
                      "showFocusBorder": false,
                      "showIcon": true,
                      "style": "rectangle",
-                     "textStyle": "bold",
+                     "textStyle": "plain",
                      "traversalOn": false
                   }
                },
@@ -2312,7 +2327,6 @@
                   "#name": "button \"Inclusions\"",
                   "properties": {
                      "borderWidth": "1",
-                     "disabled": true,
                      "icon": "22781",
                      "id": "5746",
                      "layer": "10",
@@ -3399,7 +3413,7 @@
                               },
                               "properties": {
                                  "autoTab": true,
-                                 "htmlText": "<p>com..untitled1</p>",
+                                 "htmlText": "<p>com.emily.untitled1</p>",
                                  "id": "1363",
                                  "layer": "40",
                                  "name": "identifier",
@@ -6519,7 +6533,8 @@
                      "showIcon": true,
                      "showName": false,
                      "style": "transparent",
-                     "traversalOn": false
+                     "traversalOn": false,
+                     "visible": false
                   }
                },
                "1316": {
@@ -6538,7 +6553,8 @@
                      "showIcon": true,
                      "showName": false,
                      "style": "transparent",
-                     "traversalOn": false
+                     "traversalOn": false,
+                     "visible": false
                   }
                },
                "1590": {
@@ -6567,7 +6583,7 @@
                "id": "1317",
                "layer": "11",
                "name": "checks",
-               "rect": "305,14,467,45"
+               "rect": "305,14,335,45"
             }
          },
          "1617": {
@@ -7092,9 +7108,9 @@
          "id": "32931",
          "liveResizing": false,
          "name": "revStandaloneSettings",
-         "rect": "359,122,926,711",
+         "rect": "359,122,927,642",
          "resizable": false,
-         "title": "Standalone Application Settings for Untitled 1 - Mac"
+         "title": "Standalone Application Settings for Untitled 1 - General"
       },
       "sharedGroupIDs": "1317\n1617\n1010"
    }

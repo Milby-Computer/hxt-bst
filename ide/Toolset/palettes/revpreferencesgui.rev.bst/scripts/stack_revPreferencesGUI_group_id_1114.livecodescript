@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI_group_id_1114"
 /*
 # Name: group "Script Editor" of card "Editor" of stack "revPreferencesGUI"
 # ID: group id 1114 of card id 1008 of stack "revPreferencesGUI"
-# Hash: y2Banh9G0p1F1WpAJ0TPHw==
+# Hash: WTiGA2EmnSXxaKLw6W6z3Q==
 */
 
 
@@ -157,10 +157,7 @@ on menuPick pItem
       
       revIDESetPreference "cScriptEditor,colorization,scheme", pItem
       revIDESetPreference "cScriptEditor,colorization,config", tColourSchemeData
-      
-      --      set the "cScriptEditor,colorization,scheme" of stack "revPreferences" to pItem
-      --      set the "cScriptEditor,colorization,config" of stack "revPreferences" to tColourSchemeData
-      
+
       applyPref the cPref of the target, getValue(the long id of the target)
       
    else if the cPref of the target is not empty then

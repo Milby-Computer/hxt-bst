@@ -3,7 +3,7 @@ Script "stack_revEntitlements_card_id_1002"
 /*
 # Name: card id 1002 of stack "revEntitlements" of stack "revStandaloneSettings"
 # ID: card id 1002 of stack "revEntitlements" of stack "revStandaloneSettings"
-# Hash: F9MBGe+ZS9kwVlCjgwcvXw==
+# Hash: KfV5tRdSoiZocu2bkZxbrA==
 */
 
 
@@ -17,19 +17,50 @@ on PreOpenCard
 end PreOpenCard
 
 
+--on OpenCard
+--   local tIdentities, tDeveloperIdentities
+--   put shell("security find-identity -v -p codesigning") into tIdentities
+--   filter lines of tIdentities with "*Developer ID Application*"
+--   get matchtext(tIdentities, QUOTE & "(.*?)" & QUOTE, tDeveloperIdentities)
+--   set the text of button "Signing Certificate" to tDeveloperIdentities
+
+--   local tTargetStackLongID
+--   put the long id of stack (the cTargetStack of this stack) into tTargetStackLongID
+
+--   set the text of field "Apple ID" to revIDEStandaloneSettingsGet(tTargetStackLongID, "OSX,appleID")
+--   set the text of field "Team ID" to revIDEStandaloneSettingsGet(tTargetStackLongID, "OSX,teamID")
+--   set the hilited of button "Notarize after signing" to (revIDEStandaloneSettingsGet(tTargetStackLongID, "OSX,notarize") is true)
+--end OpenCard
+
 on OpenCard
-   local tIdentities, tDeveloperIdentities
-   put shell("security find-identity -v -p codesigning") into tIdentities
-   filter lines of tIdentities with "*Developer ID Application*"
-   get matchtext(tIdentities, QUOTE & "(.*?)" & QUOTE, tDeveloperIdentities)
-   set the text of button "Signing Certificate" to tDeveloperIdentities
-   
    local tTargetStackLongID
    put the long id of stack (the cTargetStack of this stack) into tTargetStackLongID
-   
    set the text of field "Apple ID" to revIDEStandaloneSettingsGet(tTargetStackLongID, "OSX,appleID")
    set the text of field "Team ID" to revIDEStandaloneSettingsGet(tTargetStackLongID, "OSX,teamID")
-   set the hilited of button "Notarize after signing" to (revIDEStandaloneSettingsGet(tTargetStackLongID, "OSX,notarize") is true)
+   set the hilited of button "Notarize after signing" to \
+         (revIDEStandaloneSettingsGet(tTargetStackLongID, "OSX,notarize") is true)
+   
+   -- Fetch signing identities without blocking the main thread.
+   -- The original shell() call hangs on macOS Sequoia while waiting for
+   -- keychain authorisation.  Using open process + wait with messages keeps
+   -- the event loop alive and lets the IDE remain responsive.
+   local tProcess, tOutput, tDeadline
+   put "security find-identity -v -p codesigning" into tProcess
+   open process tProcess for read
+   put the milliseconds + 8000 into tDeadline   -- 8-second safety timeout
+   repeat
+      wait 100 milliseconds with messages        -- yield so UI stays alive
+      read from process tProcess for 65536
+      put it after tOutput
+      if the result is "eof" then exit repeat
+      if the milliseconds > tDeadline then exit repeat
+   end repeat
+   close process tProcess
+   
+   filter lines of tOutput with "*Developer ID Application*"
+   local tDeveloperIdentities
+   get matchtext(tOutput, QUOTE & "(.*?)" & QUOTE, tDeveloperIdentities)
+   set the text of button "Signing Certificate" to tDeveloperIdentities
 end OpenCard
 
 

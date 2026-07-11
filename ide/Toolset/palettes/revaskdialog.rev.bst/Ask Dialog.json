@@ -1,0 +1,203 @@
+{
+   "#mainstack": "Ask Dialog",
+   "Ask Dialog": {
+      "#name": "stack \"Ask Dialog\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"card id 1002\"",
+            "childcontrols": {
+               "1006": {
+                  "#name": "field id 1006",
+                  "properties": {
+                     "dontSearch": true,
+                     "id": "1006",
+                     "layer": "3",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "98,8,424,33",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textSize": "13",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1116": {
+                  "#name": "button \"OK\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "default": true,
+                     "id": "1116",
+                     "layer": "5",
+                     "menuMode": "pulldown",
+                     "name": "OK",
+                     "rect": "356,72,429,95",
+                     "sharedHilite": false,
+                     "textFont": "usesystemfont",
+                     "textSize": "13",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1117": {
+                  "#name": "button \"Cancel\"",
+                  "properties": {
+                     "id": "1117",
+                     "layer": "6",
+                     "menuMode": "pulldown",
+                     "name": "Cancel",
+                     "rect": "270,72,342,95",
+                     "sharedHilite": false,
+                     "textFont": "usesystemfont",
+                     "textSize": "13",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1119": {
+                  "#name": "field id 1119",
+                  "properties": {
+                     "autoTab": true,
+                     "dontSearch": true,
+                     "dontWrap": true,
+                     "id": "1119",
+                     "layer": "4",
+                     "rect": "98,37,424,58",
+                     "sharedText": true
+                  }
+               },
+               "1120": {
+                  "#name": "field id 1120",
+                  "properties": {
+                     "id": "1120",
+                     "layer": "7",
+                     "rect": "76,162,200,190",
+                     "showLines": true,
+                     "visible": false
+                  }
+               },
+               "1121": {
+                  "#name": "button \"icon\"",
+                  "customproperties": {
+                     "apkButton": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "icon": "210096",
+                     "id": "1121",
+                     "layer": "1",
+                     "menuMode": "pulldown",
+                     "name": "icon",
+                     "opaque": false,
+                     "rect": "14,18,90,83",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1132": {
+                  "#name": "button \"icon 2\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "default": true,
+                     "id": "1132",
+                     "layer": "2",
+                     "margins": "4,4,4,3",
+                     "menuMode": "pulldown",
+                     "name": "icon 2",
+                     "opaque": false,
+                     "rect": "-223,-210,-176,-189",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cRTL": false,
+               "fieldmode": "password"
+            },
+            "custompropertysets": {
+               "cAPKGeneral": {
+                  "handlerList": "doresize\nstar\npreOpenStack\nkeyDown\ndeleteKey\nbackspaceKey\ndeleteone\ncommandKeyDown\nopenField\nresizeStack\nreturnInField\ncloseStack",
+                  "script": null,
+                  "scriptChecksum": "\u0086X!\u0093\u0092\u0088\u0085\u0088\u009E\u0094z\u0017u\u0007(\u0088\u0082\u0088\u0086\u0084",
+                  "tempScript": null
+               },
+               "cAPKGeometryCache": {
+                  "order": null
+               },
+               "cREVGeneral[scripteditorselection]": {
+                  "scripteditorselection": "9363"
+               },
+               "cREVGeneral[scripteditorvscroll]": {
+                  "scripteditorvscroll": "3714"
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "7"
+               }
+            },
+            "properties": {
+               "backColor": "#ececec",
+               "foreColor": "#000000",
+               "id": "1002",
+               "name": "card id 1002"
+            }
+         }
+      },
+      "customproperties": {
+         "revstack": false
+      },
+      "custompropertysets": {
+         "cREVGeneral[breakpointconditions]": {
+            "breakpointconditions": null
+         },
+         "cREVGeneral[breakpoints]": {
+            "breakpoints": null
+         },
+         "cREVGeneral[breakpointstates]": {
+            "breakpointstates": null
+         },
+         "cREVGeometryCache": {
+            "stackID": "1132"
+         }
+      },
+      "longID": "stack \"Ask Dialog\"",
+      "properties": {
+         "bottomColor": "128,128,128",
+         "decorations": "default",
+         "destroyWindow": true,
+         "fileName": "revaskdialog.rev",
+         "foreColor": "0,0,0",
+         "id": "1132",
+         "liveResizing": false,
+         "name": "Ask Dialog",
+         "rect": "495,180,945,293",
+         "resizable": false,
+         "shadowColor": "172,172,172",
+         "textFont": "Lucida Grande",
+         "textSize": "13",
+         "textStyle": "plain",
+         "title": " ",
+         "topColor": "white"
+      },
+      "sharedGroupIDs": null
+   }
+}

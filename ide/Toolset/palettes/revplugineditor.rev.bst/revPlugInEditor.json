@@ -12,23 +12,21 @@
                "1004": {
                   "#name": "button \"list\"",
                   "customproperties": {
-                     "cMenuList": "%file%: assets/revPlugInEditor_1002_1004_cMenuList.bin",
-                     "cStacksList": "/Users/gheizhwinder/Programming/livecode/ide/Plugins/revSmartProperties 1.2.rev"
+                     "cMenuList": null,
+                     "cStacksList": null
                   },
                   "properties": {
                      "accelMods": "command",
                      "armBorder": false,
                      "autoHilite": false,
                      "id": "1004",
-                     "label": "RegExBuilder",
                      "layer": "14",
-                     "menuHistory": "3",
                      "menuLines": "7",
                      "menuMode": "option",
                      "name": "list",
+                     "opaque": false,
                      "rect": "144,18,359,41",
                      "style": "menu",
-                     "text": "GoRevNet\nlivecodeTestInterface\nRegExBuilder\nrevApplicationOverview\nrevExample\nrevNavigator\nrevSmartSave\nrevTabRuler\nrGridEngine\nSmartProperties",
                      "textAlign": "left",
                      "toolTip": "The settings will be applied to this stack in the Plugins folder",
                      "traversalOn": false
@@ -67,6 +65,7 @@
                      }
                   },
                   "properties": {
+                     "disabled": true,
                      "dontWrap": true,
                      "htmlText": "%file%: assets/revPlugInEditor_1002_1074_htmlText.txt",
                      "id": "1074",
@@ -95,6 +94,7 @@
                            "1053": {
                               "#name": "button \"Modeless\"",
                               "properties": {
+                                 "disabled": true,
                                  "hiliteBorder": false,
                                  "id": "1053",
                                  "label": "Modeless dialog box",
@@ -111,6 +111,7 @@
                            "1054": {
                               "#name": "button \"Palette\"",
                               "properties": {
+                                 "disabled": true,
                                  "hiliteBorder": false,
                                  "hilited": true,
                                  "id": "1054",
@@ -127,6 +128,7 @@
                            "1055": {
                               "#name": "button \"Modal\"",
                               "properties": {
+                                 "disabled": true,
                                  "hiliteBorder": false,
                                  "id": "1055",
                                  "label": "Modal dialog box",
@@ -143,6 +145,7 @@
                            "1078": {
                               "#name": "button \"Invisible\"",
                               "properties": {
+                                 "disabled": true,
                                  "hiliteBorder": false,
                                  "id": "1078",
                                  "layer": "13",
@@ -157,6 +160,7 @@
                            }
                         },
                         "properties": {
+                           "disabled": true,
                            "hilitedButton": "2",
                            "id": "1010",
                            "label": "Open plugin as:",
@@ -173,6 +177,7 @@
                            "1056": {
                               "#name": "button \"chosen\"",
                               "properties": {
+                                 "disabled": true,
                                  "hiliteBorder": false,
                                  "hilited": true,
                                  "id": "1056",
@@ -191,6 +196,7 @@
                            "1057": {
                               "#name": "button \"startup\"",
                               "properties": {
+                                 "disabled": true,
                                  "hiliteBorder": false,
                                  "id": "1057",
                                  "label": "LiveCode starts up",
@@ -208,6 +214,7 @@
                            "1058": {
                               "#name": "button \"shutdown\"",
                               "properties": {
+                                 "disabled": true,
                                  "hiliteBorder": false,
                                  "id": "1058",
                                  "label": "LiveCode quits",
@@ -224,6 +231,7 @@
                            }
                         },
                         "properties": {
+                           "disabled": true,
                            "hilitedButton": "1",
                            "id": "1027",
                            "label": "Open plugin when:",
@@ -235,6 +243,7 @@
                      }
                   },
                   "properties": {
+                     "disabled": true,
                      "id": "1076",
                      "layer": "4",
                      "margins": "10",
@@ -412,7 +421,7 @@
          "id": "1098",
          "liveResizing": false,
          "name": "revPlugInEditor",
-         "rect": "269,81,809,433",
+         "rect": "269,105,809,457",
          "resizable": false,
          "title": "Plugin Settings"
       },

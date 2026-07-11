@@ -1,0 +1,270 @@
+{
+   "#mainstack": "FieldInputValidation",
+   "FieldInputValidation": {
+      "#name": "stack \"FieldInputValidation\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"Website\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "borderColor": "red",
+                     "fixedLineHeight": false,
+                     "hintText": "https://example.com",
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Website",
+                     "rect": "113,28,379,49"
+                  }
+               },
+               "1004": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1004",
+                     "label": "URL ->",
+                     "layer": "2",
+                     "name": "Button",
+                     "rect": "21,27,103,50",
+                     "traversalOn": false
+                  }
+               },
+               "1007": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1007",
+                     "label": "Email ->",
+                     "layer": "3",
+                     "name": "Button",
+                     "rect": "21,67,103,90",
+                     "traversalOn": false
+                  }
+               },
+               "1008": {
+                  "#name": "field \"EmailAddress\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "borderColor": "red",
+                     "fixedLineHeight": false,
+                     "hintText": "user@example.com",
+                     "id": "1008",
+                     "layer": "4",
+                     "name": "EmailAddress",
+                     "rect": "113,68,379,89"
+                  }
+               },
+               "1011": {
+                  "#name": "image \"urlNotValidated\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "borderWidth": "0",
+                     "id": "1011",
+                     "layer": "5",
+                     "name": "urlNotValidated",
+                     "rect": "384,26,416,50",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FieldInputValidation_1002_1011_text.png",
+                     "visible": false
+                  }
+               },
+               "1012": {
+                  "#name": "image \"urlValidated\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "borderWidth": "0",
+                     "id": "1012",
+                     "layer": "6",
+                     "name": "urlValidated",
+                     "rect": "384,26,416,50",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FieldInputValidation_1002_1012_text.png",
+                     "visible": false
+                  }
+               },
+               "1013": {
+                  "#name": "image \"emailNotValidated\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "borderWidth": "0",
+                     "id": "1013",
+                     "layer": "7",
+                     "name": "emailNotValidated",
+                     "rect": "384,66,416,90",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FieldInputValidation_1002_1013_text.png",
+                     "visible": false
+                  }
+               },
+               "1014": {
+                  "#name": "image \"emailValidated\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "borderWidth": "0",
+                     "id": "1014",
+                     "layer": "8",
+                     "name": "emailValidated",
+                     "rect": "384,66,416,90",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FieldInputValidation_1002_1014_text.png",
+                     "visible": false
+                  }
+               },
+               "1015": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1015",
+                     "label": "Age ->",
+                     "layer": "9",
+                     "name": "Button",
+                     "rect": "21,107,103,130",
+                     "traversalOn": false
+                  }
+               },
+               "1016": {
+                  "#name": "field \"Age\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "borderColor": "red",
+                     "fixedLineHeight": false,
+                     "hintText": "20 to 80",
+                     "id": "1016",
+                     "layer": "10",
+                     "name": "Age",
+                     "rect": "113,108,379,129"
+                  }
+               },
+               "1017": {
+                  "#name": "image \"ageNotValidated\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "borderWidth": "0",
+                     "id": "1017",
+                     "layer": "11",
+                     "name": "ageNotValidated",
+                     "rect": "384,106,416,130",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FieldInputValidation_1002_1017_text.png",
+                     "visible": false
+                  }
+               },
+               "1018": {
+                  "#name": "image \"ageValidated\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "borderWidth": "0",
+                     "id": "1018",
+                     "layer": "12",
+                     "name": "ageValidated",
+                     "rect": "384,106,416,130",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FieldInputValidation_1002_1018_text.png",
+                     "visible": false
+                  }
+               },
+               "1019": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1019",
+                     "label": "Pattern ->",
+                     "layer": "13",
+                     "name": "Button",
+                     "rect": "21,147,103,170",
+                     "traversalOn": false
+                  }
+               },
+               "1020": {
+                  "#name": "image \"dateNotValidated\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "borderWidth": "0",
+                     "id": "1020",
+                     "layer": "14",
+                     "name": "dateNotValidated",
+                     "rect": "384,146,416,170",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FieldInputValidation_1002_1020_text.png",
+                     "visible": false
+                  }
+               },
+               "1021": {
+                  "#name": "image \"dateValidated\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "borderWidth": "0",
+                     "id": "1021",
+                     "layer": "15",
+                     "name": "dateValidated",
+                     "rect": "384,146,416,170",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FieldInputValidation_1002_1021_text.png",
+                     "visible": false
+                  }
+               },
+               "1022": {
+                  "#name": "field \"Date\"",
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "borderColor": "red",
+                     "fixedLineHeight": false,
+                     "hintText": "05/08/2026",
+                     "id": "1022",
+                     "layer": "16",
+                     "name": "Date",
+                     "rect": "113,148,379,169"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "16"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1022"
+         }
+      },
+      "longID": "stack \"FieldInputValidation\"",
+      "properties": {
+         "fileName": "FieldInputValidation.hyperxtalk",
+         "id": "1022",
+         "name": "FieldInputValidation",
+         "rect": "219,118,641,518"
+      },
+      "sharedGroupIDs": null
+   }
+}

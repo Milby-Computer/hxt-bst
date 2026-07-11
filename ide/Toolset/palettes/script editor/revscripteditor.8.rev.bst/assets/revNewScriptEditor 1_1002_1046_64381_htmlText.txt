@@ -1,0 +1,429 @@
+<p><b><font color="#000000">command</font></b><font color="#000000"> initialize</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">lock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><font color="#000000">   </font><font color="#7F007F">update</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">focus</font></b><font color="#000000"> <b>on</b> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tLineNumber</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tLineNumber</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tMatchingLineNumber</font></p>
+<p><font color="#000000">   <b>repeat</b> </font><font color="#7F007F">for</font><font color="#000000"> </font><font color="#7F007F">each</font><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> tHandler </font><font color="#7F007F">in</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cHandlers </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">      <b>if</b> </font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> tHandler </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cSelectedHandler </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> tLineNumber </font><font color="#7F007F">into</font><font color="#000000"> tMatchingLineNumber</font></p>
+<p><font color="#000000">         <b>exit</b> <b>repeat</b></font></p>
+<p><font color="#000000">      <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">add</font></b><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> tLineNumber</font></p>
+<p><font color="#000000">   <b>end</b> <b>repeat</b></font></p>
+<p><font color="#000000">      </font></p>
+<p><font color="#000000">   <b>if</b> tMatchingLineNumber </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">select</font></b><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   <b>else</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">select</font></b><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> tMatchingLineNumber </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">unlock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> initialize</font></p>
+<p></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> initializeWithoutGrabbingFocus</font></p>
+<p><font color="#000000">   </font><font color="#7F007F">update</font></p>
+<p><font color="#000000">   updateSelectedHandler</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> initializeWithoutGrabbingFocus</font></p>
+<p></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> updateSelectedHandler</font></p>
+<p><font color="#000000">   <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> cSelectedHandler </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">hilitedLines</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">empty</font></p>
+<p><font color="#000000">      <b>exit</b> updateSelectedHandler</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tLineNumber</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tLineNumber</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tMatchingLineNumber</font></p>
+<p><font color="#000000">   <b>repeat</b> </font><font color="#7F007F">for</font><font color="#000000"> </font><font color="#7F007F">each</font><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> tHandler </font><font color="#7F007F">in</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cHandlers </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">      <b>if</b> </font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> tHandler </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cSelectedHandler </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> tLineNumber </font><font color="#7F007F">into</font><font color="#000000"> tMatchingLineNumber</font></p>
+<p><font color="#000000">         <b>exit</b> <b>repeat</b></font></p>
+<p><font color="#000000">      <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">add</font></b><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> tLineNumber</font></p>
+<p><font color="#000000">   <b>end</b> <b>repeat</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   <b>if</b> tMatchingLineNumber </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">hilitedLines</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">empty</font></p>
+<p><font color="#000000">   <b>else</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">hilitedLines</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> tMatchingLineNumber</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> updateSelectedHandler</font></p>
+<p></p>
+<p><b><font color="#007F00"># Parameters</font></b></p>
+<p><b><font color="#007F00">#   pTag : A single letter tag that refers to certain property of a handler</font></b></p>
+<p><b><font color="#007F00">#   Possible values:</font></b></p>
+<p><b><font color="#007F00">#     C - command</font></b></p>
+<p><b><font color="#007F00">#     M - message</font></b></p>
+<p><b><font color="#007F00">#     F - function</font></b></p>
+<p><b><font color="#007F00">#     G - getProp</font></b></p>
+<p><b><font color="#007F00">#     S - setprop</font></b></p>
+<p><b><font color="#007F00">#     B - before</font></b></p>
+<p><b><font color="#007F00">#     A - after</font></b></p>
+<p><b><font color="#007F00">#   pIsPrivate : whether or not the handler is private (commands and functions only)</font></b></p>
+<p><b><font color="#007F00"># Returns</font></b></p>
+<p><b><font color="#007F00">#   The id of a suitable image to represent the property pTag of a handler. Note: this function</font></b></p>
+<p><b><font color="#007F00">#   may return empty if no image is required to represent this.</font></b></p>
+<p><b><font color="#000000">private</font></b><font color="#000000"> <b>function</b> getIcon pTag, pIsPrivate</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tTag</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">"handler"</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tTag</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   <b>if</b> pIsPrivate <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">"Private"</font><font color="#000000"> </font><font color="#7F007F">after</font><font color="#000000"> tTag</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   <b>switch</b> pTag</font></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"C"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">"Command"</font><font color="#000000"> </font><font color="#7F007F">after</font><font color="#000000"> tTag</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"M"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">"Message"</font><font color="#000000"> </font><font color="#7F007F">after</font><font color="#000000"> tTag</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"F"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">"Function"</font><font color="#000000"> </font><font color="#7F007F">after</font><font color="#000000"> tTag</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"G"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">"Getprop"</font><font color="#000000"> </font><font color="#7F007F">after</font><font color="#000000"> tTag</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"S"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">"Setprop"</font><font color="#000000"> </font><font color="#7F007F">after</font><font color="#000000"> tTag</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"B"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">"Before"</font><font color="#000000"> </font><font color="#7F007F">after</font><font color="#000000"> tTag</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"A"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">"After"</font><font color="#000000"> </font><font color="#7F007F">after</font><font color="#000000"> tTag</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">   <b>end</b> <b>switch</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">return</font></b><font color="#000000"> seGetIcon(tTag)</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> getIcon</font></p>
+<p></p>
+<p><b><font color="#000000">function</font></b><font color="#000000"> handlerTypeSortCallback pItem</font></p>
+<p><font color="#000000">   <b>switch</b> pItem</font></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"F"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">return</font></b><font color="#000000"> </font><font color="#00007F">1</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"PF"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">return</font></b><font color="#000000"> </font><font color="#00007F">2</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"M"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">return</font></b><font color="#000000"> </font><font color="#00007F">3</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"PM"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">return</font></b><font color="#000000"> </font><font color="#00007F">4</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"G"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">return</font></b><font color="#000000"> </font><font color="#00007F">5</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">      <b>case</b> </font><font color="#00007F">"S"</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">return</font></b><font color="#000000"> </font><font color="#00007F">6</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">break</font></b></p>
+<p><font color="#000000">      <b>default</b> </font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">return</font></b><font color="#000000"> </font><font color="#00007F">7</font></p>
+<p><font color="#000000">   <b>end</b> <b>switch</b></font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> handlerTypeSortCallback</font></p>
+<p></p>
+<p><b><font color="#7F7F00">constant</font></b><font color="#000000"> kDefaultHandlerTextColor = </font><font color="#00007F">"#777777"</font></p>
+<p></p>
+<p><b><font color="#007F00"># Description</font></b></p>
+<p><b><font color="#007F00">#   Called when the group might need to be updated. Updates the handler list. Also resizes the group.</font></b></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> </font><font color="#7F007F">update</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">lock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tHandlers</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">call</font></b><font color="#000000"> </font><font color="#00007F">"revSEGetHandlerList"</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cCaller </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#7F007F">result</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tHandlers</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tDefaultHandlers, tIndex</font></p>
+<p><font color="#000000">   <b>if</b> sePrefGet(</font><font color="#00007F">"editor,showDefaultHandlers"</font><font color="#000000">) <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> revSEDefaultHandlers() </font><font color="#7F007F">into</font><font color="#000000"> tDefaultHandlers</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">wholematches</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">false</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tCanAdd</font></p>
+<p><font color="#000000">   <b>repeat</b> </font><font color="#7F007F">for</font><font color="#000000"> </font><font color="#7F007F">each</font><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> tLine </font><font color="#7F007F">in</font><font color="#000000"> tDefaultHandlers</font></p>
+<p><font color="#000000">      <b>if</b> </font><font color="#7F007F">lineOffset</font><font color="#000000">(tLine, tHandlers) </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">not</font><font color="#000000"> </font><font color="#00007F">0</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">         <b>next</b> <b>repeat</b></font></p>
+<p><font color="#000000">      <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">      <b>if</b> tCanAdd </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> tLine </font><font color="#7F007F">into</font><font color="#000000"> tCanAdd</font></p>
+<p><font color="#000000">      <b>else</b></font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><b><font color="#7F7F00">return</font></b><font color="#000000"> &amp; tLine </font><font color="#7F007F">after</font><font color="#000000"> tCanAdd</font></p>
+<p><font color="#000000">      <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   <b>end</b> <b>repeat</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   filterHandlerNames tHandlers</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   <b>if</b> sePrefGet(</font><font color="#00007F">"editor,sortHandlerList"</font><font color="#000000">) </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#00007F">"alphabetical"</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">sort</font></b><font color="#000000"> tHandlers </font><font color="#7F007F">by</font><font color="#000000"> </font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">each</font></p>
+<p><font color="#000000">   <b>else</b> <b>if</b> sePrefGet(</font><font color="#00007F">"editor,sortHandlerList"</font><font color="#000000">) </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#00007F">"order-of-appearence"</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#007F00"># OK-2008-07-21 : Bug 6805 - Sort the handlers by their line number</font></b></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">sort</font></b><font color="#000000"> tHandlers </font><font color="#7F007F">numeric</font><font color="#000000"> </font><font color="#7F007F">by</font><font color="#000000"> </font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">3</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">each</font></p>
+<p><font color="#000000">   <b>else</b></font></p>
+<p><font color="#000000">      </font><b><font color="#007F00"># OK-2009-03-03 : Bug 7690 - We could change this in the engine, but considering that in the default</font></b></p>
+<p><font color="#000000">      </font><b><font color="#007F00"># settings we sort alphabetically anyway, it probably doesn't make much difference to just sort here.</font></b></p>
+<p><font color="#000000">      </font><b><font color="#007F00"># This will produce an ordering F, G, H, PF, PH, S, which may need to be adjusted using a custom search</font></b></p>
+<p><font color="#000000">      </font><b><font color="#007F00"># function here.</font></b></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">sort</font></b><font color="#000000"> tHandlers </font><font color="#7F007F">by</font><font color="#000000"> handlerTypeSortCallback(</font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">each</font><font color="#000000">) &amp; </font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">each</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   <b>if</b> tHandlers </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">not</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><b><font color="#7F7F00">return</font></b><font color="#000000"> &amp; </font><b><font color="#7F7F00">return</font></b><font color="#000000"> &amp; </font><b><font color="#7F7F00">return</font></b><font color="#000000"> </font><font color="#7F007F">after</font><font color="#000000"> tHandlers</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> tCanAdd </font><font color="#7F007F">after</font><font color="#000000"> tHandlers</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#007F00"># Populate the handlers field with the formatted list of handlers</font></b></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tText, tIcon</font></p>
+<p><font color="#000000">   <b>repeat</b> </font><font color="#7F007F">for</font><font color="#000000"> </font><font color="#7F007F">each</font><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> tHandler </font><font color="#7F007F">in</font><font color="#000000"> tHandlers</font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tParseHandler, tHandlerExists</font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">true</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tHandlerExists</font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> tHandler </font><font color="#7F007F">into</font><font color="#000000"> tParseHandler</font></p>
+<p><font color="#000000">      </font></p>
+<p><font color="#000000">      <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">number</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">words</font><font color="#000000"> </font><font color="#7F007F">in</font><font color="#000000"> tHandler </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">false</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tHandlerExists</font></p>
+<p><font color="#000000">         </font><b><font color="#007F00">-- Existing handler names have a space after the icon</font></b></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">" "</font><font color="#000000"> </font><font color="#7F007F">before</font><font color="#000000"> tParseHandler</font></p>
+<p><font color="#000000">      <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">      </font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">"&lt;p&gt;"</font><font color="#000000"> </font><font color="#7F007F">after</font><font color="#000000"> tText</font></p>
+<p><font color="#000000">      </font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tIsPrivate</font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">false</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tIsPrivate</font></p>
+<p><font color="#000000">      <b>if</b> tHandlerExists </font><font color="#7F007F">and</font><font color="#000000"> </font><font color="#7F007F">char</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> tParseHandler </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#00007F">"P"</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">true</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tIsPrivate</font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">delete</font></b><font color="#000000"> </font><font color="#7F007F">char</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> tParseHandler</font></p>
+<p><font color="#000000">      <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">      </font></p>
+<p><font color="#000000">      <b>if</b> tHandlerExists <b>then</b></font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> getIcon(</font><font color="#7F007F">char</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> tParseHandler, tIsPrivate) </font><font color="#7F007F">into</font><font color="#000000"> tIcon</font></p>
+<p><font color="#000000">         <b>if</b> tIcon </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">not</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">            </font><b><font color="#7F7F00">delete</font></b><font color="#000000"> </font><font color="#7F007F">char</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> tParseHandler</font></p>
+<p><font color="#000000">         <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">      <b>else</b></font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">id</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">image</font><font color="#000000"> </font><font color="#00007F">"icon-add.png"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">stack</font><font color="#000000"> </font><font color="#00007F">"revIcons"</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tIcon</font></p>
+<p><font color="#000000">      <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">      </font></p>
+<p><font color="#000000">      <b>if</b> tIcon </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">not</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">merge</font><font color="#000000">(</font><font color="#00007F">"&lt;sup shift=2&gt;&lt;img src=[[tICon]]&gt;&lt;/img&gt;&lt;/sup&gt;"</font><font color="#000000">) </font><font color="#7F007F">after</font><font color="#000000"> tText</font></p>
+<p><font color="#000000">      <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">      </font></p>
+<p><font color="#000000">      <b>if</b> </font><font color="#7F007F">not</font><font color="#000000"> tHandlerExists <b>then</b></font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">merge</font><font color="#000000">(</font><font color="#00007F">"&lt;font color='[[kDefaultHandlerTextColor]]'&gt;[[tParseHandler]]&lt;/font&gt;"</font><font color="#000000">) \</font></p>
+<p><font color="#000000">               </font><font color="#7F007F">into</font><font color="#000000"> tParseHandler</font></p>
+<p><font color="#000000">      <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">      </font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> tParseHandler &amp; </font><font color="#00007F">"&lt;/p&gt;"</font><font color="#000000"> </font><font color="#7F007F">after</font><font color="#000000"> tText</font></p>
+<p><font color="#000000">   <b>end</b> <b>repeat</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   <b>if</b> tText </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#00007F">"&lt;p&gt;&lt;/p&gt;"</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tText</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#007F00"># OK-2008-08-18: Bug 6936 - The handler list object should take its text size from the main script editor preference.</font></b></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">textSize</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> sePrefGet(</font><font color="#00007F">"editor,fontsize"</font><font color="#000000">)</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">textFont</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> sePrefGet(</font><font color="#00007F">"editor,font"</font><font color="#000000">)</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">foregroundColor</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> contrastingTextColor(</font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">backgroundColor</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000">)</font></p>
+<p><font color="#000000">      </font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">htmlText</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> tText</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cHandlers </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> tHandlers</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#007F00"># Shrink or grow the stack if the handlers list doesn't fit, but don't let it become bigger than its maxHeight or maxWidth.</font></b></p>
+<p><font color="#000000">   <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">formattedHeight</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> &gt; </font><font color="#7F007F">the</font><font color="#000000"> cMaxHeight </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">height</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cMaxHeight </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   <b>else</b> <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">formattedHeight</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> &lt; </font><font color="#7F007F">the</font><font color="#000000"> cMinHeight </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">height</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cMinHeight </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   <b>else</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">height</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">formattedHeight</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">formattedWidth</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> &gt; </font><font color="#7F007F">the</font><font color="#000000"> cMaxWidth </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">width</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cMaxWidth </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   <b>else</b> <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">formattedWidth</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> &lt; </font><font color="#7F007F">the</font><font color="#000000"> cMinWidth </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">width</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cMinWidth </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   <b>else</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">width</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">formattedWidth</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#007F00"># The topLeft of the group will be set by whatever invokes it, so we have to restore this after</font></b></p>
+<p><font color="#000000">   </font><b><font color="#007F00"># we have changed the width and height.</font></b></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tOldTopRight</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">topRight</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tOldTopRight</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">vScrollbar</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> (</font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">formattedHeight</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> &gt; </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">height</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000">)</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">width</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">width</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">height</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">height</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">topLeft</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">topLeft</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">topRight</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> tOldTopRight</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">unlock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> </font><font color="#7F007F">update</font></p>
+<p></p>
+<p></p>
+<p><b><font color="#000000">private</font></b><font color="#000000"> <b>function</b> contrastingTextColor pBackgroundColor</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">itemDelimiter</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">comma</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">item</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pBackgroundColor </font><font color="#7F007F">into</font><font color="#000000"> tR</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">item</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pBackgroundColor </font><font color="#7F007F">into</font><font color="#000000"> tG</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">item</font><font color="#000000"> </font><font color="#00007F">3</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pBackgroundColor </font><font color="#7F007F">into</font><font color="#000000"> tB</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#007F00">-- Perceived luminance (fast approximation)</font></b></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> (</font><font color="#00007F">0.299</font><font color="#000000"> * tR + </font><font color="#00007F">0.587</font><font color="#000000"> * tG + </font><font color="#00007F">0.114</font><font color="#000000"> * tB) </font><font color="#7F007F">into</font><font color="#000000"> tLuminance</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   <b>if</b> tLuminance &gt; </font><font color="#00007F">128</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">return</font></b><font color="#000000"> </font><font color="#00007F">"0,0,0"</font><font color="#000000">       </font><b><font color="#007F00">-- dark background gets black text</font></b></p>
+<p><font color="#000000">   <b>else</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">return</font></b><font color="#000000"> </font><font color="#00007F">"255,255,255"</font><font color="#000000"> </font><b><font color="#007F00">-- light background gets white text</font></b></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> contrastingTextColor</font></p>
+<p></p>
+<p><b><font color="#007F00"># Description</font></b></p>
+<p><b><font color="#007F00">#   Called when the group is being resized after already being initialized</font></b></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> resize</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">lock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">rect</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">rect</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">unlock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> resize</font></p>
+<p></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> jumpToHandler pHandler, pAdded</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tLineNumber</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">3</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pHandler </font><font color="#7F007F">into</font><font color="#000000"> tLineNumber</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#007F00"># OK-2009-03-03: Bug 7450 - Also return the handler type, this will allow us to detect </font></b></p>
+<p><font color="#000000">   </font><b><font color="#007F00"># if the handler line number is wrong (due to uncompiling script). </font></b></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cChoice </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> tLineNumber &amp; </font><font color="#7F007F">comma</font><font color="#000000"> &amp; </font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pHandler &amp; </font><font color="#7F007F">comma</font><font color="#000000"> &amp; </font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> pHandler</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> cCallback </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">not</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">send</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cCallback </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> &amp;&amp; pAdded </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cCallbackTarget </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   hideGroup</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> jumpToHandler</font></p>
+<p></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> handlerPicked pHandler</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tAdded</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">false</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tAdded</font></p>
+<p><font color="#000000">   <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">number</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">words</font><font color="#000000"> </font><font color="#7F007F">in</font><font color="#000000"> pHandler </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#00007F">1</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">true</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tAdded</font></p>
+<p><font color="#000000">      </font><b><font color="#007F00">-- Adding a default handler</font></b></p>
+<p><font color="#000000">      revSEAddDefaultHandler pHandler</font></p>
+<p><font color="#000000">      </font><font color="#7F007F">update</font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">wholematches</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">false</font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tLine</font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">lineOffset</font><font color="#000000">(pHandler, </font><font color="#7F007F">the</font><font color="#000000"> cHandlers </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000">) </font><font color="#7F007F">into</font><font color="#000000"> tLine</font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">select</font></b><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> tLine </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> tLine </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cHandlers </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> pHandler</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#007F00">-- Select the (now) extant handler</font></b></p>
+<p><font color="#000000">   jumpToHandler pHandler, tAdded</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> handlerPicked</font></p>
+<p></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> closeAccept</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">lock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tHandler</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> (</font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">hilitedLine</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000">) </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cHandlers </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tHandler</font></p>
+<p><font color="#000000">   handlerPicked tHandler</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">unlock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> closeAccept</font></p>
+<p></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> closeReject</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">lock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cChoice </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">empty</font></p>
+<p><font color="#000000">   <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> cCallback </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">not</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">send</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cCallback </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cCallbackTarget </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   hideGroup</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">unlock</font></b><font color="#000000"> </font><font color="#007F7F">screen</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> closeReject</font></p>
+<p></p>
+<p><b><font color="#000000">private</font></b><font color="#000000"> <b>command</b> hideGroup</font></p>
+<p><font color="#000000">   seHideHandlerList</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> hideGroup</font></p>
+<p></p>
+<p><b><font color="#000000">on</font></b><font color="#000000"> mouseMove</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tLineNumber</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#7F007F">mouseLine</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tLineNumber</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tVisibleWidth</font></p>
+<p><font color="#000000">   <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">vScrollbar</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">width</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> - </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">scrollbarWidth</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tVisibleWidth</font></p>
+<p><font color="#000000">   <b>else</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">width</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tVisibleWidth</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">subtract</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">leftMargin</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">from</font><font color="#000000"> tVisibleWidth</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">subtract</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">rightMargin</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">from</font><font color="#000000"> tVisibleWidth</font></p>
+<p><font color="#000000">   </font></p>
+<p><font color="#000000">   <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">formattedWidth</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> tLineNumber </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> &gt;= tVisibleWidth <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">toolTip</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> (</font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#7F007F">mouseLine</font><font color="#000000">) </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">text</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   <b>else</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> </font><font color="#007F7F">toolTip</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">field</font><font color="#000000"> </font><font color="#00007F">"Handlers"</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">empty</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> mouseMove</font></p>
+<p></p>
+<p><b><font color="#007F00">----------------------------------------------------------------</font></b></p>
+<p><b><font color="#007F00">-- Handler filtering support</font></b></p>
+<p><b><font color="#007F00">----------------------------------------------------------------</font></b></p>
+<p></p>
+<p><i><font color="#007F00">/*</font></i></p>
+<p><i><font color="#007F00">The list of handlers can be filtered by a string, stored in the custom</font></i></p>
+<p><i><font color="#007F00">property cFilterText.  If cFilterText is non-empty, only handlers that</font></i></p>
+<p><i><font color="#007F00">match *all* the words of cFilterText are shown.</font></i></p>
+<p></p>
+<p><i><font color="#007F00">The filterChanged handler updates the cFilterText custom property, and</font></i></p>
+<p><i><font color="#007F00">updates the display if necessary.</font></i></p>
+<p><i><font color="#007F00">*/</font></i></p>
+<p></p>
+<p><b><font color="#007F00">-- This is called to update the filter text</font></b></p>
+<p><b><font color="#000000">on</font></b><font color="#000000"> filterChanged pFilterText</font></p>
+<p><font color="#000000">   <b>if</b> pFilterText </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">not</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cFilterText </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">set</font></b><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cFilterText </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> pFilterText</font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">send</font></b><font color="#000000"> </font><font color="#00007F">"filterUpdate"</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">in</font><font color="#000000"> </font><font color="#00007F">0</font><font color="#000000"> </font><font color="#7F007F">millisecs</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> filterChanged</font></p>
+<p></p>
+<p><b><font color="#007F00">-- Update the handler list due to a change in the handler list filter</font></b></p>
+<p><b><font color="#007F00">-- string.  Make sure that the currently selected handler gets reselected,</font></b></p>
+<p><b><font color="#007F00">-- if it's not excluded by the filter.</font></b></p>
+<p><b><font color="#000000">command</font></b><font color="#000000"> filterUpdate</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">send</font></b><font color="#000000"> </font><font color="#00007F">"update"</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">send</font></b><font color="#000000"> </font><font color="#00007F">"updateSelectedHandler"</font><font color="#000000"> </font><font color="#7F007F">to</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> filterUpdate</font></p>
+<p></p>
+<p><b><font color="#007F00">-- Process a list of handler information lines, replacing it with a list</font></b></p>
+<p><b><font color="#007F00">-- containing only the handlers where the name matches the current filter.</font></b></p>
+<p><b><font color="#000000">private</font></b><font color="#000000"> <b>command</b> filterHandlerNames @xHandlers</font></p>
+<p><font color="#000000">   <b>if</b> </font><font color="#7F007F">the</font><font color="#000000"> cFilterText </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font><font color="#000000"> </font><font color="#7F007F">is</font><font color="#000000"> </font><font color="#7F007F">empty</font><font color="#000000"> <b>then</b></font></p>
+<p><font color="#000000">      <b>exit</b> filterHandlerNames</font></p>
+<p><font color="#000000">   <b>end</b> <b>if</b></font></p>
+<p></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">local</font></b><font color="#000000"> tNewHandlers, tHandler, tName, tWord, tMatch</font></p>
+<p></p>
+<p><font color="#000000">   <b>repeat</b> </font><font color="#7F007F">for</font><font color="#000000"> </font><font color="#7F007F">each</font><font color="#000000"> </font><font color="#7F007F">line</font><font color="#000000"> tHandler </font><font color="#7F007F">in</font><font color="#000000"> xHandlers</font></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">true</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tMatch</font></p>
+<p></p>
+<p><font color="#000000">      </font><b><font color="#007F00">-- The first word of each line of the handler list is a tag that</font></b></p>
+<p><font color="#000000">      </font><b><font color="#007F00">-- describes the type of handler (e.g. "PH" for private handler,</font></b></p>
+<p><font color="#000000">      </font><b><font color="#007F00">-- etc.)  The second word is the handler's name.</font></b></p>
+<p><font color="#000000">      </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">word</font><font color="#000000"> </font><font color="#00007F">2</font><font color="#000000"> </font><font color="#7F007F">of</font><font color="#000000"> tHandler </font><font color="#7F007F">into</font><font color="#000000"> tName</font></p>
+<p></p>
+<p><font color="#000000">      </font><b><font color="#007F00">-- The handler name needs to match *all* of the words in the</font></b></p>
+<p><font color="#000000">      </font><b><font color="#007F00">-- filter text</font></b></p>
+<p><font color="#000000">      <b>repeat</b> </font><font color="#7F007F">for</font><font color="#000000"> </font><font color="#7F007F">each</font><font color="#000000"> </font><font color="#7F007F">word</font><font color="#000000"> tWord </font><font color="#7F007F">in</font><font color="#000000"> </font><font color="#7F007F">the</font><font color="#000000"> cFilterText </font><font color="#7F007F">of</font><font color="#000000"> </font><font color="#7F007F">me</font></p>
+<p><font color="#000000">         <b>if</b> </font><font color="#7F007F">not</font><font color="#000000"> (tName </font><font color="#7F007F">contains</font><font color="#000000"> tWord) <b>then</b></font></p>
+<p><font color="#000000">            </font><b><font color="#7F7F00">put</font></b><font color="#000000"> </font><font color="#7F007F">false</font><font color="#000000"> </font><font color="#7F007F">into</font><font color="#000000"> tMatch</font></p>
+<p><font color="#000000">            <b>exit</b> <b>repeat</b></font></p>
+<p><font color="#000000">         <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">      <b>end</b> <b>repeat</b></font></p>
+<p></p>
+<p><font color="#000000">      <b>if</b> tMatch <b>then</b></font></p>
+<p><font color="#000000">         </font><b><font color="#7F7F00">put</font></b><font color="#000000"> tHandler &amp; </font><b><font color="#7F7F00">return</font></b><font color="#000000"> </font><font color="#7F007F">after</font><font color="#000000"> tNewHandlers</font></p>
+<p><font color="#000000">      <b>end</b> <b>if</b></font></p>
+<p><font color="#000000">   <b>end</b> <b>repeat</b></font></p>
+<p></p>
+<p><font color="#000000">   </font><b><font color="#7F7F00">put</font></b><font color="#000000"> tNewHandlers </font><font color="#7F007F">into</font><font color="#000000"> xHandlers</font></p>
+<p><b><font color="#000000">end</font></b><font color="#000000"> filterHandlerNames</font></p>
+<p></p>

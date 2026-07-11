@@ -1,0 +1,47 @@
+{
+   "#mainstack": "GlobalHotKeys",
+   "GlobalHotKeys": {
+      "#name": "stack \"GlobalHotKeys\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"registerHotkey\"",
+                  "properties": {
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "registerHotkey",
+                     "rect": "146,102,280,125",
+                     "traversalOn": false
+                  }
+               },
+               "1004": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1004",
+                     "layer": "2",
+                     "name": "Button",
+                     "rect": "156,158,238,181",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"GlobalHotKeys\"",
+      "properties": {
+         "fileName": "GlobalHotKeys.hyperxtalk",
+         "id": "1004",
+         "name": "GlobalHotKeys",
+         "rect": "219,118,619,518"
+      },
+      "sharedGroupIDs": null
+   }
+}

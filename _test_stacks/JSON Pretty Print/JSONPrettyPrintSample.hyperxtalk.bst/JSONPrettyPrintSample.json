@@ -1,0 +1,94 @@
+{
+   "#mainstack": "JSONPrettyPrintSample",
+   "JSONPrettyPrintSample": {
+      "#name": "stack \"JSONPrettyPrintSample\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Button",
+                     "rect": "159,189,241,212",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "brushes": null,
+            "cursors": false,
+            "databaseDrivers": null,
+            "defaultBuildFolder": "/Users/emily-elizabethhoward/Downloads",
+            "extensions": "com.hyperxtalk.library.jsonexport\ncom.hyperxtalk.library.json",
+            "inclusions": "select",
+            "Linux": false,
+            "Linux ARMv6-HF": false,
+            "Linux x64": false,
+            "MacOSX arm64": true,
+            "magnify": null,
+            "name": "Untitled 1",
+            "OSX,copyright": "2026  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,iconFile": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Runtime/Mac OS X/arm64/Support/Sample Icons/GenericApplication.icns",
+            "OSX,identifier": "com..untitled1",
+            "OSX,info": "Untitled 1 Version 1.0.0.0",
+            "OSX,longVersion": "Untitled 1 1.0.0.0",
+            "OSX,name": "Untitled 1",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "pdfPrinter": null,
+            "revolutionPrintDialogs": null,
+            "scriptLibraries": null,
+            "Solaris Intel": false,
+            "Solaris SPARC": false,
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "vlcPlayer": null,
+            "Windows": false,
+            "Windows x86-64": false,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Runtime/Windows/x86-64/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "Untitled 1 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Runtime/Windows/x86-64/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2026  All rights reserved worldwide",
+            "Windows,ProductName": "Untitled 1",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0",
+            "Windows,UUID": null
+         }
+      },
+      "longID": "stack \"JSONPrettyPrintSample\"",
+      "properties": {
+         "destroyStack": true,
+         "destroyWindow": true,
+         "fileName": "JSONPrettyPrintSample.hyperxtalk",
+         "id": "1003",
+         "name": "JSONPrettyPrintSample",
+         "rect": "216,118,616,518"
+      },
+      "sharedGroupIDs": null
+   }
+}

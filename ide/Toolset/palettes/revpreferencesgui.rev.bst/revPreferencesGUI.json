@@ -205,7 +205,6 @@
                   "#name": "button \"Context menus work on Rev dev stacks\"",
                   "properties": {
                      "hiliteBorder": false,
-                     "hilited": true,
                      "id": "1013",
                      "label": "Contextual menus work in HyperXTalk windows",
                      "layer": "5",
@@ -1761,7 +1760,6 @@
                         },
                         "properties": {
                            "hiliteBorder": false,
-                           "hilited": true,
                            "id": "1121",
                            "label": "Strict Compilation Mode",
                            "layer": "10",
@@ -1907,7 +1905,7 @@
                            "opaque": false,
                            "rect": "314,181,460,203",
                            "style": "menu",
-                           "text": "Default\nRevolution Classic\nNo Colorization\n(-\nBlue\nOne Dark Pro\nRed\n(-\nCustom...",
+                           "text": "Default\nRevolution Classic\nOne Dark Pro\nNo Colorization\n(-\nBlue\nOne Dark Pro\nRed\n(-\nCustom...",
                            "traversalOn": false
                         }
                      },
@@ -2955,9 +2953,9 @@
       },
       "longID": "stack \"revPreferencesGUI\"",
       "properties": {
-         "backColor": "#ececec",
+         "backColor": "#323232",
          "fileName": "revpreferencesgui.rev",
-         "foreColor": "#000000",
+         "foreColor": "#ffffff",
          "id": "1176",
          "name": "revPreferencesGUI",
          "rect": "297,118,895,564",
