@@ -3,7 +3,7 @@ Script "stack_revBuildResults"
 /*
 # Name: stack "revBuildResults" of stack "revStandaloneSettings"
 # ID: stack "revBuildResults" of stack "revStandaloneSettings"
-# Hash: sTTvOHEMvfeNTEZrG3zeAw==
+# Hash: 7gfNcccum2VkGN3F4yF1cg==
 */
 
 
@@ -37,9 +37,25 @@ on dismissMe
 end dismissMe
 
 on preOpenStack
-  # OK-2008-03-31 : Bug 6216. Setting the location of stack before modalling it doesn't seem to work
-  # so we set the location here as a workaround.
-  set the loc of me to the screenLoc
+   # OK-2008-03-31 : Bug 6216. Setting the location of stack before modalling it doesn't seem to work
+   # so we set the location here as a workaround.
+   set the loc of me to the screenLoc
+   
+   // HXT dark mode
+   if (the systemAppearance is "dark") then
+      set the backColor of me to "#323232"
+   else
+      set the backColor of me to "#ececec"
+   end if
 end preOpenStack
 
 
+// HXT
+on systemAppearanceChanged pMode, pWindowColor
+   set the backgroundColor of this stack to pWindowColor
+   if pMode is "dark" then
+      set the foreColor of me to "white"
+   else
+      set the foreColor of me to "black"
+   end if
+end systemAppearanceChanged

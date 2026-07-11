@@ -3,7 +3,7 @@ Script "stack_revSETemplate_group_id_1049"
 /*
 # Name: group "Pane Tabs" of card "Main" of stack "revSETemplate" of stack "revNewScriptEditor"
 # ID: group id 1049 of card id 1002 of stack "revSETemplate" of stack "revNewScriptEditor"
-# Hash: jtbKwzWKEkKLvoyelAd/Rg==
+# Hash: zGyc6UkjCuyDBVT2Yn+Rjw==
 */
 
 
@@ -82,30 +82,31 @@ constant kTabHeight = 21
 # Description
 #   Selects the specified tab object by setting some of its properties, deselects all other tabs first.
 private command selectObject pObject
-  lock screen
-  repeat with x = 1 to the number of controls of me
-    if not the cTab of control x of me then
-      next repeat
-    end if
-     
-    local tCurrentObject
-    put the long id of control x of me into tCurrentObject
-     
-    local tBottom
-    put the bottom of tCurrentObject into tBottom
-    if tCurrentObject is the long id of pObject then
-      set the height of tCurrentObject to kTabHeight + kSelectedTabGrowth
-      set the backgroundColor of tCurrentObject to "255,255,255"
-      set the bottom of tCurrentObject to tBottom
-      set the textStyle of tCurrentObject to "bold"
-    else
-      set the height of tCurrentObject to kTabHeight
-      set the backgroundColor of tCurrentObject to empty
-      set the bottom of tCurrentObject to tBottom
-      set the textStyle of tCurrentObject to empty
-    end if
-  end repeat
-  unlock screen
+   lock screen
+   repeat with x = 1 to the number of controls of me
+      if not the cTab of control x of me then
+         next repeat
+      end if
+      
+      local tCurrentObject
+      put the long id of control x of me into tCurrentObject
+      
+      local tBottom
+      put the bottom of tCurrentObject into tBottom
+      if tCurrentObject is the long id of pObject then
+         set the height of tCurrentObject to kTabHeight + kSelectedTabGrowth
+         // HXT      set the backgroundColor of tCurrentObject to "255,255,255"
+         set the backgroundColor of tCurrentObject to empty
+         set the bottom of tCurrentObject to tBottom
+         set the textStyle of tCurrentObject to "bold"
+      else
+         set the height of tCurrentObject to kTabHeight
+         set the backgroundColor of tCurrentObject to empty
+         set the bottom of tCurrentObject to tBottom
+         set the textStyle of tCurrentObject to empty
+      end if
+   end repeat
+   unlock screen
 end selectObject
 
 

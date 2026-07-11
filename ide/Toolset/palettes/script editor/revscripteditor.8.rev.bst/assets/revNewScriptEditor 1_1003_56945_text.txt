@@ -1,0 +1,30 @@
+(Go to handler...
+Add default handler...
+	deleteButton
+	dragDrop
+	dragEnd
+	dragEnter
+	dragLeave
+	dragMove
+	dragStart
+	focusIn
+	focusOut
+	menuPick
+	mouseDoubleDown
+	mouseDoubleUp
+	mouseDown
+	mouseEnter
+	mouseLeave
+	mouseMove
+	mouseRelease
+	mouseStillDown
+	mouseUp
+	mouseWithin
+	nameChanged
+	newButton
+	resizeControl
+	selectedObjectChanged
+	socketClosed
+	socketError
+	socketTimeout
+!cShow default handlers

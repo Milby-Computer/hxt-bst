@@ -15,6 +15,7 @@
                      "1006": {
                         "#name": "field \"value\"",
                         "properties": {
+                           "foreColor": "0,0,0",
                            "id": "1006",
                            "layer": "2",
                            "name": "value",

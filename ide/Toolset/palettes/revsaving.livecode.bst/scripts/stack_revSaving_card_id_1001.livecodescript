@@ -3,13 +3,21 @@ Script "stack_revSaving_card_id_1001"
 /*
 # Name: card id 1001 of stack "revSaving"
 # ID: card id 1001 of stack "revSaving"
-# Hash: hyDtlnMGlywoRvkNvuyGfQ==
+# Hash: KnSPRHX+Tausd0SVw3R6Sw==
 */
 
 
 on preOpenStack
-  revCheckSaveStackRect
-  pass preOpenStack
+   revCheckSaveStackRect
+   
+   // HXT dark mode
+   if (the systemAppearance is "dark") then
+      set the backColor of me to "#323232"
+   else
+      set the backColor of me to "#ececec"
+   end if
+   
+   pass preOpenStack
 end preOpenStack
 
 setProp cSavingStack tStackName

@@ -16,6 +16,7 @@
                         "#name": "field \"Field\"",
                         "properties": {
                            "dontWrap": true,
+                           "foreColor": "0,0,0",
                            "id": "1003",
                            "layer": "2",
                            "name": "Field",

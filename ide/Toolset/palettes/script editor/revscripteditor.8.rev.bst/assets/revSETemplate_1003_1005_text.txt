@@ -1,0 +1,24 @@
+Undo/Z
+(Redo/^@Z
+Cut/X
+Copy/C
+Paste/V
+Select All/A
+Revert
+-
+Comment/-
+Uncomment/_
+-
+Quick Find/F
+Find and Replace.../^@F
+Find Selection/^#F
+Go.../L
+Options
+!c	Variable Checking
+!c	Live Errors
+!c	Bracket Completion
+!c	Bracket Highlighting
+!c	Control Structure Completion
+!c	Autoformat
+-
+Preferences

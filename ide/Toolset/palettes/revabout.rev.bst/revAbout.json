@@ -74,7 +74,7 @@
                   }
                },
                "102264": {
-                  "#name": "field \"Version\"",
+                  "#name": "field \"HyperXTalk\"",
                   "customproperties": {
                      "apkUniqueID": "956844552813",
                      "Tabs": false
@@ -97,7 +97,7 @@
                      "id": "102264",
                      "layer": "4",
                      "lockText": true,
-                     "name": "Version",
+                     "name": "HyperXTalk",
                      "opaque": false,
                      "rect": "0,212,532,264",
                      "sharedText": true,
@@ -128,7 +128,7 @@
                      "blendLevel": "40",
                      "fixedLineHeight": false,
                      "foreColor": "255,255,255",
-                     "htmlText": "<p>9.7.0-dp-1 | Build 15600</p>",
+                     "htmlText": "<p>0.9.7</p>",
                      "id": "1083",
                      "layer": "3",
                      "lockText": true,
@@ -156,7 +156,7 @@
                },
                "cREVGeometrycache": {
                   "order": null,
-                  "total": "5"
+                  "total": "4"
                }
             },
             "properties": {
@@ -181,7 +181,7 @@
             "breakpointstates": null
          },
          "cREVGeometryCache": {
-            "stackID": "102263"
+            "stackID": "102264"
          }
       },
       "longID": "stack \"revAbout\"",

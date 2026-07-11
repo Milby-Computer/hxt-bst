@@ -3,7 +3,7 @@ Script "stack_revPreferencesGUI"
 /*
 # Name: stack "revPreferencesGUI"
 # ID: stack "revPreferencesGUI"
-# Hash: 41q8TTOIqcbVHOYMLi7HPw==
+# Hash: Y6HthnZ06c14HsFUUHwIbw==
 */
 
 
@@ -49,6 +49,7 @@ on preOpenStack
    ## Last opened pane is shown but item 1 in list selected.
    --   set the hilitedLines of fld "Menu" to lineOffset(the short name of this card,the text of field "menu")
    --   send "mouseUp" to fld "Menu"
+   set the menuHistory of button "Tab Menu" to 1  // HXT
    pass preOpenStack
 end preOpenStack
 
@@ -75,15 +76,16 @@ end log
 # Description
 #   Switches to the specified section, as if the user had clicked in the navigation field on the left
 command revPrefsGoSection pSection
-   local tLineNumber
-   put lineOffset(pSection, the text of field "Menu") into tLineNumber
-   if tLineNumber = 0 then
-      exit revPrefsGoSection
-   end if
+   // HXT
+   --   local tLineNumber
+   --   put lineOffset(pSection, the text of field "Menu") into tLineNumber
+   --   if tLineNumber = 0 then
+   --      exit revPrefsGoSection
+   --   end if
    
-   set the hilitedLines of field "Menu" to tLineNumber
-   --send "mouseUp" to field "Menu"
-   send "sectionChange" to field "Menu"
+   --   set the hilitedLines of field "Menu" to tLineNumber
+   --   --send "mouseUp" to field "Menu"
+   --   send "sectionChange" to field "Menu"
 end revPrefsGoSection
 
 on mousedown

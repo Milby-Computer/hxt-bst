@@ -628,6 +628,7 @@
                   "#name": "field \"Label Field\"",
                   "properties": {
                      "autoHilite": false,
+                     "htmlText": "<p>Building Mac OS components...</p>",
                      "id": "1004",
                      "layer": "1",
                      "lockText": true,
@@ -661,7 +662,7 @@
                         "#name": "graphic \"line,1\"",
                         "properties": {
                            "antialiased": false,
-                           "foreColor": "190,190,190",
+                           "foreColor": "210,210,210",
                            "id": "1007",
                            "layer": "4",
                            "lineSize": "2",
@@ -675,7 +676,7 @@
                         "#name": "graphic \"line,2\"",
                         "properties": {
                            "antialiased": false,
-                           "foreColor": "150,150,150",
+                           "foreColor": "210,210,210",
                            "id": "1008",
                            "layer": "5",
                            "lineSize": "2",
@@ -689,7 +690,7 @@
                         "#name": "graphic \"line,3\"",
                         "properties": {
                            "antialiased": false,
-                           "foreColor": "128,128,128",
+                           "foreColor": "210,210,210",
                            "id": "1009",
                            "layer": "6",
                            "lineSize": "2",
@@ -703,7 +704,7 @@
                         "#name": "graphic \"line,4\"",
                         "properties": {
                            "antialiased": false,
-                           "foreColor": "75,75,75",
+                           "foreColor": "210,210,210",
                            "id": "1010",
                            "layer": "7",
                            "lineSize": "2",
@@ -731,7 +732,7 @@
                         "#name": "graphic \"line,6\"",
                         "properties": {
                            "antialiased": false,
-                           "foreColor": "210,210,210",
+                           "foreColor": "190,190,190",
                            "id": "1012",
                            "layer": "9",
                            "lineSize": "2",
@@ -745,7 +746,7 @@
                         "#name": "graphic \"line,7\"",
                         "properties": {
                            "antialiased": false,
-                           "foreColor": "210,210,210",
+                           "foreColor": "150,150,150",
                            "id": "1013",
                            "layer": "10",
                            "lineSize": "2",
@@ -759,7 +760,7 @@
                         "#name": "graphic \"line,8\"",
                         "properties": {
                            "antialiased": false,
-                           "foreColor": "210,210,210",
+                           "foreColor": "128,128,128",
                            "id": "1014",
                            "layer": "11",
                            "lineSize": "2",
@@ -773,7 +774,7 @@
                         "#name": "graphic \"line,9\"",
                         "properties": {
                            "antialiased": false,
-                           "foreColor": "210,210,210",
+                           "foreColor": "75,75,75",
                            "id": "1015",
                            "layer": "12",
                            "lineSize": "2",
@@ -846,11 +847,12 @@
       "longID": "stack \"revStandaloneProgress\" of stack \"revStandaloneSettings\"",
       "properties": {
          "alwaysBuffer": true,
+         "backColor": "#323232",
          "decorations": "title",
          "id": "1104",
          "liveResizing": false,
          "name": "revStandaloneProgress",
-         "rect": "765,492,1156,588",
+         "rect": "525,402,916,498",
          "resizable": false,
          "title": "Standalone Builder Progress"
       },
@@ -1288,7 +1290,6 @@
                               "#name": "button \"search\"",
                               "properties": {
                                  "hiliteBorder": false,
-                                 "hilited": true,
                                  "id": "1292",
                                  "label": "Search for required inclusions when saving the standalone application",
                                  "layer": "43",
@@ -1305,6 +1306,7 @@
                               "#name": "button \"select\"",
                               "properties": {
                                  "hiliteBorder": false,
+                                 "hilited": true,
                                  "id": "23250",
                                  "label": "Select inclusions for the standalone application",
                                  "layer": "42",
@@ -1319,7 +1321,7 @@
                            }
                         },
                         "properties": {
-                           "hilitedButton": "2",
+                           "hilitedButton": "1",
                            "id": "1294",
                            "layer": "41",
                            "name": "inclusions",
@@ -1335,6 +1337,7 @@
                         },
                         "properties": {
                            "dontWrap": true,
+                           "htmlText": "<p>/Users/emily-elizabethhoward/Downloads</p>",
                            "id": "1492",
                            "layer": "34",
                            "lockText": true,
@@ -1734,8 +1737,8 @@
             },
             "custompropertysets": {
                "cREVGeometryCache": {
-                  "order": "\n1070531719171\n1070576289462\n1070583258473\n1070531913674\n1070531913800",
-                  "total": "66"
+                  "order": null,
+                  "total": "60"
                }
             },
             "properties": {
@@ -1910,7 +1913,6 @@
                   "#name": "button \"Inclusions\"",
                   "properties": {
                      "borderWidth": "1",
-                     "disabled": true,
                      "icon": "22781",
                      "id": "5746",
                      "layer": "10",
@@ -2572,6 +2574,7 @@
                         "properties": {
                            "autoTab": true,
                            "dontWrap": true,
+                           "htmlText": "<p>/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Runtime/Mac OS X/arm64/Support/Sample Icons/GenericApplication.icns</p>",
                            "id": "1109",
                            "layer": "18",
                            "lockText": true,
@@ -3608,8 +3611,8 @@
                   "scripteditorvscroll": "0"
                },
                "cREVGeometryCache": {
-                  "order": "\n1070531719171\n1070576289462\n1075076713095\n1075076713097",
-                  "total": "79"
+                  "order": null,
+                  "total": "73"
                }
             },
             "properties": {
@@ -5091,7 +5094,7 @@
             },
             "custompropertysets": {
                "cREVGeometryCache": {
-                  "order": "\n1070531719171\n1070576289450\n1070576289451\n1070576289452\n1070576289453\n1070576289454\n1070576289455\n1070576289462\n1070576289456\n1070576289457\n1253881572868\n1253882100055\n1408113278729",
+                  "order": null,
                   "total": "87"
                },
                "cVersionFlds": {
@@ -5324,7 +5327,7 @@
             },
             "custompropertysets": {
                "cREVGeometryCache": {
-                  "order": "\n1070531719171",
+                  "order": null,
                   "total": "34"
                }
             },
@@ -6069,7 +6072,7 @@
             },
             "custompropertysets": {
                "cREVGeometryCache": {
-                  "order": "\n1070531719171",
+                  "order": null,
                   "total": "39"
                }
             },
@@ -6118,7 +6121,8 @@
                      "showIcon": true,
                      "showName": false,
                      "style": "transparent",
-                     "traversalOn": false
+                     "traversalOn": false,
+                     "visible": false
                   }
                },
                "1316": {
@@ -6137,7 +6141,8 @@
                      "showIcon": true,
                      "showName": false,
                      "style": "transparent",
-                     "traversalOn": false
+                     "traversalOn": false,
+                     "visible": false
                   }
                },
                "1590": {
@@ -6166,7 +6171,7 @@
                "id": "1317",
                "layer": "11",
                "name": "checks",
-               "rect": "305,14,467,45"
+               "rect": "305,14,335,45"
             }
          },
          "1617": {
@@ -6221,15 +6226,15 @@
                         "animate selections": false,
                         "autohide scrollbars": true,
                         "cache": "none",
-                        "content height": "4715",
+                        "content height": "2747",
                         "deselect on mouseUp": true,
                         "dim on focusout": false,
                         "dimmed hilite color": "80,94,100",
                         "drop indicator template": null,
-                        "first working row": "24",
+                        "first working row": "50",
                         "fixed row height": true,
-                        "hilite color": "222,243,255",
-                        "last working row": "36",
+                        "hilite color": "226,238,185",
+                        "last working row": "62",
                         "multiple lines": true,
                         "resize controls": false,
                         "row color": "255,255,255",
@@ -6239,7 +6244,7 @@
                         },
                         "scroll selections into view": false,
                         "scrollbar corner offset": "0",
-                        "vscroll": "980"
+                        "vscroll": "2009"
                      }
                   },
                   "properties": {
@@ -6250,7 +6255,7 @@
                      "margins": "0",
                      "name": "extensionList",
                      "opaque": true,
-                     "rect": "0,60,754,552",
+                     "rect": "0,60,568,552",
                      "selectGroupedControls": false,
                      "showBorder": true,
                      "threeD": false
@@ -6518,7 +6523,7 @@
             "scripteditorvscroll": "7647"
          },
          "cREVGeometryCache": {
-            "stackID": "32084"
+            "stackID": "32422"
          },
          "cRevStandaloneSettings": {
             "android": false,
@@ -6686,7 +6691,7 @@
          "behavior": "stack \"revStandaloneSettingsBehavior\"",
          "decorations": "title,menu,minimize,close",
          "fileName": "revstandalonesettings.8.rev",
-         "id": "32084",
+         "id": "32422",
          "liveResizing": false,
          "name": "revStandaloneSettings",
          "rect": "203,129,770,678",

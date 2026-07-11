@@ -32,6 +32,7 @@
                "cSavingStack": "revLibrary"
             },
             "properties": {
+               "backColor": "#323232",
                "id": "1001",
                "showBorder": true
             }
@@ -49,7 +50,7 @@
          "id": "1005",
          "liveResizing": false,
          "name": "revSaving",
-         "rect": "347,414,1061,566",
+         "rect": "178,83,892,235",
          "resizable": false
       },
       "sharedGroupIDs": null

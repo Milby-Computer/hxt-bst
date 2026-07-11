@@ -1,8 +1,8 @@
-Script "stack_revSETemplate_field_id_63381"
+Script "stack_revNewScriptEditor_1_field_id_54950"
 
 /*
-# Name: field "Handlers" of group "Left Handler List" of group "Left Bar" of card "Main" of stack "revSETemplate" of stack "revNewScriptEditor"
-# ID: field id 63381 of group id 63380 of group id 56896 of card id 1002 of stack "revSETemplate" of stack "revNewScriptEditor"
+# Name: field "Handlers" of group "Handler List" of card "Main" of stack "revNewScriptEditor 1" of stack "revNewScriptEditor"
+# ID: field id 54950 of group id 54949 of card id 1002 of stack "revNewScriptEditor 1" of stack "revNewScriptEditor"
 # Hash: Q3SEPFjUc8GUJQo8R50MiQ==
 */
 

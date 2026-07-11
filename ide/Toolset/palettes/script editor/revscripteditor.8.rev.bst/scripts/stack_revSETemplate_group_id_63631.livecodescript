@@ -1,9 +1,9 @@
-Script "stack_revSETemplate_group_id_60529"
+Script "stack_revSETemplate_group_id_63631"
 
 /*
-# Name: group id 60529 of group "List" of group "Breakpoints" of group "Panes" of card "Main" of stack "revSETemplate" of stack "revNewScriptEditor"
-# ID: group id 60529 of group id 55300 of group id 54992 of group id 1050 of card id 1002 of stack "revSETemplate" of stack "revNewScriptEditor"
-# Hash: x/xQ2C3EdGDNsDmwPq860w==
+# Name: group id 63631 of group "List" of group "Breakpoints" of group "Panes" of card "Main" of stack "revSETemplate" of stack "revNewScriptEditor"
+# ID: group id 63631 of group id 55300 of group id 54992 of group id 1050 of card id 1002 of stack "revSETemplate" of stack "revNewScriptEditor"
+# Hash: uY2ro4boEVy8iBY3WRhBFQ==
 */
 
 
@@ -68,11 +68,28 @@ on itemInit pInfo
 end itemInit
 
 command itemUnhilite
-   set the backgroundColor of field "Details" of me to "255,255,255"
+   if seGetPlatform() is not "MacOS" then
+      set the backgroundColor of field "Details" of me to "255,255,255"
+   end if
+   set the textColor of field "Details" of me to "0,0,0"
 end itemUnhilite
 
 command itemHilite
-   set the backgroundColor of field "Details" of me to "210,210,210"
+   # OK-2009-03-11 : Bug 7499
+   local tHiliteColor
+   put sePrefGet("editor,hiliteColor") into tHiliteColor
+   if tHiliteColor is empty then
+      put the hiliteColor into tHiliteColor
+   end if
+   
+   if tHiliteColor is empty then
+      put "210,210,210" into tHiliteColor
+   end if
+   
+   if seGetPlatform() is not "MacOS" then
+      set the textColor of field "Details" of me to "255,255,255"
+   end if
+   set the backgroundColor of field "Details" of me to tHiliteColor
 end itemHilite
 
 # Description
@@ -89,11 +106,12 @@ end resize
 
 private function makeFriendly pObject
    try
-      return the name of pObject
-   catch tError
-      --      log "Object not found: " & pObject
-      --      log "Context"
-      --      log the executionContexts
+      # Can be empty for global variable watches
+      if pObject is empty then
+         return "Global variable"
+      else
+         return the name of pObject
+      end if
    end try
 end makeFriendly
   
