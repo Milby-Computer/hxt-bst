@@ -454,6 +454,150 @@ Rockwell Italic
 Sana Regular
 Sathu
 Savoye LET Plain:1.0
+SF Compact Black
+SF Compact Black Italic
+SF Compact Bold
+SF Compact Bold Italic
+SF Compact Display Black
+SF Compact Display Bold
+SF Compact Display Heavy
+SF Compact Display Light
+SF Compact Display Medium
+SF Compact Display Regular
+SF Compact Display Semibold
+SF Compact Display Thin
+SF Compact Display Ultralight
+SF Compact Heavy
+SF Compact Heavy Italic
+SF Compact Light
+SF Compact Light Italic
+SF Compact Medium
+SF Compact Medium Italic
+SF Compact Regular
+SF Compact Regular Italic
+SF Compact Rounded Black
+SF Compact Rounded Bold
+SF Compact Rounded Heavy
+SF Compact Rounded Light
+SF Compact Rounded Medium
+SF Compact Rounded Regular
+SF Compact Rounded Semibold
+SF Compact Rounded Thin
+SF Compact Rounded Ultralight
+SF Compact Semibold
+SF Compact Semibold Italic
+SF Compact Text Black
+SF Compact Text Black Italic
+SF Compact Text Bold
+SF Compact Text Bold Italic
+SF Compact Text Heavy
+SF Compact Text Heavy Italic
+SF Compact Text Italic
+SF Compact Text Light
+SF Compact Text Light Italic
+SF Compact Text Medium
+SF Compact Text Medium Italic
+SF Compact Text Regular
+SF Compact Text Semibold
+SF Compact Text Semibold Italic
+SF Compact Text Thin
+SF Compact Text Thin Italic
+SF Compact Text Ultralight
+SF Compact Text Ultralight Italic
+SF Compact Thin
+SF Compact Thin Italic
+SF Compact Ultralight
+SF Compact Ultralight Italic
+SF Pro Black
+SF Pro Bold
+SF Pro Compressed Black
+SF Pro Compressed Bold
+SF Pro Compressed Heavy
+SF Pro Compressed Light
+SF Pro Compressed Medium
+SF Pro Compressed Regular
+SF Pro Compressed Semibold
+SF Pro Compressed Thin
+SF Pro Compressed Ultralight
+SF Pro Condensed Black
+SF Pro Condensed Bold
+SF Pro Condensed Heavy
+SF Pro Condensed Light
+SF Pro Condensed Medium
+SF Pro Condensed Regular
+SF Pro Condensed Semibold
+SF Pro Condensed Thin
+SF Pro Condensed Ultralight
+SF Pro Display Black
+SF Pro Display Black Italic
+SF Pro Display Bold
+SF Pro Display Bold Italic
+SF Pro Display Heavy
+SF Pro Display Heavy Italic
+SF Pro Display Light
+SF Pro Display Light Italic
+SF Pro Display Medium
+SF Pro Display Medium Italic
+SF Pro Display Regular
+SF Pro Display Regular Italic
+SF Pro Display Semibold
+SF Pro Display Semibold Italic
+SF Pro Display Thin
+SF Pro Display Thin Italic
+SF Pro Display Ultralight
+SF Pro Display Ultralight Italic
+SF Pro Expanded Black
+SF Pro Expanded Bold
+SF Pro Expanded Heavy
+SF Pro Expanded Light
+SF Pro Expanded Medium
+SF Pro Expanded Regular
+SF Pro Expanded Semibold
+SF Pro Expanded Thin
+SF Pro Expanded Ultralight
+SF Pro Heavy
+SF Pro Italic Black Italic
+SF Pro Italic Bold Italic
+SF Pro Italic Heavy Italic
+SF Pro Italic Light Italic
+SF Pro Italic Medium Italic
+SF Pro Italic Regular Italic
+SF Pro Italic Semibold Italic
+SF Pro Italic Thin Italic
+SF Pro Italic Ultralight Italic
+SF Pro Light
+SF Pro Medium
+SF Pro Regular
+SF Pro Rounded Black
+SF Pro Rounded Bold
+SF Pro Rounded Heavy
+SF Pro Rounded Light
+SF Pro Rounded Medium
+SF Pro Rounded Regular
+SF Pro Rounded Semibold
+SF Pro Rounded Thin
+SF Pro Rounded Ultralight
+SF Pro Semibold
+SF Pro Text Black
+SF Pro Text Black Italic
+SF Pro Text Bold
+SF Pro Text Bold Italic
+SF Pro Text Heavy
+SF Pro Text Heavy Italic
+SF Pro Text Light
+SF Pro Text Light Italic
+SF Pro Text Medium
+SF Pro Text Medium Italic
+SF Pro Text Regular
+SF Pro Text Regular Italic
+SF Pro Text Semibold
+SF Pro Text Semibold Italic
+SF Pro Text Thin
+SF Pro Text Thin Italic
+SF Pro Text Ultralight
+SF Pro Text Ultralight Italic
+SF Pro Thin
+SF Pro Ultralight
 Shree Devanagari 714
 Shree Devanagari 714 Bold
 Shree Devanagari 714 Bold Italic

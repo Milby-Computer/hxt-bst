@@ -273,6 +273,7 @@
                         "#name": "button \"Language names on properties\"",
                         "properties": {
                            "hiliteBorder": false,
+                           "hilited": true,
                            "id": "1018",
                            "label": "Name of HyperXTalk property",
                            "layer": "7",
@@ -291,7 +292,6 @@
                         "#name": "button \"Descriptions on properties\"",
                         "properties": {
                            "hiliteBorder": false,
-                           "hilited": true,
                            "id": "1019",
                            "label": "Description of option",
                            "layer": "8",
@@ -308,7 +308,7 @@
                      }
                   },
                   "properties": {
-                     "hilitedButton": "2",
+                     "hilitedButton": "1",
                      "id": "1017",
                      "layer": "6",
                      "name": "Options in Properties palettes are labeled with:",
@@ -1808,7 +1808,7 @@
                                  "layer": "13",
                                  "name": "--",
                                  "opaque": false,
-                                 "rect": "111,399,193,422",
+                                 "rect": "111,407,193,430",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1827,7 +1827,7 @@
                                  "layer": "14",
                                  "name": "#",
                                  "opaque": false,
-                                 "rect": "152,399,234,422",
+                                 "rect": "152,407,234,430",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1846,7 +1846,7 @@
                                  "layer": "15",
                                  "name": "//",
                                  "opaque": false,
-                                 "rect": "193,399,275,422",
+                                 "rect": "193,407,275,430",
                                  "sharedHilite": false,
                                  "showBorder": false,
                                  "style": "radiobutton",
@@ -1861,7 +1861,7 @@
                            "layer": "12",
                            "lockLoc": true,
                            "name": "Comment character",
-                           "rect": "110,385,224,451",
+                           "rect": "110,393,224,459",
                            "showName": true
                         }
                      },
@@ -1905,7 +1905,7 @@
                            "opaque": false,
                            "rect": "314,181,460,203",
                            "style": "menu",
-                           "text": "Default\nRevolution Classic\nOne Dark Pro\nNo Colorization\n(-\nBlue\nOne Dark Pro\nRed\n(-\nCustom...",
+                           "text": "Default\nRevolution Classic\nOne Dark Pro\nNo Colorization\n(-\n(-\nCustom...",
                            "traversalOn": false
                         }
                      },
@@ -2069,7 +2069,7 @@
                            "lockText": true,
                            "name": "Label Field",
                            "opaque": false,
-                           "rect": "111,284,240,304",
+                           "rect": "111,302,240,322",
                            "sharedText": true,
                            "showBorder": false,
                            "style": "transparent",
@@ -2084,7 +2084,7 @@
                            "layer": "26",
                            "name": "Hide Palettes",
                            "opaque": false,
-                           "rect": "111,304,247,327",
+                           "rect": "111,322,247,345",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -2098,7 +2098,7 @@
                            "layer": "27",
                            "name": "Hide Message Box",
                            "opaque": false,
-                           "rect": "111,325,247,348",
+                           "rect": "111,343,247,366",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -2112,7 +2112,7 @@
                            "layer": "28",
                            "name": "Hide Errors",
                            "opaque": false,
-                           "rect": "111,347,247,370",
+                           "rect": "111,365,247,388",
                            "showBorder": false,
                            "style": "checkbox",
                            "textAlign": "left"
@@ -2207,7 +2207,7 @@
                      "1144": {
                         "#name": "button \"Debug Background Color\"",
                         "customproperties": {
-                           "cColor": "255,247,215",
+                           "cColor": "255,255,255",
                            "cPref": "editor,debugBackgroundcolor",
                            "cProperty": "cColor"
                         },
@@ -2215,7 +2215,7 @@
                            "armBorder": false,
                            "autoHilite": false,
                            "id": "1144",
-                           "label": "Custard Yellow",
+                           "label": "White",
                            "layer": "33",
                            "menuHistory": "2",
                            "menuMode": "option",
@@ -2231,7 +2231,7 @@
                         "#name": "graphic \"Debug Background Swatch\"",
                         "properties": {
                            "antialiased": false,
-                           "backColor": "255,247,215",
+                           "backColor": "255,255,255",
                            "filled": true,
                            "foreColor": "128,128,128",
                            "id": "1145",
@@ -2357,6 +2357,26 @@
                            "toolTip": "The number of spaces the script editor should use to indent lines of code",
                            "traversalOn": false
                         }
+                     },
+                     "1177": {
+                        "#name": "button \"Show auto-complete\"",
+                        "customproperties": {
+                           "cPref": "editor,showautocomplete",
+                           "cProperty": "hilite"
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1177",
+                           "layer": "40",
+                           "name": "Show auto-complete",
+                           "opaque": false,
+                           "rect": "111,274,290,297",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "toolTip": "Show the auto-complete popup when typing in the Script Editor."
+                        }
                      }
                   },
                   "properties": {
@@ -2365,8 +2385,14 @@
                      "id": "1114",
                      "layer": "3",
                      "name": "Script Editor",
-                     "rect": "103,40,581,455"
+                     "rect": "103,40,581,463"
                   }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "40"
                }
             },
             "properties": {
@@ -2951,14 +2977,19 @@
             }
          }
       },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1177"
+         }
+      },
       "longID": "stack \"revPreferencesGUI\"",
       "properties": {
-         "backColor": "#323232",
+         "backColor": "#ececec",
          "fileName": "revpreferencesgui.rev",
-         "foreColor": "#ffffff",
-         "id": "1176",
+         "foreColor": "#000000",
+         "id": "1177",
          "name": "revPreferencesGUI",
-         "rect": "297,118,895,564",
+         "rect": "267,121,865,567",
          "title": "Settings"
       },
       "sharedGroupIDs": "1004"
@@ -3404,7 +3435,8 @@
                      "style": "menu",
                      "text": "Default\nRevolution Classic\nNo Colorization"
                   }
-               }
+               },
+               "childcontrols": "#data grid group"
             },
             "customproperties": {
                "schemeClassic": "%file%: assets/revScriptColourEditor_1002_schemeClassic.bin",
@@ -3441,8 +3473,5 @@
          "title": "Script Colour Editor"
       },
       "sharedGroupIDs": null
-   },
-   "tAddress": {
-      "childcontrols": "#data grid group"
    }
 }
