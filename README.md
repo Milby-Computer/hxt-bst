@@ -1,5 +1,5 @@
 # hxt-bst
-HyperXTalk Binary Stack Tracker
+## HyperXTalk Binary Stack Tracker
 
 This repository will mirror the main HyperXTalk repository but only contain
 artifacts relating to the binary stack files that are a part of the repository.
@@ -25,3 +25,15 @@ it does not make sense to repeatedly update the stack export just for those
 objects.  The hash will change, but the data grid objects are excluded from
 exports to reduce the churn.  As other types of files are discovered, they
 can be treated in a similary fashion.
+
+## Setup:
+Create aliases in `~/.zshrc` for easy access
+- `alias hxide="/Users/milby/Developer/HyperXTalk/mac-bin/HyperXTalk.app/Contents/MacOS/HyperXTalk"`
+- `alias hxsa="/Users/milby/Developer/HyperXTalk/mac-bin/HyperXTalk-Standalone.app/Contents/MacOS/HyperXTalk-Standalone"`
+
+To run (without alias, the full path to the standalone is required):
+- `hxsa bst.hyperxtalk`
+
+The script assumes that the HyperXTalk repo is at the same level as the hxt-bst repo.
+- /Users/milby/Developer/HyperXTalk
+- /Users/milby/Developer/hxt-bst
