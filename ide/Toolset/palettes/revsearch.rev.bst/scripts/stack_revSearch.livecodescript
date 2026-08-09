@@ -3,7 +3,7 @@ Script "stack_revSearch"
 /*
 # Name: stack "revSearch"
 # ID: stack "revSearch"
-# Hash: MvCrJViG07UVlB+/rrTImw==
+# Hash: GGNG8NqlowhLMaMLphgF9Q==
 */
 
 
@@ -43,6 +43,14 @@ end preOpenStack
 on revFeedBack
   
 end revFeedBack
+
+on commandKeyDown pKey
+   if (pKey = "W") then
+      close this stack
+   else
+      pass commandKeyDown
+   end if
+end commandKeyDown
 
 on escapeKey
    close this stack
