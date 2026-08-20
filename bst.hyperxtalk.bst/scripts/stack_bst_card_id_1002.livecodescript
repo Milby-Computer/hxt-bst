@@ -3,7 +3,7 @@ Script "stack_bst_card_id_1002"
 /*
 # Name: card id 1002 of stack "bst"
 # ID: card id 1002 of stack "bst"
-# Hash: uBO5xKNf/9beFwAJpvjWnA==
+# Hash: HVZ/XwPPKjW0qXKl/WGwuA==
 */
 
 
@@ -22,6 +22,7 @@ local sSourcePath       // path for stacks to export
 local sStackPath        // path of current stack being worked
 local sPreviousExports  // array of exported stacks to track deletions
 local sInfo             // launch command and args
+local sUnplacedGroup    // current group is not placed on any cards
 
 on startup
    put getCommandLineInfo() into sInfo
@@ -90,9 +91,9 @@ command BinaryStackTrackerMain
    end repeat
    _log "========================================"
    
-   _log "Missing templates:" & lf & (the keys of sMissingTemplates)
+   _log "Missing templates:" & lf & _sort(the keys of sMissingTemplates)
    _log "========================================"
-   _log "Failed stack exports:" & lf & (the keys of sFailedExports)
+   _log "Failed stack exports:" & lf & _sort(the keys of sFailedExports)
    _log "========================================"
    if the hilite of button "autoClose" then
       send "quit" to me in 0 milliseconds
@@ -126,13 +127,13 @@ command processFolderOrStack pPath
          put true into sFailedExports[tStack]
          exit processFolderOrStack
       end try
+      lock messages
       try
          // ensure stack removed from memory after export
-         lock messages
          close tStack
          delete stack tStack
-         unlock messages
       end try
+      unlock messages
    else if there is a folder (sSourcePath & pPath) then
       _log "Exporting folder:" && pPath
       put files(sSourcePath & pPath) & lf & folders(sSourcePath & pPath) into tFiles
@@ -214,6 +215,10 @@ on saveStackJson xDataA, pPath
    --
    put pPath & xDataA["#mainstack"] & ".json" into tFileName
    put textEncode(tJson, "UTF-8") into url ("binfile:" & tFilename)
+   --
+   // useful to troubleshoot issues with JSON
+   --   put pPath & xDataA["#mainstack"] & ".lson" into tFileName
+   --   put arrayEncode(xDataA) into url ("binfile:" & tFilename)
 end saveStackJson
 
 command getStackData pStackName, @xDataA, pPath
@@ -224,7 +229,7 @@ command getStackData pStackName, @xDataA, pPath
    if pStackName is not xDataA["#mainstack"] then
       put " of stack" && _q(xDataA["#mainstack"]) after tStackLongID
    else
-      put the substacks of tStackLongID into \
+      put _sort(the substacks of tStackLongID) into \
             xDataA[pStackName]["#substacks"]
    end if
    --
@@ -241,9 +246,9 @@ command getStackData pStackName, @xDataA, pPath
    put "childcontrols" into tAddress[2]
    --
    put tStackLongID into xDataA[pStackName]["longID"]
-   put the backgroundIDs of tStackLongID into xDataA[pStackName]["backgroundIDs"]
-   put the sharedGroupIDs of tStackLongID into xDataA[pStackName]["sharedGroupIDs"]
-   put the cardIDs of tStackLongID into xDataA[pStackName]["cardIDs"]
+   put _sort(the backgroundIDs of tStackLongID) into xDataA[pStackName]["backgroundIDs"]
+   put _sort(the sharedGroupIDs of tStackLongID) into xDataA[pStackName]["sharedGroupIDs"]
+   put _sort(the cardIDs of tStackLongID) into xDataA[pStackName]["cardIDs"]
    --
    // Manually build all long IDs so that the short stack name is used
    // and to ensure that references do not change based on whether a
@@ -256,6 +261,18 @@ command getStackData pStackName, @xDataA, pPath
       put "bkgnd id" && tObjectID && "of" && tStackLongID into tObjectLongID
       put _longName(tObjectLongID, tStackLongID) into tObjectLongName
       put "bkgnd" into word 1 of tObjectLongName
+      --
+      try
+         get the cardids of tObjectLongID
+         put (it is empty) into sUnplacedGroup
+      catch e
+         put true into sUnplacedGroup
+      end try
+      if sUnplacedGroup then
+         _log "Unplaced:" && tObjectLongID
+         put true into xDataA[tAddress][tObjectID]["#unplaced"]
+      end if
+      --
       getUniqueProps tObjectLongID, xDataA, tAddress
       getPropertySets tObjectLongID, xDataA, tAddress
       exportScript pStackName, tObjectLongID, tObjectLongName, pPath
@@ -278,7 +295,7 @@ command getChildControlData \
       @xDataA,         /* export data array           */ \
       pObjectLongID,   /* long ID of parent control   */ \
       pObjectLongName, /* long name of parent control */ \
-      pAddress         /* address in data array       */ \
+      pAddress,        /* address in data array       */ \
       pPath            /* path to export folder       */
    local tChildControlIDs, tControlLongID, tControlLongName, tSharedGroupIDs
    local tStackLongID, tIndex
@@ -318,6 +335,7 @@ command getChildControlData \
       end if
       put the abbreviated id of control id tControlID of tStackLongID && "of" \
             && pObjectLongID into tControlLongID
+      if there is no tControlLongID then next repeat
       put _longName(tControlLongID, pObjectLongName) into tControlLongName
       getUniqueProps tControlLongID, xDataA, pAddress
       getPropertySets tControlLongID, xDataA, pAddress
@@ -446,6 +464,11 @@ command getNonSharedText pObject, @xDataA, pAddress
    --
    put xDataA[pAddress[1]]["cardIDs"] into tCardIds
    repeat for each line tCardId in tCardIds
+      if there is no group id (word 6 of pObject) of card id tCardId \
+            of stack _q(pAddress[1]) then
+         // skip card if the group is not placed there 
+         next repeat
+      end if
       put "control id" && word 3 of pObject && "of card id" && tCardId && \
             "of stack" && _q(pAddress[1]) into tControl
       try
@@ -559,11 +582,16 @@ command getTemplateProps
    put the properties of the templateGroup into sTemplatePropsA["group"]
    put the properties of the templateGroup into sTemplatePropsA["bkgnd"]
    put the properties of the templateImage into sTemplatePropsA["image"]
-   --put the properties of the templatePlayer into sTemplatePropsA["player"]
+   --put the properties of the templatePlayer into sTemplatePropsA["player"] --LC11 OK
    put the properties of the templateScrollbar into sTemplatePropsA["scrollbar"]
    put the properties of the templateStack into sTemplatePropsA["stack"]
    --put the properties of the templateVideoClip into sTemplatePropsA["videoclip"]
 end getTemplateProps
+
+function _sort pText
+   sort pText
+   return pText
+end _sort
 
 function _q pText
    return quote & pText & quote

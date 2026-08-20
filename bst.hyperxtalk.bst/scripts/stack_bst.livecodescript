@@ -3,7 +3,7 @@ Script "stack_bst"
 /*
 # Name: stack "bst"
 # ID: stack "bst"
-# Hash: N7dqstevzbq0Mui+aQpsyg==
+# Hash: X4w3Qx/q3WzPtmWzFi0Qeg==
 */
 
 
@@ -108,9 +108,9 @@ private command _builderJSON pArray, pIsNumeric, pOptions, @xJsonString
    else
       put "" into tString
    end if
-
+   
    put pOptions["pretty"] is true into tPretty
-
+   
    local tValue
    if pIsNumeric then
       repeat for each element e in pArray
@@ -127,6 +127,12 @@ private command _builderJSON pArray, pIsNumeric, pOptions, @xJsonString
    else
       put the keys of pArray into tKeys
       sort tKeys
+      // It is possible to create an array with a single empty key
+      // without this check, the result is broken JSON - "}," without the "{"
+      // Use " " as the key to avoid invalid JSON (null:null)
+      if tKeys is empty then
+         put _jsonString(" ") & ": " & _jsonString("") & comma after xJsonString
+      end if
       repeat for each line k in tKeys
          if pArray[k] is an array then
             put _jsonString(k) & ": " &JSONStringify(pArray[k], tString, tPretty) & comma after xJsonString
