@@ -1,0 +1,99 @@
+{
+   "#mainstack": "markdownTest",
+   "markdownTest": {
+      "#name": "stack \"markdownTest\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"markdownTest\"",
+                  "customproperties": {
+                     "cellFormatting": false
+                  },
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/markdownTest_1002_1003_htmlText.txt",
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "markdownTest",
+                     "rect": "19,389,644,705",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1005": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1005",
+                     "label": "set the markdownText",
+                     "layer": "2",
+                     "name": "Button",
+                     "rect": "21,358,644,381",
+                     "traversalOn": false
+                  }
+               },
+               "1006": {
+                  "#name": "field \"Field\"",
+                  "customproperties": {
+                     "cellFormatting": false
+                  },
+                  "custompropertysets": {
+                     "cRevTable": {
+                        "cellEdit": false,
+                        "cellFormat": false,
+                        "maxColumnCount": null
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/markdownTest_1002_1006_htmlText.txt",
+                     "id": "1006",
+                     "layer": "3",
+                     "name": "Field",
+                     "rect": "17,10,647,347",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "vScrollbar": true
+                  }
+               },
+               "1008": {
+                  "#name": "button \"Button\"",
+                  "properties": {
+                     "id": "1008",
+                     "label": "put the markdownText",
+                     "layer": "4",
+                     "name": "Button",
+                     "rect": "33,717,651,740",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"markdownTest\"",
+      "properties": {
+         "destroyStack": true,
+         "destroyWindow": true,
+         "fileName": "markdownTest.hyperxtalk",
+         "id": "1008",
+         "name": "markdownTest",
+         "rect": "217,118,911,882"
+      },
+      "sharedGroupIDs": null
+   }
+}

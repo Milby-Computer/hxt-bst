@@ -1,0 +1,488 @@
+{
+   "#mainstack": "revDocsSupported Platforms Reference",
+   "revDocsSupported Platforms Reference": {
+      "#name": "stack \"revDocsSupported Platforms Reference\"",
+      "#substacks": null,
+      "backgroundIDs": "1109\n1174\n1175",
+      "cardIDs": "1002\n1114\n1119\n1124\n1129\n1134\n1139\n1144\n1149\n1154\n1177\n1159\n1164\n1169",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Intro\"",
+            "childcontrols": {
+               "1109": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Intro"
+            }
+         },
+         "1109": {
+            "#name": "group \"Intro\"",
+            "childcontrols": {
+               "1107": {
+                  "#name": "field \"Details\"",
+                  "properties": {
+                     "htmlText": {
+                        "1002": "%file%: assets/revDocsSupported Platforms Reference_1109_1107_htmlText_1002.txt"
+                     },
+                     "id": "1107",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "Details",
+                     "rect": "166,28,455,183",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "opaque",
+                     "textFont": "Verdana",
+                     "textSize": "11",
+                     "textStyle": "link",
+                     "traversalOn": false
+                  }
+               },
+               "1108": {
+                  "#name": "field \"Platform Name\"",
+                  "properties": {
+                     "foreColor": "88,88,88",
+                     "htmlText": {
+                        "1002": "<p>Supported Platforms</p>"
+                     },
+                     "id": "1108",
+                     "layer": "3",
+                     "lockText": true,
+                     "name": "Platform Name",
+                     "rect": "166,0,459,32",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "opaque",
+                     "textFont": "Verdana",
+                     "textHeight": "24",
+                     "textSize": "18",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1109",
+               "layer": "1",
+               "lockLoc": true,
+               "name": "Intro",
+               "rect": "162,-4,458,184",
+               "tabGroupBehavior": true
+            }
+         },
+         "1114": {
+            "#name": "card \"Mac OS\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1114",
+               "layer": "2",
+               "name": "Mac OS"
+            }
+         },
+         "1119": {
+            "#name": "card \"OS X\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1119",
+               "layer": "3",
+               "name": "OS X"
+            }
+         },
+         "1124": {
+            "#name": "card \"Windows\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1124",
+               "layer": "4",
+               "name": "Windows"
+            }
+         },
+         "1129": {
+            "#name": "card \"Linux x86\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1129",
+               "layer": "5",
+               "name": "Linux x86"
+            }
+         },
+         "1134": {
+            "#name": "card \"Linux PowerPC\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1134",
+               "layer": "6",
+               "name": "Linux PowerPC"
+            }
+         },
+         "1139": {
+            "#name": "card \"BSD UNIX\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1139",
+               "layer": "7",
+               "name": "BSD UNIX"
+            }
+         },
+         "1144": {
+            "#name": "card \"HP-UX\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1144",
+               "layer": "8",
+               "name": "HP-UX"
+            }
+         },
+         "1149": {
+            "#name": "card \"SGI IRIX\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1149",
+               "layer": "9",
+               "name": "SGI IRIX"
+            }
+         },
+         "1154": {
+            "#name": "card \"IBM RS/6000 AIX\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1154",
+               "layer": "10",
+               "name": "IBM RS/6000 AIX"
+            }
+         },
+         "1159": {
+            "#name": "card \"Solaris x86\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1159",
+               "layer": "12",
+               "name": "Solaris x86"
+            }
+         },
+         "1164": {
+            "#name": "card \"SPARC SunOS\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1164",
+               "layer": "13",
+               "name": "SPARC SunOS"
+            }
+         },
+         "1169": {
+            "#name": "card \"SPARC Solaris\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1169",
+               "layer": "14",
+               "name": "SPARC Solaris"
+            }
+         },
+         "1174": {
+            "#name": "group \"Platform\"",
+            "childcontrols": {
+               "1166": {
+                  "#name": "field \"Engine Label\"",
+                  "properties": {
+                     "htmlText": "<p>Engine filename:</p>\n<p></p>\n<p></p>\n<p></p>\n<p></p>\n<p></p>\n<p></p>\n<p></p>\n<p></p>",
+                     "id": "1166",
+                     "layer": "6",
+                     "name": "Engine Label",
+                     "opaque": false,
+                     "rect": "185,131,324,153",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right"
+                  }
+               },
+               "1168": {
+                  "#name": "field \"Platform Function Result Label\"",
+                  "properties": {
+                     "htmlText": "<p>Value returned by <b><font face=\"Verdana\" size=\"11\">platform</font></b><font face=\"Verdana\" size=\"11\"> function:</font></p>",
+                     "id": "1168",
+                     "layer": "6",
+                     "name": "Platform Function Result Label",
+                     "rect": "188,160,325,192",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "opaque",
+                     "textAlign": "right"
+                  }
+               },
+               "1170": {
+                  "#name": "field \"Platform Function Result\"",
+                  "properties": {
+                     "htmlText": {
+                        "1114": "<p>MacOS</p>\n<p></p>\n<p></p>\n<p></p>",
+                        "1119": "<p>MacOS</p>",
+                        "1124": "<p>Win32</p>\n<p></p>\n<p></p>",
+                        "1129": "<p>Linux</p>\n<p></p>\n<p></p>\n<p></p>",
+                        "1134": "<p>Linux</p>",
+                        "1139": "<p>BSD</p>",
+                        "1144": "<p>HP 9000/700</p>",
+                        "1149": "<p>SGI IRIS</p>",
+                        "1154": "<p>IBM RS/6000</p>\n<p></p>\n<p></p>\n<p></p>\n<p></p>\n<p></p>\n<p></p>\n<p></p>\n<p></p>",
+                        "1159": "<p>Intel SVR4</p>",
+                        "1164": "<p>SPARC</p>",
+                        "1169": "<p>SPARC Solaris</p>",
+                        "1177": "<p>Intel SCO</p>"
+                     },
+                     "id": "1170",
+                     "layer": "6",
+                     "name": "Platform Function Result",
+                     "rect": "320,172,448,193",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "opaque",
+                     "textFont": "Courier New",
+                     "textHeight": "16",
+                     "textSize": "12",
+                     "textStyle": "plain"
+                  }
+               },
+               "1171": {
+                  "#name": "field \"Details\"",
+                  "properties": {
+                     "htmlText": {
+                        "1114": "%file%: assets/revDocsSupported Platforms Reference_1174_1171_htmlText_1114.txt",
+                        "1119": "<p>Applications created with Revolution can run on any version of OS X for Macintosh computers.</p>",
+                        "1124": "<p>Applications created with Revolution can run on Windows 95, Windows 98, Windows ME, Windows NT, Windows 2000, or Windows XP.</p>\n<p></p>\n<p>Applications can also run on Windows 3.1 (with Win32s).</p>",
+                        "1129": "<p>Applications created with Revolution can run on 1.2.13 ELF or any later version of Linux for Intel architecture.</p>",
+                        "1134": "<p>Applications created by Revolution can run on 2.0 ELF or any later version of Linux for PowerPC architecture (LinuxPPC or MkLinux).</p>",
+                        "1139": "<p>Applications created on Revolution can run on FreeBSD and BSDI UNIX.</p>",
+                        "1144": "<p>Applications created with Revolution can run on version 10.20 or any later version of HP-UX.</p>",
+                        "1149": "<p>Applications created with Revolution can run on version 5.3 or any later version of Silicon Graphics IRIX.</p>",
+                        "1154": "<p>Applications created with Revolution can run on version 3.2.3 or any later version of AIX for IBM RS/6000.</p>",
+                        "1159": "<p>Applications created with Revolution can run on version 2.5 or any later version of Sun Solaris for Intel architecture.</p>",
+                        "1164": "<p>Applications created with Revolution can run on version 4.1 or any later version of SPARC SunOS.</p>",
+                        "1169": "<p>Applications created with Revolution can run on version 2.3 or any later version of SPARC Solaris.</p>",
+                        "1177": "<p>Applications created with Revolution can run on version 2.0 or any later version of SCO Open DeskTop/UnixWare.</p>"
+                     },
+                     "id": "1171",
+                     "layer": "6",
+                     "name": "Details",
+                     "rect": "164,27,474,132",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "opaque"
+                  }
+               },
+               "1172": {
+                  "#name": "field \"Engine\"",
+                  "properties": {
+                     "htmlText": {
+                        "1114": "<p>MacOSPPC</p>\n<p>MacOS68k</p>",
+                        "1119": "<p>MacOSX</p>",
+                        "1124": "<p>Windows.gz</p>",
+                        "1129": "<p>Linux</p>",
+                        "1134": "<p>LinuxPPC</p>",
+                        "1139": "<p>Bsd</p>",
+                        "1144": "<p>Hp9k700</p>",
+                        "1149": "<p>Iris</p>",
+                        "1154": "<p>rs6000</p>",
+                        "1159": "<p>SolIntel</p>",
+                        "1164": "<p>SPARC</p>",
+                        "1169": "<p>SolSparc</p>",
+                        "1177": "<p>Odt</p>"
+                     },
+                     "id": "1172",
+                     "layer": "6",
+                     "name": "Engine",
+                     "rect": "320,131,475,165",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "opaque"
+                  }
+               },
+               "1173": {
+                  "#name": "field \"Platform Name\"",
+                  "properties": {
+                     "foreColor": "88,88,88",
+                     "htmlText": {
+                        "1114": "<p>Mac OS</p>",
+                        "1119": "<p>OS X</p>",
+                        "1124": "<p>Windows</p>",
+                        "1129": "<p>Linux x86</p>",
+                        "1134": "<p>Linux PowerPC</p>",
+                        "1139": "<p>BSD UNIX</p>",
+                        "1144": "<p>HP-UX</p>",
+                        "1149": "<p>SGI IRIX</p>",
+                        "1154": "<p>IBM RS/6000 AIX</p>",
+                        "1159": "<p>Solaris x86</p>",
+                        "1164": "<p>SPARC SunOS</p>",
+                        "1169": "<p>SPARC Solaris</p>",
+                        "1177": "<p>SCO Open DeskTop</p>"
+                     },
+                     "id": "1173",
+                     "layer": "6",
+                     "name": "Platform Name",
+                     "rect": "164,1,473,33",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "opaque",
+                     "textFont": "Verdana",
+                     "textHeight": "24",
+                     "textSize": "18",
+                     "textStyle": "bold"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1174",
+               "layer": "6",
+               "name": "Platform",
+               "rect": "160,-3,479,197",
+               "sharedBehavior": true,
+               "tabGroupBehavior": true
+            }
+         },
+         "1175": {
+            "#name": "group \"Platforms List\"",
+            "childcontrols": {
+               "1127": {
+                  "#name": "graphic \"Divider\"",
+                  "properties": {
+                     "antialiased": false,
+                     "filled": true,
+                     "id": "1127",
+                     "layer": "6",
+                     "lineSize": "2",
+                     "name": "Divider",
+                     "opaque": true,
+                     "points": "157,-2\n157,204",
+                     "rect": "155,-4,159,206",
+                     "showBorder": true,
+                     "style": "line"
+                  }
+               },
+               "1165": {
+                  "#name": "field \"Platforms List\"",
+                  "customproperties": {
+                     "contentsHiliteColor": "96,96,152"
+                  },
+                  "properties": {
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "foreColor": "76,76,76",
+                     "htmlText": "<p>Mac OS</p>\n<p>OS X</p>\n<p>Windows</p>\n<p>Linux Intel</p>\n<p>BSD UNIX</p>\n<p>HP-UX</p>\n<p>SGI IRIX</p>\n<p>IBM RS/6000 AIX</p>\n<p>Solaris x86</p>\n<p>SPARC SunOS</p>\n<p>SPARC Solaris</p>",
+                     "id": "1165",
+                     "layer": "5",
+                     "lockText": true,
+                     "name": "Platforms List",
+                     "opaque": false,
+                     "rect": "4,4,151,213",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Verdana",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1175",
+               "layer": "4",
+               "name": "Platforms List",
+               "rect": "0,-8,163,217",
+               "sharedBehavior": true,
+               "showFocusBorder": false,
+               "tabGroupBehavior": true
+            }
+         },
+         "1177": {
+            "#name": "card \"SCO Open DeskTop\"",
+            "childcontrols": {
+               "1174": "#shared group",
+               "1175": "#shared group"
+            },
+            "properties": {
+               "id": "1177",
+               "layer": "11",
+               "name": "SCO Open DeskTop"
+            }
+         }
+      },
+      "customproperties": {
+         "cBuildNo": "1",
+         "cVersionNo": "2.5B2",
+         "hilitedLinkColor": "black",
+         "revDocsCategory": "Developing with Revolution\nThe System Environment",
+         "revDocsMarkerChar": "ª",
+         "revIsDocsStack": true,
+         "revstack": false,
+         "visitedLinkColor": "black"
+      },
+      "longID": "stack \"revDocsSupported Platforms Reference\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "backColor": "white",
+         "cantModify": true,
+         "decorations": "title,minimize,close",
+         "destroyStack": true,
+         "destroyWindow": true,
+         "fileName": "Supported Platforms Referen.rev",
+         "id": "1177",
+         "linkColor": "black",
+         "linkHiliteColor": "255,0,0",
+         "linkVisitedColor": "81,24,128",
+         "liveResizing": false,
+         "name": "revDocsSupported Platforms Reference",
+         "rect": "425,489,901,689",
+         "resizable": false,
+         "textFont": "Verdana",
+         "textSize": "11",
+         "textStyle": "plain",
+         "title": "Supported Platforms",
+         "underlineLinks": false
+      },
+      "sharedGroupIDs": "1109\n1174\n1175"
+   }
+}

@@ -1,0 +1,24 @@
+<p><font face="Verdana" size="18">Getting the Browser Image</font></p>
+<p></p>
+<p>You can get the imagedata of the browser using <b><font face="Tahoma" size="11">revBrowserSnapshot &lt;browserID&gt;,  &lt;variableName&gt; </font></b><font face="Tahoma" size="11"> where &lt;browserID&gt; is the integer identifier of the browser object.</font></p>
+<p></p>
+<p>There are few things you need to know about imagedata before you can do this. First of all, the imagedata you get back is formatted specifically for the width and height of the image you captured. So, it's imperative you put the imagedata into an image the exact same width and height for it to work proprely. Afterwards, you can scale the image if you like. Secondly, you need to first initialize the variable you wish to store the imageData in BEFORE calling the function. Lastly, be sure and include quotes around imageData variable as you pass it to the function.</p>
+<p></p>
+<p>Try it. Navigate to a URL you want to grab the image from. Then press the <b><font face="Tahoma" size="11">Make Thumbnail</font></b><font face="Tahoma" size="11"> button to see a smaller version of the image to the right.</font></p>
+<p></p>
+<p>You can also turn on and off the scrollbars property of the browser by checking the <b><font face="Tahoma" size="11">Show Scrollbars</font></b><font face="Tahoma" size="11"> button.</font></p>
+<p></p>
+<p>Here's the script of the <b><font face="Tahoma" size="11">Make Thumbnail </font></b><font face="Tahoma" size="11">button.</font></p>
+<p></p>
+<p><font face="Courier New" size="12">on mouseUp</font></p>
+<p><font face="Courier New" size="12">  local tImgData</font></p>
+<p><font face="Courier New" size="12">  revBrowserSnapshot browserId(), "tImgData"</font></p>
+<p><font face="Courier New" size="12">   </font></p>
+<p><font face="Courier New" size="12">  put the rect of img "thumbnail" into tOldRect</font></p>
+<p><font face="Courier New" size="12">  set the rect of img "thumbnail" to the rect of img "browserImage"</font></p>
+<p><font face="Courier New" size="12">  set the imageData of img "thumbnail" to tImgData</font></p>
+<p><font face="Courier New" size="12">  set the resizeQuality of img "thumbnail" to best</font></p>
+<p><font face="Courier New" size="12">  set the rect of img "thumbNail" to tOldRect</font></p>
+<p><font face="Courier New" size="12">end mouseUp</font></p>
+<p></p>
+<p></p>

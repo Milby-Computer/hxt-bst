@@ -1,0 +1,23 @@
+<p><font face="Verdana" size="18">Multiple Instances of a Browser</font></p>
+<p></p>
+<p>It is possible to open multiple instances of revBrowser on a stack. All of the handlers, callbacks and functions of revBrowser user the <b><font face="Tahoma" size="11">browserID</font></b><font face="Tahoma" size="11"> parameter. When you first open revBrowser, you can check the result to get the ID of the instance of the browser. From then on, if you want to work with multiple browser objects, just reference the correct ID. Here's some sample code to retrieve the ID:</font></p>
+<p></p>
+<p><font face="Courier New" size="12">local tBrowserId</font></p>
+<p><font face="Courier New" size="12">put revBrowserOpen(tWinID, "http://www.google.com") into tBrowserId</font></p>
+<p><font face="Courier New" size="12">if tBrowserId is not an integer then</font></p>
+<p><font face="Courier New" size="12">  answer warning tBrowserId</font></p>
+<p><font face="Courier New" size="12">  exit to top</font></p>
+<p><font face="Courier New" size="12">end if</font></p>
+<p><font face="Courier New" size="12">put tBrowserId into sBrowserId</font></p>
+<p></p>
+<p>The last line stores the <b><font face="Tahoma" size="11">browserID</font></b><font face="Tahoma" size="11"> in the script local sBrowserId (or you could use a custom property as we do on this card-- check out the script of the <b>Browser 1 ON</b> button)</font></p>
+<p></p>
+<p>Now you can trap for a callback when a given instance is finished brower activity. Here's an example script:</p>
+<p></p>
+<p><font face="Courier New" size="12">on browserDocumentComplete pId, pUrl</font></p>
+<p><font face="Courier New" size="12">  put "Finished" into field "browserStatus"</font></p>
+<p><font face="Courier New" size="12">end browserDocumentComplete</font></p>
+<p></p>
+<p>You can use the <b><font face="Tahoma" size="11">revBrowserInstances()</font></b><font face="Tahoma" size="11"> function to retrieve a comma-delimited list of all open browser objects by browserId.</font></p>
+<p></p>
+<p>To learn more about instancing, check the documentation and view the scripts of the <b><font face="Tahoma" size="11">Browser ON</font></b><font face="Tahoma" size="11"> buttons below and this card.</font></p>

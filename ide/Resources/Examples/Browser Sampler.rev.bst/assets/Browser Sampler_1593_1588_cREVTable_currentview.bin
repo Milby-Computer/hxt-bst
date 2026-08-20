@@ -1,0 +1,24 @@
+<p><font face="Verdana" size="18">Getting the Browser Image</font></p>
+<p></p>
+<p>You can get the imagedata of the browser using <b>revBrowserSnapshot &lt;browserID&gt;,  &lt;variableName&gt; </b> where &lt;browserID&gt; is the integer identifier of the browser object.</p>
+<p></p>
+<p>There are few things you need to know about imagedata before you can do this. First of all, the imagedata you get back is formatted specifically for the width and height of the image you captured. So, it's imperative you put the imagedata into an image the exact same width and height for it to work proprely. Afterwards, you can scale the image if you like. Secondly, you need to first initialize the variable you wish to store the imageData in BEFORE calling the function. Lastly, be sure and include quotes around imageData variable as you pass it to the function.</p>
+<p></p>
+<p>Try it. Navigate to a URL you want to grab the image from. Then press the <b>Make Thumbnail</b> button to see a smaller version of the image to the right.</p>
+<p></p>
+<p>You can also turn on and off the scrollbars property of the browser by checking the <b>Show Scrollbars</b> button.</p>
+<p></p>
+<p>Here's the script of the <b>Make Thumbnail </b>button.</p>
+<p></p>
+<p><font face="Courier New" size="12">on mouseUp</font></p>
+<p><font face="Courier New" size="12">  local tImgData</font></p>
+<p><font face="Courier New" size="12">  revBrowserSnapshot browserId(), &quot;tImgData&quot;</font></p>
+<p><font face="Courier New" size="12">   </font></p>
+<p><font face="Courier New" size="12">  put the rect of img &quot;thumbnail&quot; into tOldRect</font></p>
+<p><font face="Courier New" size="12">  set the rect of img &quot;thumbnail&quot; to the rect of img &quot;browserImage&quot;</font></p>
+<p><font face="Courier New" size="12">  set the imageData of img &quot;thumbnail&quot; to tImgData</font></p>
+<p><font face="Courier New" size="12">  set the resizeQuality of img &quot;thumbnail&quot; to best</font></p>
+<p><font face="Courier New" size="12">  set the rect of img &quot;thumbNail&quot; to tOldRect</font></p>
+<p><font face="Courier New" size="12">end mouseUp</font></p>
+<p></p>
+<p></p>

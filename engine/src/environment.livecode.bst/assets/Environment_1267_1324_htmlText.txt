@@ -1,0 +1,10 @@
+<p>We recommend creating a LiveCode community account for</p>
+<p></p>
+<p>* Access to the LiveCode community forums</p>
+<p>* Free trials for all the LiveCode academies</p>
+<p>* Notification of latest releases of LiveCode</p>
+<p>* Post comments throughout the LiceCode community</p>
+<p>* Discounts on LiveCode products/extensions</p>
+<p>* Use of the LiveCode community samples portal</p>
+<p></p>
+<p>Creating an account is simple, all we need is your name, email and password and you're good to go.</p>

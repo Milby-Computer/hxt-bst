@@ -1,0 +1,6 @@
+<p><font face="Verdana" size="18">Basic Navigation</font></p>
+<p></p>
+<p>You can do all the basics like go back, go forward, refresh and stop as well as navigate to a url. Notice, this interface DOES NOT provide any user feedback about what is going on! It doesn't even update the URL field. We'll get to that in a moment.</p>
+<p></p>
+<p>Below are the scripts of the buttons: Go Back, Go Forward, Refresh, Stop, and GO (click the Show Text button above right to view scripts)</p>
+<p></p>

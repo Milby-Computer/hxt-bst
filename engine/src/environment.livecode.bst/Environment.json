@@ -1,0 +1,1735 @@
+{
+   "#mainstack": "Environment",
+   "Environment": {
+      "#name": "stack \"Environment\"",
+      "#substacks": "EnvironmentResources",
+      "backgroundIDs": "1068\n1189\n1131\n1281",
+      "cardIDs": "1244\n1004\n1267\n1268\n1269",
+      "childcontrols": {
+         "1004": {
+            "#name": "card \"Automatic Activation\"",
+            "childcontrols": {
+               "1068": "#shared group",
+               "1131": "#shared group",
+               "1254": {
+                  "#name": "group \"Processing\"",
+                  "childcontrols": {
+                     "1255": {
+                        "#name": "graphic \"line,0\"",
+                        "properties": {
+                           "foreColor": "190,190,190",
+                           "id": "1255",
+                           "layer": "23",
+                           "lineSize": "2",
+                           "name": "line,0",
+                           "points": "299,165\n306,165",
+                           "rect": "297,163,308,167",
+                           "style": "line"
+                        }
+                     },
+                     "1256": {
+                        "#name": "graphic \"line,1\"",
+                        "properties": {
+                           "foreColor": "150,150,150",
+                           "id": "1256",
+                           "layer": "24",
+                           "lineSize": "2",
+                           "name": "line,1",
+                           "points": "300,166\n304,170",
+                           "rect": "298,164,306,172",
+                           "style": "line"
+                        }
+                     },
+                     "1257": {
+                        "#name": "graphic \"line,2\"",
+                        "properties": {
+                           "foreColor": "128,128,128",
+                           "id": "1257",
+                           "layer": "25",
+                           "lineSize": "2",
+                           "name": "line,2",
+                           "points": "297,168\n300,174",
+                           "rect": "295,166,302,176",
+                           "style": "line"
+                        }
+                     },
+                     "1258": {
+                        "#name": "graphic \"line,3\"",
+                        "properties": {
+                           "foreColor": "75,75,75",
+                           "id": "1258",
+                           "layer": "26",
+                           "lineSize": "2",
+                           "name": "line,3",
+                           "points": "295,169\n295,176",
+                           "rect": "293,167,297,178",
+                           "style": "line"
+                        }
+                     },
+                     "1259": {
+                        "#name": "graphic \"line,4\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "1259",
+                           "layer": "27",
+                           "lineSize": "2",
+                           "name": "line,4",
+                           "points": "293,168\n289,174",
+                           "rect": "287,166,295,176",
+                           "style": "line"
+                        }
+                     },
+                     "1260": {
+                        "#name": "graphic \"line,5\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "1260",
+                           "layer": "28",
+                           "lineSize": "2",
+                           "name": "line,5",
+                           "points": "291,167\n285,170",
+                           "rect": "283,165,293,172",
+                           "style": "line"
+                        }
+                     },
+                     "1261": {
+                        "#name": "graphic \"line,6\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "1261",
+                           "layer": "29",
+                           "lineSize": "2",
+                           "name": "line,6",
+                           "points": "291,165\n284,165",
+                           "rect": "282,163,293,167",
+                           "style": "line"
+                        }
+                     },
+                     "1262": {
+                        "#name": "graphic \"line,7\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "1262",
+                           "layer": "30",
+                           "lineSize": "2",
+                           "name": "line,7",
+                           "points": "291,163\n285,159",
+                           "rect": "283,157,293,165",
+                           "style": "line"
+                        }
+                     },
+                     "1263": {
+                        "#name": "graphic \"line,8\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "1263",
+                           "layer": "31",
+                           "lineSize": "2",
+                           "name": "line,8",
+                           "points": "293,161\n289,155",
+                           "rect": "287,153,295,163",
+                           "style": "line"
+                        }
+                     },
+                     "1264": {
+                        "#name": "graphic \"line,9\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "1264",
+                           "layer": "32",
+                           "lineSize": "2",
+                           "name": "line,9",
+                           "points": "295,161\n295,154",
+                           "rect": "293,152,297,163",
+                           "style": "line"
+                        }
+                     },
+                     "1265": {
+                        "#name": "graphic \"line,10\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "1265",
+                           "layer": "33",
+                           "lineSize": "2",
+                           "name": "line,10",
+                           "points": "297,161\n300,155",
+                           "rect": "295,153,302,163",
+                           "style": "line"
+                        }
+                     },
+                     "1266": {
+                        "#name": "graphic \"line,11\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "1266",
+                           "layer": "34",
+                           "lineSize": "2",
+                           "name": "line,11",
+                           "points": "298,163\n304,159",
+                           "rect": "296,157,306,165",
+                           "style": "line"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "cColorMap": "190,190,190\n150,150,150\n128,128,128\n75,75,75\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210",
+                     "cDelay": "150",
+                     "cNumber": "12",
+                     "coldcolormap": "190,190,190\n150,150,150\n128,128,128\n75,75,75\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210"
+                  },
+                  "properties": {
+                     "behavior": "stack \"EnvironmentAutomaticActivationProcessingGroupBehavior\"",
+                     "id": "1254",
+                     "layer": "22",
+                     "lockLoc": true,
+                     "name": "Processing",
+                     "rect": "282,152,308,178",
+                     "visible": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "40"
+               }
+            },
+            "properties": {
+               "behavior": "stack \"EnvironmentAutomaticActivationCardBehavior\"",
+               "id": "1004",
+               "layer": "2",
+               "name": "Automatic Activation"
+            }
+         },
+         "1068": {
+            "#name": "group \"Activation\"",
+            "childcontrols": {
+               "1235": {
+                  "#name": "group \"Input\"",
+                  "childcontrols": {
+                     "1065": {
+                        "#name": "group \"Error\"",
+                        "childcontrols": {
+                           "1164": {
+                              "#name": "button \"Error Symbol\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "hiliteBorder": false,
+                                 "icon": "10002",
+                                 "id": "1164",
+                                 "name": "Error Symbol",
+                                 "opaque": false,
+                                 "rect": "140,97,164,119",
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "transparent",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "1165": {
+                              "#name": "field \"Error Message\"",
+                              "custompropertysets": {
+                                 "cREVTable": {
+                                    "currentview": "Invalid License Code. Please try again or contact support@runrev.com for assistance."
+                                 }
+                              },
+                              "properties": {
+                                 "autoHilite": false,
+                                 "foreColor": "#FF9900",
+                                 "htmlText": "<p>The password you have entered does not match that email address.</p>",
+                                 "id": "1165",
+                                 "lockText": true,
+                                 "name": "Error Message",
+                                 "opaque": false,
+                                 "rect": "160,84,505,130",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "style": "transparent",
+                                 "textFont": "Arial",
+                                 "textSize": "12",
+                                 "textStyle": "plain",
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "id": "1065",
+                           "lockLoc": true,
+                           "name": "Error",
+                           "rect": "130,89,495,127",
+                           "visible": false
+                        }
+                     },
+                     "1147": {
+                        "#name": "field \"Login\"",
+                        "properties": {
+                           "borderColor": "128,128,128",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "foreColor": "#aaaaaa",
+                           "htmlText": {
+                              "1004": "<p></p>"
+                           },
+                           "id": "1147",
+                           "name": "Login",
+                           "opaque": false,
+                           "rect": "202,132,488,161",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "transparent",
+                           "textFont": "Arial",
+                           "textSize": "18",
+                           "textStyle": "bold",
+                           "threeD": false
+                        }
+                     },
+                     "1148": {
+                        "#name": "field \"Pass\"",
+                        "properties": {
+                           "behavior": "stack \"EnvironmentAutomaticActivationActivationInputPassFieldBehavior\"",
+                           "borderColor": "128,128,128",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "foreColor": "#aaaaaa",
+                           "htmlText": {
+                              "1004": "<p></p>"
+                           },
+                           "id": "1148",
+                           "name": "Pass",
+                           "opaque": false,
+                           "rect": "202,183,488,213",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "transparent",
+                           "textFont": "Arial",
+                           "textSize": "18",
+                           "textStyle": "bold",
+                           "threeD": false
+                        }
+                     },
+                     "1149": {
+                        "#name": "field \"Pass Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Password"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "foreColor": "#a7a7a7",
+                           "htmlText": "<p>Password</p>",
+                           "id": "1149",
+                           "lockText": true,
+                           "margins": "2",
+                           "name": "Pass Label",
+                           "opaque": false,
+                           "rect": "79,189,188,210",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Arial",
+                           "textSize": "18",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1150": {
+                        "#name": "field \"Login Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Email"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "foreColor": "#a7a7a7",
+                           "htmlText": "<p>Email</p>",
+                           "id": "1150",
+                           "lockText": true,
+                           "margins": "2",
+                           "name": "Login Label",
+                           "opaque": false,
+                           "rect": "79,135,188,156",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textFont": "Arial",
+                           "textSize": "18",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     },
+                     "1151": {
+                        "#name": "group \"Activate\"",
+                        "childcontrols": {
+                           "1152": {
+                              "#name": "button \"Button\"",
+                              "properties": {
+                                 "foreColor": "white",
+                                 "hiliteIcon": "1027",
+                                 "hoverIcon": "1029",
+                                 "icon": "1033",
+                                 "id": "1152",
+                                 "margins": "0",
+                                 "name": "Button",
+                                 "opaque": false,
+                                 "rect": "460,278,544,302",
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "transparent",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "1153": {
+                              "#name": "field \"Label\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "fixedLineHeight": false,
+                                 "foreColor": "#474747",
+                                 "htmlText": "<p>Activate</p>",
+                                 "id": "1153",
+                                 "lockText": true,
+                                 "margins": "8,9,8,2",
+                                 "name": "Label",
+                                 "opaque": false,
+                                 "rect": "460,278,544,302",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "showFocusBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "center",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "behavior": "button id 1027 of stack \"EnvironmentResources\"",
+                           "id": "1151",
+                           "margins": "0",
+                           "name": "Activate",
+                           "rect": "460,278,544,302",
+                           "selectGroupedControls": false
+                        }
+                     },
+                     "1223": {
+                        "#name": "group \"Quit\"",
+                        "childcontrols": {
+                           "1224": {
+                              "#name": "button \"Button\"",
+                              "properties": {
+                                 "foreColor": "white",
+                                 "hiliteIcon": "1027",
+                                 "hoverIcon": "1029",
+                                 "icon": "1031",
+                                 "id": "1224",
+                                 "margins": "0",
+                                 "name": "Button",
+                                 "opaque": false,
+                                 "rect": "367,278,451,302",
+                                 "showBorder": false,
+                                 "showIcon": true,
+                                 "showName": false,
+                                 "style": "transparent",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           },
+                           "1225": {
+                              "#name": "field \"Label\"",
+                              "properties": {
+                                 "autoHilite": false,
+                                 "fixedLineHeight": false,
+                                 "foreColor": "#ffffff",
+                                 "htmlText": "<p>Quit</p>",
+                                 "id": "1225",
+                                 "lockText": true,
+                                 "margins": "8,9,8,2",
+                                 "name": "Label",
+                                 "opaque": false,
+                                 "rect": "367,278,451,302",
+                                 "sharedText": true,
+                                 "showBorder": false,
+                                 "showFocusBorder": false,
+                                 "style": "transparent",
+                                 "textAlign": "center",
+                                 "threeD": false,
+                                 "traversalOn": false
+                              }
+                           }
+                        },
+                        "properties": {
+                           "behavior": "button id 1027 of stack \"EnvironmentResources\"",
+                           "id": "1223",
+                           "margins": "0",
+                           "name": "Quit",
+                           "rect": "367,278,451,302",
+                           "selectGroupedControls": false
+                        }
+                     },
+                     "1252": {
+                        "#name": "button \"Input Background\"",
+                        "properties": {
+                           "icon": "10054",
+                           "id": "1252",
+                           "name": "Input Background",
+                           "opaque": false,
+                           "rect": "200,131,490,215",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1253": {
+                        "#name": "field \"Create Label\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Create an account"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "foreColor": "157,157,157",
+                           "htmlText": "<p>Create an account</p>",
+                           "id": "1253",
+                           "lockText": true,
+                           "margins": "2",
+                           "name": "Create Label",
+                           "opaque": false,
+                           "rect": "200,227,320,248",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textFont": "Arial",
+                           "textSize": "12",
+                           "textStyle": "bold",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1235",
+                     "name": "Input",
+                     "rect": "75,127,548,306"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "behavior": "stack \"EnvironmentAutomaticActivationActivationGroupBehavior\"",
+               "id": "1068",
+               "name": "Activation",
+               "rect": "71,123,552,310"
+            }
+         },
+         "1131": {
+            "#name": "group \"Background\"",
+            "childcontrols": {
+               "1132": {
+                  "#name": "button \"Fill\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "icon": "10000",
+                     "id": "1132",
+                     "name": "Fill",
+                     "opaque": false,
+                     "rect": "0,0,570,330",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1166": {
+                  "#name": "field \"Version\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "<p><a name=\"http://www.runrev.com\">Version 4.5.0-dp-5</a></p>"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "#ffffff",
+                     "htmlText": "<p>9.0.0-dp-7</p>",
+                     "id": "1166",
+                     "lockText": true,
+                     "name": "Version",
+                     "opaque": false,
+                     "rect": "17,50,132,71",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1168": {
+                  "#name": "field \"Title\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Activation"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "#ffffff",
+                     "htmlText": "<p>Activation</p>",
+                     "id": "1168",
+                     "lockText": true,
+                     "margins": "2",
+                     "name": "Title",
+                     "opaque": false,
+                     "rect": "105,10,546,62",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textFont": "Arial",
+                     "textSize": "38",
+                     "textStyle": "bold",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "behavior": "stack \"EnvironmentAutomaticActivationBackgroundGroupBehavior\"",
+               "id": "1131",
+               "margins": "0",
+               "name": "Background",
+               "rect": "0,0,570,330",
+               "sharedBehavior": true
+            }
+         },
+         "1189": {
+            "#name": "group \"Unlicensed\"",
+            "childcontrols": {
+               "1095": {
+                  "#name": "button \"Continue\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hiliteIcon": "10013",
+                     "hoverIcon": "10012",
+                     "icon": "10011",
+                     "id": "1095",
+                     "name": "Continue",
+                     "opaque": false,
+                     "rect": "143,147,275,275",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1180": {
+                  "#name": "button \"Buy Now\"",
+                  "properties": {
+                     "behavior": "stack \"EnvironmentUnlicensedBuyNowButtonBehavior\"",
+                     "hiliteBorder": false,
+                     "hiliteIcon": "10045",
+                     "hoverIcon": "10044",
+                     "icon": "10043",
+                     "id": "1180",
+                     "name": "Buy Now",
+                     "opaque": false,
+                     "rect": "302,147,434,275",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1181": {
+                  "#name": "button \"Underlay\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "icon": "10031",
+                     "id": "1181",
+                     "name": "Underlay",
+                     "opaque": false,
+                     "rect": "24,74,543,286",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1183": {
+                  "#name": "button \"Alert\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "hiliteBorder": false,
+                     "icon": "10002",
+                     "id": "1183",
+                     "name": "Alert",
+                     "opaque": false,
+                     "rect": "82,99,126,121",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1184": {
+                  "#name": "field \"Message\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Invalid License Code. Please try again or contact support@runrev.com for assistance."
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "#f3be26",
+                     "htmlText": "<p><font color=\"#F3BE26\">This prerelease version has expired and is no longer functional.</font></p>\n<p><font color=\"#F4DD9A\">Please check for an update by visiting our site.</font></p>",
+                     "id": "1184",
+                     "lockText": true,
+                     "name": "Message",
+                     "opaque": false,
+                     "rect": "112,89,473,124",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Arial",
+                     "textSize": "12",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1226": {
+                  "#name": "field \"Activate\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Already bought a license? Get a Activate it Now"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "behavior": "stack \"EnvironmentUnlicensedActivateFieldBehavior\"",
+                     "dontWrap": true,
+                     "foreColor": "192,192,192",
+                     "htmlText": "<p> </p>",
+                     "id": "1226",
+                     "lockText": true,
+                     "name": "Activate",
+                     "opaque": false,
+                     "rect": "34,288,532,309",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1248": {
+                  "#name": "button \"Underlay Full\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "icon": "10014",
+                     "id": "1248",
+                     "name": "Underlay Full",
+                     "opaque": false,
+                     "rect": "24,74,543,302",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "behavior": "stack \"EnvironmentUnlicensedBkgndBehavior\"",
+               "id": "1189",
+               "name": "Unlicensed",
+               "rect": "20,70,547,306"
+            }
+         },
+         "1244": {
+            "#name": "card \"Launch\"",
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "0"
+               }
+            },
+            "properties": {
+               "id": "1244",
+               "name": "Launch"
+            }
+         },
+         "1267": {
+            "#name": "card \"AccountSignup\"",
+            "childcontrols": {
+               "1281": "#shared group",
+               "1315": {
+                  "#name": "graphic \"h_divider\"",
+                  "properties": {
+                     "foreColor": "242,242,242",
+                     "id": "1315",
+                     "layer": "8",
+                     "name": "h_divider",
+                     "points": "88,222\n936,222",
+                     "rect": "87,221,937,223",
+                     "style": "line"
+                  }
+               },
+               "1318": {
+                  "#name": "field \"name label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "First Name\n"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>First Name</p>\n<p></p>",
+                     "id": "1318",
+                     "layer": "9",
+                     "lockText": true,
+                     "name": "name label",
+                     "opaque": false,
+                     "rect": "146,294,246,324",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "18",
+                     "traversalOn": false
+                  }
+               },
+               "1319": {
+                  "#name": "field \"email label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Email address"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Email address</p>",
+                     "id": "1319",
+                     "layer": "10",
+                     "lockText": true,
+                     "name": "email label",
+                     "opaque": false,
+                     "rect": "92,336,246,366",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textSize": "18",
+                     "traversalOn": false
+                  }
+               },
+               "1320": {
+                  "#name": "field \"password label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Password"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Password</p>",
+                     "id": "1320",
+                     "layer": "11",
+                     "lockText": true,
+                     "name": "password label",
+                     "opaque": false,
+                     "rect": "146,377,246,407",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textSize": "18",
+                     "traversalOn": false
+                  }
+               },
+               "1321": {
+                  "#name": "field \"confirm label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Retype password"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Retype password</p>",
+                     "id": "1321",
+                     "layer": "12",
+                     "lockText": true,
+                     "name": "confirm label",
+                     "opaque": false,
+                     "rect": "72,418,246,448",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textSize": "18",
+                     "traversalOn": false
+                  }
+               },
+               "1322": {
+                  "#name": "field \"skip\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Skip this step"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Skip this step</p>",
+                     "id": "1322",
+                     "layer": "13",
+                     "lockText": true,
+                     "name": "skip",
+                     "opaque": false,
+                     "rect": "242,502,342,523",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textSize": "12",
+                     "traversalOn": false
+                  }
+               },
+               "1323": {
+                  "#name": "button \"Create Account\"",
+                  "properties": {
+                     "backColor": "174,208,53",
+                     "borderWidth": "0",
+                     "foreColor": "255,255,255",
+                     "hiliteBorder": false,
+                     "id": "1323",
+                     "layer": "14",
+                     "name": "Create Account",
+                     "rect": "250,460,412,492",
+                     "showBorder": false,
+                     "style": "rectangle",
+                     "textSize": "18",
+                     "textStyle": "bold",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1324": {
+                  "#name": "field \"account\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Environment_1267_1324_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "%file%: assets/Environment_1267_1324_htmlText.txt",
+                     "id": "1324",
+                     "layer": "15",
+                     "lockText": true,
+                     "name": "account",
+                     "opaque": false,
+                     "rect": "561,285,938,517",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textSize": "12",
+                     "traversalOn": false
+                  }
+               },
+               "1325": {
+                  "#name": "field \"password\"",
+                  "customproperties": {
+                     "cPassword": null
+                  },
+                  "properties": {
+                     "backPattern": "10070",
+                     "behavior": "button id 1331 of stack \"Environment\"",
+                     "id": "1325",
+                     "layer": "19",
+                     "name": "password",
+                     "rect": "250,377,436,407",
+                     "textSize": "18"
+                  }
+               },
+               "1326": {
+                  "#name": "field \"retype password\"",
+                  "customproperties": {
+                     "cPassword": null
+                  },
+                  "properties": {
+                     "backPattern": "10070",
+                     "behavior": "button id 1331 of stack \"Environment\"",
+                     "id": "1326",
+                     "layer": "20",
+                     "name": "retype password",
+                     "rect": "250,418,436,448",
+                     "textSize": "18"
+                  }
+               },
+               "1327": {
+                  "#name": "field \"email\"",
+                  "properties": {
+                     "backPattern": "10070",
+                     "id": "1327",
+                     "layer": "18",
+                     "name": "email",
+                     "rect": "250,336,497,366",
+                     "textSize": "18"
+                  }
+               },
+               "1328": {
+                  "#name": "field \"name\"",
+                  "properties": {
+                     "backPattern": "10070",
+                     "id": "1328",
+                     "layer": "16",
+                     "name": "name",
+                     "rect": "250,294,436,324",
+                     "textSize": "18"
+                  }
+               },
+               "1330": {
+                  "#name": "field \"signup_message\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "224,114,42",
+                     "id": "1330",
+                     "layer": "17",
+                     "lockText": true,
+                     "name": "signup_message",
+                     "opaque": false,
+                     "rect": "88,239,938,273",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "textSize": "18",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1331": {
+                  "#name": "button \"passwordFieldBehavior\"",
+                  "properties": {
+                     "behavior": "stack \"EnvironmentAccountSignupPasswordFieldBehaviorButtonBehavior\"",
+                     "id": "1331",
+                     "layer": "21",
+                     "name": "passwordFieldBehavior",
+                     "rect": "10,12,92,35",
+                     "style": "rectangle",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1335": {
+                  "#name": "image \"livecode-logo-community.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1335",
+                     "layer": "22",
+                     "name": "livecode-logo-community.png",
+                     "rect": "364,79,661,158",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Environment_1267_1335_text.png"
+                  }
+               },
+               "1337": {
+                  "#name": "image \"loader\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1337",
+                     "layer": "23",
+                     "name": "loader",
+                     "rect": "419,467,435,483",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Environment_1267_1337_text.png",
+                     "visible": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "23"
+               }
+            },
+            "properties": {
+               "backColor": "255,255,255",
+               "behavior": "stack \"EnvironmentAccountSignupCardBehavior\"",
+               "foreColor": "95,95,95",
+               "id": "1267",
+               "layer": "3",
+               "name": "AccountSignup"
+            }
+         },
+         "1268": {
+            "#name": "card \"Introduction\"",
+            "childcontrols": {
+               "1281": "#shared group",
+               "1302": {
+                  "#name": "button \"Next\"",
+                  "properties": {
+                     "id": "1302",
+                     "layer": "8",
+                     "name": "Next",
+                     "rect": "458,280,540,303",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "8"
+               }
+            },
+            "properties": {
+               "id": "1268",
+               "layer": "4",
+               "name": "Introduction"
+            }
+         },
+         "1269": {
+            "#name": "card \"GetStarted\"",
+            "childcontrols": {
+               "1281": "#shared group",
+               "1303": {
+                  "#name": "button \"Done\"",
+                  "properties": {
+                     "id": "1303",
+                     "layer": "8",
+                     "name": "Done",
+                     "rect": "458,280,540,303",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "8"
+               }
+            },
+            "properties": {
+               "id": "1269",
+               "layer": "5",
+               "name": "GetStarted"
+            }
+         },
+         "1281": {
+            "#name": "group \"getStartedStatus\"",
+            "childcontrols": {
+               "1273": {
+                  "#name": "field \"account label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Free Account Signup"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Free Account Signup</p>",
+                     "id": "1273",
+                     "lockText": true,
+                     "name": "account label",
+                     "opaque": false,
+                     "rect": "56,38,178,59",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "traversalOn": false
+                  }
+               },
+               "1274": {
+                  "#name": "field \"introduction label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Introduction"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Introduction</p>",
+                     "id": "1274",
+                     "lockText": true,
+                     "name": "introduction label",
+                     "opaque": false,
+                     "rect": "226,38,348,59",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "traversalOn": false
+                  }
+               },
+               "1275": {
+                  "#name": "field \"start label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Get Started"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Get Started</p>",
+                     "id": "1275",
+                     "lockText": true,
+                     "name": "start label",
+                     "opaque": false,
+                     "rect": "386,38,508,59",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "center",
+                     "traversalOn": false
+                  }
+               },
+               "1278": {
+                  "#name": "graphic \"accountIndicator\"",
+                  "properties": {
+                     "backColor": "173,208,54",
+                     "filled": true,
+                     "id": "1278",
+                     "lineSize": "0",
+                     "name": "accountIndicator",
+                     "opaque": true,
+                     "rect": "110,59,122,71",
+                     "style": "oval"
+                  }
+               },
+               "1279": {
+                  "#name": "graphic \"introductionIndicator\"",
+                  "properties": {
+                     "backColor": "white",
+                     "filled": true,
+                     "id": "1279",
+                     "lineSize": "0",
+                     "name": "introductionIndicator",
+                     "opaque": true,
+                     "rect": "280,59,292,71",
+                     "style": "oval"
+                  }
+               },
+               "1280": {
+                  "#name": "graphic \"getStartedIndicator\"",
+                  "properties": {
+                     "backColor": "white",
+                     "filled": true,
+                     "id": "1280",
+                     "lineSize": "0",
+                     "name": "getStartedIndicator",
+                     "opaque": true,
+                     "rect": "440,59,452,71",
+                     "style": "oval"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "behavior": "stack \"EnvironmentGetStartedGetStartedStatusGroupBehavior\"",
+               "id": "1281",
+               "name": "getStartedStatus",
+               "rect": "52,34,512,75",
+               "sharedBehavior": true,
+               "visible": false
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1337"
+         }
+      },
+      "longID": "stack \"Environment\"",
+      "properties": {
+         "behavior": "stack \"EnvironmentStackBehavior\"",
+         "decorations": "forcetaskbar",
+         "fileName": "environment.livecode",
+         "id": "1337",
+         "linkColor": "#ffffff",
+         "linkHiliteColor": "#87af65",
+         "linkVisitedColor": "#ffffff",
+         "liveResizing": false,
+         "name": "Environment",
+         "rect": "477,246,1501,836",
+         "resizable": false,
+         "stackFiles": "%file%: assets/Environment_stackFiles.bin",
+         "textFont": "Lucida Grande",
+         "textSize": "11",
+         "textStyle": "plain",
+         "title": "LiveCode Activation",
+         "underlineLinks": true
+      },
+      "sharedGroupIDs": "1068\n1189\n1131\n1281"
+   },
+   "EnvironmentResources": {
+      "#name": "stack \"EnvironmentResources\"",
+      "backgroundIDs": null,
+      "cardIDs": "1039\n1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Resources\"",
+            "childcontrols": {
+               "10000": {
+                  "#name": "image \"background.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "10000",
+                     "layer": "12",
+                     "name": "background.png",
+                     "rect": "6,4,576,334",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/EnvironmentResources_1002_10000_text.png"
+                  }
+               },
+               "10002": {
+                  "#name": "image \"warning.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "10002",
+                     "layer": "5",
+                     "name": "warning.png",
+                     "opaque": false,
+                     "rect": "188,438,208,456",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/EnvironmentResources_1002_10002_text.png"
+                  }
+               },
+               "10025": {
+                  "#name": "image \"form-password-blank.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "10025",
+                     "layer": "7",
+                     "name": "form-password-blank.png",
+                     "opaque": false,
+                     "rect": "630,52,646,68",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAI5JREFUeNpinH5BVoGBgeE8EAswkAY+ALEhE5AIIEMzA1RP\nAMgAewbygT3IAAcKDDBgItP5MKDAxEAhGCYGfKBA/weQARcoMOACyICDFBhwEGTAAgoM2MAI\nIqEZSgFJYj1SAnsAxIVYwupBpsHjB4zoRkINuw/VMBGoqAGfE1iwiIFy5waQrSAbCPkBIMAA\nIacdwf4hlqEAAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "10030": {
+                  "#name": "image \"ajax-loader (1).gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "10030",
+                     "layer": "6",
+                     "name": "ajax-loader (1).gif",
+                     "rect": "624,86,655,117",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/EnvironmentResources_1002_10030_text.png"
+                  }
+               },
+               "10054": {
+                  "#name": "image \"form.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "10054",
+                     "layer": "13",
+                     "name": "form.png",
+                     "opaque": false,
+                     "rect": "672,232,962,316",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/EnvironmentResources_1002_10054_text.png"
+                  }
+               },
+               "10057": {
+                  "#name": "group \"Loader\"",
+                  "childcontrols": {
+                     "10058": {
+                        "#name": "graphic \"line,0\"",
+                        "properties": {
+                           "foreColor": "128,128,128",
+                           "id": "10058",
+                           "layer": "16",
+                           "lineSize": "2",
+                           "name": "line,0",
+                           "points": "646,155\n653,155",
+                           "rect": "644,153,655,157",
+                           "style": "line"
+                        }
+                     },
+                     "10059": {
+                        "#name": "graphic \"line,1\"",
+                        "properties": {
+                           "foreColor": "75,75,75",
+                           "id": "10059",
+                           "layer": "17",
+                           "lineSize": "2",
+                           "name": "line,1",
+                           "points": "647,156\n651,160",
+                           "rect": "645,154,653,162",
+                           "style": "line"
+                        }
+                     },
+                     "10060": {
+                        "#name": "graphic \"line,2\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "10060",
+                           "layer": "18",
+                           "lineSize": "2",
+                           "name": "line,2",
+                           "points": "644,158\n647,164",
+                           "rect": "642,156,649,166",
+                           "style": "line"
+                        }
+                     },
+                     "10061": {
+                        "#name": "graphic \"line,3\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "10061",
+                           "layer": "19",
+                           "lineSize": "2",
+                           "name": "line,3",
+                           "points": "642,159\n642,166",
+                           "rect": "640,157,644,168",
+                           "style": "line"
+                        }
+                     },
+                     "10062": {
+                        "#name": "graphic \"line,4\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "10062",
+                           "layer": "20",
+                           "lineSize": "2",
+                           "name": "line,4",
+                           "points": "640,158\n636,164",
+                           "rect": "634,156,642,166",
+                           "style": "line"
+                        }
+                     },
+                     "10063": {
+                        "#name": "graphic \"line,5\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "10063",
+                           "layer": "21",
+                           "lineSize": "2",
+                           "name": "line,5",
+                           "points": "638,157\n632,160",
+                           "rect": "630,155,640,162",
+                           "style": "line"
+                        }
+                     },
+                     "10064": {
+                        "#name": "graphic \"line,6\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "10064",
+                           "layer": "22",
+                           "lineSize": "2",
+                           "name": "line,6",
+                           "points": "638,155\n631,155",
+                           "rect": "629,153,640,157",
+                           "style": "line"
+                        }
+                     },
+                     "10065": {
+                        "#name": "graphic \"line,7\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "10065",
+                           "layer": "23",
+                           "lineSize": "2",
+                           "name": "line,7",
+                           "points": "638,153\n632,149",
+                           "rect": "630,147,640,155",
+                           "style": "line"
+                        }
+                     },
+                     "10066": {
+                        "#name": "graphic \"line,8\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "10066",
+                           "layer": "24",
+                           "lineSize": "2",
+                           "name": "line,8",
+                           "points": "640,151\n636,145",
+                           "rect": "634,143,642,153",
+                           "style": "line"
+                        }
+                     },
+                     "10067": {
+                        "#name": "graphic \"line,9\"",
+                        "properties": {
+                           "foreColor": "210,210,210",
+                           "id": "10067",
+                           "layer": "25",
+                           "lineSize": "2",
+                           "name": "line,9",
+                           "points": "642,151\n642,144",
+                           "rect": "640,142,644,153",
+                           "style": "line"
+                        }
+                     },
+                     "10068": {
+                        "#name": "graphic \"line,10\"",
+                        "properties": {
+                           "foreColor": "190,190,190",
+                           "id": "10068",
+                           "layer": "26",
+                           "lineSize": "2",
+                           "name": "line,10",
+                           "points": "644,151\n647,145",
+                           "rect": "642,143,649,153",
+                           "style": "line"
+                        }
+                     },
+                     "10069": {
+                        "#name": "graphic \"line,11\"",
+                        "properties": {
+                           "foreColor": "150,150,150",
+                           "id": "10069",
+                           "layer": "27",
+                           "lineSize": "2",
+                           "name": "line,11",
+                           "points": "645,153\n651,149",
+                           "rect": "643,147,653,155",
+                           "style": "line"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "cColorMap": "190,190,190\n150,150,150\n128,128,128\n75,75,75\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210",
+                     "cDelay": "150",
+                     "cNumber": "12",
+                     "coldcolormap": "190,190,190\n150,150,150\n128,128,128\n75,75,75\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210\n210,210,210"
+                  },
+                  "properties": {
+                     "behavior": "stack \"EnvironmentResourcesResourcesLoaderGroupBehavior\"",
+                     "id": "10057",
+                     "layer": "15",
+                     "lockLoc": true,
+                     "name": "Loader",
+                     "rect": "629,142,655,168"
+                  }
+               },
+               "1027": {
+                  "#name": "button \"Push Button Behavior\"",
+                  "properties": {
+                     "behavior": "stack \"EnvironmentResourcesResourcesPushButtonBehaviorButtonBehavior\"",
+                     "foreColor": "#474747",
+                     "icon": "1033",
+                     "id": "1027",
+                     "layer": "1",
+                     "name": "Push Button Behavior",
+                     "rect": "172,394,312,417",
+                     "showIcon": true,
+                     "traversalOn": false
+                  }
+               },
+               "1028": {
+                  "#name": "group \"Template Push Button\"",
+                  "childcontrols": {
+                     "1029": {
+                        "#name": "button \"Button\"",
+                        "properties": {
+                           "foreColor": "white",
+                           "hiliteIcon": "1027",
+                           "hoverIcon": "1029",
+                           "icon": "1031",
+                           "id": "1029",
+                           "layer": "3",
+                           "margins": "0",
+                           "name": "Button",
+                           "opaque": false,
+                           "rect": "196,358,280,382",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "transparent",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "1030": {
+                        "#name": "field \"Label\"",
+                        "properties": {
+                           "autoHilite": false,
+                           "fixedLineHeight": false,
+                           "foreColor": "#ffffff",
+                           "htmlText": "<p>Cancel</p>",
+                           "id": "1030",
+                           "layer": "4",
+                           "lockText": true,
+                           "margins": "8,9,8,2",
+                           "name": "Label",
+                           "opaque": false,
+                           "rect": "196,358,280,382",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "transparent",
+                           "textAlign": "center",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1027 of stack \"EnvironmentResources\"",
+                     "id": "1028",
+                     "layer": "2",
+                     "margins": "0",
+                     "name": "Template Push Button",
+                     "rect": "196,358,280,382",
+                     "selectGroupedControls": false
+                  }
+               },
+               "1031": {
+                  "#name": "image \"button-standard.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1031",
+                     "layer": "8",
+                     "name": "button-standard.png",
+                     "opaque": false,
+                     "rect": "480,340,562,362",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAFIAAAAWCAYAAABT5cvhAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAItJREFUeNrs2V0KQEAYheHxkx0oZWeulE0oIvah5so+ZC1K\n2YTzLYFxpfet8y3gae4m2rctc84NWq2Vjp50aF6bU51JazF5lT28TktinQaP4BqDzHEILo8x\n+CYggQQSSAISSCCBJCCBBJKABBLIv0NeMAR3GeSCQ3De/mxGzT7AKq3A5FGntmr9LcAAPeEO\nERnidboAAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "1032": {
+                  "#name": "image \"button-hover.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1032",
+                     "layer": "9",
+                     "name": "button-hover.png",
+                     "opaque": false,
+                     "rect": "480,366,562,388",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAFIAAAAWCAYAAABT5cvhAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAI1JREFUeNrs2d8JQFAYhvHjTzZQyhTWcaUsoYgYwp1yZR5L\nKGUJ7zcCx5Wep95vgF/n7gR7MSfOuV6rtNzRkw5t1aZYZ9QaTF5lD6/VolCnxsO72iBTHLxL\nQwy+CUgggQSSgAQSSCAJSCCBJCCBBPLvkBcM3l0GueDg3Wp/NoNmH2CllmHyqFPbtO4WYAAG\nxA1jC4p9rQAAAABJRU5ErkJggg=="
+                     }
+                  }
+               },
+               "1033": {
+                  "#name": "image \"button-disabled.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1033",
+                     "layer": "10",
+                     "name": "button-disabled.png",
+                     "opaque": false,
+                     "rect": "478,418,560,440",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAFIAAAAWCAYAAABT5cvhAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAItJREFUeNrs2V0KQEAYheHxkx0oZWeulE0oIvah5so+ZC1K\n2YTzLYFxpfet8y3gae4m2rctc84NWq2Vjp50aF6bU51JazF5lT28TktinQaP4BqDzHEILo8x\n+CYggQQSSAISSCCBJCCBBJKABBLIv0NeMAR3GeSCQ3De/mxGzT7AKq3A5FGntmr9LcAAPeEO\nERnidboAAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "1034": {
+                  "#name": "image \"button-default.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1034",
+                     "layer": "11",
+                     "name": "button-default.png",
+                     "opaque": false,
+                     "rect": "480,392,562,414",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAFIAAAAWCAYAAABT5cvhAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAIxJREFUeNrs2U0JgEAUReHxBxsIgims40qwhKAo2kOYlXks\nIQiW8L4IOq7kHLgvwMfsJtr2KnPOjVqjlY6edGheW1KdWesweZU9vF5LYp0Wj+Bag8xxCC6P\nMfgmIIEEEkgCEkgggSQggQSSgAQSyL9DXjAEdxnkikNw3v5sJs0+wGqtwORRp7Zpwy3AAMtO\nDXMqjaenAAAAAElFTkSuQmCC"
+                     }
+                  }
+               },
+               "1035": {
+                  "#name": "image \"button-pressed.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1035",
+                     "layer": "14",
+                     "name": "button-pressed.png",
+                     "opaque": false,
+                     "rect": "482,315,564,337",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAFIAAAAWCAYAAABT5cvhAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAJNJREFUeNrs0rsJhEAYReHxgckaCRMZiV1sH5sLtmCwMCBo\nGYJgbBvWIizYhHdK0DFazoH7M/HHRN1aZ8aYXmu00tCVdm3RxlRn0L6Y3Mp/PKclsU6LR3Ct\nh7Q4BGdjDJ4JSCCBBJKABBJIIAlIIIEkIIEE8t8hDxiCOzzkjENwS/L+FJseL63Sckwu9dMm\nzZ0CDABbHQ2kaTvzhgAAAABJRU5ErkJggg=="
+                     }
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "layer": "2",
+               "name": "Resources"
+            }
+         },
+         "1039": {
+            "#name": "card \"Main\"",
+            "childcontrols": {
+               "10070": {
+                  "#name": "image \"input-field-background-pattern.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "10070",
+                     "layer": "1",
+                     "name": "input-field-background-pattern.gif",
+                     "rect": "513,312,541,340",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhHAAcAKIAAP7+/vr6+vf39/39/fn5+fj4+P///wAAACH5BAAAAAAALAAAAAAcABwA\nAANcaLq8QCXKGUm75tFdLGYaN3mfEopV6UBoqmZsS5YnOn+1eGM5t1+9za8RpAxBMdsL1nKp\niqOlIamTGpoda6B5bGxlWm4YLP0qy2I0eWkWCQZSQZo9f7V94zO9mQAAOw=="
+                     }
+                  }
+               }
+            },
+            "properties": {
+               "id": "1039",
+               "name": "Main"
+            }
+         }
+      },
+      "longID": "stack \"EnvironmentResources\" of stack \"Environment\"",
+      "properties": {
+         "decorations": "default",
+         "id": "10070",
+         "liveResizing": false,
+         "name": "EnvironmentResources",
+         "rect": "101,220,1155,873"
+      },
+      "sharedGroupIDs": null
+   }
+}

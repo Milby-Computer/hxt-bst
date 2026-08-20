@@ -1,0 +1,24 @@
+<p><font face="Verdana" size="18">A Simple Browser</font></p>
+<p></p>
+<p>There is a very simple implementation of a browser object on this card. You should be connected to the Internet in order to see a browser window open pointing to www.google.com.</p>
+<p></p>
+<p><font face="Courier New" size="12">local sBrowserId</font></p>
+<p></p>
+<p><font face="Courier New" size="12">on altBrowserOn</font></p>
+<p><font face="Courier New" size="12">  -- We pass the windowId of the stack to revBrowser </font></p>
+<p><font face="Courier New" size="12">  -- so that it can determine which window to place the</font></p>
+<p><font face="Courier New" size="12">  -- browser object into</font></p>
+<p><font face="Courier New" size="12">  put the windowid of this stack into tWinID</font></p>
+<p><font face="Courier New" size="12">  </font></p>
+<p><font face="Courier New" size="12">  -- Open the browser, using the windowId and initial url</font></p>
+<p><font face="Courier New" size="12">  put revBrowserOpen(tWinID,"http://www.google.com") into sBrowserId</font></p>
+<p></p>
+<p><font face="Courier New" size="12">  -- Set some basic properties for the browser</font></p>
+<p><font face="Courier New" size="12">  revBrowserSet sBrowserId, "showborder","true"</font></p>
+<p><font face="Courier New" size="12">  revBrowserSet sBrowserId, "rect",rect of img "browserimage"</font></p>
+<p><font face="Courier New" size="12">end altBrowserOn</font></p>
+<p></p>
+<p><font face="Courier New" size="12">on altBrowserOff</font></p>
+<p><font face="Courier New" size="12">  revBrowserClose sBrowserId</font></p>
+<p><font face="Courier New" size="12">end altBrowserOff</font></p>
+<p></p>

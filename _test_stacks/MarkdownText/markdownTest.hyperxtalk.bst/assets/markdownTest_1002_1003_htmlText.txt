@@ -1,0 +1,22 @@
+<p><b><font size="34">Project Name</font></b></p>
+<p>Short description of what this project does and who it is for.</p>
+<p><b><font size="24">Features</font></b></p>
+<ul type="disc">
+<li>
+<p>Feature one</p>
+</li>
+<li>
+<p>Feature two</p>
+</li>
+<li>
+<p>Feature three</p>
+</li>
+</ul><p><b><font size="24">Installation</font></b></p>
+<p><font face="Courier">npm install your-project-name</font></p>
+<p><b><font size="24">Usage</font></b></p>
+<p><font face="Courier">const project = require('your-project-name');</font></p>
+<p><font face="Courier">project.doSomething();</font></p>
+<p><b><font size="24">Contributing</font></b></p>
+<p>Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.</p>
+<p><b><font size="24">Licence</font></b></p>
+<p><a name="https://choosealicence.com/licenses/mit/">MIT</a></p>

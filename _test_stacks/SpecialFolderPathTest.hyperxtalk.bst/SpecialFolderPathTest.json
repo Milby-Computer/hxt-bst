@@ -1,0 +1,56 @@
+{
+   "#mainstack": "SpecialFolderPathTest",
+   "SpecialFolderPathTest": {
+      "#name": "stack \"SpecialFolderPathTest\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Desktop\"",
+                  "properties": {
+                     "id": "1003",
+                     "layer": "1",
+                     "name": "Desktop",
+                     "rect": "84,72,166,95",
+                     "traversalOn": false
+                  }
+               },
+               "1004": {
+                  "#name": "button \"Documents\"",
+                  "properties": {
+                     "id": "1004",
+                     "layer": "2",
+                     "name": "Documents",
+                     "rect": "247,70,329,93",
+                     "traversalOn": false
+                  }
+               },
+               "1005": {
+                  "#name": "field \"Field_1\"",
+                  "properties": {
+                     "id": "1005",
+                     "layer": "3",
+                     "name": "Field_1",
+                     "rect": "55,141,499,162"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "longID": "stack \"SpecialFolderPathTest\"",
+      "properties": {
+         "fileName": "SpecialFolderPathTest.hyperxtalk",
+         "id": "1005",
+         "name": "SpecialFolderPathTest",
+         "rect": "956,330,1475,686"
+      },
+      "sharedGroupIDs": null
+   }
+}

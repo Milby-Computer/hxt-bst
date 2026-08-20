@@ -1,0 +1,9 @@
+<p><font face="Verdana" size="18">revBrowser Explained</font></p>
+<p></p>
+<p><font face="Tahoma" size="10">revBrowser is an external library for Revolution that enables developers to embed a fully feature web-browser into their stacks.</font></p>
+<p></p>
+<p><font face="Tahoma" size="10">The revBrowser external comes as standard with Revolution and you can use simple commands, explained later in this stack, to display it on a card, go to a URL, process refreshes and links, etc..</font></p>
+<p></p>
+<p><font face="Tahoma" size="10">This stack is setup to go over many of the common things you may want to do using revBrowser. Also, there's a built-in substack which you can use in your projects which is a basic browser stack, ready to go.</font></p>
+<p></p>
+<p><font face="Tahoma" size="10">So, to learn more, press the NEXT button!</font></p>

@@ -1,0 +1,12 @@
+<p><font face="Verdana" size="18">Welcome to the revBrowser Demo stack </font></p>
+<p></p>
+<p>revBrowser is an external for Revolution which will allow embedding a browser object inside a Revolution application.</p>
+<p></p>
+<p>This Demo Stack does the following:</p>
+<p></p>
+<p>  - Overview of revBrowser capabilities</p>
+<p>  - Technical Documentation on using revBrowser</p>
+<p>  - <font size="10">Provides numerous scripts and special handlers/functions</font></p>
+<p><font size="10">  - Install a basic browser substack into an existing project</font></p>
+<p></p>
+<p><font face="Tahoma" size="10">If you want a quick look at what revBrowser can do, just click the<b> Launch Browser</b> button below.</font></p>

@@ -1,0 +1,23 @@
+<p><font face="Verdana" size="18">Setting and Getting Selected Text</font></p>
+<p></p>
+<p>You can get the selected text of the browser window using the <b><font face="Tahoma" size="11">revBrowserGet (&lt;browserId&gt;, "selected")</font></b><font face="Tahoma" size="11"> where &lt;browserID&gt; is the integer identifier of the browser.</font></p>
+<p></p>
+<p>Try it. Select some text from the browser window below, then press the <b><font face="Tahoma" size="11">Get Selected Text</font></b><font face="Tahoma" size="11"> button.</font></p>
+<p></p>
+<p>Conversely, you may also set the selected text of the browser window using the revBrowserSet &lt;browserId&gt;, "selected", &lt;the text string to select&gt;</p>
+<p></p>
+<p>Try it. Press the <b><font face="Tahoma" size="11">Set Selected Text</font></b><font face="Tahoma" size="11"> button and type in a string you wish to select in the browser. Every occurance of your string will be hilited in the browser.</font></p>
+<p></p>
+<p>The script of the <b><font face="Tahoma" size="11">Get Selected Text</font></b><font face="Tahoma" size="11"> button:</font></p>
+<p></p>
+<p><font face="Courier New" size="12">on mouseUp</font></p>
+<p><font face="Courier New" size="12">    put revBrowserGet(browserId(), "selected") into tMsg</font></p>
+<p><font face="Courier New" size="12">    answer information tMsg</font></p>
+<p><font face="Courier New" size="12">end mouseUp</font></p>
+<p></p>
+<p>and the script of the <b><font face="Tahoma" size="11">Set Selected Text</font></b><font face="Tahoma" size="11"> button:</font></p>
+<p></p>
+<p><font face="Courier New" size="12">on mouseUp</font></p>
+<p><font face="Courier New" size="12">  ask "String to Select"</font></p>
+<p><font face="Courier New" size="12">  revBrowserSet browserId(), "selected", it</font></p>
+<p><font face="Courier New" size="12">end mouseUp</font></p>

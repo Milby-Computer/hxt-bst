@@ -1,0 +1,34 @@
+<p><font face="Verdana" size="18">Basic Navigation</font></p>
+<p></p>
+<p>You can do all the basics like go back, go forward, refresh and stop as well as navigate to a url. Notice, this interface DOES NOT provide any user feedback about what is going on! It doesn't even update the URL field. We'll get to that in a moment.</p>
+<p></p>
+<p>Below are the scripts of the buttons: Go Back, Go Forward, Refresh, Stop, and GO (click the Show Text button above right to view scripts)</p>
+<p></p>
+<p>The function browserId returns the ID of the browser object created when this card loads. These scripts have been simplified to omit details such as error checking.</p>
+<p></p>
+<p><font color="#68228B"># Script of button Go Back</font></p>
+<p><font color="#980517">on </font>mouseUp</p>
+<p>  revBrowserBack browserId<font color="#000000">()</font></p>
+<p><font color="#980517">end </font>mouseUp</p>
+<p></p>
+<p><font color="#68228B"># Script of button Go Forward</font></p>
+<p><font color="#980517">on </font>mouseUp</p>
+<p>  revBrowserForward browserId<font color="#000000">()</font></p>
+<p><font color="#980517">end </font>mouseUp</p>
+<p></p>
+<p><font color="#68228B"># Script of button Go Refresh</font></p>
+<p><font color="#980517">on </font>mouseUp</p>
+<p>  revBrowserRefresh browserId<font color="#000000">()</font></p>
+<p><font color="#980517">end </font>mouseUp</p>
+<p></p>
+<p><font color="#68228B"># Script of button Go Back</font></p>
+<p><font color="#980517">on </font>mouseUp</p>
+<p>  revBrowserStop browserId<font color="#000000">()</font></p>
+<p><font color="#980517">end </font>mouseUp</p>
+<p></p>
+<p><font color="#68228B"># Script of button Go</font></p>
+<p><font color="#980517">on </font>mouseUp</p>
+<p>  revBrowserSet browserId(), "url", the text of field "theUrl"</p>
+<p><font color="#980517">end </font>mouseUp</p>
+<p></p>
+<p></p>

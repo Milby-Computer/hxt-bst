@@ -1,0 +1,22 @@
+<p><font face="Verdana" size="18">Locking out Domains (and Locking them in)</font></p>
+<p></p>
+<p>You can use revBrowser callbacks to prevent users from accessing domains or forcing them to only go to a set domain. For instance, say you only want people to access the google.com domain, and not go off of it (valuable for intranet development, child-safe browsers, etc.).</p>
+<p></p>
+<p>Before revBrowser navigates to a domain, it sends a message to the card:</p>
+<p></p>
+<p>browserBeforeNavigate pBrowserId, pURL</p>
+<p></p>
+<p>where pURL is the full URL of where it intends to go. So if you trap this URL and test it, you can cancel the browser before it ever goes to the webpage. There are a number of callbacks revBrowser has. You can view the <a href="documentation"><font face="Tahoma" size="11">documentation</font></a><font face="Tahoma" size="11"> to learn more about them.</font></p>
+<p></p>
+<p>Try it. Do a search in Google, then click on a link. You will see that revBrowser won't allow you to navigate anywhere outside of google.com.</p>
+<p></p>
+<p>Here's the callback handler added to this card script:</p>
+<p></p>
+<p><font face="Courier New" size="12">on browserBeforeNavigate pBrowserId, pUrl</font></p>
+<p><font face="Courier New" size="12">  global browserCancel</font></p>
+<p><font face="Courier New" size="12">  if "google.com" is not in pUrl then</font></p>
+<p><font face="Courier New" size="12">    answer warning "Won't allow you to go to a domain outside google.com"</font></p>
+<p><font face="Courier New" size="12">    put true into browserCancel</font></p>
+<p><font face="Courier New" size="12">  end if</font></p>
+<p><font face="Courier New" size="12">end browserBeforeNavigate</font></p>
+<p></p>

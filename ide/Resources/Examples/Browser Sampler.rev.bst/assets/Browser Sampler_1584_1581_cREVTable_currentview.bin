@@ -1,0 +1,23 @@
+<p><font face="Verdana" size="18">Setting and Getting Selected Text</font></p>
+<p></p>
+<p>You can get the selected text of the browser window using the <b>revBrowserGet (&lt;browserId&gt;, &quot;selected&quot;)</b> where &lt;browserID&gt; is the integer identifier of the browser.</p>
+<p></p>
+<p>Try it. Select some text from the browser window below, then press the <b>Get Selected Text</b> button.</p>
+<p></p>
+<p>Conversely, you may also set the selected text of the browser window using the revBrowserSet &lt;browserId&gt;, &quot;selected&quot;, &lt;the text string to select&gt;</p>
+<p></p>
+<p>Try it. Press the <b>Set Selected Text</b> button and type in a string you wish to select in the browser. Every occurance of your string will be hilited in the browser.</p>
+<p></p>
+<p>The script of the <b>Get Selected Text</b> button:</p>
+<p></p>
+<p><font face="Courier New" size="12">on mouseUp</font></p>
+<p><font face="Courier New" size="12">    put revBrowserGet(browserId(), &quot;selected&quot;) into tMsg</font></p>
+<p><font face="Courier New" size="12">    answer information tMsg</font></p>
+<p><font face="Courier New" size="12">end mouseUp</font></p>
+<p></p>
+<p>and the script of the <b>Set Selected Text</b> button:</p>
+<p></p>
+<p><font face="Courier New" size="12">on mouseUp</font></p>
+<p><font face="Courier New" size="12">  ask &quot;String to Select&quot;</font></p>
+<p><font face="Courier New" size="12">  revBrowserSet browserId(), &quot;selected&quot;, it</font></p>
+<p><font face="Courier New" size="12">end mouseUp</font></p>

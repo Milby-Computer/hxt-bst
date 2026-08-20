@@ -1,0 +1,3 @@
+<p>The list on the left shows the platforms you can build Revolution applications for. Click a platform name for details.</p>
+<p></p>
+<p>When you&rsquo;re creating an application for a platform, that platform&rsquo;s engine must be in the &ldquo;engines&rdquo; folder inside the Revolution folder. If you need an engine, the Standalone Application Settings window automatically downloads it from the Revolution web site.</p>

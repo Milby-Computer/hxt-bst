@@ -1,0 +1,1 @@
+<p>You can build <font face="Verdana" size="11">Mac OS</font> applications for Motorola 68K architecture, <font face="Verdana" size="11">PowerPC</font> architecture, or a single application that includes code for both (a &ldquo;fat app&rdquo;). Applications created with Revolution run on Mac OS version 7.1 or later.</p>

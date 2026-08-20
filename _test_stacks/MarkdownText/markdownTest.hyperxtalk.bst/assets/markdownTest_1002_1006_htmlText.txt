@@ -1,0 +1,30 @@
+<p># Project Name</p>
+<p></p>
+<p>Short description of what this project does and who it is for.</p>
+<p></p>
+<p>## Features</p>
+<p></p>
+<p>- Feature one</p>
+<p>- Feature two</p>
+<p>- Feature three</p>
+<p></p>
+<p>## Installation</p>
+<p></p>
+<p>```bash</p>
+<p>npm install your-project-name</p>
+<p>```</p>
+<p></p>
+<p>## Usage</p>
+<p></p>
+<p>```javascript</p>
+<p>const project = require('your-project-name');</p>
+<p>project.doSomething();</p>
+<p>```</p>
+<p></p>
+<p>## Contributing</p>
+<p></p>
+<p>Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.</p>
+<p></p>
+<p>## Licence</p>
+<p></p>
+<p>[MIT](https://choosealicence.com/licenses/mit/)</p>

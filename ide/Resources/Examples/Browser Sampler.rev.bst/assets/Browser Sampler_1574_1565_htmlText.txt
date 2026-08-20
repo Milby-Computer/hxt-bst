@@ -1,0 +1,49 @@
+<p><font face="Verdana" size="18">Navigation with Feedback</font></p>
+<p></p>
+<p>This card now has 2 user interface controls added:</p>
+<p></p>
+<p><b><font face="Tahoma" size="11">image spin.gif</font></b><font face="Tahoma" size="11"> - an animated gif which displays during the loading of a browser page.</font></p>
+<p><b><font face="Tahoma" size="11">field altStatus</font></b><font face="Tahoma" size="11"> - a status field below the browser which tells what the browser is doing</font></p>
+<p></p>
+<p>It also now correctly updates the URL field after the page is finished loading.</p>
+<p></p>
+<p>revBrowser uses callback commands to do this. Here's how it works. As in the previous example, the GO button has a call to the abLoadURL command, which in turn uses the <b><font face="Tahoma" size="11">revBrowserSet</font></b><font face="Tahoma" size="11"> <b>sBrowserId, "url",pURL</b> command to sent the browser to the URL (in this case the parameter defined in pURL). </font></p>
+<p></p>
+<p>Before the browser begins to access the page, the <b><font face="Tahoma" size="11">browserBeforeNavigate</font></b><font face="Tahoma" size="11"> message is sent to the current card of the stack containing the browser object. Here we handle the command which in turn calls the abIamBusy handler which starts the image spin.gif animating and puts the URL we're attempting to go to in the altStatus field. If we wanted to forbid the user from going to the domain in pURL, then we can trap it here and not let the browser go any further (see the example later on).</font></p>
+<p></p>
+<p>Once the browser finishes loading the page, it sends the <b><font face="Tahoma" size="11">browserDocumentComplete</font></b><font face="Tahoma" size="11"> handler to the current card of the stack containing the browser object. This is handled and calls abIamNotBusy which stops the animated.gif, puts "Finished" in the altStatus field, then puts the final destination URL in the URL field.</font></p>
+<p></p>
+<p>Note, the Refresh button code has changed so that the refresh can take advantage of the new interface buttons. This is because the revBrowserRefresh call does not generate a callback when the browser is finished whereas the revBrowserSet sBrowserId, "url" command does return a callback when the browser is finished loading.</p>
+<p></p>
+<p>Here's the code of this card which handles most of this logic (with the rest being in the buttons as before).</p>
+<p></p>
+<p><font color="#980517">on </font>browserBeforeNavigate pId<font color="#000000">, </font>pUrl</p>
+<p>  abIamBusy</p>
+<p><font color="#980517">end</font> browserBeforeNavigate</p>
+<p></p>
+<p><font color="#980517">on </font>browserDocumentComplete pId<font color="#000000">, </font>pUrl</p>
+<p>  aIamNotBusy</p>
+<p>  <font color="#0000FF">put</font> pUrl into field "theUrl"</p>
+<p><font color="#980517">end</font> browserDocumentComplete</p>
+<p></p>
+<p><font color="#980517">on</font> abLoadURL pURL</p>
+<p>  <font color="#980517">if</font> char 1 to 7 of pURL is not "http://" <font color="#980517">then</font></p>
+<p>    <font color="#0000FF">answer</font> warning "Please put 'http://' in front of your URL!"</p>
+<p>    <font color="#0000FF">exit</font> to <font color="#FF0000">top</font></p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p><font color="#980517">   </font></p>
+<p><font color="#980517">  if </font>sBrowserId is an integer <font color="#980517">then</font></p>
+<p>    revBrowserSet sBrowserId<font color="#000000">, </font>"url", pUrl</p>
+<p>  <font color="#980517">end</font> <font color="#980517">if</font></p>
+<p><font color="#980517">end</font> abLoadURL</p>
+<p></p>
+<p><font color="#980517">on</font> abIamBusy</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">repeatcount</font> of img "spin.gif" to -1</p>
+<p>  <font color="#0000FF">put</font> "Accessing page:" &amp;&amp; fld "theURL" into fld "altStatus"</p>
+<p><font color="#980517">end</font> abIamBusy</p>
+<p></p>
+<p><font color="#980517">on</font> abIamNotBusy</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">repeatcount</font> of img "spin.gif" to 0</p>
+<p>  <font color="#0000FF">set</font> the <font color="#FF0000">currentframe</font> of img "spin.gif" to 1</p>
+<p>  <font color="#0000FF">put</font> "Finished" into fld "altStatus"</p>
+<p><font color="#980517">end</font> abIamNotBusy</p>

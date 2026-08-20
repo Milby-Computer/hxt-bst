@@ -1,0 +1,4812 @@
+{
+   "#mainstack": "Browser Sampler",
+   "Browser Sampler": {
+      "#name": "stack \"Browser Sampler\"",
+      "#substacks": "InetBrowser\nViewer\nFlashDemo",
+      "backgroundIDs": "1072\n1081\n1021\n1031\n1160\n1169\n1186\n1210\n1223\n1353\n1480\n1457\n1506\n1647",
+      "cardIDs": "1002\n1033\n1034\n1638\n1119\n1547\n1574\n1131\n1584\n1593\n1617\n1628",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Introduction\"",
+            "childcontrols": {
+               "1010": {
+                  "#name": "image \"icon RightArrow2\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1010",
+                     "layer": "1",
+                     "name": "icon RightArrow2",
+                     "opaque": false,
+                     "rect": "10,10,29,28",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Browser Sampler_1002_1010_text.png",
+                     "visible": false
+                  }
+               },
+               "1011": {
+                  "#name": "image \"icon LeftArrow2\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1011",
+                     "layer": "2",
+                     "name": "icon LeftArrow2",
+                     "opaque": false,
+                     "rect": "10,10,29,28",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Browser Sampler_1002_1011_text.png",
+                     "visible": false
+                  }
+               },
+               "1020": {
+                  "#name": "image \"BG Graphite.png\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1020",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "name": "BG Graphite.png",
+                     "rect": "322,130,450,258",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Browser Sampler_1002_1020_text.png",
+                     "visible": false
+                  }
+               },
+               "1021": "#shared group",
+               "1028": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Browser Sampler_1002_1028_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Browser Sampler_1002_1028_htmlText.txt",
+                     "id": "1028",
+                     "layer": "17",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "12,90,608,441",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent"
+                  }
+               },
+               "1031": "#shared group",
+               "1537": {
+                  "#name": "button \"Launch Browser\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "0",
+                        "prop": null,
+                        "ScriptChunk": "char 19 to 149 of field 93",
+                        "varChecking": false
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1537",
+                     "layer": "18",
+                     "name": "Launch Browser",
+                     "rect": "21,358,156,395",
+                     "textFont": "Tahoma",
+                     "textSize": "14",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1647": "#shared group"
+            },
+            "custompropertysets": {
+               "cConsLast": {
+                  "HandlerName": "openStack\t \tmessage",
+                  "HandlerScroll": "0",
+                  "prop": null,
+                  "varChecking": false
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "19"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "Introduction"
+            }
+         },
+         "1021": {
+            "#name": "group \"ChapterSlider\"",
+            "childcontrols": {
+               "1145": {
+                  "#name": "image \"altScrollLeft.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "blendLevel": "99",
+                     "id": "1145",
+                     "layer": "12",
+                     "name": "altScrollLeft.png",
+                     "opaque": false,
+                     "rect": "266,454,270,471",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAAQAAAARCAYAAAD66g1WAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABdSURBVHjavE7BDQAhCCuIOoRL\n3P6zqZw14uMGuCYF2lCCtNbczJBS2jSKWityzhQwuhSllN31rF1TF1giDxURhLmJD34y3B1z\nzkuNYYyB3jssBn5JCCMLT9x4BRgAK0kjXjZj7wwAAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "1146": {
+                  "#name": "image \"altScrollMiddle.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "blendLevel": "99",
+                     "id": "1146",
+                     "layer": "13",
+                     "lockLoc": true,
+                     "name": "altScrollMiddle.png",
+                     "opaque": false,
+                     "rect": "17,454,264,471",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABKSURBVHja7MzBCcAwCEDRRAIK\nLuKx+28miLY7/EsOfQO8HRGzoOPuCydmxhNV5cmHJyKCEz78yeXJ6W6eVBVPMhMne2YemrwC\nDACYkw4Ow11cxgAAAABJRU5ErkJggg=="
+                     }
+                  }
+               },
+               "1147": {
+                  "#name": "image \"slider.png\"",
+                  "customproperties": {
+                     "altSliderMaxVal": "12",
+                     "altSliderMinVal": "1"
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1147",
+                     "layer": "16",
+                     "name": "slider.png",
+                     "rect": "15,454,30,469",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAIAAAC0tAIdAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAB1SURBVHja7JJLCsAgDESjeA3v\nfwFv4g1c6E78IwrSlO5TS7fOImTgEQIzLMYIAHNOINVaM8YI7/1aq/dO0yGEmy6lIIqTpnPO\nKSX+GCmlUoreURy+6NB/aaa13szSWiswT+xArfW1VXhUYFecc2OMnU8uAQYAUepTm1PxzAMA\nAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "1148": {
+                  "#name": "image \"altScrollRight.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "blendLevel": "99",
+                     "id": "1148",
+                     "layer": "14",
+                     "name": "altScrollRight.png",
+                     "opaque": false,
+                     "rect": "265,454,269,471",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAAAQAAAARCAYAAAD66g1WAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABmSURBVHjavI9dCgAhCIRNhKKL\n9Nr979JBoh9rXIRlD7ADA/opMoZSiu69aa1FrbUgOWcCmHPSVZWUkk2ZGYAkxujTB1xZgS2I\nseo2QB/9BPCH2wBiw55Ueu/WjDEMBFWt7xtHgAEAof43ZMD7xTEAAAAASUVORK5CYII="
+                     }
+                  }
+               },
+               "1149": {
+                  "#name": "field \"sliderValue\"",
+                  "customproperties": {
+                     "altRecentNumber": "1",
+                     "altValue": "1"
+                  },
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "altValue\t \tsetProp",
+                        "HandlerScroll": "712"
+                     }
+                  },
+                  "properties": {
+                     "autoTab": true,
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>1</p>",
+                     "id": "1149",
+                     "layer": "15",
+                     "lockText": true,
+                     "name": "sliderValue",
+                     "rect": "274,454,305,469",
+                     "sharedText": true,
+                     "showFocusBorder": false,
+                     "textFont": "Tahoma",
+                     "textHeight": "12",
+                     "textSize": "9",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1021",
+               "layer": "11",
+               "lockLoc": true,
+               "name": "ChapterSlider",
+               "rect": "0,0,640,480",
+               "sharedBehavior": true
+            }
+         },
+         "1031": {
+            "#name": "group \"bgGrp\"",
+            "childcontrols": {
+               "1009": {
+                  "#name": "button \"RightBtn\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "104"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1009",
+                     "label": ">",
+                     "layer": "6",
+                     "name": "RightBtn",
+                     "rect": "603,452,627,475",
+                     "showFocusBorder": false,
+                     "traversalOn": false
+                  }
+               },
+               "1012": {
+                  "#name": "button \"LeftBtn\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1012",
+                     "label": "<",
+                     "layer": "7",
+                     "name": "LeftBtn",
+                     "rect": "575,452,599,475",
+                     "showFocusBorder": false,
+                     "traversalOn": false
+                  }
+               },
+               "1026": {
+                  "#name": "field \"Title\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "revBrowser Explained"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Introduction</p>",
+                     "id": "1026",
+                     "layer": "8",
+                     "lockText": true,
+                     "name": "Title",
+                     "opaque": false,
+                     "rect": "340,59,631,90",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textHeight": "18",
+                     "textSize": "14",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1030": {
+                  "#name": "field \"chapter\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "145,152,160",
+                     "htmlText": "<p>Introduction</p>",
+                     "id": "1030",
+                     "layer": "9",
+                     "lockText": true,
+                     "name": "chapter",
+                     "opaque": false,
+                     "rect": "320,451,556,472",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1653": {
+                  "#name": "button \"Show Docs\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "id": "1653",
+                     "layer": "10",
+                     "name": "Show Docs",
+                     "rect": "498,452,570,475",
+                     "showFocusBorder": false,
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1669": {
+                  "#name": "image \"sample3.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1669",
+                     "layer": "5",
+                     "name": "sample3.png",
+                     "rect": "0,0,640,480",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Browser Sampler_1031_1669_text.png"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1031",
+               "layer": "4",
+               "lockLoc": true,
+               "name": "bgGrp",
+               "rect": "-5,-4,644,484",
+               "sharedBehavior": true
+            }
+         },
+         "1033": {
+            "#name": "card \"About this Demo\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1035": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Browser Sampler_1033_1035_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Browser Sampler_1033_1035_htmlText.txt",
+                     "id": "1035",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,612,435",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               },
+               "1647": "#shared group"
+            },
+            "custompropertysets": {
+               "cConsLast": {
+                  "HandlerName": "      preOpenCard\t  \ton",
+                  "HandlerScroll": "0",
+                  "prop": null,
+                  "ScriptChunk": "char 36 to 119 of field 93",
+                  "varChecking": false
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "15"
+               }
+            },
+            "properties": {
+               "id": "1033",
+               "layer": "2",
+               "name": "About this Demo"
+            }
+         },
+         "1034": {
+            "#name": "card \"revBrowser Explained\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1036": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Browser Sampler_1034_1036_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Browser Sampler_1034_1036_htmlText.txt",
+                     "id": "1036",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,612,428",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent"
+                  }
+               },
+               "1647": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "15"
+               }
+            },
+            "properties": {
+               "id": "1034",
+               "layer": "3",
+               "name": "revBrowser Explained"
+            }
+         },
+         "1072": {
+            "#name": "group \"altFldHeader3\"",
+            "childcontrols": {
+               "1073": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1073",
+                     "layer": "19",
+                     "name": "moveColumn",
+                     "rect": "87,365,103,381",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1075": {
+                  "#name": "button \"userID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteBorder": false,
+                     "hiliteColor": "48,48,48",
+                     "id": "1075",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "userID",
+                     "rect": "42,294,175,312",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1076": {
+                  "#name": "button \"name\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1076",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "name",
+                     "rect": "175,294,310,312",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1077": {
+                  "#name": "button \"email\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1077",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "email",
+                     "rect": "310,294,434,312",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1078": {
+                  "#name": "button \"emailList\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1078",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "emailList",
+                     "rect": "434,294,605,312",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "users",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1075,0.24,20,\n1076,0.24,20,\n1077,0.22,20,\n1078,0.3,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "34",
+               "priv_XtraTabs": "68"
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1072",
+               "layer": "19",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader3",
+               "rect": "42,294,605,312",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1081": {
+            "#name": "group \"altFldHeader4\"",
+            "childcontrols": {
+               "1082": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1082",
+                     "layer": "19",
+                     "name": "moveColumn",
+                     "rect": "76,365,92,381",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1083": {
+                  "#name": "button \"appID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteBorder": false,
+                     "hiliteColor": "48,48,48",
+                     "id": "1083",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "appID",
+                     "rect": "42,364,179,382",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1084": {
+                  "#name": "button \"appName\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1084",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "appName",
+                     "rect": "179,364,310,382",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1085": {
+                  "#name": "button \"appRegCode\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1085",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "appRegCode",
+                     "rect": "310,364,433,382",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1086": {
+                  "#name": "button \"appUserID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1086",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "appUserID",
+                     "rect": "433,364,605,382",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "Apps",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1083,0.24,20,\n1084,0.23,20,\n1085,0.22,20,\n1086,0.31,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "34",
+               "priv_XtraTabs": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1081",
+               "layer": "19",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader4",
+               "rect": "42,364,605,382",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1119": {
+            "#name": "card \"A Simple Browser\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1120": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Browser Sampler_1119_1120_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Browser Sampler_1119_1120_htmlText.txt",
+                     "id": "1120",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,622,247",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1539": {
+                  "#name": "button \"Browser ON\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "altBrowserOn\t \tcommand",
+                        "HandlerScroll": "161"
+                     }
+                  },
+                  "properties": {
+                     "backColor": "0,0,0",
+                     "borderWidth": "0",
+                     "bottomColor": "0,0,0",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "0,0,0",
+                     "hiliteIcon": "1318",
+                     "icon": "1317",
+                     "id": "1539",
+                     "layer": "15",
+                     "name": "Browser ON",
+                     "opaque": false,
+                     "rect": "6,56,85,72",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "style": "checkbox",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "topColor": "128,128,128",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1541": {
+                  "#name": "image \"browserImage\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1541",
+                     "layer": "16",
+                     "name": "browserImage",
+                     "rect": "22,260,622,436",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "1647": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "17"
+               }
+            },
+            "properties": {
+               "id": "1119",
+               "layer": "5",
+               "name": "A Simple Browser"
+            }
+         },
+         "1131": {
+            "#name": "card \"Locking Out Domains\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1132": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Browser Sampler_1131_1132_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Browser Sampler_1131_1132_htmlText.txt",
+                     "id": "1132",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,624,232",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1542": {
+                  "#name": "image \"browserImage\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1542",
+                     "layer": "15",
+                     "name": "browserImage",
+                     "rect": "22,260,622,436",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "1543": {
+                  "#name": "button \"Browser ON\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "altBrowserOn\t \tcommand",
+                        "HandlerScroll": "139"
+                     }
+                  },
+                  "properties": {
+                     "backColor": "0,0,0",
+                     "borderWidth": "0",
+                     "bottomColor": "0,0,0",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "0,0,0",
+                     "hiliteIcon": "1318",
+                     "icon": "1317",
+                     "id": "1543",
+                     "layer": "16",
+                     "name": "Browser ON",
+                     "opaque": false,
+                     "rect": "6,56,85,72",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "style": "checkbox",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "topColor": "128,128,128",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1647": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "17"
+               }
+            },
+            "properties": {
+               "id": "1131",
+               "layer": "8",
+               "name": "Locking Out Domains"
+            }
+         },
+         "1160": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1161": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1161",
+                     "layer": "19",
+                     "name": "moveColumn",
+                     "rect": "82,295,98,311",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1162": {
+                  "#name": "button \"userID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1162",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "userID",
+                     "rect": "52,294,129,312",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1163": {
+                  "#name": "button \"name\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteBorder": false,
+                     "hiliteColor": "48,48,48",
+                     "id": "1163",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "name",
+                     "rect": "129,294,220,312",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1164": {
+                  "#name": "button \"email\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1164",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "email",
+                     "rect": "220,294,344,312",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1165": {
+                  "#name": "button \"pict\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1165",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "pict",
+                     "rect": "344,294,476,312",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1166": {
+                  "#name": "button \"emailList\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "5"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1166",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "emailList",
+                     "rect": "476,294,551,312",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "5",
+               "altRealTimeTrack": true,
+               "altTargetField": "users",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1162,0.15,20,\n1163,0.18,20,\n1164,0.25,20,\n1165,0.26,20,\n1166,0.16,20,",
+               "priv_altMinWidth": "100",
+               "priv_altRight": "89",
+               "priv_XtraTabs": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1160",
+               "layer": "19",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader",
+               "rect": "52,294,551,312",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1169": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1170": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1170",
+                     "layer": "19",
+                     "name": "moveColumn",
+                     "rect": "134,242,150,258",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1173": {
+                  "#name": "button \"userID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1173",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "userID",
+                     "rect": "43,241,109,259",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1174": {
+                  "#name": "button \"name\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1174",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "name",
+                     "rect": "109,241,229,259",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1175": {
+                  "#name": "button \"email\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1175",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "email",
+                     "rect": "229,241,351,259",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1253": {
+                  "#name": "button \"emailList\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteBorder": false,
+                     "hiliteColor": "48,48,48",
+                     "id": "1253",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "emailList",
+                     "rect": "351,241,594,259",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "users",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1173,0.12,20,\n1174,0.22,20,\n1175,0.22,20,\n1253,0.44,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "46",
+               "priv_XtraTabs": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1169",
+               "layer": "19",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader",
+               "rect": "43,241,594,259",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1186": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1187": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1187",
+                     "layer": "19",
+                     "name": "moveColumn",
+                     "rect": "77,241,93,257",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1189": {
+                  "#name": "button \"userID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteBorder": false,
+                     "hiliteColor": "48,48,48",
+                     "id": "1189",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "userID",
+                     "rect": "42,240,128,258",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1190": {
+                  "#name": "button \"name\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1190",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "name",
+                     "rect": "128,240,256,258",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1191": {
+                  "#name": "button \"email\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1191",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "email",
+                     "rect": "256,240,411,258",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1192": {
+                  "#name": "button \"emailList\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1192",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "emailList",
+                     "rect": "411,240,593,258",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "users",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1189,0.16,20,\n1190,0.23,20,\n1191,0.28,20,\n1192,0.33,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "46",
+               "priv_XtraTabs": "94"
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1186",
+               "layer": "19",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader",
+               "rect": "42,240,593,258",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1210": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1211": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1211",
+                     "layer": "19",
+                     "name": "moveColumn",
+                     "rect": "77,281,93,297",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1213": {
+                  "#name": "button \"userID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteBorder": false,
+                     "hiliteColor": "48,48,48",
+                     "id": "1213",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "userID",
+                     "rect": "42,280,128,298",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1214": {
+                  "#name": "button \"name\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1214",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "name",
+                     "rect": "128,280,256,298",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1215": {
+                  "#name": "button \"email\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1215",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "email",
+                     "rect": "256,280,498,298",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1216": {
+                  "#name": "button \"emailList\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1216",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "emailList",
+                     "rect": "498,280,593,298",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "users",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1213,0.16,20,\n1214,0.23,20,\n1215,0.44,20,\n1216,0.17,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "46",
+               "priv_XtraTabs": "94"
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1210",
+               "layer": "19",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader",
+               "rect": "42,280,593,298",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1223": {
+            "#name": "group \"altFldHeader2\"",
+            "childcontrols": {
+               "1224": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1224",
+                     "layer": "19",
+                     "name": "moveColumn",
+                     "rect": "76,189,92,205",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1225": {
+                  "#name": "button \"appID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteBorder": false,
+                     "hiliteColor": "48,48,48",
+                     "id": "1225",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "appID",
+                     "rect": "42,188,130,206",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1226": {
+                  "#name": "button \"appName\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1226",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "appName",
+                     "rect": "130,188,255,206",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1227": {
+                  "#name": "button \"appRegCode\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1227",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "appRegCode",
+                     "rect": "255,188,498,206",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1228": {
+                  "#name": "button \"appUserID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1228",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "appUserID",
+                     "rect": "498,188,593,206",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "Apps",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1225,0.16,20,\n1226,0.23,20,\n1227,0.44,20,\n1228,0.17,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "46",
+               "priv_XtraTabs": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1223",
+               "layer": "19",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader2",
+               "rect": "42,188,593,206",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1353": {
+            "#name": "group \"Files\"",
+            "childcontrols": {
+               "1354": {
+                  "#name": "field \"theFiles\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": null,
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "backColor": "255,255,255",
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "id": "1354",
+                     "layer": "19",
+                     "listBehavior": true,
+                     "lockText": true,
+                     "name": "theFiles",
+                     "rect": "105,228,525,373",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "tabStops": "167,303,401",
+                     "threeD": false,
+                     "vGrid": true,
+                     "vScrollbar": true
+                  }
+               },
+               "1356": {
+                  "#name": "group \"altFldHeader\"",
+                  "childcontrols": {
+                     "1357": {
+                        "#name": "image \"moveColumn\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "hotSpot": "8,8",
+                           "id": "1357",
+                           "layer": "19",
+                           "name": "moveColumn",
+                           "rect": "188,211,204,227",
+                           "repeatCount": "-1",
+                           "text": {
+                              "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                           },
+                           "visible": false,
+                           "xHot": "8",
+                           "yHot": "8"
+                        }
+                     },
+                     "1358": {
+                        "#name": "button \"Filename\"",
+                        "customproperties": {
+                           "altDontResize": false,
+                           "altEnableBtn": false,
+                           "altMinWidth": "10",
+                           "priv_altOrderNum": "1"
+                        },
+                        "properties": {
+                           "accelMods": "command",
+                           "autoHilite": false,
+                           "backColor": "72,72,72",
+                           "borderWidth": "1",
+                           "bottomColor": "48,48,48",
+                           "foreColor": "249,156,27",
+                           "hiliteColor": "48,48,48",
+                           "id": "1358",
+                           "layer": "19",
+                           "lockLoc": true,
+                           "name": "Filename",
+                           "rect": "105,210,275,228",
+                           "showFocusBorder": false,
+                           "style": "rectangle",
+                           "topColor": "145,152,160",
+                           "traversalOn": false
+                        }
+                     },
+                     "1359": {
+                        "#name": "button \"Last Modified\"",
+                        "customproperties": {
+                           "altDontResize": false,
+                           "altEnableBtn": true,
+                           "altMinWidth": "10",
+                           "priv_altOrderNum": "2"
+                        },
+                        "properties": {
+                           "accelMods": "command",
+                           "autoHilite": false,
+                           "backColor": "72,72,72",
+                           "borderWidth": "1",
+                           "bottomColor": "48,48,48",
+                           "foreColor": "249,156,27",
+                           "hiliteBorder": false,
+                           "hiliteColor": "48,48,48",
+                           "id": "1359",
+                           "layer": "19",
+                           "lockLoc": true,
+                           "name": "Last Modified",
+                           "rect": "275,210,411,228",
+                           "sharedHilite": false,
+                           "showFocusBorder": false,
+                           "style": "rectangle",
+                           "topColor": "145,152,160",
+                           "traversalOn": false
+                        }
+                     },
+                     "1360": {
+                        "#name": "button \"User\"",
+                        "customproperties": {
+                           "altDontResize": false,
+                           "altEnableBtn": true,
+                           "altMinWidth": "10",
+                           "priv_altOrderNum": "3"
+                        },
+                        "properties": {
+                           "accelMods": "command",
+                           "autoHilite": false,
+                           "backColor": "72,72,72",
+                           "borderWidth": "1",
+                           "bottomColor": "48,48,48",
+                           "foreColor": "249,156,27",
+                           "hiliteColor": "48,48,48",
+                           "id": "1360",
+                           "layer": "19",
+                           "lockLoc": true,
+                           "name": "User",
+                           "rect": "411,210,509,228",
+                           "showFocusBorder": false,
+                           "style": "rectangle",
+                           "topColor": "145,152,160",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "altNumCols": "3",
+                     "altRealTimeTrack": true,
+                     "altTargetField": "theFiles",
+                     "altVertPad": "0",
+                     "priv_altBtnIDList": "1358,0.42,10,\n1359,0.34,10,\n1360,0.24,10,",
+                     "priv_altMinWidth": "30",
+                     "priv_altRight": "131",
+                     "priv_XtraTabs": null
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1356",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "altFldHeader",
+                     "rect": "105,210,509,228",
+                     "tabGroupBehavior": true,
+                     "threeD": false
+                  }
+               },
+               "1361": {
+                  "#name": "button \"Upload\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "MY:-64",
+                        "altRect": "413,330,491,353",
+                        "WinXPaltCmd": "MY:-64",
+                        "WinXPaltRect": "413,330,491,353"
+                     }
+                  },
+                  "properties": {
+                     "icon": "1040",
+                     "id": "1361",
+                     "label": "Upload    ",
+                     "layer": "19",
+                     "name": "Upload",
+                     "rect": "271,379,349,402",
+                     "showIcon": true,
+                     "textAlign": "right",
+                     "textFont": "tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "visible": false
+                  }
+               },
+               "1362": {
+                  "#name": "button \"Download\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "MY:-64",
+                        "altRect": "413,330,491,353",
+                        "WinXPaltCmd": "MY:-64",
+                        "WinXPaltRect": "413,330,491,353"
+                     }
+                  },
+                  "properties": {
+                     "icon": "1039",
+                     "id": "1362",
+                     "label": "Download  ",
+                     "layer": "19",
+                     "name": "Download",
+                     "rect": "351,379,429,402",
+                     "showIcon": true,
+                     "textAlign": "right",
+                     "textFont": "tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "visible": false
+                  }
+               },
+               "1363": {
+                  "#name": "button \"Del File\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "MY:-64",
+                        "altRect": "333,330,411,353",
+                        "WinXPaltCmd": "MY:-64",
+                        "WinXPaltRect": "333,330,411,353"
+                     }
+                  },
+                  "properties": {
+                     "icon": "1024",
+                     "id": "1363",
+                     "label": "Del File    ",
+                     "layer": "19",
+                     "name": "Del File",
+                     "rect": "431,379,509,402",
+                     "showIcon": true,
+                     "textAlign": "right",
+                     "textFont": "tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "visible": false
+                  }
+               },
+               "1364": {
+                  "#name": "button \"EditFile\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "MY:-64",
+                        "altRect": "413,330,491,353",
+                        "WinXPaltCmd": "MY:-64",
+                        "WinXPaltRect": "413,330,491,353"
+                     },
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "backColor": "72,72,72",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1364",
+                     "label": "Edit File   ",
+                     "layer": "19",
+                     "name": "EditFile",
+                     "rect": "106,379,184,402",
+                     "style": "rectangle",
+                     "textFont": "tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "topColor": "145,152,160"
+                  }
+               },
+               "1365": {
+                  "#name": "button \"DeleteFile\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "MY:-64",
+                        "altRect": "413,330,491,353",
+                        "WinXPaltCmd": "MY:-64",
+                        "WinXPaltRect": "413,330,491,353"
+                     }
+                  },
+                  "properties": {
+                     "backColor": "72,72,72",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1365",
+                     "label": "Delete File   ",
+                     "layer": "19",
+                     "name": "DeleteFile",
+                     "rect": "187,379,265,402",
+                     "textAlign": "right",
+                     "textFont": "tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "topColor": "145,152,160"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1353",
+               "layer": "19",
+               "name": "Files",
+               "rect": "101,206,529,406",
+               "visible": false
+            }
+         },
+         "1457": {
+            "#name": "group \"netControls\"",
+            "childcontrols": {
+               "1382": {
+                  "#name": "button \"Stop\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "MX:-42",
+                        "altRect": "435,106,466,128",
+                        "WinXPaltCmd": "MX:-42",
+                        "WinXPaltRect": "435,106,466,128"
+                     },
+                     "cConsLast": {
+                        "HandlerName": "      mouseUp\t  \ton",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "icon": "1022",
+                     "id": "1382",
+                     "layer": "19",
+                     "name": "Stop",
+                     "rect": "1,66,32,88",
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "rectangle",
+                     "toolTip": "Stop Refresh",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1437": {
+                  "#name": "image \"spin.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1437",
+                     "layer": "19",
+                     "name": "spin.gif",
+                     "rect": "8,55,72,63",
+                     "text": "%file%: assets/Browser Sampler_1457_1437_text.png"
+                  }
+               },
+               "1438": {
+                  "#name": "field \"altStatus\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": null,
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "foreColor": "249,156,27",
+                     "id": "1438",
+                     "layer": "19",
+                     "lockText": true,
+                     "name": "altStatus",
+                     "opaque": false,
+                     "rect": "78,48,386,69",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1440": {
+                  "#name": "button \"btnDisable\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "all handlers",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "1440",
+                     "label": "PLEASE WAIT...",
+                     "layer": "19",
+                     "name": "btnDisable",
+                     "opaque": false,
+                     "rect": "-1,91,642,427",
+                     "showBorder": false,
+                     "style": "rectangle",
+                     "textFont": "Verdana",
+                     "textSize": "36",
+                     "textStyle": "plain",
+                     "visible": false
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1457",
+               "layer": "19",
+               "name": "netControls",
+               "rect": "-3,44,390,92"
+            }
+         },
+         "1480": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1481": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1481",
+                     "layer": "19",
+                     "name": "moveColumn",
+                     "rect": "92,217,108,233",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1482": {
+                  "#name": "button \"Is Shared?\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1482",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "Is Shared?",
+                     "rect": "44,216,156,234",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1483": {
+                  "#name": "button \"Object Name\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteBorder": false,
+                     "hiliteColor": "48,48,48",
+                     "id": "1483",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "Object Name",
+                     "rect": "156,216,327,234",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1484": {
+                  "#name": "button \"Object ID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1484",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "Object ID",
+                     "rect": "327,216,397,234",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1485": {
+                  "#name": "button \"RevShare Owner\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1485",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "RevShare Owner",
+                     "rect": "397,216,595,234",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "ObjectList",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1482,0.2,20,\n1483,0.31,20,\n1484,0.13,20,\n1485,0.36,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "45",
+               "priv_XtraTabs": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1480",
+               "layer": "19",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader",
+               "rect": "44,216,595,234",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1506": {
+            "#name": "group \"altFldHeader\"",
+            "childcontrols": {
+               "1507": {
+                  "#name": "image \"moveColumn\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "hotSpot": "8,8",
+                     "id": "1507",
+                     "layer": "19",
+                     "name": "moveColumn",
+                     "rect": "116,297,132,313",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAAOXIPZMtZgAAAAlQ\nTFRF////AAAA////fu+PTwAAAAN0Uk5T//8A18oNQQAAADlJREFUeJxjYAIDBiCAsqAUIyNJ\nAkDtYAGwMQwgWZgASBWEzQAnmEAkMmDAFMDQgmkoprXkOB3F+wCrEAFBnQv3TQAAAABJRU5E\nrkJggg=="
+                     },
+                     "visible": false,
+                     "xHot": "8",
+                     "yHot": "8"
+                  }
+               },
+               "1508": {
+                  "#name": "button \"Scheduled to Save to Server\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "1"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1508",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "Scheduled to Save to Server",
+                     "rect": "38,296,213,314",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1509": {
+                  "#name": "button \"Object\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "2"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteBorder": false,
+                     "hiliteColor": "48,48,48",
+                     "id": "1509",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "Object",
+                     "rect": "213,296,373,314",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1510": {
+                  "#name": "button \"Object ID\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "3"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1510",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "Object ID",
+                     "rect": "373,296,434,314",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               },
+               "1511": {
+                  "#name": "button \"Owner\"",
+                  "customproperties": {
+                     "altDontResize": false,
+                     "altEnableBtn": false,
+                     "altMinWidth": "20",
+                     "priv_altOrderNum": "4"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "backColor": "72,72,72",
+                     "borderWidth": "1",
+                     "bottomColor": "48,48,48",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "48,48,48",
+                     "id": "1511",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "Owner",
+                     "rect": "434,296,589,314",
+                     "showFocusBorder": false,
+                     "style": "rectangle",
+                     "topColor": "145,152,160",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "altNumCols": "4",
+               "altRealTimeTrack": true,
+               "altTargetField": "ObjectList",
+               "altVertPad": "0",
+               "priv_altBtnIDList": "1508,0.32,20,\n1509,0.29,20,\n1510,0.11,20,\n1511,0.28,20,",
+               "priv_altMinWidth": "80",
+               "priv_altRight": "51",
+               "priv_XtraTabs": null
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "borderWidth": "1",
+               "id": "1506",
+               "layer": "19",
+               "lockLoc": true,
+               "margins": "0",
+               "name": "altFldHeader",
+               "rect": "38,296,589,314",
+               "tabGroupBehavior": true,
+               "threeD": false
+            }
+         },
+         "1547": {
+            "#name": "card \"Basic Navigation\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1544": {
+                  "#name": "field \"theText\"",
+                  "customproperties": {
+                     "cCurrentObject": "stack \"C:/Workspace/Projects/Revolution Frontier/Resources/Examples/Browser Sampler.rev\""
+                  },
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Browser Sampler_1547_1544_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Browser Sampler_1547_1544_htmlText.txt",
+                     "id": "1544",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,624,215",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1545": {
+                  "#name": "image \"browserImage\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1545",
+                     "layer": "15",
+                     "name": "browserImage",
+                     "rect": "22,260,622,436",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "1546": {
+                  "#name": "button \"Browser ON\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "altBrowserOn\t \tcommand",
+                        "HandlerScroll": "139"
+                     }
+                  },
+                  "properties": {
+                     "backColor": "0,0,0",
+                     "borderWidth": "0",
+                     "bottomColor": "0,0,0",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "0,0,0",
+                     "hiliteIcon": "1318",
+                     "icon": "1317",
+                     "id": "1546",
+                     "layer": "16",
+                     "name": "Browser ON",
+                     "opaque": false,
+                     "rect": "6,56,85,72",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "style": "checkbox",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "topColor": "128,128,128",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1549": {
+                  "#name": "button \"Go Back\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1549",
+                     "layer": "17",
+                     "lockLoc": true,
+                     "name": "Go Back",
+                     "rect": "24,240,91,258",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1550": {
+                  "#name": "button \"Go Forward\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1550",
+                     "layer": "18",
+                     "lockLoc": true,
+                     "name": "Go Forward",
+                     "rect": "95,240,162,258",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1551": {
+                  "#name": "button \"Refresh\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1551",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "Refresh",
+                     "rect": "165,240,232,258",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1552": {
+                  "#name": "button \"Stop\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1552",
+                     "layer": "20",
+                     "lockLoc": true,
+                     "name": "Stop",
+                     "rect": "235,240,302,258",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1554": {
+                  "#name": "button \"GO\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "abLoadURL\t \tcommand",
+                        "HandlerScroll": "91"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1554",
+                     "layer": "21",
+                     "lockLoc": true,
+                     "name": "GO",
+                     "rect": "568,240,604,258",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1557": {
+                  "#name": "field \"theURL\"",
+                  "customproperties": {
+                     "cCurrentObject": "stack \"C:/Workspace/Projects/Revolution Frontier/Resources/Examples/Browser Sampler.rev\""
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "htmlText": "<p>http://www.google.com</p>",
+                     "id": "1557",
+                     "layer": "22",
+                     "lockLoc": true,
+                     "name": "theURL",
+                     "rect": "305,240,560,259",
+                     "textFont": "tahoma",
+                     "textHeight": "13",
+                     "textSize": "10",
+                     "textStyle": "plain"
+                  }
+               },
+               "1647": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "23"
+               }
+            },
+            "properties": {
+               "id": "1547",
+               "layer": "6",
+               "name": "Basic Navigation"
+            }
+         },
+         "1574": {
+            "#name": "card \"Navigation with Feedback\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1565": {
+                  "#name": "field \"theText\"",
+                  "customproperties": {
+                     "cCurrentObject": "stack \"C:/Workspace/Projects/Revolution Frontier/Resources/Examples/Browser Sampler.rev\""
+                  },
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Browser Sampler_1574_1565_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Browser Sampler_1574_1565_htmlText.txt",
+                     "id": "1565",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,622,210",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1566": {
+                  "#name": "image \"browserImage\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1566",
+                     "layer": "15",
+                     "name": "browserImage",
+                     "rect": "22,237,622,418",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "1567": {
+                  "#name": "button \"Browser ON\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "altBrowserOn\t \tcommand",
+                        "HandlerScroll": "139"
+                     }
+                  },
+                  "properties": {
+                     "backColor": "0,0,0",
+                     "borderWidth": "0",
+                     "bottomColor": "0,0,0",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "0,0,0",
+                     "hiliteIcon": "1318",
+                     "icon": "1317",
+                     "id": "1567",
+                     "layer": "16",
+                     "name": "Browser ON",
+                     "opaque": false,
+                     "rect": "6,56,85,72",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "style": "checkbox",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "topColor": "128,128,128",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1568": {
+                  "#name": "button \"Go Back\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1568",
+                     "layer": "17",
+                     "lockLoc": true,
+                     "name": "Go Back",
+                     "rect": "25,215,91,234",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1569": {
+                  "#name": "button \"Go Forward\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1569",
+                     "layer": "18",
+                     "lockLoc": true,
+                     "name": "Go Forward",
+                     "rect": "94,215,160,234",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1570": {
+                  "#name": "button \"Refresh\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1570",
+                     "layer": "19",
+                     "lockLoc": true,
+                     "name": "Refresh",
+                     "rect": "163,215,229,234",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1571": {
+                  "#name": "button \"Stop\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1571",
+                     "layer": "20",
+                     "lockLoc": true,
+                     "name": "Stop",
+                     "rect": "231,215,297,234",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1577": {
+                  "#name": "image \"spin.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1577",
+                     "layer": "21",
+                     "name": "spin.gif",
+                     "rect": "554,426,618,434",
+                     "text": "%file%: assets/Browser Sampler_1574_1577_text.png"
+                  }
+               },
+               "1578": {
+                  "#name": "field \"theURL\"",
+                  "customproperties": {
+                     "cCurrentObject": "stack \"C:/Documents and Settings/Oliver/Desktop/altBrowserDemo.rev\""
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "htmlText": "<p>http://www.google.com</p>",
+                     "id": "1578",
+                     "layer": "22",
+                     "lockLoc": true,
+                     "name": "theURL",
+                     "rect": "303,216,568,235",
+                     "textFont": "tahoma",
+                     "textHeight": "13",
+                     "textSize": "10",
+                     "textStyle": "plain"
+                  }
+               },
+               "1579": {
+                  "#name": "button \"GO\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": null,
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1579",
+                     "layer": "23",
+                     "lockLoc": true,
+                     "name": "GO",
+                     "rect": "574,217,610,235",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1580": {
+                  "#name": "field \"altStatus\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "id": "1580",
+                     "layer": "24",
+                     "lockText": true,
+                     "name": "altStatus",
+                     "opaque": false,
+                     "rect": "14,419,565,440",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1647": "#shared group"
+            },
+            "custompropertysets": {
+               "cConsLast": {
+                  "HandlerName": "XBrowser_DocumentComplete\t \tcommand",
+                  "HandlerScroll": "271"
+               },
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "25"
+               }
+            },
+            "properties": {
+               "id": "1574",
+               "layer": "7",
+               "name": "Navigation with Feedback"
+            }
+         },
+         "1584": {
+            "#name": "card \"Setting and Getting Selected Text\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1581": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Browser Sampler_1584_1581_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Browser Sampler_1584_1581_htmlText.txt",
+                     "id": "1581",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,624,228",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1582": {
+                  "#name": "image \"browserImage\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1582",
+                     "layer": "15",
+                     "name": "browserImage",
+                     "rect": "22,260,622,436",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "1583": {
+                  "#name": "button \"Browser ON\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "altBrowserOn\t \tcommand",
+                        "HandlerScroll": "139"
+                     }
+                  },
+                  "properties": {
+                     "backColor": "0,0,0",
+                     "borderWidth": "0",
+                     "bottomColor": "0,0,0",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "0,0,0",
+                     "hiliteIcon": "1318",
+                     "icon": "1317",
+                     "id": "1583",
+                     "layer": "16",
+                     "name": "Browser ON",
+                     "opaque": false,
+                     "rect": "6,56,85,72",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "style": "checkbox",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "topColor": "128,128,128",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1586": {
+                  "#name": "button \"Get Selected Text\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1586",
+                     "layer": "17",
+                     "name": "Get Selected Text",
+                     "rect": "22,235,155,257",
+                     "textFont": "Tahoma",
+                     "textSize": "12",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1587": {
+                  "#name": "button \"Set Selected Text\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "      mouseUp\t  \ton",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1587",
+                     "layer": "18",
+                     "name": "Set Selected Text",
+                     "rect": "159,235,292,257",
+                     "textFont": "Tahoma",
+                     "textSize": "12",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1647": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "19"
+               }
+            },
+            "properties": {
+               "id": "1584",
+               "layer": "9",
+               "name": "Setting and Getting Selected Text"
+            }
+         },
+         "1593": {
+            "#name": "card \"Getting the Browser Image\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1588": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Browser Sampler_1593_1588_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Browser Sampler_1593_1588_htmlText.txt",
+                     "id": "1588",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,622,218",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1589": {
+                  "#name": "image \"browserImage\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1589",
+                     "layer": "15",
+                     "name": "browserImage",
+                     "rect": "53,251,373,431",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "1590": {
+                  "#name": "button \"Browser ON\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "altBrowserOn\t \tcommand",
+                        "HandlerScroll": "139"
+                     }
+                  },
+                  "properties": {
+                     "backColor": "0,0,0",
+                     "borderWidth": "0",
+                     "bottomColor": "0,0,0",
+                     "foreColor": "249,156,27",
+                     "hiliteColor": "0,0,0",
+                     "hiliteIcon": "1318",
+                     "icon": "1317",
+                     "id": "1590",
+                     "layer": "16",
+                     "name": "Browser ON",
+                     "opaque": false,
+                     "rect": "6,56,85,72",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "style": "checkbox",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "topColor": "128,128,128",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "1591": {
+                  "#name": "button \"Make Thumbnail\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "      mouseUp\t  \ton",
+                        "HandlerScroll": "0",
+                        "ScriptChunk": "char 727 to 731 of field 93",
+                        "varChecking": false
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1591",
+                     "layer": "17",
+                     "name": "Make Thumbnail",
+                     "rect": "52,225,185,247",
+                     "textFont": "Tahoma",
+                     "textSize": "12",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1599": {
+                  "#name": "image \"thumbnail\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": null,
+                        "HandlerScroll": "0",
+                        "varChecking": false
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1599",
+                     "layer": "18",
+                     "lockLoc": true,
+                     "name": "thumbnail",
+                     "rect": "430,286,590,376",
+                     "repeatCount": "-1",
+                     "resizeQuality": "best",
+                     "showBorder": true,
+                     "text": "%file%: assets/Browser Sampler_1593_1599_text.png",
+                     "threeD": false
+                  }
+               },
+               "1600": {
+                  "#name": "button \"Show Scrollbars\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "      mouseUp\t  \ton",
+                        "HandlerScroll": "0",
+                        "prop": null,
+                        "ScriptChunk": "char 104 to 134 of field 93",
+                        "varChecking": false
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "id": "1600",
+                     "layer": "19",
+                     "name": "Show Scrollbars",
+                     "opaque": false,
+                     "rect": "203,230,304,246",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1647": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "20"
+               }
+            },
+            "properties": {
+               "id": "1593",
+               "layer": "10",
+               "name": "Getting the Browser Image"
+            }
+         },
+         "1617": {
+            "#name": "card \"Multiple Instances\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1612": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Browser Sampler_1617_1612_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Browser Sampler_1617_1612_htmlText.txt",
+                     "id": "1612",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,624,227",
+                     "scrollbarWidth": "16",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "scrolling",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "vScrollbar": true
+                  }
+               },
+               "1613": {
+                  "#name": "image \"browserImage\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1613",
+                     "layer": "15",
+                     "name": "browserImage",
+                     "rect": "19,253,315,429",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "1614": {
+                  "#name": "button \"Browser 1 ON\"",
+                  "customproperties": {
+                     "altBrowserID": null
+                  },
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "editor": "script",
+                        "HandlerName": "      altBrowserOff\t  \ton",
+                        "HandlerScroll": "254",
+                        "prop": "name",
+                        "ScriptChunk": "char 704 to 716 of field 93",
+                        "varChecking": false
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "hiliteIcon": "1318",
+                     "icon": "1317",
+                     "id": "1614",
+                     "label": "Browser 1 OFF",
+                     "layer": "16",
+                     "name": "Browser 1 ON",
+                     "opaque": false,
+                     "rect": "17,234,105,250",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "style": "checkbox",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1619": {
+                  "#name": "image \"browserImage2\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "prop": null,
+                        "varChecking": false
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1619",
+                     "layer": "17",
+                     "name": "browserImage2",
+                     "rect": "324,253,620,429",
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "1620": {
+                  "#name": "button \"Browser 2 ON\"",
+                  "customproperties": {
+                     "altBrowserID": null
+                  },
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "editor": "script",
+                        "HandlerName": "      altBrowserOn\t  \ton",
+                        "HandlerScroll": "144",
+                        "prop": "name",
+                        "ScriptChunk": "char 494 to 493 of field 93",
+                        "varChecking": false
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "hiliteIcon": "1318",
+                     "icon": "1317",
+                     "id": "1620",
+                     "label": "Browser 2 OFF",
+                     "layer": "18",
+                     "name": "Browser 2 ON",
+                     "opaque": false,
+                     "rect": "323,235,411,251",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "style": "checkbox",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1647": "#shared group",
+               "1649": {
+                  "#name": "image \"spin1.gif\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": null,
+                        "HandlerScroll": "0",
+                        "prop": null,
+                        "varChecking": false
+                     }
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1649",
+                     "layer": "20",
+                     "name": "spin1.gif",
+                     "rect": "251,240,315,248",
+                     "text": "%file%: assets/Browser Sampler_1617_1649_text.png"
+                  }
+               },
+               "1650": {
+                  "#name": "image \"spin2.gif\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": null,
+                        "HandlerScroll": "0",
+                        "prop": null,
+                        "varChecking": false
+                     }
+                  },
+                  "properties": {
+                     "dontDither": true,
+                     "id": "1650",
+                     "layer": "21",
+                     "lockLoc": true,
+                     "name": "spin2.gif",
+                     "rect": "565,240,629,248",
+                     "text": "%file%: assets/Browser Sampler_1617_1650_text.png"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cConsLast": {
+                  "editor": "script",
+                  "HandlerName": "XBrowser_BeforeNavigate\t \tcommand",
+                  "HandlerScroll": "124",
+                  "prop": null,
+                  "ScriptChunk": "char 318 to 319 of field 93",
+                  "varChecking": false
+               },
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "21"
+               }
+            },
+            "properties": {
+               "id": "1617",
+               "layer": "11",
+               "name": "Multiple Instances"
+            }
+         },
+         "1628": {
+            "#name": "card \"Exploring Further\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1627": {
+                  "#name": "field \"theText\"",
+                  "customproperties": {
+                     "cCurrentObject": "stack \"C:/Documents and Settings/Oliver/Desktop/altBrowserDemo.rev\""
+                  },
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "%file%: assets/Browser Sampler_1628_1627_cREVTable_currentview.bin"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "%file%: assets/Browser Sampler_1628_1627_htmlText.txt",
+                     "id": "1627",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,612,385",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               },
+               "1647": "#shared group"
+            },
+            "custompropertysets": {
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "15"
+               }
+            },
+            "properties": {
+               "id": "1628",
+               "layer": "12",
+               "name": "Exploring Further"
+            }
+         },
+         "1638": {
+            "#name": "card \"Things to do with revBrowser\"",
+            "childcontrols": {
+               "1021": "#shared group",
+               "1031": "#shared group",
+               "1637": {
+                  "#name": "field \"theText\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "<p><font face=\"Verdana\" size=\"18\">Things to Do with revBrowser</font></p>\n<p></p>\n<p>You can do many unique and different things with revBrowser. Here are a few examples.</p>"
+                     }
+                  },
+                  "properties": {
+                     "fixedLineHeight": false,
+                     "htmlText": "<p><font face=\"Verdana\" size=\"18\">Things to Do with revBrowser</font></p>\n<p></p>\n<p>You can do many unique and different things with revBrowser. Here are a few examples.</p>",
+                     "id": "1637",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "theText",
+                     "opaque": false,
+                     "rect": "16,89,612,184",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain"
+                  }
+               },
+               "1639": {
+                  "#name": "button \"Embed a PDF document Help file\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "      mouseUp\t  \ton",
+                        "HandlerScroll": "0",
+                        "prop": "name",
+                        "ScriptChunk": "char 369 to 368 of field 93",
+                        "varChecking": false
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1639",
+                     "layer": "15",
+                     "name": "Embed a PDF document Help file",
+                     "rect": "192,225,419,247",
+                     "textFont": "Tahoma",
+                     "textSize": "12",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1640": {
+                  "#name": "button \"Embed a Flash Training viewer\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "34",
+                        "prop": "name",
+                        "ScriptChunk": "char 533 to 533 of field 93",
+                        "varChecking": false
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1640",
+                     "layer": "16",
+                     "name": "Embed a Flash Training viewer",
+                     "rect": "192,255,419,277",
+                     "textFont": "Tahoma",
+                     "textSize": "12",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1647": "#shared group"
+            },
+            "custompropertysets": {
+               "cConsLast": {
+                  "HandlerName": "closeCard\t \tmessage",
+                  "HandlerScroll": "0",
+                  "prop": null,
+                  "ScriptChunk": "char 35 to 204 of field 93",
+                  "varChecking": false
+               },
+               "cREVGeometryCache": {
+                  "order": "\n",
+                  "total": "17"
+               }
+            },
+            "properties": {
+               "id": "1638",
+               "layer": "4",
+               "name": "Things to do with revBrowser"
+            }
+         },
+         "1647": {
+            "#name": "group \"debug\"",
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1647",
+               "layer": "19",
+               "name": "debug",
+               "rect": "118,-2,126,6",
+               "sharedBehavior": true,
+               "visible": false
+            }
+         }
+      },
+      "customproperties": {
+         "altCardNames": "Exploring Further",
+         "altInetConnected": true,
+         "cREVActiveStack": "SQLiteDemo",
+         "cREVLinkedStack": null
+      },
+      "custompropertysets": {
+         "cConsLast": {
+            "HandlerName": "initMe\t \tcommand",
+            "HandlerScroll": "496",
+            "prop": "alwaysBuffer",
+            "ScriptChunk": "char 359 to 358 of field 93",
+            "varChecking": false
+         },
+         "cREVGeometryCache": {
+            "stackID": "1671"
+         },
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "cursors": false,
+            "inclusions": "select",
+            "MacOS,creator": "????",
+            "MacOS,documentType": null,
+            "MacOS,dynamicMemory": true,
+            "MacOS,longVersion": "revBrowser Demo 1.0.0.0",
+            "MacOS,MinimumSize": "15000",
+            "MacOS,PreferredSize": "15000",
+            "MacOS,Region": "1",
+            "MacOS,Release": "Final",
+            "MacOS,versionnumber1": "1",
+            "MacOS,versionnumber2": "0",
+            "MacOS,versionnumber3": "0",
+            "MacOS68k": false,
+            "MacOSfat": false,
+            "MacOSPPC": false,
+            "MacOSX": false,
+            "MacOSX PowerPC-32": false,
+            "MacOSX x86-32": false,
+            "name": "revBrowser Demo",
+            "OSX,copyright": "2007  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,identifier": "com..revbrowserdemo",
+            "OSX,info": "revBrowser Demo Version 1.0.0.0",
+            "OSX,longVersion": "revBrowser Demo 1.0.0.0",
+            "OSX,name": "revBrowser Demo",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "scriptLibraries": "Internet\nGeometry\nPrinting",
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Windows": false,
+            "Windows,buildU3": false,
+            "Windows,companyname": null,
+            "Windows,documenticonFile": "C:/Workspace/Projects/Engine/ide/Runtime/Windows/x86-32/Support/Sample Icons/genericdoc.ico",
+            "Windows,FileDescription": "revBrowser Demo 1.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "C:/Workspace/Projects/Engine/ide/Runtime/Windows/x86-32/Support/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2007  All rights reserved worldwide",
+            "Windows,ProductName": "revBrowser Demo",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0"
+         }
+      },
+      "longID": "stack \"Browser Sampler\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "destroyStack": true,
+         "destroyWindow": true,
+         "fileName": "Browser Sampler.rev",
+         "id": "1671",
+         "liveResizing": false,
+         "name": "Browser Sampler",
+         "rect": "406,214,1046,694",
+         "resizable": false,
+         "textFont": "tahoma",
+         "textSize": "11",
+         "textStyle": "plain",
+         "title": "Browser Sampler"
+      },
+      "sharedGroupIDs": "1072\n1081\n1021\n1031\n1160\n1169\n1186\n1210\n1223\n1353\n1480\n1457\n1506\n1647"
+   },
+   "FlashDemo": {
+      "#name": "stack \"FlashDemo\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"browserTest\"",
+            "childcontrols": {
+               "1041": {
+                  "#name": "image \"browserimage\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1041",
+                     "layer": "2",
+                     "lockLoc": true,
+                     "name": "browserimage",
+                     "rect": "5,25,1044,720",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FlashDemo_1002_1041_text.png"
+                  }
+               },
+               "1078": {
+                  "#name": "image \"busy.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1078",
+                     "layer": "1",
+                     "name": "busy.gif",
+                     "rect": "1011,0,1049,23",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FlashDemo_1002_1078_text.png"
+                  }
+               },
+               "1139": {
+                  "#name": "image \"check.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1139",
+                     "layer": "3",
+                     "name": "check.png",
+                     "opaque": false,
+                     "rect": "483,0,507,24",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FlashDemo_1002_1139_text.png",
+                     "visible": false
+                  }
+               },
+               "1140": {
+                  "#name": "image \"delete.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1140",
+                     "layer": "4",
+                     "name": "delete.png",
+                     "opaque": false,
+                     "rect": "514,-1,538,23",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FlashDemo_1002_1140_text.png",
+                     "visible": false
+                  }
+               },
+               "1156": {
+                  "#name": "image \"arrow_left_blue.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1156",
+                     "layer": "5",
+                     "name": "arrow_left_blue.png",
+                     "opaque": false,
+                     "rect": "356,2,372,18",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FlashDemo_1002_1156_text.png",
+                     "visible": false
+                  }
+               },
+               "1157": {
+                  "#name": "image \"arrow_right_blue.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1157",
+                     "layer": "6",
+                     "name": "arrow_right_blue.png",
+                     "opaque": false,
+                     "rect": "376,3,392,19",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FlashDemo_1002_1157_text.png",
+                     "visible": false
+                  }
+               },
+               "1158": {
+                  "#name": "image \"delete2.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1158",
+                     "layer": "7",
+                     "name": "delete2.png",
+                     "opaque": false,
+                     "rect": "395,2,411,18",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FlashDemo_1002_1158_text.png",
+                     "visible": false
+                  }
+               },
+               "1159": {
+                  "#name": "image \"refresh.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1159",
+                     "layer": "8",
+                     "name": "refresh.png",
+                     "opaque": false,
+                     "rect": "413,2,429,18",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FlashDemo_1002_1159_text.png",
+                     "visible": false
+                  }
+               },
+               "1160": {
+                  "#name": "image \"house.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1160",
+                     "layer": "9",
+                     "name": "house.png",
+                     "opaque": false,
+                     "rect": "434,3,450,19",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/FlashDemo_1002_1160_text.png",
+                     "visible": false
+                  }
+               },
+               "1163": {
+                  "#name": "button \"Browser ON\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "toggleBrowserSwitch\t \tcommand",
+                        "HandlerScroll": "96",
+                        "prop": null,
+                        "varChecking": false
+                     }
+                  },
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1163",
+                     "label": "Browser ON",
+                     "layer": "10",
+                     "name": "Browser ON",
+                     "opaque": false,
+                     "rect": "6,0,97,23",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cConsLast": {
+                  "editor": "script",
+                  "HandlerName": "abIamNotBusy\t \tcommand",
+                  "HandlerScroll": "2567",
+                  "prop": null,
+                  "ScriptChunk": "char 4221 to 4268 of field 93",
+                  "varChecking": false
+               },
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "10"
+               },
+               "uRIP": {
+                  "creator": "Chipp Walters\nchipp@chipp.com"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "browserTest"
+            }
+         }
+      },
+      "customproperties": {
+         "altBrowserID": null,
+         "altBrowserState": true,
+         "altCurrURL": "res://ieframe.dll/navcancl.htm",
+         "altHomeURL": "http://www.runrev.com/externals/flashexample.php"
+      },
+      "custompropertysets": {
+         "cConsLast": {
+            "HandlerName": null,
+            "HandlerScroll": "0",
+            "prop": null,
+            "varChecking": false
+         },
+         "cREVGeometryCache": {
+            "stackID": "1167"
+         },
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "Bsd": false,
+            "cursors": false,
+            "Hp9k700": false,
+            "inclusions": "select",
+            "Iris": false,
+            "Linux": false,
+            "MacOS,creator": "????",
+            "MacOS,documentType": null,
+            "MacOS,dynamicMemory": true,
+            "MacOS,longVersion": "altBrowser 1.0.0.0",
+            "MacOS,MinimumSize": "15000",
+            "MacOS,PreferredSize": "15000",
+            "MacOS,Region": "1",
+            "MacOS,Release": "Final",
+            "MacOS,versionnumber1": "1",
+            "MacOS,versionnumber2": "0",
+            "MacOS,versionnumber3": "0",
+            "MacOS68k": false,
+            "MacOSfat": false,
+            "MacOSPPC": false,
+            "MacOSX": true,
+            "name": "altBrowser",
+            "Odt": false,
+            "OSX,copyright": "2004  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,info": "altBrowser Version 1.0.0.0",
+            "OSX,longVersion": "altBrowser 1.0.0.0",
+            "OSX,name": "altBrowser",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "rs6000": false,
+            "scriptLibraries": "Internet\nPrinting\n",
+            "SolIntel": false,
+            "SolSparc": false,
+            "SPARC": false,
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Windows": true,
+            "Windows,companyname": "Altuit, Inc.",
+            "Windows,documenticonFile": null,
+            "Windows,FileDescription": "altBrowser 2.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "C:/Program Files/Revolution 2.5/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2004 Altuit, All rights reserved worldwide",
+            "Windows,ProductName": "altBrowser",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0"
+         }
+      },
+      "longID": "stack \"FlashDemo\" of stack \"Browser Sampler\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "backColor": "white",
+         "bottomColor": "128,128,128",
+         "decorations": "default",
+         "externals": "altBrowser2.dll\naltBrowser2.bundle",
+         "id": "1167",
+         "liveResizing": false,
+         "menubar": "menuGroup",
+         "name": "FlashDemo",
+         "rect": "100,178,1149,903",
+         "resizable": false,
+         "shadowColor": "172,172,172",
+         "textFont": "tahoma",
+         "textSize": "11",
+         "textStyle": "plain",
+         "title": "Internet Browser"
+      },
+      "sharedGroupIDs": null
+   },
+   "InetBrowser": {
+      "#name": "stack \"InetBrowser\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"browserTest\"",
+            "childcontrols": {
+               "1023": {
+                  "#name": "field \"browseraddress\"",
+                  "customproperties": {
+                     "cCurrentObject": "stack \"InetBrowser\" of stack \"C:/Workspace/Projects/altPlugins/altBrowserLauncher.rev\""
+                  },
+                  "custompropertysets": {
+                     "cREVGeometry": {
+                        "Master": true,
+                        "Master,cardRanking": "0",
+                        "Master,expectedRect": "1,48,927,68",
+                        "Master,movehDistance": false,
+                        "Master,movevDistance": false,
+                        "Master,scalebottomDistance": null,
+                        "Master,scaleleft": false,
+                        "Master,scaleleftAbsolute": false,
+                        "Master,scaleleftDistance": "0.003333",
+                        "Master,scaleleftObjectRef": "1054930276919",
+                        "Master,scaleleftObjectSide": "right",
+                        "Master,scaleright": false,
+                        "Master,scalerightAbsolute": false,
+                        "Master,scalerightDistance": "-0.095",
+                        "Master,scalerightObjectRef": "1054931635547",
+                        "Master,scalerightObjectSide": "right",
+                        "Master,scaletopDistance": null
+                     }
+                  },
+                  "properties": {
+                     "borderColor": "128,128,128",
+                     "borderWidth": "1",
+                     "fixedLineHeight": false,
+                     "htmlText": "<p>http://www.runrev.com/</p>",
+                     "id": "1023",
+                     "layer": "14",
+                     "lockLoc": true,
+                     "name": "browseraddress",
+                     "rect": "52,80,781,100",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "threeD": false
+                  }
+               },
+               "1041": {
+                  "#name": "image \"browserimage\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "id": "1041",
+                     "layer": "12",
+                     "lockLoc": true,
+                     "name": "browserimage",
+                     "rect": "5,107,838,527",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/InetBrowser_1002_1041_text.png"
+                  }
+               },
+               "1044": {
+                  "#name": "button \"Back\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "borderWidth": "1",
+                     "icon": "1156",
+                     "id": "1044",
+                     "layer": "2",
+                     "name": "Back",
+                     "opaque": false,
+                     "rect": "2,30,50,72",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "toolTip": "Back to last page",
+                     "traversalOn": false
+                  }
+               },
+               "1071": {
+                  "#name": "button \"Forward\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "borderWidth": "1",
+                     "icon": "1157",
+                     "id": "1071",
+                     "layer": "3",
+                     "name": "Forward",
+                     "opaque": false,
+                     "rect": "54,31,102,73",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "toolTip": "Goes to next page",
+                     "traversalOn": false
+                  }
+               },
+               "1072": {
+                  "#name": "button \"Refresh\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "borderWidth": "1",
+                     "icon": "1159",
+                     "id": "1072",
+                     "layer": "4",
+                     "name": "Refresh",
+                     "opaque": false,
+                     "rect": "107,31,155,73",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "toolTip": "Refreshes page",
+                     "traversalOn": false
+                  }
+               },
+               "1073": {
+                  "#name": "button \"Stop\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "borderWidth": "1",
+                     "icon": "1158",
+                     "id": "1073",
+                     "layer": "5",
+                     "name": "Stop",
+                     "opaque": false,
+                     "rect": "159,31,207,73",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "toolTip": "Stop",
+                     "traversalOn": false
+                  }
+               },
+               "1075": {
+                  "#name": "graphic \"topBack\"",
+                  "properties": {
+                     "antialiased": false,
+                     "backColor": "255,255,255",
+                     "filled": true,
+                     "id": "1075",
+                     "layer": "1",
+                     "lineSize": "0",
+                     "lockLoc": true,
+                     "name": "topBack",
+                     "opaque": true,
+                     "rect": "0,24,843,78"
+                  }
+               },
+               "1078": {
+                  "#name": "image \"busy.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1078",
+                     "layer": "6",
+                     "name": "busy.gif",
+                     "rect": "805,0,843,23",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/InetBrowser_1002_1078_text.png"
+                  }
+               },
+               "1086": {
+                  "#name": "field \"Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "foreColor": "128,128,128",
+                     "htmlText": "<p>Address</p>",
+                     "id": "1086",
+                     "layer": "7",
+                     "lockText": true,
+                     "name": "Field 1",
+                     "opaque": false,
+                     "rect": "0,82,54,102",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "textFont": "Tahoma",
+                     "textHeight": "14",
+                     "textSize": "11",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1089": {
+                  "#name": "group \"gDividers\"",
+                  "childcontrols": {
+                     "1153": {
+                        "#name": "button \"bDiv2\"",
+                        "properties": {
+                           "accelMods": "command",
+                           "autoHilite": false,
+                           "disabled": true,
+                           "id": "1153",
+                           "layer": "9",
+                           "lockLoc": true,
+                           "name": "bDiv2",
+                           "opaque": false,
+                           "rect": "0,78,843,80",
+                           "showFocusBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1154": {
+                        "#name": "button \"bDiv1\"",
+                        "properties": {
+                           "accelMods": "command",
+                           "autoHilite": false,
+                           "disabled": true,
+                           "id": "1154",
+                           "layer": "10",
+                           "lockLoc": true,
+                           "name": "bDiv1",
+                           "opaque": false,
+                           "rect": "0,23,843,25",
+                           "showFocusBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1155": {
+                        "#name": "button \"bDiv3\"",
+                        "properties": {
+                           "accelMods": "command",
+                           "autoHilite": false,
+                           "disabled": true,
+                           "id": "1155",
+                           "layer": "11",
+                           "lockLoc": true,
+                           "name": "bDiv3",
+                           "opaque": false,
+                           "rect": "0,101,843,103",
+                           "showFocusBorder": false,
+                           "showName": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "1089",
+                     "layer": "8",
+                     "name": "gDividers",
+                     "rect": "-4,19,847,107"
+                  }
+               },
+               "1096": {
+                  "#name": "field \"logField\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "htmlText": "<p>Accessing page: http://www.runrev.com/</p>",
+                     "id": "1096",
+                     "layer": "13",
+                     "lockText": true,
+                     "margins": "9",
+                     "name": "logField",
+                     "opaque": false,
+                     "rect": "2,531,841,551",
+                     "sharedText": true,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1139": {
+                  "#name": "image \"check.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1139",
+                     "layer": "15",
+                     "name": "check.png",
+                     "opaque": false,
+                     "rect": "483,0,507,24",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/InetBrowser_1002_1139_text.png",
+                     "visible": false
+                  }
+               },
+               "1140": {
+                  "#name": "image \"delete.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1140",
+                     "layer": "16",
+                     "name": "delete.png",
+                     "opaque": false,
+                     "rect": "514,-1,538,23",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/InetBrowser_1002_1140_text.png",
+                     "visible": false
+                  }
+               },
+               "1156": {
+                  "#name": "image \"arrow_left_blue.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1156",
+                     "layer": "17",
+                     "name": "arrow_left_blue.png",
+                     "opaque": false,
+                     "rect": "356,2,372,18",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/InetBrowser_1002_1156_text.png",
+                     "visible": false
+                  }
+               },
+               "1157": {
+                  "#name": "image \"arrow_right_blue.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1157",
+                     "layer": "18",
+                     "name": "arrow_right_blue.png",
+                     "opaque": false,
+                     "rect": "376,3,392,19",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/InetBrowser_1002_1157_text.png",
+                     "visible": false
+                  }
+               },
+               "1158": {
+                  "#name": "image \"delete2.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1158",
+                     "layer": "19",
+                     "name": "delete2.png",
+                     "opaque": false,
+                     "rect": "395,2,411,18",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/InetBrowser_1002_1158_text.png",
+                     "visible": false
+                  }
+               },
+               "1159": {
+                  "#name": "image \"refresh.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1159",
+                     "layer": "20",
+                     "name": "refresh.png",
+                     "opaque": false,
+                     "rect": "413,2,429,18",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/InetBrowser_1002_1159_text.png",
+                     "visible": false
+                  }
+               },
+               "1160": {
+                  "#name": "image \"house.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1160",
+                     "layer": "21",
+                     "name": "house.png",
+                     "opaque": false,
+                     "rect": "434,3,450,19",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/InetBrowser_1002_1160_text.png",
+                     "visible": false
+                  }
+               },
+               "1161": {
+                  "#name": "button \"Home\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "mouseUp\t \tmessage",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "borderWidth": "1",
+                     "icon": "1160",
+                     "id": "1161",
+                     "layer": "22",
+                     "name": "Home",
+                     "opaque": false,
+                     "rect": "211,31,259,73",
+                     "showBorder": false,
+                     "showIcon": true,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textSize": "10",
+                     "textStyle": "plain",
+                     "toolTip": "Home",
+                     "traversalOn": false
+                  }
+               },
+               "1163": {
+                  "#name": "button \"Browser ON\"",
+                  "custompropertysets": {
+                     "cConsLast": {
+                        "HandlerName": "toggleBrowserSwitch\t \tcommand",
+                        "HandlerScroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1163",
+                     "label": "Browser ON",
+                     "layer": "23",
+                     "name": "Browser ON",
+                     "opaque": false,
+                     "rect": "6,0,97,23",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1166": {
+                  "#name": "button \"Go\"",
+                  "properties": {
+                     "id": "1166",
+                     "layer": "24",
+                     "name": "Go",
+                     "rect": "784,80,833,100",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cConsLast": {
+                  "editor": "script",
+                  "HandlerName": "preOpenStack\t \tmessage",
+                  "HandlerScroll": "49",
+                  "prop": null,
+                  "ScriptChunk": "char 36 to 95 of field 93",
+                  "varChecking": false
+               },
+               "cREVGeometrycache": {
+                  "order": "\n1094074046898",
+                  "total": "24"
+               },
+               "uRIP": {
+                  "creator": "Chipp Walters\nchipp@chipp.com"
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "browserTest"
+            }
+         }
+      },
+      "customproperties": {
+         "altBrowserID": null,
+         "altBrowserState": true,
+         "altCurrURL": "http://www.runrev.com/",
+         "altHomeURL": "http://www.runrev.com"
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "1166"
+         },
+         "cRevStandaloneSettings": {
+            "answerDialog": true,
+            "askDialog": true,
+            "Bsd": false,
+            "cursors": false,
+            "Hp9k700": false,
+            "inclusions": "select",
+            "Iris": false,
+            "Linux": false,
+            "MacOS,creator": "????",
+            "MacOS,documentType": null,
+            "MacOS,dynamicMemory": true,
+            "MacOS,longVersion": "altBrowser 1.0.0.0",
+            "MacOS,MinimumSize": "15000",
+            "MacOS,PreferredSize": "15000",
+            "MacOS,Region": "1",
+            "MacOS,Release": "Final",
+            "MacOS,versionnumber1": "1",
+            "MacOS,versionnumber2": "0",
+            "MacOS,versionnumber3": "0",
+            "MacOS68k": false,
+            "MacOSfat": false,
+            "MacOSPPC": false,
+            "MacOSX": true,
+            "name": "altBrowser",
+            "Odt": false,
+            "OSX,copyright": "2004  All rights reserved worldwide",
+            "OSX,documentExtension": null,
+            "OSX,documentType": null,
+            "OSX,info": "altBrowser Version 1.0.0.0",
+            "OSX,longVersion": "altBrowser 1.0.0.0",
+            "OSX,name": "altBrowser",
+            "OSX,shortVersion": "1.0.0.0",
+            "OSX,signature": "????",
+            "rs6000": false,
+            "scriptLibraries": "Internet\nPrinting\n",
+            "SolIntel": false,
+            "SolSparc": false,
+            "SPARC": false,
+            "UNIX,colorChooser": true,
+            "UNIX,fileSelector": true,
+            "UNIX,pageSetup": true,
+            "UNIX,printerChooser": true,
+            "Windows": true,
+            "Windows,companyname": "Altuit, Inc.",
+            "Windows,documenticonFile": null,
+            "Windows,FileDescription": "altBrowser 2.0.0.0 for Windows",
+            "Windows,fileversion1": "1",
+            "Windows,fileversion2": "0",
+            "Windows,fileversion3": "0",
+            "Windows,fileversion4": "0",
+            "Windows,iconFile": "C:/Program Files/Revolution 2.5/Sample Icons/genericapp.ico",
+            "Windows,LegalCopyright": "2004 Altuit, All rights reserved worldwide",
+            "Windows,ProductName": "altBrowser",
+            "Windows,productversion1": "1",
+            "Windows,productversion2": "0",
+            "Windows,productversion3": "0",
+            "Windows,productversion4": "0"
+         }
+      },
+      "longID": "stack \"InetBrowser\" of stack \"Browser Sampler\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "bottomColor": "128,128,128",
+         "decorations": "default",
+         "externals": "altBrowser2.dll\naltBrowser2.bundle",
+         "id": "1166",
+         "liveResizing": false,
+         "menubar": "menuGroup",
+         "minHeight": "400",
+         "minWidth": "600",
+         "name": "InetBrowser",
+         "rect": "295,397,1138,950",
+         "shadowColor": "172,172,172",
+         "textFont": "tahoma",
+         "textSize": "11",
+         "textStyle": "plain",
+         "title": "Internet Browser"
+      },
+      "sharedGroupIDs": null
+   },
+   "Viewer": {
+      "#name": "stack \"Viewer\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1006": {
+                  "#name": "field \"viewer\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "SX:-2,SY:-16",
+                        "altRect": "1,34,400,232",
+                        "WinXPaltCmd": "SX:-2,SY:-16",
+                        "WinXPaltRect": "1,34,400,232",
+                        "WinXPaltVis": true
+                     }
+                  },
+                  "properties": {
+                     "autoTab": true,
+                     "backColor": "145,152,160",
+                     "borderWidth": "1",
+                     "fixedLineHeight": false,
+                     "id": "1006",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "viewer",
+                     "rect": "1,34,400,232",
+                     "scrollbarWidth": "12",
+                     "style": "scrolling",
+                     "tabStops": "24",
+                     "threeD": false,
+                     "vScrollbar": true
+                  }
+               },
+               "1008": {
+                  "#name": "graphic \"header\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "SX:-2",
+                        "altRect": "1,1,400,34",
+                        "WinXPaltCmd": "SX:-2",
+                        "WinXPaltRect": "1,1,400,34",
+                        "WinXPaltVis": true
+                     }
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "backPattern": "1009",
+                     "filled": true,
+                     "id": "1008",
+                     "layer": "3",
+                     "lineSize": "0",
+                     "name": "header",
+                     "opaque": true,
+                     "rect": "1,1,400,34"
+                  }
+               },
+               "1009": {
+                  "#name": "image \"BG Noise.PNG\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1009",
+                     "layer": "4",
+                     "lockLoc": true,
+                     "name": "BG Noise.PNG",
+                     "rect": "322,130,450,258",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Viewer_1002_1009_text.png",
+                     "visible": false
+                  }
+               },
+               "1010": {
+                  "#name": "image \"header LE HiliteUL.png\"",
+                  "customproperties": {
+                     "locLoc": true
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1010",
+                     "layer": "5",
+                     "lockLoc": true,
+                     "name": "header LE HiliteUL.png",
+                     "opaque": false,
+                     "rect": "1,1,400,34",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Viewer_1002_1010_text.png"
+                  }
+               },
+               "1011": {
+                  "#name": "image \"viewer LN-Hilite-Top.png\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "SX:0",
+                        "altRect": "0,30,402,35",
+                        "WinXPaltCmd": "SX:0",
+                        "WinXPaltRect": "0,30,402,35",
+                        "WinXPaltVis": true
+                     }
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1011",
+                     "layer": "6",
+                     "lockLoc": true,
+                     "name": "viewer LN-Hilite-Top.png",
+                     "opaque": false,
+                     "rect": "0,30,402,35",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABBSURBVHjaYvz//z8PA2HwH4gZ\niVDHwALEAiRqxif/H2SgMANxAJtB/6E0I0weZKAoAxUByEBxEtQzIrkKKwAIMADvHAtpRZJP\nRgAAAABJRU5ErkJggg=="
+                     }
+                  }
+               },
+               "1012": {
+                  "#name": "image \"viewer LN-ShadeBot.png\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "SX:0,MY:-11",
+                        "altRect": "0,232,402,237",
+                        "WinXPaltCmd": "SX:0,MY:-11",
+                        "WinXPaltRect": "0,232,402,237",
+                        "WinXPaltVis": true
+                     }
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1012",
+                     "layer": "7",
+                     "lockLoc": true,
+                     "name": "viewer LN-ShadeBot.png",
+                     "opaque": false,
+                     "rect": "0,232,402,237",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAABGdBTUEAAK/INwWK6QAAABl0\nRVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABMSURBVHjaYmRgYGhgQAX/gZgR\nC/8/A3bAiKyGBUjcYCAfYFgEMvAODlcwYjHgPxZxFDEQQwxN8D+aNxiQLEIPCkwn////n4Ga\nACDAAGSMFFG9FSUWAAAAAElFTkSuQmCC"
+                     }
+                  }
+               },
+               "1013": {
+                  "#name": "image \"colorBar.gif\"",
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "SX:0,MY:0",
+                        "altRect": "1,232,402,248",
+                        "WinXPaltCmd": "SX:0,MY:0",
+                        "WinXPaltRect": "1,232,402,248",
+                        "WinXPaltVis": true
+                     }
+                  },
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1013",
+                     "layer": "1",
+                     "name": "colorBar.gif",
+                     "rect": "1,232,402,248",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Viewer_1002_1013_text.png"
+                  }
+               },
+               "1014": {
+                  "#name": "image \"dragCorner.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1014",
+                     "ink": "blend",
+                     "layer": "8",
+                     "name": "dragCorner.png",
+                     "opaque": false,
+                     "rect": "366,233,382,249",
+                     "repeatCount": "-1",
+                     "text": "%file%: assets/Viewer_1002_1014_text.png",
+                     "visible": false
+                  }
+               },
+               "1015": {
+                  "#name": "field \"Title\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "fixedLineHeight": false,
+                     "foreColor": "249,156,27",
+                     "id": "1015",
+                     "layer": "9",
+                     "lockText": true,
+                     "name": "Title",
+                     "opaque": false,
+                     "rect": "4,3,370,31",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Tahoma",
+                     "textHeight": "24",
+                     "textSize": "18",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               },
+               "1016": {
+                  "#name": "image \"drag.gif\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "1016",
+                     "layer": "10",
+                     "name": "drag.gif",
+                     "rect": "274,52,285,63",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "R0lGODlhCwALAKIEALi0obi1obi0o////wAAAAAAAAAAAAAAACH5BAEAAAQALAAAAAALAAsA\nAAMdSLoqwFCEAdmgNRPXHpMUCF0KqXXo9ojsRJjwkAAAOw=="
+                     },
+                     "visible": false
+                  }
+               },
+               "1017": {
+                  "#name": "image \"resizeCursor\"",
+                  "properties": {
+                     "hotSpot": "9,9",
+                     "id": "1017",
+                     "layer": "11",
+                     "name": "resizeCursor",
+                     "rect": "254,50,270,66",
+                     "text": {
+                        "%base64%": "hAABf4MAAUGDAAFCgwABRIMAAUqDAAFVgwACYoCCAAIBQIMAAaODAAFVgwABKYMAARGDAAEh\ngwABQYMAAX+CAA=="
+                     },
+                     "toolTip": "200308",
+                     "visible": false,
+                     "xHot": "9",
+                     "yHot": "9"
+                  }
+               },
+               "1018": {
+                  "#name": "button \"altDrag\"",
+                  "customproperties": {
+                     "altWinCursor": "1017"
+                  },
+                  "custompropertysets": {
+                     "altLayoutManager": {
+                        "altCmd": "MX:0,MY:0",
+                        "altRect": "388,234,402,248",
+                        "WinXPaltCmd": "MX:0,MY:0",
+                        "WinXPaltRect": "388,234,402,248"
+                     }
+                  },
+                  "properties": {
+                     "hiliteBorder": false,
+                     "icon": "1014",
+                     "id": "1018",
+                     "layer": "12",
+                     "lockLoc": true,
+                     "name": "altDrag",
+                     "opaque": false,
+                     "rect": "388,234,402,248",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "showIcon": true,
+                     "showName": false,
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1020": {
+                  "#name": "field \"Field\"",
+                  "properties": {
+                     "id": "1020",
+                     "layer": "13",
+                     "name": "Field",
+                     "rect": "-245,82,-145,103"
+                  }
+               }
+            },
+            "properties": {
+               "backColor": "96,96,96",
+               "id": "1002"
+            }
+         }
+      },
+      "customproperties": {
+         "altMinHeight": "248",
+         "altMinWidth": "402",
+         "altResizeControlList": "%file%: assets/Viewer_altResizeControlList.bin",
+         "altResizeScriptLocation": "card",
+         "MacOSXaltMinHeight": "248",
+         "MacOSXaltMinWidth": "402"
+      },
+      "longID": "stack \"Viewer\" of stack \"Browser Sampler\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "decorations": "default",
+         "id": "1020",
+         "liveResizing": false,
+         "minHeight": "248",
+         "minWidth": "402",
+         "name": "Viewer",
+         "rect": "418,571,820,819",
+         "title": "Viewer"
+      },
+      "sharedGroupIDs": null
+   }
+}
