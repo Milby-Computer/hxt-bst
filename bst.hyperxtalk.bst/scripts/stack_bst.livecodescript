@@ -3,7 +3,7 @@ Script "stack_bst"
 /*
 # Name: stack "bst"
 # ID: stack "bst"
-# Hash: X4w3Qx/q3WzPtmWzFi0Qeg==
+# Hash: 7KEqyeISb3vFT/fX/Tq8bA==
 */
 
 
@@ -232,6 +232,9 @@ private function _jsonPrettyCompact pJsonString, pIndentSize, pForceRootType
             if tHyphenMinus then
                put _jsonValue("-") after tFormatted
                put false into tHyphenMinus
+            else if tPrevToken is ":" then
+               put quote & comma & quote after tFormatted
+               break
             end if
             put comma & cr & tIndent after tFormatted
             break
